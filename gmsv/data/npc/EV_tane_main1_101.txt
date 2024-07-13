@@ -1,0 +1,480 @@
+#
+#呺
+#
+
+
+
+block Item 3240 >= 1 || Item 3241 >= 1 || Item 3245 >= 1 || Item 3251 >= 1 || Item 3253 >= 1 || Item 3260 >= 1 || Item 3269 >= 1 || Item 230 >= 1 || Item 3276 >= 1 || Item 3279 >= 1 || Item 3270 >= 1 || Item 3288 >= 1 || Item 3281 >= 1 || Item 3294 >= 1 || Item 3299 >= 1
+
+if EquipItem == 3240 || EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+		EndWindow 3200058
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+else
+
+
+
+	window 3200059,yes,no
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木﹜\n﹛仇木﹜枃匀化中中及井中不℅℅℅
+
+
+	window_yes
+
+	if Item 3240 >= 1
+
+
+				window 3200060,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200061,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200062,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200063
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3240,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+	else
+
+		if	Item 3241 >= 1
+
+				window 3200064,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200065,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200066,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200067
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3241,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+		else
+
+			if Item 3245 >= 1
+
+
+				window 3200068,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200069,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200070,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200071
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3245,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+			else
+				if Item 3251 >= 1
+
+				window 3200072,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200073,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200074,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200075
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3251,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+				else
+					if Item 3253 >= 1
+
+				window 3200076,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200077,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200078,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200079
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3253,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+					else
+						if Item 3260 >= 1
+
+
+
+
+				window 3200080,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200081,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200082,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200083
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3260,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+
+						else
+							if Item 3269 >= 1
+
+
+				window 3200084,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200085,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200086,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200087
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3269,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+
+							else
+								if Item 3276 >= 1
+
+				window 3200088,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200089,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200090,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200091
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3276,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+
+								else
+									if Item 3279 >= 1
+
+
+				window 3200092,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200093,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200094,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200095
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3279,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+
+
+									else
+										if Item 3270 >= 1 
+
+				window 3200096,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200097,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200098,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200099
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3270,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+
+
+										else
+											if Item 3288 >= 1
+
+
+				window 3200100,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200101,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200102,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200103
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3288,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+
+											else
+												if Item 3281 >= 1
+
+				window 3200104,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200105,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200106,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200107
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3281,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+
+												else
+													if Item 3294 >= 1
+
+
+				window 3200108,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200109,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200110,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200111
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3294,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+
+													else
+														if Item 3299 >= 1
+
+
+				window 3200112,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200113,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200114,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200115
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 3299,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+
+														else
+															if Item 230 >= 1
+
+				window 3200116,next
+		#\n\n﹛丐﹜云予云云﹜\n﹛瓜奶白﹜瓜奶白﹜\n﹛瓜奶白﹜瓜奶白﹜瓜奶白﹜瓜奶白﹜\n﹛丐﹜丐曰互午丹﹜仇﹜仇﹜仇木匹﹜\n﹛仇木匹之℅℅″″
+
+
+
+				window 3200117,next
+		#\n\n﹛≦裆反﹜瓜奶白毛畴中潸月午﹜\n﹛﹛愤坌及澎潟卞幺五峏化﹜\n﹛﹛公及引引﹜窒井毛茧月方丹卞饨葭引匹夫中凶﹝\n﹛﹛き呦卞云欠今木凶尔珃及梂﹜\n﹛﹛葵井日﹜褥虫井日\n﹛﹛裆及虫毛户曰户曰午娄五昴中化﹜\n﹛﹛窒井互歹五请化仁月﹝
+				window 3200118,ok
+		#\n\n﹛仇木匹﹜仇木匹﹜仇木匹﹜\n﹛支匀午支匀午荸旵今木月丰℅℅℅℅
+
+				window_ok EquipItem == 3240 ||  EquipItem == 3241 || EquipItem == 3245 || EquipItem == 3251 || EquipItem == 3253 || EquipItem == 3260 || EquipItem == 3269 || EquipItem == 230 || EquipItem == 3276 || EquipItem == 3279 || EquipItem == 3270 || EquipItem == 3288 || EquipItem == 3281 || EquipItem == 3294 || EquipItem == 3299
+
+				EndWindow 3200119
+		#\n\n﹛壬﹜壬﹜ビ摩沓牬﹜\n﹛瓜奶白毛隶?井日反内六方予云云﹝\n﹛熬仃潸木卅中元扎卅中井方予云云﹝
+
+
+				window_ok
+
+				killitem 230,1,(3007170)
+				Encount 2|0,59510,130,92||0|||||0|305033|||||||||
+
+
+
+															endif
+														endif
+													endif
+												endif
+											endif
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+
+
+	window_no
+
+		EndWindow 3200120
+		#\n\n﹛卅﹜卅﹜丐﹜卅丑氏分方予℅℅℅\n﹛厄井减太今六支互匀化之℅″″\n﹛升﹜升匀井中匀切引尹之之之尹尹尹尹″″
+
+
+endif
+
+block Item 3241 < 1 && Item 3245 < 1 && Item 3251 < 1 && Item 3253 < 1 && Item 3260 < 1 && Item 3269 < 1 && Item 230 < 1 && Item 3276 < 1 && Item 3279 < 1 && Item 3279 < 1 && Item 3270 < 1 && Item 3288 < 1 && Item 3281 < 1 && CheckItemCategory 5 == 1
+
+	window 3200121,next
+		#\n\n﹛瓜奶白﹜瓜奶白﹜\n﹛＿＿丐丐﹜丐丐﹜分户﹜分户﹜分户分丑\n﹛公氏卅瓜奶白元扎﹜分户分＿＿
+	endwindow 3200122
+		#\n\n﹛手匀午﹜\n﹛手匀午手匀午手匀午\n﹛手匀午﹜中中﹜恌中手及﹜\n﹛中中支勾元扎卅中午＿＿
+
+
+
+
+block
+
+				LocalCount0 = random 3,0
+
+				if LocalCount0 == 1
+
+					Window 3200123,next
+		#\n\n﹛瓜奶白＿＿瓜奶白＿\n﹛赘歹曰及瓜奶白＿＿
+					EndWindow 3200124
+		#\n\n﹛卅丑﹜丐氏凶〝\n﹛瓜奶白儅匀化友之井〝\n﹛井﹜嗯卅日丐月方﹝\n﹛锹桦方曰嫖仁匹ョ丹方″
+
+
+				else
+
+					if LocalCount0 == 2
+
+						EndWindow 3200125
+		#\n\n﹛瓜奶白互﹜瓜奶白互﹜\n﹛井﹜虫井日?仃友之＿＿\n﹛切﹜躇戏﹜失皮石□旦及蛊户之″″
+
+					else
+
+						EndWindow 3200126
+		#\n\n﹛允﹜锭窗隍今引﹜允心引﹜\n﹛允心引六氏＿＿\n﹛歹﹜台及褥虫反﹜螃及湛午仄化反＿＿
+
+					endif
+
+				endif
+

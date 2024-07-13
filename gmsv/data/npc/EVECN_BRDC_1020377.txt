@@ -1,0 +1,40 @@
+##道场进入石像
+
+##台湾改版_增加收取入场费
+
+##检查身上的钱
+block Gold < 1000
+	 ##1052350	\n\n你身上的钱似乎不够．．．
+	 EndWindow 1052350
+
+##解散队伍
+block Group >1
+	 ##1052351	\n\n请解散队伍！
+	 Window 1052351,OK
+	 	 Window_OK Group >1
+	 	 	 LeaveGroup
+endblock	 	 	 
+ 	 	 
+##进入大厅
+block Gold > 999 
+	 ##1020675	\n\n欢迎参加暑期百人道场活动！\n\n本道场的主旨是挑战自我、挑战极限。
+	 Window  1020675,NEXT 
+	 ##1052349	\n\n入场费需要１０００G！是否要入场？
+	 Window 1052349,YES,NO
+	 	 Window_NO
+	 	 endblock
+	 	 Window_YES Gold < 999
+	 	 endwindow 9012
+	 	 Window_YES 
+	 	 	 ##1020676	\n\n请到休息大厅。
+	 	 	 Window 1020676,OK 
+				 Window_OK Gold >=1000
+				 	 AddGold -1000
+					 Warp 0,9112,5,10
+					 endblock
+					 
+				 window_ok	 
+				 endwindow 9012	 
+				 
+	
+

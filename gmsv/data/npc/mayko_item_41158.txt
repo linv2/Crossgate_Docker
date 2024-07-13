@@ -1,0 +1,38 @@
+##mayko_item_41158.txt  老手背包
+#1111357	\n\n　　　这是给老手的背包，\n　　　打开后可得三级防具一套。	1
+#1111358	\n\n\n@c重装（盔、铠、靴）与轻装（帽、衣、鞋）只能选一组。	1
+#1111359	\n\n\n@c打前请预留三格位置。	1
+#1111360	\n\n\n@c你要选择重装（盔、铠、靴）吗？	1
+#1111361	\n\n\n@c你要选择轻装（帽、衣、鞋）吗？	1
+#1111362	\n\n\n@c那就想想何时打开比较好吧！！	1
+
+
+block 
+	 Window 1111357,next
+	 Window 1111358,ok
+	 Window_ok ItemSpace < 3
+	 Window 1055868,next
+	 endwindow 1111359
+	 Window_ok
+	 Window 1111360,yes,no
+	 #Window_yes ItemSpace <= 3
+	 #endwindow 1111359
+	 Window_yes
+	 GiveLeak1Item 3623,1
+	 GiveLeak1Item 4423,1
+	 GiveLeak1Item 5622,1
+	 killitem 41158,1
+	 endblock	 
+	 Window_no
+	 	Window 1111361,yes,no
+	 	Window_no
+	 	endwindow 1111362
+	 	#Window_yes ItemSpace <= 3
+	 	#endwindow 1111359
+	 	Window_yes
+	 	GiveLeak1Item 6021,1
+	 	GiveLeak1Item 4021,1
+	 	GiveLeak1Item 4820,1
+	 	killitem 41158,1
+	 	endblock	 
+	 

@@ -1,0 +1,209 @@
+
+	#endwindow 1111776		
+#1111774	\n\n　　　你的称号还没到呢喃的歌声，\n　　　没办法晋阶喔！	1
+#1111775	\n\n　　　你的称号还没到刻于新月之铭，\n　　　没办法晋阶喔！	1
+
+#1111776	\n\n　　　你的本职技能还没LV4耶，\n　　　没办法晋阶喔！	1
+#1111764	\n\n　　　出法兰城南门,\n　　　到达维诺亚洞(472,315)后，\n　　　一层一层往下走，走到出洞后往南，\n　　　即是维诺亚村。	1
+#1111766	\n\n　　　非战斗系职业请自备Lv3道具一组，\n　　　交给守门员矿工"潘丹"即可进入洞穴。\n　　　鉴定师，武防修理师，侦探仙人请把本职技能练到LV3即可进入。	1
+#1111767	\n\n　　　生产系以及采集系可以利用500元走小路，\n　　　小路出去后旁边即是往维诺亚村的出口。	1
+#1111777	\n\n\n\n@c你现在可以到就职处去晋升为正职啰。	1
+#1111778	\n\n　　　你现在已经正职了，\n　　　就再努力一点吧，\n　　　等级LV25可以前往莎莲那。	1
+
+#1111780	\n\n　　　等可以去莎莲那，\n　　　本职技能LV6，\n　　　再准备送起司晋阶吧！！	1
+#1111781	\n\n　　　到维诺亚村(331,480)\n　　　里面的咖哩店(49,58)，\n　　　找村姑诗特(11,6)说话，拿到料理？	1
+#1111782	\n\n　　　接着到伊尔村(682,343)\n　　　里面的旧金山酒吧(32,65)，\n　　　找服务生霍特(14,12)说话，\n　　　 交出料理？得到点心？	1
+#1111783	\n\n　　　到圣拉鲁卡村(135,219)食品店(50,64)，\n　　　找新娘莎瓦(16,9)说话，\n　　　交出点心？得到点心？	1
+#1111784	\n\n　　　回诺维亚村(331,480)的咖哩店(49,58),\n　　　找村姑诗特(11,6)说话, 交出点心？\n　　　即可获得进阶资格。	1
+
+#料理？	超辣咖哩	ＦP0			IuRc						18320	26673	100	42		0	0	0	125	1	1	0	1	0					0	0	0	0	0	0																																															5	60						0	1	0			0	140000	188320	100	0	0			0
+#点心？	梅子糖	ＦP0			IuRc						18321	26727	100	42		0	0	0	125	1	1	0	1	0					0	0	0	0	0	0																																															5	10						0	1	0			0	140000	188321	100	0	0			0
+#点心？	白色恋人	ＦP0			IuRc						18322	26660	100	42		0	0	0	125	1	1	0	1	0					0	0	0	0	0	0																																															5	10						0	1	0			0	140000	188322	100	0	0			0
+#Event	村姑诗特	0	6070	0	1	1	0	2120	11	6	11	6	11	6	11	6	1	60000	6	14105	0	1	0	EV_ijk_6070.txt
+#Event	服务生霍特	0	6071	0	1	1	0	2002	14	12	14	12	14	12	14	12	1	60000	6	14105	0	1	0	EV_ijk_6071.txt
+#Event	新娘莎瓦	0	6072	0	1	1	0	2306	16	9	16	9	16	9	16	9	1	60000	6	14105	0	1	0	EV_ijk_6072.txt
+##正职后
+block EndEvent 93 == 1	&& job == 202
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 212
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 222
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 232
+	window 1111778,next
+	endwindow 1111780	
+block EndEvent 93 == 1	&& job == 242
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 252
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 262
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 272
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 282
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 292
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 302
+	window 1111778,next
+	endwindow 1111780				
+block EndEvent 93 == 1	&& job == 312
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 322
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 332
+	window 1111778,next
+	endwindow 1111780	
+block EndEvent 93 == 1	&& job == 342
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 352
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 362
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 372
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 382
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 392
+	window 1111778,next
+	endwindow 1111780	
+block EndEvent 93 == 1	&& job == 412
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 422
+	window 1111778,next
+	endwindow 1111780
+block EndEvent 93 == 1	&& job == 1012
+	window 1111778,next
+	endwindow 1111780		
+#===============解完　称号未满
+block EndEvent 93 == 1	&& job == 201 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 211 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 221 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 231 && title < 54		
+	endwindow 1111775	
+block EndEvent 93 == 1	&& job == 241 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 251 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 261 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 271 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 281 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 291 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 301 && title < 54		
+	endwindow 1111775				
+block EndEvent 93 == 1	&& job == 311 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 321 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 331 && title < 54		
+	endwindow 1111775	
+block EndEvent 93 == 1	&& job == 341 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 351 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 361 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 371 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 381 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 391 && title < 54		
+	endwindow 1111775	
+block EndEvent 93 == 1	&& job == 411 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 421 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 1011 && title < 54		
+	endwindow 1111775		
+#===============技能未满	
+block EndEvent 93 == 1	&& job == 201 && SkillLevel 200 < 4		
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 211 && SkillLevel 201 < 4	
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 221 && SkillLevel 202 < 4	
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 231 && SkillLevel 203 < 4		
+	endwindow 1111776	
+block EndEvent 93 == 1	&& job == 241 && SkillLevel 204 < 4		
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 251 && SkillLevel 205 < 4		
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 261 && SkillLevel 206 < 4		
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 271 && SkillLevel 207 < 4			
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 281 && SkillLevel 208 < 4	
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 291 && SkillLevel 209 < 4	
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 301 && SkillLevel 210 < 4	
+	endwindow 1111776				
+block EndEvent 93 == 1	&& job == 311 && SkillLevel 211 < 4		
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 321 && SkillLevel 212 < 4		
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 331 && SkillLevel 213 < 4		
+	endwindow 1111776	
+block EndEvent 93 == 1	&& job == 341 && SkillLevel 214 < 4
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 351 && SkillLevel 215 < 4
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 361 && SkillLevel 216 < 4	
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 371 && SkillLevel 217 < 4
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 381 && SkillLevel 218 < 4
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 391 && SkillLevel 219 < 4
+	endwindow 1111776	
+block EndEvent 93 == 1	&& job == 411 && SkillLevel 221< 4
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 421 && SkillLevel 222 < 4
+	endwindow 1111776		
+block EndEvent 93 == 1	&& job == 1011 &&  SkillLevel 2000 < 4	
+	endwindow 1111776
+#==需解战斗的职业
+#1111762	\n\n　　　你是医生OR护士OR爆弹师，\n　　　虽然是采生产系称号，\n　　　不过还是要打树精长老才能正职。	1
+block job == 1001 || job == 441 || job == 431
+endwindow 1111762
+#===========		
+block EndEvent 93 == 1
+	endwindow 1111777
+#
+block item 18322 >0
+	endwindow 1111784
+
+block item 18321 >0
+	endwindow 1111783
+
+block item 18320 >0
+	endwindow 1111782
+block 
+	window 1111764,next
+	Window 1111766,next
+	window 1111767,next
+	endwindow 1111781

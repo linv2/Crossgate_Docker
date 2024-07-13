@@ -1,0 +1,75 @@
+#扑尼仿它巨永末及显﹋21℅40﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛扔件母□﹋37F﹌及摒
+
+###﹛辄嫖佴﹋607714﹌引凶反失甲伙佴阂﹋607717﹌毛赭儅
+block Item_607714 >= 1 || Item_607717 >= 1
+	EndWindow 3206760
+
+		#\n\n﹛失失永﹜公及佴阂毛苇化合中请仄凶分﹜\n﹛漆ざ反缜仅兜烂赭尺垫仁ざ分匀凶﹝\n﹛珃匀濡卞反愤耨丐月分互﹜⑵及杅互卅丐＿﹝\n﹛云井仆匹﹜卅井卅井戚及缜互瑁引日友尹分方﹝
+
+
+
+###﹛厘霉及萼﹋631043﹌毛呁醒赭儅
+block Item_631043 >= 2
+	EndWindow 3206761
+
+		#\n\n﹛左左永﹜厘霉及萼＿凶仁今氏儅匀化月分卅﹝\n﹛域?罹日歹公丹午合匀凶互﹜支户月分﹝\n﹛公丹卅月午拑楮溢手⑺螺分井日卅﹝
+
+
+
+###﹛厘霉及萼﹋631043﹌毛ㄠ勾分仃赭儅
+block Item_631043 == 1
+
+#﹛旦正件皿ㄡ
+	If StampCount_631043 >= 2
+		Window 3206762,NEXT
+
+		#\n\n﹛算扲井〝﹛壅尹切引匀凶分方﹝\n﹛云⑵反﹜愈赓匀井日公及勾手曰分匀凶氏分﹝\n﹛匹﹜左仿凶切反云⑵毛蠡户晓仆卞垫仁分方﹝
+		Window 3206763,OK
+
+		#\n\n﹛匹手公及蟆卞﹜云蟆午及鴃扙毛勾仃友尹午﹝\n﹛公及勾手曰匹侳凶氏分欠〝﹛今丐﹜垫仁屯﹝
+
+			Window_OK Item_631043 >= 2
+				EndWindow 3206764
+
+		#\n\n﹛萼反ㄠ勾元扎卅井匀凶分井〝\n﹛手仄井仄化﹜萼及璋螂笮今氏分匀凶分井﹝\n﹛仇曰扎引凶撩斪仄凶分卅﹝
+				EndBlock
+
+			Window_OK Item_631043 == 1 && StampCount_631043 >= 2
+				LeaveGroup
+				Encount 3|0,59750,92,190||0|||||0|308024|||||||||
+				EndBlock
+
+			Window_OK Item_631043 == 1
+				EndWindow 3206765
+
+		#\n\n﹛怉卅蜕中互井曰毛勾仃月卅分匀化〝\n﹛仃升﹜云蟆及儅匀化月萼反＿丐曰扎引﹜\n﹛仇仇及萼元扎友尹﹝\n﹛仇曰扎左仿互鬼井匀凶分﹜揪忮仄化仃欠﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3206766
+
+		#\n\n﹛萼毛桩化凶曰仄化﹜嫦辅允月分井〝\n﹛公木反昍ヶ仁友尹卅﹝\n﹛昍ヶ仁反友尹分互﹜酷杅友尹卅﹝\n﹛垫匀化中中分﹝
+				EndBlock
+
+
+#﹛旦正件皿晓筏动陆
+	else
+		EndWindow 3206767
+
+		#\n\n﹛萼毛儅匀化月匀化仇午反﹜算扲杴癫化井〝\n﹛公氏卅日﹜六中兮中丐匀切仇匀切茧仄荚匀化﹜\n﹛仁凶太木绊化月午中中分﹝扪⑹卞卅月分方﹝
+		EndBlock
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3206768
+
+		#\n\n﹛支匀天曰﹜笮简及忐匀化及反雄中手氏分﹝\n﹛峚濠匀凶曰中互心宁匀凶曰仄化手﹜愈詨卞反\n﹛澎毛赚戈仇午卞卅月分方﹝\n﹛窒仄欠左仿凶切反﹜⑺元瑙及丞斥瓜分井日卅丐﹝
+
+
+

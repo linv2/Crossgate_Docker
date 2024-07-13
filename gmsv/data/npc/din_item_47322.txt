@@ -1,0 +1,12 @@
+###2006EC 10月份_秘传螃蟹盒(空)	din_item_47322.txt
+###能力说明：可收纳九组螃蟹锅
+
+block Item 15214 < 27
+	 ##1054444	\n\n\n\n\n  你身上的螃蟹锅不足２７个喔！所以无法收纳。	1
+	 EndWindow 1054444
+
+block Item 15214 >=27
+	 KillItem 15214,27
+	 KillItem 47322,1
+	 GiveLeak1Item 47323,1
+	 

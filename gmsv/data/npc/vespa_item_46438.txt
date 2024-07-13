@@ -1,0 +1,14 @@
+########　Item ：残念奖 46438
+#########　得到100g
+
+block gold >=1000000
+	 ##1052659	 \n\n你的钱包太满啰～无法打开残念奖～
+	 EndWindow 1052659
+	 
+block
+	 KillItem 46438,1
+	 AddGold 100
+	 endblock
+
+
+		　

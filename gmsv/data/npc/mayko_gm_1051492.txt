@@ -1,0 +1,43 @@
+##小圣	亚诺曼城141,80
+
+
+
+#1053576快过圣诞节了，听说把袜子挂在圣诞树上，就能得到圣诞老人的礼物！
+	
+#1053577城内摆了一颗圣诞树耶！
+	
+#1053578依姆阿姨那，可以免费拿袜子，不过一人只能拿一双！
+	
+#1053579黛拉那边有在卖袜子喔！
+		
+	
+#1053580小可与小爱前几天到克瑞村去玩，她们在村子外堆雪人喔！
+		
+block
+                        if LocalCount5 == 5
+                                LocalCount5 = random 4,0
+                                if LocalCount5 == 4
+                                        LocalCount5 = 5
+                                        
+                                        EndWindow 1053576
+                                else
+					if LocalCount5 == 3
+						LocalCount5 = 5
+                        	                EndWindow 1053577
+					else
+					     if LocalCount5 == 2
+						LocalCount5 = 5                                        
+                        	                EndWindow 1053578                   
+                        	             else
+                        	                LocalCount5 = 5
+                        	               	EndWindow 1053579
+	                                       
+                        	     	     endif	
+             				endif
+             			endif	
+                        else
+                                LocalCount5 = 5
+                                EndWindow 1053577
+                        endif
+
+		

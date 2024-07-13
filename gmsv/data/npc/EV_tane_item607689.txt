@@ -1,0 +1,25 @@
+#
+#kaisuukenn
+#
+
+
+block  Floor == 59503 && Xpos == 91 && Ypos == 192
+	Window 3200512,ok
+		##\n\n﹛甩扑打毛产瑙卞峏化井仃凶﹝
+
+	Window_ok
+	leavegroup
+	killitem 607689,1,(3007237)
+	Warp 0,59693,183,162
+
+
+block  Floor == 59691 && Xpos == 150 && Ypos == 111
+	Window 3200513,ok
+		#\n\n﹛甩扑打毛峏化井仃凶﹝
+
+	Window_ok
+	leavegroup
+	killitem 607689,1,(3007237)
+	Warp 0,59504,157,55
+
+

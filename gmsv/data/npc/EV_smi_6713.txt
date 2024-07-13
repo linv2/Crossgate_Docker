@@ -1,0 +1,42 @@
+#奶矛件玄泛旦玄
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 厘卅引内蒂菜笮 ##########
+block Item 18471 >= 1 && Item 18472 >= 1 && Item 18473 >= 1
+	#椭瘀“厘卅引内迋及嗯亿ㄢ蜊丐月桦宁
+	#丐曰互午丹豢邧?晓仆月方″
+	Window 13075,YES,NO
+
+	#仍邧?“毡扔示泛件LV1卞跟晶
+	Window_YES PetSpace >= 1 && Item 18471 >= 1 && Item 18472 >= 1 && Item 18473 >= 1
+	Killitem 18471,1
+	Killitem 18472,1
+	Killitem 18473,1
+	Givepet 435
+
+	Window_YES PetSpace == 0 && Item 18471 >= 1 && Item 18472 >= 1 && Item 18473 >= 1 
+	#升丹支日坞五互卅中方丹元扎方
+	EndWindow 13076
+
+	Window_NO
+	EndWindow 13077
+
+
+########## 厘卅引内蒂菜笮 ##########
+block
+	#厘卅引内蒂菜笮濩抸
+	Window 13068,OK
+	Window_OK 
+	Window 13069,YES,NO
+	Window_YES 
+	Window 13071,OK
+	Window_OK
+	EndWindow 13072
+
+	Window_NO 
+	EndWindow 13070
+
+

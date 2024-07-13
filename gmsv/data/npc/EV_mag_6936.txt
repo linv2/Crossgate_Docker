@@ -1,0 +1,55 @@
+#涩煌豭跟晶
+
+##############  ##############
+block
+#\n\n﹛仇切日匹反＞仿疋永玉立立永弁涩煌豭跟晶痹＝午﹜云驯五卅仿疋永玉立立永弁涩煌豭1呦午毛跟晶仄化中引允﹝
+	Window 15418,OK
+	Window_OK Item 18661 == 0
+#\n\n﹛市□田件弁伙仁元匹＞仿疋永玉立立永弁涩煌豭跟晶痹＝毛じ澎今木引仄凶日仇切日引匹云中匹仁分今中﹝
+	EndWindow 15419,OK
+	Window_OK Item 18661 >= 1
+#\n\n﹛云户匹午丹仍介中引允﹝匹反＞仿疋永玉立立永弁涩煌豭跟晶痹＝毛云驯五卅仿疋永玉立立永弁涩煌豭1呦午跟晶今六化中凶分五引允﹝
+	Window 15420,OK
+	Window_OK Item 18661 >= 1
+#\n\n﹛＞仿疋永玉立立永弁涩煌豭A＝午跟晶仄引允井〝
+	Window 15421,YES,NO
+	Window_YES Item 18661 >= 1
+	KillItem 18661
+	GiveLeak1Item 18653
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝漆詨手市□田件弁伙仁元毛给仄仁云凑中谯仄引允﹝
+	EndWindow 15422,OK
+	Window_NO Item 18661 >= 1
+#\n\n﹛＞仿疋永玉立立永弁涩煌豭B＝午跟晶仄引允井〝
+	Window 15423,YES,NO
+	Window_YES Item 18661 >= 1
+	KillItem 18661
+	GiveLeak1Item 18654
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝漆詨手市□田件弁伙仁元毛给仄仁云凑中谯仄引允﹝
+	EndWindow 15422,OK
+	Window_NO Item 18661 >= 1
+#\n\n﹛＞仿疋永玉立立永弁涩煌豭C＝午跟晶仄引允井〝
+	Window 15424,YES,NO
+	Window_YES Item 18661 >= 1
+	KillItem 18661
+	GiveLeak1Item 18655
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝漆詨手市□田件弁伙仁元毛给仄仁云凑中谯仄引允﹝
+	EndWindow 15422,OK
+	Window_NO Item 18661 >= 1
+#\n\n﹛＞仿疋永玉立立永弁涩煌豭D＝午跟晶仄引允井〝
+	Window 15425,YES,NO
+	Window_YES Item 18661 >= 1
+	KillItem 18661
+	GiveLeak1Item 18656
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝漆詨手市□田件弁伙仁元毛给仄仁云凑中谯仄引允﹝
+	EndWindow 15422,OK
+	Window_NO Item 18661 >= 1
+#\n\n﹛＞仿疋永玉立立永弁涩煌豭E＝午跟晶仄引允井〝
+	Window 15426,YES,NO
+	Window_YES Item 18661 >= 1
+	KillItem 18661
+	GiveLeak1Item 18657
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝漆詨手市□田件弁伙仁元毛给仄仁云凑中谯仄引允﹝
+	EndWindow 15422,OK
+
+
+

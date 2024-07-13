@@ -1,0 +1,126 @@
+#奶矛件玄泛旦玄
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 鬼傻嗜域勾匹手儅匀化凶日及桦宁 ##########
+block Item 18428 >= 1 || Item 18429 >= 1 || Item 18430 >= 1 && Group == 1
+
+	#鬼傻嗜毛嘻中化中匀化友﹝
+	EndWindow 13055
+
+
+########## 螫傻嗜立伙立伙唯跸じ曰轼 ##########
+block Item 18435 >= 1 || Item 18436 >= 1 || Item 18437 >= 1 || Item 18438 >= 1 && Group == 1
+
+	#泔儅匀化凶日⑺元坁ㄡ蜊杴手日歹卅中涩烂
+	EndWindow 13066
+
+
+########## 螫傻嗜立伙立伙唯跸じ曰轼’旦平伙伊矛伙ㄤ及凛 ##########
+block Group == 1 && SkillLevel 225 >= 5 || Group == 1 && SkillLevel 226 >= 5
+	#椭瘀“鬼傻示旦嗜ㄣ潘挀丐月桦宁
+	Window 13043,OK
+	Window_OK
+	Window 13044,OK
+	Window_OK
+	Window 13060,OK
+
+	#----- 它奶件玉它OK匹坞五失奶泛丞互ㄟ及桦宁 -----#
+	Window_OK itemspace == 0
+	#儅切坁互域ベ立伙﹝
+	EndWindow 13051
+
+	Window_OK itemspace >= 0
+	#唯跸迕像戏坁撙毛手日丹
+	GiveItem 18435,1
+	LeaveGroup
+	Warp 0,13507,5,47,0,13508,5,47,0,13509,5,47
+
+
+########## 螫傻嗜立伙立伙唯跸じ曰轼’旦平伙伊矛伙ㄣ及凛 ##########
+block Group == 1 && SkillLevel 225 == 4 || Group == 1 && SkillLevel 226 == 4
+	#椭瘀“鬼傻示旦嗜ㄣ潘挀丐月桦宁
+	Window 13043,OK
+	Window_OK
+	Window 13044,OK
+	Window_OK
+	Window 13061,OK
+
+	#----- 它奶件玉它OK匹坞五失奶泛丞互ㄟ及桦宁 -----#
+	Window_OK itemspace == 0
+	#儅切坁互域ベ立伙﹝
+	EndWindow 13051
+
+	Window_OK itemspace >= 0
+	#唯跸迕像戏坁撙毛手日丹
+	GiveItem 18436,1
+	LeaveGroup
+	Warp 0,13507,5,47,0,13508,5,47,0,13509,5,47
+
+
+########## 螫傻嗜立伙立伙唯跸じ曰轼’旦平伙伊矛伙ㄢ及凛 ##########
+block Group == 1 && SkillLevel 225 == 3 || Group == 1 && SkillLevel 226 == 3
+	#椭瘀“鬼傻示旦嗜ㄣ潘挀丐月桦宁
+	Window 13043,OK
+	Window_OK
+	Window 13044,OK
+	Window_OK
+	Window 13062,OK
+
+	#----- 它奶件玉它OK匹坞五失奶泛丞互ㄟ及桦宁 -----#
+	Window_OK itemspace == 0
+	#儅切坁互域ベ立伙﹝
+	EndWindow 13051
+
+	Window_OK itemspace >= 0
+	#唯跸迕像戏坁撙毛手日丹
+	GiveItem 18437,1
+	LeaveGroup
+	Warp 0,13507,5,47,0,13508,5,47,0,13509,5,47
+
+
+########## 螫傻嗜立伙立伙唯跸じ曰轼’旦平伙伊矛伙ㄡ及凛##########
+block Group == 1 && SkillLevel 225 == 2 || Group == 1 && SkillLevel 226 == 2
+	#椭瘀“鬼傻示旦嗜ㄣ潘挀丐月桦宁
+	Window 13043,OK
+	Window_OK
+	Window 13044,OK
+	Window_OK
+	Window 13063,OK
+
+	#----- 它奶件玉它OK匹坞五失奶泛丞互ㄟ及桦宁 -----#
+	Window_OK itemspace == 0
+	#儅切坁互域ベ立伙﹝
+	EndWindow 13051
+
+	Window_OK itemspace >= 0
+	#唯跸迕像戏坁撙毛手日丹
+	GiveItem 18438,1
+	LeaveGroup
+	Warp 0,13507,5,47,0,13508,5,47,0,13509,5,47
+
+
+########## 螫傻嗜立伙立伙唯跸じ曰轼 ##########
+block Group == 1 && SkillLevel 225 < 2 || Group == 1 && SkillLevel 226 < 2
+	#椭瘀“弘伙□皿匹2谛动晓匹﹋き谛杴殖戈﹌旦平伙伊矛伙ㄠ卅日
+	Window 13078,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,13507,5,47
+
+########## 螫傻嗜立伙立伙唯跸じ曰轼 ##########
+block Group == 1 
+	#椭瘀“弘伙□皿匹2谛动晓匹﹋き谛杴殖戈﹌旦平伙伊矛伙ㄠ卅日
+	Window 13078,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,13507,5,47
+
+########## 螫傻嗜立伙立伙唯跸じ曰轼 ##########
+block Group >= 2
+	#椭瘀“弘伙□皿匹2谛动晓卅日壬﹋き谛杴殖戈﹌
+	EndWindow 13059
+
+

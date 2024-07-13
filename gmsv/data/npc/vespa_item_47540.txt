@@ -1,0 +1,85 @@
+##20070205人型宠灵魂租借
+##道具名称：招财猫扑满
+##功能：
+##“佰两招财猫”：需投入1佰元魔币才能得到								
+##“仟两招财猫”：需投入1仟元魔币才能得到								
+##“万两招财猫”：需投入1万元魔币才能得到								
+##“十万两招财猫”：需投入10万魔币才能得到								
+##“亿两招财猫”：需同时拥有4种不同招财猫在宠物栏并保留一个空格，同时在物品栏双点‘招财猫扑满’系统便会询问玩家是否要以4种不同招财猫兑换一只“亿两招财猫”，同意后4种不同招财猫消失得到一只“亿两招财猫”。								
+
+
+ ##■宠物栏已满
+ block PetSpace <1
+ 	 ##1051920	\n\n\n  抱歉宠物栏已满。	1
+	 EndWindow 1051920
+ 
+##■召唤“亿两招财猫”
+block PetLevel 10068 >=1 && PetLevel 10069 >=1 && PetLevel 10070 >=1 && PetLevel 10071 >=1 && Item 47540 >=1
+	 ##1054770	\n\n是否要以四只招财猫换取“亿万两招财猫”？	1
+	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+	 Window 1054770,NEXT
+	 	 Window 1054771,YES,NO 
+	 	 	 Window_NO
+	 	 
+	 	 	 Window_YES  PetLevel 10068 >=1 && PetLevel 10069 >=1 && PetLevel 10070 >=1 && PetLevel 10071 >=1 
+	 	 	 	 KillPetl  10068
+	 	 	 	 KillPetl  10069
+	 	 	 	 KillPetl 10070
+	 	 	 	 KillPetl 10071
+	 	 	 	 KillItem 47540
+	 	 	 	 GivePet (41245%1,41246%1,41247%1,41248%1)
+
+
+block Item 47540 >=1
+	 ##1054772	\n\n是否要以十万魔币换取“十万两招财猫”？	1
+	 Window 1054772,YES,NO
+	 	 Window_YES Item 47540 >=1 && Gold <100000
+	 	 	 ##3	\n\n很抱歉，你的钱不够了。	0
+			 EndWindow 3	 	 	 
+		 Window_YES Item 47540 >=1 && Gold >=10000
+		 	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+			 Window 1054771,OK 
+			 	 Window_OK Item 47540 >=1 && Gold >=10000
+			 	 	 KillItem 47540,1
+			 	 	 AddGold -100000
+			 	 	  GivePet 41244
+		 Window_NO
+		 	 ##1054773	\n\n是否要以一万魔币换取“万两招财猫”？	1
+			 Window 1054773,YES,NO
+			 	 Window_YES  Item 47540 >=1 && Gold <10000
+			 	 	  ##3	\n\n很抱歉，你的钱不够了。	0
+					 EndWindow 3	 	
+				 Window_YES Item 47540 >=1 &&  Gold >= 10000
+				 	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+					 Window 1054771,OK 
+				 	 	 Window_OK  Item 47540 >=1 &&  Gold >= 10000
+				 	 		 KillItem 47540,1
+				 	 		 AddGold -10000
+				 	 		 GivePet 41243
+				 Window_NO
+				 	 ##1054774	\n\n是否要以一仟魔币换取“仟两招财猫”？	1
+					 Window 1054774,YES,NO
+						 Window_YES  Item 47540 >=1 && Gold <1000
+					 	 	  ##3	\n\n很抱歉，你的钱不够了。	0
+							 EndWindow 3
+						 Window_YES Item 47540 >=1 && Gold >= 1000
+						 	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+							 Window 1054771,OK 
+							 	 Window_OK Item 47540 >=1 && Gold >=1000
+							 	 	 KillItem 47540,1
+							 	 	  AddGold -1000
+							 	 	  GivePet 41242
+						 Window_NO
+						 	 ##1054775	\n\n是否要以一佰魔币换取“佰两招财猫”？	1
+							 Window 1054775,YES,NO
+							 	 Window_YES Item 47540 >=1 && Gold < 100
+					 	 			   ##3	\n\n很抱歉，你的钱不够了。	0
+									  EndWindow 3
+							 	  Window_YES Item 47540 >=1 && Gold >= 100
+						 	 		 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+							 		 Window 1054771,OK 								 
+					 					 Window_OK Item 47540 >=1 && Gold >= 100
+					 					 	 KillItem 47540,1
+					 					 	 AddGold -100
+					 					 	 GivePet 41241
+						 

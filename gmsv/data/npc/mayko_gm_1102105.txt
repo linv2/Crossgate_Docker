@@ -1,0 +1,29 @@
+################### 皇后之墓
+block	Group > 1
+	EndWindow 1100000	
+ 
+block Item 40711 >= 1 
+	 
+ 	 Window 1102533,NEXT
+	 Window 1102534,NEXT
+	 Window 1102535,NEXT
+	 Window 1102536,NEXT
+	 Window 1102537,NEXT
+	 Window 1102538,NEXT
+	 Window 1102539,OK
+	 Window_OK ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 
+	 Window_OK Item 40711 > 0
+	 KillItem 40711,1	
+	 #GiveLeak1Item (46854%14$1,46855%14$1,46856%14$1,46857%14$1,46858%14$1,46859%14$1,46860%14$1)
+	 GiveLeak1Item (40707%99$1,40708%1$1)
+		 	LeaveGroup
+	 	 	Warp 0,30001,440,482
+	 Window_OK
+	 EndWindow 1053059 	 	
+	 ##你的东西怎么少了！想丢地帮人作弊吗！
+block		 	 	
+	 EndWindow 3529
+	

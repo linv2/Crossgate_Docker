@@ -1,0 +1,9 @@
+#þö©ø
+
+block Item 16335 >= 1 ||  Item 16327 >= 1 ||  Item 16328 >= 1 ||  Item 16329 >= 1
+	Window 22065,Next
+	Window 22066,Next
+	EndWindow 22067,OK
+
+block
+	EndWindow 22065,OK

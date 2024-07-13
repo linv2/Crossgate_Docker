@@ -1,0 +1,810 @@
+
+################### 随机给宠物
+#block 
+#	 GivePet (202%50,241%50)
+################### 测试 SetVisitor
+#block Visitor == 0
+#	 AddGold -1
+#	 SetVisitor +1
+#	
+#block Visitor == 1
+#	 AddGold 1
+#	 SetVisitor +1
+#
+#block Visitor == 2
+#	 AddGold 2
+#	 SetVisitor +1
+#	 	 	 
+#block Visitor == 3
+#	 AddGold 3
+#	 SetVisitor +1
+#	 
+#block Visitor >3
+#	 AddGold -3
+#	 SetVisitor -4
+#	 AddGold -4
+#	 
+#################### 测试 checktitle 
+#block FAME>=-999 && FAME<=1999
+#	 CheckTitle 
+#	 GiveLeak1Item 50001,2
+#	 EndWindow 1100706
+#	 
+#block 
+#	 AddGold 100	 
+
+
+################### 测试 给强化材料
+#block 
+#	 GiveLeak1Item 50001,2
+#	 GiveLeak1Item 50002,2
+#	 GiveLeak1Item 50003,2
+#	 GiveLeak1Item 50004,2
+#	 GiveLeak1Item 50005,2
+#	 GiveLeak1Item 50006,2
+#	 GiveLeak1Item 50007,2
+#	 GiveLeak1Item 50008,2
+#	 GiveLeak1Item 50009,2
+#	 GiveLeak1Item 50010,2
+#	 GiveLeak1Item 50011,2
+#	 GiveLeak1Item 50012,2
+#	 GiveLeak1Item 50013,2
+#	 GiveLeak1Item 50014,2
+#	 GiveLeak1Item 50015,2
+#	 GiveLeak1Item 50016,2
+#	 GiveLeak1Item 50017,2
+#	 GiveLeak1Item 50018,2
+
+##################### 测试强化材料换很多很多东西
+#block
+##		 GiveLeak1Item(13602%1$1,13612%1$1,13622%1$1,13632%1$1,13642%1$1,13652%1$1,13662%1$1,45125%1$1,45126%1$1,45127%1$1,45128%1$1,45129%1$1,45130%1$1,45131%1$1,45132%1$1,45133%1$1,45134%1$1,45135%1$1,45136%1$1,19574%1$1,19575%1$1,19576%1$1,40059%1$1,40060%1$1,40007%1$1,16800%1$1,16801%1$1,16802%1$1,16803%1$1,16804%1$1,16805%1$1,16806%1$1,16811%1$1,16807%1$1,16808%1$1,16809%1$1,16810%1$1,16812%1$1,16819%1$1,16813%1$1,16814%1$1,16815%1$1,16816%1$1,16817%1$1,16818%1$1)
+#		 ##第二次奖品项
+#		 GiveLeak1Item(45133%8$1,45134%8$1,45135%8$1,45136%8$1,45137%4$1,45138%4$1,45139%4$1,45140%4$1,19574%10$1,19575%10$1,13603%6$1,13613%6$1,13623%6$1,13633%6$1,13643%6$1,13653%6$1,13663%6$1,40007%10$1,40008%10$1,16800%1$1,16801%1$1,16802%1$1,16803%1$1,16804%1$1,16805%1$1,16806%1$1,16811%1$1,16807%1$1,16808%1$1,16809%1$1,16810%1$1,16812%1$1,16819%1$1,16813%1$1,16814%1$1,16815%1$1,16816%1$1,16817%1$1,16818%1$1)
+#		 
+##################### 测试window_ok
+#block
+#	 ##1100706	\n你也是要来找睿奇的吗？\n但是要进入的话，要先缴交1000元的保证金。\n\n你确定要进入吗？
+#	 Window 1100706,YES,NO
+#	 	 Window_YES
+#	 	 	 ##1100707	\n那就请进吧！要把握时间哦！睿奇的脾气蛮大的，让他等太久的话，他会把你赶出来的哦！另外还要一件事，最近里面的小偷、骗子蛮多的，凡事请多小心。
+#	 	 	 Window 1100707,OK
+#		 	 AddGold 1
+#		 	 Warp 0,32767,120,120
+#			 		 	 	 
+#		 Window_NO 
+#################### 给周年庆 采集系物品
+#block 
+#	 GiveLeak1Item 45177,40
+#	 GiveLeak1Item 45178,40
+#	 GiveLeak1Item 45179,40
+#	 
+#	 GiveLeak1Item 45174,40
+#	 GiveLeak1Item 45175,40
+#	 GiveLeak1Item 45176,40
+#
+
+#################### 给传说中勇者称号
+#block 
+#	 EndEvent 5 = 1
+#	 CheckTitle 
+#################### 给积分
+#block 
+#	 GiveLeak1Item 45171,100
+#	 
+
+##################### 测试 script 中呼叫战斗
+#block
+###	  Encount 3|0,32767,120,120||0|||||0|10007|||||||||
+#	  ##进入鬼月 亡灵骑士战斗
+#	  Encount 3|0,32610,68,6||0|||||0|102000|6|0|6|0|6|0| 
+	 
+#################### 测试 window next 能否加判断
+#block Group ==1
+#	 Window 1100001,OK
+#	 giveleak1iteam 45001
+#	 AddGold 1
+#	 Warp 0,32767,120,120
+#
+#block Group >1
+#	 LeaveGroup 	 
+
+################### 测试给物品看看队员可不可以拿到(结果不行)
+#block 
+#	 GiveLeak1Item 40011
+	 
+
+################### 给宠物
+#block 
+#	 GivePet 832
+#	 GivePet 833
+#	 GivePet 834
+##■pet01
+#  1.虎人(没一级,12)
+#  2.猫妖(没一级,12)
+#  3.罗刹
+#  4.猫人
+#  5.恶魔猫
+
+#  6.妖狐
+#  11.穴熊
+#  12.赤熊
+#  13.北极熊
+#  14.赤目黑熊(没一级,28)
+
+##■pet02
+#  15.猫熊
+#  21.大地鼠
+#  22.恶梦鼠(没一级,20)
+#  23.火焰鼠
+#  24.宝石鼠
+
+#  25.水蓝鼠
+#  31.地狱看门犬
+#  33.地狱猎犬
+#  34.地狱妖犬
+#  101.僵尸
+
+##■pet03
+#  102.丧尸
+#  103.食尸鬼
+#  104.腐尸
+#  105.木乃伊
+#  111.骷髅战士(没一级,20)
+#
+#  112.血骷髅
+#  113.地狱骷髅(没一级,25)
+#  114.武装骷髅
+#  121.幽灵
+#  122.鬼灵(没一级,19)
+
+##■pet04
+#  123.亡灵
+#  124.死灵
+#  201.小石像怪
+#  202.使魔
+#  203.水蓝鸟魔
+#
+#  204.小恶魔
+#  205.迷你石像怪
+#  206.丘比特
+#  211.石像怪
+#  213.堕天使(没一级,60)
+
+#■pet05
+#  214.恶魔(没一级,60)
+#  241.小蝙蝠
+#  242.扫把蝙蝠
+#  243.迷你蝙蝠
+#  244.水果蝙蝠(没一级,3)
+#
+#  251.大蝙蝠
+#  252.巨蝙蝠
+#  253.海蝙蝠
+#  254.胖蝙蝠
+#  255.兔耳蝙蝠
+
+#■pet06
+#  301.蓝蝎
+#  302.红蝎
+#  303.黄蝎
+#  304.杀手蝎
+#  312.异型蜂
+#
+#  313.虎头蜂(没一级,15)
+#  314.黄蜂
+#  315.死亡蜂
+#  321.螳螂
+#  322.杀人螳螂
+
+#■pet07
+#  323.赤目螳螂
+#  324.死灰螳螂
+#  325.致命螳螂
+#  331.土蜘蛛
+#  332.水蜘蛛
+#
+#  333.火蜘蛛
+#  334.风蜘蛛
+#  401.树精
+#  402.死亡树精
+#  403.黄金树精
+
+#■pet08
+#  404.惨白树精
+#  405.冰冷树精
+#  411.妖草
+#  412.蔓陀罗草
+#  413.妖花
+#
+#  414.人魔草(没一级,25)
+#  421.绿色口臭鬼
+#  422.黄色口臭鬼
+#  423.蓝色口臭鬼
+#  424.红色口臭鬼
+
+#■pet09
+#  431.凶暴仙人掌
+#  432.武术仙人掌
+#  433.兔耳仙人掌
+#  434.印地安仙人掌
+#  435.火焰舞者
+#
+#  501.史莱姆
+#  502.液态史莱姆
+#  503.果冻史莱姆(没一级,22)
+#  504.布丁史莱姆
+#  511.火精
+
+#■pet10
+#  512.风精
+#  513.水精
+#  514.地精
+#  521.顽皮炸弹
+#  522.宝贝炸弹
+#
+#  523.大炸弹(没一级,25)
+#  524.漂浮炸弹
+#  525.丸子炸弹
+#  601.血腥之刃
+#  603.火焰之刃
+
+#■pet11
+#  611.吓人箱(没一级,6)
+#  612.兔耳吓人箱(没一级,6)
+#  613.红魔吓人箱(没一级,6)
+#  614.蓝魔吓人箱(没一级,6)
+#  615.绿蛙吓人箱(没一级,6)
+#
+#  616.纯白吓人箱(没一级,6)
+#  621.冰怪
+#  631.恶魔螃蟹
+#  632.水晶螃蟹
+#  633.铁剪螃蟹
+
+#■pet12
+#  634.黄金螃蟹
+#  701.蜥蜴战士
+#  702.蜥蜴斗士
+#  711.大地翼龙
+#  712.寒冰翼龙
+#
+#  721.地龙蜥
+#  722.水龙蜥
+#  723.火龙蜥
+#  724.风龙蜥
+#  801.哥布林
+
+#■pet13
+#  802.红帽哥布林
+#  803.火焰哥布林
+#  811.巨人
+#  814.亚特拉斯巨神
+#  831.鸟人
+#
+#  832.幻歌妖
+#  833.狠毒鸟人
+#  834.烈风鸟人
+################### 六级品收集任务 降耐久
+#block
+#		 	 SetDur 56,-200
+#		 	 SetDur 57,-200
+#		 	 SetDur 854,-200
+#		 	 SetDur 852,-200
+#		 	 SetDur 1657,-200
+#		 	 SetDur 1658,-200
+#		 	 SetDur 2055,-200
+#		 	 SetDur 2052,-200
+#		 	 SetDur 2859,-200
+#		 	 SetDur 2850,-150
+#		 	 SetDur 3251,-150
+#		 	 SetDur 3253,-150
+#		 	 SetDur 2461,-400
+#		 	 SetDur 2462,-400
+#		 	 SetDur 3654,-200
+#			 SetDur 3651,-200
+#           		 SetDur 4054,-200
+#           		 SetDur 4051,-200
+#          		 SetDur 4459,-200
+#          		 SetDur 4458,-200
+#          		 SetDur 4855,-200
+#          		 SetDur 4853,-200
+#          		 SetDur 5250,-400
+#          		 SetDur 5253,-400
+#          	 	 SetDur 5653,-200
+#          	 	 SetDur 5654,-200
+#          		 SetDur 6054,-200
+#          		 SetDur 6052,-200
+#          		 SetDur 6458,-200
+#          		 SetDur 6457,-200
+
+################### 六级品收集任务测试 给物品
+#block
+#		 	 GiveLeak1Item 56
+#		 	 GiveLeak1Item 57
+#		 	 GiveLeak1Item 854
+#		 	 GiveLeak1Item 852
+#		 	 GiveLeak1Item 1657
+#		 	 GiveLeak1Item 1658
+#		 	 GiveLeak1Item 2055
+#		 	 GiveLeak1Item 2052
+#		 	 GiveLeak1Item 2859
+#		 	 GiveLeak1Item 2850
+#		 	 GiveLeak1Item 3251
+#		 	 GiveLeak1Item 3253
+#		 	 GiveLeak1Item 2461 
+#		 	 GiveLeak1Item 2462
+#		 	 GiveLeak1Item 3654
+#		 	 GiveLeak1Item 3651
+#           		 GiveLeak1Item 4054  
+#           		 GiveLeak1Item 4051
+#          		 GiveLeak1Item 4459 
+#          		 GiveLeak1Item 4458
+#          		 GiveLeak1Item 4855  
+#          		 GiveLeak1Item 4853
+#          		 GiveLeak1Item 5250  
+#          		 GiveLeak1Item 5253
+#          	 	 GiveLeak1Item 5653  
+#          	 	 GiveLeak1Item 5654
+#          		 GiveLeak1Item 6054  
+#          		 GiveLeak1Item 6052
+#        		 GiveLeak1Item 6458  
+#          		 GiveLeak1Item 6457
+#          		 #GiveLeak1Item 15205  
+#          		 GiveLeak1Item 15211
+#          		 GiveLeak1Item 15611
+
+################### 五级品收集任务测试 降耐久
+#block 
+#		 	setdur  48,-200
+#		 	 #GiveLeak1Item  42
+#		 	setdur  842,-200
+#		 	 #GiveLeak1Item  841
+#		 	setdur  1649,-200
+#		 	 #GiveLeak1Item  1643
+#		 	setdur  2042,-200
+#		 	 #GiveLeak1Item  2049
+#		 	setdur  2843,-200
+#		 	 #GiveLeak1Item  2848
+#		 	setdur  3241,-150
+#		 	 #GiveLeak1Item  3245
+#		 	setdur  2450,-400 
+#		 	 #GiveLeak1Item  2449
+#		 	setdur  3642,-200
+#		 	 #GiveLeak1Item  3640
+#           		setdur  4040,-200  
+#           		 #GiveLeak1Item  4042
+#          		setdur  4442,-200 
+#          		 #GiveLeak1Item  4444
+#          		setdur  4845,-200  
+#          		 #GiveLeak1Item  4844
+#          		setdur  5242,-400  
+#          		 #GiveLeak1Item  5244
+#          	 	setdur  5640,-200  
+#          	 	 #GiveLeak1Item  5641
+#          		setdur  6042,-200  
+#          		 #GiveLeak1Item  6040
+#          		setdur  6447,-200  
+#          		 #GiveLeak1Item  6449
+#          		 #GiveLeak1Item  15209  
+#          		 #GiveLeak1Item  15210
+#          		 #GiveLeak1Item  15610
+
+####################测试 五级品收集任务
+#block 
+#		 	 GiveLeak1Item  48
+#		 	 #GiveLeak1Item  42
+#		 	 GiveLeak1Item  842
+#		 	 #GiveLeak1Item  841
+#		 	 GiveLeak1Item  1649
+#		 	 #GiveLeak1Item  1643
+#		 	 GiveLeak1Item  2042
+#		 	 #GiveLeak1Item  2049
+#		 	 GiveLeak1Item  2843
+#		 	 #GiveLeak1Item  2848
+#		 	 GiveLeak1Item  3241
+#		 	 #GiveLeak1Item  3245
+#		 	 GiveLeak1Item  2450 
+#		 	 #GiveLeak1Item  2449
+#		 	 GiveLeak1Item  3642
+#		 	 #GiveLeak1Item  3640
+#           		 GiveLeak1Item  4040  
+#           		 #GiveLeak1Item  4042
+#          		 GiveLeak1Item  4442 
+#          		 #GiveLeak1Item  4444
+#          		 GiveLeak1Item  4845  
+#          		 #GiveLeak1Item  4844
+#          		 GiveLeak1Item  5242  
+#          		 #GiveLeak1Item  5244
+#          	 	 GiveLeak1Item  5640  
+#          	 	 #GiveLeak1Item  5641
+#          		 GiveLeak1Item  6042  
+#          		 #GiveLeak1Item  6040
+#          		 GiveLeak1Item  6447  
+#          		 #GiveLeak1Item  6449
+#          		 GiveLeak1Item  15209  
+#          		 #GiveLeak1Item  15210
+#          		 GiveLeak1Item  15610
+
+#################### 测试 四级品降耐久
+#block
+#		 	 setdur 37,-200
+#		 	 #setdur 39
+#		 	 setdur 830,-200
+#		 	 #setdur 838
+#		 	 setdur 1635,-200
+#		 	 #setdur 1634
+#		 	 setdur 2035,-200
+#		 	 #setdur 2038
+#		 	 setdur 2832,-200
+#		 	 #setdur 2834
+#		 	 setdur 3235,-200
+#		 	 #setdur 3230
+#		 	 setdur 2446,-300 
+#		 	 #setdur 2447
+#		 	 setdur 3632,-200
+#		 	 #setdur 3635
+#           		 setdur 4032,-200  
+#           		 #setdur 4031
+#          		 setdur 4430,-200 
+#          		 #setdur 4434
+#          		 setdur 4834,-200  
+#          		 #setdur 4833
+#          		 setdur 5233,-300  
+#          		 #setdur 5231
+#          	 	 setdur 5630,-200  
+#          	 	 #setdur 5631
+#          		 setdur 6033,-200  
+#          		 #setdur 6031
+#          		 setdur 6437,-200  
+#          		 #setdur 6434
+
+
+#####################测试 四级品收集任务
+#block
+#
+#		 	 giveleak1item 37
+#		 	 #giveleak1item 39
+#		 	 giveleak1item 830
+#		 	 #giveleak1item 838
+#		 	 giveleak1item 1635
+#		 	 #giveleak1item 1634
+#		 	 giveleak1item 2035
+#		 	 #giveleak1item 2038
+#		 	 giveleak1item 2832
+#		 	 #giveleak1item 2834
+#		 	 giveleak1item 3235
+#		 	 #giveleak1item 3230
+#		 	 giveleak1item 2446 
+#		 	 #giveleak1item 2447
+#		 	 giveleak1item 3632
+#		 	 #giveleak1item 3635
+#           		 giveleak1item 4032  
+#           		 #giveleak1item 4031
+#          		 giveleak1item 4430 
+#          		 #giveleak1item 4434
+#          		 giveleak1item 4834  
+#          		 #giveleak1item 4833
+#          		 giveleak1item 5233  
+#          		 #giveleak1item 5231
+#          	 	 giveleak1item 5630  
+#          	 	 #giveleak1item 5631
+#          		 giveleak1item 6033  
+#          		 #giveleak1item 6031
+#          		 giveleak1item 6437  
+#          		 #giveleak1item 6434
+#          		 giveleak1item 15207  
+#          		 #giveleak1item 15208
+#          		 giveleak1item 15609
+
+###################测试改变色盘
+#block 
+#	 ##棕色色调
+#	 ChangePal 14,180 
+
+#	 ##正常
+#	 ChangePal 0,180 
+
+#	 ##清晨
+#	 ChangePal 1,180 
+
+#	 ##晚上
+#	 ChangePal 2,180 	 
+
+#	 ##白天
+#	 ChangePal 3,180 	 
+
+#	 ##绿色调
+#	 ChangePal 4,180 	 
+	
+#	 ##靛色(暗蓝色)
+#	 ChangePal 5,180 	 	 
+
+#	 ##暗蓝色(更暗)
+#	 ChangePal 6,180 	 	 
+
+#	 ##紫红色
+#	 ChangePal 7,180 	 	 	 
+
+#	 ##橙色
+#	 ChangePal 8,180 	 	 	 
+
+#	 ##淡橙色
+#	 ChangePal 9,180 	 	 	 
+	 
+#	 ##淡绿色
+#	 ChangePal 10,180 	 	 	 	 
+
+#	 ##暗绿色
+#	 ChangePal 11,180 	 	 	 	 
+
+#	 ##淡黑色
+#	 ChangePal 12,180 	 	 	 	 
+
+#	 ##暗黑色**
+#	 ChangePal 13,180 	 	 	 	 
+	 
+#	 ##棕色色调**(回忆过去)
+#	 ChangePal 14,180 	 	 	 	 	 
+
+#	 ##灰色色调
+#	 ChangePal 15,180 	 	 	 	 	 	 
+
+#	 ##灰色杂点、模糊特效**
+#	 ChangePal 16,180 	 	 	 	 	 	 
+
+#	 ##黄色杂点、模糊特效**
+#	 ChangePal 17,180 	 	 	 	 	 	 
+
+#	 ##黑色杂点、模糊特效**
+#	 ChangePal 18,180 	
+
+#	 ##全黑**
+#	 ChangePal 19,180 		 
+
+#	 ##全白描边**
+#	 ChangePal 20,180 		 	 
+
+#	 ##灰色描边
+#	 ChangePal 21,180 		 	 
+
+#	 ##淡蓝色 模糊
+#	 ChangePal 22,180 		 	 
+
+#	 ##米黄色模糊杂点
+#	 ChangePal 23,180 		 	 
+	 
+#	 ##正常
+#	 ChangePal 24,180 		 	 	 
+	 
+#	 ##正常	
+#	 ChangePal 25,180 		 	 	 	 
+	 
+###################测试多重warp
+#block 
+#	 Warp 0,32767,120,120,0,30180,32,43
+#	 
+
+####################测试 字串 != 比对
+#################### 字串 马屁精
+#block Item 40057 >=1 && StrCmpChat == 1100240
+#	 addgold 1
+#	 
+#################### 字串 洛可可
+#block Item 40057 >=1 && StrCmpChat == 1100237
+#	 addgold 2
+#
+#################### 不输入字串
+#block Item 40057 >=1
+#	 AddGold -1	 
+#
+#################### 字串 不是 马屁精
+#block Item 40057 >=1 && StrCmpChat != 1100240
+#	 AddGold 3	 	 	 
+
+
+
+###字串测试 @n @c @h
+#block StrCmpChat == 1599995
+	 ##输入玩家的id @n
+#	 ##1599996	@n测试	1
+#	 Window 1599996,NEXT 
+	 ##字串居中
+#	 ##1599997	@c测试	1
+#	 Window 1599997,NEXT 
+#	 ##1599998	@h测试	1
+#	 Window 1599996,NEXT 
+#
+###给黄螳、绿螳、黄蜂
+#block 
+#	 GivePet 323
+#	 GivePet 321
+#	 GivePet 314
+	 
+##测试 王宫职阶以上
+#block Rank >=3
+#	 AddGold 1
+#block 
+#	 AddGold -1	 
+	 
+##给测试水晶
+#block
+#	 GiveLeak1Item 44444
+#	 GiveLeak1Item 55555
+
+##给4铜20印度轻木(造剑材料)
+#block 
+#	 
+#	 ##圣魔石
+#         GiveLeak1Item 40057 
+#	 ##冰原之晶
+#	 GiveLeak1Item 40054
+#	 GiveLeak1Item 9611,4
+#	 GiveLeak1Item 10000,20
+#	 ##给铜
+#	 GiveLeak1Item 9611,4
+#	 GiveLeak1Item 10400,20
+
+##给忠诚药水
+#block 
+#	 giveleak1item 40053,5
+#	 giveleak1item 40059,5
+#	 giveleak1item 40060,5
+
+##给料理(青椒肉丝、亲子井)
+#block 
+#	Giveleak1item 15206
+# 	Giveleak1item 15208
+# 	giveleak1item 15205
+ 	
+# 	Giveleak1item 40056
+# 	Giveleak1item 40061
+# 	giveleak1item 40062
+ 	
+ 	
+
+##给祈祷耳饰
+#block Level >=1
+#	 GiveLeak1Item 18236
+
+##给封印卡
+#block Level >=1
+#	 GiveLeak1Item 14479,20
+
+##测试 Endwindow
+#block Level >=1
+#	 AddGold 1	
+#	 EndWindow 1599999
+#	 AddGold 10 ##这一行不会执行
+
+
+##测试对话框字串排版
+#block Level >=1
+#	 Window 1599999,NEXT
+
+##测试 拥有技能检查(料理3级以上) 
+#block SkillLevel 215 >3
+#	 AddGold 1	 
+#
+#block Level >1
+#	 AddGold 10
+
+##测试 豪腕商人 钱的判断
+#block Gold >= 1500 && Gold < 2000
+#	 AddGold 1	 
+#
+#block Gold >= 2000 
+#	 AddGold 2
+#	 
+#block Gold < 1500 	
+#	 AddGold 15
+	 
+##测试 执行顺序
+#	 
+#block level>10
+#	 AddGold 10	 
+#	 
+#block level>1
+#	 AddGold 1
+#
+
+##测试 所持金钱
+#block Gold == 1865
+#	 AddGold 2
+
+
+##测试 随机给物品 %机率 $个数
+#block level>1
+# 	 killLeak1Item 18310,10
+#	 killLeak1Item 15202,10
+#	 GiveLeak1Item(18310%3$1,15202%1$1)
+
+	
+## 测试物品交换(数量不同)
+#block level>1
+#	 AddGold 1	 		
+
+#block Item 10402 ==20 && ItemCreateTime >1
+#	 AddGold 1
+#	 
+#block Item 10402 ==20 && ItemCreateTime <1
+#	 AddGold -2	 
+	
+#block Item 18211 >= 40
+#	GiveLeak1Item 18211,20	#鹿皮
+#	killleak1item 18211,40
+#	GiveLeak1Item 10402,20	#毛
+
+
+##测试 视窗跳跃
+##沟田5
+
+##PREV_00:
+	 
+##	 Window 60264,SELECT[1]_100,SELECT[2]_100,SELECT[3]_100,CANCEL
+
+
+##SELECT[1]_100:
+	 
+##	 Window 990214,OK,PREV_00
+##SELECT[2]_100:
+	 
+##	 Window 990215,OK,PREV_00
+##SELECT[3]_100:
+	 
+##	 Window 990216,OK,PREV_00
+
+###测试 字串比对
+#
+#block StrCmpChat == 1999903
+#	 AddGold 3
+#	 EndWindow 1100009
+
+#block StrCmpChat != 1999903
+#	 AddGold -2
+#	 Window 1100002,NEXT
+	 		
+ 
+##测试多重 window_yes
+#block Level>=1
+#	 ##1100322	\n什么？幽绪？没错，就是他救了我，我一直想向他道谢，只是真的没有勇气再去一次。
+#	 Window 1100322,YES,NO 
+#	 	 Window_YES Level >10
+#	 	 	 AddGold 10 
+#	 	 Window_YES Level >1
+#	 	 	 AddGold 1
+#	 	 	 
+#		 Window_NO 
+#		 	 AddGold -9										 	 	 
+
+##测试window
+#block level>=1
+	  
+	 ##\n\n仁慈的旅行者啊！\n意倾听我的故事，答应我的请求吗?
+##	Window 1100001,YES,NO
+#	 	 Window_NO
+#	 	 	 ##真是不好意思,打扰你了!
+#	 	 	 EndWindow 1100009
+#		 Window_YES 
+#		 	 ##\n\n在这个与外隔绝的村中，有二个和我从小一起玩到大的好朋友，一个是次郎、另一个是花子，我们彼此之间意气相投，无所不谈，于是三个人就结拜成为兄妹。\n	8
+#			 ##\n\n只是到了成年以后，我们两个男人都同时爱上了义妹花子。我身为大哥，只好默默的退出，成全他们两个，于是我就一个人出外旅行经商，希望能忘了这件事情，又过了几年，我终于能衣锦还乡，功成名就的回来了，也因而继承了村长的位置。\n	8
+#			 ##\n\n二弟他看了之后很羡慕，于是便不顾小妹的反对，毅然决然的离开了，并留下了一年之约，说他将在一年后回来结婚与义妹花子结婚，没想到之后三年过去了，他依然没有回来。\n	8
+#			 ##\n\n小妹伤心的想要结束自己的生命，就在此时我终于忍不住，向她告白了，我说我从没有放弃过爱她的念头，并告诉她，我愿意等她，保护她一辈子，或许是我的诚意终于打动了她，她并没有再作傻事了。\n	8
+#			 ##\n\n一年后之后，或许小妹认为二弟已经死了，或者是被我的诚意所打动，小妹终于愿意嫁给我了，之后我们过的非常快乐。\n	8
+#			 ##\n\n但是，二弟他……他终于还是回来了！他当上了魔军第二部队的首领光荣的回来了，回来想跟小妹结婚！然而他没想到我们居然结婚了，于是便抓走了小妹！\n		 	 	 	  
+#			 Window 1100002,NEXT
+#		  	 Window 1100003,NEXT,PREV
+#	  		 Window 1100004,OK,CANCEL 
+#	  		 Window 1100005,OK,CANCEL 
+#	  		 Window 1100006,OK,CANCEL 
+#	   		 Window 1100007,OK,CANCEL 
+	  
+#	  GiveLeak1Item 37777,2		#测试加敏材料
+#         KillItem 18211,20		
+#	  GiveLeak1Item 18211,20	#鹿皮
+#	  GiveLeak1Item 10400,20	#麻
+#	  GiveLeak1Item 10401,20	#木棉
+#	  GiveLeak1Item 10402,20	#毛
+
+################### 测试随机传送 ###################
+##	 Warp 0,9002,129,129,0,9002,135,137,0,9002,130,142,0,9002,123,136
+	 

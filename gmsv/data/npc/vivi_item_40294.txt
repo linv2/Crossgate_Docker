@@ -1,0 +1,7 @@
+#####不可思议系列三：恶梦#####
+##有水桶 神子
+block Item 40294 >= 1 && Item 40295 >= 1
+	 KillItemall 40294
+	 KillItemall 40295
+	 GiveLeak1Item (40296%1$1)
+	 

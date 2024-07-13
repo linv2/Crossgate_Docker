@@ -1,0 +1,34 @@
+##
+#Øø¡õ°×ºÌÓÀĞş©jÆ¹¼şµ©©x¨âó¸±Õ©k
+#
+
+##############©xÒı·Ö¶ÆÖĞ©x#################
+#…í?åÃ
+block Itemcreatetime 18879 <= 2880
+#·¸ÌïÓÀºëåÃ
+#block Itemcreatetime 18879 <= 2
+
+	EndWindow 206117,OK
+
+##############  ÖÍÄş©x##############
+#…í?åÃ
+block Itemcreatetime 18879 >= 2881 && Itemcreatetime 18879 <= 10080
+#·¸ÌïÓÀºëåÃ
+#block Itemcreatetime 18879 >= 3 && Itemcreatetime 18879 <= 5
+
+	Window 206120,OK
+	Window_OK
+	KillItem 18879,1,(206111)
+	Encount 3|||0|||||0|20012|||||||||
+
+##############©xÔŞ¾®ÔÈĞ×©x################
+#…í?åÃ
+block Itemcreatetime 18879 >= 10081
+#·¸ÌïÓÀºëåÃ
+#block Itemcreatetime 18879 >= 6
+
+	Window 206116,OK
+	Window_OK
+	KillItem 18879,1,(206113)
+
+

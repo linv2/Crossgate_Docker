@@ -1,0 +1,596 @@
+##生产采集系三阶
+##npc位置4410,40,18
+##魔法大学,第一回合主考官
+
+##########﹛允匹卞仿件弁失永皿仄化中月缜谛互扔禾□玄及凶户卞侳凶桦宁﹛##########
+#朹湛’侂填戏遣烟缜谛﹜仿件弁A﹜弘伙□皿
+#block Job >= 200 && Job <= 349 && Jobrank >= 3 && Group >= 2 && EndEvent 91 == 1
+#	#\n\n﹛楝反允匹卞豢迕琼缜谛及凤伞魂董卞宁伞仄化中月方丹分互﹜引分仿件弁失永皿毛绊凶仄化中卅中缜谛及扔禾□玄卞侳凶及井友〝\n﹛手仄公丹卅日﹜YES及示正件毛瓷仄卅今中﹝き戚魂董及莘桦卞?壬仄化丐仆方丹﹝
+#	Window 17015
+
+#	Window_YES Job >= 200 && Job <= 369 && Jobrank >= 3 && Group >= 2 && EndEvent 91 == 1
+#	Warp 0,4414,1,8
+
+#	Window_NO
+
+#譬咥阁’泔管阁﹜仿件弁A﹜弘伙□皿
+#block Job >= 350 && Job <= 369 && Jobrank >= 3 && Group >= 2 && EndEvent 91 == 1
+#	#\n\n﹛楝反允匹卞豢迕琼缜谛及凤伞魂董卞宁伞仄化中月方丹分互﹜引分仿件弁失永皿毛绊凶仄化中卅中缜谛及扔禾□玄卞侳凶及井友〝\n﹛手仄公丹卅日﹜YES及示正件毛瓷仄卅今中﹝き戚魂董及莘桦卞?壬仄化丐仆方丹﹝
+#	Window 17015
+
+#	Window_YES Job >= 200 && Job <= 369 && Jobrank >= 3 && Group >= 2 && EndEvent 91 == 1
+#	Warp 0,4415,29,9
+
+#	Window_NO
+
+#膜咥’椎烂’对执’仿件弁A﹜弘伙□皿
+#block Job >= 370 && Job <= 409 && Jobrank >= 3 && Group >= 2 && EndEvent 91 == 1
+#	#\n\n﹛楝反允匹卞豢迕琼缜谛及凤伞魂董卞宁伞仄化中月方丹分互﹜引分仿件弁失永皿毛绊凶仄化中卅中缜谛及扔禾□玄卞侳凶及井友〝\n﹛手仄公丹卅日﹜YES及示正件毛瓷仄卅今中﹝き戚魂董及莘桦卞?壬仄化丐仆方丹﹝
+#	Window 17015
+
+#	Window_YES Job >= 370 && Job <= 409 && Jobrank >= 3 && Group >= 2 && EndEvent 91 == 1
+#	Warp 0,4414,1,8
+
+#	Window_NO
+
+##生产采集系三阶
+##npc位置4410,40,18
+##魔法大学,第一回合主考官
+
+
+#block Job >= 450 && Job <= 479 && Jobrank >= 3 && Group >= 2 && EndEvent 91 == 1
+#	#\n\n﹛楝反允匹卞豢迕琼缜谛及凤伞魂董卞宁伞仄化中月方丹分互﹜引分仿件弁失永皿毛绊凶仄化中卅中缜谛及扔禾□玄卞侳凶及井友〝\n﹛手仄公丹卅日﹜YES及示正件毛瓷仄卅今中﹝き戚魂董及莘桦卞?壬仄化丐仆方丹﹝
+#	Window 17015
+
+#	Window_YES Job >= 450 && Job <= 479 && Jobrank >= 3 && Group >= 2 && EndEvent 91 == 1
+#	Warp 0,4414,1,8
+
+#	Window_NO
+
+
+##########战斗系排除##########
+##普通战斗系
+block Job >= 0 && Job <= 169
+	#\n\n这里是生产系工人们的试验场。只要能通过试验就得到入仕王宫的资格。\n对身为战斗系的你而言，这里对你是一点用处也没有。	8
+
+	EndWindow 11963
+##医生护士
+block Job >= 430 && Job <= 449
+	#\n\n这里是生产系工人们的试验场。只要能通过试验就得到入仕王宫的资格。\n对身为战斗系的你而言，这里对你是一点用处也没有。	8
+	EndWindow 11963
+##炼金术士
+block Job >= 1000 && Job <= 1009
+	#\n\n这里是生产系工人们的试验场。只要能通过试验就得到入仕王宫的资格。\n对身为战斗系的你而言，这里对你是一点用处也没有。	8
+	EndWindow 11963
+
+
+##########生产系,资深以上铸剑工&&８ｃ剑&&技能八级&&声望足够(贤者)#########
+
+block Job >= 203 && Job < 209 && Fame >= 29000 && Skilllevel 200 >= 8 && Item 73 >= 1
+	#\n\n嗯．．．你把东西拿来了吗？让我瞧瞧．．．
+	Window 11935,YES,NO
+
+	Window_NO
+	#\n\n嗯？你不是来接受测验的啊？没事别吵我好吗？
+	EndWindow 11936
+
+	Window_YES Group < 2
+	#\n\n嗯？你的同伴好像有点少．．．\n多找几个人再来吧！
+	EndWindow 11937
+
+	Window_YES Job >= 203 && Job < 209 && Fame >= 29000 && Skilllevel 200 >= 8 && Item 73 >= 1
+	#\n\n恭喜你！你通过了第一次的试验。那就往第二个会场出发吧！请带队者按下确认按钮，其他人别按喔！	8
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+##########生产系,资深以上造斧工&&８ｃ斧&&技能八级&&声望足够(贤者)#########
+
+block Job >= 213 && Job <= 219 && Fame >= 29000 && Skilllevel 201 >= 8 && Item 875 >= 1
+	Window 11935,YES,NO
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 213 && Job <= 219 && Fame >= 29000 && Skilllevel 201 >= 8 && Item 875 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上造枪工&&８ｃ枪&&技能八级&&声望足够(贤者)#########
+block Job >= 223 && Job <= 229 && Fame >= 29000 && Skilllevel 202 >= 8 && Item 1672 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 223 && Job <= 229 && Fame >= 29000 && Skilllevel 202 >= 8 && Item 1672 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上造弓工&&８ｃ弓&&技能八级&&声望足够(贤者)#########
+block Job >= 233 && Job <= 239 && Fame >= 29000 && Skilllevel 203 >= 8 && Item 2070 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 233 && Job <= 239 && Fame >= 29000 && Skilllevel 203 >= 8 && Item 2070 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上造杖工&&８ｃ杖&&技能八级&&声望足够(贤者)#########
+block Job >= 243 && Job <= 249 && Fame >= 29000 && Skilllevel 204 >= 8 && Item 2484 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 243 && Job <= 249 && Fame >= 29000 && Skilllevel 204 >= 8 && Item 2484 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上回力镖&&８ｃ镖&&技能八级&&声望足够(贤者)#########
+block Job >= 253 && Job <= 259 && Fame >= 29000 && Skilllevel 205 >= 8 && Item 2870 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 253 && Job <= 259 && Fame >= 29000 && Skilllevel 205 >= 8 && Item 2870 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上小刀工&&８ｃ小刀&&技能八级&&声望足够(贤者)#########
+block Job >= 263 && Job <= 269 && Fame >= 29000 && Skilllevel 206 >= 8 && Item 3270 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 263 && Job <= 269 && Fame >= 29000 && Skilllevel 206 >= 8 && Item 3270 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上头盔工&&８ｃ头盔&&技能八级&&声望足够(贤者)#########
+block Job >= 273 && Job <= 279 && Fame >= 29000 && Skilllevel 207 >= 8 && Item 3675 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 273 && Job <= 279 && Fame >= 29000 && Skilllevel 207 >= 8 && Item 3675 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上帽子工&&８ｃ帽&&技能八级&&声望足够(贤者)#########
+block Job >= 283 && Job <= 289 && Fame >= 29000 && Skilllevel 208 >= 8 && Item 4075 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 283 && Job <= 289 && Fame >= 29000 && Skilllevel 208 >= 8 && Item 4075 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+##########生产系,资深以上铠工&&８ｃ铠甲&&技能八级&&声望足够(贤者)#########
+block Job >= 293 && Job <= 299 && Fame >= 29000 && Skilllevel 209 >= 8 && Item 4475 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 293 && Job <= 299 && Fame >= 29000 && Skilllevel 209 >= 8 && Item 4475 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+	
+##########生产系,资深以上裁缝&&８ｃ衣&&技能八级&&声望足够(贤者)#########
+block Job >= 303 && Job <= 309 && Fame >= 29000 && Skilllevel 210 >= 8 && Item 4877 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 303 && Job <= 309 && Fame >= 29000 && Skilllevel 210 >= 8 && Item 4877 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上袍工&&８ｃ袍&&技能八级&&声望足够(贤者)#########
+block Job >= 313 && Job <= 319 && Fame >= 29000 && Skilllevel 211 >= 8 && Item 5275 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 313 && Job <= 319 && Fame >= 29000 && Skilllevel 211 >= 8 && Item 5275 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上靴工&&８ｃ靴&&技能八级&&声望足够(贤者)#########
+block Job >= 323 && Job <= 329 && Fame >= 29000 && Skilllevel 212 >= 8 && Item 5675 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 323 && Job <= 329 && Fame >= 29000 && Skilllevel 212 >= 8 && Item 5675 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+
+##########生产系,资深以上鞋工&&８ｃ鞋&&技能八级&&声望足够(贤者)#########
+block Job >= 333 && Job <= 339 && Fame >= 29000 && Skilllevel 213 >= 8 && Item 6075 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 333 && Job <= 339 && Fame >= 29000 && Skilllevel 213 >= 8 && Item 6075 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上盾工&&８ｃ盾&&技能八级&&声望足够(贤者)#########
+block Job >= 343 && Job <= 349 && Fame >= 29000 && Skilllevel 214 >= 8 && Item 6473 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 343 && Job <= 349 && Fame >= 29000 && Skilllevel 214 >= 8 && Item 6473 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4414,1,8
+
+##########生产系,资深以上厨师&&哈密瓜&&技能八级&&声望足够(贤者)#########
+block Job >= 353 && Job <= 359 && Fame >= 29000 && Skilllevel 215 >= 8 && Item 15230 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 353 && Job <= 359 && Fame >= 29000 && Skilllevel 215 >= 8 && Item 15230 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4415,29,9
+
+##########生产系,正职药师&&深蓝九号&&技能八级&&声望足够(贤者)#########
+block Job >= 363 && Job <= 369 && Fame >= 29000 && Skilllevel 216 >= 8 && Item 15630 >= 1
+	Window 11935,YES,NO
+
+	Window_NO
+	EndWindow 11936
+
+	Window_YES Group < 2
+	EndWindow 11937
+
+	Window_YES Job >= 363 && Job <= 369 && Fame >= 29000 && Skilllevel 216 >= 8 && Item 15630 >= 1
+	Window 11938,OK
+
+	Window_OK
+	Warp 0,4415,29,9
+
+##########  仿件弁?蔺爵及桦宁﹛##########
+#武防制造师&厨师与药师  资深以上,未取过配方单者
+block Job >= 200 && Job <= 369 && Jobrank >= 2 && NowEvent 91 == 0
+	
+	#\n\n若你想得到"御用"级的资格，就必需要突破这个学校的试验。
+	#若你能做出这张单子上的东西我就给你过。不过要做这单子上的东西是需要特殊材料的。
+	#若没有采集系、修理、鉴定的工人们和生产系互相合作的话，想做出来是绝不可能的。
+	#好了，自己打开技能栏看看吧！	8
+
+	Window 11931,OK
+        ##武防制造师&厨师与药师  资深以上,未取过配方单  技能已达八级者
+        #资深以上铸剑工&8Ｃ剑配方
+	Window_OK Job >= 203 && Job <= 209 && Fame >= 29000 && Skilllevel 200 >= 8
+	GiveRecipe 20
+	NowEvent 91 = 1
+	
+	#\n\n这个试验是想看看一个团体是否能合作无间的配合。请非战斗系的人们组队挑战。
+	#首先请把单子上写的．．．分散在魔术大学四处的材料找出来。
+	#收集完毕后以你的技能做出单子上写的东西给我看吧！	
+
+	EndWindow 11932
+	#资深以上造斧工&8Ｃ斧配方
+	Window_OK Job >= 213 && Job <= 219 && Fame >= 29000 && Skilllevel 201 >= 8
+	GiveRecipe 80
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上造枪工&8Ｃ枪配方
+	Window_OK Job >= 223 && Job <= 229 && Fame >= 29000 && Skilllevel 202 >= 8
+	GiveRecipe 140
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上造弓工&8Ｃ弓配方
+	Window_OK Job >= 233 && Job <= 239 && Fame >= 29000 && Skilllevel 203 >= 8
+	GiveRecipe 200
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上造杖工&8Ｃ杖配方	
+	Window_OK Job >= 243 && Job <= 249 && Fame >= 29000 && Skilllevel 204 >= 8
+	GiveRecipe 260
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上投掷武器工&8Ｃ镖配方
+	Window_OK Job >= 253 && Job <= 259 && Fame >= 29000 && Skilllevel 205 >= 8
+	GiveRecipe 320
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上小刀工&8Ｃ小刀配方
+	Window_OK Job >= 263 && Job <= 269 && Fame >= 29000 && Skilllevel 206 >= 8
+	GiveRecipe 380
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上头盔工&8Ｃ头盔配方
+	Window_OK Job >= 273 && Job <= 279 && Fame >= 29000 && Skilllevel 207 >= 8
+	GiveRecipe 440
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上帽子工&8Ｃ帽子配方
+	Window_OK Job >= 283 && Job <= 289 && Fame >= 29000 && Skilllevel 208 >= 8
+	GiveRecipe 500
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上铠甲工&8Ｃ铠甲配方
+	Window_OK Job >= 293 && Job <= 299 && Fame >= 29000 && Skilllevel 209 >= 8
+	GiveRecipe 560
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上裁缝工&8Ｃ衣配方
+	Window_OK Job >= 303 && Job <= 309 && Fame >= 29000 && Skilllevel 210 >= 8
+	GiveRecipe 620
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上长袍工&8Ｃ袍配方
+	Window_OK Job >= 313 && Job <= 319 && Fame >= 29000 && Skilllevel 211 >= 8
+	GiveRecipe 680
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上制靴工&8Ｃ靴配方
+	Window_OK Job >= 323 && Job <= 329 && Fame >= 29000 && Skilllevel 212 >= 8
+	GiveRecipe 740
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上制鞋工&8Ｃ鞋配方
+	Window_OK Job >= 333 && Job <= 339 && Fame >= 29000 && Skilllevel 213 >= 8
+	GiveRecipe 800
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上造盾工&8Ｃ盾配方
+	Window_OK Job >= 343 && Job <= 349 && Fame >= 29000 && Skilllevel 214 >= 8
+	GiveRecipe 860
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上厨师&8Ｃ哈密瓜配方
+	Window_OK Job >= 353 && Job <= 359 && Fame >= 29000 && Skilllevel 215 >= 8
+	GiveRecipe 920
+	NowEvent 91 = 1
+	EndWindow 11932
+	#资深以上药剂师&8Ｃ深蓝九号配方
+	Window_OK Job >= 363 && Job <= 369 && Fame >= 29000 && Skilllevel 216 >= 8
+	GiveRecipe 970
+	NowEvent 91 = 1
+	EndWindow 11932
+	##已资深的
+	Window_OK JobRank >= 3 && Fame >= 29000
+	#\n\n你已经通过了御用工人们的考验．．．你是想来帮那些还没过关的人吗？
+	#\n收集必要的材料，请生产系的人制造后再拿来给我看吧！。	0
+
+	EndWindow 17021
+	#声望不够
+	Window_OK Fame < 29000
+	#\n\n看来你想升下一阶还得多加点名声。加油吧！
+	EndWindow 11934
+	#技能未满
+	Window_OK
+	#\n\n看来你想升下一阶还得多磨练一下自己的技术。
+	EndWindow 11933
+
+#服务系 修理工与鉴定士
+block Job >= 370 && Job <= 429 && Jobrank >= 2
+	#\\n\n你是来接受试验的吗？
+	Window 11939,OK
+	#资深武修工,声望已达贤者以上,技能八级
+	Window_OK Job == 373 && Fame >= 37000 && Skilllevel 217 >= 8
+	
+	#\n\n若你想得到"御用"级的资格，就必需要突破这个学校的试验。\n
+	#首先就让我看看你能否与制造武器．防具工、厨师、药剂师、采取系工人们互相合作。
+	#去找出已经符合升阶条件的武器．防具制造工吧！\n他们一定也很需要你的。	
+
+	EndWindow 11940
+	#资深防修工,声望已达贤者以上,技能八级
+	Window_OK Job == 383 && Fame >= 37000 && Skilllevel 218 >= 8
+	EndWindow 11940
+	#资深鉴定士,声望已达贤者以上,技能八级
+	Window_OK Job == 393 && Fame >= 37000 && Skilllevel 219 >= 8
+	EndWindow 11940
+	##资深刻印师,声望已达贤者以上,技能八级
+	Window_OK Job == 403 && Fame >= 37000 && Skilllevel 220 >= 8
+	EndWindow 11940
+	#侦探
+	Window_OK Job == 413
+	##\n\n真是不好意思，仙人和侦探因为跟其他生产系的人不一样，所以我们无法帮你。
+	##不过我们找来了真正的侦探和仙人来当主考官。去职员室看看吧！	1
+	EndWindow 20851
+	#仙人
+	Window_OK Job == 423
+	EndWindow 20851
+
+	Window_OK JobRank >= 3 && Fame >= 37000
+	##\n\n你已经通过了御用工人们的考验．．．你是想来帮那些还没过关的人吗？\n
+	#收集必要的材料，请生产系的人制造后再拿来给我看吧！。	0
+
+	EndWindow 17021
+
+	Window_OK Fame < 37000
+	##\n\n看来你想升下一阶还得多加点名声。加油吧！
+	EndWindow 11934
+
+	Window_OK
+	##\n\n看来你想升下一阶还得多磨练一下自己的技术。
+	EndWindow 11933
+
+#采集系
+block Job >= 450 && Job <= 479 && Jobrank >= 2 
+	#\n\n你是来接受试验的吗？
+	Window 11939,OK
+
+	Window_OK Job == 453 && Fame >= 25000 && Skilllevel 225 >= 8
+	#\n\n若你想得到"御用"级的资格，就必需要突破这个学校的试验。
+	#\n首先就让我看看你能否与制造武器．防具工、厨师、药剂师、采取系工人们互相合作。
+	#去找出已经符合升阶条件的武器．防具制造工吧！\n他们一定也很需要你的。	8
+
+	EndWindow 11941
+
+	Window_OK Job == 463 && Fame >= 25000 && Skilllevel 226 >= 8
+	EndWindow 11941
+
+	Window_OK Job == 473 && Fame >= 25000 && Skilllevel 227 >= 8
+	EndWindow 11941
+
+	Window_OK JobRank >= 3 && Fame >= 25000
+	#\n\n你已经通过了御用工人们的考验．．．你是想来帮那些还没过关的人吗？\n收集必要的材料，
+	#请生产系的人制造后再拿来给我看吧！。	0
+	EndWindow 17021
+
+	Window_OK Fame < 25000
+	EndWindow 11934
+
+	Window_OK
+	EndWindow 11933
+##纺织工
+block Job >= 1010 && Job <= 1020 && Jobrank >= 2 
+	#\n\n你是来接受试验的吗？
+	Window 11939,OK
+
+	Window_OK Job == 1013 && Fame >= 25000 && Skilllevel 2000 >= 8
+	#\n\n若你想得到"御用"级的资格，就必需要突破这个学校的试验。
+	#\n首先就让我看看你能否与制造武器．防具工、厨师、药剂师、采取系工人们互相合作。
+	#去找出已经符合升阶条件的武器．防具制造工吧！\n他们一定也很需要你的。	8
+
+	EndWindow 11941
+
+	
+	Window_OK JobRank >= 3 && Fame >= 25000
+	#\n\n你已经通过了御用工人们的考验．．．你是想来帮那些还没过关的人吗？\n收集必要的材料，
+	#请生产系的人制造后再拿来给我看吧！。	0
+	EndWindow 17021
+
+	Window_OK Fame < 25000
+	EndWindow 11934
+
+	Window_OK
+	EndWindow 11933
+##########生产系##########
+block Job >= 200 && Job < 350 && JobRank >= 3 && NowEvent 91 == 0
+	#\\n\n你已经通过了御用工人们的考验。还要再挑战一次吗？
+	Window 17022,YES,NO
+	Window_YES Job >= 200 && Job < 350 && JobRank >= 3 && NowEvent 91 == 0 && EndEvent 91 == 1
+	EndEvent 91 = 0
+	#\n\n好，那就拿着第一次试验的作成物再跟我交谈吧！
+	EndWindow 17023
+
+	Window_YES
+	#\n\n好，那就拿着第一次试验的作成物再跟我交谈吧！
+	EndWindow 17023
+
+	Window_NO
+
+##########侦探仙人##########
+block Job >= 410 && Job <= 429 && Jobrank >= 2
+	#你是来接受试验的吗？
+	Window 11939,OK
+
+
+	Window_OK Job == 413 && Fame >= 37000 && Skilllevel 221 >= 8
+	#n\n真是不好意思，仙人和侦探因为跟其他生产系的人不一样，所以我们无法帮你。
+	#不过我们找来了真正的侦探和仙人来当主考官。去职员室看看吧！	1
+	EndWindow 20851
+
+	Window_OK Job == 423 && Fame >= 37000 && Skilllevel 222 >= 8
+	#n\n真是不好意思，仙人和侦探因为跟其他生产系的人不一样，所以我们无法帮你。
+	#不过我们找来了真正的侦探和仙人来当主考官。去职员室看看吧！	1
+	EndWindow 20851
+
+	Window_OK Fame < 37000
+	#看来你想升下一阶还得多加点名声。加油吧！
+	EndWindow 11934
+
+	Window_OK
+	#看来你想升下一阶还得多磨练一下自己的技术。
+	EndWindow 11933
+
+##########  丐化反引日卅中桦宁﹛##########
+block
+	#这里是给想入仕王宫的工人们所做的试验会场。只要能及格的话，就能得到资格。	
+	EndWindow 11942

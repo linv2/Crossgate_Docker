@@ -1,0 +1,9 @@
+####■爱的船夫1(1050936
+
+block
+	 ##1051845	\n\n\n\n  要前往真情花园吗？
+	 Window 1051845,YES,NO
+	 Window_NO
+	 Window_YES 
+	 	 Warp 0,32326,13,24
+	 

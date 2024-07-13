@@ -1,0 +1,16 @@
+#####地鼠彩券产生器	din_item_47281.txt	
+###产出彩券
+
+##空间不足
+block Item 46404 >=1 && ItemSpace <5
+	 ##1050874	\n\n\n\n@c物品栏至少要有五个空位。	1
+	 EndWindow 1050874
+
+##GM专用
+block Item 46404 >=1
+	 GiveLeak1Item 19574,5
+
+##一般	 
+block 
+	 ##1746920	GM专用！违者斩立决！	12
+	 EndWindow 1746920

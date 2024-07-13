@@ -1,0 +1,63 @@
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+block globalFlag38 == 1 || globalFlag39 == 1
+
+			endwindow 3202404
+
+		#\n\n﹛夫″\n﹛手﹜手丹﹜仇仇卞反\n﹛卅卞手卅中氏匹允″\n﹛市件矛件仄化仁分今中″″
+
+
+block globalFlag37 == 1 && Item 14664 >= 1 && Item 620017 >= 1
+
+			window 3202405,next
+
+		#\n\n﹛仇木反仇木反\n﹛﹍菅今蜗侬毛儅勾乒用﹎迋﹝\n﹛卅月幻升﹜尕箫仄化中月骭颬及锉毛\n﹛歹介歹介﹜云儅切赡中凶歹仃匹允卅﹝
+
+			window 3202406,ok
+
+		#\n\n﹛今﹜升丹冗﹜\n﹛云骚曰票今中引六﹝
+
+			Window_ok
+
+				LeaveGroup
+
+				Warp 0,59714,77,197
+
+block globalFlag37 == 1 && Item 620017 >= 1
+
+			window 3202407,next
+
+		#\n\n﹛仇日﹜曩引木″\n﹛眸毛拑骰允月氏元扎友□方﹝
+
+			window 3202408,next
+
+		#\n\n﹛″″\n﹛﹍菅今蜗侬毛儅勾乒用﹎迋匹\n﹛中日匀仄扎中引仄凶井″″″\n﹛仇木反厘庍撩斪谯仄引仄凶″
+
+			endwindow 3202409
+
+		#\n\n﹛仄井仄﹜漆蜇箕﹜\n﹛满质反朼玛酦匹仄化\n﹛中仁日﹍菅今蜗侬毛儅勾乒用﹎迋匹手\n﹛豢迕轾五互拑中及匹反\n﹛云骚仄允月歹仃卞反＿＿
+
+
+block globalFlag37 == 1 && Item 14664 >= 1
+
+	window 3202410,next
+
+		#\n\n﹛氏〝\n﹛卅氏分﹜骭颬及锉毛\n﹛螂户今六日木化月票匀羹井〝
+
+	endwindow 3202411
+
+		#\n\n﹛母丢分﹜母丢分\n﹛乒用分仃儅匀化仁月卅氏化\n﹛卅氏化棉?仃卅氏分〝\n﹛漆﹜仇仇元扎﹜\n﹛褐邰卅掸董毛仄化月氏分兮〝\n﹛中仁日赚缟及谛棉匹手﹜\n﹛涌由旦卅氏化匹五友□方﹝
+
+
+
+
+block
+
+	endwindow 3202412
+
+		#\n\n﹛窒分〝筑迋反〝\n﹛窖木﹜市巨伊″\n﹛云蟆互竣卞允月方丹卅仇午反\n﹛窒手卅中″
+
+

@@ -1,0 +1,10 @@
+#
+#梓及⑷螃
+#
+
+block
+#\n\n\n\n@c﹛市市永泛平瓜扔□奶
+ Window 21298,Yes,No
+  Window_Yes
+   encount 2|0,15600,8,10||0|||||0|5048|||||||||
+  Window_NO

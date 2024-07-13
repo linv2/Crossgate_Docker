@@ -1,0 +1,24 @@
+####2004七夕情人节_爱情限时专送包裹#####
+
+##男角色
+block Item 46263 >= 1 && BBImage >= 100000 && BBImage <= 100173
+	 KillItem 46263
+	 GiveLeak1Item (46264%1$1,46266%1$1)  
+block Item 46263 >= 1 && BBImage >= 105000 && BBImage <= 105173
+	 KillItem 46263
+	 GiveLeak1Item (46264%1$1,46266%1$1)  
+block Item 46263 >= 1 && BBImage >= 106000 && BBImage <= 106173
+	 KillItem 46263
+	 GiveLeak1Item (46264%1$1,46266%1$1)  
+	 
+##女角色
+block Item 46263 >= 1 && BBImage >= 100250 && BBImage <= 100423
+	 KillItem 46263
+	 GiveLeak1Item (46265%1$1,46267%1$1)  
+block Item 46263 >= 1 && BBImage >= 105250 && BBImage <= 105423
+	 KillItem 46263
+	 GiveLeak1Item (46265%1$1,46267%1$1)  
+block Item 46263 >= 1 && BBImage >= 106250 && BBImage <= 106423
+	 KillItem 46263
+	 GiveLeak1Item (46265%1$1,46267%1$1)  
+	 

@@ -1,0 +1,20 @@
+#PUK3_main3
+#
+#
+#∑•°ı√Û∆Ωÿ®°ı∆§
+
+block
+
+		Localcount1 = Random 2,0
+		
+		
+		if Localcount1 == 1
+		
+			warp 0,59761,32,99
+		
+		else
+		
+			warp 0,59761,83,129
+		
+		Endif
+		

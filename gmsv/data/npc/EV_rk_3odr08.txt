@@ -1,0 +1,20 @@
+#Öþ¼òÁ¢Øø±¾¼þÐþ
+
+#
+block NowEvent 119 == 1 || NowEvent 120 == 1
+	Window 23033,Next
+	Window 23034,Next
+	Window 23035,Next
+	Window 23036,Next
+	Window 23037,OK
+		Window_OK ItemSpace == 0
+			Window 23038,Next
+			Window 23039,Next
+			Window 23040,OK
+		Window_OK
+			GiveItem 16431,1
+			LeaveGroup
+			Warp 0,43900,18,58
+
+block
+	EndWindow 23249,OK

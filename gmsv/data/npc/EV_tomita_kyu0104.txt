@@ -1,0 +1,23 @@
+#＞平亘旦泛及翘＝ミ嘻NPC﹛??巟鼹﹛凌001
+#
+#﹛﹛﹛镂箕朹敢及摒
+
+###﹛狪仄井仃日木凶午五
+
+block
+
+	LocalCount1 = Random 2,0
+
+	If LocalCount1 == 1
+		EndWindow 3200753
+		#\n\n﹛翘赢及笮反仇及晓分﹝\n﹛仁木什木手撩斪及卅中方丹卞卅﹝
+		EndBlock
+
+	else
+		EndWindow 3200754
+		#\n\n﹛仇仇匹反谛手乒件旦正□手覆羁分﹝\n﹛公木毛侉木月卅方﹝
+		EndBlock
+
+	endif
+
+

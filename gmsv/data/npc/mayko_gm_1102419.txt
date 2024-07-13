@@ -1,0 +1,66 @@
+#1109755	\n\n\n\n@c真是的，怎么钓不到好东西呢？	1
+#1109756	\n\n\n\n@c那丫头要你来找我，她要放弃了吗？？	1
+#1109757	\n\n　　　　你要帮她也可以，\n　　　　你拿条我可以跟孙子炫耀的鱼，\n　　　　我就告诉你她想知道的事	1
+#1109758	\n\n\n\n@c竹夹鱼？这不够看啦！	  11601
+#1109759	\n\n\n\n@c螃蟹？这会穿帮啦！	12412
+#1109760	\n\n\n\n@c伊势虾？这会穿帮啦！	12416
+#1109761	\n\n\n\n@c海胆？这会穿帮啦！	12417
+#1109762	\n\n\n\n@c鱼翅？这会穿帮啦！	 12418
+#1109763	\n\n\n\n@c鳖？这会穿帮啦！	 12419
+#1109764	\n\n\n\n@c石鲷鱼？这不够看啦！	  11204
+#1109765	\n\n\n\n@c大黑虾？这不够看啦！	  11306
+#1109766	\n\n\n\n@c星鳗？我孙子不喜欢吃鳗鱼！	 11600
+#1109767	\n\n\n\n@c鲑鱼！！这太好了！	  11309
+#1109768	\n\n\n　　　　那小丫头想知道的事，都写在这里，\n　　　　你拿去给她吧。	1
+#1109769	\n\n\n\n@c这下子小鬼该夸奖我的钓鱼技术了吧～～	1
+#1109770	\n\n\n\n@c哈～哈～哈～小鬼该夸奖我的钓鱼技术了吧～～	1
+#香桩的信物40876
+#雨慈的形容40877
+#竹隐的迷题40878
+#竹隐的书信40879
+#雨慈的书信40880
+#香桩的书信40881
+
+block Item 40881>0
+	 EndWindow 1109770	
+block Item 40880>0
+	 EndWindow 1109770	
+block Item 40879>0
+	 EndWindow 1109770	 
+
+block Item 40878>0 && Item 11309>0
+	 KillItem 40878,1
+	 KillItem 11309,1
+	 GiveLeak1Item 40879,1
+	 Window 1109767,NEXT
+	 Window 1109768,NEXT
+	 EndWindow 1109769	 
+block Item 40878>0 && Item 11600>0
+	 EndWindow 1109766
+block Item 40878>0 && Item 11306>0
+	 EndWindow 1109765
+block Item 40878>0 && Item 11203>0
+	 EndWindow 1109764
+block Item 40878>0 && Item 12419>0
+	 EndWindow 1109763
+block Item 40878>0 && Item 12418>0
+	 EndWindow 1109762
+block Item 40878>0 && Item 12417>0
+	 EndWindow 1109761	 
+block Item 40878>0 && Item 12416>0
+	 EndWindow 1109760
+block Item 40878>0 && Item 12412>0
+	 EndWindow 1109759
+block Item 40878>0 && Item 11601>0
+	 EndWindow 1109758
+block Item 40878> 0
+	 EndWindow 1109757
+block Item 40877> 0
+	 Window 1109756,OK
+	 Window_OK
+	 KillItem 40877,1
+	 GiveLeak1Item 40878,1
+	 EndWindow 1109757
+
+block
+	 EndWindow 1109755

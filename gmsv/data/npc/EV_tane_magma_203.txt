@@ -1,0 +1,45 @@
+
+block
+
+
+
+LocalCount10 = random 5,0
+
+
+
+if  Xpos == 267 && Ypos == 238
+
+if LocalCount10 == 5
+	
+		warp 0,59678,116,95
+
+	else
+	
+		if LocalCount10 == 1
+		
+			warp 0,59678,272,95
+	
+		else
+			if LocalCount10 == 2
+
+				warp 0,59678,268,235
+
+			else
+				if LocalCount10 == 3
+
+					warp 0,59678,112,235
+
+				else
+					if LocalCount10 == 4
+
+						warp 0,59678,179,281
+
+					endif
+				endif
+			endif
+		endif
+	endif
+
+
+endif
+

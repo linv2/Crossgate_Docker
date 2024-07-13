@@ -1,0 +1,10 @@
+#
+#»û¼°Ï¶¿æ
+#
+
+block EndEvent 202 == 1
+	EndWindow 21880,OK
+
+block
+	EndEvent 202 = 1
+	CheckTitle

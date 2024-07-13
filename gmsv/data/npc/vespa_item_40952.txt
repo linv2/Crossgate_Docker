@@ -1,0 +1,34 @@
+###■逆星_鉴定师特殊掉落
+###■白金原石		每取出5组白金原石,耐久扣1
+
+ 
+
+ ####□矿工能使用
+block  Job >=471 && Job < 479
+	 ##1110254	\n\n是否想切割白金原石呢？
+	 Window 1110254,YES,NO
+	 	 Window_NO
+	 	 
+	 	  Window_YES ItemSpace < 5
+	 	 	 ##1051843	\n\n\n\n\n@c物品栏的空间不足。																																																																																																			
+			 EndWindow 1051843
+	 	 
+	 	 Window_YES Item 40952 >=2
+	 	 	 ##1110255	\n\n\n白金原石\n如果持有２个以上是无法使用的喔～
+			 EndWindow 1110255
+		 Window_YES Item 40952 ==1  && ItemDur 40952 ==1
+		 	 ##1110256	白金原石消失了。
+			 KillItem 40952,1,(1110256)
+			 GiveStackItem  9605,200
+			 
+		 Window_YES Item 40952 ==1 && ItemDur 40952 >1		 
+	 	 	 ##1110257	使用了白金原石。
+			  GiveStackItem  9605,200
+	 	 	 SetDur 40952,-1
+	 	 	 Message 1110257
+
+ ####□一般
+ block
+ 	 ##1110245	\n\n‘似乎只有矿工才能处理这块矿石！’	1
+	 EndWindow 1110245
+

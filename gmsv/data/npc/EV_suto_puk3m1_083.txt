@@ -1,0 +1,12 @@
+#
+#PUK3_Main1
+#
+#螃啖莘襟﹋玉伉巨皮﹌
+
+
+Block
+
+
+	GAEndWindow 3207011
+
+		#\n\n﹛酷杅丐曰引允引中﹝\n﹛螃反螃及澎卞方匀化﹜铵坱允月及心＿＿﹝

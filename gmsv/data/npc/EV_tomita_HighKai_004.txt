@@ -1,0 +1,24 @@
+#甩奶伊矛伙轾仃荼瞻豭﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛项柈敢﹋毡?﹌及摒
+
+###﹛毡及伤?妐踏毛赭儅
+block Item_631003 >= 1
+	GAWindow 3204548,OK
+
+		#\n\n﹛公及妐踏反﹜筑跤日卞反楮溢及卅中手及分﹝\n﹛窒及泙卞手峏凶卅中﹜跶切卞桩化卅今中﹝
+
+		Window_OK
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	GAWindow 3204549,OK
+
+		#\n\n﹛仇及壑钗反脱★及手及分﹝\n﹛锹澎互窒樊匹丐欠丹午﹜驯五鴃澎卞反今六氏″
+
+		Window_OK
+
+
+

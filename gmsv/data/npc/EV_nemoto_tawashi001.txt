@@ -1,0 +1,176 @@
+##########################
+# 庄仄中魂柈     by 漪呿 #
+# ←石□伉奴(杹?)←     #
+##########################
+
+### ＞斐朿及珃懔＝引凶反≦斐朿跳怀≧及惫寞毛赭儅
+block Item 622031 >= 1 || Have Title == 1116
+	GAEndWindow 3220172
+
+		#\n\n﹛丐日″仇氏卞切反﹝\n﹛引分赚缟及丢件汁互箫曰卅仁化匹允友□﹜\n﹛⑹五凶仁化手⑹仃卅中橇须卅氏匹允方□﹝\n﹛台午仄化反﹜ㄠざ匹手镀仁﹜\n﹛丐卅凶午葵毛岈屯化唾⑹仄凶中氏匹允仃升友□﹝
+
+### ＞脐衙及Ⅶ填＝毛赭儅
+block Leak1Item 18254 >= 1
+	GAEndWindow 3220173
+
+		#\n\n﹛丐日″丐卅凶互儅匀化中月及反﹜\n﹛≦脐衙及Ⅶ填≧匹反丐曰引六氏井〝\n﹛脱★反匹允友□﹜\n﹛公及樯聂仁及谛★卞只迕今木化中凶午中丹﹜\n﹛＞正伐扑＝卅月手及毛匹允友□﹜\n﹛仇及凛壑卞疯太赛日允屯仁\n﹛妘⑷仄化中月歹仃卅氏匹允方□﹝
+
+### ＞毡及据＝﹜＞敛及据＝互缭匀化中月
+block Item 622025 >= 1 && Item 622026 >= 1
+	GAWindow 3220174,NEXT
+
+		#\n\n﹛≦敛及据≧﹜≦毡及据≧\n﹛割井卞丐曰引允友﹝\n﹛公木匹反﹜愈詨及魂柈毛熬仃化赡五引允﹝
+	GAWindow3220175,YES,NO
+
+		#\n\n﹛愈詨及魂柈反﹜≦弥敏心及莱鹧≧卞中月ㄥ谛及\n﹛据谛及丹切﹜ㄤ谛卞カ户日木木壬宁伞匹允﹝\n﹛域蘸莱鹧及酦卞じ曰引允午﹜陆卞请月及反魂柈\n﹛互蔽弇允月井﹜旵滋仄凶桦宁及心午卅曰引允﹝\n﹛褥障蘸卅升反方欠仄中匹允井〝
+
+		Window_YES
+			GAWindow 3220176,OK
+
+		#\n\n﹛公木匹反﹜引凶詨幻升云莘中仄引仄斤丹﹝
+			
+				Window_OK Item 622025 < 1 || Item 622026 < 1
+					GAEndWindow 3220177
+
+		#\n\n﹛云支﹜据互箫曰引六氏友﹝
+
+				Window_OK
+					KillItem 622025,1
+					KillItem 622026,1
+					warp 0,59915,97,143
+					Endblock
+
+		Window_NO
+			GAEndWindow 3220178
+
+		#\n\n﹛公丹匹允井﹝\n﹛公木匹反褥障蘸互帮中引仄凶日\n﹛擘毛井仃化票今中友﹝
+
+### ＞敛及据＝及心毛赭儅
+block Item 622025 >= 1
+	GAEndWindow 3220179
+
+		#\n\n﹛云?木迋匹允﹝\n﹛引内反镕域及魂柈毛?仃日木引仄凶友﹝\n﹛镕き及魂柈反﹜丐卅凶及儅勾据午覆卞卅月﹜\n﹛≦毡及据≧毛云儅切卞卅匀凶杅毛\n﹛茧仄化仁分今中﹝\n﹛ㄡ勾及据互缭中引仄凶日﹜\n﹛引凶台及午仇欠尺五化票今中友﹝
+
+
+### ＞毡及据＝及心毛赭儅
+block Item 622026 >= 1
+	GAEndWindow 3220180
+
+		#\n\n﹛云?木迋匹允﹝\n﹛引内反镕域及魂柈毛?仃日木引仄凶友﹝\n﹛镕き及魂柈反﹜丐卅凶及儅勾据午覆卞卅月﹜\n﹛≦敛及据≧毛云儅切卞卅匀凶杅毛\n﹛茧仄化仁分今中﹝\n﹛ㄡ勾及据互缭中引仄凶日﹜\n﹛引凶台及午仇欠尺五化票今中友﹝
+
+
+### 晓筏动陆
+block
+	GAWindow 3220181,YES,NO
+
+		#\n\n﹛仇氏卞切反﹝\n﹛苇凶午仇欠﹜丐卅凶反佹莴樊及方丹匹允友﹝\n﹛剂仄﹜台及狪毛妏中化中五引六氏井〝
+
+		Window_NO
+			GAEndWindow 3220182
+
+		#\n\n﹛公丹匹允井＿＿﹝
+
+		Window_YES
+			GAWindow 3220183,NEXT
+
+		#\n\n﹛仇及壑钗反漆﹜午化手尕兜烂卅橇谪卞丐曰引允﹝﹛脱★及赚缟＿丐﹜中尹﹜台琼及崭毛潮月凶户卞﹜﹛恍侳毛苇月仇午及匹五月午中丹﹜\n﹛≦弥敏心及螃敢≧及豳撙互丐月樊毛茧仄化﹜\n﹛仇丹仄化佹莴樊及杅琼卞\n﹛擘毛井仃化荚匀化中月及匹允﹝
+
+			GAWindow 3220184,YES,NO
+
+		#\n\n﹛升丹匹仄斤丹﹜\n﹛丐卅凶手螃敢及豳撙互丐月井升丹井﹜\n﹛魂柈毛熬仃化心化反仁木引六氏井〝
+
+				Window_NO
+					GAEndWindow 3220185
+
+		#\n\n﹛公丹匹允井＿＿﹝\n﹛竣互轾中凶日﹜中勾匹手侳化仁分今中友﹝
+
+########## 裆平乓仿卅日﹜case1尺
+				Window_YES BBImage >= 100000 && BBImage <= 100173
+
+						GoToF case1
+
+				Window_YES BBImage >= 105000 && BBImage <= 105173
+
+						GoToF case1
+
+				Window_YES BBImage >= 106000 && BBImage <= 106173
+
+						GoToF case1
+
+				Window_YES BBImage >= 105500 && BBImage <= 105523 #爆弹师
+						GoToF case1
+
+				Window_YES BBImage >= 104460 && BBImage <= 104483 #台湾6.0 男性 卡卡西
+						GoToF case1
+
+				Window_YES BBImage >= 104490 && BBImage <= 104513 #台湾6.0 男性 草盏
+						GoToF case1
+
+				Window_YES BBImage >= 120124 && BBImage <= 120147 #台湾7.0 男性 寇纳斯
+						GoToF case1
+
+########## 辉平乓仿卅日case2尺
+				Window_YES BBImage >= 100250 && BBImage <= 100423
+
+						GoToF case2
+
+				Window_YES BBImage >= 105250 && BBImage <= 105423
+
+						GoToF case2
+
+				Window_YES BBImage >= 106250 && BBImage <= 106423
+
+						GoToF case2
+
+				Window_YES  BBImage >= 105525 && BBImage <= 105548  #纺织女
+						GoToF case2
+
+				Window_YES  BBImage >= 104400 && BBImage <= 104423  #台湾6.0 女性 莉莉丝
+						GoToF case2
+
+				Window_YES  BBImage >= 104430 && BBImage <= 104453  #台湾6.0 女性 亚纪公主
+						GoToF case2
+
+				Window_YES  BBImage >= 120100 && BBImage <= 120123  #台湾7.0 女性 阿娜蒂雅
+						GoToF case2
+
+########## 裆匹手辉匹手卅中
+				Window_YES
+					GAEndWindow 3220186
+
+		#\n\n﹛撩斪匹允互﹜\n﹛丐卅凶及岭帎毛?蝇仄井友月及匹允互＿＿﹝
+
+
+
+
+
+
+
+
+*case1*
+	GAWindow 3220187,NEXT
+
+		#\n\n﹛引内反镕域及魂柈毛熬仃化赡五引允﹝\n﹛魂柈反裆辉帎卞卅匀化云曰引仄化﹜裆及杅反\n﹛仇木井日垫匀化赡仁≦敛弥及魂柈≧毛褡心﹜\n﹛公及蕉遽卞中月据谛卞恘毛憎仄﹜\n﹛≦敛及据≧毛枃匀化五化仁分今中﹝
+
+	GAWindow 3220188,OK
+
+		#\n\n﹛公木匹反﹜痲⑷毛云笔曰仄引允﹝
+		Window_OK
+			LeaveGroup
+			warp 0,59752,208,315
+Endblock
+
+
+*case2*
+	GAWindow 3220189,NEXT
+
+		#\n\n﹛引内反镕域及魂柈毛熬仃化赡五引允﹝\n﹛魂柈反裆辉帎卞卅匀化云曰引仄化﹜辉及杅反﹜\n﹛仇木井日垫匀化赡仁≦毡弥及魂柈≧毛褡心﹜\n﹛公及蕉遽卞中月据谛卞恘毛憎仄﹜\n﹛≦毡及据≧毛枃匀化五化仁分今中﹝
+
+	GAWindow 3220190,OK
+
+		#\n\n﹛公木匹反﹜痲⑷毛云笔曰仄引允﹝
+		Window_OK
+			LeaveGroup
+			warp 0,59752,241,348
+Endblock
+

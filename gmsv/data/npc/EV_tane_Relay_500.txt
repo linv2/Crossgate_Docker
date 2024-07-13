@@ -1,0 +1,192 @@
+#伉伊□﹛甩伙穴﹛5及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+
+block Item 14630 >=1 && ItemCreateTime 14630 >= 31
+
+
+	Window 3201537,ok
+		#\n\n﹛检仄中﹜检仄中卅℅℅″″\n﹛匹手迍仃化月仄﹜累﹝
+	
+
+	Window_ok
+
+		KillItemall 14630
+		KillItemall 14631
+		KillItemall 607693
+		KillItemall 607694
+		KillItemall 607695
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && Item 607693 >=1 && Item 607694 >=1 && Item 607695 >=1 && ItemCreateTime 14630 <= 30
+
+	LocalCount2 = 10
+
+	Window 3201538,next
+		#\n﹛打□伙田瓦□\n\n﹛＞打□伙’??″″\n﹛﹛矛生﹜犯奴乒□伙玄’矛生″″\n﹛﹛任央奶瓜永甩泛件\n﹛﹛戊件弘仿民亘伊扑亦件℅＝
+
+	Window 3201539,next
+		#\n﹛弥毛棋月谛\n\n﹛＞坞午及雁钗瞬及翘﹜\n﹛﹛平亘旦泛卞方丹仇公﹝＝
+
+	Window 3201540,yes,no
+		#\n﹛打□伙田瓦□\n\n﹛＞反中﹜云勾井木今引℅\n﹛﹛坞尺及瞿曰坁反兮℅氏少缭匀化月友″″\n﹛﹛枃匀化手恌中〝＝
+
+	Window_yes Item 14630 == 0 || Item 14631 == 0 || Item 607693 == 0 || Item 607694 == 0 || Item 607695 == 0
+
+		EndWindow 3201541
+		#\n\n﹛箫曰卅中方〝
+
+
+	Window_yes
+
+		KillItemall 14630
+		KillItemall 14631
+		KillItemall 607693
+		KillItemall 607694
+		KillItemall 607695
+		GiveItem 14638,1
+
+	Window 3201542,next
+		#\n﹛打□伙田瓦□\n\n﹛＞反中﹜丐曰互午\n﹛﹛氏元扎﹜镀簧﹜绞仁弥及?杅卞℅℅″″\n﹛﹛丹曰扎″＝
+
+	Window 3201543,next
+		#\n﹛弥毛棋月谛\n\n﹛＞＿＿签卞陶票卞\n﹛﹛髑仆桩化凶分仃卞苇尹月互〝＝
+
+
+	Window 3201544,next
+		#\n﹛打□伙田瓦□\n\n﹛＞云匀切扎氏﹜称井中仇午竣卞仄允亢分方﹝\n﹛﹛公木午手﹜赶籣及燠及欐仄铙午域踝卞\n﹛﹛シ支仄凶杅互恌井匀凶匀仃〝＝
+
+	Window 3201545,next
+		#\n﹛弥毛棋月谛\n\n﹛＞?癫凶曰分卅丑﹜楝﹝＝
+
+	endWindow 3201546,next
+		#\n﹛弥毛棋月谛\n\n﹛＞丐丐﹜允心引六氏﹝\n﹛﹛操圴反﹜公仇及?中及互\n﹛﹛手丹云欐仄仄凶午合中引允﹝\n﹛﹛梧粟坁卅及匹引丑﹜仇氏卅手及匹﹝＝
+
+	Window_no
+
+
+		endWindow 3201547
+		#\n﹛打□伙田瓦□\n\n﹛＞\少℅″″窒仄卞侳凶及今℅℅＝
+
+
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && Item 607693 >=1  && Item 607694 >=1 && ItemCreateTime 14630 <= 30
+
+
+
+	Window 3201548,next
+		#\n\n﹛中支﹜愤坌﹜\n﹛褫旳凶日尺氏卅丑″″\n﹛丐午域勾支氏″丐午域勾″
+
+	Window 3201549,yes,no
+		#\n\n﹛匹﹜累毛疯挕萃谯仄方曰引允〝
+
+
+	Window_yes Item 14630 == 0
+
+		EndWindow 3201550
+		#\n\n﹛云累反〝
+
+	Window_yes
+
+		KillItemall 14630
+		GiveItem 14630,1
+
+		EndWindow 3201551
+		#\n\n﹛优诮″扑矛伉失捶竣药僎猾″\n﹛仇木匹﹜引凶\n﹛ㄢㄟ坌反厘暹屺﹝
+
+
+	Window_no
+
+
+		EndWindow 3201552
+		#\n\n﹛中中及〝\n﹛迍仃月方〝
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && Item 607693 >=1 && ItemCreateTime 14630 <= 30
+
+
+
+	Window 3201553,next
+		#\n\n﹛勾井﹜愤坌﹜谛及狪妏井氏匀化﹜\n﹛方仁蜕歹木月支欠〝″\n﹛镀聊亢支戊戊卞侳月及″
+
+	Window 3201554,yes,no
+		#\n\n﹛匹﹜伄及累﹜疯挕萃允月〝
+
+	Window_yes Item 14630 == 0
+
+		EndWindow 3201555
+		#\n\n﹛云累反〝
+
+
+	Window_yes
+
+		KillItemall 14630
+		GiveItem 14630,1
+
+		EndWindow 3201556
+		#\n\n﹛优诮″扑矛伉失捶竣药僎猾″\n﹛仇木匹﹜引凶\n﹛ㄢㄟ坌反厘暹屺﹝
+
+
+	Window_no
+
+
+		EndWindow 3201557
+		#\n\n﹛中中及〝\n﹛迍仃月方〝
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && ItemCreateTime 14630 <= 30
+
+
+	Window 3201558,next
+		#\n\n﹛勾井﹜籣酦﹜反仄斤曰允亢″\n﹛瞿曰坁﹜兮℅氏兮氏﹜\n﹛缭匀化卅中元扎氏″
+
+	Window 3201559,yes,no
+		#\n\n﹛伄及累﹜疯挕萃允月〝
+
+	Window_yes Item 14630 == 0
+
+		EndWindow 3201560
+		#\n\n﹛云累反〝
+
+
+	Window_yes
+
+		KillItemall 14630
+		GiveItem 14630,1
+
+		EndWindow 3201561
+		#\n\n﹛优诮″扑矛伉失捶竣药僎猾″\n﹛仇木匹﹜引凶\n﹛ㄢㄟ坌反厘暹屺﹝
+
+
+	Window_no
+
+
+		EndWindow 3201562
+		#\n\n﹛中中及〝\n﹛迍仃月方〝
+
+
+block Item 14631 >= 1
+
+
+	endWindow 3201563
+		#\n\n﹛伄及累反〝\n﹛戈分丐仄不不不℅℅℅″″
+
+
+
+###########﹛民仿扑拑﹛##############
+
+block
+
+		Window 3201564,next
+		#\n\n﹛今℅今℅及℅反﹜\n﹛今℅日﹜今日℅ｎ
+
+		endWindow 3201565
+		#\n\n﹛云切扎℅勿仃手℅﹜\n﹛今℅日﹜今日℅ｎ\n﹛云呏蛹匀凶方予﹝\n﹛仁允氏﹜簿手侳卅中方予＿＿﹝
+
+
+
+

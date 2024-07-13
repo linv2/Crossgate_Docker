@@ -1,0 +1,110 @@
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+block globalFlag40 == 0
+
+
+	GAWindow 3202413,next
+
+		#\n\n﹛云支云支﹜\n﹛楝午手丐欠丹樊互\n﹛仇氏卅棵签卅瑹卞窏匀化月卅氏化\n﹛云忆中什今分友之﹝
+
+	GAWindow 3202414,next
+
+		#\n\n﹛公丹分卅丑﹜\n﹛仇及抌赭井日请凶中卅日﹜\n﹛抌潮井日巨伙母□扔奶件毛\n﹛中仁勾井枃匀化侳化仁木卅中井卅丑﹝
+
+	GAWindow 3202415,ok
+
+		#\n\n﹛仇仇反域潘及击哗分井日友之﹜\n﹛示弁手方匀吊升卅仪毛仄化枃歹卅中蜃曰\n﹛澎踞仃匹五中卅中仄友之﹝\n﹛它弗弗弗永弗弗﹝
+
+	Window_ok
+
+	globalFlag40 = 1
+
+
+
+block	PItem 607682,0 >= 1 && PItem 607682,0 <= 6
+
+	GAWindow 3202416,next
+
+		#\n\n﹛丹℅氏﹜引分箫曰卅中友之﹝\n﹛手丹切斤匀午﹜\n﹛擦啦毛苇六化俓仄中卅丑﹝
+
+	GAWindow 3202417,next
+
+		#\n\n﹛中支丑﹜示弁卞元扎卅中方﹜\n﹛仇及抌匹戽匀化中月潜卞今﹜\n﹛?及袱第拑仄匹反请木卅中氏匹友﹝\n﹛鬼中仃升﹝丹仃仃仃匀仃﹝
+	
+	GAEndWindow 3202418
+
+		#\n\n﹛丐﹜公丹公丹﹜\n﹛冞卞﹍擦啦﹎毛欐允午五反﹜\n﹛燮⑵及谛卞引午户化﹜匹云凑中允月方﹝\n﹛伐伉市件煌遥反﹜愤坌日匹支匀化仁木﹝\n﹛俇戈方匀﹝
+
+
+
+block	PItem 607682,0 >= 7 && Item 607682 >= 7
+
+	GAWindow 3202419,next
+
+		#\n\n﹛方仁螂户凶友﹝\n﹛恌中方﹜恌中方﹝\n﹛丹仃仃仃仃﹝
+
+	
+	GAWindow 3202420,yes,no
+
+		#\n\n﹛??﹜??﹜\n﹛仇仇井日请仄化丐仆方丹元扎卅中井﹝
+	
+	
+	
+
+		Window_yes Item 607682 < 7
+
+			GAEndWindow 3202421
+
+		#\n\n﹛丐木〝\n﹛擦啦互蛹匀切扎匀凶友之﹝\n﹛丹仃仃仃﹝
+
+		Window_yes
+		
+			GAWindow 3202422,ok
+
+		#\n\n﹛氏元扎﹜\n﹛云凶匀仄扎匹﹝\n﹛垫五燮反℅聂坌﹜\n﹛葭及壑钗℅分午﹜丹氏﹜合丹方﹝\n﹛它弗弗弗弗弗﹝
+			
+			Window_ok
+
+
+			GAglobalFlag36 = 1
+			KillItem 607682,7
+			Warp 0,59500,243,70
+
+		Window_no
+
+			GAEndWindow 3202423
+
+		#\n\n﹛卅氏分﹜\n﹛引分仇氏卅质毛\n﹛觙赽匀化中凶中及井中〝\n﹛引丑﹜鞅户卅中仃升友﹝
+
+
+
+
+
+block	PItem 607682,0 >= 7 && Item 607682 < 7
+
+	GAWindow 3202424,next
+
+		#\n\n﹛孔戈﹜\n﹛仇木分仃丐木壬\n﹛仇仇井日请月卞反蜗坌井卅﹝
+
+
+	GAEndWindow 3202425
+
+		#\n\n﹛元扎﹜鬼中仃升﹜\n﹛燮⑵及甲玄卞\n﹛巨伙母□扔奶件毛引午户化仁木卅中井卅〝\n﹛公丹仄化井日﹜引凶﹜狪仄井仃化仁木方﹝\n﹛冞反丢件玉仁今中及盟中分井日今﹝
+
+	
+
+block
+
+
+	GAWindow 3202426,next
+
+		#\n\n﹛云支云支﹜\n﹛引分﹜仇氏卅午仇欠毛\n﹛丹欠丹欠仄化月及井中〝
+
+	GAendWindow 3202427
+
+		#\n\n﹛镀中午仇欠\n﹛抌潮井日巨伙母□扔奶件毛\n﹛中仁勾井枃匀化侳化仁木卅中井卅丑﹝
+

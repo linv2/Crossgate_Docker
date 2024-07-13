@@ -1,0 +1,13 @@
+#??
+
+block Item 16367 >= 1
+	EndWindow 22247,OK
+
+block
+	Window 22248,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16367 >= 1
+			EndWindow 22247,OK
+		Window_OK
+			GiveItem 16367,1

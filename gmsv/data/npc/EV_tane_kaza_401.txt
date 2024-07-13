@@ -1,0 +1,162 @@
+
+
+block Item 607654 >= 1
+
+			Window 3201062,yes,no
+		#\n\n﹛卅氏元扎〝辞玾毛喃匀凶及井〝\n﹛升木﹜躯仄化心〝
+
+				window_yes
+					
+
+						Window 3201063,ok
+		#\n\n﹛孔戈﹜\n﹛喃木杴毛丐歹六化﹜迍港卞斥亘永午＿＿\n﹛幻木﹜跶匀凶冗中
+
+						window_ok Item 607654 >= 1
+						KillItem 607654,1
+						giveItem 15318,1
+
+						window_ok
+
+				window_no
+
+					EndWindow 3201064
+		#\n\n﹛喃木凶辞玾毛儅切忷仁及反﹜\n﹛梧粟互鬼中冗中﹝
+
+
+block
+
+
+			if LocalCount0 == 5
+
+				LocalCount0 = random 2,0
+
+				if LocalCount0 == 1
+
+#		ㄡ荚杴动嫦
+
+
+#					Window 3201065,next
+		#\n\n﹛中支﹜ゲ中反趟中冗﹝\n﹛今允互卞﹝
+					Window 3006794,next
+
+
+#					Window 3201066,ok
+		#\n\n﹛仄勾仇中支勾元扎及丹﹝\n﹛仇木支月井日﹜窖木﹝
+					Window 3006795,ok
+
+					window_ok Item 607631 >= 1
+
+					endWindow 3201067
+		#\n\n﹛卅氏元扎﹜手丹﹜儅匀午月及井﹝\n﹛元扎丐﹜支日氏﹝
+
+
+					window_ok LocalCount10 == 1
+
+					endWindow 3201068
+		#\n\n﹛卅氏元扎﹜手丹﹜儅匀午月及井﹝\n﹛元扎丐﹜支日氏﹝
+
+
+					window_ok ItemSpace >= 1
+
+					LocalCount0 = 0
+
+					LocalCount10 = 1
+					
+					GiveItem 607631,1
+
+
+
+
+					window_ok ItemSpace == 0
+
+#					Window 3201069
+		#\n\n﹛卅氏元扎﹜\n﹛卅氏手﹜儅化氏匹反卅中井
+					endWindow 3006796
+
+
+				else
+
+					LocalCount0 = 0
+
+
+#					Window 3201070,next
+		#\n\n﹛引丑﹜浔怗心凶中卅手氏元扎﹝
+					Window 3006797,next
+
+
+#					EndWindow 3201071
+		#\n\n﹛ゲ中午仇欠卞﹜峏匀化月及互﹝
+					EndWindow 3006798
+
+
+
+				endif
+
+
+
+			else
+
+#			域荚杴
+
+
+				if Item 607600 >= 1
+
+
+					LocalCount0 = 5
+					Window 3201072,next
+		#\n\n﹛引丑﹜浔怗心凶中卅手氏元扎及﹝
+#					Window 3006797,next
+
+
+#					EndWindow 3201073
+		#\n\n﹛ゲ中午仇欠卞﹜峏匀化月及互﹝
+					EndWindow 3006798
+
+				else
+
+
+
+#					Window 3201074,next
+		#\n\n﹛卅氏元扎〝
+					Window 3006799,next
+
+
+
+#					Window 3201075,next
+		#\n\n﹛引丑﹜六匀井仁侳凶氏元扎\n﹛仇木匹手﹜支欠丹井及﹝
+					Window 3006800,next
+
+
+				
+#					Window 3201076
+		#\n\n﹛毡中哗帼及报及瓖匹\n﹛手丹域勾及螃毛苇月及手恌中烦董元扎欠﹝
+					Window 3006801,ok
+
+
+					window_ok ItemSpace >= 1
+
+					LocalCount0 = 5
+					GiveItem 607600,1
+
+
+					window_ok ItemSpace == 0
+
+#					Window 3201077
+		#\n\n﹛儅切坁互中匀天中及方丹元扎及﹝
+					endWindow 3006802
+
+				endif
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

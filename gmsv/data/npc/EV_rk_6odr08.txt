@@ -1,0 +1,57 @@
+#???
+
+#????????
+block NowEvent 113 == 1
+	Window 22468,Next
+	Window 22469,Yes,No
+		Window_Yes
+			Window 22470,OK
+				Window_OK
+					NowEvent 128 = 0
+					EndEvent 128 = 1
+					LeaveGroup
+					Warp 0,35003,26,37
+		Window_No
+			Window 22471,OK
+				Window_OK
+					EndEvent 128 = 0
+					NowEvent 128 = 1
+					LeaveGroup
+					Warp 0,35003,26,37
+
+#????????
+block NowEvent 114 == 1
+	Window 22468,Next
+	Window 22469,Yes,No
+		Window_Yes
+			Window 22470,OK
+				Window_OK
+					NowEvent 128 = 0
+					EndEvent 128 = 1
+					LeaveGroup
+					Warp 0,35003,26,37
+		Window_No
+			Window 22471,OK
+				Window_OK
+					EndEvent 128 = 0
+					NowEvent 128 = 1
+					LeaveGroup
+					Warp 0,35003,26,37
+#
+block
+	Window 22472,Yes,No
+		Window_Yes
+			Window 22473,OK
+				Window_OK
+					EndEvent 128 = 1
+					EndEvent 129 = 1
+					LeaveGroup
+					Warp 0,33000,386,331
+		Window_No
+			Window 22474,Next
+			Window 22475,OK
+				Window_OK
+					NowEvent 128 = 1
+					EndEvent 129 = 1
+					LeaveGroup
+					Warp 0,33000,386,331

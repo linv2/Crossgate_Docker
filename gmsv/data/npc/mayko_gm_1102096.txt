@@ -1,0 +1,33 @@
+################### 酒保奈特
+block Item 40710>0 && Item 18570>0 && Group > 1
+	 ##1100000 \n请解散队伍。 
+	 EndWindow 1100000
+block Item 40710>0 && Item 18570>0
+	 #1102504	你的宇治金时是要请我吃的吗？？
+	 Window 1102504,YES,NO 
+	 	 Window_NO
+	 	 	EndWindow 1102508
+	 	 Window_YES Group > 1 
+	  		 EndWindow 1100000
+	 	 Window_YES
+	 		 #1102505	谢谢！\n真是好吃，好凉好舒服～
+	 		 Window 1102505,NEXT	
+			 #1102506	你刚说什么？要进砂之塔？
+			 Window 1102506,NEXT	
+			 #1102507	好吧！进去吧！
+			 Window 1102507,OK
+			 	 Window_OK Item 18570>0
+			 	 killitem 18570,1
+			 	 LeaveGroup
+			 	
+	 	 	 	 Warp 0,32200,6,7
+	 		  	 Endblock	
+	 		  	 
+	 		  	 Window_OK 
+	 		  	 EndWindow 1102521
+block Item 40710>0 
+	 #1102508	热昏了！好想吃些冰品！
+	 EndWindow 1102508
+block
+	 #真是热昏了～
+	 EndWindow 1102509

@@ -1,0 +1,28 @@
+#泛旦玄﹛由伊民尼件﹛旦奶永民及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block
+
+
+
+
+	Window "由伊民尼件化允午\n﹛yes互≦＊ㄢ≧≒嗯茎\n﹛no互≦＊ㄡ≧",YES,NO
+
+        Window_YES
+			Window "≦＊ㄢ≧及缙匹允",OK
+				Window_OK
+				ChangePal 38,180
+
+				Giveitem 11311,1
+
+				SetObject 0,555,81,84,14579
+
+				EndWindow"手日匀凶〝仇氏卅普元"
+		
+		Window_NO
+			Window "≦伓赏≧及缙匹允",OK
+				Window_OK
+				ChangePal 1,180
+				EndWindow"仇氏卅普元"

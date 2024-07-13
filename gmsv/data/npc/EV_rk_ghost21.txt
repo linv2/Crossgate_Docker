@@ -1,0 +1,15 @@
+#??
+
+#
+block
+	Window 22404,Next
+	Window 22405,Next
+	Window 22406,Next
+	Window 22407,Next
+	Window 22408,Next
+	Window 22409,Next
+	Window 22410,Next
+	Window 22411,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,47010,14,12

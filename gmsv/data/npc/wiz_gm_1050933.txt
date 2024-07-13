@@ -1,0 +1,32 @@
+###■不如归去1050933
+
+##队伍大于二
+block Group >= 2
+	 ##1051829	\n\n\n\n  这里的迷宫必须单独进入，请先解散队伍。
+	 EndWindow 1051829
+
+##一般
+block
+	 ##1051830	\n  从这里开始，就是两个人的真心考验，必需要有\n  一男一女才有办法走到最后。\n\n  要继续吗？
+	 Window 1051830,YES,NO
+
+	 Window_YES
+	 	 ##1051813	\n  那就请你收下这份证明彼此的爱的信物。记住你\n  们的爱情是无价的，除非到了“最后的仪式”，\n  千万不要让这信物离开你的身边。
+	 	 Window 1051813,OK
+	 	 ##男角得君子戒，进入男路线
+	 	 Window_OK BBImage >= 100000 && BBImage <= 100173 || BBImage >= 105000 && BBImage <= 105173 || BBImage >= 106000 && BBImage <= 106173
+	 	 	 GiveLeak1Item  45774
+	 	 	 Warp 0,32328,44,139
+	 	 ##女角得淑女戒，进入女路线
+	 	 Window_OK BBImage >= 100250 && BBImage <= 100423 || BBImage >= 105250 && BBImage <= 105423 || BBImage >= 106250 && BBImage <= 106423
+	 	 	 GiveLeak1Item  45775
+	 	 	 Warp 0,32328,44,146
+	 	 	 
+	 Window_NO
+	 	 Window 1051832,NEXT
+	 	 ##1051832	\n  你已丢弃爱的包袱了！\n\n  看透爱情迷障，走出爱情的迷宫，也算是从苦痛\n  中的一种解脱，对你也未尝不是一件好事。
+	 	 Window 1051862,YES,NO
+	 	 ##1051862	\n\n\n\n  要离开迷宫回到真情花园吗？
+		 Window_YES 
+		 	 Warp 0,32326,12,26
+		 Window_NO

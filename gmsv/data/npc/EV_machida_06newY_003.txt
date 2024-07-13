@@ -1,0 +1,40 @@
+#丢奶件﹛潠’怷3﹛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+
+
+
+
+
+
+
+
+
+
+block CheckRealTime 2007/1/1,00:00:01 == 1
+#block CheckRealTime 2006/12/19,15:00:00 == 1
+
+	Window "\n\n﹛≦蕙仄五コ及铵及赓调及\n﹛﹛﹛漆ざ嫦月湿及中支褐仃胀仪≧",next
+
+	EndWindow "\n\n﹛漆コ手切斤匀午\n﹛伞譬嫖仁＿＿"
+
+
+
+block
+#block CheckRealTime 2003/12/24,00:00:00 == 1
+
+
+	Window "\n\n﹛漆コ手弃中弁瓦井日\n﹛歹介歹介支匀化五引仄凶﹝\n﹛云恳畸云澎鳗中粖辉朿迩℅",next
+
+	endWindow "\n\n﹛左永玄□﹋潠﹌手甩□穴件﹋箄﹌手\n﹛蜗坌丐月冗″沓牬升手″\n﹛恳畸午中丹手及毛项圈仄化支木″"
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+######有 织布机-木棉 ######
+##有 织布机-木棉 木绵大于400个 物品栏无空位　　＃40739 10401
+block Item 41030 >= 1 && Item 40739 >= 400 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+##有 织布机-木棉 木绵大于400个 物品栏空位大于1 耐久度大于1
+block Item 41030 >= 1 && Item 40739 >= 400 && ItemSpace >= 1 && ItemDur 41030 > 1
+	 KillItem 40739,400
+	 GiveStackItem 10401,20
+	 SetDur 41030,-1
+	 
+##有 织布机-木棉 木绵大于400个 物品栏空位大于1 
+block Item 41030 >= 1 && Item 40739 >= 400 && ItemSpace >= 1 
+	 KillItem 40739,400
+	 GiveStackItem 10401,20
+	 KillItem 41030

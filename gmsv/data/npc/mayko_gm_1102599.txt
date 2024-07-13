@@ -1,0 +1,41 @@
+#鲁德	33000	567	459	mayko_gm_1102599.txt
+
+#1110592	\n\n　　　这大雨后突然冒出来，\n　　　飘散出恶臭，\n　　　如枪一样耸立的植物。
+#1110593	\n　　　这就是魔芋，\n　　　来～\n　　　你要不要吃块魔芋。
+#1110594	\n\n\n\n@c真是可惜呀。
+#1110595	\n\n\n　　　果然识货，\n　　　这就是俗称的蒟蒻。
+#1110596	\n\n\n　　　很讶异吧,魔芋经处理过，\n　　　就是我们食用的蒟蒻。
+#1110597	\n\n\n\n@c没处理过是不能吃的，会中毒喔！！。
+#1110598	\n\n\n　　　很不错吧....\n　　　送你一块。
+#1110599	\n\n\n\n@c没想到这地方也会有野生魔芋呀。
+#1110600	\n\n\n\n@c魔芋经过处理后，就是蒟蒻。
+#芬芬手绘图										41074
+#新鲜蒟蒻	FP 10			IuRc						41075
+
+block Item 41075 >0
+	 Window 1110599,NEXT
+	 EndWindow 1110600
+block Item  41074>0
+	 
+	 Window 1110592,NEXT
+	 Window 1110593,YES,NO
+	 Window_NO
+	 EndWindow 1110594
+	 Window_YES Item 41074==0
+	 EndWindow 1053288
+	 #1053288	\n\n\n\n@c咦～你的东西突然不见，是不是掉了。	1	
+	 Window_YES
+	 Window 1110595,NEXT
+	 Window 1110596,NEXT
+	 Window 1110597,OK
+	 Window OK Item 41074==0
+ 	 EndWindow 1110599
+ 	 
+	 Window_OK
+	 KillItem 41074
+	 GiveLeak1Item 41075,1
+	 Window 1110598,NEXT
+	 EndWindow 1110599
+	 
+block 
+	 EndWindow 1110599

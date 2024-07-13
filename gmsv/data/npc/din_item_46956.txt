@@ -1,0 +1,16 @@
+###万圣节奖项	卡时小扑满(20 min)	din_item_46956.txt
+##能力说明：可以提领卡时20分钟
+
+block Item 46956 >=1 && FeverSec >= 20401
+	 ##1053721	\n\n  注意：你的卡时超过上限，所以无法提领卡时！	1
+	 EndWindow 1053721
+	 
+block
+	 ##1053722	\n\n  确定要将卡时从卡时小扑满中提领出来吗？	1
+	 Window 1053722,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46956 >=1 && FeverSec <= 20400
+	 	 	 AddFeverSec +1200
+	 	 	 KillItem 46956,1,(1053723)##1053723	\n\n  你轻轻的将卡时提领出来。	1
+

@@ -1,0 +1,40 @@
+
+
+
+block
+
+
+
+if  Item 607600 >= 1
+
+
+#			Window "\n\n﹛が﹜凳卅月蕉心毛侗戈支〝",yes,no	
+			Window 3006803,yes,no	
+
+
+			Window_yes
+
+#				Window "\n\n﹛卅日壬﹜凳卅月哗及瓖﹜\n﹛梓及柁帼尺﹝",ok
+				Window 3006804,ok
+
+
+
+				
+				Window_ok
+
+					warp 0,59676,154,31
+
+			Window_no
+
+#				EndWindow "\n\n﹛卅日壬﹜峏切蛔月互恌中﹝\n﹛仄壬日仁詨卞反﹜引凶﹜仇仇卞\n﹛哗帼及报互钒仁﹝"
+				EndWindow 3006805
+
+
+else
+
+#				EndWindow "\n\n﹛衙五萼毛菲户方﹝"
+				EndWindow 3006806
+
+
+endif
+

@@ -1,0 +1,21 @@
+#1110419	\n\n　　　你想要摘培木呀，\n　　　那得用20个茱萸木来做，\n　　　你拿茱萸木来我就帮你做。
+#1110420	\n\n\n　　　你有20个茱萸木，\n　　　要做成栽培木吗？？\n　　　有可能失败变木炭喔！！
+#1110421	\n\n\n\n@c好啰！！拿去吧。
+#1110422	\n\n\n\n@c想试试看再来吧！！
+
+#茱萸木10100
+
+block Item 10100>=20 
+	 Window 1110420,YES,NO
+	 Window_NO
+	 EndWindow 1110422
+	 Window_YES ItemSpace == 0
+	 	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 Window_YES Item 10100>=20 
+	 KillItem 10100,20
+
+	 GiveLeak1Item (47632%1$1,9707%9$1)
+	 EndWindow 1110421
+block
+	 EndWindow 1110419

@@ -1,0 +1,2564 @@
+
+
+block StrCmpChat == 3007312
+
+	Window "\n\n﹛蛙痹匹允井〝\n﹛蕙痹匹允井〝",next
+
+	Window "\n\n﹛蛙痹卅日＞Yes＝\n﹛蕙痹卅日＞No＝午蚕尹化仁分今中﹝",yes,no
+
+	Window_yes
+	
+		gotoF case3
+
+	Window_no
+
+		gotoF case4
+
+block StrCmpChat == 3007313
+
+	Window "\n\n﹛蛙痹匹允井〝\n﹛蕙痹匹允井〝",next
+
+	Window "\n\n﹛蛙痹卅日＞Yes＝\n﹛蕙痹卅日＞No＝午蚕尹化仁分今中﹝",yes,no
+
+	Window_yes
+	
+		gotoF case13
+
+	Window_no
+
+		gotoF case14
+
+block StrCmpChat == 3007314
+
+	Window "\n\n﹛蛙痹匹允井〝\n﹛蕙痹匹允井〝",next
+
+	Window "\n\n﹛蛙痹卅日＞Yes＝\n﹛蕙痹卅日＞No＝午蚕尹化仁分今中﹝",yes,no
+
+	Window_yes
+	
+		gotoF case23
+
+	Window_no
+
+		gotoF case24
+
+block StrCmpChat == 3007315
+
+	Window "\n\n﹛蛙痹匹允井〝\n﹛蕙痹匹允井〝",next
+
+	Window "\n\n﹛蛙痹卅日＞Yes＝\n﹛蕙痹卅日＞No＝午蚕尹化仁分今中﹝",yes,no
+
+	Window_yes
+	
+		gotoF case33
+
+	Window_no
+
+		gotoF case34
+
+block StrCmpChat == 3007316
+
+	Window "\n\n﹛蛙痹匹允井〝\n﹛蕙痹匹允井〝",next
+
+	Window "\n\n﹛蛙痹卅日＞Yes＝\n﹛蕙痹卅日＞No＝午蚕尹化仁分今中﹝",yes,no
+
+	Window_yes
+	
+		gotoF case43
+
+	Window_no
+
+		gotoF case44
+		
+block StrCmpChat == 3007317
+
+	Window "\n\n﹛蛙痹匹允井〝\n﹛蕙痹匹允井〝",next
+
+	Window "\n\n﹛蛙痹卅日＞Yes＝\n﹛蕙痹卅日＞No＝午蚕尹化仁分今中﹝",yes,no
+
+	Window_yes
+	
+		gotoF case53
+
+	Window_no
+
+		gotoF case54
+
+block StrCmpChat == 3007318
+
+
+	Window "\n\n﹛蛙痹匹允井〝\n﹛蕙痹匹允井〝",next
+
+	Window "\n\n﹛蛙痹卅日＞Yes＝\n﹛蕙痹卅日＞No＝午蚕尹化仁分今中﹝",yes,no
+
+	Window_yes
+	
+		gotoF case63
+
+	Window_no
+
+		gotoF case64
+
+
+block StrCmpChat == 3007319
+
+	Window "\n\n﹛蛙痹匹允井〝\n﹛蕙痹匹允井〝",next
+
+	Window "\n\n﹛蛙痹卅日＞Yes＝\n﹛蕙痹卅日＞No＝午蚕尹化仁分今中﹝",yes,no
+
+	Window_yes
+	
+		gotoF case73
+
+	Window_no
+
+		gotoF case74
+
+
+
+block
+
+
+			Window "\n\n﹛银迕及曩鞅今木化中月蛙枆笺痹毛\n﹛蕙枆笺痹卞跟晶中凶仄引允﹝\n﹛引凶﹜银迕尕チ卞卅匀凶蕙枆笺痹手\n﹛银迕第チ卅手及卞凳蕙仄引允﹝",next
+
+			Window "\n\n﹛引凶﹜\n﹛银迕第チ卅蕙枆笺痹毛跟晶仄化手\n﹛⑺元手及毛云欐仄允月分仃匹允﹝",next
+
+			endWindow "\n\n﹛公木匹反跟晶仄凶中枆笺痹及抩蟆毛\n﹛＞甲田＝﹜＞甲用平＝及迋卞\n﹛枆笺及抩蟆分仃匹隙烂仄化仁分今中﹝"
+
+
+
+
+#
+#tsuga
+#
+
+block
+
+*case3*
+
+if Item 620000 >= 10
+
+*case0*
+
+
+	Window "\n\n﹛蛙汁布痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620000 < 10
+
+		Window "\n\n﹛蛙汁布痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case1
+
+	Window_yes
+
+		Window "\n\n﹛蛙汁布痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620000,10
+			giveitem 620019,10
+
+
+			if Item 620000 >= 10
+
+				gotoB case0
+
+			else
+
+
+				if Item 620000 >= 5
+
+					gotoF case1
+
+				else
+					if Item 620000 >= 1
+
+						gotoF case2
+
+					else
+
+						endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+					endif
+				endif
+			endif
+
+
+endif
+
+if Item 620000 >= 5
+
+*case1*
+
+
+
+	Window "\n\n﹛蛙汁布痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620000 < 5
+
+		Window "\n\n﹛蛙汁布痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case2
+
+	Window_yes
+
+		Window "\n\n﹛蛙汁布痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620000,5
+			giveitem 620019,5
+
+
+				if Item 620000 >= 1
+
+					gotoF case2
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+endif
+
+if Item 620000 >= 1
+
+*case2*
+
+
+
+	Window "\n\n﹛蛙汁布痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620000 < 1
+
+		Window "\n\n﹛蛙汁布痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛蛙汁布痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620000,1
+			giveitem 620019,1
+
+
+				if Item 620000 >= 1
+
+					gotoB case2
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+
+endif
+
+			endWindow "\n\n﹛蛙枆笺痹毛云儅切匹卅中匹允友〝
+
+block
+
+#
+#甲田
+#
+*case13*
+
+if Item 620001 >= 10
+
+*case10*
+
+	Window "\n\n﹛蛙甲田痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620001 < 10
+
+		Window "\n\n﹛蛙甲田痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case11
+
+	Window_yes
+
+		Window "\n\n﹛蛙甲田痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620001,10
+			giveitem 620020,10
+
+		if Item 620001 >= 10
+
+				gotoB case10
+
+		else
+
+			if Item 620001 >= 5
+
+				gotoF case11
+
+			else
+				if Item 620001 >= 1
+
+					gotoF case12
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+			endif
+		endif
+
+
+endif
+
+if Item 620001 >= 5
+
+*case11*
+
+
+
+	Window "\n\n﹛蛙甲田痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620001 < 5
+
+		Window "\n\n﹛蛙甲田痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case12
+
+	Window_yes
+
+		Window "\n\n﹛蛙甲田痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620001,5
+			giveitem 620020,5
+
+
+				if Item 620001 >= 1
+
+					gotoF case12
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+endif
+
+if Item 620001 >= 1
+
+*case12*
+
+
+
+	Window "\n\n﹛蛙甲田痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620001 < 1
+
+		Window "\n\n﹛蛙甲田痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛蛙甲田痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620001,1
+			giveitem 620020,1
+
+
+				if Item 620001 >= 1
+
+					gotoB case12
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+
+endif
+
+			endWindow "\n\n﹛蛙枆笺痹毛云儅切匹卅中匹允友〝"
+
+block
+
+#
+#失市穴汁
+#
+
+
+*case23*
+
+if Item 620002 >= 10
+
+
+*case20*
+
+
+	Window "\n\n﹛蛙失市穴汁痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620002 < 10
+
+		Window "\n\n﹛蛙失市穴汁痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case21
+
+	Window_yes
+
+		Window "\n\n﹛蛙失市穴汁痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620002,10
+			giveitem 620021,10
+
+		if Item 620002 >= 10
+
+				gotoB case20
+
+
+		else
+
+			if Item 620002 >= 5
+
+				gotoF case21
+
+			else
+				if Item 620002 >= 1
+
+					gotoF case22
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+			endif
+		endif
+
+endif
+
+if Item 620002 >= 5
+
+*case21*
+
+
+
+	Window "\n\n﹛蛙失市穴汁痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620002 < 5
+
+		Window "\n\n﹛蛙失市穴汁痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case22
+
+	Window_yes
+
+		Window "\n\n﹛蛙失市穴汁痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620002,5
+			giveitem 620021,5
+
+
+				if Item 620002 >= 1
+
+					gotoF case22
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+endif
+
+if Item 620002 >= 1
+
+*case22*
+
+
+
+	Window "\n\n﹛蛙失市穴汁痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620002 < 1
+
+		Window "\n\n﹛蛙失市穴汁痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛蛙失市穴汁痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620002,1
+			giveitem 620021,1
+
+
+				if Item 620002 >= 1
+
+					gotoB case22
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+endif
+
+
+			endWindow "\n\n﹛蛙枆笺痹毛云儅切匹卅中匹允友〝"
+
+block
+
+#
+#石左用平
+#
+
+
+*case33*
+
+if Item 620003 >= 10
+
+*case30*
+
+	Window "\n\n﹛蛙石左用平痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620003 < 10
+
+		Window "\n\n﹛蛙石左用平痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case1
+
+	Window_yes
+
+		Window "\n\n﹛蛙石左用平痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620003,10
+			giveitem 620022,10
+
+
+		if Item 620003 >= 10
+
+				gotoB case30
+
+		else
+
+			if Item 620003 >= 5
+
+				gotoF case31
+
+			else
+				if Item 620003 >= 1
+
+					gotoF case32
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+			endif
+		endif
+
+endif
+
+if Item 620003 >= 5
+
+*case31*
+
+
+
+	Window "\n\n﹛蛙石左用平痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620003 < 5
+
+		Window "\n\n﹛蛙石左用平痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case32
+
+	Window_yes
+
+		Window "\n\n﹛蛙石左用平痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620003,5
+			giveitem 620022,5
+
+
+				if Item 620003 >= 1
+
+					gotoF case32
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+endif
+
+if Item 620003 >= 1
+
+*case32*
+
+
+
+	Window "\n\n﹛蛙石左用平痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620003 < 1
+
+		Window "\n\n﹛蛙石左用平痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛蛙石左用平痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620003,1
+			giveitem 620022,1
+
+
+				if Item 620003 >= 1
+
+					gotoB case32
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+
+endif
+
+			endWindow "\n\n﹛蛙枆笺痹毛云儅切匹卅中匹允友〝"
+
+block
+#
+#旦幼
+#
+
+
+*case43*
+
+if Item 620004 >= 10
+
+*case40*
+
+	Window "\n\n﹛蛙旦幼痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620004 < 10
+
+		Window "\n\n﹛蛙旦幼痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case41
+
+	Window_yes
+
+		Window "\n\n﹛蛙旦幼痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620004,10
+			giveitem 620023,10
+
+		if Item 620004 >= 10
+
+				gotoB case40
+
+		else
+
+			if Item 620004 >= 5
+
+				gotoF case41
+
+			else
+				if Item 620004 >= 1
+
+					gotoF case42
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+			endif
+		endif
+
+
+endif
+
+if Item 620004 >= 5
+
+*case41*
+
+
+
+	Window "\n\n﹛蛙旦幼痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620004 < 5
+
+		Window "\n\n﹛蛙旦幼痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case42
+
+	Window_yes
+
+		Window "\n\n﹛蛙旦幼痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620004,5
+			giveitem 620023,5
+
+
+				if Item 620004 >= 1
+
+					gotoF case42
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+
+endif
+
+if Item 620004 >= 1
+
+*case42*
+
+
+
+	Window "\n\n﹛蛙旦幼痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620004 < 1
+
+		Window "\n\n﹛蛙旦幼痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛蛙旦幼痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620004,1
+			giveitem 620023,1
+
+
+				if Item 620004 >= 1
+
+					gotoB case42
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+
+endif
+
+
+			endWindow "\n\n﹛蛙枆笺痹毛云儅切匹卅中匹允友〝"
+
+#
+
+block
+
+#甲用平
+#
+*case53*
+
+if Item 620005 >= 10
+
+*case50*
+
+
+	Window "\n\n﹛蛙甲用平痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620005 < 10
+
+		Window "\n\n﹛蛙甲用平痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case51
+
+	Window_yes
+
+		Window "\n\n﹛蛙甲用平痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620005,10
+			giveitem 620024,10
+
+
+		if Item 620005 >= 10
+
+				gotoB case50
+
+
+			if Item 620005 >= 5
+
+				gotoF case51
+
+			else
+				if Item 620005 >= 1
+
+					gotoF case52
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+			endif
+		endif
+
+
+
+endif
+
+
+
+
+if Item 620005 >= 5
+
+*case51*
+
+
+
+	Window "\n\n﹛蛙甲用平痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620005 < 5
+
+		Window "\n\n﹛蛙甲用平痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case52
+
+	Window_yes
+
+		Window "\n\n﹛蛙甲用平痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620005,5
+			giveitem 620024,5
+
+
+				if Item 620005 >= 1
+
+					gotoF case52
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+endif
+
+
+if Item 620005 >= 1
+
+*case52*
+
+
+
+	Window "\n\n﹛蛙甲用平痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620005 < 1
+
+		Window "\n\n﹛蛙甲用平痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛蛙甲用平痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620005,1
+			giveitem 620024,1
+
+
+				if Item 620005 >= 1
+
+					gotoB case52
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+
+endif
+
+			endWindow "\n\n﹛蛙枆笺痹毛云儅切匹卅中匹允友〝"
+
+#
+#玄生伉戊
+#
+
+
+block
+
+*case63*
+
+if Item 620006 >= 10
+
+*case60*
+
+
+	Window "\n\n﹛蛙玄生伉戊痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620006 < 10
+
+		Window "\n\n﹛蛙玄生伉戊痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case61
+
+	Window_yes
+
+		Window "\n\n﹛蛙玄生伉戊痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620006,10
+			giveitem 620025,10
+
+		if Item 620006 >= 10
+
+			gotoB case60
+
+		else
+			if Item 620006 >= 5
+
+				gotoF case61
+
+			else
+				if Item 620006 >= 1
+
+					gotoF case62
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+			endif
+		endif
+
+
+endif
+
+if Item 620006 >= 5
+
+*case61*
+
+
+
+	Window "\n\n﹛蛙玄生伉戊痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620006 < 5
+
+		Window "\n\n﹛蛙玄生伉戊痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case62
+
+	Window_yes
+
+		Window "\n\n﹛蛙玄生伉戊痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620006,5
+			giveitem 620025,5
+
+
+				if Item 620006 >= 1
+
+					gotoF case62
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+
+endif
+
+
+if Item 620006 >= 1
+
+*case62*
+
+
+
+	Window "\n\n﹛蛙玄生伉戊痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620006 < 1
+
+		Window "\n\n﹛蛙玄生伉戊痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛蛙玄生伉戊痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620006,1
+			giveitem 620025,1
+
+
+				if Item 620006 >= 1
+
+					gotoB case62
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+
+endif
+
+			endWindow "\n\n﹛蛙枆笺痹毛云儅切匹卅中匹允友〝"
+
+block
+
+#
+#扑件弘夫□伙
+#
+
+*case73*
+
+
+if Item 620007 >= 10
+
+*case70*
+
+	Window "\n\n﹛蛙扑件弘夫□伙痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620007 < 10
+
+		Window "\n\n﹛蛙扑件弘夫□伙痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case71
+
+	Window_yes
+
+		Window "\n\n﹛蛙扑件弘夫□伙痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620007,10
+			giveitem 620026,10
+
+		if Item 620007 >= 10
+
+			gotoB case70
+
+		else
+
+			if Item 620007 >= 5
+
+				gotoF case71
+
+			else
+				if Item 620007 >= 1
+
+					gotoF case72
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+			endif
+		endif
+
+endif
+
+if Item 620007 >= 5
+
+*case71*
+
+
+
+	Window "\n\n﹛蛙扑件弘夫□伙痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620007 < 5
+
+		Window "\n\n﹛蛙扑件弘夫□伙痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			gotoF case72
+
+	Window_yes
+
+		Window "\n\n﹛蛙扑件弘夫□伙痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620007,5
+			giveitem 620026,5
+
+
+				if Item 620007 >= 1
+
+					gotoF case72
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+endif
+
+if Item 620007 >= 1
+
+*case72*
+
+
+
+	Window "\n\n﹛蛙扑件弘夫□伙痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620007 < 1
+
+		Window "\n\n﹛蛙扑件弘夫□伙痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛蛙扑件弘夫□伙痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",ok
+
+		Window_ok
+
+			killitem 620007,1
+			giveitem 620026,1
+
+
+				if Item 620007 >= 1
+
+					gotoB case72
+
+				else
+
+					endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+				endif
+
+endif
+
+
+			endWindow "\n\n﹛蛙枆笺痹毛云儅切匹卅中匹允友〝"
+
+block
+
+#;==============================;==============================;==============================
+#tsuga
+#
+
+*case4*
+
+
+
+if Item 620019 >= 10
+
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+	Window "\n\n﹛云澎儅切及汁布痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620019 < 10
+
+		Window "\n\n﹛蕙汁布痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及汁布痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+
+		Window_ok
+
+			killitem 620019,10
+			giveitem 620019,10
+
+else
+
+
+
+
+if Item 620019 >= 5
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及汁布痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620019 < 5
+
+		Window "\n\n﹛蕙汁布痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及汁布痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620019,5
+			giveitem 620019,5
+
+
+else
+
+if Item 620019 >= 1
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及汁布痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620019 < 1
+
+		Window "\n\n﹛蕙汁布痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及汁布痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620019,1
+			giveitem 620019,1
+
+else
+
+		Window "\n\n﹛蕙汁布痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+endif
+endif
+endif
+
+block
+#
+#甲田
+#
+
+*case14*
+
+if Item 620020 >= 10
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及甲田痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620020 < 10
+
+		Window "\n\n﹛蕙甲田痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及甲田痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620020,10
+			giveitem 620020,10
+
+
+else
+
+if Item 620020 >= 5
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及甲田痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620020 < 5
+
+		Window "\n\n﹛蕙甲田痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及甲田痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620020,5
+			giveitem 620020,5
+
+else
+
+if Item 620020 >= 1
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及甲田痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620020 < 1
+
+		Window "\n\n﹛蕙甲田痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及甲田痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620020,1
+			giveitem 620020,1
+
+
+else
+
+		Window "\n\n﹛蕙甲田痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+endif
+endif
+endif
+
+block
+#
+#失市穴汁
+#
+
+
+*case24*
+
+
+if Item 620021 >= 10
+
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及失市穴汁痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620021 < 10
+
+		Window "\n\n﹛蕙失市穴汁痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及失市穴汁痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620021,10
+			giveitem 620021,10
+else
+
+
+if Item 620021 >= 5
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及失市穴汁痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620021 < 5
+
+		Window "\n\n﹛蕙失市穴汁痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及失市穴汁痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620021,5
+			giveitem 620021,5
+
+else
+
+if Item 620021 >= 1
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及失市穴汁痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620021 < 1
+
+		Window "\n\n﹛蕙失市穴汁痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及失市穴汁痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620021,1
+			giveitem 620021,1
+
+else
+
+		Window "\n\n﹛蕙失市穴汁痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+endif
+endif
+endif
+
+
+
+block
+#
+#石左用平
+#
+
+
+*case34*
+
+
+if Item 620022 >= 10
+
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+	Window "\n\n﹛云澎儅切及石左用平痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620022 < 10
+
+		Window "\n\n﹛蕙石左用平痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及石左用平痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620022,10
+			giveitem 620022,10
+
+else
+
+if Item 620022 >= 5
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及石左用平痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620022 < 5
+
+		Window "\n\n﹛蕙石左用平痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及石左用平痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620022,5
+			giveitem 620022,5
+
+else
+
+if Item 620022 >= 1
+
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+	Window "\n\n﹛云澎儅切及石左用平痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620022 < 1
+
+		Window "\n\n﹛蕙石左用平痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及石左用平痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620022,1
+			giveitem 620022,1
+
+
+else
+
+		Window "\n\n﹛蕙石左用平痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+endif
+endif
+endif
+
+
+block
+#
+#旦幼
+#
+
+*case44*
+
+
+
+if Item 620023 >= 10
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及旦幼痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620023 < 10
+
+		Window "\n\n﹛蕙旦幼痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及旦幼痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620023,10
+			giveitem 620023,10
+
+else
+
+if Item 620023 >= 5
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及旦幼痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620023 < 5
+
+		Window "\n\n﹛蕙旦幼痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及旦幼痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620023,5
+			giveitem 620023,5
+
+else
+
+
+if Item 620023 >= 1
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及旦幼痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620023 < 1
+
+		Window "\n\n﹛蕙旦幼痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及旦幼痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620023,1
+			giveitem 620023,1
+
+else
+
+		Window "\n\n﹛蕙旦幼痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+
+endif
+endif
+endif
+
+
+block
+#
+#甲用平
+#
+
+*case54*
+
+
+
+if Item 620024 >= 10
+
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及甲用平痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620024 < 10
+
+		Window "\n\n﹛蕙甲用平痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及甲用平痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620024,10
+			giveitem 620024,10
+
+else
+
+if Item 620024 >= 5
+
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+	Window "\n\n﹛云澎儅切及甲用平痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620024 < 5
+
+		Window "\n\n﹛蕙甲用平痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及甲用平痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620024,5
+			giveitem 620024,5
+
+else
+
+
+if Item 620024 >= 1
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及甲用平痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620024 < 1
+
+		Window "\n\n﹛蕙甲用平痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及甲用平痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620024,1
+			giveitem 620024,1
+
+else
+
+		Window "\n\n﹛蕙甲用平痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+
+endif
+endif
+endif
+
+
+block
+#
+#玄生伉戊
+#
+
+*case64*
+
+
+
+if Item 620025 >= 10
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+	Window "\n\n﹛云澎儅切及玄生伉戊痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620025 < 10
+
+		Window "\n\n﹛蕙玄生伉戊痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及玄生伉戊痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620025,10
+			giveitem 620025,10
+
+
+else
+
+if Item 620025 >= 5
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及玄生伉戊痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620025 < 5
+
+		Window "\n\n﹛蕙玄生伉戊痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及玄生伉戊痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620025,5
+			giveitem 620025,5
+
+else
+
+
+if Item 620025 >= 1
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及玄生伉戊痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620025 < 1
+
+		Window "\n\n﹛蕙玄生伉戊痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及玄生伉戊痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620025,1
+			giveitem 620025,1
+
+else
+		Window "\n\n﹛蕙玄生伉戊痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+endif
+endif
+endif
+
+
+block
+#
+#扑件弘夫□伙
+#
+
+*case74*
+
+
+if Item 620026 >= 10
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及扑件弘夫□伙痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620026 < 10
+
+		Window "\n\n﹛蕙扑件弘夫□伙痹毛ㄠㄟ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及扑件弘夫□伙痹ㄠㄟ呦毛\n﹛蕙痹ㄠㄟ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620026,10
+			giveitem 620026,10
+
+else
+
+if Item 620026 >= 5
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及扑件弘夫□伙痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620026 < 5
+
+		Window "\n\n﹛蕙扑件弘夫□伙痹毛ㄤ呦动晓\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及扑件弘夫□伙痹ㄤ呦毛\n﹛蕙痹ㄤ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620026,5
+			giveitem 620026,5
+
+else
+
+if Item 620026 >= 1
+
+
+	Window "\n\n﹛蕙枆笺痹毛云儅切匹允友〝\n﹛手仄﹜银迕尕チ及桦宁反\n﹛跟晶允月仇午匹\n﹛银迕第チ卞卅曰引允﹝",next
+
+
+	Window "\n\n﹛云澎儅切及扑件弘夫□伙痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允井〝",yes,no
+
+
+	Window_no
+
+		endWindow "\n\n﹛中勾匹手云旋仄仁分今中﹝"
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互中匀天中匹允﹝"
+
+
+	Window_yes Item 620026 < 1
+
+		Window "\n\n﹛蕙扑件弘夫□伙痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+	Window_yes
+
+		Window "\n\n﹛云澎儅切及扑件弘夫□伙痹ㄠ呦毛\n﹛蕙痹ㄠ呦卞跟晶仄引允﹝",next
+
+		Window "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝",ok
+
+		Window_ok
+
+			killitem 620026,1
+			giveitem 620026,1
+else
+
+		Window "\n\n﹛蕙扑件弘夫□伙痹毛\n﹛云儅切匹卅中匹允友﹝",ok
+
+		Window_ok
+
+			endWindow "\n\n﹛职及枆笺痹毛云儅切及杅反\n﹛手丹域蘸﹜狪仄井仃化仁分今中﹝"
+
+endif
+endif
+endif
+
+
+
+

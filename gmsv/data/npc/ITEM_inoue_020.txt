@@ -1,0 +1,35 @@
+#	¦Ûúø???
+#	ITEMID?623575
+#
+#
+
+
+block
+	LocalCount1 = Random 5,0
+	if LocalCount1 == 1
+	        SetLp -500
+		KillItem 623575,1,(3012319)
+
+	else
+		if LocalCount1 == 2
+			SetLp -100
+			KillItem 623575,1,(3012319)
+
+		else
+			if LocalCount1 == 3
+				KillItem 623575,1,(3012320)
+				SetLp +100
+			else
+				if LocalCount1 == 4
+					SetLp +500
+					KillItem 623575,1,(3012320)
+				else
+					if LocalCount1 == 5
+						SetLp +1000
+						KillItem 623575,1,(3012320)
+					endif
+				endif
+			endif
+		endif
+	endif
+

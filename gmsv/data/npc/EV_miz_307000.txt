@@ -1,0 +1,85 @@
+#正生穴乒仿□弁巨旦玄“穴仿市扑ㄠ
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛endflg37﹛##############
+block endevent37 == 1
+	EndWindow 206145,OK
+
+###########﹛nowflg37﹛##############
+block nowevent37 == 1
+	EndWindow 206146,OK
+
+###########﹛伉□白禾永玄毛儅匀化中月﹛##############
+block Item 18871 >= 1 || Item 18872 >= 1
+	Window 206014,OK
+	Window_OK
+
+###########﹛溥苇及潘毛儅匀化中月﹛##############
+block Item 18794 >= 1
+	Window 206012,NEXT
+	Window 206013,OK
+	Window_OK 
+	Setaction 14
+	leavegroup
+	Warp 0,33241,19,13
+
+###########﹛endflg36﹛##############
+block endevent36 == 1
+	EndWindow 206011,OK
+
+###########﹛nowflg36﹛##############
+block nowevent36 == 1
+	Window 206010,OK
+	Window_OK
+	leavegroup
+	nowevent36 = 0
+	nowevent37 = 1
+
+###########﹛扑平立及匙俇踏毛儅匀化中月﹛##############
+block Item 18793 >= 1
+	EndWindow 206146,OK
+
+###########﹛恦及云潮曰毛儅匀化中月﹛##############
+block Item 18792 >= 1
+	EndWindow 206009,OK
+
+###########﹛乩穴乒乒及皮□汁毛儅匀化中月﹛##############
+block Item 18791 >= 1
+	Window 206007,NEXT
+	Window 206008,NEXT
+	Window 206009,OK
+	Window_OK
+	leavegroup
+	Killitem 18791
+	Giveitem 18792
+	EndWindow 206129,OK
+
+###########﹛伉示件毛儅匀化中月﹛##############
+block Item 18790 >= 1
+	EndWindow 206006,OK
+
+###########﹛endflg35﹛##############
+block endevent35 == 1
+	EndWindow 206005,OK
+
+###########﹛nowflg35﹛##############
+block nowevent35 == 1
+	EndWindow 206004,OK
+
+###########﹛窒手拑仄﹛##############
+block
+	Window 206000,NEXT
+	Window 206001,YES,NO
+
+###########﹛反中﹛##############
+	Window_YES
+	Window 206002,OK
+	Window_OK
+	leavegroup
+	Warp 0,33240,10,7
+
+###########﹛中中尹﹛##############
+	Window_NO
+	EndWindow 206003,OK
+

@@ -1,0 +1,18 @@
+#151	高玉玫	定期船开通	莉莉丝号搭船资格
+#155	高玉玫	四个封印	汉米顿村传送资格之一(需搭配特定道具才能传送)
+#161	高玉玫	大型更新	通往亚纪城
+#164	高玉玫	记忆的地方	通往记忆之地
+#EndEvent 155 == 1 
+
+
+
+block 
+	Window 1111728,yes,no
+	window_yes
+ 	killitem 41218,1	
+ 	EndEvent 151 = 1  ##青鸾
+ 	EndEvent 155 = 1
+ 	EndEvent 161 = 1
+ 	EndEvent 164 = 1
+ 	window_no
+ endblock

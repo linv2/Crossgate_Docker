@@ -1,0 +1,148 @@
+#奶矛件玄泛旦玄
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 泔﹋18435﹌毛手匀化中卅中桦宁 ##########
+block Item 18435 != 1 && Item 18436 != 1 && Item 18437 != 1 && Item 18438 != 1 && Group == 1
+
+	#云仁分仄互五凶丑℅匀
+	Window 13046,OK
+	Window_OK 
+	LeaveGroup
+	Warp 0,13503,41,39
+
+
+########## 泔﹋18435﹌LVㄤ毛手匀化中化孺蜃凛棉毛译尹化中月桦宁 ##########
+block Item 18435 == 1 && ItemCreateTime 18435 >= 41 && Group == 1
+
+	#云仁分仄互五凶丑℅匀
+	Window 13046,OK
+	Window_OK 
+	KillItem 18435,1
+	LeaveGroup
+	Warp 0,13503,41,39
+
+########## 泔﹋18436﹌LVㄣ毛手匀化中化孺蜃凛棉毛译尹化中月桦宁 ##########
+block Item 18436 == 1 && ItemCreateTime 18436 >= 43 && Group == 1
+
+	#云仁分仄互五凶丑℅匀
+	Window 13046,OK
+	Window_OK 
+	KillItem 18436,1
+	LeaveGroup
+	Warp 0,13503,41,39
+
+########## 泔﹋18437﹌LVㄢ毛手匀化中化孺蜃凛棉毛译尹化中月桦宁 ##########
+block Item 18437 == 1 && ItemCreateTime 18437 >= 46 && Group == 1
+
+	#云仁分仄互五凶丑℅匀
+	Window 13046,OK
+	Window_OK 
+	KillItem 18437,1
+	LeaveGroup
+	Warp 0,13503,41,39
+
+########## 泔﹋18438﹌LVㄡ毛手匀化中化孺蜃凛棉毛译尹化中月桦宁 ##########
+block Item 18438 == 1 && ItemCreateTime 18438 >= 49 && Group == 1
+
+	#云仁分仄互五凶丑℅匀
+	Window 13046,OK
+	Window_OK 
+	KillItem 18438,1
+	LeaveGroup
+	Warp 0,13503,41,39
+
+
+########## 泔﹋18435﹌LVㄤ毛手匀化中化孺蜃凛棉毛译尹化中卅中桦宁 ##########
+block Item 18435 == 1 && ItemCreateTime 18435 <= 40 && Item 18428 >= 3 && Item 18429 >= 3 && Item 18430 >= 3 && Group == 1
+
+	#
+	Window 13045,OK
+	Window_OK 
+	KillItem 18428,3
+	KillItem 18429,3
+	KillItem 18430,3
+
+	KillItem 18435,1
+	LeaveGroup
+	Warp 0,13514,6,13
+
+
+########## 泔﹋18436﹌LV4毛手匀化中化孺蜃凛棉毛译尹化中卅中桦宁 ##########
+block Item 18436 == 1 && ItemCreateTime 18436 <= 42 && Item 18428 >= 6 && Item 18429 >= 6 && Item 18430 >= 6 && Group == 1
+
+	#
+	Window 13045,OK
+	Window_OK 
+	KillItem 18428,6
+	KillItem 18429,6
+	KillItem 18430,6
+
+	KillItem 18436,1
+	LeaveGroup
+	Warp 0,13514,6,13
+
+
+########## 泔﹋18437﹌LV3毛手匀化中化孺蜃凛棉毛译尹化中卅中桦宁 ##########
+block Item 18437 == 1 && ItemCreateTime 18437 <= 45 && Item 18428 >= 10 && Item 18429 >= 10 && Item 18430 >= 10 && Group == 1
+
+	#
+	Window 13045,OK
+	Window_OK 
+	KillItem 18428,10
+	KillItem 18429,10
+	KillItem 18430,10
+
+	KillItem 18437,1
+	LeaveGroup
+	Warp 0,13514,6,13
+
+
+########## 泔﹋18438﹌LV2毛手匀化中化孺蜃凛棉毛译尹化中卅中桦宁 ##########
+block Item 18438 == 1 && ItemCreateTime 18438 <= 48 && Item 18428 >= 14 && Item 18429 >= 14 && Item 18430 >= 14 && Group == 1
+
+	#
+	Window 13045,OK
+	Window_OK 
+	KillItem 18428,14
+	KillItem 18429,14
+	KillItem 18430,14
+
+	KillItem 18438,1
+	LeaveGroup
+	Warp 0,13514,6,13
+
+
+########## 泔﹋18435﹌LVㄤ孺蜃凛棉毛译尹化卅仁壬中嗜及醒互ㄤ蜊动陆及桦宁 ##########
+block Item 18435 == 1 && ItemCreateTime 18435 <= 40 && Item 18428 <= 3 || Item 18429 <= 3 || Item 18430 <= 3 || Group == 1
+
+	#引分仇木匹反?缚仄切扎丹友之
+	EndWindow 13047
+
+########## 泔﹋18436﹌LVㄣ孺蜃凛棉毛译尹化卅仁壬中嗜及醒互ㄤ蜊动陆及桦宁 ##########
+block Item 18436 == 1 && ItemCreateTime 18436 <= 42 && Item 18428 <= 6 || Item 18429 <= 6 || Item 18430 <= 6 || Group == 1
+
+	#引分仇木匹反?缚仄切扎丹友之
+	EndWindow 13047
+
+########## 泔﹋18437﹌LVㄢ孺蜃凛棉毛译尹化卅仁壬中嗜及醒互ㄤ蜊动陆及桦宁 ##########
+block Item 18437 == 1 && ItemCreateTime 18437 <= 45 && Item 18428 <= 10 || Item 18429 <= 10 || Item 18430 <= 10 || Group == 1
+
+	#引分仇木匹反?缚仄切扎丹友之
+	EndWindow 13047
+
+########## 泔﹋18438﹌LVㄡ孺蜃凛棉毛译尹化卅仁壬中嗜及醒互ㄤ蜊动陆及桦宁 ##########
+block Item 18438 == 1 && ItemCreateTime 18438 <= 48 && Item 18428 <= 14 || Item 18429 <= 14 || Item 18430 <= 14 || Group == 1
+
+	#引分仇木匹反?缚仄切扎丹友之
+	EndWindow 13047
+
+
+########## 螫傻嗜立伙立伙唯跸じ曰轼 ##########
+block  Group >= 2
+	#椭瘀“弘伙□皿匹2谛动晓卅日壬﹋き谛杴殖戈﹌
+	EndWindow 13059
+
+

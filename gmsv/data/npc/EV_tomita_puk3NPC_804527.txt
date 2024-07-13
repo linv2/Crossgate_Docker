@@ -1,0 +1,34 @@
+#PUK3卞亢支井仄NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛卅氏匹手盒澎医及摒
+
+###
+
+block
+
+	LocalCount6 = Random 3,0
+
+	If LocalCount6 == 1
+		EndWindow 3204203
+
+		#\n\n﹛云支﹜仇氏卅赭引匹方仁侳凶友﹝\n﹛分仃升﹜轾仇丹卞中月阂间卞反〇踝分方﹝\n﹛井仁木氏廿毛仄化中月氏匹友﹝\n﹛公木午﹜台及潜谛卞手蜕歹卅中匹俓仄中卅﹝
+		EndBlock
+
+	else
+		If LocalCount6 == 2
+			EndWindow 3204204
+
+		#\n\n﹛中支﹜帎卞扔示匀化月歹仃元扎卅中氏分方﹝\n﹛仇丹支匀化阂间凶切午芛氏匹褪仄仁卅木壬﹜\n﹛褪豢今氏互ョ中坁卞侳月井手襞木卅中分欠﹝\n﹛阂间毛母扑卞卅氏化公氏卅﹜谛妏五及鬼中﹝
+			EndBlock
+
+		else
+			EndWindow 3204205
+
+		#\n\n﹛丹□氏﹜漱匀凶卅﹝\n﹛公欠公欠饕卞枑日卅中午变日木化仄引丹﹝\n﹛匹手﹜井仁木氏廿卞反扙仃凶仁卅中仄＿＿﹝\n﹛升丹仄凶手及井卅﹝
+			EndBlock
+
+		endif
+	endif
+
+
+

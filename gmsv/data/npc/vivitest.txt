@@ -1,0 +1,443 @@
+###ฝฃ
+block Item 3 == 1
+	 SetDur 3,-150
+	 
+block Item 8 == 1
+	 SetDur 8,-150
+
+block Item 16 == 1
+	 SetDur 16,-150
+	 
+block Item 18 == 1
+	 SetDur 18,-150
+	 
+block Item 22 == 1
+	 SetDur 22,-150
+	 
+block Item 28 == 1
+	 SetDur 28,-150
+	 	 
+block Item 37 == 1
+	 SetDur 37,-150
+	 
+block Item 39 == 1
+	 SetDur 39,-150
+	 
+block Item 42 == 1
+	 SetDur 42,-150
+	 
+block Item 48 == 1
+	 SetDur 48,-150
+	 
+block Item 56 == 1
+	 SetDur 56,-150
+	 
+block Item 57 == 1
+	 SetDur 57,-150
+	 
+block Item 63 == 1
+	 SetDur 63,-150
+	 
+block Item 67 == 1
+	 SetDur 67,-150
+	 	 
+block Item 70 == 1
+	 SetDur 70,-150
+	 
+block Item 73 == 1
+	 SetDur 73,-150
+	 
+block Item 77 == 1
+	 SetDur 77,-150
+	 	 
+block Item 87 == 1
+	 SetDur 87,-150
+	 
+block Item 88 == 1
+	 SetDur 88,-150
+	 
+block Item 94 == 1
+	 SetDur 94,-150
+	 	 
+block Item 97 == 1
+	 SetDur 97,-150
+###วน	 
+block Item 1606 == 1
+	 SetDur 1606,-150
+	 
+block Item 1608 == 1
+	 SetDur 1608,-150
+	 	 
+block Item 1613 == 1
+	 SetDur 1613,-150
+	 
+block Item 1619 == 1
+	 SetDur 1619,-150
+	 
+block Item 1625 == 1
+	 SetDur 1625,-150
+	 	 
+block Item 1629 == 1
+	 SetDur 1629,-150
+	 
+block Item 1634 == 1
+	 SetDur 1634,-150
+	 
+block Item 1635 == 1
+	 SetDur 1635,-150
+	 	 
+block Item 1643 == 1
+	 SetDur 1643,-150
+	 
+block Item 1649 == 1
+	 SetDur 1649,-150
+	 
+block Item 1657 == 1
+	 SetDur 1657,-150
+	 	 
+block Item 1658 == 1
+	 SetDur 1658,-150
+	 
+block Item 1663 == 1
+	 SetDur 1663,-150
+	 
+block Item 1669 == 1
+	 SetDur 1669,-150
+	 	 
+block Item 1672 == 1
+	 SetDur 1672,-150
+	 
+block Item 1673 == 1
+	 SetDur 1673,-150
+	 
+block Item 1678 == 1
+	 SetDur 1678,-150
+	 
+block Item 1684 == 1
+	 SetDur 1684,-150
+	 
+block Item 1686 == 1
+	 SetDur 1686,-150
+	 
+block Item 1695 == 1
+	 SetDur 1695,-150
+	 
+block Item 1698 == 1
+	 SetDur 1698,-150
+	 
+block Item 805 == 1
+	 SetDur 805,-150
+	 
+block Item 809 == 1
+	 SetDur 809,-150
+	 
+block Item 811 == 1
+	 SetDur 811,-150
+	 
+block Item 812 == 1
+	 SetDur 812,-150
+	 
+block Item 820 == 1
+	 SetDur 820,-150
+	 
+block Item 826 == 1
+	 SetDur 826,-150
+	 
+block Item 830 == 1
+	 SetDur 830,-150
+	 
+block Item 838 == 1
+	 SetDur 838,-150
+	 
+block Item 841 == 1
+	 SetDur 841,-150
+	 
+block Item 842 == 1
+	 SetDur 842,-150
+	 
+block Item 852 == 1
+	 SetDur 852,-150
+	 
+block Item 854 == 1
+	 SetDur 854,-150
+	 
+block Item 863 == 1
+	 SetDur 863,-150
+	 
+block Item 867 == 1
+	 SetDur 867,-150
+	 
+block Item 872 == 1
+	 SetDur 872,-150
+	 
+block Item 875 == 1
+	 SetDur 875,-150
+	 
+block Item 878 == 1
+	 SetDur 878,-150
+	 
+block Item 883 == 1
+	 SetDur 883,-150
+	 
+block Item 885 == 1
+	 SetDur 885,-150
+	 
+block Item 890 == 1
+	 SetDur 890,-150
+	 
+block Item 895 == 1
+	 SetDur 895,-150
+	 
+block Item 2000 == 1
+	 SetDur 2000,-150
+	 
+block Item 2002 == 1
+	 SetDur 2002,-150
+	 
+block Item 2010 == 1
+	 SetDur 2010,-150
+	 
+block Item 2017 == 1
+	 SetDur 2017,-150
+	 
+block Item 2022 == 1
+	 SetDur 2022,-150
+	 
+block Item 2023 == 1
+	 SetDur 2023,-150
+	 
+block Item 2035 == 1
+	 SetDur 2035,-150
+	 
+block Item 2038 == 1
+	 SetDur 2038,-150
+	 
+block Item 2042 == 1
+	 SetDur 2042,-150
+	 
+block Item 2049 == 1
+	 SetDur 2049,-150
+	 
+block Item 2052 == 1
+	 SetDur 2052,-150
+	 
+block Item 2055 == 1
+	 SetDur 2055,-150
+	 
+block Item 2062 == 1
+	 SetDur 2062,-150
+	 
+block Item 2063 == 1
+	 SetDur 2063,-150
+	 
+block Item 2070 == 1
+	 SetDur 2070,-150
+	 
+block Item 2071 == 1
+	 SetDur 2071,-150
+	 
+block Item 2078 == 1
+	 SetDur 2078,-150
+	 
+block Item 2082 == 1
+	 SetDur 2082,-150
+	 
+block Item 2083 == 1
+	 SetDur 2083,-150
+	 
+block Item 2095 == 1
+	 SetDur 2095,-150
+	 
+block Item 2098 == 1
+	 SetDur 2098,-150
+	 
+block Item 2801 == 1
+	 SetDur 2801,-150
+	 
+block Item 2806 == 1
+	 SetDur 2806,-150
+	 
+block Item 2812 == 1
+	 SetDur 2812,-150
+	 
+block Item 2815 == 1
+	 SetDur 2815,-150
+	 
+block Item 2820 == 1
+	 SetDur 2820,-150
+	 
+block Item 2823 == 1
+	 SetDur 2823,-150
+	 
+block Item 2832 == 1
+	 SetDur 2832,-150
+	 
+block Item 2834 == 1
+	 SetDur 2834,-150
+	 
+block Item 2843 == 1
+	 SetDur 2843,-150
+	 
+block Item 2848 == 1
+	 SetDur 2848,-150
+	 
+block Item 2850 == 1
+	 SetDur 2850,-150
+	 
+block Item 2859 == 1
+	 SetDur 2859,-150
+	 
+block Item 2862 == 1
+	 SetDur 2862,-150
+	 
+block Item 2863 == 1
+	 SetDur 2863,-150
+	 
+block Item 2870 == 1
+	 SetDur 2870,-150
+	 
+block Item 2871 == 1
+	 SetDur 2871,-150
+	 
+block Item 2874 == 1
+	 SetDur 2874,-150
+	 
+block Item 2887 == 1
+	 SetDur 2887,-150
+	 
+block Item 2889 == 1
+	 SetDur 2889,-150
+	 
+block Item 2898 == 1
+	 SetDur 2898,-150
+	 
+block Item 2899 == 1
+	 SetDur 2899,-150
+	 
+block Item 3201 == 1
+	 SetDur 3201,-150
+	 
+block Item 3204 == 1
+	 SetDur 3204,-150
+	 
+block Item 3212 == 1
+	 SetDur 3212,-150
+	 
+block Item 3213 == 1
+	 SetDur 3213,-150
+	 
+block Item 3222 == 1
+	 SetDur 3222,-150
+	 
+block Item 3229 == 1
+	 SetDur 3229,-150
+	 
+block Item 3230 == 1
+	 SetDur 3230,-150
+	 
+block Item 3235 == 1
+	 SetDur 3235,-150
+	 
+block Item 3241 == 1
+	 SetDur 3241,-150
+	 
+block Item 3245 == 1
+	 SetDur 3245,-150
+	 
+block Item 3251 == 1
+	 SetDur 3251,-150
+	 
+block Item 3253 == 1
+	 SetDur 3253,-150
+	 
+block Item 3260 == 1
+	 SetDur 3260,-150
+	 
+block Item 3269 == 1
+	 SetDur 3269,-150
+	 
+block Item 3270 == 1
+	 SetDur 3270,-150
+	 
+block Item 3276 == 1
+	 SetDur 3276,-150
+	 
+block Item 3279 == 1
+	 SetDur 3279,-150
+	 
+block Item 3281 == 1
+	 SetDur 3281,-150
+	 
+block Item 3288 == 1
+	 SetDur 3288,-150
+	 
+block Item 3294 == 1
+	 SetDur 3294,-150
+	 
+block Item 3299 == 1
+	 SetDur 3299,-150
+	 
+block Item 2402 == 1
+	 SetDur 2404,-150
+	 
+block Item 2413 == 1
+	 SetDur 2413,-150
+	 
+block Item 2418 == 1
+	 SetDur 2418,-150
+	 
+block Item 2434 == 1
+	 SetDur 2434,-150
+	 
+block Item 2435 == 1
+	 SetDur 2435,-150
+	 
+block Item 2446 == 1
+	 SetDur 2446,-150
+	 
+block Item 2447 == 1
+	 SetDur 2447,-150
+	 
+block Item 2449 == 1
+	 SetDur 2449,-150
+	 
+block Item 2450 == 1
+	 SetDur 2450,-150
+	 
+block Item 2461 == 1
+	 SetDur 2461,-150
+	 
+block Item 2462 == 1
+	 SetDur 2462,-150
+	 
+block Item 2473 == 1
+	 SetDur 2473,-150
+	 	 	 
+block Item 2478 == 1
+	 SetDur 2478,-150
+	 	 	 
+block Item 2484 == 1
+	 SetDur 2484,-150
+	 	 	 
+block Item 2486 == 1
+	 SetDur 2486,-150
+	 	 	 
+block Item 2488 == 1
+	 SetDur 2488,-150
+	 	 	 
+block Item 2492 == 1
+	 SetDur 2492,-150
+	 	 	 
+block Item 2493 == 1
+	 SetDur 2493,-150
+	 	 	 
+block Item 2495 == 1
+	 SetDur 2495,-150
+	 	 	 	 
+block Item 2497 == 1
+	 SetDur 2497,-150	 	 	 	 
+	 
+block 
+	 GiveLeak1Item (45930%1$50)
+	 GiveLeak1Item (45932%1$50)
+#	 GiveLeak1Item (45992%1$100)

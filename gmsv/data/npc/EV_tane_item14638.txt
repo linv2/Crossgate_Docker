@@ -1,0 +1,9 @@
+#
+#»û¼°Ï¶¿æ
+#
+
+block
+	EndEvent 202 = 1
+	CheckTitle
+
+	killitemall 14638

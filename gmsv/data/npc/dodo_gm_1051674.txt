@@ -1,0 +1,10 @@
+##障碍赛终点教官			din_gm_1051674.txt	座标：32680(13,11)	终点教官。
+
+block Item 46404 >= 1
+	 GiveLeak1Item 47281
+	 GiveLeak1Item 47282	 
+	 
+block 
+	 ##1054700	\n\n\n\n\n@c恭喜！你完成了艰钜的任务。	1
+	 EndWindow 1054700
+	 	 			 

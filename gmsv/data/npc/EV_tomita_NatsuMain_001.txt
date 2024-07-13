@@ -1,0 +1,463 @@
+#﹛笙渝蜃烂母件斥亦件﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛杹?瓜汁市必及摒
+
+###﹛由□泛奴毛赚氏匹中月桦宁
+block Group >= 2
+	EndWindow 3207068
+
+		#\n\n﹛丐丐楝凶切﹜萧仄沭卅中氏分仃升友尹﹜\n﹛药虫及熬尥反仄化卅中氏分方﹝\n﹛仇及燮及母件斥亦件卞褡心凶中及卅日﹜\n﹛ㄠ谛内勾侳化云仁木方﹝
+
+
+
+###﹛伊矛伙ㄨ动票及桦宁
+block Level <= 9
+	Window 3207069,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛楝及方丹卞伊矛伙ㄨ动票及谛反拑恔分方﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207070
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES
+			Window 3207071,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207072
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207073
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+
+###﹛伊矛伙19动票及桦宁
+block Level <= 19
+	Window 3207074,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛伊矛伙ㄠㄟ动晓ㄠㄨ动票及楝反ㄤㄟ?分方﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207075
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES Gold < 50
+			EndWindow 3207076
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+		Window_YES
+			Window 3207077,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207078
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK Gold < 50
+					EndWindow 3207079
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+				Window_OK
+					AddGold -50
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207080
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+
+###﹛伊矛伙29动票及桦宁
+block Level <= 29
+	Window 3207081,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛伊矛伙ㄡㄟ动晓ㄡㄨ动票及楝反ㄠㄟㄟ?分方﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207082
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES Gold < 100
+			EndWindow 3207083
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+		Window_YES
+			Window 3207084,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207085
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK Gold < 100
+					EndWindow 3207086
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+				Window_OK
+					AddGold -100
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207087
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+
+###﹛伊矛伙39动票及桦宁
+block Level <= 39
+	Window 3207088,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛伊矛伙ㄢㄟ动晓ㄢㄨ动票及楝反ㄡㄟㄟ?分方﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207089
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES Gold < 200
+			EndWindow 3207090
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+		Window_YES
+			Window 3207091,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207092
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK Gold < 200
+					EndWindow 3207093
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+				Window_OK
+					AddGold -200
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207094
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+
+###﹛伊矛伙49动票及桦宁
+block Level <= 49
+	Window 3207095,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛伊矛伙ㄣㄟ动晓ㄣㄨ动票及楝反ㄣㄟㄟ?分方﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207096
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES Gold < 400
+			EndWindow 3207097
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+		Window_YES
+			Window 3207098,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207099
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK Gold < 400
+					EndWindow 3207100
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+				Window_OK
+					AddGold -400
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207101
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+
+###﹛伊矛伙59动票及桦宁
+block Level <= 59
+	Window 3207102,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛伊矛伙ㄤㄟ动晓ㄤㄨ动票及楝反ㄧㄟㄟ?分方﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207103
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES Gold < 800
+			EndWindow 3207104
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+		Window_YES
+			Window 3207105,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207106
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK Gold < 800
+					EndWindow 3207107
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+				Window_OK
+					AddGold -800
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207108
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+
+###﹛伊矛伙69动票及桦宁
+block Level <= 69
+	Window 3207109,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛伊矛伙ㄥㄟ动晓ㄥㄨ动票及楝反ㄠㄡㄟㄟ?分﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207110
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES Gold < 1200
+			EndWindow 3207111
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+		Window_YES
+			Window 3207112,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207113
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK Gold < 1200
+					EndWindow 3207114
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+				Window_OK
+					AddGold -1200
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207115
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+
+###﹛伊矛伙79动票及桦宁
+block Level <= 79
+	Window 3207116,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛伊矛伙ㄦㄟ动晓ㄦㄨ动票及楝反ㄠㄥㄟㄟ?分﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207117
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES Gold < 1600
+			EndWindow 3207118
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+		Window_YES
+			Window 3207119,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207120
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK Gold < 1600
+					EndWindow 3207121
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+				Window_OK
+					AddGold -1600
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207122
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+
+###﹛伊矛伙89动票及桦宁
+block Level <= 89
+	Window 3207123,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛伊矛伙ㄧㄟ动晓ㄧㄨ动票及楝反ㄡㄟㄟㄟ?分﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207124
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES Gold < 2000
+			EndWindow 3207125
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+		Window_YES
+			Window 3207126,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207127
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK Gold < 2000
+					EndWindow 3207128
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+				Window_OK
+					AddGold -2000
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207129
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+
+###﹛伊矛伙99动票及桦宁
+block Level <= 99
+	Window 3207130,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛伊矛伙ㄨㄟ动晓ㄨㄨ动票及楝反ㄢㄟㄟㄟ?分﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207131
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES Gold < 3000
+			EndWindow 3207132
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+		Window_YES
+			Window 3207133,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207134
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK Gold < 3000
+					EndWindow 3207135
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+				Window_OK
+					AddGold -3000
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207136
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+
+###﹛伊矛伙100动晓
+block Level >= 100
+	Window 3207137,YES,NO
+
+		#\n\n﹛中支反支﹜趟中友尹﹝笙卅氏分友尹﹝\n﹛恞潸曰卞母件斥亦件茧腹卅氏化中井互井友〝\n﹛伊矛伙ㄠㄟㄟ动晓及楝反ㄤㄟㄟㄟ?分方﹝\n﹛升丹分中﹜じ匀化心月井友〝
+
+		Window_YES Group >= 2
+			EndWindow 3207138
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+		Window_YES Gold < 5000
+			EndWindow 3207139
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+		Window_YES
+			Window 3207140,OK
+
+		#\n\n﹛丹氏﹜棒毛挕支允卞反母件斥亦件互域?分方﹝\n﹛凶分仄﹜仇仇匹反乒件旦正□毛忯引尹凶曰﹜\n﹛烦董袄毛井六中分曰匀化仇午反匹五卅中方﹝\n﹛仇仇反引丐﹜旦平伙及柈莲井扲茧仄迕分友尹﹝\n﹛元扎丐﹜互氏壬匀化觎尹晓互匀化云仁木方﹝
+
+				Window_OK Group >= 2
+					EndWindow 3207141
+
+		#\n\n﹛丐丐楝凶切﹜竣互镀允亢月方﹝\n﹛由□泛奴综曰反じ桦仄化井日﹝\n﹛熬尥反ㄠ谛内勾云凑中允月方﹝
+
+				Window_OK Gold < 5000
+					EndWindow 3207142
+
+		#\n\n﹛云支﹜云嗯互箫曰卅中方丹分方﹝\n﹛じ曰凶中卅日﹜替踹踱日仄化云嗯毛绅中匹﹜\n﹛公木井日引凶侳化幻仄中友尹﹝
+
+				Window_OK
+					AddGold -5000
+					Warp 0,59750,88,262
+
+		Window_NO
+			EndWindow 3207143
+
+		#\n\n﹛恞潸曰互尕邰午反﹜趟今卞雄中氏匹允友尹﹝\n﹛中支反支﹜丹日支引仄中﹝\n﹛台反抩蟆卞瓜汁互尥中化中月氏匹允互﹜\n﹛笙及趟今互厘及塑澎匹友尹﹝
+
+
+

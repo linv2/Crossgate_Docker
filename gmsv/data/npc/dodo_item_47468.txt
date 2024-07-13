@@ -1,0 +1,59 @@
+##dodo_item_47468.txt
+###龙翼		47468		可兑换再生剧药一瓶
+block Item 47467 >= 1 && Item 47468 >= 1 && Item 47469 >= 1
+	 ##1109585	\n\n  已经收集到‘龙首’、‘龙翼’、‘龙骨’三种道  具，你要将自己的鲜血滴在龙骨上面，藉此招唤小  白龙来到现世吗?	1																																																																																																			
+	 Window 1109585,YES,NO 
+	 	 
+	 	 Window_YES PetSpace == 0
+	 	 	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1																																																																																																			
+			 EndWindow 1100004
+	 	 
+	 	 Window_YES lp < 100
+	 	 	 ##1109587	\n\n\n\n  你的身体太虚弱，无法给予小白龙所需的生命力与  活力，建议先去给护士检查一下再进行招唤仪式。	1
+			 EndWindow 1109587
+	 	 
+	 	 Window_YES PetSpace >= 1 && Item 47467 >= 1 && Item 47468 >= 1 && Item 47469 >= 1 && floor == 1160 && Xpos >= 14 && Xpos <= 18 && Ypos >= 11 && Ypos <= 15 && lp > 100
+	 	 	 ##1109588	\n\n  当血液滴在龙骨上的一刹那，龙骨有如触电般的抖  动着，随着血液所流过的地方，渐渐恢复生气，龙  翼与龙首也慢慢的与龙骨合唯一体；霎时之间一阵  光将龙首、龙翼与龙骨包围住，宛如光球一般不断  旋转；突然间，一只小白龙由光球中冲出。	1
+	 	 	 Window 1109588,OK 
+	 	 	 	 Window_OK PetSpace >= 1 && Item 47467 >= 1 && Item 47468 >= 1 && Item 47469 >= 1 && floor == 1160 && Xpos >= 14 && Xpos <= 18 && Ypos >= 11 && Ypos <= 15 && lp > 100
+					 KillItem 47469,(1109593)
+					 KillItem 47468,(1109594)
+					 KillItem 47467,(1109595)
+					 setlp -100
+					 GivePet 41213
+	 	 
+	 	 Window_YES Item 47467 >= 1 && Item 47468 >= 1 && Item 47469 >= 1
+	 	 	 ##1109586	\n\n\n\n\n@c需在魔女之家的魔法阵才能展开仪式！	1																																																																																																			
+			 EndWindow 1109586
+
+	 	 Window_NO Item 47468 < 1
+	 	 	 endblock
+	 	 
+	 	 Window_NO Item 47468 >= 1
+	 	 	 ##1109589	\n\n\n\n\n@c想将龙翼磨成粉末制成可重置点数的再生剧药吗？	1
+			 Window 1109589,YES,NO 
+	 			 Window_NO
+	 	 
+	 			 Window_YES ItemSpace < 1
+	 	 			 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1
+					 EndWindow 1054495
+					 
+				  Window_YES ItemSpace >= 1 && Item 47468 >= 1
+	 			 	 ##1109590	龙翼被磨碎制作成了再生剧药。	1
+	 	 			 KillItem 47468,(1109590)
+	 	 			 GiveLeak1Item 45745
+	 	 
+block Item 47468 >= 1
+	 ##1109589	\n\n\n\n\n@c想将龙翼磨成粉末制成可重置点数的再生剧药吗？	1
+	 Window 1109589,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES ItemSpace < 1
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1
+			 EndWindow 1054495
+	 	 
+	 	 Window_YES ItemSpace >= 1 && Item 47468 >= 1
+	 	 	 ##1109590	龙翼被磨碎制作成了再生剧药。	1
+	 	 	 KillItem 47468,(1109590)
+	 	 	 GiveLeak1Item 45745
+	 	 

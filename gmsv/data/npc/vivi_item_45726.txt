@@ -1,0 +1,11 @@
+####欢乐惊奇箱-香港版####
+##■检查物品栏
+block Item 45726 >= 1 && ItemSpace < 3
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	
+block Item 45726 >= 1 && ItemSpace >= 3
+	 KillItem 45726
+	 GiveLeak1Item (45722%23$1,45723%2$1,45724%1$1)
+	 GiveLeak1Item (45725%1$1)
+	 GiveStackItem 45727

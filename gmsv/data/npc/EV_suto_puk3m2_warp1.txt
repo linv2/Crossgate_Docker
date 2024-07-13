@@ -1,0 +1,61 @@
+#PUK3_main2
+#
+#
+#·¥¡õÃóÆ½Ø¨¡õÆ¤¨à
+
+Block item_621020 >= 1 && Globalflag89 == 1
+
+	if EndEvent_206 == 1 && Xpos == 195 && Ypos == 67
+	
+	 	if LocalFlag0 == 0
+	 	
+			Play_SE 167,320,240
+			ShapeNext 103010
+
+			LocalFlag0 = 1
+		
+		endif
+
+	endif
+	
+	if item_621020 >= 1 && Xpos == 195 && Ypos ==62
+	
+		if LocalFlag0 == 1
+		
+			LeaveGroup
+			Warp 0,59985,235,106
+			
+		endif
+	endif
+	
+	
+	
+Block item_621015 >= 1
+
+	if EndEvent_206 == 1 && Xpos == 195 && Ypos == 67
+	
+	 	if LocalFlag0 == 0
+	 	
+			Play_SE 167,320,240
+			ShapeNext 103010
+
+			LocalFlag0 = 1
+		
+		endif
+
+	endif
+	
+
+	if item_621015 >= 1 && Xpos == 195 && Ypos == 62 
+	
+	
+		if LocalFlag0 == 1
+		
+			LeaveGroup
+			warp 0,59985,195,66
+			
+		endif
+		
+	endif
+
+

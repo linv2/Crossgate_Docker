@@ -1,0 +1,25 @@
+##### 福袋兑换处 #####
+##■检查物品栏
+block Item 45337 >= 1 && ItemSpace < 4
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+##■有福袋兑换卷
+block Item 45337 >= 1 && ItemSpace >= 4
+  ##1050820	\n\n\n\n这是您的福袋奖品，谢谢光临！
+  Window 1050820,OK 
+  	 Window_OK Item 45337 >= 1 && ItemSpace >= 4 
+  	  	 KillItem 45337
+  	  	 GiveLeak1Item (45220%1$1,45221%1$1,45222%1$1,45223%1$1)
+  	  	 GiveLeak1Item (45220%1$1,45221%1$1,45222%1$1,45223%1$1)
+  	  	 GiveLeak1Item (45220%1$1,45221%1$1,45222%1$1,45223%1$1)
+  	  	 GiveStackItem 45338,10
+  	  	 GiveLeak1Item 45320
+##■一般
+block
+  ##1050821	\n\n\n\n@c您好，这里是福带兑换处！
+  EndWindow 1050821
+
+  	 
+  	 
+   
+  

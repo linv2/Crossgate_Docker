@@ -1,0 +1,21 @@
+#庄趸弘伉白巧件忯凯弁巨旦玄“弘伉白巧件
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+###########﹛窒手卅仄﹛##############
+block nowevent86 == 1
+
+	Window 206959,OK
+	Window_OK
+	changepal 18,400
+	Window 206960,OK
+	Window_OK
+	Window 206961,OK
+	Window_OK
+	nowevent86 = 0
+	Warp 0,43174,7,8
+
+###########﹛窒手卅仄﹛##############
+block
+
+	Endwindow 206948,OK
+

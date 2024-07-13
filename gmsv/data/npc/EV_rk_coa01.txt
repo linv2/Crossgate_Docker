@@ -1,0 +1,32 @@
+#???????
+
+block EndEvent 103 == 1
+	Message 21603
+
+block Item 16224 >= 1 || Item 16225 >= 1 || Item 16226 >= 1
+	EndWindow 21664
+
+block Item 16229 >= 1
+	EndWindow 21668
+
+block Item 16228 >= 1
+	Message 21603
+
+block Item 16227 >= 1
+	Window 21604,next
+	Window 21605,next
+	Window 21606,OK
+		Window_OK
+			KillItemall 16227
+			GiveItem 16229
+		Window_OK
+
+block
+	Window 21607,next
+	Window 21608,YES,NO
+		Window_NO
+			EndWindow 21609
+		Window_YES ItemSpace != 0
+			GiveItem 16224
+		Window_YES
+			EndWindow 10000

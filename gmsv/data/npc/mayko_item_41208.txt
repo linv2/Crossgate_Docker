@@ -1,0 +1,158 @@
+#1111625	到法兰城西边医院(82,83)找护士长荷洛说话，她会请你找3个小护士欧班琦、乔斯琪与蓓儿特。
+#1111626	到法兰城西边(92,76)附近找护士欧班琦说话，拿到“笔记”。
+#1111627	只有在晚上才找的到欧班琦
+#1111628	将笔记拿到城西医院给荷洛，拿到“药?”。
+#1111629	将药?拿给护士欧班琦后，拿到“第一封介绍信”。
+#1111630	再到法兰城的南边(151,135)找护士乔斯琪说话，拿到“诊断书”。
+#1111631	只有在白天才找的到乔斯琪
+#1111632	带着诊断书，拿到城西医院给荷洛，拿到“药?”。
+#1111633	将药?拿给护士乔斯琪后，拿到“第二封介绍信”。
+#1111634	到法兰城东边(208,134)找护士蓓儿特说话，拿到“给山男的信”。
+#1111635	只有在黄昏才找的到蓓儿特。
+#1111636	将梦露草拿给护士蓓儿特后，拿到“第三封介绍信”。
+#1111637	回法兰城西医院跟护士长荷洛说话，拿到“护士推荐函”。
+#1111638	到法兰城里谢里雅堡2F左边房间(18,71)找护士凯妲克就职。  
+#1111564	再到山男的家(509,153)跟山男哈葛利特换取梦露草   
+
+## nowtime  现在的时间(0 清晨-正午  1 正午-傍晚 2 傍晚-晚上 3 晚上-清晨)
+
+#护士推荐信18139
+block item 18139 >0
+	window 1111638,next
+	Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1507,11,5
+	 	window_no
+	 	endblock
+block Item 18175 >= 1 && Item 18176 >= 1 && Item 18177 >= 1
+	window 1111637,next
+	Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1111,15,31
+	 	window_no
+	 	endblock
+block item 18165 >0 && nowtime == 2
+	window 1111636,next
+	Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1000,208,134
+	 	window_no	
+	 	endblock
+block item 18165 >0 
+	window 1111636,next
+	endwindow 1111635
+	
+block item 18174 >0 
+	window 1111564,next
+	Window 1111688,yes,no	
+	window_yes
+	leavegroup 
+	warp 0,100,509,153
+	window_no
+	endblock
+
+	
+block item 18176 >0 && nowtime == 2  #
+	window 1111634,next
+	Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1000,208,134
+	 	window_no	
+	 	endblock
+block item 18176 >0 
+	window 1111634,next
+	endwindow 1111635
+	
+block item 18171 >0 && nowtime == 1
+	window 1111633,next
+	Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1000,151,136
+	 	window_no	
+	 	endblock
+block item 18171 >0 
+	window 1111633,next
+	endwindow 1111631
+	
+block item 18173 >0
+	window 1111632,next
+	Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1111,15,31
+	 	window_no
+	 	endblock
+	
+block item 18175 >0 && nowtime == 1
+	window 1111630,next
+	Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1000,151,136
+	 	window_no	
+	 	endblock
+block item 18175 >0 
+	window 1111630,next
+	endwindwo 1111631
+	
+block item 18170 >0 && nowtime == 3 ##找欧班
+	window 1111629,next
+	Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1000,92,77
+	 	window_no
+	 	endblock
+block item 18170 >0 
+	window 1111629,next
+	endwindow 1111627
+	
+block item 18172 >0
+	window 1111628,next
+	Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1111,15,31
+	 	window_no
+	 	endblock
+	
+
+###起始	
+block 
+	window 1111625,next
+	window 1111690,yes,no
+	Window_yes itemspace >2
+	GiveLeak1Item 18175,1 
+	GiveLeak1Item 18176,1
+	GiveLeak1Item 18177,1
+	endblock
+	Window_yes
+	endwindow 14830
+	window_no nowtime == 3 ##欧班出现时间
+		Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1000,92,77
+	 	window_no
+	 	endblock
+	window_no nowtime == 1 ##乔斯琪
+		Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1000,151,136
+	 	window_no	
+	 	endblock
+	window_no nowtime == 2 ##蓓儿特
+		Window 1111688,yes,no	
+		window_yes
+	 	leavegroup 
+	 	warp 0,1000,208,134
+	 	window_no	
+	 	endblock
+	window_no 
+	endwindow 1111631

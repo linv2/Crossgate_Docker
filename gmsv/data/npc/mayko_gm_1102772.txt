@@ -1,0 +1,12 @@
+#1111769	\n\n\n\n@c你想进入花妖们躲藏的花谷吗？	1
+
+block 
+	
+	Window 1111903,yes,no
+	Window_yes	
+		leavegroup 
+		warp 0,32468,24,7
+		endblock
+	window_no
+	endblock	
+	

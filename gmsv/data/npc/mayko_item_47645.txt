@@ -1,0 +1,41 @@
+## 逆之星包装虚拟赠品_小白龙设计图 （身上只能放置要改造的招财猫，改造后不论原等级多少，等级将变为LV1）
+##改造小白龙 enemybase ID:10058 enemyID:41213
+##重覆改造中型龙 
+ 
+####□ 宠物栏是空的
+block PetSpace == 5
+	 ##21389	你好像没有带宠物喔！	1
+	 EndWindow 21389
+
+####□ 小白龙设计图>= 2
+block Item 47645 >= 2
+	 ##206650	\n\n持有两个以上是不能使用的。	0
+	 EndWindow 206650
+	 
+####□身上只能留下要改的宠
+block  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783
+
+
+
+####□身上有 小白龙设计图== 1、天使之龙>=1 、宠物空格为4格
+block Item 47645 == 1 &&  PetLevel 10059 >= 1 && PetSpace == 4
+	 ##1054941	\n\n使用设计图请注意：\n\n\n1.可改变地之妖精，并且回到１级状态，能力重置。\n\n\n3.并且请你牺牲“生命力500点”、“地之妖精设计图”\n\n\n作为交换的代价．．．	1
+	 Window 1054941,YES,NO
+	 	 Window_YES Item 47645 == 1 &&  PetLevel 10059 >= 1 && PetSpace == 4 && lp < 500
+	 	 	  ##1054811	\n\n\n\n‘你的生命力不足．．．’	1
+			 EndWindow 1054811
+		 Window_YES Item 47645 == 1 &&  PetLevel 10059 >= 1 && PetSpace == 4 && lp >=501
+		 	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+			 Window 1054771,OK
+			 	 Window_OK  Item 47645 == 1 &&  PetLevel 10059 >= 1 && PetSpace == 4 && lp >=501
+			 	 	 KillItem 47645,1
+			 	 	 KillPetl 10059
+			 	 	 setlp -500
+			 	 	  GivePet 103307
+	 	 Window_NO 	 
+####□一般
+block
+	 ##1054810	\n\n\n\n‘没有发生任意事情．．．’	1
+	 EndWindow 1054810

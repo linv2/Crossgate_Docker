@@ -1,0 +1,25 @@
+#####书库底层　哈斯
+
+#1109313	\n\n\n@c书看完了吗？
+#1109314	\n\n\n@c看完再跟我说！
+#1109315	\n\n@c你要回城里了呀，这理有兵寮书库的钥匙，你拿去吧～
+#1109316	东西满出来了，清一下吧～
+
+
+	 
+block 
+
+ 	Window 1109313,YES,NO 			
+ 		Window_YES ItemSpace < 1 		
+		EndWindow 1109316
+
+		Window_YES
+		GiveLeak1Item 40802,1
+		Warp 0,32087,114,344
+ 	
+
+	Window_NO
+
+ 		EndWindow 1109314	
+ 		
+

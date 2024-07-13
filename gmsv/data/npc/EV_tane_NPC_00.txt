@@ -1,0 +1,864 @@
+#抗夫パンタン	（777 47 48：设置）
+#大文字、小文字の?别はない
+#'_'はみ飞ばし
+
+
+########## グループを组んでいる场合 ##########
+block Group > 1
+
+	Window 3200665,YES,NO
+		#\n\n　の里は?いんでな。\n　パーティ组んでたら通れないぞ。\n　パーティをいったん解散するかい？
+
+	Window_YES Group > 1
+	LeaveGroup
+
+	Window_YES
+
+	EndWindow 3200666
+		#\n\n　なんだ、もう解散してるじゃないか。
+
+	Window_NO
+
+*case02*
+
+	EndWindow 3200667
+		#\n\n　なら、この先は通せないな。
+
+########## 职人を通す场合 ##########
+########## 职人以上?师未 ##########
+block Level < 40 && Job >= 200 && Job < 370 && Group == 1
+	#\n\n
+	Window 3200668,YES,NO
+		#\n\n　レベル４０以下の者は、\n　この先、辛いぞ。通すわけにいかんなぁ。\n　职人なら、ランク４のアイテムで\n　己の腕を证明してくれ。
+##
+Window_YES Job >= 200 && Job < 210 && Item 37 >= 1 && Group == 1
+
+	Window 3200669,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+	Window_OK Job >= 200 && Job < 210 && Item 37 >= 1 && Group == 1
+	KillItem 37,1
+	Warp 0,59503,147,125
+
+
+
+	Window_OK
+
+*case01*
+			EndWindow 3200670
+		#\n\n　ひとりで?なさい。
+
+
+##
+Window_YES Job >= 200 && Job < 210 && Item 39 >= 1 && Group == 1
+
+	Window 3200671,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 200 && Job < 210 && Item 39 >= 1 && Group == 1
+	KillItem 39,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+
+##斧
+Window_YES Job >= 210 && Job < 220 && Item 830 >= 1 && Group == 1
+
+	Window 3200672,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 210 && Job < 220 && Item 830 >= 1 && Group == 1
+	KillItem 830,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+
+##斧
+Window_YES Job >= 210 && Job < 220 && Item 838 >= 1 && Group == 1
+	
+	Window 3200673,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 210 && Job < 220 && Item 838 >= 1 && Group == 1
+	KillItem 838,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+
+##枪
+Window_YES Job >= 220 && Job < 230 && Item 1635 >= 1 && Group == 1
+	
+	Window 3200674,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 220 && Job < 230 && Item 1635 >= 1 && Group == 1
+	KillItem 1635,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##枪
+Window_YES Job >= 220 && Job < 230 && Item 1634 >= 1 && Group == 1
+
+	Window 3200675,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 220 && Job < 230 && Item 1634 >= 1 && Group == 1
+	KillItem 1634,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+
+##弓
+Window_YES Job >= 230 && Job < 240 && Item 2035 >= 1 && Group == 1
+
+	Window 3200676,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 230 && Job < 240 && Item 2035 >= 1 && Group == 1
+	KillItem 2035,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+##弓
+Window_YES Job >= 230 && Job < 240 && Item 2038 >= 1 && Group == 1
+
+	Window 3200677,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 230 && Job < 240 && Item 2038 >= 1 && Group == 1
+	KillItem 2038,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+
+##杖
+Window_YES Job >= 240 && Job < 250 && Item 2446 >= 1 && Group == 1
+
+	Window 3200678,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 240 && Job < 250 && Item 2446 >= 1 && Group == 1
+	KillItem 2446,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+
+##杖
+Window_YES Job >= 240 && Job < 250 && Item 2447 >= 1 && Group == 1
+
+	Window 3200679,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 240 && Job < 250 && Item 2447 >= 1 && Group == 1
+	KillItem 2447,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+##ブメ
+Window_YES Job >= 250 && Job < 260 && Item 2834 >= 1 && Group == 1
+
+	Window 3200680,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 250 && Job < 260 && Item 2834 >= 1 && Group == 1
+	KillItem 2834,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+
+##ブメ
+Window_YES Job >= 250 && Job < 260 && Item 2832 >= 1 && Group == 1
+
+	Window 3200681,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 250 && Job < 260 && Item 2832 >= 1 && Group == 1
+	KillItem 2832,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##ナイフ
+Window_YES Job >= 260 && Job < 270 && Item 3230 >= 1 && Group == 1
+
+	Window 3200682,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 260 && Job < 270 && Item 3230 >= 1 && Group == 1
+	KillItem 3230,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+##ナイフ
+Window_YES Job >= 260 && Job < 270 && Item 3235 >= 1 && Group == 1
+
+	Window 3200683,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の武器だ。\n　もらっていいかね？
+
+	Window_OK Job >= 260 && Job < 270 && Item 3235 >= 1 && Group == 1
+	KillItem 3235,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##兜
+Window_YES Job >= 270 && Job < 280 && Item 3632 >= 1 && Group == 1
+
+	Window 3200684,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 270 && Job < 280 && Item 3632 >= 1 && Group == 1
+	KillItem 3632,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##兜
+Window_YES Job >= 270 && Job < 280 && Item 3635 >= 1 && Group == 1
+
+	Window 3200685,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 270 && Job < 280 && Item 3635 >= 1 && Group == 1
+	KillItem 3635,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##帽子
+Window_YES Job >= 280 && Job < 290 && Item 4032 >= 1 && Group == 1
+
+	Window 3200686,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 280 && Job < 290 && Item 4032 >= 1 && Group == 1
+	KillItem 4032,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##帽子
+Window_YES Job >= 280 && Job < 290 && Item 4031 >= 1 && Group == 1
+
+
+	Window 3200687,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 280 && Job < 290 && Item 4031 >= 1 && Group == 1
+	KillItem 4031,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+##铠
+Window_YES Job >= 290 && Job < 300 && Item 4430 >= 1 && Group == 1
+
+	Window 3200688,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 290 && Job < 300 && Item 4430 >= 1 && Group == 1
+	KillItem 4430,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##铠
+Window_YES Job >= 290 && Job < 300 && Item 4434 >= 1 && Group == 1
+
+	Window 3200689,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 290 && Job < 300 && Item 4434 >= 1 && Group == 1
+	KillItem 4434,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##服
+Window_YES Job >= 300 && Job < 310 && Item 4834 >= 1 && Group == 1
+
+	Window 3200690,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 300 && Job < 310 && Item 4834 >= 1 && Group == 1
+	KillItem 4834,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##服
+Window_YES Job >= 300 && Job < 310 && Item 4833 >= 1 && Group == 1
+
+	Window 3200691,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 300 && Job < 310 && Item 4833 >= 1 && Group == 1
+	KillItem 4833,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+##ローブ
+Window_YES Job >= 310 && Job < 320 && Item 5233 >= 1 && Group == 1
+
+	Window 3200692,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 310 && Job < 320 && Item 5233 >= 1 && Group == 1
+	KillItem 5233,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##ローブ
+Window_YES Job >= 310 && Job < 320 && Item 5231 >= 1 && Group == 1
+
+	Window 3200693,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 310 && Job < 320 && Item 5231 >= 1 && Group == 1
+	KillItem 5231,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##ローブ
+Window_YES Job >= 310 && Job < 320 && Item 18803 >= 1 && Group == 1
+
+	Window 3200694,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 310 && Job < 320 && Item 18803 >= 1 && Group == 1
+	KillItem 18803,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+##ブーツ
+Window_YES Job >= 320 && Job < 330 && Item 5630 >= 1 && Group == 1
+
+	Window 3200695,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+
+	Window_OK Job >= 320 && Job < 330 && Item 5630 >= 1 && Group == 1
+	KillItem 5630,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+##ブーツ
+Window_YES Job >= 320 && Job < 330 && Item 5631 >= 1 && Group == 1
+
+	Window 3200696,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+
+	Window_OK Job >= 320 && Job < 330 && Item 5631 >= 1 && Group == 1
+	KillItem 5631,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##靴
+Window_YES Job >= 330 && Job < 340 && Item 6031 >= 1 && Group == 1
+
+	Window 3200697,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 330 && Job < 340 && Item 6031 >= 1 && Group == 1
+	KillItem 6031,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##靴
+Window_YES Job >= 330 && Job < 340 && Item 6033 >= 1 && Group == 1
+
+	Window 3200698,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 330 && Job < 340 && Item 6033 >= 1 && Group == 1
+	KillItem 6033,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+##盾
+Window_YES Job >= 340 && Job < 350 && Item 6437 >= 1 && Group == 1
+
+	Window 3200699,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 340 && Job < 350 && Item 6437 >= 1 && Group == 1
+	KillItem 6437,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+##盾
+Window_YES Job >= 340 && Job < 350 && Item 6434 >= 1 && Group == 1
+
+	Window 3200700,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の防具だ。\n　もらっていいかね？
+
+	Window_OK Job >= 340 && Job < 350 && Item 6434 >= 1 && Group == 1
+	KillItem 6434,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+##调理师
+Window_YES Job >= 350 && Job < 360 && Item 15207 >= 1 && Group == 1
+
+	Window 3200701,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の料理だ。\n　ってもいいかね？
+
+	Window_OK Job >= 350 && Job < 360 && Item 15207 >= 1 && Group == 1
+	KillItem 15207,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##调理师
+Window_YES Job >= 350 && Job < 360 && Item 15208 >= 1 && Group == 1
+
+	Window 3200702,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の料理だ。\n　ってもいいかね？
+
+	Window_OK Job >= 350 && Job < 360 && Item 15208 >= 1 && Group == 1
+	KillItem 15208,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+##师
+Window_YES Job >= 360 && Job < 370 && Item 15609 >= 1 && Group == 1
+
+	Window 3200703,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の品だ。\n　もらってもいいかね？
+
+	Window_OK Job >= 360 && Job < 370 && Item 15609 >= 1 && Group == 1
+	KillItem 15609,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##师
+Window_YES Job >= 360 && Job < 370 && Item 18637 >= 1 && Group == 1
+
+	Window 3200704,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の品だ。\n　もらってもいいかね？
+
+	Window_OK Job >= 360 && Job < 370 && Item 18637 >= 1 && Group == 1
+	KillItem 18637,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##师
+Window_YES Job >= 360 && Job < 370 && Item 18971 >= 1 && Group == 1
+
+	Window 3200705,OK,CANCEL
+		#\n\n　ふむ、\n　确かにランク４の品だ。\n　もらってもいいかね？
+
+	Window_OK Job >= 360 && Job < 370 && Item 18971 >= 1 && Group == 1
+	KillItem 18971,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+Window_YES Group != 1
+
+	Window_OK
+			gotoB case01
+
+
+
+#--- 职人が门以外のアイテムを持っている场合 ---#
+Window_YES 
+	#\n\n　本职の职人さんが持ってくるアイテムしか信用できないよ。\n　ここは通せないな。
+
+	EndWindow 3200706
+		#\n\n　本职の职人さんが作った\n　ランク４アイテムじゃないと意味がないな。\n　ぃがここは通せない。\n　レベルが４０以上になったら?なさい。
+
+	EndWindow 11454
+
+Window_NO
+
+			gotoB case02
+
+
+########## 修理职人以上仙人未 ##########
+block Level < 40 && Job >= 370 && Job < 430 && Group == 1
+
+	Window 3200707,YES,NO
+		#\n\n　レベル４０以下の者は、\n　この先、辛いぞ。通すわけにいかんなぁ。\n　职人なら、レベル４のスキルがあれば\n　通すがね。
+
+
+##武器修理
+Window_YES Job >= 370 && Job < 380 && SkillLevel 217 >= 4 && Group == 1
+
+	Window 3200708,OK,CANCEL
+		#\n\n　己のスキルをちゃんと磨いているようだな。\n　通してやろう。\n　５００Ｇもらうが、いいかね？
+
+	Window_OK Job >= 370 && Job < 380 && SkillLevel 217 >= 4 && Group == 1 && Gold >= 500
+	AddGold -500
+	Warp 0,59503,147,125
+
+	Window_OK Job >= 370 && Job < 380 && SkillLevel 217 >= 4 && Group == 1 && Gold <= 499
+	EndWindow 3200709
+		#\n\n　お金が足りないようだな。
+
+	Window_OK
+			gotoB case01
+
+##防具修理
+Window_YES Job >= 380 && Job < 390 && SkillLevel 218 >= 4 && Group == 1
+
+	Window 3200710,OK,CANCEL
+		#\n\n　己のスキルをちゃんと磨いているようだな。\n　通してやろう。\n　５００Ｇもらうが、いいかね？
+
+	Window_OK Job >= 380 && Job < 390 && SkillLevel 218 >= 4 && Group == 1 && Gold >= 500
+	AddGold -500
+	Warp 0,59503,147,125
+
+	Window_OK Job >= 380 && Job < 390 && SkillLevel 218 >= 4 && Group == 1 && Gold <= 499
+	EndWindow 3200711
+		#\n\n　お金が足りないようだな。
+
+	Window_OK
+			gotoB case01
+
+##鉴定士
+Window_YES Job >= 390 && Job < 400 && SkillLevel 219 >= 4 && Group == 1
+
+	Window 3200712,OK,CANCEL
+		#\n\n　己のスキルをちゃんと磨いているようだな。\n　通してやろう。\n　５００Ｇもらうが、いいかね？
+
+	Window_OK Job >= 390 && Job < 400 && SkillLevel 219 >= 4 && Group == 1 && Gold >= 500
+	AddGold -500
+	Warp 0,59503,147,125
+
+	Window_OK Job >= 390 && Job < 400 && SkillLevel 219 >= 4 && Group == 1 && Gold <= 499
+	EndWindow 3200713
+		#\n\n　お金が足りないようだな。
+
+	Window_OK
+			gotoB case01
+
+
+##刻印师
+Window_YES Job >= 400 && Job < 410 && SkillLevel 220 >= 4 && Group == 1
+
+
+	Window 3200714,OK,CANCEL
+		#\n\n　己のスキルをちゃんと磨いているようだな。\n　通してやろう。\n　５００Ｇもらうが、いいかね？
+
+	Window_OK Job >= 400 && Job < 410 && SkillLevel 220 >= 4 && Group == 1 && Gold >= 500
+	AddGold -500
+	Warp 0,59503,147,125
+
+	Window_OK Job >= 400 && Job < 410 && SkillLevel 220 >= 4 && Group == 1 && Gold <= 499
+	EndWindow 3200715
+		#\n\n　お金が足りないようだな。
+
+	Window_OK
+			gotoB case01
+
+##探侦
+Window_YES Job >= 410 && Job < 420 && SkillLevel 221 >= 4 && Group == 1
+
+	Window 3200716,OK,CANCEL
+		#\n\n　己のスキルをちゃんと磨いているようだな。\n　通してやろう。\n　５００Ｇもらうが、いいかね？
+
+	Window_OK Job >= 410 && Job < 420 && SkillLevel 221 >= 4 && Group == 1 && Gold >= 500
+	AddGold -500
+	Warp 0,59503,147,125
+
+	Window_OK Job >= 410 && Job < 420 && SkillLevel 221 >= 4 && Group == 1 && Gold <= 499
+	EndWindow 3200717
+		#\n\n　お金が足りないようだな。
+
+	Window_OK
+			gotoB case01
+
+##仙人
+Window_YES Job >= 420 && Job < 430 && SkillLevel 222 >= 4 && Group == 1
+
+
+	Window 3200718,OK,CANCEL
+		#\n\n　己のスキルをちゃんと磨いているようだな。\n　通してやろう。\n　５００Ｇもらうが、いいかね？
+
+	Window_OK Job >= 420 && Job < 430 && SkillLevel 222 >= 4 && Group == 1 && Gold >= 500
+	AddGold -500
+	Warp 0,59503,147,125
+
+	Window_OK Job >= 420 && Job < 430 && SkillLevel 222 >= 4 && Group == 1 && Gold <= 499
+	EndWindow 3200719
+		#\n\n　お金が足りないようだな。
+
+	Window_OK
+			gotoB case01
+
+
+Window_YES  Group != 1
+
+			gotoB case01
+
+Window_YES
+	#\n\n　うーん、それでは通してやることはできんな。
+	EndWindow 11507
+
+Window_NO
+
+			gotoB case02
+
+
+########## きこり以上 ##########
+block Level < 40 && Job >= 450 && Group == 1
+
+	Window 3200720,YES,NO
+		#\n\n　レベル４０以下の者は、\n　この先、辛いぞ。通すわけにいかんなぁ。\n　职人なら、ランク４の加工品で\n　己の腕を证明してくれ。
+
+
+##きこり
+Window_YES Job >= 450 && Job < 460 && Item 10003 >= 20 && Group == 1
+
+	Window 3200721,OK,CANCEL
+		#\n\n　ツガか。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 450 && Job < 460 && Item 10003 >= 20 && Group == 1
+	KillItem 10003,20
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+
+##きこり
+
+Window_YES Job >= 450 && Job < 460 && Item 12803 >= 20 && Group == 1
+
+	Window 3200722,OK,CANCEL
+		#\n\n　カリンか。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 450 && Job < 460 && Item 12803 >= 20 && Group == 1
+	KillItem 12803,20
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##狩人
+Window_YES Job >= 460 && Job < 470 && Item 11201 >= 20 && Group == 1
+
+	Window 3200723,OK,CANCEL
+		#\n\n　肉か。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 460 && Job < 470 && Item 11201 >= 20 && Group == 1
+	KillItem 11201,20
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##狩人
+Window_YES Job >= 460 && Job < 470 && Item 11601 >= 20 && Group == 1
+
+	Window 3200724,OK,CANCEL
+		#\n\n　アジか。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 460 && Job < 470 && Item 11601 >= 20 && Group == 1
+	KillItem 11601,20
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##狩人
+Window_YES Job >= 460 && Job < 470 && Item 12000 >= 20 && Group == 1
+
+	Window 3200725,OK,CANCEL
+		#\n\n　クレソンか。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 460 && Job < 470 && Item 12000 >= 20 && Group == 1
+	KillItem 12000,20
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+
+##狩人
+Window_YES Job >= 460 && Job < 470 && Item 12003 >= 20 && Group == 1
+
+	Window 3200726,OK,CANCEL
+		#\n\n　たけのこか。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 460 && Job < 470 && Item 12003 >= 20 && Group == 1
+	KillItem 12003,20
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+
+##狩人
+Window_YES Job >= 460 && Job < 470 && Item 12407 >= 20 && Group == 1
+
+	Window 3200727,OK,CANCEL
+		#\n\n　のりか。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 460 && Job < 470 && Item 12407 >= 20 && Group == 1
+	KillItem 12407,20
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+
+##坑夫
+Window_YES Job >= 470 && Job < 480 && Item 9614 >= 1 && Group == 1
+
+	Window 3200728,OK,CANCEL
+		#\n\n　纯银の延べ棒か。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 470 && Job < 480 && Item 9614 >= 1 && Group == 1
+	KillItem 9614,1
+	Warp 0,59503,147,125
+
+	Window_OK
+			gotoB case01
+
+##坑夫
+Window_YES Job >= 470 && Job < 480 && Item 9603 >= 20 && Group == 1
+
+	Window 3200729,OK,CANCEL
+		#\n\n　纯银か。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 470 && Job < 480 && Item 9603 >= 20 && Group == 1
+	KillItem 9603,20
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+Window_YES Job >= 1010 && Job < 1019 && Item 40741 >= 20 && Group == 1
+
+	Window 1109518,OK,CANCEL
+		#\n\n　棉花か。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 1010 && Job < 1019 && Item 40741 >= 20 && Group == 1
+	KillItem 40741,20
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01
+
+Window_YES Job >= 1010 && Job < 1019 && Item 10403 >= 1 && Group == 1
+
+	Window 1109519,OK,CANCEL
+		#\n\n　棉花か。\n　もらってもかまわんかな？\n　よかろう、通るがいい。
+	Window_OK Job >= 1010 && Job < 1019 && Item 10403 >= 1 && Group == 1
+	KillItem 10403,1
+	Warp 0,59503,147,125
+
+
+	Window_OK
+			gotoB case01						
+
+#--- 职人が门以外のアイテムを持っている场合 ---#
+Window_YES
+
+#	EndWindow 11454
+
+	EndWindow 3200730
+		#\n\n　本职の职人さんが作った\n　ランク４アイテムじゃないと意味がないな。\n　ぃがここは通せない。\n　レベルが４０以上になったら?なさい。
+
+Window_NO
+
+			gotoB case02
+
+
+########## レベルが20以上でグループでない场合 ##########
+block Level >= 40 && Group == 1
+
+	Window 3200731,YES,NO
+		#\n\n　ほう、君はこの先进んでも大丈夫そうだな。\n　５００Ｇもらうが、いいかね？
+	Window_YES Level >= 40 && Group == 1 && Gold >= 500
+
+	AddGold -500
+	Warp 0,59503,147,125
+	
+	Window_YES Level >= 40 && Group == 1 && Gold <= 499
+
+	EndWindow 3200732
+		#\n\n　お金が足りないようだな。
+
+
+	Window_YES Level >= 40 && Group != 1
+
+			gotoB case01
+
+
+
+	Window_NO
+
+			gotoB case02
+
+
+########## あてはまらない场合 ##########
+block
+
+	EndWindow 3200733
+		#\n\n　レベル４０以下の者は、\n　この先、辛いぞ。通すわけにいかんなぁ。\n　职人なら、ランク４のアイテムで\n　己の腕を证明してくれ。

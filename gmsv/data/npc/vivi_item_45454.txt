@@ -1,0 +1,30 @@
+######■ 中秋节-物品item01 大肠 香肠###### 
+##■ 有大肠&&香肠
+block Item 45454 >= 1 && Item 45455 >= 1
+	  KillItem 45454
+	  KillItem 45455
+	  GiveLeak1Item (45456%1$1)
+	 	 
+##■ 有大肠
+block Item 45454 >= 1
+	 ##1050928	\n\n\n\n@c就这样吃下去吗？	1
+	 Window 1050928,YES,NO 
+	 	 Window_YES Item 45454 >= 1
+	 	 	 KillItem 45454
+	 	 	 ##1050929	\n\n\n\n@c嗯~ 味道还不错~	1
+	 	 	 EndWindow 1050929 
+	 	 Window_NO 
+	 	 	 ##1050930	\n\n\n\n@c等等加点配料再吃吧！	1
+			 EndWindow 1050930
+	 	 	 	
+##■ 有香肠
+block Item 45455 >= 1
+	 ##1050928	\n\n\n\n@c就这样吃下去吗？	1
+	 Window 1050928,YES,NO 
+	 	 Window_YES Item 45455 >= 1
+	 	 	 KillItem 45455
+	 	 	 ##1050929	\n\n\n\n@c嗯~ 味道还不错~	1
+	 	 	 EndWindow 1050929 
+	 	 Window_NO 
+	 	 	 ##1050930	\n\n\n\n@c等等加点配料再吃吧！	1
+			 EndWindow 1050930 

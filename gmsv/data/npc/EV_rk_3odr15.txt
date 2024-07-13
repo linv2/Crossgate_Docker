@@ -1,0 +1,12 @@
+#ÈÓÉúĞşÆ¹
+
+#¾Ş»ï
+block EndEvent 119 == 1
+	Window 23089,OK
+		Window_OK
+			Encount 2|0,43983,6,4||0|||||0|25059|||||||||
+#·Â¼ş
+block EndEvent 120 == 1
+	Window 23088,OK
+		Window_OK
+			Encount 2|0,43983,6,4||0|||||0|25059|||||||||

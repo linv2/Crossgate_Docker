@@ -1,0 +1,32 @@
+##酒吧房间内
+##床头柜
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+#■ 有手电筒
+block Item 40302 >= 1
+	 ##1102022	\n\n\n\n@c冰冷的柜子，房间温度低的吓人！	1
+	 EndWindow 1102022
+	  	
+#■ 有水
+block Item 40300 >= 1
+	 ##1102019	\n\n\n\n@c抽屉里似乎有东西，打开看看吗？	1
+	 Window 1102019,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 40300 >= 1 && ItemSpace == 0
+			 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 40300 >= 1 && ItemSpace >= 1				 
+			 GiveLeak1Item (40302%1$1)
+			 ##1102013	\n\n\n\n@找到一只手电筒。	1
+			 EndWindow 1102013
+#■ 一般	 
+block
+	 ##1102022	\n\n\n\n@c冰冷的柜子，房间温度低的吓人！	1
+	 EndWindow 1102022	 	 
+	 	 	  

@@ -1,0 +1,42 @@
+########聚会场地管理员########
+##■ 有聚会邀请函 && 队伍大于1人
+block Item 45439 >= 1 && Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+##有聚会邀请函200张 && 第一次 就给麦克风
+block item 45439 >= 200 && Visitor == 0
+	 giveleak1item 45436
+	 SetVisitor +1
+
+	 	 	  	 	 
+##■ 有聚会邀请函
+block Item 45439 >= 1
+	 ##1050918	\n\n\n\n@c您是来参加聚会的贵宾吧！要进去吗？	1
+	 Window 1050918,YES,NO
+	 	 Window_YES Item 45439 >= 1
+	 	 	 Warp 0,32640,19,34
+	 	 Window_NO 
+
+##■ 聚会完成后有聚会邀请函
+#block Item 45439 >= 1
+	 ##1050923	\n\n\n\n  这次的聚会已经结束了，要把邀请函交还给我吗？	1
+#	 Window 1050923,YES,NO
+#	 	 Window_YES 
+#	 	 	 KillItem 45439
+	 	 ##1050925	\n\n\n\n  感谢您的参予，希望这次聚会能带给你愉快的回忆！	1
+#	 	 	 EndWindow 1050925
+#	 	 Window_NO
+	 	 	 ##1050924	\n\n\n\n  喔~您是想留作纪念吗？那请好好保存喔！	1
+#	 	 	 EndWindow 1050924
+
+	 	 
+##■ 一般
+block
+	 ##1050919	\n\n\n  这边正在举办私人聚会喔！必须有聚会邀请函才\n  能进入！	1
+	 EndWindow 1050919
+	 

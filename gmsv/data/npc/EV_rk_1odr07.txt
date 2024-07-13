@@ -1,0 +1,20 @@
+#ÃýÃê¼°–?
+
+#ÃýÃê¼°óÛÌ¤Ã«ƒ}ÔÈ»¯ÖÐÔÂ
+block Item 16444 >= 1
+	Window 23187,OK
+		Window_OK
+			Encount 2|0,33605,23,1||0|||||0|20049|||||||||
+#
+block
+		Window 23194,Yes,No
+			Window_Yes
+				Window 23189,OK
+					Window_OK
+						LeaveGroup
+						Warp 0,33000,468,381
+			Window_No
+				Window 23190,OK
+					Window_OK
+						LeaveGroup
+						Warp 0,33000,468,381

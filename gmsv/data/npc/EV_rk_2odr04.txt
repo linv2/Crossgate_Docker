@@ -1,0 +1,10 @@
+#Ş¥Œî¾³ĞïÏÎ·òÉê¡õ
+
+
+#
+block
+	Window 23137,OK
+		Window_OK
+			SystemMessage 4449
+				LeaveGroup
+				Warp 0,46065,19,26

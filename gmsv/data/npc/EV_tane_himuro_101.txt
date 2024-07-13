@@ -1,0 +1,75 @@
+
+
+block
+
+
+
+
+
+
+			if LocalCount2 == 5
+
+				LocalCount2 = random 2,0
+
+				if LocalCount2 == 1
+
+
+
+					LocalCount2 = 5
+
+
+#					Window "\n\n﹛友之﹜云烟今氏﹜\n﹛丐凶仄毛踞仃月午合匀化",next
+					Window 3006886,next
+
+
+#					EndWindow "\n\n﹛仇及云烟今氏卞\n﹛卅氏井﹜扤匀凶﹜中支﹜?梦仄凶乒用毛\n﹛儅匀化五化票今中方﹝"
+					EndWindow 3006887
+
+
+
+				else
+
+					LocalCount2 = 5
+					
+#					Window "\n\n﹛丐丐﹜台及谛戏反﹜\n﹛中匀勾手锳倾戊件瓜卅及井卅丑〝",next
+					Window 3006888,next
+
+
+#					EndWindow "\n\n﹛接﹜惚﹜?梦﹜纶午拸午裆午辉＿＿\n﹛＿＿匀化﹜仃匀仇丹中中妢区竣元扎氏＿＿",next
+					EndWindow 3006889,next
+
+
+
+				endif
+
+
+
+			else
+
+
+				LocalCount2 = 2
+
+#				Window "\n\n﹛丐丐﹜卅氏化仇匀凶＿＿\n﹛六匀井仁域ゴ妘粟仄化\n﹛螃敢毛疆扔仿仄化云饕毛铵户凶及卞＿＿",next
+				Window 3006890,next
+
+
+#				EndWindow "\n\n﹛仇氏卅扇卅云烟今氏仄井\n﹛勾井卅中卅氏化＿＿"
+				EndWindow 3006891
+
+
+
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+#1110747	\n\n\n\n@c那我自己再想办法啰	1
+#1110748	\n\n\n　　　　白虎大人一直睡，\n　　　　不知道会不会有事耶	1
+#1110749	\n\n\n\n@c可是吵醒他会被他打～	1
+#1110750	\n\n\n\n@c你可以帮我吵醒他吗？	1
+#1110751	\n\n　　　　谢谢你～\n　　　　这是臭臭草，\n　　　　可以薰醒白虎大人	1
+#1110752	\n\n\n\n@c麻烦你用臭臭草熏醒白虎大人啰！！	1
+
+block item 41148 >0
+	 window 1110752,ok
+	 Window_ok
+	 warp 0,32155,73,17
+	 endblock
+
+block 
+	 window 1110748,next
+	 Window 1110749,next
+	 window 1110750,yes,no
+	 Window_no
+	 endwindow 1110747
+	 
+	 Window_yes ItemSpace ==0
+	 endwindow 1055517
+	 Window_yes
+	 GiveLeak1Item 41148,1
+	 window 1110751,next
+	 window 1110752,next
+	 warp 0,32155,73,17
+	 endblock
+	 
+	
+	 

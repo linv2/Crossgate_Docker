@@ -1,0 +1,231 @@
+#扑尼仿它巨永末及显﹋21℅40﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛立旦玄﹋22F﹌及摒
+
+###﹛民乓永玄じ恘匹＞丢扑＝﹋3004729﹌引凶反＞户仄＝﹋3004730﹌引凶反＞?＝﹋3004731﹌
+block StrCmpChat == 3004729 || StrCmpChat == 3004730 || StrCmpChat == 3004731
+
+#﹛厘霉及褴裤湛﹋631019﹌毛赭儅
+	If Item_631019 >= 1
+		EndWindow 3206260
+
+		#\n\n﹛弘伐伐伐伐永﹜末伊﹜玉戊夫斥乓﹜瓜奶永″\n﹛目伙皿立□永″
+		EndBlock
+
+
+#﹛芘中?﹋631044﹌毛ㄤ蜊动晓赭儅
+	else
+	If Item_631044 >= 5
+		EndWindow 3206261
+
+		#\n\n﹛布失﹜布失﹜失必瓜奶﹝\n﹛布失﹜布失﹜斥亘它皮件﹝
+		EndBlock
+
+
+#﹛芘中?﹋631044﹌毛ㄣ蜊赭儅
+	else
+	If Item_631044 == 4
+		Window 3206262,OK
+
+		#\n\n﹛布失布失＿ㄣ戊﹜失伙市仿﹜ㄠ戊﹜失必伙﹝
+
+			Window_OK Item_631019 >= 1
+				EndWindow 3206263
+
+		#\n\n﹛弘伐伐伐伐永﹜末伊﹜玉戊夫斥乓﹜瓜奶永″\n﹛目伙皿立□永″
+				EndBlock
+
+			Window_OK Item_631044 > 4
+				EndWindow 3206264
+
+		#\n\n﹛弘伐伐永＿丢扑﹜白巨正﹝\n﹛布失﹜布失＿失乩扑奶﹝
+				EndBlock
+
+			Window_OK Item_631044 == 4 && ItemSpace >= 1
+				GiveItem 631044,1
+				EndBlock
+
+			Window_OK Item_631044 == 4
+				EndWindow 3206265
+
+		#\n\n﹛弘伐伐永＿瓦乒汁奶永由奶＿＿﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3206266
+
+		#\n\n﹛弘伐伐永＿丢扑﹜目永正﹝\n﹛布失﹜布失＿失乩扑奶﹝
+				EndBlock
+
+
+#﹛芘中?﹋631044﹌毛ㄢ蜊赭儅
+	else
+	If Item_631044 == 3
+		Window 3206267,OK
+
+		#\n\n﹛布失布失＿ㄢ戊﹜失伙市仿﹜ㄡ戊﹜失必伙﹝
+
+			Window_OK Item_631019 >= 1
+				EndWindow 3206268
+
+		#\n\n﹛弘伐伐伐伐永﹜末伊﹜玉戊夫斥乓﹜瓜奶永″\n﹛目伙皿立□永″
+				EndBlock
+
+			Window_OK Item_631044 > 3
+				EndWindow 3206269
+
+		#\n\n﹛弘伐伐永＿丢扑﹜白巨正﹝\n﹛布失﹜布失＿失乩扑奶﹝
+				EndBlock
+
+			Window_OK Item_631044 == 3 && ItemSpace >= 1
+				GiveItem 631044,2
+				EndBlock
+
+			Window_OK Item_631044 == 3
+				EndWindow 3206270
+
+		#\n\n﹛弘伐伐永＿瓦乒汁奶永由奶＿＿﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3206271
+
+		#\n\n﹛弘伐伐永＿丢扑﹜目永正﹝\n﹛布失﹜布失＿失乩扑奶﹝
+				EndBlock
+
+
+#﹛芘中?﹋631044﹌毛ㄡ蜊赭儅
+	else
+	If Item_631044 == 2
+		Window 3206272,OK
+
+		#\n\n﹛布失布失＿ㄡ戊﹜失伙市仿﹜ㄢ戊﹜失必伙﹝
+
+			Window_OK Item_631019 >= 1
+				EndWindow 3206273
+
+		#\n\n﹛弘伐伐伐伐永﹜末伊﹜玉戊夫斥乓﹜瓜奶永″\n﹛目伙皿立□永″
+				EndBlock
+
+			Window_OK Item_631044 > 2
+				EndWindow 3206274
+
+		#\n\n﹛弘伐伐永＿丢扑﹜白巨正﹝\n﹛布失﹜布失＿失乩扑奶﹝
+				EndBlock
+
+			Window_OK Item_631044 == 2 && ItemSpace >= 1
+				GiveItem 631044,3
+				EndBlock
+
+			Window_OK Item_631044 == 2
+				EndWindow 3206275
+
+		#\n\n﹛弘伐伐永＿瓦乒汁奶永由奶＿＿﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3206276
+
+		#\n\n﹛弘伐伐永＿丢扑﹜目永正﹝\n﹛布失﹜布失＿失乩扑奶﹝
+				EndBlock
+
+
+#﹛芘中?﹋631044﹌毛ㄠ蜊赭儅
+	else
+	If Item_631044 == 1
+		Window 3206277,OK
+
+		#\n\n﹛布失布失＿ㄠ戊﹜失伙市仿﹜ㄣ戊﹜失必伙﹝
+
+			Window_OK Item_631019 >= 1
+				EndWindow 3206278
+
+		#\n\n﹛弘伐伐伐伐永﹜末伊﹜玉戊夫斥乓﹜瓜奶永″\n﹛目伙皿立□永″
+				EndBlock
+
+			Window_OK Item_631044 > 1
+				EndWindow 3206279
+
+		#\n\n﹛弘伐伐永＿丢扑﹜白巨正﹝\n﹛布失﹜布失＿失乩扑奶﹝
+				EndBlock
+
+			Window_OK Item_631044 == 1 && ItemSpace >= 1
+				GiveItem 631044,4
+				EndBlock
+
+			Window_OK Item_631044 == 1
+				EndWindow 3206280
+
+		#\n\n﹛弘伐伐永＿瓦乒汁奶永由奶＿＿﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3206281
+
+		#\n\n﹛弘伐伐永＿丢扑﹜平巨正﹝\n﹛布失﹜布失＿失乩扑奶﹝
+				EndBlock
+
+
+#﹛芘中?﹋631044﹌毛尕赭儅
+	else
+		Window 3206282,OK
+
+		#\n\n﹛布失布失＿ㄠ戊乒﹜瓜奶市仿﹜ㄤ戊﹜失必伙﹝
+
+			Window_OK Item_631019 >= 1
+				EndWindow 3206283
+
+		#\n\n﹛弘伐伐伐伐永﹜末伊﹜玉戊夫斥乓﹜瓜奶永″\n﹛目伙皿立□永″
+				EndBlock
+
+			Window_OK Item_631044 >= 1
+				EndWindow 3206284
+
+		#\n\n﹛弘伐伐永＿丢扑﹜犯正﹝\n﹛布失﹜布失＿失乩扑奶﹝
+				EndBlock
+
+			Window_OK ItemSpace >= 1
+				GiveItem 631044,5
+				EndBlock
+
+			Window_OK
+				EndWindow 3206285
+
+		#\n\n﹛弘伐伐永＿瓦乒汁奶永由奶＿＿﹝
+				EndBlock
+
+
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+
+
+
+###﹛失甲伙佴﹋607717﹌毛赭儅
+block Item_607717 >= 1
+	EndWindow 3206286
+
+		#\n\n﹛弘伐伐伐伐伐伐伐伐永＿＿＿玄乒母民〝
+
+
+
+###﹛厘霉及褴裤湛﹋631019﹌毛赭儅
+block Item_631019 >= 1
+	EndWindow 3206287
+
+		#\n\n﹛弘伐伐伐伐永﹜末伊﹜玉戊夫斥乓﹜瓜奶永″\n﹛目伙皿立□永″
+	EndBlock
+
+
+
+###﹛晓筏动陆及桦宁
+block
+	EndWindow 3206288
+
+		#\n\n﹛弘伐永﹜弘伐永﹜弘伐永﹜弘伐永﹜布失布失″
+
+
+

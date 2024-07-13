@@ -1,0 +1,31 @@
+#
+#蜈朹
+#
+
+
+
+block
+
+
+		Window 3201240,next
+		#\n\n﹛云支云支云支﹜\n﹛锳厌中中瞬引匹垫匀凶及卞卅丑﹝\n﹛锳倾﹜\n﹛割井卅仪反荸日内元引中井中﹝\n﹛丹仃仃仃﹝
+
+		Window 3201241,next
+		#\n\n﹛鬼中仃升﹜仇及饼濠木反\n﹛枃匀化云仁方﹝\n﹛楝卞反﹜恍分聊亢凶医坁分﹝
+
+		Window 3201242,ok
+		#\n\n﹛氏元扎友﹝\n﹛引凶﹜升仇井匹″\n﹛它弗弗弗弗﹝
+
+						Window_ok
+
+							globalFlag31 = 0
+							globalFlag32 = 0
+							globalFlag33 = 0
+							globalFlag34 = 0
+							globalFlag35 = 1
+
+
+							KillItemall 607699
+
+							LeaveGroup
+							Warp 0,59503,208,281

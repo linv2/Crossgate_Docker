@@ -1,0 +1,11 @@
+#©û??
+
+#
+block
+	Changepal 15,120
+	Window 22421,Next
+	Window 22422,OK
+		Window_OK
+			Play_SE 253,320,240
+			LeaveGroup
+			Warp 0,46011,23,10

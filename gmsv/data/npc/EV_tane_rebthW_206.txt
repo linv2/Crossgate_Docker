@@ -1,0 +1,191 @@
+#ØøÌï¡õµ©Ä¸¼þ³âÒà¼þ©xõß¼°¼Ô›™©xÓúÔ‰¼°ÚÐ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+###########©xÖÏÊÖØ¦ØÆ©x##############
+
+
+block Group == 1 && Item 9342 >= 1 && Item 9392 >= 1
+
+#
+
+	Window 3006050,ok
+
+		Window_ok Group != 1
+
+#\n\n©xÓòÚÐÆ¥¸¨ÈÕÄ¾·½
+
+			EndWindow 3006045
+
+
+		Window_ok
+		
+		Warp 0,59658,128,118
+
+
+
+
+
+
+
+block Group == 1 && Item 9341 >= 1 && Item 9391 >= 1
+
+
+
+	Window 3006050,ok
+
+		Window_ok Group != 1
+
+#\n\n©xÓòÚÐÆ¥¸¨ÈÕÄ¾·½
+
+			EndWindow 3006045
+
+
+
+		Window_ok
+		
+		Warp 0,59642,128,118
+
+
+
+
+block Group == 1 && Item 9340 >= 1 && Item 9390 >= 1
+
+
+
+
+	Window 3006050,ok
+
+		Window_ok Group != 1
+
+#\n\n©xÓòÚÐÆ¥¸¨ÈÕÄ¾·½
+
+			EndWindow 3006045
+
+
+
+		Window_ok
+		
+		Warp 0,59625,128,118
+
+
+
+
+block Group == 1 && Item 9342 >= 1 && Item 9355 >= 1 && Item 9365 >= 1 && Item 9375 >= 1 && Item 9385 >= 1
+
+	Window 3006053,ok
+
+		Window_ok ItemSpace == 0
+		EndWindow 3006065
+
+		Window_ok Group != 1
+
+#\n\n©xÓòÚÐÆ¥¸¨ÈÕÄ¾·½
+
+			EndWindow 3006045
+
+
+
+		Window_ok ItemSpace >= 1 && Group == 1
+
+		KillItemall 9353
+		KillItemall 9354
+		KillItemall 9355
+		KillItemall 9363
+		KillItemall 9364
+		KillItemall 9365
+		KillItemall 9373
+		KillItemall 9374
+		KillItemall 9375
+		KillItemall 9383
+		KillItemall 9384
+		KillItemall 9385
+
+
+		GiveItem 9392,1
+		Warp 0,59658,128,118
+
+
+block Group == 1 && Item 9341 >= 1 && Item 9354 >= 1 && Item 9364 >= 1 && Item 9374 >= 1 && Item 9384 >= 1
+
+
+
+	Window 3006053,ok
+
+		Window_ok ItemSpace == 0
+		EndWindow 3006065
+
+		Window_ok Group != 1
+
+#\n\n©xÓòÚÐÆ¥¸¨ÈÕÄ¾·½
+
+			EndWindow 3006045
+
+
+
+		Window_ok ItemSpace >= 1 && Group == 1
+
+		KillItemall 9353
+		KillItemall 9354
+		KillItemall 9355
+		KillItemall 9363
+		KillItemall 9364
+		KillItemall 9365
+		KillItemall 9373
+		KillItemall 9374
+		KillItemall 9375
+		KillItemall 9383
+		KillItemall 9384
+		KillItemall 9385
+
+
+		GiveItem 9391,1
+		Warp 0,59642,128,118
+
+
+
+
+block Group == 1 && Item 9340 >= 1 && Item 9353 >= 1 && Item 9363 >= 1 && Item 9373 >= 1 && Item 9383 >= 1
+
+
+	Window 3006053,ok
+
+		Window_ok ItemSpace == 0
+		EndWindow 3006065
+
+		Window_ok Group != 1
+
+#\n\n©xÓòÚÐÆ¥¸¨ÈÕÄ¾·½
+
+			EndWindow 3006045
+
+
+
+		Window_ok ItemSpace >= 1 && Group == 1
+
+		KillItemall 9353
+		KillItemall 9354
+		KillItemall 9355
+		KillItemall 9363
+		KillItemall 9364
+		KillItemall 9365
+		KillItemall 9373
+		KillItemall 9374
+		KillItemall 9375
+		KillItemall 9383
+		KillItemall 9384
+		KillItemall 9385
+
+
+		GiveItem 9390,1
+		Warp 0,59625,128,118
+
+
+
+
+block 
+
+	EndWindow 3006043,OK
+
+
+

@@ -1,0 +1,23 @@
+#§קתן???
+
+block EndEvent 117 == 1 || EndEvent 118 == 1
+	EndWindow 22784,OK
+
+block Item 16414 >= 1 || Item 16418 >= 1
+	EndWindow 22784,OK
+
+
+block EndEvent 53 == 1 || EndEvent 61 == 1
+	Window 22785,Next
+	Window 22786,Next
+	Window 22787,Yes,No
+		Window_No
+			EndWindow 22788,OK
+		Window_Yes
+			Window 22789,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,46026,174,170
+
+block
+	EndWindow 22790,OK

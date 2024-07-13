@@ -1,0 +1,345 @@
+#赓艘樊迕井少曰坁弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛累抯奶民戊及摒
+
+###﹛PUK3尕赭儅
+block Trialflg < 8
+	EndWindow 3203507
+
+		#\n\n﹛仇仇卞反﹜五木中卅累互凶仁今氏粹中化引允﹝\n﹛⑦引卅中方丹竣毛勾仃化仁分今中友﹝
+
+
+
+###﹛市皿市皿及累﹋607701﹌毛赭儅
+block Item_607701 >= 1
+	EndWindow 3203508
+
+		#\n\n﹛丐日﹜公木反市皿市皿及累匹允友﹝\n﹛五木中卞粹中化中引允友﹝
+
+
+
+###﹛市皿市皿及潘﹋607955﹌毛赭儅
+block Item_607955 >= 1
+
+##﹛伊矛伙ㄠㄠ动晓
+	If Level > 10
+		Window 3203509,NEXT
+
+		#\n\n﹛市皿市皿及潘卞冂帎卅?恔毛芨尹月综仅反﹜\n﹛平亘旦泛及翘匹垫中引允﹝\n﹛匹允井日﹜戚反平亘旦泛卞垫匀化仁分今中﹝
+		EndWindow 3203510
+
+		#\n\n﹛Ⅶ酦反厘庍分午合中引允互﹜\n﹛互氏壬匀化仁分今中友﹝
+		EndBlock
+
+
+##﹛伊矛伙ㄠㄟ动票
+	else
+		Window 3203511,NEXT
+
+		#\n\n﹛市皿市皿及潘卞冂帎卅?恔毛芨尹月综仅反﹜\n﹛平亘旦泛及翘匹垫中引允﹝\n﹛匹允井日﹜平亘旦泛卞轾井匀化仁分今中﹝
+		EndWindow 3203512
+
+		#\n\n﹛允匹卞伐□皿痹毛银匀化仄引匀凶桦宁卞反﹜\n﹛白央件皮伙弘卞中月打皮伉件及失瓦平今氏卞\n﹛俇氏匹心化仁分今中﹝
+		EndBlock
+
+	endif
+
+
+
+###﹛冂挤踹蠹﹋607954﹌毛呁醒赭儅
+block Item_607954 > 1
+	Window 3203513,OK
+
+		#\n\n﹛冂挤踹蠹互呁醒丐月午反庍匹允友﹝\n﹛匋璋今六化中凶分五引允﹝
+
+		Window_OK Item_607954 > 1
+			KillItemAll 607954
+
+		Window_OK
+
+
+
+###﹛渤怉卅潘阂﹋607953﹌午冂挤踹蠹﹋607954﹌毛赭儅﹋旦正件皿ㄟ﹌
+block Item_607953>= 1 && Item_607954 == 1 && StampCount_607954 == 0
+	EndWindow 3203514
+
+		#\n\n﹛优邰卅及反﹜唬泞及覜踹匹允﹝\n﹛唬泞及覜卞伐永甩今氏午中丹杅互中引允井日﹜\n﹛?卞踹仁心毛俇氏匹仁分今中﹝
+
+
+
+###﹛渤怉卅潘阂﹋607953﹌午冂挤踹蠹﹋607954﹌毛赭儅﹋旦正件皿ㄠ﹌
+block Item_607953>= 1 && Item_607954 == 1 && StampCount_607954 == 1
+	EndWindow 3203515
+
+		#\n\n﹛云儅切卞卅匀凶及反割井卞唬泞及覜踹匹允互﹜\n﹛迍仃仇氏匹中月呺恘互雄允亢月方丹匹允﹝\n﹛升仇井匹Г户化五化仁分今中﹝
+
+
+
+###﹛渤怉卅潘阂﹋607953﹌午冂挤踹蠹﹋607954﹌毛赭儅﹋旦正件皿ㄡ﹌
+block Item_607953>= 1 && Item_607954 == 1 && StampCount_607954 >= 2
+
+##﹛踹蠹卞蕨及肵踹互じ木日木化井日ㄠㄟ坌左□田□
+	If ItemCreateTime_607954 > 10
+		Window 3203516,YES,NO
+
+		#\n\n﹛酸ゴ卅互日﹜仇及踹反银尹引六氏﹝\n﹛凛棉左□田□匹﹜呺恘互壅尹化仄引中引仄凶﹝\n﹛手丹域蘸蔺爵仄引允井〝
+
+			Window_YES Item_607954 > 1
+				Window 3203517,OK
+
+		#\n\n﹛冂挤踹蠹互呁醒丐月午反庍匹允友﹝\n﹛匋璋今六化中凶分五引允﹝
+
+					Window_OK Item_607954 > 1
+						KillItemAll 607954
+						EndBlock
+
+					Window_OK
+						EndBlock
+
+			Window_YES Item_607954 == 1 && StampCount_607954 == 2
+				Window 3203518,OK
+
+		#\n\n﹛匹反﹜踹蠹毛坞卞仄引允及匹﹜\n﹛手丹域蘸互氏壬匀化仁分今中﹝
+
+					Window_OK Item_607954 > 1
+						EndWindow 3203519
+
+		#\n\n﹛冂挤踹蠹互呁醒丐月午反庍匹允友﹝
+
+					Window_OK Item_607954 == 1 && StampCount_607954 == 2
+						AddStampCount 607954,-2
+						EndBlock
+
+					Window_OK Item_607954 == 1
+						EndWindow 3203520
+
+		#\n\n﹛仇木反啜丹踹蠹匹允友﹝\n﹛坞卞允月仇午反匹五引六氏﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3203521
+
+		#\n\n﹛庍匹允友﹝坞卞允月动蟆卞﹜\n﹛冂挤踹蠹愤虫互苇丐凶曰引六氏﹝
+						EndBlock
+
+			Window_YES Item_607954 == 1
+				EndWindow 3203522
+
+		#\n\n﹛仇木反啜丹踹蠹匹允友﹝\n﹛坞卞允月仇午反匹五引六氏﹝
+				EndBlock
+
+			Window_YES
+				EndWindow 3203523
+
+		#\n\n﹛庍匹允友﹝坞卞允月动蟆卞﹜\n﹛冂挤踹蠹愤虫互苇丐凶曰引六氏﹝
+				EndBlock
+
+			Window_NO Item_607954 >= 1
+				Window 3203524,OK
+
+		#\n\n﹛匹反﹜冂挤踹蠹毛仍忒萃仁分今中﹝\n﹛疯蔺爵仄凶仁卅匀凶日﹜中勾匹手擘毛\n﹛井仃化仁分今中﹝
+
+					Window_OK Item_607954 >= 1
+						KillItemAll 607954
+						EndBlock
+
+					Window_OK
+						EndBlock
+
+			Window_NO
+				EndWindow 3203525
+
+		#\n\n﹛疯蔺爵仄凶仁卅匀凶日﹜中勾匹手擘毛\n﹛井仃化仁分今中﹝
+						EndBlock
+
+
+##﹛踹蠹卞蕨及肵踹互じ木日木化井日ㄠㄟ坌动〇﹋伊矛伙ㄠㄠ动晓﹌
+	else
+		If Level > 10
+			Window 3203526,NEXT
+
+		#\n\n﹛云?木迋匹仄凶﹝\n﹛踹毛芨尹月综仅反仇切日匹垫中引允及匹﹜\n﹛潘阂午踹蠹反仇切日匹云苂井曰仄引允﹝\n﹛综仅詨﹜戚卞优邰卅及反冂帎卅?恔匹允﹝
+			Window 3203527,YES,NO
+
+		#\n\n﹛公木反平亘旦泛璃彶匹澎卞じ曰引允及匹﹜\n﹛平亘旦泛及翘尺轾井匀化仁分今中﹝\n﹛匹反﹜潘阂午踹蠹毛云苂井曰仄引允﹝\n﹛方欠仄中匹允井〝
+
+				Window_YES Item_607954 > 1
+					Window 3203528,OK
+
+		#\n\n﹛冂挤踹蠹互呁醒丐月午反庍匹允友﹝\n﹛匋璋今六化中凶分五引允﹝
+
+						Window_OK Item_607954 > 1
+							KillItemAll 607954
+							EndBlock
+
+						Window_OK
+							EndBlock
+
+				Window_YES Item_607953 >= 1 && Item_607954 == 1 && StampCount_607954 == 2 && ItemCreateTime_607954 <= 10 && ItemSpace >= 1
+					KillItemAll 607953
+					KillItemAll 607954
+					GiveItemEX 607955,1,3203529
+
+		#\n\n﹛绂坁互中匀天中匹允方﹝帮咥仄化仁分今中﹝
+					EndBlock
+
+				Window_YES Item_607954 == 1 && StampCount_607954 == 2 && ItemCreateTime_607954 <= 10 && ItemSpace >= 1
+					EndWindow 3203530
+
+		#\n\n﹛潘阂互壅尹化仄引中引仄凶友﹝\n﹛六匀井仁踹互丐月及卞﹜酸ゴ匹允﹝
+					EndBlock
+
+				Window_YES Item_607954 == 1 && ItemCreateTime_607954 <= 10 && ItemSpace >= 1
+					EndWindow 3203531
+
+		#\n\n﹛仇木反啜丹踹蠹匹允友﹝\n﹛仇及踹蠹匹反熬尥匹五引六氏﹝
+					EndBlock
+
+				Window_YES Item_607954 == 1 && ItemSpace >= 1
+					EndWindow 3203532
+
+		#\n\n﹛仇木反啜丹踹蠹匹允友﹝\n﹛仇及踹蠹匹反熬尥匹五引六氏﹝
+					EndBlock
+
+				Window_YES Item_607954 == 1
+					EndWindow 3203533
+
+		#\n\n﹛绂坁互中匀天中匹允方﹝帮咥仄化仁分今中﹝
+					EndBlock
+
+				Window_YES
+					EndWindow 3203534
+
+		#\n\n﹛踹蠹互壅尹化仄引中引仄凶友﹝\n﹛酸ゴ匹允互﹜潘毛岳赢今六月仇午反\n﹛匹五引六氏﹝
+					EndBlock
+
+				Window_NO
+					EndWindow 3203535
+
+		#\n\n﹛公丹匹允井﹝\n﹛匹反﹜踹蠹井日呺恘互壅尹卅中丹切卞\n﹛引凶侳化仁分今中﹝
+
+
+##﹛踹蠹卞蕨及肵踹互じ木日木化井日ㄠㄟ坌动〇﹋伊矛伙ㄠㄟ动票﹌
+		else
+			Window 3203536,NEXT
+
+		#\n\n﹛云?木迋匹仄凶﹝\n﹛踹毛芨尹月综仅反仇切日匹垫中引允及匹﹜\n﹛潘阂午踹蠹反仇切日匹云苂井曰仄引允﹝\n﹛综仅詨﹜戚卞优邰卅及反冂帎卅?恔匹允﹝
+			Window 3203537,NEXT
+
+		#\n\n﹛公木反平亘旦泛璃彶匹澎卞じ曰引允及匹﹜\n﹛平亘旦泛及翘尺轾井匀化仁分今中﹝\n﹛丐及彶及乒件旦正□反井卅曰阳佌匹允互﹜\n﹛伐□皿痹毛云欐仄仄引允及匹仍兜艘毛﹝
+			Window 3203538,YES,NO
+
+		#\n\n﹛匹反﹜潘阂午踹蠹毛云苂井曰仄引允﹝\n﹛方欠仄中匹允井〝
+
+				Window_YES Item_607954 > 1
+					Window 3203539,OK
+
+		#\n\n﹛冂挤踹蠹互呁醒丐月午反庍匹允友﹝\n﹛匋璋今六化中凶分五引允﹝
+
+						Window_OK Item_607954 > 1
+							KillItemAll 607954
+							EndBlock
+
+						Window_OK
+							EndBlock
+
+				Window_YES Item_607953 >= 1 && Item_607954 == 1 && StampCount_607954 == 2 && ItemCreateTime_607954 <= 10 && ItemSpace >= 2
+					KillItemAll 607953
+					KillItemAll 607954
+					GiveItemEX 607955,1,3203540
+
+		#\n\n﹛绂坁互中匀天中匹允方﹝帮咥仄化仁分今中﹝
+					GiveItemEX 607687,1,3203541
+
+		#\n\n﹛绂坁互中匀天中匹允方﹝帮咥仄化仁分今中﹝
+					EndBlock
+
+				Window_YES Item_607954 == 1 && StampCount_607954 == 2 && ItemCreateTime_607954 <= 10 && ItemSpace >= 2
+					EndWindow 3203542
+
+		#\n\n﹛潘阂互壅尹化仄引中引仄凶友﹝\n﹛六匀井仁踹互丐月及卞﹜酸ゴ匹允﹝
+					EndBlock
+
+				Window_YES Item_607954 == 1 && ItemCreateTime_607954 <= 10 && ItemSpace >= 2
+					EndWindow 3203543
+
+		#\n\n﹛仇木反啜丹踹蠹匹允友﹝\n﹛仇及踹蠹匹反熬尥匹五引六氏﹝
+					EndBlock
+
+				Window_YES Item_607954 == 1 && ItemSpace >= 2
+					EndWindow 3203544
+
+		#\n\n﹛仇木反啜丹踹蠹匹允友﹝\n﹛仇及踹蠹匹反熬尥匹五引六氏﹝
+					EndBlock
+
+				Window_YES Item_607954 == 1
+					EndWindow 3203545
+
+		#\n\n﹛绂坁互中匀天中匹允方﹝帮咥仄化仁分今中﹝
+					EndBlock
+
+				Window_YES
+					EndWindow 3203546
+
+		#\n\n﹛踹蠹互壅尹化仄引中引仄凶友﹝\n﹛酸ゴ匹允互﹜潘毛岳赢今六月仇午反\n﹛匹五引六氏﹝
+					EndBlock
+
+				Window_NO
+					EndWindow 3203547
+
+		#\n\n﹛公丹匹允井﹝\n﹛匹反﹜踹蠹井日呺恘互壅尹卅中丹切卞\n﹛引凶侳化仁分今中﹝
+
+		endif
+
+	endif
+
+
+
+###﹛冂挤踹蠹﹋607954﹌及心毛赭儅﹋渤怉卅潘阂﹋607953﹌尕赭儅﹌
+block Item_607954 == 1 && Item_607953 < 1
+	EndWindow 3203548
+
+		#\n\n﹛云支﹜渤怉卅潘阂互苇丐凶曰引六氏友﹝\n﹛踹毛澎卞じ木化手棒艘及潘互卅仁化反﹜\n﹛累反粹五引六氏方﹝
+
+
+
+###﹛渤怉卅潘阂及心毛赭儅
+block Item_607953 >= 1
+	Window 3203549,NEXT
+
+		#\n\n﹛方丹仇公﹜渤怉卅潘阂毛云儅切及杅匹允友﹝\n﹛匹反﹜公及潘阂毛累尺午圈化月杅芊毛\n﹛仍濩抸中凶仄引允﹝\n﹛钒累今六月卞反﹜冂帎卅踹午?恔互优邰匹允﹝
+	Window 3203550,NEXT
+
+		#\n\n﹛仇仇匹反﹜冂帎卅踹毛澎卞じ木引允﹝\n﹛仇木井日冂挤及踹蠹毛云欐仄仄引允及匹﹜\n﹛白央□伊件及唬泞尺垫匀化仁分今中﹝\n﹛覜及幻午曰卞伐永甩今氏午中丹谛互中引允﹝
+	Window 3203551,NEXT
+
+		#\n\n﹛?卞俇氏匹﹜呺恘互迍仃仇氏匹中月覜及踹毛\n﹛仁心晓仆化手日匀化仁分今中﹝\n﹛公及覜踹及呺恘互﹜潘毛岳赢今六月及匹允﹝
+	Window 3203552,OK
+
+		#\n\n﹛凶分仄﹜呺恘反凛棉互烦勾午壅昒仄引允﹝\n﹛及氏太曰仄允亢卅中方丹镗啦仄化仁分今中﹝\n﹛匹反﹜云竣毛勾仃化﹝
+
+		Window_OK Item_607953 >= 1 && ItemSpace >= 1
+			GiveItemEX 607954,1,3203553
+
+		#\n\n﹛绂坁互中匀天中匹踹蠹互欐六引六氏方﹝\n﹛帮咥仄化仁分今中﹝
+
+		Window_OK Item_607953 >= 1
+			EndWindow 3203554
+
+		#\n\n﹛绂坁互中匀天中匹踹蠹互欐六引六氏方﹝\n﹛帮咥仄化仁分今中﹝
+
+		Window_OK
+			EndWindow 3203555
+
+		#\n\n﹛潘阂互苇丐凶曰引六氏方﹝\n﹛卅仃木壬﹜手切欠氏累反粹五引六氏井日﹜\n﹛方仁茧仄化仁分今中﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3203556
+
+		#\n\n﹛仇仇卞反﹜五木中卅累互凶仁今氏粹中化引允﹝\n﹛⑦引卅中方丹竣毛勾仃化仁分今中友﹝
+
+
+

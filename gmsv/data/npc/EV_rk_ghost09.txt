@@ -1,0 +1,9 @@
+#???
+
+#
+block
+	Window 22370,YES,NO
+		Window_YES
+			EndWindow 22371,OK
+		Window_NO
+			EndWindow 22372,OK

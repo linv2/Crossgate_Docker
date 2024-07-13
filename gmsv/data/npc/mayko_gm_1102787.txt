@@ -1,0 +1,24 @@
+#mayko_gm_1102787.txt 湖心守卫(战斗后)
+#1111795	\n　　　　真的很抱歉，\n　　　　原来您就是帮忙奔走的人呀。	1
+#1111796	\n　　　　亚纪公主离开此处前有嘱咐小的，\n　　　　若您到达这里，将此物送您，并赠予您勋章。	1
+#1111797	\n\n\n\n@c真是谢谢您的帮忙。	1
+
+block item 41269 >0
+	#endflag 301 = 0
+	endwindow 1111797
+
+
+block itemspace  > 0
+	window 1111795,next
+	window 1111796,ok
+	endflag 4080 = 0
+	window_ok
+	GiveLeak1Item  41269,1   
+	Endevent 166 = 1
+	CheckTitle
+	warp 0,32276,149,131
+	endblock
+	
+block
+endwindow 11716
+	

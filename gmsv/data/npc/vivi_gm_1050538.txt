@@ -1,0 +1,23 @@
+########### 接力赛-参加奖兑换人员 ###########
+######■ 参加奖兑换人员 
+##■检查物品栏
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+	 
+##■有参赛证A 或 参赛证B 或 参赛证C
+block Item 45351 == 1 || Item 45352 == 1 || Item 45353 == 1
+	 ##1050851	\n\n感谢你的参与，让活动圆满结束！\n确定要将参赛证换成奖品吗？
+	 Window 1050851,YES,NO
+	 	 Window_YES Item 45351 == 1 || Item 45352 == 1 || Item 45353 == 1
+	 	 	 KillItem 45351
+	 	 	 KillItem 45352
+	 	 	 KillItem 45353
+	 		 GiveLeak1Item(45309%1$3)
+	 	 Window_NO
+##■一般
+block
+	 ##1050852	\n\n\n你好！这里是参加奖兑换处，请有参赛证的选手拿参赛证来兑换奖品！   
+	 EndWindow 1050852
+	  
+ 

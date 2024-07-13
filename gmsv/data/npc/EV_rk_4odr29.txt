@@ -1,0 +1,11 @@
+#???
+
+#??
+block EndEvent 53 == 1
+	Window 22884,Next
+	Window 22885,Next
+	EndWindow 22886,OK
+
+#??
+block EndEvent 61 == 1
+	EndWindow 22887,OK

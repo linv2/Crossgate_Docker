@@ -1,0 +1,63 @@
+#域简茧仄化蝈崭垫萍
+#末它乩□
+
+
+Block Item_621017 >= 2
+
+	Window 3220340,OK
+
+		#\n\n﹛允心引六氏﹝\n﹛公木反夫午勾分仃及反内匹允方友〝\n﹛中仃引六氏友尹﹝荚璋仄引允方﹝
+	
+		Window_OK
+		
+			KillitemAll 621017
+			
+			
+Block Item_621017 == 1 && StampCount_621017 >= 5
+
+	EndWindow 3220341
+
+		#\n\n﹛俇心引允﹝\n﹛愈詨引匹云恘卞卅木内卞萧仄沭仍介中引六氏﹝
+
+
+	
+	
+Block Item_621017 == 1 && StampCount_621017 == 4
+
+	Window 3220342,Next
+
+		#\n\n﹛反中﹜辅ブ及杅匹允友﹝\n﹛匹反仇切日及幻丹卞＿＿尹〝啜丹〝\n﹛丐﹜反中﹜手仄井仄化公木反＿＿﹝\n﹛公丹匹允井＿＿穴□泛奴件卞＿＿﹝
+	
+	Window 3220343,Next
+
+		#\n\n﹛褪扜迋互渣勹午中丹及反弇荸仄引仄凶﹝\n﹛仄井仄﹜台反允匹卞壑簪毛桩化凶褥﹝\n﹛手丹﹜褪扜迋卞丐丹仇午手袱今木引六氏﹝\n﹛萧仄沭丐曰引六氏﹝
+	
+	Window 3220344,Next
+
+		#\n\n﹛燮ざ﹜眬及扑伙任央□互\n﹛膜垫卞支匀化五引仄凶＿＿﹝\n﹛?反聒咥盏中＿＿\n﹛公仄化﹜褪扜迋毛礿域袱六凶溶眬＿＿﹝\n﹛扑伙任央□卅日壬﹜\n﹛五匀午﹜厘暹屺卞啜中丐曰引六氏﹝
+	
+	Window 3220345,Next
+
+		#\n\n﹛扑伙任央□反＿＿公丹﹜凶仄井﹜\n﹛呺诸毛喀少午蜕匀化云曰引仄凶﹝\n﹛伤捶及哗卞轾井匀凶及匹反卅中匹仄斤丹井﹝
+	
+	Window 3220346,OK
+
+		#\n\n﹛公丹匹允友﹝\n﹛台及扔奶件毛抩扱卞踏五引仄斤丹﹝
+
+		Window_OK Item_621017 == 1
+		
+			AddStampCount 621017
+		
+			SystemMessage 3010069
+		
+		Window_OK
+		
+			EndWindow 3220347
+
+		#\n\n﹛中支儅匀化卅中及卞手井井歹日内\n﹛蜕歹木化手友尹﹝
+	
+Block
+	
+	
+	EndWindow 3220348
+		#\n\n﹛反中﹜辅ブ及杅匹允友﹝\n﹛匹反仇切日及幻丹卞筏罂毛云凑中仄引允﹝\n﹛公木午匹允友﹜\n﹛蜇箕﹜云幵雒手么匀化云曰引允及匹﹜\n﹛方欠仄仃木壬云凑中仄引允﹝

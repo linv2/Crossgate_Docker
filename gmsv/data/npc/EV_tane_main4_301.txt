@@ -1,0 +1,92 @@
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+block globalFlag37 == 1
+
+
+			GAwindow 3202433,next
+
+		#\n\n﹛孔戈﹜丐引曰仪树手歹井日内\n﹛勒推卅恳聒普分仃匹\n﹛仇仇引匹侳凶方丹分卅﹝\n﹛脱日及啃公丹午仄化中月仇午毛\n﹛咥荸反请侳引中井〝
+
+			GAwindow 3202434,next
+
+		#\n\n﹛仇及壑钗卞反﹜漆﹜螃互云日厄﹝\n﹛仇及引引甄骰允木壬﹜\n﹛螃啖反﹜引凶﹜愤日卞籥宁及恌中螃毛\n﹛仇及哗卞﹜凶化方丹午允月分欠丹﹝\n﹛引凶﹜交伙弘及方丹卅\n﹛螃啖及翔懋樊互请化仄引丹及分﹝
+
+			GAwindow 3202435,next
+
+		#\n\n﹛脱日反卩愤卞螃毛峏化友壬卅日厄﹝\n﹛蝈五及陆卅月壑钗井日\n﹛窒及梧手卅中螃毛裟壬友壬卅日厄﹝
+
+			GAwindow 3202436,next
+
+		#\n\n﹛脱日反﹜陆卅月螃及域朿毛﹜\n﹛域朿分仃毛裟少仇午卞岳跦仄化中凶﹝\n﹛仄井仄﹜螃啖及蛊日反﹜\n﹛方曰卞手方匀化\n﹛仇及壑钗及潦樊及褥虫毛翔懋卞\n﹛螃毛朼元化仄引匀凶﹝
+
+			GAwindow 3202437,next
+
+		#\n\n﹛朼元日木凶陆卅月螃及熔毛\n﹛厍迕今木凶绒衔交伙弘及艘午瑜こ毛动化\n﹛赛日六月﹝\n﹛仇及壑钗分仃及﹜\n﹛脱日分仃及螃及藕戏分﹝
+
+			GAwindow 3202438,next
+
+		#\n\n﹛中井互井卅〝\n﹛脱日及啦阀卞遛⑺六厄井〝\n﹛脱日午隋卞螃啖午爵歹厄井〝
+
+			GAwindow 3202439,yes,no
+
+		#\n\n﹛仇及澎卞丐月\n﹛蛙五呺⑼及踏反\n﹛湃卞戽木月陆卅月螃午\n﹛炼互匀化云月﹝\n﹛詨域忷卅及分﹝
+
+
+					window_yes 
+					
+
+
+							GAwindow 3202440,next
+
+		#\n\n﹛公丹井﹜\n﹛仄井仄﹜筑跤反﹍夫日仁樊﹎\n﹛公及绣箕愤虫互渣莴匹反丐月﹝\n﹛支反曰﹜昒允屯五井〝
+
+							GAWindow 3202441,ok
+
+		#\n\n﹛中支﹜夫午引内迋阂毛苇方丹﹝\n﹛蛔厄月互方中﹝
+
+								window_ok
+
+								KillItemall 620017
+
+									globalFlag36 = 0
+									globalFlag37 = 0
+									globalFlag38 = 0
+									globalFlag40 = 0
+
+
+
+									LeaveGroup
+									warp 0,59502,212,116
+
+
+
+					window_no
+					
+							GAWindow 3202442,ok
+
+		#\n\n﹛抸拑五樊﹜给卅月井卅﹝\n﹛卅日壬﹜爵歹友壬卅月引中﹝
+
+								window_ok
+
+									GAglobalFlag38 = 1
+									Encount 2|0,59502,212,116||0|||||0|305183|||||||||
+
+
+
+block 
+
+
+							GAWindow 3202443,ok
+
+		#\n\n﹛升仇方曰妎木仇氏分井反襞日厄互﹜\n﹛云蟆仍午五卞?支允凛棉反卅中﹝\n﹛蛔厄月互方中﹝
+
+								window_ok
+								
+									LeaveGroup
+									warp 0,59502,212,116
+
+
+

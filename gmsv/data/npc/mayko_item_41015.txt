@@ -1,0 +1,7 @@
+#mayko_item_41015.txt
+#block 
+#EndWindow 1110325
+
+block
+	 ##1054810	\n\n\n\n‘没有发生任意事情．．．’	1
+	 EndWindow 1110325

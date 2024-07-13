@@ -1,0 +1,50 @@
+#¼ëÓ£&ÓªÚÐ·Â¼þÛÍÊ§ÓÀÃóÛÍ¾Þµ©Ðþ¡°»ê¶­¸ÒÓªÚÐ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+##########©x·Â¼þÛÍÊ§ÓÀÃó?©x##########
+block job >= 414 && job <= 420
+
+	EndWindow 20867
+
+block job >= 424 && job <= 430
+
+	EndWindow 20867
+
+##########©xend91©x##########
+block job >= 410 && job <= 429 && Jobrank >= 2 && endevent91 == 1
+
+	EndWindow 20868
+
+##########©x»ê¶­åÃ¶ªÆ¹31ÃQÔ»©x##########
+block Item 18841 >= 1
+
+	Window 20869,OK
+	Window_OK
+	KillItem 18841
+	endevent91 = 1
+
+##########©x»ê¶­åÃ¶ªÆ¹31¶¯Â½ÃQÔ»©x##########
+block Item 18810 >= 1 || Item 18811 >= 1 || Item 18812 >= 1 || Item 18813 >= 1 || Item 18814 >= 1 || Item 18815 >= 1 || Item 18816 >= 1 || Item 18817 >= 1 || Item 18818 >= 1 || Item 18819 >= 1 || Item 18820 >= 1 || Item 18821 >= 1 || Item 18822 >= 1 || Item 18823 >= 1 || Item 18824 >= 1 || Item 18825 >= 1 || Item 18826 >= 1 || Item 18827 >= 1 || Item 18828 >= 1 || Item 18829 >= 1 || Item 18830 >= 1 || Item 18831 >= 1 || Item 18832 >= 1 || Item 18833 >= 1 || Item 18834 >= 1 || Item 18835 >= 1 || Item 18836 >= 1 || Item 18837 >= 1 || Item 18838 >= 1 || Item 18839 >= 1 || Item 18840 >= 1 || Item 18842 >= 1
+
+	EndWindow 20870
+
+##########©x·Â¼þÛÍÊ§ÓÀÃóÍÖðöˆmÐ×ØÆÐ×ÓªÚÐ¼ëÓ£©x##########
+block Job == 413 && Fame >= 37000 && Skilllevel 221 >= 8
+
+	EndWindow 20872,OK
+
+block Job == 423 && Fame >= 37000 && Skilllevel 222 >= 8
+
+	EndWindow 20872,OK
+
+##########©xÓªÚÐ©x##########
+block job >= 420 && job <= 422
+
+	EndWindow 20871
+
+##########©xØ¦±åÊÖØ¦ØÆ©x##########
+block
+
+	EndWindow 20873
+

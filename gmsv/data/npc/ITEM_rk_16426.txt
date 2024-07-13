@@ -1,0 +1,17 @@
+### ????16426?###
+
+#????¦ú??????ýÍ?
+block Item 16426 >= 2
+	EndWindow 22984,OK
+
+#
+block
+	Window 22985,Next
+	Window 22986,Yes,No
+		Window_Yes Item 16426 == 1
+			Play_Se 280,320,240
+			KillItem 16426,1,(4420)
+			AddFeverSec 21599
+			SystemMessage 4421
+		Window_Yes
+		Window_No

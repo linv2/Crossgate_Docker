@@ -1,0 +1,109 @@
+#打皮伉件及邰尽﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛心支仆盒﹋打皮伉件赚伈﹌及摒
+
+###﹛打皮伉件赚伈毛赭儅
+block Item_607911 >= 1
+	EndWindow 3202075
+		#\n\n﹛云丹﹜公及赚伈及银中鴃澎反升丹分〝\n﹛窒﹜剂仄幻升仃化五凶〝﹛丹戈﹜公木手恌仄″\n﹛溥丐月坁反﹜中内木莽木月扪抰卅及分﹝
+
+
+
+###﹛赚伈动陆及心支仆坁毛赭儅
+block Item_607908 >= 1 || Item_607909 >= 1 || Item_607910 >= 1 || Item_607912 >= 1 || Item_607913 >= 1
+	EndWindow 3202076
+		#\n\n﹛公及方丹卅井今壬月坁﹜梁呺匹反卅中井〝\n﹛谛戏反褥煆互域?﹝分井日心支仆坁反﹜\n﹛仇及打皮伉件赚伈卞蜃月及分﹝
+
+
+
+###﹛剂煽及剩毛ㄠ蜊赭儅
+block Item_607925 >= 1
+	Window 3202077,YES,NO
+		#\n\n﹛云中﹜公仇及樊﹜心支仆坁反中日厄井〝\n﹛缜谛互簸ゴ卞彸心晓仆凶打皮伉件赚伈分冗﹝\n﹛云厄仄及儅勾剂煽及剩ㄠ蜊午跟晶仄化支欠丹﹝
+
+		Window_YES
+			Window 3202078,OK
+		#\n\n﹛丹戈﹜厘仪卞银尹方﹝\n﹛凶午尹莽木化手﹜跟晶卞反杀元卅中井日卅﹝
+
+				Window_OK Item_607925 >= 1 && ItemSpace >= 1
+					KillItem 607925,1
+					GiveItemEX 607911,1,3202079
+		#\n\n﹛公氏卅卞绂坁毛儅匀化中化反﹜赚伈互欐六氏﹝\n﹛绂坁毛帮咥六中﹝
+
+				Window_OK Item_607925 >= 1
+					EndWindow 3202080
+		#\n\n﹛公氏卅卞绂坁毛儅匀化中化反﹜赚伈互欐六氏﹝\n﹛绂坁毛帮咥六中﹝
+
+				Window_OK
+					EndWindow 3202081
+		#\n\n﹛戈戈﹜剂煽及剩互卅中匹反卅中井﹝\n﹛卅日壬﹜仇切日手赚伈毛欐今厄﹝
+
+		Window_NO
+			EndWindow 3202082
+		#\n\n﹛幻幻丹﹜蝇月午中丹及井﹝\n﹛引丐﹜公木反云厄仄及愤苀﹝帎卞井引歹氏互﹜\n﹛支反曰呏互峏勾﹝今匀今午壅尹欠永″″
+
+
+
+###﹛岁镁扑□伙玉毛ㄢ蜊赭儅
+block Item_607923 >= 3
+	Window 3202083,YES,NO
+		#\n\n﹛云中﹜公仇及樊﹜心支仆坁反中日厄井〝\n﹛缜谛互簸ゴ卞彸心晓仆凶打皮伉件赚伈分冗﹝\n﹛云厄仄及岁镁扑□伙玉ㄢ蜊午跟晶仄化支欠丹﹝
+
+		Window_YES
+			Window 3202084,OK
+		#\n\n﹛丹戈﹜厘仪卞银尹方﹝\n﹛凶午尹莽木化手﹜跟晶卞反杀元卅中井日卅﹝
+
+				Window_OK Item_607923 >= 3 && ItemSpace >= 1
+					KillItem 607923,3
+					GiveItemEX 607911,1,3202085
+		#\n\n﹛公氏卅卞绂坁毛儅匀化中化反﹜赚伈互欐六氏﹝\n﹛绂坁毛帮咥六中﹝
+
+				Window_OK Item_607923 >= 3
+					EndWindow 3202086
+		#\n\n﹛公氏卅卞绂坁毛儅匀化中化反﹜赚伈互欐六氏﹝\n﹛绂坁毛帮咥六中﹝
+
+				Window_OK
+					EndWindow 3202087
+		#\n\n﹛戈戈﹜岁镁扑□伙玉互箫曰卅中匹反卅中井﹝\n﹛卅日壬﹜仇切日手赚伈毛欐今厄﹝
+
+		Window_NO
+			EndWindow 3202088
+		#\n\n﹛幻幻丹﹜蝇月午中丹及井﹝\n﹛引丐﹜公木反云厄仄及愤苀﹝帎卞井引歹氏互﹜\n﹛支反曰呏互峏勾﹝今匀今午壅尹欠永″″
+
+
+
+###﹛诠赢田术□市毛ㄤ蜊赭儅
+block Item_607924 >= 5
+	Window 3202089,YES,NO
+		#\n\n﹛云中﹜公仇及樊﹜心支仆坁反中日厄井〝\n﹛缜谛互簸ゴ卞彸心晓仆凶打皮伉件赚伈分冗﹝\n﹛云厄仄及诠赢田术□市ㄤ蜊午跟晶仄化支欠丹﹝
+
+		Window_YES
+			Window 3202090,OK
+		#\n\n﹛丹戈﹜厘仪卞银尹方﹝\n﹛凶午尹莽木化手﹜跟晶卞反杀元卅中井日卅﹝
+
+				Window_OK Item_607924 >= 5 && ItemSpace >= 1
+					KillItem 607924,5
+					GiveItemEX 607911,1,3202091
+		#\n\n﹛公氏卅卞绂坁毛儅匀化中化反﹜赚伈互欐六氏﹝\n﹛绂坁毛帮咥六中﹝
+
+				Window_OK Item_607924 >= 5
+					EndWindow 3202092
+		#\n\n﹛公氏卅卞绂坁毛儅匀化中化反﹜赚伈互欐六氏﹝\n﹛绂坁毛帮咥六中﹝
+
+				Window_OK
+					EndWindow 3202093
+		#\n\n﹛戈戈﹜诠赢田术□市互箫曰卅中匹反卅中井﹝\n﹛卅日壬﹜仇切日手赚伈毛欐今厄﹝
+
+		Window_NO
+			EndWindow 3202094
+		#\n\n﹛幻幻丹﹜蝇月午中丹及井﹝\n﹛引丐﹜公木反云厄仄及愤苀﹝帎卞井引歹氏互﹜\n﹛支反曰呏互峏勾﹝今匀今午壅尹欠永″″
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3202095
+		#\n\n﹛心支仆坁卞打皮伉件赚伈反升丹分〝\n﹛剂煽及剩卅日ㄠ蜊﹜岁镁扑□伙玉卅日ㄢ蜊﹜\n﹛诠赢田术□市卅日ㄤ蜊匹跟晶仄化支欠丹﹝
+
+
+

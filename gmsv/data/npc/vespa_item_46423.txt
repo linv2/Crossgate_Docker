@@ -1,0 +1,21 @@
+#########　Item ：万用药袋 46423
+#########　机率：双点后可得到：再生剧药x1瓶、魔力之泉x1组、小护士家庭号x1组、特级勇者之药x1组、魅力药水x1瓶、忠诚药水x1瓶、强力回复药  1组10瓶
+
+block ItemSpace <6
+	 ##1052629	\n\n喂！喂！我是万用药袋小精灵～你不把物品栏清出个６格，我怎么把东西交给你呢？
+	 Window 1052629,NEXT
+	 ##1052630	\n\n老兄！帮个忙，空出６格吧！我还得跑下一摊呢！
+	 EndWindow 1052630
+	 
+block
+	 ##1052631	\n\n你愿意打开这个物品了吗？呵呵！这可都是好东西啊～
+	 Window 1052631,OK
+	 	 Window_OK Item 46423 >=1 && ItemSpace >=6
+	 	 	 KillItem 46423,1
+	 	 	 GiveLeak1Item 45745,1
+	 	 	 GiveLeak1Item 45982,10
+	 	 	 GiveLeak1Item 45983,10
+	 	 	 GiveLeak1Item 45560,3
+	 	 	 GiveLeak1Item 40061,1
+	 	 	 GiveLeak1Item 40059,1
+	 	 	 GiveLeak1Item 46435,10

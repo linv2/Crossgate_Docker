@@ -1,0 +1,6 @@
+###´óÓîÖÜÄêÇìÓÃ_ÊÙÏ²¹øÊÕÄÉ²ÍºÐ
+
+block Item 15211 >=9
+	 KillItem 15211,9
+	 KillItem 46542,1
+	 GiveStackItem 46641,1

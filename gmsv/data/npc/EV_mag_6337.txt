@@ -1,0 +1,12 @@
+#
+#毙錍及棉窖椒必□玄
+#
+
+##########  ##########
+block
+#\n\n\n﹛﹛﹛﹛﹛﹛﹛陆卞请月仇午互匹五引允\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛请引允井〝
+	Window 14661,YES,NO
+	Window_YES
+	Warp 0,400,136,336
+	Window_NO
+

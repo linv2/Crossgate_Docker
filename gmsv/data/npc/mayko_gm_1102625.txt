@@ -1,0 +1,25 @@
+#艾芝 mayko_gm_1102623.txt 摩顿
+#1110683	\n\n\n\n@c我想一下～	1
+##41127
+#41128
+#41129
+#1110695	\n\n\n\n@c不知道买的起买不起！！
+#1110696	\n\n\n\n@c这里我还是负担不起呀！！
+
+
+block item 41129>0
+	 endwindow 1110696
+block item 41128>0
+	 endwindow 1110696
+block item 41127>0
+	 endwindow 1110696
+block item 41121>0
+	 endwindow 1110695
+	 
+block item 41130 >0 && itemspace >0
+	 GiveLeak1Item 41121,1
+	 endwindow 1110683
+block item 41130>0
+	endwindow  1052925	 
+block 
+	 endwindow 1110694		 

@@ -1,0 +1,9 @@
+#######大宇周年庆任务
+#######使用道具后对话
+
+block
+	 ##1051992	\n\n把哥布林蛋糕吃掉了。
+	 Window 1051992,OK
+	 	window_ok
+		killleak1item 45905
+		GiveLeak1Item 45909

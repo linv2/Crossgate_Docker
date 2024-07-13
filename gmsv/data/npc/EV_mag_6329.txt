@@ -1,0 +1,38 @@
+#虏邂爵筏迭﹛伊斥旦正件旦﹛牺籥失旦白央件哗票
+#
+
+########## ≦荸热及芊≧毛手匀化中卅中 ##########
+block Item 18444 == 0
+#\n\n﹛伉□交件迋互云谨切匹允﹝
+	EndWindow 14612,OK
+
+########## 泔手罹恔手手匀化卅中 ##########
+block drugdish == 0 && Item 18444 != 0
+#\n\n﹛云竣毛勾仃化﹝
+	Window 14613,YES,NO
+	Window_YES drugdish == 0 && Item 18444 != 0
+	leavegroup
+	killdrugdish
+	Warp 0,23003,40,21
+	Window_YES  drugdish != 0
+#\n\n﹛丐木〝仇木云凑中仄化中凶怀蛟坁凤匹允方友〝
+	Window 14617,OK
+	Window_OK
+	Window_NO
+
+########## 泔手罹恔手手匀化月 ##########
+block drugdish != 0
+#\n\n﹛怀蛟坁凤及譬琼仍塑洢迋匹仄凶﹝仇木分仃泔支罹恔互丐木壬瑁爵引匹卅氏午井爵尹公丹匹允﹝仇木蝈朿手日匀化中中氏匹允方友〝
+	Window 14614,YES,NO
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引允﹝云竣毛勾仃化﹝
+	Window 14615,OK
+	Window_OK
+	killdrugdish
+	leavegroup
+	Warp 0,23003,40,21
+
+	Window_NO
+#\n\n﹛丐木〝伉□交件迋井日蝈朿熬仃潸月方丹卞蜕歹木化月氏匹允互＿＿
+	EndWindow 14616,OK
+

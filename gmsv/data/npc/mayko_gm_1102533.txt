@@ -1,0 +1,23 @@
+#琦琦	1102533	
+#30112	15	13	
+#mayko_gm_1102533.txt
+#1110372	\n\n\n\n@c没面包篮了，该去下订单了！	1
+#1110373	\n\n\n\n@c我这也没有多的呢～～	1
+#1110374	\n\n\n　　　　这样吧～\n　　　　我写封信给藤篮师，你请他做吧！	1
+
+#琦琦的信	41019
+#给琦琦的信	41027
+
+block EndEvent 163 == 1	 
+	 EndWindow 1110372
+block Item  41019>0
+	 EndWindow 1110372
+block Item  41027>0
+	 KillItem 41027,1
+	 GiveLeak1Item 41019,1
+	 Window 1110373,NEXT
+	 EndWindow 1110374
+block
+	 EndWindow 1110372
+	 
+	 

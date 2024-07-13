@@ -1,0 +1,50 @@
+##########　ＮＰＣ ：达比_第5幕 ＩＤ：1102010
+##########　ＭＡＰ：32072_remember5(23.20)
+#########　  以旗标做为分点开始
+##########　作用：公主期待篇
+
+
+##■除伍人数 >1
+block  Group >1
+	 ##1102379	\n\n‘解散队伍．．．偷听话语吧．．．’
+	 EndWindow 1102379
+	 
+##■解过2次以上检查旗标globalFlag 481 = 0
+block  globalFlag 482 == 1
+	 ##1102356	\n\n是的，公主！你的幸福是我最大的期盼。
+	 Window 1102356,OK
+	 	 Window_OK
+			 Warp  0,32073,27,7
+
+
+##■已解过１次_检查旗标globalFlag 481 = 0
+block 
+	 ##1102356	\n\n是的，公主！你的幸福是我最大的期盼。
+	 Window 1102356,OK
+	 	 Window_OK
+	 	 	 if  globalFlag 482 == 0 &&  globalFlag 481 == 1
+	 	 	 	  globalFlag 482 = 1
+			 	 Warp  0,32073,27,7
+			 endif
+			 
+			  if  globalFlag 481 == 0 
+			 	 globalFlag 481 = 1
+			 	 Warp 0,32075,6,9
+			 endif
+			 Warp 0,32075,6,9
+###■一般_检查旗标globalFlag 481 = 0
+#block 
+#	 ##1102356	\n\n是的，公主！你的幸福是我最大的期盼。
+#	 Window 1102356,OK
+#	 	 Window_OK
+#			 if  globalFlag 481 == 0 
+#			 	 globalFlag 481 = 1
+#			 	 Warp 0,32075,6,9
+#			 endif
+###■一般_理论上不是旗标481=1 或 482=0 或482=1的预防判断
+#block
+#	 ##1102356	\n\n是的，公主！你的幸福是我最大的期盼。
+#	 Window 1102356,OK
+#	 	 Window_OK
+#			 	 Warp 0,32075,6,9
+#	 

@@ -1,0 +1,11 @@
+#êóĞï©xÓ×Á¢ÓÀÛÍ±Ø¡õĞş
+
+block XPos == 96 && YPos == 89
+	Play_SE 262,320,240
+	SetObject 0,777,92,90,11072
+	SystemMessage 21898
+
+block XPos == 96 && YPos == 91
+	Play_SE 262,320,240
+	SetObject 0,777,92,90,0
+	SystemMessage 21898

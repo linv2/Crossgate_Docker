@@ -1,0 +1,31 @@
+###大宇周年庆_国民宠恶改图_水龙
+
+
+block PetLevel 722 >=1 && PetLevel 722 <50
+	 ##1053004	\n\n等级未达５０级，无法改造！	1
+	 EndWindow 1053004
+block PetSpace !=  4 && Item 46525 >=1 && PetLevel 722 >=1
+	 ##1053001	\n\n把宠物格清空，只留下要改造的水龙蜥吧！以免造成混乱的影响．．．	1
+	 EndWindow 1053001
+
+block Item 46525 >=1 && PetLevel 722 >= 50 && PetSpace == 4
+	 ##1053006	\n\n这是禁忌的图文！可以把５０级以上的宠物改造为能力不同的１级宠．．．	1
+	 Window 1053006,NEXT
+	 ##1053007	\n\n确定要使用国民宠恶改图？\n\n必须先警告你．．．改造也许会失败！就算失去宠物与改造图也还是继续改造吗？	1
+	 Window  1053007,NEXT
+	 ##1052997	\n\n你真的确定吗？如果不后悔的话．．．请按下“是”吧！
+	  Window 1052997,YES,NO
+	  	 Window_NO
+	  	 
+	  	 Window_YES  Item 46525 >=1 && PetLevel 722 >= 50 && PetSpace == 4
+	  	 	 ##1052998	\n\n以黑暗医生之命起誓！我将赋予你全新的能力！
+			 Window 1052998,OK
+			 	 Window_OK  Item 46525 >=1 && PetLevel 722 >= 50 && PetSpace == 4
+		 	 		 KillPetl 722,(1053005)
+		 	 		 KillItem 46525,1,(1052999)
+		 	 		 GivePet 103179
+	 
+block
+	 ##1053003	\n\n无法使用国民宠恶改图。
+	 EndWindow 1053003
+	 	 

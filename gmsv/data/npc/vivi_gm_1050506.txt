@@ -1,0 +1,238 @@
+########### 魔力大会考41 ###########
+######■主考官达科塔
+##■检查队伍
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■检查物品栏
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+	 
+##■有祈福文1与字串比对1
+##1050734	感谢山林大地的贡献
+block Item 45327 == 1 && StrCmpChat == 1050734 && Group == 1
+    ##1050752	\n\n\n\n@c祝福你！
+    Window 1050752,OK
+        Window_OK Item 45327 == 1
+            KillItem 45327
+            Warp 0,32686,0,10
+##■有祈福文2与字串比对2
+block Item 45328 == 1 && StrCmpChat == 1050735 && Group == 1
+    ##1050752	\n\n\n\n@c祝福你！
+    Window 1050752,OK
+        Window_OK Item 45328 == 1
+            KillItem 45328
+            Warp 0,32687,0,10
+##■念错祈福文
+block Item 45327 == 1 && StrCmpChat == 1050735
+    ##1050753	\n\n\n\n你再念什么呀？那上面是这样写的吗？
+    EndWindow 1050753
+##■念错祈福文
+block Item 45328 == 1 && StrCmpChat == 1050734
+    ##1050753	\n\n\n\n你再念什么呀？那上面是这样写的吗？
+    EndWindow 1050753   
+##■有祈福文1或2
+block Item 45327 == 1 || Item 45328 == 1
+    ##1050733	\n\n\n把祈福文大声念出来吧！感谢神的眷顾，让我们年年有木伐，岁岁有矿挖！
+    EndWindow 1050733
+##■有烛台(时间已过)
+block Item 45332 == 1 
+	 ##1050736	\n\n\n怎么回事阿？才刚看到你，你的蜡烛就已经熄灭了！\n真可惜，此次挑战就到此结束了！
+	 Window 1050736,OK 
+	 Window_OK 
+	     KillItem 45332
+	     GiveLeak1Item 45334
+	     Warp 0,30110,15,30
+##■检查烛台时间1
+block Item 45331 == 1 && ItemCreateTime 45331 > 5
+  	 KillItem 45331
+  	 GiveLeak1Item 45332
+  	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间2
+block Item 45330 == 1 && ItemCreateTime 45330 > 10
+	 KillItem 45330
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间3
+block Item 45330 == 1 && ItemCreateTime 45330 > 5
+	 KillItem 45330
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间4
+block Item 45329 == 1 && ItemCreateTime 45329 > 15
+	 KillItem 45329
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间5
+block Item 45329 == 1 && ItemCreateTime 45329 > 10
+	 KillItem 45329
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间6
+block Item 45329 == 1 && ItemCreateTime 45329 > 5
+	 KillItem 45329
+	 GiveLeak1Item 45330
+	 ##1050678	\n\n\n\n@c比赛将在10分钟以内结束！
+         EndWindow 1050678
+##■有烛台(时间未过)
+block Item 45329 == 1 || Item 45330 == 1 || Item 45331 == 1
+    ##1050737	\n\n\n没想到你能通过前面二关的考验呀！既然来到这里，我就不会放水啰！\n\n我要开始问了！
+    Window 1050737,OK
+        Window_OK Group == 1
+            ##1050738	\n\n\n\n生产系二阶任务中需要准备起司、面包两样物品？
+            Window 1050738,YES,NO
+                Window_YES Group == 1
+                    KillItem 45329
+	            KillItem 45330
+	            KillItem 45331
+	                ##1050748	\n\n恩~我说过我不会放水的！你已经答错啰！\n不过还是有安慰奖的啦，别难过！
+	                Window 1050748,OK
+	                         Window_OK
+	                             GiveLeak1Item 45334
+	  	        	     Warp 0,30110,15,30
+	    Window_NO Group == 1
+	        ##1050739	\n\n\n\n生产系的最高称号是神匠？
+	        Window 1050739,YES,NO
+	            Window_YES Group == 1
+                        KillItem 45329
+	                KillItem 45330
+	                KillItem 45331
+	                    ##1050748	\n\n恩~我说过我不会放水的！你已经答错啰！\n不过还是有安慰奖的啦，别难过！
+	                    Window 1050748,OK
+	                        Window_OK
+	                            GiveLeak1Item 45334
+	  	            	    Warp 0,30110,15,30
+	  	    Window_NO Group == 1
+	  	        ##1050740	\n\n\n\n法袍这个装备不能在防具店卖？
+	  	        Window 1050740,YES,NO
+	  	            Window_NO Group == 1
+	  	                KillItem 45329
+	                        KillItem 45330
+	                        KillItem 45331
+	                            ##1050748	\n\n恩~我说过我不会放水的！你已经答错啰！\n不过还是有安慰奖的啦，别难过！
+	                            Window 1050748,OK
+	                                 Window_OK
+	                                     GiveLeak1Item 45334
+	  	            	             Warp 0,30110,15,30 
+	  	            Window_YES Group == 1
+	  	                ##1050741	\n\n\n\n麻布可以在达美姊妹店购买到？
+	  	                Window 1050741,YES,NO
+	  	                    Window_YES Group == 1
+	  	                        KillItem 45329
+	                                KillItem 45330
+	                                KillItem 45331
+	                                    ##1050748	\n\n恩~我说过我不会放水的！你已经答错啰！\n不过还是有安慰奖的啦，别难过！
+	                                    Window 1050748,OK
+	                                        Window_OK
+	                                            GiveLeak1Item 45334
+	  	            	                    Warp 0,30110,15,30 	
+	  	            	    Window_NO Group == 1
+	  	            	        ##1050742	\n\n\n\n圣拉鲁卡村是以矿山和药而闻名？
+	  	            	        Window 1050742,YES,NO
+	  	                            Window_NO Group == 1
+	  	                                KillItem 45329
+	                                        KillItem 45330
+	                                        KillItem 45331
+	                                            ##1050748	\n\n恩~我说过我不会放水的！你已经答错啰！\n不过还是有安慰奖的啦，别难过！
+	                                            Window 1050748,OK
+	                                                Window_OK
+	                                                    GiveLeak1Item 45334
+	  	            	                            Warp 0,30110,15,30 
+	  	            	            Window_YES Group == 1
+	  	            	                ##1050743	\n\n\n\n工作职业称号LV2为“虔诚的技巧”？
+	  	            	                Window 1050743,YES,NO
+	  	                                    Window_YES Group == 1
+	  	                                        KillItem 45329
+	                                                KillItem 45330
+	                                                KillItem 45331
+	                                                    ##1050748	\n\n恩~我说过我不会放水的！你已经答错啰！\n不过还是有安慰奖的啦，别难过！
+	                                                    Window 1050748,OK
+	                                                        Window_OK
+	                                                            GiveLeak1Item 45334
+	  	            	                                    Warp 0,30110,15,30 
+	  	            	                    Window_NO Group == 1
+	  	            	                        ##1050744	\n\n\n\n技能“急救”可在法兰城，城东医院里学习？
+	  	            	                        Window 1050744,YES,NO
+	  	                                            Window_YES Group == 1
+	  	                                                KillItem 45329
+	                                                        KillItem 45330
+	                                                        KillItem 45331
+	                                                            ##1050748	\n\n恩~我说过我不会放水的！你已经答错啰！\n不过还是有安慰奖的啦，别难过！
+	                                                            Window 1050748,OK
+	                                                                Window_OK
+	                                                                    GiveLeak1Item 45334
+	  	            	                                            Warp 0,30110,15,30 
+	  	            	                            Window_NO Group == 1 
+	  	            	                                ##1050745	\n\n\n\n最终改造阿鲁巴斯需要的护士帽、医生、而且物品必须5级以上的猎人、矿工采集？
+	  	            	                                Window 1050745,YES,NO
+	  	                                                    Window_YES Group == 1
+	  	                                                        KillItem 45329
+	                                                                KillItem 45330
+	                                                                KillItem 45331
+	                                                                    ##1050748	\n\n恩~我说过我不会放水的！你已经答错啰！\n不过还是有安慰奖的啦，别难过！
+	                                                                    Window 1050748,OK
+	                                                                        Window_OK
+	                                                                            GiveLeak1Item 45334
+	  	            	                                                    Warp 0,30110,15,30 
+	  	            	                                    Window_NO Group == 1 
+	  	            	                                        ##1050746	\n\n\n\n宝石一共有10级？
+	  	            	                                        Window 1050746,YES,NO
+	  	                                                            Window_NO Group == 1
+	  	                                                                KillItem 45329
+	                                                                        KillItem 45330
+	                                                                        KillItem 45331
+	                                                                            ##1050748	\n\n恩~我说过我不会放水的！你已经答错啰！\n不过还是有安慰奖的啦，别难过！
+	                                                                            Window 1050748,OK
+	                                                                                Window_OK
+	                                                                                    GiveLeak1Item 45334
+	  	            	                                                            Warp 0,30110,15,30 
+	  	            	                                            Window_YES Group == 1 
+	  	            	                                                ##1050747	\n\n\n\n白金可在维诺雅洞穴里挖掘到？
+	  	            	                                                Window 1050747,YES,NO
+	  	                                                                    Window_NO Group == 1
+	  	                                                                        KillItem 45329
+	                                                                                KillItem 45330
+	                                                                                KillItem 45331
+	                                                                                    ##1050748	\n\n恩~我说过我不会放水的！你已经答错啰！\n不过还是有安慰奖的啦，别难过！
+	                                                                                    Window 1050748,OK
+	                                                                                        Window_OK
+	                                                                                            GiveLeak1Item 45334
+	  	            	                                                                    Warp 0,30110,15,30 
+	  	            	                                                    Window_YES Group == 1
+	  	            	                                                        ##1050749	\n你真行阿！没想到你竟然能通过我的考验，看来连大地之神都愿意祝福你，我就没理由不让你通过！\n\n不过为了让你了解！大地之神是多么眷顾我们，我希望你能诚心的读出祈福文，为这世界的子民祈福，为这世界的大地感谢。
+	  	            	                                                        Window 1050749,OK
+	  	            	                                                            Window_OK Item 45329 == 1 || Item 45330 == 1 || Item 45331 == 1
+	  	                                                                                 GiveLeak1Item (45327%1$1,45328%1$1)
+	  	                                                                                 ##1050750	\n\n\n\n请念出这纸上的祈福文吧！
+	  	                                                                                 EndWindow 1050750 
+		 		  		 				  		 		 	 	 	 	 	 
+##■没有烛台
+block
+	 ##1050751	\n咦？你怎么进来的？\n我记得所有参赛的勇者都有拿到计时用的烛台呀！\n你的是烧完了还是怎样呀？\n不过没烛台就不能参加，所以只好请你出去啰！
+	 Window 1050751,OK
+	 	 Window_OK
+	 	 Warp 0,30110,15,30	  	                                      
+	  	                                                                                     
+  	
+	  	                                                                                 
+
+                 
+               	
+                                 	         
+	  	 
+	  	
+	  	 
+	  	        	     
+                
+            
+ 

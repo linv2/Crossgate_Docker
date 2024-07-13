@@ -1,0 +1,20 @@
+#＞平亘旦泛及翘＝ミ嘻NPC﹛??巟鼹﹛凌001
+#
+#﹛﹛﹛褪濠卅庣谛及摒
+
+###﹛狪仄井仃日木凶午五
+
+block
+
+	Window 3200747,YES,NO
+		#\n\n\﹛平亘旦泛及翘反赓户化井中〝
+
+		Window_YES
+			EndWindow 3200748
+		#\n\n﹛域苇竻驯读匹及升井卅翘卞苇尹月互﹜\n﹛卅井卞反衬啦毛儅匀凶乒件旦正□手中月﹝\n﹛竣毛勾仃欠方﹝
+
+		Window_NO
+			EndWindow 3200749
+		#\n\n﹛丐丐﹜公丹中尹壬苇凶涌分卅﹝
+
+EndBlock

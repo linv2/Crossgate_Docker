@@ -1,0 +1,37 @@
+#
+#PUK3_Main1
+#
+#章谛﹋A﹌
+
+Block LocalFlag2 == 1 && LocalFlag3 == 1 && LocalFlag4 == 1
+
+	Window 3206932,OK
+
+		#\n\n﹛仇仇反白央件皮伙弘分方﹝\n﹛锤中手窒手卅中螃啖及笛赁毛熬仃月尪狟卅章分﹝
+	
+		Window_OK
+		
+				LeaveGroup
+			
+				warp 0,59513,116,69
+				
+				
+				
+Block Localflag1 == 1
+				
+	EndWindow 3206933
+
+		#\n\n﹛丐℅﹜尪狟允亢化转媪分卅丐＿＿﹝
+	
+	
+	
+Block
+
+	Window 3206934,OK
+
+		#\n\n﹛仇仇反白央件皮伙弘分方﹝\n﹛锤中手窒手卅中螃啖及笛赁毛熬仃月尪狟卅章分﹝
+	
+		Window_OK
+		
+			LocalFlag1 = 1
+			

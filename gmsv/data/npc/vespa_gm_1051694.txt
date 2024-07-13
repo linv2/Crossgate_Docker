@@ -1,0 +1,29 @@
+#######■小李杯杯 
+#######■1164(32,14)
+#######■字串比对=大宇19岁生日快乐
+
+block StrCmpChat == 1054813 && ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+	 
+block Item 	 47604>=1
+	 ##1054820	\n\n对不起啊！水蓝鼠竟然把这个东西放到食物里！	1
+	 Window 1054820,NEXT
+	 ##1054821	\n\n为了表示歉意，我就送给你一个特别的蛋糕盒吧！	1
+	 Window 1054821,OK
+	 	 Window_OK
+	 	 	 KillItem 47604
+	 	 	 GiveLeak1Item 47599
+	 
+block StrCmpChat == 1054813
+	 ##1054812	\n\n是的！正如你所说！大宇要过１９岁生日了！\n\n所以我给你一个蛋糕，也是很合理的！	1
+        	 Window 1054812,OK
+        	 	 Window_OK 	
+			 GiveLeak1Item 47594
+		 	 CheckTitle 
+
+#############■一般
+block
+	 ####1050649\n\n\n看你的样子，似乎有话想对我说？
+	 EndWindow 1050649 
+

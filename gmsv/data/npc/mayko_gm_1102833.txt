@@ -1,0 +1,16 @@
+block globalFlag 489 == 1 #旭日
+	window 1111913,yes,no #	\n\n\n　　　　你要使用传送石吗？\n　　　传送费是４０００。	1
+	Window_yes gold >3999 
+	Addgold -4000
+	leavegroup 
+	warp 0,31983,13,9
+	Window_yes
+	endwindow 9005
+	window_no
+	endblock
+	
+#9005	\n你的钱不够	7
+block 
+	endwindow 1200937 #\n\n\n\n@c你没有使用此传送石的资格。	1
+
+

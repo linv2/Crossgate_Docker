@@ -1,0 +1,19 @@
+###万圣节奖项	卡时小扑满(30 min)	din_item_46957.txt
+##能力说明：可以保存卡时30分钟
+
+block Item 46957 >=1 && FeverSec <= 1799
+	 ##1053718	\n\n  注意：你的卡时低于需存入时间！	1
+	 EndWindow 1053718
+	 
+block
+	 ##1053719	\n\n  确定要将卡时存进卡时小扑满中吗？	1
+	 Window 1053719,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46957 >=1 && FeverSec >= 1800  && ItemSpace == 0
+	 	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 	 EndWindow 1100002
+	 	 
+	 	 Window_YES Item 46957 >=1 && FeverSec >= 1800
+	 	 	 AddFeverSec -1800
+	 	 	 KillItem 46957,1,(1053720)##1053720	\n\n  你轻轻的将卡时存进卡时小扑满中。	1
+	 	 	 GiveLeak1Item 46958

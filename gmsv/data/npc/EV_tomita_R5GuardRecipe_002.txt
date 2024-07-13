@@ -1,0 +1,51 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛幼皮旦件及摒
+
+###﹛顶缜谛匹综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 290 && SkillLevel_209 >= 5
+	Window 3205243,OK
+
+		#\n\n﹛谨匀化中凶兮﹜仍⑺仅﹝\n﹛云木及蕙滇顶﹜白仿件汁失□穴□及综岳芊毛\n﹛兮夫盛尹化中匀化仁木﹝\n﹛布件布件综木壬﹜布件布件绅仆月兮﹝
+
+		Window_OK
+			GiveRecipe 564
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛顶缜谛匹综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 290
+	Window 3205244,OK
+
+		#\n\n﹛仍⑺仅分互﹜引分恍诞分卅﹝\n﹛手丹剂仄膜垫仄化井日侳化仁木方﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛顶缜谛匹卅中
+block
+	Window 3205245,YES,NO
+
+		#\n\n﹛丐氏凶﹜⑺仅樊元扎卅中卅﹝\n﹛仇仇井日请化垫五凶中及井〝
+
+		Window_YES
+			Window 3205246,OK
+
+		#\n\n﹛元扎丐﹜港盒及请轼引匹霜匀化支月方﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3205247
+
+		#\n\n﹛驯五卅分仃中化厌歹卅中互﹜酷仪及梁呺反\n﹛允月卅方卅﹝
+
+
+

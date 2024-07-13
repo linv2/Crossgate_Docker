@@ -1,0 +1,3363 @@
+#
+#
+#
+
+## 1109841 您现在有阿巴尼斯制的布20 叠，也就是400个售价是80000，请问您要卖吗？ 
+block Item 10411 >= 400 
+	 Window 1109840,NEXT
+	 Window 1109841,YES,NO
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold>920000
+	 EndWindow 1053762 
+	 Window_YES Item 10411<400
+	 EndWindow 1109482 
+	 Window_YES 
+	 KillItem 10411,400
+	 AddGold 80000 
+	 EndWindow 1109738
+## 1109842 您现在有阿巴尼斯制的布19 叠，也就是380个售价是76000，请问您要卖吗？ 
+block Item 10411 >= 380 
+	 Window 1109840,NEXT
+	 Window 1109842,YES,NO
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 924000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 380 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,380 
+	 AddGold 76000 
+	 EndWindow 1109738
+## 1109843 您现在有阿巴尼斯制的布18 叠，也就是360个售价是72000，请问您要卖吗？ 
+block Item 10411 >= 360 
+	 Window 1109840,NEXT
+	 Window 1109843,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 928000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 360 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,360 
+	 AddGold 72000 
+	 EndWindow 1109738
+## 1109844 您现在有阿巴尼斯制的布17 叠，也就是340个售价是68000，请问您要卖吗？ 
+block Item 10411 >= 340
+	 Window 1109840,NEXT
+	 Window 1109844,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 932000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 340 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,340 
+	 AddGold 68000 
+	 EndWindow 1109738
+## 1109845 您现在有阿巴尼斯制的布16 叠，也就是320个售价是64000，请问您要卖吗？ 
+block Item 10411 >= 320
+	 Window 1109840,NEXT
+	 Window 1109845,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 936000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 320 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,320 
+	 AddGold 64000 
+	 EndWindow 1109738
+## 1109846 您现在有阿巴尼斯制的布15 叠，也就是300个售价是60000，请问您要卖吗？ 
+block Item 10411 >= 300 
+	 Window 1109840,NEXT
+	 Window 1109846,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 940000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 300 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,300 
+	 AddGold 60000 
+	 EndWindow 1109738
+## 1109847 您现在有阿巴尼斯制的布14 叠，也就是280个售价是56000，请问您要卖吗？ 
+block Item 10411 >= 280 
+	 Window 1109840,NEXT
+	 Window 1109847,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 944000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 280 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,280 
+	 AddGold 56000 
+	 EndWindow 1109738
+## 1109848 您现在有阿巴尼斯制的布13 叠，也就是260个售价是52000，请问您要卖吗？ 
+block Item 10411 >= 260 
+	 Window 1109840,NEXT
+	 Window 1109848,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 948000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 260 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,260 
+	 AddGold 52000 
+	 EndWindow 1109738
+## 1109849 您现在有阿巴尼斯制的布12 叠，也就是240个售价是48000，请问您要卖吗？ 
+block Item 10411 >= 240 
+	 Window 1109840,NEXT
+	 Window 1109849,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 952000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 240 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,240 
+	 AddGold 48000 
+	 EndWindow 1109738
+## 1109850 您现在有阿巴尼斯制的布11 叠，也就是220个售价是44000，请问您要卖吗？ 
+block Item 10411 >= 220 
+	 Window 1109840,NEXT
+	 Window 1109850,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 956000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 220 
+	 EndWindow 1109482 
+	 Window_YES
+	 KillItem 10411,220 
+	 AddGold 44000 
+	 EndWindow 1109738
+## 1109851 您现在有阿巴尼斯制的布10 叠，也就是200个售价是40000，请问您要卖吗？ 
+block Item 10411 >= 200 
+	 Window 1109840,NEXT
+	 Window 1109851,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 960000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 200 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,200 
+	 AddGold 40000 
+	 EndWindow 1109738
+## 1109852 您现在有阿巴尼斯制的布9 叠，也就是180个售价是36000，请问您要卖吗？ 
+block Item 10411 >= 180 
+	 Window 1109840,NEXT
+	 Window 1109852,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 964000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 180 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,180 
+	 AddGold 36000 
+	 EndWindow 1109738
+## 1109853 您现在有阿巴尼斯制的布8 叠，也就是160个售价是32000，请问您要卖吗？ 
+block Item 10411 >= 160 
+	 Window 1109840,NEXT
+	 Window 1109853,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 968000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 160 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,160 
+	 AddGold 32000 
+	 EndWindow 1109738
+## 1109854 您现在有阿巴尼斯制的布7 叠，也就是140个售价是28000，请问您要卖吗？ 
+block Item 10411 >= 140 
+	 Window 1109840,NEXT
+	 Window 1109854,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 972000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 140 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,140 
+	 AddGold 28000 
+	 EndWindow 1109738
+## 1109855 您现在有阿巴尼斯制的布6 叠，也就是120个售价是24000，请问您要卖吗？ 
+block Item 10411 >= 120 
+	 Window 1109840,NEXT
+	 Window 1109855,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 976000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 120 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,120 
+	 AddGold 24000 
+	 EndWindow 1109738
+## 1109856 您现在有阿巴尼斯制的布5 叠，也就是100个售价是20000，请问您要卖吗？ 
+block Item 10411 >= 100 
+	 Window 1109840,NEXT
+	 Window 1109856,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 980000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 100 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,100 
+	 AddGold 20000 
+	 EndWindow 1109738
+## 1109857 您现在有阿巴尼斯制的布4 叠，也就是80个售价是16000，请问您要卖吗？ 
+block Item 10411 >= 80 
+	 Window 1109840,NEXT
+	 Window 1109857,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 984000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 80 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,80 
+	 AddGold 16000 
+	 EndWindow 1109738
+## 1109858 您现在有阿巴尼斯制的布3 叠，也就是60个售价是12000，请问您要卖吗？ 
+block Item 10411 >= 60 
+	 Window 1109840,NEXT
+	 Window 1109858,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 988000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 60 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,60 
+	 AddGold 12000 
+	 EndWindow 1109738
+## 1109859 您现在有阿巴尼斯制的布2 叠，也就是40个售价是8000，请问您要卖吗？ 
+block Item 10411 >= 40 
+	 Window 1109840,NEXT
+	 Window 1109859,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 992000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 40 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,40 
+	 AddGold 8000 
+	 EndWindow 1109738
+## 1109860 您现在有阿巴尼斯制的布1 叠，也就是20个售价是4000，请问您要卖吗？ 
+block Item 10411 >= 20 
+	 Window 1109840,NEXT
+	 Window 1109860,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 996000 
+	 EndWindow 1053762 
+	 Window_YES Item 10411 < 20 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10411,20 
+	 AddGold 4000 
+	 EndWindow 1109738
+
+## 1109861 您现在有阿巴尼斯制的线20 叠，也就是400个售价是80000，请问您要卖吗？ 
+block Item 10410 >= 400
+	 Window 1109840,NEXT 
+	 Window 1109861,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 920000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 400 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,400 
+	 AddGold 80000 
+	 EndWindow 1109738
+## 1109862 您现在有阿巴尼斯制的线19 叠，也就是380个售价是76000，请问您要卖吗？ 
+block Item 10410 >= 380 
+	 Window 1109840,NEXT 
+	 Window 1109862,YES,NO 
+	 Window_NO EndWindow 1051523 
+	 Window_YES Gold > 924000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 380 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,380 
+	 AddGold 76000 
+	 EndWindow 1109738
+## 1109863 您现在有阿巴尼斯制的线18 叠，也就是360个售价是72000，请问您要卖吗？ 
+block Item 10410 >= 360
+	 Window 1109840,NEXT 
+	 Window 1109863,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 928000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 360 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,360 
+	 AddGold 72000 
+	 EndWindow 1109738
+## 1109864 您现在有阿巴尼斯制的线17 叠，也就是340个售价是68000，请问您要卖吗？ 
+block Item 10410 >= 340
+	 Window 1109840,NEXT 
+	 Window 1109864,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 932000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 340 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,340 
+	 AddGold 68000 
+	 EndWindow 1109738
+## 1109865 您现在有阿巴尼斯制的线16 叠，也就是320个售价是64000，请问您要卖吗？ 
+block Item 10410 >= 320
+	 Window 1109840,NEXT 
+	 Window 1109865,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 936000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 320 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,320 
+	 AddGold 64000 
+	 EndWindow 1109738
+## 1109866 您现在有阿巴尼斯制的线15 叠，也就是300个售价是60000，请问您要卖吗？ 
+block Item 10410 >= 300 
+	 Window 1109840,NEXT 
+	 Window 1109866,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 940000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 300 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,300 
+	 AddGold 60000 
+	 EndWindow 1109738
+## 1109867 您现在有阿巴尼斯制的线14 叠，也就是280个售价是56000，请问您要卖吗？ 
+block Item 10410 >= 280 
+	 Window 1109840,NEXT 
+	 Window 1109867,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 944000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 280 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,280 
+	 AddGold 56000 
+	 EndWindow 1109738
+## 1109868 您现在有阿巴尼斯制的线13 叠，也就是260个售价是52000，请问您要卖吗？ 
+block Item 10410 >= 260 
+	 Window 1109840,NEXT 
+	 Window 1109868,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 948000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 260 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,260 
+	 AddGold 52000 
+	 EndWindow 1109738
+## 1109869 您现在有阿巴尼斯制的线12 叠，也就是240个售价是48000，请问您要卖吗？ 
+block Item 10410 >= 240 
+	 Window 1109840,NEXT 
+	 Window 1109869,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 952000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 240 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,240 
+	 AddGold 48000 
+	 EndWindow 1109738
+## 1109870 您现在有阿巴尼斯制的线11 叠，也就是220个售价是44000，请问您要卖吗？ 
+block Item 10410 >= 220 
+	 Window 1109840,NEXT 
+	 Window 1109870,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 956000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 220 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,220 
+	 AddGold 44000 
+	 EndWindow 1109738
+## 1109871 您现在有阿巴尼斯制的线10 叠，也就是200个售价是40000，请问您要卖吗？ 
+block Item 10410 >= 200 
+	 Window 1109840,NEXT 
+	 Window 1109871,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 960000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 200 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,200 
+	 AddGold 40000 
+	 EndWindow 1109738
+## 1109872 您现在有阿巴尼斯制的线9 叠，也就是180个售价是36000，请问您要卖吗？ 
+block Item 10410 >= 180 
+	 Window 1109840,NEXT 
+	 Window 1109872,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 964000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 180 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,180 
+	 AddGold 36000 
+	 EndWindow 1109738
+## 1109873 您现在有阿巴尼斯制的线8 叠，也就是160个售价是32000，请问您要卖吗？ 
+block Item 10410 >= 160 
+	 Window 1109840,NEXT 
+	 Window 1109873,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 968000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 160 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,160 
+	 AddGold 32000 
+	 EndWindow 1109738
+## 1109874 您现在有阿巴尼斯制的线7 叠，也就是140个售价是28000，请问您要卖吗？ 
+block Item 10410 >= 140 
+	 Window 1109840,NEXT 
+	 Window 1109874,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 972000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 140 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,140 
+	 AddGold 28000 
+	 EndWindow 1109738
+## 1109875 您现在有阿巴尼斯制的线6 叠，也就是120个售价是24000，请问您要卖吗？ 
+block Item 10410 >= 120 
+	 Window 1109840,NEXT 
+	 Window 1109875,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 976000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 120 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,120 
+	 AddGold 24000 
+	 EndWindow 1109738
+## 1109876 您现在有阿巴尼斯制的线5 叠，也就是100个售价是20000，请问您要卖吗？ 
+block Item 10410 >= 100 
+	 Window 1109840,NEXT 
+	 Window 1109876,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 980000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 100 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,100 
+	 AddGold 20000 
+	 EndWindow 1109738
+## 1109877 您现在有阿巴尼斯制的线4 叠，也就是80个售价是16000，请问您要卖吗？ 
+block Item 10410 >= 80 
+	 Window 1109877,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 984000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 80 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,80 
+	 AddGold 16000 
+	 EndWindow 1109738
+## 1109878 您现在有阿巴尼斯制的线3 叠，也就是60个售价是12000，请问您要卖吗？ 
+block Item 10410 >= 60 
+	 Window 1109840,NEXT 
+	 Window 1109878,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 988000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 60 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,60 
+	 AddGold 12000 
+	 EndWindow 1109738
+## 1109879 您现在有阿巴尼斯制的线2 叠，也就是40个售价是8000，请问您要卖吗？ 
+block Item 10410 >= 40 
+	 Window 1109840,NEXT 
+	 Window 1109879,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 992000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 40 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,40 
+	 AddGold 8000 
+	 EndWindow 1109738
+## 1109880 您现在有阿巴尼斯制的线1 叠，也就是20个售价是4000，请问您要卖吗？ 
+block Item 10410 >= 20 
+	 Window 1109840,NEXT 
+	 Window 1109880,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 996000 
+	 EndWindow 1053762 
+	 Window_YES Item 10410 < 20 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10410,20 
+	 AddGold 4000 
+	 EndWindow 1109738
+## 1109881 您现在有开米士毛线20 叠，也就是400个售价是102000，请问您要卖吗？ 
+block Item 10409 >= 400 
+	 Window 1109840,NEXT 
+	 Window 1109881,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 898000 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 400 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,400 
+	 AddGold 102000 
+	 EndWindow 1109738
+## 1109882 您现在有开米士毛线19 叠，也就是380个售价是96900，请问您要卖吗？ 
+block Item 10409 >= 380 
+	 Window 1109840,NEXT 
+	 Window 1109882,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 903100 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 380 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,380 
+	 AddGold 96900 
+	 EndWindow 1109738
+## 1109883 您现在有开米士毛线18 叠，也就是360个售价是91800，请问您要卖吗？ 
+block Item 10409 >= 360 
+	 Window 1109840,NEXT 
+	 Window 1109883,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 908200 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 360 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,360 
+	 AddGold 91800 
+	 EndWindow 1109738
+## 1109884 您现在有开米士毛线17 叠，也就是340个售价是86700，请问您要卖吗？ 
+block Item 10409 >= 340 
+	 Window 1109840,NEXT 
+	 Window 1109884,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 913300 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 340 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,340 
+	 AddGold 86700 
+	 EndWindow 1109738
+## 1109885 您现在有开米士毛线16 叠，也就是320个售价是81600，请问您要卖吗？ 
+block Item 10409 >= 320 
+	 Window 1109840,NEXT 
+	 Window 1109885,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 918400 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 320 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,320 
+	 AddGold 81600 
+	 EndWindow 1109738
+## 1109886 您现在有开米士毛线15 叠，也就是300个售价是76500，请问您要卖吗？ 
+block Item 10409 >= 300
+	 Window 1109840,NEXT 
+	 Window 1109886,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 923500 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 300 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,300 
+	 AddGold 76500 
+	 EndWindow 1109738
+## 1109887 您现在有开米士毛线14 叠，也就是280个售价是71400，请问您要卖吗？ 
+block Item 10409 >= 280
+	 Window 1109840,NEXT 
+	 Window 1109887,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 928600 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 280 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,280 
+	 AddGold 71400 
+	 EndWindow 1109738
+## 1109888 您现在有开米士毛线13 叠，也就是260个售价是66300，请问您要卖吗？ 
+block Item 10409 >= 260
+	 Window 1109840,NEXT 
+	 Window 1109888,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 933700 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 260 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,260 
+	 AddGold 66300 
+	 EndWindow 1109738
+## 1109889 您现在有开米士毛线12 叠，也就是240个售价是61200，请问您要卖吗？ 
+block Item 10409 >= 240
+	 Window 1109840,NEXT 
+	 Window 1109889,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 938800 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 240 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,240 
+	 AddGold 61200 
+	 EndWindow 1109738
+## 1109890 您现在有开米士毛线11 叠，也就是220个售价是56100，请问您要卖吗？ 
+block Item 10409 >= 220
+	 Window 1109890,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 943900 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 220 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,220 
+	 AddGold 56100 
+	 EndWindow 1109738
+## 1109891 您现在有开米士毛线10 叠，也就是200个售价是51000，请问您要卖吗？ 
+block Item 10409 >= 200
+	 Window 1109840,NEXT
+	 Window 1109891,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 949000 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 200 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,200 
+	 AddGold 51000 
+	 EndWindow 1109738
+## 1109892 您现在有开米士毛线9 叠，也就是180个售价是45900，请问您要卖吗？ 
+block Item 10409 >= 180 
+	 Window 1109840,NEXT
+	 Window 1109892,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 954100 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 180 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,180 
+	 AddGold 45900 
+	 EndWindow 1109738
+## 1109893 您现在有开米士毛线8 叠，也就是160个售价是40800，请问您要卖吗？ 
+block Item 10409 >= 160
+	 Window 1109840,NEXT
+	 Window 1109893,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 959200 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 160 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,160 
+	 AddGold 40800 
+	 EndWindow 1109738
+## 1109894 您现在有开米士毛线7 叠，也就是140个售价是35700，请问您要卖吗？ 
+block Item 10409 >= 140
+	 Window 1109840,NEXT
+	 Window 1109894,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 964300 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 140 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,140 
+	 AddGold 35700 
+	 EndWindow 1109738
+## 1109895 您现在有开米士毛线6 叠，也就是120个售价是30600，请问您要卖吗？ 
+block Item 10409 >= 120
+	 Window 1109840,NEXT
+	 Window 1109895,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 969400 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 120 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,120 
+	 AddGold 30600 
+	 EndWindow 1109738
+## 1109896 您现在有开米士毛线5 叠，也就是100个售价是25500，请问您要卖吗？ 
+block Item 10409 >= 100
+	 Window 1109840,NEXT
+	 Window 1109896,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 974500 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 100 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,100 
+	 AddGold 25500 
+	 EndWindow 1109738
+## 1109897 您现在有开米士毛线4 叠，也就是80个售价是20400，请问您要卖吗？ 
+block Item 10409 >= 80 
+	 Window 1109840,NEXT
+	 Window 1109897,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 979600 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 80 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,80 
+	 AddGold 20400 
+	 EndWindow 1109738
+## 1109898 您现在有开米士毛线3 叠，也就是60个售价是15300，请问您要卖吗？ 
+block Item 10409 >= 60
+	 Window 1109840,NEXT
+	 Window 1109898,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 984700 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 60 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,60 
+	 AddGold 15300 
+	 EndWindow 1109738
+## 1109899 您现在有开米士毛线2 叠，也就是40个售价是10200，请问您要卖吗？ 
+block Item 10409 >= 40
+	 Window 1109840,NEXT
+	 Window 1109899,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 989800 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 40 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,40 
+	 AddGold 10200 
+	 EndWindow 1109738
+## 1109900 您现在有开米士毛线1 叠，也就是20个售价是5100，请问您要卖吗？ 
+block Item 10409 >= 20
+	 Window 1109840,NEXT
+	 Window 1109900,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 994900 
+	 EndWindow 1053762 
+	 Window_YES Item 10409 < 20 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10409,20 
+	 AddGold 5100 
+	 EndWindow 1109738
+## 1109901 您现在有细麻布20 叠，也就是400个售价是78000，请问您要卖吗？ 
+block Item 10408 >= 400
+	 Window 1109840,NEXT
+	 Window 1109901,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 922000 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 400 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,400 
+	 AddGold 78000 
+	 EndWindow 1109738
+## 1109902 您现在有细麻布19 叠，也就是380个售价是74100，请问您要卖吗？ 
+block Item 10408 >= 380
+	 Window 1109840,NEXT
+	 Window 1109902,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 925900 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 380 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,380 
+	 AddGold 74100 
+	 EndWindow 1109738
+## 1109903 您现在有细麻布18 叠，也就是360个售价是70200，请问您要卖吗？ 
+block Item 10408 >= 360
+	 Window 1109840,NEXT
+	 Window 1109903,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 929800 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 360 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,360 
+	 AddGold 70200 
+	 EndWindow 1109738
+## 1109904 您现在有细麻布17 叠，也就是340个售价是66300，请问您要卖吗？ 
+block Item 10408 >= 340 
+	 Window 1109904,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 933700 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 340 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,340 
+	 AddGold 66300 
+	 EndWindow 1109738
+## 1109905 您现在有细麻布16 叠，也就是320个售价是62400，请问您要卖吗？ 
+block Item 10408 >= 320
+	 Window 1109840,NEXT
+	 Window 1109905,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 937600 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 320 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,320 
+	 AddGold 62400 
+	 EndWindow 1109738
+## 1109906 您现在有细麻布15 叠，也就是300个售价是58500，请问您要卖吗？ 
+block Item 10408 >= 300
+	 Window 1109840,NEXT
+	 Window 1109906,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 941500 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 300 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,300 
+	 AddGold 58500 
+	 EndWindow 1109738
+## 1109907 您现在有细麻布14 叠，也就是280个售价是54600，请问您要卖吗？ 
+block Item 10408 >= 280 
+	 Window 1109840,NEXT
+	 Window 1109907,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 945400 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 280 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,280 
+	 AddGold 54600 
+	 EndWindow 1109738
+## 1109908 您现在有细麻布13 叠，也就是260个售价是50700，请问您要卖吗？ 
+block Item 10408 >= 260
+	 Window 1109908,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 949300 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 260 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,260 
+	 AddGold 50700 
+	 EndWindow 1109738
+## 1109909 您现在有细麻布12 叠，也就是240个售价是46800，请问您要卖吗？ 
+block Item 10408 >= 240
+	 Window 1109840,NEXT
+	 Window 1109909,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 953200 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 240 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,240 
+	 AddGold 46800 
+	 EndWindow 1109738
+## 1109910 您现在有细麻布11 叠，也就是220个售价是42900，请问您要卖吗？ 
+block Item 10408 >= 220
+	 Window 1109840,NEXT
+	 Window 1109910,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 957100 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 220 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,220 
+	 AddGold 42900 
+	 EndWindow 1109738
+## 1109911 您现在有细麻布10 叠，也就是200个售价是39000，请问您要卖吗？ 
+block Item 10408 >= 200
+	 Window 1109840,NEXT
+	 Window 1109911,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 961000 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 200 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,200 
+	 AddGold 39000 
+	 EndWindow 1109738
+## 1109912 您现在有细麻布9 叠，也就是180个售价是35100，请问您要卖吗？ 
+block Item 10408 >= 180
+	 Window 1109840,NEXT
+	 Window 1109912,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 964900 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 180 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,180 
+	 AddGold 35100 
+	 EndWindow 1109738
+## 1109913 您现在有细麻布8 叠，也就是160个售价是31200，请问您要卖吗？ 
+block Item 10408 >= 160
+	 Window 1109840,NEXT
+	 Window 1109913,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 968800 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 160 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,160 
+	 AddGold 31200 
+	 EndWindow 1109738
+## 1109914 您现在有细麻布7 叠，也就是140个售价是27300，请问您要卖吗？ 
+block Item 10408 >= 140
+	 Window 1109840,NEXT
+	 Window 1109914,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 972700 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 140 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,140 
+	 AddGold 27300 
+	 EndWindow 1109738
+## 1109915 您现在有细麻布6 叠，也就是120个售价是23400，请问您要卖吗？ 
+block Item 10408 >= 120
+	 Window 1109840,NEXT
+	 Window 1109915,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 976600 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 120 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,120 
+	 AddGold 23400 
+	 EndWindow 1109738
+## 1109916 您现在有细麻布5 叠，也就是100个售价是19500，请问您要卖吗？ 
+block Item 10408 >= 100
+	 Window 1109840,NEXT
+	 Window 1109916,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 980500 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 100 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,100 
+	 AddGold 19500 
+	 EndWindow 1109738
+## 1109917 您现在有细麻布4 叠，也就是80个售价是15600，请问您要卖吗？ 
+block Item 10408 >= 80
+	 Window 1109840,NEXT
+	 Window 1109917,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 984400 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 80 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,80 
+	 AddGold 15600 
+	 EndWindow 1109738
+## 1109918 您现在有细麻布3 叠，也就是60个售价是11700，请问您要卖吗？ 
+block Item 10408 >= 60
+	 Window 1109840,NEXT
+	 Window 1109918,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 988300 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 60 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,60 
+	 AddGold 11700 
+	 EndWindow 1109738
+## 1109919 您现在有细麻布2 叠，也就是40个售价是7800，请问您要卖吗？ 
+block Item 10408 >= 40
+	 Window 1109840,NEXT
+	 Window 1109919,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 992200 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 40 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,40 
+	 AddGold 7800 
+	 EndWindow 1109738
+## 1109920 您现在有细麻布1 叠，也就是20个售价是3900，请问您要卖吗？ 
+block Item 10408 >= 20
+	 Window 1109840,NEXT
+	 Window 1109920,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 996100 
+	 EndWindow 1053762 
+	 Window_YES Item 10408 < 20 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10408,20 
+	 AddGold 3900 
+	 EndWindow 1109738
+## 1109921 您现在有杰诺瓦线20 叠，也就是400个售价是72000，请问您要卖吗？ 
+block Item 10407 >= 400
+	 Window 1109840,NEXT
+	 Window 1109921,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 928000
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 400 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,400 
+	 AddGold 72000 
+	 EndWindow 1109738
+## 1109922 您现在有杰诺瓦线19 叠，也就是380个售价是68400，请问您要卖吗？ 
+block Item 10407 >= 380
+	 Window 1109840,NEXT
+	 Window 1109922,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 931600 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 380 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,380 
+	 AddGold 68400 
+	 EndWindow 1109738
+## 1109923 您现在有杰诺瓦线18 叠，也就是360个售价是64800，请问您要卖吗？ 
+block Item 10407 >= 360
+	 Window 1109840,NEXT
+	 Window 1109923,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 935200 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 360 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,360 
+	 AddGold 64800 
+	 EndWindow 1109738
+## 1109924 您现在有杰诺瓦线17 叠，也就是340个售价是61200，请问您要卖吗？ 
+block Item 10407 >= 340
+	 Window 1109840,NEXT
+	 Window 1109924,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 938800 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 340 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,340 
+	 AddGold 61200 
+	 EndWindow 1109738
+## 1109925 您现在有杰诺瓦线16 叠，也就是320个售价是57600，请问您要卖吗？ 
+block Item 10407 >= 320
+	 Window 1109840,NEXT
+	 Window 1109925,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 942400 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 320 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,320 
+	 AddGold 57600 
+	 EndWindow 1109738
+## 1109926 您现在有杰诺瓦线15 叠，也就是300个售价是54000，请问您要卖吗？ 
+block Item 10407 >= 300
+	 Window 1109840,NEXT
+	 Window 1109926,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 946000 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 300 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,300 
+	 AddGold 54000 
+	 EndWindow 1109738
+## 1109927 您现在有杰诺瓦线14 叠，也就是280个售价是50400，请问您要卖吗？ 
+block Item 10407 >= 280
+	 Window 1109840,NEXT
+	 Window 1109927,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 949600 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 280 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,280 
+	 AddGold 50400 
+	 EndWindow 1109738
+## 1109928 您现在有杰诺瓦线13 叠，也就是260个售价是46800，请问您要卖吗？ 
+block Item 10407 >= 260
+	 Window 1109840,NEXT
+	 Window 1109928,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 953200 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 260 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,260 
+	 AddGold 46800 
+	 EndWindow 1109738
+## 1109929 您现在有杰诺瓦线12 叠，也就是240个售价是43200，请问您要卖吗？ 
+block Item 10407 >= 240
+	 Window 1109840,NEXT
+	 Window 1109929,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 956800 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 240 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,240 
+	 AddGold 43200 
+	 EndWindow 1109738
+## 1109930 您现在有杰诺瓦线11 叠，也就是220个售价是39600，请问您要卖吗？ 
+block Item 10407 >= 220
+	 Window 1109840,NEXT
+	 Window 1109930,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 960400 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 220 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,220 
+	 AddGold 39600 
+	 EndWindow 1109738
+## 1109931 您现在有杰诺瓦线10 叠，也就是200个售价是36000，请问您要卖吗？ 
+block Item 10407 >= 200
+	 Window 1109840,NEXT
+	 Window 1109931,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 964000 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 200 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,200 
+	 AddGold 36000 
+	 EndWindow 1109738
+## 1109932 您现在有杰诺瓦线9 叠，也就是180个售价是32400，请问您要卖吗？ 
+block Item 10407 >= 180
+	 Window 1109840,NEXT
+	 Window 1109932,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 967600 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 180 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,180 
+	 AddGold 32400 
+	 EndWindow 1109738
+## 1109933 您现在有杰诺瓦线8 叠，也就是160个售价是28800，请问您要卖吗？ 
+block Item 10407 >= 160
+	 Window 1109840,NEXT
+	 Window 1109933,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 971200 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 160 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,160 
+	 AddGold 28800 
+	 EndWindow 1109738
+## 1109934 您现在有杰诺瓦线7 叠，也就是140个售价是25200，请问您要卖吗？ 
+block Item 10407 >= 140
+	 Window 1109840,NEXT
+	 Window 1109934,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 974800 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 140 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,140 
+	 AddGold 25200 
+	 EndWindow 1109738
+## 1109935 您现在有杰诺瓦线6 叠，也就是120个售价是21600，请问您要卖吗？ 
+block Item 10407 >= 120
+	 Window 1109840,NEXT
+	 Window 1109935,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 978400 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 120 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,120 
+	 AddGold 21600 
+	 EndWindow 1109738
+## 1109936 您现在有杰诺瓦线5 叠，也就是100个售价是18000，请问您要卖吗？ 
+block Item 10407 >= 100
+	 Window 1109840,NEXT
+	 Window 1109936,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 982000 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 100 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,100 
+	 AddGold 18000 
+	 EndWindow 1109738
+## 1109937 您现在有杰诺瓦线4 叠，也就是80个售价是14400，请问您要卖吗？ 
+block Item 10407 >= 80
+	 Window 1109840,NEXT
+	 Window 1109937,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 985600 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 80 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,80 
+	 AddGold 14400 
+	 EndWindow 1109738
+## 1109938 您现在有杰诺瓦线3 叠，也就是60个售价是10800，请问您要卖吗？ 
+block Item 10407 >= 60
+	 Window 1109840,NEXT
+	 Window 1109938,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 989200 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 60 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,60 
+	 AddGold 10800 
+	 EndWindow 1109738
+## 1109939 您现在有杰诺瓦线2 叠，也就是40个售价是7200，请问您要卖吗？ 
+block Item 10407 >= 40
+	 Window 1109840,NEXT
+	 Window 1109939,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 992800 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 40 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,40 
+	 AddGold 7200 
+	 EndWindow 1109738
+## 1109940 您现在有杰诺瓦线1 叠，也就是20个售价是3600，请问您要卖吗？ 
+block Item 10407 >= 20
+	 Window 1109840,NEXT
+	 Window 1109940,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 996400 
+	 EndWindow 1053762 
+	 Window_YES Item 10407 < 20 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10407,20 
+	 AddGold 3600 
+	 EndWindow 1109738
+## 1109941 您现在有莎莲娜线20 叠，也就是400个售价是60000，请问您要卖吗？ 
+block Item 10406 >= 400
+ 	 Window 1109840,NEXT  
+ 	 Window 1109941,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 940000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 400 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,400 
+ 	 AddGold 60000 
+ 	 EndWindow 1109738
+## 1109942 您现在有莎莲娜线19 叠，也就是380个售价是57000，请问您要卖吗？ 
+block Item 10406 >= 380
+ 	 Window 1109840,NEXT  
+ 	 Window 1109942,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 943000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 380 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,380 
+ 	 AddGold 57000 
+ 	 EndWindow 1109738
+## 1109943 您现在有莎莲娜线18 叠，也就是360个售价是54000，请问您要卖吗？ 
+block Item 10406 >= 360
+ 	 Window 1109840,NEXT  
+ 	 Window 1109943,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 946000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 360 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,360 
+ 	 AddGold 54000 
+ 	 EndWindow 1109738
+## 1109944 您现在有莎莲娜线17 叠，也就是340个售价是51000，请问您要卖吗？ 
+block Item 10406 >= 340
+ 	 Window 1109840,NEXT  
+ 	 Window 1109944,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 949000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 340 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,340 
+ 	 AddGold 51000 
+ 	 EndWindow 1109738
+## 1109945 您现在有莎莲娜线16 叠，也就是320个售价是48000，请问您要卖吗？ 
+block Item 10406 >= 320
+ 	 Window 1109840,NEXT  
+ 	 Window 1109945,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 952000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 320 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,320 
+ 	 AddGold 48000 
+ 	 EndWindow 1109738
+## 1109946 您现在有莎莲娜线15 叠，也就是300个售价是45000，请问您要卖吗？ 
+block Item 10406 >= 300
+ 	 Window 1109840,NEXT  
+ 	 Window 1109946,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 955000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 300 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,300 
+ 	 AddGold 45000 
+ 	 EndWindow 1109738
+## 1109947 您现在有莎莲娜线14 叠，也就是280个售价是42000，请问您要卖吗？ 
+block Item 10406 >= 280
+ 	 Window 1109840,NEXT  
+ 	 Window 1109947,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 958000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 280 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,280 
+ 	 AddGold 42000 
+ 	 EndWindow 1109738
+## 1109948 您现在有莎莲娜线13 叠，也就是260个售价是39000，请问您要卖吗？ 
+block Item 10406 >= 260
+ 	 Window 1109840,NEXT  
+ 	 Window 1109948,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 961000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 260 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,260 
+ 	 AddGold 39000 
+ 	 EndWindow 1109738
+## 1109949 您现在有莎莲娜线12 叠，也就是240个售价是36000，请问您要卖吗？ 
+block Item 10406 >= 240
+ 	 Window 1109840,NEXT  
+ 	 Window 1109949,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 964000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 240 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,240 
+ 	 AddGold 36000 
+ 	 EndWindow 1109738
+## 1109950 您现在有莎莲娜线11 叠，也就是220个售价是33000，请问您要卖吗？ 
+block Item 10406 >= 220
+ 	 Window 1109840,NEXT  
+ 	 Window 1109950,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 967000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 220 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,220 
+ 	 AddGold 33000 
+ 	 EndWindow 1109738
+## 1109951 您现在有莎莲娜线10 叠，也就是200个售价是30000，请问您要卖吗？ 
+block Item 10406 >= 200
+ 	 Window 1109840,NEXT  
+ 	 Window 1109951,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 970000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 200 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,200 
+ 	 AddGold 30000 
+ 	 EndWindow 1109738
+## 1109952 您现在有莎莲娜线9 叠，也就是180个售价是27000，请问您要卖吗？ 
+block Item 10406 >= 180
+ 	 Window 1109840,NEXT  
+ 	 Window 1109952,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 973000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 180 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,180 
+ 	 AddGold 27000 
+ 	 EndWindow 1109738
+## 1109953 您现在有莎莲娜线8 叠，也就是160个售价是24000，请问您要卖吗？ 
+block Item 10406 >= 160
+ 	 Window 1109840,NEXT  
+ 	 Window 1109953,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 976000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 160 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,160 
+ 	 AddGold 24000 
+ 	 EndWindow 1109738
+## 1109954 您现在有莎莲娜线7 叠，也就是140个售价是21000，请问您要卖吗？ 
+block Item 10406 >= 140
+ 	 Window 1109840,NEXT  
+ 	 Window 1109954,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 979000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 140 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,140 
+ 	 AddGold 21000 
+ 	 EndWindow 1109738
+## 1109955 您现在有莎莲娜线6 叠，也就是120个售价是18000，请问您要卖吗？ 
+block Item 10406 >= 120
+ 	 Window 1109840,NEXT  
+ 	 Window 1109955,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 982000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 120 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,120 
+ 	 AddGold 18000 
+ 	 EndWindow 1109738
+## 1109956 您现在有莎莲娜线5 叠，也就是100个售价是15000，请问您要卖吗？ 
+block Item 10406 >= 100
+ 	 Window 1109840,NEXT  
+ 	 Window 1109956,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 985000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 100 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,100 
+ 	 AddGold 15000 
+ 	 EndWindow 1109738
+## 1109957 您现在有莎莲娜线4 叠，也就是80个售价是12000，请问您要卖吗？ 
+block Item 10406 >= 80
+ 	 Window 1109840,NEXT  
+ 	 Window 1109957,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 988000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 80 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,80 
+ 	 AddGold 12000 
+ 	 EndWindow 1109738
+## 1109958 您现在有莎莲娜线3 叠，也就是60个售价是9000，请问您要卖吗？ 
+block Item 10406 >= 60
+ 	 Window 1109840,NEXT  
+ 	 Window 1109958,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 991000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 60 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,60 
+ 	 AddGold 9000 
+ 	 EndWindow 1109738
+## 1109959 您现在有莎莲娜线2 叠，也就是40个售价是6000，请问您要卖吗？ 
+block Item 10406 >= 40
+ 	 Window 1109840,NEXT  
+ 	 Window 1109959,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 994000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 40 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,40 
+ 	 AddGold 6000 
+ 	 EndWindow 1109738
+## 1109960 您现在有莎莲娜线1 叠，也就是20个售价是3000，请问您要卖吗？ 
+block Item 10406 >= 20
+ 	 Window 1109840,NEXT  
+ 	 Window 1109960,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 997000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10406 < 20 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10406,20 
+ 	 AddGold 3000 
+ 	 EndWindow 1109738
+## 1109961 您现在有绢布20 叠，也就是400个售价是30000，请问您要卖吗？ 
+block Item 10405 >= 400
+ 	 Window 1109840,NEXT  
+ 	 Window 1109961,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 970000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 400 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,400 
+ 	 AddGold 30000 
+ 	 EndWindow 1109738
+## 1109962 您现在有绢布19 叠，也就是380个售价是28500，请问您要卖吗？ 
+block Item 10405 >= 380
+ 	 Window 1109840,NEXT  
+ 	 Window 1109962,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 971500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 380 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,380 
+ 	 AddGold 28500 
+ 	 EndWindow 1109738
+## 1109963 您现在有绢布18 叠，也就是360个售价是27000，请问您要卖吗？ 
+block Item 10405 >= 360
+ 	 Window 1109840,NEXT  
+ 	 Window 1109963,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 973000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 360 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,360 
+ 	 AddGold 27000 
+ 	 EndWindow 1109738
+## 1109964 您现在有绢布17 叠，也就是340个售价是25500，请问您要卖吗？ 
+block Item 10405 >= 340
+ 	 Window 1109840,NEXT  
+ 	 Window 1109964,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 051523 
+ 	 Window_YES Gold > 974500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 340 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,340 
+ 	 AddGold 25500 
+ 	 EndWindow 1109738
+## 1109965 您现在有绢布16 叠，也就是320个售价是24000，请问您要卖吗？ 
+block Item 10405 >= 320
+ 	 Window 1109840,NEXT  
+ 	 Window 1109965,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 976000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 320 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,320 
+ 	 AddGold 24000 
+ 	 EndWindow 1109738
+## 1109966 您现在有绢布15 叠，也就是300个售价是22500，请问您要卖吗？ 
+block Item 10405 >= 300
+ 	 Window 1109840,NEXT  
+ 	 Window 1109966,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 977500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 300 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,300 
+ 	 AddGold 22500 
+ 	 EndWindow 1109738
+## 1109967 您现在有绢布14 叠，也就是280个售价是21000，请问您要卖吗？ 
+block Item 10405 >= 280
+ 	 Window 1109840,NEXT  
+ 	 Window 1109967,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 979000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 280 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,280 
+ 	 AddGold 21000 
+ 	 EndWindow 1109738
+## 1109968 您现在有绢布13 叠，也就是260个售价是19500，请问您要卖吗？ 
+block Item 10405 >= 260
+ 	 Window 1109840,NEXT  
+ 	 Window 1109968,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 980500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 260 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,260 
+ 	 AddGold 19500 
+ 	 EndWindow 1109738
+## 1109969 您现在有绢布12 叠，也就是240个售价是18000，请问您要卖吗？ 
+block Item 10405 >= 240
+ 	 Window 1109840,NEXT  
+ 	 Window 1109969,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 982000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 240 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,240 
+ 	 AddGold 18000 
+ 	 EndWindow 1109738
+## 1109970 您现在有绢布11 叠，也就是220个售价是16500，请问您要卖吗？ 
+block Item 10405 >= 220
+ 	 Window 1109840,NEXT  
+ 	 Window 1109970,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 983500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 220 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,220 
+ 	 AddGold 16500 
+ 	 EndWindow 1109738
+## 1109971 您现在有绢布10 叠，也就是200个售价是15000，请问您要卖吗？ 
+block Item 10405 >= 200
+ 	 Window 1109840,NEXT  
+ 	 Window 1109971,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 985000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 200 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,200 
+ 	 AddGold 15000 
+ 	 EndWindow 1109738
+## 1109972 您现在有绢布9 叠，也就是180个售价是13500，请问您要卖吗？ 
+block Item 10405 >= 180
+ 	 Window 1109840,NEXT  
+ 	 Window 1109972,YES,NO 
+ 	 Window_NO
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 986500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 180 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,180 
+ 	 AddGold 13500 
+ 	 EndWindow 1109738
+## 1109973 您现在有绢布8 叠，也就是160个售价是12000，请问您要卖吗？ 
+block Item 10405 >= 160
+ 	 Window 1109840,NEXT  
+ 	 Window 1109973,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 988000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 160 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,160 
+ 	 AddGold 12000 
+ 	 EndWindow 1109738
+## 1109974 您现在有绢布7 叠，也就是140个售价是10500，请问您要卖吗？ 
+block Item 10405 >= 140
+ 	 Window 1109840,NEXT  
+ 	 Window 1109974,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 989500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 140 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,140 
+ 	 AddGold 10500 
+ 	 EndWindow 1109738
+## 1109975 您现在有绢布6 叠，也就是120个售价是9000，请问您要卖吗？ 
+block Item 10405 >= 120
+ 	 Window 1109840,NEXT  
+ 	 Window 1109975,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 991000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 120 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,120 
+ 	 AddGold 9000 
+ 	 EndWindow 1109738
+## 1109976 您现在有绢布5 叠，也就是100个售价是7500，请问您要卖吗？ 
+block Item 10405 >= 100
+ 	 Window 1109840,NEXT  
+ 	 Window 1109976,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 992500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 100 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,100 
+ 	 AddGold 7500 
+ 	 EndWindow 1109738
+## 1109977 您现在有绢布4 叠，也就是80个售价是6000，请问您要卖吗？ 
+block Item 10405 >= 80
+ 	 Window 1109840,NEXT  
+ 	 Window 1109977,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 994000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 80 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,80 
+ 	 AddGold 6000 
+ 	 EndWindow 1109738
+## 1109978 您现在有绢布3 叠，也就是60个售价是4500，请问您要卖吗？ 
+block Item 10405 >= 60
+ 	 Window 1109840,NEXT  
+ 	 Window 1109978,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 995500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 60 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,60 
+ 	 AddGold 4500 
+ 	 EndWindow 1109738
+## 1109979 您现在有绢布2 叠，也就是40个售价是3000，请问您要卖吗？ 
+block Item 10405 >= 40
+ 	 Window 1109840,NEXT  
+ 	 Window 1109979,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 997000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 40 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,40 
+ 	 AddGold 3000 
+ 	 EndWindow 1109738
+## 1109980 您现在有绢布1 叠，也就是20个售价是1500，请问您要卖吗？ 
+block Item 10405 >= 20
+ 	 Window 1109840,NEXT  
+ 	 Window 1109980,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 998500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10405 < 20 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10405,20 
+ 	 AddGold 1500 
+ 	 EndWindow 1109738
+## 1109981 您现在有细线20 叠，也就是400个售价是24000，请问您要卖吗？ 
+block Item 10404 >= 400
+ 	 Window 1109840,NEXT  
+ 	 Window 1109981,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 976000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 400 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,400 
+ 	 AddGold 24000 
+ 	 EndWindow 1109738
+## 1109982 您现在有细线19 叠，也就是380个售价是22800，请问您要卖吗？ 
+block Item 10404 >= 380
+ 	 Window 1109840,NEXT  
+ 	 Window 1109982,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 977200 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 380 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,380 
+ 	 AddGold 22800 
+ 	 EndWindow 1109738
+## 1109983 您现在有细线18 叠，也就是360个售价是21600，请问您要卖吗？ 
+block Item 10404 >= 360
+ 	 Window 1109840,NEXT  
+ 	 Window 1109983,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 978400 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 360 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,360 
+ 	 AddGold 21600 
+ 	 EndWindow 1109738
+## 1109984 您现在有细线17 叠，也就是340个售价是20400，请问您要卖吗？ 
+block Item 10404 >= 340
+ 	 Window 1109840,NEXT  
+ 	 Window 1109984,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 979600 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 340 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,340 
+ 	 AddGold 20400 
+ 	 EndWindow 1109738
+## 1109985 您现在有细线16 叠，也就是320个售价是19200，请问您要卖吗？ 
+block Item 10404 >= 320
+ 	 Window 1109840,NEXT  
+ 	 Window 1109985,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 980800 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 320 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,320 
+ 	 AddGold 19200 
+ 	 EndWindow 1109738
+## 1109986 您现在有细线15 叠，也就是300个售价是18000，请问您要卖吗？ 
+block Item 10404 >= 300
+ 	 Window 1109840,NEXT  
+ 	 Window 1109986,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 982000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 300 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,300 
+ 	 AddGold 18000 
+ 	 EndWindow 1109738
+## 1109987 您现在有细线14 叠，也就是280个售价是16800，请问您要卖吗？ 
+block Item 10404 >= 280
+ 	 Window 1109840,NEXT  
+ 	 Window 1109987,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 983200 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 280 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,280 
+ 	 AddGold 16800 
+ 	 EndWindow 1109738
+## 1109988 您现在有细线13 叠，也就是260个售价是15600，请问您要卖吗？ 
+block Item 10404 >= 260
+ 	 Window 1109840,NEXT  
+ 	 Window 1109988,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 984400 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 260 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,260 
+ 	 AddGold 15600 
+ 	 EndWindow 1109738
+## 1109989 您现在有细线12 叠，也就是240个售价是14400，请问您要卖吗？ 
+block Item 10404 >= 240
+ 	 Window 1109840,NEXT  
+ 	 Window 1109989,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 985600 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 240 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,240 
+ 	 AddGold 14400 
+ 	 EndWindow 1109738
+## 1109990 您现在有细线11 叠，也就是220个售价是13200，请问您要卖吗？ 
+block Item 10404 >= 220
+ 	 Window 1109840,NEXT  
+ 	 Window 1109990,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 986800 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 220 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,220 
+ 	 AddGold 13200 
+ 	 EndWindow 1109738
+## 1109991 您现在有细线10 叠，也就是200个售价是12000，请问您要卖吗？ 
+block Item 10404 >= 200
+ 	 Window 1109840,NEXT  
+ 	 Window 1109991,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 988000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 200 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,200 
+ 	 AddGold 12000 
+ 	 EndWindow 1109738
+## 1109992 您现在有细线9 叠，也就是180个售价是10800，请问您要卖吗？ 
+block Item 10404 >= 180
+ 	 Window 1109840,NEXT  
+ 	 Window 1109992,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 989200 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 180 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,180 
+ 	 AddGold 10800 
+ 	 EndWindow 1109738
+## 1109993 您现在有细线8 叠，也就是160个售价是9600，请问您要卖吗？ 
+block Item 10404 >= 160
+ 	 Window 1109840,NEXT  
+ 	 Window 1109993,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 990400 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 160 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,160 
+ 	 AddGold 9600 
+ 	 EndWindow 1109738
+## 1109994 您现在有细线7 叠，也就是140个售价是8400，请问您要卖吗？ 
+block Item 10404 >= 140
+ 	 Window 1109840,NEXT  
+ 	 Window 1109994,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 991600 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 140 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,140 
+ 	 AddGold 8400 
+ 	 EndWindow 1109738
+## 1109995 您现在有细线6 叠，也就是120个售价是7200，请问您要卖吗？ 
+block Item 10404 >= 120
+ 	 Window 1109840,NEXT  
+ 	 Window 1109995,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 992800 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 120 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,120 
+ 	 AddGold 7200 
+ 	 EndWindow 1109738
+## 1109996 您现在有细线5 叠，也就是100个售价是6000，请问您要卖吗？ 
+block Item 10404 >= 100
+ 	 Window 1109840,NEXT  
+ 	 Window 1109996,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 994000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 100 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,100 
+ 	 AddGold 6000 
+ 	 EndWindow 1109738
+## 1109997 您现在有细线4 叠，也就是80个售价是4800，请问您要卖吗？ 
+block Item 10404 >= 80
+ 	 Window 1109840,NEXT  
+ 	 Window 1109997,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 995200 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 80 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,80 
+ 	 AddGold 4800 
+ 	 EndWindow 1109738
+## 1109998 您现在有细线3 叠，也就是60个售价是3600，请问您要卖吗？ 
+block Item 10404 >= 60
+ 	 Window 1109840,NEXT  
+ 	 Window 1109998,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 996400 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 60 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,60 
+ 	 AddGold 3600 
+ 	 EndWindow 1109738
+## 1109999 您现在有细线2 叠，也就是40个售价是2400，请问您要卖吗？ 
+block Item 10404 >= 40
+ 	 Window 1109840,NEXT  
+ 	 Window 1109999,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 997600 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10404 < 40 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10404,40 
+ 	 AddGold 2400 
+ 	 EndWindow 1109738
+## 1110000 您现在有细线1 叠，也就是20个售价是1200，请问您要卖吗？ 
+block Item 10404 >= 20 	 
+	 Window 1109840,NEXT  
+	 Window 1110000,YES,NO 
+	 Window_NO 
+	 EndWindow 1051523 
+	 Window_YES Gold > 998800 
+	 EndWindow 1053762 
+	 Window_YES Item 10404 < 20 
+	 EndWindow 1109482 
+	 Window_YES  
+	 KillItem 10404,20 
+	 AddGold 1200 
+	 EndWindow 1109738
+## 1110001 您现在有绵20 叠，也就是400个售价是19800，请问您要卖吗？ 
+block Item 10403 >= 400
+ 	 Window 1109840,NEXT  
+ 	 Window 1110001,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 980200 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 400 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,400 
+ 	 AddGold 19800 
+ 	 EndWindow 1109738
+## 1110002 您现在有绵19 叠，也就是380个售价是18810，请问您要卖吗？ 
+block Item 10403 >= 380
+ 	 Window 1109840,NEXT  
+ 	 Window 1110002,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 981190 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 380 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,380 
+ 	 AddGold 18810 
+ 	 EndWindow 1109738
+## 1110003 您现在有绵18 叠，也就是360个售价是17820，请问您要卖吗？ 
+block Item 10403 >= 360
+ 	 Window 1109840,NEXT  
+ 	 Window 1110003,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 982180 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 360 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,360 
+ 	 AddGold 17820 
+ 	 EndWindow 1109738
+## 1110004 您现在有绵17 叠，也就是340个售价是16830，请问您要卖吗？ 
+block Item 10403 >= 340
+ 	 Window 1109840,NEXT  
+ 	 Window 1110004,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 983170 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 340 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,340 
+ 	 AddGold 16830 
+ 	 EndWindow 1109738
+## 1110005 您现在有绵16 叠，也就是320个售价是15840，请问您要卖吗？ 
+block Item 10403 >= 320
+ 	 Window 1109840,NEXT  
+ 	 Window 1110005,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 984160 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 320 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,320 
+ 	 AddGold 15840 
+ 	 EndWindow 1109738
+## 1110006 您现在有绵15 叠，也就是300个售价是14850，请问您要卖吗？ 
+block Item 10403 >= 300
+ 	 Window 1109840,NEXT  
+ 	 Window 1110006,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 985150 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 300 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,300 
+ 	 AddGold 14850 
+ 	 EndWindow 1109738
+## 1110007 您现在有绵14 叠，也就是280个售价是13860，请问您要卖吗？ 
+block Item 10403 >= 280
+ 	 Window 1109840,NEXT  
+ 	 Window 1110007,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 986140 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 280 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,280 
+ 	 AddGold 13860 
+ 	 EndWindow 1109738
+## 1110008 您现在有绵13 叠，也就是260个售价是12870，请问您要卖吗？ 
+block Item 10403 >= 260
+ 	 Window 1109840,NEXT  
+ 	 Window 1110008,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 987130 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 260 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,260 
+ 	 AddGold 12870 
+ 	 EndWindow 1109738
+## 1110009 您现在有绵12 叠，也就是240个售价是11880，请问您要卖吗？ 
+block Item 10403 >= 240
+ 	 Window 1109840,NEXT  
+ 	 Window 1110009,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 988120 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 240 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,240 
+ 	 AddGold 11880 
+ 	 EndWindow 1109738
+## 1110010 您现在有绵11 叠，也就是220个售价是10890，请问您要卖吗？ 
+block Item 10403 >= 220
+ 	 Window 1109840,NEXT  
+ 	 Window 1110010,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 989110 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 220 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,220 
+ 	 AddGold 10890 
+ 	 EndWindow 1109738
+## 1110011 您现在有绵10 叠，也就是200个售价是9900，请问您要卖吗？ 
+block Item 10403 >= 200
+ 	 Window 1109840,NEXT  
+ 	 Window 1110011,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 990100 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 200 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,200 
+ 	 AddGold 9900 
+ 	 EndWindow 1109738
+## 1110012 您现在有绵9 叠，也就是180个售价是8910，请问您要卖吗？ 
+block Item 10403 >= 180
+ 	 Window 1109840,NEXT  
+ 	 Window 1110012,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 991090 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 180 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+	 KillItem 10403,180 
+	 AddGold 8910 
+	 EndWindow 1109738
+## 1110013 您现在有绵8 叠，也就是160个售价是7920，请问您要卖吗？ 
+block Item 10403 >= 160
+ 	 Window 1109840,NEXT  
+ 	 Window 1110013,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 992080 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 160 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+	 KillItem 10403,160 
+	 AddGold 7920 
+	 EndWindow 1109738
+## 1110014 您现在有绵7 叠，也就是140个售价是6930，请问您要卖吗？ 
+block Item 10403 >= 140
+ 	 Window 1109840,NEXT  
+ 	 Window 1110014,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 993070 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 140 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+	 KillItem 10403,140 
+	 AddGold 6930 
+	 EndWindow 1109738
+## 1110015 您现在有绵6 叠，也就是120个售价是5940，请问您要卖吗？ 
+block Item 10403 >= 120
+ 	 Window 1109840,NEXT  
+ 	 Window 1110015,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 994060 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 120 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+	 KillItem 10403,120 
+	 AddGold 5940 
+	 EndWindow 1109738
+## 1110016 您现在有绵5 叠，也就是100个售价是4950，请问您要卖吗？ 
+block Item 10403 >= 100
+ 	 Window 1109840,NEXT  
+ 	 Window 1110016,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 995050 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 100 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,100 
+ 	 AddGold 4950 
+ 	 EndWindow 1109738
+## 1110017 您现在有绵4 叠，也就是80个售价是3960，请问您要卖吗？ 
+block Item 10403 >= 80
+ 	 Window 1109840,NEXT  
+ 	 Window 1110017,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 996040 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 80 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,80 
+ 	 AddGold 3960 
+ 	 EndWindow 1109738
+## 1110018 您现在有绵3 叠，也就是60个售价是2970，请问您要卖吗？ 
+block Item 10403 >= 60
+ 	 Window 1109840,NEXT  
+ 	 Window 1110018,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 997030 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 60 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,60 
+ 	 AddGold 2970 
+ 	 EndWindow 1109738
+## 1110019 您现在有绵2 叠，也就是40个售价是1980，请问您要卖吗？ 
+block Item 10403 >= 40
+ 	 Window 1109840,NEXT  
+ 	 Window 1110019,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 998020 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 40 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,40 
+ 	 AddGold 1980 
+ 	 EndWindow 1109738
+## 1110020 您现在有绵1 叠，也就是20个售价是990，请问您要卖吗？ 
+block Item 10403 >= 20
+ 	 Window 1109840,NEXT  
+ 	 Window 1110020,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 999010 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10403 < 20 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10403,20 
+ 	 AddGold 990 
+ 	 EndWindow 1109738
+## 1110021 您现在有毛毡20 叠，也就是400个售价是17400，请问您要卖吗？ 
+block Item 10402 >= 400
+ 	 Window 1109840,NEXT  
+ 	 Window 1110021,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 982600 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 400 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,400 
+ 	 AddGold 17400 
+ 	 EndWindow 1109738
+## 1110022 您现在有毛毡19 叠，也就是380个售价是16530，请问您要卖吗？ 
+block Item 10402 >= 380
+ 	 Window 1109840,NEXT  
+ 	 Window 1110022,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 983470 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 380 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,380 
+ 	 AddGold 16530 
+ 	 EndWindow 1109738
+## 1110023 您现在有毛毡18 叠，也就是360个售价是15660，请问您要卖吗？ 
+block Item 10402 >= 360
+ 	 Window 1109840,NEXT  
+ 	 Window 1110023,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 984340 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 360 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,360 
+ 	 AddGold 15660 
+ 	 EndWindow 1109738
+## 1110024 您现在有毛毡17 叠，也就是340个售价是14790，请问您要卖吗？ 
+block Item 10402 >= 340
+ 	 Window 1109840,NEXT  
+ 	 Window 1110024,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 985210 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 340 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,340 
+ 	 AddGold 14790 
+ 	 EndWindow 1109738
+## 1110025 您现在有毛毡16 叠，也就是320个售价是13920，请问您要卖吗？ 
+block Item 10402 >= 320
+ 	 Window 1109840,NEXT  
+ 	 Window 1110025,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 986080 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 320 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,320 
+ 	 AddGold 13920 
+ 	 EndWindow 1109738
+## 1110026 您现在有毛毡15 叠，也就是300个售价是13050，请问您要卖吗？ 
+block Item 10402 >= 300
+ 	 Window 1109840,NEXT  
+ 	 Window 1110026,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 986950 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 300 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,300 
+ 	 AddGold 13050 
+ 	 EndWindow 1109738
+## 1110027 您现在有毛毡14 叠，也就是280个售价是12180，请问您要卖吗？ 
+block Item 10402 >= 280
+ 	 Window 1109840,NEXT  
+ 	 Window 1110027,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 987820 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 280 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,280 
+ 	 AddGold 12180 
+ 	 EndWindow 1109738
+## 1110028 您现在有毛毡13 叠，也就是260个售价是11310，请问您要卖吗？ 
+block Item 10402 >= 260
+ 	 Window 1109840,NEXT  
+ 	 Window 1110028,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 988690 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 260 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,260 
+ 	 AddGold 11310 
+ 	 EndWindow 1109738
+## 1110029 您现在有毛毡12 叠，也就是240个售价是10440，请问您要卖吗？ 
+block Item 10402 >= 240
+ 	 Window 1109840,NEXT  
+ 	 Window 1110029,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 989560 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 240 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,240 
+ 	 AddGold 10440 
+ 	 EndWindow 1109738
+## 1110030 您现在有毛毡11 叠，也就是220个售价是9570，请问您要卖吗？ 
+block Item 10402 >= 220
+ 	 Window 1109840,NEXT  
+ 	 Window 1110030,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 990430 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 220 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,220 
+ 	 AddGold 9570 
+ 	 EndWindow 1109738
+## 1110031 您现在有毛毡10 叠，也就是200个售价是8700，请问您要卖吗？ 
+block Item 10402 >= 200
+ 	 Window 1109840,NEXT  
+ 	 Window 1110031,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 991300 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 200 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,200 
+ 	 AddGold 8700 
+ 	 EndWindow 1109738
+## 1110032 您现在有毛毡9 叠，也就是180个售价是7830，请问您要卖吗？ 
+block Item 10402 >= 180
+ 	 Window 1109840,NEXT  
+ 	 Window 1110032,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 992170 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 180 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,180 
+ 	 AddGold 7830 
+ 	 EndWindow 1109738
+## 1110033 您现在有毛毡8 叠，也就是160个售价是6960，请问您要卖吗？ 
+block Item 10402 >= 160
+ 	 Window 1109840,NEXT  
+ 	 Window 1110033,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 993040 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 160 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,160 
+ 	 AddGold 6960 
+ 	 EndWindow 1109738
+## 1110034 您现在有毛毡7 叠，也就是140个售价是6090，请问您要卖吗？ 
+block Item 10402 >= 140
+ 	 Window 1109840,NEXT  
+ 	 Window 1110034,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 993910 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 140 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,140 
+ 	 AddGold 6090 
+ 	 EndWindow 1109738
+## 1110035 您现在有毛毡6 叠，也就是120个售价是5220，请问您要卖吗？ 
+block Item 10402 >= 120
+ 	 Window 1109840,NEXT  
+ 	 Window 1110035,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 994780 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 120 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,120 
+ 	 AddGold 5220 
+ 	 EndWindow 1109738
+## 1110036 您现在有毛毡5 叠，也就是100个售价是4350，请问您要卖吗？ 
+block Item 10402 >= 100
+ 	 Window 1109840,NEXT  
+ 	 Window 1110036,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 995650 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 100 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,100 
+ 	 AddGold 4350 
+ 	 EndWindow 1109738
+## 1110037 您现在有毛毡4 叠，也就是80个售价是3480，请问您要卖吗？ 
+block Item 10402 >= 80
+ 	 Window 1109840,NEXT  
+ 	 Window 1110037,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 996520 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 80 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,80 
+ 	 AddGold 3480 
+ 	 EndWindow 1109738
+## 1110038 您现在有毛毡3 叠，也就是60个售价是2610，请问您要卖吗？ 
+block Item 10402 >= 60
+ 	 Window 1109840,NEXT  
+ 	 Window 1110038,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 997390 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 60 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,60 
+ 	 AddGold 2610 
+ 	 EndWindow 1109738
+## 1110039 您现在有毛毡2 叠，也就是40个售价是1740，请问您要卖吗？ 
+block Item 10402 >= 40
+ 	 Window 1109840,NEXT  
+ 	 Window 1110039,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 998260 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 40 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,40 
+ 	 AddGold 1740 
+ 	 EndWindow 1109738
+## 1110040 您现在有毛毡1 叠，也就是20个售价是870，请问您要卖吗？ 
+block Item 10402 >= 20
+ 	 Window 1109840,NEXT  
+ 	 Window 1110040,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 999130 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10402 < 20 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10402,20 
+ 	 AddGold 870 
+ 	 EndWindow 1109738
+## 1110041 您现在有木棉布20 叠，也就是400个售价是15000，请问您要卖吗？ 
+block Item 10401 >= 400
+ 	 Window 1109840,NEXT  
+ 	 Window 1110041,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 985000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 400 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,400 
+ 	 AddGold 15000 
+ 	 EndWindow 1109738
+## 1110042 您现在有木棉布19 叠，也就是380个售价是14250，请问您要卖吗？ 
+block Item 10401 >= 380
+ 	 Window 1109840,NEXT  
+ 	 Window 1110042,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 985750 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 380 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,380 
+ 	 AddGold 14250 
+ 	 EndWindow 1109738
+## 1110043 您现在有木棉布18 叠，也就是360个售价是13500，请问您要卖吗？ 
+block Item 10401 >= 360
+ 	 Window 1109840,NEXT  
+ 	 Window 1110043,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 986500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 360 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,360 
+ 	 AddGold 13500 
+ 	 EndWindow 1109738
+## 1110044 您现在有木棉布17 叠，也就是340个售价是12750，请问您要卖吗？ 
+block Item 10401 >= 340
+ 	 Window 1109840,NEXT  
+ 	 Window 1110044,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 987250 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 340 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,340 
+ 	 AddGold 12750 
+ 	 EndWindow 1109738
+## 1110045 您现在有木棉布16 叠，也就是320个售价是12000，请问您要卖吗？ 
+block Item 10401 >= 320
+ 	 Window 1109840,NEXT  
+ 	 Window 1110045,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 988000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 320 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,320 
+ 	 AddGold 12000 
+ 	 EndWindow 1109738
+## 1110046 您现在有木棉布15 叠，也就是300个售价是11250，请问您要卖吗？ 
+block Item 10401 >= 300
+ 	 Window 1109840,NEXT  
+ 	 Window 1110046,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 988750 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 300 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,300 
+ 	 AddGold 11250 
+ 	 EndWindow 1109738
+## 1110047 您现在有木棉布14 叠，也就是280个售价是10500，请问您要卖吗？ 
+block Item 10401 >= 280
+ 	 Window 1109840,NEXT  
+ 	 Window 1110047,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 989500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 280 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,280 
+ 	 AddGold 10500 
+ 	 EndWindow 1109738
+## 1110048 您现在有木棉布13 叠，也就是260个售价是9750，请问您要卖吗？ 
+block Item 10401 >= 260
+ 	 Window 1109840,NEXT  
+ 	 Window 1110048,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 990250 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 260 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,260 
+ 	 AddGold 9750 
+ 	 EndWindow 1109738
+## 1110049 您现在有木棉布12 叠，也就是240个售价是9000，请问您要卖吗？ 
+block Item 10401 >= 240
+ 	 Window 1109840,NEXT  
+ 	 Window 1110049,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 991000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 240 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,240 
+ 	 AddGold 9000 
+ 	 EndWindow 1109738
+## 1110050 您现在有木棉布11 叠，也就是220个售价是8250，请问您要卖吗？ 
+block Item 10401 >= 220
+ 	 Window 1109840,NEXT  
+ 	 Window 1110050,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 991750 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 220 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,220 
+ 	 AddGold 8250 
+ 	 EndWindow 1109738
+## 1110051 您现在有木棉布10 叠，也就是200个售价是7500，请问您要卖吗？ 
+block Item 10401 >= 200
+ 	 Window 1109840,NEXT  
+ 	 Window 1110051,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 992500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 200 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,200 
+ 	 AddGold 7500 
+ 	 EndWindow 1109738
+## 1110052 您现在有木棉布9 叠，也就是180个售价是6750，请问您要卖吗？ 
+block Item 10401 >= 180
+ 	 Window 1109840,NEXT  
+ 	 Window 1110052,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 993250 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 180 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,180 
+ 	 AddGold 6750 
+ 	 EndWindow 1109738
+## 1110053 您现在有木棉布8 叠，也就是160个售价是6000，请问您要卖吗？ 
+block Item 10401 >= 160
+ 	 Window 1109840,NEXT  
+ 	 Window 1110053,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 994000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 160 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,160 
+ 	 AddGold 6000 
+ 	 EndWindow 1109738
+## 1110054 您现在有木棉布7 叠，也就是140个售价是5250，请问您要卖吗？ 
+block Item 10401 >= 140
+ 	 Window 1109840,NEXT  
+ 	 Window 1110054,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 994750 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 140 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,140 
+ 	 AddGold 5250 
+ 	 EndWindow 1109738
+## 1110055 您现在有木棉布6 叠，也就是120个售价是4500，请问您要卖吗？ 
+block Item 10401 >= 120
+ 	 Window 1109840,NEXT  
+ 	 Window 1110055,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 995500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 120 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,120 
+ 	 AddGold 4500 
+ 	 EndWindow 1109738
+## 1110056 您现在有木棉布5 叠，也就是100个售价是3750，请问您要卖吗？ 
+block Item 10401 >= 100
+ 	 Window 1109840,NEXT  
+ 	 Window 1110056,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 996250 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 100 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,100 
+ 	 AddGold 3750 
+ 	 EndWindow 1109738
+## 1110057 您现在有木棉布4 叠，也就是80个售价是3000，请问您要卖吗？ 
+block Item 10401 >= 80
+ 	 Window 1109840,NEXT  
+ 	 Window 1110057,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 997000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 80 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,80 
+ 	 AddGold 3000 
+ 	 EndWindow 1109738
+## 1110058 您现在有木棉布3 叠，也就是60个售价是2250，请问您要卖吗？ 
+block Item 10401 >= 60
+ 	 Window 1109840,NEXT  
+ 	 Window 1110058,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 997750 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 60 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,60 
+ 	 AddGold 2250 
+ 	 EndWindow 1109738
+## 1110059 您现在有木棉布2 叠，也就是40个售价是1500，请问您要卖吗？ 
+block Item 10401 >= 40
+ 	 Window 1109840,NEXT  
+ 	 Window 1110059,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 998500 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 40 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,40 
+ 	 AddGold 1500 
+ 	 EndWindow 1109738
+## 1110060 您现在有木棉布1 叠，也就是20个售价是750，请问您要卖吗？ 
+block Item 10401 >= 20
+ 	 Window 1109840,NEXT  
+ 	 Window 1110060,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 999250 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10401 < 20 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10401,20 
+ 	 AddGold 750 
+ 	 EndWindow 1109738
+## 1110061 您现在有麻布20 叠，也就是400个售价是12000，请问您要卖吗？ 
+block Item 10400 >= 400
+ 	 Window 1109840,NEXT  
+ 	 Window 1110061,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 988000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 400 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,400 
+ 	 AddGold 12000 
+ 	 EndWindow 1109738
+## 1110062 您现在有麻布19 叠，也就是380个售价是11400，请问您要卖吗？ 
+block Item 10400 >= 380
+ 	 Window 1109840,NEXT  
+ 	 Window 1110062,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 988600 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 380 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,380 
+ 	 AddGold 11400 
+ 	 EndWindow 1109738
+## 1110063 您现在有麻布18 叠，也就是360个售价是10800，请问您要卖吗？ 
+block Item 10400 >= 360
+ 	 Window 1109840,NEXT  
+ 	 Window 1110063,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 989200 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 360 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,360 
+ 	 AddGold 10800 
+ 	 EndWindow 1109738
+## 1110064 您现在有麻布17 叠，也就是340个售价是10200，请问您要卖吗？ 
+block Item 10400 >= 340
+ 	 Window 1109840,NEXT  
+ 	 Window 1110064,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 989800 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 340 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,340 
+ 	 AddGold 10200 
+ 	 EndWindow 1109738
+## 1110065 您现在有麻布16 叠，也就是320个售价是9600，请问您要卖吗？ 
+block Item 10400 >= 320
+ 	 Window 1109840,NEXT  
+ 	 Window 1110065,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 990400 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 320 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,320 
+ 	 AddGold 9600 
+ 	 EndWindow 1109738
+## 1110066 您现在有麻布15 叠，也就是300个售价是9000，请问您要卖吗？ 
+block Item 10400 >= 300
+ 	 Window 1109840,NEXT  
+ 	 Window 1110066,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 991000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 300 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,300 
+ 	 AddGold 9000 
+ 	 EndWindow 1109738
+## 1110067 您现在有麻布14 叠，也就是280个售价是8400，请问您要卖吗？ 
+block Item 10400 >= 280
+ 	 Window 1109840,NEXT  
+ 	 Window 1110067,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 991600 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 280 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,280 
+ 	 AddGold 8400 
+ 	 EndWindow 1109738
+## 1110068 您现在有麻布13 叠，也就是260个售价是7800，请问您要卖吗？ 
+block Item 10400 >= 260
+ 	 Window 1109840,NEXT  
+ 	 Window 1110068,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 992200 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 260 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,260 
+ 	 AddGold 7800 
+ 	 EndWindow 1109738
+## 1110069 您现在有麻布12 叠，也就是240个售价是7200，请问您要卖吗？ 
+block Item 10400 >= 240
+ 	 Window 1109840,NEXT  
+ 	 Window 1110069,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 992800 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 240 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,240 
+ 	 AddGold 7200 
+ 	 EndWindow 1109738
+## 1110070 您现在有麻布11 叠，也就是220个售价是6600，请问您要卖吗？ 
+block Item 10400 >= 220
+ 	 Window 1109840,NEXT  
+ 	 Window 1110070,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 993400 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 220 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,220 
+ 	 AddGold 6600 
+ 	 EndWindow 1109738
+## 1110071 您现在有麻布10 叠，也就是200个售价是6000，请问您要卖吗？ 
+block Item 10400 >= 200
+ 	 Window 1109840,NEXT  
+ 	 Window 1110071,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 994000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 200 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,200 
+ 	 AddGold 6000 
+ 	 EndWindow 1109738
+## 1110072 您现在有麻布9 叠，也就是180个售价是5400，请问您要卖吗？ 
+block Item 10400 >= 180
+ 	 Window 1109840,NEXT  
+ 	 Window 1110072,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 994600 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 180 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,180 
+ 	 AddGold 5400 
+ 	 EndWindow 1109738
+## 1110073 您现在有麻布8 叠，也就是160个售价是4800，请问您要卖吗？ 
+block Item 10400 >= 160
+ 	 Window 1109840,NEXT  
+ 	 Window 1110073,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 995200 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 160 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,160 
+ 	 AddGold 4800 
+ 	 EndWindow 1109738
+## 1110074 您现在有麻布7 叠，也就是140个售价是4200，请问您要卖吗？ 
+block Item 10400 >= 140
+ 	 Window 1109840,NEXT  
+ 	 Window 1110074,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 995800 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 140 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,140 
+ 	 AddGold 4200 
+ 	 EndWindow 1109738
+## 1110075 您现在有麻布6 叠，也就是120个售价是3600，请问您要卖吗？ 
+block Item 10400 >= 120
+ 	 Window 1109840,NEXT  
+ 	 Window 1110075,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 996400 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 120 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,120 
+ 	 AddGold 3600 
+ 	 EndWindow 1109738
+## 1110076 您现在有麻布5 叠，也就是100个售价是3000，请问您要卖吗？ 
+block Item 10400 >= 100
+ 	 Window 1109840,NEXT  
+ 	 Window 1110076,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 997000 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 100 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,100 
+ 	 AddGold 3000 
+ 	 EndWindow 1109738
+## 1110077 您现在有麻布4 叠，也就是80个售价是2400，请问您要卖吗？ 
+block Item 10400 >= 80
+ 	 Window 1109840,NEXT  
+ 	 Window 1110077,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 997600 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 80 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,80 
+ 	 AddGold 2400 
+ 	 EndWindow 1109738
+## 1110078 您现在有麻布3 叠，也就是60个售价是1800，请问您要卖吗？ 
+block Item 10400 >= 60
+ 	 Window 1109840,NEXT  
+ 	 Window 1110078,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 998200 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 60 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,60 
+ 	 AddGold 1800 
+ 	 EndWindow 1109738
+## 1110079 您现在有麻布2 叠，也就是40个售价是1200，请问您要卖吗？ 
+block Item 10400 >= 40
+ 	 Window 1109840,NEXT  
+ 	 Window 1110079,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 998800 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 40 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,40 
+ 	 AddGold 1200 
+ 	 EndWindow 1109738
+## 1110080 您现在有麻布1 叠，也就是20个售价是600，请问您要卖吗？ 
+block Item 10400 >= 20
+ 	 Window 1109840,NEXT  
+ 	 Window 1110080,YES,NO 
+ 	 Window_NO 
+ 	 EndWindow 1051523 
+ 	 Window_YES Gold > 999400 
+ 	 EndWindow 1053762 
+ 	 Window_YES Item 10400 < 20 
+ 	 EndWindow 1109482 
+ 	 Window_YES  
+ 	 KillItem 10400,20 
+ 	 AddGold 600 
+ 	 EndWindow 1109738
+block  	 
+ 	 Window 1109840,NEXT 
+ 	 EndWindow 1109738

@@ -1,0 +1,102 @@
+#
+#杹?uxisupu
+#
+
+### 筏盛毛儅匀化中月 ###
+block Item 18780 >= 1 || Item 18781 >= 1 || Item 18782 >= 1
+ Endwindow 21338
+
+### 筏盛毛儅匀化中月 ###
+block Item 18766 >= 1
+ Endwindow 21259
+block Item 18767 >= 1
+ Endwindow 21259
+### 弘伙□皿反元五 ###
+block Group != 1
+ EndWindow 21249
+############## 失永市旦毛弁伉失仄化中卅中 ##############
+block EndEvent 19 != 1
+#\n\n﹛梓及朼执卞斑奋仄凶樊匹卅中及卅日仇及燮毛襞月优邰反卅中﹝\n\n﹛蛔友﹝
+	EndWindow 21250
+############## 白伉失示夫旦毛弁伉失仄化中月 ##############
+block EndEvent 18 == 1
+#\n\n﹛梓及朼执卞斑奋仄凶樊方＿﹝\n\n﹛优内蜇木月午合匀化云匀凶歹﹝\n﹛云蟆卞反裘及峏桦毛烂户月创貊反丐月及井〝
+	Window 21251,Yes,No
+         Window_Yes Group == 1
+          Warp 0,15531,49,32
+### 弘伙□皿反元五 ###
+         Window_Yes Group != 1
+          EndWindow 21249
+         Window_No
+
+
+
+
+############## 失永市旦弁伉失仄化中月 ##############
+block EndEvent 19 == 1 && Item 18588 == 0
+#\n\n﹛卅﹜卅氏分﹜仇及黄互俓仄中匀化及井″〝
+	Window 15281,YES,NO
+	Window_NO
+#\n\n﹛卅氏分方﹝中日卅中卅日丐匀切垫匀化仁木方﹝
+	EndWindow 15282,OK
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0
+#\n\n﹛丹□氏﹝眸卞手银中Ⅶ今匀天曰歹井日氏仄﹜丐仆化手中中氏分互﹜支匀天曰正母匀化歹仃卞反卅丐＿＿升丹分中10000Gold匹ョ歹卅中井〝
+	Window 15283,YES,NO
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && Gold < 10000
+#\n\n﹛卅氏分方﹜妐拑仄元扎友□井﹝
+	EndWindow 15284,OK
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && Gold >= 10000 && ItemSpace != 0
+	AddGold -10000
+	GiveItem 18588
+#\n\n﹛云云﹜允仆尹嗯儅切分卅﹜丐氏凶﹝公木元扎仇木支月方﹝
+	EndWindow 15285,OK
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && Gold >= 10000 && ItemSpace == 0
+#\n\n﹛卅氏分方﹜儅切坁中匀天中元扎友尹井﹝
+	EndWindow 15286,OK
+	Window_NO
+#\n\n﹛戈丹﹝公木元扎仇丹仄方丹﹝丐氏凶﹜凶引卞呺简互侹午允匀化中丹＞呺简及弁伉旦正伙＝毛襞匀化月井〝丐木反今﹜酗及裆卞午匀切扎筑褐卅云潮曰卞卅月氏分﹝丐氏凶互公木毛儅匀化月卅日跟晶仄化支匀化手中中兮﹝
+	Window 15287,YES,NO
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && Item 18450 == 0
+#\n\n﹛掖勾仁卅方﹜云中﹝儅匀化友□元扎友尹井﹝
+	EndWindow 15288,OK
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && Item 18450 >= 1 && ItemSpace != 0
+	KillItem 18450
+	GiveItem 18588
+#\n\n﹛云云﹜仇曰扎允仆尹支﹝公木元扎仇木支月方﹝
+	EndWindow 15289,OK
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && Item 18450 >= 1 && ItemSpace == 0
+#\n\n﹛卅氏分方﹜儅切坁中匀天中元扎友尹井﹝
+	EndWindow 15286,OK
+	Window_NO
+#\n\n﹛厄丹氏﹝元扎丐方﹜丐氏凶＞切日仄熨铭＝匀化襞匀化月井〝云木凶切践戋卞扎域戏罹尹卅中方丹卅兮中凶仁圴分仃升﹜域蘸井丐切扎氏午阂间卞罹歹六化支曰化尹氏分﹝丐氏凶互仍切公丹仄化仁木月卅日﹜仇中勾午跟晶仄化支匀化手中中兮﹝匹手ㄢ谛蟆元扎卅五扎分户分井日卅﹝
+	Window 15290,YES,NO
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && Item 15216 < 3
+#\n\n﹛云中云中﹜鬼中暸襟反方六方﹝切扎氏午ㄢ谛蟆及＞切日仄熨铭＝元扎卅五扎跟晶反匹五友尹卅﹝
+	EndWindow 15291,OK
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && Item 15216 >= 3 && ItemSpace != 0
+	KillItem 15216,3
+	GiveItem 18588
+#\n\n﹛云云﹜仇木互＞切日仄熨铭＝井″廿欠匀切中黄卅氏井方曰仇匀切及幻丹互窒ム手笠袄丐月兮﹝幻日﹜仇中勾反仁木化支月方﹝
+	EndWindow 15292,OK
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && Item 15216 >= 3 && ItemSpace == 0
+#\n\n﹛卅氏分方﹜儅切坁中匀天中元扎友尹井﹝
+	EndWindow 15286,OK
+	Window_NO
+#\n\n﹛卅氏分方云户尹﹜今匀五井日仇匀切互恌艘读卞锹襟仄化月午合匀化勾仃丐互曰支互匀化﹝云木匀切午鴃扙允月匀化及井〝
+	Window 15293,YES,NO
+	Window_NO
+#\n\n﹛孔氏﹜嗯手啦竣哗手友尹氏卅日午匀午午窖曰卅﹝
+	EndWindow 15294,OK
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && ItemSpace == 0
+#\n\n﹛孔氏﹜嗯手啦竣哗手友尹氏卅日午匀午午窖曰卅﹝
+	EndWindow 15294,OK
+	Window_YES EndEvent 19 == 1 && Item 18588 == 0 && ItemSpace != 0
+	Encount 2|0,0,0,0||0|||||0|10012|||||||||
+
+
+
+
+
+
+
+

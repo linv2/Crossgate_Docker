@@ -1,0 +1,73 @@
+
+
+block	
+
+#if Xpos == 28 && Ypos >= 86 && Ypos <= 88 &&  Trialflg == 7
+if Xpos == 28 && Ypos == 88 &&  Trialflg >= 7 && Level > 49
+
+	Window 3007012,next
+
+	Window 3007007,next
+
+	Window 3007011,next
+
+	Window 3007012,next
+
+	Window 3007013,yes,no
+
+	window_yes
+		if Gold < 900
+			EndWindow 3
+		else		
+			AddGold -900
+			LeaveGroup
+			Warp 0,59511,19,19
+		endif
+
+	window_no
+
+	Endwindow 3007015
+
+
+
+
+else
+#	if Xpos == 29 && Ypos >= 87 && Ypos <= 88 &&  Trialflg == 7
+
+#	Window 3007012,next
+
+#	Window 3007007,next
+
+#	Window 3007011,next
+
+#	Window 3007012,next
+
+#	Window 3007013,yes,no
+
+#	window_yes
+	
+#	LeaveGroup
+
+#	Warp 0,59511,19,19
+
+
+#	window_no
+
+#	Endwindow 3007015
+
+#	else
+	
+		if Xpos == 28 && Ypos == 88
+	
+	
+			Endwindow 90000
+
+#		else
+#			if Xpos == 28 && Ypos >= 86 && Ypos <= 88
+
+#				Endwindow 3007014
+
+#			endif
+		endif
+#	endif
+endif

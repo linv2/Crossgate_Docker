@@ -1,0 +1,39 @@
+## 逆之星包装虚拟赠品_逆星冒险宝箱
+##替身娃娃B型*2	可抵挡一次致死的魔法攻击。
+##赎魂笛*1	在掉魂情况下使用可以招回一格灵魂，使用后消耗一个。
+##好食便当(400)*1	进行采集时，当魔力达到0自动补魔400，消耗一个好食便当。
+##随机补血E型*2	使用后随机补血500~700。
+##装备反射镜*1	当装备遭受破坏时，消耗一张装备破坏反射镜，并保留该装备当时的耐久值。
+##落跑娃娃*2	玩家在选择逃跑时，逃跑机率100%，并消耗一个娃娃。
+#1055866	\n\n\n@c你想换成春之旅行箱吗？	1
+#1055867	\n\n\n@c那我就依约打开逆星冒险宝箱？	1
+#1055868	\n\n\n@c你的物品栏不够。	1
+
+##空格不足
+block  ItemSpace < 6
+	 ##1051843	\n\n\n\n\n@c物品栏的空间不足。	
+	 EndWindow 1051843
+	 
+##一般
+block 
+	 Window 1055866,YES,NO
+	 Window_YES
+	 KillItem 47592,1
+	 GiveLeak1Item 47720,1
+	 
+#####
+	 ##1054802	\n\n要打开“逆星冒险宝箱”吗？	1
+	 #Window 1054802,YES,NO
+	 	 Window_NO ItemSpace >=6
+	 	 	  KillItem 47592,1
+	 	 	  GiveStackItem 40841,2
+	 	 	  GiveLeak1Item 47561,1
+	 	 	  GiveLeak1Item 47560,1
+	 	 	  GiveStackItem 47559,2
+	 	 	  GiveLeak1Item 47558,1
+	 	 	  GiveStackItem 40842,2
+	 	 	  Endblock
+	 	 	  
+	 	 Window_NO
+	 	 EndWindow 1055868
+	 	 	 

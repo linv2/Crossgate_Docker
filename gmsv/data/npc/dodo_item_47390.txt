@@ -1,0 +1,90 @@
+####dodo_item_47390.txt
+####■1.铲子		在克瑞村内可以挖到雪饼等物品。
+##当铲子耐久 == 1
+block Item 47390 >= 1 && ItemDur 47390 == 1 && Floor == 30012 && Xpos >= 0 && Xpos <= 109 && Ypos >= 0 && Ypos <= 88
+	 ##1054655	\n\n\n\n\n@c想在这个地方使用铲子开始挖掘吗？	1
+	 Window 1054655,YES,NO
+	 	 Window_NO 
+	 		 ##1054656	\n\n\n\n\n@c找寻下一个最佳地点吧！	1
+			 EndWindow 1054656
+
+		 Window_YES ItemSpace == 0
+		 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1
+			 EndWindow 1054495
+
+		 Window_YES Item 47390 >= 1 && ItemDur 47390 == 1 && Floor == 30012 && Xpos >= 0 && Xpos <= 109 && Ypos >= 0 && Ypos <= 88
+		 	 ##1054657	\n\n\n\n\n@c挖阿～挖阿～用力挖～～我使劲挖！	1
+			 Window 1054657,NEXT
+			 ##1054652	\n\n\n\n\n@c听到了“锵”的一声，铲子仿佛挖到了什么东西！	1
+			 Window 1054652,OK 
+			 	 Window_OK Item 47390 >= 1 && ItemDur 47390 == 1 && Floor == 30012 && Xpos >= 0 && Xpos <= 109 && Ypos >= 0 && Ypos <= 88
+				 	 ##取走铲子
+				 	 KillItem 47390
+				 	 ##随机给予奖品星形雪饼30%，中秋月兔头1%，冰块29%。
+				 	 GiveLeak1Item (47392%5000$1,47394%1$1,47395%4999$1)
+
+##当铲子耐久 > 1
+block Item 47390 >= 1 && ItemDur 47390 > 1 && Floor == 30012 && Xpos >= 0 && Xpos <= 109 && Ypos >= 0 && Ypos <= 88
+	 ##1054655	\n\n\n\n\n@c想在这个地方使用铲子开始挖掘吗？	1
+	 Window 1054655,YES,NO
+	 	 Window_NO 
+	 		 ##1054656	\n\n\n\n\n@c找寻下一个最佳地点吧！	1
+			 EndWindow 1054656
+
+		 Window_YES ItemSpace == 0
+		 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1
+			 EndWindow 1054495
+
+		 Window_YES Item 47390 >= 1 && ItemDur 47390 > 1 && Floor == 30012 && Xpos >= 0 && Xpos <= 109 && Ypos >= 0 && Ypos <= 88
+		 	 ##1054657	\n\n\n\n\n@c挖阿～挖阿～用力挖～～我使劲挖！	1
+			 Window 1054657,NEXT
+			 ##1054652	\n\n\n\n\n@c听到了“锵”的一声，铲子仿佛挖到了什么东西！	1
+			 Window 1054652,OK 
+			 	 Window_OK Item 47390 >= 1 && ItemDur 47390 > 1 && Floor == 30012 && Xpos >= 0 && Xpos <= 109 && Ypos >= 0 && Ypos <= 88
+				 	 ##铲子耐久-1
+				 	 SetDur 47390,-1
+				 	 ##随机给予奖品脱兔雪饼40%，星形雪饼30%，中秋月兔头1%，冰块29%。
+				 	 GiveLeak1Item (47392%5000$1,47394%1$1,47395%4999$1)
+
+block Item 47390 >= 1 && ItemDur 47390 == 1
+	 ##1054655	\n\n\n\n\n@c想在这个地方使用铲子开始挖掘吗？	1				
+	 Window 1054655,YES,NO
+	 	 Window_NO 
+	 		 ##1054656	\n\n\n\n\n@c找寻下一个最佳地点吧！	1
+			 EndWindow 1054656
+
+		 Window_YES ItemSpace == 0
+		 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1
+			 EndWindow 1054495
+
+		 Window_YES Item 47390 >= 1 && ItemDur 47390 == 1
+		 	 ##1054657	\n\n\n\n\n@c挖阿～挖阿～用力挖～～我使劲挖！	1
+			 Window 1054657,NEXT
+			 ##1054652	\n\n\n\n\n@c听到了“锵”的一声，铲子仿佛挖到了什么东西！	1
+			 Window 1054652,OK 
+			 	 Window_OK Item 47390 >= 1 && ItemDur 47390 == 1
+			 	 	 ##取走铲子
+				 	 KillItem 47390
+				 	 ##给予碎石头
+				 	 GiveLeak1Item 18209
+
+block Item 47390 >= 1 && ItemDur 47390 > 1
+	 ##1054655	\n\n\n\n\n@c想在这个地方使用铲子开始挖掘吗？	1						
+	 Window 1054655,YES,NO
+	 	 Window_NO 
+	 		 ##1054656	\n\n\n\n\n@c找寻下一个最佳地点吧！	1
+
+		 Window_YES ItemSpace == 0
+		 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1
+			 EndWindow 1054495
+
+		 Window_YES Item 47390 >= 1 && ItemDur 47390 > 1
+		 	 ##1054657	\n\n\n\n\n@c挖阿～挖阿～用力挖～～我使劲挖！	1
+			 Window 1054657,NEXT
+			 ##1054652	\n\n\n\n\n@c听到了“锵”的一声，铲子仿佛挖到了什么东西！	1				
+			 Window 1054652,OK 
+			 	 Window_OK Item 47390 >= 1 && ItemDur 47390 > 1
+			 	 	 ##铲子耐久-1
+				 	 SetDur 47390,-1
+				 	 ##给予碎石头
+				 	 GiveLeak1Item 18209

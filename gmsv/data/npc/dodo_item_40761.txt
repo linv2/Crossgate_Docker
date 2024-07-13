@@ -1,0 +1,19 @@
+###dodo_item_40761.txt
+###3.危险的材料			据说不注意会有爆炸的危险。						
+###□一般
+block Item 40761 >= 1
+	 ##1102860	\n\n\n\n\n@c你要将这箱材料打开吗？	1
+	 Window 1102860,YES,NO  
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 40761 >= 1
+	 	 	 ##1102861	\n\n\n  即使上面写着“危险！切勿私自打开！”，\n  依然坚持要打开这箱材料？	1
+			 Window 1102861,YES,NO 
+			 	 Window_NO 
+			 	 
+			 	 Window_YES Item 40761 >= 1 
+			 	 	 ##1102862	材料发生了爆炸！	1
+					 ##（取走危险的材料，受伤1级。）
+					 setinjury -1
+					 KillItem 40761,1,(1102862)
+					 

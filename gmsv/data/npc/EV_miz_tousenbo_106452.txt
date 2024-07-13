@@ -1,0 +1,33 @@
+#çÖÆ±»¿•O¼°Îçµ¤ÁùÊÏØ¥Æ½ÅÒ·Â¡°Ê§Ğş³âØ©
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+
+###########©x©x##############
+block
+
+	setaction 0
+	Window 206741,YES,NO
+	Window_YES
+	setaction 16
+	EndWindow 206746,OK
+	Window_NO
+	Window 206742,OK
+	Window_OK
+	setaction 11
+	Window 206743,YES,NO
+	Window_YES
+	setaction 16
+	EndWindow 206746,OK
+	Window_NO
+	Window 206744,YES,NO
+	Window_NO
+	setaction 16
+	EndWindow 206754,OK
+	Window_YES
+	setaction 14
+	Window 206745,OK
+	Window_OK
+	Encount 3|0,3300,313,349||0|||||0|20016|||||||||
+
+
+

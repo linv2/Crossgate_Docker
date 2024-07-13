@@ -1,0 +1,26 @@
+/*
+伉伊□﹛boukenyado及谛
+厘妐侬﹜凝妐侬及嗉帎反卅中
+'_'反厶心?壬仄
+*/
+
+#include "./header/global0.h"
+
+block Xpos ==  && Ypos == 
+
+	Play_SE 274
+	Message "踹卞匚互渔元匀化中月″﹛LPㄤ禾奶件玄斓票"
+	SetLp -5
+
+block Xpos ==  && Ypos == 
+
+	Message "踹卞匚互渔元匀化中月″﹛LPㄤ禾奶件玄斓票"
+	SetLp -5
+
+block Xpos ==  && Ypos == 
+
+	Message "踹卞匚互渔元匀化中月″﹛LPㄤ禾奶件玄斓票"
+	SetLp -5
+
+
+

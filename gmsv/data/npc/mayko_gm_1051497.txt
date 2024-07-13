@@ -1,0 +1,41 @@
+#摩顿村	染料商宝拉
+
+#	■　有紫草
+block Item 46938>0
+EndWindow 1053603
+
+	
+	##你不是已经拿了紫草了吗！
+	
+#	■　有单木一组
+block Item 10010>19
+	 Window 1053604,YES,NO
+	 #	你现在有一组单木，要换紫草吗？		 
+	 	 Window_YES ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 Window_YES Item 10010>19
+	  
+		#■　换
+		#好的！这是紫草～
+		 KillItem 10010,20
+     	 	 GiveLeak1Item 46938,1
+     	 	 EndWindow 1053605
+	 #有单木
+	  Window_YES 10010>1
+		#你的单木不够，我不能给你紫草
+	 EndWindow 1053607
+
+
+		
+	 Window_NO
+	 EndWindow 1053606
+
+		#你好好考虑吧～
+		
+	
+	
+#	■　
+#	我是卖染料原料的宝拉，现在有染蓝色与紫色的紫草，如果你有一组单木，可以跟我换紫草！
+block 
+	 EndWindow 1053608

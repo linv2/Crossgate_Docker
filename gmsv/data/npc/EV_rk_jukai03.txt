@@ -1,0 +1,15 @@
+#＊户中凶朿盒﹋绍﹌疋失用
+
+block Item 18975 >= 1
+	EndWindow 21601,OK
+
+block
+	Play_se 1000,0,0
+	Window 21886,Yes,No
+		Window_NO
+		Window_Yes ItemSpace == 0
+			EndWindow 10000,OK
+		Window_Yes Item 18975 == 0
+			GiveItem 18975
+		Window_Yes 
+			EndWindow "\n\n﹛手丹儅匀化中引允﹝",OK

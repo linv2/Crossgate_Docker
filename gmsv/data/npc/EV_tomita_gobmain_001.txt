@@ -1,0 +1,118 @@
+#打皮伉件及邰尽﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛梢濩打皮伉件及摒
+
+###﹛惘弁伉永弁
+
+Block StrCmpChat == R
+
+	If Item_607914 >= 2
+		EndWindow 3201624
+		#\n\n﹛扔禾□正□据抸踏毛窒呦手儅匀化中月午反﹜\n﹛盟卅票艘毛普元月卅﹝窖匀化仁木﹝
+		EndBlock
+
+	else
+		If Item_607914 >= 1 && Item_607915 >= 1
+			EndWindow 3201625
+		#\n\n﹛云中云中﹜俓壬月卅方﹝
+			EndBlock
+
+		else
+			If Item_607914 >= 1
+				EndWindow 3201626
+		#\n\n﹛公及踏挀毛儅匀化中月午中丹仇午反﹜\n﹛脱★毛障儅仄化仁木月午中丹及分卅﹝\n﹛公木反丐曰互凶中﹝\n﹛匹﹜左伊卞窒及迕分〝
+				EndBlock
+
+			else
+				If Item_607915 >= 1 || Item_607916 >= 1
+					EndWindow 3201627
+		#\n\n﹛幻幻丹﹜公木反冂帎穸谨由旦分卅﹝\n﹛卅井卅井忐厍分互﹜银尹月及反ㄢ荚分仃分﹝\n﹛镗啦仄欠方﹝
+					EndBlock
+
+				else
+					If Item_607917 >= 1
+						EndWindow 3201628
+		#\n\n﹛穸谨じ桦痹午反﹜中中手及毛澎卞じ木凶卅﹝\n﹛凶分﹜公木反ㄠ荚银尹壬蔽歹曰分井日﹜\n﹛方仁哔尹化银尹方﹝
+						EndBlock
+
+					else
+						Window 3201629,NEXT
+		#\n\n﹛巨□﹜中勾手匿公丹卅谛棉升手卞屡什﹝\n﹛方仁手仇木引匹﹜打皮伉件反市旦分及豪评分及\n﹛午田市卞仄化仁木凶卅﹝\n﹛歹木歹木反﹜允仍仁⑵卞五化月氏分冗﹝\n﹛分井日歹木歹木反﹜打皮伉件互中井卞雄仁化\n﹛市永戊奶奶井毛云蟆日卞据抸允月凶户﹜\n﹛打皮伉件及打皮伉件卞方月打皮伉件及凶户及\n﹛母件斥亦件毛睛瞻仄凶﹝
+						Window 3201630,NEXT
+		#\n\n﹛抩尥仃化﹜打皮伉件及邰尽分″\n﹛升丹分﹜弁□伙井勾褐载卅生□立件弘分欠丹﹝\n﹛白甩甩甩﹜凶分及母件斥亦件卅升午合丹卅方﹝\n﹛漆及歹木歹木卞反﹜打皮伉件铢晓愈雄及爵衔\n﹛矛永弁迋互勾中化中月及分井日卅﹝\n﹛中支中支﹜矛永弁迋分仃匹反卅中冗﹜\n﹛虞仄中楛柈匹﹜歹木歹木手雄仁卅匀凶及分﹝\n﹛呿癫分冗﹝
+						EndWindow 3201631
+		#\n\n﹛左伊卅氏井﹜紧ざ手丐及哗帼及楛柈毛抴卞苇化\n﹛臻凝＿＿左伊及仇午反升丹分匀化中中﹝\n﹛午卞井仁﹜打皮伉件反手丹豪评元扎卅中氏分﹝\n﹛珃卞创尹及丐月乩汁反﹜井井匀化侳支互木″\n﹛幼永正幼正卞獭五及户仄化支月″″\n﹛白甩甩甩甩甩甩甩甩甩甩甩＿＿﹝
+						EndBlock
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+###﹛民乓永玄じ恘恳荸﹋失市打皮伉件失左打皮伉件平打皮伉件﹌
+
+Block StrCmpChat == 3004916
+
+	If Item_607914 >= 2
+		EndWindow 3201632
+		#\n\n﹛扔禾□正□据抸踏毛窒呦手儅匀化中月午反﹜\n﹛盟卅票艘毛普元月卅﹝窖匀化仁木﹝
+		EndBlock
+
+	else
+		If Item_607914 >= 1 && Item_607915 >= 1
+			EndWindow 3201633
+		#\n\n﹛云中云中﹜俓壬月卅方﹝
+			EndBlock
+
+		else
+			If Item_607914 >= 1
+				Window 3201634,NEXT
+		#\n\n﹛戈﹜公及宁蜕邯″\n﹛丐及母件斥亦件井日燮尺褡心凶中及分卅﹝\n﹛引内﹜打皮伉件云潮曰毛ㄢ勾澎卞じ木月氏分﹝\n﹛公丹仄凶日公木毛儅匀化﹜失瓦平午乩旦﹜\n﹛丐及侹切仇廿木互中月荚洐毛丹欠勾中化心欠﹝\n﹛丐月哗鳔匹必□玄互请蜇允月反内分﹝
+				Window 3201635,OK
+		#\n\n﹛扔禾□正□据抸踏午娄五晶尹卞仇木毛支欠丹﹝\n﹛仇及冂帎穸谨由旦?毛儅匀化中木壬﹜\n﹛愈赓及杹?反勖漕及惮澡卅仄匹骚聊匹五月﹝\n﹛凶分仄﹜ㄢ蘸引匹分冗﹝元扎﹜引凶卅﹝
+
+					Window_OK Item_607915 >= 1
+						EndWindow 3201636
+		#\n\n﹛卅氏分﹜手丹穸谨由旦?毛儅匀化月及井﹝\n﹛元扎丐﹜丐仆日木卅中卅﹝\n﹛丐引曰凶仁今氏请荚匀化手引内中氏匹友﹝
+						EndBlock
+
+					Window_OK Item_607914 >= 1 && ItemSpace >= 1
+						KillItemAll 607914
+						GiveItemEX 607915,1,3201637
+		#\n\n﹛云中﹜绂坁互中匀天中心凶中分冗﹝
+						EndBlock
+
+					Window_OK Item_607914 >= 1
+						EndWindow 3201638
+		#\n\n﹛云中﹜绂坁互中匀天中心凶中分冗﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3201639
+		#\n\n﹛丐木﹜扔禾□正□据抸踏反升丹仄凶氏分〝\n﹛由旦反﹜扔禾□正□据抸踏午娄五晶尹分冗﹝
+						EndBlock
+
+			else
+				EndWindow 3201640
+		#\n\n﹛窒毛蜕匀化云月及分〝\n﹛引匀凶仁﹜嗤仍欠及谛棉及蜕丹仇午反﹜\n﹛今匀天曰歹井日氏″
+
+			endif
+
+		endif
+
+	endif
+
+
+###﹛民乓永玄じ恘尕恳荸
+
+Block StrCmpChat != 3004916
+	EndWindow 3201641
+		#\n\n﹛窒毛蜕匀化云月及分〝\n﹛引匀凶仁﹜嗤仍欠及谛棉及蜕丹仇午反﹜\n﹛今匀天曰歹井日氏″
+
+

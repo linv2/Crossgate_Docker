@@ -1,0 +1,58 @@
+
+block Xpos == 270 && Ypos == 159
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+
+
+
+block Xpos == 270 && Ypos == 160
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+
+
+
+block Xpos == 271 && Ypos == 160
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+
+
+
+block Xpos == 272 && Ypos == 160
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+
+
+
+block Xpos == 270 && Ypos == 161
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+
+
+
+block Xpos == 271 && Ypos == 161
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+

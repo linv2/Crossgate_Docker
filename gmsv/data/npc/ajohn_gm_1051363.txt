@@ -1,0 +1,54 @@
+######## 灰熊厉害擂台赛########
+##D级勋章收集熊
+####有150个D级勋章
+block Item 46629 >= 150
+	 ##1052904	\n\n  您要用150个D级勋章兑换一个Q零件吗？	1
+	 Window 1052904,YES,NO
+	 	 Window_NO
+	 	 	 ##1052907	\n\n  您再考虑看看吧！	1
+	 	 	 EndWindow 1052907
+	 	
+	 	 Window_YES ItemSpace >= 1 && Item 46629 >= 150  ##物品拦有一格以上
+ 	 	 	 KillItem 46629,150
+	 	 	 	 GiveLeak1Item  18658
+	 	 Window_YES ItemSpace < 1   ##物品拦有一格以下
+ 	 	 	 ##1052924	\n\n  你的物品拦位不够喔！	1
+	 	 	 EndWindow 1052925	
+	 	 	 
+####有50个D级勋章
+block Item 46629 >= 50
+	 ##1052905	\n\n  您要用50个D级勋章兑换一个O零件吗？	1
+	 Window 1052905,YES,NO
+	 	 Window_NO
+	 	 	 ##1052907	\n\n  您再考虑看看吧！	1
+	 	 	 EndWindow 1052907
+	 	 
+	 	 Window_YES ItemSpace >= 1 && Item 46629 >= 50  ##物品拦有一格以上
+ 	 	 	 KillItem 46629,50
+	  	 	 	 GiveLeak1Item  18699
+	 	 Window_YES ItemSpace < 1  ##物品拦有一格以下
+ 	 	 	 ##1052925	\n\n  你的物品拦位不够喔！	1
+	 	 	 EndWindow 1052925	
+
+####有5个D级勋章
+block Item 46629 >= 5
+	 ##1052906	\n\n  您要用5个D级勋章兑换一个种子福袋吗？	1
+	 Window 1052906,YES,NO
+	 	 Window_NO
+	 	 	 ##1052907	\n\n  您再考虑看看吧！	1
+	 	 	 EndWindow 1052907
+	 	 
+	 	 Window_YES ItemSpace >= 1 && Item 46629 >= 5   ##物品拦有一格以上
+	 	 	 KillItem 46629,5
+	 	 	 GiveLeak1Item  46318
+	 	 Window_YES ItemSpace < 1   ##物品拦有一格以下
+ 	 	 	 ##1052925	\n\n  你的物品拦位不够喔！	1
+	 	 	 EndWindow 1052925	
+	 	 	 
+##一般
+block
+	 ##1052908	\n\n  只要收集D级勋章就可以跟我换奖品喔！\n\n  ＝＝＝＝＝＝＝＝＝奖品内容＝＝＝＝＝＝＝＝＝\n\n＠c  Q零件    150枚D级勋章\n\n＠c  O零件    50枚D级勋章\n\n＠c  种子福袋    5枚D级勋章	1
+	 EndWindow 1052908
+
+
+   

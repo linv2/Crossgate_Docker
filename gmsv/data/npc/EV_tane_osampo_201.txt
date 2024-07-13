@@ -1,0 +1,86 @@
+
+
+block
+
+				Window 3200736,next
+		#\n\n﹛矢伉永玄卞尥五宁匀化\n﹛仇仇匹廿□匀午仄化月棉﹜\n﹛棚分匀凶井日缙★蹋匀化心凶﹝
+
+				Window 3200737,yes,no
+		#\n\n﹛冞日卞反邰日卅中坁分仄\n﹛恌井匀凶日丐仆方丹井〝\n﹛公及洈阕午跟晶分﹝
+
+				Window_yes Item 607621 == 0
+
+*case1*
+					EndWindow 3200738
+		#\n\n﹛丐木木﹜\n﹛洈阕﹜儅匀化卅井匀凶及井〝
+
+				Window_yes
+				
+					Window 3200739,ok
+		#\n\n﹛氏元扎﹜赝癫卞儅匀化匀化﹝幻日﹝
+
+
+						Window_ok Item 607621 == 0
+						
+							gotoB case1
+
+						Window_ok 
+						
+							killitemall 607621
+							GiveItem (13601%9,13641%9,13661%9,607680%2,607685%1)
+							Warp 0,59524,79,91
+
+
+
+				Window_no
+
+					EndWindow 3200740
+		#\n\n﹛丐℅\n﹛帎卞拑咥雄中反仄卅中方﹝
+
+
+#block
+
+#				LocalCount0 = random 2,0
+
+#				if LocalCount0 == 1
+
+
+#						Window 3200741,next
+		#\n\n﹛钟仄中卅﹜谛棉井﹝\n﹛伉本永玄及支勾卞\n﹛洘木化五化手日匀凶及井中〝
+
+
+#						Window 3200742,next
+		#\n\n﹛引丑﹜仇及翘卞手\n﹛公及丹切谛棉互\n﹛忔骚卞侳木月方丹卞卅月分欠丹卅﹝
+
+#						EndWindow 3200743
+		#\n\n﹛公及滞卞反﹜矢伉永玄手\n﹛手丹剂仄﹜互户勾仁卅仁卅匀化月分欠丹仄卅﹝
+
+#				else
+
+
+#						Window 3200744,next
+		#\n\n﹛丐中勾及恘反﹜\n﹛仇及壑钗卞侳月凤伞及丐月支勾卞仄井\n﹛躲井卅中方〝\n﹛中中及井中〝
+
+
+#						Window 3200745,yes,no
+		#\n\n﹛公木反公丹午﹜\n﹛票及壑钗卞窖月井中〝
+
+
+#						Window_yes
+#							Warp 0,59501,116,151
+
+#						Window_no
+#						EndWindow 3200746
+		#\n\n﹛手丹剂仄﹜丐凶曰毛心化中仁井中〝
+						
+
+#				endif
+
+
+
+
+
+
+
+
+

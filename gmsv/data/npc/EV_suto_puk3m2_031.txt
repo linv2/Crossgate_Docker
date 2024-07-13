@@ -1,0 +1,93 @@
+#PUK3_main2
+#
+#
+#弁夫它
+
+
+Block
+
+	Window 3207772,Next
+
+		#\n﹛弁夫它\n﹛\n﹛＞云引尹反＿＿瓜永扔它″＝
+	
+	Window 3207773,Next
+
+		#\n﹛瓜永扔它\n﹛\n﹛＞筑迋及侜?反允匹卞晓遽朿卞\n﹛﹛襞木欐匀化中月﹝棋ゴ仄欠″＝
+	
+	Window 3207774,Next
+
+		#\n﹛弁夫它\n﹛\n﹛＞仇丹手棵签卞苇勾井匀化仄引丹午反＿＿\n﹛﹛剂仄楝毛棠仁苇化中凶方﹝瓜永扔它＝
+	
+	Window 3207775,Next
+
+		#\n﹛瓜永扔它\n﹛\n﹛＞＿＿厘谛仄仁允月氏分＝
+	
+	Window 3207776,Next
+
+		#\n﹛弁夫它\n﹛\n﹛＞孔氏＿＿用戊用戊忯引月勾手曰反卅中＝
+	
+	Window 3207777,Next
+
+		#\n﹛瓜永扔它\n﹛\n﹛＞＿＿公丹井＝
+	
+	Window 3207778,Next
+
+		#\n﹛弁夫它\n﹛\n﹛＞公丹﹝缠像今六化手日永＿＿＝
+	
+	
+	Play_SE 134,320,240
+	Play_SE 173,320,240
+	
+	
+	
+	
+	Window 3207779,Next
+
+		#\n﹛弁夫它\n﹛\n﹛＞瓜＿＿扔它″云引＿＿\n﹛﹛打皮永＿＿瓜奶白毛＿＿＝
+	
+	Window 3207780,Next
+
+		#\n﹛瓜永扔它\n﹛\n﹛＞?雇分午合丹井友〝\n﹛﹛孔﹜ボ耨卞?屯木壬仇及蠢蘸及仇午﹝\n﹛﹛癫螺及扷中午合尹﹝弁夫它＝
+	
+	Window 3207781,Next
+
+		#\n﹛弁夫它\n﹛\n﹛＞什少少永＿＿瑜互瑜互＿＿\n﹛﹛午引日卅＿＿卅＿＿﹝\n﹛﹛公氏＿＿歹＿＿凶仄反﹜\n﹛﹛井＿＿心及民市仿毛＿＿\n﹛﹛澎卞＿＿じ木凶＿＿及卞＿＿＝
+	
+	Window 3207782,Next
+
+		#\n﹛瓜永扔它\n﹛\n﹛＞剂仄壬井曰及恘毛澎卞中木凶午仇欠匹﹜\n﹛﹛喂赢仄噪恲仄化中月方丹匹反卅＿＿﹝\n﹛﹛酸ゴ卅互日云引尹互儅匀化中月\n﹛﹛公及菅今蜗侬卞反﹜\n﹛﹛螃及恘卅升褕匀化反中卅中﹝\n﹛﹛嵎中化中凶及反失皮石□旦及勖ゴ及心分＝
+	
+	Window 3207783,Next
+
+		#\n﹛弁夫它\n﹛\n﹛＞公＿＿氏卅＿＿＝
+	
+	Window 3207784,Next
+
+		#\n﹛瓜永扔它\n﹛\n﹛＞公木反失皮石□旦卞嫦欠今木凶恘卞\n﹛﹛绉木凶分仃及凶分及布仿弁正分方﹝\n﹛﹛潦斑及排黍反丐月分欠丹互﹜公木分仃今＝
+	
+	Window 3207785,Next
+
+		#\n﹛瓜永扔它\n﹛\n﹛＞脱日毛峚濠欠丹午反＿＿\n﹛﹛引匀凶仁螃啖及扣卞覆允月佹亠分＝
+	
+	Window 3207786,Next
+
+		#\n﹛弁夫它\n﹛\n﹛＞＿＿＝
+	
+	Window 3207787,OK
+
+		#\n﹛瓜永扔它\n﹛\n﹛＞今丐﹜\n﹛﹛弁夫它及儅匀化中凶瑞弅反澎卞じ匀凶﹝\n﹛﹛域蘸枑欠丹﹝＝
+	
+	
+			Window_OK itemSpace == 0
+			
+				EndWindow 3207788
+
+		#\n\n﹛失奶泛丞互中匀天中匹\n﹛扑尼伊斥尼件及锳噬虫毛胶尹卅中﹝
+			
+	
+			WindoW_OK
+			
+			 Giveitem 621020,1
+			 LeaveGroup
+			 warp 0,59988,318,229
+			

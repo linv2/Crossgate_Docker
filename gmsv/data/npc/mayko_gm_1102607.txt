@@ -1,0 +1,47 @@
+#WatchEx		0	1102225
+#102767	没有钥匙进不去。	
+#102768	要使用钥匙进屋吗？
+###□一般
+
+
+#红莲法冠	47295
+#青莲冠		47297
+
+
+
+
+
+
+block Item 47295 >= 1  &&  Xpos >29 &&  Xpos <32 &&  Ypos >= 47 && Ypos <= 48
+	 Window 1110631,YES,NO 
+ 	 Window_YES Group > 1
+ 	 EndWindow 1100000
+	 Window_YES
+	 	 LeaveGroup
+	 	 KillItem  47295,1
+	 	 Warp 0,32146,8,10
+	  Endblock
+		 
+ 		 
+ 	  Window_NO 
+	  Endblock 	  	 
+	  
+block Item 47297 >= 1  &&  Xpos >29 &&  Xpos <32 &&  Ypos >= 47 && Ypos <= 48
+	 Window 1110630,YES,NO 
+	 Window_NO
+	# KillItem  47297,1
+	 Endblock
+ 	 
+	 Window_YES
+	 	LeaveGroup
+	 	KillItem  47297,1
+	 	Warp 0,32147,8,10
+	  Endblock
+	  	 	
+	  
+block Xpos >29 &&  Xpos <32 &&  Ypos >= 47 && Ypos <= 48
+	 #Warp 0,32137,4,9
+	 #Warp 0,32146,8,10
+	 EndWindow 1110628
+
+	

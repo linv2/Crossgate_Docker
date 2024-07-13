@@ -1,0 +1,8 @@
+#?ву???
+
+#
+block
+	Window 22532,Next
+	Window 22533,Next
+	Window 22534,Next
+	EndWindow 22535,OK

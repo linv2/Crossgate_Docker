@@ -1,0 +1,15 @@
+#营谛耦缜弁巨旦玄“田永市仿(覆瑁﹌
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+###########﹛窒手卅仄﹛##############
+block endevent87 == 1
+
+	Window 20848,OK
+	Window_OK
+	endevent87 = 0
+	Warp 0,43100,119,41
+
+block
+
+	EndWindow 20764,OK
+	

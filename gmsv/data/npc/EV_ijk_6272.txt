@@ -1,0 +1,30 @@
+#辉螃巨伊用失	20003 44 6	6272
+
+##############  ##############
+block BImage == 101912
+#15909’\n\n\n\n@c﹋◢﹌庍褥橇谪匹反莘狪匹五引六氏
+	EndWindow 15909,OK
+
+
+#####﹛中勾匹手﹛#####
+block
+	LeaveGroup
+	#﹛＿台反凛及辉螃巨伊用失＿
+	Window 17040,NEXT
+
+	#﹛＿＿＿＿
+	Window 15244,NEXT
+
+	#﹛＿＿钒仁手及方﹜丐卅凶反仇及锤中及绊化卞窒毛苇引允井＿
+	Window 17042,NEXT
+
+	#﹛＿蕞掸毛＿苇坌仃月及匹允＿＿
+	Window 17043,NEXT
+
+	#﹛＿＿
+	Window 17041,OK
+
+	Window_OK
+	EndEvent 19 = 1
+	LeaveGroup
+	Warp 0,1530,15,6

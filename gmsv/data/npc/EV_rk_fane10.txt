@@ -1,0 +1,18 @@
+#þÛ???
+
+#
+block
+	Window 22707,Next
+	Window 22708,Next
+	Window 22709,Next
+	Window 22710,Next
+	Window 22711,OK
+		Window_OK
+			KillItemAll 16404
+			KillItemAll 16405
+			KillItemAll 16406
+			NowEvent 138 = 1
+			LeaveGroup
+			Warp 0,47026,5,14
+
+

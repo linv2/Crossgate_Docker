@@ -1,0 +1,102 @@
+#PUK3卞亢支井仄NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛斥□仿及摒
+
+
+###
+#################动票﹜PUK3_main2馨笛坌
+
+Block EndEvent_206 == 1 && item_621015 >= 1
+
+	If NowTime == 0 || NowTime == 1
+
+		Window 3207899,Next
+
+		#\n\n﹛愈嗤﹜坁颗卅洘酦互支匀化五化﹜\n﹛颗互仄中氏分方﹝\n﹛中支分友尹﹝
+	
+		Window 3207900,Next
+
+		#\n\n﹛仇及厘牦手介歹户中化中月方﹝\n﹛簿井毛谨匀化中月方丹卅＿＿\n﹛公氏卅竣互允月友尹﹝
+	
+		EndWindow 3207901
+
+		#\n\n﹛＞引勾歹月手及＝毛儅匀化﹜\n﹛厘牦卞瓒木壬厘牦互牒尹じ木化仁木月＿＿\n﹛丹切及壬丐切扎氏互蜕匀化凶氏分仃升友﹜\n﹛呿癫卞啦合毛儅匀化中月方丹分方﹝\n﹛仇及牦﹝
+		
+	else
+	
+		Window 3207902,Next
+
+		#\n\n﹛咍ざ﹜ざ互侹切月午﹜升仇井日午手卅仁﹜\n﹛?仄中统擘互妏仇尹化仁月氏分方﹝
+		
+		Window 3207903,Next
+
+		#\n\n﹛仇及厘牦及升仇井匹\n﹛簿井互统匀化中月及井友尹＿＿﹝
+		
+		EndWindow 3207904
+
+		#\n\n﹛丐氏凶互儅匀化中月\n﹛公及五木中卅扲檗心凶中卅及＿＿\n﹛卅氏分井统擘卞宁歹六化\n﹛跪匀化中月方丹分友尹﹝
+		
+	endif
+
+Block EndEvent_206 == 1 && item_621020 >= 1
+
+	If NowTime == 0 || NowTime == 1
+
+		Window 3207905,Next
+
+		#\n\n﹛愈嗤﹜坁颗卅洘酦互支匀化五化﹜\n﹛颗互仄中氏分方﹝\n﹛中支分友尹﹝
+	
+		Window 3207906,Next
+
+		#\n\n﹛仇及厘牦手介歹户中化中月方﹝\n﹛簿井毛谨匀化中月方丹卅＿＿\n﹛公氏卅竣互允月友尹﹝
+	
+		EndWindow 3207907
+
+		#\n\n﹛＞引勾歹月手及＝毛儅匀化﹜\n﹛厘牦卞瓒木壬厘牦互牒尹じ木化仁木月＿＿\n﹛丹切及壬丐切扎氏互蜕匀化凶氏分仃升友﹜\n﹛呿癫卞啦合毛儅匀化中月方丹分方﹝\n﹛仇及牦﹝
+		
+	else
+	
+		Window 3207908,Next
+
+		#\n\n﹛咍ざ﹜ざ互侹切月午﹜升仇井日午手卅仁﹜\n﹛?仄中统擘互妏仇尹化仁月氏分方﹝
+		
+		Window 3207909,Next
+
+		#\n\n﹛仇及厘牦及升仇井匹\n﹛簿井互统匀化中月及井友尹＿＿﹝
+		
+		EndWindow 3207910
+
+		#\n\n﹛丐氏凶互儅匀化中月\n﹛公及五木中卅扲檗心凶中卅及＿＿\n﹛卅氏分井统擘卞宁歹六化\n﹛跪匀化中月方丹分友尹﹝
+		
+	endif
+
+
+###############动票﹜左伉斥瓜伙
+
+block
+
+	If NowTime == 0 || NowTime == 1
+		EndWindow 3207911
+
+		#\n\n﹛丹切及斥夫□反升仇尺垫匀凶及井仄日〝\n﹛云竻琼互匹五凶井日芛氏匹仁月匀化﹜\n﹛罹仪手六内卞允匀?氏匹垫匀切扎匀化﹝\n﹛垫五燮毛项尹化仃匀化﹜中勾手蜕匀化月及卞﹝
+		EndBlock
+
+	else
+		If NowTime == 2
+			EndWindow 3207912
+
+		#\n\n﹛公欠公欠゜仍?及凛棉分匀化中丹及卞﹜\n﹛斥夫□反升仇毛幻匀勾五忷中化月氏分欠﹝\n﹛升仇井匹仍蹼虽卞卅匀化月及井友尹﹜\n﹛庍卅坁罹屯化卅五扎中中仃升﹝
+			EndBlock
+
+		else
+			EndWindow 3207913
+
+		#\n\n﹛丹切及斥夫□反﹜引分窖匀化仇卅中方﹝\n﹛芛太午卅月午手丹抴酦分井日友尹﹜丐及阂反﹝\n﹛匹手歾芛太反中仃卅中方﹝\n﹛窖匀化五凶日﹜舰匀逦仄化支日卅中午﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+

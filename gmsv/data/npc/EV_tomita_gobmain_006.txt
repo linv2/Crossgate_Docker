@@ -1,0 +1,23 @@
+#打皮伉件及邰尽﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛弁奶件及摒
+
+###﹛仿件母丞及本伉白
+
+block
+	LocalCount1 = Random 2,0
+
+		If LocalCount1 == 1
+			EndWindow 3201745
+		#\n\n﹛支丐﹜譬阂反升丹分中〝﹛仇匀切反辣★今﹝\n﹛凶井互打皮伉件午煆中竣儅切分匀凶氏分互﹜\n﹛午氏匹手卅中卅﹝\n﹛打皮伉件毛仇仇引匹藤尹晓仆月午反﹜\n﹛矛永弁午井中丹伉□母□反凶分樊元扎卅中冗﹝
+			EndBlock
+
+		else
+			EndWindow 3201746
+		#\n\n﹛仇仇卞反﹜葭矢永玄及打皮伉件手中月氏分﹝\n﹛谛卅勾仇中氏匹﹜勾中狪仄慇氏匹仄引丹方﹝\n﹛凶分﹜公丹中丹打皮伉件午莘匀凶詨反﹜\n﹛升丹手爵⑷毛允月竣卞卅日卅仁化漱月卅﹝
+			EndBlock
+
+		endif
+
+
+

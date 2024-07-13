@@ -1,0 +1,136 @@
+################### 五一全民大劳动  席特  隧道看守人五 回收废土
+################### ■开通后
+block Visitor >= 901
+	 ##2000026	呼！终于挖通了，这是大家的功劳欧！
+	 Window 2000026 ,NEXT
+	 ##2000046	看到那个入口没有，一直往前走就看的到了～\n\n辛苦你了～～
+	 Window 2000046 ,NEXT
+	 ##             传送到挖通的席特六处
+	 Warp 0,32668,32,10
+	 	
+################### ■玩家开始挖01（10组）
+block Visitor <= 900 && item 49002 >= 400
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 400 
+	 		KillItem 49002,400
+	 		SetVisitor +20
+block Visitor <= 900 && item 49002 >= 380
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 380
+	 		killitem 49002,380
+	 		SetVisitor +19
+block Visitor <= 900 && item 49002 >= 360
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 360
+	 		killitem 49002,360
+	 		SetVisitor +18
+block Visitor <= 900 && item 49002 >= 340
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 340
+	 		killitem 49002,340
+	 		SetVisitor +17
+block Visitor <= 900 && item 49002 >= 320
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 320
+	 		killitem 49002,320
+	 		SetVisitor +16
+block Visitor <= 900 && item 49002 >= 300
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 300
+	 		killitem 49002,300
+	 		SetVisitor +15
+block Visitor <= 900 && item 49002 >= 280
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 280
+	 		killitem 49002,280
+	 		SetVisitor +14
+block Visitor <= 900 && item 49002 >= 260
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 260
+	 		killitem 49002,260
+	 		SetVisitor +13
+block Visitor <= 900 && item 49002 >= 240
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 240
+	 		killitem 49002,240
+	 		SetVisitor +12
+block Visitor <= 900 && item 49002 >= 220
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 220
+	 		killitem 49002,220
+	 		SetVisitor +11
+block Visitor <= 900 && item 49002 >= 200
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 200
+	 		killitem 49002,200
+	 		SetVisitor +10
+block Visitor <= 900 && item 49002 >= 180
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 180
+	 		killitem 49002,180
+	 		SetVisitor +9
+block Visitor <= 900 && item 49002 >= 160
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 160
+	 		killitem 49002,160
+	 		SetVisitor +8
+block Visitor <= 900 && item 49002 >= 140
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 140
+	 		killitem 49002,140
+	 		SetVisitor +7
+block Visitor <= 900 && item 49002 >= 120
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 120
+	 		killitem 49002,120
+	 		SetVisitor +6
+block Visitor <= 900 && item 49002 >= 100
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 100
+	 		killitem 49002,100
+	 		SetVisitor +5
+block Visitor <= 900 && item 49002 >= 80
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 80
+	 		killitem 49002,80
+	 		SetVisitor +4
+block Visitor <= 900 && item 49002 >= 60
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 60
+	 		killitem 49002,60
+	 		SetVisitor +3
+block Visitor <= 900 && item 49002 >= 40
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 40
+	 		killitem 49002,40
+	 		SetVisitor +2
+block Visitor <= 900 && item 49002 >= 20
+	 ##2000031	辛苦你了～现在矿坑还剩下三吨的废土要清除～
+	 Window 2000031 ,OK 
+	 	Window_OK Visitor <= 900 && item 49002 >= 20
+	 		killitem 49002,20
+	 		SetVisitor +1
+
+################### ■一般
+block  
+	 ##2000038	你也是来帮忙挖通.......
+	 EndWindow 2000038

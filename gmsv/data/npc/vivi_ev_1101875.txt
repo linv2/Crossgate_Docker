@@ -1,0 +1,21 @@
+#####不可思议系列三：恶梦#####
+##史莱姆的回忆7
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+#■ 一般
+block 
+	 ##1102046	\n史莱姆：\n\n  这味道好香啊！以前主人都不让我喝，今天我就来  个不醉不归！	1
+	 Window 1102046,NEXT
+	 moveto +1,+0
+	 shapeoff 
+	 ##1102047	\n\n\n\n@c刷~	1
+	 Window 1102047,NEXT
+	 ##1102048	\n\n\n\n@c啪嚓！(这是形容软体动物掉落到地面上的声音)	1
+	 Window 1102048,OK 
+	 	 Window_OK 

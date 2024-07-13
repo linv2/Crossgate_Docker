@@ -1,0 +1,23 @@
+###dodo_item_47463.txt
+#####星系移民赠品	心美大头产生器	
+###能力说明：双点后可取得八个心美头饰。
+##空间不足
+block Item 46404 >=1 && ItemSpace < 8
+	 ##1054711	\n\n\n\n@c物品栏至少要有八个空位。	1																																																																																																			
+	 EndWindow 1054711
+
+##GM专用
+block Item 46404 >=1 && ItemSpace >= 8
+	 GiveLeak1Item (47464%4$1,47465%1$1)
+	 GiveLeak1Item (47464%4$1,47465%1$1)
+	 GiveLeak1Item (47464%4$1,47465%1$1)
+	 GiveLeak1Item (47464%4$1,47465%1$1)
+	 GiveLeak1Item (47464%4$1,47465%1$1)
+	 GiveLeak1Item (47464%4$1,47465%1$1)
+	 GiveLeak1Item (47464%4$1,47465%1$1)
+	 GiveLeak1Item (47464%4$1,47465%1$1)
+	 
+##一般	 
+block 
+	 ##1746920	GM专用！违者斩立决！	12
+	 EndWindow 1746920

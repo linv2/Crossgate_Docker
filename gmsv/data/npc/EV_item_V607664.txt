@@ -1,0 +1,129 @@
+block Item 607664 >= 2
+
+				endWindow "\n\n©xÅì±ý·´ÓòÉ§ÄÚ¹´·°Øê»¯ÈÊ·Ö½ñÖÐ©z"
+
+
+
+block
+
+
+	if BBImage >= 100000 && BBImage <= 100173
+
+				globalFlag15 = 0
+				globalFlag16 = 0
+				globalFlag17 = 0
+				globalFlag18 = 0
+				globalFlag19 = 0
+				globalFlag20 = 0
+				globalFlag21 = 0
+				globalFlag22 = 0
+				globalFlag23 = 0
+				globalFlag24 = 0
+
+
+
+#				Window "\n\n©xÒÆÔÆÓ¬Ô»©xÊ§»ïÌïµ©©xñÉÁëéùØê",ok
+
+				Window "\n\n©xÔÆó¡¼°·½µ¤Ø¦Óò?ÚÐ»¥\n©x³ð¼°Ì¨±åÄÀåâÔÊÔÂØ¦Èßk…ÖÌÚÖÐ´õ¡å\n©xØÆ¾®ÊÖ©yÖþÞ‚·´ñÉÆ¥·´Ø¦ÖÐ¾®¡å\n©xÎìÒÁÆ¥ÊÖÈÊÄ¾»¯Ö§ÔÂ¾®ÈÕ\n©x°Ú»§ÔÂ»¥ÖÐÖÐ©z",ok
+
+
+				Window_ok
+
+
+				killitem 607664,1,(3007158)
+				giveItem 18538,1
+
+
+	else
+
+
+					if BBImage >= 105000 && BBImage <= 105173
+#ñÉman
+
+						globalFlag15 = 0
+						globalFlag16 = 0
+						globalFlag17 = 0
+						globalFlag18 = 0
+						globalFlag19 = 0
+						globalFlag20 = 0
+						globalFlag21 = 0
+						globalFlag22 = 0
+						globalFlag23 = 0
+						globalFlag24 = 0
+
+
+
+#						Window "\n\n©xÒÆÔÆÓ¬Ô»©xÊ§»ïÌïµ©©xñÉÁëéùØê",ok
+
+						Window "\n\n©xÔÆó¡¼°·½µ¤Ø¦Óò?ÚÐ»¥\n©x³ð¼°Ì¨±åÄÀåâÔÊÔÂØ¦Èßk…ÖÌÚÖÐ´õ¡å\n©xØÆ¾®ÊÖ©yÖþÞ‚·´ñÉÆ¥·´Ø¦ÖÐ¾®¡å\n©xÎìÒÁÆ¥ÊÖÈÊÄ¾»¯Ö§ÔÂ¾®ÈÕ\n©x°Ú»§ÔÂ»¥ÖÐÖÐ©z",ok
+
+
+						Window_ok
+
+
+						killitem 607664,1,(3007158)	
+						giveItem 18538,1
+
+					else
+
+						if BBImage >= 106000 && BBImage <= 106173
+#ñÉman
+
+							globalFlag15 = 0
+							globalFlag16 = 0
+							globalFlag17 = 0
+							globalFlag18 = 0
+							globalFlag19 = 0
+							globalFlag20 = 0
+							globalFlag21 = 0
+							globalFlag22 = 0
+							globalFlag23 = 0
+							globalFlag24 = 0
+
+
+
+#							Window "\n\n©xÒÆÔÆÓ¬Ô»©xÊ§»ïÌïµ©©xñÉÁëéùØê",ok
+
+							Window "\n\n©xÔÆó¡¼°·½µ¤Ø¦Óò?ÚÐ»¥\n©x³ð¼°Ì¨±åÄÀåâÔÊÔÂØ¦Èßk…ÖÌÚÖÐ´õ¡å\n©xØÆ¾®ÊÖ©yÖþÞ‚·´ñÉÆ¥·´Ø¦ÖÐ¾®¡å\n©xÎìÒÁÆ¥ÊÖÈÊÄ¾»¯Ö§ÔÂ¾®ÈÕ\n©x°Ú»§ÔÂ»¥ÖÐÖÐ©z",ok
+
+
+							Window_ok
+
+
+							killitem 607664,1,(3007158)	
+							giveItem 18538,1
+
+
+
+						else
+#»Ôwoman
+
+							globalFlag15 = 0
+							globalFlag16 = 0
+							globalFlag17 = 0
+							globalFlag18 = 0
+							globalFlag19 = 0
+							globalFlag20 = 0
+							globalFlag21 = 0
+							globalFlag22 = 0
+							globalFlag23 = 0
+							globalFlag24 = 0
+
+
+
+#							Window "\n\n©xÒÆÔÆÓ¬Ô»©xÊ§»ïÌïµ©©x»ÔÁëéùØê",ok
+
+							Window "\n\n©xµ¤¸ê©yÔÊÒý¶ò»¥©y\n©xÌ¨·´Öþ»Ô¼°·½µ¤Ø¦\n©xÌï·ÂØÆÐ×ÈÕÔÊÊ²ÉØ±å¹«µ¤Ø¦\n©xÓò?ÚÐ±å·´âÁG»¥Ø¦ÖÐ©z\n©xÎìÒÁÆ¥ÊÖƒ}ÔÈ»¯ÎçÔÈÎçÎç½ÑÔÂ»¥·½ÖÐ©zÛÍÛÍÓÀ©z",ok
+
+
+							Window_ok
+
+
+							killitem 607664,1,(3007158)
+							giveItem 18536,1
+
+
+						endif
+					endif
+	endif
+

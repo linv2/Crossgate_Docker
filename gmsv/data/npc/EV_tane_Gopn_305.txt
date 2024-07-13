@@ -1,0 +1,77 @@
+#幼伙玉open﹛shikenkan﹛wind arm及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+
+###########﹛14605,Goma肣曰﹛##############
+
+block Item 14605  >= 1 && Item 14620 >= 1 && Item 14602 >= 1 && Item 14601 >= 1
+
+
+#\n\n﹛幻予﹜筑跤反筑跤卞僻宁歹厄\n﹛示夫示夫卅痿毛溜尹化中月卅〝
+
+
+	Window 3006265,next
+
+
+#\n\n﹛公氏卅痿匹反翌锁毛旋尹日木卅中冗﹝\n﹛升丹分〝仇及痿午晶尹化支欠丹井〝
+
+
+
+	Window 3006266,yes,no
+
+		window_yes
+
+			Window 3006268,OK
+
+			window_ok EquipItem == 14620
+
+				endwindow "\n\n﹛痿毛隶?井日反内允屯五＿＿﹝"
+
+			window_ok Item 14620 < 1
+
+				endwindow "\n\n﹛请卅云允午胀﹝"
+
+			window_ok
+
+
+
+				KillItem 14620,1
+				GiveItem 14622,1
+
+
+		
+		
+		window_no
+
+			EndWindow 3006267
+
+
+
+###########﹛14605,14620 nothing﹛##############
+
+block Item 14605 >= 1 && Item 14620 < 1 && Item 14602 >= 1 && Item 14601 >= 1
+
+
+
+#
+
+
+#\n\n﹛穴旦正□及翌锁〝\n﹛今丐化及予〝
+
+
+	EndWindow 3006264
+
+
+
+block
+
+#\n\n﹛庣及樊琼卞\n﹛交伙弘螃午萝及擎昵它尼伊及\n﹛仍笛赁及丐日氏仇午毛﹝
+
+
+
+
+	EndWindow 3006274
+

@@ -1,0 +1,19 @@
+#幕庤﹋皮仿永弁玉仿打件﹌(15586)
+#
+
+#ヶ巨件犯奴件弘心化中月卅日
+block EndEvent 38 == 1
+	Endwindow 21418
+#幕巨件犯奴件弘心化中月卅日
+block EndEvent 39 == 1
+	Endwindow 21433
+
+block
+#方丹支仁侳凶井﹜谨切歹太化云匀凶冗﹜≦钒仁手及≧方﹝
+#が反愤日及绣箕及嫔?毛台卞杽中卞侳凶及分欠丹﹝
+#＿匹反﹜ボ卞昙月互方中﹝坞毛＿＿＿蠕户方丹﹝
+	Window 21434,OK
+	Window_OK
+		LeaveGroup
+		Warp 0,15588,74,34
+	Window_OK

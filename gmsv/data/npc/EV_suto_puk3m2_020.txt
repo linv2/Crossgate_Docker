@@ -1,0 +1,129 @@
+#PUK3_main2
+#
+#
+#扑尼伊斥尼件瑞弅ㄠ
+
+
+Block
+
+
+	if Item_621019 >= 1
+	
+		Window 3207735,OK
+
+		#\n\n﹛推及洬及午丹欠丹卞\n﹛酷喘仃互丐曰引允﹝\n﹛升丹井云凑中仄引允﹝
+		
+					Window_OK
+						
+						 LeaveGroup
+						 warp 0,59526,217,57
+		
+		
+	else
+	
+		Window 3207736,Next
+
+		#\n\n﹛方仁侳化票今中引仄凶﹝\n﹛丐卅凶反﹜\n﹛聊蛔毛熬仃じ木化仁木凶方丹匹允友＿＿﹝
+	
+		Window 3207737,Next
+
+		#\n\n﹛台反﹍?辉﹎及铣毛仄化中引允互﹜\n﹛公丹匹反丐曰引六氏﹝\n﹛丐卅凶及襞月蜕邯匹憎允及卅日壬\n﹛台反﹍瑞弅﹎午中丹仇午卞卅月及匹仄斤丹﹝
+		
+		Window 3207738,Next
+
+		#\n\n﹛台反扑尼伊斥尼件及筏盛毛\n﹛愈手聂仁熬仃煤中分瑞弅﹝\n﹛公仄化﹜穸仄今午俭?毛铭月瑞弅匹允﹝\n﹛公丹﹜?仄心午骋鬼毛ボ扙匀凶\n﹛失件斥永弁午反覆午卅月手及＿＿﹝
+		
+		Window 3207739,Next
+
+		#\n\n﹛台反赢中棉﹜\n﹛﹍?辉凶切﹎互升丹卅匀凶及井\n﹛引匀凶仁襞曰引六氏匹仄凶﹝\n﹛中尹﹜台反失件斥永弁支幻井及瑞弅凶切互\n﹛升氏卅合中毛旳尹化中凶及井\n﹛咥荸匹五卅井匀凶及匹允﹝
+		
+		Window 3207740,Next
+
+		#\n\n﹛＿＿台反僧六匹丐月仇午毛烂户日木凶褥＿＿\n﹛塑仄心支?仄心毛公及褥卞\n﹛褕允仇午反匹五引六氏匹仄凶﹝
+		
+		Window 3207741,Next
+
+		#\n\n﹛仄井仄﹜失件斥永弁互公及虫毛翔懋卞仄\n﹛捩弃及俙瞳井日荸五旵凶木凶午五井日﹜\n﹛窒井互庍歹匀化五引仄凶﹝
+		
+		Window 3207742,Next
+
+		#\n\n﹛台及艘卞肏中互戏引木凶及匹允＿＿﹝\n﹛公木反五匀午﹜\n﹛失件斥永弁互台凶切及手午卞\n﹛椒葭今木凶井日匹仄斤丹＿＿﹝
+		
+		Window 3207743,Next
+
+		#\n\n﹛丐卅凶毛仇仇卞云洘木仄凶及反﹜\n﹛窒手合中请毛贿月凶户匹反丐曰引六氏﹝\n﹛丐卅凶卞反云凑中互丐曰﹜\n﹛仇仇卞云裟太仄引仄凶﹝
+		
+		Window 3207744,Next
+
+		#\n\n﹛台及凑中＿＿\n﹛公木反﹜台午⑺元瑞弅凶切及钒旵匹允﹝
+		
+		Window 3207745,Next
+
+		#\n\n﹛掸反﹜弁夫它午中丹裆互﹜\n﹛﹍台凶切﹎毛润匀化中引允＿＿﹝\n﹛五匀午﹜\n﹛﹍台﹎毛葭卞枑允勾手曰卅及匹仄斤丹﹝
+		
+		Window 3207746,Next
+
+		#\n\n﹛扑尼伊斥尼件反交伙弘及域朿毛潸曰慇心﹜\n﹛公仄化衙医牺崭及绖诸卞方匀化﹜\n﹛鳖戏仄引仄凶＿＿﹝
+		
+		Window 3207747,Next
+
+		#\n\n﹛愈詨反愤脱毛忡勾仇午互请侳卅仁卅曰﹜\n﹛仇丹仄化坌井木化仄引中引仄凶互﹜\n﹛?辉卞反公木分仃及＞恘＝互丐匀凶及匹允﹝
+		
+		Window 3207748,Next
+
+		#\n\n﹛弁夫它反公木毛丐月モ莞卞方匀化\n﹛襞曰引仄凶﹝\n﹛?卞方匀化扑尼伊斥尼件互汊唾今六日木木壬﹜\n﹛公及恘毛户什匀化﹜\n﹛引凶锤中互粟仇月仇午匹仄斤丹＿＿﹝
+		
+		Window 3207749,Next
+
+		#\n\n﹛台凶切反\n﹛手丹﹜窒手及卞手莹歹木凶仁卅中及匹允﹝
+		
+		Window 3207750,Next
+
+		#\n\n﹛弁夫它反﹍?辉凶切﹎毛\n﹛锳噬虫卞仄引仄凶＿＿﹝\n﹛弁夫它井日公木毛潸曰枑仄﹜\n﹛莽仄化幻仄中及匹允﹝
+		
+		Window 3207751,Yes,No
+
+		#\n\n﹛五匀午﹜扑尼伊斥尼件愤褥手\n﹛公木毛侗氏匹中月午合中引允﹝\n﹛公木互﹜呿癫及啦怗匹及钒旵卅及匹允﹝\n﹛升丹井云凑中仄引允﹝
+		
+				
+				Window_No
+				
+				
+					Window 3207752,OK
+
+		#\n\n﹛公丹匹允井＿＿中尹﹜拑咥雄中反仄引六氏﹝
+					
+						Window_OK
+						
+						 LeaveGroup
+						 warp 0,59526,217,57
+				
+				
+				Window_Yes
+				
+				
+					Window 3207753,Next
+
+		#\n\n﹛丐曰互午丹仍介中引允﹝\n﹛弁夫它反恍分公及褥毛怅木笮卞疗户化中引允﹝\n﹛跪今允洬及燮卞冂溃卅坞棉毛钒五引仄凶﹝\n﹛公仇井日怅木笮尺粮仁Ⅶ卞垫仃月反内匹允﹝
+				
+					Window 3207754,OK
+
+		#\n\n﹛推及洬及午丹欠丹卞酷喘仃互丐曰引允﹝\n﹛仇及萼毛银匀化仁分今中﹝
+					
+					
+						Window_OK ItemSpace == 0
+						
+							EndWindow 3207755
+
+		#\n\n﹛儅化卅中方丹匹允友﹝
+							
+					
+						Window_OK
+				
+						giveitem 621019,1
+						LeaveGroup
+						warp 0,59526,217,57
+						
+				
+				
+	endif

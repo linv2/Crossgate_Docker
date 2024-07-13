@@ -1,0 +1,34 @@
+###■逆星_鉴定师特殊掉落
+###■钛石原矿		每取出3组钛石矿,耐久扣1
+
+ 
+
+ ####□矿工能使用
+block  Job >=471 && Job < 479
+	 ##1110262	\n\n是否想切割钛石原矿呢？
+	 Window 1110262,YES,NO
+	 	 Window_NO
+	 	 
+	 	  Window_YES ItemSpace < 3
+	 	 	 ##1051843	\n\n\n\n\n@c物品栏的空间不足。																																																																																																			
+			 EndWindow 1051843
+	 	 
+	 	 Window_YES Item 40954 >=2
+	 	 	 ##1110263	\n\n\n钛石原矿n如果持有２个以上是无法使用的喔～
+			 EndWindow 1110263
+		 Window_YES Item 40954 ==1  && ItemDur 40954 ==1
+		 	 ##1110264	钛石原矿消失了。
+			 KillItem 40954,1,(1110264)
+			 GiveStackItem  9625,120
+			 
+		 Window_YES Item 40954 ==1 && ItemDur 40954 >1		 
+	 	 	 ##1110265	使用了钛石原矿。
+			  GiveStackItem  9625,120
+	 	 	 SetDur 40954,-1
+	 	 	 Message 1110265
+
+ ####□一般
+ block
+ 	 ##1110245	\n\n‘似乎只有矿工才能处理这块矿石！’	1
+	 EndWindow 1110245
+

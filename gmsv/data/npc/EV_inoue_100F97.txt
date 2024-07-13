@@ -1,0 +1,303 @@
+##########################################
+#	扑尼仿它巨永末及显﹛96F℅100F
+#
+#
+#
+##########################################
+
+
+#### 晓菟缜动晓及弁仿旦及平乓仿弁正□
+## 末□玉穴旦正□动晓
+block Job >= 15 && Job <= 19
+
+	GoToF case1
+
+## 失永弁旦穴旦正□动晓
+block Job >= 25 && Job <= 29
+
+	GoToF case1
+
+## 旦疋失穴旦正□动晓
+block Job >= 35 && Job <= 39
+
+	GoToF case1
+
+## 白仿永弘巨奶穴□动晓
+block Job >= 45 && Job <= 49
+
+	GoToF case1
+
+## 褐爵衔动晓
+block Job >= 55 && Job <= 59
+
+	GoToF case1
+
+## 失□弁申扑亦永皿动晓﹋弁伊伉永弁﹌
+block Job >= 65 && Job <= 69
+
+	GoToF case1
+
+## 旦矢伙穴旦正□动晓﹋呺诸阁﹌
+block Job >= 75 && Job <= 79
+
+	GoToF case1
+
+## 市□旦穴旦正□﹋热诸阁﹌
+block Job >= 85 && Job <= 89
+
+	GoToF case1
+
+## 扑□伙穴旦正□动晓
+block Job >= 95 && Job <= 99
+
+	GoToF case1
+
+## 皮伉□玉穴旦正□
+block Job >= 105 && Job <= 109
+
+	GoToF case1
+
+## 泛奶丞穴旦正□动晓
+block Job >= 115 && Job <= 119
+
+	GoToF case1
+
+## 穴旦正□扑□白动晓﹋霉篑﹌
+block Job >= 125 && Job <= 129
+
+	GoToF case1
+
+##甩奶扑乓□穴件动晓﹋粖诸阁﹌
+block Job >= 135 && Job <= 139
+
+	GoToF case1
+
+## 伞⑷毕动晓
+block Job >= 145 && Job <= 149
+
+	GoToF case1
+
+## 悻动晓﹋オ樊﹌
+block Job >= 155 && Job <= 159
+
+	GoToF case1
+
+## 玄永皿旦正央动晓﹋阽曰阂﹌
+block Job >= 165 && Job <= 169
+
+	GoToF case1
+
+## 痿及麸动晓
+block Job >= 205 && Job <= 209
+
+	GoToF case1
+
+## 忕及麸动晓
+block Job >= 215 && Job <= 219
+
+	GoToF case1
+
+## 键及麸动晓
+block Job >= 225 && Job <= 229
+
+	GoToF case1
+
+## 菰及麸动晓
+block Job >= 235 && Job <= 239
+
+	GoToF case1
+
+## 橡及麸动晓
+block Job >= 245 && Job <= 249
+
+	GoToF case1
+
+## 髑填及麸动晓
+block Job >=255 && Job <= 259
+
+	GoToF case1
+
+## 瓜奶白及麸动晓
+block Job >= 265 && Job <= 269
+
+	GoToF case1
+
+## 场及麸动晓
+block Job >= 275 && Job <= 279
+
+	GoToF case1
+
+## 佴阂及麸动晓
+block Job >= 285 && Job <= 289
+
+	GoToF case1
+
+## 顶及麸动晓
+block Job >= 295 && Job <= 299
+
+	GoToF case1
+
+## 汋及麸动晓
+block Job >= 305 && Job <= 309
+
+	GoToF case1
+
+## 夫□皮及麸动晓
+block Job >= 315 && Job <= 319
+
+	GoToF case1
+
+## 皮□汁及麸动晓
+block Job >= 325 && Job <= 329
+
+	GoToF case1
+
+## 楔及麸动晓
+block JOb >= 335 && Job <= 339
+
+	GoToF case1
+
+## 贱及麸动晓
+block Job >= 345 && Job <= 349
+
+	GoToF case1
+
+## 譬咥及霁谛动晓
+block Job >= 355 && Job <= 359
+
+	GoToF case1
+
+## 失伙弗立旦玄动晓
+block Job >= 365 && Job <= 369
+
+	GoToF case1
+
+## 朹湛膜咥及琼谛动晓
+block Job >= 375 && Job <= 379
+
+	GoToF case1
+
+## 侂填膜咥及琼谛动晓
+block Job >= 385 && Job <= 389
+
+	GoToF case1
+
+## 杴厍动晓
+block Job >= 395 && Job <= 399
+
+	GoToF case1
+
+## 译濮茧樱动晓
+block Job >= 415 && Job <= 419
+
+	GoToF case1
+
+## 统营动晓
+block Job >= 425 && Job <= 429
+
+	GoToF case1
+
+## ヶ念及缰银动晓
+block Job >= 435 && Job <= 439
+
+	GoToF case1
+
+## 旦□由□衔阁动晓
+block Job >= 445 && Job <= 449
+
+	GoToF case1
+## 译五仇曰
+block Job >= 455 && Job <= 459
+
+	GoToF case1
+
+## 甩奶甩件正□
+block Job >= 465 && Job <= 469
+
+	GoToF case1
+
+## 厘哗午贿月樊
+block Job >= 475 && Job <= 479
+
+	GoToF case1
+block Job >= 1005 && Job <= 1009
+
+	GoToF case1	
+block Job >= 1015 && Job <= 1019
+
+	GoToF case1		
+
+*case1*
+if Item 623578 >= 1 || Item 623579 >= 1 || Item 623580 >= 1
+	Window 3208439,OK
+
+		#\n\n﹛尕邰卅云潮曰反﹜台及幻丹匹苂井曰引允﹝
+	Window_OK
+	KillItemAll 623578
+	KillItemAll 623579
+	KillItemAll 623580
+else
+	if Item 623577 >= 1
+	Window 3208440,OK
+
+		#\n\n﹛升丹冗﹜燮卞褡氏匹仁分今中﹝
+		Window_OK Item 623577 >= 1
+			LeaveGroup
+			Warp 0,59897,90,118
+		Window_OK
+			EndWindow3208441
+
+		#\n\n﹛云支〝\n﹛台及云潮曰毛升仇卞仄引匀凶及匹允〝
+	else
+		if Item 623576 >= 1
+		Window 3208442,Next
+
+		#\n\n﹛方仁仇仇引匹﹜凶升曰邋五引仄凶友﹝\n﹛公氏卅丐卅凶卞﹜中中仇午毛项尹引仄斤丹﹝
+		Window 3208443,Next
+
+		#\n\n﹛脱★潮赁樊互欐仄化中月云潮曰卞反\n﹛尕合腔卅躲绊互丐匀化﹜升氏卅桦赭匹手\n﹛仇及击啖卞洘木化五化仁木月手及卅及匹允﹝
+		Window 3208444,Yes,No
+
+		#\n\n﹛午化手忐厍卅及匹允方﹝\n﹛今化﹜仇及燮卞褡戈竣恘互丐曰引允井〝
+		Window_Yes
+			Window 3208445,OK
+
+		#\n\n﹛允仍中漪竣匹允友\n﹛公及漪竣卞刓仄化﹜\n﹛未旦及云潮曰毛台及午跟晶仄引仄斤丹﹝\n﹛升丹冗﹜云褡心票今中﹝
+			Window_OK Item 623576 >= 1
+				KillItemAll 623576
+				GiveItem 623577,1
+				LeaveGroup
+				Warp 0,59897,90,118
+			Window_OK
+				Endwindow3208446
+
+		#\n\n﹛未旦及云潮曰互卅仃木壬\n﹛仇及燮卞反褡引六月歹仃卞反中五引六氏﹝
+
+		Window_NO
+			EndWindow 3208447
+
+		#\n\n﹛优邰午丐木壬﹜引凶云旋仄仁分今中﹝
+		else
+			Window 3208448,OK
+
+		#\n\n﹛云潮曰互卅中午﹜仇及燮反渣莴匹允﹝\n﹛未旦及午仇欠卞副〇仄引仄斤丹﹝
+			Window_OK
+				LeaveGroup
+				Warp 0,59895,27,104
+		endif
+	endif
+endif
+
+	Endblock
+
+
+#### 晓筏动陆
+block
+	Window 3208449,OK
+
+		#\n\n﹛丐卅凶及褥坌匹﹜仇仇引匹侳月午反荸六引六氏﹝\n﹛云娄潸曰毛凑中引允﹝
+	Window_OK
+		LeaveGroup
+		Warp 0,59895,27,104
+
+	

@@ -1,0 +1,70 @@
+###dodo_gm_1051525.txt
+###迷之声裁判员					玩家若是走出规定的房间及宣判OUT。											
+###□想要偷渡时
+block Item 47062 >= 1 && Xpos == 24 && Ypos == 23 && Group == 1 
+	 KillItem 47062
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 Warp 0,1194,23,21
+
+block Item 47062 >= 1 && Xpos == 24 && Ypos == 23 && Group > 1 
+	 LeaveGroup 
+	 KillItem 47062
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 Warp 0,1194,23,21
+
+block Xpos == 24 && Ypos == 23 && Group == 1 
+	 Warp 0,1194,23,21
+
+block Xpos == 24 && Ypos == 23 && Group > 1 
+	 LeaveGroup 
+	 Warp 0,1194,23,21
+	 
+###□身上有幸福的时钟
+block Item 47062 >= 1 && Xpos == 25 && Ypos == 22 
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 KillItem 47062
+	 
+block Item 47062 >= 1 && Xpos == 25 && Ypos == 23
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 KillItem 47062
+	 
+block Item 47062 >= 1 && Xpos == 25 && Ypos == 24
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 KillItem 47062
+	 
+block Item 47062 >= 1 && Xpos == 24 && Ypos == 22
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 KillItem 47062
+	 
+block Item 47062 >= 1 && Xpos == 24 && Ypos == 23 
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 KillItem 47062
+	 
+block Item 47062 >= 1 && Xpos == 24 && Ypos == 24
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 KillItem 47062
+	 
+block Item 47062 >= 1 && Xpos == 23 && Ypos == 22 
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 KillItem 47062
+	 
+block Item 47062 >= 1 && Xpos == 23 && Ypos == 23
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 KillItem 47062
+
+block Item 47062 >= 1 && Xpos == 23 && Ypos == 24 
+	 ##1053742	谜之声：不是跟你说过不可以离开吗？～～OUT！OUT！OUT！	1
+	 Message 1053742 
+	 KillItem 47062
+	 
+

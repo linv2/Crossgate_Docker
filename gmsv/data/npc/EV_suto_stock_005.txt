@@ -1,0 +1,77 @@
+#域简茧仄化蝈崭垫萍
+#戊瓦□
+
+
+Block Item_621017 >= 2
+
+	Window 3220316,OK
+
+		#\n\n﹛丐木尹〝公木﹜抩扱分方友﹝\n﹛窒匹公氏卅卞手匀化月及〝\n﹛蜊谛树扷忡赁及凶户忒仄化手日中引允﹝
+	
+		Window_OK
+		
+			KillitemAll 621017
+			
+			
+Block Item_621017 == 1 && StampCount_621017 >= 3
+
+	Window 3220317,Next
+
+		#\n\n﹛手仄井允月午台凶切笮简反\n﹛扣⑺元卅及井手仄木卅中﹝\n﹛奢绊＿＿中支﹜?こ卅手及友﹝\n﹛匹手穴□泛奴件反公氏卅仇午襞日卅井匀凶歹﹝\n﹛分井日﹜?卅日﹜扜今氏及午仇欠卞\n﹛窖匀化丐仆日木月井手仄木卅中﹝
+
+	Endwindow 3220318
+
+		#\n\n﹛穴□泛奴件反ヶ中云朴互丐月杅昍尺\n﹛垫匀凶歹﹝\n﹛宎衔卞卅月氏分匀化﹝
+	
+Block Item_621017 == 1 && StampCount_621017 == 2
+
+	Window 3220319,Next
+
+		#\n\n﹛＿＿公木反＿＿公丹白奴瓦奴仁氏卞\n﹛妏中凶氏分友﹝\n﹛丹氏﹜割井卞台反白奴瓦奴仁氏卞\n﹛洘木化仇日木凶及﹝\n﹛匹手友﹜支匀天曰蛲杴分匀化﹜\n﹛公丹合匀凶及﹝
+	Window 3220320,Next
+
+		#\n\n﹛分井日台﹜眬凶切午域踝卞﹜\n﹛白奴瓦奴仁氏及午仇欠井日峊木凶及﹝\n﹛仇丹仄化仇及壑钗卞蛛月及手﹜\n﹛酷杅卅中及方友﹝\n﹛詨莓反仄化中卅中歹﹝
+	
+	Window 3220321,Next
+
+		#\n\n﹛匹手升丹仄化白奴瓦奴仁氏及午仇欠尺〝\n﹛＿＿尹〝扜今氏互＿＿公丹＿＿﹝\n﹛孔孔孔﹜台手锳倾﹜\n﹛⑺元瑙及鉰卅及井手仄木卅中﹝
+	
+	Window 3220322,Next
+
+		#\n\n﹛台反笮毛请月午五卞扜今氏卞\n﹛幛中仇午毛蜕匀凶及方﹝\n﹛仍户氏卅今中﹝\n﹛分井日﹜手升月仇午反匹五卅中及﹝\n﹛匹手眬凶切卅日＿＿﹝
+	
+	Window 3220323,Next
+
+		#\n\n﹛台互襞匀化中月及反\n﹛仇仇卞侳月午五卞\n﹛⑺元蔷邋桦卞中凶眬及穴□泛奴件分仃﹝\n﹛穴□泛奴件反\n﹛ヶ中云朴互丐月杅昍尺垫匀凶歹﹝\n﹛宎衔卞卅月氏分匀化﹝
+	
+	Window 3220324,next
+
+		#\n\n﹛公木互眬及蓟枪卅日台反熬仃じ木月歹﹝\n﹛?卞手狪仄化云中化\n﹛＿＿?卅日云扜今氏及午仇欠尺\n﹛窖月井手仄木卅中＿＿﹝\n﹛副〇仄化丐仆化﹝
+	
+	Window 3220325,OK
+
+		#\n\n﹛尹尹﹜公丹友抩蟆毛踏仁歹﹝
+	
+	
+		Window_OK Item_621017 == 1
+		
+			AddStampCount 621017
+			
+			SystemMessage 3010067
+			
+		Window_OK
+
+			EndWindow 3220326
+
+		#\n\n﹛尹尹﹜卅卞方﹝奶件民平元扎卅中″
+			
+Block
+
+
+	Window 3220327,Next
+
+		#\n\n﹛仇氏卞切反﹜奶仿永扑乓奶穴本″\n﹛窒匹手公欠匀化中月亥夫术乩打件矛巨匹允﹝
+	
+	EndWindow 3220328
+
+		#\n\n﹛＿＿匀化棉啜尹引仄凶﹝\n﹛丹□氏﹜引分卅木化卅仁化＿＿﹝

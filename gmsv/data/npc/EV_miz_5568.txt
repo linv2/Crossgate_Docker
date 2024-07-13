@@ -1,0 +1,237 @@
+#哗啖侂?蹂褡倾赢
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+#############﹛穴左扑□失难踏及呿毛儅匀化中月﹛#############
+
+block Item 18701 >= 1 || Item 18703 >= 1
+
+	EndWindow 20691,OK
+
+############  穴左扑□失及澎饼﹋3﹌肣曰  ##########################
+
+block Item 18296 >= 1
+
+#\n\n﹛本仿伙市卞﹜公木反公木反厘庍卅丹公勾五牁谛互中月午中丹扫毛妏中凶仇午互丐曰引
+#允﹝
+
+	EndWindow 20683,OK
+
+
+#############   母奶左皮扔奶玄﹋3﹌肣曰﹛阂间﹛ #####################
+
+block Item 18299 >= 1 && BBImage >= 100000 && BBImage <= 100024
+##旧版小杰样
+#20667	\n\n那封信是？\n你在找马欧希亚的家人？\n我在伊尔村当村长已经很久了，
+#但是我们村内并没有那样一位村民。我来签一下名吧！请把这个拿去给那位老人看。	1
+#20668	\n\n有事吗？\n像我这种到处都看的到的老人，不会有人长的跟我很像吧！	1
+
+	Window 20677,NEXT
+	Window 20678,OK
+	Window_OK Itemspace <= 1
+	EndWindow 20681,OK
+	Window_OK Itemspace >= 2 && Item 18299 >= 1
+	KillItem 18299
+	GiveItem 18703
+	GiveItem 18700
+	EndWindow 20695,OK
+
+#############   母奶左皮扔奶玄﹋3﹌肣曰﹛阂间﹛ #####################
+
+block Item 18299 >= 1 && BBImage >= 100250 && BBImage <= 100274
+
+##旧版露比
+#20667	\n\n那封信是？\n你在找马欧希亚的家人？\n我在伊尔村当村长已经很久了，
+#但是我们村内并没有那样一位村民。我来签一下名吧！请把这个拿去给那位老人看。	1
+#20668	\n\n有事吗？\n像我这种到处都看的到的老人，不会有人长的跟我很像吧！	1
+
+	Window 20677,NEXT
+	Window 20678,OK
+	Window_OK Itemspace <= 1
+	EndWindow 20681,OK
+	Window_OK Itemspace >= 2 && Item 18299 >= 1
+	KillItem 18299
+	GiveItem 18703
+	GiveItem 18700
+	EndWindow 20695,OK
+
+#############   母奶左皮扔奶玄﹋3﹌肣曰﹛阂间﹛伉瓦亘□ #####################
+
+block Item 18299 >= 1 && BBImage >= 105000 && BBImage <= 105024
+
+##新版小杰样
+#20667	\n\n那封信是？\n你在找马欧希亚的家人？\n我在伊尔村当村长已经很久了，
+#但是我们村内并没有那样一位村民。我来签一下名吧！请把这个拿去给那位老人看。	1
+#20668	\n\n有事吗？\n像我这种到处都看的到的老人，不会有人长的跟我很像吧！	1
+
+	Window 20677,NEXT
+	Window 20678,OK
+	Window_OK Itemspace <= 1
+	EndWindow 20681,OK
+	Window_OK Itemspace >= 2 && Item 18299 >= 1
+	KillItem 18299
+	GiveItem 18703
+	GiveItem 18700
+	EndWindow 20695,OK
+
+#############   母奶左皮扔奶玄﹋3﹌肣曰﹛阂间﹛伉瓦亘□ #####################
+
+block Item 18299 >= 1 && BBImage >= 105250 && BBImage <= 105274
+
+##新版露比
+#20667	\n\n那封信是？\n你在找马欧希亚的家人？\n我在伊尔村当村长已经很久了，
+#但是我们村内并没有那样一位村民。我来签一下名吧！请把这个拿去给那位老人看。	1
+#20668	\n\n有事吗？\n像我这种到处都看的到的老人，不会有人长的跟我很像吧！	1
+
+	Window 20677,NEXT
+	Window 20678,OK
+	Window_OK Itemspace <= 1
+	EndWindow 20681,OK
+	Window_OK Itemspace >= 2 && Item 18299 >= 1
+	KillItem 18299
+	GiveItem 18703
+	GiveItem 18700
+	EndWindow 20695,OK
+
+#############   母奶左皮扔奶玄﹋3﹌肣曰﹛阂间﹛蕙平乓仿 #####################
+
+block Item 18299 >= 1 && BBImage >= 106000 && BBImage <= 106024
+
+##侦探
+#20667	\n\n那封信是？\n你在找马欧希亚的家人？\n我在伊尔村当村长已经很久了，
+#但是我们村内并没有那样一位村民。我来签一下名吧！请把这个拿去给那位老人看。	1
+#20668	\n\n有事吗？\n像我这种到处都看的到的老人，不会有人长的跟我很像吧！	1
+
+
+	Window 20677,NEXT
+	Window 20678,OK
+	Window_OK Itemspace <= 1
+	EndWindow 20681,OK
+	Window_OK Itemspace >= 2 && Item 18299 >= 1
+	KillItem 18299
+	GiveItem 18703
+	GiveItem 18700
+	EndWindow 20695,OK
+
+#############   母奶左皮扔奶玄﹋3﹌肣曰﹛阂间﹛蕙平乓仿 #####################
+
+block Item 18299 >= 1 && BBImage >= 106100 && BBImage <= 106124
+
+##新版哈比男
+#20667	\n\n那封信是？\n你在找马欧希亚的家人？\n我在伊尔村当村长已经很久了，
+#但是我们村内并没有那样一位村民。我来签一下名吧！请把这个拿去给那位老人看。	1
+#20668	\n\n有事吗？\n像我这种到处都看的到的老人，不会有人长的跟我很像吧！	1
+
+
+	Window 20677,NEXT
+	Window 20678,OK
+	Window_OK Itemspace <= 1
+	EndWindow 20681,OK
+	Window_OK Itemspace >= 2 && Item 18299 >= 1
+	KillItem 18299
+	GiveItem 18703
+	GiveItem 18700
+	EndWindow 20695,OK
+
+#############   母奶左皮扔奶玄﹋3﹌肣曰﹛阂间﹛蕙平乓仿 #####################
+
+block Item 18299 >= 1 && BBImage >= 106250 && BBImage <= 106274
+
+##新版小红帽
+#20667	\n\n那封信是？\n你在找马欧希亚的家人？\n我在伊尔村当村长已经很久了，
+#但是我们村内并没有那样一位村民。我来签一下名吧！请把这个拿去给那位老人看。	1
+#20668	\n\n有事吗？\n像我这种到处都看的到的老人，不会有人长的跟我很像吧！	1
+
+
+	Window 20677,NEXT
+	Window 20678,OK
+	Window_OK Itemspace <= 1
+	EndWindow 20681,OK
+	Window_OK Itemspace >= 2 && Item 18299 >= 1
+	KillItem 18299
+	GiveItem 18703
+	GiveItem 18700
+	EndWindow 20695,OK
+
+#############   母奶左皮扔奶玄﹋3﹌肣曰﹛阂间﹛蕙平乓仿 #####################
+
+block Item 18299 >= 1 && BBImage >= 106350 && BBImage <= 106374
+
+##新版哈比女
+#20667	\n\n那封信是？\n你在找马欧希亚的家人？\n我在伊尔村当村长已经很久了，
+#但是我们村内并没有那样一位村民。我来签一下名吧！请把这个拿去给那位老人看。	1
+#20668	\n\n有事吗？\n像我这种到处都看的到的老人，不会有人长的跟我很像吧！	1
+
+
+	Window 20677,NEXT
+	Window 20678,OK
+	Window_OK Itemspace <= 1
+	EndWindow 20681,OK
+	Window_OK Itemspace >= 2 && Item 18299 >= 1
+	KillItem 18299
+	GiveItem 18703
+	GiveItem 18700
+	EndWindow 20695,OK
+block Item 18299 >= 1 && BBImage >= 105525 && BBImage <= 105548
+
+##纺织女
+#20667	\n\n那封信是？\n你在找马欧希亚的家人？\n我在伊尔村当村长已经很久了，
+#但是我们村内并没有那样一位村民。我来签一下名吧！请把这个拿去给那位老人看。	1
+#20668	\n\n有事吗？\n像我这种到处都看的到的老人，不会有人长的跟我很像吧！	1
+
+
+	Window 20677,NEXT
+	Window 20678,OK
+	Window_OK Itemspace <= 1
+	EndWindow 20681,OK
+	Window_OK Itemspace >= 2 && Item 18299 >= 1
+	KillItem 18299
+	GiveItem 18703
+	GiveItem 18700
+	EndWindow 20695,OK	
+
+
+#############   母奶左皮扔奶玄﹋3﹌肣曰﹛ #####################
+
+block Item 18299 >= 1
+
+#≠20677∞\n\n﹛穴左扑□失午中丹牁谛毛茧仄化月〝歹仄反赢中仇午伉本奶失桦匹铲户今仄化手日匀化月
+#互公氏卅抩蟆及牁谛反妏中凶仪卅中冗﹝
+#≠20678∞\n\n﹛丹公元扎方﹝歹仄互穴左扑□失元扎﹝\n乱中凶井〝\n中欠中欠拑咥卅云凑中毛仄化鬼
+#井匀凶卅﹝公木卞仄化手丐卅凶反酦★及褪濠樊元扎﹝丐氏凶心凶中卅谛壬井曰卅日壬仇及章及杽锁手
+#卅仁卅月元扎欠丹卞﹝丐卅凶反穸仄中竣儅切午﹜恳仄中艘毛卅仁今氏匹仁分今木﹝
+#≠20679∞\n\n﹛丐卅凶反豳徽日仄中谛棉元扎化﹜仇及惫寞毛支欠丹﹝分互﹜仇及惫寞毛儅匀化月井日午
+#中匀化冂帎卅腺恘互勾仁歹仃匹反卅中﹝丐卅凶及艘卞恳聒互丐月午中丹据抸分午匹手合匀化仁分今木
+#﹝手仄﹜章及谛棉蝈化互棉啜匀凶杅轾卞褡氏匹手﹜丐卅凶反凶反恳仄中Ⅶ毛褡戈仇午互匹五月﹝卅氏
+#井濩项蔬仁卅匀化仄手丹凶及﹜仇仇引匹蜕歹氏匹手丐氏凶卅日歹井月卅﹝\n仇木井日手互氏壬匀化仁分今
+#木﹝
+
+	Window 20677,NEXT
+	Window 20678,OK
+	Window_OK Itemspace <= 1
+	EndWindow 20681,OK
+	Window_OK Itemspace >= 2 && Item 18299 >= 1
+	KillItem 18299
+	GiveItem 18701
+	GiveItem 18700
+	EndWindow 20679,OK
+
+#########  惫寞肣曰 #################
+
+block endevent28 == 1 || endevent29 == 1
+
+#\n\n﹛仇木井日手互氏壬月氏元扎冗﹝
+
+	EndWindow 20680,OK
+
+###########  母奶左皮扔奶玄﹋3﹌拑仄  #######################
+
+block
+
+#≠20676∞\n\n﹛愈嗤白央件皮伙弘及章匹﹜佹莴樊互粟仇允?筵互喂笛仄化中月﹝丐卅凶手竣毛尥仃
+#化卅今木﹝
+	EndWindow 20676,OK
+	
+
+ 

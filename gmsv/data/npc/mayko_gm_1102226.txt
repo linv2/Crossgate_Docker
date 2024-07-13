@@ -1,0 +1,44 @@
+##陈旧的日记	0	1102226
+##1102769	布满灰尘的书桌上，有本陈旧的日记，要阅读吗？
+##1102770	托尔法吉亚灭亡之日，身为公主侍卫的我，受公主之托保护王子离开～
+##1102771	离开之时，身为女王护卫的哥哥，要追随女王到异世界，虽然他不是希望之子，但守护女王是他的责任。
+##1102772	只有真正的希望之子才能跟着女王到异界！
+##1102773	与其让孩子留下来跟着灭国的我们吃苦，不如赌上前程。
+##1102774	流亡到此地后，爱妻无法认同我的决定，天天以泪洗面。
+##1102775	我们到此之后生活困苦，跟着我们的移民一个个离开。
+##1102776	在失去孩子与朋友的打击下，妻子离我而去～～
+##1102777	在无尽的思念下．．．．．
+##1102778	底下字句模糊不清，书中夹着一个小画片，要取下来吗？
+
+block	item 40753<1
+	 Window 1102769,YES,NO 
+	 Window_NO 
+		  Endblock 	
+	 Window_YES
+		  
+	 Window 1102770,NEXT
+	 Window 1102771,NEXT
+	 Window 1102772,NEXT
+	 Window 1102773,NEXT
+	 Window 1102774,NEXT
+	 Window 1102775,NEXT
+	 Window 1102776,NEXT
+	 Window 1102777,NEXT
+
+	 Window 1102778,YES,NO 
+	 Window_NO 
+	 Endblock 	
+	 
+	 Window_YES ItemSpace < 1 
+	 EndWindow 1100001
+	 
+	 Window_YES Item 40753 < 1 
+	 GiveLeak1Item 40753,1
+	 Endblock 
+	 
+	 Window_YES
+	 Endblock 
+block
+EndWindow 1102785	 
+	 
+

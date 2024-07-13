@@ -1,0 +1,17 @@
+#ûù? ??
+
+block NowEvent105 == 1 && StrCmpChat == 21902
+	Window 21904,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,11032,394,243
+
+block NowEvent105 == 1
+	EndWindow 21903,OK
+
+block StrCmpChat == 21901
+	NowEvent 105 = 1
+	EndWindow 21903,OK
+
+block
+	EndWindow 21905,OK

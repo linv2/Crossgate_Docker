@@ -1,0 +1,27 @@
+##########　ＮＰＣ ：沙漏 ＩＤ：1102002
+##########　ＭＡＰ：
+##########　
+##########　作用：把玩家传到回忆里
+
+##■一般　 ##要解散队伍
+block Group >1
+	 ##1102218	\n\n把队伍解散吧！
+	 EndWindow 1102218
+block Group ==1
+
+	 ##1102341	\n\n‘是否把沙漏倒置？’
+	 Window 1102341,YES,NO 
+	 	 Window_NO
+	 	 Window_YES Group ==1 
+	 	 	 ##1102342	\n\n‘突然树开始晃动．．．是起风了吗？’
+			 Window 1102342,OK 
+			 	 Window_OK Group ==1
+			 	 	 changepal 14,400
+			 	 	 	 ##1102343	\n\n‘风吹起了．．．．’
+			 	 	 	 Window 1102343,OK
+			 	 	 	 	 Window_OK Group ==1
+			 	 	 	 	 	 Window 1102343,OK
+			 	 	 	 	 	 	 Window_OK Group ==1
+			 	 	 	 	 	 	 	 Warp 0,32068,11,18  ##回忆1_热恋篇
+				 
+				 

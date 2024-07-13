@@ -1,0 +1,24 @@
+block item 41312 >2
+
+	
+	killitem 41312,3
+	
+	GiveLeak1Item (47016%40$1,47017%40$1,41242%20$1)
+
+	Window 1111832,ok
+	
+	leavegroup 
+	warp 0,33000,754,319
+	endblock	
+	Window_ok
+	endblock
+	
+block 
+	Window 1111836	,yes,no
+	window_no
+	endblock
+	Window_yes
+	leavegroup 
+	warp 0,300,653,178
+	endblock		
+		

@@ -1,0 +1,9 @@
+#?£•????
+
+#
+block
+	Window 22522,Next
+	Window 22523,Next
+	Window 22524,OK
+		Window_OK
+			Encount 2|0,46021,15,21||0|||||0|25016|||||||||

@@ -1,0 +1,25 @@
+#伙申及朿盒及伙申﹋爵⑷鴃厍詨﹌
+
+##############  ##############
+block EndEvent 27 == 1
+#\n\n﹛票冞互雄仁卅匀凶日引凶芛氏匹丐仆月友″
+	EndWindow 15454,OK
+##############  ##############
+block EndEvent 27 == 0
+#\n\n﹛丹﹜丹﹜丹丐□氏″″″
+	Window 15455,NEXT
+#\n\n﹛票冞及仁六卞瓜穴奶平允亢″
+	Window 15456,NEXT
+#\n\n﹛云廿尹化卅今中方丹″″
+	Window 15457,NEXT
+#\n\n﹛丐﹜仇木创尹化月方丹卞欐仄化云仁友﹝
+	Window 15458,OK
+	Window_OK EndEvent 27 == 0
+	EndEvent 27 = 1
+	GiveItem 18674,1
+#\n\n﹛元扎丐引凶友℅″
+	EndWindow 15459,OK
+
+
+
+

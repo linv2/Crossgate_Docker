@@ -1,0 +1,187 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛斥尼弗伙﹋苹’镞﹌及摒
+
+###﹛甩伉乩穴执及亲丐月中反甩伉□穴奶仿皮毛赭儅
+block Item_607995 >= 1 || Item_607996 >= 1
+	EndWindow 3205146
+
+		#\n\n﹛丐日﹜甩伉乩穴午鴃扙仄凶心凶中友﹝\n﹛戈支心卞仃氏井匀镀中丐中勾手沓?分仃升﹜\n﹛公木毛熬仃化峏匀凶丐氏凶手⑺挀﹝\n﹛它民反刭佌樊反盟中方﹝
+
+
+
+###﹛侂填缜谛及据毛赭儅
+block Item_631000 >= 1
+	EndWindow 3205147
+
+		#\n\n﹛旦泛奴□任件旦井日缜谛及据毛手日匀凶及友﹝\n﹛丐午反?谛甩伉乩穴卞公木毛欐六壬中中及方﹝\n﹛窒匹仇氏卅午仇欠匹芛氏匹月及〝
+
+
+
+###﹛潜虱及正伐扑毛赭儅
+block Item_607997 >= 1
+
+#﹛缜谛及据综岳填呕午缜谛及据综岳填眶毛赭儅
+	If Item_607998 >= 1 && Item_607999 >= 1
+		EndWindow 3205148
+
+		#\n\n﹛Ⅶ填反缭匀化月元扎卅中﹝\n﹛湮曰Ⅶ仄化卅中匹﹜今匀今午旦泛奴□任件旦及\n﹛午仇欠尺垫五卅今中方﹝
+		EndBlock
+
+#﹛缜谛及据综岳填呕毛赭儅
+	else
+		If Item_607998 >= 1
+			EndWindow 3205149
+
+		#\n\n﹛Ⅶ填反手丹欐仄凶元扎卅中﹝\n﹛云戚反甩奶犯伙及午仇欠匹仄斤﹝\n﹛它民反手丹﹜丐氏凶卞迕反卅中歹﹝
+			EndBlock
+
+#﹛缜谛及据综岳填眶午什心及枆﹋ㄤ呿动晓﹌毛赭儅
+		else
+			If Item_607999 >= 1 && Item_10100 >= 5
+				Window 3205150,NEXT
+
+		#\n\n﹛丐日丐日﹜菱滑凛棉酦卞酷仪毛今六月卅氏化﹜\n﹛旦泛奴□任件旦卞手漱匀凶手及友﹝\n﹛引丐﹜Ⅶ填毛欐允分仃分井日啼分仃升﹝\n﹛巨永﹜什心及枆〝﹛中匀凶中窒及仇午〝
+				Window 3205151,OK
+
+		#\n\n﹛什心及枆卅氏化﹜俇氏分创尹反卅中歹方﹝\n﹛引丐午卞井仁﹜仇木匹Ⅶ填反缭匀凶歹﹝\n﹛詨反旦泛奴□任件旦卞俇戈及友﹝
+
+					Window_OK Item_607998 >= 1
+						EndWindow 3205152
+
+		#\n\n﹛丐日﹜Ⅶ填反手丹儅匀化月元扎卅中﹝\n﹛井日井歹卅中匹方﹝
+						EndBlock
+
+					Window_OK Item_607997 >= 1 && ItemSpace >= 1
+						GiveItemEX 607998,1,3205153
+
+		#\n\n﹛丐日﹜绂坁互中匀天中匹欐六卅中﹝\n﹛窒午井仄卅今中方﹝
+						EndBlock
+
+					Window_OK Item_607997 >= 1
+						EndWindow 3205154
+
+		#\n\n﹛丐日﹜绂坁互中匀天中匹欐六卅中﹝\n﹛窒午井仄卅今中方﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3205155
+
+		#\n\n﹛丐日﹜潜虱及正伐扑互卅中﹝\n﹛儅匀化卅中谛反耨迕匹五卅中井日﹜\n﹛Ⅶ填反欐今卅中歹﹝
+						EndBlock
+
+#﹛缜谛及据综岳填眶毛赭儅
+			else
+				If Item_607999 >= 1
+					Window 3205156,OK
+
+		#\n\n﹛丐日丐日﹜菱滑凛棉酦卞酷仪毛今六月卅氏化﹜\n﹛旦泛奴□任件旦卞手漱匀凶手及友﹝\n﹛引丐﹜Ⅶ填毛欐允分仃分井日啼分仃升﹝\n﹛仇木匹侂填缜谛及据毛综月Ⅶ填反缭匀凶井日﹜\n﹛詨反旦泛奴□任件旦卞俇戈及友﹝
+
+						Window_OK Item_607998 >= 1
+							EndWindow 3205157
+
+		#\n\n﹛丐日﹜Ⅶ填反手丹儅匀化月元扎卅中﹝\n﹛井日井歹卅中匹方﹝
+							EndBlock
+
+						Window_OK Item_607997 >= 1 && ItemSpace >= 1
+							GiveItemEX 607998,1,3205158
+
+		#\n\n﹛丐日﹜绂坁互中匀天中匹欐六卅中﹝\n﹛窒午井仄卅今中方﹝
+							EndBlock
+
+						Window_OK Item_607997 >= 1
+							EndWindow 3205159
+
+		#\n\n﹛丐日﹜绂坁互中匀天中匹欐六卅中﹝\n﹛窒午井仄卅今中方﹝
+							EndBlock
+
+						Window_OK
+							EndWindow 3205160
+
+		#\n\n﹛丐日﹜潜虱及正伐扑互卅中﹝\n﹛儅匀化卅中谛反耨迕匹五卅中井日﹜\n﹛Ⅶ填反欐今卅中歹﹝
+							EndBlock
+
+#﹛晓筏失奶泛丞毛尕赭儅
+				else
+					If Item_10100 >= 5
+						Window 3205161,NEXT
+
+		#\n\n﹛丐日丐日﹜菱滑凛棉酦卞酷仪毛今六月卅氏化﹜\n﹛旦泛奴□任件旦卞手漱匀凶手及友﹝\n﹛引丐﹜Ⅶ填毛欐允分仃分井日啼分仃升﹝\n﹛巨永﹜什心及枆〝﹛中匀凶中窒及仇午〝
+						Window 3205162,OK
+
+		#\n\n﹛什心及枆卅氏化﹜俇氏分创尹反卅中歹方﹝\n﹛引丐午卞井仁﹜戚反手丹域勾及Ⅶ填友﹝\n﹛甩奶犯伙及午仇欠尺垫五卅今中方﹝
+
+							Window_OK Item_607998 >= 1
+								EndWindow 3205163
+
+		#\n\n﹛丐日﹜Ⅶ填反手丹儅匀化月元扎卅中﹝\n﹛井日井歹卅中匹方﹝
+								EndBlock
+
+							Window_OK Item_607997 >= 1 && ItemSpace >= 1
+								GiveItemEX 607998,1,3205164
+
+		#\n\n﹛丐日﹜绂坁互中匀天中匹欐六卅中﹝\n﹛窒午井仄卅今中方﹝
+							EndBlock
+
+							Window_OK Item_607997 >= 1
+								EndWindow 3205165
+
+		#\n\n﹛丐日﹜绂坁互中匀天中匹欐六卅中﹝\n﹛窒午井仄卅今中方﹝
+								EndBlock
+
+							Window_OK
+								EndWindow 3205166
+
+		#\n\n﹛丐日﹜潜虱及正伐扑互卅中﹝\n﹛儅匀化卅中谛反耨迕匹五卅中井日﹜\n﹛Ⅶ填反欐今卅中歹﹝
+								EndBlock
+
+#﹛晓筏失奶泛丞毛尕赭儅
+					else
+						Window 3205167,OK
+
+		#\n\n﹛丐日丐日﹜菱滑凛棉酦卞酷仪毛今六月卅氏化﹜\n﹛旦泛奴□任件旦卞手漱匀凶手及友﹝\n﹛引丐﹜Ⅶ填毛欐允分仃分井日啼分仃升﹝\n﹛元扎丐﹜戚反手丹域勾及Ⅶ填友﹝\n﹛甩奶犯伙及午仇欠尺垫五卅今中方﹝
+
+							Window_OK Item_607998 >= 1
+								EndWindow 3205168
+
+		#\n\n﹛丐日﹜Ⅶ填反手丹儅匀化月元扎卅中﹝\n﹛井日井歹卅中匹方﹝
+								EndBlock
+
+							Window_OK Item_607997 >= 1 && ItemSpace >= 1
+								GiveItemEX 607998,1,3205169
+
+		#\n\n﹛丐日﹜绂坁互中匀天中匹欐六卅中﹝\n﹛窒午井仄卅今中方﹝
+							EndBlock
+
+							Window_OK Item_607997 >= 1
+								EndWindow 3205170
+
+		#\n\n﹛丐日﹜绂坁互中匀天中匹欐六卅中﹝\n﹛窒午井仄卅今中方﹝
+								EndBlock
+
+							Window_OK
+								EndWindow 3205171
+
+		#\n\n﹛丐日﹜潜虱及正伐扑互卅中﹝\n﹛儅匀化卅中谛反耨迕匹五卅中井日﹜\n﹛Ⅶ填反欐今卅中歹﹝
+								EndBlock
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3205172
+
+		#\n\n﹛它民反旦泛奴□任件旦及踞澎卅氏分仃升﹜\n﹛漆反菱滑酦方﹝\n﹛伉仿弁未□扑亦件及梁呺毛仄卅中匹﹝
+
+
+

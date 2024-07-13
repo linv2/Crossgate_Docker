@@ -1,0 +1,75 @@
+#·‹·®Øø¡õ½»¼þ
+
+block BBImage >= 105525 && BBImage <= 105548  ##·ÄÖ¯Å®
+	Window 22940,Next
+	Window 22941,Next
+	Window 22977,Next
+	Window 22942,Yes,No
+		Window_Yes
+			Window 22943,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,51102,17,20
+		Window_No
+			Window 22944,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,51102,17,20
+#¾É°æÅ®½Ç  Â¶±È³ýÍâ
+block BBImage >= 100275 && BBImage <= 100423
+	Window 22940,Next
+	Window 22941,Next
+	Window 22977,Next
+	Window 22942,Yes,No
+		Window_Yes
+			Window 22943,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,51102,17,20
+		Window_No
+			Window 22944,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,51102,17,20
+#ÁúÉ°¾ÉÅ®½Ç  Â¶±È³ýÍâ					
+block BBImage >= 105275 && BBImage <= 105423
+	Window 22940,Next
+	Window 22941,Next
+	Window 22977,Next
+	Window 22942,Yes,No
+		Window_Yes
+			Window 22943,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,51102,17,20
+		Window_No
+			Window 22944,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,51102,17,20
+#ÁúÉ°Å®½Ç					
+block BBImage >= 106250 && BBImage <= 106423
+	Window 22940,Next
+	Window 22941,Next
+	Window 22977,Next
+	Window 22942,Yes,No
+		Window_Yes
+			Window 22943,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,51102,17,20
+		Window_No
+			Window 22944,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,51102,17,20
+
+#
+block
+	Window 22945,Next
+	Window 22946,Next
+	Window 22947,Next
+	Window 22948,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,51102,17,20

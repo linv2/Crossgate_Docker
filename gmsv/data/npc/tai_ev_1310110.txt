@@ -1,0 +1,415 @@
+################### 魔力卡 强化枪
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+	 	 	 
+################### 物品栏已满
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 EndWindow 1100001	 	 	 
+
+###################有东方长刺枪      1673   && 柳木材 50012 && 桂竹   50010 && 粉彩绢布 50015 && GROUP==1
+block Item 1673 >=1 && Item 50012>=1 && Item 50010 >=1 && Item 50015>=1 &&  Group ==1
+	 ##1201051	\n你确定要强化你的东方长刺枪吗？
+	 Window 1201051,YES,NO 
+	 	 Window_YES ItemDurPer 1673 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1673 == 100 && Group ==1 && Item 50012>=1 && Item 50010 >=1 && Item 50015>=1
+			 	 ##失去武器及物品
+			 	 KillItem 1673
+			 	 KillItem 50012
+			 	 KillItem 50010
+			 	 KillItem 50015			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50316
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983	 
+
+###################有阔刃枪  1678           && 柳木材 50012 && 桂竹   50010 && 粉彩绢布 50015 && GROUP==1
+block Item 1678 >=1 && Item 50012>=1 && Item 50010 >=1 && Item 50015>=1 &&  Group ==1
+	 ##1201053	\n你确定要强化你的阔刃枪吗？
+	 Window 1201053,YES,NO 
+	 	 Window_YES ItemDurPer 1678 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1678 == 100 && Group ==1 && Item 50012>=1 && Item 50010 >=1 && Item 50015>=1
+			 	 ##失去武器及物品
+			 	 KillItem 1678
+			 	 KillItem 50012
+			 	 KillItem 50010
+			 	 KillItem 50015			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50315
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983	 			 
+
+###################有双刃枪  1669           && 柳木材 50012 && 桂竹   50010 && GROUP==1
+block Item 1669 >=1 && Item 50012>=1 && Item 50010 >=1  &&  Group ==1
+	 ##1201055	\n你确定要强化你的双刃枪吗？
+	 Window 1201055,YES,NO 
+	 	 Window_YES ItemDurPer 1669 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1669 == 100 && Group ==1 && Item 50012>=1 && Item 50010 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 1669
+			 	 KillItem 50012
+			 	 KillItem 50010			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50314
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983	 			 
+
+###################有蝎枪    1663           && 柳木材 50012 && 桂竹   50010 && GROUP==1
+block Item 1663 >=1 && Item 50012>=1 && Item 50010 >=1  &&  Group ==1
+	 ##1201057	\n你确定要强化你的蝎枪吗？
+	 Window 1201057,YES,NO 
+	 	 Window_YES ItemDurPer 1663 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1663 == 100 && Group ==1 && Item 50012>=1 && Item 50010 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 1663
+			 	 KillItem 50012
+			 	 KillItem 50010			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50313
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983	 			
+
+###################有长尖枪  1658           && 柳木材 50012 && 桂竹   50010 && GROUP==1
+block Item 1658 >=1 && Item 50012>=1 && Item 50010 >=1  &&  Group ==1
+	 ##1201059	\n你确定要强化你的长尖枪吗？
+	 Window 1201059,YES,NO 
+	 	 Window_YES ItemDurPer 1658 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1658 == 100 && Group ==1 && Item 50012>=1 && Item 50010 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 1658
+			 	 KillItem 50012
+			 	 KillItem 50010			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50312
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983	 			
+
+###################有大砍枪  1657           && 柳木材 50012 && 桂竹   50010 && GROUP==1
+block Item 1657 >=1 && Item 50012>=1 && Item 50010 >=1  &&  Group ==1
+	 ##1201061	\n你确定要强化你的大砍枪吗？
+	 Window 1201061,YES,NO 
+	 	 Window_YES ItemDurPer 1657 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1657 == 100 && Group ==1 && Item 50012>=1 && Item 50010 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 1657
+			 	 KillItem 50012
+			 	 KillItem 50010			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50311
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983	 						 
+
+###################有骑士枪  1649           && 柳木材 50012 && 桂竹   50010 && GROUP==1
+block Item 1649 >=1 && Item 50012>=1 && Item 50010 >=1  &&  Group ==1
+	 ##1201063	\n你确定要强化你的骑士枪吗？
+	 Window 1201063,YES,NO 
+	 	 Window_YES ItemDurPer 1649 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1649 == 100 && Group ==1 && Item 50012>=1 && Item 50010 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 1649
+			 	 KillItem 50012
+			 	 KillItem 50010			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50310
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+			 
+###################有护卫枪  1643           && 柳木材 50012 && 桂竹   50010 && GROUP==1
+block Item 1643 >=1 && Item 50012>=1 && Item 50010 >=1  &&  Group ==1
+	 ##1201065	\n你确定要强化你的护卫枪吗？
+	 Window 1201065,YES,NO 
+	 	 Window_YES ItemDurPer 1643 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 	
+			 	 Window_OK ItemDurPer 1643 == 100 && Group ==1 && Item 50012>=1 && Item 50010 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 1643
+			 	 KillItem 50012
+			 	 KillItem 50010			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50309
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有双叉戟  1634           && 柳木材 50012 && 桂竹   50010 && GROUP==1
+block Item 1634 >=1 && Item 50012>=1 && Item 50010 >=1  &&  Group ==1
+	 ##1201067	\n你确定要强化你的双叉戟吗？
+	 Window 1201067,YES,NO 
+	 	 Window_YES ItemDurPer 1634 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1634 == 100 && Group ==1 && Item 50012>=1 && Item 50010 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 1634
+			 	 KillItem 50012
+			 	 KillItem 50010			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50308
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+	
+###################有穗枪    1635           && 柳木材 50012 && 桂竹   50010 && GROUP==1
+block Item 1635 >=1 && Item 50012>=1 && Item 50010 >=1  &&  Group ==1
+	 ##1201069	\n你确定要强化你的穗枪吗？
+	 Window 1201069,YES,NO 
+	 	 Window_YES ItemDurPer 1635 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1635 == 100 && Group ==1 && Item 50012>=1 && Item 50010 >=1
+				 ##失去武器及物品
+		 		 KillItem 1635
+				 KillItem 50012
+			 	 KillItem 50010			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50307
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有长柄尖枪        1625   && 柳木材 50012 && GROUP==1
+block Item 1625 >=1 && Item 50012>=1 &&  Group ==1
+	 ##1201071	\n你确定要强化你的长柄尖枪吗？
+	 Window 1201071,YES,NO 
+	 	 Window_YES ItemDurPer 1625 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1625 == 100 && Group ==1 && Item 50012>=1
+		 		 ##失去武器及物品
+			 	 KillItem 1625
+			 	 KillItem 50012			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50306
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有长柄弯枪        1629   && 柳木材 50012 && GROUP==1
+block Item 1629 >=1 && Item 50012>=1 &&  Group ==1
+	 ##1201073	\n你确定要强化你的长柄弯枪吗？
+	 Window 1201073,YES,NO 
+	 	 Window_YES ItemDurPer 1629 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1629 == 100 && Group ==1 && Item 50012>=1
+			 	 ##失去武器及物品
+			 	 KillItem 1629
+			 	 KillItem 50012			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50305
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有金属枪  1613           && 柳木材 50012 && GROUP==1
+block Item 1613 >=1 && Item 50012>=1 &&  Group ==1
+	 ##1201075	\n你确定要强化你的金属枪吗？
+	 Window 1201075,YES,NO 
+	 	 Window_YES ItemDurPer 1613 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1613 == 100 && Group ==1 && Item 50012>=1
+			 	 ##失去武器及物品
+			 	 KillItem 1613
+			 	 KillItem 50012			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50304
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983			 			 			 			 			 			 	 			
+
+###################有刺枪    1619           && 柳木材 50012 && GROUP==1
+block Item 1619 >=1 && Item 50012>=1 &&  Group ==1
+	 ##1201077	\n你确定要强化你的刺枪吗？
+	 Window 1201077,YES,NO 
+	 	 Window_YES ItemDurPer 1619 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1619 == 100 && Group ==1 && Item 50012>=1
+			 	 ##失去武器及物品
+			 	 KillItem 1619
+			 	 KillItem 50012			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50303
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983			 			 			 			 			 			 	 			
+
+###################有攻城枪  1606           && 柳木材 50012 && GROUP==1
+block Item 1606 >=1 && Item 50012>=1 &&  Group ==1
+	 ##1201079	\n你确定要强化你的攻城枪吗？
+	 Window 1201079,YES,NO 
+	 	 Window_YES ItemDurPer 1606 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1606 == 100 && Group ==1 && Item 50012>=1
+			 	 ##失去武器及物品
+			 	 KillItem 1606
+			 	 KillItem 50012			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50302
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有短矛    1608           && 柳木材 50012 && GROUP==1
+block Item 1608 >=1 && Item 50012>=1 &&  Group ==1
+	 ##1201081	\n你确定要强化你的短矛吗？
+	 Window 1201081,YES,NO 
+	 	 Window_YES ItemDurPer 1608 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 1608 == 100 && Group ==1 && Item 50012>=1
+			 	 ##失去武器及物品
+			 	 KillItem 1608
+			 	 KillItem 50012			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50301
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################一般
+block 
+	 ##1201083	\n如果你拿下列特定组合的物品给我，\n我就能强化你所持有的枪。\n一级、二级与三级枪，所需的材料为柳木材。\n四、五、六级与七级枪所需材料为柳木材与桂竹。\n八级枪所需的材料为柳木材、桂竹与粉彩绢布。	1
+	 EndWindow 1201083			 			 				 

@@ -1,0 +1,84 @@
+#﹛璋剀祸母件斥亦件﹋蛙笙菱心母件斥亦件“扔皮?﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛潠螃及银樊及摒
+
+###﹛厘阰综及云屡仆引凶反阰综及云屡仆毛赭儅
+
+block Item_607940 >= 1 || Item_607939 >= 1
+	EndWindow 3202889
+
+		#\n\n﹛云云匀﹜侳コ手阰综卅氏分卅﹝\n﹛公曰扎央户匹凶中﹜漆歾反云谊中匹域ベ分卅﹝
+
+
+
+###﹛账岊呜历仍仁勾少仄毛赭儅
+
+block Item_607938 >= 1
+	EndWindow 3202890
+
+		#\n\n﹛公中勾反潠螃迋及潠分仃丐匀化﹜婉氏屯尹卞反\n﹛凶引日卅中堆圴分兮﹝\n﹛慑曰宁丹勾引心互卅仁化漱月仁日中分﹝\n﹛公丹蜕支央﹜诡岖螃及银樊手俓仄互匀化凶卅﹝
+
+
+
+###﹛Ⅸ及澎综曰药阂毛赭儅
+
+block Item_607937 >= 1
+	Window 3202891,YES,NO
+
+		#\n\n﹛云云匀﹜抩坁Ⅸ及澎综曰药阂元扎友尹井﹝\n﹛云中日﹜厘驯坁卅氏分方﹝罹中化尹卅丐＿﹝\n﹛卅丐﹜公及药阂午仇及潠﹜跟晶仄卅中井〝
+
+		Window_YES
+			Window 3202892,OK
+
+		#\n\n﹛公丹井公丹井﹜丐曰互午方﹝\n﹛云中日反﹜棠逻及婉氏屯尹卅氏分方﹝\n﹛中中勾引心互匹五凶兮﹝
+
+				Window_OK Item_607937 >= 1 && ItemSpace >= 1
+					KillItemAll 607937
+					GiveItemEX 607938,1,3202893
+
+		#\n\n﹛窒分方﹜绂坁互中匀天中匹欐六卅中兮﹝\n﹛帮咥仄欠方﹝
+
+				Window_OK Item_607937 >= 1
+					EndWindow 3202894
+
+		#\n\n﹛窒分方﹜绂坁互中匀天中匹欐六卅中兮﹝\n﹛帮咥仄欠方﹝
+
+				Window_OK
+					EndWindow 3202895
+
+		#\n\n﹛丐曰扎﹜棒艘及药阂互卅仁卅匀凶冗﹝\n﹛检仄仁卅匀凶及井〝
+
+		Window_NO
+			EndWindow 3202896
+
+		#\n\n﹛卅氏分酸ゴ分卅丐﹝\n﹛莓仄中井日漆歾手婉戈井＿﹝
+
+
+
+###﹛诡岖螃及云屡仆毛赭儅
+
+block Item_607936 >= 1
+	EndWindow 3202897
+
+		#\n\n﹛诡岖螃迋友尹＿﹝今丐﹜莘匀凶仇午卅中卅丐﹝\n﹛窒六云中日反﹜潠螃迋及涌手襞日卅中井日卅﹝\n﹛螃迋及豳岭卅氏化﹜升丹匹手中中元扎友尹井﹝\n﹛午卞井仁﹜中卅中方曰手中凶杅互忐厍分欠﹝
+
+
+
+###﹛云间尹岊毛赭儅
+
+block Item_607935 >= 1
+	EndWindow 3202898
+
+		#\n\n﹛＿卅氏分﹜潠瞻曰迕及井午合匀凶日﹜\n﹛公木反罹屯月杅及岊井﹝\n﹛引丐﹜失汁失汁及云引氏引匀化及手﹜\n﹛丐曰互化尹手氏分方卅﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+
+block
+	EndWindow 3202899
+
+		#\n\n﹛云丹﹜云中日反潠螃迋及银樊分﹝\n﹛蔗反勾引心互聂中井日﹜潠互需中筐濡分卅﹝\n﹛丐丐﹜恌中勾引心互俓仄中卅丐﹝
+
+
+

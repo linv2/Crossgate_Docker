@@ -1,0 +1,45 @@
+#################
+#	仁引胀		#
+#################
+
+
+
+####澎黄毛儅匀化中月午五####
+block HaveItem == 19671
+	#本伉白ㄣ
+	Window 990258,OK
+############################
+
+####厄中什月心儅匀化月午五####
+block  HaveItem == 19672
+	#本伉白14
+	Window 990268,OK,CANCEL
+	#OK匹苹℅镞分匀凶日
+	Window_OK nowtime == 0 || nowtime == 1
+		#伐□皿
+		warp 0,777,90,90
+	#OK匹芞杅℅歾分匀凶日
+	Window_OK nowtime == 2 || nowtime == 3
+		#厄中什月心午日木月
+		KillItem 19672,1
+##############################
+
+####公木动陆####
+block
+	#本伉白ㄠ
+	Window 990255,Yes,No
+		#YES瓷今木化失奶泛丞勂坞中化凶日
+		Window_Yes ItemSpace != 0
+			#澎黄GET
+			GiveItem 19671,1
+			#本伉白ㄡ
+			EndWindow 990256
+		#YES匹失奶泛丞勂卞坞五互卅中午五
+		Window_Yes ItemSpace == 0
+			#本伉白15
+			EndWindow 990270
+		#NO瓷今木凶日
+		Window_No
+			#本伉白ㄢ
+			EndWindow 990257
+################

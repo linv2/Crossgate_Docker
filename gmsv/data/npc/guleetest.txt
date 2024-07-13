@@ -1,0 +1,81 @@
+block Item 18443 >= 1
+	 KillItem 18443,2
+	
+
+
+
+
+
+
+################### ÊÕ¼¯2.0Í¼¼ø¿¨
+#block
+#       GiveLeak1Item  15000  ##¿¨Æ¬£¿  É½·É¼×µÄ¿¨Æ¬
+#       GiveLeak1Item  15001  ## ¿¨Æ¬£¿  ¶À½ÇÊÞµÄ¿¨Æ¬
+#       GiveLeak1Item  15002  ## ¿¨Æ¬£¿  ÌìÂíµÄ¿¨Æ¬
+#       GiveLeak1Item  15003  ## ¿¨Æ¬£¿  ÷è÷ëµÄ¿¨Æ¬
+#       GiveLeak1Item  15004  ## ¿¨Æ¬£¿  µØµ×¹êµÄ¿¨Æ¬
+#       GiveLeak1Item  15005  ## ¿¨Æ¬£¿  º£µ×¹êµÄ¿¨Æ¬
+#       GiveLeak1Item  15006  ## ¿¨Æ¬£¿  »ðÑæ¹êµÄ¿¨Æ¬
+#       GiveLeak1Item  15007  ## ¿¨Æ¬£¿  Ó²¿Ç¹êµÄ¿¨Æ¬
+#       GiveLeak1Item  15008  ## ¿¨Æ¬£¿  Á­µ¶Ä§µÄ¿¨Æ¬
+#       GiveLeak1Item  15009  ## ¿¨Æ¬£¿  É®ÂÂ½©Ê¬µÄ¿¨Æ¬
+#
+#       GiveLeak1Item  15010  ## ¿¨Æ¬£¿  Õ¶Ê×ÕßµÄ¿¨Æ¬
+#       GiveLeak1Item  15011  ## ¿¨Æ¬£¿  Ú¤½çËÀÉñµÄ¿¨Æ¬
+#       GiveLeak1Item  15012  ## ¿¨Æ¬£¿  ÑÀ¹ÇµÄ¿¨Æ¬
+#       GiveLeak1Item  15013  ## ¿¨Æ¬£¿  ò¦ÑÀµÄ¿¨Æ¬
+#       GiveLeak1Item  15014  ## ¿¨Æ¬£¿  ¾ÞÑÀµÄ¿¨Æ¬
+#       GiveLeak1Item  15015  ## ¿¨Æ¬£¿  ÀûÑÀµÄ¿¨Æ¬
+#       GiveLeak1Item  15016  ## ¿¨Æ¬£¿  ¸ñÀû·ÒµÄ¿¨Æ¬
+#       GiveLeak1Item  15017  ## ¿¨Æ¬£¿  ±äÖÖ¸ñÀû·ÒµÄ¿¨Æ¬
+#       GiveLeak1Item  15018  ## ¿¨Æ¬£¿  ±¼À×ÊÞµÄ¿¨Æ¬
+#       GiveLeak1Item  15019  ## ¿¨Æ¬£¿  ÒÀ¸ñÂÞË¹µÄ¿¨Æ¬
+
+#       GiveLeak1Item  15020 ##¿¨Æ¬£¿  ÍÐÂÞµÛÄñµÄ¿¨Æ¬
+#       GiveLeak1Item  15021 ##¿¨Æ¬£¿  ÑÒµØÅÜÕßµÄ¿¨Æ¬
+#       GiveLeak1Item  15022 ##¿¨Æ¬£¿  »ðÑæ×ÄÄ¾ÄñµÄ¿¨Æ¬
+#       GiveLeak1Item  15023 ##¿¨Æ¬£¿  ¿ñ±¼ÄñµÄ¿¨Æ¬
+#       GiveLeak1Item  15024 ##¿¨Æ¬£¿  ¼×³æµÄ¿¨Æ¬
+#       GiveLeak1Item  15025 ##¿¨Æ¬£¿  ¾òµØ³æµÄ¿¨Æ¬
+#       GiveLeak1Item  15026 ##¿¨Æ¬£¿  ÇÂÐÍ³æµÄ¿¨Æ¬
+#       GiveLeak1Item  15027 ##¿¨Æ¬£¿  ¶À½ÇÏÉµÄ¿¨Æ¬
+#       giveleak1item  15028 ##¿¨Æ¬£¿  ´äÂÌ¹½µÄ¿¨Æ¬
+#       giveleak1item  15029 ##¿¨Æ¬£¿  Ë®À¶¹½µÄ¿¨Æ¬
+#
+#       giveleak1item  15030 ##¿¨Æ¬£¿  ·Ûºì¹½µÄ¿¨Æ¬
+#       giveleak1item  15031 ##¿¨Æ¬£¿  ÐÇ¹½µÄ¿¨Æ¬
+#       giveleak1item  15032 ##¿¨Æ¬£¿  ÂÌÑÌµÄ¿¨Æ¬
+#       giveleak1item  15033 ##¿¨Æ¬£¿  ÑÌÎíµÄ¿¨Æ¬
+#       giveleak1item  15034 ##¿¨Æ¬£¿  ÑÌÂÞµÄ¿¨Æ¬
+#       giveleak1item  15035 ##¿¨Æ¬£¿  ÃÞÇòµÄ¿¨Æ¬
+#       giveleak1item  15036 ##¿¨Æ¬£¿  ¶ÜµÄ¿¨Æ¬
+#       giveleak1item  15037 ##¿¨Æ¬£¿  Ç±¶ÜµÄ¿¨Æ¬
+#       giveleak1item  15038 ##¿¨Æ¬£¿  Ç¿¶ÜµÄ¿¨Æ¬
+#       giveleak1item  15039 ##¿¨Æ¬£¿  Éñ¶ÜµÄ¿¨Æ¬
+
+#       giveleak1item  15040 ##¿¨Æ¬£¿  ÑÒ¹ÖµÄ¿¨Æ¬
+#       giveleak1item  15041 ##¿¨Æ¬£¿  ±¬ÑÒµÄ¿¨Æ¬
+#       giveleak1item  15042 ##¿¨Æ¬£¿  ÈÛÑÒµÄ¿¨Æ¬
+#       giveleak1item  15043 ##¿¨Æ¬£¿  Ó°ÑÒµÄ¿¨Æ¬
+#       giveleak1item  15044 ##¿¨Æ¬£¿  Ï£µÂÀ­µÄ¿¨Æ¬
+#       giveleak1item  15045 ##¿¨Æ¬£¿  Ã××ÈÆæµÄ¿¨Æ¬
+#       giveleak1item  15046 ##¿¨Æ¬£¿  ÑÇË¹ÆÕµÄ¿¨Æ¬
+#       giveleak1item  15047 ##¿¨Æ¬£¿  Å·ÂåÆæµÄ¿¨Æ¬
+#       giveleak1item  15048 ##¿¨Æ¬£¿  ¿Ú´üÁúµÄ¿¨Æ¬
+#       giveleak1item  15049 ##¿¨Æ¬£¿  ÃÔÄãÁúµÄ¿¨Æ¬
+
+#       giveleak1item  15050 ##¿¨Æ¬£¿  ³ûÁúµÄ¿¨Æ¬
+#       giveleak1item  15051 ##¿¨Æ¬£¿  Ñ¨ÁúµÄ¿¨Æ¬
+#       giveleak1item  15052 ##¿¨Æ¬£¿  ´óÐÍ°ëÊÞÈËµÄ¿¨Æ¬
+#       giveleak1item  15053 ##¿¨Æ¬£¿  Öí¹íµÄ¿¨Æ¬
+#       giveleak1item  15054 ##¿¨Æ¬£¿  ¸Ö¹íµÄ¿¨Æ¬
+#       giveleak1item  15055 ##¿¨Æ¬£¿  °ëÊÞÈËµÄ¿¨Æ¬
+
+
+
+##block
+##         GiveLeak0Item  (10801%1$3)
+##         GiveStackItem  10801, 5
+##         GiveStackItem  11200, 5
+##         GiveLeak1Item  (10806%1$3, 10807%1$3)
+

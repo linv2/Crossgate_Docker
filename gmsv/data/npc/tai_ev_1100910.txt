@@ -1,0 +1,30 @@
+################### 偷闲的船长 登记员塔可(回程岸上)晚上
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 有船票
+block Leak1Item 40066 >=1
+	 ##1100941	\n我们要回尼维尔海村了，你要一起上船吗？
+	 Window 1100941,YES,NO 
+	 	 Window_YES Leak1Item 40066 >=1
+	 	 	 ##1100942	\n那就出发啰！
+			 Window 1100942,NEXT 
+			 ##收船票
+			 KillItem 40066
+			 ##传送上回程船
+			 Warp 0,30256,3,2				 
+	 	 Window_NO 
+
+################### 一般
+block 	 	 
+			 ##1100943	\n要上船的话，必须要有船票。
+			 EndWindow 1100943
+
+			 
+

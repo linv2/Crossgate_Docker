@@ -1,0 +1,15 @@
+###dodo_item_47520.txt
+##圣诞小礼包			将飞机头换为紫色爆炸头并给予圣诞小礼包传送至惊色趴踢屋。
+block Item 47520 >= 1 
+	 ##1054719	\n\n\n\n\n@c想打开这么充满圣诞气息的小礼包吗？	1																																																																																																			
+	 Window 1054719,YES,NO 
+	 	 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+			 EndWindow 1054495
+			 
+		 Window_YES ItemSpace >= 1 && Item 47520 >= 1
+		 	 KillItem 47520
+		 	 GiveLeak1Item (46230%90,47471%10)

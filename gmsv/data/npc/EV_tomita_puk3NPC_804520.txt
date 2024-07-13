@@ -1,0 +1,35 @@
+#PUK3卞亢支井仄NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛呜芛魁谛及摒
+
+###
+
+block
+
+	LocalCount1 = Random 3,0
+
+	If LocalCount1 == 1
+		EndWindow 3204184
+
+		#\n\n﹛恌中滔缙〝\n﹛白永﹜升丹支日楝卞反妏仇尹卅中方丹分友﹜\n﹛仇及?仄心午骋仄心及统互＿＿﹝
+		EndBlock
+
+	else
+		If LocalCount1 == 2
+			EndWindow 3204185
+
+		#\n\n﹛丐丐﹜漆反切斤匀午狪仄井仃卅中匹仁木﹝\n﹛恌中魁互忏井太公丹卅氏分﹝
+			EndBlock
+
+		else
+			EndWindow 3204186
+
+		#\n\n﹛楝凶切及壑钗反﹜内中少氏僮中公丹分友﹝\n﹛窗莘互丐匀凶日﹜兮夫垫匀化心凶中友﹝\n﹛豳徽日仄中统互戏引木公丹分﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+

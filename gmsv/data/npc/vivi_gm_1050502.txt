@@ -1,0 +1,232 @@
+########### 魔力大会考1 ###########
+######■主考官加尔
+##■检查队伍
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■检查物品栏
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+##■有钥匙1
+block Item 45321 == 1
+ 	 ##1050687	\n\n\n\n@c快使用钥匙到下一关去吧！
+	 EndWindow 1050687
+##■有钥匙2
+block Item 45322 == 1	 
+ 	 ##1050687	\n\n\n\n@c快使用钥匙到下一关去吧！
+	 EndWindow 1050687
+##■有烛台(时间已过)
+block Item 45332 == 1 
+	 ##1050688	\n\n\n你的蜡烛已经熄灭了，真可惜，此次挑战就到此结束了！
+	 Window 1050688,OK
+	         Window_OK
+	         	 KillItem 45332
+	 		 Warp 0,30110,15,30
+##■检查烛台时间1
+block Item 45331 == 1 && ItemCreateTime 45331 > 5
+  	 KillItem 45331
+  	 GiveLeak1Item 45332
+  	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间2
+block Item 45330 == 1 && ItemCreateTime 45330 > 10
+	 KillItem 45330
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间3
+block Item 45330 == 1 && ItemCreateTime 45330 > 5
+	 KillItem 45330
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间4
+block Item 45329 == 1 && ItemCreateTime 45329 > 15
+	 KillItem 45329
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间5
+block Item 45329 == 1 && ItemCreateTime 45329 > 10
+	 KillItem 45329
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间6
+block Item 45329 == 1 && ItemCreateTime 45329 > 5
+	 KillItem 45329
+	 GiveLeak1Item 45330
+	 ##1050678	\n\n\n\n@c比赛将在10分钟以内结束！
+         EndWindow 1050678
+
+##■有烛台(时间未过)
+block Item 45329 == 1 || Item 45330 == 1 || Item 45331 == 1
+	 ##1050689	\n\n看你自信满满的样子，想必对这个世界有一定程度的了解，就让我来考考你！
+	 Window 1050689,OK
+	  	 Window_OK Group == 1
+	  	 	 ##1050690	\n\n\n\n告诉我，新手的第一个任务地点是在大圣堂吗？
+	  	  	 Window 1050690,YES,NO
+	  	  	 	 Window_YES Group == 1
+	  	  	 	 	 ##1050691	\n\n\n\n不会吧！你第一题就错了！回去多磨练一下再来挑战！
+	  	  	 	 	 Window 1050691,OK
+	  	  	 	 	 	  Window_OK
+	  	  	 	 	 	  	 KillItem 45329
+	  	  	 	 	 	  	 KillItem 45330
+	  	  	 	 	 	  	 KillItem 45331
+	  	  	 	 	 	  	 Warp 0,30110,15,30
+	  	  	 	 Window_NO Group == 1
+	  	  	 	 	 ##1050692	\n\n\n\n国王给新手的物品中有国民杖？
+	  	  	 	 	 Window 1050692,YES,NO
+	  	  	 	 	 	 Window_YES Group == 1
+	  	  	 	 	 	 	 KillItem 45329
+	  	  	 	 	 	  	 KillItem 45330
+	  	  	 	 	 	  	 KillItem 45331
+	  	  	 	 	 	 	 ##1050701	\n太可惜了！挑战失败！回去多磨练一下再来挑战吧！\n\n这是安慰奖，拿去吧！
+	  	  	 	 	 	 	 Window 1050701,OK
+	  	  	 	 	 	 	 	 Window_OK 
+	  	  	 	 	 	  	 		 GiveLeak1Item 45334
+	  	  	 	 	 	  	 		 Warp 0,30110,15,30
+	  	  	 	 	 	  Window_NO Group == 1
+	  	  	 	 	 	  	 ##1050693	\n\n\n\n学习宠物一级的吸血攻击魔法是在圣拉鲁卡村的酒吧？
+							 Window 1050693,YES,NO
+							 	 Window_NO Group == 1
+							 	 	 KillItem 45329
+	  	  	 	 	 	  	 		 KillItem 45330
+	  	  	 	 	 	  	 		 KillItem 45331
+	  	  	 	 	 	  	 		 ##1050701	\n太可惜了！挑战失败！回去多磨练一下再来挑战吧！\n\n这是安慰奖，拿去吧！
+	  	  	 	 	 	 	 		 Window 1050701,OK
+	  	  	 	 	 	 	 	 		 Window_OK 
+	  	  	 	 	 	  	 				  GiveLeak1Item 45334
+	  	  	 	 	 	  	 		 		  Warp 0,30110,15,30
+							 	 Window_YES Group == 1
+							 	 	 ##1050694	\n\n\n\n宠物邮件是可以让宠物送信的宠物技能？
+ 									 Window 1050694,YES,NO
+ 									 	 Window_NO Group == 1
+ 									 	 	 KillItem 45329
+ 									 	 	 KillItem 45330
+ 									 	 	 KillItem 45331
+ 									 	 	 ##1050701	\n太可惜了！挑战失败！回去多磨练一下再来挑战吧！\n\n这是安慰奖，拿去吧！
+	  	  	 	 	 	 	 		 		 Window 1050701,OK
+	  	  	 	 	 	 	 	 		 		 Window_OK
+	  	  	 	 	 	  	 				  		 GiveLeak1Item 45334
+	  	  	 	 	 	  	 		 		  		 Warp 0,30110,15,30
+	  	  	 	 	 	  	 		 	 Window_YES Group == 1
+	  	  	 	 	 	  	 		 	 	 ##1050695	\n\n\n\n黄色口臭怪是不抽烟的乖宝宝？
+	  	  	 	 	 	  	 		 	 	 Window 1050695,YES,NO
+	  	  	 	 	 	  	 		 	 	 	 Window_NO Group == 1
+	  	  	 	 	 	  	 		 	 	 	 	 KillItem 45329
+ 									 	 	 		 KillItem 45330
+ 									 	 	 		 KillItem 45331
+ 									 	 	 		 ##1050701	\n太可惜了！挑战失败！回去多磨练一下再来挑战吧！\n\n这是安慰奖，拿去吧！
+	  	  	 	 	 	 	 		 		 		 Window 1050701,OK
+	  	  	 	 	 	 	 	 		 		 		 Window_OK
+	  	  	 	 	 	  	 				  		 		 GiveLeak1Item 45334
+	  	  	 	 	 	  	 		 		  		 		 Warp 0,30110,15,30
+	  	  	 	 	 	  	 		 	 	 	 Window_YES Group == 1
+	  	  	 	 	 	  	 		 	 	 	 	 ##1050696	\n\n\n\n研究员真中的家里掉落在地上的书有3本？
+	  	  	 	 	 	  	 		 	 	 	 	 Window 1050696,YES,NO
+	  	  	 	 	 	  	 		 	 	 	 	 	 Window_YES Group == 1
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 KillItem 45329
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 KillItem 45330
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 KillItem 45331
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 ##1050701	\n太可惜了！挑战失败！回去多磨练一下再来挑战吧！\n\n这是安慰奖，拿去吧！
+	  	  	 	 	 	 	 		 		 		 		 Window 1050701,OK
+	  	  	 	 	 	 	 	 		 		 				  Window_OK
+	  	  	 	 	 	  	 				  		 				  GiveLeak1Item 45334
+	  	  	 	 	 	  	 		 		  		 				  Warp 0,30110,15,30
+	  	  	 	 	 	  	 		 	 	 	 	 	 Window_NO Group == 1
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 ##1050697	\n\n\n\n当水晶碎片集满100个时可以去水晶交换所换一个完整水晶？
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 Window 1050697,YES,NO
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 Window_NO Group == 1
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 KillItem 45329
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 KillItem 45330
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 KillItem 45331
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 ##1050701	\n太可惜了！挑战失败！回去多磨练一下再来挑战吧！\n\n这是安慰奖，拿去吧！
+	  	  	 	 	 	 	 		 		 		 		 		 Window 1050701,OK
+	  	  	 	 	 	 	 	 		 		 				  		 Window_OK
+	  	  	 	 	 	  	 				  		 						 GiveLeak1Item 45334
+	  	  	 	 	 	  	 		 		  		 				  		 Warp 0,30110,15,30
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 Window_YES Group == 1
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 ##1050698	\n\n\n\n新手任务必须拿到“精灵之戒”来证明你是救世主？
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 Window 1050698,YES,NO
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 	 Window_YES Group == 1
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 	 	 KillItem 45329
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 	 	 KillItem 45330
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 	 	 KillItem 45331
+	  	  	 	 	 	  	 		 	 	 	 	 	 	 	 	 	 	 ##1050701	\n太可惜了！挑战失败！回去多磨练一下再来挑战吧！\n\n这是安慰奖，拿去吧！
+	  	  	 	 	 	 	 		 		 		 		 		 	 	 Window 1050701,OK
+	  	  	 	 	 	 	 	 		 		 				  		 		 Window_OK
+	  	  	 	 	 	  	 				  		 						 		 GiveLeak1Item 45334
+	  	  	 	 	 	  	 		 		  		 				  		 		 Warp 0,30110,15,30
+	  	  	 	 	 	  	 		 		  		 				  	 Window_NO Group == 1
+	  	  	 	 	 	  	 		 		  		 				  	 	 ##1050699	\n\n\n\n若人物掉魂后可以医院去招魂？
+	  	  	 	 	 	  	 		 		  		 				  	 	 Window 1050699,YES,NO
+	  	  	 	 	 	  	 		 		  		 				  	 	 	 Window_YES Group == 1
+	  	  	 	 	 	  	 		 		  		 				  	 	 	 	 KillItem 45329
+	  	  	 	 	 	  	 		 		  		 				  	 	 	 	 KillItem 45330
+	  	  	 	 	 	  	 		 		  		 				  	 	 	 	 KillItem 45331
+	  	  	 	 	 	  	 		 		  		 				  	 	 	 	 ##1050701	\n太可惜了！挑战失败！回去多磨练一下再来挑战吧！\n\n这是安慰奖，拿去吧！
+	  	  	 	 	 	 	 		 		 		 		 		 	 	 		 Window 1050701,OK
+	  	  	 	 	 	 	 	 		 		 				  		 		 		 Window_OK
+	  	  	 	 	 	  	 				  		 						 		 		 GiveLeak1Item 45334
+	  	  	 	 	 	  	 		 		  		 				  		 		 		 Warp 0,30110,15,30
+	  	  	 	 	 	  	 		 		  		 				  		 	 Window_NO Group == 1
+	  	  	 	 	 	  	 		 		  		 				  		 	 	 ##1050700	\n\n\n\n初创角色时，每个人有30点可以配置？
+	  	  	 	 	 	  	 		 		  		 				  		 	 	 Window 1050700,YES,NO
+	  	  	 	 	 	  	 		 		  		 				  		 	 	 	 Window_NO Group == 1
+	  	  	 	 	 	  	 		 		  		 				  		 	 	 	 	 KillItem 45329
+	  	  	 	 	 	  	 		 		  		 				  		 	 	 	 	 KillItem 45330
+	  	  	 	 	 	  	 		 		  		 				  		 	 	 	 	 KillItem 45331	
+	  	  	 	 	 	  	 		 		  		 				  		 	 	 	 	 ##1050701	\n太可惜了！挑战失败！回去多磨练一下再来挑战吧！\n\n这是安慰奖，拿去吧！
+	  	  	 	 	 	 	 		 		 		 		 		 	 	 		 		 Window 1050701,OK
+	  	  	 	 	 	 	 	 		 		 				  		 		 		 		 Window_OK
+	  	  	 	 	 	  	 				  		 						 		 		 		 GiveLeak1Item 45334
+	  	  	 	 	 	  	 		 		  		 				  		 		 		 		 Warp 0,30110,15,30	
+	  	  	 	 	 	  	 		 		  		 				  		 		 	 Window_YES Group == 1
+	  	  	 	 	 	  	 		 		  		 				  		 		 	 	 ##1050702	\n\n\n\n@c恭喜你通过第一关的测验！
+	  	  	 	 	 	  	 		 		  		 				  		 		 	 	 Window 1050702,NEXT
+	  	  	 	 	 	  	 		 		  		 				  		 		 	 	 	 ##1050703	\n\n\n\n这是通往下一关的钥匙，使用这把钥匙往下一关奔跑吧！
+	  	  	 	 	 	  	 		 		  		 				  		 		 	 	 	 Window 1050703,OK 
+	  	  	 	 	 	  	 		 		  		 				  		 		 	 	 	 	 Window_OK Item 45329 == 1 || Item 45330 == 1 || Item 45331 == 1
+	  	  	 	 	 	  	 		 		  		 				  		 		 	 	 	 	 	  GiveLeak1Item (45321%1$1,45322%1$1)
+	  	  	 	 	 	  	 		 		  		 				  		 		 	 	 	 	 	  
+##■有未点燃的烛台
+block Item 45335 == 1
+	 ##1050705	\n\n\n\n先去跟我的助手说话，他会告诉你游戏规则！	
+	 EndWindow 1050705	  	 	 	 	  	 		 		  		 				  		 		 	 	 	 	 	 
+##■没有烛台
+block
+	 ##1050706	\n咦？你怎么进来的？\n我记得所有参赛的勇者都有拿到计时用的烛台呀！\n你没有表示你不能参加，这边禁止闲杂人等，你请出去吧！
+	 Window 1050706,OK
+	 	 Window_OK
+	 	 Warp 0,30110,15,30
+	  	  	 	 	 	  	 		 		  		 				  		 		 	 	 	 
+	  	  	 	 	 	  	 		 		  		 				  		 		 	 	 	 
+	  	  	 	 	 	  	 		 		  		 				  		 		 	  		 														
+	  	  	 	 	 	  	 		 		  		 				  		 	 	 	 
+
+	 
+
+	
+	  	  	 	 	 	  	 		 	 	 	 	 	 	
+	  	  	 	 	 	  	 		 	 	 	 	 	 	
+	  	  	 	 	 	  	 		 	 	 	 	 	
+	  	  	 	 	 	  	 		 	 	 	 	 	
+	  	  	 	 	 	  	 		 	 	 	 
+	  	  	 	 	 	  	 		 	 	 	
+
+	  	  	 	 	 	  	 		 	
+
+	  	  	 	 	 	
+	  	  	 	 
+	  	  	 	 	
+	  	  	 	 	 	  
+	  	  	 	 	 	
+	  	  	 	 	
+	  	  	 	 
+	  	 	

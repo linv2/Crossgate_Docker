@@ -1,0 +1,10 @@
+#§÷úï£•???
+
+#
+block
+	Window 22613,Next
+	Window 22614,OK
+		Window_OK
+			LeaveGroup
+			Play_Se 207,320,240
+			Warp 0,33117,80,148

@@ -1,0 +1,45 @@
+
+
+block
+
+
+
+
+
+
+				LocalCount10 = random 2,0
+
+				if LocalCount10 == 1
+
+
+
+#					Window "\n\n﹛夫午﹜五日中﹝",ok
+					Window 3006963,ok
+
+
+					window_ok
+
+					Encount 3|0,59524,118,122||0|||||0|302000|||||||||
+
+
+				else
+
+
+
+#					endWindow "\n\n﹛狪仄井仃月卅﹝"
+					endWindow 3006964
+
+
+
+				endif
+
+
+
+
+
+
+
+
+
+
+

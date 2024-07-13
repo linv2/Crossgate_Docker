@@ -1,0 +1,28 @@
+##百人道场工作人员4 maP ：9104	16	10
+
+##奖赏：钢骑之矿、誓言之证、火焰之魂、残念奖
+##18449
+##18451
+##18452
+##机率：１：１：１：１
+block
+	 ##1020689	\n\n恭喜你，你已经完成了本道场第四组别的挑战。\n接下来你是否要挑战本道场下一个组别？
+	window 1020689,yes,no
+		window_no
+			 ##1020695	\n\n那么，你可以获得挑战本组成功的奖励。\n\n希望你下次再接再厉，能够有更好的成绩。
+			window 1020695,ok
+			window_ok itemspace >= 1
+	 			GiveLeak1Item (18449%1$1,18451%1$1,18452%1$1,46240%1$1)
+		 		LeaveGroup
+			 	warp 0,1000,141,148
+			window_ok
+			endwindow 10000,ok
+		window_yes
+			window 1020696,ok
+				 window_ok itemspace >= 1
+					 GiveLeak1Item 34629,1
+					 LeaveGroup
+					 warp 0,1000,141,148
+			window_ok
+			endwindow 10000,ok
+

@@ -1,0 +1,26 @@
+####300金币VIP	mayko_gm_1051757.txt
+
+####0300枚金币兑换商　　40844
+
+
+block Item 40844 >= 300
+	 Window 1055027,YES,NO
+	 Window_NO
+	 EndWindow 1109723
+	 Window_YES Item 40844 >= 300
+	 KillItem 40844,300
+	 GiveLeak1Item 47681,1
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 
+
+block Item 40844 > 0 
+	 EndWindow 1055068
+	 
+				
+block 
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 EndWindow 1109723
+	 							 	 

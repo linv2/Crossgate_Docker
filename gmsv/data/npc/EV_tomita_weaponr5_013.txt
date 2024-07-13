@@ -1,0 +1,52 @@
+#﹛港盒及拨叶﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛扔件玄它及摒
+
+###﹛忕缜谛匹忕综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 210 && SkillLevel_201 >= 5
+	Window 3203069,OK
+
+		#\n\n﹛方仁侳凶卅﹜仍⑺仅﹝\n﹛玉仿件示伙伊弘及综曰杅毛项尹月井日﹜\n﹛仄匀井曰⑵卞じ木化幻仄中﹝\n﹛窖匀凶日﹜恌中忕毛综匀化仁木﹝\n﹛俇戈冗﹝
+
+		Window_OK
+			GiveRecipe 84
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛忕缜谛分互忕综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 210
+	Window 3203070,OK
+
+		#\n\n﹛楝反割井卞台午⑺仅及忕缜谛及方丹分互﹜\n﹛引分蜗坌卅绖诸互褥卞勾中化中卅中方丹分﹝\n﹛学日内仄匀井曰绖诸毛褥卞勾仃化﹜\n﹛公木井日引凶侳化仁木﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+
+###﹛忕缜谛匹反卅中
+block
+	Window 3203071,YES,NO
+
+		#\n\n﹛仍⑺仅匹反卅中方丹分友﹝\n﹛仇仇井日请凶中及井中〝
+
+		Window_YES
+			Window 3203072,OK
+
+		#\n\n﹛匹反﹜港盒及请轼引匹霜匀化丐仆方丹﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3203073
+
+		#\n\n﹛仇仇及洘酦反﹜蒂菜镕域及樊壬井曰卅氏分﹝\n﹛丐引曰梁呺毛仄卅中方丹卞俇戈方﹝
+
+
+

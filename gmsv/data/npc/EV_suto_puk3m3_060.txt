@@ -1,0 +1,39 @@
+#PUK3_main3
+#
+#
+#扑尼伊斥尼件
+
+
+
+Block LocalFlag1 == 1
+
+		Endwindow 3219882
+
+		#\n\n﹛呿癫及云帎木匹允友＿＿﹝
+
+Block
+		
+		Window 3219883,Next
+
+		#\n\n﹛漆引匹\n﹛丐曰互午丹仍介中引仄凶﹝
+		
+		Window 3219884,Next
+
+		#\n\n﹛仄井仄﹜仇及壑钗反引分﹜\n﹛呿癫及尪硎毛澎卞じ木凶歹仃匹反\n﹛丐曰引六氏﹝
+		
+		Window 3219885,Next
+
+		#\n\n﹛澎卞じ木凶及反﹜\n﹛愤苀午蜕丹铵引曰毛憎允潘﹝
+		
+		Window 3219886,Next
+
+		#\n\n﹛仇及壑钗反﹜\n﹛仇木井日公木毛圈化卅仃木壬卅曰引六氏﹝
+		
+		Window 3219887,OK
+
+		#\n\n﹛引分﹜窒手蔽歹匀化反中引六氏﹝\n﹛升丹井﹜仇及壑钗毛云凑中仄引允﹝
+		
+				Window_OK
+				
+					LocalFlag1 = 1
+		

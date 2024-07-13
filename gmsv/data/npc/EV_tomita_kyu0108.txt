@@ -1,0 +1,42 @@
+#泛旦玄奶矛件玄﹋平亘旦泛弝﹌﹛??巟鼹﹛凌001
+#
+#﹛﹛﹛巨仿及摒
+
+###﹛惘弁伉永弁
+
+block  StrCmpChat == R
+
+	EndWindow 3200765
+		#\n\n﹛失件打它母□﹜失件打它母□﹝\n﹛戊正巨亥它□﹜戊永正巨亥它□﹝
+
+
+###﹛尕恳荸
+
+block StrCmpChat != 3004911
+
+	EndWindow 3200766
+		#\n\n﹛穴民布巨正□﹜穴永民布巨正□﹝\n﹛布件田永泛□﹜布丞田永泛□﹝
+
+
+###﹛恳荸﹋儅匀化中凶日丐仆卅中毛馨笛﹌
+
+block StrCmpChat == 3004911
+
+	Window 3200767,OK
+		#\n\n﹛本奶市奶母□﹜本永奶市奶母□﹝
+
+		Window_OK Item_607902 >= 1
+			EndWindow 3200768
+		#\n\n﹛乒永泛伙甲玄瓦甩﹜失永必瓜奶亥永″″
+
+		Window_OK ItemSpace >= 1 
+			GiveItem 607902,1
+			CheckTitle
+			EndWindow 3200769
+		#\n\n﹛扑亦它甲件母□﹜扑亦左甲件母□﹝
+
+		Window_OK
+			EndWindow 3200770
+		#\n\n﹛瓦乒汁﹜奶永由奶﹝\n﹛扒件生件﹜扒件生件﹝
+
+

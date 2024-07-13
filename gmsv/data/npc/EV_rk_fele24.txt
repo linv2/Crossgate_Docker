@@ -1,0 +1,21 @@
+#
+#斨中及棉扔仿穴件母□
+#
+
+block Item 18930 >= 1 && Item 18931 >= 1
+#\n\n﹛丐午反愈詨及魂柈分﹝中五卅今中
+	Window 21505,OK
+        Window_OK
+		playse 279,10,10
+		Warp 0,15599,47,2
+	Window_OK
+
+block
+#\n\n﹛丐午反愈詨及魂柈分互﹜仇仇毛伤户月引匹仇及闭遽卞中化手恌中﹝褡戈井〝
+	Window 21504,YES,NO
+        Window_YES
+		playse 279,10,10
+		Warp 0,15599,47,2
+	Window_NO
+		playse 279,10,10
+		Warp 0,15596,22,9

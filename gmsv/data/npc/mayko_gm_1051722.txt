@@ -1,0 +1,10 @@
+block
+	 Window 1055026,YES,NO
+	 #1055026	\n\n\n@c您要离开宠物技能学习屋吗？？	1
+	 Window_YES
+	 LeaveGroup
+	 Warp 0,30111,12,10	
+	 endblock
+	 Window_NO
+	 endblock
+	 

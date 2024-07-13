@@ -1,0 +1,74 @@
+
+block
+
+
+
+				LocalCount0 = random 4,0
+
+				if LocalCount0 == 1
+
+
+#					Window 3200008,next
+		#\n\n﹛打甩件穴母℅〝\n﹛民件﹜民件
+					Window 3006868,next
+
+
+#					EndWindow 3200009
+		#\n\n﹛正正平旦幼泛\n﹛左民乓伐件﹜伐伊民乓它亥〝
+					EndWindow 3006869
+
+
+				else
+
+					if LocalCount0 == 2
+
+#						Window 3200010,next
+		#\n\n﹛母伊乒奶瓜奶﹜奶穴用它民＿＿
+						Window 3006870,next
+
+
+#						EndWindow 3200011
+		#\n\n﹛左玉伉正奶弗玉﹜左瓜市旦奶泛丞伉＿＿
+						EndWindow 3006871
+
+
+					else
+
+						if LocalCount0 == 3
+
+#						Window 3200012,next
+		#\n\n﹛失瓦斥乓﹜扔旦布母瓜﹜左伊正民\n﹛戊件瓜﹜弁它白弁瓦﹜正巨泛＿＿
+						Window 3006872,next
+
+
+#						EndWindow 3200013
+		#\n\n﹛失瓦斥乓〝失瓦斥乓〝\n﹛失瓦斥乓﹜玉戊℅〝
+						EndWindow 3006873
+
+						else
+						
+							Window 3200014,next
+		#\n\n﹛打甩件穴母℅〝\n﹛民件﹜民件
+							Window 3200015,ok
+		#\n\n﹛正正平旦幼泛\n﹛左民乓伐件﹜伐伊民乓永正＿＿
+							Window_ok Itemspace >= 1
+							GiveItem 607654,1
+							Window_ok
+							EndWindow 3200016
+		#\n\n﹛奶玉用穴伐伉犯﹜左民乓伐件市奶正用﹜母失伊＿＿
+						endif
+					endif
+
+				endif
+
+
+
+
+
+
+
+
+
+
+
+

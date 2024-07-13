@@ -1,0 +1,26 @@
+################### 偷闲的船长 登记员塔可(晚上)
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 有船票
+block Leak1Item 40066>=1 && Group ==1
+	 ##1100935	\n你想坐船？那就把船票交给我再上船吧！
+	 Window 1100935,YES,NO 
+	 	 Window_YES Leak1Item 40066>=1 && Group ==1
+			 ##收船票
+			 KillItem 40066				 	
+			 ##传入船中
+			 Warp 0,30255,16,15
+	 	 Window_NO 	 	
+
+################### 一般
+block 
+	 ##1100937	\n你说什么？你想坐船？\n这艘船的船票是买不到的，我劝你还是死心吧！
+	 EndWindow 1100937	 	 	 
+

@@ -1,0 +1,108 @@
+#甩奶伊矛伙轾仃荼瞻豭﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛启宎及摒
+
+###﹛平乓用件豸毛赭儅
+block Item_607724 >= 1
+
+	If Level < 60
+		Window 3204530,YES,NO
+
+		#\n\n﹛公及弁仿它件反愤恘匹澎卞じ木凶及井〝\n﹛公丹匹卅中及卅日﹜娄五忒仄凶杅互恌中﹝\n﹛筑跤匹反抸日井卞掸恘尕箫分冗﹝\n﹛公木匹手卅云﹜癫柈宎桦及楛柈毛熬仃月井〝
+
+			Window_YES
+				Window 3204531,OK
+
+		#\n\n﹛拑侜卅蓟枪分卅﹝\n﹛手丹鞅户氏﹜垫仁互中中﹝
+
+					Window_OK
+						LeaveGroup
+						Warp 0,59750,57,154
+						EndBlock
+
+			Window_NO
+				EndWindow 3204532
+
+		#\n\n﹛叶抸卅?蝇分﹝
+				EndBlock
+
+	else
+		Window 3204533,OK
+
+		#\n\n﹛目永玉平乓用件毛儅匀化中月及卅日﹜\n﹛掸恘反濯曰饼尥五分卅﹝\n﹛雄樊反穸奥仄卅仁化反卅﹝\n﹛じ迩据及肣拑卞楮歹日内じ木化支欠丹﹝
+
+			Window_OK
+				LeaveGroup
+				Warp 0,59750,57,154
+				EndBlock
+
+	endif
+
+
+
+###﹛芤宎朿迩じ迩据毛赭儅
+block Item_631002 >= 1
+
+	If Level < 60
+		Window 3204534,YES,NO
+
+		#\n\n﹛芤宎朿迩じ迩据反儅匀化中月方丹分互﹜\n﹛峔跶卞蜕匀化筑跤反掸恘尕箫分冗﹝\n﹛抰互中仁勾丐匀化手箫曰氏卅﹝\n﹛公木匹手楛柈毛垫丹勾手曰井〝
+
+			Window_YES Item_631002 >= 1
+				Window 3204535,OK
+
+		#\n\n﹛创貊及晓卅日手丹鞅户氏﹝垫仁互中中﹝
+
+					Window_OK Item_631002 >= 1
+						KillItemAll 631002
+						LeaveGroup
+						Warp 0,59750,57,154
+						EndBlock
+
+					Window_OK
+						EndWindow 3204536
+
+		#\n\n﹛氏﹜じ迩据互苇丐凶日氏冗﹝\n﹛匹反﹜じ木月仇午反匹五氏卅﹝
+						EndBlock
+
+			Window_YES
+				EndWindow 3204537
+
+		#\n\n﹛氏﹜じ迩据互苇丐凶日氏冗﹝\n﹛匹反﹜じ木月仇午反匹五氏卅﹝
+				EndBlock
+
+			Window_NO
+				EndWindow 3204538
+
+		#\n\n﹛撕嵘敢鹧反澎癫凶曰戚镕卞じ迩据毛\n﹛ミ匀化中月方丹分卅﹝\n﹛引匀凶仁﹜漱匀凶手及分﹝
+				EndBlock
+
+	else
+		Window 3204539,OK
+
+		#\n\n﹛酦匹及楛柈反虞仄中互﹜公木卞觐尹化仇公\n﹛域谛蟆及芤宎分﹝匹反﹜垫匀化仇中″
+
+			Window_OK Item_631002 >= 1
+				KillItemAll 631002
+				LeaveGroup
+				Warp 0,59750,57,154
+				EndBlock
+
+			Window_OK
+				EndWindow 3204540
+
+		#\n\n﹛氏﹜じ迩据互苇丐凶日氏冗﹝\n﹛卅仃木壬﹜じ木月仇午反匹五氏﹝
+				EndBlock
+
+	endif
+
+
+
+###晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3204541
+
+		#\n\n﹛仇仇反楮溢樊动陆峏切じ曰嗟鞅分﹝\n﹛梁呺分﹜峏切蛔木永″″
+
+
+

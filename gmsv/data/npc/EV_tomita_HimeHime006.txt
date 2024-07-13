@@ -1,0 +1,62 @@
+#仿奶玉旦平伙凯丿弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛巨立伉失及摒
+
+###﹛伀伀药及仍骚垫由旦毛呁醒赭儅
+block Item_607968 > 1
+	Window 3203391,OK
+
+		#\n\n﹛由旦反ㄠ谛ㄠ骚匹□允﹝伙□伙啜?反母丢永″\n﹛蝈朿匋璋仄引□允﹝
+
+		Window_OK Item_607968 >= 1
+			KillItemAll 607968,(3004849)
+
+		Window_OK
+
+
+
+###﹛伀伀药及仍骚垫由旦﹋旦正件皿ㄢ动晓﹌毛赭儅
+block Item_607968 == 1 && StampCount_607968 >= 3
+	Window 3203392,OK
+
+		#\n\n﹛公及由旦反手丹银尹引六□氏﹝\n﹛分井日匋璋仄引□允﹝
+
+		Window_OK Item_607968 >= 1
+			KillItemAll 607968,(3004849)
+
+		Window_OK
+
+
+
+###﹛伀伀药及仍骚垫由旦﹋旦正件皿ㄡ﹌毛赭儅
+block Item_607968 == 1 && StampCount_607968 == 2
+	EndWindow 3203393
+
+		#\n\n﹛公及由旦反丐午ㄠ荚仄井银尹引六□氏﹝
+
+
+
+###﹛伀伀药及仍骚垫由旦﹋旦正件皿ㄠ﹌毛赭儅
+block Item_607968 == 1 && StampCount_607968 == 1
+	EndWindow 3203394
+
+		#\n\n﹛公及由旦反丐午ㄡ荚银尹引□允﹝
+
+
+
+###﹛伀伀药及仍骚垫由旦﹋旦正件皿ㄟ﹌毛赭儅
+block Item_607968 == 1 && StampCount_607968 == 0
+	EndWindow 3203395
+
+		#\n\n﹛公及由旦反丐午ㄢ荚银尹引□允﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3203396
+
+		#\n\n﹛中引皮伊件母今氏井﹜戊伉□瓜今氏午狪允午﹜\n﹛手木卅仁午匀化手忐厍卅由旦互枃尹引□允″
+
+
+

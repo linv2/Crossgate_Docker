@@ -1,0 +1,54 @@
+#﹛戽木厄蕨及?辉﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛示旦﹋失奶泛丞欐仄﹌及摒
+
+###﹛由□泛奴毛赚氏匹中月
+
+block Group >= 2
+
+	EndWindow 3200489
+		#\n\n﹛手丹弗件市允月勾手曰反卅中﹝\n﹛夫午曰内勾侳中﹝
+
+
+###﹛谛溥毛赭儅
+
+block Item_607900 >= 1
+	Window 3200490,OK
+		#\n\n﹛窒匹手丹谛溥毛儅匀化月氏分″\n﹛Г竣怗鬼中蛊分﹝窖木永″″
+
+		Window_OK Item_607900 >= 1
+			Warp 0,59715,239,133
+
+		Window_OK
+
+
+###﹛绂坁卞坞五互丐月
+
+block ItemSpace >= 1
+	Window 3200491,OK
+		#\n\n﹛白件﹜恌中仇午毛仄化月勾手曰卅氏分欠丹互﹜\n﹛丐及伀反仇及引引及杅互僧六井手仄木卅中兮﹝\n﹛幻日方﹜云侗心及谛溥分﹝今匀今午壅尹卅﹝
+
+		Window_OK ItemSpace >= 1 && Group < 2
+			GiveItemEX 607900,1,3200492
+		#\n\n﹛绂坁互中匀天中分方﹝\n﹛公木午手﹜竣互庍歹匀凶及井〝
+			Warp 0,59715,239,133
+
+		Window_OK Group >= 2
+			EndWindow 3200493
+		#\n\n﹛云蟆日反﹜卅兮公丹歇木凶互月氏分″\n﹛公氏卅蛊日卞谛溥反支木氏″″
+
+		Window_OK
+			EndWindow 3200494
+		#\n\n﹛窒分﹜俓仄仁卅中及井﹝
+
+
+###﹛绂坁互中匀天中
+
+block
+	EndWindow 3200495
+		#\n\n﹛绂坁互中匀天中分井日﹜欐六卅中卅﹝
+
+
+EndBlock
+
+

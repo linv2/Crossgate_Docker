@@ -1,0 +1,58 @@
+##ㄥ璃コ筏ゴ奶矛件玄﹛by漪呿
+## NPC“恦燮戏
+
+## OT辅笛据毛呁醒赭儅
+block Item 622010 > 1
+	Window "\n\n﹛奶弗穴本件生□″\n﹛云曰尹氏化□曰氏什用辅笛据甩﹜\n﹛甲玄伉甲玄汁犯旦亥″",OK
+		Window_OK
+			KillItemAll 622010
+
+## 旦正件皿＞＞ㄟ＝及OT辅笛据毛赭儅
+block Item 622010 == 1 && StampCount 622010 == 0
+	Window "\n\n﹛ㄥ璃コ筏ゴ左丢犯玄它打扒奶穴□旦″\n﹛云曰尹氏化□曰氏什瓦辅笛扔伊泛伙用犯旦生﹝\n﹛末伊犯甩﹜扔永末弁请锁扑穴□旦″",NEXT
+	Window"\n\n﹛孔丑氏少月什跶垫忐﹜\n﹛伐正扑用优诮绖甩\n﹛≦卅匀仁月井凶天月午ㄣㄣ寞≧犯□旦″\n﹛恳扑奶玄合它瓜仿???仲﹜\n﹛啜它玄合它瓜仿??仲蓟件犯弁母扔□奶″",YES,NO
+
+	Window_YES Item 622010 == 0
+		EndWindow "\n\n﹛左乩〝\n﹛云曰尹氏化□曰氏什用辅笛据布失伉穴本件生﹝\n﹛玉戊市犯﹜侹玄扑正件犯旦市〝\n﹛愈赓市仿乩伉跶扑犯旦亥″"
+
+	Window_YES Item 622010 > 1
+		Window "\n\n﹛奶弗穴本件生□″\n﹛云曰尹氏化□曰氏什用辅笛据甩﹜\n﹛甲玄伉甲玄汁犯旦亥″",OK
+			Window_OK
+				KillItemAll 622010
+
+	Window_YES
+		Window "\n\n﹛恳荸犯□旦″\n﹛云曰尹氏化□曰氏什甩﹜\n﹛穴母铵穴永正田市伉犯旦﹝\n﹛渲舰永泛弁母扔奶生﹝",NEXT
+			Window "\n\n﹛扔央﹜辅笛据瓦切之匀仁仲扑穴扑正亥﹝\n﹛戚甩﹜丐月壬允仲茧扑泛弁母扔奶生﹝",OK
+				Window_OK
+					AddStampCount 622010,+1
+					SystemMessage  3012036 
+
+	Window_NO Item 622010 == 0
+		EndWindow "\n\n﹛左乩〝\n﹛云曰尹氏化□曰氏什用辅笛据布失伉穴本件生﹝\n﹛玉戊市犯﹜侹玄扑正件犯旦市〝"
+
+	Window_NO ITem 622010 > 1
+		Window "\n\n﹛奶弗穴本件生□″\n﹛云曰尹氏化□曰氏什用辅笛据甩﹜\n﹛甲玄伉甲玄汁犯旦亥″",OK
+			Window_OK
+				KillItemAll 622010
+
+	Window_NO
+		Window "\n\n﹛穴母穴母﹜膜垫布箫伉瓜奶亥它犯旦生″\n﹛末件瓜失瓜正瓦甩﹜\n﹛卅匀仁月井凶天月午ㄣㄣ寞﹜\n﹛伐正扑用优诮绖仲左苇朸奶扑穴□旦″\n﹛扔央﹜市市永泛平瓜扔□奶″",OK
+			Window_OK
+				KillItemAll 622010
+				Encount 2|||0|||||0|306323|||||||||
+				Endblock
+
+## 旦正件皿＞＞ㄟ＝匹反卅中OT辅笛据毛赭儅
+block Item 622010 == 1 &&  StampCount 622010 >= 1
+	EndWindow "\n\n﹛云曰尹氏化□曰氏什甩﹜赐譬犯旦市〝\n﹛渲舰永泛弁母扔□奶″"
+
+
+## 恦燮戏谛溥毛赭儅
+block Item 622011 >= 1
+	EndWindow "\n\n﹛瓜市瓜市雄奶犯旦生□﹝\n﹛穴母穴母﹜\n﹛伐正扑甩呿竣仲请扑泛甩奶穴本件布﹜\n﹛橘瓦失瓜正琼用杴伓犯失伙亥它﹜\n﹛ざ★珃仲呫奶泛左平穴旦亥″"
+
+
+## 晓筏动陆
+block
+	EndWindow "\n\n﹛ㄥ璃コ筏ゴ左丢犯玄它打扒奶穴□旦″"
+

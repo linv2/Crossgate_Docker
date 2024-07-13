@@ -1,0 +1,259 @@
+
+
+##迷宫内的死老头
+##马欧希亚
+##EV_miz_5415.txt
+##5415	999	14
+
+###################持有马达塞特﹛###################
+
+block Item 18299 >= 1
+
+	EndWindow 20704,OK
+##\n\n下次请里谢里雅堡的人也一起来玩喔~
+
+#################### 持有马欧希亚的信(法兰) ####################
+
+block Item 18296 >= 1
+#\n\n法兰城很大，所以请你仔细的找找吧！
+
+	EndWindow 20682,OK
+
+######################持有 马欧希亚的信(伊尔)###################
+
+#\n\n我有说是伊尔村吗？大概是我搞错了吧！我的家是在法．．．法．．．法兰城，
+##对！就是法兰城！那就再麻烦你一次吧！	1
+
+
+block Item 18295 >= 1 && ItemSpace == 0
+
+	EndWindow 20681,OK
+##\n\n你的东西满了啦~
+block Item 18295 >= 1
+
+	Window 20666,OK
+	Window_OK ItemSpace == 0
+	EndWindow 20681,OK
+	##\n\n你的东西满了啦~	1
+	Window_OK ItemSpace >= 1 && Item 18295 >= 1
+	KillItem 18295
+	Giveitem 18296
+
+
+########################持有 马欧希亚的信﹛###########################
+
+#\n\n请给我法包的那位把信送给伊尔村的家人。 别忘了。
+
+block Item 18294 >= 1
+
+	EndWindow 20665,OK
+
+##########################医护人员  马达塞特(18298)####################
+
+#\n\n辛苦你了，但是我已经没事了。对了，请告诉给我法包的那位，
+#叫他帮我送信给伊尔村的家人。别忘了，是拿法包给我的那位喔！伊尔村喔！	1
+
+
+block Item 18298 >= 1 && ItemSpace == 0 && Job >= 441 && Job <= 447
+
+	EndWindow 20681,OK
+	##\n\n你的东西满了啦~
+block Item 18298 >= 1 && ItemSpace == 0 && Job >= 431 && Job <= 437
+
+	EndWindow 20681,OK
+
+block Job >= 441 && Job <= 447 && Item 18298 >= 1
+
+	Window 20664,OK	
+	Window_OK ItemSpace == 0
+	EndWindow 20681,OK
+	Window_OK ItemSpace >= 1 && Item 18298 >= 1
+	KillItem 18298
+	GiveItem 18294
+
+block Job >= 431 && Job <= 437 && Item 18298 >= 1
+
+	Window 20664,OK
+	Window_OK ItemSpace == 0
+	EndWindow 20681,OK
+	Window_OK ItemSpace >= 1 && Item 18298 >= 1
+	KillItem 18298
+	GiveItem 18294
+
+
+#########################item 18298 非医护 ####################
+
+#\n\n我要找的是医生或护士，不是你啦！
+
+block Item 18298 >= 1
+
+	EndWindow 20663,OK
+
+################  找了传教来  又改要医护 #############################
+
+#\\n\n辛苦你了。不过我后来想想，我是受了伤的人，应该找医生或护士才对啊~
+#这个首饰给你，这次请医生或护士拿着它带队来找我吧！拜托你啰！	1
+
+
+block Item 18297 >= 1 && ItemSpace <= 1 && Job >= 61 && Job <= 67
+
+	EndWindow 20681,OK
+
+block Job >= 61 && Job <= 67 && Item 18297 >= 1
+
+	Window 20662,OK
+	Window_OK ItemSpace == 0
+	EndWindow 20681,OK
+	Window_OK ItemSpace >= 1 && Item 18297 >= 1
+	KillItem 18297
+	GiveItem 18298
+
+#################  找传教 不是传教  ###################
+
+#\n\n\n\n你不是僧侣吧？我是要找僧侣不是要找你啦！
+
+block Item 18297 >= 1
+
+	EndWindow 20661,OK
+
+#################﹛nowevent30 把首饰弄丢  ﹛###############################
+
+##20705	\n\n怎么了？还不快把能让我回复的人来？	1
+##20706	\n\n什么？你把我刚刚给的首饰弄不见了？就是说你不想帮我忙了吗？	1
+
+block nowevent30 == 1 
+
+	Window 20705,NEXT
+	Window 20706,YES,NO
+	
+	Window_YES ItemSpace <= 1
+	EndWindow 20681,OK
+#\n\n是喔！我懂了！那下一次再遇到你，
+#我会当做是第一次遇到一样的．．．这样可以了吧？	1
+	
+	Window_YES
+	nowevent30 = 0
+	EndWindow 20707,OK
+	
+	Window_NO
+	EndWindow 20708,OK
+#20708	\n\n那就快去吧！\n快把能帮我的人带回来喔！	1
+##############  nowevent23﹛田弗永玄肣曰﹛######################
+
+#\n\n谢谢你。那我终于可以离开这里了．．．\n真好吃啊~那就回去吧．．．\n\n呜！
+#\n\n好痛痛痛！\n我好像扭到脚了。可以请你找个僧侣来帮我一下吗？	1
+
+
+block nowevent29 == 1 && Item 15203 >= 1 && Itemspace <= 1
+
+	EndWindow 20681,OK
+
+block nowevent29 == 1 && Item 15203 >= 1
+
+	Window 20659,OK
+	Window_OK ItemSpace == 0
+	EndWindow 20681,OK
+	Window_OK Item 15203 == 0
+	EndWindow 20658,OK
+	##\n\n我请你帮我买的法包呢？什么！没买？我快饿死了啦！快去把法包买回来~
+	Window_OK ItemSpace >= 1 && Item 15203 >= 1
+	KillItem 15203
+	GiveItem 18297
+	nowevent29 = 0
+	nowevent30 = 1
+	EndWindow 20660,OK
+	##\n\n我给你一个首饰，记得拿给僧侣啊~让僧侣拿着它，
+	##然后由他带队跟我交谈吧．．．\n拜托你了。	1
+
+	
+
+################  nowevent29﹛田弗永玄拑仄 ###########################
+#≠20658∞
+#\n\n我请你帮我买的法包呢？什么！没买？我快饿死了啦！快去把法包买回来~	1
+block nowevent29 == 1
+
+	EndWindow 20658,OK
+
+###################  nowevent28﹛罹由件肣曰﹛############################
+#﹋GIVE﹛500G﹛﹛nowevent29﹌
+#≠20656∞
+#\n\n我拜托你买的法国面包呢？咦？没有吗？\n什么！怎么这样？\n
+#你说我叫你买的是普通面包？\n别乱讲！我是叫你帮我买法包喔！\n
+#别又记错了，我可不想再吃面包了。	1
+
+block nowevent28 == 1 && Item 15201 >= 1
+
+
+	Window 20656,OK
+	Window_OK Item 15201 == 0
+	EndWindow 20655,OK
+	##\n\n你有帮我买面包了吗？嗯？没有嘛~？\n我快饿死了啦！快点去买回来！	1
+	Window_OK Item 15201 >= 1 && gold <= 999500
+	nowevent28 = 0
+	nowevent29 = 1
+	KillItem 15201
+	addgold 500
+	EndWindow 20657,OK
+	##\n\n什么？只有面包的钱不够买法包？\n拿去啦拿去啦！\n
+	##一天到晚就只知道钱钱钱的！\n拿去啦！别忘了找钱回来！	1
+	Window_OK Item 15201 >= 1 && gold >= 999501
+	nowevent28 = 0
+	nowevent29 = 1
+	KillItem 15201
+	EndWindow 20702,OK
+
+#\n\n不好意思啊~\n你应该是个有钱人吧~交出钱来吧~	1
+
+	
+
+################  nowevent22﹛罹由件拑仄  ############################
+
+#\n\n你有帮我买面包了吗？嗯？没有嘛~？\n我快饿死了啦！快点去买回来！	1
+
+block nowevent28 == 1
+
+	EndWindow 20655,OK
+
+##############  捉弄见习生的开始   ########################################
+
+#\\n\n你知道这里是哪里吗？我不小心滑了一跤后便来到了这里。
+#花了三天三夜也找不到出口，害我都快饿死了！\n对了！我给你钱，你可以帮我买面包来吗？	1
+
+
+block Job == 0 || Job == 1 || Job == 11 || Job == 21 || Job == 31 || Job == 41 || Job == 51 || Job == 61 || Job == 71 || Job == 81 || Job == 91 || Job == 101 || Job == 111 || Job == 121 || Job == 131 || Job == 141 || Job == 151 || Job == 161 || Job == 201 || Job == 211 || Job == 221 || Job == 231 || Job == 241 || Job == 251 || Job == 261 || Job == 271 || Job == 281 || Job == 291 || Job == 301 || Job == 301 || Job == 311 || Job == 321 || Job == 331 || Job == 341 || Job == 351 || Job == 361 || Job == 371 || Job == 381 || Job == 391 || Job == 401 || Job == 411 || Job == 421 || Job == 431 || Job == 441 || Job == 451 || Job == 461 || Job == 471 || Job == 1001 || Job == 1011
+
+	Window 20652,YES,NO
+
+###############  YES﹛####################
+
+#\n\n﹛允引氏卅℅﹛\n云慑曰反潸匀午中化切斤丹分中友﹝
+
+	 Window_YES gold <= 999900
+	  nowevent28 = 1
+	  addgold 100
+	  EndWindow 20653,OK
+          ##\n\n抱歉喔~\n能帮我拿一下吗？	1
+	Window_YES gold >= 999901
+	 nowevent28 = 1
+	 EndWindow 20702,OK
+
+
+###############  NO  #######################
+
+#\n\n﹛愈嗤及潦中樊反勾户凶中及℅℅\n牁谛毛中凶歹月匀化竣儅切互卅中及井中友〝
+
+	 Window_NO
+	  EndWindow 20654,OK
+
+
+
+###############  仿件弁互C动晓  ################################
+
+#\n\n﹛歹仄扎℅卅﹜仇及壑钗卞侳凶壬井曰及佹莴樊毛井日井丹及互厘驯五卅氏元扎″云蟆今氏及迋卅
+#﹜鄙中手棠中手酝五坌仃凶矛泛仿件佹莴樊反﹜豳跶卅竣儅切互切℅匀午手卅中井日昍ヶ仁卅中及℅
+#\n云蟆今氏卞迕反卅中匀化蜕匀凶氏元扎方﹝
+
+block 
+
+	EndWindow 20651,OK
+

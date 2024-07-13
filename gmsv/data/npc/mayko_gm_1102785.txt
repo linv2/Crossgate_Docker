@@ -1,0 +1,28 @@
+#mayko_gm_1102785.txt坎村连络官
+#1111788	\n　　　　月心将军已经知道了，\n　　　　只是不知亚纪公主的真正意图。	1
+#1111789	\n　　　　这是将军要给亚纪公主的信，\n　　　　麻烦你拿给传令兵。	1
+#1111800	\n\n\n\n@c在这吹着凉爽的风真好。	1
+#1111803	\n\n\n\n@c麻烦公主府的传令兵转交给公主。	1
+block endevent 167 == 1
+	endwindow 1111800
+block  item 41272 >0 || item 41274 >0
+	endwindow 1111800
+block item 41270 >0
+#1111807	\n\n\n　　　　麻烦你，\n　　　　向坎那贝拉连络人打听席琳殿下的情况。	1
+	killitem 41270,1
+	GiveLeak1Item  41271, 1   
+	window 1111808,next
+	endwindow 1111809
+
+
+##以下为公主传说1
+block item 42166 >0
+	endwindow 1111803
+block item 41265 >0
+	killitem 41265,1
+	GiveLeak1Item  41266, 1   
+	Window 1111788,next
+	endwindow 1111789
+
+block
+	endwindow 1111800

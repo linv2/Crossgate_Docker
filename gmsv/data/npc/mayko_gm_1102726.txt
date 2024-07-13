@@ -1,0 +1,10 @@
+block job==381 || job == 291
+	Window 1111511,yes,no
+	Window_yes
+	LeaveGroup
+	warp 0,11021,16,8
+	window_no
+	endblock
+block
+	 endwindow 1111513
+	

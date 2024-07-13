@@ -1,0 +1,35 @@
+#ÈóÚÐØ©Ó×
+
+#çÖÎþ¼°¾ÝÃ«ƒ}ÔÈ»¯ÖÐÔÂ
+block Item 16428 >= 1
+	EndWindow 23083,OK
+
+#±ØÓÀÆË¼þ±åãïÃ«ÍñÒýÁùÐ×Ô‰
+block EndEvent 119 == 1 || EndEvent 120 == 1
+	Window 23079,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,43981,26,44
+
+#ÆËØø¡õ¼þ±åãïÃ«ÍñÒýÁùÐ×Ô‰
+block EndEvent 145 == 1
+	EndWindow 23083,OK
+
+#Øç¶ããï1ÒýÐ×·´2Ã«ƒ}ÔÈ»¯ÖÐÔÂ
+block Item 16429 >= 1 || Item 16439 >= 1
+	EndWindow 23083,OK
+
+#ÛÍ¾Þµ©Ðþñ×µæáN
+block NowEvent 119 == 1 || NowEvent 120 == 1
+	Window 23080,Yes,No
+		Window_No
+			EndWindow 23082,OK
+		Window_Yes
+			Window 23081,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,43980,26,44
+#
+block
+	EndWindow 23083,OK
+

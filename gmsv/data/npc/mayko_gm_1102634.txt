@@ -1,0 +1,16 @@
+#渔家女岚音	0	1102634	0	1	1	0	2000	55	53
+#mayko_gm_1102634.txt
+
+block 	
+	Window 1110704,yes,no #	你要买伊尔村的海鲜吗？花枝跟章鱼一份500G	1
+	Window_yes  gold >499 && itemspace>2 
+	GiveLeak1Item 11209,1
+	GiveLeak1Item 11210,1
+	AddGold -500
+	endblock
+	Window_yes gold<500
+	endwindow 15672
+	Window_yes
+	endwindow 11502
+	Window_no
+	endwindow 10168

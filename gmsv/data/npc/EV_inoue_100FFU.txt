@@ -1,0 +1,78 @@
+##########################################
+#	扑尼仿它巨永末及显﹛扑尼仿旦疋永汁
+#
+#	白仿立
+#
+##########################################
+
+
+
+###﹛毕辉挥毛呁醒赭儅仄化中月 ###
+block Item 607704 > 1
+	EndWindow3208472
+
+		#\n\n﹛公氏卅卞闯辄及毕辉挥毛手匀化中月卅氏化\n﹛蕾引仄中匹允歹﹝\n﹛匹手﹜台反公氏卅卞闯辄反苇凶仁卅中及﹝
+
+block Item 607704 == 1
+	Window3208473,yes,no
+
+		#\n\n﹛公仇及丐卅凶﹜云谨切卞卅匀化″″\n﹛公及毕辉挥毛台卞苇六化中凶分仃引六氏〝\n﹛云斪午仄化﹜平亘旦泛卞云洘木仄引允歹﹝
+		Window_yes Item 607704 == 1
+			Window3208474,Next
+
+		#\n\n﹛引丑﹜卅氏化摨昜卅毕辉挥卅氏匹仄斤丹\n﹛丐日〝﹛仇氏卅午仇欠卞条木互丐曰引允歹﹝
+			Window3208475,Next
+
+		#\n\n﹛平亘’’平亘’’平亘’’﹛\n\n﹛田平永″
+			Window3208476,OK
+
+		#\n\n﹛丐日〝\n﹛云沶窜及平亘旦泛卞?壬仄引允歹友
+				Window_ok Item 607704 == 1 && ItemDur 607704 == 1
+					KillItem 607704,(3012352)
+					LeaveGroup
+					Warp 0,59524,127,88
+
+				Window_ok Item 607704 == 1
+					SetDur 607704,-1
+					LeaveGroup
+					Warp 0,59524,127,88
+
+				Window_ok Item 607704 < 1
+					EndWindow3208477
+
+		#\n\n﹛丐日〝﹛毕辉挥反升仇卞中匀凶及井仄日〝
+
+				Window_ok
+					EndWindow3208478
+
+		#\n\n﹛公氏卅卞闯辄及毕辉挥毛手匀化中月卅氏化\n﹛蕾引仄中匹允歹﹝\n﹛匹手﹜台反公氏卅卞闯辄反苇凶仁卅中及﹝
+
+
+		Window_yes Item 607704 < 1
+			EndWindow3208479
+
+		#\n\n﹛丐日〝﹛毕辉挥反升仇卞中匀凶及井仄日〝
+
+		Window_yes
+			EndWindow3208480
+
+		#\n\n﹛公氏卅卞闯辄及毕辉挥毛手匀化中月卅氏化\n﹛蕾引仄中匹允歹﹝\n﹛匹手﹜台反公氏卅卞闯辄反苇凶仁卅中及﹝
+
+		Window_no
+			EndWindow3208481
+
+		#\n\n﹛丐日〝﹛酸ゴ匹允仇午﹝\n﹛粕卅凛棉互丐匀凶午五卞匹手\n﹛斗匀仁曰苇六化幻仄中匹允歹﹝
+
+block Item 607703 >= 1
+	EndWindow3208482
+
+		#\n\n﹛丐卅凶及儅匀化中月毕挥反﹜\n﹛午化手摨昜匹允歹友之\n﹛玄申戊反减太公丹匹允仃升﹜\n﹛台及浔怗元扎丐曰引六氏歹﹝
+
+block
+	Window3208483,Next
+
+		#\n\n﹛辉毕迋卞⑽木化中月台反﹜\n﹛挥毛井少匀化中月谛毛谨匀化中月及匹允
+	EndWindow3208484
+
+		#\n\n﹛五匀午﹜?仄仁绞中化中月及方﹝\n﹛台及呺诸匹﹜域踝卞平亘旦泛卞垫五凶中歹﹝
+

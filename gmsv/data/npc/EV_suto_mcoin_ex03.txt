@@ -1,0 +1,74 @@
+#乒件旦正□戊奶件傀舰
+#反氏仄氏仁氏
+#
+
+
+block petlevel_314911 >= 1
+
+
+	endwindow "\n\n﹛脱互恘及葡蜇＿＿\n﹛泙卞峏勾匹丐欠丹＿＿﹝"
+
+
+
+
+block petlevel_308000 >= 1
+
+	window "\n\n﹛＿＿呺诸窗及抏滇＿＿\n﹛台及钒?仄凶手及及域勾分＿＿﹝\n﹛莠井仄中＿＿﹝\n﹛丐木反引分台互谛匹丐匀凶仇欠＿＿﹝",next
+	
+	window "\n\n﹛＿＿公及呺诸窗﹛抏＿＿台卞歙日厄井〝",next
+
+	window "\n\n﹛斪反仄方丹＿＿﹝\n﹛脱互恘及?蜇＿＿公丹﹜坌褥毛﹜\n﹛公卅凶卞牖仃方丹＿＿﹝",next
+	
+	window "\n\n﹛＿＿升丹允月井友〝",yes,no
+	
+	
+	
+	
+	
+	
+	
+		window_yes
+			
+			window "\n\n﹛＿＿恌中蓟枪分﹝ ",ok
+			
+			
+		
+				window_ok petlevel_308000 >= 1
+				
+					killpetH 308000,1
+					givepet 307080
+				
+				window_ok
+				
+				
+					endwindow "\n\n﹛＿＿掖反戊戊夫及勒互综曰请允手及＿＿﹝\n﹛公卅凶反呺诸窗及抏滇卅升儅匀化中卅中＿＿﹝" 
+				
+
+
+		
+		
+		
+		window_no
+		
+		
+			endwindow "\n\n﹛＿＿公木手方井欠丹﹝"
+			
+			
+			
+			
+
+
+
+
+
+
+
+block
+
+	window "\n\n﹛＿＿台反螃啖及樊方曰\n﹛恘毛芨尹日木仄绣箕＿＿﹝\n﹛＿＿公及樯＿＿呺诸卞方匀化\n﹛⑹仁窗都毛综匀化中凶＿＿﹝",next
+	
+	endwindow "\n\n﹛＿＿公及敦岳圴匹丐月\n﹛呺诸窗及抏滇毛茧仄化中月﹝"
+	
+	
+	
+	

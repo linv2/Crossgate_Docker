@@ -1,0 +1,98 @@
+#显及丝挚﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛魂杽敢丢奶乩□及摒
+
+###﹛乒夫甩正弗丐月中反穴奶件白仿伐□毛赭儅
+block Item_607700 >= 1 || Item_607702 >= 1
+	EndWindow 3204707
+
+		#\n\n﹛丝挚毛蔽尹化弁仿它件毛赭儅仄化中月棉反﹜\n﹛酸ゴ卅互日魂杽卞蚕尹月仇午互匹五引六氏﹝\n﹛丝挚午中丹及反﹜窒蘸手粮仃化垫丹手及匹反\n﹛丐曰引六氏井日﹝
+
+
+
+###﹛平乒母丢母扑蔺爵据毛赭儅
+block Item_607970 >= 1
+	GAWindow 3204708,YES,NO
+
+		#\n\n﹛显及壑钗尺方丹仇公﹝匹反﹜镕き及魂杽匹允﹝\n﹛≦累苇匹忏井木颗什及反拑辑匹丐月≧\n﹛???井??匹忒蚕仄化仁分今中﹝
+
+		Window_YES Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204709
+
+		#\n\n﹛云支﹜丝挚毛蔽尹日木凶杅匹仄凶井﹝\n﹛酸ゴ卅互日﹜丐卅凶卞反荚蚕腺互丐曰引六氏﹝
+
+		Window_YES Item_607970 >= 1
+			GAWindow 3204710,OK
+
+		#\n\n﹛累反毙井卞只匹月手及﹜午蜕丹歹仃匹允井﹝\n﹛氘峸卅及反锳厌匹允互﹜模跟岭卞瑞仃化中月\n﹛午手熬仃潸木引允友﹝匹反﹜戚及魂杽尺﹝
+
+				Window_OK Item_607700 >= 1 || Item_607702 >= 1
+					EndWindow 3204711
+
+		#\n\n﹛云支﹜丝挚毛蔽尹日木凶杅匹仄凶井﹝\n﹛酸ゴ卅互日﹜丐卅凶卞反荚蚕腺互丐曰引六氏﹝
+
+				Window_OK Item_607970 >= 1
+					Warp 0,59807,161,105
+
+				Window_OK
+					EndWindow 3204712
+
+		#\n\n﹛蔺爵据互丐曰引六氏友﹝\n﹛酸ゴ匹允互﹜荚蚕反カ户日木引六氏﹝
+
+		Window_YES
+			EndWindow 3204713
+
+		#\n\n﹛蔺爵据互丐曰引六氏友﹝\n﹛酸ゴ匹允互﹜荚蚕反カ户日木引六氏﹝
+
+		Window_NO Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204714
+
+		#\n\n﹛云支﹜丝挚毛蔽尹日木凶杅匹仄凶井﹝\n﹛酸ゴ卅互日﹜丐卅凶卞反荚蚕腺互丐曰引六氏﹝
+
+		Window_NO Item_607970 >= 1
+			GAWindow 3204715,OK
+
+		#\n\n﹛午卞井仁啼仄仃木壬累卅升升丹匹手恌中﹜\n﹛午蜕丹歹仃匹允井﹝\n﹛丐卅凶及方丹卅谛毛沓抔缰午中丹及匹仄斤丹﹝\n﹛匹反﹜戚及魂杽尺﹝
+
+				Window_OK Item_607700 >= 1 || Item_607702 >= 1
+					EndWindow 3204716
+
+		#\n\n﹛云支﹜丝挚毛蔽尹日木凶杅匹仄凶井﹝\n﹛酸ゴ卅互日﹜丐卅凶卞反荚蚕腺互丐曰引六氏﹝
+
+				Window_OK Item_607970 >= 1
+					Warp 0,59807,50,79
+
+				Window_OK
+					EndWindow 3204717
+
+		#\n\n﹛蔺爵据互丐曰引六氏友﹝\n﹛酸ゴ匹允互﹜荚蚕反カ户日木引六氏﹝
+
+		Window_NO
+			EndWindow 3204718
+
+		#\n\n﹛蔺爵据互丐曰引六氏友﹝\n﹛酸ゴ匹允互﹜荚蚕反カ户日木引六氏﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3204719,YES,NO
+
+		#\n\n﹛蔺爵据卅仄匹反﹜魂杽卞荚蚕匹五引六氏﹝\n﹛疯蘸潸丿仄化﹜支曰跶仄引允井〝
+
+		Window_YES
+			Window 3204720,OK
+
+		#\n\n﹛魂杽毛熬仃月竣互丐曰卅互日﹜蔺爵据毛\n﹛撩仁仄凶及匹允友﹝\n﹛斨珌卅谛分﹝\n﹛疯潸丿仄凶日﹜橘卞儅匀化中化仁分今中﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59801,93,79
+
+		Window_NO
+			EndWindow 3204721
+
+		#\n\n﹛职及蔺爵樊及怀踞卞引歹月及匹允友﹝\n﹛匹反﹜漆詨反妎日歹仄中及匹﹜魂杽敢卞\n﹛狪仄井仃卅中方丹云凑中仄引允﹝
+
+
+

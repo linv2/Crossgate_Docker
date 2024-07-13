@@ -1,0 +1,16 @@
+#??úé?(15563)
+#
+
+block
+
+Window 21337,OK
+  Window_OK ItemSpace != 0
+     killitemall 18768
+     killitemall 18783
+     killitemall 18784
+  giveitem 18781,1
+  LeaveGroup
+   Warp 0,15551,81,87
+############# ?????¦Ž ##############
+  Window_OK
+         Endwindow 10000

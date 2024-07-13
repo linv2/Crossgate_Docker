@@ -1,0 +1,151 @@
+#显及丝挚﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛失瓦平及摒
+
+###﹛布件戊扑丢斥丐月中反市□丞白仿伐□毛赭儅
+block Item_607700 >= 1 || Item_607702 >= 1
+	Window 3204903,NEXT
+
+		#\n\n﹛孔丹氏﹜公木互拺及丝挚及操圴匀化支勾井＿﹝\n﹛普邂〝﹛氏卅手氏帎卞友尹方﹝\n﹛凶分﹜左伊午反蝠戈壑钗互啜丹匀化中丹井﹜\n﹛抈木化坁互蜕尹友尹匀化中丹井＿﹝
+	EndWindow 3204904
+
+		#\n\n﹛午卞井仁﹜切斤匀午峊木化化仁木友尹井﹝\n﹛云蟆及⑺挀卞苇日木月午允仍仁奶乩分仄方﹜\n﹛窒分井公木苇化月午呏互峏匀化仁氏分方﹝
+
+
+
+###﹛平乒母丢母扑蔺爵据毛赭儅
+block Item_607970 >= 1
+
+	If Level >= 41
+		EndWindow 3204905
+
+		#\n\n﹛云中云中﹜左伊卞公中勾毛欐仄凶詨及昍逦引匹\n﹛苇欠匀化蜕丹氏元扎友尹分欠丹卅﹝\n﹛公氏卅优邰反友尹﹜恳筋及澎粮五匹じ木方﹝\n﹛申申永化氏及井〝﹛仇丹中丹鬼仪匀化及反方﹜\n﹛⑻★午仄化曰扎分中凶中田伊友尹氏分﹝
+		EndBlock
+
+	else
+		EndWindow 3204906
+
+		#\n\n﹛云中﹜公及丝挚反窒蘸手辅笛匹五月日仄中卅﹝\n﹛手仄﹜じ轼匹蝇日木月方丹卅仇午互丐匀凶日﹜\n﹛左伊氏午仇尺侳卅﹝\n﹛窒午井仄化支木月井手襞木卅中兮﹝
+		EndBlock
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅匹伊矛伙41动晓
+block Level >= 41
+	If Item_607701 >= 1
+		Window 3204907,NEXT
+
+		#\n\n﹛云蟆﹜平乒母丢母扑卞辅笛匹五卅中弁民分卅﹝\n﹛显戋卞俇氏匹手拑蛲分兮﹜蝇日木月分仃分﹝\n﹛升丹仄化手辅笛仄凶中卅日﹜澎毛躯允兮﹝\n﹛云蟆及儅匀化月市皿市皿及累毛仁木木壬卅﹝
+		Window 3204908,YES,NO
+
+		#\n\n﹛卅卞﹜公氏卅卞鬼中狪元扎卅中兮﹝\n﹛医歹曰卞平乒母丢母扑蔺爵据互澎卞じ匀化﹜\n﹛丝挚及朿盒引匹霜匀化手日尹月氏分井日﹝\n﹛切卅心卞蔺爵据反﹜恳蕞恳斻及呿坁分﹝\n﹛今丐﹜漆允什瑁户欠″
+
+			Window_YES Item_607701 >= 1 && ItemSpace >= 1
+				Window 3204909,NEXT
+
+		#\n\n﹛中支丐﹜踞井月兮﹝\n﹛窒仄欠乩旦及沓牬互公木毛俓仄互匀化化卅﹜\n﹛抴卞引匹苇化寞萸仄支互月氏匹浇匀化凶氏分﹝\n﹛＿＿窒分方﹜公及翕中及杴反〝
+				Window 3204910,NEXT
+
+		#\n\n﹛乩旦及凶户匀化中丹及反刓轾五匹﹜掸反螂户凶\n﹛市皿市皿及累毛职及蛊卞嫖袄匹鳖ヨ允月午匹手\n﹛合匀化月氏元扎友尹分欠丹卅﹝
+				Window 3204911,OK
+
+		#\n\n﹛氏卅歹仃友□分欠﹝左伊迋反旦□由□旦正□﹜\n﹛中歹斗月本伊皮卅氏分兮﹝\n﹛今匀今午累毛湮仇仄化﹜垫匀切引中卅″
+
+					Window_OK Item_607701 >= 1 && ItemSpace >= 1
+						KillItem 607701,1
+						GiveItemEX 607970,1,3204912
+
+		#\n\n﹛平乒母丢母扑卞反仇及蔺爵据互中月氏分方﹝\n﹛绂坁及坞五仁日中综匀午仃方﹝
+						LeaveGroup
+						Warp 0,59801,108,46
+						EndBlock
+
+					Window_OK Item_607701 >= 1
+						EndWindow 3204913
+
+		#\n\n﹛平乒母丢母扑卞反仇及蔺爵据互中月氏分方﹝\n﹛绂坁及坞五仁日中综匀午仃方﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3204914
+
+		#\n\n﹛市皿市皿及累毛怅仄支互匀凶卅″\n﹛本戊奶蕞僻允月氏元扎友尹永″″
+						EndBlock
+
+			Window_YES Item_607701 >= 1
+				EndWindow 3204915
+
+		#\n\n﹛平乒母丢母扑卞反仇及蔺爵据互中月氏分方﹝\n﹛绂坁及坞五仁日中综匀午仃方﹝
+				EndBlock
+
+			Window_YES
+				EndWindow 3204916
+
+		#\n\n﹛市皿市皿及累毛怅仄支互匀凶卅″\n﹛本戊奶蕞僻允月氏元扎友尹永″″
+				EndBlock
+
+			Window_NO
+				EndWindow 3204917
+
+		#\n\n﹛元扎丐中中﹜丐匀切尺垫仃方﹝\n﹛齿ヨ及梁呺分″
+				EndBlock
+
+	else
+		Window 3204918,NEXT
+
+		#\n\n﹛云蟆﹜平乒母丢母扑卞辅笛匹五卅中弁民分卅﹝\n﹛显戋卞俇氏匹手拑蛲分兮﹜蝇日木月分仃分﹝\n﹛升丹仄化手辅笛仄凶中卅日﹜澎毛躯允兮﹝\n﹛手切欠氏﹜公木卅曰及坁毛中凶分仁互卅﹝\n﹛卅卞﹜凶中仄凶坁元扎卅中﹝
+		EndWindow 3204919
+
+		#\n\n﹛拺及棉?仃卅澡曰坁﹜市皿市皿及累分﹝\n﹛累毛左伊卞湮仇六壬﹜蔺爵据毛欐仄凶晓卞\n﹛仇匀公曰丝挚及朿盒引匹霜匀化支月方﹝\n﹛丐曰互凶仁匀化﹜ゲ中拸互鞅引日卅中分欠﹝\n﹛元扎丐﹜今匀今午累毛潸曰卞垫匀化仇中″
+		EndBlock
+
+	endif
+
+
+
+###﹛晓筏椭瘀动陆
+block
+	Window 3204920,YES,NO
+
+		#\n\n﹛云中﹜左伊迋互云蟆分仃卞冂帎?ヨ仄化支月﹝\n﹛乒用反仇及﹜市皿市皿及累分″\n﹛祂霜?谛瘀?仪抭?豪?示夫枘仃域濠殖氏匹﹜\n﹛凶匀凶及50000?分﹝兜中永﹜ョ尹″
+
+		Window_YES Gold >= 50000 && ItemSpace >= 1
+			Window 3204921,OK
+
+		#\n\n﹛亥永扑乓﹜脐匀呏″﹛厘屾寨″﹛壑棉襞日内″\n﹛仇及嗯反左伊迋及域谛ぃ盒≦莒罹末夫≧及\n﹛钒饕凤嗯午仄化﹜肣啦聒卞银歹六化手日丹兮﹝\n﹛歹井匀化月分欠丹互﹜忒圴反域濠云蝇曰分﹝\n﹛元扎﹜儅匀化仃永″
+
+				Window_OK Gold >= 50000 && ItemSpace >= 1
+					AddGold -50000
+					GiveItemEX 607701,1,3204922
+
+		#\n\n﹛左奶左奶左奶﹜ョ中坁毛允月午五反﹜\n﹛绂坁及坞五仁日中综匀午仃″
+
+				Window_OK Gold >= 50000
+					EndWindow 3204923
+
+		#\n\n﹛左奶左奶左奶﹜ョ中坁毛允月午五反﹜\n﹛绂坁及坞五仁日中综匀午仃″
+
+				Window_OK
+					EndWindow 3204924
+
+		#\n\n﹛嗯儅匀化友尹仁六卞﹜齿襟卞昙月氏元扎友尹″\n﹛左伊毛卅户月卅﹜袄娄五反域濠仄友尹﹝\n﹛俓仄仃曰扎绅中匹仇中″
+
+		Window_YES Gold >= 50000
+			EndWindow 3204925
+
+		#\n\n﹛左奶左奶左奶﹜ョ中坁毛允月午五反﹜\n﹛绂坁及坞五仁日中综匀午仃″
+
+		Window_YES
+			EndWindow 3204926
+
+		#\n\n﹛嗯儅匀化友尹仁六卞﹜齿襟卞昙月氏元扎友尹″\n﹛左伊毛卅户月卅﹜袄娄五反域濠仄友尹﹝\n﹛俓仄仃曰扎绅中匹仇中″
+
+		Window_NO
+			EndWindow 3204927
+
+		#\n\n﹛元扎丐中中﹜丐匀切尺垫仃方﹝\n﹛齿ヨ及梁呺分″
+
+
+

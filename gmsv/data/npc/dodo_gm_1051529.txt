@@ -1,0 +1,636 @@
+###dodo_gm_1051529.txt
+###拉杰法尔					为魔力大挑战之72小时不睡的最后裁判。											
+	 ####第23次确认--1小时
+###□身上有幸福的时钟 && 物品邮票 == 23 && 生成时间 < 60
+block Item 47062 >= 1 && StampCount 47062 == 23 && ItemCreateTime 47062 < 60 
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 23 && ItemCreateTime 47062 < 60 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 23 &&生成时间 > 65
+block Item 47062 >= 1 && StampCount 47062 == 23 && ItemCreateTime 47062 > 65
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 23 && ItemCreateTime 47062 > 65
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 23 &&生成时间 >= 60 &&生成时间 <= 65
+block Item 47062 >= 1 && StampCount 47062 == 23 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 ##1053751	\n\n你真是准时的好小孩，\n恭喜你达成了72小时不下线的考验。\n这是你的奖品，\n要好好保存呦！	1
+	 Window 1053751,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 23 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 	 	 ##（取走幸福的时钟，给予海贼香槟。）
+	 	 	 KillItem 47062
+	 	 	 GiveLeak1Item 45124 
+	 	 	 
+	 ####第22次确认--1小时
+###□身上有幸福的时钟 && 物品邮票 == 22 && 生成时间 < 60
+block Item 47062 >= 1 && StampCount 47062 == 22 && ItemCreateTime 47062 < 60 
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 22 && ItemCreateTime 47062 < 60 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 22 &&生成时间 > 65
+block Item 47062 >= 1 && StampCount 47062 == 22 && ItemCreateTime 47062 > 65
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 22 && ItemCreateTime 47062 > 65
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 22 &&生成时间 >= 60 &&生成时间 <= 65
+block Item 47062 >= 1 && StampCount 47062 == 22 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 ##1053752	\n\n你真是准时的好小孩，\n那么下次就再过1个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053752,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 22 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 	 	 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+	 	 	 
+	 ####第21次确认--1小时
+###□身上有幸福的时钟 &&物品邮票 == 21 &&生成时间 < 60
+block Item 47062 >= 1 && StampCount 47062 == 21 && ItemCreateTime 47062 < 60
+	 ##053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 21 && ItemCreateTime 47062 < 60 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 21 &&生成时间 > 65
+block Item 47062 >= 1 && StampCount 47062 == 21 && ItemCreateTime 47062 > 65
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 21 && ItemCreateTime 47062 > 65
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 21 &&生成时间 >= 60 &&生成时间 <= 65
+block Item 47062 >= 1 && StampCount 47062 == 21 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 ##1053752	\n\n你真是准时的好小孩，\n那么下次就再过1个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053752,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 21 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 	 	 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第20次确认--1小时
+###□身上有幸福的时钟 &&物品邮票 == 20 &&生成时间 < 60
+block Item 47062 >= 1 && StampCount 47062 == 20 && ItemCreateTime 47062 < 60
+	 ##053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 20 && ItemCreateTime 47062 < 60 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 20 &&生成时间 > 65
+block Item 47062 >= 1 && StampCount 47062 == 20 && ItemCreateTime 47062 > 65
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 20 && ItemCreateTime 47062 > 65
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 20 &&生成时间 >= 60 &&生成时间 <= 65
+block Item 47062 >= 1 && StampCount 47062 == 20 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 ##1053752	\n\n你真是准时的好小孩，\n那么下次就再过1个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053752,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 20 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 	 	 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+	 	 	 
+	 ####第19次确认--3小时
+##□身上有幸福的时钟 &&物品邮票 == 19 &&生成时间 < 180
+block Item 47062 >= 1 && StampCount 47062 == 19 && ItemCreateTime 47062 < 180
+	 ##053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 19 && ItemCreateTime 47062 < 180 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 19 &&生成时间 > 185
+block Item 47062 >= 1 && StampCount 47062 == 19 && ItemCreateTime 47062 > 185
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 19 && ItemCreateTime 47062 > 185
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 19 &&生成时间 >= 180 &&生成时间 <= 185
+block Item 47062 >= 1 && StampCount 47062 == 19 && ItemCreateTime 47062 >= 180 && ItemCreateTime 47062 <= 185
+	 ##1053752	\n\n你真是准时的好小孩，\n那么下次就再过1个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053752,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 19 && ItemCreateTime 47062 >= 180 && ItemCreateTime 47062 <= 185
+	 	 	 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+	 	 	 
+	 ####第18次确认--1小时
+###□身上有幸福的时钟 &&物品邮票 == 18 &&生成时间 < 60
+block Item 47062 >= 1 && StampCount 47062 == 18 && ItemCreateTime 47062 < 60
+	 ##053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 18 && ItemCreateTime 47062 < 60 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 18 &&生成时间 > 65
+block Item 47062 >= 1 && StampCount 47062 == 18 && ItemCreateTime 47062 > 65
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 18 && ItemCreateTime 47062 > 65
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 18 &&生成时间 >= 60 &&生成时间 <= 65
+block Item 47062 >= 1 && StampCount 47062 == 18 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 ##1053754	\n\n你真是准时的好小孩，\n那么下次就再过3个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053754,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 18 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 	 	 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第17次确认--7小时
+###□身上有幸福的时钟 &&物品邮票 == 17 &&生成时间 < 420
+block Item 47062 >= 1 && StampCount 47062 == 17 && ItemCreateTime 47062 < 420
+	 ##053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 17 && ItemCreateTime 47062 < 420 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 17 &&生成时间 > 425
+block Item 47062 >= 1 && StampCount 47062 == 17 && ItemCreateTime 47062 > 425
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 17 && ItemCreateTime 47062 > 425
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 17 &&生成时间 >= 420 &&生成时间 <= 425
+block Item 47062 >= 1 && StampCount 47062 == 17 && ItemCreateTime 47062 >= 420 && ItemCreateTime 47062 <= 425
+	 ##1053752	\n\n你真是准时的好小孩，\n那么下次就再过1个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053752,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 17 && ItemCreateTime 47062 >= 420 && ItemCreateTime 47062 <= 425
+	 	 	 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第16次确认--2小时
+###□身上有幸福的时钟 &&物品邮票 == 16 &&生成时间 < 120
+block Item 47062 >= 1 && StampCount 47062 == 16 && ItemCreateTime 47062 < 120
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 16 && ItemCreateTime 47062 < 120 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 16 &&生成时间 > 125
+block Item 47062 >= 1 && StampCount 47062 == 16 && ItemCreateTime 47062 > 125
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 16 && ItemCreateTime 47062 > 125
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 16 &&生成时间 >= 120 &&生成时间 <= 125
+block Item 47062 >= 1 && StampCount 47062 == 16 && ItemCreateTime 47062 >= 120 && ItemCreateTime 47062 <= 125
+	 ##1053758	\n\n你真是准时的好小孩，\n那么下次就再过7个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053758,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 16 && ItemCreateTime 47062 >= 120 && ItemCreateTime 47062 <= 125
+	 	 	 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+	 	 	 
+	 ####第15次确认--5小时
+###□身上有幸福的时钟 &&物品邮票 == 15 &&生成时间 < 300
+block Item 47062 >= 1 && StampCount 47062 == 15 && ItemCreateTime 47062 < 300
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 15 && ItemCreateTime 47062 < 300 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 15 &&生成时间 > 305
+block Item 47062 >= 1 && StampCount 47062 == 15 && ItemCreateTime 47062 > 305
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 15 && ItemCreateTime 47062 > 305
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 15 &&生成时间 >= 300 &&生成时间 <= 305
+block Item 47062 >= 1 && StampCount 47062 == 15 && ItemCreateTime 47062 >= 300 && ItemCreateTime 47062 <= 305
+	 ##1053753	\n\n你真是准时的好小孩，\n那么下次就再过2个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053753,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 15 && ItemCreateTime 47062 >= 300 && ItemCreateTime 47062 <= 305
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第14次确认--2小时
+###□身上有幸福的时钟 &&物品邮票 == 14 &&生成时间 < 120
+block Item 47062 >= 1 && StampCount 47062 == 14 && ItemCreateTime 47062 < 120
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 14 && ItemCreateTime 47062 < 120 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 14 &&生成时间 > 125
+block Item 47062 >= 1 && StampCount 47062 == 14 && ItemCreateTime 47062 > 125
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 14 && ItemCreateTime 47062 > 125
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 14 &&生成时间 >= 120 &&生成时间 <= 125
+block Item 47062 >= 1 && StampCount 47062 == 14 && ItemCreateTime 47062 >= 120 && ItemCreateTime 47062 <= 125
+	 ##1053756	\n\n你真是准时的好小孩，\n那么下次就再过5个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053756,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 14 && ItemCreateTime 47062 >= 120 && ItemCreateTime 47062 <= 125
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第13次确认--6小时
+###□身上有幸福的时钟 &&物品邮票 == 13 &&生成时间 < 360
+block Item 47062 >= 1 && StampCount 47062 == 13 && ItemCreateTime 47062 < 360
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 13 && ItemCreateTime 47062 < 360 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+	 	 	 
+###□身上有幸福的时钟 &&物品邮票 == 13 &&生成时间 > 365
+block Item 47062 >= 1 && StampCount 47062 == 13 && ItemCreateTime 47062 > 365
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 13 && ItemCreateTime 47062 > 365
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+	 	 	 
+###□身上有幸福的时钟 &&物品邮票 == 13 &&生成时间 >= 360 &&生成时间 <= 365
+block Item 47062 >= 1 && StampCount 47062 == 13 && ItemCreateTime 47062 >= 360 && ItemCreateTime 47062 <= 365
+	 ##1053753	\n\n你真是准时的好小孩，\n那么下次就再过2个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053753,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 13 && ItemCreateTime 47062 >= 360 && ItemCreateTime 47062 <= 365
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第12次确认--1小时
+###□身上有幸福的时钟 &&物品邮票 == 12 &&生成时间 < 60
+block Item 47062 >= 1 && StampCount 47062 == 12 && ItemCreateTime 47062 < 60
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 12 && ItemCreateTime 47062 < 60 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 12 &&生成时间 > 65
+block Item 47062 >= 1 && StampCount 47062 == 12 && ItemCreateTime 47062 > 65
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 12 && ItemCreateTime 47062 > 65
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 12 &&生成时间 >= 60 &&生成时间 <= 65
+block Item 47062 >= 1 && StampCount 47062 == 12 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 ##1053757	\n\n你真是准时的好小孩，\n那么下次就再过6个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053757,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 12 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第11次确认--4小时
+###□身上有幸福的时钟 &&物品邮票 == 11 &&生成时间 < 240
+block Item 47062 >= 1 && StampCount 47062 == 11 && ItemCreateTime 47062 < 240
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 11 && ItemCreateTime 47062 < 240 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 11 &&生成时间 > 245
+block Item 47062 >= 1 && StampCount 47062 == 11 && ItemCreateTime 47062 > 245
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 11 && ItemCreateTime 47062 > 245
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 11 &&生成时间 >= 240 &&生成时间 <= 245
+block Item 47062 >= 1 && StampCount 47062 == 11 && ItemCreateTime 47062 >= 240 && ItemCreateTime 47062 <= 245
+	 ##1053752	\n\n你真是准时的好小孩，\n那么下次就再过1个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053752,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 11 && ItemCreateTime 47062 >= 240 && ItemCreateTime 47062 <= 245
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第10次确认--3小时
+###□身上有幸福的时钟 &&物品邮票 == 10 &&生成时间 < 180
+block Item 47062 >= 1 && StampCount 47062 == 10 && ItemCreateTime 47062 < 180
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 10 && ItemCreateTime 47062 < 180 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 10 &&生成时间 > 185
+block Item 47062 >= 1 && StampCount 47062 == 10 && ItemCreateTime 47062 > 185
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 10 && ItemCreateTime 47062 > 185
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 10 &&生成时间 >= 180 &&生成时间 <= 185
+block Item 47062 >= 1 && StampCount 47062 == 10 && ItemCreateTime 47062 >= 180 && ItemCreateTime 47062 <= 185
+	 ##1053755	\n\n你真是准时的好小孩，\n那么下次就再过4个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053755,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 10 && ItemCreateTime 47062 >= 180 && ItemCreateTime 47062 <= 185
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第9次确认--8小时
+###□身上有幸福的时钟 &&物品邮票 == 9 &&生成时间 < 480
+block Item 47062 >= 1 && StampCount 47062 == 9 && ItemCreateTime 47062 < 480
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 9 && ItemCreateTime 47062 < 480 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 9 &&生成时间 > 485
+block Item 47062 >= 1 && StampCount 47062 == 9 && ItemCreateTime 47062 > 485
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 9 && ItemCreateTime 47062 > 485
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 9 &&生成时间 >= 480 &&生成时间 <= 485
+block Item 47062 >= 1 && StampCount 47062 == 9 && ItemCreateTime 47062 >= 480 && ItemCreateTime 47062 <= 485
+	 ##1053754	\n\n你真是准时的好小孩，\n那么下次就再过3个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053754,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 9 && ItemCreateTime 47062 >= 480 && ItemCreateTime 47062 <= 485
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第8次确认--5小时
+###□身上有幸福的时钟 &&物品邮票 == 8 &&生成时间 < 300
+block Item 47062 >= 1 && StampCount 47062 == 8 && ItemCreateTime 47062 < 300
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 8 && ItemCreateTime 47062 < 300 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 8 &&生成时间 > 305
+block Item 47062 >= 1 && StampCount 47062 == 8 && ItemCreateTime 47062 > 305
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 8 && ItemCreateTime 47062 > 305
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 8 &&生成时间 >= 300 &&生成时间 <= 305
+block Item 47062 >= 1 && StampCount 47062 == 8 && ItemCreateTime 47062 >= 300 && ItemCreateTime 47062 <= 305
+	 ##1053759	\n\n你真是准时的好小孩，\n那么下次就再过8个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053759,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 8 && ItemCreateTime 47062 >= 300 && ItemCreateTime 47062 <= 305
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第7次确认--1小时
+###□身上有幸福的时钟 &&物品邮票 == 7 &&生成时间 < 60
+block Item 47062 >= 1 && StampCount 47062 == 7 && ItemCreateTime 47062 < 60
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 7 && ItemCreateTime 47062 < 60 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 7 &&生成时间 > 65
+block Item 47062 >= 1 && StampCount 47062 == 7 && ItemCreateTime 47062 > 65
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 7 && ItemCreateTime 47062 > 65
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 7 &&生成时间 >= 60 &&生成时间 <= 65
+block Item 47062 >= 1 && StampCount 47062 == 7 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 ##1053756	\n\n你真是准时的好小孩，\n那么下次就再过5个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053756,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 7 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第6次确认--6小时
+###□身上有幸福的时钟 &&物品邮票 == 6 &&生成时间 < 360
+block Item 47062 >= 1 && StampCount 47062 == 6 && ItemCreateTime 47062 < 360
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 6 && ItemCreateTime 47062 < 360 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 6 &&生成时间 > 365
+block Item 47062 >= 1 && StampCount 47062 == 6 && ItemCreateTime 47062 > 365
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 6 && ItemCreateTime 47062 > 365
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 6 &&生成时间 >= 360 &&生成时间 <= 365
+block Item 47062 >= 1 && StampCount 47062 == 6 && ItemCreateTime 47062 >= 360 && ItemCreateTime 47062 <= 365
+	 ##1053752	\n\n你真是准时的好小孩，\n那么下次就再过1个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053752,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 6 && ItemCreateTime 47062 >= 360 && ItemCreateTime 47062 <= 365
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第5次确认--4小时
+###□身上有幸福的时钟 &&物品邮票 == 5 &&生成时间 < 240
+block Item 47062 >= 1 && StampCount 47062 == 5 && ItemCreateTime 47062 < 240
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 5 && ItemCreateTime 47062 < 240 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 5 &&生成时间 > 245
+block Item 47062 >= 1 && StampCount 47062 == 5 && ItemCreateTime 47062 > 245
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 5 && ItemCreateTime 47062 > 245
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 5 &&生成时间 >= 240 &&生成时间 <= 245
+block Item 47062 >= 1 && StampCount 47062 == 5 && ItemCreateTime 47062 >= 240 && ItemCreateTime 47062 <= 245
+	 ##1053757	\n\n你真是准时的好小孩，\n那么下次就再过6个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053757,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 5 && ItemCreateTime 47062 >= 240 && ItemCreateTime 47062 <= 245
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第4次确认--1小时
+###□身上有幸福的时钟 &&物品邮票 == 4 &&生成时间 < 60
+block Item 47062 >= 1 && StampCount 47062 == 4 && ItemCreateTime 47062 < 60
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 4 && ItemCreateTime 47062 < 60 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 4 &&生成时间 > 65
+block Item 47062 >= 1 && StampCount 47062 == 4 && ItemCreateTime 47062 > 65
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 4 && ItemCreateTime 47062 > 65
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 4 &&生成时间 >= 60 &&生成时间 <= 65
+block Item 47062 >= 1 && StampCount 47062 == 4 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+	 ##1053755	\n\n你真是准时的好小孩，\n那么下次就再过4个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053755,OK 
+	 	  Window_OK Item 47062 >= 1 && StampCount 47062 == 4 && ItemCreateTime 47062 >= 60 && ItemCreateTime 47062 <= 65
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第3次确认--3小时
+###□身上有幸福的时钟 &&物品邮票 == 3 &&生成时间 < 180
+block Item 47062 >= 1 && StampCount 47062 == 3 && ItemCreateTime 47062 < 180
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 3 && ItemCreateTime 47062 < 180 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 3 &&生成时间 > 185
+block Item 47062 >= 1 && StampCount 47062 == 3 && ItemCreateTime 47062 > 185
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 3 && ItemCreateTime 47062 > 185
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 3 &&生成时间 >= 180 &&生成时间 <= 185
+block Item 47062 >= 1 && StampCount 47062 == 3 && ItemCreateTime 47062 >= 180 && ItemCreateTime 47062 <= 185
+	 ##1053752	\n\n你真是准时的好小孩，\n那么下次就再过1个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053752,OK 
+	 	  Window_OK Item 47062 >= 1 && StampCount 47062 == 3 && ItemCreateTime 47062 >= 180 && ItemCreateTime 47062 <= 185
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第2次确认--4小时
+###□身上有幸福的时钟 &&物品邮票 == 2 &&生成时间 < 240
+block Item 47062 >= 1 && StampCount 47062 == 2 && ItemCreateTime 47062 < 240
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 2 && ItemCreateTime 47062 < 240 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 2 &&生成时间 > 245
+block Item 47062 >= 1 && StampCount 47062 == 2 && ItemCreateTime 47062 > 245
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 2 && ItemCreateTime 47062 > 245
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 2 &&生成时间 >= 240 &&生成时间 <= 245
+block Item 47062 >= 1 && StampCount 47062 == 2 && ItemCreateTime 47062 >= 240 && ItemCreateTime 47062 <= 245
+	 ##1053754	\n\n你真是准时的好小孩，\n那么下次就再过3个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053754,OK 
+	 	  Window_OK Item 47062 >= 1 && StampCount 47062 == 2 && ItemCreateTime 47062 >= 240 && ItemCreateTime 47062 <= 245
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+	 ####第1次确认--2小时
+###□身上有幸福的时钟 &&物品邮票 == 1 &&生成时间 < 120
+block Item 47062 >= 1 && StampCount 47062 == 1 && ItemCreateTime 47062 < 120
+	 ##1053749	\n\n你来的太早了，\n时间还没有到，\n所以你已经失去挑战资格了。	1
+	 Window 1053749,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 1 && ItemCreateTime 47062 < 120 
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23
+
+###□身上有幸福的时钟 &&物品邮票 == 1 &&生成时间 > 125
+block Item 47062 >= 1 && StampCount 47062 == 1 && ItemCreateTime 47062 > 125
+	 ##1053750	\n\n你迟到了！\n所以你失去的挑战资格，\n下次记得一定要准时呦！\n欢迎再次来挑战。	1
+	 Window 1053750,OK 
+	 	 Window_OK Item 47062 >= 1 && StampCount 47062 == 1 && ItemCreateTime 47062 > 125
+	 	 	 ##（取走幸福的时钟，传送到豪宅一楼。）
+	 	 	 KillItem 47062
+	 	 	 Warp 0,1193,24,23	 	 	 
+
+###□身上有幸福的时钟 &&物品邮票 == 1 &&生成时间 >= 120 &&生成时间 <= 125
+block Item 47062 >= 1 && StampCount 47062 == 1 && ItemCreateTime 47062 >= 120 && ItemCreateTime 47062 <= 125
+	 ##1053755	\n\n你真是准时的好小孩，\n那么下次就再过4个小时来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053755,OK 
+	 	  Window_OK Item 47062 >= 1 && StampCount 47062 == 1 && ItemCreateTime 47062 >= 120 && ItemCreateTime 47062 <= 125
+			 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+###□身上有幸福的时钟
+block Item 47062 >= 1
+	 ##1053774	\n\n你准备好了吧！\n那么2小时后再来找我确认，\n我只会等你5分钟呦，逾时不候！\n从你按下确定之后开始计时。	1
+	 Window 1053774,OK 
+	 	 Window_OK Item 47062 >= 1 
+	 	 	 ##（物品邮票+1。）
+	 	 	 AddStampCount 47062,+1
+
+###□一般
+block 
+	 ##1053760	\n\n我们正在进行“魔力大挑战之72小时不睡”的任务，\n只要挑战成功就能够得到海贼香槟一个，\n如果你有兴趣想要了解的话，\n可以到里谢里雅堡找小琪询问，\n小琪一定会给你最完整的解说。	1
+	 EndWindow 1053760 

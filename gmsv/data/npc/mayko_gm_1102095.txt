@@ -1,0 +1,15 @@
+################### 商城管理员
+block Item 40710>=1
+	 ##有长老徽章
+	 Window 1102501,YES,NO 
+	  	 Window_YES Group > 1
+	 		EndWindow 1100000
+	 	 Window_YES	 
+		 	LeaveGroup
+	 	 	Warp 0,32213,10,2
+		 	Endblock
+		 Window_NO 
+		 	Endblock
+block	 
+	 EndWindow 1102502	 	 	 
+	 	 	 

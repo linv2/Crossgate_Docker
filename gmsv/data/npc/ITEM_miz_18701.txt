@@ -1,0 +1,49 @@
+#
+#½ÊØêÔÂ¥öÎË¼°ÈÛ
+#
+
+##############  ##############
+block BBImage >= 100000 && BBImage <= 100024
+
+	EndWindow 20693,OK
+
+block BBImage >= 100250 && BBImage <= 100274
+
+	EndWindow 20693,OK
+
+block BBImage >= 105000 && BBImage <= 105024
+
+	EndWindow 20693,OK
+
+block BBImage >= 105250 && BBImage <= 105274
+
+	EndWindow 20693,OK
+
+block BBImage >= 106000 && BBImage <= 106024
+
+	EndWindow 20693,OK
+
+block BBImage >= 106250 && BBImage <= 106274
+
+	EndWindow 20693,OK
+
+block BBImage >= 106100 && BBImage <= 106124
+
+	EndWindow 20693,OK
+
+block BBImage >= 106350 && BBImage <= 106374
+
+	EndWindow 20693,OK
+
+block BBImage >= 105525 && BBImage <= 105548
+	EndWindow 20693,OK
+##############################
+block
+
+	EndEvent 29 = 1
+	CheckTitle
+	KillItem 18701,1,(20696)
+	EndWindow 20692,OK
+	
+
+

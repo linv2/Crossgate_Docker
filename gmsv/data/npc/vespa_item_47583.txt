@@ -1,0 +1,30 @@
+####3月EC
+###■携带小护士mini		双点可回复FP500、LP250,但需要花费500魔币 , 可使用 30次。
+
+
+ ####□一般
+block
+	 ##1054786	\n\n是否想使用携带小护士mini呢？	1
+	 Window 1054786,YES,NO
+	 	 Window_NO
+	 	 
+	 	  Window_YES Gold < 500
+	 	 	 ##9012	\n\n你的钱不够	7
+	 	 	 EndWindow 9012
+	 	 Window_YES Item 47583 >=2
+	 	 	 ##1054787	\n\n\n携带小护士mini\n如果持有２个以上是无法使用的喔～	1
+			 EndWindow 1054787
+		 Window_YES Item 47583 ==1  && ItemDur 47583 ==1
+		 	 ##1054788	携带小护士mini消失了。	1
+			 KillItem 47583,1,(1054788)
+			 AddGold -500
+			 setfp +500
+			 setlp +250
+		 Window_YES Item 47583 ==1 && ItemDur 47583 >1		 
+	 	 	 ##1054789	使用了携带小护士mini。	1
+ 			 AddGold -500
+			 setfp +500
+			 setlp +250
+	 	 	 SetDur 47583,-1
+	 	 	 Message 1054789
+	 	 	 

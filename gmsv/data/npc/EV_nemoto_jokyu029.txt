@@ -1,0 +1,609 @@
+##########################
+# 晓菟缜         by 漪呿 #
+# ←鳗牖允月樊←         #
+##########################
+
+
+######## 晓菟缜////痿缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 205 && Job <= 209 && SkillLevel 200 < 10
+	Window 3208366,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 205 && Job <= 209 && SkillLevel 200 >= 10
+	Window 3208367,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 25
+			GiveRecipe 26
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////忕缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 215 && Job <= 219 && SkillLevel 201 < 10
+	Window 3208368,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 215 && Job <= 219 && SkillLevel 201 >= 10
+	Window 3208369,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 85
+			GiveRecipe 86
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////键缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 225 && Job <= 229 && SkillLevel 202 < 10
+	Window 3208370,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 225 && Job <= 229 && SkillLevel 202 >= 10
+	Window 3208371,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 145
+			GiveRecipe 146
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////菰缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 235 && Job <= 239 && SkillLevel 203 < 10
+	Window 3208372,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 235 && Job <= 239 && SkillLevel 203 >= 10
+	Window 3208373,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 205
+			GiveRecipe 206
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////橡缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 245 && Job <= 249 && SkillLevel 204 < 10
+	Window 3208374,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 245 && Job <= 249 && SkillLevel 204 >= 10
+	Window 3208375,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 265
+			GiveRecipe 266
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////髑填缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 255 && Job <= 259 && SkillLevel 205 < 10
+	Window 3208376,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 255 && Job <= 259 && SkillLevel 205 >= 10
+	Window 3208377,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 325
+			GiveRecipe 326
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////瓜奶白缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 265 && Job <= 269 && SkillLevel 206 < 10
+	Window 3208378,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 265 && Job <= 269 && SkillLevel 206 >= 10
+	Window 3208379,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 385
+			GiveRecipe 386
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////场缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 275 && Job <= 279 && SkillLevel 207 < 10
+	Window 3208380,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 275 && Job <= 279 && SkillLevel 207 >= 10
+	Window 3208381,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 445
+			GiveRecipe 446
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////佴阂缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 285 && Job <= 289 && SkillLevel 208 < 10
+	Window 3208382,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 285 && Job <= 289 && SkillLevel 208 >= 10
+	Window 3208383,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 505
+			GiveRecipe 506
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////顶缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 295 && Job <= 299 && SkillLevel 209 < 10
+	Window 3208384,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 295 && Job <= 299 && SkillLevel 209 >= 10
+	Window 3208385,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 565
+			GiveRecipe 566
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////汋缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 305 && Job <= 309 && SkillLevel 210 < 10
+	Window 3208386,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 305 && Job <= 309 && SkillLevel 210 >= 10
+	Window 3208387,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 625
+			GiveRecipe 626
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////夫□皮缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 315 && Job <= 319 && SkillLevel 211 < 10
+	Window 3208388,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 315 && Job <= 319 && SkillLevel 211 >= 10
+	Window 3208389,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 685
+			GiveRecipe 686
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////皮□汁缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 325 && Job <= 329 && SkillLevel 212 < 10
+	Window 3208390,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 325 && Job <= 329 && SkillLevel 212 >= 10
+	Window 3208391,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 745
+			GiveRecipe 746
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////楔缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 335 && Job <= 339 && SkillLevel 213 < 10
+	Window 3208392,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 335 && Job <= 339 && SkillLevel 213 >= 10
+	Window 3208393,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 805
+			GiveRecipe 806
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////贱缜谛 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 345 && Job <= 349 && SkillLevel 214 < 10
+	Window 3208394,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 345 && Job <= 349 && SkillLevel 214 >= 10
+	Window 3208395,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 865
+			GiveRecipe 866
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////譬咥阁 ####################
+#### 毁杹旦平伙互R10匹反卅中
+block Job >= 355 && Job <= 359 && SkillLevel 215 < 10
+	Window 3208396,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 355 && Job <= 359 && SkillLevel 215 >= 10
+	Window 3208397,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 924
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+
+
+
+######## 晓菟缜////泔管阁 ####################
+block Job >= 365 && Job <= 369 && SkillLevel 216 < 10
+	Window 3208398,OK
+
+		#\n\n﹛丐卅凶卞反引分﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+#### 毁杹旦平伙互R10卞卅匀化中月
+block Job >= 365 && Job <= 369 && SkillLevel 216 >= 10
+	Window 3208399,OK
+
+		#\n\n﹛仇木反﹜伙申迋互丐卅凶及凶户卞迕啦仄凶﹜\n﹛午匀化云五及伊扑疋匹允﹝\n﹛中勾井五匀午﹜公及伊扑疋匹综匀凶坁毛﹜\n﹛伙申迋卞苇六化丐仆化仁分今中友﹝
+
+		Window_OK
+			GiveRecipe 980
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+
+
+
+
+#### 晓筏动陆
+block
+	Window 3208400,OK
+
+		#\n\n﹛丐卅凶卞反﹜\n﹛仇及伊扑疋卞锹杀仄中恘反卅中方丹匹允友﹝
+
+		Window_OK
+			LeaveGroup
+			warp 0,59934,51,126
+Endblock
+
+
+
+

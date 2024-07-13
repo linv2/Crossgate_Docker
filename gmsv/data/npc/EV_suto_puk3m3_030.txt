@@ -1,0 +1,47 @@
+#PUK3_main3
+#
+#
+#naia
+
+
+Block 
+
+		GAWindow 3219830,Next
+
+		#\n\n﹛勾中卞支匀凶歹友＿＿﹝\n﹛螃啖及洘酦手仇及壑钗井日澎毛娄中凶﹝\n﹛仇木匹﹜仇及壑钗反钒旵今木凶及方﹝\n﹛漆引匹及翔懋支漱か手\n﹛蝈化仇及午五及凶户分匀凶及﹝\n﹛螃啖及洘酦及湛卞卅月梁呺卅擎昵手\n﹛铵坱仄化云中化恌井匀凶歹﹝
+		
+		GAWindow 3219831,Next
+
+		#\n\n﹛丐卅凶凶切卞恘毛躯仄化五凶及反\n﹛漆仇及午五毛牒尹月凶户﹝
+		
+		GAWindow 3219832,Next
+
+		#\n\n﹛今丐﹜蝈化互蔽歹曰﹜蝈化互铵引月﹝
+		
+		GAWindow 3219833,Next
+
+		#\n\n﹛仇及壑钗反友﹜\n﹛凛及锉卞方匀化综日木凶手及卅及﹝\n﹛分井日﹜螃互中卅中﹝\n﹛公木毛综匀凶手及互绣箕仄卅中井日＿＿﹝\n﹛域勾分仃晓匏及绣箕卞癫化反引月午仄凶日﹜\n﹛凛及锉公及手及仁日中匹仄斤丹友﹝
+		
+		GAWindow 3219834,Next
+
+		#\n\n﹛丐卅凶凶切卞反\n﹛中仁日豢斪毛蜕匀化手箫曰卅中歹﹝\n﹛丹孔孔孔孔﹝
+		
+		GAWindow 3219835,Next
+
+		#\n\n﹛仇木方曰﹜壑钗反愤苀卞卅月﹝\n﹛＿＿公仄化﹜台及合中手岳耦今木月″
+		
+		GAWindow 3219836,Next
+
+		#\n\n﹛丹孔孔孔孔﹝
+		
+		GAWindow 3219837,Next
+
+		#\n\n﹛仇木匹﹜\n﹛仇木匹﹜仇木匹﹜
+		
+		GAWindow 3219838,OK
+
+		#\n\n﹛丹仃\n﹛丹仃仃仃﹝
+		
+				Window_OK
+				
+					warp 0,59985,156,171

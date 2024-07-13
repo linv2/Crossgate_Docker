@@ -1,0 +1,20 @@
+#佌罹及杹?
+
+#佌罹及筵踏毛儅匀化中月
+block Item 16442 >= 1
+	Window 23187,OK
+		Window_OK
+			Encount 2|0,33602,15,45||0|||||0|20047|||||||||
+#
+block
+		Window 23192,Yes,No
+			Window_Yes
+				Window 23189,OK
+					Window_OK
+						LeaveGroup
+						Warp 0,33000,468,381
+			Window_No
+				Window 23190,OK
+					Window_OK
+						LeaveGroup
+						Warp 0,33000,468,381

@@ -1,0 +1,20 @@
+#缙俓及杹?
+
+#缙俓及筵踏毛儅匀化中月
+block Item 16443 >= 1
+	Window 23187,OK
+		Window_OK
+			Encount 2|0,33603,46,21||0|||||0|20048|||||||||
+#
+block
+		Window 23193,Yes,No
+			Window_Yes
+				Window 23189,OK
+					Window_OK
+						LeaveGroup
+						Warp 0,33000,468,381
+			Window_No
+				Window 23190,OK
+					Window_OK
+						LeaveGroup
+						Warp 0,33000,468,381

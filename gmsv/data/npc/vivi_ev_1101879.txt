@@ -1,0 +1,35 @@
+#####不可思议系列三：恶梦#####
+##井
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+#■ 有水桶
+block Item 40294 >= 1
+	 ##1102066	\n\n\n  一口结冰的水井，水桶还被拿走了！	1
+	 EndWindow 1102066
+	 
+#■ 有史莱姆造型娃娃 或  绳子
+block Item 40298 >= 1 || Item 40295 >= 1
+	 ##1102067	\n\n\n  要把水井上挂的水桶拿走吗？	1
+	 Window 1102067,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES
+	 	 	 ##1102068	\n\n\n  用完记得物归原位喔！	1
+	 		 Window 1102068,OK 
+	 		 	 Window_OK ItemSpace == 0
+	 		 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 				 EndWindow 1100001
+	 		 	 Window_OK ItemSpace >= 1 
+	 		 	 #得到水桶
+	 		 	 GiveLeak1Item (40294%1$1)
+
+#■ 一般
+block 	
+	 ##1102069	\n\n\n\n@c一口结冰的水井。	1
+	 EndWindow 1102069
+	 

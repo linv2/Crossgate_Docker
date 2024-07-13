@@ -1,0 +1,7 @@
+#?????????üÒ??
+
+block
+	Window 22320,YES,NO
+		Window_YES
+			Warp 0,47006,33,54
+		Window_NO

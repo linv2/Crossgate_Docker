@@ -1,0 +1,168 @@
+#Ê§µ©·ºØøÊ§ó¦¸Ò
+#»÷à{¼°ÃÞ±åÖÐÔÂ
+
+############## ÏØ½´ÛÕ»× ##############
+block Item 18492 != 0
+	KillItem 18492
+#\n\n©x¹«¼°ÏØ½´·´ÔÆß¯ØÆÆ±½ñÖÐ©z
+	EndWindow 14764,OK
+
+############## ÏØ½´ÛÕ»× ##############
+block Item 18493 != 0
+	KillItem 18493
+#\n\n©x¹«¼°ÏØ½´·´ÔÆß¯ØÆÆ±½ñÖÐ©z
+	EndWindow 14764,OK
+
+############## ÏØ½´ÛÕ»× ##############
+block Item 18494 != 0
+	KillItem 18494
+#\n\n©x¹«¼°ÏØ½´·´ÔÆß¯ØÆÆ±½ñÖÐ©z
+	EndWindow 14764,OK
+
+############## ÏØ½´ÛÕ»× ##############
+block Item 18495 != 0
+	KillItem 18495
+#\n\n©x¹«¼°ÏØ½´·´ÔÆß¯ØÆÆ±½ñÖÐ©z
+	EndWindow 14764,OK
+
+############## ÏØ½´ÛÕ»× ##############
+block Item 18496 != 0
+	KillItem 18496
+#\n\n©x¹«¼°ÏØ½´·´ÔÆß¯ØÆÆ±½ñÖÐ©z
+	EndWindow 14764,OK
+
+############## ÏØ½´ÛÕ»× ##############
+block Item 18497 != 0
+	KillItem 18497
+#\n\n©x¹«¼°ÏØ½´·´ÔÆß¯ØÆÆ±½ñÖÐ©z
+	EndWindow 14764,OK
+
+############## ÏØ½´ÛÕ»× ##############
+block Item 18498 != 0
+	KillItem 18498
+#\n\n©x¹«¼°ÏØ½´·´ÔÆß¯ØÆÆ±½ñÖÐ©z
+	EndWindow 14764,OK
+
+############## ÏØ½´ÛÕ»× ##############
+block Item 18499 != 0
+	KillItem 18499
+#\n\n©x¹«¼°ÏØ½´·´ÔÆß¯ØÆÆ±½ñÖÐ©z
+	EndWindow 14764,OK
+	
+
+############## ñÉÆ½ÅÒ·Â¼°èëÄþ ##############  
+##¾É°æÄÐ½ÇÈº
+block BBImage >= 100000 && BBImage <= 100173
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,9,24
+##ÁúÉ°¾ÉÄÐ½Ç
+block BBImage >= 105000 && BBImage <= 105173
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,9,24
+##ÁúÉ°ÄÐ½Ç
+block BBImage >= 106000 && BBImage <= 106173
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,9,24
+##Ì¨Íå5.0 ÄÐÐÔ ±¬µ¯Ê¦ °ÂÂê
+block BBImage >= 105500 && BBImage <= 105523
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,9,24
+##Ì¨Íå6.0 ÄÐÐÔ ¿¨¿¨Î÷
+block BBImage >= 104460 && BBImage <= 104483
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,9,24
+##Ì¨Íå6.0 ÄÐÐÔ ²ÝÕµ
+block BBImage >= 104490 && BBImage <= 104513
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,9,24
+##Ì¨Íå7.0 ÄÐÐÔ ¿ÜÄÉË¹
+block BBImage >= 120124 && BBImage <= 120147
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,9,24
+
+
+############## »ÔÆ½ÅÒ·Â¼°èëÄþ ##############
+##¾É°æÅ®½ÇÈº
+block BBImage >= 100250 && BBImage <= 100423
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,10,75
+##ÁúÉ°¾ÉÅ®½Ç
+block BBImage >= 105250 && BBImage <= 105423
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,10,75
+##ÁúÉ°Å®½Ç
+block BBImage >= 106250 && BBImage <= 106423
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,10,75
+##Ì¨Íå5.0 Å®ÐÔ ·ÄÖ¯Å® ÅËÄÝ
+block BBImage >= 105525 && BBImage <= 105548
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,10,75
+##Ì¨Íå6.0 Å®ÐÔ ÀòÀòË¿
+block BBImage >= 104400 && BBImage <= 104423
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,10,75
+##Ì¨Íå6.0 Å®ÐÔ ÑÇ¼Í¹«Ö÷
+block BBImage >= 104430 && BBImage <= 104453
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,10,75
+##Ì¨Íå7.0 Å®ÐÔ °¢ÄÈµÙÑÅ
+block BBImage >= 120100 && BBImage <= 120123
+#\n\n©xÓú—W¼°ÃÞÆ¥Æ¤»ï¶ªÄÌ»ïè–ÀåÃúÏîÞ‚»¥ÔÆ½÷ÇÐÆ¥ÔÊ©z
+	Window 14735,OK
+	Window_OK
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24003,10,75

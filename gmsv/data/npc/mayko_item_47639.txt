@@ -1,0 +1,33 @@
+###布雷欧召唤书	mayko_item_47639.txt	
+
+
+block lp < 200 && Item 47639 >= 1
+	 ##1109600	\n\n\n\n\n@c你的生命值不足，无法召唤宠物！	1																						
+	 EndWindow 1109600
+	 
+block PetSpace == 0 
+	 ##1109601	\n\n\n\n\n@c你的宠物栏已满！	1																						
+	 EndWindow 1109601
+	 
+block lp >= 200 && Item 47639>= 1
+	 ##1109602	\n\n\n\n\n@c你是否献上鲜血为祭，使用召唤书．．．	1																						
+	 Window 1109602,YES,NO
+	 	 Window_NO
+	 	 	 
+	 	 Window_YES  PetSpace == 0 
+	 	 	 ##1109601	\n\n\n\n\n@c你的宠物栏已满！	1																						
+	 		 EndWindow 1109601	 	
+	 		 
+	 	 Window_YES lp < 200
+	 		 ##1109600	\n\n\n\n\n@c你的生命值不足，无法召唤宠物！	1																						
+	 		 EndWindow 1109600
+	 		 
+	 	 Window_YES lp >= 200 && Item 47639 >= 1
+	 	 	 KillItem 47639,1
+	 	 	  setlp -200
+	 	 	  GivePet 21203
+
+	 	 	  ##1054937	\n\n\n\n\n@成功召唤布雷欧！
+																				
+			  EndWindow 1054937
+

@@ -1,0 +1,37 @@
+########### 魔力大会考Start ###########
+######■皮西斯爵士
+##■检查人数
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 Window_NO 
+##■有大考验参赛证
+block Item 45320 >= 1 
+         ##1050673	\n\n\n\n@c你是要来参加魔力知识大考验的吗？
+	 Window 1050673,YES,NO 
+	 	 Window_NO
+	 	         ##1050674	\n\n\n\n@c那等你准备好了再来找我吧！
+	 	 	 EndWindow 1050674	 	 
+	 	 Window_YES
+	 	 	 ##1050675	\n\n\n\n@c这个挑战可能会持续15分钟左右喔，而且途中不能离开，离开就算失败，确定要进去吗？
+	 	 	 Window 1050675,YES,NO
+	 	 	 	 Window_NO
+	 	        	  	 ##1050674	\n\n\n\n@c那等你准备好了再来找我吧！
+	 	 	 	 	 EndWindow 1050674	 	 	 	 	 	   
+	 	 	 	 Window_YES Group == 1 && Item 45320 >= 1
+	 	 	 	 	 KillItem 45320
+	 	 	 	 	 GiveLeak1Item 45335
+	 	 	 	 	 Warp 0,32681,3,10
+##■一般
+block 
+         ##1050676	\n\n想参加紧张刺激的魔力知识大考验吗？\n\n那得有大考验参赛证才行喔！
+         EndWindow 1050676
+	  	 	 	 	 
+	 	 	 	 	 
+	 	 	 	 		
+	 	 	 
+	 	 	
+	 	 

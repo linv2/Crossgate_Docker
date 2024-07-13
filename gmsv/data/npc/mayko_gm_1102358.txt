@@ -1,0 +1,17 @@
+#1102358
+#1109548	生命的永恒，不在于不死，而是在人们记忆中永远不会遗忘。
+#1109549	推开这扇门，将进入永恒平静之所。
+#1109550	你没有资格进入这扇门。
+
+#31913	21	22
+
+
+block	Xpos >20  && Ypos == 22
+	 Window 1109548,NEXT
+	 Window 1109549,OK
+	 Window_OK Item 40834>0	 	 
+	 	 LeaveGroup
+	 	 Warp 0,31914,3,14
+	 	 Endblock
+	 Window_OK
+	 EndWindow 1109550

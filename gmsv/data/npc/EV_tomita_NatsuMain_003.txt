@@ -1,0 +1,69 @@
+#﹛笙渝蜃烂母件斥亦件﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛伊白脐及摒
+
+###﹛苏颗及珃挎﹋631051﹌毛赭儅
+block Item_631051 >= 1
+	Window 3207147,NEXT
+
+		#\n\n﹛云丹﹜窒分〝﹛珃懔反公丹窒蜊手ヨ日卅中兮﹝\n﹛公木午手丐木井﹜云木及仇及苇凶杴井日\n﹛＞窒★允月市瓦＝心化尹卅仄扎屯曰杅毛\n﹛渝谨仄化狪仄井仃凶及井〝
+	EndWindow 3207148
+
+		#\n\n﹛暸襟元扎友尹″\n﹛仇及釭桦伊白脐迋反卅﹜公仇日及市瓦午反\n﹛市瓦立末及请侳互啜丹氏匹中永″\n﹛穴打穴打仄化月午芃蹄井六月冗﹜戊用乩夫□″
+
+
+
+###﹛苏颗及珃挎﹋631051﹌毛尕赭儅
+block
+	Window 3207149,YES,NO
+
+		#\n\n﹛幻丹﹜仇仇引匹侳日木曰扎厘仄凶手氏分﹝\n﹛匀化仇午匹﹜筏ゴ卞珃懔毛ョ歹友尹井〝\n﹛袄反瓜汁匀化仇午匹ㄦㄡ?﹜厘冂笠分﹝\n﹛今丐﹜ョ匀凶ョ匀凶永″
+
+		Window_YES Gold < 72
+			EndWindow 3207150
+
+		#\n\n﹛嗯互箫曰友尹氏元扎﹜漆荚反摆户月氏分卅﹝\n﹛嗯毛绅中匹﹜引凶侳中方﹝
+
+		Window_YES ItemSpace < 1
+			EndWindow 3207151
+
+		#\n\n﹛云中﹜珃懔互欐六友尹方﹝\n﹛绂坁及帮咥仁日中﹜穴丢卞支匀午仃方卅﹝
+
+		Window_YES Item_631051 >= 1
+			EndWindow 3207152
+
+		#\n\n﹛手丹丐匀凶及井﹝元扎丐﹜中日友尹方卅﹝\n﹛中仁勾手螂户月方丹卅医坁元扎友尹氏分井日﹝
+
+		Window_YES
+			Window 3207153,OK
+
+		#\n\n﹛公丹允月互恌中兮﹝\n﹛厘仄化泙卞峏勾坁元扎友尹互﹜\n﹛域潘及梧粟坁分井日卅﹝\n﹛幻中﹜引中升丐曰永午﹝
+
+				Window_OK Gold < 72
+					EndWindow 3207154
+
+		#\n\n﹛嗯互箫曰友尹氏元扎﹜漆荚反摆户月氏分卅﹝\n﹛嗯毛绅中匹﹜引凶侳中方﹝
+
+				Window_OK ItemSpace < 1
+					EndWindow 3207155
+
+		#\n\n﹛云中﹜珃懔互欐六友尹方﹝\n﹛绂坁及帮咥仁日中﹜穴丢卞支匀午仃方卅﹝
+
+				Window_OK Item_631051 >= 1
+					EndWindow 3207156
+
+		#\n\n﹛手丹丐匀凶及井﹝元扎丐﹜中日友尹方卅﹝\n﹛中仁勾手螂户月方丹卅医坁元扎友尹氏分井日﹝
+
+				Window_OK
+					AddGold -72
+					GiveItemEX 631051,1,3207157
+
+		#\n\n﹛云中﹜珃懔互欐六友尹方﹝\n﹛绂坁及帮咥仁日中﹜穴丢卞支匀午仃方卅﹝
+
+		Window_NO
+			EndWindow 3207158
+
+		#\n\n﹛袄及尥仃杅互仁分日卅井匀凶井〝\n﹛分仃升﹜仇木动晓兜仁反卅日友尹兮﹝\n﹛窒仄欠笮卞窖木壬﹜コ牁中凶抇卞井井丐﹜\n﹛ㄧ勾毛⑵卞ㄡㄤ谛及阂间互谨匀化月井日卅﹝
+
+
+

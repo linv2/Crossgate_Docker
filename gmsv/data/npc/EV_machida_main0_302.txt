@@ -1,0 +1,76 @@
+#丢奶件﹛潠’怷3﹛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+###########﹛窒手卅仄﹛##############
+
+
+
+
+
+
+
+block Item 14664 >= 1 && Item 14665 >= 1
+
+
+#\n\n﹛’’丰角峇炊舅中姜膉鞳\n﹛窒质卞娄匀旋仄切扎匀凶井反﹜襞日卅中卅丑℅
+
+
+	Window 3006559,next
+
+
+	Window 3006560,next
+
+#\n\n﹛白央□’鞲帡靺蚺庤嶀砟\n﹛﹛及蕨互互厘驯五匹﹜\n﹛?楚及窖曰卞﹜方仁湮匀凶匀化蜕匀化凶’矷
+
+	
+	EndWindow 3006561
+
+
+
+
+
+
+
+block 
+
+
+#\n\n﹛反中﹜中日匀仄扎中﹝\n﹛仇及云饕反升丹〝
+
+	Window 3006556,next
+
+
+	Window 3006557,next
+
+	EndWindow 3006558
+
+
+
+#恳畸迕旦弁伉皿玄﹛恳畸蔽歹匀凶日票尺啖⑹今六月﹝﹛仇仇井日≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+block CheckRealTime 2007/1/1,00:00:01 == 1
+#block CheckRealTime 2006/12/19,15:00:00 == 1
+
+	Window "\n\n﹛蕙コ﹜丐仃引仄化云户匹午丹仍介中引允﹝",next
+
+	EndWindow "\n\n﹛烂?分仃升﹜\n﹛仇及酱髦互卅仁匀切扎友″"
+
+
+
+#block CheckRealTime 2003/12/24,00:00:00 == 1
+
+block
+
+	Window "\n\n﹛漆コ手﹜蘑曰内卞﹜穴穴及弁瓦及\n﹛云恳畸读妢区竣毛梢请仄化心引仄凶﹝",next
+
+	Window "\n\n﹛穴穴及弁瓦元扎﹜\n﹛云恳畸反﹜心氏卅仇氏卅伞驯允月氏分匀化″",next
+
+	endWindow "\n\n﹛谛醒手喂尹切扎匀凶氏匹\n﹛手丹﹜分木互分木分井＿＿"
+
+#恳畸迕旦弁伉皿玄﹛恳畸蔽歹匀凶日票尺啖⑹今六月﹝﹛仇仇引匹≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+
+
+
+
+

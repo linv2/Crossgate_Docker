@@ -1,0 +1,10 @@
+#¥U?¥n??????09
+
+block XPos == 5 && YPos >= 25 && YPos <= 26
+	Play_se 207,240,320
+	Message 21597
+	SetLp -20
+	Message 21597
+	SetLp -20
+	Message 21597
+	SetLp -20

@@ -1,0 +1,19 @@
+#白妈妈
+#1054714	\n\n\n@c想吃汤圆吗？	1
+#1054715	\n\n\n@c那真是可惜了。	1
+#1054716	\n\n\n　　　　　如果有看到我家白白～\n　　　　　麻烦你多多照顾～	1
+
+block
+	 Window 1054714,YES,NO
+	 Window_NO
+	 EndWindow 1054715
+	 Window_YES Gold < 50
+	 EndWindow 3
+	 Window_YES ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 Window_YES 
+	 AddGold -50
+	 GiveLeak1Item (45239%1$1,45240%1$1)
+	 EndWindow 1054716
+	 

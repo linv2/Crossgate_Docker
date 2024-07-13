@@ -1,0 +1,38 @@
+##mayko_gm_1102812.txt  月心爷in 碧波
+#1111839	\n　　　　公主原来打算去始祖之墓，\n　　　　不知为何改变主意～～	1
+#1111840	\n　　　　公主她～～～～\n　　　　想去传说中托尔法吉亚女王的墓地。	1
+#1111841	她怎么会想去揭开这禁忌话题呢～～～	1
+#1111842	\n　　　　公主现在昏迷不醒，\n　　　　得麻烦您去旭日村与朝日村外，\n　　　　找连络人取得药草。	1
+
+#1111845	\n　　　　谢谢你呀～～\n　　　　公主服用药草后，应该就会好了。	1
+#1111846	这是公主的心意，您就收下吧～～	1
+#1111847	\n　　　　始祖说过，\n　　　　不让女儿继承王位，并不是重男轻女，\n　　　　而是想避免亡灵附身。	1
+#1111848	\n　　　　亡灵一直潜伏在女性子嗣的身上，一旦继位，就会苏醒。	1
+
+block Endevent 168 == 1 
+	endwindow 1111848
+block item 41318 >0 && item 41319 >0
+	killitem 41318,1
+	killitem 41319,1
+	GiveLeak1Item  41320,1
+	Endevent 168 = 1
+	CheckTitle
+	endwindow 1111845
+	
+
+block item 41315 >0 || item 41316 >0  || item 41317 >0 || item 41318 >0 || item 41319 >0 || item 41314 >0
+	endwindow 1111842
+block item 41313 >0 && itemspace >1
+	killitem 41313,1
+	GiveLeak1Item  41314,1
+	GiveLeak1Item  41315,1
+	window 1111839,next
+	window 1111840,next
+	window 1111841,next
+	endwindow 1111842
+ 
+
+block
+	window 1111847,next
+	endwindow 1111848
+

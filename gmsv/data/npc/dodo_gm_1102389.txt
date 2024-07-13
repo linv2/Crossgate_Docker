@@ -1,0 +1,129 @@
+####dodo_gm_1102389.txt
+####0200枚银币兑换商
+block Item 40843 <= 199
+	 ##1109721	\n\n\n\n\n@c你所拥有的火焰鼠银币还未达兑换数量！	1
+	 EndWindow 1109721
+
+block Item 40843 >= 200
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109640	\n\n\n\n@c是否愿意花费二百枚银币兑换：\n@c星鳗饭团？	1
+	 Window 1109640,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 		 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+			 EndWindow 1054495
+	 	
+	 	 Window_YES Item 40843 >= 200 && ItemSpace >= 1
+	 	 	 KillItem 40843,200
+	 	 	 ##给予星鳗饭团
+	 	 	 GiveLeak1Item 15210,3
+	 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+			 EndWindow 1109719
+	 	 
+	 	 Window_NO Item 40843 >= 200
+	 	 	 ##1109641	\n\n\n\n@c是否愿意花费二百枚银币兑换：\n@c一组生命力回复药(300)？	1
+			 Window 1109641,YES,NO 
+			 	 Window_YES ItemSpace == 0
+	 			 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+				 EndWindow 1054495
+	 	
+		 		 Window_YES Item 40843 >= 200 && ItemSpace >= 1
+	 			 	 KillItem 40843,200
+	 			 	 ##给予生命力回复药(300)
+	 			 	 GiveLeak1Item 15610,3
+	 			 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+	 	 		 	 EndWindow 1109719
+	 	 	 	 
+	 	 		 Window_NO Item 40843 >= 200
+	 	 		 	 ##1109642	\n\n\n\n@c是否愿意花费二百枚银币兑换：\n@c长锷剑？	1
+					 Window 1109642,YES,NO 
+					 	 Window_YES ItemSpace == 0
+	 						 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+							 EndWindow 1054495
+						 
+						 Window_YES Item 40843 >= 200 && ItemSpace >= 1
+						 	 KillItem 40843,200
+						 	 ##给予长锷剑
+						 	 GiveLeak1Item 48
+						 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+						 	 EndWindow 1109719
+						 	 
+						 Window_NO Item 40843 >= 200
+						 	 ##1109643	\n\n\n\n@c是否愿意花费二百枚银币兑换：\n@c冲击弓？	1
+							 Window 1109643,YES,NO 
+							 	 Window_YES ItemSpace == 0
+							 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 EndWindow 1054495
+									 
+								 Window_YES Item 40843 >= 200 && ItemSpace >= 1
+								 	 KillItem 40843,200
+								 	 ##给予冲击弓
+								 	 GiveLeak1Item 2042
+								 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+								 	 EndWindow 1109719
+								 	 
+								 Window_NO Item 40843 >= 200
+								 	 ##1109644	\n\n\n\n@c是否愿意花费二百枚银币兑换：\n@c琥珀权杖？	1
+									 Window 1109644,YES,NO 
+									 	 Window_YES ItemSpace == 0
+									 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 	 EndWindow 1054495
+									 	 	 
+									 	 Window_YES Item 40843 >= 200 && ItemSpace >= 1
+									 	 	 KillItem 40843,200
+									 	 	 ##给予琥珀权杖
+									 	 	 GiveLeak1Item 2450
+									 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 	 EndWindow 1109719
+									 	 	 
+									 	 Window_NO Item 40843 >= 200
+									 	 	 ##1109645	\n\n\n\n@c是否愿意花费二百枚银币兑换：\n@c高级帽子？	1
+											 Window 1109645,YES,NO 
+											 	 Window_YES ItemSpace == 0
+											 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 			 EndWindow 1054495
+									 	 			 
+									 	 		 Window_YES Item 40843 >= 200 && ItemSpace >= 1
+									 	 		 	 KillItem 40843,200
+									 	 		 	 ##给予高级帽子
+									 	 		 	 GiveLeak1Item 4042
+									 	 		 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 		 	 EndWindow 1109719
+									 	 		 	 
+												 Window_NO Item 40843 >= 200
+					 	 			 	 		 	 ##1109646	\n\n\n\n@c是否愿意花费二百枚银币兑换：\n@c士兵护衣？	1
+													 Window 1109646,YES,NO 
+													 	 Window_YES ItemSpace == 0
+											 	 			 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 					 EndWindow 1054495
+									 	 				 
+									 	 				 Window_YES Item 40843 >= 200 && ItemSpace >= 1
+									 	 		 			 KillItem 40843,200
+									 	 			 		 ##给予士兵护衣
+									 	 			 	 	 GiveLeak1Item 4844
+									 	 			 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 		 			 EndWindow 1109719
+									 	 		 	 
+									 	 			 	 Window_NO Item 40843 >= 200
+									 	 			 	 	 ##1109647	\n\n\n\n@c是否愿意花费二百枚银币兑换：\n@c维京鞋？	1
+															 Window 1109647,YES,NO 
+															 	 Window_YES ItemSpace == 0
+											 	 					 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 							 EndWindow 1054495
+									 	 				 		 Window_YES Item 40843 >= 200 && ItemSpace >= 1
+									 	 		 					 KillItem 40843,200
+									 	 			 				 ##给予维京鞋
+									 	 			 				 GiveLeak1Item 6040
+									 	 			 				 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 		 					 EndWindow 1109719
+									 	 		 	 			
+									 	 		 	 		 	 Window_NO  	
+									 	 				 		 	 ##1109720	\n\n\n\n\n@c累积越多将可以兑换到更超值的礼物呦！	1
+																	 EndWindow 1109720
+								
+block 
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 EndWindow 1109723
+	 							 	 

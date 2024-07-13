@@ -1,0 +1,26 @@
+#魔物召唤瓶	mayko_item_47748.txt
+	
+block Item 47762>0	
+	 Window 1055892,YES,NO
+	 Window_YES PetSpace != 0 && Item 47762 >0
+	 # Window 1110563,OK
+	  #Window_OK
+	  KillItem 47762,1
+	  GivePet (103226%999,103227%999,103228%999,103229%999,103132%4)
+#雏鸟	103226
+#鸭嘴兽	103227
+#小鸭子	103228
+#小兔子	103229
+#大公鸡	103132
+#达斯公鸡103342
+
+
+
+
+	  endblock
+	  Window_YES PetSpace == 0
+	  EndWindow 21417
+	  Window_YES
+	  Window_NO
+
+#1051920	\n\n\n  抱歉宠物栏已满。	1	  

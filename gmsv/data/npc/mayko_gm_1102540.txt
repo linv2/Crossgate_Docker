@@ -1,0 +1,19 @@
+block Gold >99
+	 Window 1110423,YES,NO
+	 #1110423	\n\n\n　　　我这有些奇特的种子贩卖，\n　　　一个100G，想买吗？？
+	 Window_NO
+	 Endblock
+	 Window_YES Gold <100
+	 EndWindow 11445
+	 #11445	\n\n你的钱不够。\n很抱歉。	8
+	 Window_YES ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 Window_YES
+	 AddGold -100
+	 GiveLeak1Item 41043 #47197
+	 EndWindow 1110430
+	 #1110430	\n\n\n\n@c想知到是什么种子，可以问问肯老爹。	1
+block 
+	 EndWindow 1110428
+#	\n\n\n　　　青色之花的花苗，\n　　　要种在栽培木才能长大。

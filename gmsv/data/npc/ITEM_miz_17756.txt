@@ -1,0 +1,28 @@
+#
+#„s¼°†A
+
+#
+##############   „s¼°†A©x##############
+block Item 17753 >= 1 && Item 17754 >= 1 && Item 17755 >= 1 && Item 17756 >= 1 && Item 17757 >= 1 && Item 17758 >= 1 && Item 17759 >= 1 && Item 17760 >= 1 && Item 17761 >= 1 && Item 17762 >= 1 && Item 17763 >= 1 && Item 17764 >= 1
+
+	Window 206683,OK
+	Window_OK
+	KillItem 17753,1,(206683)
+	KillItem 17754,1,(206683)
+	KillItem 17755,1,(206683)
+	KillItem 17756,1,(206683)
+	KillItem 17757,1,(206683)
+	KillItem 17758,1,(206683)
+	KillItem 17759,1,(206683)
+	KillItem 17760,1,(206683)
+	KillItem 17761,1,(206683)
+	KillItem 17762,1,(206683)
+	KillItem 17763,1,(206683)
+	KillItem 17764,1,(206683)
+	GiveItem 17740
+
+#block Item 17742 >= 1
+#	Endwindow  ,OK
+#
+
+

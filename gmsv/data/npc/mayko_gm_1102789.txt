@@ -1,0 +1,11 @@
+#1111810	\n\n　　　　喔喔～～这下头痛了，\n　　　　上次亚纪公主这一闹，席琳殿下才刚搬离麦尼村呢。\n　　　　城外有棵大树，你带这个，走到公主隐居之地吧！	1
+#mayko_gm_1102789.txt
+
+block item 41271 >0
+	killitem 41271,1
+	GiveLeak1Item  41272, 1   
+	endwindow 1111810
+block
+	endwindow 1111800
+	
+

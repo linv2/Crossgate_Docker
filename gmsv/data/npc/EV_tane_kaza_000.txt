@@ -1,0 +1,15 @@
+
+block
+
+
+if  Xpos == 200 && Ypos == 35
+
+
+			warp 0,59670,176,139
+
+
+endif
+
+
+
+

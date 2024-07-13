@@ -1,0 +1,25 @@
+#¼ëÓ£ÛÍ¾Þµ©Ðþ¡° Ë¦¼þÛÍ(10)
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+###########©xÖÏÊÖØ¦ØÆ©x##############
+block endevent75 == 1
+
+	Window 206444,NEXT
+	Window 206567,YES,NO
+	Window_YES
+	Window_NO Item 18895 >= 1
+	endevent75 = 0
+	KillItem 18895,1,(206570)
+	leavegroup
+	Warp 0,33258,13,10
+	Window_NO
+	endevent75 = 0
+	leavegroup
+	Warp 0,33258,13,10
+
+block
+	Window 206599,OK
+	Window_OK
+	leavegroup
+	Warp 0,1541,7,18

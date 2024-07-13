@@ -1,0 +1,16 @@
+#Ω©ª‘
+
+#EndFLG 133ª•ª–‘¿çXÿ¶»’
+block EndEvent 133 == 0
+	EndWindow 22776,OK
+
+#NowFLG 137ª•ª–‘¿çXÿ¶»’
+block NowEvent 137 == 0
+	EndWindow 22777,OK
+
+#
+block
+	Window 22778,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,43000,580,524

@@ -1,0 +1,13 @@
+###### 采花竹篓 ######可放10组蝴蝶花(40一叠)
+
+##黄月木大于400个 物品栏无空位
+block Item 12802 >= 400 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+##黄月木大于400个 物品栏有空位 物品栏空位大于1	 
+block Item 12802 >= 400 && ItemSpace >= 1
+	 KillItem 12802,400
+	 KillItem 45928,1
+	 GiveLeak1Item 45929
+	

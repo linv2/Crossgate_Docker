@@ -1,0 +1,14 @@
+###ÖìÈ¸´óÈË
+block item 12901 >0
+	 killitem 12901,1
+
+	 Window 1110770,ok
+	 Window_ok
+	 Encount 2|0,32160,42,42||0|||||0|40316|||||||||	 
+	 Endblock
+block 
+	endWindow 1110770
+	
+
+
+	

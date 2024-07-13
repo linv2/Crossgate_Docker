@@ -1,0 +1,18 @@
+
+block
+
+#	Window "\n\n﹛仇仇引匹侳凶井﹝酷杅丐月引中﹝",next
+	Window 3006927,next
+
+#	Window "\n\n﹛脱毛逦仄化手\n﹛ボ詨及≦?≧丐月蜃曰\n﹛窒手蔽歹曰反仄卅中冗﹝\n﹛引凶戚及脱互﹜夫曰请今木月引匹及仇午﹝",next
+	Window 3006928,next
+
+
+#	Window "\n\n﹛脱手潜手⑺元﹝\n﹛螃毛赀荸仄化云月\n﹛中支﹜漆凳蜕匀化手薛拑中仇午﹝\n﹛辅日木方﹝",ok
+	Window 3006929,ok
+
+	Window_ok
+
+
+		Encount 2|0,59675,28,21||0|||||0|305001|||||||||
+

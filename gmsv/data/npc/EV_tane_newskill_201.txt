@@ -1,0 +1,71 @@
+
+
+block Item 12501 >= 1
+
+
+
+
+				Window 3200630,next
+		#\n\n﹛仇及燮匹反\n﹛穴旦正□迋琼互晞莘毛仄化云日木月﹝\n﹛域?谛反＿＿
+
+				Window 3200631,yes,no
+		#\n\n﹛云蟆﹜\n﹛晞及恔咥卞恌今仆卅坁毛儅匀化月卅﹝\n﹛公木毛欐六壬﹜\n﹛骚仄化支日氏仇午手卅中冗〝
+
+
+						window_yes item 12501 == 0
+
+							endWindow 3200632
+		#\n\n﹛凝称鼎毛洢允卅″
+
+
+						window_yes
+
+							Window 3200633,ok
+		#\n\n﹛恌中艘互仃分″
+							
+									window_ok
+
+										killitemall 12501
+#										leavegroup
+										Warp 0,59504,224,121
+
+						window_no
+
+							endWindow 3200634
+		#\n\n﹛卅日﹜\n﹛厘谛仄仁窖月仇午分﹝
+
+
+
+
+
+
+
+
+
+
+
+block
+
+
+					Window 3200635,yes,no
+		#\n\n﹛仇及燮匹反\n﹛穴旦正□迋琼互晞莘毛仄化云日木月﹝\n﹛域?谛反窖木″
+
+
+						window_yes
+						
+						
+							endWindow 3200636
+		#\n\n﹛方欠仄中″
+
+						
+						window_no
+						
+							Window 3200637,ok
+		#\n\n﹛仄勾仇中蛊分卅﹝\n﹛公丹引匹蜕丹卅日\n﹛仇及台毛逦仄化斗仃″
+							
+									window_ok
+									
+										globalFlag27 = 1
+									
+										Encount 3|0,59504,211,108||0|||||0|305070|||||||||
+

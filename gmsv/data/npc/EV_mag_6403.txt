@@ -1,0 +1,17 @@
+#
+#泛伙穴奶
+#
+
+############## 优谖旦平伙儅匀化中月 ##############
+############## 呺诸僎猾烟R8 ##############
+block Skilllevel 19 >= 8 || Skilllevel 20 >= 8 || Skilllevel 21 >= 8 || Skilllevel 22 >= 8 || Skilllevel 23 >= 8 || Skilllevel 24 >= 8 || Skilllevel 25 >= 8 || Skilllevel 26 >= 8 || Skilllevel 27 >= 8 || Skilllevel 28 >= 8 || Skilllevel 29 >= 8 || Skilllevel 30 >= 8 ||  Skilllevel 31 >= 8
+#\n\n﹛脱互⑺辿卞沧啦毛憎允手及欥
+	Window 14792,OK
+	Window_OK
+	Warp 0,24029,27,2
+
+############## 优谖旦平伙儅匀化中卅中 ##############
+block
+	encount 3|0,24070,25,17||0|||||0|12004|||||||||
+
+

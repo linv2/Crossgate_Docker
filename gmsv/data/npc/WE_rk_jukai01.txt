@@ -1,0 +1,4 @@
+#ûù????
+
+block XPos >= 336 && XPos <= 346 && YPos >= 97 && YPos <= 117
+	SetLp -1

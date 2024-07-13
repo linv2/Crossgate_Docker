@@ -1,0 +1,20 @@
+block item 607746>0
+	 Window 1110642,NEXT	
+	 #\n\n\n　　　微光闪闪的那小星，\n　　　大星三颗五颗在东。 
+	 EndWindow 1110643
+	 #\n\n\n　　　火速速的出差夜行，\n　　　大早夜就工作：\n　　　这是命和人不同！ 
+block item 41088 >0
+	 killitem 41088,1
+	 GiveLeak1Item 607746,1
+	 Window 1110641,NEXT
+	 	#\n\n\n@c我真的真的不是在耍你啦！！
+	 Window 1110642,NEXT	#\n\n\n　　　微光闪闪的那小星，\n　　　大星三颗五颗在东。 
+	 Window 1110643,NEXT	#\n\n\n　　　火速速的出差夜行，\n　　　大早夜就工作：\n　　　这是命和人不同！ 
+	 Window 1110644,NEXT	#\n\n\n@c我就是歹命呀～～～～
+	 Window 1110645,NEXT	#\n\n\n@c不好意思让你听我的抱怨。 
+	 EndWindow 1110646	#\n\n\n　　　为了报达你的辛劳，\n　　　这小礼物送你吧！！
+
+	
+block 
+	 EndWindow 1110644	
+	 #\En\n\n@c我就是歹命呀～～～～

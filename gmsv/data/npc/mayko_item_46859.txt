@@ -1,0 +1,162 @@
+#
+#小刀魂	46859
+#
+############################
+#block  job==264
+block Job >263 && Job<268 ## 御用~S3
+	##我是小刀魂！我将为你服务！(御用)
+	Window 1053301,OK
+ 		Window_OK item 46721>0 && item 46803 >0
+ 			##你现在有实验刀积木与说明书,要组合成实验刀吗？
+ 			Window 1053302,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46721<1 || item 46803 <1 || item 46859<1
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46721,1	 	 	 
+	 	 	 	killitem 46803,1 
+	 	 	 	killitem 46859,1 
+	 	 	 	GiveLeak1Item 46837,1
+	 	 	 	##小刀魂、实验刀积木与说明书消失了！出现了实验刀。
+	 	 	 	EndWindow 1053303
+	 	 	 
+	 	 	 
+ 		Window_OK item 46722>0 && item 46804 >0
+
+ 		##你现在有解剖刀积木与说明书,要组合成解剖刀吗？
+ 			Window 1053304,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46722<1 || item 46804 <1 || item 46859<1
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46722,1	 	 	 
+	 	 	 	killitem 46804,1 
+	 	 	 	killitem 46859,1 
+	 	 	 	GiveLeak1Item 46838,1	 	 
+	 	 	 	##小刀魂、解剖刀积木与说明书消失了！出现了解剖刀。
+	 	 	 	EndWindow 1053305
+	 	 	  		
+ 	
+ 		Window_OK item 46723>0 && item 46805 >0
+		####你现在有手术刀积木与说明书,要组合成手术刀吗？
+
+ 			Window 1053306,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46723<1 || item 46805 <1 || item 46859<1
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46723,1	 	 	 
+	 	 	 	killitem 46805,1 
+	 	 	 	killitem 46859,1 	 	 	 
+	 	 	 	GiveLeak1Item 46839,1
+	 	 	 	##小刀魂、手术刀积木与说明书消失了！出现了手术刀。
+	 	 	 	EndWindow 1053307
+ 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290
+		 
+block  job==263
+	##我是小刀魂！我将为你服务！(资深)
+	Window 1053301,OK
+ 		Window_OK item 46721>0 && item 46803 >0
+ 			##你现在有实验刀积木与说明书,要组合成实验刀吗？
+ 			Window 1053302,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46721<1 || item 46803 <1 || item 46859<1
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46721,1	 	 	 
+	 	 	 	killitem 46803,1 
+	 	 	 	killitem 46859,1 
+	 	 	 	GiveLeak1Item 46837,1
+	 	 	 	##小刀魂、实验刀积木与说明书消失了！出现了实验刀。
+	 	 	 	EndWindow 1053303
+	 	 	 
+	 	 	 
+ 		Window_OK item 46722>0 && item 46804 >0
+
+ 		##你现在有解剖刀积木与说明书,要组合成解剖刀吗？
+ 			Window 1053304,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46722<1 || item 46804 <1 || item 46859<1
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46722,1	 	 	 
+	 	 	 	killitem 46804,1 
+	 	 	 	killitem 46859,1 
+	 	 	 	GiveLeak1Item 46838,1	 	 
+	 	 	 	##小刀魂、解剖刀积木与说明书消失了！出现了解剖刀。
+	 	 	 	EndWindow 1053305
+	 	 	  		
+ 	
+ 		Window_OK item 46723>0 && item 46805 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290		 
+block  job==262
+	##我是小刀魂！我将为你服务！(正值)
+	Window 1053301,OK
+ 		Window_OK item 46721>0 && item 46803 >0
+ 			##你现在有实验刀积木与说明书,要组合成实验刀吗？
+ 			Window 1053302,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46721<1 || item 46803 <1 || item 46859<1
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46721,1	 	 	 
+	 	 	 	killitem 46803,1 
+	 	 	 	killitem 46859,1 
+	 	 	 	GiveLeak1Item 46837,1
+	 	 	 	##小刀魂、实验刀积木与说明书消失了！出现了实验刀。
+	 	 	 	EndWindow 1053303
+	 	 	 
+	 	 	 
+ 		Window_OK item 46722>0 && item 46804 >0
+ 	 	EndWindow 1053289 
+	 	 	  		
+ 	
+ 		Window_OK item 46722>0 && item 46804 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290		 	      
+block  job==261
+	##你的能力并不能驾御我，请你多加努力！
+	EndWindow 1053291
+block  
+	##你并不是造枪职人，我无法为你服务！
+	EndWindow 1053300

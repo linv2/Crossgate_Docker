@@ -1,0 +1,121 @@
+## 亚诺曼城 旅馆 -- 魔力卡二代集加送
+##第十一奖 带着  贝壳结晶45991 x 1 礁石结晶45992 x 20
+##元素石兑换券
+block Item 45991 >= 1 && Item 45992 >= 20 
+	 ##1052466	\n\n您好，恭喜您收集到符合十一奖的资格了，想要兑换十一奖吗？\n十一奖奖品:元素石兑换券。	1
+	 Window 1052466,YES,NO
+	 Window_NO 
+		 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+		 EndWindow 1052013
+		 
+	 Window_YES ItemSpace == 0
+	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 EndWindow 1100002	
+	 	 			 		 		 
+	 Window_YES Item 45991 >= 1 && Item 45992 >= 20 && ItemSpace >= 1
+		 KillItem 45991,1
+		 KillItem 45992,20
+		 GiveLeak1Item 46315,1
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+
+##第十二奖 带着  礁石结晶45992 x 2 
+##传送石回数票
+block Item 45992 >= 2 
+	 ##1052465	\n\n您好，恭喜您收集到符合十二奖的资格了，想要兑换十二奖吗？\n十二奖奖品:传送石回数票。	1
+	 Window 1052465,YES,NO
+	 Window_NO 
+		 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+		 EndWindow 1052013
+		 
+	 Window_YES ItemSpace == 0
+	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 EndWindow 1100002	
+	 	 			 		 		 
+	 Window_YES Item 45992 >= 2 && ItemSpace >= 1
+		 KillItem 45992,2
+		 GiveLeak1Item 18448,1
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+
+##第十三奖 带着  礁石结晶45992 x 1 
+##神秘小礼物
+block Item 45992 >= 1 
+	 ##1052464	\n\n您好，恭喜您收集到符合十三奖的资格了，想要兑换十三奖吗？\n十三奖奖品:神秘小礼物。	1
+	 Window 1052464,YES,NO
+	 Window_NO 
+		 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+		 EndWindow 1052013
+		 
+	 Window_YES ItemSpace == 0
+	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 EndWindow 1100002	
+	 	 			 		 		 
+	 Window_YES Item 45992 >= 1 && ItemSpace >= 1
+		 KillItem 45992,1
+		 GiveLeak1Item 46314,1
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+##PUK3上市修正		 
+##第十四奖 带着  贝壳结晶45991 x 20 
+###烟火X3
+#block Item 45991 >= 20 
+#	 ##1052463	\n\n您好，恭喜您收集到符合十四奖的资格了，想要兑换十四奖吗？\n十四奖奖品:烟火三份。	1
+#	 Window 1052463,YES,NO
+#	 Window_NO 
+#		 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+#		 EndWindow 1052013
+#		 
+#	 Window_YES ItemSpace < 3
+#	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+#	 	 EndWindow 1100002	
+#	 	 			 		 		 
+#	 Window_YES Item 45991 >= 20 && ItemSpace >= 3
+#		 KillItem 45991,20
+#		 GiveLeak1Item 46313,3
+#		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+#		 EndWindow 1051523
+		 
+##第十五奖 带着  贝壳结晶45991 x 2 
+##强化材料X1
+block Item 45991 >= 2 
+	 ##1052462	\n\n您好，恭喜您收集到符合十五奖的资格了，想要兑换十五奖吗？\n十五奖奖品:强化材料。	1
+	 Window 1052462,YES,NO
+	 Window_NO 
+		 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+		 EndWindow 1052013
+		 
+	 Window_YES ItemSpace == 0
+	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 EndWindow 1100002	
+	 	 			 		 		 
+	 Window_YES Item 45991 >= 2 && ItemSpace >= 1
+		 KillItem 45991,2
+		 GiveLeak1Item (50001%1$1,50002%1$1,50003%1$1,50004%1$1,50005%1$1,50006%1$1,50007%1$1,50008%1$1,50009%1$1,50010%1$1,50011%1$1,50012%1$1,50013%1$1,50014%1$1,50015%1$1,50016%1$1,50017%1$1,50018%1$1)
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+##第十六奖 带着 贝壳结晶45991X1	 
+##鼠王惊奇蛋X1加彩券X1
+block Item 45991 >= 1 
+	 ##1052461 \n\n您好，恭喜您收集到符合十六奖的资格了，想要兑换十奖吗？\n十六奖奖品:鼠王惊奇蛋及彩票。
+	 Window 1052461,YES,NO
+	 Window_NO 
+		 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+		 EndWindow 1052013
+		 
+	 Window_YES ItemSpace < 2
+	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 EndWindow 1100002	
+	 	 			 		 		 
+	 Window_YES Item 45991 >= 1 && ItemSpace >= 2
+		 KillItem 45991,1
+		 GiveLeak1Item (19574%1$1,19575%1$1,19576%1$1)
+		 GiveLeak1Item 45307,1
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+
+##一般
+block 
+	 ## 1052172 \n 这是魔力卡二代的福袋兑换处。
+	 EndWindow 1052172
+	 

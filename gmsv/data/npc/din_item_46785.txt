@@ -1,0 +1,6 @@
+###展场包_装满＋４００水收纳盒
+
+block ItemSpace >=3
+	 KillItem 46785,1
+	 GiveStackItem 15611,9
+	 

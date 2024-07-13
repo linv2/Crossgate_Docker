@@ -1,0 +1,51 @@
+######### 地狱祭 ########
+##戒指交换　　鬼之约束
+
+
+block	Item 46822 >=1
+	##鬼王戒指
+        ##Question 你身上有鬼王戒指,要不要跟我换鬼之约束
+        ##鬼之约束是可以在你离开这里时,点两下就可以回来的约定喔
+        ##怎么样?要换鬼之约束吗
+        Window 1053275,YES,NO
+        Windows_no
+		##想换再来找我。     
+		EndWindow 1053280
+	Window_yes ItemSpace >= 1 && Item 46822 >0
+		killitem 46822,1
+     		GiveLeak1Item 46823,1
+	        EndWindow 1053278
+	Window_yes ItemSpace <1        
+		##物品栏已满
+	        EndWindow 1100001
+	Window_yes  
+		##疑！你原来的鬼王戒指怎么不见了！
+        EndWindow  1053279
+block	Item 46821 >=1
+	##鬼王戒指
+        ##Question 你身上有鬼王戒指,要不要跟我换鬼之约束
+        ##鬼之约束是可以在你离开这里时,点两下就可以回来的约定喔
+        ##怎么样?要换鬼之约束吗
+        Window 1053275,YES,NO
+        Windows_no
+		##想换再来找我。     
+		EndWindow 1053280
+	Window_yes ItemSpace >= 1 && Item 46821 >0
+		killitem 46821,1
+     		GiveLeak1Item 46823,1
+	        EndWindow 1053278
+	Window_yes ItemSpace <1        
+		##物品栏已满
+	        EndWindow 1100001
+	Window_yes  
+		##疑！你原来的鬼王戒指怎么不见了！
+        EndWindow  1053279
+
+block
+	##离开这里，再回来很困难对不对！如果你有鬼王戒指，我可以帮你想个办法喔！
+	EndWindow 1053281
+
+
+	
+
+			 

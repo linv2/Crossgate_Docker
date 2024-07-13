@@ -1,0 +1,44 @@
+#
+#PUK3_Main1
+#
+#铭项
+
+Block LocalFlag1 == 1 && LocalFlag2 == 1 && LocalFlag3 == 1
+
+
+	Window 3206945,Next
+
+		#\n\n﹛螃啖卞云歹允反厘中卅月螃★及扣迋分﹝\n﹛仇及壑钗反螃啖及杅★卞方匀化\n﹛潮日木化中月氏分﹝\n﹛公及银中匹丐月擎昵反项莘卞中勾手蛛日木月方﹝
+	
+	Window 3206946,OK
+
+		#\n\n﹛引分族苇反匹五卅中氏分仃木升友﹝
+
+
+		Window_OK
+		
+				LeaveGroup
+			
+				warp 0,59513,116,69
+				
+				
+Block LocalFlag4 == 1
+
+	EndWindow 3206947
+
+		#\n\n﹛螃啖及杅★反匿厘分方﹝
+
+				
+Block
+
+	Window 3206948,Next
+
+		#\n\n﹛螃啖卞云歹允反厘中卅月螃★及扣迋分﹝\n﹛仇及壑钗反螃啖及杅★卞方匀化\n﹛潮日木化中月氏分﹝\n﹛公及银中匹丐月擎昵反项莘卞中勾手蛛日木月方﹝
+	
+	Window 3206949,OK
+
+		#\n\n﹛引分族苇反匹五卅中氏分仃木升友﹝
+	
+		Window_OK
+	
+			LocalFlag4 = 1

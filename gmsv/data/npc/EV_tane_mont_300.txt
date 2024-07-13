@@ -1,0 +1,77 @@
+/*
+ØøÒÁ¡õ©xboukenyado¼°ÚĞ
+ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+'_'·´ÛÌĞÄ?ÈÉØÆ
+*/
+
+#include "./header/global0.h"
+
+block
+
+
+
+
+	if skilllevel tsure <= 0
+
+				Window "\n\n©xÊÏ¨G\n©x³ğÊÏØ¦Îç³ğÇ·±å\n©x²¾¾®‚FÔÂ¼°·´©yÖÓØÆÖĞÊÏ·ÖØ¦©z",next
+
+				Window "\n\n©xÊÏ¨G\n©x·ò½ïÔÈÎçØÆ»¯©y\n©xØ¥ÈÊÇĞÊÏ±åİ·ÖĞ±å‚FĞ×¼°¾®Ø¦¨”",yes,no
+
+					window_yes
+
+						Window "\n\n©xÊÏ¨G\n©xØ¥ÈÊÇĞÊÏ±åİ·ÖĞ±å\n©x²¾¾®‚FÔÂ¼°·´©yÖÓØÆÖĞÊÏ·ÖØ¦©z",next
+
+						Window "\n\n©xÊÏ¨G©yÁùÔÈ¾®ÈÊ‚F»¯ÈÊÄ¾Ğ×¼°±å\n©xØ¥ÈÊÇĞÊÏ±å·´©y³ğÊÏØ¦ÊÖ¼°Æ¥ØÆ¾®\n©xÔÆÊÖ»¯Ø¦ØÆÆ¥ÎåØ¦ÖĞÊÏ·ÖØ¦",next
+
+
+					window_no
+
+
+
+			LocalCount0 = random 1,0
+
+			if LocalCount0 == 0
+
+				Window "\n\n©xÔÆÀÛ?±åÖëØ¦¾®ÔÈĞ×¾®ÔÈ»¯¨”",next
+
+				EndWindow "\n\n©xØ¤Ğ×ØÆÔú©yÎçÔÈÈÊ±å…ë»ÔÃ«Â¦×ªØÆ»¯\n©xñô¡ï·ßØÍ¼°Ï·ÍÙ·Ö·½©z"
+
+			else
+
+				Window "\n\n©xØ¤Ø¤©y\n©xÆá¤¶·´Æ©ºÒ»¥ÖĞÖĞÎçºÏÔÈĞ×ØêÉı£ß£ß",next
+
+				EndWindow "\n\n©xÇĞ½ïÔÈÎçËÚÎåØ¤»¥ÔÈĞ×·ÖØêÆ¥£ß£ß"
+
+			endif
+
+	else
+	
+		Window "\n\n©xÔÆÖ§©yØ¤ÊÏĞ×©y\n©xŞ§±åµæÔÈ»¯ÔÂçÕ’s±åØ¤ÔÈĞ×¼°¾®ÖĞ¨”\n©x…õÆ»›”ã×Ã«¼ëØÆ±åµæÔÈ»¯ÈÊÄ¾ÔÂÊÏ·Ö·½©y\n©xğ¯µæØ¦ºÒ·Ö·½©z",next
+
+		KillItemall tsuyukusa
+
+		Window "\n\n©x›”ã×¼°ÀÛ´Ü¾®ÖĞ©y\n©xİ¬¾®ØÆÖĞÓÑÖ®©z",next
+
+		Window "\n\n©x›”ã×·´ÓÑ©y\n©xÔÆÀÛ?…ë»ÔÃ«’oê¼ÔÈ»¯Ğ×Áİ¼°\n©xØ¤Ğ×ØÆ¼°Ø¯ˆ^½ñÓÑ©z",next
+
+		Window "\n\n©xØ¤Ø¤©yØ¤Ô»»¥Îçµ¤©z\n©xÔÆ”×±å³ğÄ¾Ã«Ø¤ÆÍ·½µ¤©z",next
+
+
+		EndWindow "\n\n©x³ğÄ¾·´ÓÑ©yÀåéÉ¼°ó¦Ş‚¼°Èğk½ñÓÑ©z\n©xÎàËÚÆ¹¼ş·Ö·½©z"
+
+
+		GiveItem yurugu,1
+
+	endif
+
+
+
+
+
+
+
+
+
+
+
+

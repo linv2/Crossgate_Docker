@@ -1,0 +1,14 @@
+block	
+
+	Window 90001,yes,no
+
+	window_yes
+		if Gold < 1500
+			EndWindow 3
+		else		
+			AddGold -1500
+			LeaveGroup
+			Warp 0,59801,34,99
+		endif
+
+	window_no

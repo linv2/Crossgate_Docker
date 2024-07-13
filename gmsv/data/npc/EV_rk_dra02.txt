@@ -1,0 +1,28 @@
+#Ä»Žè¼°ÒøÖÐ
+#
+
+block Item 18768 == 0
+#\n\n©xÈÓÓÀñâ°×Å«»ïµ©»¥Ø¦ÖÐ
+ Window 21252,next
+  Endwindow 21253
+
+block Item 18768 >= 1
+ Window 21261,next
+ Window 21262,next
+ Window 21263,next
+ Window 21264,next
+ Window 21265,next
+ Window 21267,yes,no
+  Window_no
+   Window 21268,OK
+    Window_OK
+        LeaveGroup
+        Warp 0,15531,46,28
+  Window_yes
+   Window 21236,OK
+    Window_OK Itemspace != 0
+     giveitem 18767,1
+     LeaveGroup
+        Warp 0,1530,15,6
+    Window_OK
+         Endwindow 10000

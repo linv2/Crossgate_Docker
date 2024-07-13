@@ -1,0 +1,15 @@
+#??ье????
+
+#?????????ых??????
+block NowEvent 108 == 1
+	Window 22178,YES,NO
+		Window_YES
+			Window 22180,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,37001,27,29
+		Window_NO
+			EndWindow 22179,OK
+
+block
+	EndWindow 22181,OK

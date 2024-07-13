@@ -1,0 +1,104 @@
+##ㄥ璃コ筏ゴ奶矛件玄﹛by漪呿
+## NPC“仍引正件
+
+## 允中井及?毛赭儅
+block Item 607748 >= 1
+	EndWindow "\n\n﹛五文五文五文℅﹜手五文″"
+
+
+## 仍引正件及ヱ挤毛赭儅
+block Item 607747 >= 1
+	EndWindow "\n\n﹛五文五文五文℅﹜手五文″"
+
+
+## OT辅笛据毛呁醒赭儅
+block Item 622010 > 1
+	Window "\n\n﹛手﹜手五文五文″手匀五文□″″″",OK
+		Window_OK
+			KillItemAll 622010
+
+## 只迕及辞玾毛呁醒赭儅
+block Item 622019 > 1
+	Window "\n\n﹛手﹜手五文五文″手匀五文□″″″",OK
+		Window_OK
+			KillItemAll 622019
+
+
+## 旦正件皿＞＞ㄥ＝及OT辅笛操毛赭儅
+block Item 622010 == 1 && StampCount 622010 == 6
+	Window "\n\n﹛五文五文℅﹜手五文″手五文五文〝",YES,NO
+		Window_YES Item 622010 == 0
+			EndWindow "\n\n﹛手五文〝"
+
+		Window_YES Item 622010 > 1
+			Window "\n\n﹛手五文五文℅″手五文匀″",OK
+				Window_OK
+					KillItemAll 622010
+
+		Window_YES
+			Window "\n\n﹛手匀五氏″",OK
+				Window_OK
+					KillItemAll 622010
+					GiveLeak1Item 607748,1
+					Endblock
+
+		Window_NO
+			EndWindow "\n\n﹛手夫文＿＿﹝"
+
+
+## 旦正件皿＞＞ㄤ＝及OT辅笛据午﹜只迕及辞玾毛赭儅
+block Item 622019 == 1 && Item 622010 == 1
+	if StampCount 622010 == 5
+		Window "\n\n﹛手﹜手五文匀″〝\n﹛手五文五文℅″″\n﹛手五文〝手夫文匀″〝",YES,NO
+			Window_YES Item 622010 == 0
+				EndWindow "\n\n﹛手五文〝"
+
+			Window_YES Item 622010 > 1
+					Window "\n\n﹛手五文匀〝手孔手孔□匀″",OK
+						Window_OK
+							KillItemAll 622010
+
+			Window_YES Item 622019 == 0
+				EndWindow "\n\n﹛手五文〝"
+
+			Window_YES Item 622019 > 1
+				Window "\n\n﹛手五文□匀手夫文匀",OK
+					Window_OK
+						KillItemAll 622019
+
+			Window_YES
+				Window "\n\n﹛手匀五氏″",OK
+					Window_OK
+						KillItemAll 622010
+						KillItemAll 622019
+						GiveLeak1Item 607747,1
+						Endblock
+
+			Window_NO
+				EndWindow "\n\n﹛手五文□﹜手孔匀″"
+
+	else
+		if
+			GoToF case1
+
+
+## OT辅笛据毛赭儅
+block Item 622010 == 1
+
+	*case1*
+
+	EndWindow "\n\n﹛手孔〝﹛手五文五文℅″"
+
+## OT辅笛据毛尕赭儅
+block
+	Window "\n\n﹛五文五文五文℅手孔﹝手五文〝",YES,NO
+		Window_YES Itemspace == 0
+			EndWindow "\n\n﹛手匀五文℅″"
+
+		Window_YES
+			GiveLeak1Item 622010
+			EndWindow "\n\n﹛手匀五氏″"
+
+		Window_NO
+			EndWindow "\n\n﹛手夫文＿＿﹝"
+

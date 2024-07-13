@@ -1,0 +1,7 @@
+###展场包_豪华寿司组收纳餐盒
+
+block Item 15217 >=9
+	 KillItem 15217,9
+	 KillItem 46778,1
+	 GiveStackItem 46783,1
+	 

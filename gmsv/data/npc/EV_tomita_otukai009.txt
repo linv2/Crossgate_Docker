@@ -1,0 +1,83 @@
+#≦反元户化及云勾井中≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛弁伉旦正及摒
+
+###﹛抩铜毛呁醒赭儅
+
+block Item_607904 >= 2
+	EndWindow 3200858
+		#\n\n﹛伙左□弘今氏及抩铜毛窒呦手螂户凶曰仄化﹜\n﹛升丹允月及匹允井〝\n﹛民平切扎氏及澎踞仃卅氏化﹜掖匹允友﹝\n﹛窖匀化仁分今中″
+
+
+
+###﹛抩髦毛赭儅
+
+block Item_607904 == 1
+
+	If StampCount_607904 == 4 && Item_12001 >= 5 && Item_12406 >= 5 && Item_12802 >= 5 && Item_12805 >= 5 && Item_12823 >= 3
+		EndWindow 3200859
+		#\n\n﹛公及绂坁反〝\n﹛引丐﹜伙左□弘今氏卞俇引木化中凶泔及笺恔﹝\n﹛丐卅凶互螂户化五化仁分今匀凶氏匹允井″\n﹛窒化褪濠卅＿﹝丐曰互午丹仍介中引允﹝\n﹛镀仁民平切扎氏卞欐仄化丐仆化仁分今中﹝
+		EndBlock
+
+	else
+		If StampCount_607904 == 4
+			EndWindow 3200860
+		#\n\n﹛泔及笺恔反﹜引分?中化中引六氏﹝\n﹛民平切扎氏手允匀井曰谨切仁凶太木化＿﹝\n﹛赓户化及云勾井中卅及卞﹜井歹中公丹﹝
+			EndBlock
+
+		else
+			If StampCount_607904 == 3
+				EndWindow 3200861
+		#\n\n﹛ミ琼及杅卞窒井丐匀凶及匹仄斤丹井〝\n﹛庄脱午井炕竣匹卅仃木壬中中及匹允互＿﹝
+				EndBlock
+
+			else
+				If StampCount_607904 == 2
+					Window 3200862,OK
+		#\n\n﹛公木反﹜伙左□弘今氏及抩铜匹允友﹝\n﹛丐丐﹜卅月幻升﹜云勾井中及澎踞仃匹允井﹝\n﹛＿掸反﹜伙左□弘今氏卞俇引木凶泔及笺恔互﹜\n﹛引分?中化中卅中氏匹允﹝\n﹛民平切扎氏互谨匀化中月及卞＿﹝漱匀凶歹﹝
+
+						Window_OK Item_607904 >= 2
+							EndWindow 3200863
+		#\n\n﹛丐日﹜公木反＿＿﹝伙左□弘今氏及抩铜﹜\n﹛ㄠ呦元扎卅井匀凶氏匹允友﹝\n﹛掖毛勾仁谛反盟中匹允﹝云娄五潸曰仁分今中﹝
+							EndBlock
+
+						Window_OK Item_607904 == 1
+							AddStampCount 607904,+1
+							EndBlock
+
+						Window_OK
+							EndWindow 3200864
+		#\n\n﹛丐日﹜抩铜互卅仁卅匀凶心凶中匹允方﹝\n﹛丐卅凶互民平切扎氏及澎踞仃毛允月卞反﹜\n﹛伙左□弘今氏及抩铜反优獗圴匹允方﹝\n﹛茧仄凶杅互中中午合中引允仃升﹝
+							EndBlock
+
+				else
+					If StampCount_607904 >= 5
+						EndWindow 3200865
+		#\n\n﹛民平切扎氏及云勾井中﹜拑仪卞碧心引仄凶友﹝\n﹛仍塑洢迋匹允﹝
+						EndBlock
+
+					else
+						EndWindow 3200866
+		#\n\n﹛歹凶仄反泔管阁毛杴隙仄化月氏匹允仃升﹜\n﹛引分苇莲中卅氏匹允﹝镀仁哝伞仄凶中歹﹝
+						EndBlock
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛抩铜尕赭儅
+
+block
+	EndWindow 3200867
+		#\n\n﹛尺氏夭卅赭分匀化合匀化引六氏井〝\n﹛匹手﹜泔及笺恔互中欠中欠午睡木月井日﹜\n﹛泔管阁及忭雄卞反允仍仁中中桦赭卅氏匹允方﹝
+
+
+

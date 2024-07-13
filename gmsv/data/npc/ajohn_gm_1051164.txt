@@ -1,0 +1,23 @@
+######### 月光宝盒包装 ########
+##10元抽签员
+block Gold >= 10
+	 ##1052359	\n\n  欢迎光临！\n\n  花个10魔币试试签运吧！保证让你越抽越幸运。\n\n@c要抽签吗？	1
+	 Window 1052359,YES,NO
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace < 1
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 1
+	 	 	 #//失去魔币10
+	 	 	 AddGold -10
+	 	 	 #//得到 一项商品
+	 	 	 GiveLeak1Item (45568%1$1,45569%1$1,45570%1$1,45571%1$1,45572%1$1)
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+
+##一般
+block 
+	 ##1052360	\n\n\n\n@c很抱歉，小本经营恕不赊帐。	1
+	 EndWindow 1052360

@@ -1,0 +1,15 @@
+#1110479	\n\n\n\n@c靴子有奇怪的声响，要敲看吗？？	1
+block Item 41050 >= 1  && petspace >= 1
+#block Item 40707 >= 1  && petspace >= 1
+	 Window 1110479,YES,NO
+	 Window_yes
+
+	 KillItem 41050
+	 GivePet 41316
+#GivePet 103219,(206803)
+	 Window_NO
+	 Endblock
+
+block Item 40707 >= 1 && petspace == 0
+
+	 EndWindow 1102679

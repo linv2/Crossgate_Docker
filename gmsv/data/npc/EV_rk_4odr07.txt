@@ -1,0 +1,19 @@
+#?????
+
+block EndEvent 53 == 1
+	Window 22816,Next
+	Window 22817,Next
+	Window 22818,Next
+	Window 22819,Next
+	Window 22820,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46029,1,9
+
+block EndEvent 61 == 1
+	Window 22821,Next
+	Window 22822,Next
+	Window 22823,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46029,1,9

@@ -1,0 +1,18 @@
+#1054704	\n\n\n　　　　　那个自称新手的人～～\n　　　　　一直跟我们烦～～
+#1054705	\n\n　　　　　真的很可恶喔～～\n　　　　　要钱要宠～\n　　　　　还挑档次～～
+#1054707	\n\n\n　　　　　带他去买平民装～～\n　　　　　还嫌装备不好，说要水衣帕斧～～
+#1054708	\n\n\n@c你要进去跟他聊天吗？？
+
+#Warp 0,32087,449,183	
+
+block 
+	 Window 1054704,NEXT
+	 Window 1054705,NEXT
+	 Window 1054707,NEXT
+	 Window 1054708,YES,NO
+	 Window_YES
+	 Warp 0,32465,25,12
+	 Window_NO
+	 Endblock
+	 
+

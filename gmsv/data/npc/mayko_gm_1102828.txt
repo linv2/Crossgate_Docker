@@ -1,0 +1,9 @@
+#1111880	\n\n\n　　　　这田里的灰兔很不安份，\n　　　　您能帮我看看吗？	1
+block 
+	window 1111880,yes,no
+	window_yes
+	leavegroup 
+	warp 0,31813,16,10
+	endblock
+	window_no
+	endblock

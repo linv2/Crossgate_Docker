@@ -1,0 +1,35 @@
+#
+#¶ª»ï¡õ¶ªÄ¸Ëü¶ªÄÌ
+#
+
+
+block Item 16326 >= 1 && Item 16321 >= 1 && Item 16322 >= 1 && Item 16323 >= 1 && Item 16324 >= 1 && Item 16325 >= 1
+	EndWindow 22031,OK
+
+block Item 16326 >= 1
+	Window 22023,Yes,No
+		Window_No
+			EndWindow 22024,OK
+		Window_Yes ItemSpace <= 4
+			EndWindow 22025
+		Window_Yes
+			Window 22026,Next
+			Window 22027,Next
+			Window 22028,Next
+			Window 22029,Next
+			Play_SE 291,320,240
+			Window 22030,OK
+				Window_OK ItemSpace <= 4
+					EndWindow 22025
+				Window_OK
+					Window 22031,OK
+					Window_OK ItemSpace <= 4
+						EndWindow 22025
+					Window_OK Item 16326 >= 1
+						GiveItem 16321
+						GiveItem 16322
+						GiveItem 16323
+						GiveItem 16324
+						GiveItem 16325
+Block
+	Message 22032

@@ -1,0 +1,51 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛伊奶乒件及摒
+
+###﹛皮□汁缜谛匹综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 320 && SkillLevel_212 >= 5
+	Window 3205253,OK
+
+		#\n\n﹛支匀午氶及⑵苇六卞侳支互匀凶卅﹜仇及沓牬″\n﹛云中日及必永汁皮□汁毛综曰化尹匀化氏分欠﹝\n﹛云丹﹜项尹化支月井日⑵氏酦卞獭五仇氏匹﹜\n﹛⑧仆请今卅中方丹卞获仄午仃″
+
+		Window_OK
+			GiveRecipe 744
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛皮□汁缜谛匹综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 320
+	Window 3205254,OK
+
+		#\n\n﹛蕙仄中皮□汁及综曰杅〝﹛项尹日氏友尹方﹝\n﹛分匀化云蟆﹜引分?谛蟆元扎友尹井﹝\n﹛匀凶仁竣及镀尹﹜手匀午珃呫中化井日侳卅﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛皮□汁缜谛匹卅中
+block
+	Window 3205255,YES,NO
+
+		#\n\n﹛云丹﹜卅氏匹尹﹜窖曰凶仁卅匀凶及井〝
+
+		Window_YES
+			Window 3205256,OK
+
+		#\n\n﹛公丹井﹝\n﹛引丐﹜赢蛛允月方丹卅午仇元扎友尹仄卅﹝\n﹛元扎﹜请轼引匹霜匀化支月方﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3205257
+
+		#\n\n﹛分匀凶日﹜狪允锹澎毛棉啜尹化月氏元扎友尹井〝\n﹛云中日反皮□汁缜谛分兮﹝
+
+
+

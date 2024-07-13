@@ -1,0 +1,712 @@
+## 拉霸机ａ
+
+## 带着 46019
+block Item 46019 >= 1 && ItemCreateTime 46019 >= 5 || Item 46028 >= 1 && ItemCreateTime 46028 >= 5
+         if Item 46019 >= 1
+         	 KillItem 46019,1
+         endif
+         if Item 46028 >= 1
+         	 setobject 0,32338,11,13,0
+	 	 setobject 0,32338,13,13,0
+	 	 setobject 0,32338,15,13,0
+	 	 setobject 0,32338,17,13,0
+	 	 setobject 0,32338,19,13,0 
+	 	 KillItem 46028,1
+	 endif
+	 ##1052207 拉霸时间结束，辛苦了，请到兑换处兑换精美礼物。
+	 EndWindow 1052207
+
+##无空间
+block Item 46020 >= 1 && ItemSpace == 0
+   	 KillItem 46020,1
+	 ##1052204 拉霸机喀啦喀啦的动起来了。
+	 Window 1052202,NEXT    
+	 ## 拉霸机用力的转动中。
+	 Window 1052203,NEXT    	 
+	 Window 1052229,NEXT    
+	 Window 1052230,NEXT    
+	 Window 1052203,NEXT    
+	 Window 1052229,NEXT    
+	 Window 1052230,NEXT    
+	 Window 1052203,NEXT    
+	 ## 拉霸还在转动，好像会中大奖的样子。
+	 Window 1052204,NEXT    
+	 ##1052205 啊～46021掉了一大堆下来可是掉到地上坏掉了。
+	 playse 11,1,1                              
+ 	 EndWindow 1052205
+
+##空间大 于 17 格 判断时间来决定拉霸转动次数 (3次,5次,9次,7次,12次)=36
+block Item 46019 >= 1 && ItemCreateTime 46019 < 1 && Item 46020 >= 1 && ItemSpace >= 17
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 GiveLeak1Item (46021%10$3,46021%30$2,46021%60$1)
+	 ## 拉霸机慢慢的停下来了。
+	 EndWindow 1052206 
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 2 && ItemCreateTime 46019 >= 1 && item 46020 >= 1 && ItemSpace >= 17
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                         
+	 GiveLeak1Item (46021%30$3,46021%40$2,46021%30$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 3 && ItemCreateTime 46019 >= 2 && item 46020 >= 1 && ItemSpace >= 17
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT    
+	 Window 1052230,NEXT                                                         
+	 GiveLeak1Item (46021%50$3,46021%40$2,46021%10$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 4 && ItemCreateTime 46019 >= 3 && item 46020 >= 1 && ItemSpace >= 17
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                         
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 GiveLeak1Item (46021%40$3,46021%40$2,46021%20$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 5 && ItemCreateTime 46019 >= 4 && item 46020 >= 1 && ItemSpace >= 17
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                         
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052204,NEXT                                                         
+	 GiveLeak1Item (46021%50$3,46021%40$2,46021%10$1)                               
+	 EndWindow 1052206                                                           
+
+
+##空间大 于 14 格 判断时间来决定拉霸转动次数 (8次,6次,9次,4次,10次)=37
+block Item 46019 >= 1 && ItemCreateTime 46019 < 1 && item 46020 >= 1 && ItemSpace >= 14
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 GiveLeak1Item (46021%30$3,46021%40$2,46021%30$1)
+	 EndWindow 1052206 
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 2 && ItemCreateTime 46019 >= 1 && item 46020 >= 1 && ItemSpace >= 14
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+ 	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                         
+	 Window 1052230,NEXT
+	 GiveLeak1Item (46021%30$3,46021%30$2,46021%40$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 3 && ItemCreateTime 46019 >= 2 && item 46020 >= 1 && ItemSpace >= 14
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT    
+	 Window 1052230,NEXT                                                         
+	 GiveLeak1Item (46021%50$3,46021%40$2,46021%10$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 4 && ItemCreateTime 46019 >= 3 && item 46020 >= 1 && ItemSpace >= 14
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 GiveLeak1Item (46021%10$3,46021%20$2,46021%70$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 5 && ItemCreateTime 46019 >= 4 && item 46020 >= 1 && ItemSpace >= 14
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                         
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052204,NEXT                                                         
+	 GiveLeak1Item (46021%50$3,46021%30$2,46021%20$1)                               
+	 EndWindow 1052206                                                           
+
+##空间大 于 10 格 判断时间来决定拉霸转动次数 (6次,7次,5次,3次,16次)=37
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 1 && item 46020 >= 1 && ItemSpace >= 10
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 GiveLeak1Item (46021%40$3,46021%40$2,46021%20$1)
+	 EndWindow 1052206 
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 2 && ItemCreateTime 46019 >= 1 && item 46020 >= 1 && ItemSpace >= 10
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+ 	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                         
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                         
+	 GiveLeak1Item (46021%30$3,46021%40$2,46021%30$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 3 && ItemCreateTime 46019 >= 2 && item 46020 >= 1 && ItemSpace >= 10
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 GiveLeak1Item (46021%30$3,46021%30$2,46021%40$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 4 && ItemCreateTime 46019 >= 3 && item 46020 >= 1 && ItemSpace >= 10
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                         
+	 GiveLeak1Item (46021%10$3,46021%30$2,46021%60$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 5 && ItemCreateTime 46019 >= 4 && item 46020 >= 1 && ItemSpace >= 10
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                         
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052204,NEXT                                                         
+	 GiveLeak1Item (46021%80$3,46021%20$2,46021%20$1)                               
+	 EndWindow 1052206                                                           
+
+
+##空间大 于 7 格 判断时间来决定拉霸转动次数 (13次,3次,6次,10次,4次)=37
+block Item 46019 >= 1 && ItemCreateTime 46019 < 1 && item 46020 >= 1 && ItemSpace >= 7
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052204,NEXT                                                         
+	 GiveLeak1Item (46021%60$3,46021%30$2,46021%10$1)
+	 EndWindow 1052206 
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 2 && ItemCreateTime 46019 >= 1 && item 46020 >= 1 && ItemSpace >= 7
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 GiveLeak1Item (46021%10$3,46021%40$2,46021%60$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 3 && ItemCreateTime 46019 >= 2 && item 46020 >= 1 && ItemSpace >= 7
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+ 	 Window 1052230,NEXT                                                          
+	 GiveLeak1Item (46021%40$3,46021%20$2,46021%40$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 4 && ItemCreateTime 46019 >= 3 && item 46020 >= 1 && ItemSpace >= 7
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                         
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                         
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT
+	 Window 1052204,NEXT                                                         
+	 GiveLeak1Item (46021%50$3,46021%30$2,46021%20$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 5 && ItemCreateTime 46019 >= 4 && item 46020 >= 1 && ItemSpace >= 7
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052204,NEXT                                                         
+	 GiveLeak1Item (46021%10$3,46021%30$2,46021%60$1)                               
+	 EndWindow 1052206
+
+
+##空间大 于 4 格 判断时间来决定拉霸转动次数 (6次,7次,5次,3次,16次)=37
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 1 && item 46020 >= 1 && ItemSpace >= 4
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 GiveLeak1Item (46021%30$3,46021%30$2,46021%40$1)
+	 EndWindow 1052206 
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 2 && ItemCreateTime 46019 >= 1 && item 46020 >= 1 && ItemSpace >= 4
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052204,NEXT                                                         
+	 GiveLeak1Item (46021%50$3,46021%20$2,46021%30$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 3 && ItemCreateTime 46019 >= 2 && item 46020 >= 1 && ItemSpace >= 4
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 GiveLeak1Item (46021%10$3,46021%30$2,46021%60$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 4 && ItemCreateTime 46019 >= 3 && item 46020 >= 1 && ItemSpace >= 4
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                         
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                         
+	 GiveLeak1Item (46021%30$3,46021%30$2,46021%40$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 5 && ItemCreateTime 46019 >= 4 && item 46020 >= 1 && ItemSpace >= 4
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052204,NEXT                                                         
+	 GiveLeak1Item (46021%60$3,46021%30$2,46021%10$1)                               
+	 EndWindow 1052206
+
+##空间大 于 1 格 判断时间来决定拉霸转动次数 (次,次,次,次,次)=
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 1 && item 46020 >= 1 && ItemSpace >= 1
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+	 Window 1052204,NEXT                                                         
+	 GiveLeak1Item (46021%60$3,46021%30$2,46021%10$1)
+	 EndWindow 1052206 
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 2 && ItemCreateTime 46019 >= 1 && item 46020 >= 1 && ItemSpace >= 1
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+ 	 Window 1052203,NEXT                                                          
+	 GiveLeak1Item (46021%20$3,46021%20$2,46021%60$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 3 && ItemCreateTime 46019 >= 2 && item 46020 >= 1 && ItemSpace >= 1
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                           
+	 GiveLeak1Item (46021%10$3,46021%20$2,46021%70$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 4 && ItemCreateTime 46019 >= 3 && item 46020 >= 1 && ItemSpace >= 1
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                         
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                         
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052204,NEXT                                                         	 
+	 GiveLeak1Item (46021%50$3,46021%20$2,46021%30$1)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 5 && ItemCreateTime 46019 >= 4 && Item 46020 >= 1 && ItemSpace >= 1
+	 KillItem 46020,1                                                                
+	 Window 1052202,NEXT                                                          
+	 Window 1052203,NEXT                                                          
+	 Window 1052229,NEXT                                                          
+	 Window 1052230,NEXT                                                         
+	 GiveLeak1Item (46021%10$3,46021%30$2,46021%60$1)                               
+	 EndWindow 1052206                                                           
+
+##### 小玛莉电玩克星机率
+block Item 46028 >= 1 && ItemCreateTime 46028 < 1 && Item 46020 >= 1
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+         Window 1052230,NEXT
+	 Window 1052203,NEXT      
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT          
+	 Window 1052203,NEXT          
+	 Window 1052229,NEXT          
+	 Window 1052230,NEXT          
+	 Window 1052203,NEXT 
+	 Window 1052229,NEXT          
+	 setobject 0,32338,11,13,19007
+	 setobject 0,32338,13,13,19007
+	 setobject 0,32338,15,13,19007
+	 setobject 0,32338,17,13,19007
+	 setobject 0,32338,19,13,19007
+	 Window 1052230,NEXT          
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0
+	 setobject 0,32338,11,13,19008
+	 setobject 0,32338,13,13,19008
+	 setobject 0,32338,15,13,19008
+	 setobject 0,32338,17,13,19008
+	 setobject 0,32338,19,13,19008
+	 Window 1052203,NEXT          
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0
+	 setobject 0,32338,11,13,19009
+	 setobject 0,32338,13,13,19009
+	 setobject 0,32338,15,13,19009
+	 setobject 0,32338,17,13,19009
+	 setobject 0,32338,19,13,19009
+	 Window 1052204,NEXT
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0                  
+	 GiveLeak1Item (46021%29$4,46021%40$3,46021%20$2,46022%1$10)
+	 EndWindow 1052206 
+
+block Item 46028 >= 1 && ItemCreateTime 46028 < 2 && ItemCreateTime 46028 >= 1 && item 46020 >= 1
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+         Window 1052230,NEXT
+	 Window 1052203,NEXT      
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT          
+	 Window 1052203,NEXT          
+	 Window 1052229,NEXT          
+	 Window 1052230,NEXT          
+	 Window 1052203,NEXT 
+	 Window 1052229,NEXT          
+	 setobject 0,32338,11,13,19007
+	 setobject 0,32338,13,13,19007
+	 setobject 0,32338,15,13,19007
+	 setobject 0,32338,17,13,19007
+	 setobject 0,32338,19,13,19007
+	 Window 1052230,NEXT          
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0
+	 setobject 0,32338,11,13,19008
+	 setobject 0,32338,13,13,19008
+	 setobject 0,32338,15,13,19008
+	 setobject 0,32338,17,13,19008
+	 setobject 0,32338,19,13,19008
+	 Window 1052203,NEXT          
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0
+	 setobject 0,32338,11,13,19009
+	 setobject 0,32338,13,13,19009
+	 setobject 0,32338,15,13,19009
+	 setobject 0,32338,17,13,19009
+	 setobject 0,32338,19,13,19009
+	 Window 1052204,NEXT
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0                                                         
+	 GiveLeak1Item (46021%30$4,46021%47$3,46021%20$2,46022%3$10)                               
+	 EndWindow 1052206                                                           
+
+block Item 46028 >= 1 && ItemCreateTime 46028 < 3 && ItemCreateTime 46028 >= 2 && item 46020 >= 1
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+         Window 1052230,NEXT
+	 Window 1052203,NEXT      
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT          
+	 Window 1052203,NEXT          
+	 Window 1052229,NEXT          
+	 Window 1052230,NEXT          
+	 Window 1052203,NEXT 
+	 Window 1052229,NEXT          
+	 setobject 0,32338,11,13,19007
+	 setobject 0,32338,13,13,19007
+	 setobject 0,32338,15,13,19007
+	 setobject 0,32338,17,13,19007
+	 setobject 0,32338,19,13,19007
+	 Window 1052230,NEXT          
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0
+	 setobject 0,32338,11,13,19008
+	 setobject 0,32338,13,13,19008
+	 setobject 0,32338,15,13,19008
+	 setobject 0,32338,17,13,19008
+	 setobject 0,32338,19,13,19008
+	 Window 1052203,NEXT          
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0
+	 setobject 0,32338,11,13,19009
+	 setobject 0,32338,13,13,19009
+	 setobject 0,32338,15,13,19009
+	 setobject 0,32338,17,13,19009
+	 setobject 0,32338,19,13,19009
+	 Window 1052204,NEXT
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0                                                                                                                   
+	 GiveLeak1Item (46021%40$4,46021%48$3,46021%10$2,46022%2$10)                               
+	 EndWindow 1052206                                                           
+
+block Item 46028 >= 1 && ItemCreateTime 46028 < 4 && ItemCreateTime 46028 >= 3 && item 46020 >= 1
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+         Window 1052230,NEXT
+	 Window 1052203,NEXT      
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT          
+	 Window 1052203,NEXT          
+	 Window 1052229,NEXT          
+	 Window 1052230,NEXT          
+	 Window 1052203,NEXT 
+	 Window 1052229,NEXT          
+	 setobject 0,32338,11,13,19007
+	 setobject 0,32338,13,13,19007
+	 setobject 0,32338,15,13,19007
+	 setobject 0,32338,17,13,19007
+	 setobject 0,32338,19,13,19007
+	 Window 1052230,NEXT          
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0
+	 setobject 0,32338,11,13,19008
+	 setobject 0,32338,13,13,19008
+	 setobject 0,32338,15,13,19008
+	 setobject 0,32338,17,13,19008
+	 setobject 0,32338,19,13,19008
+	 Window 1052203,NEXT          
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0
+	 setobject 0,32338,11,13,19009
+	 setobject 0,32338,13,13,19009
+	 setobject 0,32338,15,13,19009
+	 setobject 0,32338,17,13,19009
+	 setobject 0,32338,19,13,19009
+	 Window 1052204,NEXT
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0                                                                       
+	 GiveLeak1Item (46021%19$4,46021%50$3,46021%30$2,46022%1$10)                               
+	 EndWindow 1052206                                                           
+
+block Item 46028 >= 1 && ItemCreateTime 46028 < 5 && ItemCreateTime 46028 >= 4 && item 46020 >= 1
+	 KillItem 46020,1
+	 Window 1052202,NEXT
+	 Window 1052203,NEXT
+	 Window 1052229,NEXT
+         Window 1052230,NEXT
+	 Window 1052203,NEXT      
+	 Window 1052229,NEXT
+	 Window 1052230,NEXT          
+	 Window 1052203,NEXT          
+	 Window 1052229,NEXT          
+	 Window 1052230,NEXT          
+	 Window 1052203,NEXT 
+	 Window 1052229,NEXT          
+	 setobject 0,32338,11,13,19007
+	 setobject 0,32338,13,13,19007
+	 setobject 0,32338,15,13,19007
+	 setobject 0,32338,17,13,19007
+	 setobject 0,32338,19,13,19007
+	 Window 1052230,NEXT          
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0
+	 setobject 0,32338,11,13,19008
+	 setobject 0,32338,13,13,19008
+	 setobject 0,32338,15,13,19008
+	 setobject 0,32338,17,13,19008
+	 setobject 0,32338,19,13,19008
+	 Window 1052203,NEXT          
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0
+	 setobject 0,32338,11,13,19009
+	 setobject 0,32338,13,13,19009
+	 setobject 0,32338,15,13,19009
+	 setobject 0,32338,17,13,19009
+	 setobject 0,32338,19,13,19009
+	 Window 1052204,NEXT
+	 setobject 0,32338,11,13,0
+	 setobject 0,32338,13,13,0
+	 setobject 0,32338,15,13,0
+	 setobject 0,32338,17,13,0
+	 setobject 0,32338,19,13,0                                                                   
+	 GiveLeak1Item (46021%21$4,46021%45$3,46021%29$2,46022%5$10)                               
+	 EndWindow 1052206                                                           
+
+block Item 46019 >= 1 && Item 46020 == 0 || Item 46028 >= 1 && Item 46020 == 0
+	 ##1052216 身上没有筹码只能跟拉霸机干瞪眼。
+	 EndWindow 1052216
+
+block 
+	 
+	 ##1052208 这是令人疯狂的拉霸机，想玩吗？
+	 EndWindow 1052208

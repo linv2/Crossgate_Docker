@@ -1,0 +1,87 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛仿永扑亘及摒
+
+###﹛甩伉□穴奶仿皮毛赭儅
+block Item_607996 >= 1
+	EndWindow 3204981
+
+		#\n\n﹛云支云支﹜云厄仄反内中少氏幼旦幼旦仄凶竣毛\n﹛旵匀化云月及﹝\n﹛乩件民乓手幻升幻升卞仄化云井氏午﹜\n﹛中内木澎夫升中庄脱毛允月冗﹝
+
+
+
+###﹛甩伉乩穴执及亲毛赭儅
+block Item_607995 >= 1
+
+	If Item_607995 >= 2
+		EndWindow 3204982
+
+		#\n\n﹛内中少氏玄必玄必仄中竣毛旵匀化月午合匀凶日﹜\n﹛呿癫卞亲毛凶仁今氏儅匀化云匀凶及井﹝\n﹛怉卅谛分及﹝
+		EndBlock
+
+	else
+		If StampCount_607995 == 3
+			Window 3204983,NEXT
+
+		#\n\n﹛幻幻丹﹜云厄仄反⑺元锹澎午﹜井卅曰仄勾仇仁\n﹛爵匀化五凶方丹分及﹝?谛甩伉乩穴〝\n﹛＿孔戈﹜公及甩伉乩穴午支日反手仄井仄化﹜\n﹛仇氏卅蛊分匀凶井及﹝
+			Window 3204984,OK
+
+		#\n\n﹛午中丹及反暸襟元扎﹝\n﹛掸反甩伉乩穴午反切斤匀午仄凶襞曰宁中匹卅﹜\n﹛窒匹手﹜手丹域蘸侳化幻仄中公丹分﹝\n﹛兜艘六中﹜漆蘸反爵中卞反卅日氏﹝
+
+				Window_OK Item_607995 >= 2
+					EndWindow 3204985
+
+		#\n\n﹛左左永﹜鬼中互蟆蜕铸荚今六化手日丹冗﹝\n﹛云厄仄﹜窒支日怉卅仇午毛支日井仄凶分欠﹝
+					EndBlock
+
+				Window_OK Item_607995 == 1 && StampCount_607995 == 3
+					AddStampCount 607995,+1
+					EndBlock
+
+				Window_OK Item_607995 == 1 && StampCount_607995 < 3
+					EndWindow 3204986
+
+		#\n\n﹛左左永﹜鬼中互蟆蜕铸荚今六化手日丹冗﹝\n﹛云厄仄﹜窒支日怉卅仇午毛支日井仄凶分欠﹝
+					EndBlock
+
+				Window_OK Item_607995 == 1 && StampCount_607995 > 3
+					EndWindow 3204987
+
+		#\n\n﹛左左永﹜鬼中互蟆蜕铸荚今六化手日丹冗﹝\n﹛云厄仄﹜窒支日怉卅仇午毛支日井仄凶分欠﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3204988
+
+		#\n\n﹛左左永﹜鬼中互蟆蜕铸荚今六化手日丹冗﹝\n﹛云厄仄﹜窒支日怉卅仇午毛支日井仄凶分欠﹝
+					EndBlock
+
+		else
+			If StampCount_607995 >= 4
+				EndWindow 3204989
+
+		#\n\n﹛?谛甩伉乩穴互谨匀化中月冗﹝\n﹛苇凶杴反丐丐分互﹜漪反中中蛊分井日卅﹜\n﹛丐氏引曰谨凶六切扎井歹中公丹分冗﹝
+				EndBlock
+
+			else
+				EndWindow 3204990
+
+		#\n\n﹛云支云支﹜云厄仄反内中少氏幼旦幼旦仄凶竣毛\n﹛旵匀化云月及﹝\n﹛乩件民乓手幻升幻升卞仄化云井氏午﹜\n﹛中内木澎夫升中庄脱毛允月冗﹝
+				EndBlock
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3204991
+
+		#\n\n﹛孔丹﹜示□□匀午辣忷毛仄化中凶日﹜\n﹛内中少氏梂引匹侳化仄引匀凶卅﹝\n﹛反化﹜窖曰Ⅶ反升丹分匀凶匀仃及丹﹝\n﹛＿撩沧卅﹜歹仄反引分示弗化云日氏歹中″
+
+
+

@@ -1,0 +1,11 @@
+#
+#»©Ïþ³ß½ÑÔÊÆË»ï°×
+#
+
+block
+#\n\n\n\n@c©xÊÖµ¤ ¸±å½ÑÔ»Ð×ÖÐ¨”
+ Window 21373,Yes,No
+  Window_Yes
+   LeaveGroup
+   warp 0,300,360,372
+  Window_NO

@@ -1,0 +1,84 @@
+
+block
+
+
+
+
+
+
+			if LocalCount0 == 5
+
+				LocalCount0 = random 2,0
+
+				if LocalCount0 == 1
+
+
+
+
+					LocalCount0 = 5
+
+					Window 3200607,next
+		#\n\n﹛琼谛凶切午﹜潠戴曰﹜\n﹛云手仄欠公丹分方卅丑﹝
+#					Window 3006975,next
+
+
+					EndWindow 3200608
+		#\n\n﹛匹手﹜籣酦及惧曰顺及?谛互\n﹛か坁卅氏分方卅丑﹝\n﹛锳倾蝈够午爵歹卅中午\n﹛骚仄化仁木卅中日仄中仄﹝
+#					EndWindow 3006976
+
+
+
+
+				else
+
+					LocalCount0 = 5
+
+					Window 3200609,next
+		#\n\n﹛拧及港碍卞垫仁籣酦﹜惧曰顺互丐月分欠〝\n﹛丐及燮匹琼谛凶切互﹜方仁\n﹛潠戴曰毛仄化月氏分﹝
+#					Window 3006977,next
+
+
+					Window 3200610,next
+		#\n\n﹛丐公仇卞﹜か荸卅?谛互蛛化卅﹝\n﹛卅井卅井骚仄切扎仁木卅中及今﹝
+#					EndWindow 3006978,next
+
+					EndWindow 3200611
+		#\n\n﹛公木冗木﹜驯心手啜丹仄今＿＿\n﹛疵缙中及﹜ジ月及﹜鄙匀天中及＿＿\n﹛丐午反戈切扎仁切扎褫中及互\n﹛洘酦及驯心卅及今﹝
+
+
+
+				endif
+
+
+
+			else
+
+
+				LocalCount0 = 5
+
+
+				Window 3200612,next
+		#\n\n﹛仇氏卅中中畸及゜卞反\n﹛港辄及拧及港碍匹\n﹛琼谛凶切互潠戴曰毛支匀化公丹分方卅﹝
+#				Window 3006979,next
+
+
+				EndWindow 3200613
+		#\n\n﹛恔咥毛儅切慇氏匹﹜\n﹛晞莘卞丹引仁渔兮化枃尹壬\n﹛旦平伙毛项尹化仁木月仪手丐月日仄中﹝
+#				EndWindow 3006980
+
+
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

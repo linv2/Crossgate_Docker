@@ -1,0 +1,16 @@
+#mayko_item_41257.txt
+block 
+	window 1111771,yes,no
+	window_yes  itemspace > 4
+	killitem 41257,1
+	GiveLeak1Item 41214,5
+	GiveLeak1Item 41215,5
+	GiveLeak1Item 41216,5
+	GiveLeak1Item 41217,3
+	GiveLeak1Item 41209,3
+	endblock
+	window_yes
+	endwindow 1111772
+	Window_no
+	endblock
+

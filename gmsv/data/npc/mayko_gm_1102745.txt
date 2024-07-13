@@ -1,0 +1,52 @@
+##mayko_gm_1102745.txt水蓝鼠饲养师
+#1111702	我的水蓝鼠好像生病了，怎么逗它都没有用。
+#1111703	我这有简单的健康报告书，可否请你帮我拿到法兰城，请饲养师之家的野兽系饲养师父，帮我找出原因。
+#1111704	麻烦你到饲养师之家请野兽系饲养师父帮我找出原因。
+#1111708	谢谢你～水蓝鼠看到这些就变的有精神一点了～这份报告再麻烦你送到法兰城啰！
+#1111710	哇～还有这个呀～
+#1111711	我这有件水蓝鼠要送给你的东西，请收下吧～谢谢啰～
+#水鼠Ｄ活力饮料	mayko_item_47765
+#14490 
+#1111712
+block item 14490 > 0 || item 14491 >0 || item 14492>0 || item 47765 > 0
+	endwindow 1111712
+block item 11220 >0 && item 11221 >0 && item 11223 >0 && item 11225 >0 && item 41213 >0
+	killitem 11220,1
+	killitem 11221,1
+	killitem 11223,1
+	killitem 11225,1
+	killitem 41213,1
+	GiveLeak1Item(14490%40$1,14491%30$1,14492%10$1,47765%20$1)
+	endwindow 1111711
+block item 41213 > 0
+	#window 1111710,next
+	endwindow 1111729
+
+block item 41212 >0 
+	endwindow 1111712
+
+block item 41211 >0 && item 16911 > 0 && item 16912 >0 && item 16913 >0 && item 16914 >0 
+	killitem 41211,1
+	killitem 16911,1
+	killitem 16912,1
+	killitem 16913,1
+	killitem 16914,1
+	GiveLeak1Item 41212,1
+	endwindow 1111708
+
+block item 41211 >0
+	endwindow 1111730
+
+block item 41210 >0
+	endwindow 1111704
+
+block 
+	Window 1111702,ok
+	Window_ok item space >0
+	
+	GiveLeak1Item 41210,1
+	endwindow 1111703
+	Window_ok
+	endwindow 1111695
+	
+

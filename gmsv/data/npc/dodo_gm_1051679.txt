@@ -1,0 +1,36 @@
+###dodo_gm_1051679.txt
+##魔法设计师	30010(149,154)		将飞机头换为紫色爆炸头并给予圣诞小礼包传送至惊色趴踢屋。
+block Item 607742 >= 1 
+	 ##1054725	\n\n\n\n\n@c喔YO！你想要进入惊色趴踢屋一起开趴踢吗？	1																																																																																																			
+	 Window 1054725,YES,NO 
+	 	 Window_NO 
+					 	 	 
+	 	 Window_YES Item 607742 >= 1 
+	 	 	 ##1054726	\n\n  喔NO！你怎么会是这种飞机头造型，这种造型在  任何趴踢的场合都是不被允许的。不过今天算你运  气好，遇到了我这位人人称赞的魔发设计师，你愿  意让我帮你改变造型吗？	1																																																																																																			
+			 Window 1054726,YES,NO 
+			 	 Window_NO 
+			 	 	 ##1054728	\n\n\n\n\n@c那么很抱歉我不能让你进去开趴踢！	1																																																																																																			
+					 EndWindow 1054728
+					 
+				 Window_YES ItemSpace < 2
+				 	 ##1054496	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的二格位置。
+					 EndWindow 1054496
+					 
+				 Window_YES Item 607742 >= 1 && ItemSpace >= 2
+				 	 ##1054727	\n\n  就让我好好改造你的发型吧！\n  现在正逢圣诞节期间，再送你一个小礼物！	1																																																																																																			
+					 Window 1054727,OK
+					 	 Window_OK Item 607742 >= 1
+					 	 	 ##取走飞机头，给予紫色阿富罗头与圣诞小礼包。
+					 	 	 KillItem 607742
+					 	 	 GiveLeak1Item 621022
+					 	 	 GiveLeak1Item 47520
+					 	 	 Warp 0,32298,24,37
+					 	 	 
+block 
+	 ##1054725	\n\n\n\n\n@c喔YO！你想要进入惊色趴踢屋一起开趴踢吗？	1																																																																																																			
+	 Window 1054725,YES,NO 
+	 	 Window_NO 
+					 	 	 
+	 	 Window_YES 
+	 	 	 Warp 0,32298,24,37
+

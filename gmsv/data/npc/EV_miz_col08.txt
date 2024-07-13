@@ -1,0 +1,138 @@
+#哗票⑷绖桦弁巨旦玄﹛必伙扑亦丞﹋穸鴃筏ゴ圴瞿歼﹌
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+######## ##########
+block ItemSpace == 0
+
+#操圴毛云欐仄中凶仄引允﹝仄井仄儅切坁互域ベ匹允氏友﹝窒井中日卅中手及毛桩化化票今中﹝云凑中谯仄引允﹝
+
+	EndWindow 20592,OK	
+block Item 18264 >= 1 && Item 18256 >= 1 && Item 18285 >= 1
+#
+	KillItem 18264
+	KillItem 18256
+	KillItem 18285
+	GiveItem 18278
+	Window 20317,OK
+	Window_OK
+	Warp 0,1455,16,13
+
+block Item 18265 >= 1 && Item 18256 >= 1 && Item 18286 >= 1
+#
+	KillItem 18265
+	KillItem 18256
+	KillItem 18286
+	GiveItem 18279
+	Window 20348,NEXT
+	Window 20596,YES,NO
+#\n\n﹛云户匹午丹仍介中引允﹝民乓件疋左件皮伊旦反蝈朿匹ㄢ潘挀丐曰引允﹝蝈潘挀及民乓件疋左件矛伙玄反缭中引仄凶#井〝
+	Window_YES Item 18279 >= 1 && Item 18280 >= 1 && Item 18281 >= 1
+#\n\n﹛赶呿及民乓件疋左件皮伊旦互缭中引仄凶友﹝丐卅凶卞反赶挥毕樊匹允″″仇及民乓件疋左件巨件皮伊丞毛瞿歼仄引#允﹝仇木井日手互氏壬匀化仁分今中﹝脱★反哗票井日丐卅凶及唾泧毛渝谨仄化中引允﹝
+	Killitem 18279
+	Killitem 18280
+	Killitem 18281
+	GiveItem 18282
+	Window 20583,OK
+	Window_YES
+#升木升木撩斪仄引允方﹝丹℅氏﹝酸ゴ卅互日引分赶呿缭匀化中卅中匹允友﹝手匀午渲舰匀化票今中友﹝	
+																													Window 20597,OK
+	Window_NO
+#\n\n﹛公丹匹允井﹝卅日引分引分互氏壬匀化票今中友﹝
+
+	Window 20595,OK
+	Window_OK
+	Warp 0,1455,16,13
+
+######### C ###########
+
+block Item 18274 >= 1 && Item 18256>= 1 && Item 18287 >= 1
+#
+	KillItem 18274
+	KillItem 18256
+	GiveItem 18280
+	Window 20357,NEXT
+	Window 20596,YES,NO
+	Window_YES Item 18279 >= 1 && Item 18280 >= 1 && Item 18281 >= 1
+	Killitem 18279
+	Killitem 18280
+	Killitem 18281
+	GiveItem 18282
+	Window 20583,OK
+	Window_YES
+	Window 20597,OK
+	Window_NO
+	Window 20595,OK
+	Window_OK
+	Warp 0,1455,16,13
+
+block Item 18274 == 0 && Item 18272 == 0 && Item 18268 == 0 && Item 18256 == 0
+#\n\n﹛允中引六氏互﹜覆爵锹澎及⑷衔及据反升丹今木引仄凶〝丐木互卅中午﹜齿圴午跟晶匹五卅中筋礼卞卅匀化中月氏匹#允方﹝萧仄沭卅中匹允互﹜漆荚反云娄五潸曰仁分今中﹝
+
+	Window 20593,OK
+	Window_OK
+	Warp 0,1455,16,13
+
+block Item 18264 >= 1 && Item 18256 >= 1
+#
+	KillItem 18264
+	KillItem 18256
+	GiveItem 18278
+	Window 20317,OK
+	Window_OK
+	Warp 0,1455,16,13
+
+block Item 18265 >= 1 && Item 18256 >= 1
+#
+	KillItem 18265
+	KillItem 18256
+	GiveItem 18279
+	Window 20348,NEXT
+	Window 20596,YES,NO
+# \n\n﹛云户匹午丹仍介中引允﹝民乓件疋左件皮伊旦反蝈朿匹ㄢ潘挀丐曰引允﹝蝈潘挀及民乓件疋左件矛伙玄反缭中引仄凶#井〝
+	Window_YES Item 18279 >= 1 && Item 18280 >= 1 && Item 18281 >= 1
+# \n\n﹛赶呿及民乓件疋左件皮伊旦互缭中引仄凶友﹝丐卅凶卞反赶挥毕樊匹允″″仇及民乓件疋左件巨件皮伊丞毛瞿歼仄引#允﹝仇木井日手互氏壬匀化仁分今中﹝脱★反哗票井日丐卅凶及唾泧毛渝谨仄化中引允﹝
+	Killitem 18279
+	Killitem 18280
+	Killitem 18281
+	GiveItem 18282
+	Window 20583,OK
+	Window_YES
+#升木升木撩斪仄引允方﹝丹℅氏﹝酸ゴ卅互日引分赶呿缭匀化中卅中匹允友﹝手匀午渲舰匀化票今中友﹝	
+																													Window 20597,OK
+	Window_NO
+#\n\n﹛公丹匹允井﹝卅日引分引分互氏壬匀化票今中友﹝
+
+	Window 20595,OK
+	Window_OK
+	Warp 0,1455,16,13
+
+######### C ###########
+
+block Item 18274 >= 1 && Item 18256 >= 1
+#
+	KillItem 18274
+	KillItem 18256
+	GiveItem 18280
+	Window 20357,NEXT
+	Window 20596,YES,NO
+	Window_YES Item 18279 >= 1 && Item 18280 >= 1 && Item 18281 >= 1
+	Killitem 18279
+	Killitem 18280
+	Killitem 18281
+	GiveItem 18282
+	Window 20583,OK
+	Window_YES
+	Window 20597,OK
+	Window_NO
+	Window 20595,OK
+	Window_OK
+	Warp 0,1455,16,13
+
+block Item 18274 == 0 || Item 18265 == 0 || Item 18264 == 0 || Item 18256 == 0
+#\n\n﹛允中引六氏互﹜覆爵锹澎及⑷衔及据反升丹今木引仄凶〝丐木互卅中午﹜齿圴午跟晶匹五卅中筋礼卞卅匀化中月氏匹#允方﹝萧仄沭卅中匹允互﹜漆荚反云娄五潸曰仁分今中﹝
+
+	Window 20593,OK
+	Window_OK
+	Warp 0,1455,16,13

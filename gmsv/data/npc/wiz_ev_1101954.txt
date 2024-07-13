@@ -1,0 +1,138 @@
+###############抽水器4升wiz_ev_1101954.txt
+
+##有14的水
+block Item 40354 >= 1
+	 EndWindow 1102265
+	 ##1102265	\n\n\n  桶子已经满了，无法再装了。
+ 
+##有13的水
+block Item 40353 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40353 >= 1
+	 	 KillItem 40353
+	 	 GiveLeak1Item 40354
+	 	 EndWindow 1102267
+	 	 ##1102267	\n\n\n  已经装了14升水，似乎已经装满了。
+	 Window_NO 
+
+##有12升水
+block Item 40352 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40352 >= 1
+	 	 KillItem 40352
+	 	 GiveLeak1Item 40354
+	 	 EndWindow 1102267
+	 	 ##1102267	\n\n\n  已经装了14升水，似乎已经装满了。
+	 Window_NO 
+
+##有11升的水
+block Item 40351 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40351 >= 1
+	 	 KillItem 40351
+	 	 GiveLeak1Item 40354
+	 	 EndWindow 1102267
+	 	 ##1102267	\n\n\n  已经装了14升水，似乎已经装满了。
+	 Window_NO 
+
+##有10升的水
+block Item 40350 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40350 >= 1
+	 	 KillItem 40350
+	 	 GiveLeak1Item 40354
+	 	 EndWindow 1102267
+	 	 ##1102267	\n\n\n  已经装了14升水，似乎已经装满了。
+	 Window_NO
+
+##有9升水
+block Item 40349 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40349 >= 1
+	 	 KillItem 40349
+	 	 GiveLeak1Item 40353
+	 	 EndWindow 1102268
+	 	 ##1102268	\n\n\n  装了13升的水。
+	 Window_NO 
+
+##有8升水
+block Item 40348 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40348 >= 1
+	 	 KillItem 40348
+	 	 GiveLeak1Item 40352
+	 	 EndWindow 1102269
+	 	 ##1102269	\n\n\n  装了12升的水。
+	 Window_NO
+ 
+##有7升水
+block Item 40347 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40347 >= 1
+	 	 KillItem 40347
+	 	 GiveLeak1Item 40351
+	 	 EndWindow 1102270
+	 	 ##1102270	\n\n\n  装了11升的水。
+	 Window_NO
+
+##有6升水
+block Item 40346 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40346 >= 1
+	 	 KillItem 40346
+	 	 GiveLeak1Item 40350
+	 	 EndWindow 1102271
+	 	 ##1102271	\n\n\n  装了10升的水。
+	 Window_NO
+
+##有5升水
+block Item 40345 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40345 >= 1
+	 	 KillItem 40345
+	 	 GiveLeak1Item 40349
+	 	 EndWindow 1102272
+	 	 ##1102272	\n\n\n  装了9升的水。
+	 Window_NO
+
+##有4升水
+block Item 40344 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40344 >= 1
+	 	 KillItem 40344
+	 	 GiveLeak1Item 40348
+	 	 EndWindow 1102273
+	 	 ##1102273	\n\n\n  装了8升的水。
+	 Window_NO
+
+##有3升水
+block Item 40343 >= 1
+	 Window 1102266,YES,NO
+	 ##1102266	\n\n\n  还要再装水吗？
+	 Window_YES Item 40343 >= 1
+	 	 KillItem 40343
+	 	 GiveLeak1Item 40347
+	 	 EndWindow 1102274
+	 	 ##1102274	\n\n\n  装了7升的水。
+	 Window_NO
+
+##有清扫用具
+block Item 40333 >= 1
+	 Window 1102279,YES,NO
+	 ##1102279	\n\n\n  要装水吗？
+	 Window_YES Item 40333 >= 1
+	 	 KillItem 40333
+	 	 GiveLeak1Item 40344
+	 	 EndWindow 1102277
+	 	 ##1102277	\n\n\n  装了4升的水。
+	 Window_NO

@@ -1,0 +1,32 @@
+#mayko_gm_1102656.txt
+
+#1110770	\n\n\n\n@c烦啊～～～	1
+#1110771	\n\n\n\n@c我只要回忆起公主的一切就会心烦气燥。	1
+#1110772	\n\n\n　　　　几千年了～\n　　　　一想到她的遭遇就生气～	1
+#1110773	\n\n\n\n@c不想就不会气了～～	1
+#1110743	\n\n\n　　　　我只是想到公主殿下～\n　　　　就会生病头痛～	1
+#1110744	\n\n\n　　　　这边有一些记下来的事～\n　　　　你先拿去看看吧～	1
+#1110763	\n\n\n@c也许忘记公主的一切就好了～	1
+#1110764	\n\n\n@c请你离开，我只想静一静～	1
+
+block item 41153 >0
+	Window 1110763,next
+	Window 1110764,ok
+	window_ok
+	warp 0,43600,79,64
+	endblock
+block 
+	window 1110771,next
+	window 1110772,next
+	window 1110773,next
+	window 1110744,ok
+	Window_ok ItemSpace < 2
+	
+	endwindow 1055517
+	Window_ok
+	GiveLeak1Item 41153,1
+	window 1110745,ok
+	Window_ok 
+	GiveLeak1Item 41154,1
+	warp 0,43600,79,64
+	endwindow 1110764

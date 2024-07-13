@@ -1,0 +1,49 @@
+#”™⁄–ÒÓÁ«€Õæﬁµ©–˛°∞”™⁄–º∞Û–º∞?
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©x”™⁄–∆•‘ ©x##############
+block job >= 421 && job <= 430 && endevent31 == 1
+
+	Window 20751,OK
+	Window_OK group == 1
+	leavegroup
+	endevent31 = 0
+	Warp 0,45006,10,17
+	Window_OK group >= 2
+	Window 20752,OK
+	Window_OK
+	Warp 0,45004,32,31
+
+###########©x”™⁄–∆•‘ ©x##############
+block job >= 421 && job <= 430
+
+	Window 20751,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,45006,10,17
+	Window_OK group >= 2
+	Window 20752,OK
+	Window_OK
+	Warp 0,45004,32,31
+
+###########©xƒÃ√¨º˛–˛±Œèm¡›©x##############
+block endevent31 == 1
+
+	Window 20751,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,45006,10,17
+	Window_OK group >= 2
+	Window 20752,OK
+	Window_OK
+	Warp 0,45004,32,31
+
+###########©x…ßÈŸ¡›©x##############
+block 
+
+	Window 20751,OK
+	Window_OK
+	leavegroup
+	Warp 0,45005,10,17
+

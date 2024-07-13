@@ -1,0 +1,9 @@
+
+block	Xpos==12 && Ypos == 17
+ Window 1109439,YES,NO
+ Window_YES
+ LeaveGroup
+ warp 0,32087,418,298
+ Window_NO
+endblock
+

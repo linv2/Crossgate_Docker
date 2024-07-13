@@ -1,0 +1,13 @@
+#??????¥J?ûé
+
+##########??¥s##########
+block
+   #?????
+   
+	Window 14047,Yes,No
+	Window_Yes
+	Warp 0,11024,14,8
+	Window_NO
+
+
+  

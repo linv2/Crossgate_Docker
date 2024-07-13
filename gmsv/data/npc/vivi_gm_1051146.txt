@@ -1,0 +1,288 @@
+#### 奖品发送 ####
+block Item 46077 >= 101
+	 ##1052266	\n\n\n您要使用101张积分券兑换“纯白吓人箱”一只吗？	1
+	 Window 1052266,YES,NO 
+	 	 Window_NO
+	 	 Window_YES PetSpace == 0 
+		 	 ## \n\n\n\n\n@c宠物栏已经满了。
+		 	 EndWindow 1100004 
+		 Window_YES Item 46077 >= 101 && PetSpace >= 1
+		 	 KillItem 46077,101
+		 	 GivePet 616
+	 	 	 
+block Item 46077 == 100
+	 ##1052267	\n\n\n您要使用100张积分券兑换“天马”一只吗？	1
+	 Window 1052267,YES,NO 
+	 	 Window_NO
+	 	 Window_YES PetSpace == 0 
+		 	 ##\n\n\n\n\n@c宠物栏已经满了。
+		 	 EndWindow 1100004 
+		 Window_YES Item 46077 >= 100 && PetSpace >= 1
+		 	 KillItem 46077,100
+		 	 GivePet 21003
+	 	 	 
+block Item 46077 == 60
+	 ##1052268	\n\n\n您要使用60张积分券兑换“银怪”一只吗？	1
+	 Window 1052268,YES,NO 
+	 	 Window_NO
+	 	 Window_YES PetSpace == 0 
+	 	 	 ##\n\n\n\n\n@c宠物栏已经满了。
+	 	 	 EndWindow 1100004 
+	 	 Window_YES Item 46077 >= 60 && PetSpace >= 1
+			 KillItem 46077,60
+			 GivePet 623
+
+block Item 46077 == 59
+	 ##1052269	\n\n\n您要使用59张积分券兑换“亚特拉斯巨神”一只吗？	1
+	 Window 1052269,YES,NO
+	 	 Window_NO 
+	 	 Window_YES PetSpace == 0 
+	 	 	 ##\n\n\n\n\n@c宠物栏已经满了。
+	 	 	 EndWindow 1100004 
+	 	 Window_YES Item 46077 >= 59 && PetSpace >= 1
+			 KillItem 46077,59
+			 GivePet 814
+	 	 
+block Item 46077 == 58
+	 ##1052270	\n\n\n您要使用58张积分券兑换“风精”一只吗？	1
+	 Window 1052270,YES,NO
+	 	 Window_NO
+	 	 Window_YES PetSpace == 0 
+	 	 	 ##\n\n\n\n\n@c宠物栏已经满了。
+	 	 	 EndWindow 1100004
+	 	 Window_YES Item 46077 >= 58 && PetSpace >= 1
+			 KillItem 46077,58
+			 GivePet 512
+	 	 	 
+block Item 46077 == 57
+	 ##1052271	\n\n\n您要使用57张积分券兑换“火精”一只吗？	1
+	 Window 1052271,YES,NO
+	 	 Window_NO 
+	 	 Window_YES PetSpace == 0 
+	 	 	 ##\n\n\n\n\n@c宠物栏已经满了。
+	 	 	 EndWindow 1100004
+		 Window_YES Item 46077 == 57 && PetSpace >= 1
+			 KillItem 46077,57
+			 GivePet 511
+			 
+block Item 46077 == 56
+	 ##1052272	\n\n\n您要使用56张积分券兑换“水精”一只吗？	1
+	 Window 1052272,YES,NO
+	 	 Window_NO 
+	 	 Window_YES PetSpace == 0 
+	 	 	 ##\n\n\n\n\n@c宠物栏已经满了。
+	 	 	 EndWindow 1100004
+	 	 Window_YES Item 46077 == 56 && PetSpace >= 1
+	 	 	 KillItem 46077,56
+	 	 	 GivePet 513
+	 	 	 
+block Item 46077 == 55
+	 ##1052273	\n\n\n您要使用55张积分券兑换“地精”一只吗？	1
+	 Window 1052273,YES,NO
+	 	 Window_NO 
+	 	 Window_YES PetSpace == 0 
+	 	 	 ##\n\n\n\n\n@c宠物栏已经满了。
+	 	 	 EndWindow 1100004
+	 	 Window_YES Item 46077 == 55 && PetSpace >= 1
+	 	 	 KillItem 46077,55
+	 	 	 GivePet 514
+	 	 	 
+block Item 46077 == 51
+	 ##1052274	\n\n\n您要使用51张积分券兑换“水蓝鼠”一只吗？	1
+	 Window 1052274,YES,NO
+	 	 Window_NO
+	 	 Window_YES PetSpace == 0 
+	 	 	 ##\n\n\n\n\n@c宠物栏已经满了。
+	 	 	 EndWindow 1100004
+	 	 Window_YES Item 46077 == 51 && PetSpace >= 1
+	 	 	 KillItem 46077,51
+	 	 	 GivePet 25
+block Item 46077 == 50
+	 ##1052275	\n\n\n您要使用50张积分券兑换“神盾”一只吗？	1
+	 Window 1052275,YES,NO 
+	 	 Window_NO
+	 	 Window_YES PetSpace == 0 
+	 	 	 ##\n\n\n\n\n@c宠物栏已经满了。
+	 	 	 EndWindow 1100004
+	 	 Window_YES Item 46077 == 50 && PetSpace >= 1
+	 	 	 KillItem 46077,50
+	 	 	 GivePet 21604
+	 	 	
+block Item 46077 == 31
+	 ##1052276	\n\n\n您要使用31张积分券兑换“水龙护身符”吗？	1
+	 Window 1052276,YES,NO
+	 	 Window_NO
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 31 && ItemSpace >= 1
+	 	 	 KillItem 46077,31
+	 	 	 GiveLeak1Item 45993
+	 	 	 
+block Item 46077 == 30
+	 ##1052277	\n\n\n您要使用30张积分券兑换“水龙宝石”吗？	1
+	 Window 1052277,YES,NO
+	 	 Window_NO
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 31 && ItemSpace >= 1
+	 	 	 KillItem 46077,30
+	 	 	 GiveLeak1Item 46072
+block Item 46077 == 27
+	 ##1052278	\n\n\n您要使用27张积分券兑换“水龙之鞋”吗？	1
+	 Window 1052278,YES,NO
+	 	 Window_NO
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 27 && ItemSpace >= 1
+	 	 	 KillItem 46077,27
+	 	 	 GiveLeak1Item 265
+	 	 	 
+block Item 46077 == 26
+	 ##1052279	\n\n\n您要使用26张积分券兑换“水龙之靴”吗？	1
+	 Window 1052279,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 26 && ItemSpace >= 1
+	 	 	 KillItem 46077,26
+	 	 	 GiveLeak1Item 260
+block Item 46077 == 25
+	 ##1052280	\n\n\n您要使用25张积分券兑换“水龙法袍”吗？	1
+	 Window 1052280,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 25 && ItemSpace >= 1
+	 	 	 KillItem 46077,25
+	 	 	 GiveLeak1Item 255
+
+block Item 46077 == 24
+	 ##1052281	\n\n\n您要使用24张积分券兑换“水龙之服”吗？	1
+	 Window 1052281,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 24 && ItemSpace >= 1
+	 	 	 KillItem 46077,24
+	 	 	 GiveLeak1Item 250
+	 
+block Item 46077 == 23
+	 ##1052282	\n\n\n您要使用23张积分券兑换“水龙铠甲”吗？	1
+	 Window 1052282,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 23 && ItemSpace >= 1
+	 	 	 KillItem 46077,23
+	 	 	 GiveLeak1Item 245
+	 	 	 
+block Item 46077 == 22
+	 ##1052283	\n\n\n您要使用22张积分券兑换“水龙之帽”吗？	1
+	 Window 1052283,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 22 && ItemSpace >= 1
+	 	 	 KillItem 46077,22
+	 	 	 GiveLeak1Item 240
+	 	 	 	 
+block Item 46077 == 21
+	 ##1052284	\n\n\n您要使用21张积分券兑换“水龙之盔”吗？	1
+	 Window 1052284,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 21 && ItemSpace >= 1
+	 	 	 KillItem 46077,21
+	 	 	 GiveLeak1Item 235
+
+block Item 46077 == 20
+	 ##1052285	\n\n\n您要使用20张积分券兑换“水龙之盾”吗？	1
+	 Window 1052285,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 20 && ItemSpace >= 1
+	 	 	 KillItem 46077,20
+	 	 	 GiveLeak1Item 270	
+	 	 	 
+block Item 46077 == 16
+	 ##1052286	\n\n\n您要使用16张积分券兑换“水龙之杖”吗？	1
+	 Window 1052286,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 16 && ItemSpace >= 1
+	 	 	 KillItem 46077,16
+	 	 	 GiveLeak1Item 220	
+	 	 	 
+block Item 46077 == 15
+	 ##1052287	\n\n\n您要使用15张积分券兑换“水龙之弓”吗？	1
+	 Window 1052287,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 15 && ItemSpace >= 1
+	 	 	 KillItem 46077,15
+	 	 	 GiveLeak1Item 215
+	 	 	 
+block Item 46077 == 14
+	 ##1052288	\n\n\n您要使用14张积分券兑换“水龙之斧”吗？	1
+	 Window 1052288,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 14 && ItemSpace >= 1
+	 	 	 KillItem 46077,14
+	 	 	 GiveLeak1Item 205
+	 	 	 
+block Item 46077 == 13
+	 ##1052289	\n\n\n您要使用13张积分券兑换“水龙之剑”吗？	1
+	 Window 1052289,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 13 && ItemSpace >= 1
+	 	 	 KillItem 46077,13
+	 	 	 GiveLeak1Item 200
+	 	 	 
+block Item 46077 == 12
+	 ##1052290	\n\n\n您要使用12张积分券兑换“水龙之枪”吗？	1
+	 Window 1052290,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 12 && ItemSpace >= 1
+	 	 	 KillItem 46077,12
+	 	 	 GiveLeak1Item 210
+	 	 	 
+block Item 46077 == 11
+	 ##1052291	\n\n\n您要使用11张积分券兑换“冰龙”吗？	1
+	 Window 1052291,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 11 && ItemSpace >= 1
+	 	 	 KillItem 46077,11
+	 	 	 GiveLeak1Item 225
+	 	 	 
+block Item 46077 == 10
+	 ##1052292	\n\n\n您要使用10张积分券兑换“水龙的小刀”吗？	1
+	 Window 1052292,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 EndWindow 1100001
+	 	 Window_YES Item 46077 == 10 && ItemSpace >= 1
+	 	 	 KillItem 46077,10
+	 	 	 GiveLeak1Item 230
+	 	 	 
+block 
+	 ##1052293	\n奖品兑换说明：\n\n  集积分券 10 张 可换 水龙的小刀\n  集积分券 11 张 可换 冰龙\n  集积分券 12 张 可换 水龙之枪\n  集积分券 13 张 可换 水龙之剑\n  集积分券 14 张 可换 水龙之斧\n  集积分券 15 张 可换 水龙之弓\n  集积分券 16 张 可换 水龙之杖\n  集积分券 20 张 可换 水龙之盾	1
+	 Window 1052293,NEXT
+	 ##1052294	\n\n  集积分券 21 张 可换 水龙之盔\n  集积分券 22 张 可换 水龙之帽\n 集积分券 23 张 可换 水龙铠甲 \n 集积分券 24 张 可换 水龙之服\n 集积分券 25 张 可换 水龙法袍\n 集积分券 26 张 可换 水龙之靴\n 集积分券 27 张 可换 水龙之鞋\n 集积分券 30 张 可换 水龙宝石\n 集积分券 31 张 可换 水龙护身符\n 集积分券 50 张 可换 神盾\n 集积分券 51 张 可换 水蓝鼠	1
+	 Window 1052294,NEXT
+	 ##1052295	\n\n  集积分券 55 张 可换 地精\n  集积分券 56 张 可换 水精\n  集积分券 57 张 可换 火精\n  集积分券 58 张 可换 风精\n  集积分券 59 张 可换 亚特拉斯巨神\n  集积分券 60 张 可换 银怪\n  集积分券100 张 可换 天马\n  集积分券101 张 可换 纯白吓人箱	1
+	 EndWindow 1052295

@@ -1,0 +1,12 @@
+###2006EC 9月份_秘传泡菜盒(空)	din_item_47318.txt
+###能力说明：可收纳九组韩式泡菜饭
+
+block Item 15213 < 27
+	 ##1054438	\n\n\n\n\n  你身上的泡菜饭不足２７个喔！所以无法收纳。	1
+	 EndWindow 1054438
+
+block Item 15213 >=27
+	 KillItem 15213,27
+	 KillItem 47318,1
+	 GiveLeak1Item 47319,1
+	 

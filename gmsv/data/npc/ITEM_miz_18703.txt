@@ -1,0 +1,49 @@
+#
+#五日五日甩□玄
+#
+
+##############  ##############
+block BBImage >= 100025 && BBImage <= 100173
+	EndWindow 20694,OK
+
+block BBImage >= 100275 && BBImage <= 100425
+
+	EndWindow 20694,OK
+
+block BBImage >= 105025 && BBImage <= 105173
+
+	EndWindow 20694,OK
+
+block BBImage >= 105275 && BBImage <= 105425
+
+	EndWindow 20694,OK
+
+block BBImage >= 106025 && BBImage <= 106099
+
+	EndWindow 20694,OK
+
+block BBImage >= 106125 && BBImage <= 106175
+
+	EndWindow 20694,OK
+
+block BBImage >= 106275 && BBImage <= 106349
+
+	EndWindow 20694,OK
+
+block BBImage >= 106375 && BBImage <= 106425
+
+	EndWindow 20694,OK
+block BBImage >= 105500 && BBImage <= 105523
+	EndWindow 20694,OK
+##############################
+block
+
+	EndEvent 28 = 1
+	CheckTitle
+	KillItem 18703,1,(20696)
+	EndWindow 20692,OK
+	
+
+
+
+

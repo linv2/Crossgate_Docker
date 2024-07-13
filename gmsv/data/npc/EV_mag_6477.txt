@@ -1,0 +1,39 @@
+#
+#妅韶及玉仿打件﹋牰豖及显10F﹌
+#
+############## 熔卅卞手卅中 ##############
+block Item 18589 == 0 && Item 18590 == 0 && Item 18591 == 0 && Item 18592 == 0 && Item 18593 == 0 && Item 18594 == 0 && Item 18595 == 0
+#\n\n﹛仇仇反谛棉卅升互箫毛⑦心じ木月桦赭匹反卅中﹝庄脱毛允月蟆卞镀★卞峏切蛔木﹝
+	EndWindow 15312,OK
+
+############## 熔升木井丐月﹋由□泛奴及簿井互儅匀化木壬OK﹌ ##############
+block
+#\n\n\n\n@c＿＿公及檗反＿＿
+	Window 15313,NEXT
+#\n\n\n\n@c＿＿公丹井﹜歹互溶眬互カ户凶樊井＿＿
+	Window 15314,NEXT
+#\n\n\n\n@c＿＿方井欠丹﹜垫仁互恌中＿＿
+	Window 15315,OK
+	Window_OK Item 18589 == 1
+	KillItem 18589,(15316)
+	Warp 0,20120,15,33
+	Window_OK Item 18590 == 1
+	KillItem 18590,(15316)
+	Warp 0,20120,15,33
+	Window_OK Item 18591 == 1
+	KillItem 18591,(15316)
+	Warp 0,20120,15,33
+	Window_OK Item 18592 == 1
+	KillItem 18592,(15316)
+	Warp 0,20120,15,33
+	Window_OK Item 18593 == 1
+	KillItem 18593,(15316)
+	Warp 0,20120,15,33
+	Window_OK Item 18594 == 1
+	KillItem 18594,(15316)
+	Warp 0,20120,15,33
+	Window_OK Item 18595 == 1
+	KillItem 18595,(15316)
+	Warp 0,20120,15,33
+
+

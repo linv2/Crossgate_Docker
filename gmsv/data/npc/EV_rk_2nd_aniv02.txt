@@ -1,0 +1,20 @@
+#????
+
+#????????????
+block Item 18770 >= 1
+	EndWindow 22670,OK
+
+#
+block
+	Window 22666,YES,NO
+		Window_Yes
+			Window 22668,OK
+				Window_OK ItemSpace == 0
+					EndWindow 10000,OK
+				Window_OK Gold < 500
+					EndWindow 10005,OK
+				Window_OK
+					AddGold -500
+					GiveItem 18770,1
+		Window_No
+			EndWindow 22667,OK

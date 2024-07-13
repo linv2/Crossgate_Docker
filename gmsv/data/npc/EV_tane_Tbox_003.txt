@@ -1,0 +1,36 @@
+
+block
+
+
+
+
+		if LocalCount30 == 0
+
+			if ItemSpace >= 1
+
+
+				LocalCount30 = 1
+				GiveItem 607681,1
+				EndWindow 3200229
+		#\n\n﹛母打件及萼毛苇勾仃凶″
+#				EndWindow 3006998
+
+			else
+
+#				EndWindow 3200230
+		#\n\n﹛卅卞井丐月互﹜\n﹛儅切坁互中匀天中匹胶尹卅中﹝
+				EndWindow 3006999
+
+			endif
+		else
+		
+#			EndWindow 3200231
+		#\n\n﹛坞匀吊分﹝
+			EndWindow 3007000
+
+
+		endif
+
+
+
+

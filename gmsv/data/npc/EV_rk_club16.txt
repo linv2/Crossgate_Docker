@@ -1,0 +1,18 @@
+#
+#×ó²¼µ©Ðþ
+#
+
+
+
+block Item 16239 == 1 && StampCount 16239 == 3
+	Endwindow 21786
+block Item 16240 == 1 && StampCount 16240 == 3
+	Endwindow 21786
+block Item 16241 == 1 && StampCount 16241 == 3
+	Endwindow 21786
+block Item 16242 == 1 && StampCount 16242 == 3
+	Endwindow 21786
+
+block
+#
+	Endwindow 21785

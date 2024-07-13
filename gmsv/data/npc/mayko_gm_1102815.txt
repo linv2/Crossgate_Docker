@@ -1,0 +1,19 @@
+#mayko_gm_1102815.txt 朝日连络
+#1741314	月心爷给朝日村连络人的令牌	1	
+#1741316	交给朝日村附近守卫通行证	1	
+#1111853	\n\n\n\n@c将军的命令呀。	1
+#1111854	\n\n\n　　　　你到村外，\n　　　　持通行证跟守卫说一声，\n　　　　就可以去采草药了～～	1
+#1111856	\n\n\n\n@c朝日村有海风吹拂，勉强还能耕作。	1
+
+block item 41316 >0
+	endwindow 1111854
+
+block item 41314 >0
+	killitem 41314,1
+	GiveLeak1Item  41316,1
+	window 1111853,next
+	endwindow 1111854
+block
+	endwindow 1111856	
+
+	

@@ -1,0 +1,136 @@
+#﹛港盒及拨叶﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛弁夫及摒
+
+###﹛痿缜谛匹痿综岳旦平伙伊矛伙互ㄤ动晓
+
+block JobAncestry == 200 && SkillLevel_200 >= 5
+
+
+#﹛毡中石奶永旦伙毛赭儅
+	If Item_607950 >= 1
+		EndWindow 3202908
+
+		#\n\n﹛じ曰轼反仇及港盒及ㄤ遽分方﹝\n﹛僮桦卞卅匀化中月午仇欠毛忷五荚木壬﹜\n﹛じ曰轼互蜇木月氏分﹝
+		EndBlock
+
+
+#﹛嗯噙午失伙穴奶玄﹋ㄡㄟ蜊﹌毛赭儅
+	else
+
+		If Item_607943 >= 1 && Item_9708 >= 20
+			Window 3202909,NEXT
+
+		#\n\n﹛切扎氏午儅匀化五凶氏分友﹝仍塑洢迋﹝\n﹛元扎丐﹜仇及毡中石奶永旦伙毛丐仆月方﹝\n﹛儅匀化ㄤ遽毛忷五荚月午﹜じ曰轼互蜇木月﹝\n﹛公及燮卞廿仁及潜互中月氏分﹝
+			Window 3202910,OK
+
+		#\n\n﹛凶分仄﹜由□泛奴毛赚氏匹中月桦宁反﹜\n﹛伉□母□元扎卅中午じ曰轼反蜇木卅中井日\n﹛镗啦仄化方﹝
+
+				Window_OK Item_607943 >= 1 && Item_9708 >= 20 && ItemSpace >= 1
+					KillItemAll 607943
+					KillItem 9708,20
+					GiveItemEX 607950,1,3202911
+
+		#\n\n﹛漆及引引匹反﹜毡中石奶永旦伙互欐六卅中方﹝\n﹛帮咥仄化幻仄中卅﹝
+					EndBlock
+
+				Window_OK Item_607943 >= 1 && Item_9708 >= 20
+					EndWindow 3202912
+
+		#\n\n﹛漆及引引匹反﹜毡中石奶永旦伙互欐六卅中方﹝\n﹛帮咥仄化幻仄中卅﹝
+					EndBlock
+
+				Window_OK Item_607943 >= 1
+					EndWindow 3202913
+
+		#\n\n﹛丐木﹜失伙穴奶玄互箫曰卅仁卅匀化月﹝\n﹛元扎丐﹜石奶永旦伙反丐仆日木卅中方﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3202914
+
+		#\n\n﹛丐木﹜嗯噙毛升仇尺支匀凶及〝\n﹛卅中午﹜石奶永旦伙反丐仆日木卅中方﹝
+					EndBlock
+
+
+#﹛嗯噙反赭儅仄化中月互﹜失伙穴奶玄互尕箫
+		else
+
+			If Item_607943 >= 1
+				EndWindow 3202915
+
+		#\n\n﹛丐木﹜失伙穴奶玄互箫曰卅中﹝\n﹛优邰卅夤檗反ㄡㄟ蜊分方﹝
+				EndBlock
+
+
+#﹛镗妐踏毛赭儅
+			else
+
+				If Item_607942 >= 1
+					EndWindow 3202916
+
+		#\n\n﹛引分Ⅶ填盒今氏卞莘尹卅中及井中〝\n﹛匹手﹜中月桦赭反甲立汁分方﹜\n﹛仇木反魂柈卅氏分井日﹝
+					EndBlock
+
+
+#﹛晓筏失奶泛丞毛尕赭儅
+				else
+					Window 3202917,YES,NO
+
+		#\n\n﹛丹氏﹜楝仁日中及珃互丐木壬妐嗥卅仄分﹝\n﹛蕙仄中痿及综岳芊毛丿月凶户卞﹜\n﹛廿仁及潜卞莘中凶中井中〝
+
+						Window_YES
+							Window 3202918,NEXT
+
+		#\n\n﹛元扎丐﹜嗯噙毛ㄠ蜊午夤檗及失伙穴奶玄毛\n﹛ㄡㄟ蜊儅匀化五化方﹝\n﹛引丐﹜切斤匀午仄凶魂柈分友﹝
+							Window 3202919,OK
+
+		#\n\n﹛嗯噙反﹜港盒及升仇井卞中月Ⅶ填盒卞\n﹛仇及镗妐踏毛欐六壬熬仃潸木月方﹝\n﹛元扎﹜方欠仄仁﹝
+
+								Window_OK ItemSpace >= 1
+									GiveItemEX 607942,1,3202920
+
+		#\n\n﹛漆及引引匹反镗妐踏互欐六卅中方﹝\n﹛帮咥仄化幻仄中卅﹝
+									EndBlock
+
+								Window_OK
+									EndWindow 3202921
+
+		#\n\n﹛漆及引引匹反镗妐踏互欐六卅中方﹝\n﹛帮咥仄化幻仄中卅
+									EndBlock
+
+						Window_NO
+							EndWindow 3202922
+
+		#\n\n﹛孔丹氏﹜酸ゴ分卅丐﹝\n﹛匹手﹜凶仁今氏洘木化垫仁午变日木月井日﹜\n﹛引丐中中井﹝
+							EndBlock
+
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛痿缜谛分互痿综岳旦平伙伊矛伙互ㄤ恍坢
+
+block JobAncestry == 200
+	EndWindow 3202923
+
+		#\n\n﹛丹□氏﹜漆及楝及珃元扎拑咥心凶中分卅﹝\n﹛廿仁及潜互?抸仄凶痿反﹜引分综木卅中方﹝\n﹛珃毛呫中化﹜引凶侳化仁木方﹝
+
+
+
+###﹛痿缜谛匹反卅中
+
+block
+	EndWindow 3202924
+
+		#\n\n﹛廿仁及潜反允仍仁竣戈内井仄仁匀化今﹜\n﹛丐月蠢蘸珃及丐月痿缜谛元扎卅中午\n﹛引午手卞狪公丹午手仄卅中氏分﹝
+
+
+

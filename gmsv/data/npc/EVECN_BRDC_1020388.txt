@@ -1,0 +1,13 @@
+##百人道场工作人员95完成 map ：9110	16	10
+
+
+block
+	 ##1020712	\n\n恭喜你已经完成了九十五场战斗\n为了更好的迎接剩下的挑战，本道场会再次给与你一个道场记忆\n回去做好充分的准备再来吧！
+	window 1020712,ok
+			window_ok itemspace >= 1
+				 GiveLeak1Item 34635,1
+				 LeaveGroup
+				 warp 0,1000,141,148
+			window_ok
+			endwindow 10000,ok
+

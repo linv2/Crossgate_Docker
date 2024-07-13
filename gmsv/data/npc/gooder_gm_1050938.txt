@@ -1,0 +1,20 @@
+################### 鼠王惊奇蛋兑换处
+block Item 45706 >= 1
+	 ##1051863	恭喜您！您是否要兑换鼠王惊奇蛋？
+	 Window 1051863,YES,NO 
+	 Window_NO 
+################### 物品栏空间不够
+	 Window_YES ItemSpace <= 9
+		 ##1051864	您身上空间不够拿取惊奇蛋喔。
+		  EndWindow 1051864
+	 Window_YES  Item 45706 >= 1	 
+	 	 KillItem 45706
+	 	 GiveLeak1Item(45307%1$10)
+		 ##1051865  祝您中大奖。
+		 EndWindow 1051865
+block
+
+	 ##1051868	\n\n这里是鼠王惊奇蛋兑换处。
+	 EndWindow 1051868
+		
+  	

@@ -1,0 +1,41 @@
+#丢奶件﹛潠’怷3﹛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+
+
+
+
+
+
+
+
+
+
+block CheckRealTime 2004/1/1,00:00:00 == 1
+#block CheckRealTime 2003/12/24,18:00:00 == 1
+
+	Window "\n\n﹛云户匹午℅﹜夫匀仁",next
+
+	EndWindow "\n\n﹛尹℅﹜云℅分℅〝\n﹛户氏升仁今中℅\n﹛帎及抯卞蜕匀化方℅﹜夫匀仁"
+
+
+
+block CheckRealTime 2003/12/26,00:00:00 == 1
+#block CheckRealTime 2003/12/24,00:00:00 == 1
+
+
+	Window "\n\n﹛友﹜友﹜升丹升丹〝\n﹛僻宁丹僻宁丹〝",next
+
+	Window "\n\n﹛穴穴及弁瓦及云恳畸念隶″\n﹛井歹中中方友″",next
+
+	EndWindow "\n\n﹛氏℅漆コ及镳反\n﹛仇及戊旦匹平穴伉分″"
+
+
+
+
+
+

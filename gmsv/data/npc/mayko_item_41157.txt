@@ -1,0 +1,11 @@
+#mayko_item_41157
+block itemspace > 3
+	killitem 41157,1
+	GiveLeak1Item  41155,50
+	GiveLeak1Item  47765,2
+	GiveLeak1Item  47695,3
+	GiveLeak1Item  47696,3
+	endblock
+block 
+	endwindow 1051843
+	

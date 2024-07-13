@@ -1,0 +1,14 @@
+##百人道场工作人员100完成 map：9113	16	10
+
+##奖赏:王者守护神(用原大陆物品)
+
+block
+	 ##1020715	\n\n能够挑战100道场成功的你才是真正的王者！\n这个东西是属于你的，拿去吧！
+	window 1020715,OK
+		 window_ok itemspace >= 1
+			 GiveLeak1Item 34638,1
+			 LeaveGroup
+			 warp 0,1000,141,148
+		 window_ok
+		 endwindow 10000,ok
+

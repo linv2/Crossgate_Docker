@@ -1,0 +1,102 @@
+#幼伙乒件赎跟晶NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛午匀井尹宎启及摒
+
+###﹛丹↘切﹋凝﹌毛40蜊赭儅
+block Item_608000 >= 40
+	Window 3202576,YES,NO
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛切中今中丹↘切午﹜午匀井尹屯之﹜\n﹛赏?反方欠仄﹜方欠仄中井中〝
+
+		Window_YES Item_608000 >= 40 && ItemSpace >= 1
+			KillItem 608000,40
+			GiveItemEX 608700,1,3202577
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+
+		Window_YES Item_608000 >= 40
+			EndWindow 3202578
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+
+		Window_YES
+			EndWindow 3202579
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜丹↘切互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+
+		Window_NO
+			EndWindow 3202580
+
+		#\n\n﹛公曰扎酸ゴ﹜分仃木升手﹜\n﹛晶尹厄午蜕丹卅日﹜酷杅互卅中﹜\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛戚反优内午匀井尹屯之﹝
+
+
+
+###﹛丹↘切﹋酦﹌毛20蜊赭儅
+block Item_608100 >= 20
+	Window 3202581,YES,NO
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛切文丹仁日中丹↘切午﹜午匀井尹屯之﹜\n﹛赏?反方欠仄﹜方欠仄中井中〝
+
+		Window_YES Item_608100 >= 20 && ItemSpace >= 1
+			KillItem 608100,20
+			GiveItemEX 608700,1,3202582
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+
+		Window_YES Item_608100 >= 20
+			EndWindow 3202583
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+
+		Window_YES
+			EndWindow 3202584
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜丹↘切互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+
+		Window_NO
+			EndWindow 3202585
+
+		#\n\n﹛公曰扎酸ゴ﹜分仃木升手﹜\n﹛晶尹厄午蜕丹卅日﹜酷杅互卅中﹜\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛戚反优内午匀井尹屯之﹝
+
+
+
+###﹛丹↘切﹋厘﹌毛20蜊赭儅
+block Item_608200 >= 20
+	Window 3202586,YES,NO
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛云云五中丹↘切午﹜午匀井尹屯之﹜\n﹛赏?反方欠仄﹜方欠仄中井中〝
+
+		Window_YES Item_608200 >= 20 && ItemSpace >= 1
+			KillItem 608200,20
+			GiveItemEX 608700,1,3202587
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+
+		Window_YES Item_608200 >= 20
+			EndWindow 3202588
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+
+		Window_YES
+			EndWindow 3202589
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜丹↘切互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+
+		Window_NO
+			EndWindow 3202590
+
+		#\n\n﹛公曰扎酸ゴ﹜分仃木升手﹜\n﹛晶尹厄午蜕丹卅日﹜酷杅互卅中﹜\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛戚反优内午匀井尹屯之﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3202591,NEXT
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛丹↘切午裟太赎午匀井尹屯之﹜\n﹛爵及今卅井卞蹄中凶午五﹜\n﹛幼伙乒件涂仃勾五扎云卅什今心﹜\n﹛侳月手?殿﹜侳卅中手?殿之﹜
+	EndWindow 3202592
+
+		#\n\n﹛俓仄中卅日﹜儅匀化侳卅﹜\n﹛丹↘切毛螂户化﹜儅匀化侳卅﹜\n﹛凝卅日ㄣㄟ﹜酦厘ㄡㄟ﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+
+

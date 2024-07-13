@@ -1,0 +1,21 @@
+#
+#PUK3_Main1
+#
+#¹ÏÄÌÊ§¡õ»ï©j¾Şñâ·ò¡õºë©k
+
+
+Block Xpos == 319 && Ypos == 148
+
+	Window 3207062,Yes,No
+
+		#\n\n©xòØµ§ÛÖîÎ³ß½ÑÔ»ÒıÔÊ¾®¨”
+	
+		Window_Yes
+		
+			LeaveGroup
+			
+			warp 0,59987,26,15
+			
+		Window_No
+		
+			EndBlock

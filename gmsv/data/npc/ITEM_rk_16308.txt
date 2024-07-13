@@ -1,0 +1,36 @@
+#
+#??????????þÎ???
+#
+
+
+block Item 16308 >= 2
+	Endwindow 21976
+
+block
+	Window 21977,YES,NO
+		Window_NO
+		Window_YES Item 12411 < 10 || Item 12404 < 20 || Item 12400 < 20 || Item 16309 < 10 || Item 16310 < 20
+			Endwindow 21978
+		Window_YES ItemSpace == 0
+			EndWindow 10000,OK
+		Window_YES
+			Play_SE 78,320,240
+			Window 21997,Next
+			Window 21979,OK
+				Window_OK Job >= 351 && Job <= 357
+					killItem 16308,1,(21982)
+					killItem 12400,20,(21992)
+					killItem 12404,20,(21993)
+					killItem 12411,10,(21994)
+					killItem 16309,10,(21995)
+					killItem 16310,20,(21996)
+					GiveItem 16307,1,(21980)
+				Window_OK
+					killItem 16308,1,(21982)
+					killItem 12400,20,(21992)
+					killItem 12404,20,(21993)
+					killItem 12411,10,(21994)
+					killItem 16309,10,(21995)
+					killItem 16310,20,(21996)
+					GiveItem 16304,1,(21981)
+

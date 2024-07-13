@@ -1,0 +1,4 @@
+block Xpos == 40 && Ypos == 29 
+	 warp 0,32114,12,7
+
+endblock

@@ -1,0 +1,77 @@
+###########
+###
+###
+###乩件平□熔巨伉市
+
+
+
+
+
+
+
+
+
+block StrCmpChat==3010082
+
+
+
+	Window "\n\n﹛云丹﹜伉□未件玄分卅″",Yes,No
+	
+		Window_No
+		
+			EndWindow "\n\n﹛中日友尹及井﹝",OK
+			
+		Window_Yes ItemSpace == 0
+		
+			EndWindow "\n\n﹛卅氏分儅化卅中元扎卅中井﹝",OK
+			
+		Window_Yes
+		
+			Window "\n\n﹛元扎丐﹜幻日﹜伉□未件玄分﹝",OK
+		
+		
+				Window_OK ItemSpace == 0
+				
+				EndWindow "\n\n﹛卅氏分儅化卅中元扎卅中井﹝",OK
+		
+			
+				Window_OK
+				
+					GiveItem 607742,1
+
+
+
+block StrCmpChat==3010083
+
+
+
+	Window "\n\n﹛云丹﹜丞仿扔平失白夫分卅″",Yes,No
+	
+		Window_No
+		
+			EndWindow "\n\n﹛中日友尹及井﹝",OK
+			
+		Window_Yes ItemSpace == 0
+		
+			EndWindow "\n\n﹛卅氏分儅化卅中元扎卅中井﹝",OK
+			
+		Window_Yes
+		
+			Window "\n\n﹛元扎丐﹜幻日﹜丞仿扔平失白夫分﹝",OK
+		
+		
+				Window_OK ItemSpace == 0
+				
+				EndWindow "\n\n﹛卅氏分儅化卅中元扎卅中井﹝",OK
+		
+			
+				Window_OK
+				
+					GiveItem 621022,1
+
+
+block
+
+		Window "\n\n﹛云丹﹜永戊仿″\n﹛卅卞苇化支互月″\n﹛＿＿愈嗤仇丹中丹及毛\n﹛汁件犯伊匀化蜕丹日仄中互﹜\n﹛眸反啜丹兮″\n﹛石件乒用及乩件平□分﹝",Next
+		
+		EndWindow "\n\n﹛卅户氏元扎友□冗″\n﹛宁蜕邯反升丹仄凶″宁蜕邯反″\n﹛今丐﹜蜕尹″"

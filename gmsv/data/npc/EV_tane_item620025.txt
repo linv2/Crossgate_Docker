@@ -1,0 +1,23 @@
+#
+#tsuga
+#
+
+
+block
+
+
+	Window "\n\n﹛朼元日木凶玄生伉戊ㄣㄟ呿毛\n﹛荸铄仄引允井〝",yes,no
+
+
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n﹛儅切坁互域ベ匹荸铄匹五卅中﹝"
+
+
+	Window_yes
+
+		killitem 620025,1,(3007172)
+		giveitem 10009,40
+
+	Window_no

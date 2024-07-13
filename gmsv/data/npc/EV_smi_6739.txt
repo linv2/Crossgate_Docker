@@ -1,0 +1,32 @@
+#ÄÌÃ¬¼þÐþ·ºµ©Ðþ
+#ÓúâÙ±åÍÖðö»¥ÓòÚÛØÆÐ×Æ¤·òÓÀÛÍÃ«ÖÊ†AÔÊÔÂ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+
+########## ÆËÅÒ¡õÃ¬ÓÀÐþÛÆÏ·©x##########
+
+block Item 18487 >=1 || Havetitle == 90
+	EndWindow 13156
+
+block Item 18486 >=1
+
+	Window 13150,NEXT
+	Window 13151,NEXT
+	Window 13152,OK
+
+	Window_OK itemspace == 0
+	#ƒ}ÇÐˆ^»¥Óò¥Ù·Ö·½©z
+	EndWindow 13012
+
+	#ÈÔß–?¡°
+	Window_OK itemspace >= 0
+	Killitem 18486
+	GiveItem 18487
+
+block 
+
+	Window 13143,NEXT
+	EndWindow 13144
+
+

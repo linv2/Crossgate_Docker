@@ -1,0 +1,42 @@
+#???þ£?úé?
+
+#§T??ûî(þö)????????
+block Item 16398 >= 1
+	EndWindow 22617
+
+#§T??ûî(þä)????????
+block Item 16397 >= 1
+	Window 22618,Next
+	Window 22619,OK
+		Window_OK
+			KillItemAll 16396
+			KillItemAll 16397
+			EndEvent 115 = 1
+			LeaveGroup
+			Warp 0,33000,406,146
+
+#???????????????
+block Item 16399 >= 1
+	Window 22620,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,34024,15,26
+
+#?¢I???????????
+block Item 16396 >= 1
+	EndWindow 22621,OK
+
+#????þ­????
+block NowEvent 115 == 1 || NowEvent 116 == 1
+	Window 22622,NEXT
+	Window 22623,NEXT
+	Window 22624,NEXT
+	Window 22625,Yes,No
+		Window_No
+			EndWindow 22626
+		Window_Yes
+			Window 22657,OK
+				Window_OK ItemSpace == 0
+					EndWindow 10000
+				Window_OK
+					GiveItem 16396,1

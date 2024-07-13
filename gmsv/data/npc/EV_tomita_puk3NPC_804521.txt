@@ -1,0 +1,26 @@
+#PUK3卞亢支井仄NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛戊□仿旦迩及摒
+
+###
+
+block
+
+	LocalCount2 = Random 2,0
+
+	If LocalCount2 == 1
+		EndWindow 3204187
+
+		#\n\n\n\n@c斗月斗月斗月斗月斗月℅℅℅﹝
+		EndBlock
+
+	else
+		EndWindow 3204188
+
+		#\n\n\n\n@c交伙交伙交伙交伙交伙℅℅℅﹝
+		EndBlock
+
+	endif
+
+
+

@@ -1,0 +1,75 @@
+#斥乓田□ヨ曰14F﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛庣荚曰踏饕够及摒
+
+###﹛≦⑧侅樊≧﹋ID“631016﹌毛赭儅
+block Item_631016 >= 1
+
+	If ItemCreateTime_631016 > 20
+		Window 3205734,OK
+
+		#\n\n﹛窒分﹜引分?仃化卅井匀凶及井方﹝\n﹛仇丹中丹酷仪反凛棉鴃扙卅氏分兮﹝\n﹛仄斤丹互卅中卅﹜愤坌匹?仃月井日﹜\n﹛呿反忒仄化手日丹方﹝
+
+			Window_OK Item_631016 >= 1
+				KillItemAll 631016
+				EndBlock
+
+			Window_OK
+				EndBlock
+
+	else
+		EndWindow 3205735
+
+		#\n\n﹛刭厶厘幂反六匀井切卅元中今氏分井日﹜\n﹛卅月屯仁镀仁?仃凶杅互中中冗﹝
+		EndBlock
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3205736,YES,NO
+
+		#\n\n﹛方丹﹜楝反失乒伙白央旦箪岭及斥乓田□毛\n﹛澎卞じ木凶中及井〝
+
+		Window_YES Item_631016 >= 1
+			EndWindow 3205737
+
+		#\n\n﹛卅氏分﹜手丹欐仄化凶井﹝
+
+		Window_YES ItemSpace >= 1
+			Window 3205738,NEXT
+
+		#\n\n﹛分匀凶日﹜刭厶厘幂卞莘丹午中中﹝\n﹛丐及厘幂反呿午⑺元仁日中辣忷互驯五分井日﹜\n﹛斥乓田□互澎卞じ月桦赭毛襞匀化中月反内分﹝
+			Window 3205739,OK
+
+		#\n\n﹛丐丐公丹分﹜勾中匹卞仇及呿毛?仃化仁木﹝\n﹛医嗯反詨匹熬仃潸月井日﹜欐六壬中中﹝\n﹛?仃坁互丐木壬﹜楝手妏五支允中分欠﹝\n﹛元扎﹜俇戈兮﹝
+
+				Window_OK Item_631016 >= 1
+					EndWindow 3205740
+
+		#\n\n﹛卅氏分﹜手丹欐仄化凶井﹝
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 631016,1,3205741
+
+		#\n\n﹛绂坁互中匀天中分冗﹝
+
+				Window_OK
+					EndWindow 3205742
+
+		#\n\n﹛绂坁互中匀天中分冗﹝
+
+		Window_YES
+			EndWindow 3205743
+
+		#\n\n﹛绂坁互中匀天中分冗﹝
+
+		Window_NO
+			EndWindow 3205744
+
+		#\n\n﹛公丹井﹜元扎丐眸及澎踞仃反冂卞优邰卅中卅﹝
+
+
+

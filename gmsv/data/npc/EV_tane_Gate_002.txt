@@ -1,0 +1,51 @@
+#泛旦玄﹛由伊民尼件﹛旦奶永民及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+block Trialflg == 8
+
+	window 3203177,next
+
+		#\n\n﹛伉□扑乓验卞欐曰引允井〝
+
+	window 3203178,yes,no
+
+		#\n\n﹛欐月桦宁反???﹜\n﹛公及引引?仃月桦宁反\n﹛??午云蚕尹票今中﹝
+
+
+		window_yes
+		
+			LeaveGroup
+			Warp 0,59522,96,136
+		
+		window_no
+
+			window 3203179,yes,no
+
+		#\n\n﹛巨伙扑乓验卞欐月桦宁反???﹜\n﹛失奶扑乓验卞欐月桦宁反??午云蚕尹票今中﹝
+
+				window_yes
+
+					Warp 0,59520,164,153
+
+				window_no
+
+					Warp 0,59521,119,151
+
+block
+
+			window 3203180,yes,no
+
+		#\n\n﹛巨伙扑乓验卞欐月桦宁反???﹜\n﹛失奶扑乓验卞欐月桦宁反??午云蚕尹票今中﹝
+
+				window_yes
+
+					Warp 0,59520,164,153
+
+				window_no
+
+					Warp 0,59521,119,151
+

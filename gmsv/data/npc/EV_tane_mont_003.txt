@@ -1,0 +1,110 @@
+# 3 3201291
+		#EV_tane_mont_001.txt
+# 1 3201292 1
+		#header/global0.h
+# 4 3201293 2
+		#EV_tane_mont_001.txt
+
+block Item 607699 >= 1
+
+		Window 3201294,next
+		#\n\n﹛扔示泛件卞井日﹜\n﹛窒井毛裟太请允奶丢□斥互\n﹛鳗歹匀化仁月﹝
+
+
+		EndWindow 3201295
+		#\n\n﹛仄井仄﹜公木分仃分匀凶﹝
+
+
+
+##
+
+block
+
+if Item 608000 >= 1 || Item 608100 >= 1 || Item 608200 >= 1
+
+
+	if Item 607688 == 0
+
+		Window 3201296,yes,no
+		#\n\n﹛漪呿卞\n﹛幼伙乒件及丹↘切毛\n﹛嘻五引允井〝
+
+		Window_yes Item 608000 >= 1 || Item 608100 >= 1 || Item 608200 >= 1
+
+			KillItemall 608000
+			KillItemall 608100
+			KillItemall 608200
+			
+			giveitem 607688,1
+
+
+		Window_yes
+
+			Endwindow 3201297
+		#\n\n﹛嘻仁屯五手及互卅中﹝
+
+		Window_no
+
+	else
+	
+		if ItemCreateTime 607688 < 61
+*case1*
+	
+				Endwindow 3201298
+		#\n\n﹛镀允亢凶方丹分﹝
+	
+		else
+
+*case2*
+
+				Window 3201299,ok
+		#\n\n﹛白件戊夫布扑互醒氻凶井匀化中月﹝
+
+				window_ok
+
+				killitem 607688,1
+				giveitem 607620,1
+				Endwindow 3201300
+		#\n\n﹛白件戊夫布扑毛忯引尹凶﹝
+
+
+		endif
+	
+	endif
+
+else
+
+	if Item 607688 >= 1
+		if ItemCreateTime 607688 < 61
+
+#			gotoB case1
+
+				Endwindow 3201301
+		#\n\n﹛镀允亢凶方丹分﹝
+
+		else
+		
+#			gotoB case2
+
+				Window 3201302,ok
+		#\n\n﹛白件戊夫布扑互醒氻凶井匀化中月﹝
+
+				window_ok
+
+				killitem 607688,1
+				giveitem 607620,1
+				Endwindow 3201303
+		#\n\n﹛白件戊夫布扑毛忯引尹凶﹝
+
+
+
+		endif
+	
+	else
+
+			Endwindow 3201304
+		#\n\n﹛跈互腾中﹝
+
+	endif
+
+endif
+

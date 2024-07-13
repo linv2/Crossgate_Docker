@@ -1,0 +1,26 @@
+#????
+
+block Item 16333 >= 1
+	EndWindow 22107,OK
+
+block Item 16332 >= 1
+	Window 22059,Next
+	Window 22060,Next
+	Window 22061,OK
+		Window_OK
+			KillItem 16332,1
+			GiveItem 16333,1
+
+block Item 16331 >= 1
+	EndWindow 22125,OK
+
+block Item 16336 >= 1
+	Window 22062,Next
+	Window 22063,Next
+	Window 22064,OK
+		Window_OK
+		KillItem 16336,1,(4037)
+		GiveItem 16331,1
+
+block
+	EndWindow 22062,OK

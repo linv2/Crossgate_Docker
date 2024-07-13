@@ -1,0 +1,40 @@
+#枣赁屻迕奶矛件玄泛旦玄 14105,6“1000 234 129
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## 缜仅互枣赁屻匹卅中桦宁 ##########
+block job <= 429 || job >= 440
+	#LP互蛹剂仄凶午五反﹜枣赁屻今氏毛云俇曰卅今中﹝
+	Window 10786,OK
+
+	# --- LP互10动票及桦宁 --- #
+	Window_OK lp <= 10
+	#丐日﹜引丐″辎分日仃元扎卅中及″镀仁炕情卞云垫五″﹝
+	EndWindow 11014
+
+	# --- LP﹜FP互MAX及桦宁 --- #
+	Window_OK lp == maxlp && fp == maxfp
+	#丐卅凶反竣恘虫恘互虾掸仄化月方丹友﹝艘ミ卅中歹﹝
+	EndWindow 10791
+
+	# --- LP互MAX﹜FP互MAX匹卅中及桦宁 --- #
+	Window_OK lp == maxlp && fp != maxfp
+	#云呏互允中化月氏元扎卅中〝譬咥衔今氏卞打甩件匹手综匀化手日匀凶日〝
+	EndWindow 10790
+
+	# --- LP互MAX匹卅仁﹜FP互MAX及桦宁 --- #
+	Window_OK lp != maxlp && fp == maxfp
+	#引丑﹜厘庍﹝云?木分歹友﹝\n枣赁屻今氏毛茧仄卅今中卅﹝
+	EndWindow 10789
+
+	# --- LP﹜FP互MAX匹卅中桦宁 --- #
+	Window_OK lp != maxlp && fp != maxfp
+	#艘褥隋卞引中匀化月歹友″\n炕情卞垫匀凶杅互中中歹﹝
+	EndWindow 10788
+
+
+########## 缜仅互枣赁屻及桦宁 ##########
+block job >= 430 && job < 440
+	#嗤滞反呺坁互喂尹凶六中匹﹜佹莴樊琼手戏辎互濮尹引六氏及﹝\n漆仇公丐卅凶及恘互优邰卅凛分歹﹝
+	EndWindow 10787

@@ -1,0 +1,50 @@
+#藤篮师	1102534	
+#30108	24	14	
+#mayko_gm_1102534.txt
+
+#1110375	\n\n\n\n@c我不接熟人以外的生意。	1
+#1110376	\n\n\n　　　　是琦琦介绍的呀～\n　　　　那以后你可以自备材料找我做篮子啰！	1
+#1110377	\n\n\n　　　　作面包篮的材料\n　　　轻木一组　麻一捆　木棉布三块。	1
+#1110378	\n\n\n　　　　你现在有材料，\n　　　要付工资500作篮子吗？？	1
+#1110379	\n\n\n\n@c收您500跟材料。	1
+#1110380	\n\n\n\n@c你的钱不够v	1
+#1110381	\n\n\n\n@c你的材料不够。	1
+#1110382	\n\n\n\n@c篮子好了，请收下。	1
+
+#Endevent 163
+#印度轻木10000
+#木棉布10401
+#麻40738
+block EndEvent 163 == 1	&& Item 10000>19 && Item 40738>19 && Item 10401>2
+	 Window 1110377,NEXT
+	 Window 1110378,YES,NO
+	 Window_YES  Item 10000>19 && Item 40738>19 && Item 10401>2 && Gold >499 && ItemSpace > 0
+	 AddGold -500
+	 KillItem 10000,20
+	 KillItem 40738,20
+	 KillItem 10401,3
+	 GiveLeak1Item 41017,1
+	 Window 1110379,NEXT
+	 EndWindow 1110382
+	 
+	 Window_YES ItemSpace == 0
+	 EndWindow 1110369
+	 
+	 Window_YES Gold <500
+	 EndWindow 1110381
+	 
+	 Window_YES
+	 EndWindow 1110381
+	 Window_NO
+	 endblock
+block EndEvent 163 == 1	
+	 EndWindow 1110377
+#琦琦的信	41019
+block Item 41019>0
+	 KillItem 41019,1
+	 EndEvent 163=1
+	 EndWindow 1110376
+block 
+	 EndWindow 1110375	 	 
+	 
+	 

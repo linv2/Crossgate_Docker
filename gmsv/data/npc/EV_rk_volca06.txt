@@ -1,0 +1,30 @@
+#’Á”Æ ßªÔ –µ©(–ı)
+
+#£æ±æ∂™“¡°ıº∞∂™∆π£Ω√´É}‘»ªØ÷–‘¬ÿ¶»’
+block Item 16388 >= 1
+	Window 22510,Next
+	Window 22511,Next
+	EndWindow 22512,OK
+
+#œ∑ã‚º∞œ∂øÊ√´É}‘»ªØ÷–‘¬ÿ¶»’
+block Item 16389 >= 1
+	EndWindow 22513,OK
+
+#NowFLG©x132ª•ONÿ¶»’
+block NowEvent 132 == 1
+	Window 22514,Next
+	Window 22515,Yes,No
+		Window_No
+			Window 22521,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,43000,609,775
+		Window_Yes
+			Window 22516,Next
+			Window 22517,Next
+			Window 22518,Next
+			Window 22519,Next
+			Window 22520,OK
+				Window_OK
+					KillItemAll 16394
+					GiveItem 16389,1

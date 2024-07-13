@@ -1,0 +1,24 @@
+##### 雷克塔尔  港湾管理官
+#1102801	\n\n\n@c你可以搭船到诺斯菲拉特了。	1
+#1102802	\n\n\n@c我们收到公文，你可以搭船到诺斯菲拉特了。	1
+
+
+	 
+block GlobalFlag 484 == 1	 
+##可以搭船时的对话
+	Window 1102802,NEXT
+ 	Window 1102809,YES,NO 	
+		Window_NO
+ 		EndWindow 1102919
+ 		
+ 		Window_YES Gold >= 3000
+ 		AddGold -3000
+ 		LeaveGroup
+		Warp 0,32085,12,20
+		EndWindow 1102396
+
+ 		Window_YES
+ 		EndWindow 3 	
+ 		
+block 
+EndWindow 1102803

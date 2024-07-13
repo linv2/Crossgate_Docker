@@ -1,0 +1,20 @@
+#
+#
+#
+#
+#—·‘¿πª2
+
+
+Block
+		GAWindow 3205454,next
+
+		#\n\n©x?h©inglui©xmglw©inafh©x\n©x?ive©x?©ilyeh©x\n©xwgah©x©hnagl©xfhtagn
+		
+		GAWindow 3205455,OK
+
+		#\n\n©x€∆±Â∑¥£ﬂ£ﬂÒ◊“˝¡˘ œ»ﬂ£ﬂ£ﬂ
+		
+		Window_OK
+		
+			Encount 2|0,59743,172,96||0|||||0|308002|||||||||
+			

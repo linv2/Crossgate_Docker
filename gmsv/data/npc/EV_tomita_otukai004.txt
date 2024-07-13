@@ -1,0 +1,128 @@
+#≦反元户化及云勾井中≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛民平﹋音﹌及摒
+
+###﹛惘弁伉永弁
+
+Block StrCmpChat == R
+
+	If Item_607904 >= 2
+		EndWindow 3200804
+		#\n\n﹛云引尹﹜歹月中谛分卅﹝\n﹛云午手分切市□玉毛手匀化月井日匀化﹜\n﹛分引今木卅中冗″﹛丐匀切尺中仃″″
+		EndBlock
+
+	else
+		If Item_607904 == 1 && StampCount_607904 == 0
+			EndWindow 3200805
+		#\n\n﹛丐﹜云午手分切市□玉互丐月井日﹜\n﹛伙左□弘及云午手分切分友﹝\n﹛丐及友尹﹜民平云勾井中仄化月氏分仃升﹜\n﹛反元户卞中仁午仇欠﹜歹允木切扎匀凶﹝\n﹛分木及午仇井﹜仄日卅中〝
+			EndBlock
+
+		else
+			If Item_607904 == 1 && StampCount_607904 == 1
+				EndWindow 3200806
+		#\n\n﹛分中元斤丹少分方﹝夫午曰匹中仃月手氏″
+				EndBlock
+
+
+			else
+				If Item_607904 == 1
+					EndWindow 3200807
+		#\n\n﹛民平友尹﹜中引云勾井中仄化月及﹝
+					EndBlock
+
+				else
+					EndWindow 3200808
+		#\n\n﹛仄日卅中谛午仄扎屯匀切扎母丢卅氏分方﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘恳荸﹋白仿申左﹌
+
+Block StrCmpChat == 3004912
+
+	If Item_607904 >= 2
+		EndWindow 3200809
+		#\n\n﹛云引尹﹜歹月中谛分卅﹝\n﹛云午手分切市□玉毛手匀化月井日匀化﹜\n﹛分引今木卅中冗″\n﹛丐匀切尺中仃″″
+		EndBlock
+
+	else
+		If Item_607904 == 1 && StampCount_607904 == 0
+			Window 3200810,OK
+		#\n\n﹛公丹分″\n﹛白仿申左元匀切扎氏及午仇欠分匀凶﹝\n﹛丐曰互午﹝匹手﹜升丹仄化歹井匀凶及〝\n﹛引丐中中支﹜中匀化仇方丹匀午″
+
+				Window_OK Item_607904 >= 2
+					EndWindow 3200811
+		#\n\n﹛丐﹜云午手分切市□玉互孔尹凶″\n﹛云引尹﹜歹月中谛分卅﹝\n﹛公氏卅谛及中丹仇午卅氏井﹜五井卅中冗″
+					EndBlock
+
+				Window_OK Item_607904 == 1
+					AddStampCount 607904,+1
+					EndBlock
+
+				Window_OK
+					EndWindow 3200812
+		#\n\n﹛丐木﹜云午手分切市□玉互卅中方﹝\n﹛卅仁仄凶及〝
+					EndBlock
+
+
+		else
+			If Item_607904 == 1
+				EndWindow 3200813
+		#\n\n﹛分中元斤丹少分方﹝切扎氏午云廿尹凶手氏﹝
+				EndBlock
+
+			else
+				EndWindow 3200814
+		#\n\n﹛白仿申左元匀切扎氏卅氏化﹜仄日卅中方﹝\n﹛丐匀切中仃″
+				EndBlock
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘尕恳荸
+Block StrCmpChat != 3004912
+
+	If Item_607904 >= 2
+		EndWindow 3200815
+		#\n\n﹛云引尹﹜歹月中谛分卅﹝\n﹛云午手分切市□玉毛手匀化月井日匀化﹜\n﹛分引今木卅中冗″\n﹛丐匀切尺中仃″″
+		EndBlock
+
+	else
+		If Item_607904 == 1 && StampCount_607904 == 0
+			EndWindow 3200816
+		#\n\n﹛丹□氏﹜方仁歹井日卅中仃升﹜切互丹心凶中﹝
+			EndBlock
+
+		else
+			If Item_607904 == 1
+				EndWindow 3200817
+		#\n\n﹛卅卞公木〝﹛民平﹜歹井氏卅中﹝
+				EndBlock
+
+			else
+				EndWindow 3200818
+		#\n\n﹛分木〝﹛分木〝﹛分木〝﹛分木〝\n﹛仇歹中方丹″
+				EndBlock
+
+			endif
+
+		endif
+
+	endif
+
+
+

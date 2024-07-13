@@ -1,0 +1,91 @@
+####火炉1050926
+		 
+##有自制巧克力材料组、有巧克力专用锅1
+block Item 45757 >= 1 && Item 45770 >= 1
+	 ##1051820	\n\n\n\n  @c拆开了巧克力材料组的袋子。
+	 ##1051821	\n\n\n\n  @c将内容物倒入锅子里。
+	 ##1051816	\n\n\n\n  放在火炉上煮。
+	 ##1051817	\n\n\n\n  ………
+	 ##1051818	\n\n\n\n  发出浓浓的巧克力香 ~~
+	 ##1051819	\n\n\n\n  @c自制的巧克力成功了！！
+	 Window 1051820,NEXT
+	 Window 1051821,NEXT
+	 Window 1051816,NEXT
+	 Window 1051817,NEXT
+	 Window 1051818,NEXT
+	 Window 1051819,OK
+	 	 Window_OK Item 45757 >= 1 && Item 45770 >= 1
+	 	 ##失去巧克力材料组
+		 ##失去巧克力专用锅1
+		 ##得到苦味巧克力
+		 KillItem 45757
+		 KillItem 45770
+		 GiveLeak1Item 45753
+
+##有自制巧克力材料组、有巧克力专用锅2
+block Item 45757 >= 1 && Item 45771 >= 1
+	 ##1051820	\n\n\n\n  @c拆开了巧克力材料组的袋子。
+	 Window 1051820,NEXT
+	 ##1051817	\n\n\n\n  ………
+	 Window 1051817,NEXT
+	 ##1051822	\n\n\n\n  哇，竟跑出一群小强......
+	 Window 1051822,OK
+	 	 Window_OK Item 45757 >= 1 && Item 45771 >= 1
+	 	 ##失去巧克力材料组
+		 ##失去巧克力专用锅2
+		 ##进入战斗
+		 KillItem 45757
+		 KillItem 45771
+		 Encount 3|0,30010,191,106||0|||||0|102397|||||||||
+
+##有自制巧克力材料组、有巧克力专用锅3
+block Item 45757 >= 1 && Item 45772 >= 1
+	 ##1051820	\n\n\n\n  @c拆开了巧克力材料组的袋子。
+	 Window 1051820,NEXT
+	 ##1051821	\n\n\n\n  @c将内容物倒入锅子里。
+	 Window 1051821,NEXT
+	 ##1051816	\n\n\n\n  放在火炉上煮。
+	 Window 1051816,NEXT
+	 ##1051817	\n\n\n\n  ………
+	 Window 1051817,NEXT
+	 ##1051823	\n\n\n\n  ....zzzz
+	 Window 1051823,NEXT
+	 Window 1051824,OK
+	 ##1051824	\n\n\n\n  @c睡着了，而锅子发出一阵焦味！
+	 	 Window_OK Item 45757 >= 1 && Item 45772 >= 1
+	 	 ##失去巧克力材料组
+		 ##失去巧克力专用锅3
+		 ##得到可可亚1
+		 KillItem 45757
+		 KillItem 45772
+		 GiveLeak1Item 45777
+
+##有榛果40、可可亚粉40、牛奶20、巧克力精灵1、专业巧克力锅1
+block Item 45758 >= 1 && Item 45776 >=  40 && Item 45777 >=  40 && Item 12401 >= 20 && Item 45773 >= 1
+	 ##1051815	\n\n\n\n  @c将准备好的材料倒入锅子里。
+	 ##1051816	\n\n\n\n  放在火炉上煮。
+	 ##1051817	\n\n\n\n  ………
+	 ##1051818	\n\n\n\n  发出浓浓的巧克力香 ~~
+	 ##1051819	\n\n\n\n  @c自制的巧克力成功了！！
+	 Window 1051815,NEXT
+	 Window 1051816,NEXT
+	 Window 1051817,NEXT
+	 Window 1051818,NEXT
+	 Window 1051819,OK
+	  	 Window_OK Item 45758 >= 1 && Item 45776 >=  40 && Item 45777 >=  40 && Item 12401 >= 20 && Item 45773 >= 1
+		 ##失去榛果40
+	 	 ##失去可可亚40
+		 ##失去牛奶20
+		 ##失去巧克力精灵
+		 ##失去专业巧克力锅
+		 ##得到甜在心巧克力
+		 KillItem 45768
+		 KillItem 45776,40
+		 KillItem 45777,40
+		 KillItem 12401,20
+		 KillItem 45773
+		 GiveLeak1Item 45754
+
+block
+	 ##1051792	\n\n\n  熊熊火焰燃烧着，似乎要烧尽一切。
+	 EndWindow 1051792

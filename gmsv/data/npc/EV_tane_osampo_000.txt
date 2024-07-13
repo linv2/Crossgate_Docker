@@ -1,0 +1,61 @@
+
+block
+
+
+
+				LocalCount0 = random 3,0
+
+				if LocalCount0 == 1
+
+
+
+					EndWindow 3200188
+		#\n\n﹛港反凶引仍仍?驯五﹝
+
+
+
+				else
+
+					if LocalCount0 == 2
+
+
+
+
+						EndWindow 3200189
+		#\n\n﹛港反拑轼匹分仃升聒咥盏中﹝
+
+
+
+					else
+
+						Window 3200190,yes,no
+		#\n\n﹛云呏互允中凶日﹜仍?﹝\n﹛仍?及伊扑疋﹜中月〝
+
+
+						Window_yes skilllevel 215 >= 1
+						Window 3200191,ok
+		#\n\n﹛反中﹝\n﹛云岊午辞玾匹き坌匹仍?﹝\n﹛凛棉反掖﹝
+								Window_ok
+								GiveRecipe 948
+
+						Window_yes
+						EndWindow 3200192
+		#\n\n﹛譬咥旦平伙互心丐凶日卅中﹝
+
+						Window_no
+
+					endif
+
+				endif
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+
+block
+
+
+
+
+#	Window "\n\n﹛洘木忷五旦平伙穴旦正□及母立□匹允﹝",ok
+	Window 3006967,ok
+
+
+	Window_ok
+

@@ -1,0 +1,17 @@
+#####蛮力提神饮料 id 46320 
+#####增加卡时六小时
+
+block
+	 ##1052479	\n\n要使用“蛮力提神饮料”来加值打卡时数、提振精神吗？使用后不管增加多少卡时，仍受限于上限六小时喔！
+	 Window 1052479,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES FeverSec >= 21599
+	 	 	 ##1052256	\n\n\n\n@c您的卡时已满！	1
+			 EndWindow 1052256
+		 Window_YES FeverSec < 21599
+		 	 KillItem 46320,1
+		 	 AddFeverSec +21600
+		 	 ##1052480	\n\n@c感觉到精神百倍！
+			 EndWindow 1052480
+		 	 

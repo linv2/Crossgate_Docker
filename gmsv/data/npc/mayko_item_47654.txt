@@ -1,0 +1,30 @@
+#
+#±ùÍ²
+#
+#47660	Ê¥´ú
+
+block Item 47654 >= 2
+	 EndWindow 1054977
+
+
+
+############## ÚÐäß¼°ËáÔ»DUR»¥1 ##############
+block Gold >1999
+	 Window 1054969,YES,NO
+	 Window ItemSpace == 0
+ 	 EndWindow 1054970	
+ 	 Window_YES Gold >199 && ItemDur 47654 == 1
+	 AddGold -2000
+	 KillItem 47654,1
+	 GiveLeak1Item 47660,1
+	 endblock
+############## ÚÐäß¼°ËáÔ»DUR»¥2¶¯Ïþ ##############
+	 Window_YES Gold >199 
+	 AddGold -2000
+	 GiveLeak1Item 47660,1
+	 SetDur 47654,-1	 
+	 endblock
+	 Window_YES
+	 EndWindow 3
+
+

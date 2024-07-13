@@ -1,0 +1,49 @@
+#Event	锁匠希希尼奥		1102325	
+#32080	15	19
+
+#1109397	港湾管理处一些柜子的锁坏了，我特地到这里来更新。
+#1109398	你说你想照这样子打三把钥匙呀，\n如果这个是用在库鲁斯克地区的话，\n应该用白金就够了。
+#1109399	可是这边的瘴气还是很浓，每次来这边我都得准备喜马拉斯矿条。
+#1109400	你去弄三条喜马拉斯矿条来吧！
+#1109401	你嫌麻烦也可以拿三条白金啦，但是锈蚀掉就是你的命了。
+#1109402	你真的要用白金打造吗？
+#1109403	好吧！！锈蚀掉我可不管！！
+#1109404	好～我帮你打造。
+#1109430	你要打造钥匙吗？	1
+#1109431	想打钥匙再来找我。	1
+#1109432	你不是打好钥匙了。	1
+
+#白金条	9616
+#喜马拉斯矿条9642
+block Item 40810>0
+	 EndWindow 1109432
+block Item 40811>0
+	 EndWindow 1109432	 
+block Item 9642>2 && Item 40803 >0
+	 Window 1109430,YES,NO
+	 Window_NO
+	 EndWindow 1109431
+	 Item 9642>2 && Item 40803 >0
+	 Window_YES Item 9642>2 && Item 40803 >0
+	 KillItem 9642,3
+	 GiveLeak1item 40810,3
+	 EndWindow 1109404
+block Item 9616>2 && Item 40803 >0	 
+	 Window 1109402,YES,NO
+	 Window_NO
+	 EndWindow 1109431
+	 
+	 Window_YES Item 9616>2 && Item 40803 >0
+	 KillItem 9616,3
+	 GiveLeak1item 40811,3
+	 EndWindow 1109403
+block Item 40803 >0
+	 Window 1109397,NEXT
+	 Window 1109398,NEXT
+	 Window 1109399,NEXT
+	 Window 1109400,NEXT	 
+	 EndWindow 1109401
+
+block 
+	 
+	 EndWindow 1109397

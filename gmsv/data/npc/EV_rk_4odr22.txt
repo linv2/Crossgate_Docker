@@ -1,0 +1,16 @@
+#¢R????
+
+block EquipItem == 16415
+	Window 22859,OK
+		Window_OK EquipItem == 16415
+			Encount 2|0,46044,16,50||0|||||0|20041|||||||||
+		Window_OK
+
+block
+	Window 22855,Yes,No
+		Window_No
+		Window_Yes
+			Window 22856,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,46038,17,14

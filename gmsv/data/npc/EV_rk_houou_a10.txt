@@ -1,0 +1,19 @@
+#??ýçþ°???
+
+block Item 16379 >= 6 && Item 16378 >= 6
+	Window 22336,YES,NO
+		Window_YES Item 16379 >= 6 && Item 16378 >= 6
+			Window 22337,OK
+				Window_OK
+					KillItem 16379,6
+					KillItem 16378,6
+					GiveItem 16381,1
+		Window_YES
+		Window_NO
+			EndWindow 22338
+
+block Item 16379 >= 1 || Item 16378 >= 1
+	EndWindow 22339,OK
+
+block
+	EndWindow 22340,OK

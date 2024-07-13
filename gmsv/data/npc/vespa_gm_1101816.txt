@@ -1,0 +1,41 @@
+##########　ＮＰＣ ：地毯ＩＤ：1101816
+##########　ＭＡＰ：
+##########　豪宅２Ｆ
+##########　作用：以手套来掀开地毯,以决定得到钥匙或是遇到小强
+
+	
+block Item 40271 >=1 || Item 40272 >=1
+	 ##1101880	\n\n似乎没有什么好调查了．．．
+	 EndWindow 1101880
+	
+
+block Item 40269 >=1
+	 ##1101848	\n\n是否要调查？
+	 Window 1101848,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 40269 >=1
+	 	 	 KillLeak1item 40269,1
+	 	 	 GiveLeak1Item (40271%1$1,40272%1$1)
+
+block Item 40270 >=1
+	 ##1101848	\n\n是否要调查？
+	 Window 1101848,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES
+	 	 	 KillLeak1item 40270,1
+#	 	 	 EndWindow 1101880
+		 	 Encount 2|0,32024,20,17||0|||||0|102397|||||||||
+
+	 	 	 
+block 
+	 ##1101848	\n\n是否要调查？
+	 Window 1101848,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES
+	 	 	 ##1101869	\n\n看起来非常脏．．．要不要找个什么东西来掀开？
+			 EndWindow 1101869
+			 
+	 	 	 

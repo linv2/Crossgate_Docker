@@ -1,0 +1,42 @@
+#¥|¦öû¹þÏ????
+
+#???????????
+block EndEvent 113 == 1 || EndEvent 114 == 1 || EndEvent 129 == 1
+	EndWindow 22490,OK
+
+#????????????????
+block Item 16385 >= 1
+	EndWindow 22489,OK
+
+#?????þ­??
+block NowEvent 113 == 1
+	Window 22454,Next
+	Window 22455,Next
+	Window 22456,Next
+	Window 22457,OK
+		Window_OK ItemSpace == 0
+		EndWindow 10000
+		Window_OK
+			GiveItem 16385
+
+#?????þ­??
+block NowEvent 114 == 1
+	Window 22458,Next
+	Window 22459,Next
+	Window 22460,Next
+	Window 22461,OK
+		Window_OK ItemSpace == 0
+		EndWindow 10000
+		Window_OK
+			GiveItem 16385
+#
+block NowEvent 129 == 1
+	Window 22462,Next
+	Window 22463,Next
+	Window 22464,OK
+		Window_OK ItemSpace == 0
+		EndWindow 10000
+		Window_OK
+			GiveItem 16385
+block
+	EndWindow 22462,OK

@@ -1,0 +1,35 @@
+#???“Ⅷ及萼?ヨ谛
+#桦赭“田□失件平□乒卞中月
+block StrCmpChat != 12000 || StrCmpChat == R
+##########  ##########
+	#\n\n﹛谨匀化凶兮﹝丐氏凶洘俀够?分卅〝
+	Window 12006,YES,NO
+##########  ##########
+	#\n\n﹛卅卞″〝簿分云蟆″丐匀切尺垫仃″
+	Window_NO
+	Endwindow 12007
+##########  ##########
+	#\n\n﹛方仄﹜公木元扎拺及剪寞毛蜕尹﹝
+	Window_YES
+	Endwindow 12008
+
+block StrCmpChat == 12000
+##########  ##########
+	#\n\n﹛云支太氏愈嫖″″\n﹛拺及萼﹜儅匀化侳凶兮﹝\n﹛沶窜升云曰ㄠㄟ蜊匹ㄠㄟㄟ?分﹝中中方卅〝
+	Window 12001,YES,NO
+
+		Window_YES gold < 100
+			#\n\n﹛云中云中﹜嗯互箫曰卅中兮﹝挕支井仄卅日窖匀化仁木方﹝
+			Endwindow 12003
+		Window_YES ItemSpace == 0
+			#\n\n﹛云中云中﹜丐氏凶公木动晓儅化卅中分欠丹〝
+			Endwindow 12004
+		Window_YES ItemSpace >= 1
+			AddGold -100
+			GiveLeak1Item 16000,10
+			#\n\n﹛仇木互拺及皮汁分﹜厘仪卞银尹方﹝\n﹛云支太氏愈嫖″″
+			Endwindow 12005
+
+		Window_NO
+			#\n\n﹛中日友尹及井〝目件卅支勾分卅
+			Endwindow 12002

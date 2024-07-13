@@ -1,0 +1,113 @@
+#宎衔乒永幼亘
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+##########有真通行证的状况##########
+block Item 18383 >= 1
+	 #\n\n这里有在发行通往莎莲娜的通行证。不过只有士兵才能拿。\n要通行证吗？
+	 Window 14064,YES,NO
+	 #\n\n你早就有了。	8
+	 Window_YES
+	 EndWindow 14060
+	 Window_NO
+
+##########等级够高的状况（一般战斗）###############
+block Job >= 10 && Job < 200 && Level >= 35
+	 #\n\n这里有在发行通往莎莲娜的通行证。不过只有士兵才能拿。\n要通行证吗？
+	 Window 14064,YES,NO
+	 #\n\n像你这样的等级，就算没有通行证也应该能过去的。
+	 Window_YES
+	 EndWindow 14067
+	 Window_NO
+
+##########等级够高的状况（医护）###############
+block Job >= 430 && Job < 450 && level >= 30
+	 #\n\n这里有在发行通往莎莲娜的通行证。不过只有士兵才能拿。\n要通行证吗？
+	 Window 14064,YES,NO
+	 #\n\n像你这样的等级，就算没有通行证也应该能过去的。
+	 Window_YES
+	 EndWindow 14067
+	 Window_NO
+
+##########正职士兵以上的状况##########
+block Job >= 52 && Job <=57
+	 #\n\n这里有在发行通往莎莲娜的通行证。不过只有士兵才能拿。\n要通行证吗？
+	 Window 14064,YES,NO
+	 Window_YES
+	 #\n\n你满足了通过的条件。通行证一张是1000个金币。
+	 Window 14068,OK,CANCEL
+
+##########物品栏不够#######
+	 Window_OK ItemSpace == 0
+	 #\n\n你的东西太多了
+	 EndWindow 10000
+
+####有钱可以买的状况####
+	 Window_OK Gold >= 1000 && ItemSpace >= 1 && Job >= 52 && Job <= 57
+	 Addgold -1000
+	 GiveLeak1item 18383,1
+
+####没钱的状况####
+	 #\n\n你的钱不够了。
+	 Window_OK Gold < 1000
+	 EndWindow 14076
+
+	 Window_NO
+
+#########见习士兵的状况##############
+block Job == 51
+	 #\n\n这里有在发行通往莎莲娜的通行证。不过只有士兵才能拿。\n要通行证吗？
+	 Window 14064,YES,NO
+
+	 #\n\n很抱歉你只是个见习士兵。我不能给你通行证。
+	 Window_YES 
+	 EndWindow 14065
+	 Window_NO
+
+#########不是士兵的状况（一般战斗）#######################
+block Job >= 10 && Job < 200 && Level < 35 && level >= 25
+	 #\n\n这里有在发行通往莎莲娜的通行证。不过只有士兵才能拿。\n要通行证吗？
+	 Window 14064,YES,NO
+
+	 #\n\n这里只能接受士兵的申请。非士兵者请回吧！
+	 Window_YES 
+	 EndWindow 14075
+	 Window_NO
+
+#########不是士兵的状况（医护）#######################
+block Job >= 430 && Job < 350 && Level < 35 && level >= 25
+	 #\n\n这里有在发行通往莎莲娜的通行证。不过只有士兵才能拿。\n要通行证吗？
+	 Window 14064,YES,NO
+
+	 #\n\n这里只能接受士兵的申请。非士兵者请回吧！
+	 Window_YES 
+	 EndWindow 14075
+	 Window_NO
+
+##########等级够高的状况（一般生产）###############
+block level >= 25 && Job >= 201 && Job < 430
+	 #\n\n这里有在发行通往莎莲娜的通行证。不过只有士兵才能拿。\n要通行证吗？
+	 Window 14064,YES,NO
+	 #\n\n像你这样的等级，就算没有通行证也应该能过去的。
+	 Window_YES
+	 EndWindow 14067
+	 Window_NO
+
+##########等级够高的状况（采集）###############
+block level >= 25 && Job >= 451 && Job < 480
+	 #\n\n这里有在发行通往莎莲娜的通行证。不过只有士兵才能拿。\n要通行证吗？
+	 Window 14064,YES,NO
+	 #\n\n像你这样的等级，就算没有通行证也应该能过去的。
+	 Window_YES
+	 EndWindow 14067
+	 Window_NO
+
+#########不是士兵的状况#######################
+block
+	 #\n\n这里有在发行通往莎莲娜的通行证。不过只有士兵才能拿。\n要通行证吗？
+	 Window 14064,YES,NO
+
+	 #\n\n这里只能接受士兵的申请。非士兵者请回吧！
+	 Window_YES 
+	 EndWindow 14075
+	 Window_NO

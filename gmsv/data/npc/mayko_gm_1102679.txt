@@ -1,0 +1,34 @@
+#mayko_gm_1102679.txt
+#	\n\n　　　　我在这研究古籍，\n　　　　发现了一种奇特的药，\n　　　　不知从何找药材。	1
+#1111358	\n\n\n\n@c你可以帮我吗？	1
+#1111359	\n\n　　　　喔～～\n　　　　你已经有药材了！！\n　　　　可以送给我一份吗？	1
+#1111360	\n\n\n\n@c不帮就算了。	1
+#1111361	\n\n\n　　　　这药需要蛇鳞、蜥蜴皮、恶魔鱼、妖草的血，\n　　　　以竹子削成容器。	1
+#1111362	\n\n\n\n@c材料就麻烦你了。	1
+#1111363	\n\n\n\n@c药做好了，送你一份吧！	1
+block item 18636 >0 &&item 10805 >0 && item 10807 >0 && item 18456 >0 && item 18204 >0
+	Window 1111369,next
+	Window 1111367,yes,no
+	Window_no
+	Endwindow 1111366
+	Window_yes item 18636 >0 &&item 10805 >0 && item 10807 >0 && item 18456 >0 && item 18204 >0
+	killitem 18636,1
+	killitem 10805,1
+	killitem 10807,1
+	killitem 18456,1
+	killitem 18204,1
+	GiveLeak0Item (47222%1$1,19080%5$1,19081%10$1,15601%34$1)
+	Endwindow 1111363
+	Window_yes
+	Endwindow 1111366
+	
+	
+block
+	Window 1111369,next
+	Window 1111368,yes,no
+	Window_no
+	Endwindow 1111366
+	Window_yes
+	Window_1111365,next
+	EndWindow 1111364
+	

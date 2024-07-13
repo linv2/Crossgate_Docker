@@ -1,0 +1,12 @@
+#甲□穴件
+
+#巨伙ㄡ羁毛儅匀化中月卅日
+block EndEvent 56 == 1
+	EndWindow 23182,OK
+#仿件ㄡ羁毛儅匀化中月卅日
+block EndEvent 64 == 1
+	EndWindow 23183,OK
+
+#
+block
+		EndWindow 23184,OK

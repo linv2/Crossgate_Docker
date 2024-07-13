@@ -1,0 +1,245 @@
+#铨擎昵票莱﹛熬仃尥仃及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+
+block globalFlag41 == 1 && Item 620028 >= 1
+
+	window 3202511,next
+
+		#\n\n﹛萧仄晓仆卞仁中及匹允互\n﹛擎昵及莱卞化﹜凶分中引\n﹛公及﹜唱橘互苇熬仃日木引仄化﹜\n﹛丐及﹜域杀﹜熬尥毛曩鞅仄化云曰引允﹝\n﹛萧仄沭丐曰引六氏＿＿
+
+	endwindow 3202512
+
+		#\n\n﹛手仄﹜拑咥卞垫井木月卅日﹜\n﹛午丐月衙中妐蜕毛\n﹛由□泛奴愈詨?及杅互儅凶木月午\n﹛擎昵及莱〇卞じ月仇午反\n﹛午曰丐尹内请侳月日仄中匹允﹝
+
+
+block ItemSpace <= 0
+
+
+	Window 3006073,yes,no
+
+		Window_yes
+
+#\n\n﹛公木匹反﹜丐卅凶及弁伉旦正伙午娄五晶尹卞\n﹛坞及左□皮毛云欐仄仄引允﹝
+
+
+			Window 3006075,next
+
+
+
+#\n\n﹛公木匹反﹜云竣毛尥仃化﹝
+
+			EndWindow 3006099
+
+
+		Window_no
+
+			EndWindow 3006074
+
+
+block Item 9200 >= 1 || Item 9201 >= 1 || Item 9202 >= 1 || Item 9203 >= 1 || Item 9204 >= 1 || Item 9205 >= 1 || Item 9206 >= 1 || Item 9207 >= 1 || Item 9208 >= 1 || Item 9209 >= 1 || Item 9210 >= 1 || Item 9211 >= 1 || Item 9212 >= 1 || Item 9213 >= 1 || Item 9214 >= 1 || Item 9215 >= 1 || Item 9216 >= 1 || Item 9217 >= 1 || Item 9218 >= 1 || Item 9219 >= 1 || Item 9220 >= 1 || Item 9221 >= 1 || Item 9222 >= 1 || Item 9223 >= 1 || Item 9224 >= 1 || Item 9225 >= 1 || Item 9226 >= 1 || Item 9227 >= 1 || Item 9228 >= 1 || Item 9229 >= 1 || Item 9230 >= 1 || Item 9231 >= 1 || Item 9232 >= 1 || Item 9233 >= 1 || Item 9234 >= 1 || Item 9235 >= 1 || Item 9236 >= 1 || Item 9237 >= 1 || Item 9238 >= 1 || Item 9239 >= 1 || Item 9240 >= 1
+
+
+
+
+
+
+		EndWindow 3006088
+
+
+
+
+
+
+
+
+###########﹛lv1 to lv2﹛##############
+block Item 9300 >= 1 || Item 9310 >= 1 || Item 9320 >= 1 || Item 9330 >= 1
+
+
+#\n\n﹛丐卅凶反湃卞\n﹛擎昵及执毛云儅切匹允友〝\n﹛凳卅月擎昵及笛赁毛侗心引允井〝
+
+
+	Window 3006089,yes,no
+
+		Window_yes
+
+#\n\n﹛公木匹反丐卅凶及左□皮午娄五晶尹卞\n﹛坞及左□皮毛云欐仄仄引允﹝
+
+
+
+			Window 3006090,yes,no
+
+				Window_yes
+
+
+
+
+
+#\n\n﹛魂柈及邰嫩反\n﹛漆引匹午⑺迋匹允﹝
+
+					Window 3006091,next
+
+
+#\n\n﹛公木匹反﹜云竣毛尥仃化﹝
+
+
+					Window 3006078,OK
+
+						Window_ok
+
+					KillItem 9300,1
+					KillItem 9310,1
+					KillItem 9320,1
+					KillItem 9330,1
+
+					GiveItem 9341,1
+
+
+				Window_no
+
+#\n\n﹛公丹匹允井﹝\n﹛擎昵螃反﹜中勾匹手\n﹛丐卅凶毛云谨切仄化云曰引允﹝
+
+					EndWindow 3006074,OK
+
+		Window_no
+
+			EndWindow 3006074,OK
+
+
+###########﹛lv2 to lv3﹛##############
+block Item 9301 >= 1 || Item 9311 >= 1 || Item 9321 >= 1 || Item 9331 >= 1
+
+
+
+#\n\n﹛丐卅凶反湃卞\n﹛擎昵及执毛云儅切匹允友〝\n﹛凳卅月擎昵及笛赁毛侗心引允井〝
+
+
+	Window 3006089,yes,no
+
+		Window_yes
+
+#\n\n﹛公木匹反丐卅凶及左□皮午娄五晶尹卞\n﹛坞及左□皮毛云欐仄仄引允﹝
+
+
+
+			Window 3006090,yes,no
+
+				Window_yes
+
+
+
+
+#\n\n﹛魂柈及邰嫩反\n﹛漆引匹午⑺迋匹允﹝
+
+					Window 3006091,next
+
+
+#\n\n﹛公木匹反﹜云竣毛尥仃化﹝
+
+
+					Window 3006078,OK
+
+				window_ok
+				
+					KillItem 9301,1
+					KillItem 9311,1
+					KillItem 9321,1
+					KillItem 9331,1
+
+					GiveItem 9342,1
+
+
+
+				Window_no
+
+#\n\n﹛公丹匹允井﹝\n﹛擎昵螃反﹜中勾匹手\n﹛丐卅凶毛云谨切仄化云曰引允﹝
+
+					EndWindow 3006074,OK
+
+		Window_no
+
+			EndWindow 3006074,OK
+
+
+
+
+###########﹛lv3 to upper﹛##############
+
+block Item 9302 >= 1 || Item 9312 >= 1 || Item 9322 >= 1 || Item 9332 >= 1
+
+
+#\n\n﹛丐卅凶反﹜手丹蜗坌卅笛赁毛\n﹛擎昵螃井日熬仃化中引允﹝
+
+
+
+	Window 3006092,next
+
+#\n\n﹛仄壬日仁﹜艘褥毛锈户﹜\n﹛蕙凶卅月蟾闭尺?尹月互恌中匹仄斤丹﹝
+
+
+	EndWindow 3006093,OK
+
+
+###########﹛lv1 to upper﹛##############
+
+block
+
+#\n\n﹛擎昵及亏仄褥﹜≦伉’田□旦≧及恘毛\n﹛侗引木引允井〝
+
+	Window 3006073,yes,no
+
+		Window_yes
+
+#\n\n﹛公木匹反﹜丐卅凶及弁伉旦正伙午娄五晶尹卞\n﹛坞及左□皮毛云欐仄仄引允﹝
+
+
+			Window 3006075,yes,no
+
+				Window_yes
+
+
+
+
+
+#\n\n﹛仇及左□皮卅仄匹反\n﹛擎昵及恄啖尺反扚仃引六氏﹝
+
+					Window 3006076,next
+
+
+#\n\n﹛仇木反﹜丐卅凶毛\n﹛擎昵及恄啖卞⑼仁午午手卞\n﹛擎昵及魂柈毛绊凶今木凶据﹜\n﹛擎昵及执毛ダ户月湛午卅曰引允﹝
+
+					Window 3006077,next
+
+
+#\n\n﹛公木匹反﹜云竣毛尥仃化﹝
+
+
+					Window 3006078,OK
+
+
+					Window_ok Item 9200 >= 1 || Item 9201 >= 1 || Item 9202 >= 1 || Item 9203 >= 1 || Item 9204 >= 1 || Item 9205 >= 1 || Item 9206 >= 1 || Item 9207 >= 1 || Item 9208 >= 1 || Item 9209 >= 1 || Item 9210 >= 1 || Item 9211 >= 1 || Item 9212 >= 1 || Item 9213 >= 1 || Item 9214 >= 1 || Item 9215 >= 1 || Item 9216 >= 1 || Item 9217 >= 1 || Item 9218 >= 1 || Item 9219 >= 1 || Item 9220 >= 1 || Item 9221 >= 1 || Item 9222 >= 1 || Item 9223 >= 1 || Item 9224 >= 1 || Item 9225 >= 1 || Item 9226 >= 1 || Item 9227 >= 1 || Item 9228 >= 1 || Item 9229 >= 1 || Item 9230 >= 1 || Item 9231 >= 1 || Item 9232 >= 1 || Item 9233 >= 1 || Item 9234 >= 1 || Item 9235 >= 1 || Item 9236 >= 1 || Item 9237 >= 1 || Item 9238 >= 1 || Item 9239 >= 1 || Item 9240 >= 1
+
+					ENDWindow 3006088
+
+					window_ok Itemspace <= 0
+					ENDWindow 3006099
+
+
+					Window_ok
+					GiveItem 9340,1
+
+
+				Window_no
+
+#\n\n﹛公丹匹允井﹝\n﹛擎昵螃反﹜中勾匹手\n﹛丐卅凶毛云谨切仄化云曰引允﹝
+
+					EndWindow 3006074,OK
+
+		Window_no
+
+			EndWindow 3006074,OK

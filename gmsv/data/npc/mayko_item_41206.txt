@@ -1,0 +1,68 @@
+#1111616	首先要到法兰城东边希利布之家(195,97)，向希利布取得封印师就职的情报。
+#1111617	到达美姊妹的店(94,78)买飞行封印卡(75元)。
+#1111618	十级以内且无职业，可以在新手任务里的灵堂，以打到的魔石，向封印小帮手38,50换取五张飞行系封印卡。
+#1111619	到里谢里雅堡的灵堂(47,85)打小石像怪的卡片，记得把卡片登录到图鉴中，卡片？必须先鉴定。
+#1111620	十级以内且无职业，封印小帮手38,50可以帮忙鉴定喔。
+#1111621	战斗中封印小石像怪(必须打一下小石像怪，完全不打是很难封印喔)。
+#1111622	再度回到希利布之家(195,97)找希利布取得推荐函。
+#1111623	你可以到希利布之家(195,97)找希利布拿推荐信，记得物品栏要空一格喔！
+#1111624	到里谢里雅堡2F，西边客房找比利斯就职封印师。
+
+
+#block item 18109 >0
+block item 18109 > 0
+	window 1111624 ,next
+	window 1111688,yes,no
+		 window_yes 
+		 warp 0,1508,10,5
+		 leavegroup 
+		 Window_no
+		 endblock	
+ 
+block PetLevel 201 >= 1 && ItemSpace >= 1
+	window 1111622,next
+	window 1111688,yes,no
+		 window_yes 
+		 warp 0,1185,12,3
+		 leavegroup 
+		 Window_no
+		 endblock	
+block PetLevel 201 >= 1
+	window 1111623,next
+	window 1111688,yes,no
+	 window_yes 
+		 leavegroup 
+		 warp 0,1185,12,3
+		 Window_no
+		 endblock	
+		# warp 0,1185,12,3
+		
+
+block 
+	window 1111616,next
+	window 1111617,next
+	window 1111619,next
+	window 1111620,next
+	window 1111621,next
+	#1111692	想直接领一只小石像怪就职吗？	1
+	Window 1111692,yes,no
+	Window_yes petspace >0
+	GivePet 201
+	endblock
+	Window_yes
+	Window_no
+		window 1111688,yes,no
+		 window_yes 
+		 leavegroup 
+		 warp 0,11015,38,51
+		 Window_no
+		 endblock	
+
+
+##
+#window 1111688,yes,no
+#	 window_yes 
+#	 warp 0,100,434,266
+#	 leavegroup 
+#	 Window_no
+#	 endblock	

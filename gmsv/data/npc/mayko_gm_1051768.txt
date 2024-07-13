@@ -1,0 +1,14 @@
+block 
+	 Window 1055530,YES,NO
+	 Window_YES ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1	 
+	 EndWindow 1100001
+	 Window_YES Gold < 100
+	 #3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 Window_YES 
+ 	 AddGold -100
+	 GiveLeak1Item 47716,1
+#GiveLeak0Item 
+ 	 Window_NO
+ 	 EndWindow 1055531

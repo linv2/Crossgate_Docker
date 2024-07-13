@@ -1,0 +1,10 @@
+##mayko_gm_1051776.txt
+##1055850	\n\n\n@c你想去采集之间吗！！	1
+
+block 
+	  Window 1055850,YES,NO
+	  Window_YES
+	  Warp 0,32130,9,11
+	  Window_NO
+	  endblock
+	  

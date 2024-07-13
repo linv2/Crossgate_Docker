@@ -1,0 +1,52 @@
+#﹛港盒及拨叶﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛扑亦它扑亘它及摒
+
+###﹛皮□丢仿件缜谛匹皮□丢仿件综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 250 && SkillLevel_205 >= 5
+	Window 3203074,OK
+
+		#\n\n﹛丹氏﹜楝及泛弁瓦永弁互丐木壬杽锁卅中方﹝\n﹛蕙皮□丢仿件反任央仿平失市匀化中丹氏分﹝\n﹛综岳芊午域踝卞创尹化云中化方﹝\n﹛元扎﹜项尹月方﹝
+
+		Window_OK
+			GiveRecipe 324
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛皮□丢仿件缜谛分互皮□丢仿件综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 250
+	Window 3203075,OK
+
+		#\n\n﹛丐木〝﹛楝反引分﹜烦董互箫曰卅中方丹分友﹝\n﹛升丹支日仿平失互揪啜中仄凶心凶中分﹝\n﹛冞及蕙皮□丢仿件毛莲丿允月卞反镀中井日﹜\n﹛港盒及请轼引匹霜日六化手日丹方﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+
+###﹛皮□丢仿件缜谛匹反卅中
+block
+	Window 3203076,YES,NO
+
+		#\n\n﹛仇仇匹及迕仪反碧氏分及井中〝\n﹛分匀凶日﹜港盒及请轼引匹霜月仃升﹝
+
+		Window_YES
+			Window 3203077,OK
+
+		#\n\n﹛迕仪反碧引六凶氏分友﹝元扎﹜霜月方﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3203078
+
+		#\n\n﹛引分卅氏分﹝元扎﹜引凶﹝
+
+
+

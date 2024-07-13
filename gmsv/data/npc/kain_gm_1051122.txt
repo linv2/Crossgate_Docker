@@ -1,0 +1,53 @@
+## 拉霸赌场接待小姐 外场 30110
+block Item 46019 == 1
+
+
+block Group > 1
+   	 	 ##1100000 \n请解散队伍。
+	 	 Window 1100000,YES,NO 
+	 	 	 Window_NO 
+	 	 	 Window_YES
+	 	 		 LeaveGroup
+	 	 		 
+## 收钱之后给予计时器 并传送进入拉霸屋
+block ItemSpace >= 1 && Gold >= 100
+	 ##1052214 拉霸赌场入场费100元，入场后必须兑换筹码才可以玩拉霸机，拉霸机落下的彩球必须更换成彩票才能够对奖。另外每次时间限制为10分钟，如果时间到就无法再继续拉霸，但是仍可仍可兑换奖品，请特别注意，筹码与彩票是无法携出。
+	 Window 1052214,NEXT
+	 ##1052213 \n\n\n\n@c小赌怡情、大赌兴国。想要试试手气吗? 记得带钱哦。
+   	 Window 1052213,YES,NO
+   	 Window_NO
+   	 Window_YES ItemSpace >= 1 && Gold >= 100 && Item 46022 >= 1 && Item 46021 >= 1 && Group == 1 && Item 46019 == 0
+   	 	 KillItemall 46022
+   	 	 KillItemall 46021
+   	 	 AddGold -100
+		 GiveLeak1Item 46019,1
+		 Warp 0,32338,10,10
+   	 
+   	 Window_YES ItemSpace >= 1 && Gold >= 100 && Item 46022 >= 1 && Group == 1 && Item 46019 == 0
+   	 	 KillItemall 46022
+		 GiveLeak1Item 46019,1
+		 AddGold -100
+		 Warp 0,32338,10,10
+	 
+	 Window_YES ItemSpace >= 1 && Gold >= 100 && Item 46021 >= 1 && Group == 1 && Item 46019 == 0
+   	 	 KillItemall 46021
+		 GiveLeak1Item 46019,1
+		 AddGold -100
+		 Warp 0,32338,10,10
+	 
+   	 Window_YES ItemSpace >= 1 && Gold >= 100 && Group == 1 && Item 46019 == 0
+   	 	 AddGold -100
+		 GiveLeak1Item 46019,1
+		 Warp 0,32338,10,10
+
+## 物品栏满的状况
+block ItemSpace == 0
+	 ##11550	\n\n@n！你的物品栏满了啦！这样没办法给你东西啦
+	 EndWindow 11550
+
+## 没带钱的状况
+block
+	 ##1052213 小赌怡情、大赌兴国。想要试试手气吗? 记得带钱哦。
+	 EndWindow 1052213
+
+	 

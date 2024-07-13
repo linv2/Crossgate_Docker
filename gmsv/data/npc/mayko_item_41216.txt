@@ -1,0 +1,49 @@
+#卷	螳螂类一级点传送卷	mayko_item_41216txt
+#1111722	\n\n\n@c你想传送到螳螂的一级点吗？	1
+#1111723	\n\n\n@c你想传送到杀人螳螂(红螳)的一级点吗？	1
+#1111724	\n\n\n@c你想传送到赤目螳螂(黄螳)的一级点吗？	1
+#1111725	\n\n\n@c你想传送到死灰螳螂(灰螳)的一级点吗？	1
+#1111726	\n\n\n@c你想传送到致命螳螂(蓝螳)的一级点吗？	1
+
+block Item 41216 >0 #螳螂
+	 Window 1111722,YES,NO
+	 Window_YES Item 41216==0
+	 Endblock
+	 Window_YES
+	 KillItem 41216,1
+	 Warp 0,300,292,214
+	 endblock
+	 Window_NO ##红螳
+	 	 Window 1111723,YES,NO
+	 	  Window_YES Item 41216==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 41216,1
+	 	  Warp 0,30001,297,243
+	 	  endblock
+	 Window_NO ##黄螳
+	 	 Window 1111724,YES,NO
+	 	  Window_YES Item 41216==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 41216,1
+	 	  Warp 0,13001,131,29	 	  
+	 	  endblock	 
+	 Window_NO ##灰螳
+	 	 Window 1111725,YES,NO
+	 	  Window_YES Item 41216==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 41216,1
+	 	  Warp 0,400,457,329 	  
+	 	  endblock
+	 Window_NO ##蓝螳
+	 	 Window 1111726,YES,NO
+	 	  Window_YES Item 41216==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 41216,1
+	 	  Warp 0,21025,44,5	  
+	 	  endblock
+	 	  Window_NO
+	 	  EndWindow 1055891

@@ -1,0 +1,16 @@
+#
+#石□伙溢(雇撮)
+#
+
+#雇撮吨谨痹毛儅匀化中月卅日
+block Item 16272 >= 1 || Item 16273 >= 1 || Item 16292 >= 1 || Item 16370 >= 1 || Item 16375 >= 1 || Item 16376 >= 1 || Item 16377 >= 1
+#21877’\n\n﹛雇撮卞じ日木引允井〝
+	Window 21877,Yes,No
+		Window_No
+			Endwindow 15684
+		Window_Yes
+			LeaveGroup
+          		Warp 0,2433,7,6
+block
+#21878’\n\n\n\n@c楮溢樊动陆雇撮尺褡戈仇午反请侳引六氏﹝
+			Endwindow 21878

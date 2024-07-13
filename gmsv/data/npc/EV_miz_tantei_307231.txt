@@ -1,0 +1,202 @@
+#ºÎ”£€Õæﬁµ©–˛°∞”Ò ß
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©xENDFLG 68 on©x##############
+block endevent68 == 1 && Item 18893 == 0 && Item 18895 == 0
+
+	EndWindow 206482,OK
+
+###########©xÀ¶º˛€ÕæÆ»’º∞≈Ï±˝©x©j18892©kÿ§‘ª©x##############
+block Item 18892 >= 1
+
+	EndWindow 206433,OK
+
+###########©x•ˆ±˝º∞∂™∆π®G≤º”¿∑∫º˛º∞§∂∑§©j18893®G18898©k©x##############
+block Item 18893 >= 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block Item 18893 >= 1
+
+	EndWindow 206430,OK
+
+block Item 18894 >= 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block Item 18894 >= 1
+
+	EndWindow 206430,OK
+
+block Item 18895 >= 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block Item 18895 >= 1
+
+	EndWindow 206430,OK
+
+block Item 18896 >= 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block Item 18896 >= 1
+
+	EndWindow 206430,OK
+
+block Item 18897 >= 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block Item 18897 >= 1
+
+	EndWindow 206430,OK
+
+block Item 18898 >= 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block Item 18898 >= 1
+
+	EndWindow 206430,OK
+
+block endevent68 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block endevent68 == 1
+
+	EndWindow 206430,OK
+
+block nowevent69 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block nowevent69 == 1
+
+	EndWindow 206430,OK
+
+block endevent69 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block endevent69 == 1
+
+	EndWindow 206430,OK
+
+block nowevent70 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block nowevent70 == 1
+
+	EndWindow 206430,OK
+
+block endevent70 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block endevent70 == 1
+
+	EndWindow 206430,OK
+
+block nowevent71 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block nowevent71 == 1
+
+	EndWindow 206430,OK
+
+block endevent71 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block endevent71 == 1
+
+	EndWindow 206430,OK
+
+block nowevent72 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block nowevent72 == 1
+
+	EndWindow 206430,OK
+
+block endevent72 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block endevent72 == 1
+
+	EndWindow 206430,OK
+
+block nowevent73 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block nowevent73 == 1
+
+	EndWindow 206430,OK
+
+block endevent73 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block endevent73 == 1
+
+	EndWindow 206430,OK
+
+block nowevent74 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block nowevent74 == 1
+
+	EndWindow 206430,OK
+
+block endevent74 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block endevent74 == 1
+
+	EndWindow 206430,OK
+
+block nowevent75 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block nowevent75 == 1
+
+	EndWindow 206430,OK
+
+block endevent75 == 1 && strcmpchat == 206723
+
+	EndWindow 206430,OK
+
+block endevent75 == 1
+
+	EndWindow 206430,OK
+
+###########©x£æ–◊–◊» £Ω©x##############
+block strcmpchat == 206723
+	playse 216,1,1
+	Window 206428,OK
+	Window_OK
+	leavegroup
+	playse 76,1,1
+	Warp 0,33256,10,8
+
+###########©x÷œ ÷ÿ¶ÿ∆©x##############
+block 
+
+	Window 206548,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33256,8,8
+	Window_NO
+

@@ -1,0 +1,7 @@
+#þÑ???????
+
+#
+block
+	Window 22349,Next
+	Window 22350,Next
+	EndWindow 22351,OK

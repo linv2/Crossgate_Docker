@@ -1,0 +1,22 @@
+#
+#オ樊弁巨旦玄
+#市汁奶巨
+
+###弁伉失白仿弘丐曰↓邀荦白仿弘卅仄###
+block NowEvent 17 == 1 && NowEvent 7 == 0
+#\n\n﹛漆反云じ曰卞卅日木引六氏方﹝
+	EndWindow 15150,OK
+
+#########  ########
+block NowEvent 15 == 1
+#\n\n﹛丢汀弁迋反手丹云日木引六氏＿＿仿件及欼卞方曰窝井木引仄凶﹝升丹冗云娄潸曰仁分今中﹝
+	EndWindow 15118,OK
+
+#########  ########
+block
+#\n\n﹛仇仇反丢汀弁迋及云盒彴匹允﹝
+	Window 15119,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,2221,13,16
+

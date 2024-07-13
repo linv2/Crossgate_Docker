@@ -1,0 +1,32 @@
+
+#黏书者	0	mayko_gm_1102605.txt
+#1110606	\n\n\n　　　　撕碎的书卷，\n　　　　散落在这个塔的每一处。
+
+
+#1110608	\n\n\n　　　　如果有200书本碎片个，\n　　　　应该可以粘合饰品技能见习卷吧。	1
+#1110610	\n\n\n　　　　你现在有200书本碎片个，\n　　　　要粘合饰品技能见习卷吗？？	1
+#1110611	\n\n\n\n@c数量突然不够了耶！	1
+#饰品技能见习卷										47537
+#书本碎片										41077
+
+
+block item  41077>199
+	 Window 1110606,NEXT
+	 Window 1110610,YES,NO
+	 Window_NO	 
+	 EndWindow 1110605	 
+	 Window_YES ItemSpace < 1
+	 EndWindow 1569036
+	 Window_YES Item 41077<200
+	 EndWindow 1110611	 
+	 Window_YES
+	 KillItem 41077,200	 
+	 GiveLeak1Item 47537,1
+	 endblock
+
+	
+	 
+	 
+block 	 
+	 Window 1110606,NEXT
+	 EndWindow 1110608

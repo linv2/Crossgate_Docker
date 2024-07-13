@@ -1,0 +1,19 @@
+#???
+
+block Item 16219 >= 1
+	Window 21648,next
+	Window 21649,OK
+		Window_OK
+			Play_Se 263,320,240
+			Window 21650,next
+			Window 21651,next
+			Window 21652,YES
+				Window_YES
+					Window 21653,next
+					Window 21654,OK
+						Window_OK
+							KillItemall 16219
+							GiveItem 16220
+						Window_OK
+block
+	Message 21647

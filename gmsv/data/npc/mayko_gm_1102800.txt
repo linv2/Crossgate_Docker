@@ -1,0 +1,23 @@
+block item 41311 >2
+
+	#1111831	\n\n\n　　　　书还不够耶～\n　　　　你想离开这里吗？
+	#1111832	\n\n\n　　　　谢谢你，\n　　　　这有份礼物你收下吧～～
+
+	killitem 41311,3
+	GiveLeak1Item (47014%40$1,47015%40$1,41240%20$1)
+
+	Window 1111832,ok
+	leavegroup
+	warp 0,33000,754,319
+	endblock
+	Window_ok
+	endblock
+
+block 
+	Window 1111831,yes,no
+	window_no
+	endblock
+	Window_yes
+	leavegroup
+	warp 0,33000,574,318
+	endblock

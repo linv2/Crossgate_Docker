@@ -1,0 +1,38 @@
+#茧樱弁巨旦玄“呿
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛＞心月＝﹛##############
+block strcmpchat == 206720
+
+	EndWindow 206389,OK
+
+###########﹛＞凶凶仁＝﹛##############
+block strcmpchat == 206723
+
+	EndWindow 206390,OK
+
+###########﹛＞化卞午月＝﹛##############
+block nowevent67 == 1 && strcmpchat == 206724
+
+	EndWindow 206389,OK
+
+block nowevent75 == 1 && strcmpchat == 206724
+
+	Window 206391,OK
+	Window_OK Itemspace != 0
+	leavegroup
+	playse 65,1,1
+	GiveItem 18888
+	nowevent67 = 1
+	Window 206546,NEXT
+	EndWindow 206547,OK
+	Window_OK Itemspace == 0
+	EndWindow 206431,OK
+
+###########﹛窒手卅仄﹛##############
+block 
+
+	EndWindow 206388,OK
+
+

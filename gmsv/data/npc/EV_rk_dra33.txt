@@ -1,0 +1,29 @@
+#ヶ庤朴杹?(15572)
+#
+
+block EndEvent 38 == 1
+	Window 21458,OK
+	Window_OK
+		LeaveGroup
+		KillItem 18780
+		GiveItem 18903
+		Warp 0,15579,25,35
+
+block Item 18887 >= 1
+#\n\n﹛仇木反击歾及澎饼匹允友﹝
+#\n﹛仇及哗及蝠谛卞狪毛妏中化引歹曰引仄凶井〝
+#\n﹛漆匹手庍歹曰卅中瑁啦互丐月及卅日仇及燮卞褡心﹜台凶切及赢卞莘中卞垫五卅今中﹝
+#\n\n﹛詨枑曰反袱今木引六氏﹝
+#
+	Window 21409,YES,NO
+	Window_YES
+		KillItem 18780
+		KillItem 18885
+		KillItem 18887
+		GiveItem 18903
+		LeaveGroup
+		Warp 0,15579,25,35
+	Window_NO
+block
+#\n\n﹛引分仇及燮尺骚允歹仃卞反中五引六氏﹝\n\n﹛＿蜗坌卞仇及哗毛苇化引歹曰卅今中﹝
+	EndWindow 21410

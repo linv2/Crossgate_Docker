@@ -1,0 +1,102 @@
+##### 詹森老爹
+
+
+block EndEvent 151 == 1	
+	EndWindow 1102400
+block Item 40725>0
+ 	 ##有香草薰石鲷
+ 	 Window 1102401,OK
+ 	 ##香草熏石鲷，没想到你连这个都能请汉娜做好！那我就不客气了！
+ 		 Window_OK Item 40725>0
+ 	 	
+ 	 	 killitem 40725,1
+ 	 	 ##GiveLeak1Item 40728,1
+ 	 	 EndEvent 151 = 1
+ 	 	 Window 1102402,NEXT
+ 	 	 ##呼！真是好吃！
+ 	 	 Window 1102403,NEXT
+	 	 ##谢谢你呀！我的商船不让你搭就说不过去了！
+	 	 EndWindow 1102404
+	 	 ##你如果要搭船，就去找鲁德吧！
+	 	 
+	 	 Window_OK
+	 	 EndWindow 1053288
+ block Item 40727>0		
+	 ##有料理取件单(石鲷)
+	 ##听说汉娜在做草熏石鲷了！
+	 Window 1102405,NEXT
+	 ##看来我又有口福了！
+	 EndWindow 1102406
+ block Item 40726>0
+	 ##有料理材料单(石鲷)
+	 Window 1102407,NEXT
+	 ##听说你在准备香草熏石鲷的材料！
+	 ##看来我又有口福了！
+	 EndWindow 1102408				
+ block Item 40724>0		
+	 ##有给汉娜的信
+	 ##就请你去拜托汉娜小姐作香草熏石鲷！
+	 EndWindow 1102409		
+ block Item 40721>0		
+	 ##有石烧螃蟹
+	 Window 1102410,NEXT
+	 Window 1102411,OK
+	 ##石烧螃蟹，你真的去找瑞秋作好了！,那我就不客气了！
+	 Window_OK Item 40721>0	
+	 	 killitem 40721,1
+	 	 GiveLeak1Item 40724,1
+	 	 Window 1102412,NEXT
+		 ##！真是好吃！
+		 Window 1102413,NEXT
+		 ##如果还能吃到汉娜的香草熏石鲷！就好了
+		 EndWindow 1102414	
+		 ##这有封信！麻烦你交给汉娜小姐！
+		 
+		 Window_OK
+	 	 EndWindow 1053288
+ block Item 40723>0	
+	 ##有料理取件单(螃蟹)
+	 Window 1102415,NEXT
+	 ##听说瑞秋在做石烧螃蟹！
+	 ##看来我又有口福了		！
+	 EndWindow 1102416	
+ block Item 40722>0		
+	 ##有料理材料单(螃蟹)
+	 Window 1102417,NEXT
+	 ##听说你在准备石烧螃蟹的材料！
+	 ##看来我又有口福了！
+	 EndWindow 1102418			
+ block Item 40720>0		
+	 ##有给瑞秋的信
+	 ##就请你去拜托瑞秋作石烧螃蟹！
+	 EndWindow 1102419			
+ block Item 40717>0		
+	 ##有奶焗竹荚鱼
+	 Window 1102420,NEXT
+	 ##奶焗竹荚鱼，你是要请我吃吗？
+	 
+	 Window 1102421,OK
+	 ##那我就不客气了！
+	 Window_OK Item 40717>0	
+		 KillItem 40717,1
+	 	 GiveLeak1Item 40720,1
+	 	 Window 1102422,NEXT
+		 ##！真是好吃！
+		 Window 1102423,NEXT
+		 ##如果再能尝到石烧螃蟹，不知有多好！
+		 EndWindow 1102424	
+		 ##石烧螃蟹是瑞秋的拿手菜，麻烦你帮我把这封信拿给她，请她帮忙作这道菜！
+		 
+		 Window_OK
+	 	 EndWindow 1053288
+ block 		
+	 ##条件都不合		
+	 Window 1102425,NEXT
+	 ##你想搭船到米诺基亚？
+	
+	 EndWindow 1102426
+		
+		
+	 ##很抱歉！因为海盗集团很猖狂！安全起见！
+	 ##我的商船不让坎那贝拉村民之外的陌生人搭乘！ 	
+	 

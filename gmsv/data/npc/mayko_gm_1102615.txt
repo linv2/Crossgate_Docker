@@ -1,0 +1,33 @@
+#mayko_gm_1102615.txt
+#ºì»¨Çø Â³Â³
+block item 41084>0
+	Endwindow 1110648	
+block item 41086>0
+	window 1110638,next
+	Window 1110639,yes,no
+	Window_no
+	Endwindow 1110634
+	Window_yes item 41086==0
+	Endwindow 1110634
+	Window_yes
+	killitem 41086,1
+	GiveLeak1Item 41084,1
+	Endwindow 1110648
+
+
+
+block item 607746>0
+	 Window 1110642,next
+	 endWindow 1110643
+	 
+block item 41083 >0
+	 endwindow 1110636
+ 	 	 
+block item 41085 >0
+	 endwindow 1110634	 
+block item 41087 >0
+	 endwindow 1110634	 
+block item 41088 >0
+	 endwindow 1110634
+block 
+	 endwindow 1110634	 	

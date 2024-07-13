@@ -1,0 +1,23 @@
+#ºÎ”£€Õæﬁµ©–˛°∞ åI
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©xåI©x©j18896)ª•ÿ§‘¬©x##############
+block Item 18896 >= 1
+
+	EndWindow 206653,OK
+
+###########©x£æªØ±ÂŒÁ‘¬£Ω©x##############
+block strcmpchat == 206724
+
+	Window 206652,OK
+	Window_OK Itemspace >= 1
+	leavegroup
+	GiveItem 18896
+	Window_OK Itemspace == 0
+	EndWindow 206431,OK
+
+###########©x÷œ ÷ÿ¶ÿ∆©x##############
+block 
+
+	EndWindow 206651,OK

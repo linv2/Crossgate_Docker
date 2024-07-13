@@ -1,0 +1,13 @@
+#³ªÛÖîÎ³ß¼°?
+
+block EndEvent 140 == 1
+	Window 22935,Yes,No
+		Window_No
+		Window_Yes
+			ChangePal 30,6
+			Window 22936,OK
+				Window_OK
+				LeaveGroup
+				Warp 0,51104,29,20
+block
+

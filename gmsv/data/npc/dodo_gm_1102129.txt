@@ -1,0 +1,82 @@
+###dodo_gm_1102129.txt
+###传送石（代替德威特岛传送至海村的WARP点需控制3点）								传送玩家到不同的地图。
+###□身上有莉塔的发饰 && EndEvent 157 == 1
+block EndEvent 157 == 1 && Item 40731 >= 1 && Xpos == 603 && Ypos == 469 
+	 LeaveGroup
+	 Warp 0,32241,23,61
+
+block EndEvent 157 == 1 && Item 40731 >= 1 && Xpos == 603 && Ypos == 470
+	 LeaveGroup
+	 Warp 0,32241,23,62
+
+block EndEvent 157 == 1 && Item 40731 >= 1 && Xpos == 603 && Ypos == 471
+	 LeaveGroup
+	 Warp 0,32241,23,63
+
+block EndEvent 157 == 1 && Item 40731 >= 1 && Xpos == 603 && Ypos == 472
+	 LeaveGroup
+	 Warp 0,32241,23,64
+
+###□身上有交换日记 && 魔族的火把
+block Item 40733 >= 1 && Item 40734 >= 1 && Xpos == 603 && Ypos == 469
+	 LeaveGroup
+	 Warp 0,32242,23,61
+
+block Item 40733 >= 1 && Item 40734 >= 1 && Xpos == 603 && Ypos == 470
+	 LeaveGroup
+	 Warp 0,32242,23,62
+
+block Item 40733 >= 1 && Item 40734 >= 1 && Xpos == 603 && Ypos == 471
+	 LeaveGroup
+	 Warp 0,32242,23,63
+
+block Item 40733 >= 1 && Item 40734 >= 1 && Xpos == 603 && Ypos == 472
+	 LeaveGroup
+	 Warp 0,32242,23,64
+
+###□身上有莉塔的发饰 && EndEvent 156 == 1 
+block EndEvent 156 == 1 && Item 40731 >= 1 && Xpos == 603 && Ypos == 469
+	 LeaveGroup
+	 Warp 0,32240,23,61 
+
+block EndEvent 156 == 1 && Item 40731 >= 1 && Xpos == 603 && Ypos == 470
+	 LeaveGroup
+	 Warp 0,32240,23,62 
+
+block EndEvent 156 == 1 && Item 40731 >= 1 && Xpos == 603 && Ypos == 471
+	 LeaveGroup
+	 Warp 0,32240,23,64 
+	 
+block EndEvent 156 == 1 && Item 40731 >= 1 && Xpos == 603 && Ypos == 472
+	 LeaveGroup
+	 Warp 0,32240,23,64 
+
+###□身上有交换日记 && 旗标1 == 1 
+block EndEvent 156 == 1 && Item 40733 >= 1 && Xpos == 603 && Ypos == 469
+	 LeaveGroup
+	 Warp 0,32240,23,61 
+
+block EndEvent 156 == 1 && Item 40733 >= 1 && Xpos == 603 && Ypos == 470
+	 LeaveGroup
+	 Warp 0,32240,23,62 
+
+block EndEvent 156 == 1 && Item 40733 >= 1 && Xpos == 603 && Ypos == 471
+	 LeaveGroup
+	 Warp 0,32240,23,63 
+
+block EndEvent 156 == 1 && Item 40733 >= 1 && Xpos == 603 && Ypos == 472
+	 LeaveGroup
+	 Warp 0,32240,23,64 
+
+###□一般
+block Xpos == 603 && Ypos == 469 
+	 Warp 0,30011,23,61  
+
+block Xpos == 603 && Ypos == 470 
+	 Warp 0,30011,23,62  
+	 
+block Xpos == 603 && Ypos == 471 
+	 Warp 0,30011,23,63  
+
+block Xpos == 603 && Ypos == 472 
+	 Warp 0,30011,23,64  

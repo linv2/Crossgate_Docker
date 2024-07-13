@@ -1,0 +1,128 @@
+##########################
+# 蓝之守卫
+# B组（准战斗系）
+##########################
+
+#### ≦拟中及累≧毛赭儅
+block Item 622043 >= 1 || Item 622044 >= 1 || Item 622045 >= 1 || Item 622046 >= 1 || Item 622051 >= 1 || Item 622052 >= 1 || Item 622053 >= 1 || Item 622054 >= 1 || Item 622055 >= 1 || Item 622056 >= 1 || Item 622057 >= 1 || Item 622058 >= 1 || Item 622059 >= 1 || Item 622060 >= 1 || Item 622061 >= 1 || Item 622062 >= 1
+	Window 3207947,OK
+
+		#\n\n﹛公及拟中及累反﹜仇仇井日燮尺反\n﹛儅切慇户卅中仇午卞卅匀化中月氏分﹝\n﹛鬼中氏分仃升﹜\n﹛仇切日匹苂井日六化手日丹友﹝
+		Window_OK
+			KillItemAll 622043
+			KillItemAll 622044
+			KillItemAll 622045
+			KillItemAll 622046
+			KillItemAll 622051
+			KillItemAll 622052
+			KillItemAll 622053
+			KillItemAll 622054
+			KillItemAll 622055
+			KillItemAll 622056
+			KillItemAll 622057
+			KillItemAll 622058
+			KillItemAll 622059
+			KillItemAll 622060
+			KillItemAll 622061
+			KillItemAll 622062
+			Endblock
+
+
+
+
+
+#### B弘伙□皿
+
+## 忍者
+block Job >= 154 && Job <= 159
+
+	GoToF case1
+
+## 士兵
+block Job >= 54 && Job <= 59
+
+	GoToF case1
+
+## 封印师
+block Job >= 94 && Job <= 99
+
+	GoToF case1
+
+## 饲养师
+block Job >= 104 && Job <= 109
+
+	GoToF case1
+
+# 驯兽师
+block Job >= 114 && Job <= 119
+
+	GoToF case1
+
+## 盗贼
+block Job >= 124 && Job <= 129
+
+	GoToF case1
+
+## 舞者
+block Job >= 164 && Job <= 169
+
+	GoToF case1
+
+## 护士
+block Job >= 434 && Job <= 439
+
+	GoToF case1
+
+## 医生
+block Job >= 444 && Job <= 449
+
+	GoToF case1
+
+## 爆弹师
+block Job >= 1004 && Job <= 1009
+
+	GoToF case1	
+
+
+*case1*
+
+	Window 3207948,YES,NO
+
+		#3207948	
+		#\n\n　前方只能容许1～2人前进。\n　所以，你还是先把身上的装备和道具准备齐全，\n　
+		#再继续前进比较好喔！\n　那么，你准备好了吗？
+
+		Window_NO
+			EndWindow 3207949
+
+		#\n\n﹛赏?互匹五凶日擘毛井仃化友﹝
+
+
+		Window_YES
+			Window 3207950,NEXT
+
+		#\n\n﹛公木元扎丑﹜仇及拟中及累毛儅匀化﹜\n﹛梂尺褡氏匹友﹝
+			
+			Window 3207951,OK
+
+		#\n\n﹛籣酦卞丐月弁伉旦正伙及执反﹜\n﹛仇及累互萼卞卅匀化中月氏分﹝\n﹛执午拟中及累互⑺元缙匹﹜公及累互\n﹛恳仄仁执及笛赁毛熬仃化中月凛卞分仃\n﹛洬互钒仁方丹卞卅匀化中月﹝\n﹛方仁璃曰毛苇化﹜哔尹化﹜\n﹛楝卅日五匀午愈詨引匹凶升曰邋仃月方﹝
+
+######## 绂坁互中匀天中
+				Window_OK Itemspace == 0
+					EndWindow 3207952
+
+		#\n\n﹛公木动晓儅化卅中心凶中分友﹝
+
+				Window_OK
+					GiveLeak1Item 622046,1
+					LeaveGroup
+					warp 0,59930,28,108
+
+
+#### 晓筏动陆
+block
+	EndWindow 3207953
+
+		#3207953	\n\n　你似乎没有继续前进的资格。
+
+

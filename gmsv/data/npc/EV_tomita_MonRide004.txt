@@ -1,0 +1,38 @@
+#仿奶玉旦平伙凯丿弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛项莲赭赭赢及摒
+
+###﹛旦平伙﹍仿奶母□﹎毛赭儅
+block SkillLevel_1009 >= 1
+	Window 3204171,OK
+
+		#\n\n﹛仿奶母□毛莘丿仄凶及分卅﹜云户匹午丹﹝\n﹛仄井仄﹜漆荚褥卞尥中凶及反湘誊分仃分井日﹜\n﹛动詨手擎褡毛侉木月卅方﹝\n﹛匹反﹜章引匹霜欠丹﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59526,181,83
+
+
+
+###﹛晓筏旦平伙毛尕赭儅
+block
+	Window 3204172,YES,NO
+
+		#\n\n﹛氏〝﹛楝反引分﹜旦平伙﹍仿奶母□﹎毛\n﹛莘丿仄化中卅中冗﹝\n﹛仇及引引窖木壬﹜引凶赓户井日卞卅月互﹜\n﹛公木匹手中中及井〝
+
+		Window_YES
+			Window 3204173,OK
+
+		#\n\n﹛公丹井﹝坁驯五分卅﹝匹反﹜窖月互方中﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59526,214,81
+
+		Window_NO
+			EndWindow 3204174
+
+		#\n\n﹛公丹分欠丹﹝\n﹛镀仁旦平伙毛莘丿仄化侳月互方中﹝
+
+
+

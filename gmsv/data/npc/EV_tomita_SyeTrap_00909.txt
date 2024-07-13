@@ -1,0 +1,33 @@
+#Ä¸¼þ³âÒà¼þÐþ·ÂÓÀÃó©x©x??©xŽx÷ú
+#
+#©x©x©xÆËÄá·ÂÓÀËüÄáÓÀÄ©¼°ÏÔ¨è±Õ©jµ©ÄÌÓÀÃñ·¥¡õÃó©k
+
+###©x3004859£¾æØÜìØ¦âãÆYÆÕ¡å©x·¥¡õÃóÐþ·ÂÓÀÃó·Ö¡å£½
+###©x3004860£¾àß±å²³AØ¦ÆÕç§»¥Ø¤ÔÈÐ×¡å£½
+
+
+
+###©xµ©ÄÌÓÀÃñ
+block Xpos == 115 && Ypos == 77
+
+	If LocalFlag3 == 0
+
+		Message 3004860
+		LocalFlag3 = 1
+
+	endif
+
+
+
+###©x·¥¡õÃó
+block Xpos == 117 && Ypos == 76
+
+	If LocalFlag3 == 1
+
+		Message 3004859
+		Warp 0,59809,88,146
+
+	endif
+
+
+

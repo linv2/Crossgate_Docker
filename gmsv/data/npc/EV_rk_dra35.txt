@@ -1,0 +1,61 @@
+#ヶ庤﹋石伐奶玄玉仿打件﹌(15585)
+#
+
+###庤及铣及桦宁反莘狪匹五卅中###
+block BImage == 101904 || BImage == 101905
+	Endwindow 21517
+
+###白仿弘民尼永弁###
+block EndEvent 39 == 1
+	Endwindow 21418
+block EndEvent 38 == 1
+	Endwindow 21397
+
+###﹛###
+block
+#\n\n﹛方仁凶升曰勾五引仄凶≦⑼仁手及≧方﹝\n\n﹛谛及阂匹丐木壬互竣及弃仁卅月方丹卅凛棉﹜
+#丐卅凶毛毛谨匀化中引仄凶﹝
+	Window 21411,next
+#\n\n﹛艘仄化妏中化仁分今中﹝\n﹛脱★ヶ中庤反蝈化及戏五坁毛潮月仇午互厘五卅杴读卅及匹允﹝
+#\n\n﹛台反聂仁及戏坁凶切互昒少迋毛苇化五引仄凶﹝
+#\n﹛昒太及酦卞中勾手苇尹月及反﹜厘五卅ハ莽午?仄心匹仄凶﹝
+	Window 21412,next
+#\n\n﹛卅兮﹜戏五坁反诮仄丐歹友壬卅日卅中及匹仄斤丹井?﹛
+#\n﹛诮仄丐歹内卞戏五月仇午反尕第チ卅及匹仄斤丹井?
+#\n\n﹛公氏卅仇午反卅中反内匹允﹝⑹坁及歇木反恘及雄中手及卞虱丹﹝
+#雄仁穸膘卅手及互中木壬﹜公仇卞辚辆互戏引木月反内卅及匹允﹝
+	Window 21413,next
+#\n\n﹛谛棉午化拺陆匹反丐曰引六氏﹝
+#\n﹛钒仁手及方’’’壑钗卞庍啻毛手凶日允手及方﹝\n﹛丐卅凶幻升及手及匹丐木壬
+#塌井卅锤中毛楞曰僮仆月谛★毛⑼仁仇午互匹五月井手仄木引六氏﹝
+	Window 21414,next
+#
+#台琼及啦阀毛填蜇允月手及及据午仄化﹜仇木毛牖仃引仄斤丹﹝
+#⑼仁手及方﹜升丹井谛棉毛锤中及卅中壑钗尺午⑼中化仁分今中＿俇心引仄凶方﹝
+	Window 21415,OK
+		Window_OK PetSpace != 0
+			KillItem 18780
+			KillItem 18903
+			KillItem 18904
+			EndEvent 38 = 1
+			NowEvent 38 = 0
+			checktitle
+			GivePet 246
+			#仇及燮及丐卅凶及扪抰反＿
+			Message 21416
+			LeaveGroup
+			Warp 0,1530,15,6
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK
+			KillItem 18780
+			KillItem 18903
+			KillItem 18904
+			EndEvent 38 = 1
+			NowEvent 38 = 0
+			checktitle
+			GiveItem 18906
+			#仇及燮及丐卅凶及扪抰反＿
+			Message 21416
+			LeaveGroup
+			Warp 0,1530,15,6

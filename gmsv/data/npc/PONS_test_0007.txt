@@ -1,0 +1,75 @@
+#
+#∫Ãº˛µ©…Í”¿€Õ∑∫µ©–˛
+#
+
+################################################################################
+#
+################################################################################
+
+block
+     ChangePal 31,0
+     Window "\n\n©x31-0",NEXT
+     ChangePal 30,0
+     Window "\n\n©x30-0",NEXT
+     ChangePal 29,0
+     Window "\n\n©x29-0",NEXT
+     ChangePal 28,0
+     Window "\n\n©x28-0",NEXT
+     ChangePal 27,0
+     Window "\n\n©x27-0",NEXT
+     ChangePal 26,0
+     Window "\n\n©x26-0",NEXT
+     ChangePal 25,0
+     Window "\n\n©x25-0",NEXT
+     ChangePal 24,0
+     Window "\n\n©x24-0",NEXT
+     ChangePal 23,0
+     Window "\n\n©x23-0",NEXT
+     ChangePal 22,0
+     Window "\n\n©x22-0",NEXT
+     ChangePal 21,0
+     Window "\n\n©x21-0",NEXT
+     ChangePal 20,0
+     Window "\n\n©x20-0",NEXT
+     ChangePal 19,0
+     Window "\n\n©x19-0",NEXT
+     ChangePal 18,0
+     Window "\n\n©x18-0",NEXT
+     ChangePal 17,0
+     Window "\n\n©x17-0",NEXT
+     ChangePal 16,0
+     Window "\n\n©x16-0",NEXT
+     ChangePal 15,0
+     Window "\n\n©x15-0",NEXT
+     ChangePal 14,0
+     Window "\n\n©x14-0",NEXT
+     ChangePal 13,0
+     Window "\n\n©x13-0",NEXT
+     ChangePal 12,0
+     Window "\n\n©x12-0",NEXT
+     ChangePal 11,0
+     Window "\n\n©x11-0",NEXT
+     ChangePal 10,0
+     Window "\n\n©x10-0",NEXT
+     ChangePal 9,0
+     Window "\n\n©x9-0",NEXT
+     ChangePal 8,0
+     Window "\n\n©x8-0",NEXT
+     ChangePal 7,0
+     Window "\n\n©x7-0",NEXT
+     ChangePal 6,0
+     Window "\n\n©x6-0",NEXT
+     ChangePal 5,0
+     Window "\n\n©x5-0",NEXT
+     ChangePal 4,0
+     Window "\n\n©x4-0",NEXT
+     ChangePal 3,0
+     Window "\n\n©x3-0",NEXT
+     ChangePal 2,0
+     Window "\n\n©x2-0",NEXT
+     ChangePal 1,0
+     Window "\n\n©x1-0",NEXT
+     ChangePal 0,0
+     Window "\n\n©x0-0",NEXT
+
+

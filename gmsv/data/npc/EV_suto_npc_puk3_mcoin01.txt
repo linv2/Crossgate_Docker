@@ -1,0 +1,371 @@
+#乒件旦正□戊奶件﹛[晶嗯]???
+#
+#
+#
+#
+#旦玄它正汁乩
+#
+#
+#
+
+
+#乒件旦正□戊奶件及窒木井毛ㄠ勾匹手赭儅及桦宁﹝
+
+
+Block Leak1Item_620032 >= 1 || Leak1Item_620033 >= 1 || Leak1Item_620034 >= 1 || Leak1Item_620035 >= 1 || Leak1Item_620036 >= 1 || Leak1Item_621006 >= 1
+
+	Window "\n\n﹛仇仇反乒件旦正□戊奶件晶嗯赭分﹝\n﹛乒件旦正□戊奶件互尕邰卅日壬﹜\n﹛丹厄日及壑钗及习尨卞井尹化支欠丹﹝",Next
+
+	Window "\n\n﹛云﹜卅卞支日﹜\n﹛乒件旦正□戊奶件毛儅匀化中月卅﹝\n﹛方仃木壬﹜晶嗯允月冗﹝",Yes,No
+	
+		Window_No
+		
+			GotoF case11
+			
+		Window_Yes
+						
+			GotoF case1
+							
+		Window_Yes Leak1Item_620032 < 1 || Leak1Item_620033 < 1 || Leak1Item_620034 < 1 || Leak1Item_620035 < 1 || Leak1Item_620036 < 1 || Leak1Item_621006 < 1
+			
+			GotoF case10
+			
+		EndBlock
+	
+	
+	
+	
+	#乒件旦正□戊奶件尕赭儅及桦宁
+
+Block
+	
+	EndWindow "\n\n﹛仇仇反乒件旦正□戊奶件晶嗯赭分﹝\n﹛乒件旦正□戊奶件互尕邰卅日壬﹜\n﹛丹厄日及壑钗及习尨卞井尹化支欠丹﹝"
+	
+	
+	
+	
+#?晶嗯及桦宁﹋弗□旦ㄠ?﹌
+
+Block
+
+	*case1*
+	
+	
+	
+	Window "\n\n﹛戊奶件反公木冗木﹜\n﹛1?毛50呦匹﹜50?卞晶嗯\n﹛5?毛100呦匹﹜500?卞晶嗯\n﹛10?毛100呦匹﹜1000?卞晶嗯\n﹛1000?毛1呦匹﹜1000?卞晶嗯\n﹛1坳?毛1呦匹﹜10000?卞晶嗯\n﹛10坳?毛1呦匹﹜100000?卞晶嗯\n﹛午中丹仇午卞卅匀化中月﹝",OK
+	
+	
+	Window_OK
+	
+		GotoF case2
+			
+		
+		
+		
+	EndBlock
+	
+	
+Block
+
+	*case2*
+	
+	
+	
+	if Leak1Item_620032 >= 50
+		
+		
+		Window "\n\n﹛1?毛50呦＿＿＿50?分友﹝",Yes,No
+			
+			
+			Window_Yes Leak1Item_620032 >= 50 && Gold <= 999950
+			
+				KillLeak1Item 620032,50
+			 	AddGold 50
+			 	
+			 	GotoF case3
+			 	
+			
+			Window_Yes Gold >= 999951
+			
+				GotoF case12
+			
+			
+			Window_Yes Leak1Item_620032 < 50
+			
+				GotoF case10
+				
+			Window_Yes
+			
+				GotoF case10
+			
+			Window_Yes
+			
+				GotoF case10
+				
+			Window_No Leak1Item_620033 < 100 && Leak1Item_620034 < 100 && Leak1Item_620035 < 1 && Leak1Item_620036 < 1 && Leak1Item_621006 < 1
+			
+				GotoF case11
+			
+				
+			Window_No
+			
+				GotoF case4
+				
+				
+				
+				EndBlock
+	else
+		
+		*case4*
+		
+		if Leak1Item_620033 >= 100
+		
+			
+			Window "\n\n﹛5?毛100呦＿＿500?分友﹝",Yes,No
+			
+				Window_Yes Leak1Item_620033 >= 100 && Gold <= 999500
+				
+				KillLeak1Item 620033,100
+				AddGold 500
+				
+				GotoF case3
+			
+				Window_Yes Gold >= 999501
+			
+					GotoF case12
+			
+				Window_Yes Leak1Item_620033 < 100
+			
+					GotoF case10
+					
+				Window_Yes
+			
+					GotoF case10
+				
+				Window_No Leak1Item_620034 < 100 && Leak1Item_620035 < 1 && Leak1Item_620036 < 1 && Leak1Item_621006 < 1
+				
+					GotoF case11
+				
+				Window_No
+			
+					GotoF case5
+					
+					EndBlock
+					
+		else
+		
+			*case5*
+			
+			if Leak1Item_620034 >= 100
+			
+			
+				Window "\n\n﹛10?毛100呦＿＿1000?分友﹝",Yes,No
+				
+				
+					Window_Yes Leak1Item_620034 >= 100 && Gold <= 999000
+					
+						KillLeak1Item 620034,100
+						AddGold 1000
+					
+						GotoF case3
+					
+					Window_Yes Gold >= 999001
+					
+						GotoF case12
+						
+					Window_Yes Leak1Item_620034 < 100
+					
+						GotoF case10
+					
+					
+					Window_Yes
+						
+						GotoF case10
+						
+					Window_No Leak1Item_620035 < 1 && Leak1Item_620036 < 1 && Leak1Item_621006 < 1
+				
+					GotoF case11
+						
+					Window_No
+			
+						GotoF case6
+			
+						EndBlock
+		
+			else
+			
+			
+			*case6*
+			
+			if Leak1Item_621006 >= 1
+			
+			
+				Window "\n\n﹛1000?毛1呦＿＿1000?分友﹝",Yes,No
+				
+				
+					Window_Yes Leak1Item_621006 >= 1 && Gold <= 999000
+					
+						KillLeak1Item 621006,1
+						AddGold 1000
+					
+						GotoF case3
+					
+					Window_Yes Gold >= 999001
+					
+						GotoF case12
+						
+					Window_Yes Leak1Item_621006 < 1
+					
+						GotoF case10
+					
+					
+					Window_Yes
+						
+						GotoF case10
+						
+					Window_No Leak1Item_620035 < 1 && Leak1Item_620036 < 1
+				
+					GotoF case11
+						
+					Window_No
+			
+						GotoF case7
+			
+						EndBlock
+		
+			else
+			
+					*case7*
+					
+				if Leak1Item_620035 >= 1
+				
+					Window "\n\n﹛1坳?毛1呦＿＿10000?分友﹝",Yes,No
+					
+						Window_Yes Leak1Item_620035 >= 1 && Gold <= 990000
+						
+							KillLeak1Item 620035,1
+							AddGold 10000
+							
+							GotoF case3
+						
+						Window_Yes Gold >= 990001
+						
+							GotoF case12
+							
+						Window_Yes Leak1Item_620035 < 1
+						
+							GotoF case10
+							
+						Window_Yes
+			
+							GotoF case10
+							
+						Window_No Leak1Item_620036 < 1
+				
+							GotoF case11
+						
+						Window_No
+						
+							GotoF case8
+							
+							EndBlock
+							
+							
+					
+				else
+					
+					*case8*
+					
+					if Leak1Item_620036 >=1
+					
+						Window "\n\n﹛10坳?毛1呦＿＿100000?分友﹝",Yes,No
+					
+							Window_Yes Leak1Item_620036 >= 1 && Gold <= 900000
+						
+								KillLeak1Item 620036,1
+								AddGold 100000
+								
+								GotoF case3
+							
+							Window_Yes Gold >= 900001
+							
+								GotoF case12
+								
+							Window_Yes Leak1Item_620036 < 1
+							
+								GotoF case10
+								
+							Window_Yes
+			
+								GotoF case10
+								
+							Window_No
+							
+								GotoF case11
+								
+								EndBlock
+					else
+					
+					EndWindow "\n\n﹛赭烂及醒毛迕啦允月氏分卅﹝"
+					
+					
+	endif
+		endif
+			endif
+				endif
+					endif
+						endif
+				
+	EndWindow "\n\n﹛赭烂及醒毛迕啦允月氏分卅﹝"
+					
+				
+	
+	EndBlock
+	
+				
+Block
+
+	*case3*
+	
+	Window "\n\n﹛手丹域蘸跟晶允月井友〝",Yes,No
+	
+		Window_yes Leak1Item_620032 >= 50 || Leak1Item_620033 >= 100 || Leak1Item_620034 >= 100 || Leak1Item_620035 >= 1 || Leak1Item_620036 >= 1 || Leak1Item_621006 >= 1
+	
+			GotoB case2
+		
+		Window_yes
+	
+			endWindow "\n\n﹛手丹晶嗯匹五卅中方丹分友﹝"
+			
+		Window_No
+		
+			GotoF case11
+
+
+
+	
+
+
+#乒件旦正□戊奶件毛籣酦匹壅仄凶桦宁﹋弗□旦ㄠㄟ?﹌
+
+Block
+
+	*case10*
+
+	EndWindow "\n\n﹛窒分儅匀化中卅中元扎卅中井﹝"
+	
+	
+	
+#蝇匀凶桦宁及?杀﹋弗□旦ㄠㄠ?﹌
+Block
+	*case11*
+	
+	EndWindow "\n\n﹛公丹井﹜公丹井﹝\n﹛引丐﹜中勾匹手侳月互方中﹝"
+	
+#云嗯互中匀天中及午五﹋弗□旦ㄠㄡ?﹌
+Block
+	*case12*
+	
+	EndWindow "\n\n﹛戈﹜云井友互中匀天中元扎卅中井﹝"
+
+

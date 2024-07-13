@@ -1,0 +1,1013 @@
+#ÓªÚÐñîçÇÛÍ¾Þµ©Ðþ¡°Ê¸ÃñÊÐ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+###########©xÓªÚÐñîçÇÛÍ¾Þµ©ÐþáN©x##############
+
+##########©x©x©x©x©x©x©x###########
+##########©x÷¬¼°ÅËÃQÔ»©x###########
+##########©x©x©x©x©x©x©x###########
+
+##©x¾Þ¼þÓñ¨â¨à£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block endevent31 == 1 && Item 18760 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18760
+	endevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+## ¾Þ¼þÓñ¨â¨à£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k©x##
+block endevent31 == 1 && Item 18759 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18759
+	endevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+## ¾Þ¼þÓñ¨â¨à##
+block endevent31 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	endevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ¾®ÈÕÅì±ý£½©j18765©k©x£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18765 >= 1 && Item 18760 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18765
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ¾®ÈÕÅì±ý£½©j18765©k©x£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18765 >= 1 && Item 18759 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18765
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ¾®ÈÕÅì±ý£½©j18765©k©x##
+block Item 18765 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18765
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ³ß¼°Åì±ý£½©j18764©k©x£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18764 >= 1 && Item 18760 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18764
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ³ß¼°Åì±ý£½©j18764©k©x£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18764 >= 1 && Item 18759 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18764
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ³ß¼°Åì±ý£½©j18764©k©x##
+block Item 18764 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18764
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹åÆ£½©j18763©k©x£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18763 >= 1 && Item 18760 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18763
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹åÆ£½©j18763©k©x£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18763 >= 1 && Item 18759 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18763
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹åÆ£½©j18763©k©x##
+block Item 18763 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18763
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹ÆÈ£½©j18762©k©x£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18762 >= 1 && Item 18760 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18762
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹ÆÈ£½©j18762©k©x£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18762 >= 1 && Item 18759 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18762
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹ÆÈ£½©j18762©k©x©x##
+block Item 18762 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18762
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹µü£½©j18761©k©x£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18761 >= 1 && Item 18760 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18761
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹µü£½©j18761©k©x£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18761 >= 1 && Item 18759 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18761
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹µü£½©j18761©k©x##
+block Item 18761 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18761
+	Window_NO
+	EndWindow 20890
+
+##£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18760 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18759 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨ç¨æ ##
+block endevent87 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	endevent87 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨ã©x£¾ËÒÕÁ»Æ£½©j18758©k©x ##
+block endevent34 == 1 && Item 18758 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18758
+	endevent34 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨ã ##
+block endevent34 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	endevent34 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨ã£¾ËÒÕÁ»Æ£½©j18758©k ##
+block nowevent34 == 1 && Item 18758 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18758
+	nowevent34 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨ã ##
+block nowevent34 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	nowevent34 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨â©x£¾ËÒÕÁ»Æ£½©j18758©k©x ##
+block endevent33 == 1 && Item 18758 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18758
+	endevent33 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨â ##
+block endevent33 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	endevent33 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨á©x£¾ËÒÕÁ»Æ£½©j18758©k©x ##
+block endevent32 == 1 && Item 18758 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18758
+	endevent32 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨á©x¹ÏËü¨â¨â©x ##
+block endevent32 == 1 && nowevent33 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	endevent32 = 0
+	nowevent33 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨á©x ##
+block endevent32 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	endevent32 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨ç¨æ ##
+block nowevent87 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	nowevent87 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨ç¨ç©x£¾ÔñØÆÖÐÆ§Ó¿µö£½©j18752©k ##
+block nowevent88 == 1 && Item 18752 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18752
+	nowevent88 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨ç¨ç ##
+block nowevent88 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	nowevent88 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨á ##
+block nowevent32 == 1 && Item 18753 >= 1 && Item 18751 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18751
+	KillItem 18753
+	nowevent32 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨á ##
+block nowevent32 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	nowevent32 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨à©x£¾Ê¾·òÊ¾·ò¼°Æ§Ó¿µö£½©j18751©k##
+block nowevent31 == 1 && Item 18751 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18751
+	nowevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨à©x£¾ÓªÚÐ¼°Æ§Ó¿µö£½©j18750©k##
+block nowevent31 == 1 && Item 18750 >= 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	KillItem 18750
+	nowevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+## ¹ÏËü¨â¨à##
+block nowevent31 == 1 && Item 18753 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18753
+	nowevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+
+##########©x©x©x©x©x©x©x###########
+##########©x÷¬¼°ÅËØ¦ØÆ©x###########
+##########©x©x©x©x©x©x©x###########
+
+##©x¾Þ¼þÓñ¨â¨à£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block endevent31 == 1 && Item 18760 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18760
+	endevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+## ¾Þ¼þÓñ¨â¨à£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k©x##
+block endevent31 == 1 && Item 18759 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18759
+	endevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+## ¾Þ¼þÓñ¨â¨à##
+block endevent31 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	endevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ¾®ÈÕÅì±ý£½©j18765©k©x£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18765 >= 1 && Item 18760 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18765
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ¾®ÈÕÅì±ý£½©j18765©k©x£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18765 >= 1 && Item 18759 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18765
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ¾®ÈÕÅì±ý£½©j18765©k©x##
+block Item 18765 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18765
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ³ß¼°Åì±ý£½©j18764©k©x£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18764 >= 1 && Item 18760 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18764
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ³ß¼°Åì±ý£½©j18764©k©x£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18764 >= 1 && Item 18759 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18764
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##£¾ÓªÚÐ³ß¼°Åì±ý£½©j18764©k©x##
+block Item 18764 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18764
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹åÆ£½©j18763©k©x£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18763 >= 1 && Item 18760 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18763
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹åÆ£½©j18763©k©x£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18763 >= 1 && Item 18759 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18763
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹åÆ£½©j18763©k©x##
+block Item 18763 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18763
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹ÆÈ£½©j18762©k©x£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18762 >= 1 && Item 18760 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18762
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹ÆÈ£½©j18762©k©x£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18762 >= 1 && Item 18759 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18762
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹ÆÈ£½©j18762©k©x©x##
+block Item 18762 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18762
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹µü£½©j18761©k©x£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18761 >= 1 && Item 18760 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18761
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹µü£½©j18761©k©x£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18761 >= 1 && Item 18759 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18761
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##£¾ÔÆÒøÖÐ¶ªÆ¹µü£½©j18761©k©x##
+block Item 18761 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18761
+	Window_NO
+	EndWindow 20890
+
+##£¾ÛÍØøµ©Õý»ï¹ÏÓÀÖ­£½©j18760©k##
+block Item 18760 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18760
+	Window_NO
+	EndWindow 20890
+
+##£¾ÆËÅÒ¡õ·Â·Â»¥ÔÈµõÔ»¤¶·¤£½©j18759©k##
+block Item 18759 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18759
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨ç¨æ ##
+block endevent87 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	endevent87 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨ã©x£¾ËÒÕÁ»Æ£½©j18758©k©x ##
+block endevent34 == 1 && Item 18758 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18758
+	endevent34 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨ã ##
+block endevent34 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	endevent34 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨ã£¾ËÒÕÁ»Æ£½©j18758©k ##
+block nowevent34 == 1 && Item 18758 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18758
+	nowevent34 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨ã ##
+block nowevent34 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	nowevent34 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨â©x£¾ËÒÕÁ»Æ£½©j18758©k©x ##
+block endevent33 == 1 && Item 18758 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18758
+	endevent33 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨â ##
+block endevent33 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	endevent33 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨á©x£¾ËÒÕÁ»Æ£½©j18758©k©x ##
+block endevent32 == 1 && Item 18758 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18758
+	endevent32 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨á©x¹ÏËü¨â¨â©x ##
+block endevent32 == 1 && nowevent33 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	endevent32 = 0
+	nowevent33 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¾Þ¼þÓñ¨â¨á©x ##
+block endevent32 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	endevent32 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨ç¨æ ##
+block nowevent87 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	nowevent87 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨ç¨ç©x£¾ÔñØÆÖÐÆ§Ó¿µö£½©j18752©k ##
+block nowevent88 == 1 && Item 18752 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18752
+	nowevent88 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨ç¨ç ##
+block nowevent88 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	nowevent88 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨á ##
+block nowevent32 == 1 && Item 18751 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18751
+	nowevent32 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨á ##
+block nowevent32 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	nowevent32 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨à©x£¾Ê¾·òÊ¾·ò¼°Æ§Ó¿µö£½©j18751©k##
+block nowevent31 == 1 && Item 18751 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18751
+	nowevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+##©x¹ÏËü¨â¨à©x£¾ÓªÚÐ¼°Æ§Ó¿µö£½©j18750©k##
+block nowevent31 == 1 && Item 18750 >= 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	KillItem 18750
+	nowevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+## ¹ÏËü¨â¨à##
+block nowevent31 == 1
+
+	Window 20887,NEXT
+	Window 20888,YES,NO
+	Window_YES
+	Window 20889,OK
+	Window_OK
+	nowevent31 = 0
+	Window_NO
+	EndWindow 20890
+
+###############©xÓªÚÐñîçÇÛÍ¾Þµ©Ðþ·°ï§©x###################
+
+block
+
+	Window 20886,OK
+	Window_OK
+	nowevent31 = 1

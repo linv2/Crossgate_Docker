@@ -1,0 +1,22 @@
+#ÕýÉúÑ¨Æ¹·Â¡õÛÍ¾Þµ©Ðþ¡°ÆËÆË²¼ÆË·Â¨á
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+###########©xÖÏÊÖ’ƒØÆ©x##############
+block endevent35 == 1 && Item 18790 >= 1
+
+	Window 206059,OK
+	Window_OK ItemSpace >= 1
+	KillItem 18790
+	GiveItem 18791,1,(206128)
+	endevent35 = 0
+	leavegroup
+	Warp 0,33238,33,45
+	Window_OK ItemSpace == 0
+	EndWindow 206085,OK
+
+
+block
+	Window 206149,OK
+	Window_OK
+	Warp 0,33234,32,35

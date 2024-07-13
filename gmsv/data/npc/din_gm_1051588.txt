@@ -1,0 +1,396 @@
+##GM500M障碍赛	陷阱	din_gm_1051588.txt	陷阱功能
+
+##GM徽章
+block Item 46404 >= 1
+
+endblock
+
+##起点区
+block Xpos >=9 && Xpos <= 14 && Ypos >= 26 && Ypos <= 31
+
+endblock 
+##0-50M
+block Xpos >=15 && Xpos <= 62 && Ypos >= 26 && Ypos <= 31
+	 localCount0  = random 100,1
+	 ##传回起点	 	
+ 	 if localCount0 == 1	
+		 #Warp 0,32100,11,29
+	 endif
+	 ##传回该段起点
+	 if localCount0 >= 2 && localCount0 <= 3 
+		 Warp 0,32100,16,26
+	 endif
+	 ##随机传送至该段某处
+	 if localCount0 >= 4 && localCount0 <= 5
+		 Warp 0,32100,20,27,0,32100,30,28,0,32100,40,29
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 6 && localCount0 <= 8
+	 	 Encount 3|||0|||||0|1000||||||||| 
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 10
+	 	 Encount 3|||0|||||0|103115||||||||| 
+	 endif
+	 ##捡到钱	 
+	 if localCount0 >= 11 && localCount0 <= 12
+		 AddGold +100
+	 	 Message 1054384	 
+	 endif
+	 ##掉钱
+	 if localCount0 >= 13 && localCount0 <= 14 && Gold >=100
+	 	 AddGold -100
+	 	 Message 1054385	 
+	 endif 	 	 
+	 ##顺利通过
+	 if localCount0 >= 15 && localCount0 <= 100
+	 
+	 endif
+endblock 	
+##50-100M	 
+block Xpos >=64 && Xpos <= 112 && Ypos >= 26 && Ypos <= 31
+	 localCount0  = random 100,1
+	 ##传回起点	 	
+ 	 if localCount0 == 1	
+		 #Warp 0,32100,11,29
+	 endif
+	 ##传回该段起点
+	 if localCount0 >= 2 && localCount0 <= 3 
+		 Warp 0,32100,64,26
+	 endif
+	 ##随机传送至该段某处
+	 if localCount0 >= 4 && localCount0 <= 5
+		 Warp 0,32100,70,27,0,32100,80,28,0,32100,90,29
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 6 && localCount0 <= 8
+	 	 Encount 3|||0|||||0|1000||||||||| 
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 10
+	 	 Encount 3|||0|||||0|103115||||||||| 
+	 endif
+	 ##捡到钱	 
+	 if localCount0 >= 11 && localCount0 <= 12
+		 AddGold +100
+	 	 Message 1054384	 
+	 endif
+	 ##掉钱
+	 if localCount0 >= 13 && localCount0 <= 14 && Gold >=100
+	 	 AddGold -100
+	 	 Message 1054385	 
+	 endif 	 	 
+	 ##顺利通过
+	 if localCount0 >= 15 && localCount0 <= 100
+	 
+	 endif
+
+endblock 	
+##100-150m
+block Xpos >=114 && Xpos <= 162 && Ypos >= 26 && Ypos <= 31
+	 localCount0  = random 100,1
+	 ##传回起点	 	
+ 	 if localCount0 == 1	
+		 #Warp 0,32100,11,29
+	 endif
+	 ##传回该段起点
+	 if localCount0 >= 2 && localCount0 <= 3 
+		 Warp 0,32100,114,26
+	 endif
+	 ##随机传送至该段某处
+	 if localCount0 >= 4 && localCount0 <= 5
+		 Warp 0,32100,120,27,0,32100,130,28,0,32100,140,29
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 6 && localCount0 <= 8
+	 	 Encount 3|||0|||||0|1000||||||||| 
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 10
+	 	 Encount 3|||0|||||0|103115||||||||| 
+	 endif
+	 ##捡到钱	 
+	 if localCount0 >= 11 && localCount0 <= 12
+		 AddGold +100
+	 	 Message 1054384	 
+	 endif
+	 ##掉钱
+	 if localCount0 >= 13 && localCount0 <= 14 && Gold >=100
+	 	 AddGold -100
+	 	 Message 1054385	 
+	 endif 	 	 
+	 ##顺利通过
+	 if localCount0 >= 15 && localCount0 <= 100
+	 
+	 endif
+endblock 	
+##150-200m
+block Xpos >=164 && Xpos <= 169 && Ypos >= 26 && Ypos <= 74
+	 localCount0  = random 100,1
+	 ##传回起点	 	
+ 	 if localCount0 == 1	
+		 #Warp 0,32100,11,29
+	 endif
+	 ##传回该段起点
+	 if localCount0 >= 2 && localCount0 <= 3 
+		 Warp 0,32100,169,26
+	 endif
+	 ##随机传送至该段某处
+	 if localCount0 >= 4 && localCount0 <= 5
+		 Warp 0,32100,167,36,0,32100,168,46,0,32100,169,56
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 6 && localCount0 <= 8
+	 	 Encount 3|||0|||||0|1000||||||||| 
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 10
+	 	 Encount 3|||0|||||0|103115||||||||| 
+	 endif
+	 ##捡到钱	 
+	 if localCount0 >= 11 && localCount0 <= 12
+		 AddGold +100
+	 	 Message 1054384	 
+	 endif
+	 ##掉钱
+	 if localCount0 >= 13 && localCount0 <= 14 && Gold >=100
+	 	 AddGold -100
+	 	 Message 1054385	 
+	 endif 	 	 
+	 ##顺利通过
+	 if localCount0 >= 15 && localCount0 <= 100
+	 
+	 endif
+endblock 	
+##200-250m 	 
+block Xpos >=164 && Xpos <= 169 && Ypos >= 76 && Ypos <= 124
+	 localCount0  = random 100,1
+	 ##传回起点	 	
+ 	 if localCount0 == 1	
+		 #Warp 0,32100,11,29
+	 endif
+	 ##传回该段起点
+	 if localCount0 >= 2 && localCount0 <= 3 
+		 Warp 0,32100,169,76
+	 endif
+	 ##随机传送至该段某处
+	 if localCount0 >= 4 && localCount0 <= 5
+		 Warp 0,32100,167,86,0,32100,168,96,0,32100,169,106
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 6 && localCount0 <= 8
+	 	 Encount 3|||0|||||0|1000||||||||| 
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 10
+	 	 Encount 3|||0|||||0|103115||||||||| 
+	 endif
+	 ##捡到钱	 
+	 if localCount0 >= 11 && localCount0 <= 12
+		 AddGold +100
+	 	 Message 1054384	 
+	 endif
+	 ##掉钱
+	 if localCount0 >= 13 && localCount0 <= 14 && Gold >=100
+	 	 AddGold -100
+	 	 Message 1054385	 
+	 endif 	 	 
+	 ##顺利通过
+	 if localCount0 >= 15 && localCount0 <= 100
+	 
+	 endif
+endblock 	
+##250-300m 	 
+block Xpos >=120 && Xpos <= 169 && Ypos >= 126 && Ypos <= 131
+	 localCount0  = random 100,1
+	 ##传回起点	 	
+ 	 if localCount0 == 1	
+		 #Warp 0,32100,11,29
+	 endif
+	 ##传回该段起点
+	 if localCount0 >= 2 && localCount0 <= 3 
+		 Warp 0,32100,169,126
+	 endif
+	 ##随机传送至该段某处
+	 if localCount0 >= 4 && localCount0 <= 5
+		 Warp 0,32100,160,128,0,32100,150,129,0,32100,140,130
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 6 && localCount0 <= 8
+	 	 Encount 3|||0|||||0|1000||||||||| 
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 10
+	 	 Encount 3|||0|||||0|103115||||||||| 
+	 endif
+	 ##捡到钱	 
+	 if localCount0 >= 11 && localCount0 <= 12
+		 AddGold +100
+	 	 Message 1054384	 
+	 endif
+	 ##掉钱
+	 if localCount0 >= 13 && localCount0 <= 14 && Gold >=100
+	 	 AddGold -100
+	 	 Message 1054385	 
+	 endif 	 	 
+	 ##顺利通过
+	 if localCount0 >= 15 && localCount0 <= 100
+	 
+	 endif
+endblock 	
+##300-350m 	  	 			 
+block Xpos >=70 && Xpos <= 118 && Ypos >= 126 && Ypos <= 131
+	 localCount0  = random 100,1
+	 ##传回起点	 	
+ 	 if localCount0 == 1	
+		 #Warp 0,32100,11,29
+	 endif
+	 ##传回该段起点
+	 if localCount0 >= 2 && localCount0 <= 3 
+		 Warp 0,32100,118,126
+	 endif
+	 ##随机传送至该段某处
+	 if localCount0 >= 4 && localCount0 <= 5
+		 Warp 0,32100,90,128,0,32100,100,129,0,32100,105,130
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 6 && localCount0 <= 8
+	 	 Encount 3|||0|||||0|1000||||||||| 
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 10
+	 	 Encount 3|||0|||||0|103115||||||||| 
+	 endif
+	 ##捡到钱	 
+	 if localCount0 >= 11 && localCount0 <= 12
+		 AddGold +100
+	 	 Message 1054384	 
+	 endif
+	 ##掉钱
+	 if localCount0 >= 13 && localCount0 <= 14 && Gold >=100
+	 	 AddGold -100
+	 	 Message 1054385	 
+	 endif 	 	 
+	 ##顺利通过
+	 if localCount0 >= 15 && localCount0 <= 100
+	 
+	 endif
+endblock 	
+##350-400m
+block Xpos >=22 && Xpos <= 68 && Ypos >= 126 && Ypos <= 131
+	 localCount0  = random 100,1
+	 ##传回起点	 	
+ 	 if localCount0 == 1	
+		 #Warp 0,32100,11,29
+	 endif
+	 ##传回该段起点
+	 if localCount0 >= 2 && localCount0 <= 3 
+		 Warp 0,32100,68,126
+	 endif
+	 ##随机传送至该段某处
+	 if localCount0 >= 4 && localCount0 <= 5
+		 Warp 0,32100,30,131,0,32100,40,130,0,32100,45,129
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 6 && localCount0 <= 8
+	 	 Encount 3|||0|||||0|1000||||||||| 
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 10
+	 	 Encount 3|||0|||||0|103115||||||||| 
+	 endif
+	 ##捡到钱	 
+	 if localCount0 >= 11 && localCount0 <= 12
+		 AddGold +100
+	 	 Message 1054384	 
+	 endif
+	 ##掉钱
+	 if localCount0 >= 13 && localCount0 <= 14 && Gold >=100
+	 	 AddGold -100
+	 	 Message 1054385	 
+	 endif 	 	 
+	 ##顺利通过
+	 if localCount0 >= 15 && localCount0 <= 100
+	 
+	 endif
+endblock 	
+##400-450m
+block Xpos >=22 && Xpos <= 27 && Ypos >= 75 && Ypos <= 124
+	 localCount0  = random 100,1
+	 ##传回起点	 	
+ 	 if localCount0 == 1	
+		 #Warp 0,32100,11,29
+	 endif
+	 ##传回该段起点
+	 if localCount0 >= 2 && localCount0 <= 3 
+		 Warp 0,32100,27,124
+	 endif
+	 ##随机传送至该段某处
+	 if localCount0 >= 4 && localCount0 <= 5
+		 Warp 0,32100,27,119,0,32100,26,109,0,32100,24,99
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 6 && localCount0 <= 8
+	 	 Encount 3|||0|||||0|1000||||||||| 
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 10
+	 	 Encount 3|||0|||||0|103115||||||||| 
+	 endif
+	 ##捡到钱	 
+	 if localCount0 >= 11 && localCount0 <= 12
+		 AddGold +100
+	 	 Message 1054384	 
+	 endif
+	 ##掉钱
+	 if localCount0 >= 13 && localCount0 <= 14 && Gold >=100
+	 	 AddGold -100
+	 	 Message 1054385	 
+	 endif 	 	 
+	 ##顺利通过
+	 if localCount0 >= 15 && localCount0 <= 100
+	 
+	 endif
+endblock 	
+##450-500M
+block Xpos >=22 && Xpos <= 27 && Ypos >= 43 && Ypos <= 73
+	 localCount0  = random 100,1
+	 ##传回起点	 	
+ 	 if localCount0 == 1	
+		 #Warp 0,32100,11,29
+	 endif
+	 ##传回该段起点
+	 if localCount0 >= 2 && localCount0 <= 4 
+		 Warp 0,32100,27,73
+	 endif
+	 ##随机传送至该段某处
+	 if localCount0 >= 6 && localCount0 <= 8
+		 Warp 0,32100,25,69,0,32100,24,60,0,32100,23,58
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 15
+	 	 Encount 3|||0|||||0|1000||||||||| 
+	 endif
+	 ##进入战斗	 
+	 if localCount0 >= 9 && localCount0 <= 10
+	 	 Encount 3|||0|||||0|103115||||||||| 
+	 endif
+	 ##捡到钱	 
+	 if localCount0 >= 11 && localCount0 <= 12
+		 AddGold +100
+	 	 Message 1054384	 
+	 endif
+	 ##掉钱
+	 if localCount0 >= 13 && localCount0 <= 14 && Gold >=100
+	 	 AddGold -100
+	 	 Message 1054385	 
+	 endif 	 	 
+	 ##顺利通过
+	 if localCount0 >= 15 && localCount0 <= 100
+	 
+	 endif
+endblock 	
+##终点区
+block Xpos >=22 && Xpos <= 27 && Ypos >= 38 && Ypos <= 41
+
+endblock 	 

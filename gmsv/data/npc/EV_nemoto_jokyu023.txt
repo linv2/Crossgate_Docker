@@ -1,0 +1,885 @@
+##########################
+# 晓菟缜         by 漪呿 #
+# ←苇烂户月樊←         #
+##########################
+
+
+############ 豢迕琼痿缜谛动晓 ####################
+block Job >= 204 && Job <= 209
+
+	Window 3208096,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+
+#### YES﹜≦夫□玉末□玉≧毛赭儅
+		Window_YES Item 97 >= 1
+			Window 3208097,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅夫□玉末□玉匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中痿毛综曰粮仃化票今中友﹝
+
+			Window 3208098,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+######## OK﹜≦夫□玉末□玉≧互壅尹凶
+				Window_OK Item 97 == 0
+					EndWindow 3208099
+
+		#\n\n﹛仇切日卞夫□玉末□玉毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208100
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208101
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 97,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+#### YES﹜≦夫□玉末□玉≧毛尕赭儅
+		Window_YES Item 97 == 0
+			EndWindow 3208102
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+#### NO
+		Window_NO
+			EndWindow 3208103
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼忕缜谛动晓 ####################
+block Job >= 214 && Job <= 219
+
+	Window 3208104,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+
+####≦巨弘未平亘□扑亦瓜□术失弁旦≧毛赭儅
+
+		Window_YES Item 895 >= 1
+			Window 3208105,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅巨弘未平亘□扑亦瓜□术失弁旦匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中忕毛综曰粮仃化票今中友﹝
+
+			Window 3208106,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 895 == 0
+					EndWindow 3208107
+
+		#\n\n﹛仇切日卞巨弘未平亘□扑亦瓜□术失弁旦毛\n﹛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208108
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208109
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 895,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 895 ==0
+			EndWindow 3208110
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208111
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+############ 豢迕琼键缜谛动晓 ####################
+block Job >= 224 && Job <= 229
+
+	Window 3208112,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+####≦左它布旦由奶弁≧毛赭儅
+		Window_YES Item 1695 >= 1
+			Window 3208113,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅左它布由奶弁匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中键毛综曰粮仃化票今中友﹝
+
+			Window 3208114,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+
+				Window_OK Item 1695 == 0
+					EndWindow 3208115
+
+		#\n\n﹛仇切日卞左它布由奶弁毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208116
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208117
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 1695,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 1695 == 0
+			EndWindow 3208118
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208119
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼菰缜谛动晓 ####################
+block Job >= 234 && Job <= 239
+
+	Window 3208120,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦呺蚁≧毛赭儅
+
+		Window_YES Item 2098 >= 1
+			Window 3208121,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅呺蚁匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中菰毛综曰粮仃化票今中友﹝
+
+			Window 3208122,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 2098 == 0
+					EndWindow 3208123
+
+		#\n\n﹛仇切日卞呺蚁毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208124
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208125
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 2098,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 2098 == 0
+			EndWindow 3208126
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208127
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼橡缜谛动晓 ####################
+block Job >= 244 && Job <= 249
+
+	Window 3208128,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦旦正□母旦玄≧毛赭儅
+
+		Window_YES Item 2497 >= 1
+			Window 3208129,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅旦正□母旦玄匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中橡毛综曰粮仃化票今中友﹝
+
+			Window 3208130,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 2497 == 0
+					EndWindow 3208131
+
+		#\n\n﹛仇切日卞旦正□母旦玄毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208132
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208133
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 2497,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 2497 == 0
+			EndWindow 3208134
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208135
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼瓜奶白缜谛动晓 ####################
+block Job >= 264 && Job <= 269
+
+	Window 3208136,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦巨伙任奴件母布□≧毛赭儅
+		Window_YES Item 3299 >= 1
+			Window 3208137,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅巨伙任奴件母布□匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中瓜奶白毛综曰粮仃化票今中友﹝
+
+			Window 3208138,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+					Window_OK Item 3299 == 0
+						EndWindow 3208139
+
+		#\n\n﹛仇切日卞巨伙任奴件母布□毛\n﹛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+					Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+						EndWindow 3208140
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+					Window_OK Item 622061 == 0
+						EndWindow 3208141
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+					Window_OK Item 622061 >= 1
+						KillItem 3299,1
+						LeaveGroup
+						Warp 0,59934,93,12
+						Endblock
+
+
+		Window_YES Item 3299 == 0
+			EndWindow 3208142
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208143
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼髑填缜谛动晓 ####################
+block Job >=254 && Job <= 259
+
+	Window 3208144,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦立市巨伙≧毛赭儅
+
+		Window_YES Item 2899 >= 1
+			Window 3208145,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅立市巨伙匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中髑填毛综曰粮仃化票今中友﹝
+
+			Window 3208146,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 2899 == 0
+					EndWindow 3208147
+
+		#\n\n﹛仇切日卞立市巨伙毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208148
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208149
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 2899,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 2899 == 0
+			EndWindow 3208150
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208151
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼顶缜谛动晓 ####################
+block Job >= 294 && Job <= 299
+
+	Window 3208152,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦瓜奶玄甲伙玄≧毛赭儅
+
+		Window_YES Item 4491 >= 1
+			Window 3208153,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅瓜奶玄甲伙玄匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中顶毛综曰粮仃化票今中友﹝
+
+			Window 3208154,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+
+				Window_OK Item 4491 == 0
+					EndWindow 3208155
+
+		#\n\n﹛仇切日卞瓜奶玄甲伙玄毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208156
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208157
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 4491,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+			Window_YES Item 4491 == 0
+			EndWindow 3208158
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+			Window_NO
+			EndWindow 3208159
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼汋缜谛动晓 ####################
+block Job >= 304 && Job <= 309
+
+	Window 3208160,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦末它伙扑乓它玄≧毛赭儅
+		Window_YES Item 4893 >= 1
+			Window 3208161,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅末它伙扑乓它玄匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中汋毛综曰粮仃化票今中友﹝
+
+			Window 3208162,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 4893 == 0
+					EndWindow 3208163
+
+		#\n\n﹛仇切日卞末它伙扑乓它玄毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208164
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208165
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 4893,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 4893 == 0
+			EndWindow 3208166
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208167
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼夫□皮缜谛动晓 ####################
+block Job >= 314 && Job <= 319
+
+	Window 3208168,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦母□弁扑亘仿奶件≧毛赭儅
+		Window_YES Item 5291 >= 1
+			Window 3208169,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅母□弁扑亘仿奶件匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中夫□皮毛综曰粮仃化票今中友﹝
+
+			Window 3208170,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 5291 == 0
+					EndWindow 3208171
+
+		#\n\n﹛仇切日卞母□弁扑亘仿奶件毛\n﹛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208172
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208173
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 5291,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 5291 == 0
+			EndWindow 3208174
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208175
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼场缜谛动晓 ####################
+block Job >= 274 && Job <= 279
+	Window 3208176,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦立永扑件弘布斥尼永玄≧毛赭儅
+		Window_YES Item 3692 >= 1
+			Window 3208177,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅立永扑件弘布斥尼永玄匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中场毛综曰粮仃化票今中友﹝
+
+			Window 3208178,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 3692 == 0
+					EndWindow 3208179
+
+		#\n\n﹛仇切日卞立永扑件弘布斥尼永玄毛\n﹛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208180
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208181
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 3692,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 3692 == 0
+			EndWindow 3208182
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208183
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼佴阂缜谛动晓 ####################
+block Job >= 284 && Job <= 289
+
+	Window 3208184,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦母它丢奶及佴阂≧毛赭儅
+		Window_YES Item 4092 >= 1
+			Window 3208185,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅母它丢奶及佴阂匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中佴阂毛综曰粮仃化票今中友﹝
+
+			Window 3208186,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 4092 == 0
+					EndWindow 3208187
+
+		#\n\n﹛仇切日卞母它丢奶及佴阂毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208188
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208189
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 4092,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 4092 == 0
+			EndWindow 3208190
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208191
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼皮□汁缜谛动晓 ####################
+block Job >= 324 && Job <= 329
+
+	Window 3208192,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦弁仿它犯奴失≧毛赭儅
+		Window_YES Item 5691 >= 1
+			Window 3208193,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅弁仿它犯奴失匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中皮□汁毛综曰粮仃化票今中友﹝
+
+			Window 3208194,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 5691 == 0
+					EndWindow 3208195
+
+		#\n\n﹛仇切日卞弁仿它犯奴失毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208196
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208197
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 5691,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 5691 == 0
+			EndWindow 3208198
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208199
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼楔缜谛动晓 ####################
+block JOb >= 334 && Job <= 339
+
+	Window 3208200,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦失白夫犯奴□泛≧毛赭儅
+		Window_YES Item 6091 >= 1
+			Window 3208201,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅失白夫犯奴□泛匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中楔毛综曰粮仃化票今中友﹝
+
+			Window 3208202,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 6091 == 0
+					EndWindow 3208203
+
+		#\n\n﹛仇切日卞失白夫犯奴□泛毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208204
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208205
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 6091,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 6091 == 0
+			EndWindow 3208206
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+		Window_NO
+			EndWindow 3208207
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+############ 豢迕琼贱缜谛动晓 ####################
+block Job >= 344 && Job <= 349
+
+	Window 3208208,YES,NO
+
+		#\n\n﹛云?木迋匹允﹝\n﹛公木匹反愈詨卞﹜\n﹛丐卅凶及综圴毛仇切日卞羼请仄化仁分今中﹝
+
+#### ≦犯田旦泛□正□≧毛赭儅
+		Window_YES Item 6491 >= 1
+			Window 3208209,NEXT
+
+		#\n\n﹛反中﹜割井卞﹝\n﹛峏ネ卅犯田旦泛□正□匹允友﹝\n﹛给仄中匹仄斤丹﹜仇木反仇切日匹苂井曰引允﹝\n﹛仇木卞化丐卅凶尺及魂柈反蔽弇匹允﹝\n﹛今日卞擎褡仄化﹜\n﹛仇木井日手恌中贱毛综曰粮仃化票今中友﹝
+
+			Window 3208210,OK
+
+		#\n\n﹛公木井日﹜\n﹛丐卅凶卞莘中凶互匀化中月谛互中引允﹝\n﹛恦缙及拟中及累毛儅匀化﹜\n﹛?辉及赭尺垫匀化仁分今中﹝
+
+				Window_OK Item 6491 == 0
+					Endwindow 3208211
+
+		#\n\n﹛仇切日卞犯田旦泛□正□毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+######## OK﹜≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208212
+
+		#\n\n﹛公及拟中及累反﹜\n﹛恦执及笛赁毛蜗坌卞熬仃化中卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧互卅中
+				Window_OK Item 622061 == 0
+					EndWindow 3208213
+
+		#\n\n﹛恦缙及拟中及累互卅中方丹匹允友﹝
+
+######## OK﹜≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItem 6491,1
+					LeaveGroup
+					warp 0,59934,93,12
+					Endblock
+
+
+		Window_YES Item 6491 == 0
+			EndWindow 3208214
+
+		#\n\n﹛萧仄沭卅中及匹允互﹜\n﹛公木匹反仇仇井日燮尺\n﹛云骚仄允月仇午互匹五卅中氏匹允﹝
+
+
+		Window_NO
+			EndWindow 3208215
+
+		#\n\n﹛丐日﹜升丹卅今中引仄凶〝\n﹛综圴毛云儅切匹反卅中及匹仄斤丹井﹝
+
+
+
+
+
+#### 晓筏动陆
+block
+	Window 3208216,OK
+
+		#\n\n﹛丐卅凶反﹜\n﹛仇及燮尺褡戈凤伞反卅中方丹匹允友﹝
+		Window_OK
+			LeaveGroup
+			warp 0,59505,166,87
+Endblock
+

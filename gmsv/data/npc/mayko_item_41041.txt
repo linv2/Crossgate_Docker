@@ -1,0 +1,36 @@
+#8篮子	mayko_item_41018.txt	
+#1110384	\n\n\n\n@c要从面包篮拿一组面包吗？？	1
+#15201
+
+block Item 41041 >= 2
+	 EndWindow 1110396
+
+
+
+
+############## 谛溥及酸曰DUR互1 ##############
+block ItemDur 41041 == 1
+	 Window 1110384,YES,NO
+	 Window_YES ItemSpace == 0
+ 	 EndWindow 1054970	
+ 	 Window_YES ItemDur 41041 == 1
+	 GiveLeak1Item 15201,3
+	 KillItem 41041,1
+	 Window_YES
+	 Window_NO
+	 endblock
+block
+############## 谛溥及酸曰DUR互2动晓 ##############
+	 Window 1110384,YES,NO
+	 Window_YES ItemSpace == 0
+	 EndWindow 1054970
+	 Window_YES Item 41041>0 
+	 GiveLeak1Item 15201,3
+	 SetDur 41041,-1
+	 
+	 Window_YES
+	 Window_NO
+	 endblock
+	
+
+

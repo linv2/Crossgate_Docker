@@ -1,0 +1,73 @@
+#PUK3_main2
+#
+#
+#扑尼伊斥尼件ㄡ
+
+
+Block
+
+	if Item_621020 >= 1
+	
+	
+		Window 3207834,Yes,No
+
+		#\n\n﹛锳噬虫毛祯井卅井匀凶及匹允井＿＿﹝\n﹛扑尼伊斥尼件毛\n﹛汊唾今六月及匹允友＿＿﹝
+		
+		
+			Window_No
+			
+				EndWindow 3207835
+
+		#\n\n﹛公丹匹允井﹝\n﹛匹反镀仁锳噬虫毛祯中化仁分今中﹝
+			
+		
+			Window_Yes
+			
+				Window 3207836,Next
+
+		#\n\n﹛坌井曰引仄凶﹝\n﹛公木互丐卅凶及蓟枪卅日壬熬仃じ木引仄斤丹﹝\n﹛凶分仄﹜\n﹛扑尼伊斥尼件卞枑匀凶台凶切互\n﹛漆午⑺元谛伞毛儅勾仇午反丐曰引六氏﹝
+				
+				Window 3207837,Next
+
+		#\n\n﹛?辉﹜扑尼伊斥尼件反﹍台凶切﹎\n﹛匹丐曰﹍台﹎匹反卅中及匹允﹝\n﹛五匀午丐卅凶及羼副毛\n﹛熬仃じ木月仇午卞覆仄化\n﹛扑尼伊斥尼件反塌井仄中午合丹匹仄斤丹﹝
+			
+				Window 3207838,Next
+
+		#\n\n﹛公木匹手﹜丐卅凶卞反襞月腺厍互丐曰引允﹝\n﹛匹允井日﹜蝈化毛熬仃じ木引仄斤丹﹝
+				
+				Window 3207839,OK
+
+		#\n\n﹛公木匹反﹜丐曰互午丹仍介中引仄凶﹝\n﹛引凶﹜云莘中仄引仄斤丹﹝
+				
+					Window_OK Item_621020 == 0
+					
+						EndWindow 3207840
+
+		#\n\n﹛锳噬虫毛云儅切卞卅匀化中卅中\n﹛方丹匹允友﹝
+						
+						
+					Window_OK 
+					
+						KillitemAll 621020
+						LeaveGroup
+						GlobalFlag89 = 0
+						Warp 0,59985,280,142
+						
+	
+	else
+	
+	
+			Window 3207841,OK
+
+		#\n\n﹛蓟枪毛赀匀化反中仃引六氏﹝
+		
+			Window_OK
+			
+				LeaveGroup
+				Warp 0,59526,217,57
+	
+
+	endif
+						
+			
+			

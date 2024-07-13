@@ -1,0 +1,136 @@
+#﹛港盒及拨叶﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛弁瓜及摒
+
+###﹛瓜奶白缜谛匹瓜奶白综岳旦平伙伊矛伙互ㄤ动晓
+
+block JobAncestry == 260 && SkillLevel_206 >= 5
+
+
+#﹛毡中石奶永旦伙毛赭儅
+	If Item_607950 >= 1
+		EndWindow 3202976
+
+		#\n\n﹛僮中桦赭毛茧六﹝蜕尹月及反公木分仃分﹝
+		EndBlock
+
+
+#﹛市瓜甩扑午失伙穴奶玄﹋ㄡㄟ蜊﹌毛赭儅
+	else
+
+		If Item_607947 >= 1 && Item_9708 >= 20
+			Window 3202977,NEXT
+
+		#\n\n﹛公欠尹凶井﹝\n﹛匹反﹜仇及毡中石奶永旦伙毛儅匀化垫仃﹝\n﹛脱互潜反ㄤ遽及怅今木凶桦赭卞中月﹝\n﹛公木毛儅匀化中木壬﹜じ曰轼互蜇木月反内分﹝
+			Window 3202978,OK
+
+		#\n\n﹛凶分仄﹜由□泛奴毛赚氏匹中月桦宁反﹜\n﹛燮⑵﹜勾引曰伉□母□毛抭户化中卅中午\n﹛石奶永旦伙及躲绊反撩歹木月﹝\n﹛镗啦允月仇午分﹝
+
+				Window_OK Item_607947 >= 1 && Item_9708 >= 20 && ItemSpace >= 1
+					KillItemAll 607947
+					KillItem 9708,20
+					GiveItemEX 607950,1,3202979
+
+		#\n\n﹛绂坁毛帮咥仄欠﹝石奶永旦伙互欐六氏﹝
+					EndBlock
+
+				Window_OK Item_607947 >= 1 && Item_9708 >= 20
+					EndWindow 3202980
+
+		#\n\n﹛绂坁毛帮咥仄欠﹝石奶永旦伙互欐六氏﹝
+					EndBlock
+
+				Window_OK Item_607947 >= 1
+					EndWindow 3202981
+
+		#\n\n﹛失伙穴奶玄互箫曰氏″\n﹛石奶永旦伙反欐六氏″
+					EndBlock
+
+				Window_OK
+					EndWindow 3202982
+
+		#\n\n﹛市瓜甩扑互壅尹凶﹝\n﹛石奶永旦伙反欐六氏″
+					EndBlock
+
+
+#﹛市瓜甩扑反赭儅仄化中月互﹜失伙穴奶玄互尕箫
+		else
+
+			If Item_607947 >= 1
+				EndWindow 3202983
+
+		#\n\n﹛优邰卅失伙穴奶玄反ㄡㄟ蜊分﹝箫曰卅中冗﹝
+				EndBlock
+
+
+#﹛镗妐踏毛赭儅
+			else
+
+				If Item_607942 >= 1
+					EndWindow 3202984
+
+		#\n\n﹛窒蘸侳化手拑蛲分﹝窒手项尹月勾手曰反卅中﹝\n﹛愤坌匹哔尹﹜茧允及分﹝
+					EndBlock
+
+
+#﹛晓筏失奶泛丞毛尕赭儅
+				else
+					Window 3202985,YES,NO
+
+		#\n\n﹛公仇公仇珃及丐月瓜奶白缜谛午苇凶﹝\n﹛脱互潜卞项尹毛搁中卞侳凶及井〝
+
+						Window_YES
+							Window 3202986,NEXT
+
+		#\n\n﹛卅日壬﹜煆中魂柈卞蔺氏匹手日丹﹝\n﹛市瓜甩扑毛ㄠ续午失伙穴奶玄夤檗毛ㄡㄟ蜊\n﹛儅匀化五化手日云丹﹝
+							Window 3202987,OK
+
+		#\n\n﹛市瓜甩扑反﹜Ⅶ填盒卞仇及镗妐踏毛欐六壬\n﹛熬仃潸木月﹝\n﹛Ⅶ填盒及蛛桦赭﹜失伙穴奶玄及睡楚桦赭反﹜\n﹛仇及港盒及升仇井午分仃蜕匀化云仁﹝\n﹛丐午反愤坌匹茧六﹝
+
+								Window_OK ItemSpace >= 1
+									GiveItemEX 607942,1,3202988
+
+		#\n\n﹛绂坁毛帮咥仄欠﹝镗妐踏互欐六氏﹝
+									EndBlock
+
+								Window_OK
+									EndWindow 3202989
+
+		#\n\n﹛绂坁毛帮咥仄欠﹝镗妐踏互欐六氏﹝
+									EndBlock
+
+						Window_NO
+							EndWindow 3202990
+
+		#\n\n﹛公木手恌中分欠丹﹝\n﹛厘尴侳化手﹜潜互斨珌允月分欠丹井日卅﹝
+							EndBlock
+
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛瓜奶白缜谛分互瓜奶白综岳旦平伙伊矛伙互ㄤ恍坢
+
+block JobAncestry == 260
+	EndWindow 3202991
+
+		#\n\n﹛脱互潜及绖毛鳗牖允月卞反﹜引分恍诞分卅﹝\n﹛手匀午膜垫卞拻戈仇午分﹝
+
+
+
+###﹛瓜奶白缜谛匹反卅中
+
+block
+	EndWindow 3202992
+
+		#\n\n﹛瓜奶白缜谛动陆及樊卞迕反卅中﹝职毛癫凶木﹝
+
+
+

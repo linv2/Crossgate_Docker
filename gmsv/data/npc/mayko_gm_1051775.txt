@@ -1,0 +1,281 @@
+##### 想去哪就去哪-布料####
+##■ 检查人数
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 Window_NO 
+	 	 Endblock
+	 	 	 	 
+#1055618	麻	100,563,161
+##■ 有传送卷 && 字串比对 麻	 	 
+block Item 47717 >= 1 && StrCmpChat == 1055618
+	 
+	 ##1055739	\n\n\n@c你想去的是麻的采集区吗？？
+
+	 Window 1055739,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送麻采集点
+	 Warp 0,100,563,161
+#1055619	木棉	100,347,145
+block Item 47717 >= 1 && StrCmpChat == 1055619
+	 
+	 ##1055740	\n\n\n@c你想去的是木棉的采集区吗？？
+
+	 Window 1055740,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	  KillItem 47717
+	 ##传送木棉采集点
+	 Warp 0,100,347,145
+	 
+#1055620	羊毛	100,596,83
+block Item 47717 >= 1 && StrCmpChat == 1055620
+	 	 #1055741	\n\n\n@c你想去的是羊毛的采集区吗？？
+         Window 1055741,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -200
+	 	 	 KillItem 47717
+	 	 	 ##传送羊毛采集点
+	 	 	 Warp 0,100,596,83
+#1055621	棉花	100,359,520
+block Item 47717 >= 1 && StrCmpChat == 1055621
+	 	 #1055742	\n\n\n@c你想去的是棉花的采集区吗？？
+         Window 1055742,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -200
+	 	 	 KillItem 47717
+	 	 	 ##传送棉花采集点
+	 	 	 Warp 0,100,359,520
+#1055622	纱	100,588,50
+block Item 47717 >= 1 && StrCmpChat == 1055622
+	 	 #1055742	\n\n\n@c你想去的是纱的采集区吗？？
+         Window 1055743,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -200
+	 	 	 KillItem 47717
+	 	 	 ##传送纱采集点
+	 	 	 Warp 0,100,588,50
+	 	 	 	 
+##■ 有采集传送卷 && 字串比对 蚕丝	 	 
+block Item 47717 >= 1 && StrCmpChat == 1054547
+	 #1055744	\n\n\n@c你想去的是蚕丝的采集区吗？？
+
+	 Window 1055744,NEXT
+         #1055752	\n\n\n@c传送费用是500G，可以吗？？
+
+	 Window 1055752,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -500
+	 	 	 KillItem 47717
+	 	 	 ##传送蚕丝采集点
+	 	 	Warp 0,300,700,150
+	 	 	 
+##■ 有采集传送卷 && 字串比对 莎莲娜纱
+block Item 47717 >= 1 && StrCmpChat == 1054548
+	 #1055745	\n\n\n@c你想去的是莎莲娜纱的采集区吗？？
+         Window 1055745,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送莎莲娜纱采集点
+	 	 	 Warp 0,400,360,460 	 	             
+
+##■ 有采集传送卷 && 字串比对 杰诺瓦纱
+block Item 47717 >= 1 && StrCmpChat == 1054549
+		 #1055746	\n\n\n@c你想去的是杰诺瓦纱的采集区吗？？
+         Window 1055746,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送采集点杰诺瓦纱
+	 	 	 Warp 0,400,200,500	 	 	             
+	 
+##■ 有采集传送卷 && 字串比对 阿巴尼斯棉
+block Item 47717 >= 1 && StrCmpChat == 1054550
+	 #1055747	\n\n\n@c你想去的是阿巴尼斯棉的采集区吗？？
+         Window 1055747,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送阿巴尼斯棉采集点
+	 	 	 Warp 0,4400,25,80	 	 	
+##	 	 	        
+##1055623	芎麻
+block Item 47717 >= 1 && StrCmpChat == 1055623
+	 #1055748	\n\n\n@c你想去的是芎麻的采集区吗？？
+
+         Window 1055748,NEXT
+         #1055755	\n\n\n@c传送费用是1500G，可以吗？？	1
+	 Window 1055755,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >1499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1500
+	 	 	 KillItem 47717
+	 	 	 ##传送芎麻采集点
+	 	 	 Warp 0,400,498,297	
+##1055624	开米士羊毛
+block Item 47717 >= 1 && StrCmpChat == 1055624
+	 #1055749	\n\n\n@c你想去的是开米士羊毛的采集区吗？？
+
+         Window 1055749,NEXT
+         #1055755	\n\n\n@c传送费用是1500G，可以吗？？	1
+	 Window 1055755,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >1499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1500
+	 	 	 KillItem 47717
+	 	 	 ##传送开米士羊毛采集点
+	 	 	 Warp 0,400,550,270	  #400	502	201	680	397 

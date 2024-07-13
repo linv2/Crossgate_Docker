@@ -1,0 +1,169 @@
+#Ä¸¼þ³âÒà¼þÐþ·ÂÓÀÃó©x©x??©xŽx÷ú
+#
+#©x©x©xÆËÄá·ÂÓÀËüÄáÓÀÄ©¼°ÏÔ20±Õ©j²³–©dÅ»©k
+
+###©x3004859£¾æØÜìØ¦âãÆYÆÕ¡å©x·¥¡õÃóÐþ·ÂÓÀÃó·Ö¡å£½
+###©x3004860£¾àß±å²³AØ¦ÆÕç§»¥Ø¤ÔÈÐ×¡å£½
+
+
+###©x°×·Âºëµ©ÄÌÓÀÃñ
+block Xpos >= 100 && Xpos <= 102 && Ypos == 108
+
+		If LocalFlag0 == 0
+
+			Message 3004860
+			LocalFlag0 = 1
+			EndBlock
+
+		endif
+
+
+
+###©xÐþ·ÂÓÀÃó¨à©j°×·ÂºëÃQ¼°ÐÄ©k
+block Xpos == 100 && Ypos == 112
+
+	If LocalFlag0 == 1
+
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,68,115
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó¨á©j°×·ÂºëÃQ¼°ÐÄ©k
+block Xpos == 102 && Ypos == 112
+
+	If LocalFlag0 == 1
+
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,68,115
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó¨à©j°×·ÂºëÃQ’ƒËå©k
+block Xpos == 103 && Ypos >= 109 && Ypos <= 111
+
+	If LocalFlag0 == 1
+
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,95,107
+		EndBlock
+
+	else
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,69,139
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó¨á©j°×·ÂºëÃQ’ƒËå©k
+block Xpos == 99 && Ypos >= 109 && Ypos <= 111
+
+	If LocalFlag0 == 1
+
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,99,55
+		EndBlock
+
+	else
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,107,159
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó¨â©j°×·ÂºëÃQ’ƒËå©k
+block Xpos == 99 && Ypos >= 105 && Ypos <= 108
+
+	If LocalFlag0 == 1
+
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,63,75
+		EndBlock
+
+	else
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,123,75
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó¨ã©j°×·ÂºëÃQ’ƒËå©k
+block Xpos == 100 && Ypos == 104
+
+	If LocalFlag0 == 1
+
+		Message 3004859
+		LeaveGroup
+		Warp 0,59901,150,37
+		EndBlock
+
+	else
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,79,87
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó¨ä©j°×·ÂºëÃQ’ƒËå©k
+block Xpos == 102 && Ypos == 104
+
+	If LocalFlag0 == 1
+
+		Message 3004859
+		LeaveGroup
+		Warp 0,59901,150,37
+		EndBlock
+
+	else
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,79,87
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó¨å©j°×·ÂºëÃQ’ƒËå©k
+block Xpos == 103 && Ypos >= 105 && Ypos <= 107
+
+	If LocalFlag0 == 1
+
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,88,151
+		EndBlock
+
+	else
+		Message 3004859
+		LeaveGroup
+		Warp 0,59820,60,89
+		EndBlock
+
+	endif
+
+
+

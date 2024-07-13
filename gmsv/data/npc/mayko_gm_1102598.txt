@@ -1,0 +1,26 @@
+#莉涵	33000	302	306	mayko_gm_1102598.txt
+
+
+
+	 
+#1110572	\n\n\n\n@c你是要找穗花山奈呀～。	1
+#1110573	\n\n　　　野姜花又叫作穗花山奈，\n　　　是生长在清澈溪流边，\n　　　香气很重的植物。	1
+#1110574	\n\n\n　　　野姜花叶子很大，\n　　　可以包粽子。	1
+#1110575	\n\n\n\n@c你拿几叶去试试看吧。	1
+block Item 41071>0
+	 EndWindow 1110574
+block Item 41070>0
+
+	 Window 1110572,NEXT
+	 Window 1110573,NEXT
+	 Window 1110574,OK
+	 Window_OK Item 41070 == 0
+	 EndWindow 1110551
+	 Window_OK
+	 KillItem 41070,1
+	 GiveLeak1Item 41071,1
+	 EndWindow  1110575
+	 
+block 
+	 EndWindow 1110573
+	 

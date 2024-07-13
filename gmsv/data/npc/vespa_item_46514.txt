@@ -1,0 +1,21 @@
+########2005/2月展场包_黄金大公鸡
+########1%机率为黄金大公鸡
+
+block ItemSpace >=1
+	 ##1052865	\n\n@c摸摸黄金大公鸡．．．会发生什么事呢？
+	 Window 1052865,OK
+	 	 Window_OK Item 46514 >=2
+			 ##1052870	\n\n\n黄金大公鸡\n据说持有２只以上是无法下蛋的～	1
+			 EndWindow 1052870
+		 Window_OK Item 46514 ==1 && ItemDur 46514 ==1 
+			 ##1052868	黄金大公鸡消失了。	1
+			 KillItem 46514,1,(1052868)
+			 GiveLeak1Item 46516,1
+		 Window_OK Item 46514 ==1 && ItemDur 46514 >1 &&  ItemSpace >=1
+			 GiveLeak1Item 46516,1
+  			  SetDur 46514,-1
+block
+	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 EndWindow 1100002
+
+	 

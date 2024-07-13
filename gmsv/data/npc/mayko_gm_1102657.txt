@@ -1,0 +1,15 @@
+#mayko_gm_1102657.txt
+
+
+block item 12901 < 1
+	Window 1110765,next
+	endwindow 1110766
+block
+#1110768	\n\n\n\n@c你要茶叶给朱雀大人吗！！	1
+
+	Window 1110768,yes,no
+	Window_yes
+	warp 0,32160,4,3
+	Window_no
+
+	endblock

@@ -1,0 +1,12 @@
+#
+#PUK3_Main1Чјжа
+#
+#
+
+
+
+Block Xpos == 136 && Ypos == 32
+
+		Message 3010046
+		
+		warp 0,59513,167,28

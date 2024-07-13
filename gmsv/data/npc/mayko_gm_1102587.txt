@@ -1,0 +1,22 @@
+##惠惠 阿凯鲁法
+
+#1110531	\n\n\n\n@c叔叔又不知跑到那里作研究了。	1
+#1110532	\n\n\n　　　你要问巨花的事呀～\n　　　我不清楚耶～	1
+#1110533	\n\n\n　　　叔叔的助理芬芬前阵子去过再生花园，\n　　　你回去问鲁德吧！	1
+#1110534	\n\n\n　　　芬芬前阵子去过再生花园，\n　　　你回去问鲁德吧！	1
+block Item 41057>0
+	 EndWindow 1110534
+block Item 41056 >0
+	 Window 1110532,OK
+	 Window_OK Item 41056>0
+	 KillItem 41056,1
+	 GiveLeak1Item 41057,1
+	 EndWindow 1110533
+	 
+	 Window_OK
+	 EndWindow 1053288	 
+#1053288	\n\n\n\n@c咦～你的东西突然不见，是不是掉了。	1	 
+
+block 
+	 EndWindow 1110531
+	 

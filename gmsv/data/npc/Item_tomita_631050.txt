@@ -1,0 +1,23 @@
+#﹛笙渝蜃烂母件斥亦件﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛甲件丢伙平件玄垫五伐□皿痹及摒
+
+block Trialflg >= 8
+	Window 3207261,YES,NO
+
+		#\n\n﹛缰坞及蚝卞扚井木月支〝
+
+		Window_YES
+			KillItem 631050,1,(3007204)
+			LeaveGroup
+			Warp 0,59526,185,90
+
+		Window_NO
+
+
+block
+	EndWindow 3207262
+
+		#\n\n﹛が﹜?及哗尺扚仁凤伞毛肣六内﹝
+
+

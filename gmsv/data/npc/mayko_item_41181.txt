@@ -1,0 +1,35 @@
+#1111548	先到伊尔村(48,76)找猎人亚烈格尔学习“狩猎体验”。
+#1111549	到伊尔村北部(647,266)附近使用技能打“传说中的鹿皮”1张。
+#1111550	等级十以内的新手走到那边有点危险，需要直接传到采集点吗？
+
+#1111552	4.最后在伊尔村长家门口跟葛达尔夫说话，交出鹿皮拿到“猎人推荐函”。
+#1111553	5.到伊尔村的装备店(35,25)找猎人强提(13,16)就职。
+block item 18142 >0 
+	endwindow 1111553
+block item 18210 >0 && level <=10 ## && job == 0
+	 window 1111552,next
+	 window 1111554,yes,no
+	 window_yes
+	 warp 0,2000,49,76
+	 leavegroup
+	 Window_no
+	 endblock
+	
+	
+block item 18210 >0
+	 endwindow 1111552
+block skilllevel 253 >0  && level <=10
+	 window 1111549,next
+	 window 1111550,yes,no
+	 window_yes
+	 leavegroup
+	 warp 0,100,647,266
+	 window_no
+	 endblock
+block skilllevel 253 >0
+	 endwindow 1111549
+block level <=10 && job == 0
+	 window 1111548,next
+	 endwindow 1111537
+block
+	 endwindow 1111548

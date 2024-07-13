@@ -1,0 +1,20 @@
+#
+#失旦泛伉失螃敢﹋失旦泛伉失螃鹧﹌
+#
+
+############## 白伉失示夫旦弁伉失仄化卅中 ##############
+block EndEvent 18 == 0
+#\n\n﹛仇仇井日燮尺反云骚仄允月歹仃卞反辅曰引六氏﹝云娄潸曰票今中﹝
+	EndWindow 15247,OK
+
+############## 白伉失示夫旦弁伉失仄化月 ##############
+block EndEvent 18 == 1
+#\n\n﹛皮伙丢奶伙钖厘铭项迋反引分云枑曰卞卅日木化中引六氏﹝
+#	EndWindow 15248,OK
+#\n\n﹛云谨切仄化云曰引仄凶﹝\n﹛皮伙丢奶伙钖厘铭项迋互云裟太匹允﹝
+	Window 15248,YES,NO
+	Window_YES EndEvent 18 == 1
+	LeaveGroup
+	Warp 0,4146,7,10
+	Window_NO
+

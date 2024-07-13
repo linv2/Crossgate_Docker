@@ -1,0 +1,31 @@
+###dodo_gm_1051488.txt
+###小朱			给予玩家奖赏。						
+###□组队人数 > 1 
+block Group > 1 
+	 ##1100000	\n\n\n\n\n@c请解散队伍。	1
+	 Window 1100000,OK 
+	 	 Window_OK 
+			 LeaveGroup  
+
+###□身上有日月组织团员金卡
+block Item 46880 >= 1
+	 ##1053494	\n\n哇哈哈哈！\n终于成功了，我现在是新的法兰之王！\n这是法兰城国王的配剑，听说有着特别的功用！\n不过，我不知道怎么使用。\n就赏给你的奖赏吧！	1
+	 Window 1053494,OK 
+	 	 Window_OK ItemSpace < 1 
+	 	 	 ##1053477	\n\n你的身上物品携带的太多了。	1
+			 EndWindow 1053477
+			 
+	 	 Window_OK Item 46880 >= 1 && ItemSpace >= 1
+	 	 	 ##（取走日月组织金卡，给予飞奔之剑。）
+	 	 	 KillItem 46880
+	 	 	 GiveLeak1Item 46889
+	 	 	 Warp 0,1000,233,78 
+	 	 
+###□一般
+block 
+	 ##1053495	\n\n你是来参拜法兰城的新国王吧！\n消息真灵通。\n那你也参拜过了，可以出去了。	1
+	 Window 1053495,OK 
+	 	 Window_OK 
+	 	 	 Warp 0,1000,233,78 
+	 	 	 ##(传送回法兰) 
+	 	 	 

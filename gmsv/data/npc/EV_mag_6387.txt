@@ -1,0 +1,18 @@
+#巨丢它旦
+
+############## 毡县酱1呿毛手匀化月 ##############
+block Item 18497 == 1
+#\n\n﹛が及耨艘毛拟中﹜旲仆方﹝
+	Window 14744,OK
+	Window_OK
+	KillItem 18497
+	GiveItem 18498
+	LeaveGroup
+	Warp 0,24005,14,16
+
+############## 公及职 ##############
+block
+#\n\n﹛＿＿＿
+	EndWindow 14739,OK
+
+

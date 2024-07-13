@@ -1,0 +1,24 @@
+#	mayko_gm_1102687.txt	云天(战斗后)
+#1111424	\n\n\n\n@c你想知道为何远离她？	1
+#1111425	\n\n　　　　如果只要求一个人付出，\n　　　　自己却没有任何体贴甚至退让，\n　　　　是无法长久的．．．．	1
+#1111426	\n\n\n\n@c你就这样回答她吧～～～	1
+																				
+
+block itemspace >0
+	 window 1111424,next
+	 window 1111425,next
+	 window 1111426,ok
+	 window_ok
+	 LeaveGroup
+	 GiveLeak1Item 41160,1
+ 
+	 warp 0,32169,137,60
+
+
+	 endblock
+
+block
+	 window 1111424,next
+	 window 1111425,next
+	 endwindow 13115
+

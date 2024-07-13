@@ -1,0 +1,25 @@
+#ÓªÚÐñîçÇÛÍ¾Þµ©Ðþ¡°ÆËÅÒ¡õ·Â·Â¢Í¸ó©j½°óÛ©k
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+###########©xÖÏÊÖØ¦ØÆ©x##############
+block endevent87 == 1
+
+	Window 20849,OK
+	Window_OK Itemspace >= 1
+	leavegroup
+	Giveitem 18759
+	endevent87 = 0
+	Warp 0,43100,122,188
+	Window_OK Itemspace == 0
+	EndWindow 20836
+
+block
+
+	Window 20849,OK
+	Window_OK Itemspace >= 1
+	leavegroup
+	Giveitem 18759
+	Warp 0,43100,122,188
+	Window_OK Itemspace == 0
+	EndWindow 20836
+	

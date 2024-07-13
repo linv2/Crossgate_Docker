@@ -1,0 +1,22 @@
+#mayko_item_41329.txt
+
+#1111876	\n\n\n\n@c要把咒语施展在姑婆芋上面吗？
+1111877	\n\n\n\n@c有在姑婆芋的话，似乎可以施展咒语。
+
+
+block item 41331 >0
+	Window 1111878,yes,no
+	Window_yes item 41331 >0
+	
+	killitem 41329,1
+	killitem 41331,1
+	GiveLeak1Item (41293%20$1,41329%80$1)
+	endblock
+	window_yes
+	window_no
+	endblock
+	
+block
+	endwindow 1111877
+
+

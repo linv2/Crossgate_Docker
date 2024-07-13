@@ -1,0 +1,105 @@
+#扑尼仿它巨永末及显﹋21℅40﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛扔件母□﹋29F﹌及摒
+
+###﹛厘霉及县酱﹋631032﹌毛赭儅
+block Item_631032 >= 1
+	Window 3206389,NEXT
+
+		#\n\n﹛公及夫它末弁反﹜仇仇匹综匀凶及匹友尹井﹝\n﹛引今井云蟆﹜公木匹白巧弘及怅仄＿打石件﹜\n﹛云中云蟆﹜午﹜显か及锹互请午月冗﹝
+	EndWindow 3206390
+
+		#\n\n﹛瓜甘﹜显か卅氏化妏中化仇午互友尹〝\n﹛公曰扎显か匀化及反﹜显匹霉か匹友尹井﹝\n﹛分井日﹜仄壬日仁仇及显卞嗤勿中切扎母丢分﹝
+
+
+
+###﹛恳仄中箪岭匹赶勾及笺恔毛赭儅
+#﹛迭掸“绍﹋631022﹌﹜融“踹﹋631025﹌﹜泭“哗﹋631028﹌
+block Item_631022 >= 1 && Item_631025 >= 1 && Item_631028 >= 1
+	Window 3206391,OK
+
+		#\n\n﹛云云﹜切扎氏午缭匀化月﹝元扎﹜手日丹分﹝\n﹛仇木互丐曰扎﹜它奴件玉及沓牬毛请仄?仃月﹝\n﹛丐丐﹜云蟆反手丹窖匀化中中分方﹝
+
+		Window_OK Item_631022 >= 1 && Item_631025 >= 1 && Item_631028 >= 1
+			KillItemAll 631022
+			KillItemAll 631025
+			KillItemAll 631028
+
+		Window_OK
+			EndWindow 3206392
+
+		#\n\n﹛云中﹜左仿卞欐允凶户卞儅匀化五凶氏分欠﹝\n﹛怅仄化升丹允月分﹜棉?仃″
+
+
+#﹛迫掸“氘﹋631023﹌﹜融“绍﹋631026﹌﹜泭“踹﹋631029﹌
+block Item_631023 >= 1 && Item_631026 >= 1 && Item_631029 >= 1
+	Window 3206393,OK
+
+		#\n\n﹛云云﹜切扎氏午缭匀化月﹝元扎﹜手日丹分﹝\n﹛仇木互丐曰扎﹜它奴件玉及沓牬毛请仄?仃月﹝\n﹛丐丐﹜云蟆反手丹窖匀化中中分方﹝
+
+		Window_OK Item_631023 >= 1 && Item_631026 >= 1 && Item_631029 >= 1
+			KillItemAll 631023
+			KillItemAll 631026
+			KillItemAll 631029
+
+		Window_OK
+			EndWindow 3206394
+
+		#\n\n﹛云中﹜左仿卞欐允凶户卞儅匀化五凶氏分欠﹝\n﹛怅仄化升丹允月分﹜棉?仃″
+
+
+#﹛迤掸“哗﹋631020﹌﹜融“氘﹋631027﹌﹜泭“绍﹋631030﹌
+block Item_631020 >= 1 && Item_631027 >= 1 && Item_631030 >= 1
+	Window 3206395,OK
+
+		#\n\n﹛云云﹜切扎氏午缭匀化月﹝元扎﹜手日丹分﹝\n﹛仇木互丐曰扎﹜它奴件玉及沓牬毛请仄?仃月﹝\n﹛丐丐﹜云蟆反手丹窖匀化中中分方﹝
+
+		Window_OK Item_631020 >= 1 && Item_631027 >= 1 && Item_631030 >= 1
+			KillItemAll 631020
+			KillItemAll 631027
+			KillItemAll 631030
+
+		Window_OK
+			EndWindow 3206396
+
+		#\n\n﹛云中﹜左仿卞欐允凶户卞儅匀化五凶氏分欠﹝\n﹛怅仄化升丹允月分﹜棉?仃″
+
+
+#﹛迨掸“踹﹋631021﹌﹜融“哗﹋631024﹌﹜泭“氘﹋631031﹌
+block Item_631021 >= 1 && Item_631024 >= 1 && Item_631031 >= 1
+	Window 3206397,OK
+
+		#\n\n﹛云云﹜切扎氏午缭匀化月﹝元扎﹜手日丹分﹝\n﹛仇木互丐曰扎﹜它奴件玉及沓牬毛请仄?仃月﹝\n﹛丐丐﹜云蟆反手丹窖匀化中中分方﹝
+
+		Window_OK Item_631021 >= 1 && Item_631024 >= 1 && Item_631031 >= 1
+			KillItemAll 631021
+			KillItemAll 631024
+			KillItemAll 631031
+
+		Window_OK
+			EndWindow 3206398
+
+		#\n\n﹛云中﹜左仿卞欐允凶户卞儅匀化五凶氏分欠﹝\n﹛怅仄化升丹允月分﹜棉?仃″
+
+
+###﹛晓筏动陆及赚心宁歹六匹笺恔及中内木井毛赭儅
+#﹛甩未及掸＿哗﹋631020﹌﹜踹﹋631021﹌﹜绍﹋631022﹌﹜氘﹋631023﹌
+#﹛夫它末弁及融＿哗﹋631024﹌﹜踹﹋631025﹌﹜绍﹋631026﹌﹜氘﹋631027﹌
+#﹛?怍及左奶伙＿哗﹋631028﹌﹜踹﹋631029﹌﹜绍﹋631030﹌﹜氘﹋631031﹌
+
+block Item_631020 >= 1 || Item_631021 >= 1 || Item_631022 >= 1 || Item_631023 >= 1 || Item_631024 >= 1 || Item_631025 >= 1 || Item_631026 >= 1 || Item_631027 >= 1 || Item_631028 >= 1 || Item_631029 >= 1 || Item_631030 >= 1 || Item_631031 >= 1
+
+	EndWindow 3206399
+
+		#\n\n﹛笺恔毛螂户化仁木化月分卅﹜仍塑洢″\n﹛分互卅﹜左仿氏午仇卞儅匀化仁月及反﹜\n﹛引分切斤匀仁日镀中分方﹝\n﹛俓仄中笺恔互缭匀化友尹冗﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3206400
+
+		#\n\n﹛卅氏井迕井〝\n﹛左仿反中引侄仄中氏分﹝梁呺仄友尹匹仁木﹝
+
+
+

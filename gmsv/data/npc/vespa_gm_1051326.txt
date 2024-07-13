@@ -1,0 +1,96 @@
+#########　ＮＰＣ ：转蛋商人1051326
+##########　ＭＡＰ：30110	37	35
+##########　亚诺曼城旅馆
+##########　作用：提供兑换奖品
+
+ ##■有纯水晶优待羽毛
+block Item 46427 >=1
+	 ##1052613	\n\n@c是否想兑换纯水晶一个呢？
+	 Window 1052613,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 46427 >=1 && Item 18310 >=50
+	 	 	 KillItem 46427,1
+	 	 	 KillItem 18310,50
+	 	 	 GiveLeak1Item 9201,1
+	 	 Window_YES Item 46427 >=1 && Item 18311 >=50
+	 	 	 KillItem 46427,1
+	 	 	 KillItem 18311,50
+	 	 	 GiveLeak1Item 9202,1
+	 	 Window_YES Item 46427 >=1 && Item 18312 >=50
+	 	 	 KillItem 46427,1
+	 	 	 KillItem 18312,50
+	 	 	 GiveLeak1Item 9203,1
+	 	  Window_YES  Item 46427 >=1 && Item 18313 >=50
+	 	 	 KillItem 46427,1
+	 	 	 KillItem 18313,50
+	 	 	 GiveLeak1Item 9204,1
+    		
+##■有种子树叶
+block Item 46428 >=1
+	 ##1052614	\n\n@c是否想兑换种子福袋？
+	 Window 1052614,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 46428 >=2
+	 	 	 ##1052615	\n\n\n种子树叶\n如果持有2个以上的树叶是无法使用的喔～
+			 EndWindow 1052615
+		 Window_YES Item 46428 == 1 && ItemDur 46428 == 1
+		 	 KillItem 46428,1
+		 	 ##1052616	种子树叶消失了。
+		 	 GiveLeak1Item 46318,1(1052616)
+		 	 
+	 	 Window_YES Item 46428 ==1 && ItemDur 46428 >1
+	 	 	 SetDur 46428,-1
+	 	 	 ##1052617	使用了种子树叶。
+	 	 	 GiveLeak1Item 46318,1(1052617)
+
+##■特殊封印卡券
+block Item 46429 >=1
+	 ##1052618	\n\n@c是否想兑换特殊封印卡呢？
+	 Window 1052618,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 46429 >=2
+	 	 	 ##1052619	\n\n\n特殊封印卡券\n如果持有2个以上的树叶是无法使用的喔～
+	 	 	 EndWindow 1052619
+	 	 	 
+	 	 Window_YES Item 46429 ==1  && ItemDur 46429 ==1 && ItemSpace >=1
+	 	 	 ##1052620	特殊封印卡券消失了。
+			 KillItem 46429,1,(1052620)
+			 GiveLeak1Item (14490%10$1,14491%10$1,14492%10$1,14493%5$1,14494%5$1,14495%1$1,14496%1$1,14497%1$1,14498%1$1,14499%1$1)
+		 Window_YES Item 46429 ==1 && ItemDur 46429 >1 && ItemSpace >=1
+		 	 ##1052621	使用了特殊封印卡。
+			 SetDur 46429,-1
+			 GiveLeak1Item (14490%10$1,14491%10$1,14492%10$1,14493%5$1,14494%5$1,14495%1$1,14496%1$1,14497%1$1,14498%1$1,14499%1$1)
+			 			　
+##■水晶手环
+block Item 46431 >=1
+	 ##1052622	\n\n@c是否想随机兑换元素石或元素水晶1个呢？
+	 Window 1052622,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 46431 >=1
+	 	 	 KillItem 46431,1
+	 	 	 GiveLeak1Item (45220%1$1,45221%1$1,45222%1$1,45223%1$1,45357%1$1,45358%1$1,45359%1$1,45360%1$1)
+	 	 	 
+##■封印卡兑换券
+block Item 46432 >=1
+	 ##1052623	\n\n@c是否想兑换特殊封印卡呢？
+	 Window 1052623,YES,NO
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace < 1 
+	 	 	 ##1051843	\n\n\n\n\n@c物品栏的空间不足。	
+			 EndWindow 1051843
+			 
+	 	 Window_YES Item 46432 >=1 && ItemSpace >=1
+	 	 	 KillItem 46432,1
+	 	 	 GiveLeak1Item(14490%10$1,14491%10$1,14492%10$1,14493%5$1,14494%5$1)
+
+##■一般
+block
+	 ##1052624	\n\n我是转蛋转转乐的机台商人。\n最近受到某个人的拜托，来到这里摆设转蛋机台，请你务必要尽情的转啊！钱没了可以再赚，不过这种机会不会常有喔～
+	 EndWindow 1052624
+	 
+    	

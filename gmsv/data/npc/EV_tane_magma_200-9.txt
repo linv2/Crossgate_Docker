@@ -1,0 +1,77 @@
+
+block Xpos == 167 && Ypos == 114
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Xpos == 169 && Ypos == 114
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Xpos == 166 && Ypos == 115
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Xpos == 166 && Ypos == 116
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Xpos == 167 && Ypos == 116
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Xpos == 165 && Ypos == 117
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Xpos == 166 && Ypos == 117
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Xpos == 167 && Ypos == 117
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Xpos ==  168&& Ypos == 117
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Xpos == 165 && Ypos == 118
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Xpos == 166 && Ypos == 118
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+

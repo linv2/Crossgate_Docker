@@ -1,0 +1,35 @@
+#乒件旦正□甩件泛奴件弘
+#
+#﹛﹛﹛树扷羼间樊﹛﹛﹛NPCID﹛810015
+#
+
+
+###﹛狪仄喘仃凶谛互甩件正□据毛赭儅
+Block HItem 623000 >= 1
+	Window 3207274,Yes,No
+
+		#\n\n﹛甩件泛奴件弘辅笛樊匹允友﹝\n﹛台互襞匀化中月及反﹜\n﹛正□必永玄乒件旦正□及抩蟆分仃匹允﹝\n﹛项尹化丐仆引仄斤丹井〝
+
+		Window_Yes
+			Window 3207275,Next
+
+		#\n\n﹛匹反﹜项尹化丐仆引仄斤丹﹝
+
+			Window 3207276,Next
+
+		#\n\n﹛旦□矢伉失左□弁﹜旦市伙正奶仿件玄﹜\n﹛任央奶旦弁仿件民﹜失扔伙玄伉永由□﹜\n﹛甲亥戊穴永旦伙﹜禾伙□玄母旦正□﹜\n﹛旦泛奴件弘扑尼伙﹜末瓦永弁皮□穴□﹜\n﹛任巧伙弗示丞﹜ヶ中蚁残﹜\n﹛皮夫它田永玄﹜白夫旦玄打□伊丞﹜\n﹛丢泛左夫永弁﹜白伙丢正伙穴奶件﹜\n﹛抚曰竣凝迩﹜由伙任央仿奶扒□﹝
+
+			EndWindow 3207277
+
+		#\n\n﹛动晓﹜ㄠㄥ虫匹允﹝
+
+		Window_No
+			EndWindow 3207278
+
+		#\n\n﹛公丹匹允井﹝\n﹛妏五凶仁卅匀凶日﹜侳化票今中﹝
+
+
+###﹛晓筏动陆
+Block
+	EndWindow 3207279
+		#\n\n﹛升丹手﹝\n﹛甩件泛奴件弘卞辅笛仄凶仃木壬﹜\n﹛钒铵熬尥尺垫匀化票今中﹝

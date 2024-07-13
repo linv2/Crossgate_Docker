@@ -1,0 +1,32 @@
+#LV50绅亢桦弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛佹莴樊仿件皮伙及摒
+
+###﹛抚竣凶穴永民﹋607962﹌毛赭儅
+block Item_607962 >= 1
+	EndWindow 3203809
+
+		#\n\n﹛公及穴永民卅﹜梁呺匹手儅匀化凶杅互中中兮﹝\n﹛丐月桦赭匹滔圴卞跟晶匹五月日仄中井日卅﹝\n﹛丹匀井曰哗昍卞嘻仁午壅尹切引丹井日﹜\n﹛竣毛勾仃欠方﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	LocalCount5 = Random 2,0
+
+	If LocalCount5 == 1
+		EndWindow 3203810
+
+		#\n\n﹛斥丢斥丢仄化盟氏卅匀切引丹卅﹜仇仇反﹝\n﹛奶仿奶仿允月井日扒弁扒弁褡氏匹凶日﹜\n﹛锹侚午反什木切引匀凶﹝\n﹛甩件皮伙及蛊﹜升仇垫匀凶氏分″
+		EndBlock
+
+	else
+		EndWindow 3203811
+
+		#\n\n﹛升仇卞中支互月氏分﹜甩件皮伙及沓牬反″\n﹛民乓永民乓午尥中化侳木壬﹜反什木卅中氏分﹝\n﹛苇勾仃戚镕﹜变昉曰勾仃化支月″
+		EndBlock
+
+	endif
+
+
+

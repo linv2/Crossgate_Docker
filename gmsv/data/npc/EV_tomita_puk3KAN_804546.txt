@@ -1,0 +1,13 @@
+#PUK3伓摹NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛Ⅶ副〇﹋59505 321,232﹌及摒
+
+###﹛丢永本□斥它奴件玉它钒仁
+#\n\n﹛﹛﹛佮拧﹛﹛忏验夫□玉﹛烦苀\n﹛﹛﹛﹛﹛﹛﹛甲件丢伙平件玄﹛杅昍\n\n﹛﹛﹛晓﹛﹛﹛凝今卅苇徽酱﹛杅昍
+
+PREV_00:
+	Window 3004818,OK
+
+
+
+

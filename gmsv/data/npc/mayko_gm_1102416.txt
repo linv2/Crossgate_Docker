@@ -1,0 +1,15 @@
+block EndEvent 161 == 1	 
+
+ 	 Window 1109777,OK
+ 	 Window_OK
+ 	 
+ 	 LeaveGroup
+	 Warp 0,32297,118,111
+	 endblock
+	
+block
+	 EndWindow 1109776
+	 
+	 
+
+	

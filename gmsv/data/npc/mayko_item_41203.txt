@@ -1,0 +1,112 @@
+#1111594	先要存钱买到一把国民武器或平民武器(魔术师－杖、弓箭手－弓、剑士－剑、战斧斗士－斧、骑士－枪、饲养师－回力镖、驯兽师－小刀),接着到东边医院(211,83)找药剂师波洛姆买三元的止痛药。        
+#1111595	到工会(75.64)给里面牙痛中的安布伦换取试练洞窟通行证 。
+#1111596	出城到西边的国营24坑道(351,145),找哈鲁迪亚(9,14)。
+#1111597	进去里面把哈鲁迪亚交给守门员就可进入试练洞窟 ，这时可以在一楼找战斗系就职辅助(24,11)传送到底层。
+#1111598	达试练洞窟第大厅，装备好对应之武器(魔术师－杖、弓箭手－弓、剑士－剑、战斧斗士－斧、骑士－枪、饲养师－回力镖、驯兽师－小刀)，临时想改变心意，可以向平民武器商买武器。
+#1111599	与波罗米亚说话即可得到推荐函。
+#1111600	白天无法再进行魔术师就职任务。
+#1111601	从法兰城西门出去，在301,146附近找神木，对神木打”魔术”进入魔女之家就职魔法师。
+#1111602	到法兰城190,133,找拉美莉诺就职弓箭手。
+#1111603	到法兰城里谢里雅堡2F,右边客房找骑士团长亚涅特就职骑士。
+#1111604	到法兰城竞技场(123,161)，找超级斗士欧雷葛诺(20,22)就职战斧斗士。
+#1111605	到法兰城竞技场(123,161，找剑士长迪索尔(18,10)就职剑士。
+#1111606	到法兰城122,36饲养师之家，找那克利就职饲养师。
+#1111607	到法兰城73,61驯兽师公会，找职驯兽方席就职。
+#1111608	转职者请找亚伦，直接打你要就职的职业名称即可。
+
+#剑士推荐信	18101
+#战斧斗士推荐信	18102
+#骑士推荐信	18103
+#弓箭手推荐信	18104
+#魔术师推荐信	18107
+#饲养师推荐信	18110
+#驯兽师推荐信	18111
+#block item 18111 >0
+block item 18111 > 0
+	 window 1111607,next
+	  window 1111688,yes,no
+	 window_yes 
+	 warp 0,1092,13,10
+	 leavegroup 
+	 Window_no
+	 endblock
+#block item 18110 >0
+block item 18110 >0
+	 window 1111606,next
+	  window 1111688,yes,no
+	 window_yes 
+	 warp 0,1810,12,10
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 18104 >0
+	 window 1111602,next
+	  window 1111688,yes,no
+	 window_yes 
+	 warp 0,1181,7,7
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 18103 >0
+	 window 1111603,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,1509,10,4
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 18102 >0
+	window  1111604
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1402,20,22
+	 leavegroup 
+	 Window_no
+	 endblock	
+block item 18101 >0
+	window 1111605,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1401,18,11
+	 leavegroup 
+	 Window_no
+	 endblock	
+block nowtime != 3 && item 18107 >0
+	endwindow 1111600
+block item 18107 >0
+	 window 1111601,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,1160,18,13
+	 leavegroup 
+	 Window_no
+	 endblock	
+block item 18100 >0
+	 window 1111596,next
+	 Window 1111597,next
+	 Window 1111598,next
+	 Window 1111599,next
+	 window 1111608,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,11011,23,13
+	 leavegroup 
+	 Window_no
+	 endblock
+	 
+block item 18233 >0
+	 window 1111595,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,1092,8,6
+	 leavegroup 
+	 Window_no
+	 endblock
+block 
+	 window 1111594,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,1112,15,36
+	 leavegroup 
+	 Window_no
+	 endblock

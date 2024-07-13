@@ -1,0 +1,2 @@
+block XPos == 29 && YPos >= 83 && YPos <= 85
+	warp 0,32724,48,44

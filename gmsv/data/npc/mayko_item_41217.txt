@@ -1,0 +1,16 @@
+#卷	记忆之城传送卷
+#mayko_item_41217.txt
+
+#1111727	\n\n\n@c你想传送到记忆之城吗？	1
+
+
+block Item 41217 >0 
+	 Window 1111727,YES,NO
+	 Window_YES Item 41217==0
+	 Endblock
+	 Window_YES
+	 KillItem 41217,1
+	 Warp 0,32181,98,71
+	 endblock
+	 	  Window_NO
+	 	  EndWindow 1055891

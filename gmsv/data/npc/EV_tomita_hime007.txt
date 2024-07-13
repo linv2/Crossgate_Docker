@@ -1,0 +1,32 @@
+#﹛戽木厄蕨及?辉﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛牁バ及摒
+
+###﹛仿件母丞及本伉白
+
+block
+
+	LocalCount1 = Random 3,0
+
+	If LocalCount1 == 1
+		EndWindow 3200503
+		#\n\n﹛云支引丐﹜丐卅凶反丐及凛及﹝它白白白＿＿﹝
+		EndBlock
+
+	else
+		If LocalCount1 == 2
+			EndWindow 3200504
+		#\n\n﹛它白白﹜歹井日卅中井仄日〝\n﹛它白白﹜它白白﹜它白白白白白白＿＿﹝
+			EndBlock
+
+		else
+
+			EndWindow 3200505
+		#\n\n﹛它白白﹜公及腻﹝＿瓜奶扑亦永﹜瓜奶扑亦方﹝
+			EndBlock
+
+		endif
+
+	endif
+
+

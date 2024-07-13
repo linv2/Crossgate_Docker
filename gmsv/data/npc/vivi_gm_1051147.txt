@@ -1,0 +1,583 @@
+## 旅馆服务员小雪
+block Item 46182 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46182 == 1
+	 	 	 KillItem 46182
+	 	 	 GiveLeak1Item 46183
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46183 >= 1 && ItemCreateTime 46183 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,11,13
+	 	 	 	 	 	 	 
+block Item 46183 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46183 >= 1 && ItemCreateTime 46183 >= 20161
+	 	 	 KillItem 46183
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46183 >= 1 && ItemCreateTime 46183 < 20161
+	 	 	 Warp 0,32339,11,13	 	
+	 
+################################------- 分隔线 -------################################
+block Item 46203 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46203 == 1
+	 	 	 KillItem 46203
+	 	 	 GiveLeak1Item 46184
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46184 >= 1 && ItemCreateTime 46184 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,55,13
+	 	 	 	 	 	 	 
+block Item 46184 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46184 >= 1 && ItemCreateTime 46184 >= 20161
+	 	 	 KillItem 46184
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46184 >= 1 && ItemCreateTime 46184 < 20161
+	 	 	 Warp 0,32339,55,13	 
+	 	 	 		 	  	 	 	 	 	
+################################------- 分隔线 -------################################
+block Item 46204 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46204 == 1
+	 	 	 KillItem 46204
+	 	 	 GiveLeak1Item 46185
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46185 >= 1 && ItemCreateTime 46185 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,98,13
+	 	 	 	 	 	 	 
+block Item 46185 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46185 >= 1 && ItemCreateTime 46185 >= 20161
+	 	 	 KillItem 46185
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46185 >= 1 && ItemCreateTime 46185 < 20161
+	 	 	 Warp 0,32339,98,13	 
+
+################################------- 分隔线 -------################################
+block Item 46205 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46205 == 1
+	 	 	 KillItem 46205
+	 	 	 GiveLeak1Item 46186
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46186 >= 1 && ItemCreateTime 46186 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,144,13
+	 	 	 	 	 	 	 
+block Item 46186 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46186 >= 1 && ItemCreateTime 46186 >= 20161
+	 	 	 KillItem 46186
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46186 >= 1 && ItemCreateTime 46186 < 20161
+	 	 	 Warp 0,32339,144,13	 
+
+################################------- 分隔线 -------################################
+block Item 46206 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46206 == 1
+	 	 	 KillItem 46206
+	 	 	 GiveLeak1Item 46187
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46187 >= 1 && ItemCreateTime 46187 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,188,13
+	 	 	 	 	 	 	 
+block Item 46187 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46187 >= 1 && ItemCreateTime 46187 >= 20161
+	 	 	 KillItem 46187
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46187 >= 1 && ItemCreateTime 46187 < 20161
+	 	 	 Warp 0,32339,188,13	 
+
+################################------- 分隔线 -------################################
+block Item 46207 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46207 == 1
+	 	 	 KillItem 46207
+	 	 	 GiveLeak1Item 46188
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46188 >= 1 && ItemCreateTime 46188 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,11,51
+	 	 	 	 	 	 	 
+block Item 46188 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46188 >= 1 && ItemCreateTime 46188 >= 20161
+	 	 	 KillItem 46188
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46188 >= 1 && ItemCreateTime 46188 < 20161
+	 	 	 Warp 0,32339,11,51
+
+################################------- 分隔线 -------################################
+block Item 46208 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46208 == 1
+	 	 	 KillItem 46208
+	 	 	 GiveLeak1Item 46189
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46189 >= 1 && ItemCreateTime 46189 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,55,51
+	 	 	 	 	 	 	 
+block Item 46189 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46189 >= 1 && ItemCreateTime 46189 >= 20161
+	 	 	 KillItem 46189
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46189 >= 1 && ItemCreateTime 46189 < 20161
+	 	 	 Warp 0,32339,55,51 	 	 	
+	 	 	 
+################################------- 分隔线 -------################################
+block Item 46209 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46209 == 1
+	 	 	 KillItem 46209
+	 	 	 GiveLeak1Item 46190
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46190 >= 1 && ItemCreateTime 46190 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,99,51
+	 	 	 	 	 	 	 
+block Item 46190 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46190 >= 1 && ItemCreateTime 46190 >= 20161
+	 	 	 KillItem 46190
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46190 >= 1 && ItemCreateTime 46190 < 20161
+	 	 	 Warp 0,32339,99,51 	 	 	
+
+################################------- 分隔线 -------################################
+block Item 46210 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46210 == 1
+	 	 	 KillItem 46210
+	 	 	 GiveLeak1Item 46191
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46191 >= 1 && ItemCreateTime 46191 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,144,51
+	 	 	 	 	 	 	 
+block Item 46191 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46191 >= 1 && ItemCreateTime 46191 >= 20161
+	 	 	 KillItem 46191
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46191 >= 1 && ItemCreateTime 46191 < 20161
+	 	 	 Warp 0,32339,144,51
+	 	 	
+################################------- 分隔线 -------################################
+block Item 46211 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46211 == 1
+	 	 	 KillItem 46211
+	 	 	 GiveLeak1Item 46192
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46192 >= 1 && ItemCreateTime 46192 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,188,51
+	 	 	 	 	 	 	 
+block Item 46192 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46192 >= 1 && ItemCreateTime 46192 >= 20161
+	 	 	 KillItem 46192
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46192 >= 1 && ItemCreateTime 46192 < 20161
+	 	 	 Warp 0,32339,188,51	 	
+	 	 	 
+################################------- 分隔线 -------################################
+block Item 46212 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46212 == 1
+	 	 	 KillItem 46212
+	 	 	 GiveLeak1Item 46193
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46193 >= 1 && ItemCreateTime 46193 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,11,92
+	 	 	 	 	 	 	 
+block Item 46193 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46193 >= 1 && ItemCreateTime 46193 >= 20161
+	 	 	 KillItem 46193
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46193 >= 1 && ItemCreateTime 46193 < 20161
+	 	 	 Warp 0,32339,11,92	 	
+
+################################------- 分隔线 -------################################
+block Item 46213 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46213 == 1
+	 	 	 KillItem 46213
+	 	 	 GiveLeak1Item 46194
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46194 >= 1 && ItemCreateTime 46194 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,55,92
+	 	 	 	 	 	 	 
+block Item 46194 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46194 >= 1 && ItemCreateTime 46194 >= 20161
+	 	 	 KillItem 46194
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46194 >= 1 && ItemCreateTime 46194 < 20161
+	 	 	 Warp 0,32339,55,92	 	
+
+################################------- 分隔线 -------################################
+block Item 46214 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46214 == 1
+	 	 	 KillItem 46214
+	 	 	 GiveLeak1Item 46195
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46195 >= 1 && ItemCreateTime 46195 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,98,92
+	 	 	 	 	 	 	 
+block Item 46195 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46195 >= 1 && ItemCreateTime 46195 >= 20161
+	 	 	 KillItem 46195
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46195 >= 1 && ItemCreateTime 46195 < 20161
+	 	 	 Warp 0,32339,98,92	 	
+
+################################------- 分隔线 -------################################
+block Item 46215 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46215 == 1
+	 	 	 KillItem 46215
+	 	 	 GiveLeak1Item 46196
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46196 >= 1 && ItemCreateTime 46196 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,143,92
+	 	 	 	 	 	 	 
+block Item 46196 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46196 >= 1 && ItemCreateTime 46196 >= 20161
+	 	 	 KillItem 46196
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46196 >= 1 && ItemCreateTime 46196 < 20161
+	 	 	 Warp 0,32339,143,92	 	
+
+################################------- 分隔线 -------################################
+block Item 46216 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46216 == 1
+	 	 	 KillItem 46216
+	 	 	 GiveLeak1Item 46197
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46197 >= 1 && ItemCreateTime 46197 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,187,92
+	 	 	 	 	 	 	 
+block Item 46197 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46197 >= 1 && ItemCreateTime 46197 >= 20161
+	 	 	 KillItem 46197
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46197 >= 1 && ItemCreateTime 46197 < 20161
+	 	 	 Warp 0,32339,187,92	 	
+
+################################------- 分隔线 -------################################
+block Item 46217 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46217 == 1
+	 	 	 KillItem 46217
+	 	 	 GiveLeak1Item 46198
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46198 >= 1 && ItemCreateTime 46198 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,11,130
+	 	 	 	 	 	 	 
+block Item 46198 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46198 >= 1 && ItemCreateTime 46198 >= 20161
+	 	 	 KillItem 46198
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46198 >= 1 && ItemCreateTime 46198 < 20161
+	 	 	 Warp 0,32339,11,130	 	
+
+################################------- 分隔线 -------################################
+block Item 46218 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46218 == 1
+	 	 	 KillItem 46218
+	 	 	 GiveLeak1Item 46199
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46199 >= 1 && ItemCreateTime 46199 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,99,130
+	 	 	 	 	 	 	 
+block Item 46199 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46199 >= 1 && ItemCreateTime 46199 >= 20161
+	 	 	 KillItem 46199
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46199 >= 1 && ItemCreateTime 46199 < 20161
+	 	 	 Warp 0,32339,99,130	 	
+
+################################------- 分隔线 -------################################
+block Item 46219 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46219 == 1
+	 	 	 KillItem 46219
+	 	 	 GiveLeak1Item 46200
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46200 >= 1 && ItemCreateTime 46200 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,143,130
+	 	 	 	 	 	 	 
+block Item 46200 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46200 >= 1 && ItemCreateTime 46200 >= 20161
+	 	 	 KillItem 46200
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46200 >= 1 && ItemCreateTime 46200 < 20161
+	 	 	 Warp 0,32339,143,130	 	
+
+################################------- 分隔线 -------################################
+block Item 46220 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46220 == 1
+	 	 	 KillItem 46220
+	 	 	 GiveLeak1Item 46201
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46201 >= 1 && ItemCreateTime 46201 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,187,130
+	 	 	 	 	 	 	 
+block Item 46201 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46201 >= 1 && ItemCreateTime 46201 >= 20161
+	 	 	 KillItem 46201
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46201 >= 1 && ItemCreateTime 46201 < 20161
+	 	 	 Warp 0,32339,187,130	 	
+
+################################------- 分隔线 -------################################
+block Item 46221 == 1
+	 ##1052298	\n\n\n\n@c您好！要领取您的个人房钥匙吗？	1
+	 Window 1052298,YES,NO
+	 	 Window_NO 
+	 	 Window_YES Item 46221 == 1
+	 	 	 KillItem 46221
+	 	 	 GiveLeak1Item 46202
+	 	 	 ##1052299	\n\n  这是您的钥匙，从现在起往后的14天内，您都可以  免费使用您的个人房；此个人房享有物品摆放数量  不限的特权，亦即房间有多大，您就可以放多少物  品，但是无法长时间保存您放置的物品，一但超过  15分钟，您放置的物品或宠物一样会被回收，这点  请特别注意！	1
+	 	 	 Window 1052299,OK
+	 	 	 	 Window_OK 
+	 	 	 	 	 ##1052300	\n\n\n\n@c现在要入房吗？	1
+	 	 	 	 	 Window 1052300,YES,NO 
+	 	 	 	 	 	 Window_NO 
+	 	 	 	 	 	 Window_YES Item 46202 >= 1 && ItemCreateTime 46202 < 20161
+	 	 	 	 	 	 	 Warp 0,32339,11,171
+	 	 	 	 	 	 	 
+block Item 46202 == 1
+	 ##1052300	现在要入房吗？	1
+	 Window 1052300,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46202 >= 1 && ItemCreateTime 46202 >= 20161
+	 	 	 KillItem 46202
+	 	 	 ##1052301	\n\n\n\n@c使用期限已到，谢谢！	1
+	 	 	 EndWindow 1052301
+	 	 	 
+	 	 Window_YES Item 46202 >= 1 && ItemCreateTime 46202 < 20161
+	 	 	 Warp 0,32339,11,171	 	
+
+block
+	 ##1052302	\n\n\n  您好！我是旅馆个人房服务员，有个人房住宿兑换  券，即可进驻旅馆的个人套房唷！	1
+	 EndWindow 1052302

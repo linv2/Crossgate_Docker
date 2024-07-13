@@ -1,0 +1,16 @@
+################### 传送石碑
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 EndWindow 1100000
+block	 
+	 Window 1102480,YES,NO 
+	 	 Window_YES Group > 1
+	 	 EndWindow 1100000
+	 	 Window_YES	 
+		 	LeaveGroup
+	 	 	Warp 0,32214,36,35	
+		  Endblock
+		 
+	 	 Window_NO 
+		  Endblock 	 	 
+	 	 	 

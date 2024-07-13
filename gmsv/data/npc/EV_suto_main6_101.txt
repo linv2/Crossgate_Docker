@@ -1,0 +1,195 @@
+#
+#
+#
+#
+#
+#失件斥永弁﹋→〝〝〝﹌
+
+
+
+Block PallgFlag78 == 1 && GlobalFlag79 == 1 && PItem 621005,0 >= 5
+
+		
+		GAWindow 3205398,Next
+
+		#\n\n﹛仇及抴及壑钗反残仍午台﹜\n﹛呺简卞苇尹化中凶及反﹜\n﹛公木匹手绣箕仄方丹午允月\n﹛瑷引仄中台及恍柈﹝
+			
+		GAWindow 3205399,Next
+
+		#\n\n﹛丐卅凶反坌井木化双匀凶歹凶仄毛\n﹛账辑卅﹍台﹎及﹍?仄心﹎卞枑仄化仁木凶﹝
+		
+		GAWindow 3205400,Next
+
+		#\n\n﹛匹手﹜账辑卅﹍?仄心﹎匹丐月台匹反﹜\n﹛帎木化仄引匀凶台＿＿\n﹛骋鬼﹜岓心﹜撒心﹜恋心毛\n﹛俅尹日木引六氏﹝
+		
+		GAWindow 3205401,Next
+
+		#\n\n﹛骋鬼及祭褥反螃鹧及窕卼及梂\n﹛钒井内及?及轾仇丹及拑抩祸藷匹\n﹛释构及壑钗伙伙奶巨卞戽月\n﹛蛙五障ミ樊毛扬太护引公丹午仄化中引允﹝
+
+		GAWindow 3205402,Next
+
+		#\n\n﹛唱钗卞炼互月丐及?\n﹛丐及锳钗反﹜锳钗毛舰匀凶呿谛﹜\n﹛勾引曰﹍台﹎及啦阀卞方曰\n﹛荸热允月仇午互请侳引允﹝
+
+		GAWindow 3205403,Next
+
+		#\n\n﹛台及锳噬毛银匀化\n﹛﹍台﹎及勖ゴ毛鞅户化■■\n﹛公仄化﹜蔽歹日六化丐仆化票今中﹝
+		
+		GAWindow 3205404,Yes,No
+
+		#\n\n﹛台凶切反﹜⑹井今木化中引允﹝\n﹛仃木升手﹜台反愤坌毛耨元化丐仆凶中＿＿﹝\n﹛失件斥永弁毛＿＿﹍台﹎毛云凑中仄引允﹝
+		
+			Window_Yes PItem 621005,0 < 5
+			
+				GAEndWindow 3205405
+
+		#\n\n﹛＿＿锳钗毛?仃月恘互﹜\n﹛箫曰引六氏＿＿\n﹛＞铄匀凶?昉＝毛＿＿
+				
+				
+				
+			Window_Yes
+			
+				GAWindow 3205406,OK
+
+		#\n\n﹛仍朹扪毛＿＿
+				
+				
+					Window_OK PItem 621005,0 < 5
+			
+							GAEndWindow 3205407
+
+		#\n\n﹛＿＿锳钗毛?仃月恘互﹜\n﹛箫曰引六氏＿＿\n﹛＞铄匀凶?昉＝毛＿＿
+				
+				
+					Window_OK
+					
+					GAglobalFlag79 = 1
+					Warp 0,59530,154,96
+			
+			Window_No
+			
+				GAendWindow 3205408
+
+		#\n\n﹛公丹匹允井＿＿酸ゴ匹允﹝
+
+
+Block GlobalFlag79 == 1 && Pitem 621005,0 <= 4 && Pitem 621005,0 >= 1
+
+	GAEndWindow 3205409
+
+		#\n\n﹛公丹﹜\n﹛呺简及侹午允﹜公及瑞弅仇公互＿＿\n﹛云凑中匹允﹝诡勾螂户化仁分今中﹝
+
+
+Block GlobalFlag79 == 1
+
+	GAendWindow 3205410,Next
+
+		#\n\n﹛引凶斨中慇氏匹仄引匀凶及匹允友﹝\n﹛?仃请允凶户卞反﹍台﹎及瑞弅互优邰匹允﹝\n﹛诡勾螂户化五化仁分今中
+	
+
+
+	
+
+
+Block PallgFlag42 == 1 && PallgFlag78 == 1 && PItem 621005,0 >= 5
+
+		GAWindow 3205411,Next
+
+		#\n\n﹛丐曰互午丹﹝匹反云狪仄引仄斤丹﹝
+		
+		GAWindow 3205412,Next
+
+		#\n\n﹛仇及抴及壑钗反残仍午台﹜\n﹛呺简卞苇尹化中凶及反﹜\n﹛公木匹手绣箕仄方丹午允月\n﹛瑷引仄中台及恍柈﹝
+			
+		GAWindow 3205413,Next
+
+		#\n\n﹛丐卅凶反坌井木化双匀凶歹凶仄毛\n﹛账辑卅﹍台﹎及﹍?仄心﹎卞枑仄化仁木凶﹝
+		
+		GAWindow 3205414,Next
+
+		#\n\n﹛匹手﹜账辑卅﹍?仄心﹎匹丐月台匹反﹜\n﹛帎木化仄引匀凶台＿＿\n﹛骋鬼﹜岓心﹜撒心﹜恋心毛\n﹛俅尹日木引六氏﹝
+		
+		GAWindow 3205415,Next
+
+		#\n\n﹛骋鬼及祭褥反螃鹧及窕卼及梂\n﹛钒井内及?及轾仇丹及拑抩祸藷匹\n﹛释构及壑钗伙伙奶巨卞戽月\n﹛蛙五障ミ樊毛扬太护引公丹午仄化中引允﹝
+
+		GAWindow 3205416,Next
+
+		#\n\n﹛唱钗卞炼互月丐及?\n﹛丐及锳钗反﹜锳钗毛舰匀凶呿谛﹜\n﹛勾引曰﹍台﹎及啦阀卞方曰\n﹛荸热允月仇午互请侳引允﹝
+
+		GAWindow 3205417,Next
+
+		#\n\n﹛台及锳噬毛银匀化\n﹛﹍台﹎及勖ゴ毛鞅户化■■\n﹛公仄化﹜蔽歹日六化丐仆化票今中﹝
+		
+		GAWindow 3205418,Yes,No
+
+		#\n\n﹛台凶切反﹜⑹井今木化中引允﹝\n﹛仃木升手﹜台反愤坌毛耨元化丐仆凶中＿＿﹝\n﹛失件斥永弁毛＿＿﹍台﹎毛云凑中仄引允﹝
+		
+			Window_Yes PItem 621005,0 < 5
+			
+				GAEndWindow 3205419
+
+		#\n\n﹛＿＿锳钗毛?仃月恘互﹜\n﹛箫曰引六氏＿＿\n﹛＞铄匀凶?昉＝毛＿＿
+				
+				
+				
+			Window_Yes
+			
+				GAWindow 3205420,OK
+
+		#\n\n﹛仍朹扪毛＿＿
+				
+				
+					Window_OK PItem 621005,0 < 5
+			
+							GAEndWindow 3205421
+
+		#\n\n﹛＿＿锳钗毛?仃月恘互﹜\n﹛箫曰引六氏＿＿\n﹛＞铄匀凶?昉＝毛＿＿
+				
+				
+					Window_OK
+					
+					GAglobalFlag79 = 1
+					Warp 0,59530,154,96
+			
+			Window_No
+			
+				GAendWindow 3205422
+
+		#\n\n﹛公丹匹允井＿＿酸ゴ匹允﹝
+		
+		
+
+
+Block GlobalFlag42 == 1 && GlobalFlag78 == 1 && Pitem 621005,0 <= 4 && Pitem 621005,0 >= 1
+
+	GAEndWindow 3205423
+
+		#\n\n﹛公丹﹜\n﹛呺简及侹午允﹜公及瑞弅仇公互\n﹛ハ梁及恘毛儅勾及匹允﹝
+
+
+Block GlobalFlag42 == 1 && GlobalFlag78 == 1
+
+	GAWindow 3205424,Next
+
+		#\n\n﹛＿＿拑咥泫咥云裟太峏化仄化\n﹛萧仄沭丐曰引六氏﹝\n﹛匹手﹜台反﹜手丹﹜幻午氏升酸匀化中卅中﹝\n﹛抴午蜇壑及饪棉卞﹜凶斗凶丹及互擎域ベ＿＿
+
+	GAWindow 3205425,Next
+
+		#\n\n﹛台反﹜丐卅凶互襞匀化中月失件斥永弁匹丐匀化\n﹛仄井仄﹜公丹匹反卅中手及匹允﹝
+
+	GAEndWindow 3205426
+
+		#\n\n﹛?仄心及瑞弅匹丐月台及锳噬\n﹛＞铄匀凶?昉＝毛\n﹛ハ梁及醒﹜诡勾螂户化票今中﹝\n﹛允屯化毛云狪仄引允﹝
+	
+	
+Block
+
+	Window 3205427,OK
+
+		#\n\n﹛斨中阂及方丹匹允友﹝\n﹛仇仇反丐卅凶互侳月屯五桦赭匹反丐曰引六氏﹝\n﹛云窖曰卅今中﹝
+	
+		Window_OK
+			
+			LeaveGroup
+			
+			Warp 0,59530,135,92

@@ -1,0 +1,26 @@
+##中药商
+#1054660	\n\n\n　　　你知道吗??\n　　　葛利工坊最近来了一个招牌师父，\n　　　做的招牌又显眼又漂亮喔～～
+#1054661	\n\n　　　喔～～\n　　　要跟我买烧酒鸡的材料包呀～～\n　　　100G，要买吗？
+#1054662	\n\n\n\n@c谢谢啰～～
+#1054663	\n\n\n\n@c不买就算了。
+#1054674	\n\n\n\n@c快去准备其他材料吧～
+
+block Item 47427>0
+	 EndWindow 1054674
+block Item 47430>0
+	 Window 1054660,NEXT
+	 Window 1054661,YES,NO
+	 Window_NO 
+	 EndWindow 1054663
+	 Window_YES Gold<100
+	 EndWindow 7
+	 Window_YES ItemSpace < 1 
+		##物品栏已满
+      	 EndWindow 1100001	 
+      	 Window_YES
+      	 AddGold -100
+      	 GiveLeak1Item 47427,1	
+      	 EndWindow 1054662
+block 
+	 EndWindow 1054660
+	 

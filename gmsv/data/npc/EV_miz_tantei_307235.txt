@@ -1,0 +1,19 @@
+#¼ëÓ£ÛÍ¾Şµ©Ğş¡°ÓñÊ§
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+
+###########©x£¾Ğ×Ğ×ÈÊ£½©x##############
+block strcmpchat == 206723
+	playse 216,1,1
+	playse 76,1,1
+	EndWindow 206445,OK
+
+###########©xÖÏÊÖØ¦ØÆ©x##############
+block 
+
+	Window 206422,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33263,6,15
+	Window_NO

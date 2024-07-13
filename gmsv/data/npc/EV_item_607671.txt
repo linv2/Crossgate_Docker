@@ -1,0 +1,26 @@
+
+block Floor == 59502
+
+
+if  Xpos == 149 && Ypos == 134
+
+	if LocalFlag25 == 0
+
+
+		LocalFlag25 = 1
+		killitem 607671,1,(3007168)
+
+	endif
+
+else
+
+	endWindow "\n\n　採も軟こらなかった。"
+
+
+
+endif
+
+block
+	endWindow "\n\n　採も軟こらなかった。"
+
+

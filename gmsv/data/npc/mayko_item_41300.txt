@@ -1,0 +1,18 @@
+
+#
+
+#######################################
+#…í?É¬ÀÃ#
+block Item 41300 >= 1  && petspace >= 1
+
+	 Window 11741,OK
+	 Window_OK
+
+	 KillItem 41300
+	 GivePet 41468
+	 Endblock
+
+block Item 41300 >= 1  && petspace == 0
+
+	 EndWindow 1102679
+

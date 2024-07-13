@@ -1,0 +1,127 @@
+#OPEN的朋友30110	34	25
+
+#OPEN的骰子47674
+#1055018	\n\n\n　　你好！我是OPEN的朋友，\n　　如果你有OPEN的骰子，可以跟我换奖品。	1
+#1054996	\n\n\n　　　　你这是１点OPEN的骰子．\n　　　　可以换任意采集箱。\n　　　　你要兑换吗？	1
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055011	\n\n\n\n@c兑换了换任意采集箱。
+block Item 47674>0
+	 Window 1055018,NEXT
+	 Window 1054996,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47674>0
+	 KillItem 47674
+	 GiveLeak1Item 46425  ##任意采集箱
+	 EndWindow 1055011
+	 Window_YES
+	 EndWindow 1055004
+
+#OPEN的骰子47675
+#1055018	\n\n\n　　你好！我是OPEN的朋友，\n　　如果你有OPEN的骰子，可以跟我换奖品。	1
+#1054997	\n\n\n　　　　你这是２点OPEN的骰子．\n　　　　可以换任意钥匙。
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055012	\n\n\n\n@c兑换了换任意钥匙。
+block Item 47675>0
+	 Window 1055018,NEXT
+	 Window 1054997,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47675>0
+	 KillItem 47675
+	 GiveLeak1Item 45513
+	 EndWindow 1055012 ##任意钥匙
+	 Window_YES
+	 EndWindow 1055004	 
+
+#OPEN的骰子47676
+#1055018	\n\n\n　　你好！我是OPEN的朋友，\n　　如果你有OPEN的骰子，可以跟我换奖品。	1
+#1054998	\n\n\n　　　　你这是３点OPEN的骰子．\n　　　　可以换罐装重来种子。
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055013	\n\n\n\n@c兑换了换罐装重来种子。
+block Item 47676>0
+	 Window 1055018,NEXT
+	 Window 1054998,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47676>0
+	 KillItem 47676
+	 GiveLeak1Item 46068
+	 EndWindow 1055013 ##罐装重来种子
+	 Window_YES
+	 EndWindow 1055004	 
+
+
+#OPEN的骰子47677
+#1055018	\n\n\n　　你好！我是OPEN的朋友，\n　　如果你有OPEN的骰子，可以跟我换奖品。	1
+#1054999	\n\n\n　　　　你这是４点OPEN的骰子．\n　　　　可以换船长帽。
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055014	\n\n\n\n@c兑换了换船长帽。
+block Item 47677>0
+	 Window 1055018,NEXT
+	 Window 1054999,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47677>0
+	 KillItem 47677
+	 GiveLeak1Item 46939
+	 EndWindow 1055014 ##船长帽
+	 Window_YES
+	 EndWindow 1055004	
+
+
+#OPEN的骰子47678
+#1055018	\n\n\n　　你好！我是OPEN的朋友，\n　　如果你有OPEN的骰子，可以跟我换奖品。	1
+#1055000	\n\n\n　　　　你这是５点OPEN的骰子．\n　　　　可以换百万金库（空）。
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055015	\n\n\n\n@c兑换了换百万金库（空）。
+block Item 47678>0
+	 Window 1055018,NEXT
+	 Window 1055000,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47678>0
+	 KillItem 47678
+	 GiveLeak1Item 47243
+
+	 EndWindow 1055015 ##百万金库(空)
+
+	 Window_YES
+	 EndWindow 1055004	
+
+#OPEN的骰子47679
+#1055018	\n\n\n　　你好！我是OPEN的朋友，\n　　如果你有OPEN的骰子，可以跟我换奖品。	1
+#1055001	\n\n\n　　　　你这是６点OPEN的骰子．\n　　　　可以换豆籽包。
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055016	\n\n\n\n@c兑换了换豆籽包。
+block Item 47679>0
+	 Window 1055018,NEXT
+	 Window 1055001,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47679>0
+	 KillItem 47679
+	 GiveLeak1Item 47363
+	 EndWindow 1055016 ##豆籽包
+
+	 Window_YES
+	 EndWindow 1055004	
+
+
+##没有骰子
+#1055018	\n\n\n　　你好！我是OPEN的朋友，\n　　如果你有OPEN的骰子，可以跟我换奖品。	1
+block
+	 EndWindow 1055018	 
+	

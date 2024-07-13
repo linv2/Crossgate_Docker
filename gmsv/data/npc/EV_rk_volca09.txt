@@ -1,0 +1,13 @@
+#????ъп???
+
+#
+block
+	Window 22527,Yes,No
+		Window_Yes
+			Window 22528,OK
+				Window_OK
+					NowEvent 134 = 1
+		Window_No
+			Window 22529,OK
+				Window_OK
+					NowEvent 134 = 1

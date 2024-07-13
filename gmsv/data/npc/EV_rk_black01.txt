@@ -1,0 +1,8 @@
+#≥‚“‡Õﬂ°ıªÔ
+
+
+block EndEvent 139 == 1
+	EndWindow 22898,OK
+
+block
+	EndWindow 22899,OK

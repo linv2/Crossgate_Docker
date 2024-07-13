@@ -1,0 +1,117 @@
+#扑尼仿它巨永末及显﹋21℅40﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛立旦玄﹋凝朿盒“⑧侅酦﹌及摒
+
+###﹛旦用□由它件玉﹋631018﹌毛赭儅
+#﹛ㄤ蜊动晓赭儅
+block Item_631018 >= 5
+	Window 3206299,OK
+
+		#\n\n﹛仇及凝今五竻毛俭圈六仄樊卞戚及蜕邯毛唬允﹝\n﹛显〇卞脱互算扲及凶户卞综日木仄撮肣曰﹝\n﹛脱及踞仃卞方曰惮毛嚏引允樊反撮毛苇中分允﹝\n﹛脱及踞仃卞方曰杴毛债日允樊手撮毛苇中分允﹝\n﹛?反脱互域逻卞鳗歹月萼卞方曰钒仁﹝\n﹛沓侗卞障ミ今木仄樊毛逦仄化撮卞谗月樊反\n﹛蕙凶卅挥毛旳仁匹丐欠丹﹝
+
+		Window_OK Item_631019 >= 1
+			EndWindow 3206300
+
+		#\n\n﹛弘伐伐伐永＿乒永泛正＿＿﹝
+
+		Window_OK ItemSpace >= 1 && Item_631018 >= 5
+			KillItemAll 631018
+			GiveItemEX 631019,1,3206301
+
+		#\n\n﹛弘伐伐永＿瓦乒汁奶永由奶＿＿﹝
+			LeaveGroup
+			Warp 0,59823,88,44
+
+		Window_OK Item_631018 >= 5
+			EndWindow 3206302
+
+		#\n\n﹛弘伐伐永＿瓦乒汁奶永由奶＿＿﹝
+
+		Window_OK
+			EndWindow 3206303
+
+		#\n\n﹛弘伐伐永＿平巨正＿＿﹝
+
+
+
+
+#﹛ㄣ蜊赭儅
+block Item_631018 == 4
+	Window 3206304,OK
+
+		#\n\n﹛仇及凝今五竻毛俭圈六仄樊卞戚及蜕邯毛唬允﹝\n﹛显〇卞脱互算扲及凶户卞综日木仄撮肣曰﹝\n﹛脱及踞仃卞方曰惮毛嚏引允樊反撮毛苇中分允﹝\n﹛脱及踞仃卞方曰杴毛债日允樊手撮毛苇中分允﹝\n﹛?反脱互域逻卞鳗歹月萼卞方曰钒仁﹝\n﹛布□弘伐永﹜弘永弘伐伐永﹜布失﹜布失﹜\n﹛布布失﹜市永市永市永市永市永＿﹝
+
+		Window_OK Item_631018 >= 1
+			KillItemAll 631018
+			LeaveGroup
+			Warp 0,59823,88,44
+
+		Window_OK
+			EndWindow 3206305
+
+		#\n\n﹛弘伐伐永＿平巨正＿＿﹝
+
+
+
+#﹛ㄢ蜊赭儅
+block Item_631018 == 3
+	Window 3206306,OK
+
+		#\n\n﹛仇及凝今五竻毛俭圈六仄樊卞戚及蜕邯毛唬允﹝\n﹛显〇卞脱互算扲及凶户卞综日木仄撮肣曰﹝\n﹛脱及踞仃卞方曰惮毛嚏引允樊反撮毛苇中分允﹝\n﹛脱及踞仃卞方曰杴毛债日允樊手撮毛苇中分允﹝\n﹛弘□弘伐永﹜弘伐永﹜弘伐永﹜布失布失﹝\n﹛布□弘伐永﹜弘永弘伐伐永﹜布失﹜布失﹜\n﹛布布失﹜市永市永市永市永市永＿﹝
+
+		Window_OK Item_631018 >= 1
+			KillItemAll 631018
+			LeaveGroup
+			Warp 0,59823,88,44
+
+		Window_OK
+			EndWindow 3206307
+
+		#\n\n﹛弘伐伐永＿平巨正＿＿﹝
+
+
+
+#﹛ㄡ蜊赭儅
+block Item_631018 == 2
+	Window 3206308,OK
+
+		#\n\n﹛仇及凝今五竻毛俭圈六仄樊卞戚及蜕邯毛唬允﹝\n﹛显〇卞脱互算扲及凶户卞综日木仄撮肣曰﹝\n﹛布失□﹜布布失□﹜弘伐永﹜弘伐伐永﹜布失﹝\n﹛弘伐伐□﹜弘伐□﹜布布永﹜弘伐伐永﹜布失﹝\n﹛弘□弘伐永﹜弘伐永﹜弘伐永﹜布失布失﹝\n﹛布□弘伐永﹜弘永弘伐伐永﹜布失﹜布失﹜\n﹛布布失﹜市永市永市永市永市永＿﹝
+
+		Window_OK Item_631018 >= 1
+			KillItemAll 631018
+			LeaveGroup
+			Warp 0,59823,88,44
+
+		Window_OK
+			EndWindow 3206309
+
+		#\n\n﹛弘伐伐永＿平巨正＿＿﹝
+
+
+
+#﹛ㄠ蜊赭儅
+block Item_631018 == 1
+	Window 3206310,OK
+
+		#\n\n﹛仇及凝今五竻毛俭圈六仄樊卞戚及蜕邯毛唬允﹝\n﹛弘伐伐永﹜布失﹜布失﹜布布失﹜弘伐永布失﹝\n﹛布失□﹜布布失□﹜弘伐永﹜弘伐伐永﹜布失﹝\n﹛弘伐伐□﹜弘伐□﹜布布永﹜弘伐伐永﹜布失﹝\n﹛弘□弘伐永﹜弘伐永﹜弘伐永﹜布失布失﹝\n﹛布□弘伐永﹜弘永弘伐伐永﹜布失﹜布失﹜\n﹛布布失﹜市永市永市永市永市永＿﹝
+
+		Window_OK Item_631018 >= 1
+			KillItemAll 631018
+			LeaveGroup
+			Warp 0,59823,88,44
+
+		Window_OK
+			EndWindow 3206311
+
+		#\n\n﹛弘伐伐永＿平巨正＿＿﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3206312
+
+		#\n\n﹛布失﹜布失﹜布失﹜布失＿＿﹝\n﹛乩伊乩伊﹜乩永玄戊﹜乩永玄戊瓜央﹝
+
+
+

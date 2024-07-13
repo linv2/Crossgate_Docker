@@ -1,0 +1,215 @@
+#¼ëÓ£ÛÍ¾Şµ©Ğş¡°·ÂÓÀÆ½¡õÛÍ·ÂËü¼ş(5)
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+
+###########©xENDFLG 71 on©x £¾ÆËµ©Õı¡õ¸¥ÄÌ...£½©x##############
+block nowevent72 == 1 && strcmpchat == 206733 
+
+	EndWindow 206573,OK
+
+block endevent71 == 1 && strcmpchat == 206733 
+
+	Window 206292,NEXT
+	Window 206293,OK
+	Window_OK
+	leavegroup
+	endevent71 = 0
+	nowevent72 = 1
+
+###########©xNOWFLG 69 on©x £¾Ê§ØøÌïÄÌ...£½©x##############
+block nowevent70 == 1 && strcmpchat == 206740
+
+	EndWindow 206291,OK
+
+
+block nowevent69 == 1 && strcmpchat == 206740
+
+	Window 206291,OK
+	Window_OK
+	leavegroup
+	nowevent70 = 1
+
+###########©xENDFLG 68 ¶¯Ïş¼°°×·Âºë»¥ON©x£¾Ë¦¼şÛÍ£½©x##############
+block strcmpchat == 206726 && nowevent68 == 1 
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && endevent68 == 1
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && nowevent69 == 1 
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && endevent69 == 1
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && nowevent70 == 1 
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && endevent70 == 1
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && nowevent71 == 1 
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && endevent71 == 1
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && nowevent72 == 1 
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && endevent72 == 1
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && nowevent73 == 1 
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && endevent73 == 1
+
+	EndWindow 206303,OK
+block strcmpchat == 206726 && nowevent74 == 1 
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && endevent74 == 1
+
+	EndWindow 206303,OK
+block strcmpchat == 206726 && nowevent75 == 1 
+
+	EndWindow 206303,OK
+
+block strcmpchat == 206726 && endevent75 == 1
+
+	EndWindow 206303,OK
+
+###########©xENDFLG 68 ¶¯Ïş¼°°×·Âºë»¥ON £¾²¼ÓÀ·º¼ş£½©x##############
+block strcmpchat == 206735 && nowevent68 == 1 
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && endevent68 == 1
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && nowevent69 == 1 
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && endevent69 == 1
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && nowevent70 == 1 
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && endevent70 == 1
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && nowevent71 == 1 
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && endevent71 == 1
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && nowevent72 == 1 
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && endevent72 == 1
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && nowevent73 == 1 
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && endevent73 == 1
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && nowevent74 == 1 
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && endevent74 == 1
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && nowevent75 == 1 
+
+	EndWindow 206304,OK
+
+block strcmpchat == 206735 && endevent75 == 1
+
+	EndWindow 206304,OK
+
+
+###########©x£¾ÆËµ©Õı¡õ¸¥ÄÌ£½©x##############
+block strcmpchat == 206733
+
+	EndWindow 206294,OK
+
+###########©x£¾ÓÃ¹ÏÓÃ¹Ï£½©x##############
+block strcmpchat == 206734
+
+	EndWindow 206295,OK
+
+###########©x£¾Õı¼şºë·ÂØ©£½©x##############
+block strcmpchat == 206729
+
+	EndWindow 206296,OK
+
+###########©x£¾ÓñÛÍÕı¡õ°×Å«µ©£½©x##############
+block strcmpchat == 206731
+
+	EndWindow 206297,OK
+
+###########©x£¾¾ŞÄÌÁ¢Øø¡õ£½©x##############
+block strcmpchat == 206732
+
+	EndWindow 206298,OK
+
+###########©x£¾ËüÅ«¼şÓ×µ©£½©x##############
+block strcmpchat == 206727
+
+	EndWindow 206299,OK
+
+###########©x£¾ÃóØø¼ş·ºÅ«¡õ£½©x##############
+block strcmpchat == 206728
+
+	EndWindow 206300,OK
+
+###########©x£¾°×·Â¼şÛÍØø¼ş£½©x##############
+block strcmpchat == 206736
+
+	EndWindow 206301,OK
+
+###########©x£¾Ë¦¼şÛÍ£½©x##############
+block strcmpchat == 206726
+
+	EndWindow 206302,OK
+
+###########©x£¾ÔÆÊÏØ¦£½©x##############
+block strcmpchat == 206737
+
+	EndWindow 206305,OK
+
+###########©xÖÏÊÖ’ƒØÆ©x##############
+block
+	EndWindow 206290,OK
+
+

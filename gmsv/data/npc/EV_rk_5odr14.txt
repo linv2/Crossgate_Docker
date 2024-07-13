@@ -1,0 +1,14 @@
+#?
+#
+block
+	Window 22635,Next
+	Window 22636,Yes,No
+		Window_No
+		Window_Yes ItemSpace == 0
+			EndWindow 10000
+		Window_Yes
+			Play_Se 134,320,240
+			GiveItem 16398
+			SystemMessage 4298
+			LeaveGroup
+			Warp 0,34006,62,61

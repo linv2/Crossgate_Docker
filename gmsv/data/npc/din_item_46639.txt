@@ -1,0 +1,23 @@
+#####时雨兑换证 id 46639
+###双点得到时雨一只
+ 
+block PetSpace == 0 
+	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+	 EndWindow 1100004
+	 
+block
+	 ##1052992	\n\n@c你是否要使用召唤书．．．召唤时雨出来？	1
+	 Window 1052992,YES,NO
+	 	 Window_NO
+	 	 	 
+	 	 Window_YES  PetSpace == 0 
+	 	 	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+	 		 EndWindow 1100004	 	
+	 
+	 	 Window_YES
+	 	 	 KillItem 46639,1
+	 	 	 GivePet 103177
+	 	 	 ##1052993	\n\n\n\n@c时雨已成功召唤！
+			 EndWindow 1052993
+			 
+	 	 	 

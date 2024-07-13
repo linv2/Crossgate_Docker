@@ -1,0 +1,20 @@
+#####不可思议系列三：恶梦#####
+##史莱姆的回忆8 裂缝
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+#■ 一般
+block
+	 ##1102049	\n\n\n\n@c救命呀！救命呀！上面有人吗？	1
+	 Window 1102049,NEXT
+	 ##1102050	\n\n\n\n@c有人在上面吗?	1
+	 Window 1102050,OK 
+	 	 Window_OK 
+	 	 	 ##传送 打王区
+	 	 	 Warp 0,32046,81,38
+	 	 	 

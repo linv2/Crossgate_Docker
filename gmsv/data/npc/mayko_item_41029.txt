@@ -1,0 +1,17 @@
+######织布机-麻######
+##有 织布机-麻 麻大于400个 物品栏无空位　　　＃40738  10400
+block Item 41029 >= 1 && Item 40738 >= 400 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+##有 织布机-麻 麻大于400个 物品栏空位大于1 耐久度大于1
+block Item 41029 >= 1 && Item 40738 >= 400 && ItemSpace >= 1 && ItemDur 41029 > 1
+	 KillItem 40738,400
+	 GiveStackItem 10400,20
+	 SetDur 41029,-1
+	 
+##有 织布机-麻 麻大于400个 物品栏空位大于1 
+block Item 41029 >= 1 && Item 40738 >= 400 && ItemSpace >= 1 
+	 KillItem 40738,400
+	 GiveStackItem 10400,20
+	 KillItem 41029

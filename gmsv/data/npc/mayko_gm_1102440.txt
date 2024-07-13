@@ -1,0 +1,43 @@
+#醉倒的人	1102440
+#32277	32	39
+#啤酒	40315
+#红酒	40316
+#1109805	\n\n\n\n@c好想喝丝米港的美酒啊～～～
+#1109806	\n\n\n　　　这是来自丝米的酒，\n　　　你要请我喝吗？？
+#1109807	\n\n\n\n@c酒呢？？酒怎么不见了？？
+#1109808	\n　　　真是好酒呀～～\n　　　听说这世界各地以许多不为人知的宝藏，\n　　　这些宝藏都有宝藏图纪载，\n　　　只是不知那些宝藏图流落到那了。
+#1109809	\n\n\n\n@c有机会拿到的话，可以去寻宝喔～～～
+#1109810	\n\n\n　　　哎呀～～你懂不懂呀～～\n　　　啤酒拿到这，就坏掉了！
+#1109816	\n\n\n\n@c咕噜咕噜～～	1
+#1109817	\n\n\n\n@c咦～～酒咧～～酒怎么不见了！	1
+
+block Item 40315>0
+	 Window 1109806,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 40315>0
+	 KillItem 40315,1
+	 Window 1109816,NEXT
+	 EndWindow 1109810
+	 
+	 Window_YES
+	 EndWindow 1109807	 
+
+block Item 40316>0
+	 Window 1109806,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 40316>0
+	 KillItem 40316,1
+	 Window 1109816,NEXT
+	 Window 1109808,NEXT
+	 EndWindow 1109809
+	 
+	 Window_YES
+	 EndWindow 1109807
+
+block
+	 EndWindow 1109805	 	 
+	

@@ -1,0 +1,10 @@
+#ûù??§k???
+
+
+block
+	Window 21897,Yes,No
+		Window_No
+		Window_Yes
+		LeaveGroup
+		Play_SE 279,320,240
+		Warp 0,11032,28,80

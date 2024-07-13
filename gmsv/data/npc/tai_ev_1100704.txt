@@ -1,0 +1,823 @@
+################### 艺术掮客 睿奇商人
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 有魔石 18005 12 42 
+block Item 18005 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18005 >=1
+			 KillItem 18005
+	 	 	 AddGold 42
+	 	 Window_NO 
+################### 有魔石 18006 48 168 
+block Item 18006 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18006 >=1
+			 KillItem 18006
+	 	 	 AddGold 168
+	 	 Window_NO 
+################### 有魔石 18007 96 336 
+block Item 18007 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18007 >=1
+			 KillItem 18007
+	 	 	 AddGold 336
+	 	 Window_NO 
+################### 有魔石 18008 124 434 
+block Item 18008 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18008 >=1
+			 KillItem 18008
+	 	 	 AddGold 434
+	 	 Window_NO 
+################### 有魔石 18009 150 525 
+block Item 18009 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18009 >=1
+			 KillItem 18009
+	 	 	 AddGold 525
+	 	 Window_NO 
+################### 有魔石 18010 178 623 
+block Item 18010 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18010 >=1
+			 KillItem 18010
+	 	 	 AddGold 623
+	 	 Window_NO 
+################### 有魔石 18011 205 718 
+block Item 18011 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18011 >=1
+			 KillItem 18011
+	 	 	 AddGold 718
+	 	 Window_NO 
+################### 有魔石 18012 232 812 
+block Item 18012 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18012 >=1
+			 KillItem 18012
+	 	 	 AddGold 812
+	 	 Window_NO 
+################### 有魔石 18013 259 907 
+block Item 18013 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18013 >=1
+			 KillItem 18013
+	 	 	 AddGold 907
+	 	 Window_NO 
+################### 有魔石 18014 287 1005 
+block Item 18014 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18014 >=1
+			 KillItem 18014
+	 	 	 AddGold 1005
+	 	 Window_NO 
+################### 有魔石 18015 313 1096 
+block Item 18015 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18015 >=1
+			 KillItem 18015
+	 	 	 AddGold 1096
+	 	 Window_NO 
+################### 有魔石 18016 341 1194 
+block Item 18016 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18016 >=1
+			 KillItem 18016
+	 	 	 AddGold 1194
+	 	 Window_NO 
+################### 有魔石 18017 368 1288 
+block Item 18017 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18017 >=1
+			 KillItem 18017
+	 	 	 AddGold 1288
+	 	 Window_NO 
+################### 有魔石 18018 395 1383 
+block Item 18018 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18018 >=1
+			 KillItem 18018
+	 	 	 AddGold 1383
+	 	 Window_NO 
+################### 有魔石 18019 422 1477 
+block Item 18019 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18019 >=1
+			 KillItem 18019
+	 	 	 AddGold 1477
+	 	 Window_NO 
+################### 有魔石 18020 450 1575 
+block Item 18020 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18020 >=1
+			 KillItem 18020
+	 	 	 AddGold 1575
+	 	 Window_NO 
+################### 有魔石 18021 476 1666 
+block Item 18021 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18021 >=1
+			 KillItem 18021
+	 	 	 AddGold 1666
+	 	 Window_NO 
+################### 有魔石 18022 504 1764 
+block Item 18022 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18022 >=1
+			 KillItem 18022
+	 	 	 AddGold 1764
+	 	 Window_NO 
+################### 有魔石 18023 532 1862 
+block Item 18023 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18023 >=1
+			 KillItem 18023
+	 	 	 AddGold 1862
+	 	 Window_NO 
+################### 有魔石 18024 558 1953 
+block Item 18024 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18024 >=1
+			 KillItem 18024
+	 	 	 AddGold 1953
+	 	 Window_NO 
+################### 有魔石 18025 587 2055 
+block Item 18025 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18025 >=1
+			 KillItem 18025
+	 	 	 AddGold 2055
+	 	 Window_NO 
+################### 有魔石 18026 12 42 
+block Item 18026 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18026 >=1
+			 KillItem 18026
+	 	 	 AddGold 42
+	 	 Window_NO 
+################### 有魔石 18027 48 168 
+block Item 18027 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18027 >=1
+			 KillItem 18027
+	 	 	 AddGold 168
+	 	 Window_NO 
+################### 有魔石 18028 96 336 
+block Item 18028 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18028 >=1
+			 KillItem 18028
+	 	 	 AddGold 336
+	 	 Window_NO 
+################### 有魔石 18029 124 434 
+block Item 18029 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18029 >=1
+			 KillItem 18029
+	 	 	 AddGold 434
+	 	 Window_NO 
+################### 有魔石 18030 150 525 
+block Item 18030 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18030 >=1
+			 KillItem 18030
+	 	 	 AddGold 525
+	 	 Window_NO 
+################### 有魔石 18031 178 623 
+block Item 18031 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18031 >=1
+			 KillItem 18031
+	 	 	 AddGold 623
+	 	 Window_NO 
+################### 有魔石 18032 205 718 
+block Item 18032 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18032 >=1
+			 KillItem 18032
+	 	 	 AddGold 718
+	 	 Window_NO 
+################### 有魔石 18033 232 812 
+block Item 18033 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18033 >=1
+			 KillItem 18033
+	 	 	 AddGold 812
+	 	 Window_NO 
+################### 有魔石 18034 259 907 
+block Item 18034 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18034 >=1
+			 KillItem 18034
+	 	 	 AddGold 907
+	 	 Window_NO 
+################### 有魔石 18035 287 1005 
+block Item 18035 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18035 >=1
+			 KillItem 18035
+	 	 	 AddGold 1005
+	 	 Window_NO 
+################### 有魔石 18036 313 1096 
+block Item 18036 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18036 >=1
+			 KillItem 18036
+	 	 	 AddGold 1096
+	 	 Window_NO 
+################### 有魔石 18037 341 1194 
+block Item 18037 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18037 >=1
+			 KillItem 18037
+	 	 	 AddGold 1194
+	 	 Window_NO 
+################### 有魔石 18038 368 1288 
+block Item 18038 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18038 >=1
+			 KillItem 18038
+	 	 	 AddGold 1288
+	 	 Window_NO 
+################### 有魔石 18039 395 1383 
+block Item 18039 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18039 >=1
+			 KillItem 18039
+	 	 	 AddGold 1383
+	 	 Window_NO 
+################### 有魔石 18040 422 1477 
+block Item 18040 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18040 >=1
+			 KillItem 18040
+	 	 	 AddGold 1477
+	 	 Window_NO 
+################### 有魔石 18041 450 1575 
+block Item 18041 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18041 >=1
+			 KillItem 18041
+	 	 	 AddGold 1575
+	 	 Window_NO 
+################### 有魔石 18042 476 1666 
+block Item 18042 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18042 >=1
+			 KillItem 18042
+	 	 	 AddGold 1666
+	 	 Window_NO 
+################### 有魔石 18043 504 1764 
+block Item 18043 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18043 >=1
+			 KillItem 18043
+	 	 	 AddGold 1764
+	 	 Window_NO 
+################### 有魔石 18044 532 1862 
+block Item 18044 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18044 >=1
+			 KillItem 18044
+	 	 	 AddGold 1862
+	 	 Window_NO 
+################### 有魔石 18045 558 1953 
+block Item 18045 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18045 >=1
+			 KillItem 18045
+	 	 	 AddGold 1953
+	 	 Window_NO 
+################### 有魔石 18046 587 2055 
+block Item 18046 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18046 >=1
+			 KillItem 18046
+	 	 	 AddGold 2055
+	 	 Window_NO 
+################### 有魔石 18047 12 42 
+block Item 18047 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18047 >=1
+			 KillItem 18047
+	 	 	 AddGold 42
+	 	 Window_NO 
+################### 有魔石 18048 48 168 
+block Item 18048 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18048 >=1
+			 KillItem 18048
+	 	 	 AddGold 168
+	 	 Window_NO 
+################### 有魔石 18049 96 336 
+block Item 18049 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18049 >=1
+			 KillItem 18049
+	 	 	 AddGold 336
+	 	 Window_NO 
+################### 有魔石 18050 124 434 
+block Item 18050 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18050 >=1
+			 KillItem 18050
+	 	 	 AddGold 434
+	 	 Window_NO 
+################### 有魔石 18051 150 525 
+block Item 18051 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18051 >=1
+			 KillItem 18051
+	 	 	 AddGold 525
+	 	 Window_NO 
+################### 有魔石 18052 178 623 
+block Item 18052 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18052 >=1
+			 KillItem 18052
+	 	 	 AddGold 623
+	 	 Window_NO 
+################### 有魔石 18053 205 718 
+block Item 18053 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18053 >=1
+			 KillItem 18053
+	 	 	 AddGold 718
+	 	 Window_NO 
+################### 有魔石 18054 232 812 
+block Item 18054 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18054 >=1
+			 KillItem 18054
+	 	 	 AddGold 812
+	 	 Window_NO 
+################### 有魔石 18055 259 907 
+block Item 18055 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18055 >=1
+			 KillItem 18055
+	 	 	 AddGold 907
+	 	 Window_NO 
+################### 有魔石 18056 287 1005 
+block Item 18056 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18056 >=1
+			 KillItem 18056
+	 	 	 AddGold 1005
+	 	 Window_NO 
+################### 有魔石 18057 313 1096 
+block Item 18057 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18057 >=1
+			 KillItem 18057
+	 	 	 AddGold 1096
+	 	 Window_NO 
+################### 有魔石 18058 341 1194 
+block Item 18058 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18058 >=1
+			 KillItem 18058
+	 	 	 AddGold 1194
+	 	 Window_NO 
+################### 有魔石 18059 368 1288 
+block Item 18059 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18059 >=1
+			 KillItem 18059
+	 	 	 AddGold 1288
+	 	 Window_NO 
+################### 有魔石 18060 395 1383 
+block Item 18060 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18060 >=1
+			 KillItem 18060
+	 	 	 AddGold 1383
+	 	 Window_NO 
+################### 有魔石 18061 422 1477 
+block Item 18061 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18061 >=1
+			 KillItem 18061
+	 	 	 AddGold 1477
+	 	 Window_NO 
+################### 有魔石 18062 450 1575 
+block Item 18062 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18062 >=1
+			 KillItem 18062
+	 	 	 AddGold 1575
+	 	 Window_NO 
+################### 有魔石 18063 476 1666 
+block Item 18063 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18063 >=1
+			 KillItem 18063
+	 	 	 AddGold 1666
+	 	 Window_NO 
+################### 有魔石 18064 504 1764 
+block Item 18064 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18064 >=1
+			 KillItem 18064
+	 	 	 AddGold 1764
+	 	 Window_NO 
+################### 有魔石 18065 532 1862 
+block Item 18065 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18065 >=1
+			 KillItem 18065
+	 	 	 AddGold 1862
+	 	 Window_NO 
+################### 有魔石 18066 558 1953 
+block Item 18066 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18066 >=1
+			 KillItem 18066
+	 	 	 AddGold 1953
+	 	 Window_NO 
+################### 有魔石 18067 587 2055 
+block Item 18067 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18067 >=1
+			 KillItem 18067
+	 	 	 AddGold 2055
+	 	 Window_NO 
+################### 有魔石 18068 12 42 
+block Item 18068 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18068 >=1
+			 KillItem 18068
+	 	 	 AddGold 42
+	 	 Window_NO 
+################### 有魔石 18069 48 168 
+block Item 18069 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18069 >=1
+			 KillItem 18069
+	 	 	 AddGold 168
+	 	 Window_NO 
+################### 有魔石 18070 96 336 
+block Item 18070 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18070 >=1
+			 KillItem 18070
+	 	 	 AddGold 336
+	 	 Window_NO 
+################### 有魔石 18071 124 434 
+block Item 18071 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18071 >=1
+			 KillItem 18071
+	 	 	 AddGold 434
+	 	 Window_NO 
+################### 有魔石 18072 150 525 
+block Item 18072 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18072 >=1
+			 KillItem 18072
+	 	 	 AddGold 525
+	 	 Window_NO 
+################### 有魔石 18073 178 623 
+block Item 18073 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18073 >=1
+			 KillItem 18073
+	 	 	 AddGold 623
+	 	 Window_NO 
+################### 有魔石 18074 205 718 
+block Item 18074 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18074 >=1
+			 KillItem 18074
+	 	 	 AddGold 718
+	 	 Window_NO 
+################### 有魔石 18075 232 812 
+block Item 18075 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18075 >=1
+			 KillItem 18075
+	 	 	 AddGold 812
+	 	 Window_NO 
+################### 有魔石 18076 259 907 
+block Item 18076 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18076 >=1
+			 KillItem 18076
+	 	 	 AddGold 907
+	 	 Window_NO 
+################### 有魔石 18077 287 1005 
+block Item 18077 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18077 >=1
+			 KillItem 18077
+	 	 	 AddGold 1005
+	 	 Window_NO 
+################### 有魔石 18078 313 1096 
+block Item 18078 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18078 >=1
+			 KillItem 18078
+	 	 	 AddGold 1096
+	 	 Window_NO 
+################### 有魔石 18079 341 1194 
+block Item 18079 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18079 >=1
+			 KillItem 18079
+	 	 	 AddGold 1194
+	 	 Window_NO 
+################### 有魔石 18080 368 1288 
+block Item 18080 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18080 >=1
+			 KillItem 18080
+	 	 	 AddGold 1288
+	 	 Window_NO 
+################### 有魔石 18081 395 1383 
+block Item 18081 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18081 >=1
+			 KillItem 18081
+	 	 	 AddGold 1383
+	 	 Window_NO 
+################### 有魔石 18082 422 1477 
+block Item 18082 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18082 >=1
+			 KillItem 18082
+	 	 	 AddGold 1477
+	 	 Window_NO 
+################### 有魔石 18083 450 1575 
+block Item 18083 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18083 >=1
+			 KillItem 18083
+	 	 	 AddGold 1575
+	 	 Window_NO 
+################### 有魔石 18084 476 1666 
+block Item 18084 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18084 >=1
+			 KillItem 18084
+	 	 	 AddGold 1666
+	 	 Window_NO 
+################### 有魔石 18085 504 1764 
+block Item 18085 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18085 >=1
+			 KillItem 18085
+	 	 	 AddGold 1764
+	 	 Window_NO 
+################### 有魔石 18086 532 1862 
+block Item 18086 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18086 >=1
+			 KillItem 18086
+	 	 	 AddGold 1862
+	 	 Window_NO 
+################### 有魔石 18087 558 1953 
+block Item 18087 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18087 >=1
+			 KillItem 18087
+	 	 	 AddGold 1953
+	 	 Window_NO 
+################### 有魔石 18088 587 2055 
+block Item 18088 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 18088 >=1
+			 KillItem 18088
+	 	 	 AddGold 2055
+	 	 Window_NO 
+
+################### 丢地会消失的魔石
+
+################### 有魔石 45125 100 350 
+block Item 45125 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45125 >=1
+			 KillItem 45125
+	 	 	 AddGold 350
+	 	 Window_NO 
+################### 有魔石 45126 100 350 
+block Item 45126 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45126 >=1
+			 KillItem 45126
+	 	 	 AddGold 350
+	 	 Window_NO 
+################### 有魔石 45127 100 350 
+block Item 45127 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45127 >=1
+			 KillItem 45127
+	 	 	 AddGold 350
+	 	 Window_NO 
+################### 有魔石 45128 100 350 
+block Item 45128 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45128 >=1
+			 KillItem 45128
+	 	 	 AddGold 350
+	 	 Window_NO 
+################### 有魔石 45129 200 700 
+block Item 45129 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45129 >=1
+			 KillItem 45129
+	 	 	 AddGold 700
+	 	 Window_NO 
+################### 有魔石 45130 200 700 
+block Item 45130 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45130 >=1
+			 KillItem 45130
+	 	 	 AddGold 700
+	 	 Window_NO 
+################### 有魔石 45131 200 700 
+block Item 45131 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45131 >=1
+			 KillItem 45131
+	 	 	 AddGold 700
+	 	 Window_NO 
+################### 有魔石 45132 200 700 
+block Item 45132 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45132 >=1
+			 KillItem 45132
+	 	 	 AddGold 700
+	 	 Window_NO 
+################### 有魔石 45133 300 1050 
+block Item 45133 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45133 >=1
+			 KillItem 45133
+	 	 	 AddGold 1050
+	 	 Window_NO 
+################### 有魔石 45134 300 1050
+block Item 45134 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45134 >=1
+			 KillItem 45134
+	 	 	 AddGold 1050
+	 	 Window_NO 
+################### 有魔石 45135 300 1050 
+block Item 45135 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45135 >=1
+			 KillItem 45135
+	 	 	 AddGold 1050
+	 	 Window_NO 
+################### 有魔石 45136 300 1050 
+block Item 45136 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45136 >=1
+			 KillItem 45136
+	 	 	 AddGold 1050
+	 	 Window_NO 
+################### 有魔石 45137 500 1750 
+block Item 45137 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45137 >=1
+			 KillItem 45137
+	 	 	 AddGold 1750 
+	 	 Window_NO 
+################### 有魔石 45138 500 1750
+block Item 45138 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45138 >=1
+			 KillItem 45138
+	 	 	 AddGold 1750 
+	 	 Window_NO 
+################### 有魔石 45139 500 1750
+block Item 45139 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45139 >=1
+			 KillItem 45139
+	 	 	 AddGold 1750 
+	 	 Window_NO 
+################### 有魔石 45140 500 1750
+block Item 45140 >=1	 	 	 
+	 ##1100727	\n\n你确定要将魔石卖给我吗？
+	 Window 1100727,YES,NO 
+		 Window_YES Item 45140 >=1
+			 KillItem 45140
+	 	 	 AddGold 1750 
+	 	 Window_NO 
+
+################### 身上全空
+block ItemSpace == 20
+	 ##1100728	\n\n魔石都卖完了，\n就叫瑞克带你出去吧！
+	 EndWindow 1100728
+	 
+################### 一般
+block 
+	 ##1100729	\n\n喂！我只收购魔石！\n别的东西我是不收的！
+	 EndWindow 1100729

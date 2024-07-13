@@ -1,0 +1,356 @@
+
+
+block Item 607696 >= 5
+
+
+			LocalCount2 = 0
+
+
+			Window 3201020,yes,no
+		#\n\n﹛云户匹午丹仍介中引允﹝\n﹛奶戊件及苂井曰据毛\n﹛诡呦动晓云儅切匹允友〝\n﹛峇褪及袱第据午跟晶中凶仄引允井〝
+
+
+				window_yes Item 607696 < 5
+
+					Window 3201021,ok
+		#\n\n﹛云支〝\n﹛诡呦云儅切匹卅中匹允友〝\n﹛撩斪中凶仄引仄凶﹝
+					
+					window_ok
+					
+
+				window_yes ItemSpace == 0
+
+					Window 3201022,ok
+		#\n\n﹛云支〝\n﹛儅切坁互中匀天中及方丹匹允友〝
+					
+					window_ok
+
+
+				window_yes
+
+					Window 3201023,next
+		#\n\n﹛公木匹反﹜峇褪及袱第据毛云欐仄仄引允﹝
+
+					Window 3201024,next
+		#\n\n﹛仇及袱第据毛儅匀化\n﹛挃及离锉敢卞狪仄井仃化仁分今中﹝
+
+					Window 3201025,next
+		#\n\n﹛丐午﹜锉毛云欐仄匹五月及反\n﹛幼伙玉穴旦正□及杅卞蜃日六化中凶分五引允﹝
+
+
+					Window 3201026,ok
+		#\n\n﹛离锉敢卞狪仄井仃月端卞﹜峇褪及袱第据反﹜\n﹛幼伙玉穴旦正□及杅互\n﹛云儅切卞卅匀化中化票今中﹝
+
+					window_ok
+
+					KillItem 607696,5
+					GiveItem 607630,1
+
+						 
+
+
+
+				window_no
+
+					Window 3201027,ok
+		#\n\n﹛跟晶仄凶中午五反\n﹛中勾匹手仍迕抰仁分今中﹝
+					
+					window_ok
+
+						 
+
+
+
+block Item 607631 >= 50
+
+
+
+
+
+
+			Window 3201028,yes,no
+		#\n\n﹛云户匹午丹仍介中引允﹝\n﹛交伙弘螃及奶戊件毛\n﹛ㄤㄟ动晓云儅切匹允友〝\n﹛峇褪及袱第据午跟晶中凶仄引允井〝
+
+
+				window_yes Item 607631 < 50
+
+					Window 3201029,ok
+		#\n\n﹛云支〝\n﹛ㄤㄟ卞箫曰化中卅井匀凶方丹匹允友﹝\n﹛撩斪中凶仄引仄凶﹝
+					
+					window_ok
+					
+
+				window_yes ItemSpace == 0
+
+					Window 3201030,ok
+		#\n\n﹛云支〝\n﹛儅切坁互中匀天中及方丹匹允友〝
+					
+					window_ok
+
+
+
+				window_yes
+
+
+					Window 3201031,next
+		#\n\n﹛公木匹反﹜峇褪及袱第据毛云欐仄仄引允﹝
+
+					Window 3201032,next
+		#\n\n﹛仇及袱第据毛儅匀化\n﹛挃及离锉敢卞狪仄井仃化仁分今中﹝
+
+					Window 3201033,next
+		#\n\n﹛丐午﹜锉毛云欐仄匹五月及反\n﹛幼伙玉穴旦正□及杅卞蜃日六化中凶分五引允﹝
+
+
+					Window 3201034,ok
+		#\n\n﹛离锉敢卞狪仄井仃月端卞﹜峇褪及袱第据反﹜\n﹛幼伙玉穴旦正□及杅互\n﹛云儅切卞卅匀化中化票今中﹝
+
+
+					window_ok
+
+					KillItem 607631,50
+					GiveItem 607630,1
+
+						 
+
+
+
+				window_no
+
+					Window 3201035,ok
+		#\n\n﹛公丹匹允井﹝\n﹛拑咥雄中反中凶仄引六氏﹝
+					
+					window_ok
+
+
+						 
+
+
+
+
+block Item 607631 >= 1
+
+
+		if Item 607631 >= 10
+
+					LocalCount2 = 0
+
+
+			Window 3201036,yes,no
+		#\n\n﹛交伙弘螃及奶戊件毛\n﹛ㄠㄟ动晓云儅切匹允友〝\n﹛中匀凶氏仇切日匹云苂井曰仄引允井〝
+
+
+				window_yes Item 607631 < 10
+
+					Window 3201037,ok
+		#\n\n﹛云支〝\n﹛ㄠㄟ卞箫曰化中卅井匀凶方丹匹允友﹝\n﹛撩斪中凶仄引仄凶﹝
+					
+					window_ok
+					
+
+				window_yes ItemSpace == 0
+
+					Window 3201038,ok
+		#\n\n﹛云支〝\n﹛儅切坁互中匀天中及方丹匹允友〝
+					
+					window_ok
+
+
+
+				window_yes
+
+					Window 3201039,next
+		#\n\n﹛公木匹反﹜苂井曰据毛云儅切仁分今中﹝
+
+					Window 3201040,next
+		#\n\n﹛仇及苂井曰据反﹜\n﹛中勾匹手奶戊件午跟晶中凶仄引允﹝
+
+					Window 3201041,ok
+		#\n\n﹛引凶﹜苂井曰据及引引匹手\n﹛诡呦螂户木壬\n﹛峇褪及袱第据午跟晶中凶仄引允﹝
+
+
+
+					window_ok
+
+					KillItem 607631,10
+					GiveItem 607696,1
+
+					LocalCount2 = 10
+
+
+				window_no
+
+					Window 3201042,ok
+		#\n\n﹛公丹匹允井﹝\n﹛拑咥雄中反中凶仄引六氏﹝
+					
+					window_ok
+					
+
+						 
+
+
+		else
+
+					LocalCount2 = 0
+
+					Window 3201043,ok
+		#\n\n﹛奶戊件毛云螂户卞卅匀化中月及匹允友〝\n﹛ㄠㄟ签匏匹﹜仇切日匹云苂井曰允月仇午手\n﹛匹五引允方﹝
+					
+					
+					window_ok
+					
+
+						 
+
+
+		endif
+
+
+
+if LocalCount2 != 10
+
+	if Item 607696 >= 1
+
+
+		Window 3201044,yes,no
+		#\n\n﹛奶戊件及苂井曰据毛\n﹛交伙弘及奶戊件午跟晶中凶仄引允井〝
+
+
+				window_yes Item 607696 < 1
+
+					Window 3201045,ok
+		#\n\n﹛云支〝\n﹛苂井曰据毛云儅切匹卅中匹允友〝\n﹛撩斪中凶仄引仄凶﹝
+					
+					window_ok
+					
+
+				window_yes ItemSpace == 0
+
+					Window 3201046,ok
+		#\n\n﹛云支〝\n﹛儅切坁互中匀天中及方丹匹允友〝
+					
+					window_ok
+						 
+
+
+				window_yes
+
+					Window 3201047,ok
+		#\n\n﹛公木匹反﹜交伙弘及奶戊件毛云欐仄仄引允﹝
+
+					window_ok
+
+					KillItem 607696,1
+					GiveItem 607631,10
+
+						 
+
+
+				window_no
+
+					Window 3201048,ok
+		#\n\n﹛公丹匹允井﹝\n﹛拑咥雄中反中凶仄引六氏﹝
+					
+					window_ok
+
+	endif
+
+endif
+
+
+block Item 607696 >= 1
+
+
+
+
+
+		Window 3201049,yes,no
+		#\n\n﹛奶戊件及苂井曰据毛\n﹛交伙弘及奶戊件午跟晶中凶仄引允井〝
+
+
+				window_yes Item 607696 < 1
+
+					Window 3201050,ok
+		#\n\n﹛云支〝\n﹛苂井曰据毛云儅切匹卅中匹允友〝\n﹛撩斪中凶仄引仄凶﹝
+					
+					window_ok
+					
+
+
+				window_yes ItemSpace == 0
+
+					Window 3201051,ok
+		#\n\n﹛云支〝\n﹛儅切坁互中匀天中及方丹匹允友〝
+					
+					window_ok
+
+
+
+				window_yes
+
+					Window 3201052,ok
+		#\n\n﹛公木匹反﹜交伙弘及奶戊件毛云欐仄仄引允﹝
+
+					window_ok
+
+					KillItem 607696,1
+					GiveItem 607631,10
+
+						 
+
+
+				window_no
+
+					Window 3201053,ok
+		#\n\n﹛公丹匹允井﹝\n﹛拑咥雄中反中凶仄引六氏﹝
+					
+					window_ok
+
+
+
+
+block
+
+			Window 3201054,yes,no
+		#\n\n﹛擎昵螃及蹋曰仄蕙凶卅抰﹜\n﹛仍饬怗反仍介中引六氏井〝
+
+
+				window_yes
+
+					Window 3201055,next
+		#\n\n﹛侹切凶螃匹丐月伉任尼伉它旦互\n﹛呺坁毛戏心请仄凶迋卞﹜\n﹛哗踹绍氘及擎昵螃手﹜引凶﹜\n﹛蕙凶卅戏抰毛综曰引仄凶﹝\n﹛凶分仄﹜杴读反菅﹝\n﹛仇及壑钗毛剂仄匹手恌五杅尺⑼仁凶户﹝
+
+
+					Window 3201056,next
+		#\n\n﹛脱★反﹜仇及蕙凶卅绣箕毛圈戈\n﹛峇褪毛邀仄化中引允﹝\n﹛幼伙玉毛扪采今木化中月杅卅日\n﹛?日毛幼伙玉伙□丞匹圈化月仇午互第チ匹允﹝\n﹛中井互匹允井〝
+
+
+					Window 3201057,next
+		#\n\n﹛仍涡侗匹仄凶日﹜\n﹛樯﹜仇及哗毛潮匀化祯仃辣匀凶午蜕歹木月\n﹛交伙弘螃及豢塘及奶戊件﹜\n﹛公木毛﹜ㄤㄟ﹜螂户化票今中﹝
+
+					Window 3201058,next
+		#\n\n﹛公木午娄五晶尹卞\n﹛峇褪及袱第据毛云欐仄谯仄引允﹝\n﹛公木毛儅匀化﹜\n﹛云挃及离锉敢卞狪仄井仃化仁分今中﹝
+
+
+					Window 3201059,next
+		#\n\n﹛丐午﹜锉毛云欐仄匹五月及反\n﹛幼伙玉穴旦正□及杅卞蜃日六化中凶分五引允﹝
+
+					Window 3201060,ok
+		#\n\n﹛离锉敢卞狪仄井仃月端卞﹜峇褪及袱第据反﹜\n﹛幼伙玉穴旦正□及杅互\n﹛云儅切卞卅匀化中化票今中﹝
+
+
+
+						window_ok
+
+				window_no
+
+
+					Window 3201061,ok
+		#\n\n﹛公丹匹允井﹝\n﹛拑咥雄中反中凶仄引六氏﹝
+					
+					window_ok
+
+
+
+
+

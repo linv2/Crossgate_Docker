@@ -1,0 +1,444 @@
+#旦正件皿失奶泛丞喂蛹NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛＞反元户化及云勾井中＝及摒
+
+###﹛抩铜毛呁醒赭儅
+block Item_607904 >= 2
+	EndWindow 3200890
+		#\n\n﹛伙左□弘及抩铜互呁醒丐月午质咥匹五引六氏﹝
+
+
+
+###﹛抩铜毛尕赭儅
+block Item_607904 <= 0
+	EndWindow 3200891
+		#\n\n﹛伙左□弘及抩铜互卅中及匹质咥匹五引六氏﹝
+
+
+
+###﹛惘弁伉永弁
+
+block StrCmpChat == R
+	EndWindow 3200892
+		#\n\n﹛旦正件皿醒及喂蛹毛仄引允﹝\n﹛旦正件皿醒毛中仁勾卞仄凶中及井﹜ㄟ井日ㄤ及\n﹛?剩醒侬匹民乓永玄じ恘仄化仁分今中﹝
+
+
+
+###﹛ㄟ毛じ恘
+
+block StrCmpChat == 3004930
+
+	If StampCount_607904 == 0
+		EndWindow 3200893
+		#\n\n﹛蜇箕及旦正件皿醒反ㄟ匹允﹝\n﹛庍凳及优邰反丐曰引六氏﹝
+		EndBlock
+
+	else
+		If StampCount_607904 == 1
+			Window 3200894,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄠ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄟ卞庍凳仄引允﹝
+				Window_OK
+					AddStampCount 607904,-1
+					EndBlock
+
+		else
+			If StampCount_607904 == 2
+				Window 3200895,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄡ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄟ卞庍凳仄引允﹝
+					Window_OK
+						AddStampCount 607904,-2
+						EndBlock
+
+			else
+				If StampCount_607904 == 3
+					Window 3200896,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄢ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄟ卞庍凳仄引允﹝
+						Window_OK
+							AddStampCount 607904,-3
+							EndBlock
+
+				else
+					If StampCount_607904 == 4
+						Window 3200897,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄣ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄟ卞庍凳仄引允﹝
+							Window_OK
+								AddStampCount 607904,-4
+								EndBlock
+
+					else
+						If StampCount_607904 == 5
+							Window 3200898,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄤ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄟ卞庍凳仄引允﹝
+								Window_OK
+									AddStampCount 607904,-5
+									EndBlock
+
+						else
+							EndWindow 3200899
+		#\n\n﹛旦正件皿醒互ㄤ毛译尹化中引允﹝\n﹛ゴ及凶户﹜公及抩铜反ハ滋仄化仁分今中﹝
+							EndBlock
+
+						endif
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+
+###﹛ㄠ毛じ恘
+
+block StrCmpChat == 3004921
+
+	If StampCount_607904 == 0
+		Window 3200900,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄟ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄠ卞庍凳仄引允﹝
+			Window_OK
+				AddStampCount 607904,+1
+				EndBlock
+
+	else
+		If StampCount_607904 == 1
+			EndWindow 3200901
+		#\n\n﹛蜇箕及旦正件皿醒反ㄠ匹允﹝\n﹛庍凳及优邰反丐曰引六氏﹝
+			EndBlock
+
+		else
+			If StampCount_607904 == 2
+				Window 3200902,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄡ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄠ卞庍凳仄引允﹝
+					Window_OK
+						AddStampCount 607904,-1
+						EndBlock
+
+			else
+				If StampCount_607904 == 3
+					Window 3200903,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄢ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄠ卞庍凳仄引允﹝
+						Window_OK
+							AddStampCount 607904,-2
+							EndBlock
+
+				else
+					If StampCount_607904 == 4
+						Window 3200904,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄣ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄠ卞庍凳仄引允﹝
+							Window_OK
+								AddStampCount 607904,-3
+								EndBlock
+
+					else
+						If StampCount_607904 == 5
+							Window 3200905,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄤ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄠ卞庍凳仄引允﹝
+								Window_OK
+									AddStampCount 607904,-4
+									EndBlock
+
+						else
+							EndWindow 3200906
+		#\n\n﹛旦正件皿醒互ㄤ毛译尹化中引允﹝\n﹛ゴ及凶户﹜公及抩铜反ハ滋仄化仁分今中﹝
+							EndBlock
+
+						endif
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+
+###﹛ㄡ毛じ恘
+
+block StrCmpChat == 3004922
+
+	If StampCount_607904 == 0
+		Window 3200907,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄟ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄡ卞庍凳仄引允﹝
+			Window_OK
+				AddStampCount 607904,+2
+				EndBlock
+
+	else
+		If StampCount_607904 == 1
+			Window 3200908,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄠ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄡ卞庍凳仄引允﹝
+				Window_OK
+					AddStampCount 607904,+1
+					EndBlock
+
+		else
+			If StampCount_607904 == 2
+				EndWindow 3200909
+		#\n\n﹛蜇箕及旦正件皿醒反ㄡ匹允﹝\n﹛庍凳及优邰反丐曰引六氏﹝
+				EndBlock
+
+			else
+				If StampCount_607904 == 3
+					Window 3200910,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄢ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄡ卞庍凳仄引允﹝
+						Window_OK
+							AddStampCount 607904,-1
+							EndBlock
+
+				else
+					If StampCount_607904 == 4
+						Window 3200911,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄣ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄡ卞庍凳仄引允﹝
+							Window_OK
+								AddStampCount 607904,-2
+								EndBlock
+
+					else
+						If StampCount_607904 == 5
+							Window 3200912,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄤ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄡ卞庍凳仄引允﹝
+								Window_OK
+									AddStampCount 607904,-3
+									EndBlock
+
+						else
+							EndWindow 3200913
+		#\n\n﹛旦正件皿醒互ㄤ毛译尹化中引允﹝\n﹛ゴ及凶户﹜公及抩铜反ハ滋仄化仁分今中﹝
+							EndBlock
+
+						endif
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+
+###﹛ㄢ毛じ恘
+
+block StrCmpChat == 3004923
+
+	If StampCount_607904 == 0
+		Window 3200914,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄟ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄢ卞庍凳仄引允﹝
+			Window_OK
+				AddStampCount 607904,+3
+				EndBlock
+
+	else
+		If StampCount_607904 == 1
+			Window 3200915,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄠ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄢ卞庍凳仄引允﹝
+				Window_OK
+					AddStampCount 607904,+2
+					EndBlock
+
+		else
+			If StampCount_607904 == 2
+				Window 3200916,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄡ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄢ卞庍凳仄引允﹝
+					Window_OK
+						AddStampCount 607904,+1
+						EndBlock
+
+			else
+				If StampCount_607904 == 3
+					EndWindow 3200917
+		#\n\n﹛蜇箕及旦正件皿醒反ㄢ匹允﹝\n﹛庍凳及优邰反丐曰引六氏﹝
+					EndBlock
+
+				else
+					If StampCount_607904 == 4
+						Window 3200918,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄣ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄢ卞庍凳仄引允﹝
+							Window_OK
+								AddStampCount 607904,-1
+								EndBlock
+
+					else
+						If StampCount_607904 == 5
+							Window 3200919,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄤ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄢ卞庍凳仄引允﹝
+								Window_OK
+									AddStampCount 607904,-2
+									EndBlock
+
+						else
+							EndWindow 3200920
+		#\n\n﹛旦正件皿醒互ㄤ毛译尹化中引允﹝\n﹛ゴ及凶户﹜公及抩铜反ハ滋仄化仁分今中﹝
+							EndBlock
+
+						endif
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛ㄣ毛じ恘
+
+block StrCmpChat == 3004924
+
+	If StampCount_607904 == 0
+		Window 3200921,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄟ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄣ卞庍凳仄引允﹝
+			Window_OK
+				AddStampCount 607904,+4
+				EndBlock
+
+	else
+		If StampCount_607904 == 1
+			Window 3200922,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄠ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄣ卞庍凳仄引允﹝
+				Window_OK
+					AddStampCount 607904,+3
+					EndBlock
+
+		else
+			If StampCount_607904 == 2
+				Window 3200923,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄡ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄣ卞庍凳仄引允﹝
+					Window_OK
+						AddStampCount 607904,+2
+						EndBlock
+
+			else
+				If StampCount_607904 == 3
+					Window 3200924,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄢ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄣ卞庍凳仄引允﹝
+						Window_OK
+							AddStampCount 607904,+1
+							EndBlock
+
+				else
+					If StampCount_607904 == 4
+						EndWindow 3200925
+		#\n\n﹛蜇箕及旦正件皿醒反ㄣ匹允﹝\n﹛庍凳及优邰反丐曰引六氏﹝
+						EndBlock
+
+					else
+						If StampCount_607904 == 5
+							Window 3200926,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄤ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄣ卞庍凳仄引允﹝
+								Window_OK
+									AddStampCount 607904,-1
+									EndBlock
+
+						else
+							EndWindow 3200927
+		#\n\n﹛旦正件皿醒互ㄤ毛译尹化中引允﹝\n﹛ゴ及凶户﹜公及抩铜反ハ滋仄化仁分今中﹝
+							EndBlock
+
+						endif
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛ㄤ毛じ恘
+
+block StrCmpChat == 3004925
+
+	If StampCount_607904 == 0
+		Window 3200928,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄟ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄤ卞庍凳仄引允﹝
+			Window_OK
+				AddStampCount 607904,+5
+				EndBlock
+
+	else
+		If StampCount_607904 == 1
+			Window 3200929,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄠ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄤ卞庍凳仄引允﹝
+				Window_OK
+					AddStampCount 607904,+4
+					EndBlock
+
+		else
+			If StampCount_607904 == 2
+				Window 3200930,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄡ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄤ卞庍凳仄引允﹝
+					Window_OK
+						AddStampCount 607904,+3
+						EndBlock
+
+			else
+				If StampCount_607904 == 3
+					Window 3200931,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄢ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄤ卞庍凳仄引允﹝
+						Window_OK
+							AddStampCount 607904,+2
+							EndBlock
+
+				else
+					If StampCount_607904 == 4
+						Window 3200932,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄣ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄤ卞庍凳仄引允﹝
+							Window_OK
+								AddStampCount 607904,+1
+								EndBlock
+
+					else
+						If StampCount_607904 == 5
+							EndWindow 3200933
+		#\n\n﹛蜇箕及旦正件皿醒反ㄤ匹允﹝\n﹛庍凳及优邰反丐曰引六氏﹝
+							EndBlock
+
+						else
+							EndWindow 3200934
+		#\n\n﹛旦正件皿醒互ㄤ毛译尹化中引允﹝\n﹛ゴ及凶户﹜公及抩铜反ハ滋仄化仁分今中﹝
+							EndBlock
+
+						endif
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛公木动陆
+
+block
+	EndWindow 3200935
+		#\n\n﹛窒毛蜕匀化中月及井歹井曰引六氏﹝
+
+

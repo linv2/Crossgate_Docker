@@ -1,0 +1,9 @@
+#1111823	\n\n\n\n@c原来是这样吧～进去吧～。	
+#1111828	\n\n\n\n@c未经许可不得擅入。
+block item 41309 >0
+	window 1111823,ok
+	window_ok
+	warp 0,31805,15,16
+	endblock
+block
+	endwindow 1111828

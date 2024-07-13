@@ -1,0 +1,26 @@
+#’˝…˙—®∆π∑¬°ı€Õæﬁµ©–˛°∞∑∏µ©∆πµ©º∞Ö|ñâ
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©xƒÃ√¨º˛–˛Ò◊µÊ·N√´É}‘»ªØ÷–‘¬©x##############
+block Item 18790 >= 1 || Item 18791 >= 1 || Item 18792 >= 1 || Item 18793 >= 1 || Item 18794 >= 1 || nowevent36 == 1 || nowevent37 == 1 || endevent36 == 1 || endevent37 == 1
+	EndWindow 206054,OK
+
+###########©xnowflg35©x##############
+block nowevent35 == 1 || endevent35 == 1
+
+	Window 206055,YES,NO
+	Window_YES
+	Window 206056,OK
+	Window_OK Itemspace >= 1
+	GiveItem 18790
+	Window_OK Itemspace == 0
+	EndWindow 206147,OK
+	Window_NO
+	EndWindow 206057,OK
+
+###########©x÷œ ÷ÿ¶ÿ∆©x##############
+block
+
+	EndWindow 206054,OK
+

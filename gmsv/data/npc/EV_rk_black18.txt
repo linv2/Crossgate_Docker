@@ -1,0 +1,15 @@
+#å±žâ©jÔ‰©k
+
+block Item 16425 >= 1 && ItemCreateTime 16425 <= 60
+	Window 22973,OK
+		Window_OK
+			KillItemAll 16425,(4416)
+			LeaveGroup
+			Warp 0,43830,15,15
+
+block
+	Window 22974,OK
+		Window_OK
+			KillItemAll 16425,(4417)
+			LeaveGroup
+			Warp 0,43820,40,41

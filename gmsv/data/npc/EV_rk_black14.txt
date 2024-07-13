@@ -1,0 +1,41 @@
+#Ì¾»Ô±¾ÛÍ¶ªÐþ¼°ÈÛ
+
+block
+	Window 22954,Next
+	Window 22955,Next
+	Window 22956,Next
+	Window 22957,Next
+	Window 22958,Next
+	Window 22959,Next
+	Window 22960,Next
+	Window 22961,Next
+	Window 22962,Next
+	Window 22963,Next
+	Window 22964,Next
+	Window 22965,Next
+	Window 22966,Next
+	Window 22967,OK
+		Window_OK Item 16423 >= 1
+			EndEvent 140 = 0
+			NowEvent 140 = 0
+			EndEvent 141 = 0
+			EndEvent 142 = 0
+			EndEvent 143 = 1
+			CheckTitle
+			KillItemAll 16423,(4415)
+			GiveItem 16424,1
+			LeaveGroup
+			Warp 0,1530,15,6
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK
+			EndEvent 140 = 0
+			NowEvent 140 = 0
+			EndEvent 141 = 0
+			EndEvent 142 = 0
+			EndEvent 143 = 1
+			CheckTitle
+			KillItemAll 16423,(4415)
+			GiveItem 16424,1
+			LeaveGroup
+			Warp 0,1530,15,6

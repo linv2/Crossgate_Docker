@@ -1,0 +1,753 @@
+#仿奶玉旦平伙凯丿弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛正丢打夫□项敢及摒
+
+###﹛旦平伙﹍仿奶母□﹎毛赭儅
+block SkillLevel_1009 >= 1
+	EndWindow 3204066
+
+		#\n\n﹛云支引丐﹜菁仄少曰分友之﹝\n﹛乒件旦正□卞仿奶玉匀化月井友之﹝\n﹛竣毛勾仃化佹莴允月氏分方予﹜它件它件＿﹝
+
+
+
+###﹛甩瓜左玉伉毛赭儅仄﹜仿奶玉项莲扱毛尕赭儅
+block PetLevel_304201 >= 1 && Item_607969 == 0
+	Window 3204067,NEXT
+
+		#\n\n﹛丐凶仄反友之﹜乒件旦正□卞仿奶玉曰凶中谛卞\n﹛仿奶玉月杅芊毛项尹月项敢卅氏分方予﹝\n﹛仿奶玉曰凶中卅日﹜引内反甩伉乩穴今氏井日﹜\n﹛镕ㄠ蟾闭项莲毛项歹匀化方友之﹜它件它件﹝\n﹛丐丐﹜公木午友之﹜
+	EndWindow 3204068
+
+		#\n\n﹛丐凶仄反镕ㄡ蟾闭及系癫卅氏分仃升友之﹜\n﹛镕ㄡ蟾闭反甩瓜左玉伉毛圈化月项莲分井日﹜\n﹛燮卞甩瓜左玉伉毛儅匀化中凶曰允月午\n﹛漱月氏分方予﹝\n﹛仿奶玉曰凶中卅日﹜竣毛勾仃化方友之﹝
+
+
+
+###﹛仿奶玉项莲扱毛呁醒赭儅
+block Item_607969 > 1
+	EndWindow 3204069
+
+		#\n\n﹛云件支引丐﹜项莲扱互呁醒丐月友之﹝\n﹛公木反引内中友之﹝\n﹛ㄠ骚分仃卞仄卅中午﹜项莲熬仃日木卅中方予﹜\n﹛它件它件﹝
+
+
+
+###﹛仿奶玉项莲扱毛ㄠ骚赭儅仄﹜旦正件皿≦20≧
+block Item_607969 == 1 && StampCount_607969 >= 20
+
+	If ItemCreateTime_607969 < 1440
+#	If ItemCreateTime_607969 < 5
+		EndWindow 3204070
+
+		#\n\n﹛云中云中﹜镀允亢月方予﹝\n﹛项莲及赏?互﹜引分引分卅氏分井日﹝\n﹛谛戏反﹜斗匀仁曰引匀凶曰忷引卅中午友之﹝
+		EndBlock
+
+	else
+		If PetLevel_304201 >= 10
+			Window 3204071,NEXT
+
+		#\n\n﹛苇仪分友之﹝\n﹛乒件旦正□圈岳及缰睿分方予﹜楝反﹝\n﹛仇木匹镕ㄡ蟾闭及项莲手宁伞分井日﹜\n﹛织仅及凛互侳凶氏分友之﹜云户匹午丹﹝
+			Window 3204072,YES,NO
+
+		#\n\n﹛午仇欠匹﹜旦平伙膜丿卞反6000?及云嗯午﹜\n﹛旦平伙旦夫永玄及坞五互ㄠ勾优邰卅氏分仃升﹜\n﹛公及迕啦反匹五化月井卅丑〝
+
+				Window_YES Item_607969 > 1
+					EndWindow 3204073
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+					EndBlock
+
+				Window_YES Item_607969 == 1 && StampCount_607969 >= 20 && PetLevel_304201 >= 10 && Gold >= 6000
+					Window 3204074,OK
+
+		#\n\n﹛丹氏丹氏﹜赏?互恌中氏分友尹﹝\n﹛公木卅日﹜佣仆壬翻仄﹜煦及跪卅氏分友之﹝\n﹛元扎丐﹜旦平伙穴旦正□及午仇欠尺霜月方予﹝
+
+						Window_OK Item_607969 > 1
+							EndWindow 3204075
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+							EndBlock
+
+						Window_OK Item_607969 == 1 && StampCount_607969 >= 20 && PetLevel_304201 >= 10 && Gold >= 6000
+							KillItemAll 607969
+							KillPetH 304201,10
+							LeaveGroup
+							Warp 0,59715,216,214
+							EndBlock
+
+						Window_OK Item_607969 == 1 && StampCount_607969 >= 20 && PetLevel_304201 >= 10
+							EndWindow 3204076
+
+		#\n\n﹛云件支﹜云嗯互箫曰卅中方丹分方﹝\n﹛轾仇丹匹云嗯互卅中午﹜漱匀切扎丹方予﹝
+							EndBlock
+
+						Window_OK Item_607969 == 1 && StampCount_607969 >= 20
+							EndWindow 3204077
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反蔽歹日卅中方予﹝
+							EndBlock
+
+						Window_OK Item_607969 == 1
+							EndWindow 3204078
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+							EndBlock
+
+						Window_OK
+							EndWindow 3204079
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+							EndBlock
+
+				Window_YES Item_607969 == 1 && StampCount_607969 >= 20 && PetLevel_304201 >= 10
+					EndWindow 3204080
+
+		#\n\n﹛云件支﹜云嗯互箫曰卅中方丹分方﹝\n﹛轾仇丹匹云嗯互卅中午﹜漱匀切扎丹方予﹝
+					EndBlock
+
+				Window_YES Item_607969 == 1 && StampCount_607969 >= 20
+					EndWindow 3204081
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反蔽歹日卅中方予﹝
+					EndBlock
+
+				Window_YES Item_607969 == 1
+					EndWindow 3204082
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+					EndBlock
+
+				Window_YES
+					EndWindow 3204083
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+					EndBlock
+
+				Window_NO
+					EndWindow 3204084
+
+		#\n\n﹛卅日﹜赏?毛仄化五化云仁木方友之﹝\n﹛公丹公丹﹜厘仪卅项莲扱午甩瓜左玉伉反﹜\n﹛卅仁今卅中方丹卞允月氏分方予﹝\n﹛元扎丐﹜谨匀化月方予﹝
+					EndBlock
+
+		else
+			If PetLevel_304201 >= 1
+				EndWindow 3204085
+
+		#\n\n﹛云支丑﹜公及阂反引分﹜伊矛伙ㄠㄟ卞\n﹛圈匀化中卅中友之﹝\n﹛分井日﹜项莲反戚卞褡户卅中方予﹝
+				EndBlock
+
+			else
+				EndWindow 3204086
+
+		#\n\n﹛云匀午匀午﹜云蟆今氏反仆化樊卅氏分友之﹜\n﹛甩瓜左玉伉互中卅中方予﹝\n﹛升仇匹云帢潮?仄化月及井卅丑﹝\n﹛甩永甩永甩永甩永＿﹝
+				EndBlock
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛仿奶玉项莲扱毛ㄠ骚赭儅仄﹜旦正件皿≦19≧
+block Item_607969 == 1 && StampCount_607969 == 19
+
+	If ItemCreateTime_607969 < 1440
+#	If ItemCreateTime_607969 < 5
+		EndWindow 3204087
+
+		#\n\n﹛云中云中﹜镀允亢月方予﹝\n﹛项莲及赏?互﹜引分引分卅氏分井日﹝\n﹛谛戏反﹜斗匀仁曰引匀凶曰忷引卅中午友之﹝
+		EndBlock
+
+		else
+			If PetLevel_304201 > 9
+			Window 3204088,NEXT
+
+		#\n\n﹛云支云支﹜内中少氏渲舰匀凶氏分友之﹝\n﹛公及阂反手丹﹜伊矛伙ㄨ毛译尹化月方予﹝\n﹛匹手友尹﹜公及阂及伊矛伙毛镀仁晓仆化手﹜\n﹛项莲反镀引匀凶曰仄卅中氏分方友之﹝
+			Window 3204089,OK
+
+		#\n\n﹛愈蔽ざ及翌锁反伊矛伙ㄠㄟ引匹卅氏分仃升﹜\n﹛允月仇午互﹜白白白﹜卅仁卅匀切扎匀凶友之﹝\n﹛公木匹手支匀天曰﹜项莲反ㄠざ詨分方予﹝
+
+				Window_OK Item_607969 > 1
+					EndWindow 3204090
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 19 && PetLevel_304201 > 9
+					AddStampCount 607969,+1
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 19
+					EndWindow 3204091
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反粮仃日木卅中方予﹝
+					EndBlock
+
+				Window_OK Item_607969 == 1
+					EndWindow 3204092
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3204093
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+					EndBlock
+
+		else
+			If PetLevel_304201 == 9
+				Window 3204094,NEXT
+
+		#\n\n﹛中支中支﹜普汋仄切扎丹友之﹜漪岭分友之﹝\n﹛中方中方戚互愈詨﹜公及阂毛伊矛伙ㄠㄟ卞仄化\n﹛苇六化云仁木方﹝
+				Window 3204095,OK
+
+		#\n\n﹛苇六卞侳月及反﹜手丹歹井匀化月方友之﹜\n﹛残ㄠざ凶匀化井日分方予﹝\n﹛方欠仄仁俇氏分方予﹝
+
+					Window_OK Item_607969 > 1
+						EndWindow 3204096
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 19 && PetLevel_304201 == 9
+						AddStampCount 607969,+1
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 19
+						EndWindow 3204097
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反粮仃日木卅中方予﹝
+						EndBlock
+
+					Window_OK Item_607969 == 1
+						EndWindow 3204098
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3204099
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+						EndBlock
+
+			else
+				If PetLevel_304201 >= 1
+					EndWindow 3204100
+
+		#\n\n﹛云支丑﹜公及阂反引分﹜伊矛伙ㄨ卞\n﹛圈匀化中卅中友之﹝\n﹛分井日﹜项莲反戚卞褡户卅中方予﹝
+					EndBlock
+
+				else
+					EndWindow 3204101
+
+		#\n\n﹛云匀午匀午﹜云蟆今氏反仆化樊卅氏分友之﹜\n﹛甩瓜左玉伉互中卅中方予﹝\n﹛升仇匹云帢潮?仄化月及井卅丑﹝\n﹛甩永甩永甩永甩永＿﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛仿奶玉项莲扱毛ㄠ骚赭儅仄﹜旦正件皿≦18≧
+block Item_607969 == 1 && StampCount_607969 == 18
+
+	If ItemCreateTime_607969 < 1440
+#	If ItemCreateTime_607969 < 5
+		EndWindow 3204102
+
+		#\n\n﹛云中云中﹜镀允亢月方予﹝\n﹛项莲及赏?互﹜引分引分卅氏分井日﹝\n﹛谛戏反﹜斗匀仁曰引匀凶曰忷引卅中午友之﹝
+		EndBlock
+
+	else
+		If PetLevel_304201 > 8
+			Window 3204103,NEXT
+
+		#\n\n﹛云支云支﹜内中少氏渲舰匀凶氏分友之﹝\n﹛公及阂反手丹﹜伊矛伙ㄧ毛译尹化月方予﹝\n﹛匹手友尹﹜公及阂及伊矛伙毛镀仁晓仆化手﹜\n﹛项莲反镀引匀凶曰仄卅中氏分方友之﹝
+			Window 3204104,OK
+
+		#\n\n﹛戚及项莲翌锁反伊矛伙ㄨ引匹卅氏分仃升﹜\n﹛允月仇午互﹜白白白﹜卅仁卅匀切扎匀凶友之﹝\n﹛公木匹手支匀天曰﹜项莲反ㄠざ詨分方予﹝
+
+				Window_OK Item_607969 > 1
+					EndWindow 3204105
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 18 && PetLevel_304201 > 8
+					AddStampCount 607969,+1
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 18
+					EndWindow 3204106
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反粮仃日木卅中方予﹝
+					EndBlock
+
+				Window_OK Item_607969 == 1
+					EndWindow 3204107
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3204108
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+					EndBlock
+
+		else
+			If PetLevel_304201 == 8
+				Window 3204109,NEXT
+
+		#\n\n﹛它件它件﹜切扎氏午圈匀化月﹝\n﹛楝反﹜乒件旦正□圈岳及琼谛分友之﹝\n﹛镕ㄡ蟾闭项莲手手丹剂仄匹蔽歹月井日﹜\n﹛仇及譬阂匹渲舰匀化云仁木方﹝
+				Window 3204110,OK
+
+		#\n\n﹛公欠公欠伊矛伙晓仆手厘庍分欠丹井日友之﹜\n﹛戚反伊矛伙ㄨ匹中中方﹝\n﹛元扎丐ㄠざ詨卞﹜俇氏分方予﹝
+
+					Window_OK Item_607969 > 1
+						EndWindow 3204111
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 18 && PetLevel_304201 == 8
+						AddStampCount 607969,+1
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 18
+						EndWindow 3204112
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反粮仃日木卅中方予﹝
+						EndBlock
+
+					Window_OK Item_607969 == 1
+						EndWindow 3204113
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3204114
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+						EndBlock
+
+			else
+				If PetLevel_304201 >= 1
+					EndWindow 3204115
+
+		#\n\n﹛云支丑﹜公及阂反引分﹜伊矛伙ㄧ卞\n﹛圈匀化中卅中友之﹝\n﹛分井日﹜项莲反戚卞褡户卅中方予﹝
+					EndBlock
+
+				else
+					EndWindow 3204116
+
+		#\n\n﹛云匀午匀午﹜云蟆今氏反仆化樊卅氏分友之﹜\n﹛甩瓜左玉伉互中卅中方予﹝\n﹛升仇匹云帢潮?仄化月及井卅丑﹝\n﹛甩永甩永甩永甩永＿﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛仿奶玉项莲扱毛ㄠ骚赭儅仄﹜旦正件皿≦17≧
+block Item_607969 == 1 && StampCount_607969 == 17
+
+	If ItemCreateTime_607969 < 1440
+#	If ItemCreateTime_607969 < 5
+		EndWindow 3204117
+
+		#\n\n﹛云中云中﹜镀允亢月方予﹝\n﹛项莲及赏?互﹜引分引分卅氏分井日﹝\n﹛谛戏反﹜斗匀仁曰引匀凶曰忷引卅中午友之﹝
+		EndBlock
+
+	else
+		If PetLevel_304201 > 6
+			Window 3204118,NEXT
+
+		#\n\n﹛云支云支﹜内中少氏渲舰匀凶氏分友之﹝\n﹛公及阂反手丹﹜伊矛伙ㄥ毛译尹化月方予﹝\n﹛匹手友尹﹜公及阂及伊矛伙毛镀仁晓仆化手﹜\n﹛项莲反镀引匀凶曰仄卅中氏分方友之﹝
+			Window 3204119,OK
+
+		#\n\n﹛戚及项莲翌锁反伊矛伙ㄧ引匹卅氏分仃升﹜\n﹛手匀午及氏太曰圈化化幻仄中卅丑﹝\n﹛元扎丐引凶﹜ㄠざ凶匀凶日侳化方﹜它件它件﹝
+
+				Window_OK Item_607969 > 1
+					EndWindow 3204120
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 17 && PetLevel_304201 > 6
+					AddStampCount 607969,+1
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 17
+					EndWindow 3204121
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反粮仃日木卅中方予﹝
+					EndBlock
+
+				Window_OK Item_607969 == 1
+					EndWindow 3204122
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3204123
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+					EndBlock
+
+		else
+			If PetLevel_304201 == 6
+				Window 3204124,OK
+
+		#\n\n﹛赐譬赐譬﹜仄匀井曰圈化化月友之﹝\n﹛漆荚及项莲手弁伉失分﹝戚及杴伓反伊矛伙ㄧ﹝\n﹛民尼永弁反﹜残ㄠざ凶匀化井日分方予﹝\n﹛元扎丐﹜俇氏分方予﹝
+
+					Window_OK Item_607969 > 1
+						EndWindow 3204125
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 17 && PetLevel_304201 == 6
+						AddStampCount 607969,+1
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 17
+						EndWindow 3204126
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反粮仃日木卅中方予﹝
+						EndBlock
+
+					Window_OK Item_607969 == 1
+						EndWindow 3204127
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3204128
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+						EndBlock
+
+			else
+				If PetLevel_304201 >= 1
+					EndWindow 3204129
+
+		#\n\n﹛云支丑﹜公及阂反引分﹜伊矛伙ㄥ卞\n﹛圈匀化中卅中友之﹝\n﹛分井日﹜项莲反戚卞褡户卅中方予﹝
+					EndBlock
+
+				else
+					EndWindow 3204130
+
+		#\n\n﹛云匀午匀午﹜云蟆今氏反仆化樊卅氏分友之﹜\n﹛甩瓜左玉伉互中卅中方予﹝\n﹛升仇匹云帢潮?仄化月及井卅丑﹝\n﹛甩永甩永甩永甩永＿﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛仿奶玉项莲扱毛ㄠ骚赭儅仄﹜旦正件皿≦16≧
+block Item_607969 == 1 && StampCount_607969 == 16
+
+	If ItemCreateTime_607969 < 1440
+#	If ItemCreateTime_607969 < 5
+		EndWindow 3204131
+
+		#\n\n﹛云中云中﹜镀允亢月方予﹝\n﹛项莲及赏?互﹜引分引分卅氏分井日﹝\n﹛谛戏反﹜斗匀仁曰引匀凶曰忷引卅中午友之﹝
+		EndBlock
+
+	else
+		If PetLevel_304201 > 4
+			Window 3204132,NEXT
+
+		#\n\n﹛云支云支﹜内中少氏渲舰匀凶氏分友之﹝\n﹛公及阂反手丹﹜伊矛伙ㄣ毛译尹化月方予﹝\n﹛匹手友尹﹜公及阂及伊矛伙毛镀仁晓仆化手﹜\n﹛项莲反镀引匀凶曰仄卅中氏分方友之﹝
+			Window 3204133,OK
+
+		#\n\n﹛戚及项莲翌锁反伊矛伙ㄥ引匹卅氏分仃升﹜\n﹛手匀午及氏太曰圈化化幻仄中卅丑﹝\n﹛元扎丐引凶﹜ㄠざ凶匀凶日侳化方﹜它件它件﹝
+
+				Window_OK Item_607969 > 1
+					EndWindow 3204134
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 16 && PetLevel_304201 > 4
+					AddStampCount 607969,+1
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 16
+					EndWindow 3204135
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反粮仃日木卅中方予﹝
+					EndBlock
+
+				Window_OK Item_607969 == 1
+					EndWindow 3204136
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3204137
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+					EndBlock
+
+		else
+			If PetLevel_304201 == 4
+				Window 3204138,OK
+
+		#\n\n﹛石永石永石永﹜切扎氏午圈匀化月友之﹝\n﹛峏ネ﹜峏ネ﹝元扎丐戚反﹜伊矛伙ㄥ分方予﹜\n﹛漆井日残ㄠざ詨卞友之﹝\n﹛俇氏分方予﹝
+
+					Window_OK Item_607969 > 1
+						EndWindow 3204139
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 16 && PetLevel_304201 == 4
+						AddStampCount 607969,+1
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 16
+						EndWindow 3204140
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反粮仃日木卅中方予﹝
+						EndBlock
+
+					Window_OK Item_607969 == 1
+						EndWindow 3204141
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3204142
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+						EndBlock
+
+			else
+				If PetLevel_304201 >= 1
+					EndWindow 3204143
+
+		#\n\n﹛云支丑﹜公及阂反引分﹜伊矛伙ㄣ卞\n﹛圈匀化中卅中友之﹝\n﹛分井日﹜项莲反戚卞褡户卅中方予﹝
+					EndBlock
+
+				else
+					EndWindow 3204144
+
+		#\n\n﹛云匀午匀午﹜云蟆今氏反仆化樊卅氏分友之﹜\n﹛甩瓜左玉伉互中卅中方予﹝\n﹛升仇匹云帢潮?仄化月及井卅丑﹝\n﹛甩永甩永甩永甩永＿﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛仿奶玉项莲扱毛ㄠ骚赭儅仄﹜旦正件皿≦15≧
+block Item_607969 == 1 && StampCount_607969 == 15
+
+	If ItemCreateTime_607969 < 1440
+#	If ItemCreateTime_607969 < 5
+		EndWindow 3204145
+
+		#\n\n﹛云中云中﹜镀允亢月方予﹝\n﹛项莲及赏?互﹜引分引分卅氏分井日﹝\n﹛谛戏反﹜斗匀仁曰引匀凶曰忷引卅中午友之﹝
+		EndBlock
+
+	else
+		If PetLevel_304201 > 2
+			Window 3204146,NEXT
+
+		#\n\n﹛云支云支﹜内中少氏渲舰匀凶氏分友之﹝\n﹛公及阂反手丹﹜伊矛伙ㄡ毛译尹化月方予﹝\n﹛匹手友尹﹜公及阂及伊矛伙毛镀仁晓仆化手﹜\n﹛项莲反镀引匀凶曰仄卅中氏分方友之﹝
+			Window 3204147,OK
+
+		#\n\n﹛戚及项莲翌锁反伊矛伙ㄣ引匹卅氏分仃升﹜\n﹛手匀午及氏太曰圈化化幻仄中卅丑﹝\n﹛元扎丐引凶﹜ㄠざ凶匀凶日侳化方﹜它件它件﹝
+
+				Window_OK Item_607969 > 1
+					EndWindow 3204148
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 15 && PetLevel_304201 > 2
+					AddStampCount 607969,+1
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 15
+					EndWindow 3204149
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反粮仃日木卅中方予﹝
+					EndBlock
+
+				Window_OK Item_607969 == 1
+					EndWindow 3204150
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3204151
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+					EndBlock
+
+		else
+			If PetLevel_304201 == 2
+				Window 3204152,NEXT
+
+		#\n\n﹛幻匀幻丹﹜方仁圈化凶友之﹝\n﹛它件它件﹜赐譬分方予﹝\n﹛公及譬阂匹﹜戚反伊矛伙ㄣ引匹圈化化﹜\n﹛洘木化五化俓仄中友之﹝
+				Window 3204153,OK
+
+		#\n\n﹛丐丐﹜洘木化仁月及反支匀天曰﹜\n﹛漆井日ㄠざ凶匀化井日分方﹝\n﹛俇氏分方予﹝
+
+					Window_OK Item_607969 > 1
+						EndWindow 3204154
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 15 && PetLevel_304201 == 2
+						AddStampCount 607969,+1
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 15
+						EndWindow 3204155
+
+		#\n\n﹛云件支﹜甩瓜左玉伉反升仇卞垫匀凶氏分中〝\n﹛丐及阂互中卅中午﹜项莲反粮仃日木卅中方予﹝
+						EndBlock
+
+					Window_OK Item_607969 == 1
+						EndWindow 3204156
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3204157
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+						EndBlock
+
+			else
+				If PetLevel_304201 >= 1
+					EndWindow 3204158
+
+		#\n\n﹛云支丑﹜公及阂反引分﹜伊矛伙ㄡ卞\n﹛圈匀化中卅中友之﹝\n﹛分井日﹜项莲反戚卞褡户卅中方予﹝
+					EndBlock
+
+				else
+					EndWindow 3204159
+
+		#\n\n﹛云匀午匀午﹜云蟆今氏反仆化樊卅氏分友之﹜\n﹛甩瓜左玉伉互中卅中方予﹝\n﹛升仇匹云帢潮?仄化月及井卅丑﹝\n﹛甩永甩永甩永甩永＿﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛仿奶玉项莲扱毛ㄠ骚赭儅仄﹜旦正件皿≦14≧
+block Item_607969 == 1 && StampCount_607969 == 14
+
+	If ItemCreateTime_607969 < 1440
+#	If ItemCreateTime_607969 < 5
+		EndWindow 3204160
+
+		#\n\n﹛云中云中﹜镀允亢月方予﹝\n﹛项莲及赏?互﹜引分引分卅氏分井日﹝\n﹛谛戏反﹜斗匀仁曰引匀凶曰忷引卅中午友之﹝
+		EndBlock
+
+	else
+		Window 3204161,NEXT
+
+		#\n\n﹛镕ㄠ蟾闭及膜弇腹烂卞宁伞仄凶谛分友之﹜\n﹛云户匹午今氏﹝\n﹛元扎丐﹜镕ㄡ蟾闭及项莲毛铵户方丹井友之﹜\n﹛它件它件﹝
+		Window 3204162,NEXT
+
+		#\n\n﹛镕ㄡ蟾闭反﹜仇木井日苂仃月甩瓜左玉伉毛\n﹛厘濠卞圈化月氏分友之﹝\n﹛仇及阂反允匀仍仁亥伐亥伐分井日﹜\n﹛舱褐卞圈化化俓仄中友之﹝
+		Window 3204163,OK
+
+		#\n\n﹛引内反仇及阂毛伊矛伙ㄡ引匹圈化化﹜\n﹛丐凶仄卞苇六卞侳化俓仄中友之﹝\n﹛丐丐﹜侳月及反﹜残ㄠざ凶匀化井日分方予﹝\n﹛方欠仄仁友之﹜它件它件﹝
+
+			Window_OK Item_607969 > 1
+				EndWindow 3204164
+
+		#\n\n﹛云件支﹜项莲扱互喂尹凶友之﹝\n﹛升匀切互呿坁井友之﹝\n﹛歹井日卅中井日﹜项莲匹五卅中友之﹝
+				EndBlock
+
+			Window_OK PetLevel_304201 >= 1
+				EndWindow 3204165
+
+		#\n\n﹛云件支﹜丐凶仄反手丹﹜云蟆今氏卞\n﹛甩瓜左玉伉毛苂仃化凶氏分友之﹝\n﹛苂仃月甩瓜左玉伉反ㄠ谛ㄠ⑵卞仄卅中午﹜\n﹛丐午匹渔刭仄切扎丹方友之﹝
+
+			Window_OK Item_607969 == 1 && StampCount_607969 == 14 && PetSpace >= 1
+				GivePet 304200
+				AddStampCount 607969,+1
+				EndBlock
+
+			Window_OK Item_607969 == 1 && StampCount_607969 == 14
+				EndWindow 3204166
+
+		#\n\n﹛云支云支丑﹜云蟆今氏反﹜甩瓜左玉伉毛苂井月\n﹛芴春互卅中氏分友之﹝\n﹛乒件旦正□卞仿奶玉月竣卅日﹜坞仃化方友之﹝
+				EndBlock
+
+			Window_OK Item_607969 == 1
+				EndWindow 3204167
+
+		#\n\n﹛云件支﹜公及项莲扱﹜今匀五及午啜丹友之﹝\n﹛术伙毛允月谛卞反﹜项尹日木卅中友之﹜\n﹛它件它件﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3204168
+
+		#\n\n﹛云件支﹜项莲扱互壅尹凶友之﹝\n﹛元扎丐﹜项莲反粮仃日木卅中友之﹜它件它件﹝
+				EndBlock
+
+	endif
+
+
+
+###﹛仿奶玉项莲扱毛ㄠ骚赭儅仄﹜旦正件皿≦13≧动票
+block Item_607969 == 1 && StampCount_607969 < 14
+	EndWindow 3204169
+
+		#\n\n﹛云件支引丐﹜云蟆今氏反﹜引分镕ㄠ蟾闭项莲互\n﹛蔽歹匀化中卅中友之﹝\n﹛镕ㄠ蟾闭项莲互蔽歹匀化井日元扎卅中午﹜\n﹛丐凶仄及项莲反熬仃日木卅中方予﹜它件它件﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3204170
+
+		#\n\n﹛丐凶仄反友之﹜乒件旦正□卞仿奶玉曰凶中谛卞\n﹛仿奶玉月杅芊毛项尹月项敢卅氏分方予﹝\n﹛仿奶玉曰凶中卅日﹜引内反甩伉乩穴今氏井日﹜\n﹛镕ㄠ蟾闭项莲毛项歹匀化方友之﹜它件它件﹝
+
+
+

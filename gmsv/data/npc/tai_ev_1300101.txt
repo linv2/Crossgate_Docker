@@ -1,0 +1,34 @@
+################### 里欧波多洞窟入口 路霸
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 一般
+block 
+	 ##1200945	\n喂！\n这里是我看中的山洞，\n如果你想进去的话，\n就先交出过路费再说！	1
+	 Window 1200945,YES,NO 
+
+	 	 Window_YES Gold >=300 && Group ==1
+	 	 	 AddGold -300
+	 	 	 Warp 0,32511,2,29
+		 Window_YES Gold >=300	 	 	 
+			 ##1100642	\n\n喂！小子！\n叫你后面那些想偷渡的人死心吧！\n我今天可是瞪大了眼睛，\n不会再让他们混过去了！
+	 	 	 EndWindow 1100642
+
+		 Window_YES Gold < 300
+		 	 ##1200951	\n你这小子还真穷？！\n连个300块钱都没有？！	1		 	 
+		 	 EndWindow 1200951
+	 	 	 
+	 	 	 
+	 	 ##1200949	\n那就等你凑齐了300元，\n再来找我！	1
+	 	 Window_NO
+	 	 	 EndWindow 1200949
+
+
+
+

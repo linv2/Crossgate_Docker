@@ -1,0 +1,40 @@
+#瓜永扔它﹋示旦爵詨﹌
+#
+#
+#
+#
+
+Block GlobalFlag80 == 1
+
+		GAwindow 3205469,OK
+
+		#\n\n﹛升丹支日﹜支匀凶方丹分友﹝\n﹛狪仄凶中仇午互丐月＿＿﹝\n﹛分互﹜仇仇手元五卞旰莽允月﹝\n﹛引内反﹜疆请仄方丹﹝
+		
+		
+			Window_OK  PallgFlag80 == 0
+		
+			GAendWindow 3205470
+
+		#\n\n﹛氏〝\n﹛楝凶切及酦卞\n﹛爵匀化中卅中手及互中月友﹝
+		
+		
+			Window_OK
+			
+				GAGlobalFlag81 = 1
+				
+				warp 0,59520,195,99
+				
+				
+
+
+Block
+
+		window 3205471,OK
+
+		#\n\n﹛厘庍分″楝琼手⑧仆月氏分″
+		
+		Window_ok
+		
+		LeaveGroup
+		
+		warp 0,59520,195,99

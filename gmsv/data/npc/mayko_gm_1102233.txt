@@ -1,0 +1,14 @@
+#柯马特依港 港湾管理官		1102233
+block  	
+ 	Window 1102809,YES,NO 	
+		Window_NO
+ 		EndWindow 1102920
+ 		
+ 		Window_YES Gold >= 3000
+ 		AddGold -3000
+ 		LeaveGroup
+		Warp 0,32084,12,20
+		EndWindow 1102396
+
+ 		Window_YES
+ 		EndWindow 3 	

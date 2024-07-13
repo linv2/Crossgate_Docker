@@ -1,0 +1,25 @@
+##mayko_gm_1102793.txt  心急的男人  (奥玛)
+#1111821	\n\n\n　　　　唉～公主病了，\n　　　　得到城外的精灵之谷谷底，\n　　　　才能找到解药，你拿着药方单子去吧！！	
+#1111822	\n\n\n　　　　谢谢你带来药方，\n　　　　这是公主赠给您的，请收下吧。\n　　　　愿你能继续为公主效命。	
+#1111827	\n\n\n\n@c这段感情，终究是有缘无份～～～。	
+block Endevent 169 == 1
+	endwindow 1111827
+
+block item 41306 >0
+	killitem 41306,1
+	GiveLeak1Item  41310,1
+	Endevent 169 = 1
+	CheckTitle
+	endwindow 1111822
+block item 41309 >0
+	endwindow 1111818
+
+block item 41308 >0
+	killitem 41308,1
+	GiveLeak1Item  41309,1
+	endwindow 1111821
+
+
+block 
+	endwindow 1111827
+

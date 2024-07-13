@@ -1,0 +1,25 @@
+#初晴	mayko_gm_1051797.txt
+
+#1055900	\n\n\n\n@c不知道汐夏跟幸村过的好吗。	1
+#1055901	\n\n\n　　　　幸村，真是谢谢他，\n　　　　汐夏还在自责自己呀。	1
+#1055902	\n\n　　　　姐姐照顾妹妹是应该的，\n　　　　汐夏能够走出我因她而死的阴霾，\n　　　　我就可以安心了。	1
+#1055903	\n\n　　　　至于幸村，我只能说，\n　　　　谢谢他爱过我，\n　　　　愿他能找到更好的女孩。	1
+#1055904	\n\n\n　　　　这封信，\n　　　　麻烦您送给幸村吧。	1
+#1055905	\n\n\n\n@c希望他们两个能得到喜乐平安。	1
+
+
+block Item 47296>0
+	 EndWindow 1055905
+block Item 47755>0
+	 EndWindow 1055905
+block Item 47753>0 && Item 47754>0
+	 KillItem 47753,1
+	 KillItem 47754,1
+	
+	 GiveLeak1Item 47755,1	 
+	 Window 1055901,NEXT
+	 Window 1055902,NEXT
+	 Window 1055903,NEXT
+	 EndWindow 1055904
+block 
+	 EndWindow 1055900

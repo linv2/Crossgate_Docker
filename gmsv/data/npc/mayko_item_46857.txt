@@ -1,0 +1,163 @@
+#
+#杖之魂	46857
+#
+############################
+block  job> 243 && Job < 248 ## 御用~S3
+	##我是杖之魂！我将为你服务！(御用)
+	Window 1053317,OK
+ 		Window_OK item 46718>0 && item 46800 >0
+ 			##你现在有翔风之杖积木与说明书,要组合成翔风之杖吗？
+ 			Window 1053318,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46718<1 || item 46800 < 1|| item 46857<1
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46718,1	 	 	 
+	 	 	 	killitem 46800,1 
+	 	 	 	killitem 46857,1 
+	 	 	 	GiveLeak1Item 46831,1
+	 	 	 	##杖之魂、翔风之杖积木与说明书消失了！出现了翔风之杖。
+	 	 	 	EndWindow 1053319
+	 	 	 
+	 	 	 
+ 		Window_OK item 46719>0 && item 46801 >0
+
+ 		##你现在有流星之杖积木与说明书,要组合成流星之杖吗？
+ 			Window 1053320,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46719<1 || item 46801 < 1|| item 46857<1
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46719,1	 	 	 
+	 	 	 	killitem 46801,1 
+	 	 	 	killitem 46857,1 
+	 	 	 	GiveLeak1Item 46832,1	 	 
+	 	 	 	##杖之魂、流星之杖积木与说明书消失了！出现了流星之杖。
+	 	 	 	EndWindow 1053321
+	 	 	  		
+ 	
+ 		Window_OK item 46720>0 && item 46802 >0
+		####你现在有蚀月之杖积木与说明书,要组合成蚀月之杖吗？
+ 			Window 1053322,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46720<1 || item 46802 < 1 || item 46857<1
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46720,1	 	 	 
+	 	 	 	killitem 46802,1 
+	 	 	 	killitem 46857,1 	 	 	 
+	 	 	 	GiveLeak1Item 46833,1
+	 	 	 	##杖之魂、蚀月之杖积木与说明书消失了！出现了蚀月之杖。
+	 	 	 	EndWindow 1053323
+ 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290
+block  job==243
+	##我是杖之魂！我将为你服务！(资深段)
+	Window 1053317,OK
+ 		Window_OK item 46718>0 && item 46800 >0
+ 			##你现在有翔风之杖积木与说明书,要组合成翔风之杖吗？
+ 			Window 1053318,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46718<1 || item 46800 <1 || item 46857<1
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46718,1	 	 	 
+	 	 	 	killitem 46800,1 
+	 	 	 	killitem 46857,1 
+	 	 	 	GiveLeak1Item 46831,1
+	 	 	 	##杖之魂、翔风之杖积木与说明书消失了！出现了翔风之杖。
+	 	 	 	EndWindow 1053319
+	 	 	 
+	 	 	 
+ 		Window_OK item 46719>0 && item 46801 >0
+
+ 		##你现在有流星之杖积木与说明书,要组合成流星之杖吗？
+ 			Window 1053320,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46719<1 || item 46801 < 1|| item 46857<1
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46719,1	 	 	 
+	 	 	 	killitem 46801,1 
+	 	 	 	killitem 46857,1 
+	 	 	 	GiveLeak1Item 46832,1	 	 
+	 	 	 	##杖之魂、流星之杖积木与说明书消失了！出现了流星之杖。
+	 	 	 	EndWindow 1053321
+	 	 	  		
+ 	
+ 		Window_OK item 46720>0 && item 46802 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290		  	  
+block  job==242
+	##我是杖之魂！我将为你服务！(正值)
+	Window 1053317,OK
+ 		Window_OK item 46718>0 && item 46800 >0
+ 			##你现在有翔风之杖积木与说明书,要组合成翔风之杖吗？
+ 			Window 1053318,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46718<1 || item 46800 < 1|| item 46857<1
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46718,1	 	 	 
+	 	 	 	killitem 46800,1 
+	 	 	 	killitem 46857,1 
+	 	 	 	GiveLeak1Item 46831,1
+	 	 	 	##杖之魂、翔风之杖积木与说明书消失了！出现了翔风之杖。
+	 	 	 	EndWindow 1053319
+	 	 	 
+	 	 	 
+ 		Window_OK item 46719>0 && item 46801 >0
+
+ 		##你现在有流星之杖积木与说明书,要组合成流星之杖吗？
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	
+	 	 	  		
+ 	
+ 		Window_OK item 46720>0 && item 46802 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 		
+ 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290				 	      
+block  job==241
+	##你的能力并不能驾御我，请你多加努力！
+	EndWindow 1053291
+block  
+	##你并不是造杖职人，我无法为你服务！
+	EndWindow 1053316

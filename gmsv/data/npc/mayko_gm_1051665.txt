@@ -1,0 +1,70 @@
+
+###南瓜人
+#1054626	\n\n\n\n@c哈啰～万圣节快乐～
+#1054627	\n\n\n\n@c我想要砂糖，你有砂糖吗？
+#1054628	\n\n\n\n@c我想要糖果，你有糖果吗？
+#1054629	\n\n\n\n@c我想要艾夏糖，你有艾夏糖吗？
+#1054630	\n\n\n\n　　　都没有＼＿／，\n　　　不给糖就捣蛋！
+#1054631	\n\n\n\n@c你跟本没有呀～
+#1054636	\n\n\n\n@c谢谢～送你一张卡片。
+
+#47380
+#47381
+#47382
+#47383
+#47389
+#GiveLeak1Item (47380%1$1,47381%1$1,47382%1$1,47383%1$1,47389%1$1) 
+
+block 
+	 Window 1054626,NEXT 
+	 Window 1054627,YES,NO
+	  
+	 Window_YES Item 12411<1
+	 Window 1054631,OK
+	 Encount 2|||0|||||0|103143|||||||||	 
+	 Endblock
+	 Window_YES ItemSpace < 1 
+		##物品栏已满
+      	 EndWindow 1100001	 
+	 Window_YES 
+	 KillItem 12411,1
+	 GiveLeak1Item (47380%1$1,47381%1$1,47382%1$1,47383%1$1,47389%1$1) 
+	 EndWindow 1054636
+	 
+	 Window_NO 
+	 
+	 Window 1054628,YES,NO
+	 Window_YES Item 15200<1
+	 Window 1054631,OK
+	 Encount 2|||0|||||0|103143|||||||||	 
+	 Endblock	 
+	 Window_YES ItemSpace < 1 
+		##物品栏已满
+      	 EndWindow 1100001	 	 
+	 Window_YES 
+	 KillItem 15200,1
+	 GiveLeak1Item (47380%1$1,47381%1$1,47382%1$1,47383%1$1,47389%1$1) 
+	 EndWindow 1054636
+	 	 
+	 Window_NO 
+	 
+	 Window 1054629,YES,NO
+	 Window_YES Item 608604<1
+	 Window 1054631,OK
+	 Encount 2|||0|||||0|103143|||||||||	 
+	 Endblock	 
+	 Window_YES ItemSpace < 1 
+		##物品栏已满
+      	 EndWindow 1100001	 	 
+	 Window_YES 
+	 KillItem 608604,1
+	 GiveLeak1Item (47380%1$1,47381%1$1,47382%1$1,47383%1$1,47389%1$1) 
+	 EndWindow 1054636	 
+	 
+	 Window_NO
+	 
+	 Window 1054630,OK
+	 Window_OK
+	 Encount 2|||0|||||0|103143|||||||||	 
+	 Endblock
+

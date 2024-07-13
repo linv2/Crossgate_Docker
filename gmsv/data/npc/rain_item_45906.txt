@@ -1,0 +1,9 @@
+#######大宇周年庆任务
+#######使用道具后对话
+
+block
+	 ##1051993	\n\n把鼠王蛋糕吃掉了。
+	 Window 1051993,OK
+		window_ok
+	        killleak1item 45907
+	        GiveLeak1Item 45910

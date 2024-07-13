@@ -1,0 +1,13 @@
+##愚人节_可疑的石像
+block item 34552 >=1 && item 34553 >=1
+	window 1020488,yes,no
+		window_yes item 34552 >=1 && item 34553 >=1
+		LeaveGroup
+		warp 0,32723,97,97
+		window_no
+
+block item 34552 >=1
+	endwindow 1020489,ok
+
+block
+	endwindow 3006972,ok

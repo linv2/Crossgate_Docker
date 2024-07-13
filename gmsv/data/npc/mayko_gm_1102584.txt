@@ -1,0 +1,5 @@
+#mayko_gm_1102584.txt
+#1110511	\n\n　　　　这丫头真是可怜，\n　　　　一场莫明奇妙的火，\n　　　　把她家人全烧死了！	1
+block
+	 Window 1110511,NEXT
+	 EndWindow 1110514

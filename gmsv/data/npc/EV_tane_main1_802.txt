@@ -1,0 +1,22 @@
+
+block Xpos == 167 && Ypos == 92
+
+
+#	window 3200161,yes,no
+		#\n\n©x¢ò¿¬¼°ÓúÆ±åá±å–Ô»ÒıÔÊ¾®¨”
+
+	window 3200162,yes,no
+		#\n\n©x»©Ïş±å–Ô»ÒıÔÊ¾®¨”
+
+		window_yes
+
+#			warp 0,59707,252,182
+
+			warp 0,59502,150,131
+
+		window_no
+
+
+
+
+

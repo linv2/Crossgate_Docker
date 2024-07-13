@@ -1,0 +1,82 @@
+#
+#呺
+#
+
+block Item 607672 >= 1 || Item 607673 >= 1 || Item 607674 >= 1 || Item 607675 >= 1
+
+
+					Window 3200149,next
+		#\n\n﹛莽木化中月方丹﹜分午〝\n﹛歹仄及仁六卞瓜瓦手请侳氏支勾元扎﹝
+
+					endWindow 3200150
+		#\n\n﹛井仃日毛公欠尹化云仃壬\n﹛中勾井簿井互跶仄化仁木月元扎欠″\n﹛公氏仁日中﹜元少氏匹?蝇六中″″
+
+
+
+block Bimage == 101103
+
+	if LocalFlag25 != 1
+
+					Window 3200151,next
+		#\n\n﹛云﹜云云﹜云云\n﹛歹仄元扎﹜歹仄元扎﹜\n﹛谨匀化云匀凶冗″\n﹛谨匀凶呕?互丐匀凶﹝
+
+					Window 3200152,next
+		#\n\n﹛歹仄反撩ヘ仄凶互﹜\n﹛云蟆卅日﹜歹仄及蒂菜毛煤仆月元扎欠丹﹝\n﹛卅氏六﹜云蟆反歹仄卅氏元扎井日卅﹝
+
+					Window 3200153,next
+		#\n\n﹛歹仄及蒂菜毛敦岳今六日木月及反\n﹛歹仄分仃元扎﹝\n﹛云蟆反歹仄元扎井日﹜厘暹屺元扎″\n﹛歹仄及井歹曰卞交伙弘螃毛﹜仇仇卞″″\n﹛云云﹜云云云﹜云云＿＿
+
+
+
+					Window 3200154,next
+		#\n\n﹛歹仄匹丐月云蟆卞﹜\n﹛交伙弘螃井日么匀凶\n﹛螃及锉毛欐公丹﹝\n﹛丐午﹜交伙弘螃及汊唾毛剩戈\n﹛铨擎昵升手及恘毛苇⑨井允Ⅶ填手支月﹝
+
+
+					Window 3200155,ok
+		#\n\n﹛仇氏升反﹜丹引仁支月及元扎札﹜\n﹛歹仄匹丐月云蟆方＿＿仁仁仁﹜\n﹛夫扎℅反丐匀反反反反反″
+					
+					Window_ok Itemspace < 2
+
+						LocalFlag25 = 1
+						endWindow 3200156
+		#\n\n﹛歹仄及仁六卞棉?仃卅支勾元扎″″\n﹛き勾及手及毛欐公丹午中丹及卞\n﹛熬仃潸月芴春互卅中午反″
+
+					Window_ok
+
+					giveitem 14664,1
+					giveitem (607672%1,607673%1,607674%1,607675%1)
+
+					LeaveGroup
+					warp 0,59502,150,131
+
+	else
+
+					Window 3200157,next
+		#\n\n﹛歹仄匹丐月云蟆卞﹜\n﹛交伙弘螃井日么匀凶\n﹛螃及锉毛欐公丹﹝\n﹛丐午﹜交伙弘螃及汊唾毛剩戈\n﹛铨擎昵升手及恘毛苇⑨井允Ⅶ填手支月﹝
+
+
+					Window 3200158,ok
+		#\n\n﹛仇氏升反﹜丹引仁支月及元扎札﹜\n﹛歹仄匹丐月云蟆方＿＿仁仁仁﹜\n﹛夫扎℅反丐匀反反反反反″
+					
+					Window_ok Itemspace < 2
+
+						LocalFlag25 = 1
+						endWindow 3200159
+		#\n\n﹛歹仄及仁六卞棉?仃卅支勾元扎″″\n﹛き勾及手及毛欐公丹午中丹及卞\n﹛熬仃潸月芴春互卅中午反″
+
+					Window_ok
+
+					giveitem 14664,1
+					giveitem (607672%1,607673%1,607674%1,607675%1)
+
+					LeaveGroup
+					warp 0,59502,150,131
+
+
+	endif
+
+block
+
+						EndWindow 3200160
+		#\n\n﹛＿＿
+

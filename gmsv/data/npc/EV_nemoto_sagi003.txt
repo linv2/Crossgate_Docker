@@ -1,0 +1,135 @@
+###############################
+# 绒衔用芡旦平伙弁巨  by 漪呿 #
+# ←由伉末件(SkillMaster蟆)← #
+###############################
+
+#### 覆擂及缜仅匹丐月﹝//////热诸阁﹜粖诸阁﹜オ樊﹜阽曰阂﹜茧樱﹜营谛﹜枣赁屻﹜衔阁﹜五仇曰﹜润谛﹜驰屺﹋苇莲动晓﹌
+block JobAncestry == 80
+	GoToF case1
+	Endblock
+
+block JobAncestry == 130
+	GoToF case1
+	Endblock
+
+block JobAncestry == 150
+	GoToF case1
+	Endblock
+
+block JobAncestry == 160
+	GoToF case1
+	Endblock
+
+block JobAncestry == 410
+	GoToF case1
+	Endblock
+
+block JobAncestry == 420
+	GoToF case1
+	Endblock
+
+block JobAncestry == 430
+	GoToF case1
+	Endblock
+
+block JobAncestry == 440
+	GoToF case1
+	Endblock
+
+block JobAncestry == 450
+	GoToF case1
+	Endblock
+
+block JobAncestry == 460
+	GoToF case1
+	Endblock
+
+block JobAncestry == 470
+	GoToF case1
+	Endblock
+
+block JobAncestry == 480
+	GoToF case1
+	Endblock
+	
+block JobAncestry == 1010
+	GoToF case1
+	Endblock	
+
+
+
+
+#### ≦蕞?谛飓及丢乒≧毛赭儅
+*case1*
+	if Item 622034 >= 1
+		Window 3207624,YES,NO
+
+		#\n\n﹛云匀午﹜眸互?谛分匀化\n﹛田伊切引匀凶心凶中分卅﹝\n﹛升丹分中﹜仇仇匹苇⑧仄化仁木凶日﹜\n﹛眸及午匀化云五及绖毛\n﹛失件正卞项尹化支匀化手中中氏分互卅﹝
+
+######## NO蓟枪匹仿件母丞伐□皿
+			Window_NO
+				Window 3207625,OK
+
+		#\n\n﹛孔氏﹜恳聒普及茎及方丹卅蛊分卅﹝\n﹛失件正卞反撩侗仄凶兮﹝
+
+					Window_OK
+						KillItemAll 622034
+						LeaveGroup
+						warp 0,59844,135,82,0,59844,116,45,0,59844,97,42
+
+
+######## YES蓟枪﹜旦平伙穴旦正□蟆尺
+			Window_YES
+				Window 3207626,OK
+
+		#\n\n﹛中中友之﹜狪互镀中﹝\n﹛硫卞邋月兮″
+
+					Window_OK Item 622034 == 0
+						EndWindow 3207627
+
+		#\n\n﹛卅氏分井失件正﹜丹今氏仁今中卅﹝\n﹛支匀天曰仇及狪反卅仄卞仄化仁木﹝\n﹛今﹜坌井匀凶日午匀午午仇仇井日蛔匀化仁木﹝
+
+
+					Window_OK
+						KillItemAll 622034
+						LeaveGroup
+						warp 0,59843,131,51
+
+	else
+
+#### ≦?谛飓及丢乒≧毛赭儅
+	if Item 622033 >= 1
+		EndWindow 3207628
+
+		#\n\n﹛云﹜失件正井﹝\n﹛仇匀切卞反簿手中卅中心凶中分兮﹝
+
+	else
+
+#### 晓筏动陆
+
+	if
+		Window 3207629,NEXT
+
+		#\n\n﹛≦穴生穴生琐善≧及澎轼午五凶日幛中手氏分﹝\n﹛?谛反锹癫叶中蛊分午苇凶卅﹝\n﹛眸手动蟆卞﹜\n﹛蛊及澎卞井井匀凶仇午互丐匀凶氏分方﹝
+
+		EndWindow 3207630
+
+		#\n\n﹛蛊反眸及白伉毛仄化﹜\n﹛敛绊饕卞弗民乓永皿毛\n﹛厘恟卞镗妐仄凶日仄仁化卅﹝\n﹛罹屯化手罹屯化手蛹日卅中雯异﹝\n﹛笮酦卞垩木月玄穴玄及卞云中﹝\n﹛云井仆匹漆反玄穴玄毛苇月分仃匹\n﹛澎箫互觎尹月氏分兮﹝
+
+endif
+endif
+endif
+Endblock
+
+
+#### ?覆擂缜仅
+block
+	Window 3207631,NEXT
+
+		#\n\n﹛≦穴生穴生琐善≧及澎轼午五凶日幛中手氏分﹝\n﹛?谛反锹癫叶中蛊分午苇凶卅﹝\n﹛眸手动蟆卞﹜\n﹛蛊及澎卞井井匀凶仇午互丐匀凶氏分方﹝
+
+	EndWindow 3207632
+
+		#\n\n﹛蛊反眸及白伉毛仄化﹜\n﹛敛绊饕卞弗民乓永皿毛\n﹛厘恟卞镗妐仄凶日仄仁化卅﹝\n﹛罹屯化手罹屯化手蛹日卅中雯异﹝\n﹛笮酦卞垩木月玄穴玄及卞云中﹝\n﹛云井仆匹漆反玄穴玄毛苇月分仃匹\n﹛澎箫互觎尹月氏分兮﹝
+
+

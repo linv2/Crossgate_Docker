@@ -1,0 +1,19 @@
+###dodo_item_46878.txt
+###暗号纸条		点2下可以得到日月组织的暗号。
+###第二次的日月组织的暗号
+block Item 46878 >= 1 
+	 ##1053498	\n\n此张纸条具有自动保密的机能效果，\n阅读之后将会自动销毁，\n你是否要现在阅读此纸条？	1
+	 Window 1053498,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES 
+	 	 	 ##1053502	\n\n这次的密码是：\n日月团主千秋万世一统法兰。\n本纸条将会在5秒后自动销毁！	1
+			 Window 1053502,NEXT 
+			 Window 1051295,NEXT ##5
+			 Window 1051296,NEXT ##4
+			 Window 1051297,NEXT ##3
+			 Window 1051298,NEXT ##2
+			 Window 1051299,NEXT ##1
+			 Window 1051300,OK   ##～噗啾～
+			 	 Window_OK Item 46878 >= 1 
+			 	 	 KillItem 46878,(1053506) 
+			 	 	 

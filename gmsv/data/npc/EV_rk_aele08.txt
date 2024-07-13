@@ -1,0 +1,22 @@
+#
+#吽跸跟晶扑伙白
+#
+
+### 氘及账弁伉旦正伙毛儅匀化中卅中 ###
+block Item 9204 == 0
+#\n\n﹛账辑卅氘及弁伉旦正伙毛儅匀化中凶日歙匀化手日云丹午合匀化中凶氏分仃升＿\n﹛儅匀化中卅中心凶中友﹝
+ EndWindow 21374
+
+### 氘及账弁伉欐允〝 ###
+block
+#\n\n﹛公及账辑卅氘及弁伉旦正伙毛仇及Ⅱ楷卞旲仆化心卅中〝
+ Window 21375,Yes,No
+  Window_Yes Item 9204 >= 1
+#\n\n﹛丐曰互午丹″\n﹛云斪卞台井日切斤匀午仄凶皿伊未件玄毛丐仆月歹﹝
+   Window 21376,OK
+    Window_OK ItemSpace != 0 && Item 9204 >=1
+     KillItem 9204,1
+     GiveItem 18804,1
+###﹛失奶泛丞域ベ﹛###
+    Window_OK
+     Endwindow 10000

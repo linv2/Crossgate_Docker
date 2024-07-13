@@ -1,0 +1,80 @@
+
+
+
+
+
+block LocalCount7 == 5
+
+
+	if LocalCount6 == 5
+
+
+
+		LocalCount6 = random 3,0
+
+		if LocalCount6 == 3
+
+			Window 3200535,next
+		#\n\n﹛仇及晓丐凶曰﹜\n﹛切斤丹升﹜嫖中扔示泛件及戏尹化月质卞\n﹛白件戊夫布扑互﹜歹氏今井螂引匀化仁月Ⅱ瑙互丐月及友中﹝
+
+			EndWindow 3200536
+		#\n\n﹛六匀井仁及瑙桦卅氏分井日\n﹛分木卞手项尹切扎母丢卅及友中﹝
+
+
+		else
+
+			if LocalCount6 == 1
+
+
+
+				EndWindow 3200537
+		#\n\n﹛丐匀切及白件戊夫布扑反?罹笮卅及友中﹝\n﹛幼伙乒件及它件民匹仄井\n﹛方匀化仇卅中及友中﹝
+
+
+			else
+		
+				if LocalCount6 == 2
+
+
+
+
+					EndWindow 3200538
+		#\n\n﹛蛊日及驯五卅手及毛儅匀化\n﹛白件戊夫布扑及方匀化五公丹卅桦赭卞垫仃壬\n﹛洘酦﹜允什卞?太勾中化仁月友中﹝
+
+
+		
+				endif
+			endif
+		endif
+
+
+	else
+
+		LocalCount6 = 5
+
+		Window 3200539,next
+		#\n\n﹛仄勾仇中友中″\n﹛匹手﹜今允互中中午仇欠卞杴毛勾仃凶友中﹝
+
+		EndWindow 3200540
+		#\n\n﹛仇仇中日反﹜云中日分仃互襞匀化月\n﹛镘潸曰及瑙桦卅及友中﹝
+
+
+	endif
+
+
+
+
+
+block 
+
+LocalCount7 = 5
+
+		EndWindow 3200541
+		#\n\n﹛云中日侄仄中井日\n﹛梁呺仄卅中匹仁木月井友中〝
+
+
+
+
+
+
+

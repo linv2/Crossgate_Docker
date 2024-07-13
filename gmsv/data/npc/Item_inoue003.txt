@@ -1,0 +1,33 @@
+# 上级职、鉴定用ドロップアイテム
+# クリスタルの骸４
+# ItemID: 623518
+#
+
+
+###　クリスタルの骸を复?所持
+Block Item 623515 > 1 || Item 623516 > 1 || Item 623517 > 1 || Item 623518 > 1 || Item 623519 > 1
+	##EndWindow "\n\n　クリスタルの骸は、\n　２つ以上持っているとけません。"
+	EndWindow 4200027
+
+Block Item 623515 >= 1 || Item 623516 >= 1 || Item 623517 >= 1 || Item 623519 >= 1
+	##EndWindow "\n\n　クリスタルの骸は、\n　２つ以上持っているとけません。"
+	EndWindow 4200027
+
+###　上记以外
+Block Item 623518 == 1
+	##Window "\n\n　クリスタルの骸をきますか？",YES,NO
+	Window 4200028,YES,NO
+
+		Window_YES Item 623518 < 1
+			EndBlock
+
+		Window_YES Item 623515 > 1 || Item 623516 > 1 || Item 623517 > 1 || Item 623518 > 1 || Item 623519 > 1
+			##EndWindow "\n\n　クリスタルの骸は、\n　２つ以上持っているとけません。"
+			EndWindow 4200027
+
+		Window_YES Item 623518 == 1
+			KillItem 623518,1,(3012300)
+				GiveLeak1Item(14935%40$1,15035%30$1,606625%30$1,623510%50$1)
+
+		Window_NO
+			EndBlock

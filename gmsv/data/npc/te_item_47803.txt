@@ -1,0 +1,16 @@
+###te_item_47803.txt
+####
+block Item 47803 >= 1
+	 ##1055931	\n\n\n\n\n@c你是否使用召唤书．．．	1
+	 Window 1055931,YES,NO
+	 	 Window_NO
+
+	 	 Window_YES PetSpace == 0
+	 	 	 ##1109601	\n\n\n\n\n@c你的宠物栏已满！	1
+	 		 EndWindow 1109601
+
+	 	 Window_YES Item 47803 >= 1
+	 	 	 KillItem 47803,1
+	 	 	 GivePet 41467
+
+			 EndWindow 1055045

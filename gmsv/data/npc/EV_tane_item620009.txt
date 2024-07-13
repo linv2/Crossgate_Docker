@@ -1,0 +1,9 @@
+#
+#ºë·Â¶Ítest
+#
+
+
+block
+	Endwindow "\n\n @g,239507 @",ok
+
+

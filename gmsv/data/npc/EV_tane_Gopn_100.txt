@@ -1,0 +1,109 @@
+#幼伙玉open﹛shikenkan﹛tuchi及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+
+###########﹛14605,15317肣曰﹛##############
+
+block Item 14601 >= 1
+
+
+#\n\n﹛燮毛萌互木月互恌井欠丹﹝
+
+
+	EndWindow 3006288
+
+
+
+#block skilllevel 215 <= 0 && Item 14605 >= 1
+
+
+#\n\n﹛燮毛萌互木月互恌井欠丹﹝
+
+
+#	EndWindow 3006633
+
+
+###########﹛14605,15317肣曰﹛##############
+
+
+
+
+block Item 14605 >= 1 && Item 15317 >= 1 && ItemCreateTime 15317 <= 2
+
+
+#\n\n﹛丹戈﹜\n﹛蹼虽卞卅匀凶﹝
+
+	Window 3006212,next
+
+	Window 3006213,next
+
+	Window 3006214,next
+
+	Window 3006215,OK
+
+	window_ok Item 14605 >= 1 && Item 15317 >= 1
+
+	KillItem 15317,1
+	GiveItem 14601,1
+
+	window_ok 
+
+	EndWindow 4000005
+
+block Item 14605 >= 1 && item 15317 >= 1 && ItemCreateTime 15317 > 2
+
+
+#\n\n﹛丹戈﹜\n﹛⑥扤午伐奶件卞庣毛今六化反中井氏卅﹝\n﹛综匀化凛棉互凶切允亢化云月﹝
+
+	KillItem 15317,1
+
+	EndWindow 3006211
+
+
+
+
+
+
+
+
+###########﹛14605肣曰﹛##############
+
+block Item 14605 >= 1
+
+
+#\n\n﹛孔戈﹜幼伙玉穴旦正□涡侗樊井〝\n﹛匹反﹜萝及翌锁毛芨尹方丹﹝
+
+
+	Window 3006209,next
+
+
+	Window 3006210,OK
+
+
+	window_ok skilllevel 215 < 1 
+
+		EndWindow 4000006
+
+
+	window_ok skilllevel 215 >= 1 
+
+		GiveRecipe 947
+
+
+
+
+###########﹛玄仿件旦nashi﹛##############
+
+
+block
+
+#\n\n﹛庣及樊琼卞\n﹛交伙弘螃午萝及擎昵它尼伊及\n﹛仍笛赁及丐日氏仇午毛﹝
+
+
+
+
+	EndWindow 3006630
+

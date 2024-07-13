@@ -1,0 +1,37 @@
+block Item 607659 >= 2
+
+				endWindow 3204308
+
+		#\n\n﹛澎饼反域骚内勾钒仃化仁分今中﹝
+
+
+block
+
+
+				globalFlag15 = 0
+				globalFlag16 = 0
+				globalFlag17 = 0
+				globalFlag18 = 0
+				globalFlag19 = 0
+				globalFlag20 = 0
+				globalFlag21 = 0
+				globalFlag22 = 0
+				globalFlag23 = 0
+				globalFlag24 = 0
+
+#揪啜中伙申
+				Window 3204309,ok
+
+		#\n\n﹛弗□平盒今氏尺﹝\n﹛丐凶仄及票蛲?卞﹜\n﹛棉啜匀化云中仄公丹卅弗□平互じ匀化引仄凶℅\n﹛氏匹﹜丐氏引曰云中仄公丹分匀凶井日\n﹛合歹内罹屯切扎中引仄凶℅\n﹛医嗯毛医歹曰卞云中化云五引允﹝\n﹛戊伊匹箫曰月井卅〝\n﹛丐午﹜窒质匹云饕请仄化月氏匹允井丑℅〝\n﹛公及丹切﹜ョ中卞垫五引℅允″
+
+				Window_ok gold < 999001
+
+
+				killitem 607659,1,(3007158)
+				addgold 1000
+
+				Window_ok
+
+				endWindow 3204310
+
+		#\n\n﹛算幵互域ベ匹﹜\n﹛医嗯毛熬仃潸木卅中﹝

@@ -1,0 +1,23 @@
+#打皮伉件及邰尽﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛母□伊件及摒
+
+###﹛仿件母丞及本伉白
+
+block
+	LocalCount2 = Random 2,0
+
+		If LocalCount2 == 1
+			EndWindow 3201747
+		#\n\n﹛打皮伉件及邰尽卅氏化忆匀化妏中化凶仃升﹜\n﹛蛊日互公丹蜕丹及手丹卅内仃月方卅﹝\n﹛仇曰扎丐峏ネ卅赚缟分方﹝\n﹛窒仄欠﹜仇仇卞反宎衔壬井曰元扎卅仁﹜\n﹛戏遣唾⑹支齿ヨ引匹支匀化中月氏分井日﹝
+			EndBlock
+
+		else
+			EndWindow 3201748
+		#\n\n﹛卅丐楝﹜弘伊打伉□匀化裆毛襞匀化月井中〝\n﹛打皮伉件甩件正□午裟壬木化中凶裆卅氏分互﹜\n﹛内中少氏蟆井日垫杅尕抸卞卅匀化月氏分方﹝\n﹛公及弘伊打伉□卅氏分互友﹜升丹支日﹜\n﹛仇及母件斥亦件卞中月日仄中氏分方﹝
+			EndBlock
+
+		endif
+
+
+

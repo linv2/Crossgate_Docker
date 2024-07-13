@@ -1,0 +1,38 @@
+#茧樱弁巨旦玄“婉心坁
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛＞心月＝﹛##############
+block strcmpchat == 206720
+
+	EndWindow 206533,OK
+
+###########﹛＞井什＝﹛##############
+block strcmpchat == 206722
+
+	EndWindow 206534,OK
+
+###########﹛窒手卅仄﹛##############
+block 
+
+	Window 206528,YES,NO
+	Window_YES
+	leavegroup
+	changepal 16,180
+	playse 62,1,1
+	Window 206529,OK
+	Window_OK
+	playse 62,1,1
+	changepal 25,180
+	Window 206530,OK
+	Window_OK
+	playse 62,1,1
+	changepal 26,180
+	Window 206531,OK
+	Window_OK
+	leavegroup
+	playse 62,1,1
+	Warp 0,33279,11,10
+	Window_NO
+	EndWindow 206532,OK
+

@@ -1,0 +1,45 @@
+#(15588)
+#
+
+###庤及铣及桦宁反莘狪匹五卅中###
+block BImage == 101904 || BImage == 101905
+	Endwindow 21517
+###﹛###
+block
+#
+	Window 21435,next
+#
+	Window 21436,next
+#
+	Window 21437,next
+#
+	Window 21438,next
+#
+
+	Window 21439,OK
+		Window_OK PetSpace != 0
+			KillItem 18781
+			KillItem 18903
+			KillItem 18904
+			EndEvent 39 = 1
+			NowEvent 39 = 0
+			checktitle
+			GivePet 245
+			#
+			Message 21440
+			LeaveGroup
+			Warp 0,1530,15,6
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK
+			KillItem 18781
+			KillItem 18903
+			KillItem 18904
+			EndEvent 39 = 1
+			NowEvent 39 = 0
+			checktitle
+			GiveItem 18905
+			#
+			Message 21440
+			LeaveGroup
+			Warp 0,1530,15,6

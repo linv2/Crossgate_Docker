@@ -1,0 +1,78 @@
+#1111645	到法兰城修理工波利的家(95,49)左上角床边有一个隐藏的楼梯(9,2)进入地下道。	
+#1111646	或是从修理工利贝亚家(117,57)床旁的柜子(15,5)进入地下道。	
+#1111647	从地下道入口的右下角走，会有一个隐藏的楼梯(7,23)可通往“龟裂的地下道”。	
+#1111648	到龟裂的地下道打死一只LV2的液态史莱姆后，拿到“回忆的项链”。	
+#1111649	想就职武器修理工，就把项链拿给地下道中的杰克(7,14)，想当防具修理师则拿给露西潞(6,13)	
+#1111650	把信拿到修理工波利的家(95,49)交给波利，拿到“修理武器工推荐信”。	
+#1111651	把信拿到修理工利贝亚的家(117,57)交给利贝亚，拿到“修理防具工推荐信”。	
+#1111652	到法兰城米克尔工房(95,63)找武器修理师哈努曼就职。	
+#1111653	到法兰城米克尔工房(95,63)找防器修理师阿陶就职。	
+#回忆的项链	18197
+#给利贝亚的信	18198
+#给波利的信	18199
+#武器工推荐信	18144=18133
+#防具工推荐信	18145=18134
+block item 18134 >0
+	window 1111653,next
+	window 1111688,yes,no
+	Window_yes
+	warp 0,1071,14,15
+	leavegroup 
+	Window_no
+	endblock
+#block item 18144 >0
+block item 18133 >0
+	window  1111652,next
+	window 1111688,yes,no
+	Window_yes
+	warp 0,1071,11,12
+	leavegroup 
+	Window_no
+	endblock
+#block item 18199
+block item 18199 > 0
+	window 1111650,next
+	window 1111688,yes,no
+	Window_yes
+	warp 0,1157,4,3
+	leavegroup 
+	Window_no
+	endblock
+block item 18198 >0
+	window 1111651,next
+	window 1111688,yes,no
+	Window_yes
+	warp 0,1158,8,14
+	leavegroup 
+	Window_no
+	endblock
+block item 18197 >0
+	window 1111649,next
+	window 1111688,yes,no
+	Window_yes
+	warp 0,11012,6,14
+	leavegroup 
+	Window_no
+	endblock
+	
+block 
+	window 1111645,next
+	window 1111646,next
+	window 1111647,next
+	window 1111648,next
+	Window 1111691,yes,no
+	Window_yes itemspace >0
+	GiveLeak1Item 18197,1
+	endblock
+	Window_yes
+	endwindow 1111695
+	Window_no
+		window 1111688,yes,no
+		#Window 1111695,yes,no
+		Window_yes
+		warp 0,11012,7,23
+	 	leavegroup 
+		Window_no
+		endblock
+
+

@@ -1,0 +1,27 @@
+#
+#呺
+#
+
+
+
+block
+
+
+
+
+	window 3200146,yes,no
+		#\n\n﹛歹仄反﹜厘筵及?谛﹜\n﹛筵互炡木请今卅中方丹卞苇舰月樊﹝\n﹛峏切蛔月互恌中﹝
+	
+		window_yes
+
+		window_no
+		
+
+			window 3200147,ok
+		#\n\n﹛卅日壬﹜歹仄反\n﹛云蟆日毛挛日友壬﹝
+
+				window_ok
+
+				Encount 2|0,59707,167,112||0|||||0|305034|||||||||
+
+

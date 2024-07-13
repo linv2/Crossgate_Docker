@@ -1,0 +1,2398 @@
+##ATI异业结合活动	钓竿	din_item_47223.txt
+##能力说明：可在特定地点使用（钓鱼）
+##钓鱼的机率：ATI晶片组1/20、纸船1/20、葡萄酒6/20、沙丁鱼6/20、琴酒3/20、乌贼3/20。但也有机会钓不到任何东西机率约 1/10。
+##钓鱼所使用之MSG：
+	 	 	 ##1054288	\n\n\n今天是风和日丽的好天气，\n正是钓鱼的好时机。	1
+			 ##1054289	\n\n\n虽然等待是漫长的，\n但也不失为磨练耐心的好机会。	1
+			 ##1054290	\n\n\n不知道除了晶片之外是否能钓到特别的物品，\n若是钓到稀有的宝物，就可以送给心爱的婆了。	1
+			 ##1054291	\n\n\n嗯．．．．．．\n这边真的有东西可以钓吗？	1
+			 ##1054292	\n\n望着无际的海洋，\n真是令人心旷神怡，\n或许在海上讨生活也是一种幸福。	1
+			 ##1054293	\n\n\n．．．．．．怎么都没钓到，\n或许该换个地方钓看看．．．．．．	1
+			 ##1054294	\n\n\n\n\n@c．．．．．．似乎有了动静．．．．．．	1
+			 ##1054295	\n\n\n\n\n@c．．．．．．原来是风吹动的幻觉。	1
+			 ##1054296	\n\n\n感觉钓竿上的重量似乎渐渐加重，\n看来有东西上钩了。	1
+			 ##1054297	\n\n\n\n\n@c用力将水中的物品拉起。	1
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 43 && Ypos == 88
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 43 && Ypos == 88
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 43 && Ypos == 88
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 43 && Ypos == 88
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 43 && Ypos == 88
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 43 && Ypos == 88
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 43 && Ypos == 88
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 43 && Ypos == 88
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 43 && Ypos == 88
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 43 && Ypos == 88
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 43 && Ypos == 88
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 43 && Ypos == 88
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock 
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 44 && Ypos == 88
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 44 && Ypos == 88
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 44 && Ypos == 88
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 44 && Ypos == 88
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 44 && Ypos == 88
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 44 && Ypos == 88
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 44 && Ypos == 88
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 44 && Ypos == 88
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 44 && Ypos == 88
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 44 && Ypos == 88
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 44 && Ypos == 88
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 44 && Ypos == 88
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 44 && Ypos == 89
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 44 && Ypos == 89
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 44 && Ypos == 89
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 44 && Ypos == 89
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 44 && Ypos == 89
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 44 && Ypos == 89
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 44 && Ypos == 89
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 44 && Ypos == 89
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 44 && Ypos == 89
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 44 && Ypos == 89
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 44 && Ypos == 89
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 44 && Ypos == 89
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 45 && Ypos == 89
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 45 && Ypos == 89
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 89
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 89
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 45 && Ypos == 89
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 89
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 89
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 45 && Ypos == 89
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 89
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 89
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 89
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 89
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 45 && Ypos == 90
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 45 && Ypos == 90
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 90
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 90
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 45 && Ypos == 90
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 90
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 90
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 45 && Ypos == 90
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 90
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 90
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 90
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 90
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 45 && Ypos == 91
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 45 && Ypos == 91
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 91
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 91
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 45 && Ypos == 91
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 91
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 91
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 45 && Ypos == 91
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 91
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 91
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 45 && Ypos == 91
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 45 && Ypos == 91
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 46 && Ypos == 91
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 46 && Ypos == 91
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 91
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 91
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 46 && Ypos == 91
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 91
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 91
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 46 && Ypos == 91
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 91
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 91
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 91
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 91
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 46 && Ypos == 92
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 46 && Ypos == 92
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 92
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 92
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 46 && Ypos == 92
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 92
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 92
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 46 && Ypos == 92
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 92
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 92
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 92
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 92
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 46 && Ypos == 93
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 46 && Ypos == 93
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 93
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 46 && Ypos == 93
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 93
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 93
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 46 && Ypos == 93
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 93
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 93
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 46 && Ypos == 93
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 46 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 47 && Ypos == 93
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 47 && Ypos == 93
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 47 && Ypos == 93
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 47 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 47 && Ypos == 93
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 47 && Ypos == 93
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 47 && Ypos == 93
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 47 && Ypos == 93
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 47 && Ypos == 93
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 47 && Ypos == 93
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 47 && Ypos == 93
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 47 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 48 && Ypos == 93
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 48 && Ypos == 93
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 48 && Ypos == 93
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 48 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 48 && Ypos == 93
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 48 && Ypos == 93
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 48 && Ypos == 93
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 48 && Ypos == 93
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 48 && Ypos == 93
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 48 && Ypos == 93
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 48 && Ypos == 93
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 48 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 49 && Ypos == 93
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 49 && Ypos == 93
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 49 && Ypos == 93
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 49 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 49 && Ypos == 93
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 49 && Ypos == 93
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 49 && Ypos == 93
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 49 && Ypos == 93
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 49 && Ypos == 93
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 49 && Ypos == 93
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 49 && Ypos == 93
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 49 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 50 && Ypos == 93
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 50 && Ypos == 93
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 50 && Ypos == 93
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 50 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 50 && Ypos == 93
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 50 && Ypos == 93
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 50 && Ypos == 93
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 50 && Ypos == 93
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 50 && Ypos == 93
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 50 && Ypos == 93
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 50 && Ypos == 93
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 50 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 51 && Ypos == 93
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 51 && Ypos == 93
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 51 && Ypos == 93
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 51 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 51 && Ypos == 93
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 51 && Ypos == 93
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 51 && Ypos == 93
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 51 && Ypos == 93
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 51 && Ypos == 93
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 51 && Ypos == 93
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 51 && Ypos == 93
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 51 && Ypos == 93
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 51 && Ypos == 92
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 51 && Ypos == 92
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 51 && Ypos == 92
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 51 && Ypos == 92
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 51 && Ypos == 92
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 51 && Ypos == 92
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 51 && Ypos == 92
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 51 && Ypos == 92
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 51 && Ypos == 92
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 51 && Ypos == 92
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 51 && Ypos == 92
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 51 && Ypos == 92
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 52 && Ypos == 92
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 52 && Ypos == 92
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 52 && Ypos == 92
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 52 && Ypos == 92
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 52 && Ypos == 92
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 52 && Ypos == 92
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 52 && Ypos == 92
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 52 && Ypos == 92
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 52 && Ypos == 92
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 52 && Ypos == 92
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 52 && Ypos == 92
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 52 && Ypos == 92
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 52 && Ypos == 91
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 52 && Ypos == 91
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 52 && Ypos == 91
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 52 && Ypos == 91
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 52 && Ypos == 91
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 52 && Ypos == 91
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 52 && Ypos == 91
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 52 && Ypos == 91
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 52 && Ypos == 91
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 52 && Ypos == 91
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 52 && Ypos == 91
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 52 && Ypos == 91
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 53 && Ypos == 90
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 53 && Ypos == 90
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 53 && Ypos == 90
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 53 && Ypos == 90
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 53 && Ypos == 90
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 53 && Ypos == 90
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 53 && Ypos == 90
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 53 && Ypos == 90
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 53 && Ypos == 90
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 53 && Ypos == 90
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 53 && Ypos == 90
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 53 && Ypos == 90
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 54 && Ypos == 90
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 54 && Ypos == 90
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 54 && Ypos == 90
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 54 && Ypos == 90
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 54 && Ypos == 90
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 54 && Ypos == 90
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 54 && Ypos == 90
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 54 && Ypos == 90
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 54 && Ypos == 90
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 54 && Ypos == 90
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 54 && Ypos == 90
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 54 && Ypos == 90
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block Item 47223 >=1 && floor == 2000 && Xpos == 53 && Ypos == 89
+	 ##1054286	\n\n\n\n\n@c现在要使用钓竿吗？	1
+	 Window 1054286,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 ##1054287	\n\n\n\n\n@c用力的一挥，将鱼钩甩入水中！	1
+			 Window 1054287,OK 
+			 	 Window_OK Item 47223 >=1 && floor == 2000 && Xpos == 53 && Ypos == 89
+			 
+		 	 	 localCount0  = random 20,1
+		 	
+ 	 			 if localCount0 == 1	
+
+				 Window 1054288,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054291,NEXT
+				 Window 1054294,OK 
+				 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 53 && Ypos == 89
+					 KillItem 47223,1,(1054300)
+			 	 	 EndWindow 1054298
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 53 && Ypos == 89
+					 SetDur 47223,-1
+					 EndWindow 1054298
+					 
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+	 			 endif
+
+	 			 if localCount0 >= 2 && localCount0 <= 10 
+			 
+				 Window 1054288,NEXT 
+				 Window 1054289,NEXT 
+				 Window 1054292,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054294,NEXT 
+				 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+
+			 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 53 && Ypos == 89
+			 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+			 	 	 EndWindow 1100001
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 53 && Ypos == 89
+			 	 	 KillItem 47223,1,(1054300)
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+			 	 	 
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 53 && Ypos == 89
+			 	 	 SetDur 47223,-1
+			 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+			 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+			 	 	 
+	 		 	 endif
+	 
+	 		 	 if localCount0 >= 11 && localCount0 <= 19
+
+	 			 Window 1054288,NEXT 
+			 	 Window 1054289,NEXT 
+			 	 Window 1054290,NEXT 
+			 	 Window 1054291,NEXT 
+			 	 Window 1054294,NEXT 
+			 	 Window 1054296,NEXT 
+			 	 Window 1054297,OK 
+					 
+		 	 	 	 Window_OK ItemSpace == 0 && floor == 2000 && Xpos == 53 && Ypos == 89
+		 	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+		 	 	 	 EndWindow 1100001
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 53 && Ypos == 89
+		 	 	 	 KillItem 47223,1,(1054300)
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 	 	 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+		 	 	 
+		 	 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 53 && Ypos == 89
+		 	 	 	 SetDur 47223,-1
+		 	 	 	 ##随机给予ATI显示卡47224 纸船47226 葡萄酒47227 沙丁鱼24228 琴酒47229 乌贼 47230
+		 	 		 GiveItem (47224%1$1,47226%1$1,47227%3$1,47228%3$1,47229%2$1,47230%2$1)
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+		 		 
+		 		 endif 	 	
+	 		 
+		 		 if localCount0 == 20
+
+				 Window 1054288,NEXT 
+				 Window 1054290,NEXT 
+				 Window 1054289,NEXT 
+			 	 Window 1054292,NEXT 
+			 	 Window 1054293,NEXT 
+			 	 Window 1054291,NEXT 			 
+			 	 Window 1054294,OK  
+
+			 	 	 Window_OK Item 47223 >=1 && ItemDur 47223 == 1 && floor == 2000 && Xpos == 53 && Ypos == 89
+					 KillItem 47223,1
+			 	 	 EndWindow 1054295
+					
+					 Window_OK Item 47223 >=1 && ItemDur 47223 > 1 && floor == 2000 && Xpos == 53 && Ypos == 89
+					 SetDur 47223,-1
+					 EndWindow 1054295
+
+					 Window_OK Item 47223 >=1
+					 ##1054299	\n\n\n\n\n@c你离海岸太远啰，鱼线并没有这么长。	1
+					 EndWindow 1054299
+
+			 	 endif 	 		 
+endblock
+
+block 
+	 ##1054301	\n\n\n\n\n@c在这里用钓竿你是想钓些什么？。	1
+	 EndWindow 1054301

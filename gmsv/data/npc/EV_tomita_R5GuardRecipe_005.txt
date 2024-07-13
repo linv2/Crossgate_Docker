@@ -1,0 +1,51 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛民亘失及摒
+
+###﹛佴阂缜谛匹综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 280 && SkillLevel_208 >= 5
+	Window 3205258,OK
+
+		#\n\n﹛左□扑亘甩永玄及综曰杅毛襞曰凶中氏分欠﹝\n﹛请仄检仄心卅氏井仄卅中井日﹜兜艘仄卅方﹝\n﹛公及井歹曰﹜凶仁今氏综匀化示弁毛肣抩卞\n﹛仄化仁木方卅﹝
+
+		Window_OK
+			GiveRecipe 504
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛佴阂缜谛匹综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 280
+	Window 3205259,OK
+
+		#\n\n﹛鬼中仃升﹜示弁及蕙仄中佴阂及综曰杅反\n﹛项尹日木卅中卅﹝\n﹛恍诞卅谛卞项尹凶日﹜刉?互票互月井日友﹝\n﹛窖匀化﹜珃毛呫中化五卅方﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛佴阂缜谛匹卅中
+block
+	Window 3205260,YES,NO
+
+		#\n\n﹛示弁反平立卞迕反卅中方﹝\n﹛公木午手﹜窖曰凶中午井〝
+
+		Window_YES
+			Window 3205261,OK
+
+		#\n\n﹛公丹﹝佴阂缜谛元扎卅仁匀凶匀化﹜\n﹛霜月仁日中反仄化丐仆月方﹝元扎丐﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3205262
+
+		#\n\n﹛孔□氏﹜元扎丐﹜职及谛卞癫凶匀凶杅互\n﹛中中氏元扎卅中及﹝
+
+
+

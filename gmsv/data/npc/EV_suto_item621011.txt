@@ -1,0 +1,8 @@
+#
+#SP card
+#
+
+block
+	Endwindow "\n\n©x @g,239527 @",ok
+
+

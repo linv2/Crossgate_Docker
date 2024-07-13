@@ -1,0 +1,216 @@
+#ºÎ”£€Õæﬁµ©–˛°∞”Ò ß
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©xENDFLG 68 on©x##############
+block endevent68 == 1 && Item 18893 == 0 && Item 18895 == 0
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33261,14,11
+	Window_NO
+
+###########©x•ˆ±˝º∞∂™∆π®G≤º”¿∑∫º˛º∞§∂∑§©j18893®G18898©k©x##############
+block Item 18893 >= 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block Item 18894 >= 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block Item 18895 >= 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block Item 18896 >= 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block Item 18897 >= 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block Item 18898 >= 1
+
+	Window 206437,YES,NO
+	leavegroup
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block nowevent69 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block endevent69 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block nowevent70 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block endevent70 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block nowevent71 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block endevent71 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block nowevent72 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block endevent72 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block nowevent73 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block endevent73 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block nowevent74 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block endevent74 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block nowevent75 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+block endevent75 == 1
+
+	Window 206437,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33262,14,11
+	Window_NO
+
+###########©xÀ¶º˛€ÕæÆ»’º∞≈Ï±˝©x©j18892©kÿ§‘ª©x##############
+block Item 18892 >= 1
+
+	EndWindow 206433,OK
+
+###########©x£æ–◊–◊» £Ω©x##############
+block strcmpchat == 206723
+	playse 216,1,1
+	Window 206435,OK
+	Window_OK
+	leavegroup
+	playse 76,1,1
+	Warp 0,33260,14,11
+
+###########©x÷œ ÷ÿ¶ÿ∆©x##############
+block 
+
+	EndWindow 206434,OK
+

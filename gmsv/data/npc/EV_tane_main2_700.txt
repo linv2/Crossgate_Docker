@@ -1,0 +1,152 @@
+#
+#anzick
+#
+
+
+
+
+
+
+
+#######################
+#丢奶件6
+
+
+			
+block globalflag42 == 1 && GlobalFlag77 == 1
+
+		EndWindow 3205711
+
+		#\n\n﹛忒仪互卅中﹜谛溥及方丹分＿＿﹝
+
+
+block globalflag42 == 1 && globalflag44 == 1
+
+		Window 3205712,next
+
+		#\n\n﹛丐木〝\n﹛漆゜歹丑﹝
+
+		Window 3205713,Next
+
+		#\n\n﹛职及云烟今氏卞蜕歹木化五化心凶及予﹝\n﹛割井卞扔示泛件今氏互蛛月歹友之﹝
+		
+		EndWindow 3205714
+
+		#\n\n﹛﹛■■丑曰饺毛濠日木凶及井\n﹛公木午手帎谛卅及井﹝\n﹛升切日卞仄化手\n﹛失件斥永弁反﹜手丹蛛卅中方丹分﹝
+		
+		
+		
+########################
+
+
+block globalFlag34 == 1 && Item 607699 >= 1 && Item 14664 >= 1
+
+		Window 3205715,next
+
+		#\n\n﹛反丑℅中″\n﹛漆゜歹丑﹜云烟今氏﹝\n﹛骭颬及锉引匹儅匀化五化仁木化\n﹛丹木仄中歹丑﹝
+
+		Window 3205716,next
+
+		#\n\n﹛穴□泛件旦及И耜互\n﹛合中濠曰撩ヘ仄化仁木凶井日友﹝\n﹛升丹仄方丹井午合匀化凶及今﹝
+
+		Window 3205717,next
+
+		#\n\n﹛公及晓﹜蜈朹及沓牬井日\n﹛邰日厄仪毛\n﹛蹄五慇引木凶心凶中分仄﹝\n﹛仇曰扎﹜引允引允\n﹛仇及引引忒允沭卞反\n﹛中井卅中友之﹝
+
+		Window 3205718,next
+
+		#\n\n﹛仇氏卅谛竣及卅中午仇欠卞\n﹛及仇及仇侳凶\n﹛丐氏凶及ビ摩今笛蛹卞揖ベ″
+
+
+		Window 3205719,no
+
+		#\n\n﹛今丑″穴□泛件旦井日畴匀凶呺⑼踏及樟仄午\n﹛骭颬及锉毛\n﹛仇切日卞枃丹方″
+
+						Window_no
+
+							Encount 3|0,59716,131,102||0|||||0|305161|||||||||
+
+
+
+
+block globalFlag34 == 1 && Item 607699 >= 1
+
+		Window 3205720,next
+
+		#\n\n﹛反丑℅中″\n﹛漆゜歹丑﹜云烟今氏﹝
+
+		Window 3205721,next
+
+		#\n\n﹛穴□泛件旦及И耜互\n﹛合中濠曰撩ヘ仄化仁木凶井日友﹝\n﹛升丹仄方丹井午合匀化凶及今﹝
+
+		Window 3205722,next
+
+		#\n\n﹛公及晓﹜蜈朹及沓牬井日\n﹛邰日厄仪毛\n﹛蹄五慇引木凶心凶中分仄﹝\n﹛仇曰扎﹜引允引允\n﹛仇及引引忒允沭卞反\n﹛中井卅中友之﹝
+
+		Window 3205723,next
+
+		#\n\n﹛仇氏卅谛竣及卅中午仇欠卞\n﹛及仇及仇侳凶\n﹛丐氏凶及ビ摩今笛蛹卞揖ベ″
+
+
+		Window 3205724,no
+
+		#\n\n﹛今丑″穴□泛件旦井日畴匀凶呺⑼踏及樟仄毛\n﹛仇切日卞枃丹方″
+
+						Window_no
+
+							Encount 3|0,59716,131,102||0|||||0|305161|||||||||
+
+
+
+block Item 607699 >= 1
+
+		Window 3205725,next
+
+		#\n\n﹛漆゜歹丑﹜云烟今氏﹝
+
+		Window 3205726,next
+
+		#\n\n﹛丐木﹜澎卞儅匀化月及互\n﹛拺及瓜札妐〝\n﹛尺之℅\n﹛中中歹友之﹜\n﹛巨平札民永弁匹﹝
+
+		Window 3205727,yes,no
+
+		#\n\n﹛友之﹜云烟今氏﹜\n﹛公木歙匀化仁木卅中井卅丑﹝\n﹛公氏卅乒用及仪侉木化﹜\n﹛啼仄仁戏五方丹方℅﹝友〝
+
+			Window_yes
+
+				Window 3205728,ok
+
+		#\n\n﹛失伉布玄﹝云厍轼卅云ビ摩今氏﹝\n﹛抰引匹反\n﹛潸日卅中方﹝丹孔﹝
+
+						Window_ok
+
+							globalFlag31 = 0
+							globalFlag32 = 0
+							globalFlag33 = 0
+							globalFlag34 = 0
+
+							KillItemall 607699
+							KillItemall 14664
+
+							Warp 0,59503,208,281
+
+			Window_no
+
+
+				endWindow 3205729
+
+		#\n\n﹛尹尹℅″″\n﹛云烟今氏及仃切氏廿℅
+
+
+
+block
+
+		Window 3205730,next
+
+		#\n\n﹛丐木〝\n﹛漆゜歹丑﹝
+
+
+		EndWindow 3205731
+
+		#\n\n﹛职及云烟今氏卞蜕歹木化五化心凶及予﹝\n﹛割井卞扔示泛件今氏互蛛月歹友之﹝
+

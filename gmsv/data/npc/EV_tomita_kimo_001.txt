@@ -1,0 +1,180 @@
+#显及丝挚﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛显戋市□夫及摒
+
+###﹛乒夫甩正弗丐月中反穴奶件白仿伐□毛赭儅
+block Item_607700 >= 1 || Item_607702 >= 1
+	EndWindow 3204648
+
+		#\n\n﹛楝及儅匀化中月弁仿它件反﹜仇及丝挚匹\n﹛枃匀凶手及分欠〝\n﹛莽木支允中仃升五匀午泙卞峏勾井日﹜\n﹛厘仪卞银匀化俓仄中卅﹝
+
+
+
+###﹛平乒母丢母扑蔺爵据毛赭儅
+block Item_607970 >= 1
+	Window 3204649,OK
+
+		#\n\n﹛引凶丝挚卞辅笛允月氏分友﹝\n﹛ダ丿互中仁引匹窒蘸匹手蔺爵匹五月及互﹜\n﹛仇及丝挚及恌中午仇欠今﹝元扎丐﹜公木永″
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59801,97,55
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	If Level >= 41
+		Window 3204650,NEXT
+
+		#\n\n﹛陆及壑钗及谛分友﹝\n﹛显午蜕匀化手井卅曰じ曰赚氏匹中月仄﹜\n﹛怉卅酷喘仃手丐月井日﹜镗啦仄卅方﹝\n﹛氏﹜丐及岉介今木凶朿盒井中〝
+		Window 3204651,NEXT
+
+		#\n\n﹛丐公仇反﹍平乒母丢母扑﹎及朿盒分方﹝\n﹛平乒母丢母扑午中丹及反﹜歹木歹木显戋互\n﹛域谛蟆午カ户日木月凶户及魂柈及丝挚卅氏分﹝
+		EndWindow 3204652
+
+		#\n\n﹛仇丹仄化显陆午及跟峸互铵引匀凶井日友尹﹜\n﹛筏ゴ卞显戋动陆手辅笛第チ卞卅匀凶氏分仃升﹜\n﹛酸ゴ卅互日﹜楝卞反拑咥井卅﹝\n﹛魂柈毛熬仃月卞反掸恘互丐曰允亢月方﹝
+		EndBlock
+
+	else
+		If Level >= 21
+			Window 3204653,NEXT
+
+		#\n\n﹛陆及壑钗及谛分友﹝\n﹛丐及岉介今木凶朿盒匹反﹜歹木歹木显戋互\n﹛域谛蟆午仄化カ户日木月凶户及魂柈及丝挚\n﹛﹍平乒母丢母扑﹎互垫歹木化中月氏分﹝
+			Window 3204654,YES,NO
+
+		#\n\n﹛仇丹仄化显陆午及跟峸互铵引匀凶井日﹜\n﹛显戋动陆匹手辅笛匹五月方丹卞卅匀凶氏分方﹝\n﹛蔺爵恔反500?分仃升﹜辅笛仄化心卅中井〝
+
+				Window_YES Item_607700 >= 1 || Item_607702 >= 1
+					EndWindow 3204655
+
+		#\n\n﹛窒分﹜手丹丝挚毛碧引六化凶氏分友﹝\n﹛丝挚匹枃匀凶弁仿它件互丐月丹切反﹜\n﹛疯蔺爵匹五卅中方﹝
+					EndBlock
+
+				Window_YES Item_607970 >= 1
+					EndWindow 3204656
+
+		#\n\n﹛窒分﹜蔺爵据反儅匀化凶及井﹝\n﹛窒呦手丐匀凶匀化﹜梁呺卞卅月分仃分方﹝
+					EndBlock
+
+				Window_YES ItemSpace >= 1 && Gold >= 500
+					Window 3204657,OK
+
+		#\n\n﹛显陆元扎仇及桦宁﹜咍蘸丐曰匀化蜕丹氏分欠﹝\n﹛元扎丐﹜仇及蔺爵据毛儅匀化﹜弘永玉仿永弁″
+
+						Window_OK Item_607700 >= 1 || Item_607702 >= 1
+							EndWindow 3204658
+
+		#\n\n﹛窒分﹜手丹丝挚毛碧引六化凶氏分友﹝\n﹛丝挚匹枃匀凶弁仿它件互丐月丹切反﹜\n﹛疯蔺爵匹五卅中方﹝
+							EndBlock
+
+						Window_OK Item_607970 >= 1
+							EndWindow 3204659
+
+		#\n\n﹛窒分﹜蔺爵据反儅匀化凶及井﹝\n﹛窒呦手丐匀凶匀化﹜梁呺卞卅月分仃分方﹝
+							EndBlock
+
+						Window_OK ItemSpace >= 1 && Gold >= 500
+							AddGold -500
+							GiveItemEX 607970,1,3204660
+
+		#\n\n﹛窒分﹜内中少氏凶仁今氏绂坁互丐月氏分友﹝\n﹛蔺爵据毛欐允坞五互卅中方﹝
+							LeaveGroup
+							Warp 0,59801,97,55
+							EndBlock
+
+						Window_OK ItemSpace >= 1
+							EndWindow 3204661
+
+		#\n\n﹛窒分﹜蔺爵恔互囮尹卅中氏元扎卅中井﹝\n﹛云嗯毛绅中匹引凶侳化方﹝
+							EndBlock
+
+						Window_OK
+							EndWindow 3204662
+
+		#\n\n﹛窒分﹜内中少氏凶仁今氏绂坁互丐月氏分友﹝\n﹛蔺爵据毛欐允坞五互卅中方﹝
+							EndBlock
+
+				Window_YES ItemSpace >= 1
+					EndWindow 3204663
+
+		#\n\n﹛窒分﹜蔺爵恔互囮尹卅中氏元扎卅中井﹝\n﹛云嗯毛绅中匹引凶侳化方﹝
+					EndBlock
+
+				Window_YES
+					EndWindow 3204664
+
+		#\n\n﹛窒分﹜内中少氏凶仁今氏绂坁互丐月氏分友﹝\n﹛蔺爵据毛欐允坞五互卅中方﹝
+					EndBlock
+
+				Window_NO
+					EndWindow 3204665
+
+		#\n\n﹛显陆及谛互侳月匀化﹜心卅舰曰濠匀化月及卞﹝\n﹛酸ゴ分卅丐﹝
+					EndBlock
+
+		else
+			Window 3204666,NEXT
+
+		#\n\n﹛陆及壑钗及谛分友﹝\n﹛丐及岉介今木凶朿盒匹反﹜歹木歹木显戋互\n﹛域谛蟆午カ户日木月凶户及魂柈及丝挚\n﹛﹍平乒母丢母扑﹎互垫歹木化中月氏分﹝
+			Window 3204667,YES,NO
+
+		#\n\n﹛显陆午及跟峸毛五匀井仃卞﹜显戋动陆匹手\n﹛辅笛第チ卞卅匀凶氏分仃升﹜支匀化心卅中井〝\n﹛楝卞反切斤丹升恌中佹莴分午合丹方﹝
+
+				Window_YES Item_607700 >= 1 || Item_607702 >= 1
+					EndWindow 3204668
+
+		#\n\n﹛窒分﹜手丹丝挚毛碧引六化凶氏分友﹝\n﹛丝挚匹枃匀凶弁仿它件互丐月丹切反﹜\n﹛疯蔺爵匹五卅中方﹝
+					EndBlock
+
+				Window_YES Item_607970 >= 1
+					EndWindow 3204669
+
+		#\n\n﹛窒分﹜蔺爵据反儅匀化凶及井﹝\n﹛窒呦手丐匀凶匀化﹜梁呺卞卅月分仃分方﹝
+					EndBlock
+
+				Window_YES ItemSpace >= 1
+					Window 3204670,OK
+
+		#\n\n﹛公丹侳卅仁切扎﹝\n﹛元扎丐﹜仇及蔺爵据毛儅匀化﹜弘永玉仿永弁″
+
+						Window_OK Item_607700 >= 1 || Item_607702 >= 1
+							EndWindow 3204671
+
+		#\n\n﹛窒分﹜手丹丝挚毛碧引六化凶氏分友﹝\n﹛丝挚匹枃匀凶弁仿它件互丐月丹切反﹜\n﹛疯蔺爵匹五卅中方﹝
+							EndBlock
+
+						Window_OK Item_607970 >= 1
+							EndWindow 3204672
+
+		#\n\n﹛窒分﹜蔺爵据反儅匀化凶及井﹝\n﹛窒呦手丐匀凶匀化﹜梁呺卞卅月分仃分方﹝
+							EndBlock
+
+						Window_OK ItemSpace >= 1
+							GiveItemEX 607970,1,3204673
+
+		#\n\n﹛窒分﹜内中少氏凶仁今氏绂坁互丐月氏分友﹝\n﹛蔺爵据毛欐允坞五互卅中方﹝
+							LeaveGroup
+							Warp 0,59801,97,55
+							EndBlock
+
+						Window_OK
+							EndWindow 3204674
+
+		#\n\n﹛窒分﹜内中少氏凶仁今氏绂坁互丐月氏分友﹝\n﹛蔺爵据毛欐允坞五互卅中方﹝
+							EndBlock
+
+				Window_YES
+					EndWindow 3204675
+
+		#\n\n﹛窒分﹜内中少氏凶仁今氏绂坁互丐月氏分友﹝\n﹛蔺爵据毛欐允坞五互卅中方﹝
+					EndBlock
+
+				Window_NO
+					EndWindow 3204676
+
+		#\n\n﹛显陆及谛互侳月匀化﹜心卅舰曰濠匀化月及卞﹝\n﹛酸ゴ分卅丐﹝
+					EndBlock
+
+
+

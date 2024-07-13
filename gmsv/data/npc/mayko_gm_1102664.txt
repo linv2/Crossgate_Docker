@@ -1,0 +1,161 @@
+##mayko_gm_1102664.txt 头盔
+
+#金属护额	3622	9611	4	9612	5	10401	2	9613	3
+#1111343	\n\n\n@c你好！！我负责支援新星头盔制作：
+#1111300	\n\n你现在有金属护额材料铜条4份，铁条5份，木棉布2份，银条3份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111354	\n\n\n@c代工费是７００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 9611>=4 && item 9612 >=5 && item 10401 >= 2 && item 9613 >=3 
+
+	Window 1111343,next
+	Window 1111300,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111354,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 699
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -700
+		killitem 9611,4
+		killitem 9612,5
+		killitem 10401,2
+		killitem 9613,3
+		GiveLeak1Item 3622,1
+		endwindow 1111335
+
+
+#铁制头盔	3620	9611	3	9612	10	9613	3	10402	1
+#1111343	\n\n\n@c你好！！我负责支援新星头盔制作：
+#1111301	\n\n你现在有铁制头盔材料铜条3份，铁条10份，银条3份，毛毡1份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111354	\n\n\n@c代工费是７００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 9611>=3 && item 9612 >=10 && item 10402 >= 1 && item 9613 >=3 
+
+	Window 1111343,next
+	Window 1111301,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111354,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 699
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -700
+		killitem 9611,3
+		killitem 9612,10
+		killitem 10402,1
+		killitem 9613,3
+		GiveLeak1Item 3620,1
+		endwindow 1111335
+
+#巴比克头盔	3654	9615	5	10404	5	9616	8		
+#1111343	\n\n\n@c你好！！我负责支援新星头盔制作：
+#1111302	\n\n你现在有巴比克头盔材料金条5份，细线5份，白金条8份，份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111353	\n\n\n@c代工费是３５００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+
+		
+#利刃头盔	3651	10404	5	9615	5	10405	5	9616	5
+#1111343	\n\n\n@c你好！！我负责支援新星头盔制作：
+#1111303	\n\n你现在有利刃头盔材料细线5份，金条5份，绢布5份，白金条5份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111353	\n\n\n@c代工费是３５００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 10404 >= 5 && item 9615>=5  && item 10405 >= 5 && item 9616 >=5
+
+	Window 1111343,next
+	Window 1111303,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111353,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 3499
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -3500
+		killitem 10404,5
+		killitem 9615,5
+		killitem 10405,5
+		killitem 9616,5
+		GiveLeak1Item 3651,1
+		endwindow 1111335
+		
+block item 9615>=5  && item 10404 >= 5 && item 9616 >=8
+
+	Window 1111343,next
+	Window 1111302,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111353,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 3499
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -3500
+		killitem 9615,5
+		killitem 10404,5
+		killitem 9616,8
+		GiveLeak1Item 3654,1
+		endwindow 1111335		
+		
+
+##没有盔材料
+#1111343	\n\n\n@c你好！！我负责支援新星头盔制作：
+#1111239	\n\n制做金属护额需要铜条4份，铁条5份，木棉布2份，银条3份，
+#1111240	\n\n制做铁制头盔需要铜条3份，铁条10份，银条3份，毛毡1份，
+#1111241	\n\n制做巴比克头盔需要金条5份，细线5份，白金条8份，份，
+#1111242	\n\n制做利刃头盔需要细线5份，金条5份，绢布5份，白金条5份，
+#1111355\n\n\n@c准备好材料再来找我！！
+
+block 
+	Window 1111343,next
+	Window 1111239,next
+	Window 1111240,next
+	Window 1111241,next
+	window 1111242,next
+	endwindow 1111355
+	

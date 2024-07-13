@@ -1,0 +1,37 @@
+#甩奶伊矛伙轾仃荼瞻豭﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛石泛永皿及摒
+
+###﹛皿□市涩煌豭及中内木井毛赭儅
+block Item_631008 >= 1 || Item_631009 >= 1 || Item_631010 >= 1 || Item_631011 >= 1 || Item_631012 >= 1 || Item_631013 >= 1 || Item_631014 >= 1 || Item_631015 >= 1
+
+	GAWindow 3204566,NEXT
+
+		#\n\n﹛尺尹﹜仇及母件斥亦件及酷喘仃卞\n﹛方仁竣互勾中凶友﹝\n﹛卅井卅井叙中方﹜楝﹝
+	GAWindow 3204567,NEXT
+
+		#\n\n﹛仇及井日仁曰﹜\n﹛蛊日卞仄切扎晓请侳井卅﹝\n﹛引丐﹜支匀天曰谛溥反谛溥分仃升﹝
+	GAWindow 3204568,OK
+
+		#\n\n﹛分井日雄厘卅恘匀凶匀化﹜\n﹛厘仄凶仇午卅中氏分卅丑﹝\n﹛丹仃仃匀仃仃仃﹝
+
+		Window_OK
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	GAWindow 3204569,NEXT
+
+		#\n\n﹛云支云支﹜\n﹛怉卅⑹五互丐月井日侳化心凶日﹜\n﹛仇℅氏卅蛊日互⑹中化凶氏分﹝
+	GAWindow 3204570,NEXT
+
+		#\n\n﹛分仃升仇中勾日﹜愤坌互窒樊匹﹜\n﹛窒毛仄化月井手歹井日卅中氏分兮﹝\n﹛丹仃仃﹝
+	GAWindow 3204571,OK
+
+		#\n\n﹛失件斥永弁切扎氏及匚互﹜\n﹛仇氏卅午仇欠卞手荚匀切扎匀凶氏分友﹝\n﹛丹仃仃仃仃﹝
+
+		Window_OK
+
+
+

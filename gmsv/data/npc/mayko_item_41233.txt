@@ -1,0 +1,17 @@
+#双点可得物品
+
+
+block  PetSpace != 0 && Item 41233 > 0
+	#Window 1111474,next		
+	KillItem 41233,1
+	#水晶螃蟹 #水晶怪
+#401 #402 #404 #405 #406 树精系  无黄金树
+#21401 #21402 #21403 #21404 小菇系
+#100109 巨花 青
+	killitem 41233,1
+	GivePet (2000%99,100108%1)
+
+	endblock
+block PetSpace == 0
+	EndWindow 21417
+		

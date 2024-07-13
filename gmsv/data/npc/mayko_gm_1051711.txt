@@ -1,0 +1,24 @@
+#皮革师	mayko_gm_1051711.txt
+#1054949	\n\n\n　　　我是想帮蛮蛮，不过没有10张鹿皮，\n我也没办法帮她作书包。	1
+#1054950	\n\n\n\n@c你这10张鹿皮，是想帮蛮蛮做书包吗？	1
+#1054951	\n\n\n\n@c真是的，不想帮她就算了。	1
+#1054952	\n\n\n　　　书包做好了，\n　　　水手服跟Cosplay商人买，\n　　　笔记本跟文具的话，跟文具商买吧。	1
+#鹿皮18211
+block Item 47661>0
+	 EndWindow 1054971
+block Item 18211>9
+	 Window 1054949,NEXT
+	 Window 1054950,YES,NO
+	 Window_NO
+	 EndWindow 1054951
+	 Window_YES Item 18211>9 && ItemSpace >0
+	 KillItem 18211,10
+	 GiveLeak1Item 47661,1
+	 EndWindow 1054952
+	 Window YES ItemSpace <1 
+	 EndWindow 1054970
+	 Window_YES
+	 EndWindow 1054949
+block
+	 EndWindow 1054949
+	 

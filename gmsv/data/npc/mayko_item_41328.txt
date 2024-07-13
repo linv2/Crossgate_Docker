@@ -1,0 +1,21 @@
+#mayko_item_41328.txt 海芋 魔法粉任务
+
+#1111877	\n\n\n　　　　失败了～\n　　　　海芋跟魔法粉都消失了～
+#1111878	\n\n\n\n@c要把咒语施展在海芋上面吗？
+#1111879	\n\n\n\n@c有魔法粉的话，似乎可以施展咒语。
+
+block item 41327 >0 && item 41334 >0
+	Window 1111878,yes,no
+	Window_yes item 41327 >0 && item 41334 >0
+	killitem 41327,1
+	killitem 41328,1
+	killitem 41334,1
+	GiveLeak1Item (41295%20$1,41328%80$1)
+	endblock
+	window_yes
+	window_no
+	endblock
+	
+block
+	endwindow 1111879	
+

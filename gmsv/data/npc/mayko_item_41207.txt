@@ -1,0 +1,54 @@
+#1111639	从西们出去到(289,142)，进入黑暗医生的巢穴，记得身上至少要有20元魔币。
+#1111640	在黑暗医生的巢穴1F(17,10),(64,22),(47,12)这三处打腐尸,可得到实验药和绷带
+#1111641	身上有10魔币，地下3F与无照护士米内鲁帕(35,57)说话，回答“荷洛”
+#1111642	身上有10魔币，到最底层后会到达阿鲁巴斯研究所。跟密医阿鲁巴斯说话，回答“波罗米亚”
+#1111643	回去地下2F,庸医奈比尔(84,22)说话，他会收走4个道具，拿到“医生推荐函”。
+#1111644	最后回到法兰城东医院(221,83)找医生天瓶说话就职。
+block item 18140 >0
+	window 1111644,next
+	Window 1111688,yes,no	
+	window_yes
+	 leavegroup 
+	 warp 0,1112,15,8
+	 window_no
+	 endblock
+block Item 18190 >= 1 && Item 18191 >= 1 && Item 18192 >= 1 && Item 18193 >= 1
+	window 1111643,next
+	Window 1111688,yes,no	
+	window_yes
+	 leavegroup 
+	 warp 0,32198,21,84
+	 window_no
+	 endblock
+block item 18191 >0
+	window 1111642,next
+	Window 1111688,yes,no	
+	window_yes
+	 leavegroup 
+	 warp 0,15500,14,14
+	 window_no
+	 endblock
+block item 18192 >0 && item 18193 >0
+	window 1111641,next
+	Window 1111688,yes,no	
+	window_yes
+	 leavegroup 
+	 warp 0,32199,35,58
+	 window_no
+	 endblock
+block item 18192 >0 || item 18193 >0
+	endwindow 1111640
+block 
+	window 1111639,next
+	window 1111640,next
+	window 1111689,yes,no
+	Window_yes itemspace >1
+	GiveLeak1Item 18192,1
+	GiveLeak1Item 18193,1
+	
+	endblock
+#1111689	懒得打腐尸，想直接拿任务道具吗？	
+	Window_yes
+	endwindow 1111695
+	Window_no
+	endblock

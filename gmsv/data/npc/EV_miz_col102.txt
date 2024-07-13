@@ -1,0 +1,30 @@
+#哗票⑷绖桦弁巨旦玄﹛﹋呿爵B玄□瓜丢件玄域荚爵﹌左术瓜弘
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########﹛失奶泛丞域ベ﹛#########
+block ItemSpace <= 1
+	EndWindow 20598,OK
+
+#########﹛⑷衔及据互卅中﹛##########
+block Item 18256 == 0
+#
+	EndWindow 20461,OK
+
+#######﹛由□泛奴毛赚氏匹中月﹛##########
+
+block Group >= 2
+	EndWindow 20625,OK
+
+#######﹛⑷衔及据毛儅匀化中月﹛#####
+block Item 18256 >= 1
+#
+	Window 20460,OK
+	Window_OK ItemSpace <= 1
+	EndWindow 20598,OK
+	Window_OK Group >= 2
+	EndWindow 20625,OK
+	Window_OK
+	KillItem 18256
+	Encount 3|0,1465,23,25||0|||||0|9046|||||||||
+	

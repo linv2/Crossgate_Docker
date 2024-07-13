@@ -1,0 +1,87 @@
+#啤酒屋主厨mayko_gm_1051801.txt
+
+block item 47779 >0
+	 window 1111380,next
+	 endwindow 1111381
+
+#1111397	\n\n\n\n@c麻烦你送甜点给美食家。	1
+block item 47776>0
+	 endwindow 1111397
+block item 47773>0 && item 11226 >0 && item 12901>0 && item 10100 >0
+	 killitem 47773,1
+	 killitem 11226,1
+	 killitem 12901,1
+	 killitem 10100,1
+	 GiveLeak1Item 47776,1
+	 endwindow 1111396
+#1111396	\n\n\n　　　　喔～～\n　　　　饭后甜点也准备好了～\n　　　　麻烦你送给美食家吧。	1
+
+
+
+block item 47775>0
+	 endwindow 1111391
+block item 47773>0
+	 endwindow 1111393
+	 
+block item 47772>0 && item 12402 >0 && item 12412 >0 && item 12001 >0 && ItemSpace == 0	 
+	 endwindow 13115	 	 
+#1111393	\n\n\n　　　饭后甜点是茱萸茶与阿巴尼斯哈密瓜，\n　　　茱萸茶的材料是茱萸木与茶。	1
+block item 47772>0 && item 12402 >0 && item 12412 >0 && item 12001 >0 
+	 killitem 47772,1
+	 killitem 12402,1
+	 killitem 12412,1
+	 killitem 12001,1
+	 
+	 GiveLeak1Item 47773,1
+	 GiveLeak1Item 47775,1
+	 window 1111391,next
+	 Endwindow 1111392
+#1111391	\n\n\n　　　　主菜准备好啦～～\n　　　　麻烦你送给美食家～	1
+#1111392	\n\n\n　　　另外，\n　　饭后甜点是茱萸茶与阿巴尼斯哈密瓜，\n　　　茱萸茶的材料是茱萸木与茶。	1
+
+block item 47774>0
+	 endwindow 1111386
+block item 47772>0
+	 endwindow 1111389
+#1111389	\n\n\n　　　　主菜是清蒸螃蟹，\n　　　　需要螃蟹、姜、盐。	1
+
+
+block item 47771 >0 && item  11309>0  && item 12500>0 && ItemSpace == 0	 
+	 endwindow 13115
+
+
+block item 47771 >0 && item  11309>0  && item 12500>0
+	 killitem 47771,1
+	 killitem 11309,1
+	 killitem 12500,1
+	 GiveLeak1Item 47772,1
+	 GiveLeak1Item 47774,1
+	 window 1111386,next
+	 endwindow 1111397
+
+#1111386	\n\n\n　　　　前菜准备好啦～～\n　　　　麻烦你送给美食家～	1
+
+#1111387	\n\n\n　　　　另外，主菜是清蒸螃蟹，\n　　　　需要螃蟹、姜、盐。	1
+
+block item 47771 >0
+	 endwindow 1111383
+#1111384	\n\n\n　　　　前菜是鲑鱼沙拉，\n　　　　需要神圣调味料，鲑鱼。	1
+
+
+block 	 ItemSpace > 0
+	 window 1111380,next
+	 window 1111381,next
+	 window 1111382,next
+	 GiveLeak1Item 47771,1
+	 endwindow 1111383
+
+
+
+block 
+	 window 1111380,next
+	 endwindow 1111381
+
+#1111380	\n\n\n　　　　秋日美食呀～是这样子的，\n　　　　我们的采购人员目前人手不足，\n　　　　只够买菜单上的菜色。	1
+#1111381	\n\n\n　　　　像这种季节限定的菜色\n　　　　，就没有办法啦～～	1
+#1111382	\n\n\n　　　　我这有材料单，\n　　　　如果您要帮这客人的话，\n　　　　麻烦你帮忙采买吧！！	1
+#1111383	\n\n\n　　　　这是前菜材料单，\n　　　　前菜是鲑鱼沙拉，\n　　　　需要神圣调味料，鲑鱼。	1

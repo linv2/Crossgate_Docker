@@ -1,0 +1,102 @@
+################### 亚诺曼城 传送石管理员 雷欧娜村
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+	 	 	 
+################### 游民与战斗系 50级以上 && 开过传送石
+block Job < 170 && Level >=50 && NowEvent 244 == 1 
+	 ##1200943	\n这是通往雷欧娜村的传送石，要使用吗？\n费用是1200元。
+	 Window 1200943,YES,NO 
+	 	 Window_YES Gold >=1200 && Group ==1 && Item 18660>=1
+	 	 	 ##1201411	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往雷欧娜村，费用是1200元，\n      确定要传送吗？
+			 Window 1201411,YES,NO 
+			 	 Window_YES Gold >=1200 && Group ==1 && Item 18660>=1
+	 	 	 		 ##钱少300，传到雷欧娜村。
+	 	 	 		 AddGold -1200
+	 	 	 		 Warp 0,30333,5,14 			 	 	 
+			 	 Window_NO 
+	 	 Window_YES Gold >=1200 && Group ==1
+	 	 	 ##钱少300，传到雷欧娜村。
+	 	 	 AddGold -1200
+	 	 	 Warp 0,30333,5,14 
+		 Window_YES Gold <1200
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_NO 
+################### 炼金术士 50级以上 && 开过传送石
+block Job >= 1000 && Job < 1010 && Level >=50 && NowEvent 244 == 1 
+	 ##1200943	\n这是通往雷欧娜村的传送石，要使用吗？\n费用是1200元。
+	 Window 1200943,YES,NO 
+	 	 Window_YES Gold >=1200 && Group ==1 && Item 18660>=1
+	 	 	 ##1201411	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往雷欧娜村，费用是1200元，\n      确定要传送吗？
+			 Window 1201411,YES,NO 
+			 	 Window_YES Gold >=1200 && Group ==1 && Item 18660>=1
+	 	 	 		 ##钱少300，传到雷欧娜村。
+	 	 	 		 AddGold -1200
+	 	 	 		 Warp 0,30333,5,14 			 	 	 
+			 	 Window_NO 
+	 	 Window_YES Gold >=1200 && Group ==1
+	 	 	 ##钱少300，传到雷欧娜村。
+	 	 	 AddGold -1200
+	 	 	 Warp 0,30333,5,14 
+		 Window_YES Gold <1200
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_NO 	 	 
+
+
+
+################### 纺织工 职阶 >=3  && 开过传送石	 	 
+block Job >= 1000 && Job < 1010 && JobRank >=3 && NowEvent 244 == 1
+	 ##1200943	\n这是通往雷欧娜村的传送石，要使用吗？\n费用是1200元。
+	 Window 1200943,YES,NO 
+	 	 Window_YES Gold >=1200 && Group ==1 && Item 18660>=1
+	 	 	 ##1201411	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往雷欧娜村，费用是1200元，\n      确定要传送吗？
+			 Window 1201411,YES,NO 
+			 	 Window_YES Gold >=1200 && Group ==1 && Item 18660>=1
+	 	 	 		 ##钱少300，传到雷欧娜村。
+	 	 	 		 AddGold -1200
+	 	 	 		 Warp 0,30333,5,14 			 	 	 
+			 	 Window_NO 	 
+	 	 Window_YES Gold >=1200 && Group ==1
+	 	 	 ##钱少300，传到雷欧娜村。
+	 	 	 AddGold -1200
+	 	 	 Warp 0,30333,5,14 
+		 Window_YES Gold <1200
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_NO 
+
+################### 生产系称号 职阶 >=3  && 开过传送石
+block Job >200 && JobRank >=3 && NowEvent 244 == 1
+	 ##1200943	\n这是通往雷欧娜村的传送石，要使用吗？\n费用是1200元。
+	 Window 1200943,YES,NO 
+	 	 Window_YES Gold >=1200 && Group ==1 && Item 18660>=1
+	 	 	 ##1201411	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往雷欧娜村，费用是1200元，\n      确定要传送吗？
+			 Window 1201411,YES,NO 
+			 	 Window_YES Gold >=1200 && Group ==1 && Item 18660>=1
+	 	 	 		 ##钱少300，传到雷欧娜村。
+	 	 	 		 AddGold -1200
+	 	 	 		 Warp 0,30333,5,14 			 	 	 
+			 	 Window_NO 	 
+	 	 Window_YES Gold >=1200 && Group ==1
+	 	 	 ##钱少300，传到雷欧娜村。
+	 	 	 AddGold -1200
+	 	 	 Warp 0,30333,5,14 
+		 Window_YES Gold <1200
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_NO 
+################### 一般
+block 
+	 ##1200937	\n\n\n\n@c你没有使用此传送石的资格。
+	 EndWindow 1200937
+
+
+
+

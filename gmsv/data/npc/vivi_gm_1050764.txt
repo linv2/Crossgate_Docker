@@ -1,0 +1,44 @@
+###### 中秋节活动-夜市摊贩-月饼 #####
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+block
+	 ##1050934	\n\n俗语说“月圆，人团圆；吃饼，吃月饼！”我这儿刚好有刚出炉的月饼，客倌要不要来一些阿？\n我们家的月饼货好实在，价钱合理，包君满意喔！\n\n要来一盒吗？只要100元喔！	1
+	 Window 1050934,YES,NO 
+	 	 Window_YES Gold >= 100
+	 	 	 AddGold -100
+	 	 	 GiveLeak1Item (45441%1$1)
+	 	 	 ##1050935	\n\n\n\n@c谢谢捧场，有需要再来喔！	1
+	 	 	 EndWindow 1050935
+	 	 Window_YES Gold < 100
+	 	 	 ##1050936	\n\n哎呀~ 客倌，不好意思唷，我们这是小本生意，恕不赊帐！\n\n请您凑足100元再来吧~	1
+	 	 	 EndWindow 1050936
+	 	 Window_NO 
+	 	 	 ##1050937	\n\n\n真的不需要吗？送礼自用两相宜喔！再考虑一下吧！	1
+	 	 	 Window 1050937,YES,NO 
+	 	 	 	 Window_YES Gold >= 100
+	 	 	 		 AddGold -100
+	 	 	 		 GiveLeak1Item (45441%1$1)
+	 	 	 		 ##1050935	\n\n\n\n@c谢谢捧场，有需要再来喔！	1
+	 	 	 		 EndWindow 1050935
+	 	 	 	 Window_YES Gold < 100
+	 	 	 		 ##1050936	\n\n哎呀~ 客倌，不好意思唷，我们这是小本生意，恕不赊帐！\n\n请您凑足100元再来吧~	1
+	 	 	 		 EndWindow 1050936
+	 	 		 Window_NO 
+	 	 		 	 ##1050938	\n\n\n  再考虑一下吧！	1
+	 	 		 	 Window 1050938,YES,NO 
+	 	 		 	 	 Window_YES Gold >= 100
+	 	 	 		 		 AddGold -100
+	 	 	 		 		 GiveLeak1Item (45441%1$1)
+	 	 	 		 		 ##1050935	\n\n\n\n@c谢谢捧场，有需要再来喔！	1
+	 	 	 		 		 EndWindow 1050935
+	 	 	 	 		 Window_YES Gold < 100
+	 	 	 		 		 ##1050936	\n\n哎呀~ 客倌，不好意思唷，我们这是小本生意，恕不赊帐！\n\n请您凑足100元再来吧~
+	 	 	 		 		 EndWindow 1050936
+	 	 		 		 Window_NO 
+	 	 		 		 	 ##1050939	\n\n\n  没关系！有需要再来吧！	1
+	 	 		 		 	 EndWindow 1050939
+	 	 		 	 
+	 	 	 	 
+
+	 	 

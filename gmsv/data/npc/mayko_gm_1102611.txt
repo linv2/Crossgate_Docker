@@ -1,0 +1,13 @@
+#1102611	mayko_gm_1102611.txt 小良
+
+
+
+#1110651	\n\n\n　　　　也许有一天，这里也能跳出轮回的时间，\n　　　　还原成正常的时序。 
+
+#1110637	\n\n\n　　　你好慢喔！！\n　　　鲁鲁都已经到这里了。 	1
+block item 41085>0
+	killitem 41085,1
+	GiveLeak1Item 41088,1
+	Endwindow 1110637
+block 
+	 endwindow 1110651

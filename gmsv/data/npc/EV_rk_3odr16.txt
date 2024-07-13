@@ -1,0 +1,14 @@
+#»”…˙–˛∆π
+
+
+block
+	Window 23090,Next
+	Window 23091,Next
+	Window 23092,Next
+	Window 23093,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK
+			GiveItem 16428,1
+			LeaveGroup
+			Warp 0,43970,4,7

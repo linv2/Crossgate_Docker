@@ -1,0 +1,12 @@
+# mayko_gm_1102792.txt 近卫女官
+#1111812	\n\n　　　　很抱歉，\n　　　　因为席琳殿下现在十分害怕，\n　　　　不想见任何人，\n　　　　你就把状况回报给连络官吧～～	1
+#41274
+
+block item 41272 >0
+	killitem 41272,1
+	GiveLeak1Item 41274,1   
+	Window 1111812,ok
+	window_ok
+	leavegroup 
+ 	warp 0,43000,523,831
+ 	endblock

@@ -1,0 +1,9 @@
+##puk3包装-虚拟物品-觉醒之光  din_item_47335.txt
+##能力说明：双点后会出现永久称号-光之冒险者
+
+############# 一般 ######################
+block Item 47335 >=1
+	 KillItem 47335,1
+	 EndEvent 160 = 1
+	 CheckTitle 
+	 endblock

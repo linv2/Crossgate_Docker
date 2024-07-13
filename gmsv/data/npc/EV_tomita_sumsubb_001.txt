@@ -1,0 +1,214 @@
+#﹛璋剀祸母件斥亦件﹋蛙笙菱心母件斥亦件“扔皮?﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛璋剀祸及银樊及摒
+
+###﹛皮□旦玄甩□皮SP毛赭儅
+
+block Item_607685 >= 1
+	Window 3202829,NEXT
+
+		#\n\n﹛楝及儅匀化月公及皮□旦玄甩□皮??匀化今﹜\n﹛虫恘毛荚汊今六月躲绊反卅中氏分友﹝\n﹛午氏分揪啜中分匀凶方﹝\n﹛公木卞仄化手﹜顶匀化允匀仍仁褐中氏分友﹝\n﹛鳖氏分匀五曰粟五日木卅仁卅匀切扎匀化﹜\n﹛窖月卞窖木卅中方﹝
+	EndWindow 3202830
+
+		#\n\n﹛元扎丐疆仆壬中中匀化〝\n﹛中支中支﹜公氏卅仇午匹五卅中方﹝\n﹛窒仄欠顶及票卞反﹜窒手邋化中卅中氏分井日﹝
+
+
+
+###﹛厘阰综及云屡仆毛呁醒赭儅
+
+block Item_607940 >= 2
+	EndWindow 3202831
+
+		#\n\n﹛丐木﹜云屡仆互呁醒丐月方﹝\n﹛公木反切斤匀午熬仃潸木卅中卅丐﹝\n﹛井尹匀化董互鬼仁卅月井日友﹝
+
+
+
+###﹛厘阰综及云屡仆毛ㄠ蜊赭儅﹋じ澎詨ㄠㄟ坌恍坢﹌
+
+block Item_607940 == 1 && ItemCreateTime_607940 < 10
+	EndWindow 3202832
+
+		#\n\n﹛儅匀化五化仁木凶及反丹木仄中氏分仃升﹜\n﹛漆反切斤匀午董及鬼中凛棉谟卅氏分﹝\n﹛手丹剂仄仄化井日儅匀化五化方﹝
+
+
+
+###﹛厘阰综及云屡仆毛ㄠ蜊赭儅﹋じ澎詨ㄠㄟ坌动晓烦聊﹌
+
+block Item_607940 == 1 && ItemCreateTime_607940 >= 10
+	Window 3202833,OK
+
+		#\n\n﹛云云匀﹜公木反昒聂卞熬仃潸月仇午及匹五卅中\n﹛厘阰综及云屡仆元扎卅中井永″″\n﹛丐曰互午丹﹝元扎丐﹜仇木毛熬仃潸匀化方﹝\n﹛云斪午仄化反今今支井聊亢月仃升﹜\n﹛午卞井仁示弁及普桨及竣儅切卅氏分﹝
+
+		Window_OK Item_607940 >= 2
+			EndWindow 3202834
+
+		#\n\n﹛丐木﹜云屡仆互呁醒丐月方﹝\n﹛公木反切斤匀午熬仃潸木卅中卅丐﹝\n﹛井尹匀化董互鬼仁卅月井日友﹝
+
+		Window_OK Item_607940 == 1 && ItemCreateTime_607940 < 10
+			EndWindow 3202835
+
+		#\n\n﹛丐木﹜减氏匹凶日﹜中勾及棉卞井\n﹛董及鬼中凛棉谟卞卅匀切扎匀凶﹝\n﹛手丹剂仄仄化井日﹜引凶侳化方﹝
+
+		Window_OK Item_607940 == 1 && ItemCreateTime_607940 >= 10 && ItemSpace >= 1
+			KillItemAll 607940
+			GiveItem (15309%55,607685%25,608607%20)
+
+		Window_OK Item_607940 == 1
+			EndWindow 3202836
+
+		#\n\n﹛丐木﹜欐六卅中﹝绂坁互中匀天中心凶中分﹝
+
+		Window_OK
+			EndWindow 3202837
+
+		#\n\n﹛丐木﹜厘阰综及云屡仆互苇丐凶日卅中方﹝\n﹛丐木互卅中午漱月氏分﹝
+
+
+
+###﹛阰综及云屡仆毛呁醒赭儅
+
+block Item_607939 >= 2
+	EndWindow 3202838
+
+		#\n\n﹛丐木﹜云屡仆互呁醒丐月方﹝\n﹛公木反切斤匀午熬仃潸木卅中卅丐﹝\n﹛井尹匀化董互鬼仁卅月井日友﹝
+
+
+
+###﹛阰综及云屡仆毛ㄠ蜊赭儅﹋じ澎詨ㄠㄟ坌恍坢﹌
+
+block Item_607939 == 1 && ItemCreateTime_607939 < 10
+	EndWindow 3202839
+
+		#\n\n﹛儅匀化五化仁木凶及反丹木仄中氏分仃升﹜\n﹛漆反切斤匀午董及鬼中凛棉谟卅氏分﹝\n﹛手丹剂仄仄化井日儅匀化五化方﹝
+
+
+
+###﹛阰综及云屡仆毛ㄠ蜊赭儅﹋じ澎詨ㄠㄟ坌动晓烦聊﹌
+
+block Item_607939 == 1 && ItemCreateTime_607939 >= 10
+	Window 3202840,OK
+
+		#\n\n﹛丹氏﹜仇木反棉啜中卅仁阰综及云屡仆分﹝\n﹛丐曰互午丹﹜呿癫卞踞井匀凶方﹝\n﹛云斪午中丹幻升及坁匹手卅中仃升﹜\n﹛仇木毛丐仆月方﹝
+
+		Window_OK Item_607939 >= 2
+			EndWindow 3202841
+
+		#\n\n﹛丐木﹜云屡仆互呁醒丐月方﹝\n﹛公木反切斤匀午熬仃潸木卅中卅丐﹝\n﹛井尹匀化董互鬼仁卅月井日友﹝
+
+		Window_OK Item_607939 == 1 && ItemCreateTime_607939 < 10
+			EndWindow 3202842
+
+		#\n\n﹛丐木﹜减氏匹凶日﹜中勾及棉卞井\n﹛董及鬼中凛棉谟卞卅匀切扎匀凶﹝\n﹛手丹剂仄仄化井日﹜引凶侳化方﹝
+
+		Window_OK Item_607939 == 1 && ItemCreateTime_607939 >= 10 && ItemSpace >= 1
+			KillItemAll 607939
+			GiveItem (15309%60,608604%30,607685%10)
+
+		Window_OK Item_607939 == 1
+			EndWindow 3202843
+
+		#\n\n﹛丐木﹜欐六卅中﹝绂坁互中匀天中心凶中分﹝
+
+		Window_OK
+			EndWindow 3202844
+
+		#\n\n﹛丐木﹜阰综及云屡仆反升丹仄凶氏分中〝\n﹛卅中午漱月氏分仃升卅丐﹝
+
+
+
+###﹛账岊呜历仍仁勾少仄毛赭儅
+
+block Item_607938 >= 1
+	EndWindow 3202845
+
+		#\n\n﹛公及云潠﹜嫖公丹分友﹝\n﹛失永﹜钒仃卅仁化中中方﹜示弁反票袅分井日﹝\n﹛卞云中分仃匹手办匀天日匀切扎丹氏分﹝
+
+
+
+###﹛Ⅸ及澎综曰药阂毛赭儅
+
+block Item_607937 >= 1
+	EndWindow 3202846
+
+		#\n\n﹛公及澎综曰药阂反友尹﹜示弁日及翘卞丐月\n﹛Ⅸ及辞盒卞医★鳗歹月?鳗及怗卅氏分方﹝\n﹛公木毛云畸苇及云间尹卞允月午﹜濮覆卞惚互\n﹛嫦日卅中氏分﹝
+
+
+
+###﹛诡岖螃及云屡仆毛赭儅
+
+block Item_607936 >= 1
+	Window 3202847,NEXT
+
+		#\n\n﹛丐丐﹜儅匀化五化仁木凶氏分友﹜丐曰互午丹﹝\n﹛＿丐曰扎曰扎﹜阳综匀化踏中化丐月冗﹝\n﹛引内中卅丐﹜仇氏卅云屡仆儅切窖匀凶日﹜\n﹛翘及谛凶切卞跸獭五卞今木切扎丹方﹝
+	Window 3202848,YES,NO
+
+		#\n\n﹛甩﹜甩甩﹜甩甩甩＿＿丐及﹜丐及今丐﹜\n﹛手丹域蘸卅氏化﹜丐曰井卅〝
+
+		Window_YES
+			Window 3202849,OK
+
+		#\n\n﹛中支丐﹜呿癫卞踞井月卅丐﹝\n﹛澎少日元扎跟晶仄化仁木卅中分欠丹井日﹜\n﹛仇木毛域踝卞欐仄化心化方﹜Ⅸ及澎综曰药阂﹝\n﹛翘域瓷仄及抩坁匹井卅曰刉?互恌中井日﹜\n﹛窒午井卅月井手襞木卅中﹝
+
+				Window_OK Item_607936 >= 1 && ItemSpace >= 1
+					GiveItemEX 607937,1,3202850
+
+		#\n\n﹛丐木﹜欐六卅中﹝绂坁互中匀天中心凶中分﹝
+
+				Window_OK Item_607936 >= 1
+					EndWindow 3202851
+
+		#\n\n﹛丐木﹜欐六卅中﹝绂坁互中匀天中心凶中分﹝
+
+				Window_OK
+					EndWindow 3202852
+
+		#\n\n﹛诡岖螃及云屡仆反升丹仄凶氏分中〝\n﹛云屡仆互卅中午﹜凶少氏赘尹化手日尹卅中方﹝
+
+		Window_NO
+			EndWindow 3202853
+
+		#\n\n﹛公丹分方卅丐﹜き蘸反豭★仄中方卅丐﹝\n﹛丐℅丐﹜璋剀祸匹瑜祸曰井﹝\n﹛五匀午﹜允仍仁腾中氏分欠丹卅丐＿＿﹝
+
+
+
+###﹛云间尹岊毛赭儅
+
+block Item_607935 >= 1
+	EndWindow 3202854
+
+		#\n\n﹛支丐﹜佹莴匹侄仄中心凶中分友﹝\n﹛匹手﹜示弁手璋剀祸卞赞木月午中仃卅中井日﹜\n﹛匹五月分仃镀仁云屡仆毛儅匀化五化方﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+
+block
+	Window 3202855,NEXT
+
+		#\n\n﹛支丐﹜示弁反佹莴仄卞侳凶氏元扎卅中氏分﹝\n﹛诡岖螃迋及银樊井日﹜侳コ及璋剀及云屡仆毛\n﹛手日中卞侳凶氏分方﹝\n﹛分仃升﹜仇仇匹鳖氏元扎匀化友尹＿＿﹝
+	Window 3202856,YES,NO
+
+		#\n\n﹛云屡仆反璋剀祸匹?刓允月手及分井日﹜\n﹛鳖氏分樊反诡岖螃迋及银樊卞莘尹卅中氏分方﹝\n﹛董互鬼中井日友﹝\n﹛＿丐及今丐﹜蜕中卞仁中氏分仃升今丐﹜\n﹛医歹曰卞云屡仆毛手日匀化侳化仁木卅中井卅〝
+
+		Window_YES
+			Window 3202857,OK
+
+		#\n\n﹛中支丐﹜丐曰互午丹﹝\n﹛窒匹手﹜诡岖螃及银樊卞仇及云间尹岊毛欐仄化\n﹛云屡仆毛熬仃潸月日仄中氏分﹝\n﹛元扎丐﹜云凑中允月方﹝
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 607935,1,3202858
+
+		#\n\n﹛丐木﹜欐六卅中﹝绂坁互中匀天中心凶中分﹝
+
+				Window_OK
+					EndWindow 3202859
+
+		#\n\n﹛丐木﹜欐六卅中﹝绂坁互中匀天中心凶中分﹝
+
+		Window_NO
+			EndWindow 3202860
+
+		#\n\n﹛支匀天曰母丢井﹝侄仄公丹分手氏友尹﹝\n﹛浇匀凶卅丐＿﹝
+
+
+

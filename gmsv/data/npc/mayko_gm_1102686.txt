@@ -1,0 +1,22 @@
+#	mayko_gm_1102686.txt	翔天	(战斗后)																				
+
+#1111417	\n\n\n\n@c你想知道为何远离她？	1
+#1111418	\n\n　　　　如果只是想绑住一个人，\n　　　　让他有志难伸，那不是爱，是占有。	1
+#1111419	\n\n\n\n@c你就这样回答她吧～～～	1
+
+block itemspace >0
+	 window 1111417,next
+	 window 1111418,next
+	 window 1111419,ok
+	 window_ok
+	 LeaveGroup
+	 GiveLeak1Item 41161,1
+ 
+	 warp 0,32178,60,23
+
+	 endblock
+
+block
+	 window 1111417,next
+	 window 1111418,next
+	 endwindow 13115

@@ -1,0 +1,24 @@
+#mayko_gm_1102778.txt
+#1111770	\n\n\n\n@c你想离开这里吗？	1
+block item 41262 >0 && item 41263 >0
+	#1111779	\n\n\n　　　　这似乎是传说中火妖精之卵，\n　　　　可惜破掉了......	1
+	#1111780	\n\n\n　　　　谢谢你的情报，\n　　　　我这有份小礼物送你，\n　　　　谢谢你让我大开眼界。	1
+	Window 1111779,next
+	Window 1111780,ok
+	Window_ok  item 41262 >0 && item 41263 >0
+	killitem 41262,1
+	killitem 41663,1
+	GiveLeak1Item (41294%1$1,41045%33$1,41046%33$1,41047%33$1)  ##有机会取得火鹤花妖
+	leavegroup 
+	warp 0,43000,559,404
+	endblock	
+	Window_ok
+	endblock
+block 
+	Window 1111904,yes,no
+	window_no
+	endblock
+	Window_yes
+	leavegroup 
+	warp 0,43000,559,404
+	endblock	

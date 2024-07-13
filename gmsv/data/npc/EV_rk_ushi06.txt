@@ -1,0 +1,23 @@
+#É¡¢ÈóÐåÃ???
+#ÓúâÙ±åÍÖðö»¥ÓòÚÛØÆÐ×Æ¤·òÓÀÛÍÃ«ÖÊ†AÔÊÔÂ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+### µ¬ÔèÃ«ÅÈ±åƒ}ÔÈ»¯ÖÐÔÂ ###
+block Item 18599 >= 1
+endwindow 21074
+### ÂÚÃ«ƒ}ÔÈ»¯ÖÐÔÂ ###
+block Item 18598 >= 1
+
+window 21070,ok
+ window_ok Item 18598 >= 1
+  killitemall 18598
+  giveitem 18599
+
+block
+ window 21068,next
+ window_21069,yes,no
+  window_yes
+   encount 2|||0|||||0|12021|||||||||
+  window_no
+   endwindow 21072

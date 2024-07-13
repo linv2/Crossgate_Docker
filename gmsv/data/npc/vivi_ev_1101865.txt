@@ -1,0 +1,41 @@
+#####不可思议系列三：恶梦#####
+##酒吧里的客房
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+#■ 有水
+block Item 40300 >= 1
+	 ##1102017	\n\n\n\n@c要敲门进入吗？	1
+	 Window 1102017,YES,NO 
+	 	 Window_NO
+	 	 Window_YES 
+	 	 	 ##传送没有医生的房间
+	 	 	 Warp 0,32044,44,9
+	 
+#■ 有玻璃杯
+block Item 40299 >= 1
+	 ##1102017	\n\n\n\n@c要敲门进入吗？	1
+	 Window 1102017,YES,NO 
+	 	 Window_NO
+	 	 Window_YES 
+	 	 	 ##传送有医生房间
+	 	 	 Warp 0,32044,7,48
+
+#■ 有诊疗表
+block Item 40291 >= 1
+	 ##1102017	\n\n\n\n@c要敲门进入吗？	1
+	 Window 1102017,YES,NO 
+	 	 Window_NO
+	 	 Window_YES 
+	 	 	 ##传送有医生房间
+	 	 	 Warp 0,32044,7,48
+
+#■ 一般
+block 
+	 ##1102018	\n\n\n\n@c请勿打扰！	1
+	 EndWindow 1102018

@@ -1,0 +1,12 @@
+#mayko_gm_1102610.txt 萍萍
+
+
+#1110650	\n\n　　　　这里的人从不怪卡莲，\n　　　　她对军神是什么感情，\n　　　　说也说不清。 
+
+#1110637	\n\n\n　　　你好慢喔！！\n　　　鲁鲁都已经到这里了。 	1
+block item 41084>0
+	killitem 41084,1
+	GiveLeak1Item 41087,1
+	Endwindow 1110637
+block 
+	 endwindow 1110650

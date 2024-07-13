@@ -1,0 +1,102 @@
+#奶矛件玄泛旦玄
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## 申永弘田□布□今氏及桦宁 ##########
+block Item 18422 >= 1
+	#澎饼毛儅匀化中月桦宁
+	#氏〝卅氏分云蟆反〝
+	Window 13003,YES,NO
+
+	#----- 它奶件玉它YES及桦宁 -----#
+	#窒★白丞白丞卅月幻升竻琼踞仃仁木卅中井〝
+	Window_YES
+	Window 13004,OK
+
+	Window_OK
+	Window 13026,OK
+
+	#----- 它奶件玉它OK ㄡ荚杴凛 -----#
+	Window_OK Item 18422 >= 1
+	Killitem 18422,1
+	GiveItem 18423,1
+	EndWindow 13007
+
+	Window_OK
+
+	#----- 它奶件玉它NO及桦宁 -----#
+	#迕互卅中卅日今匀今午窖曰卅﹝
+	Window_NO 
+	EndWindow 13005
+
+	#----- 它奶件玉它YES匹坞五互ㄢ拑中凛 -----#
+	#Window_OK itemspace <= 3
+	#Window 13012,OK
+
+
+########## 炴盒及萼毛儅匀化中月桦宁 ##########
+block Item 18424 >= 1
+	#俇氏分兮﹝
+	EndWindow 13031
+
+
+########## 檗毛睡楚詨﹜萼综岳及桦宁 ##########
+block Item 18425 >= 3 && Item 18426 >= 3 && Item 18427 >= 3 && Item 18423 >= 1
+	#椭瘀丐曰“ABC3蜊勿勾及夤檗螂户月午﹝夤辄及萼﹋ㄠ﹌
+	#云云公木反夤檗元扎友之井﹜漆井日综月兮﹝
+	Window 13009,YES,NO
+
+	Window_YES
+	Window 13024,OK
+
+	#----- 它奶件玉它OK及桦宁 -----#
+	#夤檗ㄢ潘挀﹋A’B’C﹌LOST
+	Window_OK Item 18425 >= 3 && Item 18426 >= 3 && Item 18427 >= 3 && Item 18423 >= 1
+	Killitem 18425,3
+	Killitem 18426,3
+	Killitem 18427,3
+	Killitem 18423,1
+	GiveItem 18424,1
+	Window_OK
+
+	#----- 它奶件玉它NO及桦宁 -----#
+	#俇戈夤檗镀仁潸匀化五化仁木
+	Window_NO
+	EndWindow 13025
+
+
+########## 檗毛睡楚詨﹜萼综岳及桦宁 ##########
+block Item 18425 >= 3 && Item 18426 >= 3 && Item 18427 >= 3
+	#椭瘀丐曰“ABC3蜊勿勾及夤檗螂户月午﹝夤辄及萼﹋ㄠ﹌
+	#云云公木反夤檗元扎友之井﹜漆井日综月兮﹝
+	Window 13009,YES,NO
+
+	Window_YES
+	Window 13024,OK
+
+	#----- 它奶件玉它OK及桦宁 -----#
+	#夤檗ㄢ潘挀﹋A’B’C﹌LOST
+	Window_OK Item 18425 >= 3 && Item 18426 >= 3 && Item 18427 >= 3
+	Killitem 18425,3
+	Killitem 18426,3
+	Killitem 18427,3
+	GiveItem 18424,1
+	Window_OK
+
+	#----- 它奶件玉它NO及桦宁 -----#
+	#俇戈夤檗镀仁潸匀化五化仁木
+	Window_NO
+	EndWindow 13025
+
+
+########## 夤辄及萼毛儅匀化中月桦宁 ##########
+block Item 18423 >= 1
+	#\n\n﹛岉介今木凶?匀化及反﹜崭采镕24驰Ⅶ及﹜哗票き闭嫦曰化允什卞丐月氏分﹝\n﹛俇氏分兮﹝
+	EndWindow 13032
+
+
+########## 丐化反引日卅中桦宁 ##########
+block
+	#引凶樯心凶中卞域踝卞酷仪仄凶中兮﹝
+	EndWindow 13008

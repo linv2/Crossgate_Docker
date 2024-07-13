@@ -1,0 +1,10 @@
+##凯子GM洒红包_新增物
+##因为gm觉得用gm tools来大量洒红包,有点麻烦,所以新增一个物品方便作业
+##能力说明：双点后会出现１５个红包
+
+block ItemSpace < 15
+	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 EndWindow 1100002
+	 
+block ItemSpace >=15
+	 GiveLeak1Item 46449,15

@@ -1,0 +1,173 @@
+##mayko_gm_1102678.txt  新星防具  盾
+
+###魔币2100
+###风之盾	6458	9614	6	9615	6	9616	4	10005	20		
+
+##1111350	\n\n\n@c你好！！我负责支援新星盾牌制作：
+#1111330	\n\n你现在有风之盾材料纯银条6份，金条6份，白金条4份，赤松20
+#1111333	\n\n\n@c你要做这防具吗？
+#1111353	\n\n\n@c代工费是３５００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+#block item 9614>5 && item 9615 >5 && item 9616>3 && item 10005 >19
+
+block item 9614 >= 6 && item 9615 >= 6 && item 9616 >=4  &&  item 10005 >= 20
+
+	Window 1111350,next
+	Window 1111330,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes ItemSpace == 0
+	Endwindow 1051843
+	Window_yes
+	Window 1111353,yes,no
+	Window_no
+	endwindow 1111356
+	Window_yes gold <2099
+	Endwindow 3006707
+	Window_yes
+	Addgold -3500
+	killitem 9614,6
+	killitem 9615,6
+	killitem 9616,4
+	killitem 10005,20
+	GiveLeak1Item 6458,1
+	endwindow 1111335
+
+###魔币2100
+###狮子盾	6457	9613	8	9615	4	10004	20	10005	20	9617	4
+##1111350	\n\n\n@c你好！！我负责支援新星盾牌制作：
+#1111331	\n\n你现在有狮子盾材料银条8份，金条4份，琵琶木20份，赤松20份，幻之钢条4份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111353	\n\n\n@c代工费是３５００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 9613>7 && item 9615 >3  && item 10004>19 && item 10005 >19 && item 9617>3 
+
+
+	Window 1111350,next
+	Window 1111331,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+		Window_yes
+	Window 1111353,yes,no
+	Window_no
+	endwindow 1111356
+	Window_yes gold <2099
+	Endwindow 3006707
+	Window_yes ItemSpace == 0
+	Endwindow 1051843
+	Window_yes
+	Addgold -3500
+	killitem 9613,8
+	killitem 9615,4
+	killitem 9617,4
+	killitem 10005,20
+	killitem 10004,20
+	GiveLeak1Item 6457,1
+	endwindow 1111335
+
+
+
+###魔币700
+###漩涡重盾	6427	10000	20	9612	7	10001	20	9613	3	10002	20
+##1111350	\n\n\n@c你好！！我负责支援新星盾牌制作：
+#1111328	\n\n你现在有漩涡重盾材料印度轻木20份，铁条7份，枞20份，银条3份，黄月木20份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111354	\n\n\n@c代工费是７００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 9612>6 && item 9613 >2  && item 10000>19 && item 10001 >19 && item 10002>19
+ 
+
+	Window 1111350,next
+	Window 1111328,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	
+	
+	Window_yes
+	Window 1111354,yes,no
+	Window_no
+	endwindow 1111356
+	Window_yes gold <699
+	Endwindow 3006707
+	Window_yes ItemSpace == 0
+	Endwindow 1051843
+	Window_yes
+	Addgold -700
+	killitem 9612,7
+	killitem 9613,3
+	killitem 10000,20
+	killitem 10001,20
+	killitem 10002,20
+	GiveLeak1Item 6427,1
+	endwindow 1111335
+
+###魔币700
+###哥特盾	6425	9611	3	9612	4	9613	4	10002	20	9614	3
+##1111350	\n\n\n@c你好！！我负责支援新星盾牌制作：
+#1111329	\n\n你现在有哥特盾材料铜条3份，铁条4份，银条4份，黄月木20份，纯银条3份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111354	\n\n\n@c代工费是７００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+ 
+block item 9611 >= 3 && item 9612 >= 4 && item 9613 >=3  && item 9614 >= 3 && item 10002 >= 20
+	Window 1111350,next
+	Window 1111329,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	
+	Window_yes
+	Window 1111354,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold <699
+		Endwindow 3006707
+		Window_yes ItemSpace == 0
+		Endwindow 1051843
+	Window_yes
+	Addgold -700
+	killitem 9611,3
+	killitem 9612,4
+	killitem 9613,4
+	killitem 9614,3
+	killitem 10002,20
+	GiveLeak1Item 6425,1
+	endwindow 1111335
+
+
+###材料不足之说明区 
+#1111350	\n\n\n@c你好！！我负责支援新星盾牌制作：	1
+#1111267	\n\n制做漩涡重盾需要印度轻木20份，铁条7份，枞20份，银条3份，黄月木20份，	1
+#1111268	\n\n制做哥特盾需要铜条3份，铁条4份，银条4份，黄月木20份，纯银条3份，	1
+#1111269	\n\n制做风之盾需要纯银条6份，金条6份，白金条4份，赤松20	1
+#1111270	\n\n制做狮子盾需要银条8份，金条4份，琵琶木20份，赤松20份，幻之钢条4份，	1
+#1111355	\n\n\n@c准备好材料再来找我！！
+
+
+
+block 
+	Window 1111350,next
+	Window 1111267,next
+	Window 1111268,next
+	Window 1111269,next
+	Window 1111270,next
+	Endwindow 1111355

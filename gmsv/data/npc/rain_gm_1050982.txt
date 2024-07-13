@@ -1,0 +1,62 @@
+#######大宇周年庆任务
+#######克洛斯盖特
+
+block Item 45906 >= 1
+	 ##1051990	\n\n你身上那张SE社卡片我好像在哪里看过的样子…。
+	 EndWindow 1051990
+
+block Item 45902 >= 1
+	 ##1051994	\n\n快去找卡片商人买卡片吧！	
+	 EndWindow 1051994
+	 	 
+block Item 45903 >= 1 && Item 45908 >= 1
+	 ##1051987	\n\n你还想再凑热闹呀？那么再送一张卡片给大宇吧！
+	 Window 1051987,OK
+	 	 Window_OK ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 	 	 EndWindow 1100001
+		 Window_OK ItemSpace >= 1
+		 	 GiveLeak1Item 45902
+
+block Item 45903 >= 1 && Item 45909 >= 1
+	 ##1051987	\n\n你还想再凑热闹呀？那么再送一张卡片给大宇吧！
+	 Window 1051987,OK
+	 	 Window_OK ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 	 	 EndWindow 1100001
+		 Window_OK ItemSpace >= 1
+		 	 GiveLeak1Item 45902
+
+block Item 45903 >= 1 && Item 45910 >= 1
+	 ##1051987	\n\n你还想再凑热闹呀？那么再送一张卡片给大宇吧！
+	 Window 1051987,OK
+	 	 Window_OK ItemSpace == 0
+	 	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 	 	 EndWindow 1100001
+		 Window_OK ItemSpace >= 1
+		 	 GiveLeak1Item 45902
+
+block Item 45903 >= 1 
+	 ##1051986	\n\n你买到卡片了呀，那赶快拿去送给大宇，给他一个大\n惊喜！
+	 EndWindow 1051986		 	
+
+block
+	 ##1051973	\n\n嘿嘿，我跟你说喔，我朋友的生日快到了，我正在想\n帮他好好的庆祝一番。
+	 Window 1051973,NEXT
+	 ##1051974	\n\n怎样？想不想帮忙，顺便凑凑热闹呀？
+	 Window 1051974,YES,NO
+	 	 Window_NO 
+	 	 ##1051977	\n\n这样呀，那我再找其它人来帮忙好啰。不过还是欢迎\n你来参加大宇的生日派对啦！
+	 	 EndWindow 1051977
+	 	 Window_YES
+	 	 	 ##1051975	\n\n太好了，我朋友的名字叫做李大宇，他在里谢里亚堡\n，里担任制作蛋糕的工作。是一个很会作蛋糕的人喔\n！
+		 	 Window 1051975,NEXT 
+		 	 ##1051976	\n\n我听说最近城里来了一个旅行的卡片商人，你们他那\n帮我买张卡片送给大宇吧！
+	 		 Window 1051976,OK
+	 		 	 Window_OK ItemSpace == 0
+	 	 	 		 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 	 	 		 EndWindow 1100001
+	 		 	 Window_OK ItemSpace >= 1
+	 		 	 	 GiveLeak1Item 45902
+
+	 

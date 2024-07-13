@@ -1,0 +1,28 @@
+####3月EC
+###■汉堡增质箱(满)		每取出1个汉堡,耐久扣1  给予1个加量汉堡
+
+
+ ####□一般
+block
+	 ##1054792	\n\n是否想使用汉堡增质箱(满)呢？	1
+	 Window 1054792,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1																																																																																																			
+			 EndWindow 1054495
+	 	 
+	 	 Window_YES Item 47586 >=2
+	 	 	 ##1054793	\n\n\n汉堡增质箱(满)\n如果持有２个以上是无法使用的喔～	1
+			 EndWindow 1054793
+		 Window_YES Item 47586 ==1  && ItemDur 47586 ==1
+		 	 ##1054794	汉堡增质箱(满)消失了。	1
+			 KillItem 47586,1,(1054794)
+			 GiveLeak1Item 47588,1
+			 
+		 Window_YES Item 47586 ==1 && ItemDur 47586 >1		 
+	 	 	 ##1054795	使用了汉堡增质箱(满)。	1
+			 GiveLeak1Item 47588,1
+	 	 	 SetDur 47586,-1
+	 	 	 Message 1054795
+	 	 	 

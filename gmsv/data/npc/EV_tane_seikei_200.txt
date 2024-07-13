@@ -1,0 +1,46 @@
+#衙五凛医毛襞月手及
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+
+
+
+block  Item 607681 >= 1
+
+
+		Window 3200224,yes,no
+		#\n\n﹛五文五文五文℅手孔﹝\n﹛手五文〝
+
+
+			window_yes Item 607681 == 0
+
+				EndWindow 3200225
+		#\n\n﹛手夫文＿＿
+
+			window_yes
+
+				Window 3200226,ok
+		#\n\n﹛手匀五氏″
+				
+				window_ok Item 607681 > 0
+					GiveLeak1Item 607684,1
+				endblock	
+				window_ok
+				EndWindow 3200225
+			window_no
+
+				EndWindow 3200227
+		#\n\n﹛手夫文＿＿
+
+
+block
+
+
+
+		EndWindow 3200228
+		#\n\n﹛五文〝
+
+
+

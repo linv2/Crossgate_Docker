@@ -1,0 +1,21 @@
+#ÀÕÏÎ·®…í–cåÃ??? …ë¼òµÙ²ËóĞÓñÌïÆË
+#ÓúâÙ±åÍÖğö»¥ÓòÚÛØÆĞ×Æ¤·òÓÀÛÍÃ«ÖÊ†AÔÊÔÂ
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+
+####### ÕıÓÀñâ×óÆ½ÅÒÃ«ƒ}ÔÈ»¯ÖĞÔÂèëÄş ########
+block Item 18631 >= 1
+
+ Window 21145,Yes,No
+     Window_YES
+       window 21146,OK
+       window_OK Item 18631 >= 1
+         Killitemall 18631
+         Giveitem 18638
+      window_OK
+     Window_NO
+       EndWindow 21147
+########## ÊÖÔÈ»¯ÖĞØ¦ÖĞèëÄş ##########
+block Item 18631 == 0
+ Window 21143,next
+ EndWindow 21144

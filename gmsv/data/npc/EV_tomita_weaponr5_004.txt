@@ -1,0 +1,136 @@
+#﹛港盒及拨叶﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛巨件必汁及摒
+
+###﹛键缜谛匹键综岳旦平伙伊矛伙互ㄤ动晓
+
+block JobAncestry == 220 && SkillLevel_202 >= 5
+
+
+#﹛敛中石奶永旦伙毛赭儅
+	If Item_607951 >= 1
+		EndWindow 3202925
+
+		#\n\n﹛じ曰轼反仇仇元扎卅中﹝ㄤ遽分方﹝\n﹛僮仁卅匀化中月桦赭匹茧仄化心化方﹝
+		EndBlock
+
+
+#﹛厘骞午失伙穴奶玄﹋ㄡㄟ蜊﹌毛赭儅
+	else
+
+		If Item_607944 >= 1 && Item_9708 >= 20
+			Window 3202926,NEXT
+
+		#\n\n﹛方仁螂户凶友﹝元扎﹜莘歹六化丐仆月方﹝\n﹛じ曰轼反仇仇及ㄤ遽卞怅今木化月氏分仃升﹜\n﹛仇及敛中石奶永旦伙互丐木壬蜇木月﹝\n﹛公及漪竣互丐木壬﹜优内茧仄请六月方﹝
+			Window 3202927,OK
+
+		#\n\n﹛分仃升﹜由□泛奴毛赚氏匹中月午﹜\n﹛伉□母□元扎卅中午石奶永旦伙及躲绊反\n﹛蜇木卅中氏分﹝竣毛勾仃化仁木方卅﹝
+
+				Window_OK Item_607944 >= 1 && Item_9708 >= 20 && ItemSpace >= 1
+					KillItemAll 607944
+					KillItem 9708,20
+					GiveItemEX 607951,1,3202928
+
+		#\n\n﹛丐曰扎﹜绂坁互中匀天中匹欐六卅中﹝\n﹛帮咥仄化幻仄中卅﹝
+					EndBlock
+
+				Window_OK Item_607944 >= 1 && Item_9708 >= 20
+					EndWindow 3202929
+
+		#\n\n﹛丐曰扎﹜绂坁互中匀天中匹欐六卅中﹝\n﹛帮咥仄化幻仄中卅﹝
+					EndBlock
+
+				Window_OK Item_607944 >= 1
+					EndWindow 3202930
+
+		#\n\n﹛丐曰扎﹜失伙穴奶玄互箫曰卅中﹝\n﹛石奶永旦伙互丐仆日木卅仁卅匀切扎匀凶﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3202931
+
+		#\n\n﹛厘骞互卅仁卅匀凶心凶中分方﹝\n﹛石奶永旦伙互丐仆日木卅仁卅匀切扎匀凶﹝
+					EndBlock
+
+
+#﹛厘骞反赭儅仄化中月互﹜失伙穴奶玄互尕箫
+		else
+
+			If Item_607944 >= 1
+				EndWindow 3202932
+
+		#\n\n﹛失伙穴奶玄反ㄡㄟ蜊儅匀化五化仁木方﹝\n﹛云引仃反仄卅中方﹝
+				EndBlock
+
+
+#﹛镗妐踏毛赭儅
+			else
+
+				If Item_607942 >= 1
+					EndWindow 3202933
+
+		#\n\n﹛鬼中仃升﹜Ⅶ填盒及蛛桦赭反〇踝卅氏分﹝\n﹛茧允及手泛旦玄及丹切分井日友﹝
+					EndBlock
+
+
+#﹛晓筏失奶泛丞毛尕赭儅
+				else
+					Window 3202934,YES,NO
+
+		#\n\n﹛楝反键缜谛分友﹝\n﹛燮戏及键及综曰杅毛喀太卞侳凶及井中〝
+
+						Window_YES
+							Window 3202935,NEXT
+
+		#\n\n﹛元扎﹜呿竣井升丹井泛旦玄今六化手日丹方﹝\n﹛键及葆恔及失伙穴奶玄午中丹夤檗毛ㄡㄟ蜊午\n﹛藤夭卞银丹厘骞毛儅匀化五化幻仄中氏分﹝
+							Window 3202936,OK
+
+		#\n\n﹛厘骞反﹜港盒及升仇井卞Ⅶ填盒互中月井日﹜\n﹛仇及镗妐踏毛欐仄化熬仃潸匀化五化方﹝
+
+								Window_OK ItemSpace >= 1
+									GiveItemEX 607942,1,3202937
+
+		#\n\n﹛丐曰扎﹜绂坁互中匀天中匹欐六卅中﹝\n﹛帮咥仄化幻仄中卅﹝
+									EndBlock
+
+								Window_OK
+									EndWindow 3202938
+
+		#\n\n﹛丐曰扎﹜绂坁互中匀天中匹欐六卅中﹝\n﹛帮咥仄化幻仄中卅﹝
+									EndBlock
+
+						Window_NO
+							EndWindow 3202939
+
+		#\n\n﹛公木分仃及珃互丐月及卞﹜手匀凶中卅中卅﹝
+							EndBlock
+
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛键缜谛分互键综岳旦平伙伊矛伙互ㄤ恍坢
+
+block JobAncestry == 220
+	EndWindow 3202940
+
+		#\n\n﹛楝反引分﹜燮戏及键毛综木月仿件弁卞\n﹛琼仄化中卅中心凶中分﹝\n﹛仿件弁毛晓仆化﹜引凶侳化方﹝
+
+
+
+###﹛键缜谛匹反卅中
+
+block
+	EndWindow 3202941
+
+		#\n\n﹛丹切及燮戏﹜窒匹仇氏卅赭卞蝠氏匹月氏分欠﹝\n﹛珃反恌中心凶中分井日﹜章卞蝠户壬\n﹛手匀午枘井月及卞﹝
+
+
+

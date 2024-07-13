@@ -1,0 +1,12 @@
+#»£Å¢¼°?ÚÐ
+
+#
+block
+	Window 23230,Next
+	Window 23231,Next
+	Window 23232,Next
+	Window 23246,Next
+	Window 23247,Next
+	EndWindow 23248,OK
+
+

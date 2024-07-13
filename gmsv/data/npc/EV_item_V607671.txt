@@ -1,0 +1,28 @@
+
+block Floor == 59502
+
+
+if  Xpos == 149 && Ypos == 134
+
+	if globalFlag25 == 0
+
+
+		globalFlag25 = 1
+		killitem 607671,1,(3007168)
+
+	endif
+
+else
+
+	endWindow 4100005
+	#"\n\n  什么事都没发生。"
+
+
+
+endif
+
+block
+	endWindow 4100005
+	#"\n\n  什么事都没发生。"
+
+

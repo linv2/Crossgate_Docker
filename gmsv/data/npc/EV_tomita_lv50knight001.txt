@@ -1,0 +1,141 @@
+#LV50绅亢桦弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛Ⅱ楷及潮谛及摒
+
+###﹛皿伊奶乩□及伊矛伙互50动晓
+block Level >= 50
+
+#﹛伊矛伙70动晓
+	If Level >= 70
+		Window 3203788,YES,NO
+
+		#\n\n﹛歹仄反﹜裕丐匀化仇仇及栋咥毛仄化中月樊分﹝\n﹛＿白丞﹜云蟆今氏及掸恘匹反﹜仇及Ⅱ楷反\n﹛剂仄坁箫曰卅中午合丹冗﹝\n﹛じ桦恔反2000?卞卅月互﹜公木匹手じ月井友〝
+
+			Window_YES Gold >= 2000
+				Window 3203789,OK
+
+		#\n\n﹛舰曰宁中互卅中午合丹互及丹﹝\n﹛引丐﹜垫仁分仃垫匀化心卅今木﹝
+
+					Window_OK Gold >= 2000
+						AddGold -2000
+						LeaveGroup
+						Warp 0,59715,297,215
+						EndBlock
+
+					Window_OK
+						EndWindow 3203790
+
+		#\n\n﹛云嗯互箫曰卅中方丹分卅﹝\n﹛じ桦恔毛囮尹卅仃木壬﹜じ木月仇午反匹五氏﹝
+						EndBlock
+
+			Window_YES
+				EndWindow 3203791
+
+		#\n\n﹛云嗯互箫曰卅中方丹分卅﹝\n﹛じ桦恔毛囮尹卅仃木壬﹜じ木月仇午反匹五氏﹝
+				EndBlock
+
+			Window_NO
+				EndWindow 3203792
+
+		#\n\n﹛引丐﹜公丹分欠丹﹝\n﹛珃魂仄卅日﹜坌锹杀及桦赭毛茧仄卅今木﹝
+				EndBlock
+
+#﹛伊矛伙60℅69
+	else
+		If Level >= 60
+			Window 3203793,YES,NO
+
+		#\n\n﹛歹仄反﹜裕丐匀化仇仇及栋咥毛仄化中月樊分﹝\n﹛＿白丞﹜云蟆今氏卅日﹜仇及Ⅱ楷卞じ匀化手\n﹛厘暹屺公丹分卅﹝\n﹛じ桦恔反700?分互﹜珃魂仄毛仄化心月井友〝
+
+				Window_YES Gold >= 700
+					Window 3203794,OK
+
+		#\n\n﹛匹反﹜竣毛勾仃化卅﹝坴艘反嗟坁分冗﹝
+
+						Window_OK Gold >= 700
+							AddGold -700
+							LeaveGroup
+							Warp 0,59715,297,215
+							EndBlock
+
+						Window_OK
+							EndWindow 3203795
+
+		#\n\n﹛云嗯互箫曰卅中方丹分卅﹝\n﹛じ桦恔毛囮尹卅仃木壬﹜じ木月仇午反匹五氏﹝
+							EndBlock
+
+				Window_YES
+					EndWindow 3203796
+
+		#\n\n﹛云嗯互箫曰卅中方丹分卅﹝\n﹛じ桦恔毛囮尹卅仃木壬﹜じ木月仇午反匹五氏﹝
+					EndBlock
+
+				Window_NO
+					EndWindow 3203797
+
+		#\n\n﹛渣莴卅午仇欠卞反箫毛⑦心じ木卅中井﹝\n﹛叶抸卅?蝇分卅﹝
+					EndBlock
+
+#﹛伊矛伙50℅59
+		else
+			Window 3203798,YES,NO
+
+		#\n\n﹛歹仄反﹜裕丐匀化仇仇及栋咥毛仄化中月樊分﹝\n﹛＿白丞﹜云蟆今氏卅日﹜仇及Ⅱ楷卞じ匀化手\n﹛厘暹屺公丹分卅﹝\n﹛じ桦恔反500?分互﹜珃魂仄毛仄化心月井友〝
+
+				Window_YES Gold >= 500
+					Window 3203799,OK
+
+		#\n\n﹛匹反﹜竣毛勾仃化卅﹝坴艘反嗟坁分冗﹝
+
+						Window_OK Gold >= 500
+							AddGold -500
+							LeaveGroup
+							Warp 0,59715,297,215
+							EndBlock
+
+						Window_OK
+							EndWindow 3203800
+
+		#\n\n﹛云嗯互箫曰卅中方丹分卅﹝\n﹛じ桦恔毛囮尹卅仃木壬﹜じ木月仇午反匹五氏﹝
+							EndBlock
+
+				Window_YES
+					EndWindow 3203801
+
+		#\n\n﹛云嗯互箫曰卅中方丹分卅﹝\n﹛じ桦恔毛囮尹卅仃木壬﹜じ木月仇午反匹五氏﹝
+					EndBlock
+
+				Window_NO
+					EndWindow 3203802
+
+		#\n\n﹛渣莴卅午仇欠卞反箫毛⑦心じ木卅中井﹝\n﹛叶抸卅?蝇分卅﹝
+					EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛皿伊奶乩□及伊矛伙互50恍坢
+block
+	Window 3203803,YES,NO
+
+		#\n\n﹛歹仄反﹜裕丐匀化仇仇及栋咥毛仄化中月樊分﹝\n﹛＿它□丞﹜仇及Ⅱ楷尺じ月卞反﹜云蟆今氏反\n﹛引分恘互箫曰卅中方丹分卅﹝\n﹛引丐﹜升丹仄化手午蜕丹卅日鞅户反六氏互﹜\n﹛燮尺褡戈井友〝
+
+		Window_YES
+			Window 3203804,OK
+
+		#\n\n﹛拑咥分午合匀凶日﹜允什卞娄五忒允氏分冗﹝\n﹛匹反﹜竣毛勾仃化卅﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59715,301,220
+
+		Window_NO
+			EndWindow 3203805
+
+		#\n\n﹛公木互叶抸分卅﹝\n﹛恘毛勾仃化井日﹜引凶侳月互方中﹝
+
+
+

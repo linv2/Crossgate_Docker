@@ -1,0 +1,16 @@
+#
+#ֳׁף°?כי
+#
+
+block
+	Window 22006,Yes,No
+		Window_No
+			EndWindow 15684,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 10000
+		Window_Yes Item 18983 <= 998
+			EndWindow 22000
+		Window_Yes
+			KillItem 18983,999
+			GiveItem 18984
+			Message 4011

@@ -1,0 +1,8 @@
+#雪人屋	爱丝波波哥哥
+#	■　谢谢你～有空要来找我们玩喔～
+
+block 
+	#EndWindow 1053625
+	Window 1053625,OK
+	Window_OK
+	setaction 1

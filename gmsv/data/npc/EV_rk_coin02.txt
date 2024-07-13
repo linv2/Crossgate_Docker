@@ -1,0 +1,35 @@
+#
+#ÑÃó°äúÂ¦
+#
+
+#ÆË»ïÌï¡õ´ò¡õÒÁØ©
+block StrCmpChat == 4007
+	Window 22001,Yes,No
+		Window_No
+			EndWindow 15684,OK
+		Window_Yes PetSpace == 0
+			EndWindow 21417
+		Window_Yes Item 18984 <= 2
+			EndWindow 22000
+		Window_Yes
+			KillItem 18984,3
+			GivePet 623
+			Message 4011
+
+#´ò¡õ»ïÓñ´ò¡õÒÁØ©
+block StrCmpChat == 4009
+	Window 22002,Yes,No
+		Window_No
+			EndWindow 15684,OK
+		Window_Yes PetSpace == 0
+			EndWindow 21417
+		Window_Yes Item 18984 <= 9
+			EndWindow 22000
+		Window_Yes
+			KillItem 18984,10
+			GivePet 624
+			Message 4011
+
+block
+#\n\n©x³ğÇĞÈÕÆ¥·´Ê§»ïÊĞ·¸Å«Ê§ÑÃó°Ã«áÙ³ÄØ¦ÌÏˆVÎç¸ú¾§½ñÁù»¯ÉÄÖĞ»¯ÔÆÔ»ÒıÔÊ©z
+	EndWindow 22003

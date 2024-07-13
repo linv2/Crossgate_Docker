@@ -1,0 +1,23 @@
+#＞平亘旦泛及翘＝ミ嘻NPC﹛??巟鼹﹛凌001
+#
+#﹛﹛﹛立件布旦及摒
+
+###﹛狪仄井仃日木凶午五
+
+block
+
+	LocalCount0 = Random 2,0
+
+	If LocalCount0 == 1
+		EndWindow 3200751
+		#\n\n﹛弘伙伙伙伙伙伙伙伙＿＿
+		EndBlock
+
+	else
+		EndWindow 3200752
+		#\n\n﹛布伙伙伙伙伙伙伙伙＿＿
+		EndBlock
+
+	endif
+
+

@@ -1,0 +1,44 @@
+#允仍欠仁	允仍欠仁副〇溢	6208
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 扔奶戊夫毛儅匀化中月桦宁 ##########
+	Block Item 18491 >= 1
+	#\n\n﹛仇及梂互允仍欠仁及莘桦卞卅匀化中月﹝\n﹛手仄引分允仍欠仁毛仄凶仇午互卅中氏分匀凶日﹜仇仇毛じ匀化域?澎蟆及朿盒匹濩抸毛熬仃月午中中分欠丹﹝
+	EndWindow 11924
+
+########## 丐化反引日卅中桦宁 ##########
+	block
+	#\n\n﹛仇仇反允仍欠仁芛绖桦及熬尥分﹝允仍欠仁毛允月及井中〝
+	Window 11922,YES,NO
+
+	Window_NO
+	#\n﹛元扎丐﹜引凶卅﹝切卅心卞﹜斨洬及熬尥反仇仇及尔澎梂分方﹝
+	EndWindow 11923
+
+	Window_YES Item 18491 >= 1
+	#\n\n﹛仇及梂互允仍欠仁及莘桦卞卅匀化中月﹝\n﹛手仄引分允仍欠仁毛仄凶仇午互卅中氏分匀凶日﹜仇仇毛じ匀化域?澎蟆及朿盒匹濩抸毛熬仃月午中中分欠丹﹝
+	EndWindow 11924
+
+	Window_YES
+	#\n\n﹛允仍欠仁卞蔺爵允月卅日﹜扔奶戊夫互优邰分方﹝请侳凶日辅笛樊蝈够互儅匀化月杅互中中卅﹝\n﹛白央□伊件毕崭嗣挤扔奶戊夫反域蜊﹛ㄤㄟㄟ?分互﹜ョ匀化中仁井中〝
+	Window 11925,YES,NO
+
+	Window_YES ItemSpace == 0
+	#\n\n﹛绂坁互中匀天中匹允﹝
+	EndWindow 10000
+
+	Window_YES Gold < 500
+	#\n\n﹛云嗯互箫曰引六氏﹝
+	EndWindow 10005
+
+	Window_YES ItemSpace >= 1 && Gold >= 500
+	AddGold -500
+	GiveItem 18491,1
+	#\n\n﹛仇木互扔奶戊夫分方﹝仇及引引梂卞褡戈午允仍欠仁伙□丞分﹝\n﹛扔奶戊夫反﹜允仍欠仁动陆卞手中欠中欠银尹月冗﹝啼仄氏匹仁木﹝
+	EndWindow 11926
+
+	Window_NO
+	#\n\n﹛公丹井﹜引凶侳化仁木﹝
+	EndWindow 11927

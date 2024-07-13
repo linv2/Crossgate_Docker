@@ -1,0 +1,7 @@
+#¢†ûù
+
+block
+	Window 21959,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,11039,12,17

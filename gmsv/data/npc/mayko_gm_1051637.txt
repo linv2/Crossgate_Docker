@@ -1,0 +1,332 @@
+##地精练机
+
+##魔石
+#18005	12
+#18006	48
+#18007	96
+#18008	124
+#18009	150
+#18010	178
+#18011	205
+#18012	232
+#18013	259
+#18014	287
+#18015	313
+#18016	341
+#18017	368
+#18018	395
+#18019	422
+#18020	450
+#18021	476
+#18022	504
+#18023	532
+#18024	558
+#18025	587
+
+
+#黑水晶	46852
+#甜在心宠物饲料包	46906
+#魔族的水晶	18450
+block
+	 Window 1054582,NEXT
+   	 Window 1054583,NEXT
+
+
+#12 
+#block 18005 >3 
+	 Window 1054602,YES,NO 
+#	 Window_NO
+#	 EndWindow 11054597 
+	 Window_YES Item 18005 <4 
+	 EndWindow 1054598
+	 Window_YES 
+	 KillItem 18005,4 
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%48$1,46852%3600$1,46906%73$1,18005%96279$1)
+	 EndWindow 1054601
+#48 
+#block 18006>3 
+	 Window_NO
+	 Window 1054603,YES,NO 
+#	 Window_NO
+#	 EndWindow 11054597 
+	 Window_YES Item 18006 <4 
+	 EndWindow 1054598
+	 Window_YES
+	 KillItem 18006,4 
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%192$1,46852%14400$1,46906%292$1,18006%85116$1)
+	 EndWindow 1054601
+#96 
+#block 18007 >3 
+	 Window_NO
+	 Window 1054604,YES,NO 
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18007  <4 
+	 EndWindow  1054598 
+	 Window_YES
+	 KillItem 18007,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%384$1,46852%28800$1,46906%584$1,18007%70232$1)
+	 EndWindow 1054601
+#124 
+#block 18008>3 
+	 Window_NO
+	 Window 1054605,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18008 <4
+	 EndWindow 1054598 
+	 Window_YES
+	 KillItem 18008,4 
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%496$1,46852%37200$1,46906%754$1,18008%61550$1)
+	 EndWindow 1054601
+#150 
+#block 18009>3
+	 Window_NO
+	 Window 1054606,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597 
+	 Window_YES Item 18009 <4 
+	 EndWindow 1054598 
+	 Window_YES
+	 KillItem 18009,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%600$1,46852%45000$1,46906%912$1,18009%53488$1)
+	 EndWindow 1054601
+#178 
+#block 18010>3 
+	 Window_NO
+	 Window 1054607,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18010 <4
+	 EndWindow 1054598
+	 Window_YES
+	 KillItem 18010,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%712$1,46852%53400$1,46906%1082$1,18010%44806$1)
+	 EndWindow 1054601
+#205 
+#block 18011>3
+	 Window_NO
+	 Window 1054608,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18011 <4
+	 EndWindow 1054598
+	 Window_YES
+	 KillItem 18011,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%820$1,46852%61500$1,46906%1246$1,18011%36434$1)
+	 EndWindow 1054601
+#232 
+#block 18012>3
+	 Window_NO
+	 Window 1054609,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18012 <4
+	 EndWindow  1054598
+	 Window_YES
+	 KillItem 18012,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%928$1,46852%69600$1,46906%1411$1,18012%28061$1)
+	 EndWindow 1054601
+#259 
+#block 18013>3
+	 Window_NO
+	 Window 1054610,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18013 <4
+	 EndWindow 1054598 
+	 Window_YES
+	 KillItem 18013,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%1036$1,46852%77700$1,46906%1575$1,18013%19689$1)
+	 EndWindow 1054601
+#287 
+#block 18014>3
+	 Window_NO
+	 Window 1054611,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18014 <4
+	 EndWindow 1054598
+	 Window_YES
+	 KillItem 18014,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%1148$1,46852%82376$1,46906%1670$1,18014%14805$1)
+	 EndWindow 1054601
+#313 
+#block 18015>3
+	 Window_NO
+	 Window 1054612,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18015 <4
+	 EndWindow  1054598
+	 Window_YES
+	 KillItem 18015,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%1252$1,46852%82290$1,46906%1671$1,18015%14787$1)
+	 EndWindow 1054601
+#341 
+#block 18016>3
+	 Window_NO
+	 Window 1054613,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18016 <4
+	 EndWindow  1054598
+	 Window_YES
+	 KillItem 18016,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%1364$1,46852%82196$1,46906%1671$1,18016%14768$1)
+	 EndWindow 1054601 
+#368 
+#block 18017>3
+	 Window_NO
+	 Window 1054614,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18017 <4
+	 EndWindow  1054598
+	 Window_YES
+	 KillItem 18017,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%1472$1,46852%82106$1,46906%1672$1,18017%14750$1)
+	 EndWindow 1054601 
+#395 
+#block 18018>3
+	 Window_NO
+	 Window 1054615,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18018 <4
+	 EndWindow  1054598
+	 Window_YES
+	 KillItem 18018,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%1580$1,46852%82016$1,46906%1672$1,18018%14731$1)
+	 EndWindow 1054601
+#422 
+#block 18019>3
+	 Window_NO
+	 Window 1054616,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18019 <4
+	 EndWindow 1054598
+	 Window_YES
+	 KillItem 18019,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%1688$1,46852%81926$1,46906%1672$1,18019%14713$1)
+	 EndWindow 1054601
+#450 
+#block 18020>3
+	 Window_NO
+	 Window 1054617,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18020 <4
+	 EndWindow 1054598
+	 Window_YES
+	 KillItem 18020,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%1800$1,46852%81833$1,46906%1673$1,18020%14694$1)
+	 EndWindow 1054601
+#476 
+#block 18021>3
+	 Window_NO
+	 Window 1054618,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18021 <4
+	 EndWindow  1054598
+	 Window_YES
+	 KillItem 18021,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%1904$1,46852%81746$1,46906%1673$1,18021%14676$1)
+	 EndWindow 1054601
+#504 
+#block 18022>3
+	 Window_NO
+	 Window 1054619,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18022 <4
+	 EndWindow  1054598
+	 Window_YES
+	 KillItem  18022,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%2016$1,46852%81653$1,46906%1673$1,18022%14657$1)
+	 EndWindow 1054601
+#532 
+#block 18023>3
+	 Window_NO
+	 Window 1054620,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18023 <4
+	 EndWindow  1054598
+	 Window_YES
+	 KillItem 18023,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%2128$1,46852%81560$1,46906%1674$1,18023%14638$1)
+	 EndWindow 1054601
+#558 
+#block 18024>3
+	 Window_NO
+	 Window 1054621,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18024 <4
+	 EndWindow 1054598
+	 Window_YES
+	 KillItem 18024,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%2232$1,46852%81473$1,46906%1674$1,18024%14621$1)
+	 EndWindow 1054601
+#587 
+#block 18025 >3
+	 Window_NO
+	 Window 1054622,YES,NO
+#	 Window_NO
+#	 EndWindow 11054597
+	 Window_YES Item 18025 <4
+	 EndWindow 1054598
+	 Window_YES
+	 KillItem 18025,4
+	 Window 1054599,NEXT
+	 Window 1054600,NEXT
+	 GiveLeak1Item (18450%2348$1,46852%81376$1,46906%1674$1,18025%14601$1)
+	 EndWindow 1054601
+
+##没有足够的魔石
+	 Window_NO 
+   	 EndWindow 1054597  
+

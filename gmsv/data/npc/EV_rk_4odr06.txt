@@ -1,0 +1,21 @@
+#û¹?????
+
+block Item 16418 >= 1
+	EndWindow 22812,OK
+
+block Item 16414 >= 1 && Item 16416 >= 1
+	Window 22813,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46028,6,12
+
+block Item 16414 >= 1 && Item 16417 >= 1
+	Window 22813,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46028,6,12
+
+block Item 16414 >= 1
+	EndWindow 22814,OK
+block
+	EndWindow 22815,OK

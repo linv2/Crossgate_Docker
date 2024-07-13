@@ -1,0 +1,42 @@
+#??úö???
+
+#EndFLG?132?ON??
+block EndEvent 132 == 1
+	Window 22573,Next
+	Window 22574,Next
+	Window 22575,OK
+		Window_OK
+			NowEvent 132 = 0
+			EndEvent 132 = 0
+			EndEvent 133 = 1
+			CheckTitle
+
+#??????§??????????
+block Item 16392 >= 1
+	EndWindow 22583,OK
+
+#?????????????????
+block Item 16388 >= 1
+	Window 22491,Next
+	EndWindow 22492,OK
+
+#?þØšu?úù??????????
+block Item 16389 >= 1
+	Window 22494,Next
+	EndWindow 22495,OK
+
+#NowFLG?132?ON??
+block NowEvent 132 == 1
+	Window 22497,Next
+	EndWindow 22498,OK
+
+#EndFLG?131?ON????ü¬?????
+block EndEvent 131 == 1
+	Window 22496,Next
+	Window 22497,Next
+	Window 22498,OK
+		Window_OK
+			NowEvent 132 = 1
+#
+block
+	EndWindow 22499,OK

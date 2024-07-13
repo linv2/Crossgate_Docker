@@ -1,0 +1,38 @@
+#mayko_gm_1051777.txt  金银互转
+#火焰鼠银币40843
+#水蓝鼠金币40844
+#1055802	\n\n\n\n@c想把水蓝鼠金币换成火焰鼠银币吗？？
+#1055803	\n\n\n\n@c你没有水蓝鼠金币喔！
+
+block Item 40844 > 0
+	# Window 1111520,yes,no
+	# Window_YES ItemSpace == 0
+	# ##1100001	\n\n\n\n\n@c物品栏已经满了。	1	 
+	# EndWindow 1100001
+	# Window_YES Item 40844 > 0 
+	# KillItem 40844,1
+	# GiveLeak1Item 41135,500
+	# endblock
+	# Window_yes
+	# EndWindow 1055803
+	 
+	# Window_no
+	 Window 1055802,YES,NO
+	 Window_YES ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1	 
+	 EndWindow 1100001
+	 
+	 Window_YES Item 40844 > 0 
+	 KillItem 40844,1
+	 GiveLeak1Item (40843%1$100)
+	 endblock
+	  
+	 
+	 Window_YES
+	 EndWindow 1055803
+	 Window_NO
+	 endblock
+block
+	 EndWindow 1055803
+	 
+

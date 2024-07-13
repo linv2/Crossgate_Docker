@@ -1,0 +1,10 @@
+#?????
+
+block Item 16220 >= 1
+	Window 21655,next
+	Window 21656,OK
+		Window_OK
+			KillItemall 16220
+			GiveItem 16221
+block
+	Message 21657

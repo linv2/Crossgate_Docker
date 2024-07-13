@@ -1,0 +1,14 @@
+block
+	#1111833	\n\n\n　　　　我每隔一阵子，\n　　　　就准备了祭品，\n　　　　要去祭拜耶卡与阿夏芙夫妻。
+	#1111834	\n\n\n　　　　没想到这山洞里的妖怪，\n　　　　居然抢走了祭礼，你可以帮帮我吗？
+	#1111835	\n\n\n　　　　那麻烦你啰～\n　　　　要找回三碗饭～～
+
+	Window 1111833,next
+	Window 1111834,next
+	Window 1111835,yes,no
+	Window_yes
+		leavegroup 
+		warp 0,31807,36,24
+		endblock
+	Window_no
+	endblock		

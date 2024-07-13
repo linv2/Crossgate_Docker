@@ -1,0 +1,58 @@
+#显及丝挚﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛项憎敢由仿旦及摒
+
+###﹛乒夫甩正弗丐月中反穴奶件白仿伐□毛赭儅
+block Item_607700 >= 1 || Item_607702 >= 1
+	EndWindow 3204860
+
+		#\n\n﹛云支云支﹜云潜及儅匀化中月公及弁仿它件反﹜\n﹛丝挚匹手日匀凶坁元扎欠﹝\n﹛域谛蟆卞卅匀凶及卅日丹欠勾中化云日氏匹﹜\n﹛蔺爵樊及澎踞仃匹手仄化云木﹝
+
+
+
+###﹛平乒母丢母扑蔺爵据毛赭儅
+block Item_607970 >= 1
+	GAWindow 3204861,NEXT
+
+		#\n\n﹛显陆及樊互﹜方丹侳凶及丹﹝\n﹛魂杽敢凶切及蜕⑹卞呏毛峏化化反中井氏冗﹝\n﹛丐木卞觐尹化仇公域谛蟆元扎﹝\n﹛今化﹜丝挚及杅反﹜手丹丐午夫午秽分卅﹝
+	GAWindow 3204862,OK
+
+		#\n\n﹛仇木井日云潜互霜日木月斨莱毛骚曰﹜\n﹛梂卞中月魂恘幂卞蔺心鴃厍毛璋户月分仃元扎﹝\n﹛公木匹徽木化域谛蟆﹜卅﹜棵签元扎欠﹝\n﹛匹反﹜垫匀化仇中﹝
+
+		Window_OK Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204863
+
+		#\n\n﹛戈匀﹜公及弁仿它件反″\n﹛云潜反允匹卞域谛蟆元扎卅﹝\n﹛卅日壬垫仁优邰反卅井欠丹﹝
+
+		Window_OK Item_607970 >= 1
+			Warp 0,59817,62,78
+
+		Window_OK
+			EndWindow 3204864
+
+		#\n\n﹛戈匀﹜蔺爵据互卅仁卅匀凶冗﹝\n﹛蔺爵毛旵滋允月午中丹及井〝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3204865,YES,NO
+
+		#\n\n﹛云潜﹜蔺爵据毛撩仁仄凶卅﹝\n﹛升丹元扎﹜潸曰跶仄化疯蔺爵允月竣反丐月井〝
+
+		Window_YES
+			Window 3204866,OK
+
+		#\n\n﹛引﹜公丹元扎欠丹﹝\n﹛互﹜裘及尕镗啦匹牁中廿木卞芴煌卅彰濯曰毛\n﹛今六月及反普艘六氏卅﹝今化﹜垫仃奴″
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59801,93,79
+
+		Window_NO
+			EndWindow 3204867
+
+		#\n\n﹛幻幻丹﹜愤日妙泙卞引歹曰﹜职及蔺爵樊及\n﹛澎踞仃毛允月午中丹及井﹝\n﹛公木午手﹜凶分仁匀勾中化中匀化﹜\n﹛注屺及厍毛丿方丹午中丹及井卅﹝
+
+
+

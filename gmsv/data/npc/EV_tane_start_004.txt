@@ -1,0 +1,121 @@
+
+
+block Item 620030 >= 1
+
+
+		endWindow 3203275
+
+		#\n\n﹛萌亢脱互毕及葭尺扚五﹜\n﹛云蜕邯毛么月互方中﹝
+
+
+block Item 620031 >= 1 && ItemSpace == 0
+
+		Window 3203276,next
+
+		#\n\n﹛蝈化及魂仄反蔽尹凶方丹元扎卅﹝\n﹛仍塑洢匹丐匀凶﹝
+
+
+		endWindow 3203277
+
+		#\n\n﹛公卅凶卞欐仄凶中坁互丐月及元扎互\n﹛酸ゴ卅互日﹜公木动晓﹜儅化厄方丹元扎卅﹝\n﹛绂坁及帮咥毛仄化﹜\n﹛引凶狪仄井仃月互方中﹝
+
+
+block Item 620031 >= 1 && Petspace == 0
+
+		Window 3203278,next
+
+		#\n\n﹛蝈化及魂仄反蔽尹凶方丹元扎卅﹝\n﹛仍塑洢匹丐匀凶﹝
+
+		Window 3203279,yes,no
+
+		#\n\n﹛公卅凶及儅勾朼涧及呺坁毛\n﹛荸五旵匀化支曰凶中及元扎互\n﹛酸ゴ卅互日﹜公木动晓﹜儅化厄方丹元扎卅﹝\n﹛呺坁反丐五日户月井及〝
+
+		window_yes
+
+					Window 3203280,ok
+
+		#\n\n﹛韶樊及氩毛云欐仄仄方丹﹝\n﹛脱互毕卞苇六月互方中﹝
+
+						window_ok
+
+							giveitem 620030,1
+							EndEvent 2 = 1
+
+		window_no
+
+			endWindow 3203281
+
+		#\n\n﹛卅日壬呺坁及帮咥毛仄化﹜\n﹛引凶狪仄井仃月互方中﹝
+
+
+block Item 620031 >= 1 && EndEvent 2 == 0 
+
+		Window 3203282,next
+
+		#\n\n﹛丹戈﹜仍塑洢元扎匀凶﹝\n﹛黎扬今木化﹜\n﹛中五卅曰及魂仄﹜今冗昍罹日匀凶仪匹丐欠丹﹝
+
+		Window 3203283,next
+
+		#\n\n﹛仄井仄﹜仇及魂仄匹澎卞じ木凶坁反﹜\n﹛詨★泙卞峏勾反内元扎﹝
+
+		Window 3203284,next
+
+		#\n\n﹛韶樊及氩毛云欐仄仄方丹﹝\n﹛仇木毛﹜脱互毕卞苇六月互方中﹝\n﹛勾中匹卞﹜公及朼元日木凶呺坁毛\n﹛荸五反卅匀化褡兮方丹﹝\n﹛公卅凶及艘雄中怗杅午卅月匹丐欠丹﹝
+
+		Window 3203285,ok
+
+		#\n\n﹛呺坁反\n﹛乒件旦正□丢瓦亘□及≦?�????≧毛\n﹛肣躲卞仄卅仃木壬﹜爵匀化仁木氏﹝\n﹛竣毛勾仃月仪元扎﹝
+
+
+		window_ok ItemSpace == 0
+
+			endWindow 3203286
+
+		#\n\n﹛公卅凶卞欐仄凶中坁互丐月及元扎互\n﹛酸ゴ卅互日﹜公木动晓﹜儅化厄方丹元扎卅﹝\n﹛绂坁及帮咥毛仄化﹜\n﹛引凶狪仄井仃月互方中﹝
+
+		window_ok petSpace == 0
+
+			endWindow 3203287
+
+		#\n\n﹛公卅凶及呺坁毛\n﹛荸五旵匀化支曰凶中及元扎互\n﹛酸ゴ卅互日﹜公木动晓﹜儅化厄方丹元扎卅﹝\n﹛银中呺及帮咥毛仄化﹜\n﹛引凶狪仄井仃月互方中﹝
+
+
+
+		window_ok Item 620031 >= 1 && EndEvent 2 == 0 
+
+
+
+			killItemall 620031
+			GivePet (314700%50,314400%50)
+			giveitem 620030,1
+			EndEvent 2 = 1
+
+
+block EndEvent 2 == 1 && Item 620030 == 0
+
+		Window 3203288,next
+
+		#\n\n﹛卅氏午″″厘仪卅\n﹛韶樊及氩毛桩化化仄引匀凶及井″
+
+		Window 3203289,ok
+
+		#\n\n﹛酷杅互卅中﹝\n﹛手丹拑仁今氏方丹卞卅″
+
+		window_ok ItemSpace == 0
+
+			endWindow 3203290
+
+		#\n\n﹛酸ゴ卅互日﹜公木动晓﹜儅化厄方丹元扎卅﹝\n﹛绂坁及帮咥毛仄化﹜\n﹛引凶狪仄井仃月互方中﹝
+
+		window_ok
+
+			giveitem 620030,1
+
+block
+
+
+		endWindow 3203291
+
+		#\n\n﹛方仁冗仇仇引匹辅日木凶﹝\n﹛爵丹屯五潮赁樊反丐午域链元扎﹝\n﹛爵中及詨卞﹜引凶辅日木月互方中﹝
+
+

@@ -1,0 +1,64 @@
+####■睿奇自动贩卖机1050930
+
+##一般
+block
+	 ##1051861	\n\n\n\n  要将100元丢入吗？
+	 Window 1051861,YES,NO
+	 Window_YES Gold >= 100 && ItemSpace >= 1
+	 	  ##失去100元
+	 	  AddGold -100
+	 	  ##(得到绝爱巧克力、榛果、牛奶、包装纸粉红任一)
+	 	  GiveLeak1Item(45752%1$1,45776%4$1,12401%4$1,45755%1$1)
+	 	  ##1051827	\n\n\n\n  睿奇企业感谢您！
+	 	  EndWindow 1051827
+	 Window_NO
+
+
+##################以下无用
+##有君子戒
+block Item 45774 >= 1
+	 ##1051826	\n\n\n\n  要将君子戒放入吗？
+	 Window 1051826,YES,NO
+	 Window_YES Item 45774 >= 1
+	 	 KillItem 45774
+	 	 ##失去君子戒
+	 	 ##(得到绝爱巧克力、榛果、牛奶、包装纸粉红任一)
+	 	 GiveLeak1Item(45752%1$1,45776%4$1,12401%4$1,45755%1$1)
+	 	 ##1051827	\n\n\n\n  睿奇企业感谢您！
+	 	 EndWindow 1051827
+	 Window_NO 
+	 	 ##1051861	\n\n\n\n  要将100元丢入吗？
+	 	 Window 1051861,YES,NO
+	 	 Window_YES Gold >= 100 && ItemSpace >= 1
+	 	 	 ##失去100元
+	 	 	 AddGold -100
+	 	 	 ##(得到绝爱巧克力、榛果、牛奶、包装纸粉红任一)
+	 	 	 GiveLeak1Item(45752%1$1,45776%4$1,12401%4$1,45755%1$1)
+	 	 	 ##1051827	\n\n\n\n  睿奇企业感谢您！
+	 	 	 EndWindow 1051827
+	 	 Window_NO
+	 	
+##有淑女戒
+block Item 45775 >= 1
+	 ##1051828	\n\n\n\n  要将淑女戒放入吗？
+	 Window 1051828,YES,NO
+	 Window_YES Item 45775 >= 1
+	 	 KillItem 45775
+	 	 ##失去淑女戒
+	 	 ##(得到绝爱巧克力、榛果、牛奶、包装纸粉红任一)
+	 	 GiveLeak1Item(45752%1$1,45776%4$1,12401%4$1,45755%1$1)
+	 	 ##1051827	\n\n\n\n  睿奇企业感谢您！
+	 	 EndWindow 1051827
+	 Window_NO 
+	 	 ##1051861	\n\n\n\n  要将100元丢入吗？
+	 	 Window 1051861,YES,NO
+	 	 Window_YES Gold >= 100 && ItemSpace >= 1
+	 	 	 ##失去100元
+	 	 	 AddGold -100
+	 	 	 ##(得到绝爱巧克力、榛果、牛奶、包装纸粉红任一)
+	 	 	 GiveLeak1Item(45752%1$1,45776%4$1,12401%4$1,45755%1$1)
+	 	 	 ##1051827	\n\n\n\n  睿奇企业感谢您！
+	 	 	 EndWindow 1051827
+	 	 Window_NO
+
+

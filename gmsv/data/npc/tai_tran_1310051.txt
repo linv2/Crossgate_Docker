@@ -1,0 +1,103 @@
+################### 亚诺曼城 传送石管理员 尼维尔海村
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+	 	 	 
+################### 战斗系&游民 35级以上 && 开过传送石
+block  Job < 170 && Level >=35 && NowEvent 241 == 1 
+	 ##1200933	\n这是通往尼维尔海村的传送石，要使用吗？\n费用是300元。	1
+	 Window 1200933,YES,NO 
+	 	 Window_YES Gold <300	 	 	 
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_YES Gold >=300 && Group ==1 && Item 18660 >=1
+	 	 	 ##1201405	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往尼维尔海村，费用是300元，\n      确定要传送吗？	1
+	 	 	 Window 1201405,YES,NO 
+			 	 Window_YES Group ==1
+	 	 	 	 	 AddGold -300
+ 	 	 	    	 	 Warp 0,30203,13,13 
+			 	 Window_YES
+			 	 Window_NO
+	 	 Window_YES Gold >=300 && Group ==1
+	 	 	 ##钱少300，传到海村。
+	 	 	 AddGold -300
+	 	 	 Warp 0,30203,13,13 
+		 Window_NO 
+	 	 
+##
+################### 炼金术士 35级以上 && 开过传送石
+block Job >= 1000 && Job < 1010 && Level >=35 && NowEvent 241 == 1 
+	 ##1200933	\n这是通往尼维尔海村的传送石，要使用吗？\n费用是300元。	1
+	 Window 1200933,YES,NO 
+	 	 Window_YES Gold <300
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_YES Gold >=300 && Group ==1 && Item 18660 >=1
+	 	 	 ##1201405	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往尼维尔海村，费用是300元，\n      确定要传送吗？	1
+	 	 	 Window 1201405,YES,NO 
+			 	 Window_YES Group ==1
+	 	 	 	 	 AddGold -300
+ 	 	 	    	 	 Warp 0,30203,13,13 
+			 	 Window_YES
+			 	 Window_NO 
+	 	 Window_YES Gold >=300 && Group ==1
+	 	 	 ##钱少300，传到海村。
+	 	 	 AddGold -300
+	 	 	 Warp 0,30203,13,13 
+		 	 	 Window_NO 
+################### 纺织工 职阶 >=1  && 开过传送石	 	 
+block Job >= 1010 && Job < 1020 && JobRank >=1 && NowEvent 241 == 1
+	 ##1200933	\n这是通往尼维尔海村的传送石，要使用吗？\n费用是300元。	1
+	 Window 1200933,YES,NO 
+	 	 Window_YES Gold >=300 && Group ==1 && Item 18660 >=1
+	 	 	 ##1201405	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往尼维尔海村，费用是300元，\n      确定要传送吗？	1
+	 	 	 Window 1201405,YES,NO 
+			 	 Window_YES Group ==1
+	 	 	 	 	 AddGold -300
+ 	 	 	    	 	 Warp 0,30203,13,13
+			 	 Window_YES
+			 	 Window_NO
+	 	 Window_YES Gold >=300 && Group ==1
+	 	 	 ##钱少300，传到海村。
+	 	 	 AddGold -300
+	 	 	 Warp 0,30203,13,13
+		 Window_YES Gold <300
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_NO 
+
+
+
+################### 生产系称号 职阶 >=1  && 开过传送石
+block Job >200 && JobRank >=1 && NowEvent 241 == 1
+	 ##1200933	\n这是通往尼维尔海村的传送石，要使用吗？\n费用是300元。	1
+	 Window 1200933,YES,NO 
+	 	 Window_YES Gold <300
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_YES Gold >=300 && Group ==1 && Item 18660 >=1
+	 	 	 ##1201405	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往尼维尔海村，费用是300元，\n      确定要传送吗？	1
+	 	 	 Window 1201405,YES,NO 
+			 	 Window_YES Group ==1
+	 	 	 	 	 AddGold -300
+ 	 	 	    	 	 Warp 0,30203,13,13
+			 	 Window_NO
+	 	 Window_YES Gold >=300 && Group ==1
+	 	 	 ##钱少300，传到海村。
+	 	 	 AddGold -300
+	 	 	 Warp 0,30203,13,13 
+		 Window_NO 	  
+
+################### 一般
+block 
+	 ##1200937	\n\n\n\n@c你没有使用此传送石的资格。
+	 EndWindow 1200937
+
+
+
+

@@ -1,0 +1,133 @@
+#幼伙玉open﹛螃鹧﹛熬仃尥仃及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛玄仿件旦nashi﹛##############
+
+
+block
+
+#\n\n歹凶仁仄升手互\n﹛幼伙玉钒涩涡侗樊及谛午卅曰毛苇伤户\n﹛穴旦正□卞孔今歹仄中井升丹井及\n﹛?蝇毛票今六化赡五引允﹝
+
+
+	Window 3006201,next
+
+#\n\n﹛幼伙玉穴旦正□毛涡侗卅今中引允井〝
+
+	Window 3006202,yes,no
+
+
+
+		Window_yes
+		if Gold < 10000
+			EndWindow 3
+		else		
+			AddGold -10000
+			GiveItem 14600,1
+		endif
+			#EndWindow 3006203
+			
+#  EndWindow "\n\n﹛允心引六氏互﹜\n﹛穴旦正□及楮杹卞蔺爵卅今月及反\n﹛擎昵及笛赁毛熬仃日木凶杅卞\n﹛蜃日六化中凶分五引允﹝"
+
+
+
+#\n\n﹛酸ゴ卅互日﹜\n﹛丐卅凶反﹜引分﹜擎昵及锉毛\n﹛云儅切匹卅中方丹匹允友﹝
+
+
+		Window_no
+		
+			EndWindow 3006295
+
+
+block Item 14600 >= 1
+
+#\n\n﹛幼伙玉及钒涩卞勾中化反\n﹛市它件正□〇及螃敢卞\n﹛仍锹襟票今中﹝
+
+	EndWindow 3006296
+	
+
+###########﹛cler﹛##############
+
+
+block Item 14605 >= 1 && Item 14603 >= 1 && Item 14602 >= 1 && Item 14601 >= 1 && Item 14604 >= 1
+
+#\n\n﹛ㄣ呦云公欠尹卞卅曰引仄凶井﹝\n﹛云户匹午丹仍介中引允﹝\n﹛仇木互幼伙玉钒涩据匹允﹝
+
+	killItem 14601,1
+	killItem 14602,1
+	killItem 14603,1
+	killItem 14604,1
+	
+	killItem 14605,1
+	GiveItem 14600,1
+
+	EndWindow 3006286
+
+
+
+
+###########﹛玄仿件旦,14605肣曰﹛##############
+
+block Item 14605 >= 1
+
+
+#\n\n﹛绍踹氘萝及ㄣ呦及移据抸踏毛缭尹化仁木壬﹜\n﹛幼伙玉钒涩据毛?垫谯仄引允﹝
+
+
+	EndWindow 3006285,OK
+
+
+
+###########﹛玄仿件旦肣曰﹛##############
+
+block Item 9300 >= 1 || Item 9310 >= 1 || Item 9320 >= 1 || Item 9330 >= 1 || Item 9301 >= 1 || Item 9311 >= 1 || Item 9321 >= 1 || Item 9331 >= 1 || Item 9302 >= 1 || Item 9312 >= 1 || Item 9322 >= 1 || Item 9332 >= 1
+
+#\n\n歹凶仁仄升手互\n﹛幼伙玉钒涩涡侗樊及谛午卅曰毛苇伤户\n﹛穴旦正□卞孔今歹仄中井升丹井及\n﹛?蝇毛票今六化赡五引允﹝
+
+
+	Window 3006201,next
+
+#\n\n﹛幼伙玉穴旦正□毛涡侗卅今中引允井〝
+
+	Window 3006202,yes,no
+
+		Window_yes ItemSpace >= 1
+
+#\n\n﹛匹反﹜丐卅凶卞反仇木井日\n﹛ㄣ勾及楮杹卞蔺引卅仁化反卅曰引六氏﹝\n﹛云公日仁夫午曰匹反\n﹛旋尹日木卅中手及手丐月匹仄斤丹﹝
+
+
+			Window 3006204,next
+
+#\n\n﹛公及凛﹜ゥ窒卞\n﹛职及谛及隅恘毛丿月仇午互请侳月井﹜\n﹛丐卅凶及穴旦正□午仄化及\n﹛凤撙互杽歹木引允﹝
+
+			Window 3006205,next
+
+
+
+#\n\n﹛匹反﹜辅笛据毛云欐仄仄引允﹝\n﹛公木毛儅匀化燮内反﹜\n﹛丢件皮伙丞藃哗及绊化卞云垫五卅今中﹝\n﹛公仇卞蛛月螃敢互\n﹛愈赓及翌锁毛芨尹化仁木引允﹝
+
+
+#			GiveItem 14605,1
+
+			Window 3006206,next
+
+			Window 3006207,OK
+			
+			window_ok
+			
+			giveitem 14605,1
+
+
+
+		Window_yes ItemSpace < 1
+
+			Window 3006099,next
+
+			EndWindow 3006207,OK
+
+
+		Window_no
+		
+			EndWindow 3006295
+
+

@@ -1,0 +1,42 @@
+#18143矿工推鉴信
+#1111529	到圣拉鲁卡村(135,219)的酒店(16,10)找洛伊学挖掘体验的技能。
+#1111530	从法兰城西门出去，到国营第24坑道(351,145)地下1F，进去后在楼梯附近挖20个铜。
+#1111531	回到法兰城，到毕夫鲁之家(206,37)找那尔薇。
+#1111532	把便当送到国道第24坑道地下1F给毕夫鲁(35,7)。
+#1111533	回法兰城，到凯蒂夫人的店(196,78)找鉴定师马尔弗说话。
+#1111534	把信交给法兰城内毕夫鲁之家(206,37的那尔薇会拿到1瓶饮料，
+#1111535	把饮料送给国营第24坑道(351,145)地下1F毕夫鲁(35,7)拿到推荐信。
+#1111536	再到圣拉鲁卡村(135,219)的村长家2F找矿工会长吉拉瓦特就职。
+
+block item 18143 >0 && level <=10 && job == 0
+	 window 1111536,next
+	 endwindow 1111537
+block item 18143 >0  #拿推荐信
+	 endwindow 1111536 
+block item 18187 >0 #有饮料
+	 endwindow 1111535
+block item 18189 >0 #有信
+	 endwindow 1111534	 	 
+
+block  item 18188 >0 && item 18166 >0 #  18188有关矿石的纸条	 18166 钙
+	endwindow 1111533
+	
+block item 18186 >0 #便当
+	 endwindow 1111532
+block item 9600 >19  ##20个铜	
+	 endwindow 1111531
+block skilllevel 250 >0 && level <=10 
+	window 1111530,next
+	window 1111688,yes,no
+	window_yes
+	leavegroup
+	warp 0,11013,14,28
+	window_no
+	endblock
+block skilllevel 250 >0 
+	 endwindow 1111530
+block level <=10 && job == 0
+	 window 1111529,next
+	 endwindow 1111537	 
+block 
+	 endwindow 1111529	 	 

@@ -1,0 +1,22 @@
+
+
+#雷克塔尔港湾官员	0	1102235
+#1102805	\n\n\n\n　　　　　　要进入雷克塔尔吗？	1
+
+#block????
+#	Window 1102805,YES,NO
+#	
+#	Window_YES
+#	LeaveGroup
+#	Warp 0,43500,20,115
+#	Window_NO
+
+block
+#15673?\n\n\n\n\n@c????????????
+	Window 1102805,YES,NO
+	
+	Window_YES
+	LeaveGroup
+	Warp 0,32081,32,25
+	Window_NO
+

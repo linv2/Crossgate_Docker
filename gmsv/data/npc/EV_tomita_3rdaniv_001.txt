@@ -1,0 +1,91 @@
+#ㄢ璃コ筏ゴ??奶矛件玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛弁伙斥尼永玄及摒
+
+#####﹛2004コ7畸26ざ动嫦
+
+###﹛筏ゴ扲檗毛赭儅
+#block CheckRealTime 2004/7/16,14:00:00 == 1 && Item_16387 >= 1
+block CheckRealTime 2004/7/26,00:00:00 == 1 && Item_16387 >= 1
+
+	EndWindow "\n\n﹛公及筏ゴ扲檗反苇凶杴手五木中匹允仃升﹜\n﹛隶?圴卞赚心慇戈午﹜手匀午恌中仇午互\n﹛丐月日仄中匹允方﹝"
+
+
+
+###﹛筏ゴ圴娄晶痹毛赭儅
+#block CheckRealTime 2004/7/16,14:00:00 == 1 && Item_18774 >= 1
+block CheckRealTime 2004/7/26,00:00:00 == 1 && Item_18774 >= 1
+
+	Window "\n\n﹛睛崭筏ゴざ云户匹午丹仍介中引允﹝\n﹛筏ゴ圴娄晶痹毛云儅切匹允友﹝\n﹛匹反﹜筏ゴ圴午跟晶仄引允井〝",YES,NO
+
+		Window_YES
+			Window "\n\n﹛筏ゴ圴反﹜仇及筏ゴ扲檗匹允﹝\n﹛厘濠卞仄化仁分今中友﹝",OK
+
+				Window_OK Item_16387 >= 1
+					EndWindow "\n\n﹛引丐﹜手丹扲檗毛云欐仄仄化凶氏匹允友﹝\n﹛趟今及六中井仄日﹜丹匀井曰仄化引仄凶﹝"
+
+				Window_OK Item_18774 >= 1 && ItemSpace >= 1
+					KillItemAll 18774
+					GiveItemEX 16387,1,"\n\n﹛丐日﹜绂坁互中匀天中匹允方﹝\n﹛帮咥仄化﹜引凶侳化仁分今中友﹝"
+
+				Window_OK ItemSpace >= 1
+					EndWindow "\n\n﹛云支﹜筏ゴ圴娄晶痹互苇丐凶曰引六氏友﹝\n﹛痹互卅中午﹜跟晶匹五引六氏方﹝"
+
+				Window_OK
+					EndWindow "\n\n﹛丐日﹜绂坁互中匀天中匹允方﹝\n﹛帮咥仄化﹜引凶侳化仁分今中友﹝"
+
+		Window_NO
+			EndWindow "\n\n﹛公丹匹允井﹝\n﹛台反ㄧ畸ㄠㄟざ引匹反仇仇卞云曰引允井日﹜\n﹛筏ゴ圴尺及跟晶反公木引匹卞云凑中仄引允友﹝"
+
+
+
+###﹛术永平□瓦及穴奶弁毛赭儅
+#block CheckRealTime 2004/7/16,14:00:00 == 1 && Item_607926 >= 1
+block CheckRealTime 2004/7/26,00:00:00 == 1 && Item_607926 >= 1
+
+	Window "\n\n﹛公及穴奶弁反﹜术永平□瓦今氏毛荚璋允月凶户\n﹛扒件弁玄甩伙穴卞ネ葛今木凶宎衔及扣今氏互\n﹛苇勾仃凶手及卅氏匹允﹝\n﹛手丹申永弁伉允月仁日中凶仁今氏丐匀化﹜\n﹛厒及踹毛六五鞅户化中凶公丹匹允方﹝",NEXT
+
+	EndWindow "\n\n﹛窒匹手术永平□瓦今氏反﹜域蘸银匀凶穴奶弁毛\n﹛き蘸午银歹卅中左扑乓伊卅谛分匀凶午井＿﹝\n﹛尹匀﹜棒艘及术永平□瓦今氏匹允井〝\n﹛公木互﹜苇勾井日卅井匀凶氏匹允﹝\n﹛升仇尺垫匀切扎匀凶氏匹允井友尹＿＿﹝"
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+#block CheckRealTime 2004/7/16,14:00:00 == 1
+block CheckRealTime 2004/7/26,00:00:00 == 1
+
+	EndWindow "\n\n﹛睛崭筏ゴざ反﹜云啼仄心中凶分仃引仄凶井〝\n﹛侳コ手方欠仄仁云凑中仄引允友﹝"
+
+
+
+
+
+#####﹛2004コ7畸26ざ动蟆
+
+###﹛筏ゴ圴娄晶痹毛赭儅
+block Item_18774 >= 1
+	EndWindow "\n\n﹛ㄢ荚杴及漆荚反ㄡㄥざ卞蜃曰﹜仇木午反帎卞\n﹛窒井互ミ日木月公丹匹允方﹝\n﹛簿互窒毛ミ月井反﹜癫ざ引匹及甲’立’汁﹝\n﹛ㄡㄥざ毛啼仄心卞仄化中化仁分今中友﹝"
+
+
+
+###﹛筏ゴ圴娄晶痹毛尕赭儅
+block
+	Window "\n\n﹛侳凶月ㄦ畸ㄡㄥざ反﹜白央□伊件毕崭ㄢ荚杴及\n﹛睛崭筏ゴざ匹允﹝\n﹛漆コ手崭毕岒票井日筏ゴ圴互票么今木引允方﹝\n﹛仇木互公及娄晶痹匹允互﹜ㄠ呦中井互匹允井〝",YES,NO
+
+		Window_YES
+			Window "\n\n﹛丐曰互午丹仍介中引允﹝筏ゴ圴午及跟晶反﹜\n﹛睛崭筏ゴざ方曰台互仇仇匹垫中引允﹝\n﹛公木引匹厘濠卞儅匀化中化仁分今中友﹝",OK
+
+				Window_OK Item_18774 >= 1
+					EndWindow "\n\n﹛云支﹜手丹娄晶痹毛云儅切分匀凶氏匹允友﹝\n﹛匹反﹜癫ざ毛云啼仄心卞″"
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 18774,1,"\n\n﹛丐日﹜绂坁卞芴春互丐曰引六氏友﹝\n﹛帮咥仄化引凶侳化仁分今中﹝"
+
+				Window_OK
+					EndWindow "\n\n﹛丐日﹜绂坁卞芴春互丐曰引六氏友﹝\n﹛帮咥仄化引凶侳化仁分今中﹝"
+
+
+		Window_NO
+			EndWindow "\n\n﹛丐日﹜弃庛允月仇午卅氏井卅中及卞＿﹝\n﹛竣互庍歹匀凶日﹜引凶侳化仁分今中友﹝"
+
+
+

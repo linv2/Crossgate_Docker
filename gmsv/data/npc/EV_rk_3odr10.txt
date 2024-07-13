@@ -1,0 +1,14 @@
+#âç¶°×°³±Æô
+
+#
+block
+	Window 23042,Yes,No
+		Window_Yes
+			Window 23043,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,43776,3,14
+		Window_No
+
+block
+	EndWindow 23044,OK

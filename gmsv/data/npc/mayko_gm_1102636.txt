@@ -1,0 +1,106 @@
+
+
+#1110723	\n\n\n@c设计图与一级尤拉蝙蝠都有了，你要改造吗？	1
+block item 607991 >0 &&  item 607992 >0 && item 607993 >0 && item 607994 >0 && petlevel 313400 == 1
+	 Window 1110723,yes,no
+	 Window_yes item 607991 >0 &&  item 607992 >0 && item 607993 >0 && item 607994 >0 && petlevel 313400 == 1
+	 
+	 KillItem 607991,1
+	 KillItem 607992,1
+	 KillItem 607993,1
+	 KillItem 607994,1
+	 KillPetl 313400,1
+	 #GivePet 2032
+	# GivePet (314700%80,314900%20)  ##欧图80% 爱丁奴 20%
+	GivePet (314700%20,314900%80)  ##欧图80% 爱丁奴 20%
+	 endblock
+	 Window_yes 
+	 Endwindow 1110605
+	 Window_no
+	 Endwindow 1110605
+
+
+
+#1110724	\n\n\n@c设计图与一级欧图蝙蝠都有了，你要改造吗？	1
+
+block item 607991 >0 &&  item 607992 >0 && item 607993 >0 && item 607994 >0 && petlevel 313700 == 1
+	 Window 1110724,yes,no
+	 Window_yes item 607991 >0 &&  item 607992 >0 && item 607993 >0 && item 607994 >0 &&  petlevel 313700 == 1
+	 
+	 KillItem 607991,1
+	 KillItem 607992,1
+	 KillItem 607993,1
+	 KillItem 607994,1
+	 KillPetl 313700,1
+	 #GivePet 2032
+	# GivePet (314400%80,314900%20)  ##尤拉80% 爱丁奴 20%
+	GivePet (314400%20,314900%80)  ##尤拉80% 爱丁奴 20%
+	 endblock
+	 Window_yes 
+	 Endwindow 1110605
+	 Window_no
+	 Endwindow 1110605
+
+
+#1110725	\n\n\n@c设计图与一级树精都有了，你要改造吗？	1
+
+block item 623542 >0 && item 623543 >0 && item 623544 >0 && petlevel 401 == 1
+	 Window 1110725,yes,no
+	 Window yes item 623542 >0 && item 623543 >0 && item 623544 >0 && petlevel 401 == 1
+	 KillItem 623542,1
+	 KillItem 623543,1
+	 KillItem 623544,1
+	 KillPetl 401,1
+	 #GivePet 2032
+	 GivePet (403%99,307396%9900,942%1)  ##改树95% 树王5%
+	 Endblock
+	 Window_yes 
+	 Endwindow 1110605
+	 Window_no
+	 Endwindow 1110605
+
+
+
+block item 607991 >0 &&  item 607992 >0 && item 607993 >0 && item 607994 >0 
+	 endwindow 1110721
+
+
+#1110721	\n\n\n　　　　设计图都有了，\n　　　　可是你没有一级的尤拉或欧图蝙蝠。	1
+block item 623542 >0 && item 623543 >0 && item 623544 >0
+	 endwindow 1110722
+#1110722	\n\n\n　　　　设计图都有了，\n　　　　可是你没有一级的树精。	1
+
+
+block item 607991 >0
+	 endwindow 1110719
+block item 607992>0
+	 endwindow 1110719
+block item 607993>0
+	 endwindow 1110719
+block item 607994>0
+	 endwindow 1110719
+
+
+#1110719	\n\n\n　　　　这不是尤拉＆欧图蝙蝠设计图吗？\n　　　　要四种都有喔！！	1
+
+block item 623542 >0
+	 endwindow 1110720
+block item 623543 >0
+	 endwindow 1110720	 
+block item 623544 >0
+	 endwindow 1110720	 
+	 
+#623542
+#623543
+#623544
+
+
+
+#1110720	\n\n\n　　　　这不是树精设计图吗？\n　　　　不过好像还不齐喔！！	1
+
+block
+	 endWindow 1110726
+	 #Endwindow 1110727
+	 
+#1110717	\n\n\n@c我身后的森林，常有蝙蝠飞来飞去。	
+#1110718	\n\n　　　　我已掌握了他们的变化，\n　　　　如果有他们的设计图的话，\n　　　　也许能改造出新种类。	1

@@ -1,0 +1,281 @@
+#
+#白尼奶弁仿永玄仁元跟晶
+#
+
+############## A1手匀化月 ##############
+block Item 19583 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 扔仿穴件母□LV1 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14806,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES PetSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19583 >= 1
+	KillItem 19583
+	GivePet 511
+
+############## A2手匀化月 ##############
+block Item 19584 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 扑伙白LV1 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14810,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES PetSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19584 >= 1
+	KillItem 19584
+	GivePet 512
+
+############## A3手匀化月 ##############
+block Item 19585 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 它奶件犯奴□生LV1 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14811,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES PetSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19585 >= 1
+	KillItem 19585
+	GivePet 513
+
+############## A4手匀化月 ##############
+block Item 19586 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 用□丞LV1 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14812,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES PetSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19586 >= 1
+	KillItem 19586
+	GivePet 514
+
+############## B1手匀化月 ##############
+block Item 19587 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 由件母LV1 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14813,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES PetSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19587 >= 1
+	KillItem 19587
+	GivePet 15
+
+############## B2手匀化月 ##############
+block Item 19588 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 平亘□LV1 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14814,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES PetSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19588 >= 1
+	KillItem 19588
+	GivePet 25
+
+############## B3手匀化月 ##############
+block Item 19589 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 平亘□疋永玉LV1 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14815,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES PetSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19589 >= 1
+	KillItem 19589
+	GivePet 206
+
+############## B4手匀化月 ##############
+block Item 19590 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 母件皿伉件弘LV1 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14816,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES PetSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19590 >= 1
+	KillItem 19590
+	GivePet 525
+
+############## C1手匀化月 ##############
+block Item 19591 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 扔仿穴件母□及市□玉 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14817,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19591 >= 1
+	KillItem 19591
+	GiveLeak1Item 14898
+
+############## C2手匀化月 ##############
+block Item 19592 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 扑伙白及市□玉 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14818,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19592 >= 1
+	KillItem 19592
+	GiveLeak1Item 14899
+
+############## C3手匀化月 ##############
+block Item 19593 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 它奶件犯奴□生及市□玉 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14819,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19593 >= 1
+	KillItem 19593
+	GiveLeak1Item 14900
+
+############## C4手匀化月 ##############
+block Item 19594 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 用□丞及市□玉 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14820,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19594 >= 1
+	KillItem 19594
+	GiveLeak1Item 14901
+
+############## D1手匀化月 ##############
+block Item 19595 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 由件母及市□玉 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14821,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19595 >= 1
+	KillItem 19595
+	GiveLeak1Item 14811
+
+############## D2手匀化月 ##############
+block Item 19596 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 平亘□及市□玉 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14822,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19596 >= 1
+	KillItem 19596
+	GiveLeak1Item 14816
+
+############## D3手匀化月 ##############
+block Item 19597 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 平亘□疋永玉及市□玉 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14823,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19597 >= 1
+	KillItem 19597
+	GiveLeak1Item 14841
+
+############## D4手匀化月 ##############
+block Item 19598 >= 1
+#\n\n﹛癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 母件皿伉件弘及市□玉 匹允﹝\n﹛跟晶仄引允井〝
+	Window 14824,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14807,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14808,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14809,OK
+	Window_OK Item 19598 >= 1
+	KillItem 19598
+	GiveLeak1Item 14906
+
+############## 升木手手匀化卅中 ##############
+block
+#\n\n﹛仇仇反癫凶曰白尼奶弁仿永玄仁元及跟晶赭匹允﹝
+	EndWindow 14825,OK
+

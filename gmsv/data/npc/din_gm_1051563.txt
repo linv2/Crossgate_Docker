@@ -1,0 +1,62 @@
+##灰熊厉害擂台赛2006	S级徽章收集熊	din_gm_1051563.txt	 座标：1401(16,39) 	收集S级徽章兑换奖品。
+####有25个S级徽章
+block Item 47268 >= 25
+	 ##1054332	\n\n  您要用25个S级勋章兑换变种狮鹫兽或布雷欧一只吗   ？	1
+	 Window 1055524,YES,NO
+	 	 Window_NO
+			 GoToF case1	 	
+	 	 
+	 	 Window_YES PetSpace < 1	 ##宠物拦有一格以下
+	 	  	 ##1052924	\n\n  你的宠物拦位不够喔！	1
+	 	  	 EndWindow 1052924	
+	 	 
+	 	 Window_YES PetSpace >= 1 && Item 47268 >= 25   ##宠物拦有一格以上
+	 	  	 KillItem 47268,25
+	 	  	 #GivePet 103135	 
+	 	  	 #GivePet (103328%49,103329%51)
+	 	  	 GivePet 41758
+
+
+####有5个S级徽章
+block Item 47268 >= 5
+*case1*
+	 ##1054333	\n\n  您要用5个S级勋章随机兑换卡斯克、卡尔芬、卡尔克、卡卡特其中一只吗？？
+	 #巴特温	 巴拉斯 布拉兹 巴特温
+
+	 Window 1055523,YES,NO
+	 	 Window_NO
+			 GoToF case2
+	 	 
+	 	 Window_YES PetSpace < 1	 ##宠物拦有一格以下
+	 	 	 ##1052924	\n\n  你的宠物拦位不够喔！	1
+	 	 	 EndWindow 1052924	
+	 	 
+	 	 Window_YES PetSpace >= 1 && Item 47268 >= 5 
+	 	 	 ##宠物拦有一格以上
+	 	 	 KillItem 47268,5
+	 	 	 #GivePet 103136
+	 	 	 #GivePet (103330%25,103331%25,103332%25,103333%25)
+	 	 	 GivePet 21102
+
+####有1个S级徽章
+block Item 47268 >= 1
+*case2*
+	 ##1054334	\n\n  您要用1个S级徽章兑换一个S级荣誉勋章吗？	1
+	 Window 1054334,YES,NO
+	 	 Window_NO
+	 	 	 ##1052907	\n\n  您再考虑看看吧！	1
+	 	 	 EndWindow 1052907
+	 	 
+	 	 Window_YES ItemSpace < 1	 ##物品拦有一格以下
+			 ##1051843	\n\n\n\n\n@c物品栏的空间不足。	
+	 	 	 EndWindow 1051843	
+	 	 
+	 	 Window_YES ItemSpace >= 1 && Item 47268 >= 1 
+	 	 	 ##物品拦有一格以上
+	 	 	 KillItem 47268,1
+			 GiveItem 47273,1
+
+##一般
+block
+	 ##1054335	\n\n  只要收集S级徽章就可以跟我换奖品喔！\n\n  ＝＝＝＝＝＝＝＝＝奖品内容＝＝＝＝＝＝＝＝＝\n\n  盲目之龙艾汀宠物一只            25枚S级勋章\n\n  海贼王宠物一只                   5枚S级勋章\n\n  S级荣誉勋章一枚            1枚S级勋章	1
+	 EndWindow 1055527

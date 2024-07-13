@@ -1,0 +1,13 @@
+#MKOT–„Ëø¨â
+
+block Item 16202 >= 1
+#
+	EndWindow 21699,OK
+
+block Item 16208 >= 1
+#
+	EndWindow 21704,OK
+
+block
+#
+	EndWindow 21723,OK

@@ -1,0 +1,33 @@
+#mayko_gm_1102693.txt
+
+#1111458	\n　　　呜～～\n　　　我家人一夕间都不见了～～。	1
+#1111459	只有我跟哥哥逃出来，\n　　　可是我跟哥哥又失散了～～。	1
+#1111460	你帮我找哥哥好吗？	1
+#1111461	谢谢你！	1
+
+#1111480	\n　　　原来哥哥还活着呀～～\n　　　谢谢你～～	1
+#1111481	\n　　　小女子无以为报，\n　　　这东西就送您吧！	1
+#1111482	\n　　　时候不早，\n　　　我送您进蒂那村内，\n　　　好传回城吧！	1
+
+block item 41174 >0
+	killitem 41174,1
+	
+        GiveLeak1Item 41178,1
+	Window 1111480,next
+	Window 1111481,next
+	Window 1111482,ok
+	window_ok
+	warp 0,4200,38,46
+	Endblock
+
+
+block item 41176 >0
+	endwindow 1111458
+block 
+	Window 1111458,next
+	Window 1111459,next
+	Window 1111460,yes,no
+	Window_yes
+	GiveLeak1Item 41176,1
+	Window_no
+	endblock

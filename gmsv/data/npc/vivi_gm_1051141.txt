@@ -1,0 +1,65 @@
+##彩金兑换服务员
+## 30000G彩金领取券
+block Item 46065 >= 1
+	 ##1052258	\n\n\n  要使用“30000G彩金领取券”兑换30000金币吗？	1
+	 Window 1052258,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46065 >= 1 && Gold >= 970000
+	 	 	 ##1050188	\n\n\n\n@c身上所持有的现金过多，请先存入银行。	1
+	 		 EndWindow 1050188
+	 	 Window_YES Item 46065 >= 1 && Gold < 970000
+			 KillItem 46065
+			 AddGold 30000
+			 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+	
+##10000G彩金领取券
+block Item 46064 >= 1
+	 ##1052259	\n\n\n  要使用“10000G彩金领取券”兑换10000金币吗？	1
+	 Window 1052259,YES,NO 
+	 	  Window_NO 
+	 	 	
+	 	  Window_YES Item 46064 >= 1 && Gold >= 990000
+	 	  	 ##1050188	\n\n\n\n@c身上所持有的现金过多，请先存入银行。	1
+	 		 EndWindow 1050188
+	 	  Window_YES Item 46064 >= 1 && Gold < 990000
+	 	  	 KillItem 46064
+			 AddGold 10000
+			 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+	
+##5000G彩金领取券
+block Item 46063 >= 1
+	 ##1052260	\n\n\n  要使用“5000G彩金领取券”兑换5000金币吗？	1
+	 Window 1052260,YES,NO 
+	 	  Window_NO 
+	 	 	
+	 	  Window_YES Item 46063 >= 1 && Gold >= 990000
+	 	  	 ##1050188	\n\n\n\n@c身上所持有的现金过多，请先存入银行。	1
+	 		 EndWindow 1050188
+	 	  Window_YES Item 46063 >= 1 && Gold < 990000
+	 	  	 KillItem 46063
+			 AddGold 5000
+			 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523	
+	
+##1000G彩金领取券
+block Item 46062 >= 1
+	 ##1052261	\n\n\n  要使用“1000G彩金领取券”兑换1000金币吗？	1
+	 Window 1052261,YES,NO 
+	 	  Window_NO 
+	 	 	
+	 	  Window_YES Item 46062 >= 1 && Gold >= 990000
+	 	  	 ##1050188	\n\n\n\n@c身上所持有的现金过多，请先存入银行。	1
+	 		 EndWindow 1050188
+	 	  Window_YES Item 46062 >= 1 && Gold < 990000
+	 	  	 KillItem 46062
+			 AddGold 1000
+			 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523		
+
+## 一般
+block 
+	 ##1052257	\n\n\n  您好！这里是彩金兑换处，您可以拿“通用货币领  取券”来换彩金。	1	
+	 EndWindow 1052257

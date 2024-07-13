@@ -1,0 +1,33 @@
+#
+#杹?失奶旦失伙仿它生
+#
+
+### 筏盛毛儅匀化中月 ###
+block Item 18780 >= 1 || Item 18781 >= 1 || Item 18782 >= 1
+ Endwindow 21338
+
+### 筏盛毛儅匀化中月 ###
+block Item 18766 >= 1
+ Endwindow 21259
+block Item 18767 >= 1
+ Endwindow 21259
+### 弘伙□皿反元五 ###
+block Group != 1
+ EndWindow 21239
+
+############## 白伉失示夫旦毛弁伉失仄化中卅中 ##############
+block EndEvent 18 != 1
+#\n\n﹛伄用朼执瓦斑奋扑正樊动陆仲骚旦伐弗瓦甩奶平穴本件﹝\n\n﹛峏民蛔伉瓜扔奶﹝
+	EndWindow 21237
+############## 白伉失示夫旦毛弁伉失仄化中月 ##############
+block EndEvent 18 == 1
+#\n\n﹛钒弁乒用＿﹝\n﹛﹛伄用朼执瓦斑奋扑正樊＿﹝\n\n﹛＿愤坌用啦阀儅汁樊瓜仿田＿＿＿\n﹛＿戊用燮瓦褡立瓜扔奶﹝
+	Window 21238,Yes,No
+         Window_Yes Group == 1
+          Warp 0,15536,15,15
+### 弘伙□皿反元五 ###
+         Window_Yes Group != 1
+          EndWindow 21239
+         Window_No
+
+

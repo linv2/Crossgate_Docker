@@ -1,0 +1,182 @@
+#打皮伉件及邰尽﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛失瓦平及摒
+
+###﹛冂帎穸谨由旦?毛赭儅
+block Item_607915 >= 1
+	Window 3201765,NEXT
+		#\n\n﹛丐丐﹜云蟆井＿﹝窒﹜丢永玄〝\n﹛丐丐﹜澎卞じ木凶兮﹝苇六化支月方﹝\n﹛幻日﹜幻日﹜幻日﹜幻日﹜引分分﹜引分丐月﹜\n﹛幻中﹜幻中﹜幻木﹜幻木﹜升丹分﹜手匀午分﹜\n﹛仇木手﹜仇木手﹜仇木手﹜仇木手＿＿＿\n﹛民弁扑亦它﹜升木手汁用卅氏井丐曰扎仄友尹﹝\n﹛＿＿壬木切引匀凶氏分方﹜伐奶夫及仇午﹝\n﹛簿井互鳔醒绅亢卞民弁伉支互匀凶氏分″
+	EndWindow 3201766
+		#\n\n﹛云井仆匹﹜左伊午乩旦反馨旵分午今﹝\n﹛丢永玄互俓仄中卅日﹜驯五卅分仃儅匀化仃永″\n﹛匀化﹜仇氏卅弁术壬井曰辄幻升儅凶今木化卅﹝\n﹛甩失℅永﹜仇木井日中匀凶中升丹允曰扎＿﹝\n﹛巨永〝﹛仇及丢永玄反夫午曰ぃ卞愈赝分匀化〝\n﹛卅月幻升﹜元扎﹜夫午曰ぃ毁杹饕匹手支月井﹝\n﹛饕及抩反≦莒罹末夫≧﹝厘中卞?戴今六化﹜\n﹛仇木匹牁詨手兜艘分″匀化田市乩夫它永″″
+
+
+
+###﹛打皮伉件扔禾□正□据抸踏毛赭儅
+block Item_607914 >= 1
+	EndWindow 3201767
+		#\n\n﹛今丐化﹜仇木匹左伊手徽木化汁用丢永玄分″\n﹛卅卞母仿母仿仄化氏分方﹝镀仁垫匀化仇中方﹝\n﹛公丹中丹用夫穴反请壑仄卅中氏分兮﹝
+
+
+
+###﹛铲抭刉笠刓毛赭儅
+
+#﹛呁醒
+block Item_607907 >= 2
+	EndWindow 3201768
+		#\n\n﹛铲抭刉笠刓互﹜窒匹公氏卅卞丐月氏分方﹝\n﹛今化反云蟆﹜职及蛊及手娄五熬仃支互匀凶卅﹝\n﹛升木互左伊及井﹜歹井日友尹元扎卅中井﹝\n﹛儅匀化仁月及反﹜ㄠ勾分仃卞仄欠″″
+
+
+#﹛签醒
+block Item_607907 ==1
+	If StampCount_607907 == 15
+		EndWindow 3201769
+		#\n\n﹛窒分方﹜引分垫匀化友尹元扎友尹井﹝\n﹛弘术弘术允月卅方﹜燮卞褡户卅中冗﹝
+		EndBlock
+
+	else
+		If StampCount_607907 == 12 || StampCount_607907 == 13 || StampCount_607907 == 14 || StampCount_607907 == 16 || StampCount_607907 == 17
+		EndWindow 3201770
+		#\n\n﹛凝迩赢氏午仇仄井垫匀化友尹元扎氏井方﹝\n﹛匀凶仁﹜谛棉匀化及反窒匹仇丹术示仿卅氏分﹝\n﹛今匀今午酦迩赢卞手伐奶夫毛欐仄化仇中永″\n﹛仇及澎?五沓牬″″
+		EndBlock
+
+		else
+			If StampCount_607907 >= 21
+				Window 3201771,NEXT
+		#\n\n﹛左左永﹜晓互匀化月兮﹝方□仄﹜方仁支匀凶″\n﹛目目永﹜公木匹仇丹仄化抩蟆毛踏五晶尹月午﹜\n﹛左伊手徽木化汁用丢永玄及醮棉じ曰分﹝\n﹛仍塑洢″﹛元扎丐﹜燮尺褡戈杅芊毛项尹方丹\n﹛＿午﹜蜕中凶中午仇欠分互﹜甩甩甩甩甩永﹜\n﹛掸反左伊手襞日友尹氏分﹝\n﹛云中云中﹜公丹变月卅匀化﹜厘暹屺分方﹝
+				Window 3201772,NEXT
+		#\n\n﹛杅芊毛襞匀化月蛊毛懊莞仄化支月井日﹝\n﹛章卞峏匀化月梢濩打皮伉件﹜丐中勾互公丹分﹝\n﹛仇及打皮伉件扔禾□正□据抸踏毛儅匀化匀化﹜\n\n﹛﹛失市打皮伉件失左打皮伉件平打皮伉件\n\n﹛匀化中丹宁蜕邯毛蜕尹壬﹜燮尺褡戈杅芊毛\n﹛项尹化仁木月日仄中兮﹝
+				Window 3201773,OK
+		#\n\n﹛窒分﹜公及翕中及杴反〝﹛厘暹屺分匀化﹝\n﹛中中井日仇中勾毛儅匀化﹜垫匀化仇中方﹝
+
+					Window_OK Item_607907 >= 1 && ItemSpace >= 1
+						KillItemAll 607907
+						GiveItemEX 607914,1,3201774
+		#\n\n﹛儅切坁互中匀天中匹﹜欐六友尹元扎氏井方﹝\n﹛窒午井仄欠方﹝
+						EndBlock
+
+					Window_OK Item_607907 >= 1
+						EndWindow 3201775
+		#\n\n﹛儅切坁互中匀天中匹﹜欐六友尹元扎氏井方﹝\n﹛窒午井仄欠方﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3201776
+		#\n\n﹛云中﹜铲抭刉笠刓毛升仇尺支匀凶氏分〝\n﹛卅中卅日﹜扔禾□正□据抸踏反欐今友尹冗﹝
+						EndBlock
+
+			else
+				Window 3201777,OK
+		#\n\n﹛田永市乩夫□永﹜仄仁元曰支互匀凶卅″″\n﹛欠仁卞刉笠互晓互匀化友尹元扎氏井方﹝\n﹛手丹中中﹜铲抭刉笠刓毛忒六方﹝\n﹛云蟆反手丹﹜域戏仇及母件斥亦件匹斨匀化欠″
+
+					Window_OK Item_607907 >= 1
+						KillItemAll 607907
+						EndBlock
+
+					Window_OK
+						EndBlock
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛冂帎穸谨由旦?毛赭儅
+block Item_607916 >= 1
+	Window 3201778,YES,NO
+		#\n\n﹛白件永﹜冂帎穸谨由旦?卅氏介儅匀化支互月﹝\n﹛公氏卅手氏﹜仇仇元扎凶分及打立分兮﹝\n﹛簿分欠丹午左伊及蜕丹仇午卞虱歹卅五扎﹜\n﹛濮覆卞燮尺反褡引六友尹井日卅﹝\n﹛分井日﹜云午卅仄仁左伊及蜕丹仇午毛妏五卅﹝
+
+		Window_YES
+			Window 3201779,NEXT
+		#\n\n﹛目永﹜剂仄反哔尹月⑵互丐月方丹分卅﹝\n﹛元扎丐引内﹜左伊及丢永玄毛元匀午苇欠﹝\n﹛汁用互卅中分欠﹝\n﹛左伊幻升及打皮伉件卞﹜卅兮晓菟宎衔及据﹜\n﹛弁□伙卅汁用丢永玄互芨尹日木卅中及井〝
+			Window 3201780,NEXT
+		#\n\n﹛咥苀反棵签﹜缰睿卞覆允月撒恋匀化支勾分﹝\n﹛勾引曰﹜引歹曰互斥乓穴毛仄化月氏分﹝\n﹛缰睿及?升﹜旦正□及补卩匀化支勾分﹝\n﹛公仇匹瓒桦允月及互﹜云蟆分﹝
+			Window 3201781,NEXT
+		#\n\n﹛仇木井日云蟆反﹜仇及铲抭刉笠刓毛儅匀化\n﹛仇及母件斥亦件毛荚月氏分﹝\n﹛公仄化﹜晓敢匹丐月凝迩赢午酦迩赢卞莘匀化﹜\n﹛伐奶夫毛银匀化铲抭刉笠毛晓仆化侳中﹝
+			Window 3201782,NEXT
+		#\n\n﹛伐奶夫反﹜母件斥亦件匹澎卞じ月心支仆坁分﹝\n﹛丐木反打皮伉件互儅匀化切扎中仃友尹氏分互﹜\n﹛谛棉井少木及晓敢洘酦反﹜谛棉毁迕午妏仁午\n﹛螂户内卞反中日木友尹氏分﹝\n﹛打皮伉件及夸曰毛桩化凶ビ摩樊升手分方﹝
+			Window 3201783,OK
+		#\n\n﹛丐丐公丹分﹜丐及洘酦反驯心互丹月今中井日﹜\n﹛圴坁蓟太反竣毛勾仃欠﹝歹井匀凶卅﹝\n﹛元扎丐﹜仇木毛儅匀化今匀今午垫匀化仇中″
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 607907,1,3201784
+		#\n\n﹛儅切坁互中匀天中匹﹜欐六友尹元扎氏井方﹝\n﹛窒午井仄欠方﹝
+					AddStampCount 607907,+15
+
+				Window_OK
+					EndWindow 3201785
+		#\n\n﹛儅切坁互中匀天中匹﹜欐六友尹元扎氏井方﹝\n﹛窒午井仄欠方﹝
+
+		Window_NO
+			EndWindow 3201786
+		#\n\n﹛弗永﹜勾引日友尹雄树舰曰支互匀化﹝\n﹛丐午匹萸五勾中化仁月卅方﹝
+
+
+
+###﹛穸谨じ桦痹毛赭儅
+block Item_607917 >= 1
+	Window 3201787,YES,NO
+		#\n\n﹛穸谨じ桦痹〝\n﹛酸ゴ分互﹜仇仇元扎穸谨今木友尹氏分方﹝\n﹛仇仇匹穸谨今木月杅芊反ㄠ勾分仃﹜\n﹛左伊及蜕丹仇午卞虱丹仇午分﹝\n﹛今手卅中午﹜燮卞褡户卅中兮﹝歹井匀凶卅﹝
+
+		Window_YES
+			Window 3201788,NEXT
+		#\n\n﹛目永﹜剂仄反哔尹月⑵互丐月方丹分卅﹝\n﹛元扎丐引内﹜左伊及丢永玄毛元匀午苇欠﹝\n﹛汁用互卅中分欠﹝\n﹛左伊幻升及打皮伉件卞﹜卅兮晓菟宎衔及据﹜\n﹛弁□伙卅汁用丢永玄互芨尹日木卅中及井〝
+			Window 3201789,NEXT
+		#\n\n﹛咥苀反棵签﹜缰睿卞覆允月撒恋匀化支勾分﹝\n﹛勾引曰﹜引歹曰互斥乓穴毛仄化月氏分﹝\n﹛缰睿及?升﹜旦正□及补卩匀化支勾分﹝\n﹛公仇匹瓒桦允月及互﹜云蟆分﹝
+			Window 3201790,NEXT
+		#\n\n﹛仇木井日云蟆反﹜仇及铲抭刉笠刓毛儅匀化\n﹛仇及母件斥亦件毛荚月氏分﹝\n﹛公仄化﹜晓敢匹丐月凝迩赢午酦迩赢卞莘匀化﹜\n﹛伐奶夫毛银匀化铲抭刉笠毛晓仆化侳中﹝
+			Window 3201791,NEXT
+		#\n\n﹛伐奶夫反﹜母件斥亦件匹澎卞じ月心支仆坁分﹝\n﹛丐木反打皮伉件互儅匀化切扎中仃友尹氏分互﹜\n﹛谛棉井少木及晓敢洘酦反﹜谛棉毁迕午妏仁午\n﹛螂户内卞反中日木友尹氏分﹝\n﹛打皮伉件及夸曰毛桩化凶ビ摩樊升手分方﹝
+			Window 3201792,OK
+		#\n\n﹛丐丐公丹分﹜丐及洘酦反驯心互丹月今中井日﹜\n﹛圴坁蓟太反竣毛勾仃欠﹝歹井匀凶卅﹝\n﹛元扎丐﹜仇木毛儅匀化今匀今午垫匀化仇中″
+OK
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 607907,1,3201793
+		#\n\n﹛儅切坁互中匀天中匹﹜欐六友尹元扎氏井方﹝\n﹛窒午井仄欠方﹝
+					AddStampCount 607907,+15
+
+				Window_OK
+					EndWindow 3201794
+		#\n\n﹛儅切坁互中匀天中匹﹜欐六友尹元扎氏井方﹝\n﹛窒午井仄欠方﹝
+
+		Window_NO
+			EndWindow 3201795
+		#\n\n﹛升丹冗升丹冗﹜驯五卞允月互中中兮﹝\n﹛升丹六枑匀化仁月仇午卞卅月互卅﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3201796,YES,NO
+		#\n\n﹛白永白永白永﹜引氏引午瑹卞井井匀凶卅﹝\n﹛云蟆卞反﹜左伊及桩化塔卞卅匀化手日丹兮﹝\n﹛左伊互及仄晓互匀化中仁凶户及卅﹝\n﹛帎卞蝇匀凶匀化中中互﹜仇及燮尺褡戈杅芊反\n﹛左伊仄井襞日卅中井日﹜漱匀凶仇午卞卅月兮﹝\n﹛今丐﹜升丹允月〝
+
+		Window_YES
+			Window 3201797,NEXT
+		#\n\n﹛目永﹜剂仄反哔尹月⑵互丐月方丹分卅﹝\n﹛元扎丐引内﹜左伊及丢永玄毛元匀午苇欠﹝\n﹛汁用互卅中分欠﹝\n﹛左伊幻升及打皮伉件卞﹜卅兮晓菟宎衔及据﹜\n﹛弁□伙卅汁用丢永玄互芨尹日木卅中及井〝
+			Window 3201798,NEXT
+		#\n\n﹛咥苀反棵签﹜缰睿卞覆允月撒恋匀化支勾分﹝\n﹛勾引曰﹜引歹曰互斥乓穴毛仄化月氏分﹝\n﹛缰睿及?升﹜旦正□及补卩匀化支勾分﹝\n﹛公仇匹瓒桦允月及互﹜云蟆分﹝
+			Window 3201799,NEXT
+		#\n\n﹛仇木井日云蟆反﹜仇及铲抭刉笠刓毛儅匀化\n﹛仇及母件斥亦件毛荚月氏分﹝\n﹛公仄化﹜晓敢匹丐月凝迩赢午酦迩赢卞莘匀化﹜\n﹛伐奶夫毛银匀化铲抭刉笠毛晓仆化侳中﹝
+			Window 3201800,NEXT
+		#\n\n﹛伐奶夫反﹜母件斥亦件匹澎卞じ月心支仆坁分﹝\n﹛丐木反打皮伉件互儅匀化切扎中仃友尹氏分互﹜\n﹛谛棉井少木及晓敢洘酦反﹜谛棉毁迕午妏仁午\n﹛螂户内卞反中日木友尹氏分﹝\n﹛打皮伉件及夸曰毛桩化凶ビ摩樊升手分方﹝
+			Window 3201801,OK
+		#\n\n﹛丐丐公丹分﹜丐及洘酦反驯心互丹月今中井日﹜\n﹛圴坁蓟太反竣毛勾仃欠﹝歹井匀凶卅﹝\n﹛元扎丐﹜仇木毛儅匀化今匀今午垫匀化仇中″
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 607907,1,3201802
+		#\n\n﹛儅切坁互中匀天中匹﹜欐六友尹元扎氏井方﹝\n﹛窒午井仄欠方﹝
+					AddStampCount 607907,+15
+
+				Window_OK
+					EndWindow 3201803
+		#\n\n﹛儅切坁互中匀天中匹﹜欐六友尹元扎氏井方﹝\n﹛窒午井仄欠方﹝
+
+		Window_NO
+			EndWindow 3201804
+		#\n\n﹛白件永﹜橇须互歹井匀化卅中方丹分卅﹝\n﹛鴃澎卞仄欠″″
+
+
+

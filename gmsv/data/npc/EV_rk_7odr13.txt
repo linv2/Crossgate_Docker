@@ -1,0 +1,16 @@
+#?¢O????
+
+block Item 16368 >= 1
+	EndWindow 22251,OK
+
+block
+	Window 22213,YES,NO
+		Window_NO
+			EndWindow 22214,OK
+		Window_YES Item 16367 == 0
+			EndWindow 22246,OK
+		Window_YES
+			Window 22215,OK
+				Window_OK
+					KillItemAll 16367
+					GiveItem 16368,1

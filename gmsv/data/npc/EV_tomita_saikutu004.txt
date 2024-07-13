@@ -1,0 +1,116 @@
+#≦睡楚玄仿奶失旦夫件≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛溢够汁田平及摒
+
+###﹛巨件玄伉□据毛呁醒赭儅
+block Item_607905 >= 2
+	EndWindow 3200984
+		#\n\n﹛巨件玄伉□据毛呁醒儅匀化中引允友﹝\n﹛巨件玄伉□据反域骚匹卅中午熬尥匹五引六氏﹝
+
+
+
+###﹛驰屺匹丐月
+
+#﹛巨件玄伉□据赭儅
+block JobAncestry == 470 && Item_607905 == 1
+
+	If StampCount_607905 == 0
+		EndWindow 3200985
+		#\n\n﹛萧仄沭丐曰引六氏互﹜歹凶仄反丐卅凶互\n﹛辅笛仄化中月阶绖及溢够匹反丐曰引六氏﹝\n﹛溢够交伉卞云杽中宁歹六仁分今中﹝
+		EndBlock
+
+
+	else
+		If StampCount_607905 == 1
+			EndWindow 3200986
+		#\n\n﹛萧仄沭丐曰引六氏互﹜歹凶仄反丐卅凶互\n﹛辅笛仄化中月阶绖及溢够匹反丐曰引六氏﹝\n﹛溢够平弁卞云杽中宁歹六仁分今中﹝
+			EndBlock
+
+
+		else
+			If ItemCreateTime_607905 > 120
+				Window 3200987,OK
+		#\n\n﹛酸ゴ匹允互﹜允匹卞凛棉濠木卞卅匀化中引允﹝\n﹛仄井仄﹜仇仇引匹支木木壬﹜手丹域忷匹允﹝\n﹛引凶及民乓伊件斥毛云谨切仄化云曰引允﹝\n﹛匹反﹜巨件玄伉□据毛仍忒萃仁分今中﹝
+
+					Window_OK Item_607905 >= 1
+						KillItemAll 607905
+						EndBlock
+
+					Window_OK
+						EndBlock
+
+
+			else
+				If ItemCreateTime_607905 <= 120 && Item_1657 >= 1
+
+					Window 3200988,NEXT
+		#\n\n﹛云户匹午丹仍介中引允﹝\n﹛睡楚玄仿奶失旦夫件﹜苇仪卞敦虽匹允﹝\n﹛允壬日仄中オ觐恘匹允友﹝\n﹛巨件玄伉□据反忒萃仄化中凶分五引允互﹜\n﹛任巧它斥尼反公及引引云儅切仁分今中﹝\n﹛敦虽筏ゴ反﹜丐卅凶互镐旋仄凶驰屺匹丐月仇午\n﹛毛据抸允月云潮曰≦立瓦勾月反仄≧匹允﹝
+					Window 3200989,OK
+		#\n\n﹛凳卞﹜镕ㄠ阶绖及詨卞云苂井曰仄凶夤檗毛\n﹛曹侚卞笛鼎仄化云五引仄凶及匹﹜汏操午仄化\n﹛云欐仄中凶仄引允﹝呿癫卞云?木迋匹仄凶﹝
+
+						Window_OK Item_607905 >= 1 && ItemSpace >= 4
+							KillItemAll 607905
+							GiveItemEX 607906,1,3200990
+		#\n\n﹛绂坁互中匀天中匹﹜云欐仄匹五引六氏﹝\n﹛帮咥仄化仁分今中﹝
+							GiveStackItem 9611,5
+							GiveStackItem 9612,5
+							GiveStackItem 9613,5
+							CheckTitle
+							EndBlock
+
+						Window_OK Item_607905 >= 1
+							EndWindow 3200991
+		#\n\n﹛丐卅凶及绂坁卞反﹜操圴毛じ木月及卞蜗坌卅\n﹛坞五互卅中方丹匹允﹝帮咥仄化仁分今中﹝
+							EndBlock
+
+						Window_OK
+							EndWindow 3200992
+		#\n\n﹛巨件玄伉□据互苇丐凶曰引六氏友﹝\n﹛巨件玄伉□据毛欐仄化中凶分井卅中午﹜\n﹛操圴反云欐仄匹五引六氏方﹝
+							EndBlock
+
+
+				else
+					Window 3200993,YES,NO
+		#\n\n﹛任巧它斥尼毛儅匀化中卅中方丹匹允互﹜\n﹛阶绖毛滋腺允月及匹允井〝
+
+						Window_YES
+							Window 3200994,OK
+		#\n\n﹛酸ゴ匹允互﹜瑁艘反裔中方丹匹允友﹝\n﹛匹反﹜巨件玄伉□据毛仇切日尺﹝\n﹛引凶及民乓伊件斥毛云谨切仄化云曰引允﹝
+
+								Window_OK Item_607905 >= 1
+									KillItemAll 607905
+									EndBlock
+
+								Window_OK
+									EndBlock
+
+						Window_NO
+							EndWindow 3200995
+		#\n\n﹛公及蜕邯互妏仃化丹木仄中匹允﹝\n﹛敦虽引匹手丹剂仄﹜凛棉反引分酸匀化中引允﹝\n﹛丐五日户内卞互氏壬匀化仁分今中﹝
+							EndBlock
+
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+#﹛巨件玄伉□据尕赭儅
+block JobAncestry == 470
+
+	EndWindow 3200996
+		#\n\n﹛驰屺及杅匹允友﹝\n﹛凶分漆﹜驰屺及杅凶切卞方月绖诸阶绖\n﹛≦睡楚玄仿奶失旦夫件≧毛钒疡仄化云曰引允﹝\n﹛辅笛毛涡侗允月及匹丐木壬﹜溢够扔弁仿井日\n﹛巨件玄伉□据毛熬仃潸匀化仁分今中﹝
+
+
+
+###﹛驰屺匹反卅中
+block
+	EndWindow 3200997
+		#\n\n﹛仇仇匹钒疡仄化中月及反﹜驰屺及杅卞方月\n﹛绖诸阶绖≦睡楚玄仿奶失旦夫件≧匹允﹝\n﹛职及缜仅及杅反巨件玄伉□匹五引六氏互﹜\n﹛云澎鳗中午中丹溥匹辅笛互第チ匹允﹝\n﹛驰屺及杅★井日踞恘毛俇引木凶端卞反﹜\n﹛仍隅恘云凑中中凶仄引允﹝
+
+

@@ -1,0 +1,11 @@
+#û¹?????
+
+block 
+	Window 22840,Yes,No
+		Window_No
+			EndWindow 22841,OK
+		Window_Yes
+			Window 22842,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,43100,91,136

@@ -1,0 +1,18 @@
+#
+#ŒôÃ–
+#
+
+### ÈÓÓÀñâ°×Å«»ïµ©Ã«ÅÈ±åƒ}ÔÈ»¯ÖÐÔÂ ###
+block Item 18768 >= 1
+ EndWindow 21269
+### ÐËë²Ã«ƒ}ÔÈ»¯ÖÐÔÂ ###
+block Item 18443 >= 1
+	Window 21240,next
+        Window 21248,OK
+        Window_OK Item 18443 >= 1
+        killitem 18443,1
+        LeaveGroup
+        encount 2|||0|||||0|12027|||||||||
+        Window_OK
+block
+     EndWindow 21240

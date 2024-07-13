@@ -1,0 +1,33 @@
+####dodo_gm_1102405.txt
+####0130枚金币兑换商
+block Item 40844 <= 129 
+	 ##1109722	\n\n\n\n\n@c你所拥有的水蓝鼠金币还未达兑换数量！	1
+	 EndWindow 1109722
+
+block Item 40844 >= 130
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109716	\n\n\n\n@c是否愿意花费一百三十枚金币兑换：\n@c冥界死神召唤书？	1
+	 Window 1109716,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+	 	 	 EndWindow 1054495
+	 	 	 
+	 	 Window_YES Item 40844 >= 130 && ItemSpace >= 1
+	 	 	 ##取走水蓝鼠金币
+	 	 	 KillItem 40844,130
+	 	 	 ##给予冥界死神召唤书
+	 	 	 GiveLeak1Item 40850
+	 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+			 EndWindow 1109719
+			 
+		 Window_NO 
+			 ##1109720	\n\n\n\n\n@c累积越多将可以兑换到更超值的礼物呦！	1
+	 	 	 EndWindow 1109720
+	 	 	 				
+block 
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 EndWindow 1109723
+	 							 	 

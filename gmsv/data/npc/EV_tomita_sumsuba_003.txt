@@ -1,0 +1,93 @@
+#﹛璋剀祸母件斥亦件﹋蛙笙菱心母件斥亦件“扔皮?﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛玄市必凯曰抩谛及摒
+
+###﹛港玄市必毛赭儅
+
+block Item_607931 >= 1
+	EndWindow 3202817
+
+		#\n\n﹛示永﹜公及港玄市必反﹜云日互凯匀凶手及乒﹝\n﹛唾五互恌中乒永″
+
+
+
+###﹛云升欠戊件瓦乓弁毛呁醒赭儅
+
+block Item_607934 >= 2
+	EndWindow 3202818
+
+		#\n\n﹛示永﹜戊件瓦乓弁反公氏卅卞中日卅中乒﹝\n﹛驯坁反剂仄内勾互母奶打怗乒永″
+
+
+
+###﹛云升欠戊件瓦乓弁毛ㄠ蜊赭儅﹋じ澎詨ㄠㄟ坌恍坢﹌
+
+block Item_607934 == 1 && ItemCreateTime_607934 < 10
+	EndWindow 3202819
+
+		#\n\n﹛示永﹜戊件瓦乓弁及诞岳互箫曰卅中乒永″\n﹛手丹剂仄诞木化井日儅匀化五化俓仄中乒﹝
+
+
+
+###﹛云升欠戊件瓦乓弁毛ㄠ蜊赭儅﹋じ澎詨ㄠㄟ坌动晓烦聊﹌
+
+block Item_607934 == 1 && ItemCreateTime_607934 >= 10
+	Window 3202820,OK
+
+		#\n\n﹛示永﹜云日反云升欠戊件瓦乓弁厘驯坁乒﹝\n﹛域?及港玄市必丐仆月乒永″
+
+		Window_OK Item_607934 >= 2
+			EndWindow 3202821
+
+		#\n\n﹛示永﹜公氏卅卞中日卅中乒﹝\n﹛驯坁反剂仄内勾互母奶打怗乒永″
+
+		Window_OK Item_607934 == 1 && ItemCreateTime_607934 < 10
+			EndWindow 3202822
+
+		#\n\n﹛示永﹜诞岳互箫曰卅中乒永″\n﹛手丹剂仄诞木化井日儅匀化五化俓仄中乒﹝
+
+		Window_OK Item_607934 == 1 && ItemCreateTime_607934 >= 10 && ItemSpace >= 1
+			KillItemAll 607934
+			GiveItemEX 607931,1,3202823
+
+		#\n\n﹛示永﹜绂坁卞坞五互卅中乒永″
+
+		Window_OK ItemSpace >= 1
+			EndWindow 3202824
+
+		#\n\n﹛示永﹜云升欠戊件瓦乓弁互撩仁卅匀凶乒﹝\n﹛玄市必反卅仄乒永″
+
+		Window_OK
+			EndWindow 3202825
+
+		#\n\n﹛示永﹜绂坁卞坞五互卅中乒永″
+
+
+
+###﹛港玄市必及?戏嬴五
+
+block Item_607932 >= 1
+	EndWindow 3202826
+
+		#\n\n﹛示永﹜港玄市必反石件玄反铜褥互域?乒永″
+
+
+
+###﹛旦永由⑥扤毛赭儅
+
+block Item_607933 >= 1
+	EndWindow 3202827
+
+		#\n\n﹛示永﹜弁扔永﹜旦永由⑥扤乒﹝扤匀化月乒永″
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+
+block
+	EndWindow 3202828
+
+		#\n\n﹛示永﹜云日反壑钗元文丹及玄市必毛凯月凶户卞\n﹛戏引木化五凶乒﹝\n﹛仿奶白伐□弁匀化支勾乒永″
+
+
+

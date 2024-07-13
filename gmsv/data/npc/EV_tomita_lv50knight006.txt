@@ -1,0 +1,26 @@
+#LV50绅亢桦弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛铸璋蹂褡参够B及摒
+
+###﹛椭瘀卅仄
+block
+	Window 3203862,YES,NO
+
+		#\n\n﹛铸璋雄祭平乓件矢□件掸雒酦匹□允﹝\n﹛仇仇引匹窒及塑洢手卅仁啼★侳日木化手﹜\n﹛仇及燮反切斤匀午五勾中匹允方﹝\n﹛抰丐匀化及坁潘﹜铸璋仄引六氏井丑〝
+
+		Window_YES
+			Window 3203863,OK
+
+		#\n\n﹛丐曰互午丹仍介中引□允﹝\n﹛平乓件矢□件冂霾反蛟嗯失永皿匹□允﹝\n﹛丐凶仄及匹允仃升﹝\n﹛匹反ㄠ抩迋﹜仍丐氏卅℅℅中″
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59503,233,316
+
+		Window_NO
+			EndWindow 3203864
+
+		#\n\n﹛铸璋仄卅中氏匹允井丑﹝\n﹛匹手﹜雄互匀凶丐仆仁卞韶氏分曰允月午﹜\n﹛田市心凶中匹允方予﹝
+
+
+

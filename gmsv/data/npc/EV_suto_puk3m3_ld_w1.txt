@@ -1,0 +1,45 @@
+#PUK3_main3
+#
+#
+#∑•°ı√Û∆Ωÿ®°ı∆§
+
+
+Block
+
+
+		Localcount1 = Random 5,0
+		
+		if Localcount1 == 1
+		
+			warp 0,59761,32,99
+		
+		else
+		
+				if Localcount1 == 2
+			
+					warp 0,59759,142,124
+			
+				else
+			
+						if Localcount1 == 3
+		
+							warp 0,59761,83,129
+							
+						else
+				
+				
+								if Localcount1 == 4
+					
+							
+									warp 0,59761,83,129
+							
+								else
+							
+							
+									warp 0,59761,83,129
+							
+								endif
+						endif
+				endif
+		endif
+

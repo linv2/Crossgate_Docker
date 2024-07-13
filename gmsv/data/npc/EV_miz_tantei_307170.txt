@@ -1,0 +1,17 @@
+#茧樱弁巨旦玄“皿伉件泛奴□(2)
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block 
+	Window 206237,YES,NO
+	Window_YES
+	Window 206238,OK
+	Window_OK
+	leavegroup
+	Warp 0,1541,13,10
+	Window_NO
+	EndWindow 206239,OK
+
+
+

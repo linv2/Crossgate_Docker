@@ -1,0 +1,28 @@
+#失旦泛伉失螃敢﹋失伙未旦及俭﹌
+
+##############  ##############
+block Item 18495 == 1
+#\n\n﹛蒮反云碧心及方丹匹允友﹝匹反辅日木方﹝
+	Window 14746,OK
+	Window_OK
+	KillItem 18495
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24001,7,8
+
+##############  ##############
+block  Item 18499 == 1
+#\n\n﹛蒮反云碧心及方丹匹允友﹝匹反辅日木方﹝
+	Window 14746,OK
+	Window_OK
+	KillItem 18499
+	NowEvent 4 = 0
+	LeaveGroup
+	Warp 0,24001,7,8
+
+##############  ##############
+block
+#\n\n﹛蒮及据反升丹卅今木引仄凶〝
+	EndWindow 14747,OK
+
+

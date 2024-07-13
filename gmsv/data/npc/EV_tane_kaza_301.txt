@@ -1,0 +1,13 @@
+
+block
+
+#	Window "\n\n﹛燮卞褡心凶中及〝公丹﹝\n﹛互匀井曰今六卅中匹友﹝",next
+	Window 3006925,next
+
+#	Window "\n\n﹛丐凶仄﹜幻氏午反\n﹛丐氏凶方曰雄中蛊午\n﹛爵中凶中氏分仃木升﹝",ok
+	Window 3006926,ok
+
+	Window_ok
+
+		Encount 2|0,59672,119,111||0|||3006718||0|305000|||||||||
+

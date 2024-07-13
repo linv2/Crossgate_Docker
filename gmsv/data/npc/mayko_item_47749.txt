@@ -1,0 +1,43 @@
+#烟一级点传送卷	mayko_item_47749.txt
+#1055887	\n\n\n@c你想传送到烟雾的一级点吗？	1
+#1055888	\n\n\n@c你想传送到烟萝的一级点吗？	1
+#1055889	\n\n\n@c你想传送到绿烟的一级点吗？	1
+#1055890	\n\n\n@c你想传送到棉球的一级点吗？	1
+
+
+#1055891	\n\n\n@c有需要再使用吧。	1
+
+block Item 47749 >0 #烟雾
+	 Window 1055887,YES,NO
+	 Window_YES Item 47749==0
+	 Endblock
+	 Window_YES
+	 KillItem 47749,1
+	 Warp 0,43000,616,834
+	 endblock
+	 Window_NO ##烟萝
+	 	 Window 1055888,YES,NO
+	 	  Window_YES Item 47749==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 47749,1
+	 	  Warp 0,48007,30,56
+	 	  endblock
+ 	 Window_NO ##绿烟 彩叶点
+	 	 Window 1055889,YES,NO
+	 	  Window_YES Item 47749==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 47749,1
+	 	  Warp 0,32217,69,26
+	 	  endblock
+ 	 Window_NO ##棉球
+	 	 Window 1055890,YES,NO
+	 	  Window_YES Item 47749==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 47749,1
+	 	  Warp 0,32139,8,10
+	 	  endblock	 	  
+ Window_NO
+	 	  EndWindow 1055891	 	  

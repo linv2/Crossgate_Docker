@@ -1,0 +1,29 @@
+#?¢ã?ûªýß?
+#???¤ž??Ô¤œ????
+
+#ûªýß??Dur???ýÆ??
+
+block Item 16423 >= 2
+	EndWindow 22979
+
+block Item 16423 == 1 && ItemDur 16423 >= 2
+#\n\n\n\n@c?¢ã?ûªýß??úé?????
+	Window 22978,YES,NO
+	Window_YES Item 16423 == 1
+	SetDur 16423,-1
+	LeaveGroup
+	Warp 0,51004,18,23
+	Window_YES
+	Window_NO
+
+#ûªýß??Dur?1??
+block
+#\n\n\n\n@c?¢ã?ûªýß??úé?????
+	Window 22978,YES,NO
+	Window_YES Item 16423 == 1
+	KillItem 16423,1,(4414)
+	LeaveGroup
+	Warp 0,51004,18,23
+	Window_YES
+	Window_NO
+

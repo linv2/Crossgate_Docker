@@ -1,0 +1,368 @@
+#练功场传送卷	mayko_item_47718.txt
+
+##1055626	\n\n\n@c使用此券能传到一般人常去的练功场，并酌收费用。
+
+block
+	 Window 1055626,NEXT
+	 
+#	1055784	\n\n\n　　　　　你想去里欧波多洞窟（里洞）吗？\n　　　　　费用是５００Ｇ，可以吗？？Lv.15~23   里洞
+	 Window 1055784,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >499
+	 ##删除练功场传送卷
+	 AddGold -500
+	 KillItem 47718
+	 ##传送里洞
+	 Warp 0,30001,128,295
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+#################################	 
+	 Window_NO
+#	1055785	\n\n\n　　　　　你想去利利可洞窟（zz可洞）吗？\n　　　　　费用是５００Ｇ，可以吗？？
+	 Window 1055785,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >499
+	 ##删除练功场传送卷
+	 AddGold -500
+	 KillItem 47718
+	 ##传送ZZ可
+	 Warp 0,32505,9,28
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO 	 
+#	1055786	\n\n\n　　　　　你想去羽音洞窟（羽音）吗？\n　　　　　费用是５００Ｇ，可以吗？？  Lv.26~36   羽音洞      怪物等级:30~34  .
+#26级从里洞毕业..去雷姆尔山新道..
+#30级雷姆尔山毕业..去布朗山新道..
+	 Window 1055786,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >499
+	 ##删除练功场传送卷
+	 AddGold -500
+	 KillItem 47718
+	 ##传送羽音
+	 Warp 0,59503,72,161
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055787	\n\n\n　　　　　你想去积雪的山路（雪山）吗？\n　　　　　费用是 １0００Ｇ，可以吗？？
+	 Window 1055787,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >999
+	 ##删除练功场传送卷
+	 AddGold -1000
+	 KillItem 47718
+	 ##传送雪山
+	 Warp 0,402,84,193
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055788	\n\n\n　　　　　你想去炎之洞窟（炎洞）吗？\n　　　　　费用是 １0００Ｇ，可以吗？？
+	 Window 1055788,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >999
+	 ##删除练功场传送卷
+	 AddGold -1000
+	 KillItem 47718
+	 ##传送炎洞
+	 Warp 0,15595,3,14
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055789	\n\n\n　　　　　你想去火之谷（火谷）吗？\n　　　　　费用是２０００Ｇ，可以吗？？
+	 Window 1055789,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 2000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >1999
+	 ##删除练功场传送卷
+	 AddGold -2000
+	 KillItem 47718
+	 ##传送火谷
+	 Warp 0,32202,13,11
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055790	\n\n\n　　　　　*你想去坎那贝拉村（坎村）吗？\n　　　　　费用是１５００Ｇ，可以吗？？
+	 Window 1055790,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 1500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >1499
+	 ##删除练功场传送卷
+	 AddGold -1500
+	 KillItem 47718
+	 ##传送坎村
+	 Warp 0,33500,17,47
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055791	\n\n\n　　　　　*你想去诅咒迷宫（圣诏三)吗？\n　　　　　费用是２０００Ｇ，可以吗？？
+	 Window 1055791,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 2000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >1999
+	 ##删除练功场传送卷
+	 AddGold -2000
+	 KillItem 47718
+	 ##传送圣三
+	 Warp 0,24044,22,5  ##宝贝炸弹一级点
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+#	 Window_NO
+#	1055792	\n\n\n　　　　　你想去冰封的酒窖底层（冰树）吗？\n　　　　　费用是10００Ｇ，可以吗？？  Lv.50~56   冰树 怪物等级:55
+#此地比圣三,冰洞还好练,
+#	 Window 1055792,YES,NO
+#	 Window_YES Group > 1
+#	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+#	 EndWindow 1055784
+#	 Window_YES Gold < 1000
+#	 ##3	\n\n很抱歉，你的钱不够了。	12
+#	 EndWindow 3
+	 
+#	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >999
+#	 ##删除练功场传送卷
+#	 AddGold -1000
+#	 KillItem 47718
+#	 ##传送冰树
+#	 Warp 0,32066,98,77
+#	 endblock
+#	 Window_YES
+#	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+#	 EndWindow 1053059
+####
+	 Window_NO
+#	1055793	\n\n\n　　　　　*你想去冰之洞窟（冰洞）吗？\n　　　　　费用是２０００Ｇ，可以吗？？
+	 Window 1055793,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 2000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >1999
+	 ##删除练功场传送卷
+	 AddGold -2000
+	 KillItem 47718
+	 ##传送冰洞
+	 Warp 0,15400,50,50
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055794	\n\n\n　　　　　你想去水之洞窟（水洞）吗？\n　　　　　费用是１５００Ｇ，可以吗？？
+	 Window 1055794,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 1500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >1499
+	 ##删除练功场传送卷
+	 AddGold -1500
+	 KillItem 47718
+	 ##传送水洞
+	 Warp 0,15542,16,25
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055795	\n\n\n　　　　　*你想去汉米顿商城（商城）吗？\n　　　　　费用是２０００Ｇ，可以吗？？
+	 Window 1055795,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 2000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >1999
+	 ##删除练功场传送卷
+	 AddGold -2000
+	 KillItem 47718
+	 ##传送商城
+	 Warp 0,32205,125,133
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055796	\n\n\n　　　　　你想去沙之弗利德岛（黄蜂区）吗？\n　　　　　费用是２０００Ｇ，可以吗？？
+	 Window 1055796,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 2000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >1999
+	 ##删除练功场传送卷
+	 AddGold -2000
+	 KillItem 47718
+	 ##传送黄蜂区
+	 Warp 0,32201,169,90
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055797	\n\n\n　　　　　你想去火炎弗利德岛（死树）吗？\n　　　　　费用是２０００Ｇ，可以吗？？
+	 Window 1055797,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 2000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >1999
+	 ##删除练功场传送卷
+	 AddGold -2000
+	 KillItem 47718
+	 ##传送冰树
+	 Warp 0,32201,190,207
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055798	\n\n\n　　　　　*你想去哥布林要塞（要塞）吗？\n　　　　　费用是２５００Ｇ，可以吗？？92~112级 要塞 底层怪平均等级97级
+	 Window 1055798,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 2500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >2499
+	 ##删除练功场传送卷
+	 AddGold -2500
+	 KillItem 47718
+	 ##传送要塞
+	 Warp 0,59717,176,130
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055799	\n\n\n　　　　　你想去彩叶原吗？\n　　　　　费用是２５００Ｇ，可以吗？？
+	 Window 1055799,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 2500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >2499
+	 ##删除练功场传送卷
+	 AddGold -2500
+	 KillItem 47718
+	 ##传送彩叶
+	 Warp 0,32217,65,28
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+#	1055800	\n\n\n　　　　　你想去彩叶原之顶吗？\n　　　　　费用是２５００Ｇ，可以吗？？
+	 Window 1055800,YES,NO
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1055784
+	 Window_YES Gold < 2500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 
+	 Window_YES Item 47718 >= 1  && Group == 1  && Gold >2499
+	 ##删除练功场传送卷
+	 AddGold -2500
+	 KillItem 47718
+	 ##传送彩叶顶
+	 Warp 0,32215,36,20
+	 endblock
+	 Window_YES
+	 #1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+	 EndWindow 1053059
+####
+	 Window_NO
+###风之洞窟  15564,17,11

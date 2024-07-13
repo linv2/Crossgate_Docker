@@ -1,0 +1,28 @@
+##百人道场工作人员8 map：9108	16	10
+
+##奖赏：重击之符、回避之符、残念奖
+##机率：　30:30:40
+
+
+block
+	 ##1020693	\n\n恭喜你，你已经完成了本道场第八组别的挑战。\n接下来你是否要挑战本道场下一个组别？
+	window 1020693,yes,no
+		window_no
+			 ##1020695	\n\n那么，你可以获得挑战本组成功的奖励。\n\n希望你下次再接再厉，能够有更好的成绩。
+			window 1020695,ok
+				 window_ok itemspace >= 1
+					 GiveLeak1Item (46241%30$1,46242%30$1,46240%40$1)
+					 LeaveGroup
+					 warp 0,1000,141,148
+			window_ok
+			endwindow 10000,ok
+		window_yes
+			 ##1020696	\n\n给你本道场专用记忆，使用本记忆挑战下一个组别。\n下一个组别的挑战会更困难，请你做好充分准备后再使用本记忆。
+			window 1020696,ok
+				 window_ok itemspace >= 1
+					 GiveLeak1Item 34633,1
+					 LeaveGroup
+					 warp 0,1000,141,148
+			window_ok
+			endwindow 10000,ok
+

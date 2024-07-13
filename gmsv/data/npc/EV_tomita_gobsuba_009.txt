@@ -1,0 +1,109 @@
+#打皮伉件及邰尽﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛心支仆盒﹋打皮伉件县酱﹌及摒
+
+###﹛打皮伉件县酱毛赭儅
+block Item_607912 >= 1
+	EndWindow 3202096
+		#\n\n﹛云支﹜公及打皮伉件县酱﹜切斤匀午苇六化方﹝\n﹛丹□氏﹜仇木反冂卞请侳互中中﹝丿仄凶友尹﹝
+
+
+
+###﹛县酱动陆及心支仆坁毛赭儅
+block Item_607908 >= 1 || Item_607909 >= 1 || Item_607910 >= 1 || Item_607911 >= 1 || Item_607913 >= 1
+	EndWindow 3202097
+		#\n\n﹛云支云支﹜公及心支仆坁反域苇五木中分仃升﹜\n﹛切斤匀午票圴分友尹﹝心支仆坁午中丹及反﹜\n﹛仇及县酱及方丹卞跪曰绞仁手及毛悻匹障尹月﹜\n﹛仇丹中丹梂斗井仄今互卅中午友﹝
+
+
+
+###﹛剂煽及剩毛ㄠ蜊赭儅
+block Item_607925 >= 1
+	Window 3202098,YES,NO
+		#\n\n﹛心支仆坁卞仇及打皮伉件县酱反中井互匹允井〝\n﹛夫它末弁及抸井曰互夫穴件民永弁匹允方﹝\n﹛云澎儅切及剂煽及剩ㄠ蜊午跟晶匹五引允﹝
+
+		Window_YES
+			Window 3202099,OK
+		#\n\n﹛合匀凶午云曰﹜丐卅凶反夫穴件及歹井月谛分﹝\n﹛夫它末弁毛扔□申旦仄化云五引允方﹝
+
+				Window_OK Item_607925 >= 1 && ItemSpace >= 1
+					KillItem 607925,1
+					GiveItemEX 607912,1,3202100
+		#\n\n﹛云匀午﹜绂坁互中匀天中匹允友﹝\n﹛帮咥仄卅中午﹜县酱毛欐六引六氏方﹝
+
+				Window_OK Item_607925 >= 1
+					EndWindow 3202101
+		#\n\n﹛云匀午﹜绂坁互中匀天中匹允友﹝\n﹛帮咥仄卅中午﹜县酱毛欐六引六氏方﹝
+
+				Window_OK
+					EndWindow 3202102
+		#\n\n﹛云支﹜襞日厄棉卞剂煽及剩互壅撩仄引仄凶友﹝\n﹛匹反﹜台手仇及县酱毛壅允仇午卞仄引仄斤丹﹝
+
+		Window_NO
+			EndWindow 3202103
+		#\n\n﹛中曰引六氏井﹜公木反酸ゴ匹允﹝\n﹛匹手﹜夫穴件及歹井月打皮伉件手中月仇午反﹜\n﹛创尹化中化仁分今中友﹝
+
+
+
+###﹛岁镁扑□伙玉毛ㄢ蜊赭儅
+block Item_607923 >= 3
+	Window 3202104,YES,NO
+		#\n\n﹛心支仆坁卞仇及打皮伉件县酱反中井互匹允井〝\n﹛夫它末弁及抸井曰互夫穴件民永弁匹允方﹝\n﹛云澎儅切及岁镁扑□伙玉ㄢ蜊午跟晶匹五引允﹝
+
+		Window_YES
+			Window 3202105,OK
+		#\n\n﹛合匀凶午云曰﹜丐卅凶反夫穴件及歹井月谛分﹝\n﹛夫它末弁毛扔□申旦仄化云五引允方﹝
+
+				Window_OK Item_607923 >= 3 && ItemSpace >= 1
+					KillItem 607923,3
+					GiveItemEX 607912,1,3202106
+		#\n\n﹛云匀午﹜绂坁互中匀天中匹允友﹝\n﹛帮咥仄卅中午﹜县酱毛欐六引六氏方﹝
+
+				Window_OK Item_607923 >= 3
+					EndWindow 3202107
+		#\n\n﹛云匀午﹜绂坁互中匀天中匹允友﹝\n﹛帮咥仄卅中午﹜县酱毛欐六引六氏方﹝
+
+				Window_OK
+					EndWindow 3202108
+		#\n\n﹛襞日厄棉卞岁镁扑□伙玉互蛹曰引仄凶友﹝\n﹛匹反﹜台手仇及县酱毛壅允仇午卞仄引仄斤丹﹝
+
+		Window_NO
+			EndWindow 3202109
+		#\n\n﹛中曰引六氏井﹜公木反酸ゴ匹允﹝\n﹛匹手﹜夫穴件及歹井月打皮伉件手中月仇午反﹜\n﹛创尹化中化仁分今中友﹝
+
+
+
+###﹛诠赢田术□市毛ㄤ蜊赭儅
+block Item_607924 >= 5
+	Window 3202110,YES,NO
+		#\n\n﹛心支仆坁卞仇及打皮伉件县酱反中井互匹允井〝\n﹛夫它末弁及抸井曰互夫穴件民永弁匹允方﹝\n﹛云澎儅切及诠赢田术□市ㄤ蜊午跟晶匹五引允﹝
+
+		Window_YES
+			Window 3202111,OK
+		#\n\n﹛合匀凶午云曰﹜丐卅凶反夫穴件及歹井月谛分﹝\n﹛夫它末弁毛扔□申旦仄化云五引允方﹝
+
+				Window_OK Item_607924 >= 5 && ItemSpace >= 1
+					KillItem 607924,5
+					GiveItemEX 607912,1,3202112
+		#\n\n﹛云匀午﹜绂坁互中匀天中匹允友﹝\n﹛帮咥仄卅中午﹜县酱毛欐六引六氏方﹝
+
+				Window_OK Item_607924 >= 5
+					EndWindow 3202113
+		#\n\n﹛云匀午﹜绂坁互中匀天中匹允友﹝\n﹛帮咥仄卅中午﹜县酱毛欐六引六氏方﹝
+
+				Window_OK
+					EndWindow 3202114
+		#\n\n﹛﹛襞日厄棉卞诠赢田术□市互蛹曰引仄凶友﹝\n﹛匹反﹜台手仇及县酱毛壅允仇午卞仄引仄斤丹﹝
+
+		Window_NO
+			EndWindow 3202115
+		#\n\n﹛中曰引六氏井﹜公木反酸ゴ匹允﹝\n﹛匹手﹜夫穴件及歹井月打皮伉件手中月仇午反﹜\n﹛创尹化中化仁分今中友﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3202116
+		#\n\n﹛侳邠筏ゴ卞﹜打皮伉件县酱反中井互匹允井〝\n﹛兮夫俓仄中午中丹杅反﹜剂煽及剩卅日ㄠ蜊﹜\n﹛岁镁扑□伙玉卅日ㄢ蜊﹜诠赢田术□市卅日ㄤ蜊\n﹛儅匀化五化仁分今中﹝县酱午跟晶中凶仄引允﹝
+
+
+

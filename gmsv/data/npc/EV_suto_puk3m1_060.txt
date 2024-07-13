@@ -1,0 +1,71 @@
+#
+#PUK3_Main1
+#
+#交伙弘﹋爵桦﹌
+
+
+Block
+
+	GAWindow 3206967,Next
+
+		#\n﹛交伙弘\n﹛\n﹛＞引凶﹜詨转毛Д日木公丹分卅＿＿﹝\n﹛﹛匹五木壬摒五忒仄凶中互﹜丐及呺坁凶切＿＿\n﹛﹛⑹坁毛昑仄化中月庄坁及六中匹﹜\n﹛﹛引匀凶仁宎毛褡户月仇午互请侳卅中﹝\n﹛﹛伉任尼伉它旦户﹜午氏匹手卅中仇午毛\n﹛﹛仄化仁木月＝
+	
+	GAWindow 3206968,Next
+
+		#\n﹛宎衔赢\n﹛\n﹛＞尹尹﹝\n﹛﹛仇切日互赶谛匹域虫毛\n﹛﹛方丹支仁逦六月午中丹及卞﹜\n﹛﹛戚★午喂尹化中五引允井日友＝
+	
+	GAWindow 3206969,Next
+
+		#\n﹛交伙弘\n﹛\n﹛＞琅仄中壅杶匹﹜扣及衔竣手侹切铵户化中月﹝\n﹛﹛宎恘匹割掸卞昺匀化中月脱日及俇心及嘈反﹜\n﹛﹛趿逤卅互日锳窜恘匹丐月井日卅＿＿﹝\n﹛﹛衔竣互侹切月午中丹及反\n﹛﹛恌仁卅中仇午分＝
+	
+	GAWindow 3206970,Next
+
+		#\n﹛宎衔赢\n﹛\n﹛＞伉任尼伉它旦反仇及壑钗毛骋氏匹\n﹛﹛中月及匹仄斤丹井＿＿＝
+	
+	GAWindow 3206971,Next
+
+		#\n﹛交伙弘\n﹛\n﹛＞脱日卞反伉任尼伉它旦卞僎户じ日木月\n﹛﹛咥苀卅升卅中＿＿﹝\n﹛﹛公手公手﹜丐及岁螃反脱★及壑钗午反\n﹛﹛唱卅月壑钗卞蛛日木凶反内﹝
+	
+	GAWindow 3206972,Next
+
+		#\n\n﹛﹛螃啖午?午及棉卞\n﹛﹛窒互丐匀凶及井反襞日厄互﹜\n﹛﹛脱日反公及础橡毛罹匀凶仇午卞\n﹛﹛卅月及分欠丹＿＿＝
+	
+	GAWindow 3206973,Next
+
+		#\n﹛宎衔赢\n﹛\n﹛＞螃啖及杅★卞\n﹛﹛翕杽毛儅匀化中日匀仄扎月及匹允井〝＝
+	
+	GAWindow 3206974,Next
+
+		#\n﹛交伙弘\n﹛\n﹛＞中支﹜公丹元扎卅中﹝\n﹛﹛凶分﹜眸凶切反窒及凶户卞\n﹛﹛爵匀化中月及分欠丹井午合匀化友＝
+	
+	GAWindow 3206975,Next
+
+		#\n﹛宎衔赢\n﹛\n﹛＞交伙弘迋反扑尼伊斥尼件迋及凶户卞﹜\n﹛﹛匹仄斤丹〝]
+	
+	GAWindow 3206976,Next
+
+		#\n﹛交伙弘\n﹛\n﹛＞卅﹜卅氏分﹜萌卞＿＿﹝
+	
+	GAWindow 3206977,Next
+
+		#\n\n﹛﹛＿＿公丹分卅﹜啜丹午反中尹卅中卅﹝\n﹛﹛眸反割井卞?辉及凶户卞爵匀化中月﹝\n﹛﹛白央□伊件及凶户匹丐月午井\n﹛﹛公丹中匀凶手及反厘聒抩坌卞聊亢卅中﹝
+	
+	GAWindow 3206978,Next
+
+		#\n\n﹛﹛眸反凶分﹜扑尼伊斥尼件互\n﹛﹛痲支井卞允仍六月壑钗互\n﹛﹛幻仄中分仃分＿＿哱坴卅手及分方＝
+	
+	GAWindow 3206979,Next
+
+		#\n﹛宎衔赢\n﹛\n﹛＞＿＿中尹﹜谛午反公丹中丹手及匹允﹝\n﹛﹛台手愤坌及笮简毛潮曰凶中域艘匹\n﹛﹛仇及桦卞中引允﹝\n﹛﹛公木互凶分白央□伊件毛潮月午中丹垫啃午\n﹛﹛域谯仄凶卞允亢引六氏＝
+	
+	GAWindow 3206980,OK
+
+		#\n﹛交伙弘\n﹛\n﹛＞公丹井＿＿＝
+	
+		Window_OK
+		
+			warp 0,59984,118,95
+	
+            
+	
+	

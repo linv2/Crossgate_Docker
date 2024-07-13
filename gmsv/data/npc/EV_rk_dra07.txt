@@ -1,0 +1,18 @@
+#幕庤及银中(15541)
+#
+
+block Item 18768 != 0
+#\n\n﹛凛毛谨化
+ Window 21243,yes,no
+  Window_yes ItemSpace != 0
+  giveitem 18767,1
+  LeaveGroup
+   Warp 0,1530,15,6
+############## 失奶泛丞域ベ ##############
+	Window_yes
+         Endwindow 10000
+	Window_no
+
+block
+ Window 21311,next
+ Endwindow 21235

@@ -1,0 +1,22 @@
+
+
+block	
+
+if Xpos == 120 && Ypos == 111
+
+
+
+	Window 3007008,yes,no
+
+	window_yes
+	
+
+	Warp 0,59672,125,110
+
+
+	window_no
+
+
+
+endif
+

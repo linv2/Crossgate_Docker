@@ -1,0 +1,57 @@
+##小黑仲介  仲介公司内对话  30010	140	110	mayko_gm_1102622.txt
+
+
+##1110674	\n\n　　　　唉～房价好贵喔～\n　　　　我住不起老家附近了～～	1
+##1110675	\n\n　　　　您好！我是亚诺曼房仲～\n　　　　很希望为您服务～～	1
+##1110676	\n\n　　　　您或您的朋友想买屋，\n　　　　我一定热诚为您服务	1
+##1110677	\n　　　　您说您的朋友想买房呀～\n　　　　您知道他的预算跟喜好吗？？	1
+##1110679	\n\n　　　　谢谢您～～\n　　　　我找找看手上的案子！！	1
+##1110680	\n\n\n\n@c这是五间符合贵友的房子～	1
+##1110685	\n\n　　　　唉呀呀～\n　　　　有两间屋主不会卖的啦～～	1
+##1110687	\n\n　　　　好～\n　　　　三天内会有好结果！！	1
+##1110688	\n\n\n\n@c我还在议价呢～	1
+##1110690	\n\n　　　　你的朋友买了房子～\n　　　　也搬过去啰。	1
+##1110693	\n\n\n\n@c带客人看屋也是很累的！！	1
+block item 41129>0
+	Endwindow 1110690
+block item 41128>0  && ItemCreateTime 41128 >3600
+#block item 41128>0  && ItemCreateTime 41128 >10
+	endwindow 1110690	
+block item 41128>0
+	Endwindow 1110688
+block item 41127>0 && ItemCreateTime 41127 >240  #
+	killitem 41127,1
+	GiveLeak1Item 41128,1
+	Endwindow 1110699
+block item 41127>0 
+	endwindow 1110687
+
+
+block item 41125>0
+	killitem 41125,1
+	GiveLeak1Item 41126,1
+	Endwindow 1110685
+	
+block  item 41124>0  && item 41123>0 && item 41122>0  && item 41121>0 
+	Endwindow  1110717	
+	
+block item 41130>0
+	Endwindow  1110717
+
+block item 41136>0
+	Endwindow  1110698
+
+
+block item 41120 >0
+	killitem 41120,1
+	GiveLeak1Item 41136,1
+	window 1110680,next
+	Endwindow  1110698
+
+block item 41119>0
+	Window 1110675,next
+	EndWindow 1110676
+block
+	GiveLeak1Item 41119,1
+	Window 1110675,next
+	EndWindow 1110676

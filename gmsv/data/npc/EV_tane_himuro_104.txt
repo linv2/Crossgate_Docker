@@ -1,0 +1,86 @@
+# 7 "EV_tane_himuro_104.txt"
+# 1 "header/global0.h" 1
+# 8 "EV_tane_himuro_104.txt" 2
+
+block
+
+
+
+
+
+if Item 607642 >= 1
+
+
+
+                                        Window 3006785,next
+
+
+
+                                        EndWindow 3006786
+
+
+
+
+
+else
+
+                        if LocalCount4 == 5
+
+                                LocalCount4 = random 2,0
+
+                                if LocalCount4 == 1
+
+
+
+
+                                        LocalCount4 = 5
+
+
+
+                                        Window 3006787,next
+
+
+
+                                        EndWindow 3006788
+
+
+
+                                else
+
+
+                                        LocalCount4 = 5
+
+
+
+                                        Window 3006789,next
+
+
+
+                                        EndWindow 3006790
+
+
+                                endif
+
+
+
+                        else
+
+
+
+                                LocalCount4 = 5
+
+
+# Window "\n\n©x?ÃÎî¾ˆVØ¦³ó£ß£ß\n©x¨QÆášz¼°ÔÆ¾®ÄÚ¨R¼°éF¹îÞð±å½ßÔÈ»¯Ð×Þ‚Ø¦¿¢»¥ÔÊÔÂØ¦©z",next
+                                Window 3006791,next
+
+
+
+
+                                EndWindow 3006792
+
+
+
+
+                        endif
+
+endif

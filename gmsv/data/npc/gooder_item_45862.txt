@@ -1,0 +1,8 @@
+#############■OK便利商店钱袋
+block Item 45862 >= 1 && Gold <= 980000
+	 KillItem 45862
+         AddGold 20000
+
+block Item 45862 >= 1 && Gold > 980000
+	 ##您身上带的钱太多啰
+	 EndWindow 1051951

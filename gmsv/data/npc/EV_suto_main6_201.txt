@@ -1,0 +1,115 @@
+#
+#
+#194,47
+#
+#
+##仿旦玄母件斥亦件
+#瓜永扔它
+
+
+Block PallgFlag80 == 1
+	
+		GAWindow 3205439,Next
+
+		#\n\n﹛瓜永扔它\n﹛\n﹛＞卅兮枑匀化五凶″〝\n﹛﹛燮卞垫仃午蜕匀凶分欠丹″″＝
+		
+		GAWindow 3205440,Yes,No
+
+		#\n\n﹛\n﹛瓜永扔它反锹癫塑爵仄化中月方丹分﹝\n﹛踞仃引允井〝
+		
+			Window_No
+			
+				GAWindow 3205441,OK
+
+		#\n\n﹛厌岳够互杴伓毛庍尹化五凶″
+				
+					Window_OK
+					
+						GAglobalFlag80 = 1
+						
+						Encount 2|0,59743,142,141||0|||||0|308001|||||||||
+						
+						
+				Window_Yes
+				
+					GAWindow 3205442,OK
+
+		#\n\n﹛瓜永扔它\n﹛\n﹛＞域踝卞爵匀化仁木月及井＿＿允引卅中＝
+					
+					Window_OK
+					
+					GAglobalFlag80 = 1
+						
+						Encount 2|0,59743,142,141||0|||||0|308001|||||||||
+
+
+Block PallgFlag79 == 1
+
+		GAWindow 3205443,Next
+
+		#\n\n﹛瓜永扔它\n﹛\n﹛＞脱★及朿迩手楝琼卞粮中化幺じ仄凶﹝
+
+		GAWindow 3205444,Next
+
+		#\n\n﹛﹛仄井仄﹜卅井卅井燮卞褡戈仇午互匹五卅中＿＿\n﹛﹛今允互﹜酦锭分卅＿＿﹝\n﹛﹛仄氏互曰反エ六化仁木″
+		
+		GAWindow 3205445,Next
+
+		#\n\n﹛﹛楝凶切互垫井卅仃木壬卅日卅中″\n﹛﹛失件斥永弁毛逦允及反楝凶切匹卅仃木壬″
+		
+		GAWindow 3205446,Next
+
+		#\n\n﹛﹛厌岳够互瓜永扔它卞蒋中喘井匀凶″
+	
+		GAWindow 3205447,Yes,No
+
+		#\n\n﹛瓜永扔它\n﹛\n﹛＞燮卞垫仁氏分″＝
+		
+			Window_Yes
+			
+				GAWindow 3205448,OK
+
+		#\n\n﹛厌岳够互杴伓毛庍尹化五凶″
+				
+					Window_OK
+					
+					GAglobalFlag80 = 1
+					
+						
+						Encount 2|0,59743,142,141||0|||||0|308001|||||||||
+						
+						
+					
+					
+					
+						
+				Window_No
+				
+					GAWindow 3205449,OK
+
+		#\n\n﹛瓜永扔它\n﹛\n﹛＞域踝卞爵匀化仁木月及井＿＿允引卅中＝
+					
+					Window_OK
+					
+					GAglobalFlag80 = 1
+					
+						
+						Encount 2|0,59743,142,141||0|||||0|308001|||||||||
+						
+					
+		
+			
+Block 
+
+
+		window 3205450,OK
+
+		#\n\n﹛楝琼匹反渣莴分﹝窖月氏分″
+		
+		Window_ok
+		
+		LeaveGroup
+		
+		warp 0,59520,195,99
+			
+			

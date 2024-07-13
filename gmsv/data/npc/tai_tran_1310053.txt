@@ -1,0 +1,117 @@
+################### 亚诺曼城 传送石管理员 克瑞村
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 有黑市商人证件不可传送
+block Item 40011>=1
+	 ##1201239	\n\n\n\n@c持有黑市商会证件不得使用此传送石。	1
+	 EndWindow 1201239
+	 	 	 
+################### 战斗系与游民 40级以上 && 开过传送石
+block  Job < 170 && Level >=40 && NowEvent 242 == 1 
+	 ##1200939	\n这是通往克瑞村的传送石，要使用吗？\n费用是500元。	1
+	 Window 1200939,YES,NO 
+	 	 Window_YES Item 40011>=1
+	  		 ##1201239	\n\n\n\n@c持有黑市商会证件不得使用此传送石。	1
+	 		 EndWindow 1201239
+		 Window_YES Gold >=500 && Group ==1 && Item 18660 >=1
+		 	 ##1201407	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往克瑞村，费用是500元，\n      确定要传送吗？
+	 		 Window 1201407,YES,NO 
+	 		 	 Window_YES Gold >=500 && Group ==1
+	 		 	 	 ##钱少300，传到克瑞村。
+	 	 	 		 AddGold -500
+	 	 	 		 Warp 0,30268,6,6 
+				 Window_NO 	 	 	 		 
+	 	 Window_YES Gold >=500 && Group ==1
+	 	 	 ##钱少300，传到克瑞村。
+	 	 	 AddGold -500
+	 	 	 Warp 0,30268,6,6 
+		 Window_YES Gold <500
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_NO 
+	 	 
+################### 炼金术士 40级以上 && 开过传送石
+block  Job >= 1000 && Job < 1010 && Level >=40 && NowEvent 242 == 1 
+	 ##1200939	\n这是通往克瑞村的传送石，要使用吗？\n费用是500元。	1
+	 Window 1200939,YES,NO 
+	 	 Window_YES Item 40011>=1
+	  		 ##1201239	\n\n\n\n@c持有黑市商会证件不得使用此传送石。	1
+	 		 EndWindow 1201239
+		 Window_YES Gold >=500 && Group ==1 && Item 18660 >=1
+		 	 ##1201407	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往克瑞村，费用是500元，\n      确定要传送吗？
+	 		 Window 1201407,YES,NO 
+	 		 	 Window_YES Gold >=500 && Group ==1
+	 		 	 	 ##钱少300，传到克瑞村。
+	 	 	 		 AddGold -500
+	 	 	 		 Warp 0,30268,6,6 
+				 Window_NO 	 	 	 		 
+	 	 Window_YES Gold >=500 && Group ==1
+	 	 	 ##钱少300，传到克瑞村。
+	 	 	 AddGold -500
+	 	 	 Warp 0,30268,6,6 
+		 Window_YES Gold <500
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_NO 	 	 
+
+################### 纺织工 职阶 >=2  && 开过传送石	 	 
+block Job >= 1010 && Job < 1020 && JobRank >=2 && NowEvent 242 == 1
+	 ##1200939	\n这是通往克瑞村的传送石，要使用吗？\n费用是500元。	1
+	 Window 1200939,YES,NO 
+	 	 Window_YES Item 40011>=1
+	  		 ##1201239	\n\n\n\n@c持有黑市商会证件不得使用此传送石。	1
+	 		 EndWindow 1201239	 
+		 Window_YES Gold >=500 && Group ==1 && Item 18660 >=1
+		  	 ##1201407	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往克瑞村，费用是500元，\n      确定要传送吗？
+	 	 	 Window 1201407,YES,NO 
+	 		 	 Window_YES Gold >=500 && Group ==1
+	 	 	 	 ##钱少300，传到克瑞村。
+	 	  		 	 AddGold -500
+	 	  		 	 Warp 0,30268,6,6 
+			 	 Window_NO 	 	 	 	
+	 	 Window_YES Gold >=500 && Group ==1
+	 	 	 ##钱少300，传到克瑞村。
+	 	 	 AddGold -500
+	 	 	 Warp 0,30268,6,6 
+		 Window_YES Gold <500
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_NO 
+
+
+
+################### 生产系称号 职阶 >=2  && 开过传送石
+block Job >200 && JobRank >=2 && NowEvent 242 == 1
+	 ##1200939	\n这是通往克瑞村的传送石，要使用吗？\n费用是500元。	1
+	 Window 1200939,YES,NO 
+	 	 Window_YES Item 40011>=1
+	  		 ##1201239	\n\n\n\n@c持有黑市商会证件不得使用此传送石。	1
+	 		 EndWindow 1201239	 
+		 Window_YES Gold >=500 && Group ==1 && Item 18660 >=1
+		  	 ##1201407	\n\n      啊？这是什么¨¨¨\n      法兰王室常用的胸饰？\n      真是不好意思，\n      上级并没有授意我们承认这个证件。\n\n      前往克瑞村，费用是500元，\n      确定要传送吗？
+	 	 	 Window 1201407,YES,NO 
+	 	 	 	 Window_YES Gold >=500 && Group ==1
+	 	 	 	 ##钱少300，传到克瑞村。
+	 	  		 	 AddGold -500
+	 	  		 	 Warp 0,30268,6,6 
+			 	 Window_NO 	 	 	 	
+	 	 Window_YES Gold >=500 && Group ==1
+	 	 	 ##钱少300，传到克瑞村。
+	 	 	 AddGold -500
+	 	 	 Warp 0,30268,6,6 
+		 Window_YES Gold <500
+		 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 Window_NO 
+
+################### 一般
+block 
+	 ##1200937	\n\n\n\n@c你没有使用此传送石的资格。
+	 EndWindow 1200937

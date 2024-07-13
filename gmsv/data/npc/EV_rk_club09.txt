@@ -1,0 +1,101 @@
+#
+#交伉
+#
+
+#雇撮吨谨痹毛儅匀化中月卅日
+block Item 16272 >= 1 || Item 16273 >= 1
+		Endwindow 21876
+
+#芞杅卅日
+block nowtime == 2
+		Endwindow 21816
+
+#域ざ烦聊仄化中卅中卅日
+block Item 16240 == 1 && ItemCreateTime 16240 <= 1439
+		Endwindow 21847
+
+#交伉及抩铜市它件玄互100动晓卅日卅日
+block Item 16240 == 1 && StampCount 16240 >= 100
+	Endwindow 21876
+
+#交伉及抩铜市它件玄互99卅日
+block Item 16240 == 1 && StampCount 16240 == 99
+			AddStampCount 16240
+			Endwindow 22288
+
+##﹛交伉及抩铜市它件玄互29卅日
+block Item 16240 == 1 && StampCount 16240 == 29
+			AddStampCount 16240
+			Endwindow 21861
+
+##﹛交伉及抩铜市它件玄互16卅日
+block Item 16240 == 1 && StampCount 16240 == 16
+			AddStampCount 16240
+			Endwindow 21961
+
+##﹛交伉及抩铜市它件玄互6卅日
+block Item 16240 == 1 && StampCount 16240 == 6
+			AddStampCount 16240
+			Endwindow 21860
+
+##﹛交伉及抩铜市它件玄互ㄣ动晓卅日
+block Item 16240 == 1 && StampCount 16240 >= 4
+			AddStampCount 16240
+			Endwindow 21846
+
+##﹛交伉及抩铜市它件玄互ㄢ卅日
+block Item 16240 == 1 && StampCount 16240 == 3
+			Endwindow 21845
+
+#﹛交伉及抩铜市它件玄互ㄡ匹﹜幻木泔毛儅匀化中月卅日
+block Item 16240 == 1 && StampCount 16240 == 2 && Item 18971 >= 1
+	Window 21582,Yes
+		Window_Yes
+			Window 21583,OK
+				Window_OK
+					KillItem 18971,1
+					AddStampCount 16240
+					LeaveGroup
+					Warp 0,1165,19,38
+
+##﹛交伉及抩铜市它件玄互ㄡ卅日
+block Item 16240 == 1 && StampCount 16240 == 2
+	Window 21580,Next
+	EndWindow 21581
+
+#﹛交伉及抩铜市它件玄互ㄠ卅日
+block Item 16240 == 1 && StampCount 16240 == 1
+	Window 21573,Next
+	Window 21574,Next
+	Window 21575,Next
+	Window 21576,Next
+	Window 21577,Next
+	Play_SE 75,320,240
+	Window 21578,Next
+	Window 21579,OK
+		Window_OK
+			AddStampCount 16240
+			LeaveGroup
+			Warp 0,2431,5,28
+
+
+##﹛交伉及抩铜毛儅匀化中卅中卅日
+block
+	Window 21567,Next
+	Window 21568,Next
+	Window 21569,Yes,No
+		Window_No
+			Endwindow 21570
+		Window_Yes Gold <= 40
+			Endwindow 10005
+		Window_Yes
+			AddGold -40
+			Window 21571,Next
+			Window 21572,OK
+				Window_OK ItemSpace == 0
+					Endwindow 10000
+				Window_OK
+					GiveItem 16240
+					AddStampCount 16240
+					LeaveGroup
+					Warp 0,1165,19,38

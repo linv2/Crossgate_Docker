@@ -1,0 +1,216 @@
+##########　ＮＰＣ ：烤肉炉ＩＤ：1051186
+##########　ＭＡＰ：32349
+##########　烤肉公园 ##04年中秋节庆新增
+##########　作用：烤肉用
+
+
+
+##烧焦的肉 || 黑碳
+block Item 46290 >=1 || Item 46291 >=1
+	 ##1052414	\n\n像这种奇怪的东西，不应该放到烤肉架上吧！
+	 EndWindow 1052414
+	 
+##生烧兽肉 || 生烧猪肉 || 生烧霜降牛肉
+block Item 46286 >=1 || Item 46287 >=1 || Item 46288 >=1 || Item 46289 >=1
+	 ##1052413	\n\n架子上已经没有空位可以放肉了！
+	 EndWindow 1052413
+	 
+				 	 	 
+##兽肉盘子 生成．生成不到1分钟 || 大于1分钟小于2分钟 || 大于２分钟小于５分钟 || 大于５分钟
+
+block Item 46300 >=1
+	 if ItemCreateTime 46300 < 1
+	 	 ##1052407	\n\n滋～滋～肉在烤肉架上烤着．．．\n香味开始传了出来！
+		 EndWindow 1052407
+		 
+	 else
+		 if ItemCreateTime 46300 >=1 && ItemCreateTime 46300 < 2
+		 	 ##1052408	\n\n看起来颜色似乎恰到好处！\n是否要夹起来了？
+			 Window 1052408,YES,NO 
+			 	 Window_NO
+			 	 
+			 	 Window_YES  Item 46300 >=1
+			 	 	 KillItem 46300,1
+			 	 	 GiveLeak1Item 46286,1(1052409)
+		 else
+		 	 if ItemCreateTime 46300 >=2 && ItemCreateTime  46300 < 5
+		 	 	 ##1052410	\n\n肉看起来有点焦黑了．．．\n是否要夹起来了？
+				 Window 1052410,YES,NO
+				 	 Window_NO
+				 	 
+				 	 Window_YES Item 46300>=1
+				 	 	 KillItem 46300,1
+				 	 	 GiveLeak1Item 46290,1(1052409)
+			 else
+			 	 if ItemCreateTime 46300 >=5
+			 	 	 ##1052411	\n\n肉似乎已经黏在烤肉网上了．．．\n是否要用力的把肉夹起来？
+					 Window 1052411,YES,NO
+					 	 Window_NO
+					 	 
+					 	 Window_YES Item 46300>=1
+					 	 	 KillItem 46300,1
+					 	 	 GiveLeak1Item 46291,1(1052409)
+				 endif
+			 endif
+		 endif
+	 endif
+
+##牛肉盘子 生成．生成不到1分钟 || 大于1分钟小于2分钟 || 大于２分钟小于５分钟 || 大于５分钟
+block Item 46301>=1
+	 if ItemCreateTime 46301 < 1
+	 	 ##1052407	\n\n滋～滋～肉在烤肉架上烤着．．．\n香味开始传了出来！
+		 EndWindow 1052407
+		 
+	 else
+		 if ItemCreateTime 46301 >=1 && ItemCreateTime 46301 < 2
+		 	 ##1052408	\n\n看起来颜色似乎恰到好处！\n是否要夹起来了？
+			 Window 1052408,YES,NO 
+			 	 Window_NO
+			 	 
+			 	 Window_YES  Item 46301 >=1
+			 	 	 KillItem 46301,1
+			 	 	 GiveLeak1Item 46287,1(1052409)
+		 else
+		 	 if ItemCreateTime 46301 >=2 && ItemCreateTime  46301 < 5
+		 	 	 ##1052410	\n\n肉看起来有点焦黑了．．．\n是否要夹起来了？
+				 Window 1052410,YES,NO
+				 	 Window_NO
+				 	 
+				 	 Window_YES Item 46301>=1
+				 	 	 KillItem 46301,1
+				 	 	 GiveLeak1Item 46290,1(1052409)
+			 else
+			 	 if ItemCreateTime 46301 >=5
+			 	 	 ##1052411	\n\n肉似乎已经黏在烤肉网上了．．．\n是否要用力的把肉夹起来？
+					 Window 1052411,YES,NO
+					 	 Window_NO
+					 	 
+					 	 Window_YES Item 46301>=1
+					 	 	 KillItem 46301,1
+					 	 	 GiveLeak1Item 46291,1(1052409)
+				 endif
+			 endif
+		 endif
+	 endif 
+	 
+				 	 	
+##猪肉盘子 生成．生成不到1分钟 || 大于1分钟小于2分钟 || 大于２分钟小于５分钟 || 大于５分钟
+block Item 46302 >=1
+	 if ItemCreateTime 46302 < 1
+	 	 ##1052407	\n\n滋～滋～肉在烤肉架上烤着．．．\n香味开始传了出来！
+		 EndWindow 1052407
+		 
+	 else
+		 if ItemCreateTime 46302 >=1 && ItemCreateTime 46302 < 2
+		 	 ##1052408	\n\n看起来颜色似乎恰到好处！\n是否要夹起来了？
+			 Window 1052408,YES,NO 
+			 	 Window_NO
+			 	 
+			 	 Window_YES  Item 46302 >=1
+			 	 	 KillItem 46302,1
+			 	 	 GiveLeak1Item 46288,1(1052409)
+		 else
+		 	 if ItemCreateTime 46302 >=2 && ItemCreateTime  46302 < 5
+		 	 	 ##1052410	\n\n肉看起来有点焦黑了．．．\n是否要夹起来了？
+				 Window 1052410,YES,NO
+				 	 Window_NO
+				 	 
+				 	 Window_YES Item 46302>=1
+				 	 	 KillItem 46302,1
+				 	 	 GiveLeak1Item 46290,1(1052409)
+			 else
+			 	 if ItemCreateTime 46302 >=5
+			 	 	 ##1052411	\n\n肉似乎已经黏在烤肉网上了．．．\n是否要用力的把肉夹起来？
+					 Window 1052411,YES,NO
+					 	 Window_NO
+					 	 
+					 	 Window_YES Item 46302>=1
+					 	 	 KillItem 46302,1
+					 	 	 GiveLeak1Item 46291,1(1052409)
+				 endif
+			 endif
+		 endif
+	 endif 				 	 	 
+				 
+##霜降牛肉盘子 生成．生成不到1分钟 || 大于1分钟小于2分钟 || 大于２分钟小于５分钟 || 大于５分钟
+block Item 46303>=1
+	 if ItemCreateTime 46303 < 1
+	 	 ##1052407	\n\n滋～滋～肉在烤肉架上烤着．．．\n香味开始传了出来！
+		 EndWindow 1052407
+		 
+	 else
+		 if ItemCreateTime 46303 >=1 && ItemCreateTime 46303 < 2
+		 	 ##1052408	\n\n看起来颜色似乎恰到好处！\n是否要夹起来了？
+			 Window 1052408,YES,NO 
+			 	 Window_NO
+			 	 
+			 	 Window_YES  Item 46303 >=1
+			 	 	 KillItem 46303,1
+			 	 	 GiveLeak1Item 46289,1(1052409)
+		 else
+		 	 if ItemCreateTime 46303 >=2 && ItemCreateTime  46303 < 5
+		 	 	 ##1052410	\n\n肉看起来有点焦黑了．．．\n是否要夹起来了？
+				 Window 1052410,YES,NO
+				 	 Window_NO
+				 	 
+				 	 Window_YES Item 46303>=1
+				 	 	 KillItem 46303,1
+				 	 	 GiveLeak1Item 46290,1(1052409)
+			 else
+			 	 if ItemCreateTime 46303 >=5
+			 	 	 ##1052411	\n\n肉似乎已经黏在烤肉网上了．．．\n是否要用力的把肉夹起来？
+					 Window 1052411,YES,NO
+					 	 Window_NO
+					 	 
+					 	 Window_YES Item 46303>=1
+					 	 	 KillItem 46303,1
+					 	 	 GiveLeak1Item 46291,1(1052409)
+				 endif
+			 endif
+		 endif
+	 endif 				 	 		
+			 	 	 
+##有兽肉
+block Item 46285 >=1
+	 ##1052412	\n\n是否要把肉放置到火炉上？
+	 Window 1052412,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 46285 >=1
+	 	 	 KillItem 46285,1
+	 	 	 GiveLeak1Item 46300,1(1052418)
+	 	 	 
+##牛肉
+block Item 11200>=20
+	 ##1052412	\n\n是否要把肉放置到火炉上？
+	 Window 1052412,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 11200>=20
+	 	 	 KillItem 11200,20
+	 	 	 GiveLeak1Item 46301,1(1052418)
+	 	 	
+##猪肉
+block Item 11205 >=20
+	 ##1052412	\n\n是否要把肉放置到火炉上？
+	 Window 1052412,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 11205>=20
+	 	 	 KillItem 11205,20
+	 	 	 GiveLeak1Item 46302,1(1052418)
+##有霜降牛肉
+block Item 11202 >=20
+	 ##1052412	\n\n是否要把肉放置到火炉上？
+	 Window 1052412,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 11202>=20
+	 	 	 KillItem 11202,20
+	 	 	 GiveLeak1Item 46303,1(1052418)
+	 	 	 
+##一般
+block
+	 ##1052415	\n\n主办单位为大家精心准备的烤肉用具。
+	 EndWindow 1052415
+	 	

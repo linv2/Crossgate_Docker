@@ -1,0 +1,14 @@
+#?§÷????
+
+#
+block Item 16396 >= 1 || Item 16397 >= 1 || Item 16398 >= 1 || Item 16399 >= 1
+	EndWindow 22616
+#
+block NowEvent 116 == 1
+	Window 22615,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,33116,11,13
+#
+block
+	EndWindow 22616

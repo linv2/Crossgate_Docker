@@ -1,0 +1,99 @@
+#PUK3_main2
+#
+#
+#瓜奶失ㄡ
+
+
+Block
+
+	if item_621023 >= 1
+
+
+	Window 3207860,Next
+
+		#\n\n﹛勾中卞﹜楝反蓟氏分﹝\n﹛壑钗及庍啻毛﹝\n﹛统伀手交伙弘螃手中卅仁卅匀凶\n﹛仇及壑钗卞中月及反﹜\n﹛蝈化毛噪干仄方丹午允月\n﹛螃啖及洘酦及心﹝
+	
+	Window 3207861,Next
+
+		#\n\n﹛手丹詨枑曰反请侳卅中﹝\n﹛愈詨引匹苇?仃今六化手日丹歹﹝\n﹛台手?辉﹜扑尼伊斥尼件毛\n﹛苇潮匀化侳凶手及分井日＿＿﹝
+	
+	Window 3207862,Yes,No
+
+		#\n\n﹛公木反公丹午﹜\n﹛中中手及儅匀化月歹友﹝\n﹛公及＞疵嗯及邞怐潠＝午﹜\n﹛仇及?怍及呺⑼踏毛跟晶仄卅中〝
+	
+			Window _No
+			
+				EndWindow 3207863
+
+		#\n\n﹛丐日公﹜帎卞中中氏分仃升﹝
+	
+			Window_Yes
+			
+				Window 3207864,OK
+
+		#\n\n﹛丐曰互午﹝\n﹛仇木井日手互氏壬匀化友﹝孔孔﹝
+				
+			
+
+				Window_OK Item_621023 == 0
+				
+					EndWindow 3207865
+
+		#\n\n﹛丐日﹜儅匀化卅中元扎卅中﹝
+		
+				Window_OK ItemSpace == 0
+				
+					EndWindow 3207866
+
+		#\n\n﹛丐日﹜儅化卅中元扎卅中及〝
+				
+		
+				Window_OK
+					
+					KillItem 621023,1
+					
+					Giveitem 621025,1
+				
+					EndEvent 207 = 1
+					CheckTitle
+					
+					LeaveGroup
+					
+					warp 0,59526,188,71
+
+
+	else
+	
+	
+
+	Window 3207867,Next
+
+		#\n\n﹛勾中卞﹜楝反蓟氏分﹝\n﹛壑钗及庍啻毛﹝\n﹛统伀手交伙弘螃手中卅仁卅匀凶\n﹛仇及壑钗卞中月及反﹜\n﹛蝈化毛噪干仄方丹午允月\n﹛螃啖及洘酦及心﹝
+	
+	Window 3207868,Next
+
+		#\n\n﹛手丹詨枑曰反请侳卅中﹝\n﹛愈詨引匹苇?仃今六化手日丹歹﹝\n﹛台手?辉﹜扑尼伊斥尼件毛\n﹛苇潮匀化侳凶手及分井日＿＿﹝
+	
+	Window 3207869,OK
+
+		#\n\n﹛仇木毛丐仆月歹﹝\n﹛切斤匀午反泙卞峏勾午合丹及﹝\n﹛仇木井日手互氏壬匀化友﹝\n﹛孔孔﹝
+	
+	
+			Window_OK ItemSpace == 0
+			
+				EndWindow 3207870
+
+		#\n\n﹛丐日﹜儅化卅中元扎卅中及〝
+	
+			Window_OK
+			
+				Giveitem 621028,1
+			
+				EndEvent 207 = 1
+				CheckTitle
+				
+				LeaveGroup
+				
+				warp 0,59526,188,71
+	
+	endif

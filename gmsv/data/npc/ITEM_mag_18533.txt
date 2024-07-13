@@ -1,0 +1,31 @@
+#
+#云恔咥谛溥
+#
+
+############## 云恔咥谛溥毛ㄡ勾动晓儅匀化月 ##############
+block Item 18533 >= 2
+#\n\n\n\n\n﹛﹛云恔咥谛溥反ㄡ勾动晓儅匀化月午银尹引六氏﹝
+	EndWindow 14828,OK
+
+############## 云嗯互箫曰卅中 ##############
+block Gold < 500
+#\n\n\n\n\n云嗯互箫曰引六氏﹝@c
+	EndWindow 14829,OK
+
+############## 坞五旦矢□旦互箫曰卅中 ##############
+block ItemSpace == 0
+#\n\n\n\n\n公木动晓儅化引六氏﹝@c
+	EndWindow 14830,OK
+
+############## 谛溥及酸曰DUR互1 ##############
+block ItemDur 18533 == 1
+	AddGold -500
+	KillItem 18533,1,(14831)
+	GiveLeak1Item 15203
+
+############## 谛溥及酸曰DUR互2动晓 ##############
+block
+	AddGold -500
+	SetDur 18533,-1
+	GiveLeak1Item 15203
+

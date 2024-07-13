@@ -1,0 +1,11 @@
+#å±žâ©jó¡©k
+
+block
+	Window 22971,Yes,No
+		Window_No
+		Window_Yes ItemSpace == 0
+			EndWindow 10000
+		Window_Yes
+			GiveItem 16425,1
+			LeaveGroup
+			Warp 0,43821,51,54

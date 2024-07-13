@@ -1,0 +1,100 @@
+#?þ„?£•????
+
+#????????ýÍ?
+block EndEvent 113 == 1
+	Window 22427,Next
+	Window 22428,OK
+		Window_OK ItemSpace <= 1
+			EndWindow 10000
+		Window_OK EndEvent 113 == 1
+			EndEvent 52 = 1
+			NowEvent 113 = 0
+			EndEvent 113 = 0
+			NowEvent 128 = 0
+			EndEvent 128 = 0
+			CheckTitle
+			GiveItem 16386
+			GiveLeak1Item 18983,5
+endblock 
+#????????ýÍ?
+block EndEvent 114 == 1
+	Window 22427,Next
+	Window 22428,OK
+		Window_OK ItemSpace <= 1
+			EndWindow 10000
+		Window_OK EndEvent 114 == 1
+			EndEvent 60 = 1
+			NowEvent 114 = 0
+			EndEvent 114 = 0
+			NowEvent 128 = 0
+			EndEvent 128 = 0
+			CheckTitle
+			GiveItem 16386
+			GiveLeak1Item 18983,5
+endblock
+#?§a??????ýÍ?
+block EndEvent 129 == 1
+	Window 22429,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK EndEvent 129 == 1
+			NowEvent 129 = 0
+			EndEvent 129 = 0
+			NowEvent 128 = 0
+			EndEvent 128 = 0
+			GiveLeak1Item 18983,5
+endblock 
+#???????þ­??
+block NowEvent 113 == 1
+	EndWindow 22430
+
+#???????þ­??
+block NowEvent 114 == 1
+	EndWindow 22431
+
+#?§a?????þ­??
+block NowEvent 129 == 1
+	EndWindow 22432
+
+#??????????
+block EndEvent 51 == 1
+	Window 22433,Yes,No
+		Window_No
+			EndWindow 22434,OK
+		Window_Yes EndEvent 51 == 1
+			Window 22435,Next
+			Window 22436,Next
+			Window 22437,Next
+			Window 22438,OK
+				Window_OK EndEvent 51 == 1
+				NowEvent 113 = 1
+				SystemMessage 4208
+endblock
+#??????????
+block EndEvent 59 == 1
+	Window 22433,Yes,No
+		Window_No
+			EndWindow 22434,OK
+		Window_Yes EndEvent 59 == 1
+			Window 22435,Next
+			Window 22436,Next
+			Window 22437,Next
+			Window 22438,OK
+				Window_OK EndEvent 59 == 1
+				NowEvent 114 = 1
+				SystemMessage 4208
+endblock 				
+#
+block
+	Window 22433,Yes,No
+		Window_No
+			EndWindow 22434,OK
+		Window_Yes
+			Window 22435,Next
+			Window 22436,Next
+			Window 22437,Next
+			Window 22438,OK
+				Window_OK
+				NowEvent 129 = 1
+				SystemMessage 4208
+endblock 				

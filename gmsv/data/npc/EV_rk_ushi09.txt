@@ -1,0 +1,35 @@
+#伞⑷笮迕???
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## 失奶泛丞及坞五互卅中桦宁 ##########
+block ItemSpace == 0
+	#\n\n﹛牖芨允月手及互丐月仃升失奶泛丞中匀天中﹝
+	EndWindow 21117
+########## 惮澡夫旦玄及桦宁 ##########
+block Item 18599 == 0
+ encount 2|0,300,715,35||0|||||0|12019|||||||||
+
+############## 丢永本□斥刓憎 ################
+block
+window 21093,next
+window 21095,next
+window 21096,next
+window 21097,yes,no
+ window_yes
+   window 21094,next
+   window 21098,ok
+    window_ok ItemSpace != 0
+     killitem 18599
+     giveitem 18600
+     warp 0,15525,21,6
+    window_ok
+     EndWindow 21117
+ window_no
+  encount 2|0,300,715,35||0|||||0|12019|||||||||
+
+ItemSpace != 0
+               Giveitem 18114,1
+        Window_OK
+			EndWindow 21050

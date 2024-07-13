@@ -1,0 +1,96 @@
+#¼ëÓ£&ÓªÚÐ·Â¼þÛÍÊ§ÓÀÃóÛÍ¾Þµ©Ðþ¡°¼ëÓ£»ê¶­¸Ò
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+##########©x·Â¼þÛÍÊ§ÓÀÃó?©x##########
+block job >= 414 && job <= 420
+
+	EndWindow 20852
+
+block job >= 424 && job <= 430
+
+	EndWindow 20852
+
+##########©xend91©x##########
+block job >= 410 && job <= 429 && Jobrank >= 2 && endevent91 == 1
+
+	EndWindow 20853
+
+##########©x»ê¶­åÃ¶ªÆ¹31ÃQÔ»©x##########
+block Item 18841 >= 1
+
+	EndWindow 20854
+
+##########©x»ê¶­åÃ¶ªÆ¹32¶¯Â½ÃQÔ»©x##########
+block Job == 413 && Item 18810 >= 1 || Job == 413 && Item 18811 >= 1 || Job == 413 && Item 18812 >= 1 || Job == 413 && Item 18813 >= 1 || Job == 413 && Item 18814 >= 1 || Job == 413 && Item 18815 >= 1 || Job == 413 && Item 18816 >= 1 || Job == 413 && Item 18817 >= 1 || Job == 413 && Item 18818 >= 1 || Job == 413 && Item 18819 >= 1 || Job == 413 && Item 18820 >= 1 || Job == 413 && Item 18821 >= 1 || Job == 413 && Item 18822 >= 1 || Job == 413 && Item 18823 >= 1 || Job == 413 && Item 18824 >= 1 || Job == 413 && Item 18825 >= 1 || Job == 413 && Item 18826 >= 1 || Job == 413 && Item 18827 >= 1 || Job == 413 && Item 18828 >= 1 || Job == 413 && Item 18829 >= 1 || Job == 413 && Item 18830 >= 1 || Job == 413 && Item 18831 >= 1 || Job == 413 && Item 18832 >= 1 || Job == 413 && Item 18833 >= 1 || Job == 413 && Item 18834 >= 1 || Job == 413 && Item 18835 >= 1 || Job == 413 && Item 18836 >= 1 || Job == 413 && Item 18837 >= 1 || Job == 413 && Item 18838 >= 1 || Job == 413 && Item 18839 >= 1 || Job == 413 && Item 18840 >= 1 || Job == 413 && Item 18842 >= 1
+
+	EndWindow 20855
+
+block Job == 423 && Item 18810 >= 1 || Job == 423 && Item 18811 >= 1 || Job == 423 && Item 18812 >= 1 || Job == 423 && Item 18813 >= 1 || Job == 423 && Item 18814 >= 1 || Job == 423 && Item 18815 >= 1 || Job == 423 && Item 18816 >= 1 || Job == 423 && Item 18817 >= 1 || Job == 423 && Item 18818 >= 1 || Job == 423 && Item 18819 >= 1 || Job == 423 && Item 18820 >= 1 || Job == 423 && Item 18821 >= 1 || Job == 423 && Item 18822 >= 1 || Job == 423 && Item 18823 >= 1 || Job == 423 && Item 18824 >= 1 || Job == 423 && Item 18825 >= 1 || Job == 423 && Item 18826 >= 1 || Job == 423 && Item 18827 >= 1 || Job == 423 && Item 18828 >= 1 || Job == 423 && Item 18829 >= 1 || Job == 423 && Item 18830 >= 1 || Job == 423 && Item 18831 >= 1 || Job == 423 && Item 18832 >= 1 || Job == 423 && Item 18833 >= 1 || Job == 423 && Item 18834 >= 1 || Job == 423 && Item 18835 >= 1 || Job == 423 && Item 18836 >= 1 || Job == 423 && Item 18837 >= 1 || Job == 423 && Item 18838 >= 1 || Job == 423 && Item 18839 >= 1 || Job == 423 && Item 18840 >= 1 || Job == 423 && Item 18842 >= 1
+
+	EndWindow 20880
+
+##########©x·Â¼þÛÍÊ§ÓÀÃóÍÖðöˆmÐ×ØÆÐ×ÓªÚÐ¼ëÓ£©x##########
+block Job == 413 && Fame >= 37000 && Skilllevel 221 >= 8
+
+	Window 20857,OK
+	Window_OK
+	Window 20858,NEXT
+	Window 20859,NEXT
+	Window 20860,NEXT
+	Window 20861,OK
+	Window_OK Itemspace >= 1
+	GiveItem 18810
+	Window 20862,NEXT
+	EndWindow 20863
+	Window_OK Itemspace == 0
+	EndWindow 20874
+
+
+block Job == 423 && Fame >= 37000 && Skilllevel 222 >= 8
+
+	Window 20857,OK
+	Window_OK
+	Window 20858,NEXT
+	Window 20859,NEXT
+	Window 20860,NEXT
+	Window 20861,OK
+	Window_OK Itemspace >= 1
+	GiveItem 18810
+	Window 20862,NEXT
+	EndWindow 20863
+	Window_OK Itemspace == 0
+	EndWindow 20874
+
+block Job >= 410 && Job <= 429 && Jobrank >= 2
+
+
+	Window 20857,OK
+
+        Window_OK job == 413 && Fame <= 36999 && Skilllevel 221 <= 7
+	EndWindow 20879
+
+        Window_OK job == 423 &&Fame <= 36999 && Skilllevel 222 <= 7
+	EndWindow 20879
+
+	Window_OK Fame < 36999
+	EndWindow 20865
+
+	Window_OK job == 413 && Skilllevel 221 <= 7
+	EndWindow 20864
+
+	Window_OK job == 423 && Skilllevel 222 <= 7
+	EndWindow 20864
+
+
+##########©x¼ëÓ£©x##########
+block job >= 410 && job <= 412
+
+	EndWindow 20856
+
+##########©xØ¦±åÊÖØ¦ØÆ©x##########
+block
+
+	EndWindow 20866
+
+

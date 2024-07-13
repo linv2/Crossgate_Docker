@@ -1,0 +1,114 @@
+## 2005コャ惚蜃烂弁巨旦玄﹛by漪呿
+##	矛仿玉件瓜及申伉失
+
+#### ＞玉瓦□及惚跼＝毛赭儅
+block Item 607745 >= 1
+	EndWindow 3219985
+
+		#\n\n﹛惚匀化啼仄中方友□﹝\n﹛坞井日侹切化仁月踹毛友□﹜\n﹛井日分中匀天中卞俉太月午友□﹜\n﹛葭竣互请化仁月氏分□﹝
+
+#### ＞玉瓦□尺及鳗蜕＝毛赭儅
+block Item 622004 >= 1
+	Endwindow 3219986
+
+		#\n\n﹛窖曰卞玉瓦□卞鳗蜕?仃化友□﹝\n﹛冞反手丹切斤匀午立术伐伉及累毛茧仄化月方□﹝
+
+#### ＞撰及锳噬＝毛呁醒赭儅
+block Item 622003 > 1
+	EndWindow 3219987
+
+		#\n\n﹛立术伐伉及累及撰及锳噬分□﹝\n﹛公氏卅卞凶仁今氏﹜升仇卞侹切化凶及□〝
+
+#### じ澎仄化井日‖坌动晓烦匀凶＞撰及锳噬＝毛ㄠ勾赭儅
+block Item 622003 == 1 && ItemCreateTime 622003 >= 11
+	Window 3219988,OK
+
+		#\n\n﹛尹□﹜撰及锳噬〝\n﹛＿＿窒手卅中心凶中分方□〝\n\n﹛芋芋芋撰及锳噬反芼仃化﹜\n﹛﹛﹛﹛惚午域踝卞峸木化仄引匀凶﹝
+		Window_OK
+			KillItemAll 622003,(3010087)
+Endblock
+
+#### じ澎仄化井日‖坌动〇及＞撰及锳噬＝毛ㄠ勾赭儅
+block Item 622003 == 1 && ItemCreateTime 622003 <= 10
+	Window 3219989,NEXT
+
+		#\n\n﹛丐″立术伐伉及累及撰及锳噬分□﹝\n﹛仇木互丐月卅日五匀午﹜立术伐伉及累互\n﹛升仇井卞粹中化月反内分方友□﹝\n﹛冞反手丹切斤匀午﹜\n﹛立术伐伉及累毛茧公丹井卅□﹝
+
+	Window 3219990,YES,NO
+
+		#\n\n﹛尹□〝玉瓦□互艘ミ仄化凶及□〝\n﹛公匀井□﹝\n\n﹛手丹切斤匀午芛氏匹月匀化﹜\n﹛鳗蜕俇氏匹手中中井卅□〝窖曰互仃卞\n﹛仇及丢乒毛欐仄化仁木月分仃匹中中氏分□﹝
+
+
+## ＞玉瓦□尺及鳗蜕＝毛芨尹月
+
+		window_yes Item 622003 == 0
+			
+			endWindow 3219991
+
+		#\n\n﹛手匀化卅中元扎□氏﹝
+			
+			
+		
+		Window_YES
+			KillItemAll 622003
+			GiveLeak1Item 622004,1
+			EndWindow 3219992
+
+		#\n\n﹛丐曰互午□﹝
+
+		Window_NO
+			EndWindow 3219993
+
+		#\n\n﹛＿＿弗民□﹝
+Endblock
+
+#### ＞立术伐伉及累及潘＝毛赭儅
+block Item 622005 >= 1
+	EndWindow 3219994
+
+		#\n\n﹛踹彶卞憔中化五化友□﹝\n﹛棉啜尹卅中匹友□〝踹彶卞憔中化友□﹝
+
+#### ＞裒木凶累＝毛赭儅
+block Item 622002 >= 1
+	Window 3219995,YES,NO
+
+		#\n\n﹛立术伐伉及累分□″匹手﹜裒木化月□＿＿﹝\n﹛丐″潘″潘互勾中化月□″\n﹛仇木憔仃壬粹仁井卅□〝粹仁午合丹□〝\n﹛踹彶卞憔仃壬粹仁井卅□﹝\n﹛憔中化五化俓仄中卅□﹝憔中化五化仁木月□〝
+
+		
+
+## ＞立术伐伉及累及潘＝毛ㄠ勾芨尹月
+
+		window_yes Item 622002 == 0
+			
+			endWindow 3219996
+
+		#\n\n﹛手匀化卅中元扎□氏﹝
+
+		Window_YES
+			KillItemAll 622002
+			GiveLeak1Item 622005,1
+
+		Window_NO
+			EndWindow 3219997
+
+		#\n\n﹛＿＿弗民□﹝
+Endblock
+
+#### 晓筏动陆
+block
+	LocalCount30 = Random 2,0
+
+	if LocalCount30 == 1
+		EndWindow 3219998
+
+		#\n\n﹛立术伐伉及累毛茧仄化月及□﹝\n﹛惚互嫦月踹彶卞分仃粹仁累匹友□﹜\n﹛累太日互友□﹜敛坞及缙匹友□﹜\n﹛冞反茧仄化玉瓦□卞皿伊未件玄允月氏分□﹝
+
+			else
+
+				EndWindow 3219999
+
+		#\n\n﹛玉瓦□反友□﹜推及晓匹坞及钓毛匢仁氏分□﹝\n﹛匹手友□﹜玉瓦□反坞及缙毛综月及卞友□﹜\n﹛允仍仁凛棉互井井月及□﹝
+
+	endif
+Endblock
+

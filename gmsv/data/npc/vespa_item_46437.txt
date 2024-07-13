@@ -1,0 +1,24 @@
+########　Item ：银矿娃娃 46437
+#########　可把400个银矿压成1组银条
+
+block Item 46437 >=2
+	 ##1052658	\n\n有２个以上的银矿娃娃是无法使用的喔～
+	 EndWindow 1052658
+	 
+block Item 46437 ==1 && Item 9602 >= 400 && ItemSpace == 0
+	 ## 1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+block  Item 46437 ==1 &&  Item 9602 >= 400 && ItemSpace >= 1  && ItemDur 46437 ==1
+	 KillItem 9602,400
+	 KillItem 46437,1
+	 GiveStackItem 9613,20
+	 
+block  Item 46437 ==1 &&  Item 9602 >= 400 && ItemSpace >= 1  && ItemDur 46437 > 1
+	 KillItem 9602,400
+	 SetDur 46437,-1
+	 GiveStackItem 9613,20
+block
+	 ##1052657	\n\n身上必须有４００个矿石并且身上有１个空格才能使用！
+	 EndWindow 1052657
+	 

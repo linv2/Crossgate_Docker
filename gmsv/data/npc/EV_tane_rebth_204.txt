@@ -1,0 +1,80 @@
+#伉田□旦母件斥亦件﹛戏遣烟荚洐﹛畸及瑞弅及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+block skilllevel 200 <= 0 && skilllevel 201 <= 0 && skilllevel 202 <= 0 && skilllevel 203 <= 0 && skilllevel 204 <= 0 && skilllevel 205 <= 0 && skilllevel 206 <= 0 && skilllevel 207 <= 0 && skilllevel 208 <= 0 && skilllevel 209 <= 0 && skilllevel 210 <= 0 && skilllevel 211 <= 0 && skilllevel 212 <= 0 && skilllevel 213 <= 0 && skilllevel 214 <= 0 && skilllevel 215 <= 0 && skilllevel 216 <= 0
+
+	EndWindow 3006059,OK
+
+block Group == 1 && Item 9342 >= 1
+
+
+	Window 3006064,yes,no
+
+		Window_yes ItemSpace == 0
+		EndWindow 3006065
+
+		Window_yes ItemSpace >= 1
+		Window 3006058,ok
+	window_ok
+
+		GiveItem 9372,1
+
+
+		Window_no
+
+
+
+
+block Group == 1 && Item 9341 >= 1
+
+
+	Window 3006064,yes,no
+
+		Window_yes ItemSpace == 0
+		EndWindow 3006065
+
+		Window_yes ItemSpace >= 1
+		Window 3006058,ok
+	window_ok
+
+		GiveItem 9371,1
+
+
+		Window_no
+
+
+
+
+
+block Group == 1 && Item 9340 >= 1
+
+
+	Window 3006064,yes,no
+
+		Window_yes ItemSpace == 0
+		EndWindow 3006065
+
+		Window_yes ItemSpace >= 1
+		Window 3006058,ok
+	window_ok
+
+		GiveItem 9370,1
+
+
+		Window_no
+
+
+
+
+
+
+
+
+
+block 
+
+	EndWindow 3006043,OK

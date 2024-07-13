@@ -1,0 +1,102 @@
+################### 汉米顿村 传送石管理员
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+	 	 	 
+################### 传送点没开
+
+################### 战斗系&游民 50级以上 && 开过传送石
+block  Job < 170 && Level >=50 && EndEvent 155 == 1 && Item 40706>=1
+	 ##1102466	\n这是通往汉米顿送石，要使用吗？\n费用是3000元。
+	 Window 1102463,YES,NO 
+	 	 Window_YES Gold >=3000 && Group ==1 && Item 40706>=1
+	 	 	 ##传回亚诺曼城
+	 	 	 KillItem 40706,1	
+	 	 	 AddGold -3000
+	 	 	 Warp 0,32203,120,107
+	 	 Window_YES Item 40706<1
+	 	 	 ##1200935	\n\n\n\n\n你少了磁石定位仪，无法传送。
+			 EndWindow 1102675	 	 	 
+	 	 	 
+	 	 Window_YES Gold < 3000
+	 	 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+		 Window_YES Group > 1	 
+			 EndWindow 1100000
+	 	 	 
+	 	 Window_NO 	 
+##炼金术士
+block Job >= 1000 && Job < 1010 && Level >=50 && EndEvent 155 == 1 && Item 40706>=1
+	 ##1102466	\n这是通往汉米顿送石，要使用吗？\n费用是3000元。
+	 Window 1102463,YES,NO 
+	 	 Window_YES Gold >=3000 && Group ==1 && Item 40706>=1
+	 	 	 ##传回亚诺曼城
+	 	 	 KillItem 40706,1	
+	 	 	 AddGold -3000
+	 	 	 Warp 0,32203,120,107
+	 	 Window_YES Item 40706<1
+	 	 	 ##1200935	\n\n\n\n\n你少了磁石定位仪，无法传送。
+			 EndWindow 1102675	 	 	 
+	 	 	 
+	 	 Window_YES Gold < 3000
+	 	 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+		 Window_YES Group > 1	 
+			 EndWindow 1100000
+	 	 	 
+	 	 Window_NO 	 	 
+
+###################纺织工 职阶 >=3  && 开过传送石	 	 
+block Job >= 1010 && Job < 1020 && JobRank >=3 && EndEvent 155 == 1  && Item 40706>=1
+	 ##1102466	\n这是通往汉米顿送石，要使用吗？\n费用是3000元。
+	 Window 1102463,YES,NO 
+	 	 Window_YES Gold >=3000 && Group ==1 && Item 40706>=1
+	 	 	 ##传回亚诺曼城
+	 	 	 KillItem 40706,1	
+	 	 	 AddGold -3000
+	 	 	 Warp 0,32203,120,107
+	 	 Window_YES Item 40706<1
+	 	 	 ##1200935	\n\n\n\n\n你少了磁石定位仪，无法传送。
+			 EndWindow 1102675	 	 	 
+	 	 	 
+	 	 Window_YES Gold < 3000
+	 	 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+		 Window_YES Group > 1	 
+			 EndWindow 1100000			 
+	 	 	 
+	 	 Window_NO 	 
+
+
+################### 生产系称号 职阶 >=3  && 开过传送石
+block Job >200 && JobRank >=3 && EndEvent 155 == 1  && Item 40706>=1
+	 ##1102466	\n这是通往汉米顿送石，要使用吗？\n费用是3000元。
+	 Window 1102463,YES,NO 
+	 	 Window_YES Gold >=3000 && Group ==1 && Item 40706>=1
+	 	 	 ##传回亚诺曼城
+	 	 	 KillItem 40706,1	
+	 	 	 AddGold -3000
+	 	 	 Warp 0,32203,120,107
+	 	 Window_YES Item 40706<1
+	 	 	 ##1200935	\n\n\n\n\n你少了磁石定位仪，无法传送。
+			 EndWindow 1102675	 	 	 
+	 	 	 
+	 	 Window_YES Gold < 3000
+	 	 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+		 Window_YES Group > 1	 
+			 EndWindow 1100000			 
+	 	 	 
+	 	 Window_NO 	 
+################### 一般
+block Item 40706<1
+	 ##1200935	\n\n\n\n\n你少了磁石定位仪，无法传送。
+	 EndWindow 1102675	
+block 
+	 ##1200937	\n\n\n\n@c你没有使用此传送石的资格。
+	 EndWindow 1200937	 	 

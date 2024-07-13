@@ -1,0 +1,36 @@
+#粖诸阁奶矛件玄﹛粖诸阁失伉巨件瓜﹛伙申及朿盒
+#16509 22 16
+
+########## 涡侗及欠丹公仁﹋18420﹌毛手匀化中卅中桦宁 ##########
+block Item 18420 != 1 && Group == 1
+#\n\n﹛丐日〝台凶切毛洘木枑仄卞侳凶氏元扎卅中及〝\n﹛卅℅氏分﹝升匀切卞仄化手窖日卅中仃升友﹝\n﹛公木元扎引凶友﹜仁允仁允﹝
+	Window 14549,OK
+	Window_OK Item 18420 != 1 && Group == 1
+	EndEvent 3 = 1
+	Warp 0,3350,7,6
+
+########## 涡侗及欠丹公仁﹋18420﹌毛手匀化中化孺蜃凛棉毛译尹化中月桦宁 ##########
+block Item 18420 == 1 && ItemCreateTime 18420 >= 61 && Group == 1
+#\n\n﹛仁允仁允﹝酸ゴ友﹜公及≦涡侗及欠丹公仁≧手丹呺恘互酸匀化卅中方﹝酷杅卅中井日台及恘匹窖仄化丐仆月﹝今方卅日﹜仁允仁允﹝
+	Window 14550,OK
+	Window_OK Item 18420 == 1 && ItemCreateTime 18420 >= 61 && Group == 1
+	KillItem 18420
+	EndEvent 3 = 1
+	Warp 0,3350,7,6
+
+########## 涡侗及欠丹公仁﹋18420﹌毛手匀化中化孺蜃凛棉毛译尹化中卅中桦宁 ##########
+block Item 18420 == 1 && ItemCreateTime 18420 <= 60 && Group == 1
+#\n\n﹛允仍中允仍中″≦涡侗及欠丹公仁≧及呺恘互壅尹月蟆卞支匀化五凶友″丐反反﹜匹手窖日卅中方﹝\n﹛失伉巨件瓜反伙申迋午中勾手域踝卅及﹝
+	Window 14551,NEXT
+#\n\n﹛仇仇引匹侳木凶仍邧?卞﹜中中午仇欠尺洘木化匀化丐仆月﹝公及杴互濡瑙元扎卅仃木壬中中友﹝公木元扎引凶友﹜仁允仁允﹝
+	Window 14552,OK
+	Window_OK Item 18420 == 1 && ItemCreateTime 18420 <= 60 && Group == 1
+	KillItem 18420
+	EndEvent 3 = 1
+	Warp 0,3351,8,8
+
+########## 弘伙□皿匹狪仄喘仃凶桦宁 ##########
+block
+#\n\n﹛域谛内勾云狪仄引仄斤﹝
+	EndWindow 14553,OK
+

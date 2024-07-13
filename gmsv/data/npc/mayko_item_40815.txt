@@ -1,0 +1,68 @@
+#空的花盆	40815
+
+##种下爱情 龙的种子(爱情)40812 蜂王乳12823
+#block Item 12823>0 && Item 18788>0 && Item 40812 >0 && Item 40813>0
+#	 EndWindow 1109517
+#block Item 12823>0 && Item 18464>0 && Item 40812 >0 && Item 40814>0
+#	 EndWindow 1109517
+#block Item 18464>0 && Item 18788>0 && Item 40814 >0 && Item 40813>0
+#	 EndWindow 1109517	  
+
+block Item 40812 > 0 && Item 12823 > 0 && Item 40815 > 0
+	 Window 1109487,YES,NO
+	 Window_NO
+	 EndWindow 1109490
+
+	 Window_YES Item 40812 = 0 || Item 12823 = 0 || Item 40815 >= 0
+	 EndWindow 1109482
+
+	 Window_YES
+	 KillItem 40815,1
+	 KillItem 12823,1
+	 KillItem 40812,1
+	 GiveLeak1Item 40816,1
+	 EndWindow 1109491
+
+##种下信赖 龙的种子(信赖)40813 风蜘蛛丝	18788	 
+#1109488现在有龙的种子(信赖)与风蜘蛛丝，\n　　　要种下种子吗？？
+#1109490还是算了吧～～
+#1109492种下了龙的种子(信赖)。
+
+
+block Item 40813 > 0 && Item 18788 > 0 && Item 40815 > 0
+	 Window 1109488,YES,NO
+	 Window_NO
+	 EndWindow 1109490
+
+	 Window_YES Item 40813 = 0 || Item 18788 = 0 || Item 40815 >= 0
+	 EndWindow 1109482
+
+	 Window_YES
+	 KillItem 40815,1
+	 KillItem 18788,1
+	 KillItem 40813,1
+	 GiveLeak1Item 40817,1
+	 EndWindow 1109492
+
+##种下勇气  龙的种子(勇气)40814 砂漠的红星18464 
+#1109489现在有龙的种子(勇气)与沙漠红星，\n　　　要种下种子吗？？
+#1109490还是算了吧～～
+#1109493种下了龙的种子(勇气)。
+
+block Item 40814 > 0 && Item 18464 > 0 && Item 40815 > 0
+	 Window 1109489,YES,NO
+	 Window_NO
+	 EndWindow 1109490
+
+	 Window_YES Item 40814 = 0 || Item 18464 = 0 || Item 40815 >= 0
+	 EndWindow 1109482
+
+	 Window_YES
+	 KillItem 40815,1
+	 KillItem 18464,1
+	 KillItem 40814,1
+	 GiveLeak1Item 40818,1
+	 EndWindow 1109493
+
+block
+	 EndWindow 1109508

@@ -1,0 +1,43 @@
+## ok便利商店----贩售清水人员
+block Item 45864 >= 1
+	 ##1051954	\n\n  清澈的高级纯水，一瓶只要100元。很适合养花  种草喔！\n\n  您要来一瓶吗？	1
+	 Window 1051954,YES,NO      
+###.玩家选择买，但是物品栏已满
+		 Window_NO 
+		 
+		 Window_YES ItemSpace == 0  
+             	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1。                                          
+                 	 EndWindow 1100001  
+                 Window_YES Gold < 100
+                 	 ##15672	\n\n\n\n@c你的钱不够了。	0
+                 	 EndWindow 15672	    
+
+             	 Window_YES Gold >= 100 && ItemSpace >= 1 
+                 	 AddGold -100
+                 	 GiveLeak1Item  (45865%1$1)
+                 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+                 	 EndWindow 1051523
+                 	 
+block Item 45870 >= 1
+	 ##1051954	\n\n  清澈的高级纯水，一瓶只要100元。很适合养花  种草喔！\n\n  您要来一瓶吗？	1
+	 Window 1051954,YES,NO      
+###.玩家选择买，但是物品栏已满
+		 Window_NO 
+		 
+		 Window_YES ItemSpace == 0  
+             	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1。                                          
+                 	 EndWindow 1100001  
+                 Window_YES Gold < 100
+                 	 ##15672	\n\n\n\n@c你的钱不够了。	0
+                 	 EndWindow 15672	    
+
+             	 Window_YES Gold >= 100 && ItemSpace >= 1 
+                 	 AddGold -100
+                 	 GiveLeak1Item  (45865%1$1)
+                 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+                 	 EndWindow 1051523
+            	 
+                 	 
+block 
+	 ##1051955	\n\n  清澈的高级纯水，一瓶只要100元。很适合养花  种草喔！	1
+	 EndWindow 1051955

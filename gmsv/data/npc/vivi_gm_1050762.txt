@@ -1,0 +1,3 @@
+##Watchevent1 
+block XPos == 29 && YPos == 6
+Warp 0,32640,29,10

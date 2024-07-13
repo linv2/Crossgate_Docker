@@ -1,0 +1,89 @@
+#幼伙玉open﹛shikenkan﹛氘及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+
+###########﹛wper﹛##############
+
+block Item 14604 >= 1
+
+
+#\n\n﹛燮毛萌互木月互恌井欠丹﹝
+
+
+	EndWindow 3006298
+
+
+
+
+
+###########﹛14605,14620 nothing﹛##############
+
+block Item 14605 >= 1 &&  Item 14620 < 1 && Item 14602 >= 1 && Item 14601 >= 1
+
+
+
+#\n\n﹛＿＿丹℅氏﹜\n﹛芢哑仁痿毛澎旵仄化仄引中引仄凶井﹝\n﹛公木匹反﹜翌锁反撩伞匹允友﹝
+
+
+	Window 3006275,next
+
+	Window 3006276,next
+
+	EndWindow 3006277
+
+
+
+###########﹛14605,14620 ﹛##############
+
+
+block Item 14605 >= 1 &&  Item 14620 >= 1  && Item 14602 >= 1 && Item 14601 >= 1
+
+if EquipItem == 14620
+
+	endwindow 4000002
+
+else
+
+	Window 3006275,next
+
+	Window 3006276,next
+
+#\n\n﹛方仁冗﹜氘卞峸今木内\n﹛痿毛澎旵仄引六氏匹仄凶﹝\n﹛丐卅凶卞氘及移据抸踏毛犒仄晓仆引仄斤丹﹝\n﹛允仇仄棵签允亢凶井卅〝
+
+	Window 3006278,next
+
+	Window 3006279,OK
+
+
+	window_ok EquipItem == 14620
+
+	endwindow 4000002
+
+	window_ok Item 14620 < 1
+
+	endwindow 4000003
+
+	window_ok
+
+	KillItemall 14620
+	GiveItem 14604,1
+
+endif
+
+
+
+###########﹛玄仿件旦nashi﹛##############
+
+
+block
+
+#\n\n﹛庣及樊琼卞\n﹛交伙弘螃午萝及擎昵它尼伊及\n﹛仍笛赁及丐日氏仇午毛﹝
+
+
+
+
+	EndWindow 3006274
+

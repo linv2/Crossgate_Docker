@@ -1,0 +1,19 @@
+#PUK3±å¿ºÖ§¾®ØÆNPC©x©x??©xtane
+#
+#©x©x©x³¢«~¶°†A¸ÒB¼°Þð
+
+###
+
+block
+	Window 3203268,YES,NO
+
+		#\n\n\n\n@cÔ¶Ë³¾®ÈÕÇëÒýÔÊ¾®¨”
+
+		Window_NO
+
+		Window_YES
+			LeaveGroup
+			Warp 0,59524,128,89
+
+
+

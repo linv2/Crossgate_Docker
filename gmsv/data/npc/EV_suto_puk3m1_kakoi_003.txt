@@ -1,0 +1,12 @@
+#
+#PUK3_Main1Чјжа
+#
+#
+
+
+
+Block Xpos == 115 && Ypos == 66
+
+		Message 3010046
+
+

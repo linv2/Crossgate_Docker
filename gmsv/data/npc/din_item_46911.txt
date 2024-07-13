@@ -1,0 +1,23 @@
+#####熊哥兑换证 id 46911
+###双点得到熊哥一只
+ 
+block PetSpace == 0 
+	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+	 EndWindow 1100004
+	 
+block
+	 ##1053553	\n\n@c你是否要使用召唤证．．．召唤熊哥出来？	1
+	 Window 1053553,YES,NO
+	 	 Window_NO
+	 	 	 
+	 	 Window_YES  PetSpace == 0 
+	 	 	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+	 		 EndWindow 1100004	 	
+	 
+	 	 Window_YES
+	 	 	 KillItem 46911,1
+	 	 	 GivePet 103133
+	 	 	 ##1053554	\n\n\n\n@c熊哥已成功召唤！	1
+			 EndWindow 1053554
+			 
+	 	 	 

@@ -1,0 +1,32 @@
+#####寒冰牛头怪召唤书 id 46324
+###双点得到寒冰牛头怪一只
+
+block lp<200
+	 ##1052483	\n\n@c你的生命值不足，无法召唤牛头怪！
+	 EndWindow 1052483
+	 
+block PetSpace == 0 
+	 ##1052482	\n\n你的宠物栏已满，无法召唤牛头怪！
+	 EndWindow 1052482
+	 
+block
+	 ##1052481	\n\n@c你是否献上鲜血为祭，使用召唤书．．．召唤牛头怪出来？
+	 Window 1052481,YES,NO
+	 	 Window_NO
+	 	 	 
+	 	 Window_YES  PetSpace == 0 
+	 	 	 ##1052482	\n\n你的宠物栏已满，无法召唤牛头怪！
+	 		 EndWindow 1052482	 	
+	 		 
+	 	 Window_YES lp < 200
+	 		 ##1052483	\n\n@c你的生命值不足，无法召唤牛头怪！
+	 		 EndWindow 1052483
+	 		 
+	 	 Window_YES 
+	 	 	 KillItem 46324,1
+	 	 	  setlp -200
+	 	 	 GivePet 103097
+	 	 	  ##1052487	\n\n牛头怪已成功召唤！	1
+			 EndWindow 1052487
+			 
+	 	 	 

@@ -1,0 +1,63 @@
+#织女1051613	59526	198	86
+#1054391	喜鹊怎么还没来呢，是怎么回事呀。	1
+#1054392	你可不可以帮我问一下在丘斯特村的喜鹊呢？？	1
+
+#1054390	那就麻烦你了。
+##朱雀的建议书	47286
+##可爱水手服	40312
+##牛郎的暗号	47288
+##织女的暗号	47289
+##牛郎织女的暗号47290
+
+
+#1054400	这是给我变装的呀，\n好，我等一下就去搭船，\n这是相会的暗号。
+#1054403	不知牛郎扮成什么样子。	
+##1054405	谢谢你，让我们夫妻相会，不然我们得多等一年了。
+
+##============End
+block Item 47291 >0 
+	 EndWindow 1054405
+block Item 47292 >0 
+	 EndWindow 1054405	 
+##============传递变装消息================================================================
+##有牛郎织女的暗号
+block Item 47290 >0 
+	 EndWindow 1054403
+##有牛郎暗号与可爱水手服
+block Item 47288 >0 && Item 40312>0 && Item 47286>0	
+ 	 KillItem 40312,1
+ 	 KillItem 47288,1
+	 KillItem 47286,1	
+	 GiveLeak1Item 47290,1
+	 EndWindow 1054400	
+block Item 47288 >0 && Item 40312>0  
+ 	 KillItem 40312,1
+ 	 KillItem 47288,1
+	 GiveLeak1Item 47290,1
+	 EndWindow 1054400	 
+##有织女暗号	 
+block Item 47289 >0 
+	 EndWindow 1054403	
+##有水手服与信
+block Item 40312 >0 && Item 47286>0	 
+	 KillItem 40312,1
+	 GiveLeak1Item 47289,1
+	 EndWindow 1054400	
+##=======找喜鹊去==================
+block Item 47285 >0  
+	 EndWindow 1054390
+
+block	
+	 Window 1054391,NEXT
+	 
+	 Window 1054392,YES,NO 
+	 
+	 Window_NO 	
+	 EndWindow 1054389	  
+
+	 Window_YES  ItemSpace < 1 
+	 EndWindow 1100001	
+	 
+	 Window_YES 
+	 GiveLeak1Item 47285,1
+	 EndWindow 1054390

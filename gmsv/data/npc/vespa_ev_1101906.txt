@@ -1,0 +1,22 @@
+##########　ＮＰＣ ：大地图b	ＩＤ：1101906
+##########　ＭＡＰ：32048(31.9)
+##########　研究室2里
+##########　作用：改变色盘,把玩家warp 到研究室3里
+
+####一般
+block 
+	 ##1102153	\n\n‘是否把缺角的地图填入？’
+	 Window 1102153,YES,NO 
+	 	 Window_NO
+	 
+	 	 Window_YES 
+	 	 	 ##1102156	 \n\n 头．．．怎么越来越昏．．．
+			 Window 1102156,OK
+			 	 Window_OK
+			 	 	 changepal 18,400
+			 	 	 	 Window 1102156,OK
+			 	 	 	 	 Window_OK
+			 	 	 	 	 	 Window 1102156,OK
+			 	 	 	 	 	 	 Window_OK
+			 	 	 	 	 	 	 	 KillItem 40311
+			 	 	 	 	 	 	 	 Warp 0,32049,31,10 ##之后改成研究室3

@@ -1,0 +1,33 @@
+#宠物情人--夏咪门
+#■请解散队伍
+block Group > 1
+    EndWindow  1100000
+
+##检查物品栏有护身符
+block Item 46235 >= 1
+	 ##1052320 \n@n：\n\n  还是快去找夏咪吧！
+	 EndWindow 1052320
+
+##检查物品栏有雪之樱 
+block Item 46236 >= 1
+	 ##1052321 \n\n\n\n@c要敲门吗?
+	 Window 1052321,YES,NO
+	 Window_NO
+	 Window YES
+	 ##去找夏咪母亲
+       	 Warp 0,32345,2,96
+##检查物品栏有樱枝
+block Item 46234 >= 1
+	 ##1052321 \n\n\n\n@c要敲门吗?
+	 Window 1052321,YES,NO
+	 Window_NO
+	 Window YES
+         ##去生病夏咪
+         Warp 0,32345,10,29
+block
+	 ##1052321 \n\n\n\n@c要敲门吗?
+	 Window 1052321,YES,NO
+	 Window_NO
+	 Window YES
+         ##1052322 \n\n\n\n@c无人应门！
+	 EndWindow 1052322

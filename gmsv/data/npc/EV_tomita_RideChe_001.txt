@@ -1,0 +1,547 @@
+#仿奶玉旦平伙凯丿弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛鳗濩及裆穴□弁页﹋民尼永弁迕NPC﹌及摒
+
+###﹛项莲扱毛尕赭儅
+block Item_607969 < 1
+	EndWindow 3204211
+
+		#\n\n﹛氏﹜窒井迕井〝﹛左伊反云蟆卞迕反卅中冗﹝\n﹛田瓜瓜毛罹丹及卞侄仄中氏分﹝\n﹛引凶卞仄化仁木﹝
+
+
+
+###﹛惘弁伉永弁
+block StrCmpChat == R
+	EndWindow 3204212
+
+		#\n\n﹛云蟆及项莲扱卞反旦正件皿互勾中化月冗﹝\n﹛旦正件皿醒毛庍尹凶中及卅日﹜箫仄凶中醒毛\n﹛ㄠ井日ㄨ及?剩醒侬匹民乓永玄じ恘仄欠﹝\n﹛ㄟ毛蓟氏分桦宁反﹜旦正件皿反ㄟ分﹝\n﹛丐午﹜ㄨ动晓及旦正件皿反愤坌匹煌遥仄欠﹝\n﹛左伊反煌遥互塑澎分﹝歹井匀凶井〝\n﹛左伊反今匀天曰歹井日卅中﹝
+
+
+
+###﹛民乓永玄じ恘＞ㄟ＝
+block StrCmpChat == 3004930
+	If Item_607969 >= 2
+		EndWindow 3204213
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞项莲扱儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″
+		EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 0
+			EndWindow 3204214
+
+		#\n\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄟ分﹝\n﹛庍尹月优邰卅中分欠﹝
+			EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 1
+			Window 3204215,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-1
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 2
+			Window 3204216,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄡ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-2
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 3
+			Window 3204217,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄢ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-3
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 4
+			Window 3204218,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄣ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-4
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 5
+			Window 3204219,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄤ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-5
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 6
+			Window 3204220,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄥ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-6
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 7
+			Window 3204221,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄦ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-7
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 8
+			Window 3204222,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄧ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-8
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 9
+			Window 3204223,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄨ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-9
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 10
+			Window 3204224,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠㄟ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-10
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 11
+			Window 3204225,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠㄠ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-11
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 12
+			Window 3204226,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠㄡ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-12
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 13
+			Window 3204227,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠㄢ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-13
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 14
+			Window 3204228,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠㄣ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-14
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 15
+			Window 3204229,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠㄤ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-15
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 16
+			Window 3204230,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠㄥ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-16
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 17
+			Window 3204231,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠㄦ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-17
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 18
+			Window 3204232,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠㄧ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-18
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 19
+			Window 3204233,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄠㄨ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-19
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 == 20
+			Window 3204234,OK
+
+		#\n\n﹛??刳桦永″\n﹛云蟆及项莲扱卞勾中化月旦正件皿醒反ㄡㄟ分﹝\n﹛元扎丐﹜旦正件皿醒毛ㄟ卞允月冗﹝
+
+				Window_OK
+					AddStampCount 607969,-20
+					EndBlock
+
+	else
+		If Item_607969 == 1 && StampCount_607969 > 20
+			Window 3204235,OK
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞旦正件皿儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″\n﹛午卞井仁﹜公及项莲扱反匋璋分″″
+
+				Window_OK
+					KillItemAll 607969
+					EndBlock
+
+	else
+		EndWindow 3204236
+
+		#\n\n﹛云中云蟆﹜项莲扱反升仇卞丐月氏分〝\n﹛请今卅中午﹜旦正件皿醒毛庍尹日木卅中冗﹝
+		EndBlock
+
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+
+
+
+###﹛民乓永玄じ恘＞ㄠ＝
+block StrCmpChat == 3004921
+	If Item_607969 >= 2
+		EndWindow 3204237
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞项莲扱儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″
+		EndBlock
+
+	else
+		If Item_607969 == 1
+			Window 3204238,OK
+
+		#\n\n﹛??刳桦永″\n﹛元扎丐﹜旦正件皿醒卞ㄠ毛箫允冗﹝
+
+				Window_OK
+					AddStampCount 607969,+1
+					EndBlock
+
+		else
+			EndWindow 3204239
+
+		#\n\n﹛云中云蟆﹜项莲扱反升仇卞丐月氏分〝\n﹛请今卅中午﹜旦正件皿醒毛庍尹日木卅中冗﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘＞ㄡ＝
+block StrCmpChat == 3004922
+	If Item_607969 >= 2
+		EndWindow 3204240
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞项莲扱儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″
+		EndBlock
+
+	else
+		If Item_607969 == 1
+			Window 3204241,OK
+
+		#\n\n﹛??刳桦永″\n﹛元扎丐﹜旦正件皿醒卞ㄡ毛箫允冗﹝
+
+				Window_OK
+					AddStampCount 607969,+2
+					EndBlock
+
+		else
+			EndWindow 3204242
+
+		#\n\n﹛云中云蟆﹜项莲扱反升仇卞丐月氏分〝\n﹛请今卅中午﹜旦正件皿醒毛庍尹日木卅中冗﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘＞ㄢ＝
+block StrCmpChat == 3004923
+	If Item_607969 >= 2
+		EndWindow 3204243
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞项莲扱儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″
+		EndBlock
+
+	else
+		If Item_607969 == 1
+			Window 3204244,OK
+
+		#\n\n﹛??刳桦永″\n﹛元扎丐﹜旦正件皿醒卞ㄢ毛箫允冗﹝
+
+				Window_OK
+					AddStampCount 607969,+3
+					EndBlock
+
+		else
+			EndWindow 3204245
+
+		#\n\n﹛云中云蟆﹜项莲扱反升仇卞丐月氏分〝\n﹛请今卅中午﹜旦正件皿醒毛庍尹日木卅中冗﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘＞ㄣ＝
+block StrCmpChat == 3004924
+	If Item_607969 >= 2
+		EndWindow 3204246
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞项莲扱儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″
+		EndBlock
+
+	else
+		If Item_607969 == 1
+			Window 3204247,OK
+
+		#\n\n﹛??刳桦永″\n﹛元扎丐﹜旦正件皿醒卞ㄣ毛箫允冗﹝
+
+				Window_OK
+					AddStampCount 607969,+4
+					EndBlock
+
+		else
+			EndWindow 3204248
+
+		#\n\n﹛云中云蟆﹜项莲扱反升仇卞丐月氏分〝\n﹛请今卅中午﹜旦正件皿醒毛庍尹日木卅中冗﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘＞ㄤ＝
+block StrCmpChat == 3004925
+	If Item_607969 >= 2
+		EndWindow 3204249
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞项莲扱儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″
+		EndBlock
+
+	else
+		If Item_607969 == 1
+			Window 3204250,OK
+
+		#\n\n﹛??刳桦永″\n﹛元扎丐﹜旦正件皿醒卞ㄤ毛箫允冗﹝
+
+				Window_OK
+					AddStampCount 607969,+5
+					EndBlock
+
+		else
+			EndWindow 3204251
+
+		#\n\n﹛云中云蟆﹜项莲扱反升仇卞丐月氏分〝\n﹛请今卅中午﹜旦正件皿醒毛庍尹日木卅中冗﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘＞ㄥ＝
+block StrCmpChat == 3004926
+	If Item_607969 >= 2
+		EndWindow 3204252
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞项莲扱儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″
+		EndBlock
+
+	else
+		If Item_607969 == 1
+			Window 3204253,OK
+
+		#\n\n﹛??刳桦永″\n﹛元扎丐﹜旦正件皿醒卞ㄥ毛箫允冗﹝
+
+				Window_OK
+					AddStampCount 607969,+6
+					EndBlock
+
+		else
+			EndWindow 3204254
+
+		#\n\n﹛云中云蟆﹜项莲扱反升仇卞丐月氏分〝\n﹛请今卅中午﹜旦正件皿醒毛庍尹日木卅中冗﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘＞ㄦ＝
+block StrCmpChat == 3004927
+	If Item_607969 >= 2
+		EndWindow 3204255
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞项莲扱儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″
+		EndBlock
+
+	else
+		If Item_607969 == 1
+			Window 3204256,OK
+
+		#\n\n﹛??刳桦永″\n﹛元扎丐﹜旦正件皿醒卞ㄦ毛箫允冗﹝
+
+				Window_OK
+					AddStampCount 607969,+7
+					EndBlock
+
+		else
+			EndWindow 3204257
+
+		#\n\n﹛云中云蟆﹜项莲扱反升仇卞丐月氏分〝\n﹛请今卅中午﹜旦正件皿醒毛庍尹日木卅中冗﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘＞ㄧ＝
+block StrCmpChat == 3004928
+	If Item_607969 >= 2
+		EndWindow 3204258
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞项莲扱儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″
+		EndBlock
+
+	else
+		If Item_607969 == 1
+			Window 3204259,OK
+
+		#\n\n﹛??刳桦永″\n﹛元扎丐﹜旦正件皿醒卞ㄧ毛箫允冗﹝
+
+				Window_OK
+					AddStampCount 607969,+8
+					EndBlock
+
+		else
+			EndWindow 3204260
+
+		#\n\n﹛云中云蟆﹜项莲扱反升仇卞丐月氏分〝\n﹛请今卅中午﹜旦正件皿醒毛庍尹日木卅中冗﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘＞ㄨ＝
+block StrCmpChat == 3004929
+	If Item_607969 >= 2
+		EndWindow 3204261
+
+		#\n\n﹛云蟆﹜窒匹公氏卅卞项莲扱儅匀化月氏分〝\n﹛窒井术伙仄凶分欠﹝公丹中丹蛊卞反﹜\n﹛仇及左伊及﹍虏及惘﹎毛云苇朸中允月冗″
+		EndBlock
+
+	else
+		If Item_607969 == 1
+			Window 3204262,OK
+
+		#\n\n﹛??刳桦永″\n﹛元扎丐﹜旦正件皿醒卞ㄨ毛箫允冗﹝
+
+				Window_OK
+					AddStampCount 607969,+9
+					EndBlock
+
+		else
+			EndWindow 3204263
+
+		#\n\n﹛云中云蟆﹜项莲扱反升仇卞丐月氏分〝\n﹛请今卅中午﹜旦正件皿醒毛庍尹日木卅中冗﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+

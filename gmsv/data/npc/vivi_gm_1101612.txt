@@ -1,0 +1,115 @@
+###### 新手任务-结业教室 ######
+####■ 特训指导员
+##■ 物品栏已满
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+##■ 有职业
+block Job != 1
+	 ##1101388	\n\n你是一路带着新加入的勇者到这边来的吗？这个世界有像你这样热心助人的勇者，真令人感动阿！
+	 EndWindow 1101388	 
+##■ 一般
+block
+	 ##1101283	\n\n你已经接受完所有关于在这个世界生存的训练了，我会给你二样物品，一样是你受完训练的结业证明，另一样是感恩的百合花。
+	 Window 1101283,NEXT
+	 ##1101284	\n\n你可以将这朵百合花交给在这个世界里帮助你的人。当你把百合花交出去之后，可以拿着结业证明到冒险者训练中心换新手徽章，那可是个好东西喔！
+	 Window 1101284,NEXT
+	 ##1101285	\n\n另外，在这个世界里，有职业是很重要，虽然你现在还是游民，但是希望你能早点找到适合自己的职业，若想要知道就职情报，可到职业介绍所问问。
+	 Window 1101285,OK
+	 	 Window_OK Item 40120 == 1 && Item 40121 == 1 && Item 40122 == 1 && Item 40123 == 1
+	 	 KillItem 40120
+	 	 KillItem 40121
+	 	 KillItem 40122
+	 	 KillItem 40123
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40120 == 1 && Item 40121 == 1 && Item 40122 == 1
+	 	 KillItem 40120
+	 	 KillItem 40121
+	 	 KillItem 40122
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40120 == 1 && Item 40121 == 1 && Item 40123 == 1
+	 	 KillItem 40120
+	 	 KillItem 40121
+	 	 KillItem 40123
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40120 == 1 && Item 40122 == 1 && Item 40123 == 1
+	 	 KillItem 40120
+	 	 KillItem 40122
+	 	 KillItem 40123
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40121 == 1 && Item 40122 == 1 && Item 40123 == 1
+	 	 KillItem 40121
+	 	 KillItem 40122
+	 	 KillItem 40123
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40120 == 1 && Item 40121 == 1 
+	 	 KillItem 40120
+	 	 KillItem 40121
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40120 == 1 && Item 40123 == 1
+	 	 KillItem 40120
+	 	 KillItem 40123
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40122 == 1 && Item 40123 == 1
+	 	 KillItem 40122
+	 	 KillItem 40123
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40121 == 1 && Item 40122 == 1 
+	 	 KillItem 40121
+	 	 KillItem 40122
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40120 == 1 && Item 40122 == 1
+	 	 KillItem 40120
+	 	 KillItem 40122
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40121 == 1 && Item 40123 == 1
+	 	 KillItem 40121
+	 	 KillItem 40123
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40120 == 1
+	 	 KillItem 40120
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40121 == 1
+	 	 KillItem 40121
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40122 == 1 
+	 	 KillItem 40122
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK Item 40123 == 1
+	 	 KillItem 40123
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 Window_OK 
+	 	 GiveLeak1Item 40124
+	 	 GiveLeak1Item 40126
+	 	 Warp 0,32014,32,7
+	 	 

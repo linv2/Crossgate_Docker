@@ -1,0 +1,69 @@
+#30010	112	105	mayko_gm_1102621.txt 亚城艾芝#
+#1110674	\n\n　　　　唉～房价好贵喔～\n　　　　我住不起老家附近了～～
+#1110678	\n\n\n\n@c我喜欢的房子呀～～
+#1110681	\n\n　　　　这几间呀～\n　　　　雷欧那村的就不用了～～\n　　　　麻烦你帮我跟仲介约时间吧。
+#1110683	\n\n\n\n@c我想一下～
+#1110684	\n\n　　　　我考虑好了～\n　　　　这三间房子我想探一下底价。
+#1110686	\n\n　　　　我想也知道～\n　　　　就下云中新市镇的斡悬金吧！！
+#1110689	\n\n\n\n@c不知道杀的下来吗？
+#1110697
+
+block item 41129>0  ##成交了
+#1110691	\n\n　　　　谢谢你帮忙跑腿，\n　　　　这地方我蛮满意的！！
+
+	 endwindow 1110697
+block item 41128>0  && ItemCreateTime 41128 >360  ##合约30天
+	 killitem 41128,1
+	 GiveLeak1Item 41129,1
+	 endwindow 1110697
+	 
+block item 41128>0  ##合约
+	 endwindow 1110697	 
+block item 41127>0  ##渥悬
+	 endwindow 1110689
+block item 41126>0
+	 killitem 41126,1
+	 GiveLeak1Item 41127,1
+	 Endwindow 1110686
+block item 41125>0
+	 endwindow 1110689	 	 	 	 
+	 
+##看完四间
+#摩顿看屋意见										41121
+#海村看屋意见										41122
+#克瑞村看屋件										41123
+#浮空岛看屋意见										41124
+block item 41130>0 && item 41124>0  && item 41123>0 && item 41122>0  && item 41121>0 
+	 killitem 41130,1
+	 killitem 41124,1
+	 Killitem 41123,1
+	 Killitem 41122,1
+	 Killitem 41121,1
+	 GiveLeak1Item 41125,1
+	 Endwindow 1110684
+block item 41124>0  && item 41123>0 && item 41122>0  && item 41121>0 
+	 
+	 killitem 41124,1
+	 Killitem 41123,1
+	 Killitem 41122,1
+	 Killitem 41121,1
+	 GiveLeak1Item 41125,1
+	 Endwindow 1110684	 
+block item 41130>0	 
+	 Endwindow 1110718
+block item 41136>0
+	 killitem 41136,1
+	 GiveLeak1Item 41130,1
+	 Endwindow 1110681
+block item 41120>0
+	 endwindow 1110674
+
+block item 41119>0
+	 killitem 41119,1
+	 GiveLeak1Item 41120,1
+	 Endwindow 1110678
+
+
+
+block 
+	 endwindow 1110674

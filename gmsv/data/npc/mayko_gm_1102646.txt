@@ -1,0 +1,9 @@
+###°×»¢´óÈË
+block item 41148 >0
+	 killitem 41148
+	 Window 1110753,ok
+	 Window_ok
+	 Encount 2|0,32157,12,15||0|||||0|40315|||||||||	 
+	 Endblock
+block 
+	endWindow 1110753

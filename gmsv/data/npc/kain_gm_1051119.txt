@@ -1,0 +1,31 @@
+## 迷宫按钮 H 18,11
+block
+	 
+	 ## F 开 (0)
+	 setobject 0,32337,31,30,0
+	 setobject 0,32337,32,30,0
+	 setobject 0,32337,33,30,0
+	 setobject 0,32337,34,30,0
+	 setobject 0,32337,35,30,0
+	 setobject 0,32337,36,30,0
+	 setobject 0,32337,37,30,0
+	 setobject 0,32337,38,30,0
+	 setobject 0,32337,39,30,0
+	 	 
+	 ##  C1 关 (11245)
+	 setobject 0,32337,10,21,11245
+	 setobject 0,32337,10,22,11245
+	 setobject 0,32337,10,23,11245
+	 setobject 0,32337,10,24,11245
+	 setobject 0,32337,10,25,11245
+	 setobject 0,32337,10,26,11245
+	 setobject 0,32337,10,27,11245
+	 setobject 0,32337,10,28,11245
+	 setobject 0,32337,10,29,11245
+	 
+	 	 	  	 
+         ## 16 雷声	 
+	 Play_Se 16,9,42
+	 ## 1052200 机关被起动了，远方似乎传来声响。
+	 Message 1052200
+	 

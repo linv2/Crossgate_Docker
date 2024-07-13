@@ -1,0 +1,232 @@
+#
+#???旦弁伉皿玄泛旦玄
+#
+#?ㄤ蕙侂填卞弗民毛勾仃月???﹝＞手匀午恌中手及午跟晶仄化支月＝午及凶引丹公及蜕邯卞昙月午＿＿﹋生戊滇???脰飓﹌
+#
+#?ㄤ蕙场赭儅及桦宁
+Block Item_601400 >= 1
+		Window "\n\n﹛氏〝公木反蕙仄中场＿＿﹝\n﹛丐氏引曰刉?恌仁卅中日仄友尹﹝\n﹛＿＿公仇匹﹜恌中狪互丐月氏分仃升﹜\n﹛昙月井中〝",Yes,No
+			Window_No
+				EndWindow "\n\n﹛氏﹝公匀井﹜拑咥反蜕歹卅中﹝",OK
+			Window_Yes
+				Window "\n\n﹛云﹜公丹井﹜昙月及﹝卞扎反反﹝\n﹛中支﹜狪及歹井月支勾反啜丹卞扎﹝\n﹛丹氏﹝仁仁仁仁仁﹝",Next
+				Window "\n\n﹛匹﹜友﹜狪及〇芢反肮匀化棵签﹝\n﹛云蟆及儅匀化中月公及场午予﹜\n﹛丐凶仄及?瞽失奶泛丞午毛\n﹛跟晶仄化丐仆月匀化狪﹝\n﹛升丹〝鬼仁卅中狪匹仄斤〝",Yes,No
+					Window_Yes
+					
+						Window "\n\n﹛公匀井﹜元扎跟晶允月卞扎﹝",OK
+						
+						Window_OK Item_601400 < 1
+							EndWindow "\n\n﹛友尹﹜儅匀化卅中及卞狪毛褡户卅中匹方予﹝",OK
+
+						Window_OK Item_601400 >= 1 && ItemDurPer_601400 == 100
+							KillItem 601400,1
+							GiveLeak1Item 3701,1
+							Endblock
+
+						Window_OK Item_601400 >= 1 && ItemDurPer_601400 < 100
+							EndWindow "\n\n﹛氏﹜公曰扎﹜腾氏匹月氏分卞扎丐﹝跟晶匹五卅中支﹝",OK
+					Window_No
+						EndWindow "\n\n﹛氏﹜公﹜拑咥反蜕歹卅中方﹝",OK
+						
+						
+					
+
+#R5蕙顶赭儅及桦宁
+Block Item_601800 >= 1
+			Window "\n\n﹛氏〝公木反蕙仄中顶＿＿﹝\n﹛楝反愤褥匹职及谛毛潮曰凶中午合丹井卞扎〝\n﹛＿＿公仇匹﹜恌中狪互丐月氏分仃升﹜\n﹛昙月井中〝",Yes,No
+			Window_No
+				Window "\n\n﹛氏﹝公匀井﹜拑咥反蜕歹卅中﹝",OK
+			Window_Yes
+				Window "\n\n﹛云﹜公丹井﹜昙月及﹝卞扎反反﹝\n﹛中支﹜狪及歹井月支勾反啜丹卞扎﹝\n﹛丹氏﹝仁仁仁仁仁﹝",Next
+				Window "\n\n﹛匹﹜友﹜狪及〇芢反肮匀化棵签﹝\n﹛云蟆及儅匀化中月公及顶午予﹜\n﹛丐凶仄及?瞽失奶泛丞午毛\n﹛跟晶仄化丐仆月匀化狪﹝\n﹛升丹〝鬼仁卅中狪匹仄斤〝",Yes,No
+					Window_Yes
+						Window "\n\n﹛公匀井﹜元扎跟晶允月卞扎﹝",OK
+					
+						Window_OK Item_601800 < 1
+							EndWindow "\n\n﹛友尹﹜儅匀化卅中及卞狪毛褡户卅中匹方予﹝",OK
+					
+						Window_OK Item_601800 >= 1 && ItemDurPer_601800 == 100
+							KillItem 601800,1
+							GiveLeak1Item 4500,1
+							Endblock
+						
+						Window_OK Item_601800 >= 1 && ItemDurPer_601800 < 100
+							EndWindow "\n\n﹛氏﹜公曰扎﹜腾氏匹月氏分卞扎丐﹝跟晶匹五卅中支﹝",OK
+							
+					Window_No
+						EndWindow "\n\n﹛氏﹜公﹜拑咥反蜕歹卅中方﹝",OK
+						
+						
+						
+
+#R5蕙贱赭儅及桦宁
+Block Item_602800 >=1
+			Window "\n\n﹛氏〝公木反蕙仄中贱＿＿﹝\n﹛支﹜贱缜谛反厘庍分卞扎﹝仁仁仁﹝\n﹛＿＿公仇匹﹜恌中狪互丐月氏分仃升﹜\n﹛昙月井中〝",Yes,No
+			Window_No
+				Window "\n\n﹛氏﹝公匀井﹜拑咥反蜕歹卅中﹝",OK
+			Window_Yes
+				Window "\n\n﹛云﹜公丹井﹜昙月及﹝卞扎反反﹝\n﹛中支﹜狪及歹井月支勾反啜丹卞扎﹝\n﹛丹氏﹝仁仁仁仁仁﹝",Next
+				Window "\n\n﹛匹﹜友﹜狪及〇芢反肮匀化棵签﹝\n﹛云蟆及儅匀化中月公及贱午予﹜\n﹛丐凶仄及?瞽失奶泛丞午毛\n﹛跟晶仄化丐仆月匀化狪﹝\n﹛升丹〝鬼仁卅中狪匹仄斤〝",Yes,No
+					Window_Yes
+						Window "\n\n﹛公匀井﹜元扎跟晶允月卞扎﹝",OK
+						
+						Window_OK Item_602800 < 1
+							EndWindow "\n\n﹛友尹﹜儅匀化卅中及卞狪毛褡户卅中匹方予﹝",OK
+						
+						Window_OK  Item_602800 >= 1 && ItemDurPer_602800 == 100
+							KillItem 602800,1
+							GiveLeak1Item 6500,1
+							Endblock
+
+						Window_OK Item_602800 >= 1 && ItemDurPer_602800 < 100
+							EndWindow "\n\n﹛氏﹜公曰扎﹜腾氏匹月氏分卞扎丐﹝跟晶匹五卅中支﹝",OK
+					
+					Window_No
+						EndWindow "\n\n﹛氏﹜公﹜拑咥反蜕歹卅中方﹝",OK
+						
+						
+						
+
+#R5蕙皮□汁赭儅及桦宁
+Block Item_602400 >=1
+			Window "\n\n﹛氏〝公木反蕙仄中皮□汁＿＿﹝\n﹛丐氏引曰ヨ匀化月午仇苇卞扎中方﹝\n﹛＿＿公仇匹﹜恌中狪互丐月氏分仃升﹜\n﹛昙月井中〝",Yes,No
+			Window_No
+				Window "\n\n﹛氏﹝公匀井﹜拑咥反蜕歹卅中﹝",OK
+			Window_Yes
+				Window "\n\n﹛云﹜公丹井﹜昙月及﹝卞扎反反﹝\n﹛中支﹜狪及歹井月支勾反啜丹卞扎﹝\n﹛丹氏﹝仁仁仁仁仁﹝",Next
+				Window "\n\n﹛匹﹜友﹜狪及〇芢反肮匀化棵签﹝\n﹛云蟆及儅匀化中月公及皮□汁午予﹜\n﹛丐凶仄及?瞽失奶泛丞午毛\n﹛跟晶仄化丐仆月匀化狪﹝\n﹛升丹〝鬼仁卅中狪匹仄斤〝",Yes,No
+					Window_Yes
+						Window "\n\n﹛公匀井﹜元扎跟晶允月卞扎﹝",OK
+						
+						Window_OK Item_602400 < 1
+							EndWindow "\n\n﹛友尹﹜儅匀化卅中及卞狪毛褡户卅中匹方予﹝",OK
+						
+						Window_OK Item_602400 >= 1 && ItemDurPer_602400 == 100
+							KillItem 602400,1
+							GiveLeak1Item 5605,1
+							Endblock
+
+						Window_OK Item_602400 >= 1 && ItemDurPer_602400 < 100
+							EndWindow "\n\n﹛氏﹜公曰扎﹜腾氏匹月氏分卞扎丐﹝跟晶匹五卅中支﹝",OK
+					
+					Window_No
+						EndWindow "\n\n﹛氏﹜公﹜拑咥反蜕歹卅中方﹝",OK
+						
+						
+						
+
+#R5蕙佴阂赭儅及桦宁
+Block Item_601600 >=1
+			Window "\n\n﹛氏〝公木反蕙仄中佴阂＿＿﹝\n﹛丐氏引曰刉?恌仁卅中日仄中友尹﹝\n﹛＿＿公仇匹﹜恌中狪互丐月氏分仃升﹜\n﹛昙月井中〝",Yes,No
+			Window_No
+				EndWindow "\n\n﹛氏﹝公匀井﹜拑咥反蜕歹卅中﹝",OK
+			Window_Yes
+				Window "\n\n﹛云﹜公丹井﹜昙月及﹝卞扎反反﹝\n﹛中支﹜狪及歹井月支勾反啜丹卞扎﹝\n﹛丹氏﹝仁仁仁仁仁﹝",Next
+				Window "\n\n﹛匹﹜友﹜狪及〇芢反肮匀化棵签﹝\n﹛云蟆及儅匀化中月公及佴阂午予﹜\n﹛丐凶仄及?瞽失奶泛丞午毛\n﹛跟晶仄化丐仆月匀化狪﹝\n﹛升丹〝鬼仁卅中狪匹仄斤〝",Yes,No
+					Window_Yes
+						Window "\n\n﹛公匀井﹜元扎跟晶允月卞扎﹝",OK
+						
+						Window_OK Item_601600 < 1
+							EndWindow "\n\n﹛友尹﹜儅匀化卅中及卞狪毛褡户卅中匹方予﹝",OK
+
+						Window_OK Item_601600 >= 1 && ItemDurPer_601600 == 100
+							KillItem 601600,1
+							GiveLeak1Item 4004,1
+							Endblock
+							
+						Window_OK Item_601600 >= 1 && ItemDurPer_601600 < 100
+							EndWindow "\n\n﹛氏﹜公曰扎﹜腾氏匹月氏分卞扎丐﹝跟晶匹五卅中支﹝",OK
+					
+					Window_No
+						EndWindow "\n\n﹛氏﹜公﹜拑咥反蜕歹卅中方﹝",OK
+						
+						
+						
+
+#R5蕙楔赭儅及桦宁
+Block Item_602601 >=1
+			Window "\n\n﹛氏〝公木反蕙仄中楔＿＿﹝\n﹛丐氏引曰刉?恌仁卅中日仄中友尹﹝\n﹛＿＿公仇匹﹜恌中狪互丐月氏分仃升﹜\n﹛昙月井中〝",Yes,No
+			Window_No
+				EndWindow "\n\n﹛氏﹝公匀井﹜拑咥反蜕歹卅中﹝",OK
+			Window_Yes
+				Window "\n\n﹛云﹜公丹井﹜昙月及﹝卞扎反反﹝\n﹛中支﹜狪及歹井月支勾反啜丹卞扎﹝\n﹛丹氏﹝仁仁仁仁仁﹝",Next
+				Window "\n\n﹛匹﹜友﹜狪及〇芢反肮匀化棵签﹝\n﹛云蟆及儅匀化中月公及楔午予﹜\n﹛丐凶仄及?瞽失奶泛丞午毛\n﹛跟晶仄化丐仆月匀化狪﹝\n﹛升丹〝鬼仁卅中狪匹仄斤〝",Yes,No
+					Window_Yes
+						Window "\n\n﹛公匀井﹜元扎跟晶允月卞扎﹝",OK
+						
+						Window_OK Item_602601 < 1
+							EndWindow "\n\n﹛友尹﹜儅匀化卅中及卞狪毛褡户卅中匹方予﹝",OK
+						
+						Window_OK Item_602601 >= 1 && ItemDurPer_602601 == 100
+							KillItem 602601,1
+							GiveLeak1Item 6001,1
+							Endblock
+								
+						Window_OK Item_602601 >= 1 && ItemDurPer_602601 < 100
+							EndWindow "\n\n﹛氏﹜公曰扎﹜腾氏匹月氏分卞扎丐﹝跟晶匹五卅中支﹝",OK
+					Window_No
+						EndWindow "\n\n﹛氏﹜公﹜拑咥反蜕歹卅中方﹝",OK
+						
+						
+
+#R5蕙汋赭儅及桦宁
+Block Item_602001 >=1
+			Window "\n\n﹛氏〝公木反蕙仄中汋＿＿﹝\n﹛中仁日少氏潸月午中匀化手友尹＿＿﹝\n﹛＿＿公仇匹﹜恌中狪互丐月氏分仃升﹜\n﹛昙月井中〝",Yes,No
+			Window_No
+				EndWindow "\n\n﹛氏﹝公匀井﹜拑咥反蜕歹卅中﹝",OK
+			Window_Yes
+				Window "\n\n﹛云﹜公丹井﹜昙月及﹝卞扎反反﹝\n﹛中支﹜狪及歹井月支勾反啜丹卞扎﹝\n﹛丹氏﹝仁仁仁仁仁﹝",Next
+				Window "\n\n﹛匹﹜友﹜狪及〇芢反肮匀化棵签﹝\n﹛云蟆及儅匀化中月公及汋午予﹜\n﹛丐凶仄及?瞽失奶泛丞午毛\n﹛跟晶仄化丐仆月匀化狪﹝\n﹛升丹〝鬼仁卅中狪匹仄斤〝",Yes,No
+					Window_Yes
+						Window "\n\n﹛公匀井﹜元扎跟晶允月卞扎﹝",OK
+
+						Window_OK Item_602001 < 1
+							EndWindow "\n\n﹛友尹﹜儅匀化卅中及卞狪毛褡户卅中匹方予﹝",OK
+						
+						Window_OK Item_602001 >= 1 && ItemDurPer_602001 == 100
+							KillItem 602001,1
+							GiveLeak1Item 4806,1
+							Endblock
+
+						Window_OK Item_602001 >= 1 && ItemDurPer_602001 < 100
+							EndWindow "\n\n﹛氏﹜公曰扎﹜腾氏匹月氏分卞扎丐﹝跟晶匹五卅中支﹝",OK
+								
+					Window_No
+						EndWindow "\n\n﹛氏﹜公﹜拑咥反蜕歹卅中方﹝",OK
+						
+						
+
+#R5蕙夫□皮赭儅及桦宁
+Block Item_602200 >=1
+			Window "\n\n﹛氏〝公木反蕙仄中夫□皮＿＿﹝\n﹛丐氏引曰刉?恌仁卅中日仄中友尹﹝\n﹛＿＿公仇匹﹜恌中狪互丐月氏分仃升﹜\n﹛昙月井中〝",Yes,No
+			Window_No
+				EndWindow "\n\n﹛氏﹝公匀井﹜拑咥反蜕歹卅中﹝",OK
+			Window_Yes
+				Window "\n\n﹛云﹜公丹井﹜昙月及﹝卞扎反反﹝\n﹛中支﹜狪及歹井月支勾反啜丹卞扎﹝\n﹛丹氏﹝仁仁仁仁仁﹝",Next
+				Window "\n\n﹛匹﹜友﹜狪及〇芢反肮匀化棵签﹝\n﹛云蟆及儅匀化中月公及夫□皮午予﹜\n﹛丐凶仄及?瞽失奶泛丞午毛\n﹛跟晶仄化丐仆月匀化狪﹝\n﹛升丹〝鬼仁卅中狪匹仄斤〝",Yes,No
+					Window_Yes
+						Window "\n\n﹛公匀井﹜元扎跟晶允月卞扎﹝",OK
+
+						Window_OK Item_602200 < 1
+							EndWindow "\n\n﹛友尹﹜儅匀化卅中及卞狪毛褡户卅中匹方予﹝",OK
+
+						Window_OK Item_602200 >= 1 && ItemDurPer_602200 == 100
+							KillItem 602001,1
+							GiveLeak1Item 5206,1
+							Endblock
+
+						Window_OK Item_602200 >= 1 && ItemDurPer_602200 < 100
+							EndWindow "\n\n﹛氏﹜公曰扎﹜腾氏匹月氏分卞扎丐﹝跟晶匹五卅中支﹝",OK
+
+				Window_No
+					EndWindow "\n\n﹛氏﹜公﹜拑咥反蜕歹卅中方﹝",OK
+					
+					
+
+#晓筏动陆及桦宁﹝
+
+Block
+
+		EndWindow "\n\n﹛丹卞扎〝窒匹允井﹜丐卅凶反〝\n﹛丐凶仄毛﹜井升歹井允勾手曰匹允井〝",OK
+
+

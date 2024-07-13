@@ -1,0 +1,13 @@
+######■使用特制料理2
+##■检查人数
+block Group > 4
+	 ##1050840	\n\n\n\n@c这是四人份的料理！
+	 Window 1050840,YES,NO 
+	 	 Window_YES Group > 4
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■传送	 	 	 
+block 
+	 KillItem 45346
+	 Warp 0,32694,8,5

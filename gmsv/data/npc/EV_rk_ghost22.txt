@@ -1,0 +1,12 @@
+#?????¡P¥f??
+
+#
+block
+	Window 22412,Next
+	Window 22413,Next
+	Window 22414,OK
+		Window_OK
+			KillItemAll 16382,(4194)
+			EndEvent 130 = 1
+			LeaveGroup
+			Warp 0,43000,463,632

@@ -1,0 +1,31 @@
+#1111612	先从法兰城南门出去，外打哥布林和红帽哥布林，打到十顶绿头盔或者一顶红头盔。
+#1111613	你可以找哥布林士官，协助你快速打满任务道具。
+#1111614	到法兰城往里谢里亚堡南门，找士兵长里欧156,102，取得推荐信。
+#1111615	到里谢里雅堡1F,找近卫士兵长，就职士兵。
+#士兵推荐信18105
+#红头盔18194 绿头盔 18195
+block item 18105 >0
+	window 1111615,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1520,80,22
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 18194 >0 || item 18195 >9
+	window 1111614,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1000,156,103
+	 leavegroup 
+	 Window_no
+	 endblock	
+block 
+	window 1111612,next
+	window 1111613,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,100,434,266
+	 leavegroup 
+	 Window_no
+	 endblock	

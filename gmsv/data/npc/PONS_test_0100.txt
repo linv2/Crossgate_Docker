@@ -1,0 +1,53 @@
+#
+#禾件旦申永弁泛旦玄▼胀沓笮▼打用仄打
+#
+
+################################################################################
+#
+################################################################################
+
+block Item_18555 >= 1
+    EndWindow "\n\n﹛仍切公丹今引匹仄凶﹝",OK
+
+block Leak0item_15212 >= 1
+    EndWindow "\n\n﹛＿支匀午儅匀化五化仁木凶井午合匀凶日\n\n恍椎烂失奶泛丞卅氏匹允友﹝\n\n﹛公仇匹引凶皮民幼伊匹允方﹝",OK
+
+block Leak1item_15212 >= 1 && ItemSpace >= 0
+    Window "\n\n﹛公﹜公木反＞厘戴曰友亢分仁幼亦弁＝″\n\n﹛兮夫午手﹜仍蹼虽仄化仁分今中″″",YES,NO
+        Window_YES
+            KillLeak1item 15212,1
+            GiveLeak1item 18555,1
+            EndWindow "\n\n﹛中凶分五引□允″\n\n﹛仇木反云斪匹允﹝",OK
+        Window_NO
+            EndWindow "\n\n﹛丐卅凶反呿癫卞奶矛件玄毛弁伉失仄凶中及井午\n\n﹛杽中凶中﹝\n\n﹛杽中勾户凶中﹝\n\n﹛凝域凛棉杽中勾户凶中﹝",OK
+
+block Leak1item_15212 >= 1
+    EndWindow "\n\n﹛＿支匀午儅匀化五化仁木凶井午合匀凶日﹜\n\n手丹失奶泛丞儅化卅中氏匹允友﹝\n\n﹛公仇匹引凶皮民幼伊匹允方﹝",OK
+
+block Item_18209 >= 1
+    EndWindow "\n\n﹛檗仇欠互手匀午俓仄中及井﹜云户匹凶中卅﹝\n\n﹛云魂仄睡楚匹汤日匹手胶尹月﹝\n\n﹛公氏卅妢区竣互中中氏元扎卅中井﹝",OK
+
+block ItemSpace >= 1
+    Window "\n\n﹛公氏卅仇午方曰﹜妏中化仁木方@n方﹝",YES,NO
+        Window_YES
+            Window "\n\n﹛仇及棉﹜＞厘戴曰友亢分仁幼亦弁＝匀化及毛\n\n妏中凶氏匹允﹝\n\n﹛＞厘戴曰友亢分仁幼亦弁＝",NEXT
+            Window "\n\n﹛匹﹜方仁妏中化心凶日罹屯坁午井\n\n蜕匀化月氏匹允﹝\n\n﹛手丹友﹜块中凶仁化﹜块中凶仁化﹝",NEXT
+            Window "\n\n﹛公氏卅沭匹﹜漆及台及愈蕙峸垫反\n\n﹛＞厘戴曰友亢分仁幼亦弁＝﹜仇木分友﹝",NEXT
+            Window "\n\n﹛仄井仄??卞反公氏卅罹屯坁卅中午中丹渣莴手\n\n?丹踡谏及痿﹝\n\n﹛仇氏卅奶矛件玄﹜跤钒?卞反云换户匹五卅中﹝",NEXT
+            GiveLeak1item 18209,1
+            EndWindow "\n\n﹛仇木毛支月及匹﹜嫔?午手迕啦仄化手日中凶中﹝",OK
+        Window_NO
+            EndWindow "\n\n﹛丐及卅﹜魂董奶矛件玄ゥ五匹＞中中尹＝毛蓟少氏元扎卅中方﹝\n\n﹛丿啦仆卅市左仄化窒互＞中中尹＝分﹝",OK
+
+block
+    Window "\n\n﹛公氏卅仇午方曰﹜妏中化仁木方@n方﹝",YES,NO
+        Window_YES
+            Window "\n\n﹛仇及棉﹜＞厘戴曰友亢分仁幼亦弁＝匀化及毛\n\n妏中凶氏匹允﹝\n\n﹛＞厘戴曰友亢分仁幼亦弁＝",NEXT
+            Window "\n\n﹛匹﹜方仁妏中化心凶日罹屯坁午井\n\n蜕匀化月氏匹允﹝\n\n﹛手丹友﹜块中凶仁化﹜块中凶仁化﹝",NEXT
+            Window "\n\n﹛公氏卅沭匹﹜漆及台及愈蕙峸垫反\n\n﹛＞厘戴曰友亢分仁幼亦弁＝﹜仇木分友﹝",NEXT
+            EndWindow "\n\n﹛仄井仄??卞反公氏卅罹屯坁卅中午中丹渣莴手\n\n?丹踡谏及痿﹝\n\n﹛仇氏卅奶矛件玄﹜跤钒?卞反云换户匹五卅中﹝",OK
+        Window_NO
+            EndWindow "\n\n﹛丐及卅﹜魂董奶矛件玄ゥ五匹＞中中尹＝毛\n\n蓟少氏元扎卅中方﹝\n\n﹛丿啦仆卅市左仄化窒互＞中中尹＝分﹝",OK
+
+
+

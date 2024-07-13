@@ -1,0 +1,72 @@
+	
+#海村	染坊主人梅蜜
+block Item 46937>0 && Item 46935>0
+#	■　有紫色帽子与蓝色围巾
+	 EndWindow 1053629
+#		你不是染好帽子跟围巾了吗？
+
+block Item 46938>0 && Item 46934>0 && Item 46936>0
+#	■　有紫草与白色帽子＆围巾
+	 Window 1053637,YES,NO
+#		你要染帽子跟围巾吗
+	 Window_YES Item 46938>0 && Item 46934>0 && Item 46936>0
+			 
+#		■　是
+#			好～
+#			这是紫色帽子与蓝色围巾，你拿回去吧		
+		 KillItem 46938,1
+		 KillItem 46934,1
+		 KillItem 46936,1
+     	 	 GiveLeak1Item 46937,1
+     	 	 GiveLeak1Item 46935,1 
+     	 	 EndWindow 1053630
+
+	 Window_YES
+#		■　否
+	 Window_NO
+block 	 Item 46938>0 &&  Item 46936>0
+#	■　有紫草与白色帽子
+#		你只要染帽子吗
+	 Window 1053627,YES,NO
+#		■　是
+	 Window_YES Item 46938>0 &&  Item 46936>0
+#			好～
+#			这是紫色帽子，你拿回去吧
+		 KillItem 46938,1		
+		 KillItem 46936,1
+     	 	 GiveLeak1Item 46937,1     	 	
+     	 	 EndWindow 1053631
+     	 Window_YES
+     	 Window_NO
+
+block Item 46938>0 && Item 46934>0 
+#	■　有紫草与围巾
+#	你只要染围巾吗？
+	 Window 1053632,YES,NO
+ 	 Window_YES Item 46938>0 && Item 46934>0 
+
+#		■　是
+#			好～
+#			这是蓝色围巾，你拿回去吧		
+		
+		 KillItem 46934,1
+		 KillItem 46936,1
+     	 	
+     	 	 GiveLeak1Item 46935,1 
+     	 	 EndWindow 1053633
+
+     	 Window_YES
+     	 Window_NO     	 	 
+
+
+block Item 46934>0 && Item 46936>0
+#	■　有白色帽子围巾
+#	你想染色呀～不过我现在没有染料～你去摩顿村找宝拉看有没有染料
+	 EndWindow 1053634
+
+block
+#	■　
+#	我在这一带开染坊好多年了，不过现在不能出海，
+#	只能从摩顿村的宝拉那买蓝紫色的染料～这生意怎么作的下去～
+ 	 Window 1053635,NEXT
+ 	 EndWindow 1053636	

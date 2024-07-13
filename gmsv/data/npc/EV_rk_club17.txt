@@ -1,0 +1,61 @@
+#
+#Ωªπœ
+#
+
+###©x◊µ¿√Û°º∞¡›ªÕ√´É}‘»ªØ÷–‘¬ËÎƒ˛©x###
+block Item 18979 >= 1 || Item 18980 >= 1 || Item 18981 >= 1
+#
+	Window 21796,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,1165,19,38
+
+
+###©xÀ¶ƒÃ“¡”¿€Õµ©◊µ¿√Ã§√´ ÷‘»ªØ÷–‘¬ÿ¶»’©x###
+block Item 18978 != 0
+#
+	Window 21797,Next
+#
+	Window 21798,Next
+#
+	Window 21799,Next
+#
+	Window 21800,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 18978 != 0
+			KillItem 18978,1
+			GiveItem (13614%1,18449%1,18450%1,18451%1,18452%1,18453%1,18454%1,18455%1,18456%1)
+			LeaveGroup
+			Warp 0,1165,19,38
+
+
+#Ωªπœº∞Í∆ª•ÿ§‘¬ÿ¶»’
+block Item 16243 >= 1
+	Window 21792,Next
+	Window 21793,Yes,No
+		Window_No
+			Endwindow 21794
+		Window_Yes ItemSpace == 0
+			Endwindow 10000
+		Window_Yes
+		Window 21795,OK
+			Window_OK Item 16243 >= 1
+				KillItemall 16243
+				GiveItem 18979
+				LeaveGroup
+				Warp 0,1165,19,38
+
+##©xΩªπœº∞Í∆ª•íÉ÷–ÿ¶»’
+block
+	Window 21787,Next
+	Window 21788,Next
+	Window 21789,Next
+	Window 21790,Next
+	Window 21791,OK
+		Window_OK ItemSpace == 0
+			Endwindow 10000
+		Window_OK
+			GiveItem 16243
+			LeaveGroup
+			Warp 0,1165,19,38

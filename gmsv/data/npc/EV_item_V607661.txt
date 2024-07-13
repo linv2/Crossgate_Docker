@@ -1,0 +1,37 @@
+block Item 607661 >= 2
+
+				endWindow 3204314
+
+		#\n\n﹛澎饼反域骚内勾钒仃化仁分今中﹝
+
+
+block
+
+
+				globalFlag15 = 0
+				globalFlag16 = 0
+				globalFlag17 = 0
+				globalFlag18 = 0
+				globalFlag19 = 0
+				globalFlag20 = 0
+				globalFlag21 = 0
+				globalFlag22 = 0
+				globalFlag23 = 0
+				globalFlag24 = 0
+
+
+#				Window 3204315,ok
+
+		#\n\n﹛移﹛冗氏介中﹛伙申
+
+				Window 3204316,ok
+
+		#\n\n﹛仇氏切歹℅\n﹛民亦戊﹜失伉布玄℅\n﹛元扎﹜聒咥卞反聒咥忒仄匀化仪匹﹜\n﹛仇氏卅手氏匹℅\n﹛元扎友℅℅″
+
+
+				Window_ok
+
+
+				killitem 607661,1,(3007158)
+				giveItem 15200,1
+

@@ -1,0 +1,26 @@
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 弘伙□皿毛赚氏匹中月桦宁 ##########
+block
+
+	Window "\n\n﹛旦平伙旦夫永玄毛喂支仄引允井〝",YES,NO
+
+		Window_YES checkskillslot >= 15
+
+				endWindow "\n\n﹛酸ゴ卅互日﹜\n﹛仇木动晓喂支允仇午互请侳引六氏﹝"
+
+
+		Window_YES
+
+				Window "\n\n﹛公木匹反夫午勾喂支仄引允﹝",ok
+
+					Window_ok
+
+						addskillslot
+
+
+		Window_NO
+		
+				endWindow "\n\n﹛公丹匹允井﹝\n﹛引凶及云旋仄毛﹝"

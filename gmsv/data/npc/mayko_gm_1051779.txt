@@ -1,0 +1,23 @@
+##mayko_gm_1051779.txt  大会考服务员
+block Item 45320>0
+	 EndWindow 1055804
+block Item 999>0
+	 #1055803	\n\n\n@c你想参加魔力大会考吗？？	1
+	 Window 1055805,YES,NO
+	 Window_YES ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1	 
+	 EndWindow 1100001
+	 Window_YES Gold < 9000
+	 ##很抱歉，你的钱不够了	1	 
+	 EndWindow 3	 
+	 Window_YES 
+	 AddGold -100
+	 GiveLeak1Item 45320,1	 	 
+	 EndWindow 1055806
+	 #1055804	\n\n\n@c这是准考证，有了这个，你就可以参加考试啰！！	1
+	 Window_NO
+	 #1055805	\n\n\n@c想参加魔力大会考可以来找我！！	1
+	 EndWindow 1055807
+	 
+
+

@@ -1,0 +1,8 @@
+#Event	Œ‡¿…1102433
+#32282	46	44
+#mayko_gm_1102433.txt
+
+
+
+block
+	 EndWindow 1109797

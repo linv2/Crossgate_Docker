@@ -1,0 +1,46 @@
+#1109771	\n\n\n　　　　我是兰国的使者，\n　　　　来此寻找早年移民到法兰的族人。	1
+#1109736	\n\n\n　　　　我的伙伴雨慈前往维诺亚村后失联，\n　　　　偏偏我分不开身，您能帮我找找她吗？	1
+#1109737	\n\n\n　　　　真是谢谢您，\n　　　　这是信物，麻烦交给她。	1
+#1109738	\n\n\n\n@c真是谢谢您！	1
+#1109739	\n\n\n\n@c我再想别的办法。	1
+#1109740	\n\n\n\n@c没想到好不容易有线索，到这里就断了。	1
+#1109741	\n\n\n\n@c雨慈追查不知如何了。	1
+#1109742	\n\n\n\n@c雨慈的情报呀～～真是谢谢你。	1
+#1109743	\n\n\n　　　　麻烦你到圣拉鲁卡搭青鸾，\n　　　　到丝米村找锦次郎大人递交报告好吗？	1
+#1109744	\n\n\n\n@c不方便呀～～～	1
+#1109745	\n\n\n\n@c那就麻烦你了。	1
+
+block Item 40881 >0
+	 EndWindow 1109745
+block Item 40880 >0
+	 Window 1109742,NEXT
+	 Window 1109743,YES,NO
+	 Window_NO
+	 EndWindow 1109744
+	 Window_YES
+	 KillItem 40880,1
+	 GiveLeak1Item 40881,1
+	 EndWindow 1109745
+block Item 40879>0
+	 EndWindow 1109741	 
+block Item 40878>0
+	 EndWindow 1109741	 
+block Item 40877>0
+	 EndWindow 1109740	 
+block Item 40876>0
+	 EndWindow 1109738	 
+block 
+	 Window 1109771,NEXT
+	 Window 1109736,YES,NO
+	 Window_NO
+	 EndWindow 1109739
+	 Window_YES ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 
+	 Window_YES
+	 GiveLeak1Item 40876,1
+	 EndWindow 1109737	 	 
+	 
+
+

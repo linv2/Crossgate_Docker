@@ -1,0 +1,56 @@
+#
+#Å‡¡ﬁº∞éËÛ¶©jæÙ¢»‘â©k
+#
+############## »€ÿ¶±Â ÷ÿ¶÷– ##############
+block Item 18589 == 0 && Item 18593 == 0 && Item 18594 == 0 && Item 18595 == 0
+#\n\n\n\n@c∑ΩæÆ«∑µ§©y§¨±ÂÕ—ª•»€√´∆gÿÍ∑Ωµ§
+	Window 15308,OK
+	Window_OK Item 18589 == 0 && Item 18593 == 0 && Item 18594 == 0 && Item 18595 == 0 && ItemSpace == 0
+#\n\n\n\n@c∑ΩæÆ«∑µ§©y§¨±ÂÕ—ª•»€√´∆gÿÍ–◊÷–
+	EndWindow 15309,OK
+	Window_OK Item 18589 == 0 && Item 18593 == 0 && Item 18594 == 0 && Item 18595 == 0 && ItemSpace != 0
+	GiveItem 18590
+	LeaveGroup
+	Warp 0,20101,12,37
+
+############## BASE»€ÿ§‘ª ##############
+block Item 18589 == 1 && Item 18593 == 0 && Item 18594 == 0 && Item 18595 == 0
+#\n\n\n\n@c∑ΩæÆ«∑µ§©y§¨±ÂÕ—ª•»€√´∆gÿÍ∑Ωµ§
+	Window 15308,OK
+	Window_OK Item 18589 == 1 && Item 18593 == 0 && Item 18594 == 0 && Item 18595 == 0 && ItemSpace == 0
+#\n\n\n\n@c∑ΩæÆ«∑µ§©y§¨±ÂÕ—ª•»€√´∆gÿÍ–◊÷–
+	EndWindow 15309,OK
+	Window_OK Item 18589 == 1 && Item 18593 == 0 && Item 18594 == 0 && Item 18595 == 0 && ItemSpace != 0
+	KillItem 18589
+	GiveItem 18591
+	LeaveGroup
+	Warp 0,20101,12,37
+
+############## §®¡ﬁ»€®‡ÿ§‘ª ##############
+block Item 18589 == 0 && Item 18593 == 1 && Item 18594 == 0 && Item 18595 == 0
+#\n\n\n\n@c∑ΩæÆ«∑µ§©y§¨±ÂÕ—ª•»€√´∆gÿÍ∑Ωµ§
+	Window 15308,OK
+	Window_OK Item 18589 == 0 && Item 18593 == 1 && Item 18594 == 0 && Item 18595 == 0 && ItemSpace == 0
+#\n\n\n\n@c∑ΩæÆ«∑µ§©y§¨±ÂÕ—ª•»€√´∆gÿÍ–◊÷–
+	EndWindow 15309,OK
+	Window_OK Item 18589 == 0 && Item 18593 == 1 && Item 18594 == 0 && Item 18595 == 0 && ItemSpace != 0
+	KillItem 18593
+	GiveItem 18591
+	LeaveGroup
+	Warp 0,20101,12,37
+
+############## §®¡ﬁ»€®·ÿ§‘ª ##############
+block Item 18589 == 0 && Item 18593 == 0 && Item 18594 == 1 && Item 18595 == 0
+#\n\n\n\n@c∑ΩæÆ«∑µ§©y§¨±ÂÕ—ª•»€√´∆gÿÍ∑Ωµ§
+	Window 15308,OK
+	Window_OK Item 18589 == 0 && Item 18593 == 0 && Item 18594 == 1 && Item 18595 == 0 && ItemSpace == 0
+#\n\n\n\n@c∑ΩæÆ«∑µ§©y§¨±ÂÕ—ª•»€√´∆gÿÍ–◊÷–
+	EndWindow 15309,OK
+	Window_OK Item 18589 == 0 && Item 18593 == 0 && Item 18594 == 1 && Item 18595 == 0 && ItemSpace != 0
+	KillItem 18594
+	GiveItem 18592
+	LeaveGroup
+	Warp 0,20101,12,37
+
+
+

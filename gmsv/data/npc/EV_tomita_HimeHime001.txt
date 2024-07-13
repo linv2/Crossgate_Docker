@@ -1,0 +1,300 @@
+#仿奶玉旦平伙凯丿弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛失伉扑失及摒
+
+###﹛伀伀药及仍骚垫由旦毛呁醒赭儅
+block Item_607968 > 1
+	Window 3203314,OK
+
+		#\n\n﹛升丹仄化由旦毛呁醒云儅切卅及井仄日〝\n﹛丐丐﹜歹凶仁仄午爵丹及互异中及友﹝\n﹛白件永﹜公氏卅眷炕樊﹜歹凶仁仄及扑穴卞\n﹛じ木月歹仃卞反中五引六氏歹永″
+
+		Window_OK
+			KillItemAll 607968,(3004849)
+
+
+
+###﹛伀伀药及仍骚垫由旦毛ㄠ呦赭儅
+block Item_607968 == 1
+
+	If StampCount_607968 >= 3
+		Window 3203315,OK
+
+		#\n\n﹛公及由旦反﹜手丹银迕匹五引六氏歹﹝\n﹛仇切日卞云忒仄卅今中″
+
+			Window_OK Item_607968 >= 1
+				KillItemAll 607968,(3004849)
+				EndBlock
+
+			Window_OK
+				EndBlock
+
+	else
+		If StampCount_607968 == 2 && Job >= 200 && Job < 430
+			Window 3203316,OK
+
+		#\n\n﹛白白﹜公及由旦互银迕匹五月及手漆荚互愈詨﹜\n﹛戚荚反骚垫暧毛障囮匀化中凶分五引允歹﹝\n﹛引丐500?卅氏化﹜反仄凶嗯匹允歹方友﹝
+
+				Window_OK Item_607968 > 1
+					EndWindow 3203317
+
+		#\n\n﹛由旦反ㄠ谛ㄠ骚互瑁引曰午蜕匀凶反内﹝\n﹛伙□伙啜?樊反﹜濮覆卞骚仄引六氏″
+					EndBlock
+
+				Window_OK Item_607968 == 1 && StampCount_607968 == 2
+					KillItemAll 607968
+					LeaveGroup
+					Warp 0,59505,223,64
+					EndBlock
+
+				Window_OK Item_607968 == 1
+					EndWindow 3203318
+
+		#\n\n﹛仇木反﹜今匀五及由旦匹反丐曰引六氏歹﹝\n﹛尕恳毛垫丹樊卅升﹜骚允歹仃卞反中五引六氏″
+					EndBlock
+
+				Window_OK
+					EndWindow 3203319
+
+		#\n\n﹛丐日﹜由旦毛云撩仁仄卞卅匀凶及友﹝\n﹛手切欠氏﹜疯?垫反中凶仄引六氏歹﹝\n﹛左石石石石＿＿﹝
+					EndBlock
+
+		else
+			If StampCount_607968 == 2 && Job >= 450 && Job < 480
+				Window 3203320,OK
+
+		#\n\n﹛白白﹜公及由旦互银迕匹五月及手漆荚互愈詨﹜\n﹛戚荚反骚垫暧毛障囮匀化中凶分五引允歹﹝\n﹛引丐500?卅氏化﹜反仄凶嗯匹允歹方友﹝
+
+					Window_OK Item_607968 > 1
+						EndWindow 3203321
+
+		#\n\n﹛由旦反ㄠ谛ㄠ骚互瑁引曰午蜕匀凶反内﹝\n﹛伙□伙啜?樊反﹜濮覆卞骚仄引六氏″
+						EndBlock
+
+					Window_OK Item_607968 == 1 && StampCount_607968 == 2
+						KillItemAll 607968
+						LeaveGroup
+						Warp 0,59505,223,64
+						EndBlock
+
+					Window_OK Item_607968 == 1
+						EndWindow 3203322
+
+		#\n\n﹛仇木反﹜今匀五及由旦匹反丐曰引六氏歹﹝\n﹛尕恳毛垫丹樊卅升﹜骚允歹仃卞反中五引六氏″
+						EndBlock
+
+					Window_OK
+						EndWindow 3203323
+
+		#\n\n﹛丐日﹜由旦毛云撩仁仄卞卅匀凶及友﹝\n﹛手切欠氏﹜疯?垫反中凶仄引六氏歹﹝\n﹛左石石石石＿＿﹝
+						EndBlock
+
+			else
+				If StampCount_607968 == 2
+					Window 3203324,OK
+
+		#\n\n﹛白白﹜公及由旦互银迕匹五月及手漆荚互愈詨﹝\n﹛戚荚反中方中方伉矛件斥穴永民匹允歹友﹝\n﹛啼仄心卞仄化云曰引允歹﹝
+
+						Window_OK Item_607968 > 1
+							EndWindow 3203325
+
+		#\n\n﹛由旦反ㄠ谛ㄠ骚互瑁引曰午蜕匀凶反内﹝\n﹛伙□伙啜?樊反﹜濮覆卞骚仄引六氏″
+							EndBlock
+
+						Window_OK Item_607968 == 1 && StampCount_607968 == 2
+							KillItemAll 607968
+							LeaveGroup
+							Warp 0,59505,223,64
+							EndBlock
+
+						Window_OK Item_607968 == 1
+							EndWindow 3203326
+
+		#\n\n﹛仇木反﹜今匀五及由旦匹反丐曰引六氏歹﹝\n﹛尕恳毛垫丹樊卅升﹜骚允歹仃卞反中五引六氏″
+							EndBlock
+
+						Window_OK
+							EndWindow 3203327
+
+		#\n\n﹛丐日﹜由旦毛云撩仁仄卞卅匀凶及友﹝\n﹛手切欠氏﹜疯?垫反中凶仄引六氏歹﹝\n﹛左石石石石＿＿﹝
+							EndBlock
+
+				else
+					If StampCount_607968 == 1
+						Window 3203328,OK
+
+		#\n\n﹛由旦毛云儅切卞卅匀化中月及友﹝\n﹛莓仄中仃升酷杅互丐曰引六氏歹﹜\n﹛今匀今午云骚曰卅今中″
+
+							Window_OK Item_607968 > 1
+								EndWindow 3203329
+
+		#\n\n﹛由旦反ㄠ谛ㄠ骚互瑁引曰午蜕匀凶反内﹝\n﹛伙□伙啜?樊反﹜濮覆卞骚仄引六氏″
+								EndBlock
+
+							Window_OK Item_607968 == 1 && StampCount_607968 == 1
+								AddStampCount 607968,+1
+								LeaveGroup
+								Warp 0,59505,223,64
+								EndBlock
+
+							Window_OK Item_607968 == 1
+								EndWindow 3203330
+
+		#\n\n﹛仇木反﹜今匀五及由旦匹反丐曰引六氏歹﹝\n﹛尕恳毛垫丹樊卅升﹜骚允歹仃卞反中五引六氏″
+								EndBlock
+
+							Window_OK
+								EndWindow 3203331
+
+		#\n\n﹛丐日﹜由旦毛云撩仁仄卞卅匀凶及友﹝\n﹛手切欠氏﹜疯?垫反中凶仄引六氏歹﹝\n﹛左石石石石＿＿﹝
+								EndBlock
+
+					else
+						Window 3203332,OK
+
+		#\n\n﹛由旦毛云儅切卞卅匀化中月及友﹝\n﹛莓仄中仃升酷杅互丐曰引六氏歹﹜\n﹛今匀今午云骚曰卅今中″
+
+							Window_OK Item_607968 > 1
+								EndWindow 3203333
+
+		#\n\n﹛由旦反ㄠ谛ㄠ骚互瑁引曰午蜕匀凶反内﹝\n﹛伙□伙啜?樊反﹜濮覆卞骚仄引六氏″
+								EndBlock
+
+							Window_OK Item_607968 == 1 && StampCount_607968 == 0
+								AddStampCount 607968,+1
+								LeaveGroup
+								Warp 0,59505,223,64
+								EndBlock
+
+							Window_OK Item_607968 == 1
+								EndWindow 3203334
+
+		#\n\n﹛仇木反﹜今匀五及由旦匹反丐曰引六氏歹﹝\n﹛尕恳毛垫丹樊卅升﹜骚允歹仃卞反中五引六氏″
+								EndBlock
+
+							Window_OK
+								EndWindow 3203335
+
+		#\n\n﹛丐日﹜由旦毛云撩仁仄卞卅匀凶及友﹝\n﹛手切欠氏﹜疯?垫反中凶仄引六氏歹﹝\n﹛左石石石石＿＿﹝
+								EndBlock
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛戏遣烟匹仍骚垫由旦尕赭儅﹋ㄠ﹌
+block Job >= 200 && Job < 430
+	Window 3203336,YES,NO
+
+		#\n\n﹛仇及燮反歹凶仁仄凶切≦楣氘伀伀药≧及扑穴﹜\n﹛袱第及卅中峏切じ曰反云蝇曰匹允歹﹝\n﹛骚垫暧午仄化500?障囮匀化中凶分仃木壬﹜\n﹛骚垫毛袱第中凶仄引允互﹜中井互井仄日〝
+
+		Window_YES Group < 2 && Gold >= 500
+			Window 3203337,OK
+
+		#\n\n﹛坁歹井曰及恌中杅匹允仇午﹝\n﹛公及方丹卞厘谛仄仁虱匀化中凶分仃木壬﹜\n﹛歹凶仁仄手市正幼及蔑卞澎毛晓仆月方丹卅\n﹛蕞僻反中凶仄引六氏及方﹝
+
+				Window_OK Gold >= 500 && Group < 2
+					AddGold -500
+					LeaveGroup
+					Warp 0,59505,223,64
+
+				Window_OK Gold >= 500
+					EndWindow 3203338
+
+		#\n\n﹛云骚仄匹五月及反﹜ㄠ谛内勾匹允及方﹝\n﹛由□泛奴毛荸辣仄化﹜侳化中凶分仃月井仄日﹝
+
+				Window_OK
+					EndWindow 3203339
+
+		#\n\n﹛赭儅嗯互箫曰引六氏歹友﹝\n﹛云嗯毛绅中匹﹜引凶侳化中凶分仃月井仄日﹝
+
+		Window_YES Gold >= 500
+			EndWindow 3203340
+
+		#\n\n﹛云骚仄匹五月及反﹜ㄠ谛内勾匹允及方﹝\n﹛由□泛奴毛荸辣仄化﹜侳化中凶分仃月井仄日﹝
+
+		Window_YES
+			EndWindow 3203341
+
+		#\n\n﹛赭儅嗯互箫曰引六氏歹友﹝\n﹛云嗯毛绅中匹﹜引凶侳化中凶分仃月井仄日﹝
+
+		Window_NO
+			EndWindow 3203342
+
+		#\n\n﹛丐日﹜﹍暧﹎午妏中化翱慇心卅今月午反﹜\n﹛窒井詨欠剪中午仇欠匹手丐月及井仄日〝
+
+
+
+###﹛戏遣烟匹仍骚垫由旦尕赭儅﹋ㄡ﹌
+block Job >= 450 && Job < 480
+	Window 3203343,YES,NO
+
+		#\n\n﹛仇及燮反歹凶仁仄凶切≦楣氘伀伀药≧及扑穴﹜\n﹛袱第及卅中峏切じ曰反云蝇曰匹允歹﹝\n﹛骚垫暧午仄化500?障囮匀化中凶分仃木壬﹜\n﹛骚垫毛袱第中凶仄引允互﹜中井互井仄日〝
+
+		Window_YES Group < 2 && Gold >= 500
+			Window 3203344,OK
+
+		#\n\n﹛坁歹井曰及恌中杅匹允仇午﹝\n﹛公及方丹卞厘谛仄仁虱匀化中凶分仃木壬﹜\n﹛歹凶仁仄手市正幼及蔑卞澎毛晓仆月方丹卅\n﹛蕞僻反中凶仄引六氏及方﹝
+
+				Window_OK Gold >= 500 && Group < 2
+					AddGold -500
+					LeaveGroup
+					Warp 0,59505,223,64
+
+				Window_OK Gold >= 500
+					EndWindow 3203345
+
+		#\n\n﹛云骚仄匹五月及反﹜ㄠ谛内勾匹允及方﹝\n﹛由□泛奴毛荸辣仄化﹜侳化中凶分仃月井仄日﹝
+
+				Window_OK
+					EndWindow 3203346
+
+		#\n\n﹛赭儅嗯互箫曰引六氏歹友﹝\n﹛云嗯毛绅中匹﹜引凶侳化中凶分仃月井仄日﹝
+
+		Window_YES Gold >= 500
+			EndWindow 3203347
+
+		#\n\n﹛云骚仄匹五月及反﹜ㄠ谛内勾匹允及方﹝\n﹛由□泛奴毛荸辣仄化﹜侳化中凶分仃月井仄日﹝
+
+		Window_YES
+			EndWindow 3203348
+
+		#\n\n﹛赭儅嗯互箫曰引六氏歹友﹝\n﹛云嗯毛绅中匹﹜引凶侳化中凶分仃月井仄日﹝
+
+		Window_NO
+			EndWindow 3203349
+
+		#\n\n﹛丐日﹜﹍暧﹎午妏中化翱慇心卅今月午反﹜\n﹛窒井詨欠剪中午仇欠匹手丐月及井仄日〝
+
+
+
+###﹛爵⑷烟匹仍骚垫由旦尕赭儅
+block
+	GAWindow 3203350,YES,NO
+
+		#\n\n﹛丐卅凶卞仇及顺毛欐月凤伞反丐曰引六氏歹﹝\n﹛仇及燮反歹凶仁仄凶切≦楣氘伀伀药≧及扑穴﹜\n﹛药够动陆反峏切じ曰嗟鞅方﹝\n﹛仍ダ丿中凶分仃凶井仄日〝
+
+		Window_YES
+			GAWindow 3203351,OK
+
+		#\n\n﹛公丹公丹﹜升仇井方公匹云芛太卅今中﹝\n﹛扣互丐卅凶及方丹卞妏五坌仃互方欠仄仃木壬﹜\n﹛歹凶仁仄手失□伙弘伊奶毛怗歹中卅互日﹜\n﹛失斥玄匹及氏太曰襟忆匹五引允及卞＿﹝
+
+				Window_OK
+
+		Window_NO
+			GAWindow 3203352,OK
+
+		#\n\n﹛歹凶仁仄毛ビ摩卞仄化中日匀仄扎月及井仄日〝\n﹛匹反﹜剂仄腾中杴卞丐匀化中凶分五引允歹﹝
+
+				Window_OK
+					Encount 3|0,59505,223,64||0|||||0|305271|||||||||
+
+
+

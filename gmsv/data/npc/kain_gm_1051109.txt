@@ -1,0 +1,25 @@
+#设定物品收取的数量 Total=<道具1数量>,<道具2数量>,<道具3数量>,<道具4数量>
+Total=	5,1
+#设定物品收取的 ItemID Item=<道具1>,<道具2>,<道具3>,<道具4>
+Item= 45362,46003
+## NPC Type 参数还不知道 = =""(猜测可能也是无效中)
+Type=0
+## 目前解读这句的意思是... 目前这功能 "无效中"
+Gold=0
+
+# 判断两种物品都还没给完 或是 未曾给过
+block CountItemNum < $Total
+	OpenItemCountWindow 1052190,1052191,1052192,10521903,1052190
+	Message 1052194
+
+######### 给完道具之后的判断
+block CountItemNum >= $Total && CountItemID < $maxcountitemid
+	SetNextCountItemID
+	OpenItemCountWindow 1052190,1052191,1052192,10521903,1052190
+	Message 1052190
+
+
+## 物品都给完之后的判断 CountItemID >= $maxcountitemid
+block CountItemNum >= $Total && CountItemID >= $maxcountitemid
+SetNextCountItemID 
+Warp 0,32337,69,5

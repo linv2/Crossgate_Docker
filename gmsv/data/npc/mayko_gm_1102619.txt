@@ -1,0 +1,19 @@
+##´å¸ÉÊÂ
+block item 41114>0
+	 killitem 41114,1
+	 GiveLeak1Item 41115,1
+	 window 1110664,next
+	 Endwindow 1110665
+block item 41112>0
+	 killitem 41112,1
+	 GiveLeak1Item 41113,1
+	 window 1110660,next
+	 window 1110661,next
+	 Endwindow 1110662
+block item 41110>0
+	 killitem 41110,1
+	 GiveLeak1Item 41111,1
+	 window 1110657,next
+	 Endwindow 1110658
+block 
+	 endwindow 1110656

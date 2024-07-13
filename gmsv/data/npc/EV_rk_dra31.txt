@@ -1,0 +1,25 @@
+#牁中凶庤﹋打□伙玉玉仿打件﹌(15574)
+#
+
+block
+#\n\n﹛幻丹﹝钒仁手及＿﹝
+#\n﹛脱日庤及哗毛邠友﹜き勾及厘五卅棋ゴ及升切日卞手勾井卅中锳狨毛分仄化五凶井﹝仇木反钟仄中﹝
+#\n\n﹛脱羁反庤⑺衔及证及爵中卞阭五﹜ヶ五啦阀﹜幕五啦阀午反域濠井井歹曰毛手凶卅仁卅匀凶﹜蜕歹壬反什木庤及坱羱元扎﹝
+	Window 21394,next
+#\n\n﹛＿凛及峸木卞井井歹日内戏五月仇午及匹五月手及手中月﹝仄井仄酸ゴ卅互日云蟆反公丹反中井卅中方丹分﹝
+#\n﹛谛及蜕邯匹≦扪抰≧午中丹及分公丹分卅﹝云蟆互钒仁手及匹丐月蜃曰﹜扪抰井日反⑧木日木氏﹝
+#\n\n﹛＿创貊反中中井〝
+	Window 21395,next
+	Window_21396,yes,no
+		Window_YES
+			KillItem 18780
+			KillItem 18781
+			KillItem 18782
+			LeaveGroup
+			Warp 0,15563,15,15
+		Window_NO
+			KillItem 18780
+			KillItem 18781
+			KillItem 18782
+			LeaveGroup
+			Warp 0,15561,15,15

@@ -1,0 +1,17 @@
+
+block
+
+
+
+
+#	Window "\n\n﹛晓菟缜穴旦正□及母立□匹允﹝",next
+	Window 3006996,next
+
+
+#	Window "\n\n﹛票钗卞枑曰引允井〝",ok
+	Window 3006997,ok
+
+
+	Window_ok
+
+		warp 0,59503,147,125

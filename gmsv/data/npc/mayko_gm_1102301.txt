@@ -1,0 +1,15 @@
+#####∞¬¬Í÷Æ È
+
+block 
+	 Window 1109352,NEXT
+	 Window 1109353,YES,NO
+	 Window_YES
+	 	 Window 1109354,NEXT
+	 	 Window 1109355,NEXT
+	 	 Window 1109356,NEXT
+	 	 Window 1109357,NEXT
+		 EndWindow 1109358
+	 	
+
+	 Window_NO
+endblock

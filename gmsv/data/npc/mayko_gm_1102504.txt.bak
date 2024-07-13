@@ -1,0 +1,30 @@
+##1102504士兵 mayko_gm_1102504.txt
+#1110288	\n\n\n\n\@c未经许可不许进入。
+#1110289	\n\n\n　　　什么？\n　　　你说这是传说中红花的种子？
+#1110290	\n\n\n　　　嗯～这样吗～\n　　　我先帮你种看看～\n　　　你一个昼夜后再来吧～
+#1110291	\n\n\n\n\@c还没经过一个昼夜，你急啥～
+#1110292	\n\n\n　　　真是不可思异呀～\n　　　真的开满了红花～\n　　　你进去吧～
+#谜之种子40979
+#栽种的纸条40980
+
+block Item 40980>0 && ItemCreateTime 40980>120
+	 Window 1110292,OK
+	 Window_OK Item 40980<0
+	 EndWindow 1109482	 	 	 
+	 Window_OK 
+	 	 KillItem 40989,1
+	 	 LeaveGroup
+	 	 Warp 0,32286,12,17
+	 	 Endblock
+	 	
+block Item 40980>0
+	 EndWindow 1110291	 	
+block Item 40979>0
+	 Window 1110289,OK
+	 Window_OK Item 40979>0
+	 KillItem 40979,1
+  	 GiveLeak1Item 40980,1
+	 EndWindow 1110290
+	 
+block 
+	 EndWindow 1110288	 	

@@ -1,0 +1,29 @@
+##mayko_gm_1051620.txt
+##通灵师30010	221	153
+##1054419	\n\n\n　　那个小女孩想到地狱探父，\n　　孝心可嘉，可是太危险了。
+##1054420	\n\n\n　　唔～你要帮他呀～\n　　像你这样的强者，应该没问题吧。
+##1054421	\n\n　　你只要把这朵普渡红莲，拿给小女孩的父亲就可以了～\n　　这样就可以超渡恶鬼，让他们短时间相会。
+##1054422	\n\n\n@c准备好我就帮你入地狱寻人。
+##1054423	\n\n\n@c准备好再来找我。
+##1054430	\n\n\n@c你真是个好心的年轻人。
+
+block item 47295>0
+	 EndWindow 1054430
+block Item  47294 >0
+	 Window 1054422,YES,NO 
+	 Window_NO 	
+	 EndWindow 1054423	
+	 Window_YES
+	 Warp 0,32271,31,42
+	 Endblock
+block Item 47293 >0
+	 Window 1054419,NEXT
+ 	 Window 1054420,OK
+ 	 Window_OK Item 47293>0
+	 KillItem 47293,1
+	 GiveLeak1Item 47294,1
+	 EndWindow 1054421
+block	 
+	 EndWindow 1054419
+ 	 
+	

@@ -1,0 +1,87 @@
+#鲁恩
+#1053288	\n\n\n\n@c咦～你的东西突然不见，是不是掉了。	1
+
+
+
+##夏日香气的部份
+#1110555	\n\n\n\n@c时间还早呢～这么心急作啥！	1
+#1110556	\n\n\n\n@c好了～你拿去给优里吧！	1
+block Item 41064>0
+	 EndWindow 1110556
+block   Item 41066 >0 && ItemCreateTime 41066>720 ## 12hr  =60分*12hr
+	 KillItem 41066,1
+	 GiveLeak1Item 41064,1
+	 EndWindow 1110556
+block   Item 41066 >0
+	 EndWindow 1110555
+#1110554	\n\n\n　　　百合球根，水之营养剂，好，\n　　　你 ６昼夜(真实时间１２小时)来拿吧！！	1
+block Item 41063>0 && Item 18796>0	 
+	 KillItem 41063,1
+	 KillItem 18796,1
+	 GiveLeak1Item 41066,1
+	 EndWindow 1110554
+
+block Item 41063>0
+	 Window 1110552,NEXT
+	 EndWindow 1110553
+
+#1110552	\n\n\n　　　百合球根呀～\n　　　我还以为你要磨成药来吃呢！	1
+#1110553	\n\n\n\n@c这要有水之营养剂才行喔！！	1
+
+###南国的巨花
+block Item 41062>0
+	 EndWindow 1110543
+#1110542	\n\n\n\n@c希望能多了解一点有关巨花的事。	1
+#1110543	\n\n\n\n@c热带的花朵真奇妙。	1
+block Item 41061>0
+	 EndWindow 1110542
+block Item 41060>0
+	 EndWindow 1110542	 
+block Item 41057 >0
+#1110535	\n\n\n　　　芬芬是热带植物学者的助理呀～\n　　　我听说她要去坎那贝拉～	1
+	 Window 1110535,OK
+	 Window_OK Item 41057>0
+	 KillItem 41057,1
+	 GiveLeak1Item 41060,1
+	 EndWindow 1110536
+	 Window_OK
+	 EndWindow 1053288
+	 
+#1110536	\n\n\n　　　我写封信给你～\n　　　你带去坎那贝拉给芬芬吧！	1
+
+block Item 41056 >0
+	 EndWindow 1110530
+#1110530	\n\n　　　你可以到阿凯鲁法村找惠惠，\n　　　她叔叔是热带植物学者！	1	
+block Item 41059 >0
+	 Window 1110528,NEXT
+#找惠
+#1110528	\n\n　　　喔喔～又学了一课，\n　　　我想想还有谁对热带植物比较了解。	1
+	 Window 1110529,OK
+#1110529	\n\n　　　我想到了～\n　　　你可以到阿凯鲁法村找惠惠，\n　　　她叔叔是热带植物学者！	1
+	 Window_OK Item 41059>0
+	 KillItem 41059,1
+	 GiveLeak1Item 41056,1
+	 EndWindow 1110530
+#1110530	\n\n　　　你可以到阿凯鲁法村找惠惠，\n　　　她叔叔是热带植物学者！	1	 
+	 Window_OK
+	 EndWindow 1053288
+
+block Item 41058>0
+	 EndWindow 1110523
+#1110523	\n\n\n\n@c琪琪应该是在南恰特拉第一与第二通道之间的海岸吧！	1
+
+block 
+#找琪
+	 Window 1110520,YES,NO
+#1110520	\n\n\n\n@c我想打听苏之国传说中的巨花，你有兴趣吗？？	1
+	 Window_YES ItemSpace < 1
+	 EndWindow 1110522
+	 Window_YES
+#1110522	\n\n\n　　　我听说植物学家琪琪有研究，\n　　　你去找琪琪吧！\n　　　她可能在南恰特拉山的海岸研究！！	1
+	 Window 1110522,NEXT
+	 GiveLeak1Item 41058,1
+	 EndWindow 1110523
+#1110523	\n\n\n\n@c琪琪应该是在南恰特拉第一与第二通道之间的海岸吧！	1
+	 Window_NO
+	 EndWindow 1110521
+#1110521	\n\n\n\n@c有兴趣再找我吧！！	1

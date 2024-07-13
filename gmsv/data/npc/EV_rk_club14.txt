@@ -1,0 +1,225 @@
+#
+#隶澡阁仿丢仿
+#
+
+
+
+###﹛痿缜谛卅日﹛###
+block Job >= 202 && Job <= 207 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 59
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛忕缜谛卅日﹛###
+block Job >= 212 && Job <= 217 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 119
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛键缜谛卅日﹛###
+block Job >= 222 && Job <= 227 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 179
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛菰缜谛卅日﹛###
+block Job >= 232 && Job <= 237 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 239
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛橡缜谛卅日﹛###
+block Job >= 242 && Job <= 247 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 299
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛皮□丢仿件缜谛卅日﹛###
+block Job >= 252 && Job <= 257 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 359
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛瓜奶白缜谛卅日﹛###
+block Job >= 262 && Job <= 267 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 419
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛场缜谛卅日﹛###
+block Job >= 272 && Job <= 277 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 479
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛佴阂缜谛卅日﹛###
+block Job >= 282 && Job <= 287 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 539
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛顶缜谛卅日﹛###
+block Job >= 292 && Job <= 297 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 599
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛汋缜谛卅日﹛###
+block Job >= 302 && Job <= 307 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 659
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛夫□皮缜谛卅日﹛###
+block Job >= 312 && Job <= 317 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 718
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛皮□汁缜谛卅日﹛###
+block Job >= 322 && Job <= 327 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 779
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛楔缜谛卅日﹛###
+block Job >= 332 && Job <= 337 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 839
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛贱缜谛卅日﹛###
+block Job >= 342 && Job <= 347 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21775,Next
+#\n\n
+	Window 21776,Yes,No
+		Window_No
+		Window_Yes Item 18966 >= 1
+			KillItem 18966,1
+			GiveRecipe 899
+#\n\n
+			Endwindow 21777
+		Window_Yes
+			Endwindow 21875
+
+###﹛缜谛动陆卅日﹛###
+block Item 16242 == 1 && StampCount 16242 == 2
+#
+	Endwindow 21775
+
+###
+block
+#\n\n﹛中引?辉午及凛棉毛啼仄氏匹中月氏分﹝\n﹛俇戈井日梁呺仄卅中匹仁木﹝
+	Endwindow 21774

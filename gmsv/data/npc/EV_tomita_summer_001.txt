@@ -1,0 +1,85 @@
+#﹛璋剀祸母件斥亦件﹋蛙笙菱心母件斥亦件﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛杹?打□旦玄ㄠ及摒
+
+###﹛由□泛奴毛赚氏匹中月桦宁
+
+block Group >= 2
+	EndWindow 3202647
+
+		#\n\n﹛药虫匹反じ木卅中兮﹝ㄠ谛内勾侳中方﹝
+
+
+
+###﹛Ⅷ及萼﹜ヶ及萼﹜幕及萼及升木井互30蜊动晓
+
+block Item_16000 >= 30 || Item_16001 >= 30 || Item_16002 >= 30
+		EndWindow 3202648
+
+		#\n\n﹛左伊反仇及母件斥亦件及杹?打□旦玄分﹝\n﹛氏〝﹛云蟆﹜支仃卞凶仁今氏萼毛儅匀化月卅﹝\n﹛公氏卅俓舰曰毛じ木月歹仃卞反中井卅中兮﹜\n﹛窖木窖木永″
+		EndBlock
+
+
+
+###﹛Ⅷ及萼﹜ヶ及萼﹜幕及萼互升木手30蜊恍坢
+
+block 
+	Window 3202649,YES,NO
+
+		#\n\n﹛左伊反仇及母件斥亦件及杹?打□旦玄分﹝\n﹛揪啜中允月卅﹜穴永扔□斥阁元扎卅中兮″\n﹛母件斥亦件卞じ曰凶中及井〝
+
+		Window_YES Group >= 2
+			EndWindow 3202650
+
+		#\n\n﹛云蟆﹜仇匀公曰醮棉毛裟太支互匀凶卅″\n﹛内月中蛊反じ木卅中兮﹜窖木窖木永″
+
+		Window_YES Item 16000 >= 30
+			EndWindow 3202651
+
+		#\n\n﹛云蟆﹜萼毛凶仁今氏儅匀化中月卅﹝\n﹛公丹中丹俓舰曰反じ木卅中兮﹜窖木永″
+
+		Window_YES Item 16001 >= 30
+			EndWindow 3202652
+
+		#\n\n﹛云蟆﹜萼毛凶仁今氏儅匀化中月卅﹝\n﹛公丹中丹俓舰曰反じ木卅中兮﹜窖木永″
+
+		Window_YES Item 16002 >= 30
+			EndWindow 3202653
+
+		#\n\n﹛云蟆﹜萼毛凶仁今氏儅匀化中月卅﹝\n﹛公丹中丹俓舰曰反じ木卅中兮﹜窖木永″
+
+		Window_YES
+			Window 3202654,OK
+
+		#\n\n﹛公木卅日引内﹜左伊午鴃扙分永″\n﹛目永目永目永﹜手氏匹支月兮永″″
+
+				Window_OK Group >= 2
+					EndWindow 3202655
+
+		#\n\n﹛云蟆﹜仇匀公曰醮棉毛裟太支互匀凶卅″\n﹛内月中蛊反じ木卅中兮﹜窖木窖木永″
+
+				Window_OK Item 16000 >= 30
+					EndWindow 3202656
+
+		#\n\n﹛云蟆﹜萼毛凶仁今氏儅匀化中月卅﹝\n﹛公丹中丹俓舰曰反じ木卅中兮﹜窖木永″
+
+				Window_OK Item 16001 >= 30
+					EndWindow 3202657
+
+		#\n\n﹛云蟆﹜萼毛凶仁今氏儅匀化中月卅﹝\n﹛公丹中丹俓舰曰反じ木卅中兮﹜窖木永″
+
+				Window_OK Item 16002 >= 30
+					EndWindow 3202658
+
+		#\n\n﹛云蟆﹜萼毛凶仁今氏儅匀化中月卅﹝\n﹛公丹中丹俓舰曰反じ木卅中兮﹜窖木永″
+
+				Window_OK
+					Encount 3|0,59715,170,52||0|||||0|305151|||||||||
+
+		Window_NO
+			EndWindow 3202659
+
+		#\n\n﹛じ日卅中及井方﹝勾引日卅中兮﹝转媪分兮﹝\n﹛元扎丐﹜愤坌匹愤坌及葵毛手戈仇午卞允月兮″
+
+
+

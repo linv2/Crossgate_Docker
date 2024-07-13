@@ -1,0 +1,43 @@
+#1055811	\n\n\n@c唉～～人老了就不重用了！！
+#1055812	\n\n\n　　　我希望得到晨曦女神的祝福，\n　　　可是我老到爬不动流星山丘、乌克兰村、\n　　　雷姆尔山与布朗山呀！！
+#1055813	\n\n\n　　　这真的是………\n　　　晨曦女神的首饰呀！！
+#1055814	\n\n\n@c可惜少了几件，如果能凑齐多好！！
+#1055815	\n\n\n　　　你可以让给我吗？？\n　　　我拿好东西跟你换。
+#1055816	\n\n\n@c谢谢你！！
+##11121	\n喔！真可惜。等你改变心意后再来吧！	8
+#耳饰？	晨曦的耳饰	47722
+#手环？	晨曦的手环	47723
+#项链？	晨曦的项链	47724
+#发饰？	晨曦的发饰	47725
+block Item 47722>0 && Item 47723 >0 && Item 47724>0 && Item 47725 >0
+	 Window 1055813,NEXT
+	 Window 1055815,YES,NO
+	 Window_YES Item 47722>0 && Item 47723 >0 && Item 47724>0 && Item 47725 >0
+	 KillItem 47722,1
+	 KillItem 47723,1
+	 KillItem 47724,1
+	 KillItem 47725,1
+	 
+	 GiveLeak1Item (47721%1$1,31000%19$1)
+	 EndWindow 1055816
+	 Window_YES
+	 EndWindow 1055814
+	 Window_NO
+	 EndWindow 11121
+	 	 
+block Item 47722>0
+	 Window 1055813,NEXT
+	 EndWindow 1055814
+block Item 47723>0
+	 Window 1055813,NEXT
+	 EndWindow 1055814	 
+block Item 47724>0
+	 Window 1055813,NEXT
+	 EndWindow 1055814
+block Item 47725>0
+	 Window 1055813,NEXT
+	 EndWindow 1055814		 	 
+block 
+	 Window 1055811,NEXT
+	 EndWindow 1055812
+	 

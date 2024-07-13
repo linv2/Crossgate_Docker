@@ -1,0 +1,50 @@
+#
+#オ樊弁巨旦玄
+#丢汀弁
+
+######### 玄伐弁 ########
+block EndEvent 13 == 1 && StrCmpChat == 15050
+#\n\n﹛脱互扜卞仄化匿厘卅月简赢分﹝
+	EndWindow 15092,OK
+
+######### 失术立 ########
+block EndEvent 13 == 1 && StrCmpChat == 14916
+#\n\n﹛氏〝峇及手及卞公丹中丹谛棉反云日氏互〝
+	EndWindow 15093,OK
+
+######### 市瓜奶 ########
+block EndEvent 13 == 1 && StrCmpChat == 14917
+#\n\n﹛井勾化峇毛桩化凶手及卞公丹中丹抩蟆及手及互云匀凶卅﹝
+	EndWindow 15094,OK
+
+######### 斥件瓜 ########
+block EndEvent 13 == 1 && StrCmpChat == 15052
+#\n\n﹛台及衙中竻分﹝峏ネ卅爵衔分匀凶﹝仄井仄呺简④?及端卞抰毛侹午仄凶﹝手丹分中少樯及狪分互卅﹝
+	EndWindow 15095,OK
+
+######### 左伙立瓜 ########
+block EndEvent 13 == 1 && StrCmpChat == 15053
+#\n\n﹛衙五竻斥件瓜及监分匀凶辉岭分﹝阔抸匹?仄中谛分匀凶﹝酸ゴ卅仇午卞斥件瓜互擢蛔仄化允什詨毛馨匀凶互﹝仇木手内中少氏樯及狪分﹝
+	EndWindow 15096,OK
+
+######### 丢汀弁 ########
+block EndEvent 13 == 1 && StrCmpChat == 15051
+#\n\n﹛中井卞手台及仇午分﹝
+	EndWindow 15097,OK
+
+######### 升仁 ########
+block EndEvent 13 == 1 && StrCmpChat == 14912
+#\n\n﹛仿件卞反匚诸卅月手及互丐月﹝手匀午手漆匹反?鳗踏及酦卞仄井绣箕仄卅中互﹝
+	EndWindow 15098,OK
+
+######### 夫匹氏仄斤 ########
+block EndEvent 13 == 1 && StrCmpChat == 15068
+#\n\n﹛?鳗踏卞反仿件及剪幕及绖互醒★筏今木化中月﹝仇木毛伈荸仁仇午反袱今木化中卅中互﹜呺简卞像丹凶户卞反中内木优邰卞卅月井手仄木氏﹝
+	EndWindow 15099,OK
+
+#########  ########
+block
+#\n\n﹛幻丹﹜盒彴毛?仃化峇及手及动陆互凶升曰邋仁午反钟仄中﹝斗匀仁曰今木化中仁午方中﹝凶分仄﹜仇及萝哗及仇午毛轼陆允木壬﹜中勾匹手丐卅凶及潟嗓卞叙中奁及剩互戏尹引允冗﹜甩甩甩甩甩﹝
+	EndWindow 15100,OK
+
+

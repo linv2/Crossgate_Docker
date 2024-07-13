@@ -1,0 +1,14 @@
+#?¦Þ????
+
+block
+	Window 22205,Next
+	Window 22206,Next
+	Window 22207,Next
+	Window 22208,OK
+		Window_OK
+			Play_SE 132,320,240
+			Changepal 13,120
+			Window 22245,OK
+			Window_OK
+				LeaveGroup
+				Warp 0,37009,39,29

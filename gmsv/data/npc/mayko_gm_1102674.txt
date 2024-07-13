@@ -1,0 +1,178 @@
+#mayko_gm_1102674.txt  新手武器  弓
+
+#强弓	2022	10000	20	10001	20	9613	8	10402	7	10002	20
+
+#1111339	\n\n\n@c你好！！我负责支援新星弓制作：
+
+#1111284	\n\n你现在有强弓材料印度轻木20份，枞20份，银条8份，毛毡7份，黄月木20份，
+
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111351	\n\n\n@c代工费是１０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+block item 10000>=20 && item 10001 >=20	&& item 9613 >= 8 && item 10402 >=7 && item 10002 >= 20
+	Window 1111339,next
+	Window 1111284,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111351,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -1000
+		killitem 10000,20
+		killitem 10001,20
+		killitem 9613,8
+		killitem 10402,7
+		killitem 10002,20
+		GiveLeak1Item 2022,1
+		endwindow 1111334
+
+#格斗弓	2023	10001	20	9613	9	10402	9	10002	20	10003	20
+
+#1111339	\n\n\n@c你好！！我负责支援新星弓制作：
+
+#1111285	\n\n你现在有格斗弓材料枞20份，银条9份，毛毡9份，黄月木20份，铁杉20份，
+
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111351	\n\n\n@c代工费是１０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+
+block item 10001>=20 && item 9613 >=9 && item 10402 >= 9 && item 10002 >=20 && item 10003 >= 20
+	Window 1111339,next
+	Window 1111285,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 111356
+	Window_yes
+		Window 1111351,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -1000
+		killitem 10001,20
+		killitem 9613,9
+		killitem 10402,9
+		killitem 10002,20
+		killitem 10003,20
+		GiveLeak1Item 2023,1
+		endwindow 1111334
+
+
+#巨弓	2055	10003	20	10004	20	9615	12	10005	20	9616	11
+
+#1111339	\n\n\n@c你好！！我负责支援新星弓制作：
+
+#1111286	\n\n你现在有巨弓材料铁杉20份，琵琶木20份，金条12份，赤松20份，白金条11份，
+
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111352	\n\n\n@c代工费是５０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+block item 10003>=20 && item 10004 >=20 && item 9615 >= 12 && item 10005 >=20 && item 9616 >= 11
+	Window 1111339,next
+	Window 1111286,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 111356
+	Window_yes
+		Window 1111352,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 4999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -5000
+		killitem 10003,20
+		killitem 10004,20
+		killitem 10005,20
+		killitem 9615,12
+		killitem 9616,11
+		GiveLeak1Item 2055,1
+		endwindow 1111334
+
+
+#长格斗弓	2052	10004	20	9615	13	10005	20	9616	12	10006	20
+#1111339	\n\n\n@c你好！！我负责支援新星弓制作：
+			
+#1111287	\n\n你现在有长格斗弓材料琵琶木20份，金条13份，赤松20份，白金条12份，朴20份，
+
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111352	\n\n\n@c代工费是５０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+
+block item 10004>=20 && item 9615 >= 13 && item 10005 >=20 && item 9616 >=12 && item 10006 >=20
+	Window 1111339,next
+	Window 1111287,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 111356
+	Window_yes
+		Window 1111352,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 4999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -5000
+		killitem 10004,20
+		killitem 9615,13
+		killitem 10005,20
+		killitem 9616,12
+		killitem 10006,20
+		
+		GiveLeak1Item 2052,1
+		endwindow 1111334
+
+
+
+#####没弓杖材料
+
+#1111339	\n\n\n@c你好！！我负责支援新星弓制作：
+#1111223	\n\n制做强弓需要印度轻木20份，枞20份，银条8份，毛毡7份，黄月木20份，
+#1111224	\n\n制做格斗弓需要枞20份，银条9份，毛毡9份，黄月木20份，铁杉20份，
+#1111225	\n\n制做巨弓需要铁杉20份，琵琶木20份，金条12份，赤松20份，白金条11份，
+#1111226	\n\n制做长格斗弓需要琵琶木20份，金条13份，赤松20份，白金条12份，朴20份，
+
+#1111355\n\n\n@c准备好材料再来找我！！
+
+block 
+	Window 1111339,next
+	Window 1111223,next
+	Window 1111224,next
+	Window 1111225,next
+	Window 1111226,next
+	Endwindow 1111355
+

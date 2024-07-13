@@ -1,0 +1,843 @@
+##########################
+# 晓菟缜         by 漪呿 #
+# ←伙申←               #
+##########################
+
+######## ≦拟中及累﹋/缗﹌≧动陆毛赭儅
+block Item 622043 >= 1 || Item 622044 >= 1 || Item 622045 >= 1 || Item 622046 >= 1 || Item 622051 >= 1 || Item 622052 >= 1 || Item 622053 >= 1 || Item 622054 >= 1 || Item 622055 >= 1 || Item 622056 >= 1 || Item 622057 >= 1 || Item 622058 >= 1
+	Window 3208324,OK
+
+		#\n\n﹛丐卅凶互儅匀化中月拟中及累反﹜\n﹛执及笛赁互箫曰卅中方﹝\n﹛公氏卅氏元扎﹜\n﹛仇仇尺侳月凤伞反卅中方匀″
+		Window_OK
+			KillItemAll 622043
+			KillItemAll 622044
+			KillItemAll 622045
+			KillItemAll 622046
+			KillItemAll 622051
+			KillItemAll 622052
+			KillItemAll 622053
+			KillItemAll 622054
+			KillItemAll 622055
+			KillItemAll 622056
+			KillItemAll 622057
+			KillItemAll 622058
+			Endblock
+
+
+
+######## A弘伙□皿 ############################
+## 痿诸阁?
+block Job == 14
+
+	GoToF case1
+
+## 爵忕诸阁?
+block Job == 24
+
+	GoToF case1
+
+## 嗤启绒衔
+block Job == 34
+
+	GoToF case1
+
+## 菰诸阁?
+block Job == 44
+
+	GoToF case1
+
+## 申扑亦永皿﹋弁伊伉永弁﹌
+block Job == 64
+
+	GoToF case1
+
+## 它奴扒□玉﹋呺诸阁﹌
+block Job == 74
+
+	GoToF case1
+
+## 它巧□夫永弁﹋热诸阁﹌
+block Job == 84
+
+	GoToF case1
+
+##扑乓□穴件﹋粖诸阁﹌
+block Job == 134
+
+	GoToF case1
+
+## 伞⑷诸阁?
+block Job == 144
+
+	GoToF case1
+
+
+*case1*
+
+	Window 3208325,NEXT
+
+		#\n\n﹛仁允仁允﹜窒毛公氏卅卞乱中化中月及〝\n﹛丐凶仄互仇仇卞中月仇午互﹜公氏卅卞尕合腔〝\n﹛孔孔孔﹜谨匀化化恌井匀凶﹝\n﹛内匀午内匀午﹜\n﹛@n卞莘中凶井匀凶氏分方﹝\n﹛弃中筏盛及酦匹﹜丐卅凶卞莘匀凶仇午﹜\n﹛切扎氏午创尹化月﹝
+
+	Window 3208326,NEXT
+
+		#\n\n﹛丐卅凶反﹜\n﹛丐凶仄互合匀化中凶动晓及谛分匀凶﹝\n﹛五匀午﹜丐卅凶卞反\n﹛拑蜃及第チ岭互丐月氏分友﹝\n﹛孔孔孔﹜公欠公欠﹜\n﹛仿件弁失永皿仄化手中中氏元扎卅中〝\n﹛丐卅凶及雄今反﹜丐凶仄互忡据允月方匀″
+
+	Window 3208327,YES,NO
+
+		#\n\n﹛漆方曰手匀午薕仄仁卅匀化﹜\n﹛引凶丐凶仄卞莘中卞侳化仁木凶日﹜\n﹛公及凛反豳衬卅仍邧?毛丐仆月方﹝\n﹛分井日沶窜仄化方﹝\n﹛公及澎卞儅匀化中月拟中及累卞﹝\n﹛中勾井丐凶仄互﹜\n﹛丐卅凶及抰毛畴中卞垫仁ざ引匹﹜\n﹛瑁仄化韶卅卅中匀化﹝
+
+		Window_NO
+			EndWindow 3208328
+
+		#\n\n﹛尹□﹜拟匀化仁木卅中及〝\n﹛仃切匀″
+
+		Window_YES
+			Window 3208329,OK
+
+		#\n\n﹛＿＿丐曰互午丹﹝\n﹛侉木卅中匹友﹝\n﹛丐凶仄反﹜中勾手丐卅凶毛苇化中月方﹝
+
+############ ≦拟中及累﹋敛/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622046 >= 1 || Item 622054 >= 1 || Item 622058 >= 1
+					EndWindow 3208330
+
+		#\n\n﹛丐木□〝\n﹛公及拟中及累﹜\n﹛敛执及笛赁互箫曰卅中方匀″
+
+
+############ ≦拟中及累﹋敛/缗﹌≧毛尕赭儅
+				Window_OK Item 622062 == 0
+					EndWindow 3208331
+
+		#\n\n﹛敛缙及拟中及累互卅中方〝
+
+
+############ ≦拟中及累﹋敛/缗﹌≧毛赭儅
+				Window_OK Item 622062 >= 1
+					KillItemAll 622062
+					EndEvent 90 = 1
+					LeaveGroup
+					warp 0,59505,166,87
+					Endblock
+
+
+
+
+
+
+
+
+
+######## B弘伙□皿 ############################
+## 排﹋オ樊﹌
+block Job == 154
+
+	GoToF case2
+
+## 宎衔赢
+block Job == 54
+
+	GoToF case2
+
+## 朼执诸阁?
+block Job == 94
+
+	GoToF case2
+
+## 甩奶皮伉□母□
+block Job == 104
+
+	GoToF case2
+
+# 譬项诸阁?
+block Job == 114
+
+	GoToF case2
+
+## 玄伉永弁旦正□﹋霉篑﹌
+block Job == 124
+
+	GoToF case2
+
+## 旦□由□旦正失﹋阽曰阂﹌
+block Job == 164
+
+	GoToF case2
+
+
+## 屻赢
+block Job == 434
+
+	GoToF case2
+
+## 豢迕琼衔阁
+block Job == 444
+
+	GoToF case2
+##爆弹师
+block Job == 1004
+
+	GoToF case2	
+
+
+*case2*
+
+	Window 3208332,NEXT
+
+		#\n\n﹛仁允仁允﹜窒毛公氏卅卞乱中化中月及〝\n﹛丐凶仄互仇仇卞中月仇午互﹜公氏卅卞尕合腔〝\n﹛孔孔孔﹜谨匀化化恌井匀凶﹝\n﹛内匀午内匀午﹜\n﹛@n卞莘中凶井匀凶氏分方﹝\n﹛弃中筏盛及酦匹﹜丐卅凶卞莘匀凶仇午﹜\n﹛切扎氏午创尹化月﹝
+
+	Window 3208333,NEXT
+
+		#\n\n﹛丐卅凶反﹜\n﹛丐凶仄互合匀化中凶动晓及谛分匀凶﹝\n﹛五匀午﹜丐卅凶卞反\n﹛拑蜃及第チ岭互丐月氏分友﹝\n﹛孔孔孔﹜公欠公欠﹜\n﹛仿件弁失永皿仄化手中中氏元扎卅中〝\n﹛丐卅凶及雄今反﹜丐凶仄互忡据允月方匀″
+
+	Window 3208334,YES,NO
+
+		#\n\n﹛漆方曰手匀午薕仄仁卅匀化﹜\n﹛引凶丐凶仄卞莘中卞侳化仁木凶日﹜\n﹛公及凛反豳衬卅仍邧?毛丐仆月方﹝\n﹛分井日沶窜仄化方﹝\n﹛公及澎卞儅匀化中月拟中及累卞﹝\n﹛中勾井丐凶仄互﹜\n﹛丐卅凶及抰毛畴中卞垫仁ざ引匹﹜\n﹛瑁仄化韶卅卅中匀化﹝
+
+		Window_NO
+			EndWindow 3208335
+
+		#\n\n﹛尹□﹜拟匀化仁木卅中及〝\n﹛仃切匀″
+
+		Window_YES
+			Window 3208336,OK
+
+		#\n\n﹛＿＿丐曰互午丹﹝\n﹛侉木卅中匹友﹝\n﹛丐凶仄反﹜中勾手丐卅凶毛苇化中月方﹝
+
+
+############ ≦拟中及累﹋毡/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622043 >= 1 || Item 622051 >= 1 || Item 622055 >= 1
+					EndWindow 3208337
+
+		#\n\n﹛丐木□〝\n﹛公及拟中及累﹜\n﹛毡执及笛赁互箫曰卅中方匀″
+
+############ ≦拟中及累﹋毡/缗﹌≧毛尕赭儅
+			Window_OK Item 622059 == 0
+				EndWindow 3208338
+
+		#\n\n﹛毡缙及拟中及累互卅中方〝
+
+############ ≦拟中及累﹋毡/缗﹌≧
+			Window_OK Item 622059 >= 1
+				KillItemAll 622059
+				EndEvent 90 = 1
+				LeaveGroup
+				warp 0,59505,166,87
+				Endblock
+
+
+
+
+
+
+
+
+
+
+######## C弘伙□皿 ############################
+## 豢迕琼痿缜谛
+block Job == 204
+
+	GoToF case3
+
+## 豢迕琼忕缜谛
+block Job == 214
+
+	GoToF case3
+
+## 豢迕琼键缜谛
+block Job == 224
+
+	GoToF case3
+
+## 豢迕琼菰缜谛
+block Job == 234
+
+	GoToF case3
+
+## 豢迕琼橡缜谛
+block Job == 244
+
+	GoToF case3
+
+## 豢迕琼髑填缜谛
+block Job ==254
+
+	GoToF case3
+
+## 豢迕琼瓜奶白缜谛
+block Job == 264
+
+	GoToF case3
+
+## 豢迕琼场缜谛
+block Job == 274
+
+	GoToF case3
+
+## 豢迕琼佴阂缜谛
+block Job == 284
+
+	GoToF case3
+
+## 豢迕琼顶缜谛
+block Job == 294
+
+	GoToF case3
+
+## 豢迕琼汋缜谛
+block Job == 304
+
+	GoToF case3
+
+## 豢迕琼夫□皮缜谛
+block Job == 314
+
+	GoToF case3
+
+## 豢迕琼皮□汁缜谛
+block Job == 324
+
+	GoToF case3
+
+## 豢迕琼楔缜谛
+block JOb == 334
+
+	GoToF case3
+
+## 豢迕琼贱缜谛
+block Job == 344
+
+	GoToF case3
+
+
+*case3*
+
+
+	Window 3208339,NEXT
+
+		#\n\n﹛仁允仁允﹜窒毛公氏卅卞乱中化中月及〝\n﹛丐凶仄互仇仇卞中月仇午互﹜公氏卅卞尕合腔〝\n﹛孔孔孔﹜谨匀化化恌井匀凶﹝\n﹛内匀午内匀午﹜\n﹛@n卞莘中凶井匀凶氏分方﹝\n﹛弃中筏盛及酦匹﹜丐卅凶卞莘匀凶仇午﹜\n﹛切扎氏午创尹化月﹝
+
+	Window 3208340,NEXT
+
+		#\n\n﹛丐卅凶反﹜\n﹛丐凶仄互合匀化中凶动晓及谛分匀凶﹝\n﹛五匀午﹜丐卅凶卞反\n﹛拑蜃及第チ岭互丐月氏分友﹝\n﹛孔孔孔﹜公欠公欠﹜\n﹛仿件弁失永皿仄化手中中氏元扎卅中〝\n﹛丐卅凶及チ恘反﹜丐凶仄互忡据允月方匀″
+
+	Window 3208341,YES,NO
+
+		#\n\n﹛漆方曰手匀午薕仄仁卅匀化﹜\n﹛引凶丐凶仄卞莘中卞侳化仁木凶日﹜\n﹛公及凛反豳衬卅仍邧?毛丐仆月方﹝\n﹛分井日沶窜仄化方﹝\n﹛公及澎卞儅匀化中月拟中及累卞﹝
+
+		Window_NO
+			EndWindow 3208342
+
+		#\n\n﹛尹□﹜拟匀化仁木卅中及〝\n﹛仃切匀″
+
+		Window_YES
+			Window 3208343,OK
+
+		#\n\n﹛＿＿丐曰互午丹﹝\n﹛侉木卅中匹友﹝\n﹛丐凶仄反﹜中勾手丐卅凶毛苇化中月方﹝
+
+############ ≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+					EndWindow 3208344
+
+		#\n\n﹛丐木□〝\n﹛公及拟中及累﹜\n﹛恦执及笛赁互箫曰卅中方匀″
+
+############ ≦拟中及累﹋恦/缗﹌≧毛尕赭儅
+				Window_OK Item 622061 == 0
+					EndWindow 3208345
+
+		#\n\n﹛恦缙及拟中及累互卅中方〝
+
+
+############ ≦拟中及累﹋恦/缗﹌≧毛赭儅
+				Window_OK Item 622061 >= 1
+					KillItemAll 622061
+					EndEvent 90 = 1
+					LeaveGroup
+					warp 0,59505,166,87
+					Endblock
+
+
+
+
+
+
+######## D弘伙□皿 ############################
+## 豢迕琼譬咥阁
+block Job == 354
+
+	GoToF case4
+
+## 豢迕琼泔管阁
+block Job == 364
+
+	GoToF case4
+
+## 豢迕琼朹湛膜咥鼎
+block Job == 374
+
+	GoToF case4
+
+## 豢迕琼侂填膜咥鼎
+block Job == 384
+
+	GoToF case4
+
+## 豢迕琼椎烂衔
+block Job == 394
+
+	GoToF case4
+
+## 豢迕琼五仇曰
+block Job == 454
+
+	GoToF case4
+
+## 豢迕琼润谛
+block Job == 464
+
+	GoToF case4
+
+## 豢迕琼驰屺
+block Job == 474
+
+	GoToF case4
+
+## 译奿珃茧樱
+block Job == 414
+
+	GoToF case4
+
+## 营谛
+block Job == 424
+
+	GoToF case4
+## 纺织工
+block Job == 1014
+
+	GoToF case4	
+
+
+
+*case4*
+
+	Window 3208346,NEXT
+
+		#\n\n﹛仁允仁允﹜窒毛公氏卅卞乱中化中月及〝\n﹛丐凶仄互仇仇卞中月仇午互﹜公氏卅卞尕合腔〝\n﹛孔孔孔﹜谨匀化化恌井匀凶﹝\n﹛内匀午内匀午﹜\n﹛@n卞莘中凶井匀凶氏分方﹝\n﹛弃中筏盛及酦匹﹜丐卅凶卞莘匀凶仇午﹜\n﹛切扎氏午创尹化月﹝
+
+	Window 3208347,NEXT
+
+		#\n\n﹛丐卅凶反﹜\n﹛丐凶仄互合匀化中凶动晓及谛分匀凶﹝\n﹛五匀午﹜丐卅凶卞反\n﹛拑蜃及第チ岭互丐月氏分友﹝\n﹛孔孔孔﹜公欠公欠﹜\n﹛仿件弁失永皿仄化手中中氏元扎卅中〝\n﹛丐卅凶及チ恘反﹜丐凶仄互忡据允月方匀″
+
+	Window 3208348,YES,NO
+
+		#\n\n﹛漆方曰手匀午薕仄仁卅匀化﹜\n﹛引凶丐凶仄卞莘中卞侳化仁木凶日﹜\n﹛公及凛反豳衬卅仍邧?毛丐仆月方﹝\n﹛分井日沶窜仄化方﹝\n﹛公及澎卞儅匀化中月拟中及累卞﹝
+
+		Window_NO
+			EndWindow 3208349
+
+		#\n\n﹛尹□﹜拟匀化仁木卅中及〝\n﹛仃切匀″
+
+		Window_YES
+			Window 3208350,OK
+
+		#\n\n﹛＿＿丐曰互午丹﹝\n﹛侉木卅中匹友﹝\n﹛丐凶仄反﹜中勾手丐卅凶毛苇化中月方﹝
+
+############ ≦拟中及累﹋疵/坚orくor辅﹌≧毛赭儅
+				Window_OK Item 622044 >= 1 || Item 622052 >= 1 || Item 622056 >= 1
+					EndWindow 3208351
+
+		#\n\n﹛丐木□〝\n﹛公及拟中及累﹜\n﹛疵执及笛赁互箫曰卅中方匀″
+
+
+############ ≦拟中及累﹋疵/缗﹌≧毛尕赭儅
+				Window_OK Item 622060 == 0
+					EndWindow 3208352
+
+		#\n\n﹛疵缙及拟中及累互卅中方〝
+
+
+############ ≦拟中及累﹋疵/缗﹌≧毛赭儅
+				Window_OK Item 622060 >= 1
+					KillItemAll 622060
+					EndEvent 90 = 1
+					LeaveGroup
+					warp 0,59505,166,87
+					Endblock
+
+
+
+
+
+
+
+
+######## 晓菟缜///A弘伙□皿 ############################
+## 痿诸阁?动晓
+block Job >= 15 && Job <= 19
+
+	GoToF case5
+
+## 爵忕诸阁?动晓
+block Job >= 25 && Job <= 29
+
+	GoToF case5
+
+## 嗤启绒衔动晓
+block Job >= 35 && Job <= 39
+
+	GoToF case5
+
+## 菰诸阁?动晓
+block Job >= 45 && Job <= 49
+
+	GoToF case5
+
+## 申扑亦永皿动晓﹋弁伊伉永弁﹌
+block Job >= 65 && Job <= 69
+
+	GoToF case5
+
+## 它奴扒□玉动晓﹋呺诸阁﹌
+block Job >= 75 && Job <= 79
+
+	GoToF case5
+
+## 它巧□夫永弁﹋热诸阁﹌
+block Job >= 85 && Job <= 89
+
+	GoToF case5
+
+##扑乓□穴件动晓﹋粖诸阁﹌
+block Job >= 135 && Job <= 139
+
+	GoToF case5
+
+## 伞⑷诸阁?动晓
+block Job >= 145 && Job <= 149
+
+	GoToF case5
+
+
+
+*case5*
+
+	Window 3208353,OK
+
+		#\n\n﹛仁允仁允﹜呿癫卞侳化仁木凶氏分友﹝\n﹛谨匀化凶方匀″
+
+############ ≦拟中及累﹋敛/坚orくor辅﹌≧毛赭儅
+		Window_OK Item 622046 >= 1 || Item 622054 >= 1 || Item 622058 >= 1
+			EndWindow 3208354
+
+		#\n\n﹛丐木□〝\n﹛公及拟中及累﹜\n﹛敛执及笛赁互箫曰卅中方匀″
+
+
+############ ≦拟中及累﹋敛/缗﹌≧毛尕赭儅
+		Window_OK Item 622062 == 0
+			EndWindow 3208355
+
+		#\n\n﹛敛缙及拟中及累互卅中方〝
+
+
+
+############ ≦拟中及累﹋敛/缗﹌≧毛赭儅
+		Window_OK Item 622062 >= 1
+			KillItemAll 622062
+			LeaveGroup
+			warp 0,59934,77,96
+			Endblock
+
+
+
+
+
+######## 晓菟缜///B弘伙□皿 ############################
+## 排动晓﹋オ樊﹌
+block Job >= 155 && Job <= 159
+
+	GoToF case6
+
+## 宎衔赢动晓
+block Job >= 55 && Job <= 59
+
+	GoToF case6
+
+## 朼执诸阁?动晓
+block Job >= 95 && Job <= 99
+
+	GoToF case6
+
+## 甩奶皮伉□母□
+block Job >= 105 && Job <= 109
+
+	GoToF case6
+
+# 譬项诸阁?动晓
+block Job >= 115 && Job <= 119
+
+	GoToF case6
+
+## 玄伉永弁旦正□动晓﹋霉篑﹌
+block Job >= 125 && Job <= 129
+
+	GoToF case6
+
+## 旦□由□旦正失动晓﹋阽曰阂﹌
+block Job >= 165 && Job <= 169
+
+	GoToF case6
+
+## 屻赢动晓
+block Job >= 435 && Job <= 439
+
+	GoToF case6
+
+## 豢迕琼衔阁动晓
+block Job >= 445 && Job <= 449
+
+	GoToF case6
+##爆弹师	
+block Job >= 1005 && Job <= 1009
+
+	GoToF case6	
+
+
+*case6*
+
+	Window 3208356,OK
+
+		#\n\n﹛仁允仁允﹜呿癫卞侳化仁木凶氏分友﹝\n﹛谨匀化凶方匀″
+
+############ ≦拟中及累﹋毡/坚orくor辅﹌≧毛赭儅
+		Window_OK Item 622043 >= 1 || Item 622051 >= 1 || Item 622055 >= 1
+			EndWindow 3208357
+
+		#\n\n﹛丐木□〝\n﹛公及拟中及累﹜\n﹛毡执及笛赁互箫曰卅中方匀″
+
+############ ≦拟中及累﹋毡/缗﹌≧毛尕赭儅
+		Window_OK Item 622059 == 0
+			EndWindow 3208358
+
+		#\n\n﹛毡缙及拟中及累互卅中方〝
+
+############ ≦拟中及累﹋毡/缗﹌≧
+		Window_OK Item 622059 >= 1
+			KillItemAll 622059
+			LeaveGroup
+			warp 0,59934,77,96
+			Endblock
+
+
+
+
+
+
+
+
+
+######## 晓菟缜///C弘伙□皿 ############################
+## 豢迕琼痿缜谛动晓
+block Job >= 205 && Job <= 209
+
+	GoToF case7
+
+## 豢迕琼忕缜谛动晓
+block Job >= 215 && Job <= 219
+
+	GoToF case7
+
+## 豢迕琼键缜谛动晓
+block Job >= 225 && Job <= 229
+
+	GoToF case7
+
+## 豢迕琼菰缜谛动晓
+block Job >= 235 && Job <= 239
+
+	GoToF case7
+
+## 豢迕琼橡缜谛动晓
+block Job >= 245 && Job <= 249
+
+	GoToF case7
+
+## 豢迕琼髑填缜谛动晓
+block Job >=255 && Job <= 259
+
+	GoToF case7
+
+## 豢迕琼瓜奶白缜谛动晓
+block Job >= 265 && Job <= 269
+
+	GoToF case7
+
+## 豢迕琼场缜谛动晓
+block Job >= 275 && Job <= 279
+
+	GoToF case7
+
+## 豢迕琼佴阂缜谛动晓
+block Job >= 285 && Job <= 289
+
+	GoToF case7
+
+## 豢迕琼顶缜谛动晓
+block Job >= 295 && Job <= 299
+
+	GoToF case7
+
+## 豢迕琼汋缜谛动晓
+block Job >= 305 && Job <= 309
+
+	GoToF case7
+
+## 豢迕琼夫□皮缜谛动晓
+block Job >= 315 && Job <= 319
+
+	GoToF case7
+
+## 豢迕琼皮□汁缜谛动晓
+block Job >= 325 && Job <= 329
+
+	GoToF case7
+
+## 豢迕琼楔缜谛动晓
+block JOb >= 335 && Job <= 339
+
+	GoToF case7
+
+## 豢迕琼贱缜谛动晓
+block Job >= 345 && Job <= 349
+
+	GoToF case7
+
+
+*case7*
+
+	Window 3208359,OK
+
+		#\n\n﹛仁允仁允﹜呿癫卞侳化仁木凶氏分友﹝\n﹛谨匀化凶方匀″
+
+############ ≦拟中及累﹋恦/坚orくor辅﹌≧毛赭儅
+		Window_OK Item 622045 >= 1 || Item 622053 >= 1 || Item 622057 >= 1
+			EndWindow 3208360
+
+		#\n\n﹛丐木□〝\n﹛公及拟中及累﹜\n﹛恦执及笛赁互箫曰卅中方匀″
+
+############ ≦拟中及累﹋恦/缗﹌≧毛尕赭儅
+		Window_OK Item 622061 == 0
+			EndWindow 3208361
+
+		#\n\n﹛恦缙及拟中及累互卅中方〝
+
+
+############ ≦拟中及累﹋恦/缗﹌≧毛赭儅
+		Window_OK Item 622061 >= 1
+			KillItemAll 622061
+			LeaveGroup
+			warp 0,59934,77,96
+			Endblock
+
+
+
+
+
+######## 晓菟缜///D弘伙□皿 ############################
+## 译奿珃茧樱动晓
+block Job >= 415 && Job <= 419
+
+	GoToF case8
+
+## 营谛动晓
+block Job >= 425 && Job <= 429
+
+	GoToF case8
+
+## 豢迕琼譬咥阁动晓
+block Job >= 355 && Job <= 359
+
+	GoToF case8
+
+## 豢迕琼泔管阁动晓
+block Job >= 365 && Job <= 369
+
+	GoToF case8
+
+## 豢迕琼朹湛膜咥鼎动晓
+block Job >= 375 && Job <= 379
+
+	GoToF case8
+
+## 豢迕琼侂填膜咥鼎动晓
+block Job >= 385 && Job <= 389
+
+	GoToF case8
+
+## 豢迕琼椎烂衔动晓
+block Job >= 395 && Job <= 399
+
+	GoToF case8
+
+## 豢迕琼五仇曰
+block Job >= 455 && Job <= 459
+
+	GoToF case8
+
+## 豢迕琼润谛
+block Job >= 465 && Job <= 469
+
+	GoToF case8
+
+## 豢迕琼驰屺
+block Job >= 475 && Job <= 479
+
+	GoToF case8
+##纺织工
+block Job >= 1015 && Job <= 1019
+
+	GoToF case8
+
+*case8*
+
+	Window 3208362,OK
+
+		#\n\n﹛仁允仁允﹜呿癫卞侳化仁木凶氏分友﹝\n﹛谨匀化凶方匀″
+
+############ ≦拟中及累﹋疵/坚orくor辅﹌≧毛赭儅
+		Window_OK Item 622044 >= 1 || Item 622052 >= 1 || Item 622056 >= 1
+			EndWindow 3208363
+
+		#\n\n﹛丐木□〝\n﹛公及拟中及累﹜\n﹛疵执及笛赁互箫曰卅中方匀″
+
+
+############ ≦拟中及累﹋疵/缗﹌≧毛尕赭儅
+		Window_OK Item 622060 == 0
+			EndWindow 3208364
+
+		#\n\n﹛疵缙及拟中及累互卅中方〝
+
+
+############ ≦拟中及累﹋疵/缗﹌≧毛赭儅
+		Window_OK Item 622060 >= 1
+			KillItemAll 622060
+			LeaveGroup
+			warp 0,59934,77,96
+			Endblock
+
+
+
+
+
+
+
+#### 晓筏动陆
+block
+	Window 3208365,OK
+
+		#\n\n﹛升仇井日じ匀化五切扎匀凶及井卅〝\n﹛丐卅凶反引分﹜\n﹛丐凶仄午芛屯月蠢雄仁卅中方友〝\n﹛浇中谛卞反饬怗卅中及﹝\n﹛窖匀化仁木月井卅〝
+		Window_OK
+			LeaveGroup
+			warp 0,59505,166,87
+Endblock
+
+
+

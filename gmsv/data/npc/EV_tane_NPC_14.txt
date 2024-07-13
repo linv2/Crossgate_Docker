@@ -1,0 +1,523 @@
+
+
+block EndEvent 203 == 1 && Item 620039 >= 1
+
+	if Gold >= 997501
+
+		GAEndWindow 3204341
+
+		#\n\n﹛幻予〝\n﹛算幵互中匀天中及方丹匹〝\n﹛中支﹜丹日支引仄中蜃曰﹝\n﹛升仇冗匹算幵毛\n﹛市仿卞仄化侳月午胀井卅﹝
+
+	endif
+
+
+	if globalFlag48 == 1
+
+		GAEndWindow 3204342
+
+		#\n\n﹛跟晶荚醒毛\n﹛聊亢化仄引匀凶匹豢甄月卅〝
+
+	endif
+
+
+	if globalFlag47 == 1
+
+		GAWindow 3204343,next
+
+		#\n\n﹛愈詨及跟晶匹仍介月卅〝\n﹛云侉木反手丹拑中匹仍介月卅〝
+		globalFlag48 = 1
+
+		gotoF case04
+
+	endif
+
+
+	if globalFlag46 == 1
+
+		GAWindow 3204344,next
+
+		#\n\n﹛铨荚杴及跟晶匹仍介月卅〝\n﹛戚互愈詨匹仍介月方〝
+		globalFlag47 = 1
+
+		gotoF case04
+
+	endif
+
+
+	if globalFlag45 == 1
+
+		GAWindow 3204345,next
+
+		#\n\n﹛赶荚杴及跟晶匹仍介月卅〝
+		globalFlag46 = 1
+
+		gotoF case04
+
+
+	endif
+
+
+	if globalFlag45 == 0
+
+		GAWindow 3204346,next
+
+		#\n\n﹛き荚杴及跟晶匹仍介月卅〝
+		globalFlag45 = 1
+
+		gotoF case04
+
+
+	endif
+
+
+block EndEvent 203 == 1
+
+	GAEndWindow 3204347
+
+		#\n\n﹛中支﹜引匀仇午﹛云苇仪匹仍介匀凶﹝
+
+
+
+block Item 620038 >=1
+
+		GAWindow 3204348,next
+
+		#\n\n﹛中支﹜\n﹛云苇仪﹜云苇仪″
+
+		GAWindow 3204349,next
+
+		#\n\n﹛引今井濛樊及〇卅月乒用蝈化毛\n﹛藉切逦允穻樊互云欠丹午反″
+
+		GAWindow 3204350,ok
+
+		#\n\n﹛筏ゴ及惫寞毛\n﹛云尥仃萧公丹﹝
+
+		GAWindow_ok Item 620038 == 0
+
+			EndWindow 3204351
+
+		#\n\n﹛皮伊奶皮末它伙毛侉木内手匀化井日﹜\n﹛匹﹜仍介月方﹝
+
+		Window_ok
+
+			killItem 620038,1
+			EndEvent 203 = 1
+			CheckTitle
+
+
+		if Item 620039 >=1
+					gotoF case04
+		else
+					gotoF case06
+		endif
+
+endblock
+
+
+*case04*
+
+				GAWindow 3204352,next
+
+		#\n\n﹛公丹公丹﹜喘仃嗯毛诡胶ム忒仄﹜\n﹛匹丐匀凶卅﹝
+
+				GAWindow 3204353,next
+
+		#\n\n﹛域荚匹跟晶匹五月痹反き蜗域呦﹜\n﹛喘仃嗯毛熬仃潸匀凶詨\n﹛域蘸濛樊井日峊木凶桦宁\n﹛跟晶荚醒反\n﹛酸曰铨荚匹仍介月﹝\n﹛狪仄井仃凶分仃匹手域荚午苇卅仄引允裕\n﹛云竣毛勾仃黎今木中﹝
+
+
+
+*case03*
+			
+globalFlag53 = 0
+globalFlag54 = 0
+globalFlag55 = 0
+globalFlag56 = 0
+globalFlag57 = 0
+globalFlag58 = 0
+globalFlag59 = 0
+globalFlag60 = 0
+globalFlag61 = 0
+globalFlag62 = 0
+globalFlag63 = 0
+globalFlag64 = 0
+globalFlag65 = 0
+globalFlag66 = 0
+globalFlag67 = 0
+globalFlag68 = 0
+globalFlag69 = 0
+globalFlag70 = 0
+globalFlag71 = 0
+globalFlag72 = 0
+			
+*case05*
+				
+				GAWindow 3204354,ok
+
+		#\n\n﹛匹反﹜夫午勾
+
+				Window_ok Gold >= 997501
+
+					GAEndWindow 3204355
+
+		#\n\n﹛幻予〝\n﹛算幵互中匀天中及方丹匹〝\n﹛中支﹜丹日支引仄中蜃曰﹝\n﹛升仇冗匹算幵毛\n﹛市仿卞仄化侳月午胀井卅﹝
+
+				Window_ok Item 620039 == 0
+
+					GAEndWindow 3204356
+
+		#\n\n﹛⑷痹毛侉木内手匀化井日﹜\n﹛匹﹜仍介月方﹝
+
+				Window_ok
+
+					AddGold 2500
+					killItem 620039,1
+
+
+
+					if globalFlag72 == 1
+
+						GAWindow 3204357,next
+
+		#\n\n﹛?木萧仄凶﹝\n﹛午曰丐尹内﹜蔽曰匹仍介月卅﹝
+
+						GAEndWindow 3204358
+
+		#\n\n﹛仇木井日手擎褡卅今木方﹝\n﹛公仄化?木凶日\n﹛仇及≦灿庍及谖③≧午及爵中毛\n﹛合中请今木月互方井欠丹﹝
+
+						endblock
+
+					endif
+
+
+					if globalFlag71 == 1
+
+						globalFlag72 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag70== 1
+
+						globalFlag71 = 1
+						gotoF case06
+
+					endif
+
+
+					if globalFlag69== 1
+
+						globalFlag70 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag68== 1
+
+						globalFlag69 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag67== 1
+
+						globalFlag68 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag66== 1
+
+						globalFlag67 = 1
+						gotoF case06
+
+					endif
+
+
+					if globalFlag65== 1
+
+						globalFlag66 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag64== 1
+
+						globalFlag65 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag63== 1
+
+						globalFlag64 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag62== 1
+
+						globalFlag63 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag61== 1
+
+						globalFlag62 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag60== 1
+
+						globalFlag61 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag59== 1
+
+						globalFlag60 = 1
+						gotoF case06
+
+					endif
+
+
+					if globalFlag58== 1
+
+						globalFlag59 = 1
+						gotoF case06
+
+					endif
+
+
+					if globalFlag57== 1
+
+						globalFlag58 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag56== 1
+
+						globalFlag57 = 1
+						gotoF case06
+
+					endif
+
+
+					if globalFlag55== 1
+
+						globalFlag56 = 1
+						gotoF case06
+
+					endif
+
+
+					if globalFlag54== 1
+
+						globalFlag55 = 1
+						gotoF case06
+
+					endif
+
+					if globalFlag53== 1
+
+						globalFlag54 = 1
+						gotoF case06
+
+					endif
+
+
+					if globalFlag53== 0
+
+						globalFlag53 = 1
+						gotoF case06
+
+					endif
+
+
+
+
+
+*case06*
+
+				if  Item 620039 >=1
+
+					GAWindow 3204359,next
+
+		#\n\n﹛引分肣曰萧允卅〝
+
+					gotoB case05
+
+				endif
+
+
+
+			GAEndWindow 3204360
+
+		#\n\n﹛仇木井日手擎褡卅今木方﹝\n﹛公仄化?木凶日\n﹛仇及≦灿庍及谖③≧午及爵中毛\n﹛合中请今木月互方井欠丹﹝
+
+
+block Item 620039 >=1 && EndEvent 203 == 0
+
+		GAWindow 3204361,next
+
+		#\n\n﹛云丹云丹﹜\n﹛⑷痹毛云儅切匹﹝
+
+		GAWindow 3204362,OK
+
+		#\n\n﹛今化﹜仇及≦灿庍及谖③≧卞\n﹛蔺心卅今月创貊反云勾五井卅〝
+
+
+		Window_ok Item 620039 == 0
+
+				GAEndWindow 3204363
+
+		#\n\n﹛⑷痹毛侉木内手匀化井日﹜\n﹛匹﹜仍介月方﹝
+
+		Window_OK
+
+				gotoF case02
+
+block  EndEvent 203 == 0
+
+		GAWindow 3204364,next
+
+		#\n\n﹛孔戈﹜公仇卅豢谚﹜\n﹛仄壬仄谨凶木方﹝
+
+		GAWindow 3204365,next
+
+		#\n\n﹛濛樊反≦灿庍及谖③≧午萧允\n﹛仄互卅中罹中腴户樊﹝\n﹛燮及爵匹域?键毛臜户凶月手\n﹛朹扪勾凶卅仁﹜\n﹛漆反﹜戊伊仇及骚曰厘Ⅶ爷谛卞引匹\n﹛褥毛支勾仄化云月﹝
+
+		GAWindow 3204366,next
+
+		#\n\n﹛苇月卞筑楝反﹜\n﹛选坌珃卞盛尹互丐曰公丹分﹝\n﹛仇及≦灿庍及谖③≧卞﹜\n﹛夫午勾蔺氏匹反心厄井〝\n﹛仇及谖③互〇卞?户儅勾樊琼\n﹛蝈化卞藉切鴃化木壬\n﹛穻樊及惫寞毛瞿曰萧公丹﹝
+
+		GAWindow 3204367,next
+
+		#\n\n﹛爵尹月及反﹜仇及≦⑷痹≧毛\n﹛云ョ中菲户中凶分中凶豢谚及心﹝\n﹛域呦ㄤㄟ?﹜き呦动晓云ョ中丐仆及桦宁﹜\n﹛き呦杴动嫦反公匀仁曰喘仃嗯午卅曰萧允﹝\n﹛苇仪﹜蝈鴃及传卞反﹜\n﹛惫寞午隋卞喘仃嗯反诡胶ム忒仄″
+
+		GAWindow 3204368,next
+
+		#\n\n﹛药虫匹手熬仃尥仃萧允﹝\n﹛凶分仄﹜公及凛反穻樊及据毛丿月及反﹜\n﹛僧扪卅云域杅分仃﹝
+
+		GAWindow 3204369,next
+
+		#\n\n﹛绂坁卞反夫午勾分仃坞五毛\n﹛综匀化云仁匹仍介月方﹝\n﹛蝈化卞藉切鴃匀凶詨卞\n﹛穻樊及据毛熬仃潸木友壬\n﹛萸仁卞萸仃厄﹝幻匀幻匀幻﹝
+
+		GAWindow 3204370,next
+
+		#\n\n﹛手仄﹜坳互域穻樊及据毛\n﹛云澎卞请侳凶日\n﹛中引域蘸﹜濛樊卞云擘毛云井仃票今木﹝\n﹛穻樊及据毛云儅切及杅分仃\n﹛喘仃嗯毛忒仄萧允﹝\n﹛云醮棉及杅反仪蟆卞穻樊卞\n﹛⑷痹毛欐仄化云仁及毛云换户中凶公丹﹝
+
+
+		GAWindow 3204371,next
+
+		#\n\n﹛升丹井卅〝域轼ㄤㄟ?﹜\n﹛窒轼匹手云熬仃仄萧允冗〝\n﹛凶分仄﹜濛樊反蜊卞仄化卩曰卞丐日内﹝\n﹛壑钗及绊化绊化引匹欲五\n﹛雄樊隋及恘毛ゞ心慇氏分褥﹝\n﹛凶中公丹雄丹豢甄月方〝\n﹛云竣毛勾仃丐木〝
+
+		GAWindow 3204372,yes,no
+
+		#\n\n﹛反化今化﹜中井互井卅〝
+
+		Window_no
+
+			GAEndWindow 3204373
+
+		#\n\n﹛幻幻丹﹜\n﹛中支﹜尪狟卞戏五月手引凶谛及Ⅶ﹝\n﹛濛樊及方丹卅樊井日心木壬\n﹛引仇午﹜丹日支引仄中蜃曰﹝
+
+
+		Window_yes
+
+
+			GAWindow 3204374,OK
+
+		#\n\n﹛孔戈﹜\n﹛濛樊及杴卞飧中反卅井匀凶井卅〝\n﹛匹反﹜引内反ㄤㄟ?云萧仄尥仃方丹﹝
+
+			Window_OK
+
+*case01*
+
+				if Gold <= 49
+
+					GAWindow 3204375,next
+
+		#\n\n﹛仇木反仄凶曰″\n﹛濛樊方曰儅匀化云日厄豢谚匹丐匀凶井″
+
+ 						gotoF case02
+
+				else
+					if ItemSpace == 0
+
+						GAWindow 3204376,next
+
+		#\n\n﹛公木动晓﹜儅化厄午苇尹月﹝
+
+						gotoF case02
+
+
+					else
+
+						AddGold -50
+						GiveItem 620039,1
+
+						GAWindow 3204377,yes,no
+
+		#\n\n﹛今化﹜\n﹛跶什卞铵户萧公丹井〝\n﹛公木午手﹜引分ョ歹木引允井卅〝\n﹛铵户月桦宁反???午\n﹛蚕尹萧今木方﹝
+
+						Window_yes
+
+							gotoF case02
+
+						Window_no
+
+							GAWindow 3204378,next
+
+		#\n\n﹛今木壬﹜手丹ㄤㄟ?﹝
+
+							gotoB case01
+
+					endif
+				endif
+
+block  EndEvent 203 == 0
+
+*case02*
+
+		if Item 620039 >=1 
+		
+			GAWindow 3204379,yes,no
+
+		#\n\n﹛公木匹反﹜铵户萧公丹
+
+				Window_yes Item 620039 == 0
+
+						GAEndWindow 3204380
+
+		#\n\n﹛⑷痹毛侉木内手匀化井日﹜\n﹛匹﹜仍介月方﹝
+
+				Window_yes
+
+						killItem 620039,1
+
+						Encount 3|||0|||||0|306100|||||||||
+
+
+				Window_no
+
+						GAEndWindow 3204381
+
+		#\n\n﹛濛樊反雄丹豢甄月﹝\n﹛斗匀仁曰创貊毛瑁户日木方﹝
+
+		else
+		
+			GAEndWindow 3204382,OK
+
+		#\n\n﹛濛樊卞蔺戈及卅日\n﹛⑷痹毛侉木内手匀化井日﹜\n﹛匹﹜仍介月方﹝
+		
+		endif
+
+block 
+
+		GAEndWindow 3204383,OK
+
+		#\n\n﹛漆ざ反竣互昙日卅中匹仍介月方﹝\n﹛域蘸扙仃凶豢谚卞覆仄化反\n﹛卅云今日匹仍介月﹝

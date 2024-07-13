@@ -1,0 +1,13 @@
+#±ØÓÀÆË¼þ
+
+
+#Ñ¨ÄÌÑ¨ÄÌã×Ã«ƒ}ÔÈ»¯ÖÐÔÂ
+block Item 16430 >= 1
+	Window 23086,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,43970,4,7
+#
+block
+	EndWindow 23087,OK
+

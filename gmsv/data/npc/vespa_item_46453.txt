@@ -1,0 +1,14 @@
+########　Item ：实验卡时药　46453
+#########    减少卡时2分钟
+
+block Item 46453 >=1 && FeverSec < 120
+	 ##1052701	喝下了实验卡时药．．．没有发生任何事？！
+	 KillItem 46453,1,(1052701)
+	 
+block
+	 ##1052702	\n\n确定要喝下实验卡时药？
+	 Window 1052702,OK
+	 	 Window_OK Item 46453 >=1 && FeverSec >=120
+	 	 	 AddFeverSec -120
+	 	 	 KillItem 46453,1,(1052706)
+	 	 	 

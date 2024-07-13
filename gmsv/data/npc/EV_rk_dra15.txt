@@ -1,0 +1,15 @@
+#?匽允月踹(15557)
+#
+
+block
+ Changepal 15,180
+#\n庤及擘“\n\n﹛丐卅凶及蝠戈萝哗及扎互厘惚匹垩木铵户凶午仄引仄斤丹﹝\n\n﹛丐卅凶反檗毛檐心﹜灌侂毛蹲中化扎及峸木毛晨五鞅户卞垫仁匹仄斤丹井〝﹋反中毛蓟枪﹌\n﹛公木午手岳允诸手卅仁双峸毛苇勾户化萋尺⑧仆月匹仄斤丹井〝﹋中中尹毛蓟枪﹌
+ Window 21314,yes,no
+#
+  Window_yes
+   LeaveGroup
+   Warp 0,15548,15,19
+  Window_no
+   LeaveGroup
+   Warp 0,15548,11,19
+

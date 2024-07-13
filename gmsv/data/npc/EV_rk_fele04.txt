@@ -1,0 +1,8 @@
+#
+#C’zÈÓ·ÂÑ¨¼şÄ¸¡õ
+#
+
+##©x
+block
+	Window 21491,Next
+	EndWindow 21506

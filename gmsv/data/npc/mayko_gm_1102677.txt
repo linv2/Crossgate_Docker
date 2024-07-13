@@ -1,0 +1,165 @@
+#mayko_gm_1102677.txt  新手武器 小刀
+
+#滑翔小刀	3222	9612	8	10001	20	9613	5	10402	4	10002	20
+#1111342	\n\n\n@c你好！！我负责支援新星小刀制作：
+#1111296	\n\n你现在有滑翔小刀材料铁条8份，枞20份，银条5份，毛毡4份，黄月木20份，
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111351	\n\n\n@c代工费是１０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+block item 9612>=8 && item 10001 >=20	&& item 9613 >=	5 && item 10402	>=4 && item 10002 >= 20
+	Window 1111342,next
+	Window 1111296,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111351,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -1000
+		killitem 9612,8
+		killitem 10001,20
+		killitem 9613,5
+		killitem 10402,4
+		killitem 10002,20
+		GiveLeak1Item 3222,1
+		endwindow 1111334
+
+#细直刃小刀	3229	9613	7	10402	7	10002	20	9614	5	10003	20
+#1111342	\n\n\n@c你好！！我负责支援新星小刀制作：
+#1111297	\n\n你现在有细直刃小刀材料银条7份，毛毡7份，黄月木20份，纯银条5份，铁杉20份，
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111351	\n\n\n@c代工费是１０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+
+block item 9613>=7 && item 10402 >=7 && item 10002 >= 20 && item 9614 >=5 && item 10003 >= 20
+	Window 1111342,next
+	Window 1111297,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111351,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -1000
+		killitem 9613,7
+		killitem 10402,7
+		killitem 10002,20
+		killitem 9614,5
+		killitem 10003,20
+		GiveLeak1Item 3229,1
+		endwindow 1111334
+
+
+#阔刃小刀	3251	9614	8	9615	7	10004	20	9616	8	10005	20
+#1111342	\n\n\n@c你好！！我负责支援新星小刀制作：
+#1111298	\n\n你现在有阔刃小刀材料纯银条8份，金条7份，琵琶木20份，白金条8份，赤松20份，
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111352	\n\n\n@c代工费是５０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+block item 9614>=8 && item 9615 >=7 && item 10004 >= 20 && item 9616 >=8 && item 10005 >= 20
+	Window 1111342,next
+	Window 1111298,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111352,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 4999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -5000
+		killitem 9614,8
+		killitem 9615,7
+		killitem 10004,20
+		killitem 9616,8
+		killitem 10005,20
+		GiveLeak1Item 3251,1
+		endwindow 1111334
+
+
+
+#1111342	\n\n\n@c你好！！我负责支援新星小刀制作：
+#触角小刀	3253	10004	20	10005	20	9617	15				
+#1111299	\n\n你现在有触角小刀材料琵琶木20份，赤松20份，幻之钢条15份，
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111352	\n\n\n@c代工费是５０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+
+block item 10004>=20 && item 10005 >=20 && item 9617 >=15
+	Window 1111342,next
+	Window 1111299,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111352,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 4999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -5000
+		killitem 10004,20
+		killitem 10005,20
+		killitem 9617,15
+		
+		GiveLeak1Item 3253,1
+		endwindow 1111334
+
+
+
+#####没小刀材料
+
+#1111342	\n\n\n@c你好！！我负责支援新星小刀制作：
+#1111235	\n\n制做滑翔小刀需要铁条8份，枞20份，银条5份，毛毡4份，黄月木20份，
+#1111236	\n\n制做细直刃小刀需要银条7份，毛毡7份，黄月木20份，纯银条5份，铁杉20份，
+#1111237	\n\n制做阔刃小刀需要纯银条8份，金条7份，琵琶木20份，白金条8份，赤松20份，
+#1111238	\n\n制做触角小刀需要琵琶木20份，赤松20份，幻之钢条15份，份，
+#1111355\n\n\n@c准备好材料再来找我！！
+
+block
+	Window 1111342,next
+	window 1111235,next
+	Window 1111236,next
+	Window 1111237,next
+	Window 1111238,next
+	endwindow 1111355
+

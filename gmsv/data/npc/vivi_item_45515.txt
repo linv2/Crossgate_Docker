@@ -1,0 +1,14 @@
+######## 御便当 #######
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+	 
+block Item 45515 >= 1 && ItemDur 45515 == 1                                    
+	 KillItem 45515                      
+	 GiveLeak1Item (15202%1$1)                
+
+block Item 45515 >= 1 && ItemDur 45515 > 1
+	 ##便当耐久-1 
+	 SetDur 45515, -1
+	 GiveLeak1Item (15202%1$1) 
+	 

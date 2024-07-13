@@ -1,0 +1,25 @@
+#ÄÌÃ¬¼þÐþ·ºµ©Ðþ
+#ÓúâÙ±åÍÖðö»¥ÓòÚÛØÆÐ×Æ¤·òÓÀÛÍÃ«ÖÊ†AÔÊÔÂ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+
+########## Äýˆ^¤¸Ä¾ ##########
+
+block Item 18564 >=1
+
+	EndWindow 13172
+
+block Item 18488 >=1
+	Window 13165,YES,NO
+
+	Window_YES itemspace == 0
+	#ƒ}ÇÐˆ^»¥Óò¥Ù·Ö·½©z
+	EndWindow 13173
+
+	#ÈÔß–?¡°
+	Window_YES itemspace >= 0
+	GiveItem 18564
+
+	Window_NO
+

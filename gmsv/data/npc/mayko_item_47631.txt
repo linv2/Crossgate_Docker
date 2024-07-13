@@ -1,0 +1,51 @@
+#
+#金属管	47630
+#风之羽	mayko_item_47631.txt
+#40842	落跑娃娃
+#1054930	\n\n\n\n\@c要制作乐器吗？	1
+#1054931	\n\n\n\n\@c好像能引来什么，要试试吗？	1
+#风兽之琴	mayko_item_47622.txt
+
+#######################################
+#呿?涩烂#
+block Item 47630>= 1  && Item 47631>= 1 
+	 Window 1054930,YES,NO
+	 Window_YES Item 47630>0  && Item 47631>0 
+	 KillItem 47630,1
+	 KillItem 47631,1
+	 GiveLeak1Item 47622,1	 
+	 Endblock
+	 
+	 
+	 Window_NO
+	 	 Window 1054931,YES,NO
+		 Window_YES Item 47631>0
+		 KillItem 47631,1
+		 GiveLeak1Item 40842,1	
+		 endblock
+		 Window_YES
+		 Window_NO
+		 Endblock
+		 		 
+
+	 
+	 Window_YES
+	 	 Window 1054931,YES,NO
+		 Window_YES Item 47631>0
+		 KillItem 47631,1
+		 GiveLeak1Item 40842,1	
+		 endblock
+		 Window_YES
+		 Window_NO
+		 Endblock
+
+
+block 
+ 	 Window 1054931,YES,NO
+		 Window_YES Item 47631>0
+		 KillItem 47631,1
+		 GiveLeak1Item 40842,1	
+		 endblock
+		 Window_YES
+		 Window_NO
+		 Endblock	

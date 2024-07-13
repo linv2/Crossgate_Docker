@@ -1,0 +1,116 @@
+#娃娃布置员 		1051791
+#1055821	\n　　　　这里帮忙摆设女儿节娃娃，\n　　　　要帮忙组女儿节娃娃吗？
+#1055822	\n\n\n@c你的娃娃凑不成组耶！！
+#1055823	\n　　　　你要组原厂露比组吗？？\n　　　　一次１０００Ｇ？
+#1055824	\n　　　　你要组原厂鼠娃娃组吗？？\n　　　　一次７００Ｇ？
+#1055825	\n　　　　你要组露比组吗？？\n　　　　一次５００Ｇ？
+#1055826	\n　　　　你要组小兔耳人偶组吗？？\n　　　　一次３００Ｇ？
+#1055827	\n　　　　原厂露比组：\n　　　　露比洋娃娃、阿鲁巴斯洋娃娃、圣夜洋娃娃。
+#1055828	\n\n\n@c露比组：\n　　　　熊哥娃娃(台制)、熊弟娃娃(台制)、\n　　　　露比娃娃(台制)、哥布林娃娃(台制)、\n　　　　红帽哥布林娃娃(台制)。
+#1055829	\n\n\n@c原厂鼠娃娃组总共有六种鼠娃娃喔！！
+#1055830	\n\n\n@c小兔耳人偶组有三种娃娃喔！！
+block 
+	 Window 1055821,YES,NO
+	 Window_NO
+	 #1055827	\n　　　　原厂露比组：\n　　　　露比洋娃娃、阿鲁巴斯洋娃娃、圣夜洋娃娃。	1	
+	 #1055828	\n\n\n@c露比组：\n　　　　熊哥娃娃(台制)、熊弟娃娃(台制)、\n　　　　露比娃娃(台制)、哥布林娃娃(台制)、\n　　　　红帽哥布林娃娃(台制)。	1	
+	 #1055829	\n\n\n@c原厂鼠娃娃组总共有六种鼠娃娃喔！！	1	
+	 #1055830	\n\n\n@c小兔耳人偶组有三种娃娃喔！！	1		 
+         Window 1055827,NEXT
+         Window 1055828,NEXT
+         Window 1055829,NEXT
+         EndWindow 1055830
+         Window_YES ## 原厂露比
+         	 Window 1055823,YES,NO
+         	 Window_YES ItemSpace < 3
+         	 EndWindow 1100001
+         	 Window_YES Gold<1000
+         	 #3	\n\n很抱歉，你的钱不够了。	12
+	 	 EndWindow 3
+	 	 #露比洋娃娃	18674 #阿鲁巴斯洋娃娃	18676# 圣夜洋娃娃	18688
+	 	 Window_YES Item 18674 ==0 || Item 18676==0 || Item 18688==0
+	 	 Window 1055822,NEXT
+	 	 EndWindow 1055827
+	 	 Window_YES Item 18674 > 0 && Item 18676 > 0 && Item 18688 >0 && Gold >999
+	 	 AddGold -1000
+	 	 KillItem 18674,1
+	 	 	 	 
+	 	 KillItem 18676,1
+	 	 KillItem 18688,1
+	 	 GiveLeak1Item 47734,1
+	 	 EndWindow 1055817
+	 	 Window 1055822,NEXT
+	 	 EndWindow 1055827	
+	 	 	 
+	 Window_NO  ###原厂鼠娃娃
+         	 Window 1055824,YES,NO
+         	 Window_YES ItemSpace < 6
+         	 EndWindow 1100001
+         	 Window_YES Gold<700
+         	 #3	\n\n很抱歉，你的钱不够了。	12
+	 	 EndWindow 3
+	 	 #大地鼠洋娃娃	18680	 恶梦鼠洋娃娃	18681  火焰鼠洋娃娃	18682
+	 	 #宝石鼠洋娃娃	18683 	 水蓝鼠洋娃娃	18684  鼠王洋娃娃	18685
+	 	 Window_YES Item 18680 ==0 || Item 18681==0 || Item 18682==0 || 18683 ==0 || Item 18684==0 || Item 18685==0
+	 	 Window 1055822,NEXT
+	 	 EndWindow 1055829
+	 	  #1055829	\n\n\n@c原厂鼠娃娃组总共有六种鼠娃娃喔！！	1
+	 	 Window_YES Gold >699 && Item 18680 >0 && Item 18681>0 && Item 18682>0 && Item 18683 >0 && Item 18684>0 && Item 18685>0
+	 	 AddGold -700
+	 	 KillItem 18680,1	 	 	 	 
+	 	 KillItem 18681,1
+	 	 KillItem 18682,1
+	 	 KillItem 18683,1	 	 	 	 
+	 	 KillItem 18684,1
+	 	 KillItem 18685,1
+	 	 GiveLeak1Item 47735,1
+	 	 EndWindow 1055817
+	 	 Window 1055822,NEXT
+	 	 EndWindow 1055829
+#1055825	\n　　　　你要组露比组吗？？\n　　　　一次５００Ｇ？
+	 Window_NO  ###露比组
+         	 Window 1055825,YES,NO
+         	 Window_YES ItemSpace < 5
+         	 EndWindow 1100001
+         	 Window_YES Gold<500
+         	 #3	\n\n很抱歉，你的钱不够了。	12
+	 	 EndWindow 3
+	 	 # 熊哥娃娃(台制)	45192 熊弟娃娃(台制)	45193  露比娃娃(台制)	45194
+	 	 #哥布林娃娃(台制)	45195红帽哥布林娃娃(台制)	45196
+	 	 Window_YES Item 45192 ==0 || Item 45193==0 || Item 45194==0 || 45195 ==0 || Item 45196==0 	 	 
+	 	 Window 1055822,NEXT
+	 	 EndWindow 1055830
+	 	  #1055829	\n\n\n@c原厂鼠娃娃组总共有六种鼠娃娃喔！！	1
+	 	 Window_YES Gold >499 && Item 45192 >0 && Item 45193>0 && Item 45194>0 && 45195 >0 && Item 45196>0 
+	 	 AddGold -500
+	 	 KillItem 45192,1
+	 	 KillItem 45193,1
+	 	 KillItem 45194,1	 	 	 	 
+	 	 KillItem 45195,1
+	 	 KillItem 45196,1
+	 	 GiveLeak1Item 47736,1
+	 	 EndWindow 1055817
+	 	 Window 1055822,NEXT
+	 	 EndWindow 1055830
+	 Window_NO #1055826	\n　　　　你要组小兔耳人偶组吗？？\n　　　　一次３００Ｇ？
+       	 	 Window 1055826,YES,NO
+         	 Window_YES ItemSpace < 3
+         	 EndWindow 1100001
+         	 Window_YES Gold<300
+         	 #3	\n\n很抱歉，你的钱不够了。	12
+	 	 EndWindow 3
+	 	 #淡红色小兔耳人偶(台制)	45855
+	 	 #纯白色小兔耳人偶(台制)	45856
+	 	 #淡蓝色小兔耳人偶(台制)	45857
+	 	 Window_YES Item 45855 ==0 || Item 45856==0 || Item 45857==0
+	 	 Window 1055822,NEXT
+	 	 EndWindow 1055830
+	 	 Window_YES Item 45855 > 0 && Item 45856 > 0 && Item 45857 >0 && Gold >299
+	 	 AddGold -300
+	 	 KillItem 45856,1	 	 	 	 
+	 	 KillItem 45857,1
+	 	 KillItem 45858,1
+	 	 GiveLeak1Item 47737,1
+	 	 EndWindow 1055817
+	 	 Window 1055822,NEXT
+	 	 EndWindow 1055830	         	 

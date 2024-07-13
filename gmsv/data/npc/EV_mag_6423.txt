@@ -1,0 +1,153 @@
+#
+#オ樊弁巨旦玄
+#濩抸驯五及甩件弁
+
+#### 邀荦钒铵仄化卅中及卞失奶泛丞互丐月桦宁壅蛔 ###
+block NowEvent 7 == 0 && Item 18550 >= 1
+	KillItem 18550
+
+#### 邀荦钒铵仄化卅中及卞失奶泛丞互丐月桦宁壅蛔 ###
+block NowEvent 7 == 0 && Item 18551 >= 1
+	KillItem 18551
+
+#### 邀荦钒铵仄化卅中及卞失奶泛丞互丐月桦宁壅蛔 ###
+block NowEvent 7 == 0 && Item 18552 >= 1
+	KillItem 18552
+
+#### 邀荦钒铵仄化卅中及卞失奶泛丞互丐月桦宁壅蛔 ###
+block NowEvent 7 == 0 && Item 18553 >= 1
+	KillItem 18553
+
+#### 邀荦钒铵仄化卅中及卞失奶泛丞互丐月桦宁壅蛔 ###
+block NowEvent 7 == 0 && Item 18554 >= 1
+	KillItem 18554
+
+######### 蕞?谛巨件犯奴件弘 ########
+block NowEvent 16 == 1
+#\n\n﹛邀荦反蔽弇仄凶日仄中友﹝蕞?谛毛苇勾仃凶氏分匀化〝﹝今允互分卅﹜苇慇心升云曰楝反仇及译奿珃茧樱及恌五仿奶田伙分﹝仍塑洢迋﹝
+	Window 14892,NEXT
+#\n\n﹛公木午﹜卅仁卅匀凶剂辉及云抌﹜厘击⑻及嗤仁卞澎载仁闱匀化云中凶方﹝愈詨卞涌毛苇六化云中匹﹝﹛失犯亘﹝
+	EndWindow 14893,OK
+
+######### 失术立?谛巨件犯奴件弘 ########
+block EndEvent 16 == 1
+	NowEvent 7 = 0
+	EndEvent 7 = 0
+	NowEvent 8 = 0
+	EndEvent 8 = 0
+	NowEvent 9 = 0
+	EndEvent 9 = 0
+	NowEvent 10 = 0
+	EndEvent 10 = 0
+	NowEvent 11 = 0
+	EndEvent 11 = 0
+	NowEvent 12 = 0
+	EndEvent 12 = 0
+	NowEvent 13 = 0
+	EndEvent 13 = 0
+	NowEvent 14 = 0
+	EndEvent 14 = 0
+	NowEvent 15 = 0
+	EndEvent 15 = 0
+	NowEvent 16 = 0
+	EndEvent 16 = 0
+	NowEvent 17 = 1
+#\n\n﹛邀荦反蔽弇仄凶日仄中友﹝丐及剂辉互?谛分匀凶氏分匀化〝﹝支木支木﹜楝卅日仇及译奿珃茧樱及恌五仿奶田伙卞卅木月午合匀化中凶氏分互﹜午氏分ョ中?曰分匀凶方丹分﹝仍塑洢迋﹝
+	Window 14894,NEXT
+#\n\n\n﹛﹛﹋◢﹌呿仪瘀及邀荦反允屯化蔽弇仄引仄凶﹝\n\n﹛﹛﹛﹛﹛﹛﹛﹛云?木迋匹仄凶﹝
+	EndWindow 14895,OK
+
+######### 邀荦钒铵白仿弘丐曰 ########
+block NowEvent 7 == 1
+#\n\n﹛邀荦及幻丹反褡氏分井友〝褐邰卅及反平□伐□玉分﹝辅哔谛井日狪毛方仁五中化﹜澎互井曰卞卅曰公丹卅蜕邯毛踏五午户化云仁氏分﹝期侬及平□伐□玉反夫日互卅卞仄化狪仄喘仃化心凶引尹﹝公丹﹜域蘸狪仄喘仃凶平□伐□玉手﹜啜丹正奶立件弘匹狪仄喘仃木壬啜丹?杀毛允月井手仄木卅中卅﹝
+	Window 14896,NEXT
+#\n\n﹛丐丐﹜公丹公丹﹝愈赓卞手蜕匀凶互平□伐□玉毛???卞韵月午五反...﹋?剩疋伉左玉ㄢ勾﹌毛尥仃笛尹月仇午毛侉木卅中匹仁木方﹝拺尹壬甩件弁午中丹蜕邯毛鳗尹凶仃木壬＞甩件弁...＝及方丹卞蜕丹氏分﹝
+	Window 15125,NEXT
+#\n\n﹛邀荦毛反元户井日支曰跶允井中〝
+	Window 14897,YES,NO
+	Window_NO NowEvent 7 == 1
+#\n\n\n\n﹛﹛﹛﹛﹛﹋◢﹌邀荦毛粮垫仄引允
+	EndWindow 14898,OK
+	Window_YES NowEvent 7 == 1
+	NowEvent 7 = 0
+	EndEvent 7 = 0
+	NowEvent 8 = 0
+	EndEvent 8 = 0
+	NowEvent 9 = 0
+	EndEvent 9 = 0
+	NowEvent 10 = 0
+	EndEvent 10 = 0
+	NowEvent 11 = 0
+	EndEvent 11 = 0
+	NowEvent 12 = 0
+	EndEvent 12 = 0
+	NowEvent 13 = 0
+	EndEvent 13 = 0
+	NowEvent 14 = 0
+	EndEvent 14 = 0
+	NowEvent 15 = 0
+	EndEvent 15 = 0
+	NowEvent 16 = 0
+	EndEvent 16 = 0
+#\n\n\n﹛﹛﹛﹛﹋◢﹌邀荦毛支曰卅云仄引允\n\n﹛﹛﹛﹛﹛﹛仪瘀毛赓渝橇谪尺枑仄引允
+	EndWindow 14899,OK
+
+#### 邀荦钒铵白仿弘卅仄↓LV20恍坢及爵衔烟 ###
+block NowEvent 7 == 0 && Level < 20 && Job >= 0 && Job <= 157
+#\n\n﹛孔丹戈﹜台反中引か仄中仪瘀毛邀荦仄化中月及分互﹜楝及伊矛伙匹反引分澎鳗中反拑咥分卅﹝
+	EndWindow 15124,OK
+
+#### 邀荦钒铵白仿弘卅仄↓LV20恍坢及衔樊枣赁屻 ###
+block NowEvent 7 == 0 && Level < 20 && Job >= 430 && Job <= 447
+#\n\n﹛孔丹戈﹜台反中引か仄中仪瘀毛邀荦仄化中月及分互﹜楝及伊矛伙匹反引分澎鳗中反拑咥分卅﹝
+	EndWindow 15124,OK
+
+#### 邀荦钒铵白仿弘卅仄↓LV20恍坢﹜旦平伙3恍坢及朹湛膜咥谛 ###
+block NowEvent 7 == 0 && Level < 20 && Job >= 370 && Job <= 377 && SkillLevel 217 < 3
+#\n\n﹛孔丹戈﹜台反中引か仄中仪瘀毛邀荦仄化中月及分互﹜楝及伊矛伙匹反引分澎鳗中反拑咥分卅﹝
+	EndWindow 15124,OK
+
+#### 邀荦钒铵白仿弘卅仄↓LV20恍坢﹜旦平伙3恍坢及侂填膜咥谛 ###
+block NowEvent 7 == 0 && Level < 20 && Job >= 380 && Job <= 387 && SkillLevel 218 < 3
+#\n\n﹛孔丹戈﹜台反中引か仄中仪瘀毛邀荦仄化中月及分互﹜楝及伊矛伙匹反引分澎鳗中反拑咥分卅﹝
+	EndWindow 15124,OK
+
+#### 邀荦钒铵白仿弘卅仄↓LV20恍坢﹜旦平伙3恍坢及椎烂衔 ###
+block NowEvent 7 == 0 && Level < 20 && Job >= 390 && Job <= 397 && SkillLevel 219 < 3
+#\n\n﹛孔丹戈﹜台反中引か仄中仪瘀毛邀荦仄化中月及分互﹜楝及伊矛伙匹反引分澎鳗中反拑咥分卅﹝
+	EndWindow 15124,OK
+
+#### 邀荦钒铵白仿弘卅仄↓LV20恍坢﹜旦平伙3恍坢及反氏仇盒 ###
+block NowEvent 7 == 0 && Level < 20 && Job >= 400 && Job <= 407 && SkillLevel 220 < 3
+#\n\n﹛孔丹戈﹜台反中引か仄中仪瘀毛邀荦仄化中月及分互﹜楝及伊矛伙匹反引分澎鳗中反拑咥分卅﹝
+	EndWindow 15124,OK
+
+#### 邀荦钒铵白仿弘卅仄↓LV20恍坢﹜旦平伙3恍坢及茧樱 ###
+block NowEvent 7 == 0 && Level < 20 && Job >= 410 && Job <= 417 && SkillLevel 221 < 3
+#\n\n﹛孔丹戈﹜台反中引か仄中仪瘀毛邀荦仄化中月及分互﹜楝及伊矛伙匹反引分澎鳗中反拑咥分卅﹝
+	EndWindow 15124,OK
+
+#### 邀荦钒铵白仿弘卅仄↓LV20恍坢﹜旦平伙3恍坢及营谛 ###
+block NowEvent 7 == 0 && Level < 20 && Job >= 420 && Job <= 427 && SkillLevel 222 < 3
+#\n\n﹛孔丹戈﹜台反中引か仄中仪瘀毛邀荦仄化中月及分互﹜楝及伊矛伙匹反引分澎鳗中反拑咥分卅﹝
+	EndWindow 15124,OK
+
+######### 邀荦钒铵白仿弘卅仄 ########
+block NowEvent 7 == 0
+#\n\n﹛支丐支丐﹜楝手失术立横及垫杅毛馨匀化中月及井中〝酸ゴ卅互日树扷蜓卞卅曰公丹卅谛坁反手丹铣毛壅仄凶詨分方﹝公木匹手引分仇及乩穴毛馨丹勾手曰井中〝
+	Window 14900,YES,NO
+	Window_NO NowEvent 7 == 0
+#\n\n﹛孔戈﹜公木互中中井手仄木氏卅﹝扑夫它玄卞反绂互褐中分欠丹﹝仇仇反仇及译奿珃茧樱甩件弁卞エ六月互中中﹝
+	EndWindow 14901,OK
+	Window_YES NowEvent 7 == 0
+	NowEvent 7 = 1
+#\n\n﹛幻丹﹜苇井仃卞方日内驯渤艘互甜戴卅方丹分﹝﹛﹛匹反楝卞邀荦及湘呿毛项尹化丐仆方丹﹝引内﹜翕歹仄中谛坁互中凶日平□伐□玉匹狪仄喘仃化心月午中中﹝窒井襞匀化中木壬?杀毛憎允井手仄木氏﹝
+	Window 14902,NEXT
+#\n\n﹛公木井日平□伐□玉反市正市瓜井夫日互卅及升切日井仄井卅中﹝期侬支失伙白央矛永玄及平□伐□玉反卅中井日公及勾手曰匹﹝公丹公丹﹜平□伐□玉及愈詨卞?剩匹...﹋疋伉左玉ㄢ勾﹌毛尥仃笛尹月及毛侉木卅中方丹卞﹝拺尹壬甩件弁午中丹平□伐□玉毛鳗尹凶仃木壬＞甩件弁...＝及方丹卞蜕丹氏分﹝
+	Window 14903,NEXT
+#\n\n﹛公木午邀荦毛赓户井日支曰卅云仄凶中午五﹜邀荦互蔽弇仄凶午合匀凶午五反手丹中切升台及午仇欠尺五凶引尹﹝今丐化﹜楝午仇及译奿珃茧樱甩件弁及珃?屯午中仇丹井﹝
+	EndWindow 14904,OK
+
+
+
+

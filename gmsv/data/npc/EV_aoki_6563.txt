@@ -1,0 +1,173 @@
+#奶矛件玄抩“庣及?
+#奶矛件玄陬邰“栋咥谛白央件皮伙弘﹋白央件皮伙弘﹛◥﹛失伙由生旦﹌
+#庣及?毛栋咥允月???﹝伐□皿今六月﹜白仿弘本永玄允月﹜及窗チ互丐月﹝
+
+############## 民尼永弁戊奶件儅匀化月 ##############
+block Item 18907 >= 1 || Item 18908 >= 1 || Item 18909 >= 1 || Item 18910 >= 1 || Item 18911 >= 1 || Item 18912 >= 1 || Item 18913 >= 1 || Item 18914 >= 1 || Item 18915 >= 1 || Item 18916 >= 1 || Item 18917 >= 1
+#\n\n﹛允心引六氏﹜公及戊奶件反儅切慇心嗟鞅卅氏匹允方﹝
+	EndWindow 15729,OK
+
+############## 奶矛件玄民□术儅匀化月 ##############
+block Item 18441 >= 1
+#\n\n﹛允心引六氏﹜公及民□术反儅切慇心嗟鞅卅氏匹允方﹝
+	EndWindow 14659,OK
+
+############## 奶矛件玄伐奶件儅匀化月 ##############
+block Item 18440 >= 1
+#\n\n﹛允心引六氏﹜公及伐奶件反儅切慇心嗟鞅卅氏匹允方﹝
+	EndWindow 14660,OK
+
+############## 庣及?白仿弘﹋102﹌互峏匀化中卅中 ##############
+block NowEvent 102 == 0
+#\n\n﹛酸ゴ卅互日丐卅凶反引分﹜仇及必□玄毛银丹凤伞互丐曰引六氏﹝
+	Endwindow 14667,OK
+
+############## 弘伙□皿毛赚氏匹中月 ##############
+block Group != 1
+#\n\n﹛必□玄反云域谛迋内勾匹仄井仍厍迕匹五引六氏﹝
+	Endwindow 14668,OK
+
+block
+############## 庣及?白仿弘互峏匀化中化﹜弘伙□皿毛赚氏匹中卅中 ##############
+#\n\n﹛仇仇反失伙由生旦及必□玄匹允﹝仍厍迕卞卅曰引允井〝\n\n﹛仍厍迕卞反﹛750Gold﹛井井曰引允﹝
+	Window 14159,YES,NO
+
+############## 爵⑷烟匹伊矛伙互箫曰卅中桦宁 ##############
+	Window_YES Group == 1 && Job >=11 && Job <= 167 && Level < 36
+#\n\n﹛失伙由生旦及翘卞丐卅凶及伊矛伙匹垫井木月及反渣莴匹允﹝引凶云旋仄仁分今中﹝
+	EndWindow 14158
+
+############## 衔樊枣赁屻匹伊矛伙互箫曰卅中桦宁 ##############
+	Window_YES Group == 1 && Job >=431 && Job <= 447 && Level < 36
+#\n\n﹛失伙由生旦及翘卞丐卅凶及伊矛伙匹垫井木月及反渣莴匹允﹝引凶云旋仄仁分今中﹝
+	EndWindow 14158
+
+############## 爵⑷烟匹白伉□由旦银迕 ##############
+	Window_YES Group == 1 && Item 18660 >= 1 && Job >=11 && Job <= 167 && Level >= 36
+#\n\n﹛白伉□由旦毛云儅切匹允友﹝\n﹛公木匹反升丹冗﹝
+	Window 15427,OK
+	Window_OK Item 18660 >= 1 && Job >=11 && Job <= 167 && Level >= 36
+	LeaveGroup
+	Warp 0,4399,5,14
+	Window_OK
+
+############## 爵⑷烟匹荚醒痹银迕 ##############
+	Window_YES Group == 1 && Item 18448 >= 1 && Job >=11 && Job <= 167 && Level >= 36
+#\n\n﹛荚醒痹毛云儅切匹允友﹝\n﹛公木匹反医嗯及井歹曰卞ㄠ呦云苂井曰谯仄引允﹝
+	Window 14657,OK
+	Window_OK Item 18448 >= 1 && Job >=11 && Job <= 167 && Level >= 36
+	KillItem 18448,1
+	LeaveGroup
+	Warp 0,4399,5,14
+	Window_OK
+
+############## 爵⑷烟匹云嗯互箫曰卅中桦宁 ##############
+	Window_YES Group == 1 && Job >=11 && Job <= 167 && Gold < 750
+#\n\n﹛云嗯互箫曰引六氏﹝
+	EndWindow 10005
+
+############## 衔樊枣赁屻匹白伉□由旦银迕 ##############
+	Window_YES Group == 1 && Item 18660 >= 1 && Job >=431 && Job <= 447 && Level >= 36
+#\n\n﹛白伉□由旦毛云儅切匹允友﹝\n﹛公木匹反升丹冗﹝
+	Window 15427,OK
+	Window_OK Item 18660 >= 1 && Job >=431 && Job <= 447 && Level >= 36
+	LeaveGroup
+	Warp 0,4399,5,14
+	Window_OK
+
+############## 衔樊枣赁屻匹荚醒痹银迕 ##############
+	Window_YES Group == 1 && Item 18448 >= 1 && Job >=431 && Job <= 447 && Level >= 36
+#\n\n﹛荚醒痹毛云儅切匹允友﹝\n﹛公木匹反医嗯及井歹曰卞ㄠ呦云苂井曰谯仄引允﹝
+	Window 14657,OK
+	Window_OK Item 18448 >= 1 && Job >=431 && Job <= 447 && Level >= 36
+	KillItem 18448,1
+	LeaveGroup
+	Warp 0,4399,5,14
+	Window_OK
+
+############## 衔樊枣赁屻匹云嗯互箫曰卅中桦宁 ##############
+	Window_YES Group == 1 && Job >=431 && Job <= 447 && Gold < 750
+	#\n\n你的钱不够了。
+	EndWindow 10005
+
+############## 爵⑷烟匹椭瘀毛坢凶仄化中月桦宁 ##############
+	Window_YES Group == 1 && Job >=11 && Job <= 167 && Gold >= 750 && Level >= 36
+	AddGold -750
+	LeaveGroup
+	Warp 0,4399,5,14
+
+############## 衔樊枣赁屻匹椭瘀毛坢凶仄化中月桦宁 ##############
+	Window_YES Group == 1 && Job >=431 && Job <= 447 && Gold >= 750 && Level >= 36
+	AddGold -750
+	LeaveGroup
+	Warp 0,4399,5,14
+###================爆弹师
+############## 爵⑷烟匹伊矛伙互箫曰卅中桦宁 ##############
+	Window_YES Group == 1 && Job >=1001 && Job <= 1007 && Level < 36
+#\n\n﹛失伙由生旦及翘卞丐卅凶及伊矛伙匹垫井木月及反渣莴匹允﹝引凶云旋仄仁分今中﹝
+	EndWindow 14158
+
+############## 爵⑷烟匹白伉□由旦银迕 ##############
+	Window_YES Group == 1 && Item 18660 >= 1 && Job >=1001 && Job <= 1007 && Level >= 36
+#\n\n﹛白伉□由旦毛云儅切匹允友﹝\n﹛公木匹反升丹冗﹝
+	Window 15427,OK
+	Window_OK Item 18660 >= 1 && Job >=1001 && Job <= 1007 && Level >= 36
+	LeaveGroup
+	Warp 0,4399,5,14
+	Window_OK
+
+############## 爵⑷烟匹荚醒痹银迕 ##############
+	Window_YES Group == 1 && Item 18448 >= 1 && Job >=1001 && Job <= 1007 && Level >= 36
+#\n\n﹛荚醒痹毛云儅切匹允友﹝\n﹛公木匹反医嗯及井歹曰卞ㄠ呦云苂井曰谯仄引允﹝
+	Window 14657,OK
+	Window_OK Item 18448 >= 1 && Job >=1001 && Job <= 1007 && Level >= 36
+	KillItem 18448,1
+	LeaveGroup
+	Warp 0,4399,5,14
+	Window_OK
+
+############## 爵⑷烟匹云嗯互箫曰卅中桦宁 ##############
+	Window_YES Group == 1 && Job >=1001 && Job <= 1007 && Gold < 750
+#\n\n﹛云嗯互箫曰引六氏﹝
+	EndWindow 10005
+###================	
+
+############## 戏遣烟匹伊矛伙互箫曰卅中桦宁 ##############
+	Window_YES Group == 1 && Level < 25
+#\n\n﹛失伙由生旦及翘卞丐卅凶及伊矛伙匹垫井木月及反渣莴匹允﹝引凶云旋仄仁分今中﹝
+	EndWindow 14158
+
+############## 戏遣烟匹白伉□由旦银迕 ##############
+	Window_YES Group == 1 && Item 18660 >= 1 && Level >= 25
+#\n\n﹛白伉□由旦毛云儅切匹允友﹝\n﹛公木匹反升丹冗﹝
+	Window 15427,OK
+	Window_OK  Group == 1 && Item 18660 >= 1 && Level >= 25
+	LeaveGroup
+	Warp 0,4399,5,14
+
+############## 戏遣烟匹荚醒痹银迕 ##############
+	Window_YES Group == 1 && Item 18448 >= 1 && Level >= 25
+#\n\n﹛荚醒痹毛云儅切匹允友﹝\n﹛公木匹反医嗯及井歹曰卞ㄠ呦云苂井曰谯仄引允﹝
+	Window 14657,OK
+	Window_OK
+	KillItem 18448,1
+	LeaveGroup
+	Warp 0,4399,5,14
+
+############## 戏遣烟匹云嗯互箫曰卅中桦宁 ##############
+	Window_YES Group == 1 && Gold < 750
+#\n\n﹛云嗯互箫曰引六氏﹝
+	EndWindow 10005
+
+############## 戏遣烟匹椭瘀毛坢凶仄化中月桦宁 ##############
+	Window_YES Group == 1 && Gold >= 750 && Level >= 25
+	AddGold -750
+	LeaveGroup
+	Warp 0,4399,5,14
+
+############## 中中尹毛蓟枪仄凶桦宁 ##############
+	Window_NO
+#\n\n﹛引凶及仍厍迕毛云谨切仄化中引允﹝
+	Endwindow 11139
+
+

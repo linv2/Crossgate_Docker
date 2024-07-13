@@ -1,0 +1,37 @@
+#####■水之雕像 wiz_gm_1101834.txt
+
+###有地之珠
+block Item 40276 >= 1
+	 ##1101916	\n\n\n  雕像上有个小凹洞，是否要把“地之珠”放入？	1
+	 Window 1101916,YES,NO
+	 	 Window_NO
+	 	 Window_YES
+	 	 	 KillItem 40276
+	 	 	 GiveLeak1Item 40277
+			 EndWindow 1101917
+			 ##1101917	\n\n  “地之珠”发出了耀眼的光芒，变化成“水之珠\n  ”了。	1
+
+#有水之珠
+block Item 40277 >= 1
+	 ##1101918	\n\n\n  雕像上有个小凹洞，是否要把“水之珠”放入？	1
+	 Window 1101918,YES,NO
+	 	 Window_NO
+	 	 Window_YES
+	 	 	 KillItem 40277
+	 	 	 EndWindow 1101909
+	 	 	 ##1101909	\n  珠子消失了，但什么事也没发生。\n\n  一定是什么地方搞错了，也许重新调查看看比较\n  好。	1
+
+#有火之珠
+block Item 40278 >= 1
+	 ##1101919	\n\n\n  雕像上有个小凹洞，是否要把“火之珠”放入？	1
+	 Window 1101919,YES,NO
+	 	 Window_NO
+	 	 Window_YES
+	 	 	 KillItem 40278
+	 	 	 EndWindow 1101909
+	 	 	 ##1101909	\n  珠子消失了，但什么事也没发生。\n\n  一定是什么地方搞错了，也许重新调查看看比较\n  好。	1
+	 	 
+#一般
+block 
+	 EndWindow 1101920
+	 ##1101920	\n\n\n  靠近这雕像似乎可以听到些什么声音。	1

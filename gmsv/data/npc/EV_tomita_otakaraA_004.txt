@@ -1,0 +1,29 @@
+#ÆËÄá·ÂËü¾ÞÓÀÄ©¼°ÏÔ©j21¨G40©k©x©x??©xŽx÷ú
+#
+#©x©x©xâêØÆ±Ø¡õÐþ¼°Þð
+
+###©xµ©ÓÃ¡õÓÉËü¼þÓñÃ«ô÷ƒ}ØÆ»¯ÖÐÄ¾ÈÉµ©ÄÌÓÀÃñON
+block Item_631018 >= 1 && Xpos >= 75 && Xpos <= 77 && Ypos ==47
+
+	If LocalFlag0 == 0
+
+		Play_SE 260,320,240
+		ShapeNext 103012
+		LocalFlag0 = 1
+
+	endif
+
+
+
+###©xÄý–cºÐ³ß·¥¡õÃó
+block Item_631018 >= 1 && Xpos == 76 && Ypos == 51
+
+	If LocalFlag0 == 1
+
+		LeaveGroup
+		Warp 0,59750,336,155
+
+	endif
+
+
+

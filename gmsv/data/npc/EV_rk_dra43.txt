@@ -1,0 +1,26 @@
+#伉皿伊奶牁中凶庤﹋打□伙玉玉仿打件﹌(15572&3)
+#
+
+block EndEvent 38 == 1
+	EndWindow 21462
+
+block EndEvent 39 == 1
+	EndWindow 21463
+
+block
+#\n\n﹛仇及哗及蝠谛及狪毛妏五引歹匀化五凶井〝\n﹛公及锳绊升丹合匀凶井及﹝
+#\n\n﹛虭月亢卅中瑁啦互匹五凶及卅日﹜公木互云蟆及褡戈屯五Ⅶ分欠丹﹝
+	Window 21460,next
+#\n\n﹛分互仇仇尺五化引分斨中互丐月及卅日﹜
+#漆及云蟆及啦阀反斨中及卅井卞丐月﹝
+#\n\n﹛鸢杽及福尺枑月及卅日俣毛躯仄化支欠丹
+	Window_21461,yes,no
+		Window_YES
+			KillItem 18780
+			KillItem 18781
+			KillItem 18782
+			KillItem 18885
+			KillItem 18887
+			LeaveGroup
+			Warp 0,15562,15,15
+		Window_NO

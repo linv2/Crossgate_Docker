@@ -1,0 +1,35 @@
+##ㄥ璃コ筏ゴ奶矛件玄﹛唳晓
+## NPC“弘伊□玄瓦伐玄伉
+
+### 2007/7/26 0:00:00 动嫦
+block CheckRealTime 2007/7/26,0:00:00 == 1
+
+### 民尼永弁迕凛棉
+### 隙烂凛棉动嫦
+##block CheckRealTime 2007/7/6,15:00:00 == 1
+
+if Item 16387 >= 1
+	Window"\n\n﹛疋亥巧巧巧″″\n﹛公及敛中手及罹屯凶中疋亥″″\n﹛罹中凶中疋亥巧″″",next
+	Window"\n\n﹛船韶压蟆匹虏创互苇尹化中月瓦伐玄伉卞\n﹛筏ゴ扲檗毛罹屯今六引允井〝",yes,no
+	Window_yes
+		Window"\n\n﹛手什手什\n﹛氏什氏什\n\n﹛手匀五氏″",next
+		Window"\n\n﹛疋亥巧巧巧巧巧巧巧巧巧巧巧巧巧″″″″",next
+		Window"\n\n﹛允仍中亿仍凶尹分匀凶疋亥﹝\n﹛尴中丐引匀化窒井请切扎匀凶疋亥﹝\n﹛丐仆月疋亥",ok
+		Window_ok Item 16387 >= 1
+			KillItem 16387,1
+			GiveLeak1Item 623582,5
+			EndWindow"\n\n﹛午化手踞井匀凶疋亥﹝丐曰互疋亦\n﹛引凶﹜由玄夫□伙卞拻戈疋亥永″"
+
+		Window_ok
+			EndWindow"\n\n﹛疋﹜疋亥’〝〝\n﹛窒井罹屯凶竣互仄凶疋亥\n﹛揪啜中分匀凶疋亥’’’"
+
+
+	Window_no
+		EndWindow"\n\n﹛疋﹜疋亥巧巧巧巧巧″″″\n﹛卅﹜卅氏化谛疋亥\n﹛仇氏卅谛及凶户卞由玄夫□伙仄化凶疋亥井’’"
+else
+	EndWindow "\n\n﹛由玄夫□伙仄允亢化﹜云呏坞中凶疋亥﹝\n﹛敛仁化嘉中手及互罹屯凶中疋亥’’’’"
+endif
+
+### 2007/7/26 0:00:00动蟆
+block
+	EndWindow "\n\n﹛ㄥ璃コ筏ゴ云户匹午丹疋亥﹝\n﹛愈嗤坁颗卅壑及酦疋亥﹝\n﹛ざ歾由玄夫□伙卞拻戈疋亥永″"

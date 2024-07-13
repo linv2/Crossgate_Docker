@@ -1,0 +1,333 @@
+#扑尼仿它巨永末及显﹋21℅40﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛扔瓦□﹋票仆﹌及摒
+
+###﹛辄嫖佴﹋607714﹌引凶反失甲伙佴阂﹋607717﹌毛赭儅
+block Item_607714 >= 1 || Item_607717 >= 1
+	Window 3206769,OK
+
+		#\n\n﹛公木反﹜歹仄互支匀凶佴阂分卅﹝\n﹛丐及赶谛赚及瘀匹反午化手普桨仄化月互卅﹜\n﹛き勾手赶勾手丐仆日木氏冗﹝歹仄反漆侄仄中﹝\n﹛显卞枑曰卅今木﹝市永市永市永市永＿﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59837,92,80
+
+
+
+###﹛厘霉及萼﹋631043﹌毛呁醒赭儅
+block Item_631043 >= 2
+	Window 3206770,OK
+
+		#\n\n﹛厘霉及萼毛呁醒儅匀化中月方丹分卅﹝\n﹛呿侳卅日萼⑺衔互恘毛藉切壅仄丐匀化﹜\n﹛仇仇卞反侳日木卅中反内分互﹝\n﹛引丐﹜午卞井仁伙□伙啜?分井日﹜\n﹛请化垫匀化手日丹冗﹝市永市永市永市永＿﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59837,92,80
+
+
+
+###﹛厘霉及萼﹋631043﹌毛ㄠ勾分仃赭儅
+block Item_631043 == 1
+
+#﹛旦正件皿ㄡ匹厘霉及褴裤湛﹋631019﹌午厘霉及县酱﹋631032﹌毛赭儅
+	If StampCount_631043 >= 2 && Item_631019 >= 1 && Item_631032 >= 1
+		Window 3206771,NEXT
+
+		#\n\n﹛市永市永﹜它奴件玉﹜伊奶件﹜扔件母□手﹜\n﹛仇木匹云午卅仄仁卅月分欠丹﹝\n﹛呿癫卅日歹仄互锹澎毛六卞扎卅日氏及分互﹜\n﹛コ及六中井虫互蜕丹仇午毛五井卅仁化卅﹝
+		Window 3206772,NEXT
+
+		#\n\n﹛允匹卞竣勿中化中月井手襞木氏互﹜\n﹛霉篑白巧弘午中丹及反歹仄及仇午分﹝\n﹛娄转毛瑁啦仄凶手及及﹜公及詨互艘ミ匹卅﹝\n﹛窒仄欠澎票反雄俓卅乩汁壬井曰分井日卅﹝
+		Window 3206773,NEXT
+
+		#\n\n﹛佌虽仄化霉篑药互雄霉药卞卅匀凶及匹反﹜\n﹛歹仄及皿仿奶玉互袱今卅中﹝\n﹛分井日澎票升手手娄转今六月仇午卞仄凶氏分﹝\n﹛仇氏卅卞丹引仁中仁午反合歹卅井匀凶互卅﹝
+		Window 3206774,OK
+
+		#\n\n﹛呿癫卞中欠中欠午壑狪卞卅匀凶卅﹝\n﹛今今支井卅坁分互﹜斪毛熬仃潸匀化仁木﹝\n﹛匹反﹜引凶升仇井匹卅﹝市永市永市永市永＿﹝
+
+			Window_OK Item_631043 >= 2
+				EndWindow 3206775
+
+		#\n\n﹛厘霉及萼毛公氏卅卞澎卞じ木化﹜\n﹛升丹允月勾手曰分〝\n﹛公氏卅仇午匹反斪反欐六氏卅﹝\n﹛歹仄反俓壬曰互盟中卅氏分﹝
+				EndBlock
+
+			Window_OK Item_631043 == 1 && StampCount_631043 >= 2 && Item_631019 >= 1 && Item_631032 >= 1 && ItemSpace >= 1
+				KillItemAll 631043
+				KillItem 631019,1
+				KillItem 631032,1
+				GiveItemEX 607717,1,3206776
+
+		#\n\n﹛公及方丹卞绂坁互中匀天中分午﹜\n﹛斪毛欐允仇午反匹五氏卅﹝
+				LeaveGroup
+				Warp 0,59837,92,80
+				EndBlock
+
+			Window_OK Item_631043 == 1 && StampCount_631043 >= 2 && Item_631019 >= 1 && Item_631032 >= 1
+				EndWindow 3206777
+
+		#\n\n﹛公及方丹卞绂坁互中匀天中分午﹜\n﹛斪毛欐允仇午反匹五氏卅﹝
+				EndBlock
+
+			Window_OK Item_631043 == 1 && Item_631019 >= 1 && Item_631032 >= 1
+				EndWindow 3206778
+
+		#\n\n﹛公木反今匀五引匹及萼午啜丹匹反卅中井﹝\n﹛歹仄及杴毛仍引井公丹午仄化手拑蛲分﹝\n﹛怉卅引友毛允月樊卞﹜斪反欐六氏卅﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3206779
+
+		#\n\n﹛儅匀化中凶厘霉失奶泛丞反升丹仄凶〝\n﹛斪反公木日午娄五赘尹元扎卅中午欐六卅中冗﹝
+				EndBlock
+
+
+#﹛旦正件皿ㄡ匹厘霉及褴裤湛﹋631019﹌毛赭儅
+	else
+	If StampCount_631043 >= 2 && Item_631019 >= 1
+		Window 3206780,NEXT
+
+		#\n\n﹛市永市永﹜它奴件玉﹜伊奶件﹜扔件母□手﹜\n﹛仇木匹云午卅仄仁卅月分欠丹﹝\n﹛呿癫卅日歹仄互锹澎毛六卞扎卅日氏及分互﹜\n﹛コ及六中井虫互蜕丹仇午毛五井卅仁化卅﹝
+		Window 3206781,YES,NO
+
+		#\n\n﹛医歹曰卞⑹中化仁木凶斪毛仄凶中氏分互﹜\n﹛孔戈﹜漆及引引匹反忔骚及云斪卞卅月卅﹝\n﹛手丹剂仄匹庍歹匀凶云斪卞卅月及分互﹜\n﹛民乓伊件斥仄化心月井卅〝
+
+			Window_YES
+				Window 3206782,OK
+
+		#\n\n﹛丹戈﹜扑乓伊及歹井月中中乩汁分﹝\n﹛﹍厘霉及＿﹎午中丹抩及失奶泛丞毛﹜\n﹛丐午ㄠ勾澎卞じ木木壬中中﹝\n﹛匹反仇及引引﹜朿盒及陆尺霜月冗﹝
+
+					Window_OK
+						LeaveGroup
+						Warp 0,59837,92,80
+						EndBlock
+
+			Window_NO Item_631043 >= 2
+				EndWindow 3206783
+
+		#\n\n﹛厘霉及萼毛公氏卅卞澎卞じ木化﹜\n﹛升丹允月勾手曰分〝\n﹛公氏卅仇午匹反斪反欐六氏卅﹝\n﹛歹仄反俓壬曰互盟中卅氏分﹝
+				EndBlock
+
+			Window_NO Item_631043 == 1 && StampCount_631043 >= 2 && Item_631019 >= 1 && ItemSpace >= 1
+				Window 3206784,NEXT
+
+		#\n\n﹛公丹井﹝竣勿中化中月井手襞木氏互﹜\n﹛霉篑白巧弘午中丹及反歹仄及仇午分﹝\n﹛域洘及颗亢反﹜尕懈及澎票毛歹仄午域踝卞\n﹛娄转今六月凶户及暮蛛分匀凶氏分﹝
+				Window 3206785,OK
+
+		#\n\n﹛公氏卅歹仃匹﹜中欠中欠午壑狪卞卅匀凶卅﹝\n﹛匹反﹜忔骚及斪毛熬仃潸匀化仁木﹝\n﹛市永市永市永市永＿﹝
+
+					Window_OK Item_631043 >= 2
+						EndWindow 3206786
+
+		#\n\n﹛厘霉及萼毛公氏卅卞澎卞じ木化﹜\n﹛升丹允月勾手曰分〝\n﹛公氏卅仇午匹反斪反欐六氏卅﹝\n﹛歹仄反俓壬曰互盟中卅氏分﹝
+						EndBlock
+
+					Window_OK Item_631043 == 1 && StampCount_631043 >= 2 && Item_631019 >= 1 && ItemSpace >= 1
+						KillItemAll 631043
+						KillItem 631019,1
+						GiveItemEX 607714,1,3206787
+
+		#\n\n﹛公及方丹卞绂坁互中匀天中分午﹜\n﹛斪毛欐允仇午反匹五氏卅﹝
+						LeaveGroup
+						Warp 0,59837,92,80
+						EndBlock
+
+					Window_OK Item_631043 == 1 && StampCount_631043 >= 2 && Item_631019 >= 1
+						EndWindow 3206788
+
+		#\n\n﹛公及方丹卞绂坁互中匀天中分午﹜\n﹛斪毛欐允仇午反匹五氏卅﹝
+						EndBlock
+
+					Window_OK Item_631043 == 1 && Item_631019 >= 1
+						EndWindow 3206789
+
+		#\n\n﹛公木反今匀五引匹及萼午啜丹匹反卅中井﹝\n﹛歹仄及杴毛仍引井公丹午仄化手拑蛲分﹝\n﹛怉卅引友毛允月樊卞﹜斪反欐六氏卅﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3206790
+
+		#\n\n﹛儅匀化中凶厘霉失奶泛丞反升丹仄凶〝\n﹛斪反公木日午娄五赘尹元扎卅中午欐六卅中冗﹝
+						EndBlock
+
+			Window_NO Item_631043 == 1 && StampCount_631043 >= 2 && Item_631019 >= 1
+				EndWindow 3206791
+
+		#\n\n﹛公及方丹卞绂坁互中匀天中分午﹜\n﹛斪毛欐允仇午反匹五氏卅﹝
+				EndBlock
+
+			Window_NO Item_631043 == 1 && Item_631019 >= 1
+				EndWindow 3206792
+
+		#\n\n﹛公木反今匀五引匹及萼午啜丹匹反卅中井﹝\n﹛歹仄及杴毛仍引井公丹午仄化手拑蛲分﹝\n﹛怉卅引友毛允月樊卞﹜斪反欐六氏卅﹝
+				EndBlock
+
+			Window_NO
+				EndWindow 3206793
+
+		#\n\n﹛儅匀化中凶厘霉失奶泛丞反升丹仄凶〝\n﹛斪反公木日午娄五赘尹元扎卅中午欐六卅中冗﹝
+				EndBlock
+
+
+#﹛旦正件皿ㄡ匹厘霉及县酱﹋631032﹌毛赭儅
+	else
+	If StampCount_631043 >= 2 && Item_631032 >= 1
+		Window 3206794,NEXT
+
+		#\n\n﹛市永市永﹜它奴件玉﹜伊奶件﹜扔件母□手﹜\n﹛仇木匹云午卅仄仁卅月分欠丹﹝\n﹛呿癫卅日歹仄互锹澎毛六卞扎卅日氏及分互﹜\n﹛コ及六中井虫互蜕丹仇午毛五井卅仁化卅﹝
+		Window 3206795,YES,NO
+
+		#\n\n﹛医歹曰卞⑹中化仁木凶斪毛仄凶中氏分互﹜\n﹛孔戈﹜漆及引引匹反忔骚及云斪卞卅月卅﹝\n﹛手丹剂仄匹庍歹匀凶云斪卞卅月及分互﹜\n﹛民乓伊件斥仄化心月井卅〝
+
+			Window_YES
+				Window 3206796,OK
+
+		#\n\n﹛丹戈﹜扑乓伊及歹井月中中乩汁分﹝\n﹛﹍厘霉及＿﹎午中丹抩及失奶泛丞毛﹜\n﹛丐午ㄠ勾澎卞じ木木壬中中﹝\n﹛匹反仇及引引﹜朿盒及陆尺霜月冗﹝
+
+					Window_OK
+						LeaveGroup
+						Warp 0,59837,92,80
+						EndBlock
+
+			Window_NO Item_631043 >= 2
+				EndWindow 3206797
+
+		#\n\n﹛厘霉及萼毛公氏卅卞澎卞じ木化﹜\n﹛升丹允月勾手曰分〝\n﹛公氏卅仇午匹反斪反欐六氏卅﹝\n﹛歹仄反俓壬曰互盟中卅氏分﹝
+				EndBlock
+
+			Window_NO Item_631043 == 1 && StampCount_631043 >= 2 && Item_631032 >= 1 && ItemSpace >= 1
+				Window 3206798,NEXT
+
+		#\n\n﹛公丹井﹝竣勿中化中月井手襞木氏互﹜\n﹛霉篑白巧弘午中丹及反歹仄及仇午分﹝\n﹛域洘及颗亢反﹜尕懈及澎票毛歹仄午域踝卞\n﹛娄转今六月凶户及暮蛛分匀凶氏分﹝
+				Window 3206799,OK
+
+		#\n\n﹛公氏卅歹仃匹﹜中欠中欠午壑狪卞卅匀凶卅﹝\n﹛匹反﹜忔骚及斪毛熬仃潸匀化仁木﹝\n﹛市永市永市永市永＿﹝
+
+					Window_OK Item_631043 >= 2
+						EndWindow 3206800
+
+		#\n\n﹛厘霉及萼毛公氏卅卞澎卞じ木化﹜\n﹛升丹允月勾手曰分〝\n﹛公氏卅仇午匹反斪反欐六氏卅﹝\n﹛歹仄反俓壬曰互盟中卅氏分﹝
+						EndBlock
+
+					Window_OK Item_631043 == 1 && StampCount_631043 >= 2 && Item_631032 >= 1 && ItemSpace >= 1
+						KillItemAll 631043
+						KillItem 631032,1
+						GiveItemEX 607714,1,3206801
+
+		#\n\n﹛公及方丹卞绂坁互中匀天中分午﹜\n﹛斪毛欐允仇午反匹五氏卅﹝
+						LeaveGroup
+						Warp 0,59837,92,80
+						EndBlock
+
+					Window_OK Item_631043 == 1 && StampCount_631043 >= 2 && Item_631032 >= 1
+						EndWindow 3206802
+
+		#\n\n﹛公及方丹卞绂坁互中匀天中分午﹜\n﹛斪毛欐允仇午反匹五氏卅﹝
+						EndBlock
+
+					Window_OK Item_631043 == 1 && Item_631032 >= 1
+						EndWindow 3206803
+
+		#\n\n﹛公木反今匀五引匹及萼午啜丹匹反卅中井﹝\n﹛歹仄及杴毛仍引井公丹午仄化手拑蛲分﹝\n﹛怉卅引友毛允月樊卞﹜斪反欐六氏卅﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3206804
+
+		#\n\n﹛儅匀化中凶厘霉失奶泛丞反升丹仄凶〝\n﹛斪反公木日午娄五赘尹元扎卅中午欐六卅中冗﹝
+						EndBlock
+
+			Window_NO Item_631043 == 1 && StampCount_631043 >= 2 && Item_631032 >= 1
+				EndWindow 3206805
+
+		#\n\n﹛公及方丹卞绂坁互中匀天中分午﹜\n﹛斪毛欐允仇午反匹五氏卅﹝
+				EndBlock
+
+			Window_NO Item_631043 == 1 && Item_631032 >= 1
+				EndWindow 3206806
+
+		#\n\n﹛公木反今匀五引匹及萼午啜丹匹反卅中井﹝\n﹛歹仄及杴毛仍引井公丹午仄化手拑蛲分﹝\n﹛怉卅引友毛允月樊卞﹜斪反欐六氏卅﹝
+				EndBlock
+
+			Window_NO
+				EndWindow 3206807
+
+		#\n\n﹛儅匀化中凶厘霉失奶泛丞反升丹仄凶〝\n﹛斪反公木日午娄五赘尹元扎卅中午欐六卅中冗﹝
+				EndBlock
+
+
+#﹛旦正件皿ㄡ
+	else
+	If StampCount_631043 >= 2
+		Window 3206808,NEXT
+
+		#\n\n﹛市永市永﹜它奴件玉﹜伊奶件﹜扔件母□手﹜\n﹛仇木匹云午卅仄仁卅月分欠丹﹝\n﹛呿癫卅日歹仄互锹澎毛六卞扎卅日氏及分互﹜\n﹛コ及六中井虫互蜕丹仇午毛五井卅仁化卅﹝
+		Window 3206809,NEXT
+
+		#\n\n﹛午丹及樯卞竣勿中化中月井手襞木氏互﹜\n﹛霉篑白巧弘午中丹及反歹仄及仇午分﹝\n﹛漆荚及仇午反﹜俓蕉卅澎票升手毛歹仄午隋卞\n﹛娄转今六月凶户及暮蛛分匀凶氏分﹝
+		Window 3206810,OK
+
+		#\n\n﹛公氏卅歹仃匹﹜中欠中欠午壑狪卞卅匀凶卅﹝\n﹛勾引日氏坁分互﹜斪毛熬仃潸匀化仁木﹝\n﹛市永市永市永市永＿﹝
+
+			Window_OK Item_631043 >= 2
+				EndWindow 3206811
+
+		#\n\n﹛厘霉及萼毛公氏卅卞澎卞じ木化﹜\n﹛升丹允月勾手曰分〝\n﹛公氏卅仇午匹反斪反欐六氏卅﹝\n﹛歹仄反俓壬曰互盟中卅氏分﹝
+				EndBlock
+
+			Window_OK Item_631043 == 1 && StampCount_631043 >= 2 && ItemSpace >= 1
+				KillItemAll 631043
+				GiveItemEX 607714,1,3206812
+
+		#\n\n﹛公及方丹卞绂坁互中匀天中分午﹜\n﹛斪毛欐允仇午反匹五氏卅﹝
+				LeaveGroup
+				Warp 0,59837,92,80
+				EndBlock
+
+			Window_OK Item_631043 == 1 && StampCount_631043 >= 2
+				EndWindow 3206813
+
+		#\n\n﹛公及方丹卞绂坁互中匀天中分午﹜\n﹛斪毛欐允仇午反匹五氏卅﹝
+				EndBlock
+
+			Window_OK Item_631043 == 1
+				EndWindow 3206814
+
+		#\n\n﹛公木反今匀五引匹及萼午啜丹匹反卅中井﹝\n﹛歹仄及杴毛仍引井公丹午仄化手拑蛲分﹝\n﹛怉卅引友毛允月樊卞﹜斪反欐六氏卅﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3206815
+
+		#\n\n﹛斪反厘霉及萼午娄五赘尹分﹝\n﹛萼毛升仇尺怅仄凶及分〝
+				EndBlock
+
+
+#﹛旦正件皿晓筏动陆
+	else
+		Window 3206816,OK
+
+		#\n\n﹛丹□戈﹜卅兮仇仇卞侳日木凶及井歹井日氏卅﹝\n﹛苇凶午仇欠﹜引分仇仇尺侳月及卞优邰卅仇午毛\n﹛仄化中卅中方丹分互﹝\n﹛午卞井仁枑月仇午分卅﹝市永市永市永市永＿﹝
+
+			Window_OK
+				LeaveGroup
+				Warp 0,59837,92,80
+				EndBlock
+
+	endif
+	endif
+	endif
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3206817,OK
+
+		#\n\n﹛幻丹﹜窒井澎啜中互丐匀凶方丹分卅﹝\n﹛中五卅曰仇氏卅午仇欠尺?壬今木化五化﹜\n﹛乱中凶分欠丹﹝歹仄反凶引仆凶冗﹝\n﹛元扎﹜葭卞枑仄化支欠丹﹜市永市永市永市永＿﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59837,92,80
+
+
+

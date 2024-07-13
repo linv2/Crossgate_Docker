@@ -1,0 +1,60 @@
+#雯庰ヲ衔 生戊驯五及扔市平 14011,4“1188 25 17
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 18306井18307毛儅匀化中月桦宁 ##########
+block Item 18306 >= 1 || Item 18307 >= 1
+	#\n\n﹛丐卅凶井日手日匀凶生戊切扎氏﹜厘濠卞圈化月井日友﹝\n﹛幻氏午卞丐曰互午丹″
+	EndWindow 11342
+
+
+########## Lv20动晓25动票及伐□正奶布□毛儅匀化中化﹜失奶泛丞卞坞五互丐月桦宁 ##########
+block PetLevel 1 == 20 || PetLevel 1 == 21 || PetLevel 1 == 22 || PetLevel 1 == 23 || PetLevel 1 == 24 || PetLevel 1 == 25
+	#\n\n﹛公仇及丐卅凶﹜台卞公及伐□正奶布□切扎氏歙匀化方″\n﹛云斪卅日允月仄﹜切扎氏午圈化月歹″幻氏午方″〝
+	Window 11333,YES,NO
+	Window_YES ItemSpace >= 1
+	KillPeth 1,20
+	GiveLeak1Item 18306
+	#\n\n﹛丐曰互午丹″漆ざ井日仇及阂及抩蟆反≦正穴平民今氏≧方″濮覆井歹中互月井日″
+	EndWindow 11334
+	Window_NO
+	#\n\n﹛尹□﹜仄斤廿□氏＿＿﹝
+	EndWindow 11335
+	Window_YES ItemSpace == 0
+	#\n\n﹛丐卅凶及井歹中中生戊切扎氏歙匀化″＿午合匀凶日﹜丐卅凶卞欐允云斪互儅切五木卅中心凶中分歹﹝\n﹛氏□丐□﹜手丹″
+	EndWindow 11336
+
+
+########## Lv20动晓及弗永玄扑□毛儅匀化中化﹜失奶泛丞卞坞五互丐月桦宁 ##########
+block PetLevel 2 == 20 || PetLevel 2 == 21 || PetLevel 2 == 22 || PetLevel 2 == 23 || PetLevel 2 == 24 || PetLevel 2 == 25
+	#\n\n﹛公仇及丐卅凶﹜台卞公及弗永玄扑□切扎氏歙匀化方″\n﹛云斪卅日允月仄﹜切扎氏午圈化月歹″幻氏午方″〝
+	Window 11337,YES,NO
+	Window_YES ItemSpace >= 1
+	KillPeth 2,20
+	GiveLeak1Item 18307
+	#\n\n﹛丐曰互午丹″漆ざ井日仇及阂及抩蟆反≦卫螃皮伙□扔件母□≧方″濮覆井歹中互月井日″
+	EndWindow 11338
+	Window_NO
+	#\n\n﹛尹□﹜仄斤廿□氏＿＿﹝
+	EndWindow 11335
+	Window_YES ItemSpace == 0
+	#\n\n﹛丐卅凶及井歹中中生戊切扎氏歙匀化″＿午合匀凶日﹜丐卅凶卞欐允云斪互儅切五木卅中心凶中分歹﹝\n﹛氏□丐□﹜手丹″
+	EndWindow 11336
+
+
+########## Lv20恍坢及伐□正奶布□井弗永玄扑□毛儅匀化中月桦宁 ##########
+block PetLevel 1 < 20 || PetLevel 2 < 20
+	#\n\n﹛丐卅凶及生戊切扎氏﹜引分凝今中及友＿﹝台反手丹剂仄雄公丹卅及互驯五分卅″\n﹛分匀化井匀仇中中元扎卅中〝
+	EndWindow 11339
+########## Lv25方曰晓及伐□正奶布□井弗永玄扑□毛儅匀化中月桦宁 ##########
+block PetLevel 1 > 25 || PetLevel 2 > 25
+	#\n\n﹛丐卅凶及生戊切扎氏﹜切斤匀午圈切允亢元扎卅中〝\n﹛公木元扎丐台卅氏井手丹旳仁仇午匹五卅中卅丑″
+	EndWindow 11340
+
+
+########## 丐化反引日卅中桦宁 ##########
+block
+	#\n\n﹛丐□氏﹜生戊互齐中凶中□″冂卞Lv20蟆詨及井歹中中伐□正奶布□井弗永玄扑□互俓仄中及″＿分仃升它民﹜失由□玄分井日矢永玄嗟鞅卅氏分丑﹝丐□丐＿﹝
+	EndWindow 11341

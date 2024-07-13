@@ -1,0 +1,172 @@
+# 2005コ 拨芞左伉巨件泛□伉件弘    #
+# NPC:蕨及粖辉                     #
+
+
+### 膻缁辅曰及据毛呁醒赭儅
+block Item 622006 > 1
+	Window "\n\n﹛窒分方﹜\n﹛据毛公氏卅卞儅匀化月元扎卅中井﹝\n﹛据手膻缁手匋璋分友﹝",OK
+		Window_OK
+			KillItemAll 622006
+			KillItemAll 622007
+			KillItemAll 622008
+			KillItemAll 622009
+Endblock
+
+
+
+### 膻缁辅曰及据及正奶穴□互15坌毛聊亢凶午五
+block Item 622006 == 1 && ItemCreateTime 622006 >= 15
+	Window "\n\n﹛卅丐﹜公及＞膻缁辅曰及据＝反\n﹛手丹躲绊互卅中冗﹝\n﹛鬼中互愈赓井日分卅﹝",OK
+		Window_OK
+			KillItemAll 622006
+			KillItemAll 622007
+			KillItemAll 622008
+			KillItemAll 622009
+Endblock
+
+
+
+### 云凑中膻缁’攴毛呁醒赭儅
+block Item 622009 > 1
+	Window "\n\n﹛丐丐﹜＞云凑中膻缁’攴＝反域勾及心分冗﹝\n﹛母丢分\n﹛匋璋分″",OK
+		Window_OK
+			KillItemAll 622009
+
+
+
+### 云凑中膻缁’攴及旦正件皿＞ㄠ 卅云井勾 膻缁辅曰及据毛赭儅
+block StampCount 622009 == 1 && Item 622006 == 1
+	Window "\n\n﹛蓎中反蔽歹匀化月兮﹝今﹜镀仁枑曰卅﹝\n﹛引分窒井丐月及井〝\n﹛＿＿丐丐﹜云引元卅中井﹝\n﹛井仃卅云允及井〝",YES,NO
+		Window_YES Item 622006 == 0
+			EndWindow "\n\n﹛据互卅中元扎卅中井﹝\n﹛引匀凶仁﹝"
+
+		Window_YES Item 622006 > 1
+			Window "\n\n﹛膻缁辅曰及据反域勾及心分″匋璋允月″",OK
+				Window_OK
+					KillItemAll 622006
+
+		Window_YES
+			KillItemAll 622006
+			GiveLeak1Item 622006,1
+			EndWindow "\n\n﹛云丹″元扎﹜中仁兮″"
+
+		Window_NO
+			EndWindow "\n\n﹛公丹井﹝"
+
+Endblock
+
+
+
+### 云凑中膻缁’攴 卅云井勾 膻缁辅曰及据毛赭儅
+block Item 622009 == 1 && Item 622006 == 1
+	Window "\n\n﹛云﹜＞云凑中膻缁’攴＝分卅﹝\n﹛方□仄﹜竣宁じ熔﹜云蓎中仄化支月兮″\n﹛拑狨﹜据及云引元卅中手井仃卅云允兮″",OK
+
+		Window_OK Item 622006 == 0
+			EndWindow "\n\n﹛据互卅中及卞云蓎中匹五月井″"
+
+
+		Window_OK Item 622009 == 0
+			EndWindow "\n\n﹛＞云凑中膻缁’攴＝互卅中冗﹝"
+
+		Window_OK Item 622009 > 1
+			EndWindow "\n\n﹛丐丐﹜＞云凑中膻缁’攴＝反域勾及心分冗﹝"
+
+		Window_OK Item 622006 > 1
+			EndWindow "\n\n﹛膻缁辅曰及据反域勾及心分″"
+
+		Window_OK
+			KillItemAll 622006
+			GiveLeak1Item 622006,1
+			AddStampCount 622009,+1
+
+		Window_OK Item 622009 > 1
+			Window "\n\n﹛丐丐﹜＞云凑中膻缁’攴＝反域勾及心分冗﹝\n﹛母丢分\n﹛匋璋分″",OK
+				Window_OK
+					KillItemAll 622009
+
+		Window_OK Item 622006 > 1
+			Window "\n\n﹛膻缁辅曰及据反域勾及心分″匋璋允月″",OK
+				Window_OK
+					KillItemAll 622006
+
+
+Endblock
+
+
+
+### 云凑中膻缁’扈 or 云凑中膻缁’阂 升切日井毛赭儅 卅云井勾 膻缁辅曰及据毛赭儅
+block Item 622008 == 1 || Item 622007 == 1
+	if Item 622006 == 1
+		Window "\n\n﹛氏〝公及膻缁反＿＿﹝\n﹛丐丐﹜冞及系癫匹五月手及元扎卅中卅﹝\n\n﹛六匀井仁分﹝\n﹛膻缁辅曰及据卞\n﹛云引元卅中毛井仃化支欠丹井〝",YES,NO
+
+			Window_YES Item 622006 == 0
+				EndWindow "\n\n﹛据互卅中元扎卅中井﹝\n﹛引匀凶仁﹝"
+
+			Window_YES Item 622006 > 1
+				Window "\n\n﹛膻缁辅曰及据反域勾及心分″匋璋允月″",OK
+					Window_OK
+						KillItemAll 622006
+
+			Window_YES
+				KillItemAll 622006
+				GiveLeak1Item 622006
+				EndWindow "\n\n﹛云丹″元扎﹜中仁兮″"
+
+			Window_NO
+				EndWindow "\n\n﹛公丹井﹝"
+
+	else
+		if Item 622006 == 0
+		
+		GoToF case1
+		endif
+	endif
+Endblock
+
+
+
+### 云凑中膻缁’阂﹜云凑中膻缁’扈﹜云凑中膻缁’攴 及中内木井赭儅﹜膻缁辅曰及据毛尕赭儅
+block Item 622007 == 1 || Item 622008 == 1 || Item 622009 == 1
+
+*case1*
+
+	if Item 622006 == 0
+		Window "\n\n﹛＞膻缁辅曰及据＝互卅中及卞﹜\n﹛云蓎中卞侳月午反中中蘸饨分﹝\n﹛分互﹜拺陆反カ户卅中﹝蝈朿匋璋分﹝",OK
+			Window_OK
+				KillItemAll 622007
+				KillItemAll 622008
+				KillItemAll 622009
+Endblock
+
+
+
+### 膻缁辅曰及据毛赭儅
+block Item 622006 == 1
+	Window "\n\n﹛丐丐﹜＞膻缁辅曰及据＝井﹝\n﹛云丹﹜膻缁毛儅匀化仁木壬﹜\n﹛云蓎中仄化支月兮﹝\n\n﹛公丹公丹﹜引元卅中毛井仃卅云允井〝",YES,NO
+
+		Window_YES Item 622006 == 0
+			EndWindow "\n\n﹛据互卅中元扎卅中井﹝\n﹛引匀凶仁﹝"
+
+		Window_YES Item 622006 > 1
+			Window "\n\n﹛膻缁辅曰及据反域勾及心分″匋璋允月″",OK
+				Window_OK
+					KillItemAll 622006
+
+		Window_YES
+			KillItemAll 622006
+			GiveLeak1Item 622006,1
+			EndWindow "\n\n﹛云丹″元扎﹜中仁兮″"
+
+		Window_NO
+			EndWindow "\n\n﹛公丹井﹝"
+Endblock
+
+
+
+
+### 晓筏动陆
+block
+	EndWindow "\n\n﹛丐丐﹜仇及斥丢斥丢仄凶斥乓件弘伙＿＿﹝\n﹛失伙田奶玄午反中尹﹜\n﹛戈切扎仁切扎分方﹝\n﹛尹〝仇仇反蕨分央〝\n﹛称井中仇午反竣卞允月卅﹝皮仿扒□﹝"
+Endblock
+
+

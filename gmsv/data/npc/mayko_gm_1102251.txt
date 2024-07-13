@@ -1,0 +1,27 @@
+#####艾尔玛之书
+
+
+
+ 				
+ 		
+block 
+	 Window 1109328,YES,NO
+	 Window_YES
+	 	 Window 1109329,NEXT
+	 	 Window 1109330,NEXT
+	 	 Window 1109331,NEXT
+	 	 Window 1109332,OK
+	 	 Window_OK Item 40803>0
+	 	 Endblock
+	 	 Window_OK
+	 	 Window 1109333,YES,NO
+	 	 Window_YES ItemSpace < 1 
+	 	 #物品栏已满
+	 	 Window 1100001,OK
+	 	 	 	 
+	 	 Window_YES
+	 	 GiveLeak1Item 40803,1
+	 	 Window_NO
+
+	 Window_NO
+	 

@@ -1,0 +1,192 @@
+#烈焰霸王	100084	20	5	5	21	29	9	22	24	100	9	0	0	0	0	0	70	30	0	0	0	0	0	0	1	1	0	0	7	110393	100	0			1	7300	7400									
+#疾风霸王	100085	20	5	5	21	29	9	22	24	100	9	0	0	0	30	0	30	70	0	0	0	0	0	0	1	1	0	0	7	110394	100	0			1	7300	7400									
+#寒冰霸王	100086	20	5	5	21	29	9	22	24	100	9	0	0	0	0	70	30	0	0	0	0	0	0	0	1	1	0	0	7	110395	100	0			1	7300	7400									
+#大地 10116
+#1111763	\n\n\n　　　　哇～\n　　　　你搜集到五张巨花设计图呀～
+	#1111764	\n\n\n　　　　你现在身上有烈焰霸王与整套设计图，\n　　　　要将烈焰霸王改为一级吗？
+	#1111765	\n\n\n　　　　你现在身上有疾风霸王与整套设计图，\n　　　　要将疾风霸王改为一级吗？
+	#1111766	\n\n\n　　　　你现在身上有寒冰霸王与整套设计图，\n　　　　要将寒冰霸王改为一级吗？
+	#1111767	\n\n\n　　　　你现在身上有大地霸王与整套设计图，\n　　　　要将大地霸王改为一级吗？
+
+block item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetSpace == 0 
+	##1109601	\n\n\n\n\n@c你的宠物栏已满！	1																						
+	EndWindow 1109601
+
+block item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100084 >1 && PetSpace != 0 ##图5+焰
+	
+	Window 1111897,next
+	Window 1111808,yes,no
+	Window_yes item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100084 > 1 && PetSpace != 0 ##图5+焰
+	KillPetl 100084
+	KillItem 41252,1
+	KillItem 41253,1
+	KillItem 41254,1
+	KillItem 41255,1
+	KillItem 41256,1
+	GivePet 41438
+	endblock
+	Window_yes
+	endwindow 1053059
+	Window_no  item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100085 > 1 && PetSpace != 0 ##图5+风
+		Window 1111899,yes,no
+		Window_yes item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100085 > 1 && PetSpace != 0 ##图5+风
+		KillPetl 100085
+		KillItem 41252,1
+		KillItem 41253,1
+		KillItem 41254,1
+		KillItem 41255,1
+		KillItem 41256,1
+		GivePet 41439
+		endblock
+		Window_yes
+		endwindow 1053059
+		Window_no item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100086 > 1 && PetSpace != 0 ##图5+冰
+			Window 1111900,yes,no
+			Window_yes item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100086 > 1 && PetSpace != 0 ##图5+冰
+			KillPetl 100086
+			KillItem 41252,1
+			KillItem 41253,1
+			KillItem 41254,1
+			KillItem 41255,1
+			KillItem 41256,1
+			GivePet 41440
+			endblock
+			Window_yes
+			endwindow 1053059
+			Window_no  item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 10116 > 1 && PetSpace != 0 ##图5+地
+				Window 1111901,yes,no
+				Window_yes item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 10116 > 1 && PetSpace != 0 ##图5+地
+				KillPetl 10116
+				KillItem 41252,1
+				KillItem 41253,1
+				KillItem 41254,1
+				KillItem 41255,1
+				KillItem 41256,1
+				GivePet 41437
+				endblock
+				Window_yes
+				endwindow 1053059
+				window_no
+				#1111768	\n\n\n\n@c想改造再来找我喔！
+				endwindow 1111902
+			Window_no
+			endwindow 1111902
+		Window_no	
+		endwindow 1111902
+	window_no
+	endwindow 1111902
+###
+block  item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100085 > 1 && PetSpace != 0  ##图5+风			
+	Window 1111897,next
+	Window 1111899,yes,no
+	Window_yes item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100085 >1 && PetSpace != 0  ##图5+风		
+	KillPetl 100085	
+	KillItem 41252,1
+	KillItem 41253,1
+	KillItem 41254,1
+	KillItem 41255,1
+	KillItem 41256,1
+	GivePet 41439
+	endblock
+	Window_yes
+	endwindow 1053059
+	Window_no item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100086 >1 && PetSpace != 0 ##图5+冰
+		Window 1111900,yes,no
+		Window_yes item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100086 >1 && PetSpace != 0  ##图5+冰
+		KillPetl 100086	
+		KillItem 41252,1
+		KillItem 41253,1
+		KillItem 41254,1
+		KillItem 41255,1
+		KillItem 41256,1
+		GivePet 41440
+		endblock
+		Window_yes
+		endwindow 1053059
+		Window_no  item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 10116 >1 && PetSpace != 0  ##图5+地
+			Window 1111901,yes,no
+			Window_yes item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 10116 >1 && PetSpace != 0  ##图5+地
+			KillPetl 10116
+			KillItem 41252,1
+			KillItem 41253,1
+			KillItem 41254,1
+			KillItem 41255,1
+			KillItem 41256,1
+			GivePet 41437
+			endblock
+			Window_yes
+			endwindow 1053059
+			window_no
+			#1111768
+			endwindow 1111902
+		Window_no
+		endwindow 1111902
+	Window_no
+	endwindow 1111902
+###
+block item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100086 >1 && PetSpace != 0  ##图5+冰
+	Window 1111897,next
+	Window 1111900,yes,no
+	Window_yes item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 100086 >1 && PetSpace != 0  ##图5+冰
+	KillPetl 100086
+	KillItem 41252,1
+	KillItem 41253,1
+	KillItem 41254,1
+	KillItem 41255,1
+	KillItem 41256,1
+	GivePet 41440
+	endblock
+	Window_yes
+	endwindow 1053059
+	Window_no  item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 10116 >1 && PetSpace != 0  ##图5+地
+		Window 1111901,yes,no
+		Window_yes item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 10116 >1 && PetSpace != 0  ##图5+地
+		KillPetl 10116
+		KillItem 41252,1
+		KillItem 41253,1
+		KillItem 41254,1
+		KillItem 41255,1
+		KillItem 41256,1
+		GivePet 41437
+		endblock
+		Window_yes
+		endwindow 1053059
+		window_no
+		#1111902
+		endwindow 1111768
+	Window_no
+	endwindow 1111902
+##
+block  item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 10116 >1 && PetSpace != 0  ##图5+地
+	Window 1111897,next
+	Window 1111901,yes,no
+	Window_yes item 41252 >0 && item 41253 >0 && item 41254 >0 && item 41255 >0 && item 41256 >0 && PetLevel 10116 >1 && PetSpace != 0  ##图5+地
+	KillPetl 10116
+	KillItem 41252,1
+	KillItem 41253,1
+	KillItem 41254,1
+	KillItem 41255,1
+	KillItem 41256,1
+	GivePet 41437
+	endblock
+	Window_yes
+	endwindow 1053059
+	window_no
+	#1111768
+	endwindow 1111902
+##
+block leak0item 41252 >0 ## 有未鉴定的物品	41252 41253 41254 41255 41256
+	endwindow 1111758
+
+block leak0item 41253 >0 ## 有未鉴定的物品	41252 41253 41254 41255 41256
+	endwindow 1111759
+block leak0item 41254 >0 ## 有未鉴定的物品	41252 41253 41254 41255 41256
+	endwindow 1111760
+block leak0item 41255 >0 ## 有未鉴定的物品	41252 41253 41254 41255 41256
+	endwindow 1111761
+block leak0item 41256 >0 ## 有未鉴定的物品	41252 41253 41254 41255 41256
+	endwindow 1111762
+
+block
+	window 1111756,next
+	endwindow 1111757

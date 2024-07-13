@@ -1,0 +1,26 @@
+#1054985	\n\n\n\n@c想摇一摇袋子，把里面的骰子摇出来吗？	1
+#1054986	\n\n\n\n@c那天有兴趣在摇摇看。	1
+#1054987	\n\n\n\n@c摇呀摇。	1
+#1054988	\n\n\n\n@c骰子摇出来了。	1
+#1054989	\n\n\n\n@c骰子袋不见啰。	1
+#OPEN的骰子	47674
+#OPEN的骰子	47675
+#OPEN的骰子	47676
+#OPEN的骰子	47677
+#OPEN的骰子	47678
+#OPEN的骰子	47679
+
+block
+	 Window 1054985,YES,NO
+	 Window_YES 
+	 	 Window 1054987,OK
+	 	 Window_OK Item 47673 >0
+	 	 KillItem 47673,1
+	 	 GiveLeak1Item (47674%1$1,47675%1$1,47676%1$1,47677%1$1,47678%1$1,47679%1$1)
+	 	 EndWindow 1054988
+	 	 Window_OK
+	 	 EndWindow 1054989
+	 Window_NO
+	 EndWindow 1054986	 
+
+	 	

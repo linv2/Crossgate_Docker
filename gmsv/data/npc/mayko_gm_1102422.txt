@@ -1,0 +1,143 @@
+##40	51
+##蒲田先生家门
+#1110190	\n\n\n\n@c蒲田先生：吾不愿接见来人，请回吧。
+#1110191	\n\n\n\n@c蒲田先生：来人能力不足，请回吧。
+#1110192	\n\n\n　　　蒲田先生：\n　　　　　　　来人不是剑士、战斧斗是或骑士，请回吧。
+#1110193	\n\n\n\n@c蒲田先生：请进吧。
+#剑士、战斧斗士、骑士A、S阶才可习得
+#JOBID   14、15、24、25、34 35才可学习
+
+##剑士A  有家书
+block  Xpos==40 && Ypos == 51 && Job == 14 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190
+##剑士s阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 15 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190 
+##剑士s1阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 16 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190	 
+##剑士s2阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 17 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190
+##豆腐a阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 24 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190
+##豆腐s阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 25 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190
+##豆腐s1阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 26 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190
+##豆腐s2阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 27 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190
+##骑士a阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 34 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190
+##骑士s阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 35 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190 	 
+##骑士s1阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 36 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190	 
+##骑士s2阶  有家书	 
+block  Xpos==40 && Ypos == 51 && Job == 37 && Item 40924>0	 
+	 Window 1110193,OK
+	 Window_OK Item 40924>0
+	 KillItem 40924,1
+	 LeaveGroup
+	 Warp 0,32280,3,8
+	 endblock
+	 Window_OK
+	 EndWindow 1110190
+####职级不够
+block Xpos==40 && Ypos == 51 && JobAncestry == 10 && Item 40924>0
+	 EndWindow 1110191
+block Xpos==40 && Ypos == 51 && JobAncestry == 20 && Item 40924>0
+	 EndWindow 1110191	 
+block Xpos==40 && Ypos == 51 && JobAncestry == 30 && Item 40924>0
+	 EndWindow 1110191	 
+##有家书  非可学习职业	 
+block Xpos==40 && Ypos == 51 &&  Item 40924>0
+	 EndWindow 1110192	 	
+##没有家书	 
+block Xpos==40 && Ypos == 51
+	EndWindow 1110190
+

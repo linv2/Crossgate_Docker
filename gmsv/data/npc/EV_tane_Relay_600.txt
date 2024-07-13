@@ -1,0 +1,90 @@
+#伉伊□﹛甩伙穴﹛6及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+
+###########﹛伉伊□酦﹛##############
+
+block Item 14630 >=1 && Item 14636 >=1 && ItemCreateTime 14630 > 10
+
+#\n\n﹛丐日日﹜手丹迍仃切扎匀化月友＿＿
+
+	KillItemall 14630
+	KillItemall 14636
+
+	EndWindow 3006160
+
+
+
+
+block Item 14630 >=1 && Item 14636 >=1 && ItemCreateTime 14630 <= 10
+
+
+	Window 3006151,next
+
+	Window 3006152,next
+
+	Window 3006153,next
+
+	Window 3006154,next
+
+	Window 3006155,next
+
+
+	Window 3006156,ok
+
+	Window_ok
+
+	KillItemall 14636
+	GiveItem 14637,1
+
+#\n\n﹛反中﹜??″\n﹛戚﹜ㄡ寞尺萌仆℅
+
+
+
+
+block Item 14630 >=1
+
+#\n\n﹛丐℅切互丹方℅\n﹛丐凶仄反域?杴″″
+
+	Window 3006157,next
+
+	Window 3006158,next
+
+
+	EndWindow 3006159
+
+
+###########﹛民仿扑肣﹛##############
+
+block Item 14639 >= 1
+
+#\n\n﹛反中反中﹜\n﹛伉伊□及云友尹今氏ㄠ寞匹允方氏﹝
+
+
+
+		EndWindow 3006150,OK
+
+###########﹛民仿扑拑﹛##############
+
+block
+
+#\n\n﹛幼伙玉卞じ匀化月〝\n﹛仇及必□丞﹜支匀化心卅中〝\n﹛扒件弁玄’甩伙穴及坋踹蟆匹\n﹛熬仃尥仃支匀化月歹方
+
+		Window 3006148,next
+
+		Window 3006149,OK
+
+	Window_ok Item 14639 <= 0
+
+	GiveItem 14639,1
+	
+	Window_ok Item 14639 >= 1
+
+	endWindow 3006991
+
+
+
+

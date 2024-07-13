@@ -1,0 +1,44 @@
+####1000金币VIP	mayko_gm_1051759.txt
+
+####1000枚金币兑换商　　40844
+
+
+block Item 40844 >= 1000
+	 Window 1055030,YES,NO  #1055030	\n\n　　　　您现在有1000金币，\n　　　　要兑换魔龙兑换卷吗？	1
+	 Window_YES Item 40844 >= 1000
+	 KillItem 40844,1000
+	 GiveLeak1Item 47683,1
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 
+	 
+	 Window_NO
+	 Window 1055031,YES,NO  #1055031	\n\n\n@c要兑换鼠王宝石二级吗？	1
+	 Window_YES Item 40844 >= 1000
+	 KillItem 40844,1000
+	 GiveLeak1Item 40949,1
+	 Endblock
+	 Window_YES
+	 EndWindow 11055026 
+	 Window_NO
+	 Window 1055032,YES,NO
+	 Window_NO
+	 EndWindow 1109723
+	 Window_YES Item 40844 >= 1000
+	 KillItem 40844,1000
+	 GiveLeak1Item 47540,1
+	 Endblock
+	 Window_YES
+	 EndWindow 11055026 
+	  	 
+	 endblock
+	 	 
+block Item 40844 > 0 
+	 EndWindow 1055068	 
+				
+block 
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 EndWindow 1109723
+	 							 	 

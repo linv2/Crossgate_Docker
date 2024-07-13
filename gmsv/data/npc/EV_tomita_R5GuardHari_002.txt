@@ -1,0 +1,86 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛伉扑亘□及摒
+
+###﹛甩伉□穴奶仿皮毛赭儅
+block Item_607996 >= 1
+	EndWindow 3204961
+
+		#\n\n﹛鬼中仃升﹜丐氏凶午反狪毛仄凶仁卅中友尹﹝\n﹛窒分井襞日卅中仃升﹜镘互驯井卅中氏分方﹝
+
+
+
+###﹛甩伉乩穴执及亲毛赭儅
+block Item_607995 >= 1
+
+	If Item_607995 >= 2
+		EndWindow 3204962
+
+		#\n\n﹛丐氏凶﹜亲驯五卅及井中〝﹛庍卅浔怗分友尹﹝
+		EndBlock
+
+	else
+		If StampCount_607995 == 0
+			EndWindow 3204963
+
+		#\n\n﹛朹樊膜垫毛仄化中月及井中〝\n﹛譬阂卞昙匀化﹜拑辞毛允月氏元扎卅中方﹝
+			EndBlock
+
+		else
+			If StampCount_607995 == 1
+				Window 3204964,OK
+
+		#\n\n﹛?谛甩伉乩穴〝\n﹛尺尹﹜中五卅曰鴃扙毛蔺引木月卅氏化﹜\n﹛碳か分匀凶友尹﹝\n﹛匹﹜公及甩伉乩穴分仃升﹜手仄井仄化\n﹛仇氏卅蛊分匀凶井中〝
+
+					Window_OK Item_607995 >= 2
+						EndWindow 3204965
+
+		#\n\n﹛卅氏化友﹜切斤匀午井日井匀化心凶分仃分方﹝
+						EndBlock
+
+					Window_OK Item_607995 == 1 && StampCount_607995 == 1
+						LeaveGroup
+						AddStampCount 607995,+1
+						Encount 3|0,59682,152,74||0|||||0|306040|||||||||
+						EndBlock
+
+					Window_OK Item_607995 == 1 && StampCount_607995 < 1
+						EndWindow 3204966
+
+		#\n\n﹛卅氏化友﹜切斤匀午井日井匀化心凶分仃分方﹝
+						EndBlock
+
+					Window_OK Item_607995 == 1 && StampCount_607995 > 1
+						EndWindow 3204967
+
+		#\n\n﹛卅氏化友﹜切斤匀午井日井匀化心凶分仃分方﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3204968
+
+		#\n\n﹛卅氏化友﹜切斤匀午井日井匀化心凶分仃分方﹝
+						EndBlock
+
+			else
+				EndWindow 3204969
+
+		#\n\n﹛鬼中仃升﹜丐氏凶午反狪毛仄凶仁卅中友尹﹝\n﹛窒分井襞日卅中仃升﹜镘互驯井卅中氏分方﹝
+				EndBlock
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3204970
+
+		#\n\n﹛朹湛缜谛凶切卞粮中化﹜侂填缜谛凶切手\n﹛支匀化侳凶心凶中分友﹝\n﹛ㄢ遽卞中月斥尼弗伙匀化中丹银中呺手﹜\n﹛公及侂填缜谛凶切午楮溢互丐月心凶中﹝\n﹛匹手﹜窒分井健中卞仁中普元分匀凶友尹﹝
+
+
+

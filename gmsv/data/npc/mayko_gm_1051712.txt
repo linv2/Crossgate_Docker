@@ -1,0 +1,20 @@
+
+#文具商	mayko_gm_1051712.txt
+
+#1054953	\n\n\n　　　你好，我这贩售笔记本跟文具组，\n　　　两样特惠1000G，你要购买吗？	1
+block 
+	 Window 1054953,YES,NO
+	 Window_YES Gold > 999 && ItemSpace >1
+	 AddGold -1000
+	 GiveLeak1Item 47662,1
+	 GiveLeak1Item 47663,1
+	 endblock
+	 Window_YES gold<1000
+	 EndWindow 3	 
+	 Window_YES ItemSpace <2 
+	 EndWindow 3219645
+	 Window_YES
+	 EndWindow 3210168
+	 Window_NO
+	 EndWindow 3210168
+	 

@@ -1,0 +1,230 @@
+########### 魔力大会考31 ###########
+######■主考官莫罗依
+##■检查队伍
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■检查物品栏
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+##■有肉包
+block Item 45323 == 1
+	 ##1050707	\n\n\n\n@c快吃吃看，我做的料理可是城里顶尖的呢！
+	 EndWindow 1050707
+##■有蛋黄包
+block Item 45324 == 1
+	 ##1050707	\n\n\n\n@c快吃吃看，我做的料理可是城里顶尖的呢！
+	 EndWindow 1050707
+##■有烛台(时间已过)
+block Item 45332== 1 
+	 ##1050708	\n\n你的蜡烛已经熄灭了，看来时间已到，真可惜！\n\n我本来还想在你回答完所有问题后，请你吃我做的顶级料理呢！
+	 Window 1050708,OK
+	 Window_OK
+	 KillItem 45332
+	 GiveLeak1Item 45334
+	 Warp 0,30110,15,30
+##■检查烛台时间1
+block Item 45331 == 1 && ItemCreateTime 45331 > 5
+  	 KillItem 45331
+  	 GiveLeak1Item 45332
+  	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间2
+block Item 45330 == 1 && ItemCreateTime 45330 > 10
+	 KillItem 45330
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间3
+block Item 45330 == 1 && ItemCreateTime 45330 > 5
+	 KillItem 45330
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间4
+block Item 45329 == 1 && ItemCreateTime 45329 > 15
+	 KillItem 45329
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间5
+block Item 45329 == 1 && ItemCreateTime 45329 > 10
+	 KillItem 45329
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间6
+block Item 45329 == 1 && ItemCreateTime 45329 > 5
+	 KillItem 45329
+	 GiveLeak1Item 45330
+	 ##1050678	\n\n\n\n@c比赛将在10分钟以内结束！
+         EndWindow 1050678
+##■有烛台(时间未过)
+block Item 45329 == 1 || Item 45330 == 1 || Item 45331 == 1
+	 ##1050709	\n\n欢迎你来到第二关，我会好好的招待你的！\n请接着回答我的问题，答错的话就要说掰掰啰！
+	 Window 1050709,OK
+	     Window_OK Group == 1
+	         ##1050710	\n\n\n\n在王宫地下城里喊饿肚子的调查员412，他最想吃的是蛋炒饭？
+	         Window 1050710,YES,NO
+	             Window_YES Group == 1      
+	                 KillItem 45329
+	                 KillItem 45330
+	                 KillItem 45331
+	                     ##1050720	\n\n哎呀~可惜阿！你答错了，拜拜啰！\n\n这是安慰奖，拿着吧！
+	                     Window 1050720,OK
+	                         Window_OK
+	                             GiveLeak1Item 45334
+	  	        	     Warp 0,30110,15,30
+	  	     Window_NO Group == 1 
+	  	         ##1050711	\n\n\n\n制作蕃茄酱所需的原料是5颗蕃茄，加一个空瓶？
+	  	         Window 1050711,YES,NO
+	  	             Window_NO Group == 1 
+	  	                 KillItem 45329
+	  	                 KillItem 45330
+	  	                 KillItem 45331
+	  	                     ##1050720	\n\n哎呀~可惜阿！你答错了，拜拜啰！\n\n这是安慰奖，拿着吧！
+	  	                     Window 1050720,OK
+	  	                         Window_OK
+	  	                             GiveLeak1Item 45334
+	  	                             Warp 0,30110,15,30
+	  	             Window_YES Group == 1 
+	  	                  ##1050712	\n\n\n\n收集哥布林的绿色头盔可以跟爱头盔的波月换电影卷？
+	  	                  Window 1050712,YES,NO
+	  	                      Window_YES Group == 1
+	  	                          KillItem 45329
+	  	                          KillItem 45330
+	  	                          KillItem 45331
+	  	                              ##1050720	\n\n哎呀~可惜阿！你答错了，拜拜啰！\n\n这是安慰奖，拿着吧！
+	  	                              Window 1050720,OK
+	  	                                  Window_OK
+	  	                                      GiveLeak1Item 45334
+	  	                                      Warp 0,30110,15,30
+	  	                      Window_NO Group == 1
+	  	                          ##1050713	\n\n\n\n法兰城中的费纳甘提到用苹果花拿来煮汤对美容有效？
+	  	                          Window 1050713,YES,NO
+	  	                              Window_YES Group == 1
+	  	                                  KillItem 45329
+	  	                                  KillItem 45330
+	  	                                  KillItem 45331
+	  	                                      ##1050720	\n\n哎呀~可惜阿！你答错了，拜拜啰！\n\n这是安慰奖，拿着吧！
+	  	                                      Window 1050720,OK
+	  	                                          Window_OK  
+	  	                                              GiveLeak1Item 45334
+	  	                                              Warp 0,30110,15,30
+	  	                              Window_NO Group == 1  
+	  	                                  ##1050714	\n\n\n\n给蕾娜一瓶蕃茄可以换到16瓶小麦粉？
+	  	                                  Window 1050714,YES,NO
+	  	                                      Window_NO Group == 1
+	  	                                          KillItem 45329
+	  	                                          KillItem 45330
+	  	                                          KillItem 45331
+	  	                                              ##1050720	\n\n哎呀~可惜阿！你答错了，拜拜啰！\n\n这是安慰奖，拿着吧！
+	  	                                              Window 1050720,OK
+	  	                                                  Window_OK
+	  	                                                  GiveLeak1Item 45334
+	  	                                                  Warp 0,30110,15,30
+	  	                                      Window_YES Group == 1
+	  	                                          ##1050715	\n\n\n\n法兰城中，豪华屋14天的租金是5000G？
+	  	                                          Window 1050715,YES,NO
+	  	                                              Window_YES Group == 1
+	  	                                                  KillItem 45329
+	  	                                                  KillItem 45330
+	  	                                                  KillItem 45331
+	  	                                                      ##1050720	\n\n哎呀~可惜阿！你答错了，拜拜啰！\n\n这是安慰奖，拿着吧！
+	  	                                                      Window 1050720,OK
+	  	                                                          Window_OK
+	  	                                                          GiveLeak1Item 45334
+	  	                                                          Warp 0,30110,15,30
+	  	                                              Window_NO Group == 1
+	  	                                                  ##1050716	\n\n\n\n厨师做的料理，可以供给出门在外的勇者们，用来补充魔力？
+	  	                                                  Window 1050716,YES,NO
+	  	                                                      Window_NO Group == 1 
+	  	                                                          KillItem 45329
+	  	                                                          KillItem 45330
+	  	                                                          KillItem 45331
+	  	                                                              ##1050720	\n\n哎呀~可惜阿！你答错了，拜拜啰！\n\n这是安慰奖，拿着吧！
+	  	                                                              Window 1050720,OK
+	  	                                                                  Window_OK 
+	  	                                                                  GiveLeak1Item 45334
+	  	                                                                  Warp 0,30110,15,30
+	  	                                                      Window_YES Group == 1
+	  	                                                          ##1050717	\n\n\n\n料理中“青椒肉丝”所使用的肉丝是牛肉？
+	  	                                                          Window 1050717,YES,NO
+	  	                                                              Window_NO Group == 1
+	  	                                                                  KillItem 45329
+	  	                                                                  KillItem 45330
+	  	                                                                  KillItem 45331
+	  	                                                                      ##1050720	\n\n哎呀~可惜阿！你答错了，拜拜啰！\n\n这是安慰奖，拿着吧！
+	  	                                                                      Window 1050720,OK
+	  	                                                                          Window_OK 
+	  	                                                                          GiveLeak1Item 45334
+	  	                                                                          Warp 0,30110,15,30
+	  	                                                              Window_YES Group == 1
+	  	                                                                  ##1050718	\n\n\n\n里谢里堡中料理长米其巴请玩家将水果蕃茄送到伊尔村？
+	  	                                                                  Window 1050718,YES,NO
+	  	                                                                      Window_NO Group == 1
+	  	                                                                          KillItem 45329 
+	  	                                                                          KillItem 45330
+	  	                                                                          KillItem 45331
+	  	                                                                              ##1050720	\n\n哎呀~可惜阿！你答错了，拜拜啰！\n\n这是安慰奖，拿着吧！
+	  	                                                                              Window 1050720,OK 
+	  	                                                                                  Window_OK
+	  	                                                                                  GiveLeak1Item 45334
+	  	                                                                                  Warp 0,30110,15,30 
+	  	                                                                      Window_YES Group == 1
+	  	                                                                          ##1050719	\n\n\n\n无法在商店里买到酱油？
+	  	                                                                          Window 1050719,YES,NO
+	  	                                                                              Window_YES Group == 1
+	  	                                                                                  KillItem 45329
+	  	                                                                                  KillItem 45330
+	  	                                                                                  KillItem 45331
+	  	                                                                                      ##1050720	\n\n哎呀~可惜阿！你答错了，拜拜啰！\n\n这是安慰奖，拿着吧！
+	  	                                                                                      Window 1050720,OK
+	  	                                                                                          Window_OK 
+	  	                                                                                          GiveLeak1Item 45334
+	  	                                                                                          Warp 0,30110,15,30 
+	  	                                                                              Window_NO Group == 1
+	  	                                                                                  ##1050721	\n\n恭喜你通过第二关的测验！哈哈！\n哎呀~我只顾着问问题，都忘了要请你吃吃看我新作的料理！
+	  	                                                                                  Window 1050721,NEXT
+	  	                                                                                      ##1050732	\n\n\n\n吃了这料理后，请往下一关移动，哈哈！
+	  	                                                                                      Window 1050732,OK
+	  	                                                                                          Window_OK Item 45329 == 1 || Item 45330 == 1 || Item 45331 == 1
+	  	                                                                                              GiveLeak1Item (45323%1$1,45324%1$1)
+		 		  		 				  		 		 	 	 	 	 	 
+##■没有烛台
+block
+	 ##1050706	\n咦？你怎么进来的？\n我记得所有参赛的勇者都有拿到计时用的烛台呀！\n你没有表示你不能参加，这边禁止闲杂人等，请你出去吧！
+	 Window 1050706,OK
+	 	 Window_OK
+	 	 Warp 0,30110,15,30	  	                                                                                              
+	  	                                                                                          
+	  	                                                                                      
+
+	  	                                                                                          
+	  	                                                                          
+                       
+	  	                                                                           
+	  	                                                                    
+
+	  	                                                  
+	  	                                      
+	  	                                                  
+	  	                              
+	  	                          
+	  	                                      
+	  	                                      
+
+	  	                             
+	  	             
+	  	    
+	                         
+	                         
+	 	 	   
+
+	 	
+

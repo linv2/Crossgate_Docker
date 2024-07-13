@@ -1,0 +1,66 @@
+#ØøÒÁ¡õ©xË¦»ïÑ¨©x1¼°ÚÐ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+
+
+
+###########©xØøÒÁ¡õáN©x##############
+
+block Item 14630 >=1 && Item 14631 >=1 && ItemCreateTime 14630 > 10
+
+	KillItemall 14630
+	KillItemall 14631
+
+
+	EndWindow 3006120
+
+
+
+
+block Item 14630 >=1 && Item 14631 >=1 && ItemCreateTime 14630 <= 10
+
+
+
+
+
+
+	Window 3006118,ok
+
+	Window_ok
+	KillItemall 14631
+	GiveItem 14632,1
+
+
+
+
+block Item 14630 >=1
+
+	EndWindow 3006119
+
+
+###########©xÃñ·ÂÆËÃQ©x##############
+
+block Item 14639 >= 1
+
+
+		EndWindow 3006117,OK
+
+###########©xÃñ·ÂÆË’ƒ©x##############
+
+block
+
+		Window 3006116,OK
+
+		Window_ok
+
+	Window_ok Item 14639 <= 0
+
+	GiveItem 14639,1
+	
+	Window_ok Item 14639 >= 1
+
+	endWindow 3006991
+
+
+

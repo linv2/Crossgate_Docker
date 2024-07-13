@@ -1,0 +1,11 @@
+#©xÄ»•iîù¼°¸ÛºĞ©x??©xx÷ú
+#
+#©x©x©xØÎ¼°Şğ
+
+block Xpos == 112 && Ypos == 198
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+

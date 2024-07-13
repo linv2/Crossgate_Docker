@@ -1,0 +1,90 @@
+###### 中秋节活动-夜市摊贩-柚子 #####
+
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+## 男角色	 
+block BBImage >= 100000 && BBImage <= 100173
+	 ##1050940	\n\n来喔来喔！好吃多汁的柚子便宜卖喔！\n俊大爷！来一颗吧？\n\n算你50元就好！	1
+	 Window 1050940,YES,NO 
+	 	 Window_YES Gold >= 50
+	 	 	 AddGold -50
+	 	 	 GiveLeak1Item 45442
+	 	 	 ##1050941	\n\n谢谢！谢谢！大爷好眼光，祝您财运亨通，好运滚滚来！	1
+	 	 	 EndWindow 1050941
+	 	 Window_YES Gold < 50
+	 	 	 ##1050944	\n\n您的钱好像不够耶！	1
+	 	 	 EndWindow 1050944
+	 	 Window_NO 
+	 	 
+block BBImage >= 105000 && BBImage <= 105173
+	 ##1050940	\n\n来喔来喔！好吃多汁的柚子便宜卖喔！\n俊大爷！来一颗吧？\n\n算你50元就好！	1
+	 Window 1050940,YES,NO 
+	 	 Window_YES Gold >= 50
+	 	 	 AddGold -50
+	 	 	 GiveLeak1Item 45442
+	 	 	 ##1050941	\n\n谢谢！谢谢！大爷好眼光，祝您财运亨通，好运滚滚来！	1
+	 	 	 EndWindow 1050941
+	 	 Window_YES Gold < 50
+	 	 	 ##1050944	\n\n您的钱好像不够耶！	1
+	 	 	 EndWindow 1050944
+	 	 Window_NO 
+	 	 
+block BBImage >= 106000 && BBImage <= 106173	 
+	 ##1050940	\n\n来喔来喔！好吃多汁的柚子便宜卖喔！\n俊大爷！来一颗吧？\n\n算你50元就好！	1
+	 Window 1050940,YES,NO 
+	 	 Window_YES Gold >= 50
+	 	 	 AddGold -50
+	 	 	 GiveLeak1Item 45442
+	 	 	 ##1050941	\n\n谢谢！谢谢！大爷好眼光，祝您财运亨通，好运滚滚来！	1
+	 	 	 EndWindow 1050941
+	 	 Window_YES Gold < 50
+	 	 	 ##1050944	\n\n您的钱好像不够耶！	1
+	 	 	 EndWindow 1050944
+	 	 Window_NO 	 	
+	 	 
+## 女角色	
+block BBImage >= 100250 && BBImage <= 100423
+	 ##1050942	\n\n来喔来喔！好吃多汁的柚子便宜卖喔！\n俏姑娘！来一颗吧？\n\n算你50元就好！	1
+	 Window 1050942,YES,NO 
+	 	 Window_YES Gold >= 50
+	 	 	 AddGold -50
+	 	 	 GiveLeak1Item 45442
+	 	 	 ##1050943	\n\n谢谢！谢谢！姑娘好眼光，祝您青春永驻，事事顺心喔！	1
+	 	 	 EndWindow 1050943
+	 	 Window_YES Gold < 50
+	 	 	 ##1050944	\n\n您的钱好像不够耶！	1
+	 	 	 EndWindow 1050944
+	 	 Window_NO 
+	 	 
+block BBImage >= 105250 && BBImage <= 105423
+	 ##1050942	\n\n来喔来喔！好吃多汁的柚子便宜卖喔！\n俏姑娘！来一颗吧？\n\n算你50元就好！	1
+	 Window 1050942,YES,NO 
+	 	 Window_YES Gold >= 50
+	 	 	 AddGold -50
+	 	 	 GiveLeak1Item 45442
+	 	 	 ##1050943	\n\n谢谢！谢谢！姑娘好眼光，祝您青春永驻，事事顺心喔！	1
+	 	 	 EndWindow 1050943
+	 	 Window_YES Gold < 50
+	 	 	 ##1050944	\n\n您的钱好像不够耶！	1
+	 	 	 EndWindow 1050944
+	 	 Window_NO 
+	 	 
+block BBImage >= 106250 && BBImage <= 106423
+	 ##1050942	\n\n来喔来喔！好吃多汁的柚子便宜卖喔！\n俏姑娘！来一颗吧？\n\n算你50元就好！	1
+	 Window 1050942,YES,NO 
+	 	 Window_YES Gold >= 50
+	 	 	 AddGold -50
+	 	 	 GiveLeak1Item 45442
+	 	 	 ##1050943	\n\n谢谢！谢谢！姑娘好眼光，祝您青春永驻，事事顺心喔！	1
+	 	 	 EndWindow 1050943
+	 	 Window_YES Gold < 50
+	 	 	 ##1050944	\n\n您的钱好像不够耶！	1
+	 	 	 EndWindow 1050944
+	 	 Window_NO 
+
+block
+	 ##1050945	\n\n奇怪了，这年头连动物都想来买东西？一定是我眼花了！	1
+	 EndWindow 1050945
+	 
+	 

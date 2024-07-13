@@ -1,0 +1,33 @@
+#
+#takefushi
+#
+###©x2002/12/25 00:00:00¶¯ó¡Ø¦ÈÕ©x###
+#block CheckRealTime 2002/12/25,00:00:00 == 0
+#\n\n\n\n@c©xÒý·ÖÛÍØøµ©Ñ¨µ©ÄÌÆ¤Ã«ÁÄ¿º»¯ÖÐÒýÁùÊÏ©z
+#	EndWindow "\n\n©xÏþÝËçÇÑ¨µ©Õý¡õ¼°Ä¸Á¢¡õÆ¥ÔÊ©z",OK
+##############  ##############
+
+#block Xpos == 0 && Ypos == 0 && CheckRealTime 2003/12/26,00:00:00 == 1
+#block Xpos == 0 && Ypos == 0 &&  CheckRealTime 2003/12/12,17:00:00 == 1
+block Xpos >= 25 && CheckRealTime 2003/12/11,22:45:00 == 1
+
+
+	SetObject 0,999,30,40,0
+	SetObject 0,999,30,40,0
+	
+
+#block Xpos == 0 && Ypos == 0 &&  CheckRealTime 2003/12/24,00:00:00 == 1
+#block Xpos == 0 && Ypos == 0 &&  CheckRealTime 2003/12/12,14:00:00 == 1
+block Xpos >= 25 && CheckRealTime 2003/12/11,22:42:00 == 1
+
+
+	SetObject 0,999,30,40,103016
+
+
+#block Xpos == 0 && Ypos == 0 &&  CheckRealTime 2003/12/12,14:00:00 == 1
+block Xpos >= 25 &&  CheckRealTime 2003/12/11,22:40:00 == 1
+
+
+	SetObject 0,999,30,40,11395
+
+

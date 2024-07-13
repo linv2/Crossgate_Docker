@@ -1,0 +1,102 @@
+#ºÎ”£€Õæﬁµ©–˛°∞À¸≈´º˛”◊µ©ı”Ω¨©j®Á©k
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©x—˚‹˝±Œ?©x##############
+block nowevent74 == 1 && endevent74 == 1
+
+	Endwindow 206655,OK
+
+###########©x≤º”¿∑∫º˛§∂∑§ÿ§‘ª©x##############
+block endevent73 == 1
+
+	EndWindow 206575,OK
+
+block nowevent73 == 1 && Item 18898 >= 1
+
+	Window 206654,OK
+	Window_OK
+	leavegroup
+	endevent73 = 1
+	nowevent73 = 0
+	KillItem 18898
+
+###########©xendevent72©x##############
+block nowevent73 == 1
+
+	Window 206192,OK
+	Window_OK
+
+block endevent72 == 1
+
+	Window 206192,OK
+	Window_OK
+	leavegroup
+	endevent72 = 0
+	nowevent73 = 1
+
+###########©xendevent 69 on ©xnowevent 70 on©x##############
+block endevent70 == 1
+
+	EndWindow 206215,OK
+
+block endevent69 == 1 && nowevent70 == 1
+
+	Window 206230,NEXT
+	Window 206231,OK
+	Window_OK
+	leavegroup
+	nowevent69 = 0
+	endevent69 = 0
+	nowevent70 = 0
+	endevent70 = 1
+
+###########©xNOWFLG 69 on©x £æ ßÿ¯ÃÔƒÃ...£Ω©x##############
+block nowevent69 == 1 && strcmpchat == 206740
+
+	EndWindow 206229,OK
+
+###########©xendevent 68 on©x›Â‘ª«ÎΩÒƒæ–◊≈Ï±˝©x##############
+block nowevent69 == 1 
+
+	EndWindow 206228,OK
+
+block endevent68 == 1 && Item 18895 >= 1
+
+	Window 206225,NEXT
+	Window 206226,NEXT
+	Window 206227,NEXT
+	Window 206229,OK
+	Window_OK
+	leavegroup
+	nowevent69 = 1
+	endevent68 = 0
+
+###########©x•ˆ±˝º∞∂™∆π©x##############
+block Item 18893 >= 1 && endevent68 == 1
+
+	EndWindow 206224,OK
+
+
+###########©xÀ¶º˛€ÕæÆ»’º∞≈Ï±˝©x##############
+block Item 18892 >= 1
+
+	Window 206216,NEXT
+	Window 206217,NEXT
+	Window 206218,NEXT
+	Window 206219,NEXT
+	Window 206220,NEXT
+	Window 206221,NEXT
+	Window 206222,NEXT
+	Window 206223,OK
+	Window_OK
+	leavegroup
+	endevent68 = 1
+	
+
+###########©x÷œ ÷ÿ¶ÿ∆©x##############
+block
+
+	EndWindow 206215,OK
+
+

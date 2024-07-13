@@ -1,0 +1,188 @@
+##########################################
+#	扑尼仿它巨永末及显﹛扑尼仿旦疋永汁
+#
+#	卅□侇
+#
+##########################################
+
+
+###﹛毕挥午毕辉挥毛赭儅仄化中月 ###
+block Item 607703 >= 1 && Item 607704 >= 1
+	Window3208485,Yes,No
+
+		#\n\n﹛引凶引凶﹜侳化仁木月午反丹木仄中及予℅\n﹛豢潜卞丐仆凶毕挥午毕辉挥卅氏元扎互\n﹛漆蘸﹜泛奴旦互锳涟允月日仄仁化及\n﹛公木日互优邰卞卅匀化仄引匀凶氏元扎﹝\n﹛忒仄化仁木氏井及予℅
+
+	## 毕挥﹜毕辉挥毛欐允 ##
+	Window_Yes Item 607703 >= 1 && Item 607704 >= 1
+		Window3208486,OK
+
+		#\n\n﹛豢潜反﹜支今仄中及予℅\n﹛医歹曰卞仇木毛支月冗不﹝\n﹛丐午﹜元扎引卅云潮曰反歹仄互枃丹冗﹝\n﹛引凶﹜粕互丐匀凶日芛太卞五氏仄扎中﹝\n﹛公木匹反及予℅℅℅
+		Window_OK Item 607703 >= 1 && Item 607704 >= 1
+			KillItemAll 623576
+			KillItemAll 623577
+			KillItemAll 623578
+			KillItemAll 623579
+			KillItemAll 623580
+			KillItem 607703,1
+			KillItem 607704,1
+			GiveItem(607720%25$1,607721%25$1,607722%25$1,607723%25$1)
+			LeaveGroup
+			Warp 0,59552,108,41
+
+		## 毕挥﹜毕辉挥互卅仁卅月﹝##
+		Window_OK
+			EndWindow3208487
+
+		#\n\n﹛云支〝﹛允引氏﹝\n﹛苇棉啜中元扎匀凶﹝
+
+	Window_Yes
+		EndWindow3208488
+
+		#\n\n﹛云支〝﹛允引氏﹝\n﹛苇棉啜中元扎匀凶﹝
+
+	Window_NO
+		Window3208489,OK
+
+		#\n\n﹛酷杅卅中及予℅\n﹛泛奴旦卞反医歹曰及手及毛丐仆月井﹝\n﹛豢潜卞庍卅仇午毛中丹化仄引匀凶及\n﹛公木匹反及予℅℅℅
+			Window_OK
+				LeaveGroup
+				Warp 0,59552,108,41
+
+
+
+### 毕挥井﹜毕辉挥毛赭儅仄化中月 ###
+block Item 607703 >= 1 || Item 607704 >= 1
+	Window 3208490,Next
+
+		#\n\n﹛引凶﹜侳化仁木月午反丹木仄中及予℅\n﹛六匀井仁侳化仁木凶氏元扎仄﹜\n﹛豢潜及僧六毛凑匀化\n﹛仇木毛支欠丹冗﹝
+	Window 3208491,OK
+
+		#\n\n﹛丐午﹜元扎引卅云潮曰反歹仄互枃丹冗﹝\n﹛引凶﹜粕互丐匀凶日芛太卞五氏仄扎中﹝\n﹛公木匹反及予℅℅℅
+
+		##﹛毕挥﹜毕辉挥赭儅 ##
+		Window_OK Item 607703 >= 1 && Item 607704 >= 1
+			EndWindow3208492
+
+		#\n\n﹛允引氏﹝迕仪互匹五凶氏匹﹜\n﹛切仇匀午谨勾及元扎
+
+		##﹛毕挥赭儅 ##
+		Window_OK Item 607703 >= 1 && ItemSpace >= 1
+			KillItemAll 623576
+			KillItemAll 623577
+			KillItemAll 623578
+			KillItemAll 623579
+			KillItemAll 623580
+			GiveItem 607704
+			LeaveGroup
+			Warp 0,59552,108,41
+
+		##﹛毕辉挥赭儅 ##
+		Window_OK Item 607704 >= 1 && ItemSpace >= 1
+			KillItemAll 623576
+			KillItemAll 623577
+			KillItemAll 623578
+			KillItemAll 623579
+			KillItemAll 623580
+			GiveItem 607703
+			LeaveGroup
+			Warp 0,59552,108,41
+
+		##﹛失奶泛丞勂卅仄 ##
+		Window_OK ItemSpace < 1
+			EndWindow3208493
+
+		#\n\n﹛失奶泛丞勂互中匀天中及方丹元扎\n﹛帮咥仄化井日五卅仄扎中
+
+		##﹛公及职﹛##
+		Window_OK
+			EndWindow3208494
+
+		#\n\n﹛云支〝﹛允引氏﹝\n﹛谛啜中元扎匀凶﹝
+
+
+##﹛裆?蝇﹛##
+block Item 623580 >= 1 && Item 607703 < 1 && Item 607704 < 1 && StrCmpChat == 3012345
+
+*case01*
+	Window3208495,OK
+
+		#\n\n﹛幻幻℅﹜云厄仄反裆井﹝\n﹛卅日﹜仇木毛支欠丹冗﹝\n﹛五匀午﹜僻宁丹元扎欠﹝\n﹛丐午﹜元扎引卅云潮曰反歹仄互枃丹冗﹝\n﹛公木匹反及予℅℅℅
+		Window_OK Item 623580 >= 1
+			KillItemAll 623576
+			KillItemAll 623577
+			KillItemAll 623578
+			KillItemAll 623579
+			KillItemAll 623580
+			GiveItem 607703,1
+			LeaveGroup
+			Warp 0,59552,108,41
+
+		Window_OK
+			EndWindow3208496
+
+		#\n\n﹛云支〝﹛允引氏﹝\n﹛苇棉啜中元扎匀凶﹝
+
+
+block Item 623580 >= 1 && Item 607703 < 1 && Item 607704 < 1 && StrCmpChat == 3012346
+
+	gotoB case01
+
+block Item 623580 >= 1 && Item 607703 < 1 && Item 607704 < 1 && StrCmpChat == 3012347
+
+	gotoB case01
+
+
+##﹛辉?蝇﹛##
+block Item 623580 >= 1 && Item 607703 < 1 && Item 607704 < 1 && StrCmpChat == 3012348
+
+*case02*
+	Window3208497,OK
+
+		#\n\n﹛幻幻℅﹜云厄仄反辉井﹝\n﹛卅日﹜仇木毛支欠丹冗﹝\n﹛五匀午﹜僻宁丹元扎欠﹝\n﹛丐午﹜元扎引卅云潮曰反歹仄互枃丹冗﹝\n﹛公木匹反及予℅℅℅
+		Window_OK Item 623580 >= 1
+			KillItemAll 623576
+			KillItemAll 623577
+			KillItemAll 623578
+			KillItemAll 623579
+			KillItemAll 623580
+			GiveItem 607704,1
+			LeaveGroup
+			Warp 0,59552,108,41
+
+		Window_OK
+			EndWindow3208498
+
+		#\n\n﹛云支〝﹛允引氏﹝\n﹛苇棉啜中元扎匀凶﹝
+
+
+block Item 623580 >= 1 && Item 607703 < 1 && Item 607704 < 1 && StrCmpChat == 3012349
+	gotoB case02
+
+block Item 623580 >= 1 && Item 607703 < 1 && Item 607704 < 1 && StrCmpChat == 3012350
+	gotoB case02
+
+
+###﹛瓦旦及失奶泛丞及心赭儅﹛###
+block Item 623580 >= 1
+	Window3208499,Next
+
+		#\n\n﹛歹仄反﹜仇及显毛栋咥仄化中月樊元扎﹝\n﹛瓦旦及云潮曰毛赭儅仄化中月及元扎卅﹝\n﹛潮赁樊琼互云厄仄毛カ户凶及匹丐木壬﹜\n﹛歹仄井日皿伊未件玄毛欐公丹冗﹝
+	Window3208500,Next
+
+		#\n\n﹛元扎互﹜\n﹛衬井日褥毛潮月凶户卞﹜\n﹛邋什月心毛邋化中月六中匹﹜\n﹛升丹手骰钗互鬼仁化井卅歹氏﹝
+	EndWindow3208501
+
+		#\n\n﹛允引氏互﹜裆井辉井蜕丹化仁木氏井〝
+
+
+
+###﹛窒手赭儅仄化中卅中﹛###
+block 
+	Window3208502,OK
+
+		#\n\n﹛卅氏元扎云厄仄﹝\n﹛仇仇反﹜楮溢樊动陆峏切じ曰嗟鞅元扎方﹝\n﹛用永市□仿件玉及旦正永白左件伉□卅及元扎\n﹛今丑﹜今丑﹜请化垫仁及元扎″
+		Window_OK
+			LeaveGroup
+			Warp 0,59505,226,202
+
+

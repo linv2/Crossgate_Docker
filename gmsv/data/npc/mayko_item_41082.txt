@@ -1,0 +1,4 @@
+#mayko_item_41082.txt
+block
+         KillItem 41082,1
+	 GiveLeak1Item (18411%35$1,18412%35$1,607735%30$1)

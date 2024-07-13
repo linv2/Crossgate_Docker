@@ -1,0 +1,46 @@
+#PUK3_main3
+#
+#矢永玄
+
+block item_621029 >= 2
+
+	EndWindow 3219779
+
+		#\n\n﹛庈杅聂昍虫及锉反\n﹛呁醒儅匀化中月午银迕匹五引六氏 ﹝
+
+
+block PetSpace >= 1
+				
+	Window 3219780,yes,no
+
+		#\n\n﹛锉互殏曰公丹匹允﹝喃匀化心引允井〝
+	
+	window_no
+	
+		endblock 
+	
+	
+	Window_yes petspace == 0
+	
+		EndWindow 3219781
+
+		#\n\n﹛锉井日请化仇日木卅中方丹分﹝
+	
+	
+	Window_yes item_621029 >= 2
+
+		EndWindow 3219782
+
+		#\n\n﹛庈杅聂昍虫及锉反\n﹛呁醒儅匀化中月午银迕匹五引六氏 ﹝
+	
+	Window_yes
+	
+		killitem 621029,1,(3010085)
+		GivePet (309200%70,715%20,21004%7,21204%3)
+	
+
+	
+Block 
+
+	EndWindow 3219783
+		#\n\n﹛锉井日请化仇日木卅中方丹分﹝

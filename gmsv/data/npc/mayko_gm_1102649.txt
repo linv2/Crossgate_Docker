@@ -1,0 +1,19 @@
+#mayko_gm_1102649.txt ..南恰特拉第二通道
+##1110774	\n\n\n\n@c你要去见玄武大人吗？小心挨打喔！！	1
+#1110757	\n\n\n　　　　玄武大人正在闹头痛，\n　　　　谁靠近它就会被打。	1
+
+#warp 0,32518,30,56
+
+block item 18233 >0
+	Window 1110757,next
+	Window 1110774,yes,no
+	Window_no
+	Endblock
+	Window_yes item 18233 == 0
+	Endblock
+	Window_yes
+	#killitem 18233,1
+	warp 0,32158,30,56
+	endblock
+block	
+ 	endwindow 1110757	

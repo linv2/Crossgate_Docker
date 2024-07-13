@@ -1,0 +1,42 @@
+#雪人一级点传送卷	mayko_item_47745.txt
+#1055883	\n\n\n@c你想传送到爱丝波波的一级点吗？	1
+#1055884	\n\n\n@c你想传送到雪儿波波的一级点吗？	1
+#1055885	\n\n\n@c你想传送到丝诺波波的一级点吗？	1
+#1055886	\n\n\n@c你想传送到圣诞波波的一级点吗？	1
+
+#1055891	\n\n\n@c有需要再使用吧。	1
+
+block Item 47745 >0 #爱丝波波
+	 Window 1055883,YES,NO
+	 Window_YES Item 47745==0
+	 Endblock
+	 Window_YES
+	 KillItem 47745,1
+	 Warp 0,32111,31,31
+	 endblock
+	 Window_NO ##雪儿
+	 	 Window 1055884,YES,NO
+	 	  Window_YES Item 47745==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 47745,1
+	 	  Warp 0,32141,8,10
+	 	  endblock
+ 	 Window_NO ##丝诺
+	 	 Window 1055885,YES,NO
+	 	  Window_YES Item 47745==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 47745,1
+	 	  Warp 0,32140,35,10
+	 	  endblock
+ 	 Window_NO ##圣诞
+	 	 Window 1055886,YES,NO
+	 	  Window_YES Item 47745==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 47745,1
+	 	  Warp 0,32142,35,10
+	 	  endblock	 	  
+ Window_NO
+	 	  EndWindow 1055891	 	  

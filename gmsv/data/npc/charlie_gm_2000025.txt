@@ -1,0 +1,19 @@
+################### 五一全民大劳动  矿坑工人  要出坍方的矿坑人员
+################### ■队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### ■一般
+block  
+	 ##2000047	你要出去吗？
+	 Window 2000047,YES,NO
+		 Window_YES
+	 		 #传送到矿坑外头
+	 		 Warp 0,02300,34,101
+	 	 Window_NO

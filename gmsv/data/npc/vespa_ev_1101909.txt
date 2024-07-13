@@ -1,0 +1,91 @@
+##########　ＮＰＣ ：卡诺斯船长ＩＤ：1101909
+##########　ＭＡＰ：32050(20.22)
+##########　在往小岛的小船上
+##########　作用：1.检查票根a.b 生成时间 把玩家warp到小岛上
+
+####■身上有碎裂的艾斯潘之石
+block Item 40326 >=1
+
+	 ##1102166	\n\n呿．．．那是什么鬼地方啊！还好逃出来了～\n靠岸了！走吧！
+	 Window 1102166,OK
+	 	 Window_OK
+	 	 	 Warp 0,30010,193,176
+	 
+
+		
+####■票根A生成 >10分
+block Item 40322>=1 && ItemCreateTime 40322 >10 
+
+	 ##1102167	\n\n喔！你醒啦！你睡的可真久啊．．．\n在你睡着的时候，遇到不小的暴风雨，所以我把船开回港口了！\n可以下船了！
+	 Window 1102167,OK
+	 	 Window_OK
+	 	 	 KillLeak1item 40322,1
+	 	 	 Warp 0,30010,193,176  ## 之后改成到亚曼城的港口
+	 	 	 
+####■票根B生成 >10分
+block Item 40323>=1 && ItemCreateTime 40323 >10
+
+	 ##1102167	\n\n喔！你醒啦！你睡的可真久啊．．．\n在你睡着的时候，遇到不小的暴风雨，所以我把船开回港口了！\n可以下船了！
+	 Window 1102167,OK
+	 	 Window_OK
+			 KillLeak1item 40323,1
+	 	 	 Warp  0,30010,193,176  ## 之后改成到亚曼城的港口
+		
+####■票根ａ生成未满3分　|| 票根ｂ生成未满5分
+block Item 40322 >=1 && ItemCreateTime 40322 < 3   || Item 40323 >= 1 &&  ItemCreateTime 40323 < 5  
+
+	 ##1102168	\n\n船才刚开不久．．．别急坐着！小心翻船啊．．．\n哎啊！不要乱动！
+	 EndWindow 1102168
+	 
+		
+####■票根a生成已满3分钟 
+block Item 40322 >=1 && ItemCreateTime 40322 >= 3 && ItemCreateTime 40322 < 5
+
+	 ##1102169	\n\n到快了！别赶！你想翻船啊！
+	 EndWindow 1102169
+
+		
+####■票根b生成已满5分钟
+block  Item 40323>=1 && ItemCreateTime 40323 >=5  && ItemCreateTime 40323 < 8
+
+	 ##1102169	\n\n到快了！别赶！你想翻船啊！
+	 EndWindow 1102169
+
+#####■票根a生成5分 票根b 生成8分  队伍>1
+block Item 40322 >=1 && ItemCreateTime 40322 >=5 && ItemCreateTime 40322 < 10   && Group >1 || Item 40323  >=1 && ItemCreateTime 40323 >=8 && ItemCreateTime  < 10 && Group > 1
+
+	 ##1102218	\n\n把队伍解散吧！
+	 EndWindow 1102218
+
+	 
+####■票根ａ生成已满５分钟 && 队伍 ==1
+block Item 40322 >= 1 &&  ItemCreateTime 40322 >= 5 	&& ItemCreateTime 40322 < 10  && Group ==1
+	 
+	 ##1102170	\n\n靠岸了！准备下船吧～
+	 Window 1102170,OK
+	 	 Window_OK Group ==1
+	 	 	 KillLeak1item 40322,1
+	 	 	 Warp  0,32053,54,33  ## 小岛的沙滩上
+	 	 	 
+####■票根b生成已满８分钟  && 队伍 ==1
+ block Item 40323 >=1 && ItemCreateTime 40323 >=8 && ItemCreateTime 40323 < 10 && Group ==1
+ 
+	 ##1102170	\n\n靠岸了！准备下船吧～
+	 Window 1102170,OK
+	 	 Window_OK Group ==1
+	 	 	 ## 1102170	\n\n靠岸了！准备下船吧～
+	 	 	 KillLeak1item 40323,1
+	 	 	 Warp  0,32053,54,33 ## 小岛的沙滩上
+	 	 	 
+	 	 	 
+
+#####■一般
+block
+	 ##1102171	\n\n什么？！坐霸王船是吧．．．\n给我下去！
+	 Window 1102171,OK
+	 	 Window_OK
+	 	 
+	 	 	 Warp 0,32062,23,26 ## 把玩家warp 到一座小岛上 (脱出方法 ==  登出)
+
+
+

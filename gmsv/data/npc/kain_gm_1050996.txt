@@ -1,0 +1,27 @@
+## 亚诺曼城 旅馆 -- 宝箱洞窟导游
+## 队伍超过一人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+	 	 	 
+## 带着 铜钥匙 16000 超过 50 把
+block Item 16000 > 50
+	 ##1052168	\n\n\n  进入者限定只能携带 50 把铜钥匙哦!!	1
+	 EndWindow 1052168
+
+## 带着 铜钥匙 16000 未超过 50 把
+block Item 16000 <= 50 && Group == 1
+	 ##1052169	\n\n\n  请开始您的寻宝之旅吧，入口就在房间里面，您  与您的队友可以在里面的房间组队后再进入。	1
+	 Window 1052169,YES,NO
+	 Window_NO 
+		 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 	 EndWindow 1052013
+	 Window_YES Item 16000 <= 50 && Group == 1
+	 	 ## 传送至宝箱洞窟入口
+	 	 Warp 0,32629,44,7
+	 	 
+ 

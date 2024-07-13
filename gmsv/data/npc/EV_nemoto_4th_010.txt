@@ -1,0 +1,85 @@
+##ㄥ璃コ筏ゴ奶矛件玄﹛by漪呿
+## NPC“奶扑弁穴
+
+
+## OT辅笛据毛呁醒赭儅
+block Item 622010 > 1
+	Window "\n\n﹛左丢□﹜瓜件母末用市立永″\n﹛弁巨伙用市永″〝\n﹛亥戊本□永″″″",OK
+		Window_OK
+			KillItemAll 622010
+
+
+## 基嬴镙’绝毛呁醒赭儅
+block Item 622018 > 1
+	Window "\n\n﹛左丢□﹜幼亘它平扔穴瓦﹜\n﹛末件瓜瓦用穴本正仿﹜\n﹛皮永正左伊民穴它母夫□永″\n﹛奶巨穴犯甩戊皮用甩﹜左伊永民母札″\n﹛扑打玄白乩旦瓜□永″",OK
+		Window_OK
+			KillItemAll 622018
+
+
+## 黎螂挓橇毛呁醒赭儅
+block Item 622017 > 1
+	EndWindow "\n\n﹛巨尼永″〝\n﹛瓜件犯末件瓜瓦﹜\n﹛亥申母扑弁仿永泛件母永″〝\n﹛左伊永民用市仿母甩﹜\n﹛甲玄汁扑市瓜奶用瓦□永″"
+
+
+## OT辅笛据午基嬴镙’绝毛赭儅
+block Item 622010 == 1 && Item 622018 == 1
+	EndWindow "\n\n﹛幼亘它平扔穴﹜左戊永泛正市〝\n﹛巨〝穴母伐正扑泛瓜奶〝\n﹛甩﹜甩乩弁奶弗□永″\n﹛左伊永民布左戊仿伊伙件母市件生永″"
+
+
+## 旦正件皿＞＞ㄢ＝及OT辅笛据午黎螂挓橇毛赭儅
+block Item 622010 == 1 && StampCount 622010 == 3 && Item 622017 == 1
+	Window "\n\n﹛末﹜末伊甩﹜\n﹛幼亘它平扔穴市仿用﹜失市奶市立永″\n﹛乒扑市扑泛﹜左戊永泛穴扑正市〝\n﹛左丢□﹜左伊永民布奶弁穴巨瓦﹜\n﹛戊伊仲幼亘它平扔穴瓦伐正扑泛﹜\n﹛平必件玄永泛平泛弁伊亥永″",YES,NO
+
+		Window_YES Item 622010 == 0
+			EndWindow "\n\n﹛＿＿亥弁立伙玄﹜\n﹛左穴巨﹜瓦件末它伐伙奶瓜﹝\n﹛乩永由伉﹜左穴巨瓦正用丞用甩﹜\n﹛乩丢玄弁市﹝"
+
+		Window_YES Item 622010 > 1
+			Window "\n\n﹛它永＿＿扔永平正矛正玄穴玄布﹜\n﹛弁扔永泛正立正奶母＿＿﹝\n﹛民亦永玄﹜末用市立﹜\n﹛奶正母奶泛奶弁市件生永″",OK
+				Window_OK
+					KillItemAll 622010
+					Endblock
+
+		Window_YES Item 622017 == 0
+			EndWindow "\n\n﹛失伊〝\n﹛扔永平用失市奶市立﹜玉戊瓦乩永正〝"
+
+		Window_YES Item 622017 > 1
+			Window "\n\n﹛巨尼永″〝\n﹛瓜件犯末件瓜瓦﹜\n﹛亥申母扑弁仿永泛件母永″〝\n﹛左伊永民用市仿母甩﹜\n﹛甲玄汁扑市瓜奶用瓦永″",OK
+				Window_OK
+					KillItemAll 622017
+
+		Window_YES
+			KillitemAll 622017
+			GiveLeak1Item 622018,1
+			Endblock
+
+		Window_NO
+			EndWindow "\n\n﹛＿＿市弁打仲平丢伙市＿＿﹝"
+
+
+## 旦正件皿＞＞ㄟ＝℅＞ㄡ＝及OT辅笛据午黎螂挓橇毛赭儅
+block Item 622010 == 1 && Item 622017 == 1 && StampCount 622010 < 3
+	EndWindow "\n\n﹛末﹜末伊甩﹜\n﹛幼亘它平扔穴市仿用﹜失市奶市立永″〝\n﹛犯乒﹜左伊永民甩奶穴﹜\n﹛玄穴玄正矛伙用瓦奶末布扑奶件母″\n﹛穴正失玄犯乒永泛戊奶″"
+
+
+## 旦正件皿＞＞ㄣ＝℅＞ㄥ＝及OT辅笛据午黎螂挓橇毛赭儅
+block Item 622010 == 1 && Item 622017 == 1 && StampCount 622010 > 3
+	Window "\n\n﹛末﹜末伊甩﹜\n﹛幼亘它平扔穴市仿用﹜失市奶市立永″\n﹛＿＿犯乒﹜扒件生件瓜布仿﹜\n﹛交它戊它平必件布平伊泛伙未□﹝\n﹛伐伙奶弗玉末伊甩﹜丞戊它母市件生永″",OK
+		Window_OK
+			KillItemAll 622017
+
+
+## 基嬴镙’绝及心ㄠ勾赭儅
+block Item 622018 == 1
+	Window "\n\n﹛左丢□﹜\n﹛左伊永民用戊伊弁扑亦件市仿﹜\n﹛甘旦立乩布永正瓜″\n﹛市巨本永″",OK
+		Window_OK
+			KillItemAll 622018
+
+
+## 黎螂挓橇及心ㄠ勾赭儅
+block Item 622017 == 1
+	EndWindow "\n\n﹛幼亘它平扔穴布扔布扑泛伙永泛〝\n﹛＿＿左丢□﹜立市弗瓜奶市左母瓜﹝\n﹛扑仿瓜奶甲玄瓦﹜\n﹛汁奶泛永民乓奶弗瓜奶永泛﹜\n﹛奶伐伊泛伙件母﹝\n﹛交它市奶瓜仿﹜石市仲失正永泛弁伊﹝"
+
+
+## 晓筏动陆
+block
+	EndWindow "\n\n﹛甩民瓦扔扔伊泛﹜\n﹛瓦必穴伐永泛正仿﹜\n﹛幼亘它平扔穴玄甩弘伊泛扑穴永正″"

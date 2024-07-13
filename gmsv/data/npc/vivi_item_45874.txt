@@ -1,0 +1,7 @@
+#####3.0包装赠送品 乐园之卵####
+block Item 45874 >= 1
+	 KillItem 45874
+	 GiveLeak1Item (45875%1$1)
+	 CheckTitle 
+	 ##1051971	\n\n\n\n@c乐园之卵被打开了！	1
+	 EndWindow 1051971

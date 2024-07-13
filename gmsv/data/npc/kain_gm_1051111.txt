@@ -1,0 +1,41 @@
+## 迷宫按钮 A2 28,11
+
+block
+	 ## A1 关 (11245)
+	 setobject 0,32337,10,41,11245
+	 setobject 0,32337,10,42,11245
+	 setobject 0,32337,10,43,11245
+	 setobject 0,32337,10,44,11245
+	 setobject 0,32337,10,45,11245
+	 setobject 0,32337,10,46,11245
+	 setobject 0,32337,10,47,11245
+	 setobject 0,32337,10,48,11245
+	 setobject 0,32337,10,49,11245
+	 
+	 ## A2 开 (0)	 
+	 setobject 0,32337,21,10,0
+	 setobject 0,32337,22,10,0
+	 setobject 0,32337,23,10,0
+	 setobject 0,32337,24,10,0
+	 setobject 0,32337,25,10,0
+	 setobject 0,32337,26,10,0
+	 setobject 0,32337,27,10,0
+	 setobject 0,32337,28,10,0
+	 setobject 0,32337,29,10,0
+	 
+	 ## I开 (0)
+	 setobject 0,32337,41,40,0
+	 setobject 0,32337,42,40,0
+	 setobject 0,32337,43,40,0
+	 setobject 0,32337,44,40,0
+	 setobject 0,32337,45,40,0
+	 setobject 0,32337,46,40,0
+	 setobject 0,32337,47,40,0
+	 setobject 0,32337,48,40,0
+	 setobject 0,32337,49,40,0
+	 	 
+         ## 16 雷声	 
+	 Play_Se 16,9,42
+	 ## 1052199 机关被起动了，发出轰隆隆的巨响，沉重的石壁突然被打开了。
+	 Message 1052199
+	 

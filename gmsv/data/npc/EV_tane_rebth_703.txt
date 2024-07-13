@@ -1,0 +1,81 @@
+#ØøÌï¡õµ©Ä¸¼þ³âÒà¼þ©xÆ±À³©x·¥¡õÃó¼°ÚÐ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+
+block globalFlag41 == 1 && PItem 620018,0 >= 1 && Item 620028 >= 1 && XPos == 81 && YPos == 87
+
+	LeaveGroup
+	KillItemall 620028
+	warp 0,59727,57,146
+
+
+block
+
+
+if XPos == 81 && YPos == 87
+
+
+
+###########©xÖÏÊÖØ¦ØÆ©x##############
+	if Item 9200 >= 1 || Item 9201 >= 1 || Item 9202 >= 1 || Item 9203 >= 1 || Item 9204 >= 1 || Item 9205 >= 1 || Item 9206 >= 1 || Item 9207 >= 1 || Item 9208 >= 1 || Item 9209 >= 1 || Item 9210 >= 1 || Item 9211 >= 1 || Item 9212 >= 1 || Item 9213 >= 1 || Item 9214 >= 1 || Item 9215 >= 1 || Item 9216 >= 1 || Item 9217 >= 1 || Item 9218 >= 1 || Item 9219 >= 1 || Item 9220 >= 1 || Item 9221 >= 1 || Item 9222 >= 1 || Item 9223 >= 1 || Item 9224 >= 1 || Item 9225 >= 1 || Item 9226 >= 1 || Item 9227 >= 1 || Item 9228 >= 1 || Item 9229 >= 1 || Item 9230 >= 1 || Item 9231 >= 1 || Item 9232 >= 1 || Item 9233 >= 1 || Item 9234 >= 1 || Item 9235 >= 1 || Item 9236 >= 1 || Item 9237 >= 1 || Item 9238 >= 1 || Item 9239 >= 1 || Item 9240 >= 1
+
+
+
+#\n\n©xÇæêÇ¼°_à¢±å·´©y\n©xÛÍØøµ©Õý»ï·´ƒ}ÇÐ‘@»§Ø¦ÖÐ©z
+
+	EndWindow 3006094
+
+else
+
+if Group != 1
+
+#\n\n©xÇæêÇ¼°_à¢±å·´Ç©ÈìÆ¥’FÈÊÍÍØÆ©z
+
+	EndWindow 3006087
+
+
+else
+
+if Item 9300 >= 1 || Item 9301 >= 1 || Item 9302 >= 1 || Item 9310 >= 1 || Item 9311 >= 1 || Item 9312 >= 1 || Item 9320 >= 1 || Item 9321 >= 1 || Item 9322 >= 1 || Item 9330 >= 1 || Item 9331 >= 1 || Item 9332 >= 1 || Item 9362 >= 1 || Item 9370 >= 1 || Item 9371 >= 1 || Item 9372 >= 1 || Item 9380 >= 1 || Item 9381 >= 1 || Item 9382 >= 1 || Item 9350 >= 1 || Item 9351 >= 1 || Item 9352 >= 1 || Item 9360 >= 1 || Item 9361 >= 1
+
+
+		EndWindow 3006095
+
+else
+
+if Item 9340 >= 1 || Item 9341 >= 1 || Item 9342 >= 1
+
+#\n\n©xkaze¼°ÇæêÇ©yÊ§ÓñÔÐ·ò¼°»ê–®Ã«¶±ÒýÄ¾ÔÂ¾®¨”
+
+
+	Window 3006086,yes,no
+
+
+						Window_yes Item 9200 >= 1 || Item 9201 >= 1 || Item 9202 >= 1 || Item 9203 >= 1 || Item 9204 >= 1 || Item 9205 >= 1 || Item 9206 >= 1 || Item 9207 >= 1 || Item 9208 >= 1 || Item 9209 >= 1 || Item 9210 >= 1 || Item 9211 >= 1 || Item 9212 >= 1 || Item 9213 >= 1 || Item 9214 >= 1 || Item 9215 >= 1 || Item 9216 >= 1 || Item 9217 >= 1 || Item 9218 >= 1 || Item 9219 >= 1 || Item 9220 >= 1 || Item 9221 >= 1 || Item 9222 >= 1 || Item 9223 >= 1 || Item 9224 >= 1 || Item 9225 >= 1 || Item 9226 >= 1 || Item 9227 >= 1 || Item 9228 >= 1 || Item 9229 >= 1 || Item 9230 >= 1 || Item 9231 >= 1 || Item 9232 >= 1 || Item 9233 >= 1 || Item 9234 >= 1 || Item 9235 >= 1 || Item 9236 >= 1 || Item 9237 >= 1 || Item 9238 >= 1 || Item 9239 >= 1 || Item 9240 >= 1 || Item 9362 >= 1 || Item 9370 >= 1 || Item 9371 >= 1 || Item 9372 >= 1 || Item 9380 >= 1 || Item 9381 >= 1 || Item 9382 >= 1 || Item 9350 >= 1 || Item 9351 >= 1 || Item 9352 >= 1 || Item 9360 >= 1 || Item 9361 >= 1
+
+							EndWindow 3006095
+
+						Window_yes Group != 1
+
+							EndWindow 3006087
+
+
+
+		Window_yes
+
+		Warp 0,59621,15,77
+
+		Window_no
+
+		EndWindow 3006096,OK
+		
+else
+		EndWindow 3006096,OK
+
+
+				endif
+			endif
+		endif
+	endif
+endif

@@ -1,0 +1,12 @@
+###########尼维尔海鲜锅wiz_item_40337.txt
+
+####一般
+block
+	 Window 1102293,YES,NO
+	 ##1102293	\n\n\n  要吃下去吗？
+	 Window_YES Item 40337 >= 1
+	 	 KillItem 40337
+	 	 ##失去尼维尔海鲜锅
+	 	 GiveLeak1Item 40341
+	 	 ##得到黄昏打扫要诀
+	 Window_NO

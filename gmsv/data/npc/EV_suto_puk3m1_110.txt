@@ -1,0 +1,86 @@
+#
+#PUK3_Main1
+#
+#?螃交伙弘
+
+
+Block
+
+	GAWindow 3207033,Next
+
+		#\n﹛?螃交伙弘\n﹛\n﹛＞方丹支仁莘尹凶卅﹜蛙五障ミ樊＿＿﹝\n﹛﹛中引支仇及壑钗反哗帼分方＿＿﹝\n﹛﹛中支﹜云蟆琼互哗帼卞仄凶氏分﹝
+	
+	GAWindow 3207034,Next
+
+		#\n\n﹛﹛云蟆琼反仇及壑钗卞じ匀化五化蝈化毛\n﹛﹛⑦心卞元匀凶﹝\n﹛﹛＿＿噪及傻及凝今卅僧六今尹﹜云蟆琼反\n﹛﹛苇⑧今卅中﹝\n﹛﹛伉任尼伉它旦〝螃啖〝陆卅月螃★〝\n﹛﹛公氏卅手及反眸凶切卞反楮溢卅井匀凶﹝\n﹛﹛卅及卞″＝
+	
+	GAWindow 3207035,Next
+
+		#\n﹛蛙五障ミ樊\n﹛\n﹛＞＿＿＝
+	
+	GAWindow 3207036,Next
+
+		#\n﹛?螃交伙弘\n﹛\n﹛＞眸反蝈化毛翔懋卞仄化仇及恘毛澎卞じ木凶﹝\n﹛﹛ゥ窒卅引支井仄匹丐欠丹午手﹜\n﹛﹛漆仇仇匹云蟆毛鞅户日木月卅日壬﹜\n﹛﹛眸反公木毛昼歹卅中＝
+	
+	GAWindow 3207037,Next
+
+		#\n﹛?螃交伙弘\n﹛\n﹛＞＿＿湃卞﹜仇及褥虫反尕隅狟祥毛辕匹﹜\n﹛﹛ハ昒及五介反仄毛及廿匀化中月﹝\n﹛﹛分互﹜公木匹手云蟆毛鞅户月仇午仁日中反\n﹛﹛请侳月＝
+	
+	GAWindow 3207038,Next
+
+		#\n﹛蛙五障ミ樊\n﹛\n﹛＞＿＿脱反啦阀毛儅凶厄﹝\n﹛﹛脱反裘及俓侗及蛊昡匹丐曰﹜\n﹛﹛潜及抰毛镝掸卞潮匀化中月分仃﹝\n﹛﹛＿＿谛方﹜中支?螃方﹝\n﹛﹛云蟆反窒斗尹脱及蟆卞峏切反分井月＝
+	
+	GAWindow 3207039,Next
+
+		#\n﹛?螃交伙弘\n﹛\n﹛＞眸反凶分﹜窒手卅中尪戏互枑匀化仁月仇午毛\n﹛﹛凑匀化中月分仃分＝
+	
+	GAWindow 3207040,Next
+
+		#\n﹛蛙五障ミ樊\n﹛\n﹛＞卅日壬＿＿脱午云蟆反锹芢木厄卅﹝\n﹛﹛脱互忔蟾卞云中化菲户月手及反渔＾匹丐月＝
+	
+	GAWindow 3207041,Next
+
+		#\n﹛?螃交伙弘\n﹛\n﹛＞豢离反中中＿＿眸反仇仇匹云蟆毛鞅户月﹝\n﹛﹛＿＿公木互蝈化分＝
+	
+	GAWindow 3207042,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞交伙弘匀″＝
+	
+	GAWindow 3207043,Next
+
+		#\n﹛?螃交伙弘\n﹛\n﹛＞扑尼伊斥尼件″〝\n﹛﹛＿＿升丹仄化﹜仇氏卅午仇欠卞″＝
+	
+	GAWindow 3207044,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞手丹﹜支户化″仇氏卅及﹜仇氏卅及母丢分方＝
+	
+	GAWindow 3207045,Next
+
+		#\n﹛蛙五障ミ樊\n﹛\n﹛＞支反曰?螃＿＿濮覆譬狟及艘卅升\n﹛﹛儅切宁歹六化反中卅中卅＝
+	
+	GAWindow 3207046,Next
+
+		#\n﹛?螃交伙弘\n﹛\n﹛＞丹月今中﹝\n﹛﹛谛反蜃日木凶凛棉毛\n﹛﹛擎域ベ戏五方丹午仄化中月﹝\n﹛﹛分井日﹜丹勾欠中支允仁﹜\n﹛﹛兜烂允月仇午反卅中﹝\n﹛﹛匹手﹜公木互谛卅氏分″＝
+	
+	GAWindow 3207047,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞母丢尼永″″＝
+	
+	GAWindow 3207048,Next
+
+		#\n﹛?螃交伙弘\n﹛\n﹛＞Ж兮撩六欠″″＝
+	
+	GAWindow 3207049,Next
+
+		#\n﹛蛙五障ミ樊\n﹛\n﹛＞″〝＝
+	
+	GAWindow 3207050,OK
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞■■″＝
+	
+			Window_OK
+			
+				warp 0,59984,78,135
+	
+
+

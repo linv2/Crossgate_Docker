@@ -1,0 +1,645 @@
+#Æ¹¼þµ©Õý¡õÎìÄÌ¼þ©x[¹×¸Àå]???
+#
+#
+#
+#
+#
+#
+#
+#
+
+
+#Æ¹¼þµ©Õý¡õÎìÄÌ¼þ¼°ÖÏÄ¾¾®Ã«¨à¹´Æ¥ÊÖô÷ƒ}¼°èëÄþ©z
+
+
+Block Leak1Item_620032 >= 1 || Leak1Item_620033 >= 1 || Leak1Item_620034 >= 1 || Leak1Item_620035 >= 1 || Leak1Item_621006 >= 1
+
+	Window 3206193,Next
+
+		#\n\n©x³ð³ð·´Æ¹¼þµ©Õý¡õÎìÄÌ¼þ¹×¸ô÷Ø¦¼°·Ö©z\n©xÆ¹¼þµ©Õý¡õÎìÄÌ¼þÃ«ÓòÀÃ¼°ÐÑƒ}ÔÈ»¯ÈÊÔÂÎç©y\n©xÀåÎåØ¦ÎìÄÌ¼þ±å¸ú¾§Æ¥ÎåÔÂ¼°·Ö©z\n©xÇÐØ¦ÐÄ±å¹×¸ÒÁ¡õÐþ·´Ôæ?Ã«Î­»¯ÈÊÄ¾Ø¦¼°·Ö©z
+	
+	Window 3206194,Yes,No
+
+		#\n\n©xØ¤©yÎìÄÌ¼þÃ«ƒ}ÔÈ»¯ÔÆÔÂØ¦¡å¹×¸ÔÊÔÂ¼°¾®¨”
+	
+		Window_No
+		
+			GotoF case11
+			
+		Window_Yes ItemSpace == 0
+			
+			GotoF case12
+			
+		Window_Yes  Leak1Item_620032 >=1 || Leak1Item_620033 >= 1 || Leak1Item_620034 >= 1 || Leak1Item_620035 >= 1 || Leak1Item_621006 >= 1
+						
+			GotoF case2
+							
+		Window_Yes
+			
+			GotoF case10
+			
+		EndBlock
+	
+	
+	
+	
+Block
+
+	Window 3206195,Next
+
+		#\n\n©x³ð³ð·´Æ¹¼þµ©Õý¡õÎìÄÌ¼þ¹×¸ô÷Ø¦¼°·Ö©z\n©xÆ¹¼þµ©Õý¡õÎìÄÌ¼þÃ«ÓòÀÃ¼°ÐÑƒ}ÔÈ»¯ÈÊÔÂÎç©y\n©xÀåÎåØ¦ÎìÄÌ¼þ±å¸ú¾§Æ¥ÎåÔÂ¼°·Ö©z
+	
+	EndWindow 3206196
+
+		#\n\n©x¹×¸ÒÁ¡õÐþ·´Ôæ?Ã«Î­»¯ÈÊÄ¾Ø¦¼°·Ö©z
+	
+		
+		
+		
+	EndBlock
+	
+	
+Block
+
+	*case2*
+	
+	
+	
+	if Leak1Item_620032 >= 50
+		
+		
+		Window 3206197,Yes,No
+
+		#\n\n©x1?Ã«50ßÏÆ¥ÔÊØ¦£ß£ß£ß©z\n©x5?»¥10ßÏ±åØ¦ÔÂ©z
+			
+			
+			Window_Yes Leak1Item_620032 >= 50 && ItemSpace >= 1
+			
+				KillLeak1Item 620032,50
+			 	GiveLeak1Item 620033,10
+			 	
+			 	GotoF case20
+			 	
+			
+			Window_Yes ItemSpace == 0
+			
+				GotoF case12
+			
+			
+			Window_Yes Leak1Item_620032 < 50
+			
+				GotoF case10
+			
+			Window_Yes
+			
+				GotoF case10
+				
+			Window_No Leak1Item_620033 < 100 && Leak1Item_620034 < 100 && Leak1Item_620035 < 10 && Leak1Item_621006 < 10
+			
+				GotoF case11
+				
+				
+			Window_No
+			
+				GotoF case4
+				
+				
+				
+				EndBlock
+	else
+		
+		*case4*
+		
+		if Leak1Item_620033 >= 100
+		
+			
+			Window 3206198,Yes,No
+
+		#\n\n©x5?Ã«100ßÏÆ¥ÔÊØ¦£ß£ß©z\n©x10?»¥50ßÏ±åØ¦ÔÂ©z
+			
+				Window_Yes Leak1Item_620033 >= 100 && ItemSpace >= 1
+				
+					KillLeak1Item 620033,100
+					GiveLeak1item 620034,50
+				
+					GotoF case21
+			
+				Window_Yes ItemSpace == 0
+			
+					GotoF case12
+			
+				Window_Yes Leak1Item_620033 < 100
+			
+					GotoF case10
+					
+				Window_Yes
+			
+					GotoF case10
+					
+				Window_No Leak1Item_620034 < 100 && Leak1Item_620035 < 10 && Leak1Item_621006 < 10
+			
+					GotoF case11
+					
+				Window_No
+			
+					GotoF case5
+					
+					EndBlock
+					
+		else
+		
+			*case5*
+			
+			if Leak1Item_620034 >= 100
+			
+			
+				Window 3206199,Yes,No
+
+		#\n\n©x10?Ã«100ßÏÆ¥ÔÊØ¦£ß£ß©z\n©x1000?»¥1ßÏ±åØ¦ÔÂ©z
+				
+				
+					Window_Yes Leak1Item_620034 >= 100 && ItemSpace >= 1
+					
+						KillLeak1Item 620034,100
+						GiveLeak1Item 621006,1
+					
+						GotoF case22
+					
+					Window_Yes ItemSpace == 0
+					
+						GotoF case12
+						
+					Window_Yes Leak1Item_620034 < 100
+					
+						GotoF case10
+						
+					Window_Yes
+			
+						GotoF case10
+						
+					Window_No Leak1Item_620035 < 10 && Leak1Item_621006 < 10
+			
+						GotoF case11
+						
+					Window_No
+			
+						GotoF case6
+			
+						EndBlock
+						
+				else
+						
+			*case6*
+			
+			if Leak1Item_621006 >= 10
+			
+			
+				Window 3206200,Yes,No
+
+		#\n\n©x1000?Ã«10ßÏÆ¥ÔÊØ¦£ß£ß©z\n©x1Ûê?»¥1ßÏ±åØ¦ÔÂ©z
+				
+				
+					Window_Yes Leak1Item_621006 >= 10 && ItemSpace >= 1
+					
+						KillLeak1Item 621006,10
+						GiveLeak1Item 620035,1
+					
+						GotoF case23
+					
+					Window_Yes ItemSpace == 0
+					
+						GotoF case12
+						
+					Window_Yes Leak1Item_621006 < 10
+					
+						GotoF case10
+						
+					Window_Yes
+			
+						GotoF case10
+						
+					Window_No Leak1Item_620035 < 10
+			
+						GotoF case11
+						
+					Window_No
+			
+						GotoF case7
+			
+						EndBlock
+		
+			else
+					
+					*case7*
+					
+				if Leak1Item_620035 >= 10
+				
+					Window 3206201,Yes,No
+
+		#\n\n©x1Ûê?Ã«10ßÏÆ¥ÔÊØ¦£ß£ß©z\n©x10Ûê?»¥1ßÏ±åØ¦ÔÂ©z
+					
+						Window_Yes Leak1Item_620035 >= 10 && ItemSpace >= 1
+						
+							KillLeak1Item 620035,10
+							GiveLeak1Item 620036,1
+							
+							GotoF case24
+						
+						Window_Yes ItemSpace == 0
+						
+							GotoF case12
+							
+						Window_Yes Leak1Item_620035 < 10
+						
+							GotoF case10
+						
+						Window_Yes
+			
+							GotoF case10
+						
+						Window_No
+						
+							GotoF case11
+							
+							EndBlock
+				
+				else
+					
+					EndWindow 3206202
+
+		#\n\n©xÓÅÛ¢Ø¦ßÏÐÑÃ«åÃÀ²ØÆ»¯‚FÔÂ»¥·½ÖÐ©z
+					
+					
+	endif
+		endif
+			endif
+				endif
+					endif
+				
+	EndWindow 3206203
+
+		#\n\n©xÓÅÛ¢Ø¦ßÏÐÑÃ«åÃÀ²ØÆ»¯‚FÔÂ»¥fÖÐ©z
+					
+				
+	
+	EndBlock
+	
+				
+Block
+
+	*case25*
+	
+	
+	
+	if Leak1Item_620032 >= 50
+		
+		
+		Window 3206204,Yes,No
+
+		#\n\n©x1?Ã«50ßÏÆ¥ÔÊØ¦£ß£ß£ß©z\n©x5?»¥10ßÏ±åØ¦ÔÂ©z
+			
+			
+			Window_Yes Leak1Item_620032 >= 50 && ItemSpace >= 1
+			
+				KillLeak1Item 620032,50
+			 	GiveLeak1Item 620033,10
+			 	
+			 	GotoF case20
+			 	
+			
+			Window_Yes ItemSpace == 0
+			
+				GotoF case12
+			
+			
+			Window_Yes Leak1Item_620032 < 50
+			
+				GotoF case10
+			
+			Window_Yes
+			
+				GotoF case10
+				
+				
+				
+			Window_No
+			
+				GotoF case11
+				
+				
+				
+				EndBlock
+	else
+		
+		*case26*
+		
+		if Leak1Item_620033 >= 100
+		
+			
+			Window 3206205,Yes,No
+
+		#\n\n©x5?Ã«100ßÏÆ¥ÔÊØ¦£ß£ß©z\n©x10?»¥50ßÏ±åØ¦ÔÂ©z
+			
+				Window_Yes Leak1Item_620033 >= 100 && ItemSpace >= 1
+				
+					KillLeak1Item 620033,100
+					GiveLeak1item 620034,50
+				
+					GotoF case21
+			
+				Window_Yes ItemSpace == 0
+			
+					GotoF case12
+			
+				Window_Yes Leak1Item_620033 < 100
+			
+					GotoF case10
+					
+				Window_Yes
+			
+					GotoF case10
+					
+					
+				Window_No
+			
+					GotoF case11
+					
+					EndBlock
+					
+		else
+		
+			*case27*
+			
+			if Leak1Item_620034 >= 100
+			
+			
+				Window 3206206,Yes,No
+
+		#\n\n©x10?Ã«100ßÏÆ¥ÔÊØ¦£ß£ß©z\n©x1000?»¥1ßÏ±åØ¦ÔÂ©z
+				
+				
+					Window_Yes Leak1Item_620034 >= 100 && ItemSpace >= 1
+					
+						KillLeak1Item 620034,100
+						GiveLeak1Item 621006,1
+					
+						GotoF case22
+					
+					Window_Yes ItemSpace == 0
+					
+						GotoF case12
+						
+					Window_Yes Leak1Item_620034 < 100
+					
+						GotoF case10
+						
+					Window_Yes
+			
+						GotoF case10
+						
+						
+					Window_No
+			
+						GotoF case11
+			
+						EndBlock
+						
+				else
+						
+			*case28*
+			
+			if Leak1Item_621006 >= 10
+			
+			
+				Window 3206207,Yes,No
+
+		#\n\n©x1000?Ã«10ßÏÆ¥ÔÊØ¦£ß£ß©z\n©x1Ûê?»¥1ßÏ±åØ¦ÔÂ©z
+				
+				
+					Window_Yes Leak1Item_621006 >= 10 && ItemSpace >= 1
+					
+						KillLeak1Item 621006,10
+						GiveLeak1Item 620035,1
+					
+						GotoF case23
+					
+					Window_Yes ItemSpace == 0
+					
+						GotoF case12
+						
+					Window_Yes Leak1Item_621006 < 10
+					
+						GotoF case10
+						
+					Window_Yes
+			
+						GotoF case10
+						
+						
+					Window_No
+			
+						GotoF case11
+			
+						EndBlock
+		
+			else
+					
+					*case29*
+					
+				if Leak1Item_620035 >= 10
+				
+					Window 3206208,Yes,No
+
+		#\n\n©x1Ûê?Ã«10ßÏÆ¥ÔÊØ¦£ß£ß©z\n©x10Ûê?»¥1ßÏ±åØ¦ÔÂ©z
+					
+						Window_Yes Leak1Item_620035 >= 10 && ItemSpace >= 1
+						
+							KillLeak1Item 620035,10
+							GiveLeak1Item 620036,1
+							
+							GotoF case24
+						
+						Window_Yes ItemSpace == 0
+						
+							GotoF case12
+							
+						Window_Yes Leak1Item_620035 < 10
+						
+							GotoF case10
+						
+						Window_Yes
+			
+							GotoF case10
+						
+						Window_No
+						
+							GotoF case11
+							
+							EndBlock
+				
+				else
+					
+					EndWindow 3206209
+
+		#\n\n©xÓÅÛ¢Ø¦ßÏÐÑÃ«åÃÀ²ØÆ»¯‚FÔÂ»¥·½ÖÐ©z
+					
+					
+	endif
+		endif
+			endif
+				endif
+					endif
+				
+	EndWindow 3206210
+
+		#\n\n©xÓÅÛ¢Ø¦ßÏÐÑÃ«åÃÀ²ØÆ»¯‚FÔÂ»¥fÖÐ©z
+					
+				
+	
+	EndBlock
+						
+Block
+
+	*case20*
+	
+	Window 3206211,Yes,No
+
+		#\n\n©xÊÖµ¤ÓòÕº¸ú¾§ÔÊÔÂ¼°¾®ÓÑ¨”
+	
+		Window_yes Leak1Item_620032 >= 50
+	
+			GotoB case25
+		
+		Window_yes
+	
+			endWindow 3206212
+
+		#\n\n©xÊÖµ¤¸ú¾§Æ¥ÎåØ¦ÖÐØ¦©z
+			
+		Window_No
+		
+			GotoF case11
+			
+			
+
+Block
+
+	*case21*
+	
+	Window 3206213,Yes,No
+
+		#\n\n©xÊÖµ¤ÓòÕº¸ú¾§ÔÊÔÂ¼°¾®ÓÑ¨”
+	
+		Window_yes Leak1Item_620033 >= 100
+	
+			GotoB case26
+		
+		Window_yes
+	
+			endWindow 3206214
+
+		#\n\n©xÊÖµ¤¸ú¾§Æ¥ÎåØ¦ÖÐØ¦©z
+			
+		Window_No
+		
+			GotoF case11
+			
+			
+Block
+
+	*case22*
+	
+	Window 3206215,Yes,No
+
+		#\n\n©xÊÖµ¤ÓòÕº¸ú¾§ÔÊÔÂ¼°¾®ÓÑ¨”
+	
+		Window_yes Leak1Item_620034 >= 100
+	
+			GotoB case27
+		
+		Window_yes
+	
+			endWindow 3206216
+
+		#\n\n©xÊÖµ¤¸ú¾§Æ¥ÎåØ¦ÖÐØ¦©z
+			
+		Window_No
+		
+			GotoF case11
+			
+Block
+
+	*case23*
+	
+	Window 3206217,Yes,No
+
+		#\n\n©xÊÖµ¤ÓòÕº¸ú¾§ÔÊÔÂ¼°¾®ÓÑ¨”
+	
+		Window_yes Leak1Item_621006 >= 10
+	
+			GotoB case28
+		
+		Window_yes
+	
+			endWindow 3206218
+
+		#\n\n©xÊÖµ¤¸ú¾§Æ¥ÎåØ¦ÖÐØ¦©z
+			
+		Window_No
+		
+			GotoF case11
+			
+			
+Block
+
+	*case24*
+	
+	Window 3206219,Yes,No
+
+		#\n\n©xÊÖµ¤ÓòÕº¸ú¾§ÔÊÔÂ¼°¾®ÓÑ¨”
+	
+		Window_yes Leak1Item_620035 >= 10
+			
+			GotoB case29
+		
+		Window_yes
+	
+			endWindow 3206220
+
+		#\n\n©xÊÖµ¤¸ú¾§Æ¥ÎåØ¦ÖÐØ¦©z
+			
+		Window_No
+		
+			GotoF case11
+			
+
+
+#Æ¹¼þµ©Õý¡õÎìÄÌ¼þÃ«»_áNÆ¥ÛÕØÆÐ×èëÄþ©j¸¥¡õµ©¨à¨ß?©k
+
+Block
+
+	*case10*
+
+	EndWindow 3206221
+
+		#\n\n©xƒ}ÔÈ»¯Ø¦ÖÐ¼°Æ¥·´ªI±åØ¦ÈÕÊÏ©z
+	
+	
+	
+#Ó¬ÔÈÐ×èëÄþ¼°?É±©j¸¥¡õµ©¨à¨à?©k
+Block
+	*case11*
+	
+	EndWindow 3206222
+
+		#\n\n©x¹«µ¤¾®£ß£ßÖÐ¹´Æ¥ÊÖ‚F»¯ÈÊÄ¾Ð×ÒýÒü©z
+	
+#Ê§ÄÌ·ºØ©»¥ÖÐÔÈÌìÖÐ¼°ÎçÎå©j¸¥¡õµ©¨à¨á?©k
+Block
+	*case12*
+	
+	EndWindow 3206223
+
+		#\n\n©xÊ§ÄÌ·ºØ©»¥ÖÐÔÈÌìÖÐ·ÖØ¦©z
+
+

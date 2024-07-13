@@ -1,0 +1,54 @@
+
+block
+
+
+
+				LocalCount0 = random 3,0
+
+				if LocalCount0 == 1
+
+
+#					Window "\n\n﹛仄﹜仄匀井曰仄欠予予云云″",next
+					Window 3006880,next
+
+
+#					EndWindow "\n\n﹛臻凶日﹜臻凶日仄厄冗予予予″″"
+					EndWindow 3006881
+
+
+				else
+
+					if LocalCount0 == 2
+
+#						Window "\n\n﹛云中″丐氏凶″\n﹛升丹卞井仄化仁木之之尹尹″",next
+						Window 3006882,next
+
+
+#						EndWindow "\n\n﹛锹侚互﹜呏巴仇匹﹜\n﹛锹侚互轾仇丹础卞不不不中中″"
+						EndWindow 3006883
+
+
+					else
+
+#						Window "\n\n﹛云中″云中″\n﹛仄匀井曰仄欠″″锹侚″″",next
+						Window 3006884,next
+
+#						EndWindow "\n\n﹛云蟆弁瓦反升仇分〝\n﹛扔仿玄布井″\n﹛丐公仇反中中午仇欠分″\n﹛云中″臻月卅″\n﹛窒匹手中中井日韵曰粮仃欠″"
+						EndWindow 3006885
+
+
+					endif
+
+				endif
+
+
+
+
+
+
+
+
+
+
+
+

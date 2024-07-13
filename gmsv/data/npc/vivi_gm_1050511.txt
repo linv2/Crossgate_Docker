@@ -1,0 +1,30 @@
+########### 魔力大会考52 ###########
+######■壁炉
+##■检查队伍
+block Group > 1
+	 ##1050780	\n\n\n\n@c壁炉的空间只能一个人通过。
+	 Window 1050780,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■传送至32688	 	 	 
+block Item 45325 == 1 
+    ##1050778	\n\n\n\n@c你感到一阵天旋地转！
+    Window 1050778,OK
+        Window_OK Item 45325 == 1 && Group == 1
+        KillItem 45325
+        Warp 0,32688,19,8
+
+##■传送至32689	
+block Item 45326 == 1 
+    ##1050778	\n\n\n\n@c你感到一阵天旋地转！
+    Window 1050778,OK
+        Window_OK Item 45326 == 1 && Group == 1
+        KillItem 45326
+        Warp 0,32689,19,8
+        
+##■一般
+block
+  ##1050779	\n\n\n\n@c生火用的壁炉。
+  EndWindow 1050779

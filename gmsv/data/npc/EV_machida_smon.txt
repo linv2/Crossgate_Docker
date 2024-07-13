@@ -1,0 +1,108 @@
+#﹛冂溃乒件旦正□跟晶
+#
+#﹛﹛﹛云银中撕仪﹛﹛﹛NPCID﹛810068
+#
+
+
+###﹛伉申件弘丢奶伙午?蜕﹛玉仿打件巨永斥及??ㄠ赭儅
+Block StrCmpChat == 3011108 && Petlevel_602 == 1
+	#Window "\n\n﹛云云″公木反引今仄仁玉仿打件巨永斥匹允友﹝\n﹛中中匹仄斤丹﹝\n﹛伉申件弘丢奶伙午跟晶中凶仄引仄斤丹﹝",OK
+	Window 1110431,OK
+	Window_OK Petlevel_602 == 1
+		KillPetL 602,1
+		GivePet 315146
+		EndBlock
+
+	Window_OK
+		#EndWindow "\n\n﹛氏〝\n﹛??ㄠ及玉仿打件巨永斥互\n﹛中卅仁卅匀凶方丹匹允友﹝\n﹛仇木匹反跟晶匹五引六氏友﹝"
+		 EndWindow 1110432
+###﹛伉申件弘丢奶伙午?蜕﹛玉仿打件巨永斥及??ㄡ动晓赭儅
+Block StrCmpChat == 3011108 && Petlevel_602 >= 2
+	#EndWindow "\n\n﹛云云″公木反引今仄仁玉仿打件巨永斥匹允友﹝\n﹛仄井仄﹜??ㄠ匹反卅中匹允友﹜酸ゴ匹允﹝\n﹛??ㄠ毛洘木化五化仁分今中﹝"
+	 EndWindow 1110433
+###﹛伉申件弘丢奶伙午?蜕
+Block StrCmpChat == 3011108
+	#EndWindow "\n\n﹛伉申件弘丢奶伙匹允友﹝\n﹛匹反﹜??ㄠ及玉仿打件巨永斥毛\n﹛洘木化五化仁木凶日跟晶仄引仄斤丹﹝\n﹛公丹公丹﹜玉仿打件巨永斥反ㄠ虫内勾\n﹛洘木化五化仁分今中﹝\n﹛域蘸卞凶仁今氏洘木化仇日木月午﹜\n﹛台手渔刭仄化仄引中引允及匹﹝"
+	 EndWindow 1110434
+
+
+###﹛白巧伙旦平穴奶仿午?蜕﹛疵Ⅷ及??ㄠ赭儅
+Block StrCmpChat == 3011109 && Petlevel_303700 == 1
+	#Window "\n\n﹛云云″公木反引今仄仁疵Ⅷ匹允友﹝\n﹛中中匹仄斤丹﹝\n﹛白巧伙旦平穴奶仿午跟晶中凶仄引仄斤丹﹝",OK
+	Window 1110435,OK
+	Window_OK Petlevel_303700 == 1
+		KillPetL 303700,1
+		GivePet 315147
+		EndBlock
+
+	Window_OK
+		#EndWindow "\n\n﹛氏〝\n﹛??ㄠ及疵Ⅷ互\n﹛中卅仁卅匀凶方丹匹允友﹝\n﹛仇木匹反跟晶匹五引六氏友﹝"
+		Endwindow 1110436
+###﹛白巧伙旦平穴奶仿午?蜕﹛疵Ⅷ及??ㄡ动晓赭儅
+Block StrCmpChat == 3011109 && Petlevel_303700 >= 2
+	#EndWindow "\n\n﹛云云″公木反引今仄仁疵Ⅷ匹允友﹝\n﹛仄井仄﹜??ㄠ匹反卅中匹允友﹜酸ゴ匹允﹝\n﹛??ㄠ毛洘木化五化仁分今中﹝"
+	 Endwindow 1110437
+###﹛白巧伙旦平穴奶仿午?蜕
+Block StrCmpChat == 3011109
+	#EndWindow "\n\n﹛白巧伙旦平穴奶仿匹允友﹝\n﹛匹反﹜??ㄠ及疵Ⅷ毛\n﹛洘木化五化仁木凶日跟晶仄引仄斤丹﹝\n﹛公丹公丹﹜疵Ⅷ反ㄠ虫内勾\n﹛洘木化五化仁分今中﹝\n﹛域蘸卞凶仁今氏洘木化仇日木月午﹜\n﹛台手渔刭仄化仄引中引允及匹﹝"
+	 Endwindow 1110438
+
+
+###﹛申永弘丢正伙午?蜕﹛禾永皿穴奶件及??ㄠ赭儅
+Block StrCmpChat == 3011110 && Petlevel_303201 == 1
+	#Window "\n\n﹛云云″公木反引今仄仁禾永皿穴奶件匹允友﹝\n﹛中中匹仄斤丹﹝\n﹛申永弘丢正伙午跟晶中凶仄引仄斤丹﹝",OK
+	 Window 1110439,OK
+	Window_OK Petlevel_303201 == 1
+		KillPetL 303201,1
+		GivePet 315148
+		EndBlock
+
+	Window_OK
+		#EndWindow "\n\n﹛氏〝\n﹛??ㄠ及禾永皿穴奶件互\n﹛中卅仁卅匀凶方丹匹允友﹝\n﹛仇木匹反跟晶匹五引六氏友﹝"
+		 Endwindow 1110440
+###﹛申永弘丢正伙午?蜕﹛禾永皿穴奶件及??ㄡ动晓赭儅
+Block StrCmpChat == 3011110 && Petlevel_303201 >= 2
+	#EndWindow "\n\n﹛云云″公木反引今仄仁禾永皿穴奶件匹允友﹝\n﹛仄井仄﹜??ㄠ匹反卅中匹允友﹜酸ゴ匹允﹝\n﹛??ㄠ毛洘木化五化仁分今中﹝"
+	 Endwindow 1110441
+###﹛申永弘丢正伙午?蜕
+Block StrCmpChat == 3011110
+	#EndWindow "\n\n﹛申永弘丢正伙匹允友﹝\n﹛匹反﹜??ㄠ及禾永皿穴奶件毛\n﹛洘木化五化仁木凶日跟晶仄引仄斤丹﹝\n﹛公丹公丹﹜禾永皿穴奶件反ㄠ虫内勾\n﹛洘木化五化仁分今中﹝\n﹛域蘸卞凶仁今氏洘木化仇日木月午﹜\n﹛台手渔刭仄化仄引中引允及匹﹝"
+	 Endwindow 1110442
+
+
+###﹛皿夫平左件午?蜕﹛伙□由旦及??ㄠ赭儅
+Block StrCmpChat == 3011111 && Petlevel_311800 == 1
+	#Window "\n\n﹛云云″公木反引今仄仁伙□由旦匹允友﹝\n﹛中中匹仄斤丹﹝\n﹛皿夫平左件午跟晶中凶仄引仄斤丹﹝",OK
+	 Window 1110443,OK
+	Window_OK Petlevel_311800 == 1
+		KillPetL 311800,1
+		GivePet 315149
+		EndBlock
+
+	Window_OK
+		#EndWindow "\n\n﹛氏〝\n﹛??ㄠ及伙□由旦互\n﹛中卅仁卅匀凶方丹匹允友﹝\n﹛仇木匹反跟晶匹五引六氏友﹝"
+		Endwindow 1110444
+###﹛皿夫平左件午?蜕﹛伙□由旦及??ㄡ动晓赭儅
+Block StrCmpChat == 3011111 && Petlevel_311800 >= 2
+	#EndWindow "\n\n﹛云云″公木反引今仄仁伙□由旦匹允友﹝\n﹛仄井仄﹜??ㄠ匹反卅中匹允友﹜酸ゴ匹允﹝\n﹛??ㄠ毛洘木化五化仁分今中﹝"
+	 Endwindow 1110445
+###﹛皿夫平左件午?蜕
+Block StrCmpChat == 3011111
+	#EndWindow "\n\n﹛皿夫平左件匹允友﹝\n﹛匹反﹜??ㄠ及伙□由旦毛\n﹛洘木化五化仁木凶日跟晶仄引仄斤丹﹝\n﹛公丹公丹﹜伙□由旦反ㄠ虫内勾\n﹛洘木化五化仁分今中﹝\n﹛域蘸卞凶仁今氏洘木化仇日木月午﹜\n﹛台手渔刭仄化仄引中引允及匹﹝"
+	 Endwindow 1110446
+
+
+###﹛晓筏动陆
+Block
+	#Window "\n\n﹛台反﹜潜及抰毛熬仃﹜\n﹛钟仄中乒件旦正□毛螂户化中月樊匹允﹝\n﹛引匀凶仁﹜丹切及潜午五凶日雄俓匹哱坴匹﹜\n﹛职谛及塑洢手襞日卅中匹匿公丹卞＿＿﹝",Next
+	#Window "\n\n﹛塑洢仄化苇勾仃凶乒件旦正□毛洘木化中匀化手﹜﹛凶引卞反忔骚及乒件旦正□互苇凶中午井蜕丹仄﹝",Next
+	#Window "\n\n﹛仄井仄﹜台反钟仄中乒件旦正□卅日\n﹛襞匀化中月及匹允互﹜\n﹛忔骚及乒件旦正□卞反谢中及匹允﹝\n﹛公仇匹﹜台及医歹曰卞乒件旦正□毛\n﹛忯引尹化五化中凶分五凶中﹝",Next
+	#Window "\n\n﹛手切欠氏﹜正母匹午反蜕中引六氏﹝\n﹛台反漆﹜伉申件弘丢奶伙﹜白巧伙旦平穴奶仿﹜\n﹛申永弘丢正伙﹜皿夫平左件午中丹\n﹛午化手钟仄中乒件旦正□毛洘木化中引允﹝",Next
+	#Window "\n\n﹛ㄣ虫及丹切﹜丐卅凶互俓仄中乒件旦正□毛\n﹛台卞蜕匀化仁分今中﹝\n﹛公仄凶日台互俓仄中乒件旦正□毛云项尹仄引允﹝﹛丐卅凶互公及乒件旦正□毛洘木化五化仁木凶日﹜﹛台及乒件旦正□午跟晶仄化丐仆引仄斤丹﹝",Next
+	#EndWindow "\n\n﹛鬼中狪匹反卅中匹仄斤丹〝\n﹛匹反﹜伉申件弘丢奶伙﹜白巧伙旦平穴奶仿﹜\n﹛申永弘丢正伙﹜皿夫平左件及酦匹﹜\n﹛丐卅凶及俓仄中乒件旦正□毛蜕匀化仁分今中﹝",OK
+	 Window 1110447,NEXT
+	 Window 1110448,NEXT
+	 Window 1110449,NEXT
+	 Window 1110450,NEXT
+	 Window 1110451,NEXT
+	 EndWindow 1110452

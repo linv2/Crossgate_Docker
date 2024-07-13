@@ -1,0 +1,15 @@
+#炕卞脤允樊(15557)
+#
+
+block
+ Changepal 15,180
+#\n庤及擘“\n\n﹛镘互厘?戏仄化云蟆及嘐仄凶?毛罹中墓日仄化中月午仄方丹井﹝\n\n﹛仇及引引旵匀化云仁井〝﹋反中毛蓟枪﹌\n﹛引午户化嬴五诮允井〝﹋中中尹毛蓟枪﹌
+ Window 21318,yes,no
+#
+  Window_yes
+   LeaveGroup
+   Warp 0,15549,11,19
+  Window_no
+   LeaveGroup
+   Warp 0,15549,15,19
+

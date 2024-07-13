@@ -1,0 +1,33 @@
+#####不可思议系列三：恶梦#####
+##倒水来的服务生(走廊上)服务生奇斯
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+#■ 有水
+block Item 40300 >= 1
+	 ##1102085	\n\n\n\n@c需要任何服务时请叫我。	1
+	 EndWindow 1102085
+	  
+#■ 有玻璃杯
+block Item 40299 >= 1
+	 ##1102015	\n\n\n\n@c要水吗？请用！	1
+	 Window 1102015,OK 
+	 	 Window_OK Item 40299 >= 1
+	 	 	 KillItem 40299
+	 	 	 GiveLeak1Item (40300%1$1)
+#■ 有诊疗表
+block Item 40291 >= 1
+	 ##1102235	\n\n\n\n@c其他的事我来就行了，拜托您先去照顾华医生。	1
+	 EndWindow 1102235
+
+#■ 一般
+block 
+	 ##1102016	\n\n\n\n@c这边尚未开放，请您离开！	1
+	 Window 1102016,OK
+	 	 Window_OK 
+	 	 	 Warp 0,32041,84,24

@@ -1,0 +1,9 @@
+##puk3包装-虚拟物品-特调果汁糖  din_item_46898.txt
+##能力说明：双点后会出现永久称号-星咏歌姬
+
+############# 一般 ######################
+block Item 46898 >=1
+	 KillItem 46898,1
+	 EndEvent 153 = 1
+	 CheckTitle 
+	 endblock 

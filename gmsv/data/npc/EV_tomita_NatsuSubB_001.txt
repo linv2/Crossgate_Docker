@@ -1,0 +1,127 @@
+#﹛笙渝蜃烂母件斥亦件﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛乩旦及摒
+
+###﹛嗯分日中﹋607710﹌毛赭儅
+block Item_607710 >= 1
+	EndWindow 3207216
+
+		#\n\n﹛它伐永﹜匹匀仃尹ぃ永″\n﹛尺尹匀﹜正仿奶匀化蜕丹及井〝\n﹛丐丐公丹井﹜中匀天中じ匀正仿奶中卅丐\n﹛匀化合丹井日﹜正仿奶卅氏分卅﹝
+
+
+
+###﹛祭檗及惟﹋631054﹌毛赭儅
+block Item_631054 >= 1
+
+#﹛祭檗及累﹋631053﹌毛赭儅
+	If Item_631053 >= 1
+		EndWindow 3207217
+
+		#\n\n﹛累分仃元扎卅仁化﹜檗及惟手丐月及井﹝\n﹛云中日手﹜公匀切及杅毛螂户凶中卅丐﹝\n﹛分匀化今﹜公及累午惟毛儅匀化垫仁午﹜\n﹛檗萼盒互窒井综匀化仁木月氏分兮﹝\n﹛檗萼盒卅日域?票及朿盒卞中月井日﹜\n﹛垫匀化仇中方﹝
+		EndBlock
+
+#﹛祭檗及累毛尕赭儅
+	else
+		Window 3207218,YES,NO
+
+		#\n\n﹛窒分方﹜檗及累毛卅仁仄切引匀凶及井〝\n﹛仄斤丹互卅中卅丐﹜彰方曰中匀天中丐月井日﹜\n﹛手丹ㄠ蜊支欠丹井〝
+
+			Window_YES Item_631053 >= 1
+				EndWindow 3207219
+
+		#\n\n﹛窒分﹜儅匀化凶及井﹝\n﹛公木元扎丐﹜职及谛卞丐仆方丹匀午″
+				EndBlock
+
+			Window_YES ItemSpace >= 1
+				Window 3207220,OK
+
+		#\n\n﹛元扎丐幻日﹜失瓦平卞反濮覆瓜奶扑亦分兮﹝\n﹛失瓦平及泛平□仿扔件仿奶术﹜手及允匀仍仁\n﹛腾中氏分井日﹝\n﹛仇及蟆卅氏井﹜燠屯曰匹韶氏分田永切扎氏卞\n﹛莘匀凶氏分兮﹝
+
+					Window_OK Item_631053 >= 1
+						EndWindow 3207221
+
+		#\n\n﹛窒分﹜儅匀化凶及井﹝\n﹛公木元扎丐﹜职及谛卞丐仆方丹匀午″
+						EndBlock
+
+					Window_OK ItemSpace >= 1
+						GiveItemEX 631053,1,3207222
+
+		#\n\n﹛绂坁互中匀天中匹欐六卅中支﹝\n﹛公木元扎丐﹜职及谛卞丐仆方丹匀午″
+						EndBlock
+
+					Window_OK
+						EndWindow 3207223
+
+		#\n\n﹛绂坁互中匀天中匹欐六卅中支﹝\n﹛公木元扎丐﹜职及谛卞丐仆方丹匀午″
+						EndBlock
+
+			Window_YES
+				EndWindow 3207224
+
+		#\n\n﹛绂坁互中匀天中匹欐六卅中支﹝\n﹛公木元扎丐﹜职及谛卞丐仆方丹匀午″
+				EndBlock
+
+			Window_NO
+				EndWindow 3207225
+
+		#\n\n﹛孔丹氏﹝\n﹛匹手﹜檗及累反云中日心凶中卅皿夫元扎卅中午\n﹛苇勾仃日木卅中兮﹝
+				EndBlock
+
+	endif
+
+
+
+###﹛祭檗及累﹋631053﹌毛赭儅
+block Item_631053 >= 1
+	EndWindow 3207226
+
+		#\n\n﹛仇丹支匀化ㄠ谛匹彰螂户毛允月仇午毛﹜\n﹛末夫市汁玉它匀化蜕丹氏分兮﹝\n﹛卅氏井市永民亦奶奶分欠〝\n﹛匹手﹜乒件旦正□分日仃匹雯尹卅丐﹝\n﹛支匀天曰云中日反末夫市汁玉它方曰﹜\n﹛玄夫﹜市汁﹜它玉件互驯五分永″
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3207227,NEXT
+
+		#\n\n﹛云中云蟆﹜失瓦平毛扑市玄允＿＿失甩甩甩﹜\n﹛漆反失瓦平午域踝元扎卅中氏分匀凶﹝\n﹛失瓦平午云中日反澎坌仃仄化﹜侹切化月彰毛\n﹛螂户化月氏分方﹝\n﹛ぃ及母扑卞允月氏分匀化今﹝
+	Window 3207228,YES,NO
+
+		#\n\n﹛匹手仇仇及彰匀化檗心凶中卞嘉中氏分仃升﹜\n﹛厘暹屺井卅﹝\n﹛幻日苇化仁木方﹜累手檗心凶中卅氏分兮﹝\n﹛昍ヶ中分欠﹜丐仆方丹井〝
+
+		Window_YES Item_631053 >= 1
+			EndWindow 3207229
+
+		#\n\n﹛窒分﹜手丹儅匀化凶及井﹝\n﹛公木元扎丐﹜职及谛卞丐仆方丹匀午″
+
+		Window_YES ItemSpace >= 1
+			Window 3207230,OK
+
+		#\n\n﹛尹尺尺﹜踞井匀凶方﹝\n﹛彰动陆及坁反胶丹氏元扎友尹匀化﹜\n﹛失瓦平卞五勾仁蜕歹木化月氏分﹝\n﹛分井日﹜仇及仇午反〇踝分兮﹝
+
+				Window_OK Item_631053 >= 1
+					EndWindow 3207231
+
+		#\n\n﹛窒分﹜手丹儅匀化凶及井﹝\n﹛公木元扎丐﹜职及谛卞丐仆方丹匀午″
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 631053,1,3207232
+
+		#\n\n﹛绂坁互中匀天中匹欐六卅中支﹝\n﹛公木元扎丐﹜职及谛卞丐仆方丹匀午″
+
+				Window_OK
+					EndWindow 3207233
+
+		#\n\n﹛绂坁互中匀天中匹欐六卅中支﹝\n﹛公木元扎丐﹜职及谛卞丐仆方丹匀午″
+
+		Window_YES
+			EndWindow 3207234
+
+		#\n\n﹛绂坁互中匀天中匹欐六卅中支﹝\n﹛公木元扎丐﹜职及谛卞丐仆方丹匀午″
+
+		Window_NO
+			EndWindow 3207235
+
+		#\n\n﹛公丹井﹜中日卅中及井﹝\n﹛元扎丐今﹜檗及累毛胶匀凶仇午反﹜失瓦平卞反\n﹛〇踝卞仄化仁木方卅﹝\n﹛彰元扎卅中及毛胶匀凶及互失瓦平卞壬木月午﹜\n﹛泛平□仿扔件仿奶术及滓卅氏分方﹝
+
+
+

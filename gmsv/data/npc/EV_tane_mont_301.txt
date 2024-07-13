@@ -1,0 +1,31 @@
+
+
+block
+
+
+	if Xpos == 88 && Ypos == 93 && Item 607621 >= 1
+
+		if ItemCreateTime 607621 < 21
+
+			Window 3200591,ok
+		#\n\n©xÆá±åÊÖÎë³ßßæÇ·µ¤ÎçØÆ»¯ÖÐÐ×›”¡ï»¥\n©x›”ã×±åÌ¶¾®Ä¾»¯\n©xÎëáN±åÎ­ÒüØ¦ÖÐË³Ã«äß×ÛÔÂ£ß£ß
+
+			window_ok
+
+			leavegroup
+
+			warp 0,59524,90,91
+
+		else
+		
+			EndWindow 3200592
+		#\n\n©x›”ã×·´\n©xØÆÔÆÄ¾»¯ØÆÒýÔÈ»¯ÖÐÐ×©z
+
+		
+		endif
+
+	endif
+
+
+
+

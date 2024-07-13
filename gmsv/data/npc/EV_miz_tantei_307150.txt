@@ -1,0 +1,1420 @@
+#¼ëÓ£ÛÍ¾Þµ©Ðþ¡°Ë¦¼þÛÍ©j¨à©k
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#_'·´ÛÌÐÄ?ÈÉØÆ
+
+###########©x¥ª·®ÛÍ¾Þµ©ÐþáN©x##############
+block nowevent7 == 1
+
+	EndWindow 206150,OK
+
+###########©x¶Ö½÷ÇÁØ¤Ô»©x##############
+block Item 18891 != 0
+
+	Window 206168,YES,NO
+	Window_YES
+	EndWindow 206169,OK
+	Window_NO
+	Endwindow 206170,OK
+
+###########©x¥ª·®ÛÍ¾Þµ©ÐþáN©x##############
+block nowevent7 == 1
+
+	EndWindow 206150,OK
+
+###########©xÛÍ·òµ©±Ø¡õÐþ¨á¶¯Â½©x##############
+block trialflg == 1 || trialflg == 0 || trialflg == 2
+
+	EndWindow 206151,OK
+
+##########©x·Â¼þÛÍÊ§ÓÀÃóÍÖðöçÔÖÐ©x##############
+#block job == 413 && fame >=        && endevent93 == 1 
+#
+#	Window 206155,YES,NO
+#	Window_YES
+#	Window 206156,OK
+#	Window_OK
+#	Warp 0,33253,7,9
+#	Window_NO
+#	EndWindow 206157,OK
+#
+###########©x·Â¼þÛÍÊ§ÓÀÃóÍÖðöçÔÖÐ©x##############
+#block job == 412 && fame >=        && endevent92 == 1 
+#
+#	Window 206154,YES,NO
+#	Window_YES
+#	Window 206156,OK
+#	Window_OK
+#	Warp 0,33253,7,9
+#	Window_NO
+#	EndWindow 206157,OK
+#
+###########©x·Â¼þÛÍÊ§ÓÀÃóÍÖðöçÔÖÐ©x##############
+#block job == 411 && fame >=        && endevent91 == 1 
+#
+#	Window 206153,YES,NO
+#	Window_YES
+#	Window 206156,OK
+#	Window_OK
+#	Warp 0,33253,7,9
+#	Window_NO
+#	EndWindow 206157,OK
+#
+###########©xÅÈ±å¼ëÓ£©x##############
+block job >= 411 && job <= 419 && nowevent67 == 1 && nowevent75 == 1 && nowevent68 == 1 && endevent67 == 1
+
+	nowevent67 = 0
+	nowevent68 = 0
+	endevent67 = 0
+	nowevent75 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent67 == 1 && nowevent75 == 1 && nowevent68 == 1
+
+	nowevent67 = 0
+	nowevent68 = 0
+	nowevent75 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent67 == 1 && nowevent75 == 1 && endevent67 == 1
+
+	nowevent67 = 0
+	endevent67 = 0
+	nowevent75 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent75 == 1 && nowevent68 == 1 && endevent67 == 1
+
+	nowevent68 = 0
+	endevent67 = 0
+	nowevent75 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent67 == 1 && nowevent75 == 1
+
+	nowevent67 = 0
+	nowevent75 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent67 == 1 && nowevent75 == 1
+
+	endevent67 = 0
+	nowevent75 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent68 == 1 && nowevent75 == 1
+
+	nowevent68 = 0
+	nowevent75 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent75 == 1 
+
+	nowevent75 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent67 == 1 && nowevent68 == 1 && endevent67 == 1
+
+	nowevent67 = 0
+	nowevent68 = 0
+	endevent67 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent67 == 1 && endevent67 == 1
+
+	nowevent67 = 0
+	endevent67 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent67 == 1 && nowevent68 == 1
+
+	nowevent67 = 0
+	nowevent68 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent68 == 1 && endevent67 == 1
+
+	nowevent68 = 0
+	endevent67 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent67 == 1
+
+	nowevent67 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent67 == 1
+
+	endevent67 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent68 == 1
+
+	nowevent68 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent69 == 1 && nowevent70 == 1 && endevent69 == 1
+
+	endevent69 = 0
+	nowevent70 = 0
+	nowevent69 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent69 == 1 && endevent69 == 1
+
+	nowevent69 = 0
+	endevent69 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent69 == 1 && nowevent70 == 1
+
+	nowevent70 = 0
+	nowevent69 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent69 == 1 
+
+	nowevent69 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent69 == 1 
+
+	endevent69 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent70 == 1 
+
+	nowevent70 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent70 == 1 
+
+	endevent70 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent71 == 1 
+
+	nowevent71 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent71 == 1 
+
+	endevent71 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent72 == 1 
+
+	nowevent72 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent72 == 1 
+
+	endevent72 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent73 == 1 
+
+	nowevent73 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent73 == 1 && nowevent74 == 1 && endevent74 == 1
+
+	nowevent74 = 0
+	endevent74 = 0
+	endevent73 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 &&  endevent73 == 1 && nowevent74 == 1
+
+	nowevent74 = 0
+	endevent73 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent73 == 1 && endevent74 == 1
+
+	endevent74 = 0
+	endevent73 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent68 == 1 
+
+	endevent68 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent73 == 1 
+
+	endevent73 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent74 == 1 
+
+	nowevent74 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent74 == 1 
+
+	endevent74 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && nowevent75 == 1 
+
+	nowevent75 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419 && endevent75 == 1 
+
+	endevent75 = 0
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+block job >= 411 && job <= 419
+
+	Window 206154,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33253,7,9
+	Window_NO
+	Window 206157,OK
+	Window_OK
+	Window 206969,YES,NO
+	Window_YES
+	Window 206970,OK
+	Window_OK
+	leavegroup
+	playse 270,1,1
+	Warp 0,33251,7,9
+	Window_NO
+	EndWindow 206157
+
+###########©xÈÔß–?Ê§ÄÌ·ºØ©Ø¤Ô»©x##############
+block Item 18899 >= 1 || Item 18900 >= 1 || Item 18901 >= 1
+
+	EndWindow 206158,OK
+
+###########©xÛÍ·òµ©±Ø¡õÐþ¨á·Ö»¥ÓòÚÐÔªÔúØ¦ÖÐ©x##############
+#block group >= 2 && trialflg != 1 || trialflg != 0 || trialflg != 2
+#
+#	EndWindow 206163,OK
+#
+###########©xÛÍ¾Þµ©ÐþáN±å‚KÎç½ñÄ¾Ð×ÚÐ©x°×·ÂºëÛÕØÆ©x©x##############
+block nowevent67 == 1 && nowevent75 == 1 && nowevent68 == 1 && endevent67 == 1
+
+	nowevent67 = 0
+	nowevent68 = 0
+	endevent67 = 0
+	nowevent75 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent67 == 1 && nowevent75 == 1 && nowevent68 == 1
+
+	nowevent67 = 0
+	nowevent68 = 0
+	nowevent75 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent67 == 1 && nowevent75 == 1 && endevent67 == 1
+
+	nowevent67 = 0
+	endevent67 = 0
+	nowevent75 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent75 == 1 && nowevent68 == 1 && endevent67 == 1
+
+	nowevent68 = 0
+	endevent67 = 0
+	nowevent75 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+
+block nowevent67 == 1 && nowevent75 == 1
+
+	nowevent67 = 0
+	nowevent75 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent67 == 1 && nowevent75 == 1
+
+	endevent67 = 0
+	nowevent75 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent68 == 1 && nowevent75 == 1
+
+	nowevent68 = 0
+	nowevent75 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent75 == 1 
+
+	nowevent75 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent67 == 1 && nowevent68 == 1 && endevent67 == 1
+
+	nowevent67 = 0
+	nowevent68 = 0
+	endevent67 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent67 == 1 && endevent67 == 1
+
+	nowevent67 = 0
+	endevent67 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent67 == 1 && nowevent68 == 1
+
+	nowevent67 = 0
+	nowevent68 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent68 == 1 && endevent67 == 1
+
+	nowevent68 = 0
+	endevent67 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent67 == 1
+
+	nowevent67 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent67 == 1
+
+	endevent67 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent68 == 1
+
+	nowevent68 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+
+block nowevent69 == 1 && nowevent70 == 1 && endevent69 == 1
+
+	endevent69 = 0
+	nowevent70 = 0
+	nowevent69 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent69 == 1 && endevent69 == 1
+
+	nowevent69 = 0
+	endevent69 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent69 == 1 && nowevent70 == 1
+
+	nowevent70 = 0
+	nowevent69 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent69 == 1 
+
+	nowevent69 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	Warp 0,33251,7,9
+	leavegroup
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+
+block endevent69 == 1 
+
+	endevent69 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	Warp 0,33251,7,9
+	leavegroup
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent70 == 1 
+
+	nowevent70 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent70 == 1 
+
+	endevent70 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent71 == 1 
+
+	nowevent71 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent71 == 1 
+
+	endevent71 = 0
+	Window 206159,YES,NO
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent72 == 1 
+
+	nowevent72 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent72 == 1 
+
+	endevent72 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+lock nowevent73 == 1 
+
+	nowevent73 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent73 == 1 && nowevent74 == 1 && endevent74 == 1
+
+	nowevent74 = 0
+	endevent74 = 0
+	endevent73 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent73 == 1 && nowevent74 == 1
+
+	nowevent74 = 0
+	endevent73 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent73 == 1 && endevent74 == 1
+
+	endevent74 = 0
+	endevent73 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent68 == 1 
+
+	endevent68 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent73 == 1 
+
+	endevent73 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+
+block nowevent74 == 1 
+
+	nowevent74 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+
+block endevent74 == 1 
+
+	endevent74 = 0
+	Window 206159,YES,NO
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block nowevent75 == 1 
+
+	nowevent75 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+block endevent75 == 1 
+
+	endevent75 = 0
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+
+###########©xÛÍ·òµ©±Ø¡õÐþ¨áÓòÚÐ©x##############
+block group == 1 && trialflg != 1 || trialflg != 0 || trialflg != 2
+
+	Window 206159,YES,NO
+	Window_YES
+	Window 206160,NEXT
+	Window 206161,OK
+	Window_OK group == 1
+	leavegroup
+	Warp 0,33251,7,9
+	Window_OK group != 1
+	EndWindow 206542,OK
+	Window_NO
+	EndWindow 206162,OK
+

@@ -1,0 +1,146 @@
+#◊Øıª∫Îÿ¯∞◊«…º˛èÙø≠€Õæﬁµ©–˛:“¡”¿”ÒŒÏ°ı–˛©j®‡©k
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©x∫Îÿ¯∞◊«…º˛±ÿ”¿–˛±Ã–ƒ©x##############
+block endevent85 == 1
+
+	EndWindow 206836,OK
+
+
+###########©x∫Îÿ¯∞◊«…º˛±ÿ”¿–˛º∞Ô±√Q‘ª©x##############
+block Item 18956 >= 1 || Item 18962 >= 1 && nowevent86 == 1
+
+	nowevent86 = 0
+	EndWindow 206835,OK
+
+block Item 18956 >= 1 || Item 18962 >= 1
+
+	EndWindow 206835,OK
+
+###########©x∂™∆πÿ¶» ÿ∆©x##############
+block Item 18954 == 0 && endevent83 == 1 && nowevent84 == 1 && endevent84 == 1
+
+	Window 206834,OK
+	Window_OK
+	GiveItem 18954
+
+###########©x¨üø·¥≠ÿÍ±Ã–ƒ©x##############
+block Item 18954 >= 1
+
+	EndWindow 206827,OK
+
+###########©xñzŒ¿Â√¨ü√Q‘ª©x##############
+block Item 18953 >= 1
+
+	EndWindow 206833,OK
+
+###########©xåaœŒÿ∆»…æÆƒæ‘â©x##############
+block nowevent83 == 1
+
+	Window 206830,NEXT
+	Window 206831,OK
+	Window_OK Itemspace >= 1
+	GiveItem 18953,3	
+	Window_OK Itemspace == 0
+	EndWindow 206832,OK
+
+###########©xñzÿŒ¡√•ÿ‘â©x##############
+block endevent82 == 1
+
+	Window 206828,OK
+	Window_OK
+	leavegroup
+	setaction 14
+	EndWindow 206829,OK
+
+###########©x∂™∆πÿ¶» ÿ∆©x##############
+block Item 18952 == 0 && nowevent81 == 1 && nowevent82 == 1 && endevent81 == 1
+
+	Window 206834,OK
+	Window_OK
+	GiveItem 18952
+
+###########©xñzÿŒø·¥≠ÿÍ±Ã–ƒ©x##############
+block Item 18952 >= 1
+
+	EndWindow 206827,OK
+
+###########©xñzÿŒº∞ ⁄√Q‘ª©x##############
+block Item 18951 >= 1
+
+	EndWindow 206826,OK
+
+###########©x∫Îÿ¯∞◊«…º˛œº∞¬‘â©x##############
+block nowevent80 == 1
+
+	EndWindow 206825,OK
+
+###########©x∫Îÿ¯∞◊«…º˛º∞Œ©‰Ù√Q‘ª©x##############
+block Item 18949 >= 1
+
+	EndWindow 206824,OK
+
+###########©xæÀÓæÕÕ»’ƒæ‘â©x##############
+block endevent79 == 1
+
+	EndWindow 206823,OK
+
+###########©x∞◊º˛?Œ≠‘â©x##############
+block nowevent79 == 1
+
+	setaction 14
+	EndWindow 206822,OK
+
+###########©x∞◊º˛√Q‘ª©x##############
+block Item 18947 >= 1
+
+	EndWindow 206821,OK
+
+###########©xÌ≥Õ›?Œ≠‘â©x##############
+block nowevent78 == 1
+
+	EndWindow 206820,OK
+
+###########©xÌ≥Õ›√Q‘ª©x##############
+block Item 18946 >= 1
+
+	EndWindow 206819,OK
+
+###########©x¬¶ŒÂ∞æÿÍ‘â©x##############
+block endevent78 == 1
+
+	EndWindow 206818,OK
+
+###########©x÷œ ÷ÿ¶ÿ∆©j“¡√¨ªÔ30∂Øœ˛©k©x##############
+block level >= 30 && nowevent86 == 1
+
+	Window 206813,YES,NO
+	Window_YES
+	Window 206814,NEXT
+	Window 206815,NEXT
+	Window 206816,OK
+	Window_OK
+	nowevent86 = 0
+	endevent78 = 1
+	Window_NO
+	EndWindow 206817,OK
+
+block level >= 30
+
+	Window 206813,YES,NO
+	Window_YES
+	Window 206814,NEXT
+	Window 206815,NEXT
+	Window 206816,OK
+	Window_OK
+	endevent78 = 1
+	Window_NO
+	EndWindow 206817,OK
+
+###########©x÷œ ÷ÿ¶ÿ∆©j“¡√¨ªÔ29∂Ø∆±©k©x##############
+block level <= 29
+
+	EndWindow 206812,OK
+
+

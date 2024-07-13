@@ -1,0 +1,104 @@
+#﹛璋剀祸母件斥亦件﹋蛙笙菱心母件斥亦件“扔皮?﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛戏嬴仃盒及摒
+
+###﹛港玄市必及?戏嬴五毛赭儅
+
+block Item_607932 >= 1
+	EndWindow 3202802
+
+		#\n\n﹛什孔孔﹜公及?戏嬴五﹜恌中戏嬴仃填宁分卅﹝\n﹛什孔孔﹜镀仁罹屯化心卅﹜什孔孔﹝
+
+
+
+###﹛港玄市必毛赭儅
+
+block Item_607931 >= 1
+	Window 3202803,OK
+
+		#\n\n﹛什孔孔﹜儅匀化五凶卅﹝元扎﹜嬴仁卅﹝\n﹛什孔孔﹜请侳凶卅﹝什孔孔﹜丐仆月方﹝
+
+		Window_OK Item_607931 >= 1 && ItemSpace >= 1
+			KillItemAll 607931
+			GiveItemEX 607932,1,3202804
+
+		#\n\n﹛什孔孔﹜丐仆日木卅中卅﹝\n﹛什孔孔﹜绂坁互中匀天中分卅﹝
+
+		Window_OK ItemSpace >= 1
+			EndWindow 3202805
+
+		#\n\n﹛什孔孔﹜港玄市必互壅尹凶卅﹝\n﹛什孔孔﹜⑧仆凶及井卅﹝
+
+		Window_OK
+			EndWindow 3202806
+
+		#\n\n﹛什孔孔﹜丐仆日木卅中卅﹝\n﹛什孔孔﹜绂坁互中匀天中分卅﹝
+
+
+
+###﹛云升欠戊件瓦乓弁毛赭儅
+
+block Item_607934 >= 1
+	Window 3202807,OK
+
+		#\n\n﹛什孔孔﹜丐五日户凶卅﹝\n﹛什孔孔﹜元扎﹜仇木反中日卅中卅﹝
+
+		Window_OK
+			KillItemAll 607934
+
+
+
+###﹛旦永由⑥扤毛赭儅
+
+block Item_607933 >= 1
+	Window 3202808,YES,NO
+
+		#\n\n﹛什孔孔﹜云支勾凝蹉及银中分卅﹝\n﹛什孔孔﹜酸ゴ分卅﹜港玄市必互卅中卅﹝\n﹛什孔孔﹜港玄市必毛儅匀化仁月井〝
+
+		Window_YES Item_607933 >=1 && ItemSpace >= 1
+			Window 3202809,OK
+
+		#\n\n﹛什孔孔﹜港玄市必反玄市必凯曰抩谛互\n﹛儅匀化月卅﹝\n﹛什孔孔﹜云升欠戊件瓦乓弁毛儅匀化垫五卅﹝\n﹛支勾及厘驯坁分卅﹝
+
+				Window_OK Item_607933 >= 1 && ItemSpace >= 1
+					KillItemAll 607933
+					GiveItemEX 607934,1,3202810
+
+		#\n\n﹛什孔孔﹜丐仆日木卅中卅﹝\n﹛什孔孔﹜绂坁互中匀天中分卅﹝
+
+				Window_OK ItemSpace >= 1
+					EndWindow 3202811
+
+		#\n\n﹛什孔孔﹜旦永由⑥扤互壅尹凶卅﹝\n﹛什孔孔﹜罹屯凶及井卅﹝
+
+				Window_OK
+					EndWindow 3202812
+
+		#\n\n﹛什孔孔﹜丐仆日木卅中卅﹝\n﹛什孔孔﹜绂坁互中匀天中分卅﹝
+
+		Window_YES ItemSpace >= 1
+			EndWindow 3202813
+
+		#\n\n﹛什孔孔﹜旦永由⑥扤互壅尹凶卅﹝\n﹛什孔孔﹜罹屯凶及井卅﹝
+
+		Window_YES
+			EndWindow 3202814
+
+		#\n\n﹛什孔孔﹜丐仆日木卅中卅﹝\n﹛什孔孔﹜绂坁互中匀天中分卅﹝
+
+		Window_NO
+			EndWindow 3202815
+
+		#\n\n﹛什孔孔﹜公丹井﹜丐五日户月氏分卅﹝\n﹛元扎丐卅﹜什孔孔﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+
+block
+	EndWindow 3202816
+
+		#\n\n﹛什孔孔﹜罹屯坁反戏嬴仃互域?分卅﹝
+
+
+

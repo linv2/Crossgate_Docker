@@ -1,0 +1,37 @@
+#击⑻及?谛﹛16136,6:11015 52 2
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+block EndEvent 0 == 1
+	#穻樊反黎椒今木﹜韶樊及隙挎毛儅切﹜侅崭午熔毛菌中﹜引凶椒月﹝
+	EndWindow 3203123
+
+		#穻樊反黎扬今木﹜侅崭午熔毛菌中﹜引凶椒月﹝
+
+########## 韶樊及隙挎毛儅匀化中月井﹜失奶泛丞勂卞坞五互卅中桦宁 ##########
+
+block Item18218 >= 1 || ItemSpace == 0 || EndEvent 2 == 1
+	#穻樊反黎椒今木﹜韶樊及隙挎毛儅切﹜侅崭午熔毛菌中﹜引凶椒月﹝
+	EndWindow 11164
+	Warp,1521,49,65
+
+########## 韶樊及隙挎毛儅匀化云日内﹜失奶泛丞勂卞坞五互丐月桦宁 ##########
+block Item18218 == 0 && ItemSpace >= 1
+	#韶樊及隙挎互憎允反穻樊及据﹝台反魂允樊卅曰﹝云蟆卞反公及凤伞互丐月及井〝
+	Window 11165,YES,NO
+
+		Window_YES ItemSpace >= 1
+		#僧扪互隙挎午隋卞丐日氏仇午毛﹝
+		GiveLeak1Item 18218
+		EndWindow 11166
+
+		Window_YES ItemSpace == 0
+		#绂坁互中匀天中匹允
+		EndWindow 10000
+
+		Window_NO
+		#穻竣及拑中樊反峏切蛔木﹝云蟆卞反聊亢凶Ⅶ分﹝
+		EndWindow 11167

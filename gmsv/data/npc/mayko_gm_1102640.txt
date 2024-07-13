@@ -1,0 +1,22 @@
+block item 41144>0
+	 Window 1110728,next
+	 Window 1110729,next
+	 
+	 endwindow  1110731
+	 
+	 
+block
+	 Window 1110728,next
+	 Window 1110729,ok
+	 
+	
+	 Window_OK ItemSpace == 0
+	 EndWindow 1100001
+	 Window_OK 
+	 GiveLeak1Item 41144,1
+	 EndWindow 1110730
+	 
+#1110728	\n\n\n\n@c听说花间有飘落的凤凰羽毛，可以通往天界。	1
+#1110729	\n\n　　　　以花命名之岛，秋日的城市的高塔中，\n　　　　有通往天空的道路。	1
+#1110731	\n\n\n\n@c花田间的植物学家应该对羽毛多少有点认知吧！！	1
+	 

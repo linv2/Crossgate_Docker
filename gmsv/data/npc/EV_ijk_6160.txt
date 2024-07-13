@@ -1,0 +1,23 @@
+#热诸阁耦缜﹛21006 35 2	﹋正件旦NPC涩嘻﹌萼GET 6160
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 萼毛儅匀化中月桦宁 ##########
+	block Item 18379 >= 1
+	#\n\n﹛正件旦互丐月﹝
+	EndWindow 11831
+
+########## 癫化反引日卅中桦宁 ##########
+	block
+	#\n\n﹛正件旦及酦卞萼毛苇勾仃凶﹝萼毛胶中引允井〝
+	Window 11832,YES,NO
+
+	Window_YES ItemSpace >= 1
+	GiveItem 18379,1
+
+	Window_YES
+	#\n\n﹛绂坁互中匀天中匹允
+	EndWindow 10000
+
+	Window_NO

@@ -1,0 +1,22 @@
+
+block Item 16239 == 1
+	Message 990272
+	SetAction 8
+	AddStampCount 16239
+
+block Item 16240 == 1
+	Message 990272
+	SetAction 8
+	AddStampCount 16240
+
+block Item 16241 == 1
+	Message 990272
+	SetAction 8
+	AddStampCount 16241
+
+block Item 16242 == 1
+	Message 990272
+	SetAction 8
+	AddStampCount 16242
+block
+	Message 990272

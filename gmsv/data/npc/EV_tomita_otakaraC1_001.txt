@@ -1,0 +1,304 @@
+#扑尼仿它巨永末及显﹋21℅40﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛扔瓦□﹋30F﹌及摒
+
+###﹛厘霉及萼﹋631043﹌毛赭儅
+block Item_631043 >= 1
+	Window 3206521,NEXT
+
+		#\n\n﹛算扲及扫毛譬屯化云月及井〝\n﹛分匀凶日﹜它奴件玉﹜伊奶件﹜扔件母□卅氏化\n﹛洘酦卞莘匀化心月午中中﹝\n﹛瑜氩卞卅匀化茧仄荚匀化月方丹分井日卅﹝
+	EndWindow 3206522
+
+		#\n\n﹛它奴件玉反ㄢㄤ闭匹苇井仃凶冗﹝\n﹛引内反乩汁井日莘匀化心凶日升丹分﹝\n﹛曾牒今木月午恌中卅﹜市永市永市永市永＿﹝
+
+
+
+###﹛扔瓦□及必□丞辅笛据﹋631033﹌毛赭儅
+block Item_631033 >= 1
+
+#﹛市□玉伊皿伉市?﹋631040﹌及心毛赭儅﹋恳荸″﹌
+	IF Item_631034 == 0 && Item_631035 == 0 && Item_631036 == 0 && Item_631037 == 0 && Item_631038 == 0 && Item_631039 == 0 && Item_631040 == 1 && Item_631041 == 0 && Item_631042 == 0
+
+		Window 3206523,OK
+
+		#\n\n﹛恳荸分﹝匹反﹜辅笛据﹜市□玉午娄五赘尹卞\n﹛厘霉及萼午中丹医坁毛支欠丹﹝\n﹛丐月厘霉及算扲及丐曰井毛憎允午中丹扫分﹝\n﹛茧仄化心凶日升丹分﹜市永市永市永市永＿﹝
+
+			Window_OK Item_631043 >= 1
+				EndWindow 3206524
+
+		#\n\n﹛幻丹﹜湃卞操圴毛欐仄化中凶及井﹝\n﹛怅蛛戏唾午中丹及反﹜竣互斗月氏匹中井氏卅﹝
+				EndBlock
+
+			Window_OK Item_631034 == 0 && Item_631035 == 0 && Item_631036 == 0 && Item_631037 == 0 && Item_631038 == 0 && Item_631039 == 0 && Item_631040 == 1 && Item_631041 == 0 && Item_631042 == 0 && Item_631033 >= 1 && ItemSpace >= 1
+				KillItemAll 631033
+				KillItem 631040,1
+				GiveItemEX 631043,1,3206525
+
+		#\n\n﹛云□中﹜绂坁及帮咥毛仄化仁木﹝\n﹛操圴毛欐六氏匹反卅中井﹝
+
+			Window_OK Item_631034 == 0 && Item_631035 == 0 && Item_631036 == 0 && Item_631037 == 0 && Item_631038 == 0 && Item_631039 == 0 && Item_631040 == 1 && Item_631041 == 0 && Item_631042 == 0 && Item_631033 >= 1
+				EndWindow 3206526
+
+		#\n\n﹛云□中﹜绂坁及帮咥毛仄化仁木﹝\n﹛操圴毛欐六氏匹反卅中井﹝
+				EndBlock
+
+			Window_OK Item_631034 == 0 && Item_631035 == 0 && Item_631036 == 0 && Item_631037 == 0 && Item_631038 == 0 && Item_631039 == 0 && Item_631040 == 1 && Item_631041 == 0 && Item_631042 == 0
+				EndWindow 3206527
+
+		#\n\n﹛辅笛据反升丹仄凶〝\n﹛撩仁仄凶及卅日﹜操圴手卅仄分﹝
+				EndBlock
+
+			Window_OK Item_631040 == 0
+				EndWindow 3206528
+
+		#\n\n﹛市□玉互苇丐凶日卅中冗﹝\n﹛市□玉互卅仃木壬﹜操圴反欐六氏卅﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3206529
+
+		#\n\n﹛市□玉互喂尹化云月﹝奶件民平毛仄凶卅﹝\n﹛引匀凶仁﹜渣丹仁分引今木月午仇欠分匀凶﹝
+				EndBlock
+
+
+#﹛市□玉伊皿伉市?﹋631034﹌及心毛赭儅
+	else
+	IF Item_631034 == 1 && Item_631035 == 0 && Item_631036 == 0 && Item_631037 == 0 && Item_631038 == 0 && Item_631039 == 0 && Item_631040 == 0 && Item_631041 == 0 && Item_631042 == 0
+
+		Window 3206530,NEXT
+
+		#\n\n﹛丹云云云云云云云﹜仇匀﹜仇木反＿＿＿＿＿
+		Window 3206531,OK
+
+		#\n\n﹛甩术伊分﹝\n﹛甩术伊市□玉毛欐仄化﹜疯蔺爵仄化仁木﹝\n﹛怃踏毛银匀化手恌中氏分冗﹝\n﹛市永市永市永市永＿﹝
+
+			Window_OK Item_631034 >= 1
+				KillItemAll 631034
+				EndBlock
+
+			Window_OK
+				EndBlock
+
+
+#﹛市□玉伊皿伉市?﹋631035﹌及心毛赭儅
+	else
+	IF Item_631034 == 0 && Item_631035 == 1 && Item_631036 == 0 && Item_631037 == 0 && Item_631038 == 0 && Item_631039 == 0 && Item_631040 == 0 && Item_631041 == 0 && Item_631042 == 0
+
+		Window 3206532,NEXT
+
+		#\n\n﹛丹云云云云云云云﹜仇匀﹜仇木反＿＿＿＿＿
+		Window 3206533,OK
+
+		#\n\n﹛甩术伊分﹝\n﹛甩术伊市□玉毛欐仄化﹜疯蔺爵仄化仁木﹝\n﹛怃踏毛银匀化手恌中氏分冗﹝\n﹛市永市永市永市永＿﹝
+
+			Window_OK Item_631035 >= 1
+				KillItemAll 631035
+				EndBlock
+
+			Window_OK
+				EndBlock
+
+
+#﹛市□玉伊皿伉市?﹋631036﹌及心毛赭儅
+	else
+	IF Item_631034 == 0 && Item_631035 == 0 && Item_631036 == 1 && Item_631037 == 0 && Item_631038 == 0 && Item_631039 == 0 && Item_631040 == 0 && Item_631041 == 0 && Item_631042 == 0
+
+		Window 3206534,NEXT
+
+		#\n\n﹛丹云云云云云云云﹜仇匀﹜仇木反＿＿＿＿＿
+		Window 3206535,OK
+
+		#\n\n﹛甩术伊分﹝\n﹛甩术伊市□玉毛欐仄化﹜疯蔺爵仄化仁木﹝\n﹛怃踏毛银匀化手恌中氏分冗﹝\n﹛市永市永市永市永＿﹝
+
+			Window_OK Item_631036 >= 1
+				KillItemAll 631036
+				EndBlock
+
+			Window_OK
+				EndBlock
+
+
+#﹛市□玉伊皿伉市?﹋631037﹌及心毛赭儅
+	else
+	IF Item_631034 == 0 && Item_631035 == 0 && Item_631036 == 0 && Item_631037 == 1 && Item_631038 == 0 && Item_631039 == 0 && Item_631040 == 0 && Item_631041 == 0 && Item_631042 == 0
+
+		Window 3206536,NEXT
+
+		#\n\n﹛丹云云云云云云云﹜仇匀﹜仇木反＿＿＿＿＿
+		Window 3206537,OK
+
+		#\n\n﹛甩术伊分﹝\n﹛甩术伊市□玉毛欐仄化﹜疯蔺爵仄化仁木﹝\n﹛怃踏毛银匀化手恌中氏分冗﹝\n﹛市永市永市永市永＿﹝
+
+			Window_OK Item_631037 >= 1
+				KillItemAll 631037
+				EndBlock
+
+			Window_OK
+				EndBlock
+
+
+#﹛市□玉伊皿伉市?﹋631038﹌及心毛赭儅
+	else
+	IF Item_631034 == 0 && Item_631035 == 0 && Item_631036 == 0 && Item_631037 == 0 && Item_631038 == 1 && Item_631039 == 0 && Item_631040 == 0 && Item_631041 == 0 && Item_631042 == 0
+
+		Window 3206538,NEXT
+
+		#\n\n﹛丹云云云云云云云﹜仇匀﹜仇木反＿＿＿＿＿
+		Window 3206539,OK
+
+		#\n\n﹛甩术伊分﹝\n﹛甩术伊市□玉毛欐仄化﹜疯蔺爵仄化仁木﹝\n﹛怃踏毛银匀化手恌中氏分冗﹝\n﹛市永市永市永市永＿﹝
+
+			Window_OK Item_631038 >= 1
+				KillItemAll 631038
+				EndBlock
+
+			Window_OK
+				EndBlock
+
+
+#﹛市□玉伊皿伉市?﹋631039﹌及心毛赭儅
+	else
+	IF Item_631034 == 0 && Item_631035 == 0 && Item_631036 == 0 && Item_631037 == 0 && Item_631038 == 0 && Item_631039 == 1 && Item_631040 == 0 && Item_631041 == 0 && Item_631042 == 0
+
+		Window 3206540,NEXT
+
+		#\n\n﹛丹云云云云云云云﹜仇匀﹜仇木反＿＿＿＿＿
+		Window 3206541,OK
+
+		#\n\n﹛甩术伊分﹝\n﹛甩术伊市□玉毛欐仄化﹜疯蔺爵仄化仁木﹝\n﹛怃踏毛银匀化手恌中氏分冗﹝\n﹛市永市永市永市永＿﹝
+
+			Window_OK Item_631039 >= 1
+				KillItemAll 631039
+				EndBlock
+
+			Window_OK
+				EndBlock
+
+
+#﹛市□玉伊皿伉市?﹋631041﹌及心毛赭儅
+	else
+	IF Item_631034 == 0 && Item_631035 == 0 && Item_631036 == 0 && Item_631037 == 0 && Item_631038 == 0 && Item_631039 == 0 && Item_631040 == 0 && Item_631041 == 1 && Item_631042 == 0
+
+		Window 3206542,NEXT
+
+		#\n\n﹛丹云云云云云云云﹜仇匀﹜仇木反＿＿＿＿＿
+		Window 3206543,OK
+
+		#\n\n﹛甩术伊分﹝\n﹛甩术伊市□玉毛欐仄化﹜疯蔺爵仄化仁木﹝\n﹛怃踏毛银匀化手恌中氏分冗﹝\n﹛市永市永市永市永＿﹝
+
+			Window_OK Item_631041 >= 1
+				KillItemAll 631041
+				EndBlock
+
+			Window_OK
+				EndBlock
+
+
+#﹛市□玉伊皿伉市?﹋631042﹌及心毛赭儅
+	else
+	IF Item_631034 == 0 && Item_631035 == 0 && Item_631036 == 0 && Item_631037 == 0 && Item_631038 == 0 && Item_631039 == 0 && Item_631040 == 0 && Item_631041 == 0 && Item_631042 == 1
+
+		Window 3206544,NEXT
+
+		#\n\n﹛丹云云云云云云云﹜仇匀﹜仇木反＿＿＿＿＿
+		Window 3206545,OK
+
+		#\n\n﹛甩术伊分﹝\n﹛甩术伊市□玉毛欐仄化﹜疯蔺爵仄化仁木﹝\n﹛怃踏毛银匀化手恌中氏分冗﹝\n﹛市永市永市永市永＿﹝
+
+			Window_OK Item_631042 >= 1
+				KillItemAll 631042
+				EndBlock
+
+			Window_OK
+				EndBlock
+
+
+#﹛呁醒及市□玉伊皿伉市毛赭儅
+	else
+	If Item_631034 >= 1 || Item_631035 >= 1 || Item_631036 >= 1 || Item_631037 >= 1 || Item_631038 >= 1 || Item_631039 >= 1 || Item_631040 >= 1 || Item_631041 >= 1 || Item_631042 >= 1
+
+		EndWindow 3206546
+
+		#\n\n﹛奶件民平反中井氏卅﹝\n﹛市□玉毛呁醒儅匀化云月分欠﹝\n﹛域呦卞嘟月及分﹝市永市永市永市永＿﹝
+		EndBlock
+
+
+#﹛市□玉伊皿伉市毛尕赭儅
+	else
+		Window 3206547,NEXT
+
+		#\n\n﹛伙□伙毛侉木凶井﹝\n﹛壑狪互嬴仃月及丹﹜手丹域蘸濩抸允月冗﹝\n﹛ㄢㄠ闭匹ㄤ杽及弁奶术毛妏五﹜朼执市□玉及\n﹛刓昍卞丐月妐侬毛赚心宁歹六化荸仁氏分﹝
+		EndWindow 3206548
+
+		#\n\n﹛公仄化﹜升及蚕尹卞手银歹卅井匀凶妐侬及\n﹛市□玉伊皿伉市毛ㄢㄡ闭匹澎卞じ木化﹜\n﹛仇仇卞儅匀化仁木壬中中﹝\n﹛操圴毛啼仄心卞卅﹝市永市永市永市永＿﹝
+		EndBlock
+
+
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3206549,YES,NO
+
+		#\n\n﹛粕互丐月卅日﹜剂仄芛氏匹垫井氏井〝\n﹛卅卞﹜切斤匀午仄凶弁奶术分﹝操圴手请月冗﹝\n﹛引丐﹜厘仄凶坁元扎卅中互卅﹝\n﹛今化﹜升丹允月友〝
+
+		Window_YES Item_631033 >= 1
+			EndWindow 3206550
+
+		#\n\n﹛窒分﹜手丹辅笛仄化凶及井﹝\n﹛分匀凶日﹜欐允优邰反卅中卅﹝
+
+		Window_YES ItemSpace >= 1
+			Window 3206551,NEXT
+
+		#\n\n﹛方仄方仄﹜啼仄仁卅曰公丹分﹝\n﹛伙□伙濩抸及蟆卞﹜引内反ㄨ潘挀丐月\n﹛朼执市□玉毛合中请仄化仁木﹝\n﹛冂卞刓昍卞踏中化丐月失伙白央矛永玄毛卅﹝\n﹛丢乒仄化云仁午忐厍分冗﹝
+			Window 3206552,NEXT
+
+		#\n\n﹛匹反﹜伙□伙毛濩抸允月冗﹝\n﹛引内ㄢㄠ闭匹﹜显戋互请允弁奶术毛妏仁及分﹝\n﹛蝈ㄤ杽匹﹜蚕尹反蝈化朼执市□玉及妐侬及\n﹛赚心宁歹六匹荸仃月﹝
+			Window 3206553,NEXT
+
+		#\n\n﹛戚卞弁奶术及蚕尹午朼执市□玉及ㄨ妐侬毛\n﹛苇?屯月及分﹝\n﹛ㄨ妐侬及丹切ㄠ妐侬分仃﹜蚕尹卞银歹卅井匀凶\n﹛妐侬互丐月反内分﹝
+			Window 3206554,NEXT
+
+		#\n\n﹛公木互歹井匀凶日﹜ㄢㄡ闭尺垫仁及分﹝\n﹛显戋互﹜朼执市□玉及伊皿伉市毛ミ匀化云月﹝\n﹛公及酦井日蚕尹卞银歹卅井匀凶妐侬及市□玉毛\n﹛熬仃潸匀化﹜仇仇尺儅匀化仁月及分﹝
+			Window 3206555,OK
+
+		#\n\n﹛切卅心卞﹜呿坁及朼执市□玉反熬仃勾仃氏冗﹝\n﹛公木元扎﹜必□丞及辅笛据毛欐允冗﹝\n﹛市永市永市永市永＿﹝
+
+				Window_OK Item_631033 >= 1
+					EndWindow 3206556
+
+		#\n\n﹛窒分﹜手丹辅笛仄化凶及井﹝\n﹛分匀凶日﹜欐允优邰反卅中卅﹝
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 631033,1,3206557
+
+		#\n\n﹛云□中﹜绂坁及帮咥毛仄化仁木﹝\n﹛辅笛据互欐六氏匹反卅中井﹝
+
+				Window_OK
+					EndWindow 3206558
+
+		#\n\n﹛云□中﹜绂坁及帮咥毛仄化仁木﹝\n﹛辅笛据互欐六氏匹反卅中井﹝
+
+		Window_YES
+			EndWindow 3206559
+
+		#\n\n﹛云□中﹜绂坁及帮咥毛仄化仁木﹝\n﹛辅笛据互欐六氏匹反卅中井﹝
+
+		Window_NO
+			EndWindow 3206560
+
+		#\n\n﹛引丐酷杅互卅中互﹜勾引日氏卅﹝\n﹛蛊日及梁呺毛仄化啼仄手丹午合匀化凶及卞﹝\n﹛引丐﹜职毛癫凶欠丹﹝市永市永市永市永＿﹝
+
+
+

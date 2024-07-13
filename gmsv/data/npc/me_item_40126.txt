@@ -1,0 +1,4 @@
+block
+	killitem 40126,1
+	thankflower
+	endblock

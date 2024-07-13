@@ -1,0 +1,20 @@
+#”Ò‘–»Œ—Î
+
+
+block
+	Window 22921,Next
+	Window 22922,Next
+	Window 22923,Next
+	Window 22924,Next
+	Window 22925,Next
+	Window 22926,Next
+	Window 22927,Next
+	Window 22928,Next
+	Window 22929,Next
+	Window 22930,Next
+	Window 22931,OK
+		Window_OK
+			NowEvent 140 = 1
+			LeaveGroup
+			Warp 0,51004,22,23
+

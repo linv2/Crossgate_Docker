@@ -1,0 +1,12 @@
+#¡Púï????
+
+#
+block
+	Window 22373,Next
+	Window 22374,Next
+	Window 22375,Next
+	Window 22376,OK
+	Window_OK
+		NowEvent 130 = 1
+		LeaveGroup
+		Warp 0,43217,33,18

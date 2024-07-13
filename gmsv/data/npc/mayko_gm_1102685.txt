@@ -1,0 +1,12 @@
+#	mayko_gm_1102685.txt	翔天	(战斗前)																				
+#1111416	\n\n\n\n@c我不想知道菟丝的一切。	1
+
+block
+	 window 1111416,ok
+	 Window_ok
+	 Encount 2|0,32189,10,10||0|||||0|40341|||||||||	 
+	 Endblock
+
+
+
+

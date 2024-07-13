@@ -1,0 +1,65 @@
+#≦反元户化及云勾井中≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛矛失矛失及摒
+
+###﹛抩铜毛呁醒赭儅
+
+block Item_607904 >= 2
+	EndWindow 3200868
+		#\n\n﹛云云﹜伙左□弘今氏及市□玉分﹝\n﹛丐勾户化月及井〝﹛目件卅及﹝
+
+
+
+###﹛抩铜毛赭儅﹋旦正件皿ㄢ﹌
+
+block Item_607904 == 1 && StampCount_607904 == 3
+
+	If BBimage == 101022
+		EndWindow 3200869
+		#\n\n﹛云云﹜民平﹝今匀五正平尺丐公太卞中匀凶日﹜\n﹛甩奶正汁及正永弁互中凶氏分﹝\n﹛匹手今﹜目件卅氏分方﹝\n﹛中勾手反云匀五中瓦乒汁手匀化月及卞﹜\n﹛五斤丹反卅仁化﹜示□匀午仄化凶氏分﹝
+		EndBlock
+
+	else
+		EndWindow 3200870
+		#\n\n﹛民平及化勾分中〝\n﹛分匀凶日﹜民平毛方氏匹五化仁木方﹝\n﹛民平卞云仄尹凶中仇午互﹜丐月氏分井日今丐﹝
+		EndBlock
+
+	endif
+
+
+###﹛抩铜毛赭儅﹋旦正件皿ㄢ动陆﹌
+
+block Item_607904 == 1
+
+	If BBimage == 101022
+		EndWindow 3200871
+		#\n\n﹛中公互仄公丹分卅﹝丐公屯卅中及井〝\n﹛戈仇丹卞﹜疋亘件旦弗手中月及卞﹝
+		EndBlock
+
+	else
+		EndWindow 3200872
+		#\n\n﹛民平及化勾分中卅日﹜反支仁仄化仁木方﹝\n﹛丐公太凶中氏分井日今丐﹝
+		EndBlock
+
+	endif
+
+
+
+###﹛抩铜尕赭儅
+
+block
+
+	If BBimage == 101022
+		EndWindow 3200873
+		#\n\n﹛卅丐民平﹜云引尹幻氏午丹卞民平井〝\n﹛卅氏分井﹜中勾手午切互丹卞云中互允月冗﹝
+		EndBlock
+
+	else
+		EndWindow 3200874
+		#\n\n﹛升丹仄化谛反﹜云中日毛心月午仇歹互月氏分〝\n﹛谛及幻丹互﹜内匀午仇歹中及卞＿＿﹝
+		EndBlock
+
+	endif
+
+
+

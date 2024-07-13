@@ -1,0 +1,25 @@
+###dodo_gm_1102128.txt
+###传送石（代替海村村长家传送至海村的WARP点）								传送玩家到不同的地图。
+###□身上有莉塔的发饰 && EndEvent 157 == 1
+block EndEvent 157 == 1 && Item 40731 >= 1 && Xpos == 5 && Ypos == 18 
+	 LeaveGroup 
+	 Warp 0,32241,29,54
+
+###□身上有交换日记 && 魔族的火把
+block Item 40733 >= 1 && Item 40734 >= 1 && Xpos == 5 && Ypos == 18
+	 LeaveGroup
+	 Warp 0,32242,29,54
+
+###□身上有莉塔的发饰 && EndEvent 156 == 1 
+block EndEvent 156 == 1 && Item 40731 >= 1 && Xpos == 5 && Ypos == 18 
+	 LeaveGroup
+	 Warp 0,32240,29,54 
+	 
+###□身上有交换日记 && EndEvent 156 == 1 
+block EndEvent 156 == 1 && Item 40733 >= 1 && Xpos == 5 && Ypos == 18 
+	 LeaveGroup
+	 Warp 0,32240,29,54
+	 
+###□一般
+block Xpos == 5 && Ypos == 18 
+	 Warp 0,30011,29,54  

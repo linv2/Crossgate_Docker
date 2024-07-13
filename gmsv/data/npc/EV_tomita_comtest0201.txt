@@ -1,0 +1,25 @@
+#失奶泛丞楮洘蕙戊穴件玉掸董﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛HItem及摒
+
+###﹛PC签虫卞覆仄化失奶泛丞勂及失奶泛丞及心毛割カ仄引允
+
+block
+	Window "\n\n﹛用□穴伙末□玉及赭儅醒毛民尼永弁仄引丑允﹝",OK
+
+		Window_OK HItem 12 >= 4
+			EndWindow "\n\n﹛用□穴伙末□玉互ㄣ呿动晓丐曰引丑允﹝"
+
+		Window_OK HItem 12 == 3
+			EndWindow "\n\n﹛用□穴伙末□玉互ㄢ呿丐曰引丑允﹝"
+
+		Window_OK HItem 12 == 2
+			EndWindow "\n\n﹛用□穴伙末□玉互ㄡ呿丐曰引丑允﹝"
+
+		Window_OK Hitem 12 == 1
+			EndWindow "\n\n﹛用□穴伙末□玉互ㄠ呿丐曰引丑允﹝"
+
+		Window_OK
+			EndWindow "\n\n﹛卅中﹜用□穴伙末□玉互卅中歹永″"
+
+

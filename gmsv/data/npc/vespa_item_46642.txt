@@ -1,0 +1,7 @@
+###大宇周年庆用_装满泡菜锅收纳餐盒
+
+	 
+block ItemSpace >=3
+	 KillItem 46642,1
+	 GiveStackItem 15213,9
+	 

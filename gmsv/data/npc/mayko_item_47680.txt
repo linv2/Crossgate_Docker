@@ -1,0 +1,27 @@
+#mayko_item_47680.txt
+#双点‘雪人福袋’后，可得到‘铁牛A活力饮料’＊3、
+#装饰技能卷轴、饰品技能学习卷轴、
+#另随机取得‘卡时小闹钟’或是‘任意钥匙’。
+
+#铁牛A活力饮料	46413
+#饰品技能见习卷	47537
+#学习卷轴	45552
+#卡时小闹钟	46519
+#任意钥匙	45513
+
+
+block ItemSpace > 3
+	 
+	 Window 1055020,YES,NO
+	 Window_YES 
+ 	 KillItem 47680,1
+ 	 GiveLeak1Item 46413,3
+ 	 GiveLeak1Item 47537,1
+ 	 GiveLeak1Item 45552,1
+	 GiveLeak1Item (46519%1$1,45513%1$1) 
+ 	 Window_NO
+ 	 endblock
+block
+	 EndWindow 1055019
+
+ 	 

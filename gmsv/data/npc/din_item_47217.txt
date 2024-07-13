@@ -1,0 +1,19 @@
+##20062月展场包装	老鼠兑换券（？）	din_item_47217.txt
+##能力说明：可获得一只火焰鼠
+
+block Item 47217 >= 1
+	 ##1053924	\n\n  恭喜你获得火焰鼠一只！想要现在领取吗？	1
+	 Window 1053924,YES,NO 
+		 Window_NO 
+
+		 Window_YES Item 47217 >=1 && PetSpace < 1
+		 	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+			 EndWindow 1100004
+		 
+		 Window_YES Item 47217 >= 1 && PetSpace >= 1
+		 	 KillItem 47217,1
+			 ##给予火焰鼠一只
+	 	 	 GivePet 23
+	 	 	 ##1053927	\n\n  老鼠领取完毕，感谢你的使用。	1
+	 	 	 EndWindow 1053927
+	 	 	 

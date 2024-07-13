@@ -1,0 +1,23 @@
+#mayko_gm_1102771.txt
+#1111754	\n\n\n　　　　你还没有打到三个口臭臭种子，\n　　　　是打算放弃了吗？	1
+#1111755	\n\n　　　　谢谢你喔！！\n　　　　这个神秘的种子会开出奇特的东西，\n　　　　就送给你啰。	1
+block item 41251 >2
+	killitem 41251,3
+	GiveLeak1Item 41250,1
+	window 1111755,ok
+	window_ok
+	leavegroup 
+	warp 0,100,455,108
+	endblock
+block 
+	Window 1111754,yes,no
+	window_no
+	endblock
+	Window_yes
+	leavegroup 
+	warp 0,100,455,108
+	endblock		
+		
+
+
+

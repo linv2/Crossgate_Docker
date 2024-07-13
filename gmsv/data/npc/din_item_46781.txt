@@ -1,0 +1,7 @@
+###展场包_＋５００水收纳盒
+
+block Item 15612 >=9
+	 KillItem 15612,9
+	 KillItem 46781,1
+	 GiveStackItem 46786,1
+	 

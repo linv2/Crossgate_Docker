@@ -1,0 +1,127 @@
+#
+####main6
+#
+#
+#
+###弁夫它
+
+
+	
+	
+
+	
+	
+
+
+
+
+Block item_621008 >= 1 && GlobalFlag78 == 1
+
+	Endwindow 3205382
+
+		#\n\n﹛公木反＿＿引丐﹜卅氏分﹜竣毛勾仃月仇午分﹝
+	
+
+Block GlobalFlag78 == 1
+
+
+	EndWindow 3205383
+
+		#\n\n﹛楝井﹝＿＿卅氏分友〝
+
+	
+	
+
+Block item_607688 >= 1 && GlobalFlag77 == 1
+
+	EndWindow 3205384
+
+		#\n\n﹛云﹜潸匀化五凶氏分卅﹝\n﹛镀仁失件斥永弁及午仇欠卞\n﹛儅匀化中匀化支月氏分卅﹝
+	
+
+
+
+Block GlobalFlag77 == 1
+
+	EndWindow 3205385
+
+		#\n\n﹛镀仁潸匀化侳化支月氏分卅﹝
+	
+	
+	
+
+
+
+Block PallgFlag42 == 1 && PallgFlag44 == 1 && item_620027 >= 1
+
+	GAWindow 3205386,Next
+
+		#\n\n﹛五﹜心＿＿﹝公木反＿＿\n﹛中支＿＿丹氏﹝
+
+	GAWindow 3205387,Next
+
+		#\n\n﹛掸反﹜失件斥永弁井日＿＿\n﹛丹氏﹜﹍漆及﹎失件斥永弁井日\n﹛鳗蜕毛苂井匀化中月﹝
+	
+	GAWindow 3205388,Next
+
+		#\n\n﹛哗及瓖卞戏尹化月\n﹛扔示泛件及跈互俓仄中公丹分﹝
+	
+	GAWindow 3205389,Next
+
+		#\n\n﹛卅卞井﹜潠及笺恔卞允月日仄中方﹝\n﹛睡匀化五化丐仆卅﹝
+	
+	GAWindow 3205390,Next
+
+		#\n\n﹛丐﹜公木午﹜\n﹛公及﹜@n今氏互\n﹛儅匀化中月锭窗隍及今井仄引及蜗侬﹜\n﹛公木反欐仄化手日丹方﹝
+	
+	GAWindow 3205391,OK
+
+		#\n\n﹛引分﹜恘互酸匀化中月井日友﹝\n﹛银中Ⅶ互丐月及分方﹝\n﹛丐丐﹜夫午勾匹蜗坌分方﹝
+	
+	
+	
+			Window_OK PgFlag 77,0 == 1
+			
+			GAendWindow 3205392
+
+		#\n\n﹛丐木〝域蘸莘匀凶谛互中月友﹝\n﹛母丢分友﹝仇及狪反拑仄分方﹝
+
+
+			Window_OK PallgFlag42 == 0 || PallgFlag44 == 0
+
+			GAendWindow 3205393
+
+		#\n\n﹛氏〝苇襞日厄支勾互中月卅﹝\n﹛母丢母丢﹝\n﹛仇及狪反拑仄分﹝
+
+			Window_OK item_620027 == 0
+			
+					GAEndWindow 3205394
+
+		#\n\n﹛氏〝儅匀化中卅中友〝
+
+			Window_OK
+			
+						Killitem 620027,1
+						GAglobalFlag77 = 1
+
+
+Block PallgFlag42 == 1 && PallgFlag44 == 1 
+
+	GAEndWindow 3205395
+
+		#\n\n﹛＿＿氏〝\n﹛窒井迕井〝\n﹛\n﹛＿＿今井仄引卅月＿＿蜗侬毛＿＿\n﹛皮汁皮汁＿＿\n﹛中支卅氏匹手卅中﹝
+	
+	
+	
+Block item_607688 >= 1
+
+	EndWindow 3205396
+
+		#\n\n﹛丹氏〝跈＿＿〝\n﹛割井﹜簿井井日\n﹛蜕鳗今木化中凶方丹卅筏盛互＿＿﹝\n﹛＿＿侉木化仄引匀凶卅﹝
+	
+Block
+
+	EndWindow 3205397
+
+		#\n\n﹛＿＿氏〝\n﹛窒井迕井〝
+

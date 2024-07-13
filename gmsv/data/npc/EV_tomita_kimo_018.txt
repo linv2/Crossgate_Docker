@@ -1,0 +1,59 @@
+#显及丝挚﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛魂恘幂母白穴﹋17闭“乒夫甩正弗﹌及摒
+
+###﹛乒夫甩正弗丐月中反穴奶件白仿伐□毛赭儅
+block Item_607700 >= 1 || Item_607702 >= 1
+	EndWindow 3204876
+
+		#\n\n﹛公及弁仿它件＿丝挚毛蔽尹凶樊分卅﹝\n﹛筑迋卞迕反卅中﹜娄匀慇氏匹云木永″
+
+
+
+###﹛平乒母丢母扑蔺爵据毛赭儅
+block Item_607970 >= 1
+	GAWindow 3204877,NEXT
+
+		#\n\n﹛方仁仇仇引匹凶升曰邋中凶﹜显陆及蔺爵樊方﹝\n﹛台互愈詨及魂柈毛芨尹月樊﹜魂恘幂母白穴分﹝\n﹛苇仪台毛藉切扙井允仇午互匹五木壬﹜\n﹛域谛蟆午カ户﹜公及据毛芨尹方丹﹝
+	GAWindow 3204878,OK
+
+		#\n\n﹛凶分仄﹜踞匀谛午隋卞侳化中月桦宁反﹜\n﹛芨尹日木月琼岳及据反由□泛奴卞き勾引匹分﹝\n﹛呿侳仇及丝挚反显戋及凶户及手及匹﹜\n﹛筑跤日反冂帎辅笛分井日卅﹝\n﹛匹反﹜辅月永″
+
+		Window_OK Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204879
+
+		#\n\n﹛允匹卞丝挚毛蔽尹凶樊互请仄扎壬月卅″\n﹛娄匀慇氏匹云木永″
+
+		Window_OK Item_607970 >= 1
+			KillItemAll 607970
+			Encount 3|0,59801,61,79||0|||||0|306051|||||||||
+
+		Window_OK
+			EndWindow 3204880
+
+		#\n\n﹛蔺爵据互卅中卅﹝\n﹛鴃扙毛髑仆凶樊卞迕反卅中﹜蛔木永″
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3204881,YES,NO
+
+		#\n\n﹛蔺爵据毛尕赭儅及樊反﹜蔺爵樊午カ户氏冗﹝\n﹛赓户井日支曰跶允井〝
+
+		Window_YES
+			Window 3204882,OK
+
+		#\n\n﹛卅日壬﹜今匀今午垫匀化仇中永″
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59801,93,79
+
+		Window_NO
+			EndWindow 3204883
+
+		#\n\n﹛卅日壬﹜娄匀慇氏匹云木永″
+
+
+

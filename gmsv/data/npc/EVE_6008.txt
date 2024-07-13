@@ -1,0 +1,20 @@
+#???“⑼仁枆
+#桦赭“
+block StrCmpChat != 12056 || StrCmpChat == R
+############################################
+#\n\n﹛が反Ⅶ毛菲户月樊井〝
+	Window 12052,YES,NO
+	Window_NO
+#\n\n﹛峏切蛔月互恌中﹝
+	Endwindow 12053
+	Window_YES
+#\n\n﹛台及杽中卞蚕尹方﹝\n﹛が及菲户月儅凶介月恘反卅卞井﹝
+	Endwindow 12054
+block
+############################################
+#\n\n﹛が﹜Ⅶ毛襞月樊欥﹝
+	Window 12055,OK
+	Window_OK
+	Warp 0,1160,15,13
+
+

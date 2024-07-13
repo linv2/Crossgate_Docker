@@ -1,0 +1,63 @@
+
+#巨伙ㄡ羁毛儅匀化中月
+#block EndEvent 56 == 1
+
+block
+	Window 23241,Next
+	Window 23242,next
+
+	Window 3200426,Next
+		#\n\n﹛丐反＿＿手丹瓜瓦手苇尹卅中﹝\n﹛瓜瓦手妏仇尹卅中﹝\n﹛＿＿\n﹛＿＿尹〝
+	Window 3200427,Next
+		#\n\n﹛仇木反﹜卅卞〝\n﹛瓜瓦互苇尹化月及〝
+	Window 3200428,Next
+		#\n\n﹛杹＿＿杹〝\n﹛蛛月﹝伉任尼伉它旦手蛛月﹝心氏卅蛛月﹝\n﹛杹及＿＿戈仇丹〝公木午手杹互＿＿〝〝
+	Window 3200429,Next
+		#\n\n﹛异中\n﹛匹手瓜汁市扑奶\n﹛伐正扑﹜手﹜丐公仇﹜尺﹜垫仁﹜及〝
+	Window 3200430,ok
+		#\n\n﹛丐丐﹜公丹井″\n﹛分井日台反﹜分井日杹反＿＿\n﹛钒仁﹜杹互﹜钒仁方﹜\n﹛手丹﹜簿卞手玄丢仿伊瓜奶＿＿
+
+		Window_OK
+
+			LeaveGroup
+			Warp 0,59721,309,136
+
+
+
+#
+#			CheckTitle
+#			LeaveGroup
+#			SystemMessage 4457
+#			Warp 0,33000,468,381
+
+#仿件ㄡ羁毛儅匀化中月卅日
+block EndEvent 64 == 1
+	Window 23241,Next
+	Window 23242,next
+
+
+	Window 3200431,Next
+		#\n\n﹛丐反＿＿手丹瓜瓦手苇尹卅中﹝\n﹛瓜瓦手妏仇尹卅中﹝\n﹛＿＿\n﹛＿＿尹〝
+	Window 3200432,Next
+		#\n\n﹛仇木反﹜卅卞〝\n﹛瓜瓦互苇尹化月及〝
+	Window 3200433,Next
+		#\n\n﹛杹＿＿杹〝\n﹛蛛月﹝伉任尼伉它旦手蛛月﹝心氏卅蛛月﹝\n﹛杹及＿＿戈仇丹〝公木午手杹互＿＿〝〝
+	Window 3200434,Next
+		#\n\n﹛异中\n﹛匹手瓜汁市扑奶\n﹛伐正扑﹜手﹜丐公仇﹜尺﹜垫仁﹜及〝
+	Window 3200435,ok
+		#\n\n﹛丐丐﹜公丹井″\n﹛分井日台反﹜分井日杹反＿＿\n﹛钒仁﹜杹互﹜钒仁方﹜\n﹛手丹﹜簿卞手玄丢仿伊瓜奶＿＿
+
+
+		Window_OK
+
+			LeaveGroup
+			Warp 0,59721,309,136
+
+
+
+#			CheckTitle
+#			LeaveGroup
+#			SystemMessage 4457
+#			Warp 0,33000,468,381
+
+

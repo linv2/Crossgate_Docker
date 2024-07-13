@@ -1,0 +1,51 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛扑件犯奴□及摒
+
+###﹛汋缜谛匹综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 300 && SkillLevel_210 >= 5
+	Window 3205263,OK
+
+		#\n\n﹛丐℅日中日匀仄扎中﹜丐凶仄及蕙综﹜\n﹛扑亘泛件旦□汁及综曰杅毛襞曰凶中及友﹝\n﹛中中歹方﹜珃及杅反割井心凶中分井日﹜\n﹛丐凶仄及支曰杅毛仄匀井曰霉心卅今中﹝\n﹛支丐友尹﹜帎卞扑乓伊及勾手曰元扎卅中及方﹝
+
+		Window_OK
+			GiveRecipe 624
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛汋缜谛匹综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 300
+	Window 3205264,OK
+
+		#\n\n﹛丐凶仄及蕙综〝﹛丐卅凶卞反引分镀中方丹友﹝\n﹛丐凶仄互犯扒奶件仄凶汋毛澎互仃月卞反﹜\n﹛公木卅曰及绖诸互优邰卅及方﹝\n﹛窖匀化﹜手丹剂仄擎褡卅今中卅﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛汋缜谛匹卅中
+block
+	Window 3205265,YES,NO
+
+		#\n\n﹛丐日丐卅凶﹜汋缜谛元扎卅中及友﹝\n﹛丐凶仄卞陆引匹霜匀化幻仄中及井仄日〝
+
+		Window_YES
+			Window 3205266,OK
+
+		#\n\n﹛公丹﹝\n﹛元扎丐﹜仇及港盒及请轼引匹霜匀化丐仆月歹﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3205267
+
+		#\n\n﹛丐日﹜谛啜中毛仄切扎匀凶及友﹝\n﹛莘中凶中谛互苇勾井月仇午毛笔匀化月歹﹝\n﹛卅氏化厘仆今友﹜?谛仄井中卅中及卞﹝
+
+
+

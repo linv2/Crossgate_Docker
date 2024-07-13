@@ -1,0 +1,65 @@
+###定期船
+##汉娜  坎那贝拉村   香草熏石鲷
+##香草熏石鲷(香草40+糖20+石鲷鱼2) 24hr
+##给汉娜的信40724,香草熏石鲷40725,料理材料单40726,料理取件单40727
+block  	Item 40725 >0     
+	##有香草薰石鲷
+	EndWindow 1102444
+     	##香草熏石鲷不是拿给你了吗？快送去给詹森老爹，冷了就不好吃。
+block   Item 40727 >0 && ItemCreateTime 40727> 1440
+	##有材料单且过24hr
+	Window 1102456,OK
+	Window_ok ItemSpace < 1 
+		##物品栏已满
+	        EndWindow 1102427	 	 	 
+	 Window_OK Item 40727 >0
+	 	##香草熏石鲷做好了，快拿去给詹森老爹吃吧。
+	 	#扣材料单
+	 	killitem 40727,1
+	 	#//得到 香草薰石鲷
+	  	GiveLeak1Item 40725,1
+	 	Endwindow 1102445
+block   Item 40727 >0	 	
+     	##未满24hr		
+     	##香草熏石鲷还要一阵子才作好，请你再等一下。     
+	Endwindow 1102446
+	
+block   Item 40726 >0 && Item 12811 >39 && Item 12411 >19 && Item 11203 >1
+	##香草	12811  石鲷鱼	11203  砂糖	12411
+	Window 1102453,YES,NO
+	##你的材料已经准备好了呀！要作料理吗？
+	Windows_no
+		##想要做再来找我。     
+		EndWindow 1102454
+	Window_yes ItemSpace < 1 
+		##物品栏已满
+	        EndWindow 1100001
+	Window_yes  Item 40726 >0 && Item 12811 >39 && Item 12411 >19 && Item 11203 >1
+		killitem 40726,1
+		killitem 12811,40
+		killitem 12411,20
+		killitem 11203,2
+     		GiveLeak1Item 40727,1
+     		##香草熏石鲷的材料，你已经准备好了呀！\n
+     		##那我现在开始帮你做，不过这比较花时间，请你过一阵子再来吧！
+     		EndWindow 1102447
+block   Item 40726 >0        		
+	##你先去准备材料吧！这道料理要什么材料，我都写在材料单上！
+	EndWindow 1102448
+block   Item 40724 >0 
+	Window 1102449,yes,no 	     
+     	##
+     	Window_no
+     		##不是呀！那就是我会错意啰。
+     		EndWindow 1102455
+     	Window_yes  ItemSpace < 1 
+     		##物品栏已满
+	        EndWindow 1100001
+     	Window_yes  Item 40724 >0 
+		killitem 40724,1
+     		GiveLeak1Item 40726,1
+     		##这是香草熏石鲷的材料清单，你先帮我准备材料吧！
+     		EndWindow 1102450
+block
+	##
+	EndWindow 1102451

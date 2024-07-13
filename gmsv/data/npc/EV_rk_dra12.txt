@@ -1,0 +1,33 @@
+#幕庤及银中(15541)
+#
+
+block Item 18768 != 0
+ Changepal 15,180
+#\n\n﹛扔永疋白奴伙旦互祸藷蝈虫午雄仁隋昉仄化中月﹝\n﹛愤坌及诛⑹手戚镕卞公木卞娄井木化垫仁及互歹井月﹝\n\n﹛竣互弃及中化垫仁＿＿＿
+ Window 21307,NEXT
+#\n\n﹛钒仁樊方＿﹛\n﹛仇及杹反钒井木凶﹝
+ Window 21310,OK
+  Window_OK Item 18768 != 0
+   #killitem 18768,1,(21325)
+   LeaveGroup
+   Warp 0,15551,32,109
+  Window_OK
+   Window 21311,next
+   Endwindow 21235
+
+block
+ Window 21311,next
+ Endwindow 21235
+
+#block
+##\n\n﹛凛毛谨化
+# Window 21279,OK
+#  Window_OK ItemSpace != 0
+#  giveitem 18766,1
+#  LeaveGroup
+#   Warp 0,1530,15,6
+############## 失奶泛丞域ベ ##############
+#	Window_OK
+#         Endwindow 10000
+
+

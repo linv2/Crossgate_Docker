@@ -1,0 +1,52 @@
+#
+#PUK3_Main1
+#
+#扑尼伊斥尼件﹋笮﹌
+
+
+Block
+
+
+	GAWindow 3207012,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞伉任尼伉它旦反蛔匀凶及卞﹜蕙凶卅饮曼反\n﹛﹛引分壑钗毛羲心粮仃化中月＿＿﹝\n﹛﹛仇木匹反壑钗互莽木化仄引丹＿＿﹝\n﹛﹛友尹﹜交伙弘﹜丐卅凶反漆\n﹛﹛升丹仄化中月及匹仄斤丹井〝＝
+	
+	GAWindow 3207013,Next
+
+		#\n﹛撕仪正白\n﹛\n﹛＞扑尼伊斥尼件迋﹜交伙弘迋互愈詨卞\n﹛﹛杴猾今木凶桦赭互歹井曰引仄凶﹝\n﹛﹛＿＿项莘匹允﹝
+	
+	GAWindow 3207014,Next
+
+		#\n\n﹛﹛升丹支日﹜\n﹛﹛螃啖及杅★互恘毛云芨尹票今月午\n﹛﹛中丹及匹﹜交伙弘迋反丐及祭仃坁毛\n﹛﹛逦允凶户及恘毛\丿月凶户卞﹜\n﹛﹛项莘尺轾井歹木凶方丹卅及匹允＿＿﹝\n﹛﹛公及詨反＿＿\n﹛﹛扑尼伊斥尼件迋手仍绣襞及骚曰＿＿＝
+	
+	GAWindow 3207015,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞＿＿呿癫匹允井〝正白〝＝
+	
+	GAWindow 3207016,Next
+
+		#\n﹛撕仪正白\n﹛\n﹛＞尹尹﹜澎蟆反掖卅升萧仄化云曰引六氏＿＿﹝\n﹛﹛仄井仄＿＿引今井﹜扑尼伊斥尼件迋〝＝
+	
+	GAWindow 3207017,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞台反交伙弘毛茧仄卞中五引允＝
+	
+	GAWindow 3207018,Next
+
+		#\n﹛撕仪正白\n﹛\n﹛＞匹允互＿＿公木匹反＿＿扣及涡侗匹丐月\n﹛﹛统伀迋互中卅仁卅月午中丹仪＿＿＝
+	
+	GAWindow 3207019,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞台反统伀匹丐月动蟆卞＿＿交伙弘毛邂丹\n﹛﹛域谛及＿＿忔骚及辉岭卅及匹允﹝\n﹛﹛匹允井日﹜台反垫井卅仃木壬卅曰引六氏＝
+	
+	GAWindow 3207020,Next
+
+		#\n﹛撕仪正白\n﹛\n﹛＞＿＿歹井曰引仄凶﹝\n﹛﹛匹反詨及仇午反\n﹛﹛仇及正白卞云エ六仁分今中＿＿＝
+	
+	GAWindow 3207021,OK
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞云凑中仄引允正白＝
+	
+		Window_OK
+		
+			warp 0,59982,199,67

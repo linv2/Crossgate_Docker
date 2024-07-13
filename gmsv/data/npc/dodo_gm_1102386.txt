@@ -1,0 +1,144 @@
+####dodo_gm_1102386.txt
+####0050枚银币兑换商
+block Item 40843 <= 49
+	 ##1109721	\n\n\n\n\n@c你所拥有的火焰鼠银币还未达兑换数量！	1
+	 EndWindow 1109721
+
+block Item 40843 >= 50
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109618	\n\n\n\n@c是否愿意花费五十枚银币兑换：\n@c一组蛋包饭？	1
+	 Window 1109618,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 		 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+			 EndWindow 1054495
+	 	
+	 	 Window_YES Item 40843 >= 50 && ItemSpace >= 1
+	 	 	 KillItem 40843,50
+	 	 	 ##给予蛋包饭
+	 	 	 GiveLeak1Item 15202,3
+	 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+			 EndWindow 1109719
+	 	 
+	 	 Window_NO Item 40843 >= 50
+	 	 	 ##1109619	\n\n\n\n@c是否愿意花费五十枚银币兑换：\n@c一组生命力回复药(150)？	1
+			 Window 1109619,YES,NO 
+			 	 Window_YES ItemSpace == 0
+	 			 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+				 EndWindow 1054495
+	 	
+		 		 Window_YES Item 40843 >= 50 && ItemSpace >= 1
+	 			 	 KillItem 40843,50
+	 			 	 ##给予生命力回复药(150)
+	 			 	 GiveLeak1Item 15607,3
+	 			 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+	 	 		 	 EndWindow 1109719
+	 	 	 	 
+	 	 		 Window_NO Item 40843 >= 50
+	 	 		 	 ##1109620	\n\n\n\n@c是否愿意花费五十枚银币兑换：\n@c火舌剑？	1
+					 Window 1109620,YES,NO 
+					 	 Window_YES ItemSpace == 0
+	 						 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+							 EndWindow 1054495
+						 
+						 Window_YES Item 40843 >= 50 && ItemSpace >= 1
+						 	 KillItem 40843,50
+						 	 ##给予火舌剑
+						 	 GiveLeak1Item 18
+						 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+						 	 EndWindow 1109719
+						 	 
+						 Window_NO Item 40843 >= 50
+						 	 ##1109621	\n\n\n\n@c是否愿意花费五十枚银币兑换：\n@c激流权杖？	1
+							 Window 1109621,YES,NO 
+							 	 Window_YES ItemSpace == 0
+							 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 EndWindow 1054495
+									 
+								 Window_YES Item 40843 >= 50 && ItemSpace >= 1
+								 	 KillItem 40843,50
+								 	 ##给予激流权杖
+								 	 GiveLeak1Item 2418
+								 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+								 	 EndWindow 1109719
+								 	 
+								 Window_NO Item 40843 >= 50
+								 	 ##1109622	\n\n\n\n@c是否愿意花费五十枚银币兑换：\n@c追迹者？	1
+									 Window 1109622,YES,NO 
+									 	 Window_YES ItemSpace == 0
+									 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 	 EndWindow 1054495
+									 	 	 
+									 	 Window_YES Item 40843 >= 50 && ItemSpace >= 1
+									 	 	 KillItem 40843,50
+									 	 	 ##给予追迹者
+									 	 	 GiveLeak1Item 2812
+									 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 	 EndWindow 1109719
+									 	 	 
+									 	 Window_NO Item 40843 >= 50
+									 	 	 ##1109623	\n\n\n\n@c是否愿意花费五十枚银币兑换：\n@c铜铁皮盔？	1
+											 Window 1109623,YES,NO 
+											 	 Window_YES ItemSpace == 0
+											 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 			 EndWindow 1054495
+									 	 			 
+									 	 		 Window_YES Item 40843 >= 50 && ItemSpace >= 1
+									 	 		 	 KillItem 40843,50
+									 	 		 	 ##给予铜铁皮盔
+									 	 		 	 GiveLeak1Item 3612
+									 	 		 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 		 	 EndWindow 1109719
+									 	 		 	 
+									 	 		 Window_NO Item 40843 >= 50
+									 	 		 	 ##1109624	\n\n\n\n@c是否愿意花费五十枚银币兑换：\n@c皮装？	1
+													 Window 1109624,YES,NO 
+													 	 Window_YES ItemSpace == 0
+													 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 					 EndWindow 1054495
+									 	 				 Window_YES Item 40843 >= 50 && ItemSpace >= 1
+									 						  KillItem 40843,50
+									 						  ##给予皮装
+									 						  GiveLeak1Item 4813
+									 						  ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 			 	 	 EndWindow 1109719
+									 	 			 	 	 
+									 	 			 	 Window_NO Item 40843 >= 50
+									 	 			 	 	 ##1109625	\n\n\n\n@c是否愿意花费五十枚银币兑换：\n@c安全鞋？	1
+															 Window 1109625,YES,NO 
+															 	 Window_YES ItemSpace == 0
+											 	 					 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 							 EndWindow 1054495
+									 	 			 			 
+									 	 			 			 Window_YES Item 40843 >= 50 && ItemSpace >= 1
+									 	 			 	 			 KillItem 40843,50
+									 	 			 	 			 ##给予安全鞋
+									 	 			 	 			 GiveLeak1Item 6011
+									 	 			 	 			 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 			 	 			 EndWindow 1109719
+									 	 			 	 			 
+									 	 			 	 			  Window_NO Item 40843 >= 50
+									 	 			 	 	 ##1110633	\n\n\n\n@c是否愿意花费五十枚银币兑换：\n@c剑气家家书？
+
+															 Window 1110633,YES,NO 
+															 	 Window_YES ItemSpace == 0
+											 	 					 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 							 EndWindow 1054495
+									 	 			 			 
+									 	 			 			 Window_YES Item 40843 >= 50 && ItemSpace >= 1
+									 	 			 	 			 KillItem 40843,50
+									 	 			 	 			 ##给予剑气家家书
+									 	 			 	 			 GiveLeak1Item 40924
+									 	 			 	 			 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 			 	 			 EndWindow 1109719
+									 	 			 	 			 
+									 	 			 	 		 Window_NO 
+									 	 			 	 		 	 ##1109720	\n\n\n\n\n@c累积越多将可以兑换到更超值的礼物呦！	1
+																	 EndWindow 1109720
+			
+block 
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 EndWindow 1109723
+ 

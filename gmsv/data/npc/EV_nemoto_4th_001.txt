@@ -1,0 +1,71 @@
+##ㄥ璃コ筏ゴ奶矛件玄﹛by唳晓
+## NPC“平乓玄伙
+
+### 2007/7/26 0:00:00 动嫦
+block CheckRealTime 2007/7/26,00:00:00 == 1
+
+### 民尼永弁迕凛棉
+### 隙烂凛棉动嫦
+##block CheckRealTime 2007/7/6,15:00:00 == 1
+
+## 筏ゴ扲檗毛赭儅
+	if Item 16387 >= 1
+		EndWindow "\n\n﹛公及筏ゴ扲檗反苇凶杴手五木中匹允仃升﹜\n﹛隶?圴卞赚心慇戈午﹜\n﹛手匀午恌中仇午互丐月日仄中匹允方﹝"
+
+	else
+## 筏ゴ圴娄晶痹毛赭儅
+		if Item 18774 >= 1
+			Window "\n\n﹛睛崭筏ゴざ云户匹午丹仍介中引允﹝\n﹛筏ゴ圴娄晶痹毛云儅切匹允友﹝\n﹛匹反﹜筏ゴ圴午跟晶仄引允井〝",YES,NO
+				Window_YES Item 16387 >= 1
+					EndWindow "\n\n﹛引丐﹜手丹扲檗毛云欐仄仄化凶氏匹允友﹝\n﹛趟今及六中井仄日﹜丹匀井曰仄化引仄凶﹝"
+
+				Window_YES Item 18774 == 0
+					EndWindow "\n\n﹛云支﹜筏ゴ圴娄晶痹互苇丐凶曰引六氏友﹝\n﹛痹互卅中午﹜跟晶匹五引六氏方﹝"
+
+				Window_YES Itemspace == 0
+					EndWindow "\n\n﹛丐日﹜绂坁互中匀天中匹允方﹝\n﹛帮咥仄化﹜引凶侳化仁分今中友﹝"
+
+				Window_YES
+					Window "\n\n﹛筏ゴ圴反﹜仇及筏ゴ扲檗匹允﹝\n﹛厘濠卞仄化仁分今中友﹝",OK
+						Window_OK
+							KillItemAll 18774
+							GiveLeak1Item 16387,1
+							Endblock
+
+				Window_NO
+					EndWindow "\n\n﹛公丹匹允井﹝\n﹛台反ㄧ畸ㄠざ引匹反仇仇卞蛛引允井日﹜\n﹛筏ゴ圴尺及跟晶反公木引匹卞云凑中仄引允友﹝"
+
+		else
+
+## 晓筏动陆
+			if
+				EndWindow "\n\n﹛睛崭筏ゴざ反﹜云啼仄心中凶分仃引仄凶井〝\n﹛引凶升仇井匹云莘中匹五月午中中匹允友﹝"
+			endif
+		endif
+	endif
+Endblock
+
+
+### 2007/7/26 0:00:00 动蟆
+## 筏ゴ圴娄晶痹毛赭儅
+block Item 18774 >= 1
+	EndWindow "\n\n﹛漆コ反﹜ㄥ璃コ筏ゴ及\n﹛左伉巨件泛□伉件弘毛钒疡仄化中引允﹝\n﹛云竻琼毛芘匀化﹜\n﹛兮夫垫匀化心化仁分今中友﹝"
+
+block
+	Window "\n\n﹛侳凶月ㄦ畸ㄡㄥざ反﹜\n﹛白央□伊件毕崭ㄥ荚杴及睛崭筏ゴざ匹允﹝\n﹛漆コ手崭毕岒票井日筏ゴ圴互票么今木引允方﹝\n﹛仇木互公及娄晶痹匹允互﹜ㄠ呦中井互匹允井〝",YES,NO
+
+		Window_YES Item 18774 >= 1
+			EndWindow "\n\n﹛云支﹜手丹娄晶痹毛云儅切分匀凶氏匹允友﹝\n﹛匹反﹜癫ざ毛云啼仄心卞″"
+
+		Window_YES Itemspace == 0
+			EndWindow "\n\n﹛丐日﹜绂坁卞芴春互丐曰引六氏友﹝\n﹛帮咥仄化引凶侳化仁分今中﹝"
+
+		Window_YES
+			Window "\n\n﹛丐曰互午丹仍介中引允﹝\n﹛筏ゴ圴午及跟晶反﹜\n﹛睛崭筏ゴざ方曰台互仇仇匹垫中引允﹝\n﹛公木引匹厘濠卞儅匀化中化仁分今中友﹝",OK
+				Window_OK
+					GiveLeak1Item 18774,1
+					Endblock
+
+		Window_NO
+			EndWindow "\n\n﹛丐日﹜弃庛允月仇午卅氏井卅中及卞﹝\n﹛睛崭筏ゴざ引匹反仇仇匹ミ幵仄化中引允井日﹜\n﹛竣互庍歹匀凶日﹜引凶侳化仁分今中友﹝"
+

@@ -1,0 +1,35 @@
+#×¯õ»ºëØø°×ÇÉ¼şô¿­ÛÍ¾Şµ©Ğş¡°ÒÁÓÀÓñÎì¡õĞş3
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+
+###########©xÖÏÊÖØ¦ØÆ©x##############
+block nowevent86 == 1
+
+	Window 206959,OK
+	Window_OK
+	changepal 18,400
+	Window 206960,OK
+	Window_OK
+	Window 206961,OK
+	Window_OK
+	nowevent86 = 0
+	Warp 0,43174,7,8
+
+###########©xÖÏÊÖØ¦ØÆ©x##############
+block
+
+	Window 206925,NEXT
+	Window 206926,YES,NO
+	Window_YES
+	Window 206927,OK
+	Window_OK
+	playse 211,1,1
+	Warp 0,43100,136,159
+	Window_NO
+	Window 206928,OK
+	Window_OK
+	playse 172,1,1
+	playse 11,1,1
+	nowevent86 = 1
+	Encount 3|0,43174,8,8||0|||||0|25008|||||||||
+

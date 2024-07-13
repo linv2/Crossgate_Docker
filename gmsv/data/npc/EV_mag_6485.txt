@@ -1,0 +1,104 @@
+#
+#辉螃市伊件﹋田夫旦必□玄/钒五/爵⑷詨﹌
+#
+
+##############  ##############
+block BImage == 101913 || BImage == 101910
+#15909’\n\n\n\n@c﹋◢﹌庍褥橇谪匹反莘狪匹五引六氏
+	EndWindow 15909,OK
+
+##############  ##############
+block
+#\n\n\n\n\n@c＿钒仁手及方﹜方仁冗辅日木引仄凶＿
+	Window 15333,NEXT
+#\n\n\n\n\n@c＿仇丹仄化云狪允月及反窒蘸杴匹仄斤丹友＿
+	Window 15334,NEXT
+#\n\n\n\n\n@c伉任尼伉它旦反释构及壑钗匹\n@c疯太戽曰卞勾五引仄凶＿
+	Window 15335,NEXT
+#\n\n\n\n\n@c＿＿仄井仄钒仁手及方＿＿
+	Window 15336,NEXT
+#\n\n\n\n@c创尹化反云日木卅中匹仄斤丹互\n@c丐卅凶及呿癫及爵中反\n@c仇木井日铵引月及匹允＿
+	Window 15337,NEXT
+#\n\n\n\n@c仇及壑钗反4000コ及璃渝匹\n@c汤蘸手⑺元昳铢毛楞曰忒仄\n@c汤蘸手⑺元聊切午⑺元?仄心毛\n@c楞曰忒仄化五引仄凶＿
+	Window 15338,NEXT
+#\n\n\n\n\n@c＿＿压坌手啜歹内卞＿＿
+	Window 15339,NEXT
+#\n\n\n\n\n@c＿丐卅凶午允月仇及莘狪手\n@c手丹窒灿荚午楞曰忒今木化中月及匹允方＿
+	Window 15340,NEXT
+#\n\n\n\n\n@c＿岉元凶仇及壑钗卞反\n@c妐侬骚曰＞恍侳＝互拑中及匹允＿
+	Window 15341,NEXT
+#\n\n\n\n\n@c＿涡侗升仇欠井\n@c濮侗今尹袱今木卅中?仄中壑钗＿
+	Window 15342,NEXT
+#\n\n\n\n@c瑷啖卞蝠引丹谛棉手\n@c台凶切螃午方壬木月螃啖及手及匹今尹\n@c仇及俙瞳井日反⑧木月仇午互匹五引六氏
+	Window 15343,NEXT
+#\n\n\n\n@c公仄化公及蕞掸毛创尹化中月及反\n@c赶谛及凛及辉螃及酦匹\n@c＞恍侳＝毛铭月台分仃卅及匹允
+	Window 15344,NEXT
+#\n\n\n\n@c丐卅凶反仇及燮\n@c螃狪及凛医午仇及凛医毛\n@c蕊汔仄卅互日\n@c昳铢毛综曰晓仆化中仁仇午匹仄斤丹＿
+	Window 15345,NEXT
+#\n\n\n\n@c＿丐卅凶互簿卞方匀化＿\n@c窒及凶户卞\n@c戏心请今木凶绣箕卅及井\n@c公木反台卞手歹井曰引六氏＿
+	Window 15346,NEXT
+#\n\n\n\n@c＿丐卅凶反螃啖卞手\n@c瑷啖卞手箪今厄\n@c冂帎卅绣箕卅及匹允＿
+	Window 15347,NEXT
+#\n\n\n\n@c＿钒仁手及方\n@c丐卅凶互呿癫卞钒仁屯五反\n@c仇及方丹卅\n@c?卅升匹反丐曰引六氏＿
+	Window 15348,NEXT
+#\n\n\n\n\n@c＿蜃曰卅仁岉元凶仇及俙瞳壑钗＿
+	Window 15349,NEXT
+#\n\n\n@c＿仇及热歹木凶洘玛毛\n@c中勾井丐卅凶互\n@c藉切祯仁仇午毛凑中\n@c台反中勾手\n@c丐卅凶毛仇丹裟少及匹允＿
+	Window 15350,NEXT
+#\n\n\n\n\n@c＿＿＞扪抰毛钒仁手及＝午＿＿
+	Window 15351,NEXT
+#\n\n\n\n\n@c＿＿凛互五凶方丹匹允＿＿
+	Window 15352,NEXT
+#\n\n\n\n@c＿钒仁手及方\n@c中勾及ざ井优内\n@c仇及壑钗及今分户毛蝇切濠曰\n@c恍侳毛炼仆化仁分今中＿
+	Window 15353,NEXT
+#\n\n\n\n\n@c＿引凶4000コ蟆卞云莘中仄引仄斤丹＿
+	Window 15354,OK
+	Window_OK Item 18589 == 1
+	EndEvent 21 = 1
+	KillItem 18589,(15316)
+	LeaveGroup
+	Warp 0,1530,15,6
+
+	Window_OK Item 18590 == 1
+	EndEvent 21 = 1
+	KillItem 18590,(15316)
+	LeaveGroup
+	Warp 0,1530,15,6
+
+	Window_OK Item 18591 == 1
+	EndEvent 21 = 1
+	KillItem 18591,(15316)
+	LeaveGroup
+	Warp 0,1530,15,6
+
+	Window_OK Item 18592 == 1
+	EndEvent 21 = 1
+	KillItem 18592,(15316)
+	LeaveGroup
+	Warp 0,1530,15,6
+
+	Window_OK Item 18593 == 1
+	EndEvent 21 = 1
+	KillItem 18593,(15316)
+	LeaveGroup
+	Warp 0,1530,15,6
+
+	Window_OK Item 18594 == 1
+	EndEvent 21 = 1
+	KillItem 18594,(15316)
+	LeaveGroup
+	Warp 0,1530,15,6
+
+	Window_OK Item 18595 == 1
+	EndEvent 21 = 1
+	KillItem 18595,(15316)
+	LeaveGroup
+	Warp 0,1530,15,6
+
+	Window_OK
+	EndEvent 21 = 1
+	LeaveGroup
+	Warp 0,1530,15,6
+
+
+

@@ -1,0 +1,23 @@
+#戊旦弗(筏盛白夫失迕﹌
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+##########骚橘######
+block
+	Window 14086,YES,NO
+#仇及朿盒及勾仁曰反筏盛匹五凶井〝
+#公欠公欠朿盒毛请化魂董杽锁卞井井月互中中井卅〝
+
+	Window_YES
+#丹戈﹝匹反杽锁毛铵户月﹝
+	Window 14087,OK
+	Window_OK
+	leavegroup
+	Warp 0,2250,7,9
+
+
+	Window_NO
+EndWindow 14082
+#丹戈﹝公木手方井欠丹﹝

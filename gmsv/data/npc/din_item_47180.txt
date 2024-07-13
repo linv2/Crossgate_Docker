@@ -1,0 +1,32 @@
+######200512月展场包_龙蛋	din_item_47180.txt
+###双点得到堤风(黄龙)一只
+
+block fp<200
+	 ##1053809	\n\n@c你的魔力值不足，无法孵化龙蛋！	1
+	 EndWindow 1053809
+	 
+block PetSpace == 0 
+	 ##1053810	\n\n@c你的宠物栏已满，无法孵化龙蛋！	1
+	 EndWindow 1053810
+	 
+block
+	 ##1053811	\n\n@c你是否献上魔力为引，孵化龙蛋．．．？	1
+	 Window 1053811,YES,NO
+	 	 Window_NO
+	 	 	 
+	 	 Window_YES  PetSpace == 0 
+	 	 	 ##1053810	\n\n@c你的宠物栏已满，无法孵化龙蛋！	1
+	 		 EndWindow 1053810	 	
+	 		 
+	 	 Window_YES fp < 200
+	 		 ##1053809	\n\n@c你的魔力值不足，无法孵化龙蛋！	1
+	 		 EndWindow 1052809
+	 		 
+	 	 Window_YES Item 47180 >= 1
+	 	 	 KillItem 47180,1
+	 	 	 setfp -200
+	 	 	 GivePet 103222
+	 	 	 ##1053812	\n\n@c龙蛋已成功孵化！	1
+			 EndWindow 1053812
+			 
+	 	 	 

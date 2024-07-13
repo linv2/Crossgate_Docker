@@ -1,0 +1,11 @@
+#ûù? ??
+
+block
+	Window 21906,Next
+	Window 21907,Next
+	Window 21908,Next
+	Window 21909,Next
+	Window 21910,OK
+		Window_OK
+		LeaveGroup
+		Warp 0,11032,395,209

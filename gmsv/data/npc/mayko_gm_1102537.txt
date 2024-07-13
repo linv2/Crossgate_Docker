@@ -1,0 +1,81 @@
+#饲养师小舞	1102537	30117	16	3	mayko_gm_1102537.txt
+#1110387	\n\n\n　　　　宠物食物，这是我家的不传之秘耶～\n　　　不过你要是准备材料，我倒是可以帮你做。	1
+#1110388	\n\n　　　　你现在有宠物乳酪的材料：\n　　　牛奶一组，盐5个，砂糖10包。\n　　　要做宠物乳酪吗？	1
+#1110389	\n\n　　　　你现在有宠物米糕的材料：\n　　　神圣米一组，米一组，番红花10个。\n　　　要做宠物米糕吗？	1
+#1110390	\n\n　　　　你现在有宠物铜罗烧的材料：\n　　　大豆一组，小麦粉40个。\n　　　要做宠物铜罗烧吗？	1
+#1110391	\n\n\n　　　　宠物乳酪的材料：\n　　　　牛奶一组，盐5个，砂糖10包。	1
+#1110392	\n\n\n　　　　宠物米糕的材料：\n　　　　神圣米一组，米一组，番红花10个。	1
+#1110393	\n\n\n　　　　宠物铜罗烧的材料：\n　　　　大豆一组，小麦粉40个。	1
+#1110394	\n\n\n\n@c如果准备好材料可以找我。	1
+#1110395	\n\n\n\n@c想做再来找我。	1
+
+#神圣米	12102
+#小麦粉	12400
+#牛奶	12401
+#盐	12402
+#米	12410
+#砂糖	12411
+#番红花	12805
+#大豆	12100
+#宠物乳酪	41020
+
+#1110391	\n\n\n　　　　宠物乳酪的材料：\n　　　　牛奶一组，盐5个，砂糖10包。	1
+block Item 12401>19 && Item 12402>4 && Item 12411>9
+	 Window 1110388,YES,NO
+	 Window_NO
+	 EndWindow 1110395
+	 Window_YES ItemSpace == 0
+	 EndWindow 1110369
+	 Window_YES Item 12401>19 && Item 12402>4 && Item 12411>9 
+	 KillItem 12401,20
+	 KillItem 12402,5
+	 KillItem 12411,10
+	 GiveLeak1Item 41020,1
+	 endblock
+	 Window_YES
+	 EndWindow 1110394
+#神圣米	12102
+#小麦粉	12400
+#牛奶	12401
+#盐	12402
+#米	12410
+#砂糖	12411
+#番红花	12805
+#大豆	12100	 
+#宠物米糕	41021
+#1110392	\n\n\n　　　　宠物米糕的材料：\n　　　　神圣米一组，米一组，番红花10个。	1	 
+block Item 12102>19 && Item 12410>19 && Item 12805>9
+	 Window 1110389,YES,NO
+	 Window_NO
+	 EndWindow 1110395
+	 Window_YES ItemSpace == 0
+	 EndWindow 1110369
+	 Window_YES Item 12102>19 && Item 12410>19 && Item 12805>9 
+	 KillItem 12102,20
+	 KillItem 12410,20
+	 KillItem 12805,10
+	 GiveLeak1Item 41021,1
+	 endblock
+	 Window_YES
+	 EndWindow 1110394	 
+#宠物铜罗烧	41022	
+#1110393	\n\n\n　　　　宠物铜罗烧的材料：\n　　　　大豆一组，小麦粉40个。	1
+block Item 12100>19 && Item 12400>39
+	 Window 1110390,YES,NO
+	 Window_NO
+	 EndWindow 1110395
+	 Window_YES ItemSpace == 0
+	 EndWindow 1110369
+	 Window_YES Item 12100>19 && Item 12400>39
+	 KillItem 12100,20
+	 KillItem 12400,40
+	 GiveLeak1Item 41022,1
+	 endblock
+	 Window_YES
+	 EndWindow 1110394
+block 
+	 Window 1110387,NEXT
+	 Window 1110391,NEXT
+	 Window 1110392,NEXT
+	 Window 1110393,NEXT
+	 EndWindow 1110394

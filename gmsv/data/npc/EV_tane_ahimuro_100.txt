@@ -1,0 +1,93 @@
+# 7 "EV_tane_ahimuro_100.txt"
+# 1 "header/global0.h" 1
+# 8 "EV_tane_ahimuro_100.txt" 2
+
+block
+
+
+                        if LocalCount3 == 5
+
+                                LocalCount3 = random 2,0
+
+                                if LocalCount3 == 1
+
+
+
+
+                                        LocalCount3 = 5
+
+
+
+                                        Window 3006737,next
+
+
+
+                                        EndWindow 3006738
+
+
+
+
+                                else
+
+
+                                        LocalCount3 = 5
+
+
+
+
+
+                                        EndWindow 3006739
+
+
+
+                                endif
+
+
+
+                        else
+
+
+
+                                LocalCount3 = 5
+
+
+
+                                Window 3006740,next
+
+
+
+                                Window 3006741,yes,no
+
+
+                                window_yes Gold >= 100 && Itemspace >= 1
+
+                                addgold -100
+                                giveItem 11309,1
+
+
+                                EndWindow 3006742
+
+
+                                window_yes Itemspace <= 0
+
+
+                                EndWindow 3006743
+
+
+
+                                window_yes Gold <= 99
+
+
+                                EndWindow 3006744
+
+
+                                window_no
+
+
+
+                                EndWindow 3006745
+
+
+
+
+                        endif

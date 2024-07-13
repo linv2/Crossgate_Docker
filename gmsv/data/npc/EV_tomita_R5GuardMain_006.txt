@@ -1,0 +1,149 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛甩奶犯伙﹋苹’镞﹌及摒
+
+###﹛甩伉乩穴执及亲丐月中反甩伉□穴奶仿皮毛赭儅
+block Item_607995 >= 1 || Item_607996 >= 1
+	EndWindow 3205192
+
+		#\n\n﹛?谛甩伉乩穴蠢蘸及蛊卞鴃匀凶井日匀化﹜\n﹛中中竣卞卅月卅方﹝\n﹛仇木苇方互仄卞雄今毛夫仃日井允卅氏化﹜\n﹛蠢蘸及斓中蛊互允月仇午分井日卅﹝
+
+
+
+###﹛侂填缜谛及据毛赭儅
+block Item_631000 >= 1
+	EndWindow 3205193
+
+		#\n\n﹛侂填缜谛及据分午〝\n﹛欐允及反甩伉乩穴分欠﹝仄匀井曰仄欠方″
+
+
+
+###﹛潜虱及正伐扑毛赭儅
+block Item_607997 >= 1
+
+#﹛缜谛及据综岳填呕﹜缜谛及据综岳填眶毛赭儅
+	If Item_607998 >= 1 && Item_607999 >= 1
+		EndWindow 3205194
+
+		#\n\n﹛Ⅶ填反缭匀化月氏分欠﹝\n﹛镀仁旦泛奴□任件旦氏午仇尺垫匀凶日升丹分﹝
+		EndBlock
+
+#﹛缜谛及据综岳填眶毛赭儅
+	else
+		If Item_607999 >= 1
+			EndWindow 3205195
+
+		#\n\n﹛丹月今中卅丐﹜今匀今午斥尼弗伙及午仇欠尺\n﹛垫匀切引尹″″
+			EndBlock
+
+#﹛缜谛及据综岳填呕午失伙穴奶玄﹋曹侚“ㄡ呿﹌毛赭儅
+		else
+			If Item_607998 >= 1 && Item_9700 >= 2
+				Window 3205196,OK
+
+		#\n\n﹛儅匀化五凶井〝\n﹛＿丐引曰丹引公丹卅缙元扎卅中卅﹝\n﹛引丐中中﹜漆ざ及午仇欠反仇木匹袱仄化支月﹝\n﹛幻日方﹜仇木匹户匹凶仁Ⅶ填反缭匀凶兮﹝\n﹛今匀今午旦泛奴□任件旦及午仇尺垫仃方﹝
+
+					Window_OK Item_607999 >= 1
+						EndWindow 3205197
+
+		#\n\n﹛云中﹜手丹儅匀化月元扎卅中井﹝\n﹛ビ摩卞允月卅″″
+						EndBlock
+
+					Window_OK Item_607997 >= 1 && Item_9700 >= 2 && ItemSpace >= 1
+						KillItem 9700,2
+						GiveItemEX 607999,1,3205198
+
+		#\n\n﹛云中﹜绂坁互中匀天中元扎卅中井﹝\n﹛ビ摩卞允月卅″″
+						EndBlock
+
+					Window_OK Item_607997 >= 1 && Item_9700 >= 2
+						EndWindow 3205199
+
+		#\n\n﹛云中﹜绂坁互中匀天中元扎卅中井﹝\n﹛ビ摩卞允月卅″″
+						EndBlock
+
+					Window_OK Item_9700 >= 2
+						EndWindow 3205200
+
+		#\n\n﹛云中﹜潜虱及正伐扑互卅中冗﹝\n﹛儅匀化卅中蛊反耨迕匹五氏″″
+						EndBlock
+
+					Window_OK
+						EndWindow 3205201
+
+		#\n\n﹛云中﹜失伙穴奶玄互箫曰卅中元扎卅中井﹝\n﹛ビ摩卞允月卅″″
+						EndBlock
+
+#﹛缜谛及据综岳填呕毛赭儅仄﹜失伙穴奶玄﹋曹侚﹌互箫曰卅中
+			else
+				If Item_607998 >= 1
+					EndWindow 3205202
+
+		#\n\n﹛云蟆﹜燮卞斥尼弗伙及午仇欠尺垫匀凶卅﹝\n﹛窒匹仇匀切互詨荚仄卅氏分″﹛ビ摩卞允月卅″\n﹛?午仄化失伙穴奶玄毛曹侚匹ㄡ蜊儅匀化侳中﹝\n﹛匹卅中午Ⅶ填反欐今卅中冗﹝今匀今午垫仃″″
+					EndBlock
+
+#﹛缜谛及据综岳填毛尕赭儅匹﹜失伙穴奶玄﹋曹侚“ㄠ呿﹌毛赭儅
+				else
+					If Item_9700 >= 1
+						Window 3205203,OK
+
+		#\n\n﹛儅匀化五凶井〝﹛＿云中﹜撙互鬼中卅﹝\n﹛引丐中中﹜娄五赘尹卞Ⅶ填毛欐仄化支月﹝\n﹛普桨仄欠方﹝\n﹛今丐﹜今匀今午斥尼弗伙及午仇欠尺垫仃方﹝
+
+							Window_OK Item_607999 >= 1
+								EndWindow 3205204
+
+		#\n\n﹛云中﹜手丹儅匀化月元扎卅中井﹝\n﹛ビ摩卞允月卅″″
+								EndBlock
+
+							Window_OK Item_607997 >= 1 && Item_9700 >= 1 && ItemSpace >= 1
+								KillItem 9700,1
+								GiveItemEX 607999,1,3205205
+
+		#\n\n﹛云中﹜绂坁互中匀天中元扎卅中井﹝\n﹛ビ摩卞允月卅″″
+								EndBlock
+
+							Window_OK Item_607997 >= 1 && Item_9700 >= 1
+								EndWindow 3205206
+
+		#\n\n﹛云中﹜绂坁互中匀天中元扎卅中井﹝\n﹛ビ摩卞允月卅″″
+								EndBlock
+
+							Window_OK Item_9700 >= 1
+								EndWindow 3205207
+
+		#\n\n﹛云中﹜潜虱及正伐扑互卅中冗﹝\n﹛儅匀化卅中蛊反耨迕匹五氏″″
+								EndBlock
+
+							Window_OK
+								EndWindow 3205208
+
+		#\n\n﹛云中﹜失伙穴奶玄互卅中元扎卅中井﹝\n﹛ビ摩卞允月卅″″
+								EndBlock
+
+#﹛缜谛及据综岳填﹜失伙穴奶玄﹋曹侚﹌隋卞尕赭儅
+					else
+						EndWindow 3205209
+
+		#\n\n﹛窒分方﹜菱滑酦卞酷仪井方﹝\n﹛旦泛奴□任件旦手中中笛蛹卅仇午仄支互月兮﹝\n﹛凛棉陆澎癫分﹜失伙穴奶玄毛ㄠ蜊儅匀化仇中﹝\n﹛丐午匹罹丹井日﹜罹中支允中曹侚匹分冗﹝
+						EndBlock
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3205210
+
+		#\n\n﹛丹月六尹卅﹜仇匀切反菱滑酦卅氏分﹝\n﹛梁呺毛允月卅″″
+
+
+

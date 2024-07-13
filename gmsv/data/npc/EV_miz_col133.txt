@@ -1,0 +1,416 @@
+#哗票⑷绖桦弁巨旦玄﹛﹋芺蓟雇尹撮﹌斥仿
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+#########﹛⑷衔及据互卅中﹛##########
+block Item 18256 == 0
+#\n\n﹛丐卅凶扙仃赚友″镀仁⑷绖桦井日壅尹卅今中方″
+	EndWindow 20558,OK
+
+########﹛失奶泛丞域ベ﹛#########
+block ItemSpace <= 1
+
+	EndWindow 20599,OK
+
+######﹛斥仿及⑷衔及据毛儅匀化中月﹛########
+block Item 18257 >= 1
+	EndWindow 20556,OK
+
+######﹛5勾缭匀化中月﹛######
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18259 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18260 >= 1
+
+	EndWindow 20557,OK
+	
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18260 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18260 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18260 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18261 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18261 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18261 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18262 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18262 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18257 >= 1 && Item 18263 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18260 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18261 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18261 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18262 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18262 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18258 >= 1 && Item 18263 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18259 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18259 >= 1 && Item 18261 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18259 >= 1 && Item 18261 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18259 >= 1 && Item 18262 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18259 >= 1 && Item 18262 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18259 >= 1 && Item 18263 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18260 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18260 >= 1 && Item 18261 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18260 >= 1 && Item 18261 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18260 >= 1 && Item 18262 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18260 >= 1 && Item 18262 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18260 >= 1 && Item 18263 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18261 >= 1 && Item 18262 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18261 >= 1 && Item 18262 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18265 >= 1 && Item 18262 >= 1 && Item 18263 >= 1 && Item 18264 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18259 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18260 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18260 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18260 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18261 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18257 >= 1 && Item 18262 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18260 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18258 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18258 >= 1 && Item 18261 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18258 >= 1 && Item 18262 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18259 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18259 >= 1 && Item 18261 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18259 >= 1 && Item 18262 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18260 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18260 >= 1 && Item 18261 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18260 >= 1 && Item 18262 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18264 >= 1 && Item 18261 >= 1 && Item 18262 >= 1 && Item 18263 >= 1
+
+	EndWindow 20557,OK
+
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18259 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18260 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18260 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18257 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18257 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18257 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18260 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18258 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18259 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18263 >= 1 && Item 18260 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+
+block Item 18256 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18260 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18257 >= 1 && Item 18258 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18257 >= 1 && Item 18259 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18257 >= 1 && Item 18260 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18261 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18258 >= 1 && Item 18259 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18258 >= 1 && Item 18260 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+block Item 18256 >= 1 && Item 18259 >= 1 && Item 18260 >= 1 && Item 18261 >= 1 && Item 18262 >= 1
+
+	EndWindow 20557,OK
+
+
+#######﹛⑷衔及据毛儅匀化中月﹛斥仿及⑷衔及据反卅中﹛#####
+block Item 18256 >= 1 && Item 18257 == 0
+#\n\n﹛申永弁伉允月什日中井歹中中台卞卅日﹜鴃化月午合匀化月氏元扎卅中″〝
+	Window 20553,YES,NO
+	
+	Window_YES
+	Window 20554,OK
+	Window_OK ItemSpace <= 1
+	EndWindow 20599,OK
+	Window_OK
+	KillItem 18256
+	Encount 3|||0|||||0|9055|||||||||
+	Window_NO
+	EndWindow 20555,OK

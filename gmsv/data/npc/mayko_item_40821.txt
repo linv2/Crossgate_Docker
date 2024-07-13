@@ -1,0 +1,51 @@
+
+#小花苗	40821	花苗	40824 勇气
+#48hr-72hr 追加  永久冰石	9630
+#1109500	\n\n\n\n@c又过了两天要加入吗永久冰石？？
+##1109510	\n\n\n\n@c又过了两天，是不是得催花了！
+#1109490	\n\n\n\n@c还是算了吧～～
+#206112	长大了！	0
+#206117	\n\n  为什么不快点长大啊～	0
+#1109512	\n\n\n　　　糟了～～过太久了～\n　　　花苞凋谢了～～
+#1109514	\n\n\n\n@c加上特殊材料。
+#block Item 40819>0 || Item 40820>0
+#	 EndWindow 1109516
+block Item 40821 > 1
+	 EndWindow 1109516
+
+##超过三天  2880+1440=4320
+block Item 40821 > 0 && ItemCreateTime 40821 > 4320
+	 Window 1109512,OK
+	 Window_OK Item 40821 > 0	 
+	 KillItem 40821,1
+	 Window_OK
+	 Endblock
+#2-3天　有永久冰石
+#block Item 40821>0 && ItemCreateTime 40821>2880 && Item 9630>0
+block Item 40821 > 0  && Item 9630 > 0 && ItemCreateTime 40821 > 2880
+
+	 Window 1109500,YES,NO
+	 
+	 Window_NO
+	 EndWindow 1109490
+	 
+	 Window_YES Item 40821 = 0 || Item 9630 = 0
+	 
+	 EndWindow 1109482
+	 
+	 Window_YES
+	 Window 1109514,NEXT
+	 KillItem 40821,1
+	 KillItem 9630,1
+	 GiveLeak1Item 40824,1	
+	 EndWindow 206112
+#1-2天　永久冰石
+block Item 40821 > 0 && ItemCreateTime 40821 > 2880
+	 EndWindow 1109510
+#未满一天
+block
+	 EndWindow 206117	
+	
+
+
+	

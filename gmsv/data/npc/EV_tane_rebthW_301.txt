@@ -1,0 +1,67 @@
+
+block Group == 1 && Item 9342 >= 1
+		Window 3006042,OK
+
+		Window_ok Group != 1
+
+#\n\n©xÓòÚÐÆ¥¸¨ÈÕÄ¾·½
+
+			EndWindow 3006045
+
+
+
+			Window_OK
+			KillItemall 9342
+			GiveItem 9332,1
+
+			Warp 0,59537,104,76
+
+
+
+
+block Group == 1 && Item 9341 >= 1
+
+		Window 3006042,OK
+
+		Window_ok Group != 1
+
+#\n\n©xÓòÚÐÆ¥¸¨ÈÕÄ¾·½
+
+			EndWindow 3006045
+
+
+			Window_OK
+
+			KillItemall 9341
+
+			GiveItem 9331,1
+
+			Warp 0,59537,104,76
+
+
+block Group == 1 && Item 9340 >= 1
+
+		Window 3006042,OK
+		Window_ok Group != 1
+
+#\n\n©xÓòÚÐÆ¥¸¨ÈÕÄ¾·½
+
+			EndWindow 3006045
+
+
+
+			Window_OK
+
+			KillItemall 9340
+			GiveItem 9330,1
+
+			Warp 0,59537,104,76
+
+block Group >= 2
+
+		EndWindow 3006045,OK
+
+
+block
+
+		EndWindow 3006043,OK

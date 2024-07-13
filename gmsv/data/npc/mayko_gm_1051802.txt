@@ -1,0 +1,46 @@
+#秋日美食家mayko_gm_1051802.txt
+
+block item 47779 > 0
+endwindow 1111401
+
+#1111401	\n\n\n\n@c真是太感谢你了～～～	1
+
+block item 47776 >0 && item 11226 >0
+	killitem 47776,1
+	killitem 11226,1
+	GiveLeak1Item 47779,1
+	window 1111398,next
+	Window 1111399,next
+	endwindow 1111400
+
+
+#1111398	\n\n\n　　　　喔喔～～甜点也好了呀\n　　　　～～～我尝尝～～	1
+#1111399	\n\n\n\n@c这些美食就是要秋天吃最好呀～～～	1
+#1111400	\n\n\n　　　　谢谢你喔～～\n　　　　这一点小礼物请你收下～～	1
+
+block item 47775 >0
+	killitem 47775,1
+	endwindow 1111394
+
+#1111394	\n\n\n\n@c主菜好了～～我尝尝～	1
+block item 47773 >0
+	endwindow 1111395
+
+#1111395	\n\n\n\n@c这主菜真美味～～～	1
+
+block item 47774 >0
+	 killitem 47774,1
+	 endwindow 1111388
+#1111388	\n\n\n　　　　喔～前菜出了呀～～\n　　　　我尝尝～	1
+block item 47772 >0
+	 endwindow 1111390
+
+#1111390	\n\n\n\n@c这前菜真不错～～	1
+block item 47771 >0
+	endwindow 1111385
+
+#1111385	\n\n\n\n@c好想吃秋日美食呀～～	1
+
+block 
+	endwindow 1111379
+#1111379	\n\n\n　　　　我想吃秋日美食，主厨说有困难，\n　　　　你可以帮我问一下是什么问题吗？	1

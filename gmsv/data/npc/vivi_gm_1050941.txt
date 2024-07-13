@@ -1,0 +1,91 @@
+##### 家族聚会场控管员 ##### vivi_gm_1050941.txt
+##有家族出入证45798 且时间大于35天
+block Item 45798 >= 1 && ItemCreateTime 45798 > 50440
+	 ##1051869	\n\n\n  您好！家族聚会场使用期限已经到啰！\n  请把出入证交给我，谢谢！	1
+	 Window 1051869,OK 
+	 	 Window_OK Item 45798 >= 1
+	 	 KillItem 45798
+##有家族出入证45799 且时间大于35天	 	 
+block Item 45799 >= 1 && ItemCreateTime 45799 > 50440
+	 ##1051869	\n\n\n  您好！家族聚会场使用期限已经到啰！\n  请把出入证交给我，谢谢！	1
+	 Window 1051869,OK 
+	 	 Window_OK Item 45799 >= 1
+	 	 KillItem 45799	 	  
+##有家族出入证45800 且时间大于35天
+block Item 45800 >= 1 && ItemCreateTime 45800 > 50440
+	 ##1051869	\n\n\n  您好！家族聚会场使用期限已经到啰！\n  请把出入证交给我，谢谢！	1
+	 Window 1051869,OK 
+	 	 Window_OK Item 45800 >= 1
+	 	 KillItem 45800
+	 	 
+
+##有家族出入证45798 且时间大于32天
+block Item 45798 >= 1 && ItemCreateTime 45798 > 46080
+	 ##1051870	\n\n\n  您好！您的家族聚会场使用期限快到啰，请把握~\n\n  现在要进入吗？	
+	 Window 1051870,YES,NO  
+	 	 Window_NO
+	 	 Window_YES Item 45798 >= 1
+	 	 	 ##1051871	\n\n\n\n@c好的，这边请~	
+	 	 	 Window 1051871,OK
+	 	 	 	 Window_OK Item 45798 >= 1
+	 	 	 	 	 Warp 0,30196,20,36
+
+##有家族出入证45799 且时间大于32天
+block Item 45799 >= 1 && ItemCreateTime 45799 > 46080
+	 ##1051870	\n\n\n  您好！您的家族聚会场使用期限快到啰，请把握~\n\n  现在要进入吗？	
+	 Window 1051870,YES,NO  
+	 	 Window_NO
+	 	 Window_YES Item 45799 >= 1
+	 	 	 ##1051871	\n\n\n\n@c好的，这边请~	
+	 	 	 Window 1051871,OK
+	 	 	 	 Window_OK Item 45799 >= 1
+	 	 	 	 	 Warp 0,30197,29,27
+
+##有家族出入证45800 且时间大于32天
+block Item 45800 >= 1 && ItemCreateTime 45800 > 46080
+	 ##1051870	\n\n\n  您好！您的家族聚会场使用期限快到啰，请把握~\n\n  现在要进入吗？	
+	 Window 1051870,YES,NO  
+	 	 Window_NO
+	 	 Window_YES Item 45800 >= 1
+	 	 	 ##1051871	\n\n\n\n@c好的，这边请~	
+	 	 	 Window 1051871,OK
+	 	 	 	 Window_OK Item 45800 >= 1
+	 	 	 	 	 Warp 0,30198,10,19
+
+##有家族出入证45798
+block Item 45798 >= 1
+	 ##1051872	\n\n\n\n@c您要进入家族聚会场吗?	
+	 Window 1051872,YES,NO 
+	 	 Window_NO
+	 	 Window_YES Item 45798 >= 1
+	 	 	 ##1051871	\n\n\n\n@c好的，这边请~	
+	 	 	 Window 1051871,OK
+	 	 	 	 Window_OK Item 45798 >= 1
+	 	 	 	 	 Warp 0,30196,20,36	 	 	 	 
+
+##有家族出入证45799
+block Item 45799 >= 1
+	 ##1051872	\n\n\n\n@c您要进入家族聚会场吗?	
+	 Window 1051872,YES,NO 
+	 	 Window_NO
+	 	 Window_YES Item 45799 >= 1
+	 	 	 ##1051871	\n\n\n\n@c好的，这边请~	
+	 	 	 Window 1051871,OK
+	 	 	 	 Window_OK Item 45799 >= 1
+	 	 	 	 	 Warp 0,30197,29,27 	 	 	
+
+##有家族出入证45798
+block Item 45800 >= 1
+	 ##1051872	\n\n\n\n@c您要进入家族聚会场吗?	
+	 Window 1051872,YES,NO 
+	 	 Window_NO
+	 	 Window_YES Item 45800 >= 1
+	 	 	 ##1051871	\n\n\n\n@c好的，这边请~	
+	 	 	 Window 1051871,OK
+	 	 	 	 Window_OK Item 45800 >= 1
+	 	 	 	 	 Warp 0,30198,10,19	 	 	
+
+##一般
+block
+	 ##1051873	\n\n  这里是私人聚会场，您必须有“家族出入证”才能  进入。\n\n  此聚会场是生存赛获胜家族的奖品，若想拥有自己  的聚会场，请多多参加法兰王国举办的活动喔！	
+	 EndWindow 1051873	 	 	 	 	 

@@ -1,0 +1,15 @@
+##mayko_gm_1051623.txt
+##通灵师32272	10	2
+##1054428	\n　　勇敢的年轻人，因为你的帮助，\n　　让这对无缘的父女相见，我们先离开吧～～～
+##1054429	\n\n\n　　对了，\n　　这是小女孩说要送你的，你就收下吧。
+block
+	 Window 1054428,NEXT
+	 Window 1054429,OK
+	 Window_OK  ItemSpace < 1 
+	 EndWindow 1100001	
+	 
+	 Window_OK
+	 GiveLeak1Item 47295,1
+	 Warp 0,30010,220,154
+	 Endblock
+

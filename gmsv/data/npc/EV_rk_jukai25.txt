@@ -1,0 +1,14 @@
+#˚˘? ???°ù
+
+block
+	Window 21912,Next
+	Window 21913,Next
+	Window 21914,Next
+	Window 21915,Next
+	Window 21916,Next
+	Window 21917,Next
+	Window 21918,Next
+	Window 21919,OK
+		Window_OK
+		LeaveGroup
+		Warp 0,11040,12,17

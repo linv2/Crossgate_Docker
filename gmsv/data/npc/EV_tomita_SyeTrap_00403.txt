@@ -1,0 +1,21 @@
+#Ä¸¼þ³âÒà¼þÐþ·ÂÓÀÃó©x©x??©xŽx÷ú
+#
+#©x©x©xÆËÄá·ÂÓÀËüÄáÓÀÄ©¼°ÏÔ¨ã±Õ©jµ©ÄÌÓÀÃñ·¥¡õÃó©k
+
+###©x3004859£¾æØÜìØ¦âãÆYÆÕ¡å©x·¥¡õÃóÐþ·ÂÓÀÃó·Ö¡å£½
+###©x3004860£¾àß±å²³AØ¦ÆÕç§»¥Ø¤ÔÈÐ×¡å£½
+
+
+
+###©xµ©ÄÌÓÀÃñ
+block Xpos == 144 && Ypos == 128
+
+	If LocalFlag1 == 0
+
+		Message 3004860
+		LocalFlag1 = 1
+
+	endif
+
+
+

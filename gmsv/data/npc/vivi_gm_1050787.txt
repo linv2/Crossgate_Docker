@@ -1,0 +1,564 @@
+######## 勇者勋章奖品兑换处 ######
+##■ 有任意钥匙
+block Item 45513 >= 1
+	 ##1051427	\n\n\n\n@c要使用任意钥匙吗？	1
+	 Window 1051427,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Group > 1
+	 	 	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 	 	 EndWindow 1051416	 	 
+	 	 Window_YES Item 45513 >= 1 && Group == 1
+	 	 	 Warp 0,30106,3,11
+##■ 有勇者勋章1级
+block Item 45466 >= 1
+	 ##1052248	\n\n\n 嗯... 以你的徽章等级，我可以送你一颗“元素石\n ”，你想要交换吗？	1
+	 Window 1052248,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+	 	 Window_YES ItemSpace <= 1
+	 		 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1	
+	 		 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 2
+	 		 ##1052262	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣，你接受吗？	1
+	 	 	 Window 1052262,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 	 	 Window_YES Item 45466 >= 1 && ItemSpace >= 2
+	 	 	 	 	 KillItem 45466
+	 	 	 	 	 #//地元素石 水元素石 火元素石 风元素石
+	 	 	 	 	 GiveLeak1Item (45220%1$1,45221%30$1,45222%50$1,45223%100$1)
+	 	 	 	 	 GiveLeak1Item (45486%1$1)
+	 	 	 	 	 ##1052263	\n\n\n\n@c勇者的光荣与你同在！	1
+	 	 	 	 	 EndWindow 1052263
+
+##■ 有勇者勋章2级
+block Item 45467 >= 1
+	 ##1052248	\n\n\n 嗯... 以你的徽章等级，我可以送你一颗“元素石\n ”，你想要交换吗？	1
+	 Window 1052248,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+	 	 Window_YES ItemSpace <= 1
+	 		 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1	
+	 		 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 2
+	 		 ##1052262	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣，你接受吗？	1
+	 	 	 Window 1052262,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 	 	 Window_YES Item 45467 >= 1 && ItemSpace >= 2
+	 	 	 	 	 KillItem 45467
+	 	 	 	 	 #//地元素石 水元素石 火元素石 风元素石
+	 	 	 	 	 GiveLeak1Item (45220%1$1,45221%30$1,45222%50$1,45223%100$1)
+	 	 	 	 	 GiveLeak1Item (45487%1$1)
+	 	 	 	 	 ##1052263	\n\n\n\n@c勇者的光荣与你同在！	1
+	 	 	 	 	 EndWindow 1052263
+	 	 	 	 	 
+##■ 有勇者勋章3级
+block Item 45468 >= 1
+	 ##1052248	\n\n\n 嗯... 以你的徽章等级，我可以送你一颗“元素石\n ”，你想要交换吗？	1
+	 Window 1052248,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+	 	 Window_YES ItemSpace <= 1
+	 		 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1	
+	 		 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 2
+	 		 ##1052262	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣，你接受吗？	1
+	 	 	 Window 1052262,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 	 	 Window_YES Item 45468 >= 1 && ItemSpace >= 2
+	 	 	 	 	 KillItem 45468
+	 	 	 	 	 #//地元素石 水元素石 火元素石 风元素石
+	 	 	 	 	 GiveLeak1Item (45220%1$1,45221%30$1,45222%50$1,45223%100$1)
+	 	 	 	 	 GiveLeak1Item (45488%1$1)
+	 	 	 	 	 ##1052263	\n\n\n\n@c勇者的光荣与你同在！	1
+	 	 	 	 	 EndWindow 1052263
+	 	 	 	 
+##■ 有勇者勋章4级
+block Item 45469 >= 1
+	 ##1052248	\n\n\n 嗯... 以你的徽章等级，我可以送你一颗“元素石\n ”，你想要交换吗？	1
+	 Window 1052248,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+	 	 Window_YES ItemSpace <= 1
+	 		 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1	
+	 		 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 2
+	 		 ##1052262	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣，你接受吗？	1
+	 	 	 Window 1052262,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 	 	 Window_YES Item 45469 >= 1 && ItemSpace >= 2
+	 	 	 	 	 KillItem 45469
+	 	 	 	 	 #//地元素石 水元素石 火元素石 风元素石
+	 	 	 	 	 GiveLeak1Item (45220%1$1,45221%30$1,45222%50$1,45223%100$1)
+	 	 	 	 	 GiveLeak1Item (45489%1$1)
+	 	 	 	 	 ##1052263	\n\n\n\n@c勇者的光荣与你同在！	1
+	 	 	 	 	 EndWindow 1052263
+	 	 
+##■ 有勇者勋章5级
+block Item 45470 >= 1
+	 ##1051417	\n\n\n 嗯... 以你的徽章等级，我可以送你一本“勇者礼\n 仪准则”，你想要交换吗？	1
+	 Window 1051417,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+	 	 Window_YES ItemSpace <= 1
+	 		 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1	
+	 		 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 2
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45470 >= 1 && ItemSpace >= 2 
+	 	 		 	 	 	 KillItem 45470
+	 	 		 	 	 	 GiveLeak1Item (31007%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45490%1$1)
+
+##■ 有勇者勋章6级
+block Item 45471 >= 1	 	 		 	 	 	 
+	 ##1051417	\n\n\n 嗯... 以你的徽章等级，我可以送你一本“勇者礼\n 仪准则”，你想要交换吗？	1
+	 Window 1051417,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+	 	 Window_YES ItemSpace <= 1
+	 		 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 		 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 2
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45471 >= 1 && ItemSpace >= 2
+	 	 		 	 	 	 KillItem 45471
+	 	 		 	 	 	 GiveLeak1Item (31007%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45491%1$1)
+	 	 		 	 	 	 	 	 		 	 	 	 
+##■ 有勇者勋章7级
+block Item 45472 >= 1	 	 		 	 	 	 
+	 ##1051418	\n\n\n 嗯... 以你的徽章等级，我可以送你一组“四种抗\n 性耳环”，你想要交换吗？	1
+	 Window 1051418,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 4
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 5
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45472 >= 1 && ItemSpace >= 5
+	 	 		 	 	 	 KillItem 45472
+	 	 		 	 	 	 GiveLeak1Item (45506%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45507%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45508%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45509%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45492%1$1)
+	 	 		 	 	 	 	 	 		 	 	 	 
+##■ 有勇者勋章8级
+block Item 45473 >= 1	 	 		 	 	 	 
+	 ##1051418	\n\n\n 嗯... 以你的徽章等级，我可以送你一组“四种抗\n 性耳环”，你想要交换吗？	1
+	 Window 1051418,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 4
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 5
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45473 >= 1 && ItemSpace >= 5
+	 	 		 	 	 	 KillItem 45473
+	 	 		 	 	 	 GiveLeak1Item (45506%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45507%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45508%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45509%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45493%1$1)
+	 	 		 	 	 	 
+##■ 有勇者勋章9级
+block Item 45474 >= 1	 	 		 	 	 	 
+	 ##1051418	\n\n\n 嗯... 以你的徽章等级，我可以送你一组“四种抗\n 性耳环”，你想要交换吗？	1
+	 Window 1051418,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 4
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 5
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45474 >= 1 && ItemSpace >= 5
+	 	 		 	 	 	 KillItem 45474
+	 	 		 	 	 	 GiveLeak1Item (45506%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45507%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45508%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45509%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45494%1$1)
+
+##■ 有勇者勋章10级
+block Item 45475 >= 1	 	 		 	 	 	 
+	 ##1051419	\n\n\n 嗯... 以你的徽章等级，可以得到一组“情人节套\n 餐”，你想要交换吗？	1
+	 Window 1051419,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 10	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 11
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45475 >= 1 && ItemSpace >= 11
+	 	 		 	 	 	 KillItem 45475
+	 	 		 	 	 	 GiveLeak1Item (45114%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45117%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45119%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45120%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45121%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45107%1$1)
+	 	 		 	 	 	 GiveLeak1Item (40092%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45303%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45237%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45236%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45495%1$1)
+	 	 		 	 	 	 
+##■ 有勇者勋章11级
+block Item 45476 >= 1	 	 		 	 	 	 
+	 ##1051419	\n\n\n 嗯... 以你的徽章等级，可以得到一组“情人节套\n 餐”，你想要交换吗？	1
+	 Window 1051419,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 10	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 11
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45476 >= 1 && ItemSpace >= 11
+	 	 		 	 	 	 KillItem 45476
+	 	 		 	 	 	 GiveLeak1Item (45114%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45117%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45119%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45120%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45121%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45107%1$1)
+	 	 		 	 	 	 GiveLeak1Item (40092%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45303%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45237%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45236%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45496%1$1)	 	 		 	 	 	                     
+
+##■ 有勇者勋章12级
+block Item 45477 >= 1	 	 		 	 	 	 
+	 ##1051419	\n\n\n 嗯... 以你的徽章等级，可以得到一组“情人节套\n 餐”，你想要交换吗？	1
+	 Window 1051419,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 10	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 11
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45477 >= 1 && ItemSpace >= 11
+	 	 		 	 	 	 KillItem 45477
+	 	 		 	 	 	 GiveLeak1Item (45114%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45117%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45119%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45120%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45121%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45107%1$1)
+	 	 		 	 	 	 GiveLeak1Item (40092%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45303%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45237%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45236%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45497%1$1)
+	 	 		 	 	 	 	 
+##■ 有勇者勋章13级
+block Item 45478 >= 1	 	 		 	 	 	 
+	 ##1051419	\n\n\n 嗯... 以你的徽章等级，可以得到一组“情人节套\n 餐”，你想要交换吗？	1
+	 Window 1051419,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 10	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 11
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45478 >= 1 && ItemSpace >= 11
+	 	 		 	 	 	 KillItem 45478
+	 	 		 	 	 	 GiveLeak1Item (45114%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45117%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45119%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45120%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45121%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45107%1$1)
+	 	 		 	 	 	 GiveLeak1Item (40092%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45303%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45237%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45236%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45498%1$1)
+
+##■ 有勇者勋章14级
+block Item 45479 >= 1	 	 		 	 	 	 
+	 ##1051419	\n\n\n 嗯... 以你的徽章等级，可以得到一组“情人节套\n 餐”，你想要交换吗？	1
+	 Window 1051419,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 10	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 11
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45479 >= 1 && ItemSpace >= 11
+	 	 		 	 	 	 KillItem 45479
+	 	 		 	 	 	 GiveLeak1Item (45114%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45117%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45119%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45120%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45121%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45107%1$1)
+	 	 		 	 	 	 GiveLeak1Item (40092%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45303%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45237%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45236%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45499%1$1)	
+	 	 		 	 	 	  	 		 	 	 	 
+##■ 有勇者勋章15级
+block Item 45480 >= 1	 	 		 	 	 	 
+	 ##1051420	\n\n\n 嗯... 以你的徽章等级，可以得到一组“攻、防、\n 敏加值手环”，你想要交换吗？	1
+	 Window 1051420,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 3	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 4
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45480 >= 1 && ItemSpace >= 4
+	 	 		 	 	 	 KillItem 45480
+	 	 		 	 	 	 GiveLeak1Item (45510%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45511%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45512%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45500%1$1)	
+	 	 		 	 	 	 
+##■ 有勇者勋章16级
+block Item 45481 >= 1	 	 		 	 	 	 
+	 ##1051420	\n\n\n 嗯... 以你的徽章等级，可以得到一组“攻、防、\n 敏加值手环”，你想要交换吗？	1
+	 Window 1051420,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 3	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 4
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45481 >= 1 && ItemSpace >= 4
+	 	 		 	 	 	 KillItem 45481
+	 	 		 	 	 	 GiveLeak1Item (45510%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45511%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45512%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45501%1$1)		 	 	 		 	 	 	 	 	 		 	 	 	 
+
+##■ 有勇者勋章17级
+block Item 45482 >= 1	 	 		 	 	 	 
+	 ##1051421	\n\n\n 嗯... 以你的徽章等级，可以得到一组“生产系野\n 外求生套装组”，你想要交换吗？	1
+	 Window 1051421,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 3	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 4
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45482 >= 1 && ItemSpace >= 4
+	 	 		 	 	 	 KillItem 45482
+	 	 		 	 	 	 GiveLeak1Item (45513%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45514%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45515%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45502%1$1)	 	 		 	 	 	 
+	 	 		 	 	 	 	                  
+##■ 有勇者勋章18级
+block Item 45483 >= 1	 	 		 	 	 	 
+	 ##1051421	\n\n\n 嗯... 以你的徽章等级，可以得到一组“生产系野\n 外求生套装组”，你想要交换吗？	1
+	 Window 1051421,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 3	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 4
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45483 >= 1 && ItemSpace >= 4
+	 	 		 	 	 	 KillItem 45483
+	 	 		 	 	 	 GiveLeak1Item (45513%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45514%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45515%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45503%1$1)
+
+##■ 有勇者勋章19级
+block Item 45484 >= 1	 	 		 	 	 	 
+	 ##1051421	\n\n\n 嗯... 以你的徽章等级，可以得到一组“生产系野\n 外求生套装组”，你想要交换吗？	1
+	 Window 1051421,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 3	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 4
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45484 >= 1 && ItemSpace >= 4
+	 	 		 	 	 	 KillItem 45484
+	 	 		 	 	 	 GiveLeak1Item (45513%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45514%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45515%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45504%1$1)	 	 		 	 	 	 	 	 		 	 	 	 
+
+##■ 有勇者勋章20级
+block Item 45485 >= 1	 	 		 	 	 	 
+	 ##1051422	\n\n\n 嗯... 以你的徽章等级，可以得到一组“超强护身\n 符组合”，你想要交换吗？	1
+	 Window 1051422,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 EndWindow 1051426 
+		 Window_YES ItemSpace <= 6	 
+		 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+		 	 EndWindow 1100002
+	 	 Window_YES ItemSpace >= 7
+	 	 	 ##1051423	\n\n 感谢你对这世界的贡献，我将授与你全新的勇者勋\n 章，接受勋章后，勋章的等级就定型了，不会再改\n 变，此勋章将伴随着光荣的称号，你接受吗？	1
+	 	 	 Window 1051423,YES,NO 
+	 	 	 	 Window_NO
+	 	 	 	 	 ##1051426	\n\n\n\n@c那么请加油，期望再见到你！	1
+	 	 	 	 	 EndWindow 1051426 
+	 	 		 Window_YES 
+	 	 		 	 ##1051424	\n\n\n\n@c在神的面前，我授与此勇者无价的光荣。	1
+	 	 		 	 Window 1051424,OK 
+	 	 		 	 	 Window_OK Item 45485 >= 1 && ItemSpace >= 7
+	 	 		 	 	 	 KillItem 45485
+	 	 		 	 	 	 GiveLeak1Item (45516%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45517%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45518%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45519%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45520%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45521%1$1)
+	 	 		 	 	 	 GiveLeak1Item (45505%1$1)	
+	 	 		 	 	 	 
+##■ 一般
+block 
+	 ##1051425	\n\n\n\ 您好！我是负责勇者勋章活动的神职官。	1
+	 EndWindow 1051425	 	 		 	 	 	  	 	 		 	 	 	 	                  	 	 		 	 	 	 	                                                                     

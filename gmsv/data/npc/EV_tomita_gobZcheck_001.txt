@@ -1,0 +1,128 @@
+#打皮伉件及邰尽﹋犯田永弘迕﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛瓦本厘迩赢及摒
+
+###﹛铲抭刉笠刓毛呁醒赭儅
+
+block Item_607907 >= 2
+	EndWindow 4200000
+	#"\n\n﹛铲抭刉笠刓互呁醒丐月井日熬仃尥仃卅中方﹝"
+
+
+
+###﹛铲抭刉笠刓毛ㄠ蜊赭儅
+
+block Item_607907 == 1
+
+	If StrCmpChat == R
+	EndWindow 4200001
+		#"\n\n﹛ㄠ井日ㄨ引匹及?剩醒侬毛じ恘仄化云仁木﹝\n﹛公及醒分仃旦正件皿醒毛喂笛允月冗﹝"
+		EndBlock
+
+	else
+		If StrCmpChat == 3004921
+			EndWindow 4200002
+			#"\n\n﹛＞ㄠ＝分卅﹝旦正件皿醒毛ㄠ喂支允冗﹝",OK
+				Window_OK
+					AddStampCount 607907,+1
+					EndBlock
+
+		else
+			If StrCmpChat == 3004922
+				EndWindow 4200003
+				#"\n\n﹛＞ㄡ＝分卅﹝旦正件皿醒毛ㄡ喂支允冗﹝",OK
+					Window_OK
+						AddStampCount 607907,+2
+						EndBlock
+
+			else
+				If StrCmpChat == 3004923
+					EndWindow 4200004
+					#"\n\n﹛＞ㄢ＝分卅﹝旦正件皿醒毛ㄢ喂支允冗﹝",OK
+						Window_OK
+							AddStampCount 607907,+3
+							EndBlock
+
+				else
+					If StrCmpChat == 3004924
+						EndWindow 4200005
+						#"\n\n﹛＞ㄣ＝分卅﹝旦正件皿醒毛ㄣ喂支允冗﹝",OK
+							Window_OK
+								AddStampCount 607907,+4
+								EndBlock
+
+					else
+						If StrCmpChat == 3004925
+							EndWindow 4200006
+							#"\n\n﹛＞ㄤ＝分卅﹝旦正件皿醒毛ㄤ喂支允冗﹝",OK
+								Window_OK
+									AddStampCount 607907,+5
+									EndBlock
+
+						else
+							If StrCmpChat == 3004926
+								EndWindow 4200007
+								#"\n\n﹛＞ㄥ＝分卅﹝旦正件皿醒毛ㄥ喂支允冗﹝",OK
+									Window_OK
+										AddStampCount 607907,+6
+										EndBlock
+
+							else
+								If StrCmpChat == 3004927
+									EndWindow 4200008
+									#"\n\n﹛＞ㄦ＝分卅﹝旦正件皿醒毛ㄦ喂支允冗﹝",OK
+										Window_OK
+											AddStampCount 607907,+7
+											EndBlock
+
+								else
+									If StrCmpChat == 3004928
+										EndWindow 4200009
+										#"\n\n﹛＞ㄧ＝分卅﹝旦正件皿醒毛ㄧ喂支允冗﹝",OK
+											Window_OK
+												AddStampCount 607907,+8
+												EndBlock
+
+									else
+										If StrCmpChat == 3004929
+											EndWindow 4200010
+											#"\n\n﹛＞ㄨ＝分卅﹝旦正件皿醒毛ㄨ喂支允冗﹝",OK
+												AddStampCount 607907,+9
+												EndBlock
+
+										else
+											EndWindow 4200011
+											#"\n\n﹛公及じ恘反拑躲分″″"
+											EndBlock
+
+										endif
+
+									endif
+
+								endif
+
+							endif
+
+						endif
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛铲抭刉笠刓毛儅匀化中卅中
+
+block
+	EndWindow 4200012
+	#"\n\n﹛铲抭刉笠刓互卅中冗﹝"
+
+
+
+

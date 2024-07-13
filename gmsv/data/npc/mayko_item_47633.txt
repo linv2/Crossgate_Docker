@@ -1,0 +1,16 @@
+
+#º£ëàÌÕµÑ	mayko_item_47624.txt	
+#ÌÕÍÁ	mayko_item_47633.txt	
+#ÉñÆæË®Æ¿47653
+#±ùÍ²47654
+#1054932	\n\n\n\n\@cÄó³ÉÊ²Ã´ºÃÄØ£¿
+
+block
+
+	 Window 1054932,ok
+	 Window_ok item 47633>0
+	 
+	 KillItem 47633,1 
+	 GiveLeak1Item (47653%4$1,47654%4$1,47624%1$1,47641%1$1)
+	 
+	 Endblock

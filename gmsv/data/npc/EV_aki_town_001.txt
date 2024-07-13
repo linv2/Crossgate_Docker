@@ -1,0 +1,22 @@
+#
+
+block EndEvent 0 == 1
+#15937’\n\n﹛夫弘奶件禾奶件玄毛\n﹛螃击籥闽﹜扒件弁玄甩伙穴卞涩烂允月支〝
+	Window 3006636,YES,NO
+	Window_NO
+	Window_YES
+		SetLoginPoint 3
+	#15932’\n\n﹛夫弘奶件禾奶件玄反\n﹛螃击籥闽卞涩烂今凶﹝
+		Message 3006637
+
+
+block EndEvent 0 == 0
+#15937’\n\n﹛夫弘奶件禾奶件玄毛\n﹛螃击籥闽﹜扒件弁玄甩伙穴卞涩烂允月支〝
+	Window 3006636,YES,NO
+	Window_NO
+	Window_YES
+		SetLoginPoint 3
+	#15932’\n\n﹛夫弘奶件禾奶件玄反\n﹛螃击籥闽卞涩烂今凶﹝
+		Message 3006637
+
+

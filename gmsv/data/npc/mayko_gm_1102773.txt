@@ -1,0 +1,15 @@
+#mayko_gm_1102773.txt
+#1111770	\n\n\n\n@c你想离开这里吗？	1
+
+block 
+	Window 1111904,yes,no
+	window_no
+	endblock
+	Window_yes
+	leavegroup 
+	warp 0,100,638,161
+	endblock		
+		
+
+
+

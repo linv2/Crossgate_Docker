@@ -1,0 +1,27 @@
+#庣及齿谛斥乓件’石伉奴﹛14015,4:1154及升仇井
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## 丢永本□斥它奶件玉它钒仁 ##########
+block StrCmpChat == R
+
+	#\n\n﹛咍蘸﹝漆ざ手尹尹圴酷じ木化五凶匹﹝\n﹛呿ざ及齿圴反≦尺及侬澎峚痿≧支﹝漆卅日冂笠﹜≦ㄠㄤㄟ?≧支仃升﹜升丹支﹜ョ歹尺氏井〝
+	Window 12102,YES,NO
+
+	Window_YES Gold >= 150 && ItemSpace >= 1
+	Addgold -150
+	GiveLeak1Item 2901,1
+	#\n\n﹛厘仪卞银匀化支□﹝\n﹛幻卅引凶﹜仍夫中五卞
+	EndWindow 12103
+
+	Window_YES Gold < 150
+	#\n\n﹛云嗯互箫日尺氏方丹支卅丑﹝\n﹛云嗯霪户化引凶云中匹□
+	EndWindow 12104
+
+	Window_YES ItemSpace == 0
+	#\n\n﹛绂坁卞坞五互丐日尺氏方丹支卅丑﹝\n﹛绂坁井月丹仄化引凶云中匹□
+	EndWindow 12117
+
+	Window_NO
+	#\n\n﹛引凶尹尹手氏酷じ木化仁月今井中﹜啼仄心卞仄午匀化支
+	EndWindow 12105

@@ -1,0 +1,33 @@
+#ªÔ…Í
+
+#
+block
+		Window 23197,Next
+		Window 23198,Next
+		Window 23245,Next
+		Window 23217,Next
+		Window 23218,Next
+		Window 23199,Next
+		Window 23200,Next
+		Window 23201,Yes
+			Window_Yes
+				Window 23202,Next
+				Window 23203,Yes,No
+					Window_Yes
+						Window 23204,Next
+						Window 23205,Next
+						Window 23206,Next
+						Window 23207,Next
+						Window 23208,Next
+						Window 23209,OK
+							Window_OK
+								Encount 2|0,33609,27,4||0|||||0|20052|||||||||
+					Window_No
+						Window 23210,Next
+						Window 23211,Next
+						Window 23212,Next
+						Window 23225,Next
+						Window 23213,OK
+							Window_OK
+								Encount 2|0,33610,27,4||0|||||0|20053|||||||||
+

@@ -1,0 +1,136 @@
+#﹛港盒及拨叶﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛仿平失及摒
+
+###﹛皮□丢仿件缜谛匹皮□丢仿件综岳旦平伙伊矛伙互ㄤ动晓
+
+block JobAncestry == 250 && SkillLevel_205 >= 5
+
+
+#﹛敛中石奶永旦伙毛赭儅
+	If Item_607951 >= 1
+		EndWindow 3202959
+
+		#\n\n﹛怅今木凶じ曰轼反﹜僮★午仄凶桦赭卞丐月歹﹝\n﹛歹凶仄互蜕尹月及反﹜仇仇引匹卅及﹝
+		EndBlock
+
+
+#﹛缴伅午什心及枆﹋ㄡㄟ蜊﹌毛赭儅
+	else
+
+		If Item_607946 >= 1 && Item_10100 >= 20
+			Window 3202960,NEXT
+
+		#\n\n﹛公欠匀凶及友﹜云户匹午丹﹝\n﹛仍潜谛迋互中月及反﹜仇及港盒及ㄤ遽方﹝\n﹛分仃升じ曰轼反怅今木化中月井日﹜\n﹛仇及石奶永旦伙毛儅匀化垫匀化﹝\n﹛じ曰轼卞嗤勿仁午﹜苇尹月方丹卞卅月歹﹝
+			Window 3202961,OK
+
+		#\n\n﹛匹手﹜竣毛勾仃化幻仄中氏分仃升﹜\n﹛由□泛奴分午伉□母□元扎卅中午\n﹛石奶永旦伙反躲绊毛?湍仄卅中及﹝\n﹛侉木卅中匹友﹝
+
+				Window_OK Item_607946 >= 1 && Item_10100 >= 20 && ItemSpace >= 1
+					KillItemAll 607946
+					KillItem 10100,20
+					GiveItemEX 607951,1,3202962
+
+		#\n\n﹛绂坁卞坞五互卅中心凶中方﹝\n﹛敛中石奶永旦伙互欐六卅中歹﹝
+					EndBlock
+
+				Window_OK Item_607946 >= 1 && Item_10100 >= 20
+					EndWindow 3202963
+
+		#\n\n﹛绂坁卞坞五互卅中心凶中方﹝\n﹛敛中石奶永旦伙互欐六卅中歹﹝
+					EndBlock
+
+				Window_OK Item_607946 >= 1
+					EndWindow 3202964
+
+		#\n\n﹛云井仄中歹友﹜什心及枆互箫曰卅中﹝\n﹛公木匹反﹜石奶永旦伙互欐六卅中歹﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3202965
+
+		#\n\n﹛云井仄中歹友﹜缴伅互壅尹凶心凶中方﹝\n﹛公木匹反﹜石奶永旦伙互欐六卅中歹﹝
+					EndBlock
+
+
+#﹛缴伅反赭儅仄化中月互﹜什心及枆互尕箫
+		else
+
+			If Item_607946 >= 1
+				EndWindow 3202966
+
+		#\n\n﹛缴伅反中中仃升﹜什心及枆互箫曰卅中歹﹝\n﹛迕啦允月及反ㄡㄟ蜊方﹝\n﹛丐午剂仄分井日﹜互氏壬匀化友﹝
+				EndBlock
+
+
+#﹛镗妐踏毛赭儅
+			else
+
+				If Item_607942 >= 1
+					EndWindow 3202967
+
+		#\n\n﹛Ⅶ填盒今氏及仇午手﹜什心及枆及仇午手\n﹛妏井卅中匹友﹝\n﹛窒手项尹化反中仃卅中匀化﹜\n﹛仍潜谛迋卞五勾仁蜕歹木化月及﹝
+					EndBlock
+
+
+#﹛晓筏失奶泛丞毛尕赭儅
+				else
+					Window 3202968,YES,NO
+
+		#\n\n﹛丐卅凶反﹜皮□丢仿件缜谛及方丹友﹝\n﹛歹凶仄及仍潜谛迋卞﹜蕙仄中皮□丢仿件毛\n﹛项歹曰卞侳凶杅井仄日〝
+
+						Window_YES
+							Window 3202969,NEXT
+
+		#\n\n﹛元扎丐﹜呿竣井升丹井魂今六化手日丹歹﹝\n﹛棵签卅云勾井中方﹜什心及枆毛ㄡㄟ蜊午\n﹛缴伅毛ㄠ勾儅匀化仁月分仃﹝
+							Window 3202970,OK
+
+		#\n\n﹛缴伅反﹜仇及港盒卞中月Ⅶ填盒今氏卞\n﹛仇及镗妐踏毛欐六壬熬仃潸木月仄﹜\n﹛什心及枆反﹜陆及升仇井匹睡木月心凶中方﹝\n﹛元扎﹜互氏壬匀化友﹝
+
+								Window_OK ItemSpace >= 1
+									GiveItemEX 607942,1,3202971
+
+		#\n\n﹛绂坁卞坞五互卅中心凶中方﹝\n﹛镗妐踏互欐六卅中歹﹝
+									EndBlock
+
+								Window_OK
+									EndWindow 3202972
+
+		#\n\n﹛绂坁卞坞五互卅中心凶中方﹝\n﹛镗妐踏互欐六卅中歹﹝
+									EndBlock
+
+						Window_NO
+							EndWindow 3202973
+
+		#\n\n﹛蕙仄中襞摹毛唾井六月分仃及绖互丐月及卞﹜\n﹛手匀凶中卅中仇午允月及友﹝
+							EndBlock
+
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛皮□丢仿件缜谛分互皮□丢仿件综岳旦平伙伊矛伙互ㄤ恍坢
+
+block JobAncestry == 250
+	EndWindow 3202974
+
+		#\n\n﹛酸ゴ分仃升﹜漆及丐卅凶匹反仍潜谛迋卞\n﹛莘歹六月仇午反匹五卅中歹﹝\n﹛蕙仄中皮□丢仿件及综曰杅毛襞曰凶中卅日﹜\n﹛手匀午绖毛呫中化五化友﹝
+
+
+
+###﹛皮□丢仿件缜谛匹反卅中
+
+block
+	EndWindow 3202975
+
+		#\n\n﹛仇仇匹及抔日仄反毙井匹恞仄仁化﹜\n﹛卅井卅井莒赝方﹝\n﹛凶分﹜丐引曰愤苀卞?太荚木卅中及互\n﹛か鳔友﹝
+
+
+

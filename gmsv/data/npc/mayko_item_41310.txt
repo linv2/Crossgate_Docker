@@ -1,0 +1,5 @@
+#mayko_item_41310.txt
+block
+	killitem 41310,1
+	GiveLeak1Item(45935%90$1,14491%5$1,41240%4$1,41279%1$1)
+	endblock

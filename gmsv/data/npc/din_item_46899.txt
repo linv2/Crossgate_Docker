@@ -1,0 +1,9 @@
+##puk3包装-虚拟物品-特调可乐糖  din_item_46899.txt
+##能力说明：双点后会出现永久称号-
+
+############# 一般 ######################
+block Item 46899 >=1
+	 KillItem 46899,1
+	 EndEvent 154 = 1
+	 CheckTitle 
+	 endblock 

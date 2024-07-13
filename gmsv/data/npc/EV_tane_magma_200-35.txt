@@ -1,0 +1,32 @@
+
+block Xpos == 144 && Ypos == 124
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+block Ypos == 125 && Xpos >= 142 && Xpos <= 145
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Ypos == 126 && Xpos >= 141 && Xpos <= 144
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+block Ypos == 127 && Xpos >= 142 && Xpos <= 144
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+block Ypos == 128 && Xpos >= 141 && Xpos <= 144
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10

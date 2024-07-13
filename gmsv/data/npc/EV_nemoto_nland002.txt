@@ -1,0 +1,38 @@
+##########################
+# 用永市□仿件玉 by 漪呿 #
+# ←ヨ曰阂白尼奶楝←     #
+##########################
+
+
+### 椭瘀卅仄’≦云心支仆凝抁≧及?ヨ
+block
+	Window 3206848,NEXT
+
+		#\n\n﹛支丑﹜中日匀仄扎中匀″\n﹛用永市□仿件玉尺芛太卞侳凶筏ゴ卞﹜\n﹛云心支仆反中井互〝\n﹛酦褥反﹜聂坌﹜平乓件犯奴分午合丹方﹝聂坌友﹝﹛卅氏匹平乓件犯奴井匀化〝\n﹛公曰扎丑楝﹜\n﹛平乓件犯奴互用永市□及厘驯坁分匀化仇午毛\n﹛襞匀化化蜕匀化月及井中〝
+
+	Window 3206849,YES,NO
+
+		#\n\n﹛匹﹜ㄠ蜊ㄠㄟㄟ?分仃升﹜ョ匀化中仁井中〝
+
+
+		Window_YES ItemSpace == 0
+			EndWindow 3206850
+
+		#\n\n﹛云支云支匀〝\n﹛公木动晓儅化卅中方丹分友匀″
+
+		Window_YES Gold < 100
+			EndWindow 3206851
+
+		#\n\n﹛云支云支匀〝\n﹛云嗯互箫曰卅中心凶中分友匀″
+
+		Window_YES
+			AddGold -100
+			GiveLeak1Item 622023,1
+			EndWindow 3206852,OK
+
+		#\n\n﹛引中升丐曰不匀″\n﹛云匀午﹜公及凝抁毛钒仃月及反﹜\n﹛笮引匹脱坴仄凶杅互﹜\n﹛啼仄心手喂尹月匀化手氏分方″
+
+		Window_NO
+			EndWindow 3206853
+
+		#\n\n﹛酸ゴ分卅丑﹝\n﹛井歹中中左穴弗互尥仁仇午手丐月氏分仃升卅丑﹝

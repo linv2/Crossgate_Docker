@@ -1,0 +1,13 @@
+######■使用特制料理1
+##■检查人数
+block Group > 1
+	 ##1050686	\n\n\n\n@c料理只有一人份！
+	 Window 1050686,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■传送	 	 	 
+block Group == 1
+	 KillItem 45323
+	 Warp 0,32684,4,9

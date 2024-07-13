@@ -1,0 +1,59 @@
+#幸村	mayko_gm_1051796.txt
+
+block Item 47296>0
+	 EndWindow 1055883
+	 
+	 
+
+block Item 47755>0
+	 KillItem 47755,1
+	 GiveLeak1Item 47296,1	 
+	 Window 1055906,NEXT
+	 EndWindow 1055908
+#1055906	\n\n\n　　　　是吗？？\n　　　　愿初晴在另一个世界也能幸福快乐。
+#1055908	\n\n\n\n@c纸莲花就送您吧。
+
+block Item 47753>0 && Item 47754>0
+	 EndWindow 1055926
+block Item 47754>0
+	 EndWindow 1055896
+#1055896	\n\n\n\n@c愿初晴能够安息	 
+block Item 47753>0
+	 EndWindow 1055896
+#1055896	\n\n\n\n@c愿初晴能够安息。
+
+block Item 47752>0
+	 KillItem 47752,1
+	 GiveLeak1Item 47753,1	 
+	 Window 1055920,NEXT
+	 Window 1055921,NEXT
+	 Window 1055922,NEXT
+	 Window 1055893,NEXT
+	 Window 1055894,NEXT
+	 EndWindow 1055895
+	 
+	 
+#1055920	\n\n\n　　　　汐夏就这这样，\n　　　　一直活在痛苦之中吗？
+#1055921	\n\n\n\n@c这不是初晴想要的。
+#1055922	\n\n\n　　　　初晴的死，\n　　　　就是为的就是妹妹好好的活下来，
+#1055893	\n\n\n　　　　汐夏现在这样，\n　　　　初晴怎么能安心呢。
+#1055894	\n\n\n　　　　盂兰盆节快到了，\n　　　　我正打算为初晴送行。
+#1055895	\n\n\n　　　　我准备好了蜡烛，\n　　　　麻烦你请汐夏帮我找纸花。
+
+
+
+#1055914	\n\n\n\n@c你怎么会有初晴的画像。
+#1055915	\n\n\n\n@c原来汐夏一直自责自己吗？？
+#1055916	\n\n\n\n@c我也好想念初晴。
+
+
+block Item 47750>0
+	 KillItem 47750,1
+	 GiveLeak1Item 47751,1
+	 Window 1055914,NEXT
+	 Window 1055915,NEXT
+	 EndWindow 1055916
+
+block 
+	 EndWindow 1055913
+#1055913	\n\n\n\n@c初晴，我好想你。

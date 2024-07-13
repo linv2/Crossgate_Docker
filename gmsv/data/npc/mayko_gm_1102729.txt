@@ -1,0 +1,337 @@
+#mayko_gm_1102729.txt	
+#1111521	\n\n\n　　　你现在身上有设计图或恶改图，\n　　　想换成设计图回收卷吗？	1
+#1111522	\n\n\n　　　你现在身上飘浮种子，\n　　　你想换成种子回收卷吗？	1
+#1111523	\n\n\n　　　你现在身上有魅力橘子汁或魔力久九，\n　　　你想换成药水回收卷吗？	1
+#1111524	\n\n　　　你好，我是回收商人，\n　　　回收设计图、药水与种子，\n　　　想得到化龙转生珠、魔物重来种子或重来种子可以找我！	1
+#1111525	\n\n\n　　　你现在身上设计图回收卷有100张了，\n　　　要换化龙转生珠吗？	1
+#1111526	\n\n\n　　　你现在种子回收卷有10000张了，\n　　　要换魔物重来种子吗？	1
+#1111527	\n\n\n　　　你现在药水回收卷有1000张了，\n　　　要换重来种子吗？	1
+#1111528	\n\n\n@c想交换再来找我。	1
+#药？	魅力橘子汁	CM3			IuRc						18409	26236	0	43		0	1	0	64	1	1	1	4	0					0	0	0	0	0	0																																																						0	0	1			0	158409	188409	0	0	0			0
+#药？	魅力橘子汁	CM-1			IuRc						18410	26236	0	43		0	1	0	64	1	1	1	4	0					0	0	0	0	0	0																																																						0	0	1			0	158409	188409	0	0	0			0
+#种子？	飘浮的种子	LO3			IuRc						18411	27201	0	26		0	1	0	64	1	1	1	3	0					0	0	0	0	0	0																																															0							0	0	1			0	158411	188411	0	0	0			0
+#种子？	飘浮的种子	LO-1			IuRc						18412	27201	0	26		0	1	0	64	1	1	1	3	0					0	0	0	0	0	0																																															0							0	0	1			0	158411	188411	0	0	0			0
+#魔力99 46646
+#飘浮之香										40705
+block item 41170 >99 
+	 Window 1111525,yes,no
+	 Window_yes item 41170 >99
+	 killitem  41170,100
+	 GiveLeak1Item 41165,1
+	 endblock
+	 Window_yes
+	 window_no
+block item 41171 >9999
+	 Window 1111526,yes,no
+	 Window_yes item 41171 >9999
+	 killitem  41171,10000
+	 GiveLeak0Item (41090%1$1,41091%1$1,41092%1$1,41093%1$1,41094%1$1,41095%1$1,41096%1$1,41097%1$1,41098%1$1,41099%1$1,41100%1$1,41101%1$1,41102%1$1,41103%1$1,41104%1$1,41105%1$1,41106%1$1,41107%1$1,41108%1$1,41109%1$1)
+	 endblock
+	 Window_yes
+	 window_no	
+block item 41172 >999
+	 Window 1111527,yes,no
+	 Window_yes item 41172 >999
+	 killitem  41172,1000
+	 GiveLeak0Item (16800%1$1,16801%1$1,16802%1$1,16803%1$1,16804%1$1,16805%1$1,16806%1$1,16807%1$1,16808%1$1,16809%1$1,16810%1$1,16811%1$1,16812%1$1,16813%1$1,16814%1$1,16815%1$1,16816%1$1,16817%1$1,16818%1$1,16819%1$1)
+	 endblock
+	 Window_yes
+	 window_no	  
+
+block item 18602 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18602 >0
+	  	killitem 18602,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no	
+block item 18603 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18603 >0
+	  	killitem 18603,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no	
+block item 18604 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18604 >0
+	  	killitem 18604,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no	
+block item 18605 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18605 >0
+	  	killitem 18605,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18606 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18606 >0
+	  	killitem 18606,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+	  	
+block item 18607 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18607 >0
+	  	killitem 18607,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18608 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18608 >0
+	  	killitem 18608,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18609 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18609 >0
+	  	killitem 18609,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18610 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18610 >0
+	  	killitem 18610,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18611 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18611 >0
+	  	killitem 18611,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18612 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18612 >0
+	  	killitem 18612,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18613 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18613 >0
+	  	killitem 18613,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18614 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18614 >0
+	  	killitem 18614,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18615 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18615 >0
+	  	killitem 18615,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18616 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18616 >0
+	  	killitem 18616,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18617 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18617 >0
+	  	killitem 18617,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18618 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18618 >0
+	  	killitem 18618,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18619 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18619 >0
+	  	killitem 18619,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18620 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18620 >0
+	  	killitem 18620,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18621 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18621 >0
+	  	killitem 18621,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18622 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18622 >0
+	  	killitem 18622,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18623 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18623 >0
+	  	killitem 18623,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18624 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18624 >0
+	  	killitem 18624,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18625 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 18625 >0
+	  	killitem 18625,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 46524 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 46524 >0
+	  	killitem 46524,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no	  	
+block item 46525 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 46525 >0
+	  	killitem 46525,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 46526 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 46526 >0
+	  	killitem 46526,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 46950 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 46950 >0
+	  	killitem 46950,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 46951 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 46951 >0
+	  	killitem 46951,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 46952 > 0
+	 Window 1111521,yes,no
+	  	Window_yes item 46952 >0
+	  	killitem 46952,1
+	  	GiveLeak1Item 41170,1
+	  	endblock
+	  	Window_yes
+	  	Window_no	  		  	
+
+#===宠物子 	
+
+block leak0item 18411 >0 || leak1item 18411 >0
+	 Window 1111522,yes,no
+	  	Window_yes item 18411 >0
+	  	killitem 18411,1
+	  	GiveLeak1Item 41171,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+ 	
+block item 18412 > 0
+	 Window 1111522,yes,no
+	  	Window_yes item 18412 >0
+	  	killitem 18412,1
+	  	GiveLeak1Item 41171,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+#===人种子 	  		  	
+block item 18409 >0 
+	 Window 1111523,yes,no
+	  	Window_yes item 18409 >0
+	  	killitem 18409,1
+	  	GiveLeak1Item 41172,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 18410 > 0
+	 Window 1111523,yes,no
+	  	Window_yes item 18410 >0
+	  	killitem 18410,1
+	  	GiveLeak1Item 41172,1
+	  	endblock
+	  	Window_yes
+	  	Window_no	  		  	
+	  	
+block item 46646 >0
+	 Window 1111523,yes,no
+	  	Window_yes item 46646 >0
+	  	killitem 46646,1
+	  	GiveLeak1Item 41172,1
+	  	endblock
+	  	Window_yes
+	  	Window_no
+block item 40705 >0
+	 Window 1111523,yes,no
+	  	Window_yes item 40705 >0
+	  	killitem 40705,1
+	  	GiveLeak1Item 41172,1
+	  	endblock
+	  	Window_yes
+	  	Window_no	  	
+block 
+	 endwindow 1111524

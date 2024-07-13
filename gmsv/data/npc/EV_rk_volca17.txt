@@ -1,0 +1,12 @@
+#???
+
+#
+block
+	Window 22565,Next
+	Window 22566,Next
+	Window 22567,Next
+	Window 22580,OK
+		Window_OK
+			EndEvent 134 = 1
+			LeaveGroup
+			Warp 0,43000,530,706

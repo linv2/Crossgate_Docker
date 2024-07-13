@@ -1,0 +1,20 @@
+#1110737	\n\n\n　　　　青龙大人身体不适，\n　　　　可是都不肯吃药呢。	1
+#1110738	\n\n\n　　　　谁喂它吃药，\n　　　　它就会痛打对方一顿。	1
+#1110739	\n\n\n\n@c你能帮我喂她药吗？	1
+#1110740	\n\n\n\n@c麻烦你帮忙喂药啰！！	1
+#1110747	\n\n\n\n@c那我自己再想办法啰	1
+
+block item 41145 >0
+	 window 1110737,next
+	 endwindow 1110740
+block 
+	 window 1110737,next
+	 Window 1110738,next
+	 window 1110739,next
+	 Window 1110740,yes,no
+	 Window_no
+	 Endwindow 1110747
+	 Window_yes
+	 GiveLeak1Item 41145,1
+	 endwindow 1110740
+	 

@@ -1,0 +1,14 @@
+#
+#击掳及瓦
+#
+##############  ##############
+block
+#\n\n\n\n\n@c击掳毛银迕仄引允井〝
+	Window 15256,YES,NO
+	Window_YES Item 18506 >= 1
+	KillItem 18506,1,(15154)
+	LeaveGroup
+	#布□术仿它件玉21闭尺
+	Warp 0,24029,27,2
+	Window_NO
+

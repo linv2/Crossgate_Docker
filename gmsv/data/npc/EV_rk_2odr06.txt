@@ -1,0 +1,24 @@
+#ÐþÆ½º¥Øø
+
+#çÖ¼°³±Ô»ÅÙÃ«ƒ}ÔÈ»¯ÖÐÔÂØ¦ÈÕ
+block Item 16434 >= 1
+	EndWindow 23139,OK
+
+#õß¼°¤¸ÔÈÐ×³âÒàÓÀÆ½Ã«ƒ}ÔÈ»¯ÖÐÔÂØ¦ÈÕ
+block Item 16433 >= 1
+	Window 23140,Next
+	Window 23141,Next
+	Window 23142,Next
+	Window 23143,Next
+	Window 23144,Next
+	Window 23180,Next
+	Window 23145,OK
+		Window_OK Item 16433 >= 1
+			KillItemAll 16433
+			GiveItem 16434,1
+			LeaveGroup
+			Warp 0,46056,37,60
+		Window_OK
+#
+block
+	EndWindow 23146,OK

@@ -1,0 +1,13 @@
+#踹
+
+#布仿旦及斥亦永平毛儅匀化中月卅日
+block Item 16432 >= 1
+	Window 23148,Yes,No
+		Window_No
+		Window_Yes Item 16432 >= 1
+			KillItemAll 16432,(4447)
+			GiveItem 16433,1,(4448)
+		Window_Yes
+#
+block
+	EndWindow 23150,OK

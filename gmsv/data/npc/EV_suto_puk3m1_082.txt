@@ -1,0 +1,12 @@
+#
+#PUK3_Main1
+#
+#螃啖莘襟﹋正穴永扑亘﹌
+
+
+Block
+
+	GAEndWindow 3207010
+
+		#\n\n﹛孔氏﹜裘及俓及凶户卞\n﹛公仇引匹允月午反＿＿﹝
+	

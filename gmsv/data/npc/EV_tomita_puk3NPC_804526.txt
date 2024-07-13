@@ -1,0 +1,27 @@
+#PUK3卞亢支井仄NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛斥夫□及摒
+
+###
+
+block
+
+	If NowTime == 0 || NowTime == 1 || NowTime == 2
+		EndWindow 3204200
+
+		#\n\n﹛丐及今丐﹜?及谛苇卅井匀凶〝\n﹛井仁木氏廿仄化月氏分﹝\n﹛仇仇反井仁木月赭互中匀天中丐匀化﹜\n﹛云手仄欠中卅丐﹝
+		EndBlock
+
+	else
+		Window 3204201,NEXT
+
+		#\n\n﹛仇氏卅卞剪仁卅匀化手窖日卅中井日﹜\n﹛扜切扎氏手抇切扎氏手变匀化月分欠丹卅﹝\n﹛匹手﹜凶分芛氏匹月氏元扎卅中氏分兮﹝\n﹛锹澎反﹜仇仇匹齿ヨ仄化月谛卅氏分井日﹝
+		EndWindow 3204202
+
+		#\n\n﹛仇丹中丹及匀化﹜本永正奶匀化蜕丹氏分欠〝
+		EndBlock
+
+	endif
+
+
+

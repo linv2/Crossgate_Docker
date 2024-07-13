@@ -1,0 +1,35 @@
+#´òÆ¤Øø¼þ¼°Û¢¾¡©x©x??©xŽx÷ú
+#
+#©x©x©xè÷±Ø¡õÐþ¼°Þð
+
+###©x´òÆ¤Øø¼þÔÆ³±Ô»Ã«¨â¹´ô÷ƒ}ØÆ»¯ÖÐÔÂ
+
+block
+
+	If Item_607913 >= 3 && Xpos == 156 && Ypos == 216
+
+		If LocalFlag0 == 0
+
+			Play_SE 260,320,240
+			ShapeNext 103011
+
+			LocalFlag0 = 1
+
+		endif
+
+	endif
+
+
+	If Item_607913 >= 3 && Xpos == 152 && Ypos == 215
+
+		If LocalFlag0 == 1
+
+			KillItem 607913,3,(3004954)
+			Warp 0,59717,276,129
+
+		endif
+
+	endif
+
+
+

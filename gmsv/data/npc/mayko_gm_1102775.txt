@@ -1,0 +1,11 @@
+block
+	#1111922	\n\n\n　　　　在这寒冷的土地，\n　　　　只有不怕冷的植物能生长。	1
+	#1111923	\n\n\n　　　　听说这小小的瞿麦田，\n　　　　有小妖精的踪影，\n　　　　你能帮我找出它的踪迹吗。	1
+	Window 1111922,next
+	Window 1111923,yes,no
+	Window_yes
+		leavegroup 
+		warp 0,32467,10,5
+		endblock
+	Window_no
+	endblock		

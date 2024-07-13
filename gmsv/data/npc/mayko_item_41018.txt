@@ -1,0 +1,7 @@
+#mayko_item_41017.txt
+#mayko_item_41018.txt
+
+##
+block
+	 EndWindow 1110403
+	

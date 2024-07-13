@@ -1,0 +1,18 @@
+#
+#魔界风水盘
+#
+
+
+block Item 607670 >= 2
+	Endwindow 4100003
+	#"\n\n  一次只能使用一样。"
+
+
+block
+			KillItem 607670,1,(3007171)
+			Play_SE 281,320,240
+			EndEvent200 = 1
+			CheckTitle
+			EndWindow 4100004
+			#"\n\n  可以感觉到怪物的属性了！"
+

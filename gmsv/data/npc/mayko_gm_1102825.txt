@@ -1,0 +1,26 @@
+#1111872	\n\n\n\n@c你要回村子了吗？
+#1111873	\n\n\n　　　　如果你有海芋跟魔法卷轴，\n　　　　可以跟我拿魔法粉喔～
+#1111874	\n\n\n　　　　你有海芋跟魔法卷轴与魔法粉了啦～～\n　　　　你要回村子吗？
+#1111875	\n\n\n\n@c送你一份魔法粉。
+
+block  item 41327 >0 && item 41328 >0 && item 41334 >0
+	window 1111874,yes,no
+	window_yes
+	leavegroup 
+	warp 0,2300,19,38
+	endblock
+	window_no
+	endblock
+block item 41327 >0 && item 41328 >0
+	GiveLeak1Item 41334,1
+	endwindow 1111875
+
+
+block 
+	window 1111872,yes,no
+	window_yes
+	leavegroup 
+	warp 0,2300,19,38
+	endblock
+	window_no
+	endwindow 1111873

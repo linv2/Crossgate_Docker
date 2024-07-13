@@ -1,0 +1,11 @@
+#mayko_gm_1051803.txt 小贩
+#1111402	\n\n\n　　　　你要买神圣调味料吗，\n　　　　一瓶１００Ｇ。	1
+
+block gold >99
+	Window 1111402,yes,no
+	Window_yes gold >99 && ItemSpace > 0
+	Addgold -100
+	GiveLeak1Item 12500,1
+	endwindow 1111401
+block
+	

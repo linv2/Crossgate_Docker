@@ -1,0 +1,102 @@
+#粗喀樊左□汁平	6082	1000 108 32
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 石泛伙褕ヵ痹毛儅匀化中月桦宁 ##########
+block Item 18325 >= 1
+	#\n\n﹛公木反昵蜇擂互粟五月午中丹仇午匹漆扫卞卅匀化中月﹜丐及石泛伙及褕ヵ痹″\n﹛嫔?域蘸譬荦仄化心凶中午合匀化中凶及匹允﹝公及痹﹜台及儅匀化中月夤檗午跟晶仄化赡仃引六氏井〝
+	Window 11487,YES,NO
+
+	Window_NO
+	#\n\n﹛丹□氏﹜公氏卅仇午蜕歹内卞云凑中仄引允方﹝\n﹛台及蒂菜及岳绊毛割井户月濮驯及民乓件旦卅氏匹允﹝
+	EndWindow 11488
+
+	Window_YES Job >= 200 && Job < 230 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 9601,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 230 && Job < 260 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 10001,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 260 && Job < 280 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 9601,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 280 && Job < 290 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 10401,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 290 && Job < 300 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 9601,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 300 && Job < 340 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 10401,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 340 && Job < 350 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 9601,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 350 && Job < 360 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 12401,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 360 && Job < 370 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 12801,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 450 && Job < 460 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 10003,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 460 && Job < 470 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 12000,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Job >= 470 && Job < 480 && Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem 9603,20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+	Window_YES Item 18325 >= 1
+	KillItem 18325,1
+	GiveStackItem (9600%20,10000%20,10400%20,12404%20,12800%20),20
+	#\n\n﹛丐曰互午丹仍介中引允″\n﹛仇木匹昵蜇擂午裟壬木月手及互﹜蝈化皿仿术穴匹濩抸匹五月仇午毛据抸仄化心六引允方″
+	EndWindow 11489
+
+
+########## 譬荦匙俇踏毛儅匀化中月桦宁 ##########
+block Item 18323 >= 1
+	#\n\n﹛丐及石泛伙卞垫井木月氏匹允井〝丹日支引仄中匹允友尹﹝\n﹛丐及石泛伙反﹜蒂菜覆擂午仄化饬怗毛儅匀化中月氏匹允方﹝
+	EndWindow 11490
+
+########## 癫化反引日卅中桦宁 ##########
+block
+	#\n\n﹛楝反热中卅氏化手及互蜇掸卞绣箕允月午合匀化中月及井中〝\n﹛公及狨蛞毛憎仄化仁木方﹝
+	EndWindow 11491

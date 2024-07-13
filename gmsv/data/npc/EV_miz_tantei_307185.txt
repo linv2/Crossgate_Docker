@@ -1,0 +1,50 @@
+#茧樱弁巨旦玄“白仿件弁伉件(7)
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛ENDFLG 73 on﹛ ＞扑旦正□弗奶...＝﹛##############
+block endevent73 == 1 && strcmpchat == 206733 
+
+	EndWindow 206264,OK
+
+###########﹛NOWFLG 71 on﹛＞允中心氏支仁...＝﹛##############
+block nowevent71 == 1 && strcmpchat == 206738
+
+	Window 206261,OK
+	Window_OK
+	leavegroup
+	nowevent71 = 0
+	endevent71 = 1
+
+###########﹛＞布永泛件＝互民乓永玄卞殖引木月﹛##############
+block strcmpchat == 206735
+
+	EndWindow 206265,OK
+
+
+###########﹛NOWFLG 69 on﹛ ＞失伉田奶...＝﹛##############
+block nowevent69 == 1 && strcmpchat == 206740
+
+	Window 206262,NEXT
+	EndWindow 206263,OK
+
+###########﹛亲嗯及方丹卅坁﹋18897﹌丐曰﹛##############
+block Item 18897 >= 1
+
+	EndWindow 206259,OK
+
+###########﹛穴永民﹋18893﹌丐曰﹛##############
+block Item 18894 >= 1
+
+	EndWindow 206259,OK
+
+###########﹛＞布永泛件＝互民乓永玄卞殖引木月﹛##############
+block strcmpchat == 206735
+
+	EndWindow 206265,OK
+
+###########﹛窒手卅仄﹛##############
+block 
+
+	EndWindow 206258,OK
+

@@ -1,0 +1,17 @@
+#mayko_item_41221.txt
+#43000	434	685
+#1111746	不是定点无法挖掘。
+
+#地图	41218
+#神秘的盒子	41219
+#铲子	41221
+block item 41232 > 0
+	endwindow 15563
+block item 41231 == 0
+	endwindow 1053059
+block  Xpos == 434 && Ypos == 685 
+	GiveLeak1Item 41232,1
+	killitem 41234,1
+	endblock
+block
+	endwindow 1111746

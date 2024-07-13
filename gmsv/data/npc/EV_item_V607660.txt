@@ -1,0 +1,44 @@
+block Item 607660 >= 2
+
+				endWindow 3204311
+
+		#\n\n﹛澎饼反域骚内勾钒仃化仁分今中﹝
+
+
+block
+
+
+
+				globalFlag15 = 0
+				globalFlag16 = 0
+				globalFlag17 = 0
+				globalFlag18 = 0
+				globalFlag19 = 0
+				globalFlag20 = 0
+				globalFlag21 = 0
+				globalFlag22 = 0
+				globalFlag23 = 0
+				globalFlag24 = 0
+
+
+
+#⑺驯及衔尺
+
+				Window 3204312,ok
+
+		#\n\n﹛仇氏卞切歹℅\n﹛允匀仍仁﹜恌中请侳分匀凶方﹜民亦戊弗□平℅\n﹛丐凶仄手友℅﹜愈嗤﹜云羞阂综曰铵户凶氏分方℅\n﹛仇氏升﹜综曰杅毛项尹化幻仄中井卅〝\n﹛匹﹜云斪卞丐凶仄互仇卅中分盛尹凶﹜\n﹛市旦正□玉鬅⑵及伊扑疋毛丐仆切扎中引允℅\n﹛丹引仁请侳凶日﹜引凶仍蹼虽仄化友℅\n﹛元扎″
+
+				Window_ok skilllevel 215 >= 1
+
+				killitem 607660,1,(3007158)
+				Giverecipe 959
+
+
+
+				Window_ok
+
+				endWindow 3204313
+
+		#\n\n﹛譬咥旦平伙毛儅匀化中卅中及匹\n﹛伊扑疋毛熬仃潸木卅中﹝
+
+

@@ -1,0 +1,16 @@
+#
+#µ©ÊÐÄÌ·Â
+#
+
+#
+block
+	Window 21809,Next
+	Window 21810,NO
+	Window_NO
+	Window 21811,Next
+	Window 21812,Next
+	Window 21813,Next
+	Window 21814,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,1165,19,38

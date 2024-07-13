@@ -1,0 +1,19 @@
+#
+#蜈朹
+#
+
+
+
+block
+
+	globalFlag34 = 1
+
+		Window 3201220,next
+		#\n\n﹛が羁及啦阀反\n﹛仄匀井曰午熬仃潸匀凶﹝
+
+		Window 3201221,next
+		#\n\n﹛が羁卅日壬﹜手仄支﹜\n﹛脱日蹋日木凶乒用＿＿\n﹛脱日午交伙弘螃及\n﹛熔毛菌尹月井手襞木厄﹝
+
+		endWindow 3201222
+		#\n\n﹛垫仃﹝\n﹛脱互杇竻及绖毛手化﹝\n﹛垫仃﹝\n﹛裘互扪抰毛苇烂户方﹝
+

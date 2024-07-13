@@ -1,0 +1,74 @@
+#1111625	到法兰城西边医院(82,83)找护士长荷洛说话，她会请你找3个小护士欧班琦、乔斯琪与蓓儿特。
+#1111626	到法兰城西边(92,76)附近找护士欧班琦说话，拿到“笔记”。
+#1111627	只有在晚上才找的到欧班琦
+#1111628	将笔记拿到城西医院给荷洛，拿到“药?”。
+#1111629	将药?拿给护士欧班琦后，拿到“第一封介绍信”。
+#1111630	再到法兰城的南边(151,135)找护士乔斯琪说话，拿到“诊断书”。
+#1111631	只有在白天才找的到乔斯琪
+#1111632	带着诊断书，拿到城西医院给荷洛，拿到“药?”。
+#1111633	将药?拿给护士乔斯琪后，拿到“第二封介绍信”。
+#1111634	到法兰城东边(208,134)找护士蓓儿特说话，拿到“给山男的信”。
+#1111635	只有在黄昏才找的到蓓儿特。
+#1111636	将梦露草拿给护士蓓儿特后，拿到“第三封介绍信”。
+#1111637	回法兰城西医院跟护士长荷洛说话，拿到“护士推荐函”。
+#1111638	到法兰城里谢里雅堡2F左边房间(18,71)找护士凯妲克就职。  
+#1111564	再到山男的家(509,153)跟山男哈葛利特换取梦露草   
+#护士推荐信18139
+block item 18139 >0
+	endwindow 1111638
+block Item 18175 >= 1 && Item 18176 >= 1 && Item 18177 >= 1
+	endwindow 1111637
+block item 18165 >0 && nowtime == 2
+	endwindow 1111636
+block item 18165 >0 
+	window 1111636,next
+	endwindow 1111635
+block item 18174 >0 && level <=10
+	window 1111564,next
+	Window 1111569,yes,no
+	window_yes
+	leavegroup 
+	warp 0,100,509,153
+	window_no
+	endblock
+block item 18174 >0
+	endwindow 1111564
+	
+block item 18176 >0 && nowtime == 2  #
+	endwindow 1111634
+block item 18176 >0 
+	window 1111634,next
+	endwindow 1111635
+	
+block item 18171 >0 && nowtime == 1
+	endwindow 1111633
+block item 18171 >0 
+	window 1111633,next
+	endwindow 1111631
+	
+block item 18173 >0
+	endwindow 1111632
+block item 18175 >0 && nowtime == 1
+	endwindow 1111630
+	
+block item 18175 >0 
+	window 1111630,next
+	endwindow 1111631
+	
+block item 18170 >0 && nowtime == 3
+	endwindow 1111629
+	
+block item 18170 >0 
+	window 1111629,next
+	endwindow 1111627
+	
+block item 18172 >0
+	endwindow 1111628
+	
+block nowtime != 3
+	window 1111625,next
+	window 1111626,next
+	endwindow 1111627
+block 
+	window 1111625,next
+	endwindow 1111626

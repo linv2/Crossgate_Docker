@@ -1,0 +1,18 @@
+#	
+#1111422	\n\n　　　　您要见我的良人呀～\n　　　　也罢～让菟丝死心也好～	1
+#1111427	\n\n\n\n@c爱是恒久忍耐又有恩慈，可是菟丝不懂。	1
+#1111428	\n\n\n\n@c这样呀～～	1
+
+block item 41160 >0
+	 endwindow 1111427
+block item 41164 >0
+	 LeaveGroup  
+	 window 1111422,ok
+	 Window_ok item 41164 >0
+	 killitem 41164,1
+	 warp 0,32187,7,10
+	 endblock
+	 window_ok
+	 endblock
+block 
+	 endwindow 1111427

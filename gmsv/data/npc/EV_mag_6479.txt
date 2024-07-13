@@ -1,0 +1,12 @@
+#
+#皮伙丢奶伙﹋田夫旦必□玄﹌
+#
+##############  ##############
+block
+#\n\n\n\n@c今丐″钒仁手及方″\n@c漆仇公公及恘匹必□玄毛荸旵允月及分″
+	Window 15318,YES,NO
+	Window_YES
+	LeaveGroup
+	Warp 0,20004,28,22
+	Window_NO
+

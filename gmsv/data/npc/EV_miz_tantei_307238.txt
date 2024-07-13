@@ -1,0 +1,32 @@
+#茧樱弁巨旦玄“伐奶件碍
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛＞心月＝﹛##############
+block strcmpchat == 206720
+
+	EndWindow 206455,OK
+
+###########﹛＞井什＝﹛##############
+block strcmpchat == 206722
+
+	EndWindow 206456,OK
+
+
+###########﹛＞凶凶仁＝﹛##############
+block strcmpchat == 206723
+
+	EndWindow 206457,OK
+
+###########﹛＞化卞午月＝﹛##############
+block strcmpchat == 206724
+
+	EndWindow 206458,OK
+
+
+###########﹛窒手卅仄﹛##############
+block 
+
+	EndWindow 206454,OK
+
+

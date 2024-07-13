@@ -1,0 +1,123 @@
+#########　ＮＰＣ ：阿蒙的表弟 1051682
+##########　ＭＡＰ：30110	11	28
+##########　亚诺曼城旅馆
+##########　作用：收集指定道具,给予“饰品技能见习卷”
+
+ ##■有“饰品技能见习卷”
+block Item  47537 >= 1
+	 ##1054738	\n\n你去楼上找艾克大叔吧！他会带你去找我老爹的！	1
+	 EndWindow 1054738
+
+ ##■“想泉丸”
+ block Item 18757 >=1
+ 	 ##1054740	\n\n你已经收集到“想泉丸”啦！让我算算够不够交换“饰品技能见习卷”．．．	1
+	 Window 1054740,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 18757 >=3
+	 	 	 KillItem 18757,3
+	 	 	 GiveLeak1Item 47537,1
+	 	 Window_YES Item 18757 < 3
+	 	 	 ##1054749	\n\n东西数量还不够哟！请再加油！	1
+			 EndWindow 1054749
+## ■“地龙的麟片”
+block Item 	 18446 >=1
+	 ##1054742	\n\n你已经收集到“地龙的麟片”啦！让我算算够不够交换“饰品技能见习卷”．．．	1
+	 Window 1054742,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 18446 >=3
+	 	 	 KillItem 18446,3
+	 	 	 GiveLeak1Item 47537,1
+	 	 Window_YES Item 18446 <3
+	 	 	 ##1054749	\n\n东西数量还不够哟！请再加油！	1
+			 EndWindow 1054749
+## ■“勾玉的碎片”	 	 	 
+block Item 18843 >=1
+	 ##1054744	\n\n你已经收集到“勾玉的碎片”啦！让我算算够不够交换“饰品技能见习卷”．．．	1
+	 Window 1054744,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 18843 >=6
+	 	 	 KillItem 18843,6
+	 	 	 GiveLeak1Item 47537,1
+	 	 Window_YES Item 18843 < 6
+	 	 	 ##1054749	\n\n东西数量还不够哟！请再加油！	1
+			 EndWindow 1054749
+## ■“砂漠的红星”
+block Item 	  18464 >=1
+	 ##1054746	\n\n你已经收集到“砂漠的红星”啦！让我看看这是不是真的“砂漠的红星”．．．	1
+	 Window 1054746,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 18464 >=1
+	 	 	 KillItem 18464,1
+	 	 	 GiveLeak1Item 47537,1
+	 	 	 
+## ■“绿头盔”
+block Item 18195 >=1
+	 ##1054750	\n\n你收集到“绿头盔”啦！让我算算够不够交换“绿头盔交货券”．．．	1
+	 Window 1054750,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 18195 >=10
+	 	 	 KillItem 18195,10
+	 	 	 GiveLeak1Item 47536,1
+	 	 Window_YES Item 18195 <10
+	 	 	 ##1054749	\n\n东西数量还不够哟！请再加油！	1
+			 EndWindow 1054749
+## ■“绿头盔交货券”
+block Item 	 47536 >=1
+	 ##1054737	\n\n你已经收集到“绿头盔交货卷”啦！让我算算够不够交换“饰品技能见习卷”．．．	1
+	 Window 1054737,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 47536 >=20
+	 	 	 KillItem 47536,20
+	 	 	 GiveLeak1Item 47537,1
+	 	 Window_YES Item 47536 < 20
+	 	 	 ##1054749	\n\n东西数量还不够哟！请再加油！	1
+			 EndWindow 1054749
+
+##一般
+block
+
+	 
+	 ##1054733	\n\n我就是阿蒙的表弟，你找我有什么事吗？	1
+	 Window 1054733,NEXT
+	 	 ##1054734	\n\n我只是来陪我老爹几天后，就得回老家了，你可以帮我收集一些稀奇的东西吗？	1
+		 Window 1054734,YES,NO
+		 	 Window_NO
+		 	 	 ##1054751	\n\n你既然什么都不想收集，那钱你总有吧！拿２０万来，我就把饰品见习卷卖你！	1
+				 Window 1054751,NEXT
+				 	 ##1054752	\n\n确定要交易吗？	1
+					 Window 1054752,OK	 
+					 	 Window_OK Gold >=200000
+					 	 	 AddGold -200000
+					 	 	 GiveLeak1Item 47537,1
+					 	 Window_OK Gold < 200000
+					 	 	 ##12013	\n\n你的钱不够啦！	0
+						 	 EndWindow 12013
+				 	 
+		 	 Window_YES 
+				 ##1054739	\n\n我想要３个“想泉丸”，你能帮我收集吗？	1
+				 Window 1054739,YES,NO
+				 	 Window_NO
+				 	 	 ##1054741	\n\n我想要３个“地龙的麟片”，你能帮我收集吗？	1
+						 Window 1054741,YES,NO
+					 	 Window_NO
+				 	 	 ##1054743	\n\n我想要６个“勾片的碎片”，你能帮我收集吗？	1
+						 Window 1054743,YES,NO
+					 	 Window_NO
+				 	 	 ##1054745	\n\n我想要１个“砂漠的红星”，你能帮我收集吗？	1
+						 Window 1054745,YES,NO
+					 	 Window_NO
+				 	 	 ##1054735	\n\n我想要绿头盔，你能帮我收集吗？	1
+				 	 	 Window 1054735,YES,NO
+			 	 	 	 Window_NO
+						 ##10632	\n小气鬼。不要就拉倒！反正吃亏的是你。	8
+						 EndWindow 10632
+					 Window_YES
+						 ##21873	\n\n　加油喔！	1 
+						 EndWindow 21873
+					 	

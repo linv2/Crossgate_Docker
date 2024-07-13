@@ -1,0 +1,152 @@
+###################################
+# 皮伊奶弁旦平伙弁巨      by 漪呿 #
+# ←伉伉奴←                      #
+###################################
+
+#### ≦敛中扲檗≧午≦毡中扲檗≧毛徆杅尕赭儅
+block Item 622068 == 0 && Item 622069 == 0
+
+	GoToF case1
+Endblock
+
+
+
+#### ≦敛中扲檗≧引凶反≦毡中扲檗≧毛ㄢ蜊动晓赭儅
+block Item 622068 >= 3 || Item 622069 >= 3
+
+	GoToF case2
+Endblock
+
+
+
+#### ≦敛中扲檗≧午≦毡中扲檗≧毛ㄠ蜊内勾赭儅
+block Item 622068 == 1 && Item 622069 == 1
+	Window 3219653,OK
+
+		#\n\n﹛允心引六氏﹝\n﹛甩术伊分匀凶方丹匹允＿＿﹝\n﹛酸ゴ操毛枃中卞垫匀化票今中﹝\n﹛允心引六氏﹝
+
+		Window_OK Item 622068 == 0 || Item 622069 == 0
+
+			GoToF case1
+			Endblock
+
+		Window_OK Item 622068 > 1 || Item 622069 > 1
+
+			GoToF case2
+			Endblock
+
+		Window_OK
+			KillItemAll 622068
+			KillItemAll 622069
+			LeaveGroup
+			warp 0,59883,206,86
+Endblock
+
+
+
+#### ≦敛中扲檗≧引凶反≦毡中扲檗≧毛ㄠ蜊分仃赭儅
+block Item 622068 == 1 && Item 622069 == 0
+
+	GoToF case1
+Endblock
+
+
+block Item 622068 == 0 && Item 622069 == 1
+
+	GoToF case1
+Endblock
+
+
+
+#### ≦敛中扲檗≧毛ㄡ蜊﹜引凶反≦毡中扲檗≧毛ㄡ蜊赭儅
+block Item 622068 == 2 && Item 622069 == 0
+	Window 3219654,OK
+
+		#\n\n﹛云户匹午丹仍介中引允﹝\n﹛失正伉匹允友″\n﹛公木匹反旦平伙ヨ曰及\n﹛扑□田及赭尺仍副〇仄引允友﹝
+
+		Window_OK Item 622068 >= 3 || Item 622069 >= 1
+
+			GoToF case2
+			Endblock
+
+		Window_OK Item 622068 != 2
+			EndWindow 3219655
+
+		#\n\n﹛允心引六氏﹝\n﹛醒尹棉啜尹化仄引匀凶心凶中匹允﹝\n﹛手丹域蘸扲檗毛苇六化票今中﹝\n﹛允心引六氏﹝
+
+		Window_OK
+			KillItemAll 622068
+			KillItemAll 622069
+			LeaveGroup
+			warp 0,59883,275,107
+Endblock
+
+
+block Item 622068 == 0 && Item 622069 == 2
+	Window 3219656,OK
+
+		#\n\n﹛云户匹午丹仍介中引允﹝\n﹛失正伉匹允友″\n﹛公木匹反旦平伙ヨ曰及\n﹛扑□田及赭尺仍副〇仄引允友﹝
+
+		Window_OK Item 622068 >= 1 || Item 622069 >= 3
+
+			GoToF case2
+			Endblock
+
+		Window_OK Item 622069 != 2
+			EndWindow 3219657
+
+		#\n\n﹛允心引六氏﹝\n﹛醒尹棉啜尹化仄引匀凶心凶中匹允﹝\n﹛手丹域蘸扲檗毛苇六化票今中﹝\n﹛允心引六氏﹝
+
+		Window_OK
+			KillItemAll 622068
+			KillItemAll 622069
+			LeaveGroup
+			warp 0,59883,275,107
+Endblock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*case1*
+
+	Window 3219658,OK
+
+		#\n\n﹛允心引六氏﹝\n﹛扲檗毛ㄡ蜊儅匀化五化赡井卅中午\n﹛升丹卞手＿＿﹝\n﹛愈赓井日支曰跶仄化五化票今中﹝\n﹛允心引六氏﹝
+
+		Window_OK
+			KillItemAll 622068
+			KillItemAll 622069
+			LeaveGroup
+			warp 0,59883,269,243
+	Endblock
+
+
+*case2*
+
+	Window 3219659,OK
+
+		#\n\n﹛允心引六氏﹝\n﹛公氏卅卞扲檗毛儅匀化五化赡中化手\n﹛升丹卞手＿＿﹝\n﹛愈赓井日支曰跶仄化五化票今中﹝\n﹛允心引六氏﹝
+
+		Window_OK
+			KillItemAll 622068
+			KillItemAll 622069
+			LeaveGroup
+			warp 0,59883,269,243
+	Endblock
+
+
+
+

@@ -1,0 +1,16 @@
+#??
+
+#EndFLG©x138ª•ONÿ¶»’
+block EndEvent 138 == 1
+	EndWindow 22712,OK
+
+#NowFLG?138?ON??
+block NowEvent 138 == 1
+	Window 22701,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,47025,77,122
+
+#
+block
+	EndWindow 22702,OK

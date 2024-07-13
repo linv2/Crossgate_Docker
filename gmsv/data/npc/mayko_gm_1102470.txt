@@ -1,0 +1,30 @@
+#mayko_gm_1102472.txt
+#mayko_gm_1102473.txt
+#mayko_gm_1102474.txt
+#1110116	\n\n\n\n@c玫瑰花的味道好香～喵！
+#1110117	\n\n\n\n@c薰衣草的味道好香～喵！
+#1110118	\n\n\n\n@c茉莉花的味道好香～喵！
+#1110119	\n\n\n\n@c花茶真是好喝呀～喵～
+#1110129	\n\n\n　　　　好香好香的味道～\n　　　　是栀子花茶～喵～	1
+#1110130	\n\n\n\n@c这是送我的吗～喵～	1
+#1110131	\n\n\n　　　　谢谢你呀～\n　　　　这是招财猫铃～你收下吧～喵～	1
+block Item 41042 >0
+	 Window 1110129,NEXT
+	 EndWindow 1110123
+
+block Item 40898>0
+	 Window 1110129,NEXT
+	 Window 1110130,YES,NO
+	 Window_NO
+	 EndWindow  1110119
+	 Window_YES Item 40898==0
+	 EndWindow  1110119
+	 Window_YES
+	 KillItem 40898,1
+	 GiveLeak1Item 41042,1
+	 EndWindow 1110131	 
+block
+	 Window 1110116,NEXT
+	 Window 1110117,NEXT
+	 Window 1110118,NEXT
+	 EndWindow  1110119

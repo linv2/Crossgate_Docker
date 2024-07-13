@@ -1,0 +1,43 @@
+#1110116	\n\n\n\n@c玫瑰花的味道好香～喵！	1
+#1110117	\n\n\n\n@c薰衣草的味道好香～喵！	1
+#1110118	\n\n\n\n@c茉莉花的味道好香～喵！	1
+#1110119	\n\n\n\n@c花茶真是好喝呀～喵～	1
+#1110120	\n\n\n\n@c猫大人最近迷上了花草茶～喵～	1
+#1110121	\n\n\n\n@c小的我想献上花草茶当贡品～喵～	1
+#1110122	\n\n\n\n@c你可以帮我吗～喵～	1
+#1110123	\n\n\n\n@c谢谢你呀～喵！	1
+#1110124	\n\n\n　　　　我听说花田的瑶瑶有～\n　　　　可以去找她～喵～	1
+#1110125	\n\n\n\n@c麻烦你了～喵～	1
+#1110126	\n\n\n\n@c拿到了呀～喵～	1
+#1110127	\n\n\n\n@c麻烦你帮我送给大王～喵～	1
+#1110128	\n\n\n\n@c免得说我贿赂他～喵～	1
+
+#招财猫委托卡40897
+#花草茶卡40898
+#招财猫铃41042
+
+block Item 41042 >0
+	 Window 1110129,NEXT
+	 EndWindow 1110123
+
+block Item 40898>0
+	 Window 1110126,NEXT
+	 Window 1110127,NEXT
+	 EndWindow 1110128
+block Item 40897>0	 	 
+	 EndWindow 1110125	 
+block
+	 Window 1110116,NEXT
+	 Window 1110117,NEXT
+	 Window 1110118,NEXT
+	 Window 1110120,NEXT
+	 Window 1110121,NEXT
+	 Window 1110122,YES,NO
+	 Window_NO
+	 Endbolck
+	 Window_YES  ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 Window_YES
+	 GiveLeak1Item 40897,1
+	 EndWindow 1110125

@@ -1,0 +1,72 @@
+#mayko_gm_1102738.txt
+#1111696	\n\n\n　　　你现在有就职书屋进入证，\n　　　书屋就职秘籍，\n　　　可直接传送你到就职任务的目的地，你想去买书吗？	1
+#1111697 \n\n　　　你还没领到新手宠物，\n　　　你要不要先向士兵们领宠物呢？	1
+#1111698	\n\n　　　你可以去找就职引导书商，\n　　　购买你想就职职业的引导书，\n　　　好一步一步进行就职任务，\n　　　需要我帮你传送过去吗？	1
+#1111699	\n\n　　　魔力的世界有许多职业，\n　　　针对法兰城四周，适合新手就职的任务，\n　　　我们有就职引导书与就职秘籍可以帮助新玩家	1
+#1111700	\n\n　　　那么，需要送你到职业介绍所，\n　　　更了解一些职业吗？
+#1111701	\n\n　　　需要远离法兰城、伊尔村、\n　　　圣拉鲁卡村的就职任务，\n　　　不建议刚进入魔力的朋友就职。	1
+
+#戒指？	死者的戒指										18218	25203	0	18		0	1	2	0	1	1	1	1		100	100			0	0	0	0	0	0																																																						1	1	0			0		188218	100	0	0			0
+#赏赐状	赏赐状										18219	27881	0	26		0	0	0	0	1	1	1	1	0					0	0	0	0	0	0																																																						0	1	0			0	140000	188219	100	0	0			0
+
+
+block EndEvent 2 == 1 
+	window 1111699,next
+	Window 1111701,ok
+	Window_ok item 41209 >0
+	Window  1111696,yes,no ##书屋
+	
+		Window_yes		
+		killitem 41209,1
+	 	warp 0,32000,11,12
+		endblock
+		Window_no
+	Window_ok
+		Window 1111698,yes,no
+		window_yes
+		warp 0,1500,43,89
+		endblock
+		Window_no
+			window 1111700,yes,no
+			window_yes
+			warp 0,1091,11,8
+			endblock
+			Window_no
+	endwindow  3208459	
+	
+
+block job != 1
+	endwindow 66534
+block item 18218 >0
+	endwindow 11168	
+block item 18219 >0
+	endwindow 11193	
+block 
+#1111697 \n\n　　　你还没领到新手宠物，\n　　　你要不要先向士兵们领宠物呢？	1	
+	window 1111697,yes,no
+	Window_yes
+	warp 0,1530,18,6
+		endblock
+	endblock
+	Window_no
+	window 1111699,next
+	Window 1111701,ok
+	Window_ok item 41209 >0
+	Window  1111696,yes,no ##书屋
+		Window_yes		
+		killitem 41209,1
+	 	warp 0,32000,11,12
+		endblock
+		Window_no
+	Window_ok
+		Window 1111698,yes,no
+		window_yes
+		warp 0,1500,43,89
+		endblock
+		Window_no
+			window 1111700,yes,no
+			window_yes
+			warp 0,1091,11,8
+			endblock
+			Window_no
+	endwindow  3208459	

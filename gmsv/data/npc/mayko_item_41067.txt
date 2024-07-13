@@ -1,0 +1,19 @@
+
+#1110560	\n\n\n\n@c你要打开夏日活动包吗！！	1
+
+block Item 41067>0
+	 Window 1110560,YES,NO
+	 
+	 Window_YES ItemSpace < 2
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1	 
+	 EndWindow 1100001
+	 
+	 Window_YES Item 41067>0 
+	  KillItem 41067,1
+	  GiveLeak1Item 47718,3
+	  GiveLeak1Item 47717,2
+	 
+	  endblock
+	  Window_YES
+	  Window_NO
+	  Endblock

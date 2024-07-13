@@ -1,0 +1,38 @@
+#ÍÛ–ÔñÅ?”√°ıÿ©
+
+block Level <= 74
+	EndWindow 21887,OK
+
+block Item 18973 >= 1 && Item 18974 >= 1 && Item 18975 >= 1 && Item 18976 >= 1
+	Window 21888,Next
+	Window 21889,Next
+	Window 21899,Next
+	Window 21890,Yes,No
+		Window_NO
+		Window_Yes CheckItemCategory 0 == 1
+			EndWindow 21891,OK
+		Window_Yes CheckItemCategory 1 == 1
+			EndWindow 21891,OK
+		Window_Yes CheckItemCategory 2 == 1
+			EndWindow 21891,OK
+		Window_Yes CheckItemCategory 3 == 1
+			EndWindow 21891,OK
+		Window_Yes CheckItemCategory 4 == 1
+			EndWindow 21891,OK
+		Window_Yes CheckItemCategory 5 == 1
+			EndWindow 21891,OK
+		Window_Yes CheckItemCategory 6 == 1
+			EndWindow 21891,OK
+		Window_Yes
+			Window 21892,OK
+				Window_OK
+				KIllItemall 18973
+				KIllItemall 18974
+				KIllItemall 18975
+				KIllItemall 18976
+				GiveItem (16288%1$1,16289%1$1,16290%1$1,16291%1$1)
+				GiveItem (16293%1$1,16294%1$1,16295%1$1,16296%1$1)
+				LeaveGroup
+				Warp 0,11032,7,9
+block
+	EndWindow 21893,OK

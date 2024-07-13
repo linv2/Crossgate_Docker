@@ -1,0 +1,124 @@
+##火鼠银兑换　30110	33	16
+
+#火焰鼠银币40843
+# 火鼠骰子 41033
+# 1055048 \n\n\n　　你好！这是火鼠骰子兑换处，\n　　如果你有火鼠骰子，可以跟我换火焰鼠银币。
+# 1055049 \n\n\n　　　　你这是１点的火鼠骰子．\n　　　　可换１枚火焰鼠银币。\n　　　　你要兑换吗？
+#1055002 \n\n\n\n@c你要兑换吗？
+#1055003 \n\n\n\n@c想换再来找我。
+#1055004 \n\n\n\n@c你的骰子不见了。
+# 1055050 \n\n\n\n@c兑换了１枚火焰鼠银币。
+
+block Item 41033>0
+	 Window 1055048,NEXT
+	 Window 1055049,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 41033>0
+	 KillItem 41033
+	 GiveLeak1Item 40843,1
+	 EndWindow 1055050
+	 Window_YES
+	 EndWindow 1055004
+
+#火焰鼠银币40843
+# 火鼠骰子 41034
+# 1055051 \n\n\n　　　　你这是２点的火鼠骰子．\n　　　　可换２枚火焰鼠银币。\n　　　　你要兑换吗？
+#1055002 \n\n\n\n@c你要兑换吗？
+#1055003 \n\n\n\n@c想换再来找我。
+#1055004 \n\n\n\n@c你的骰子不见了。
+# 1055052 \n\n\n\n@c兑换了２枚火焰鼠银币。
+block Item 41034>0
+	 Window 1055048,NEXT
+	 Window 1055051,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 41034>0
+	 KillItem 41034
+	 GiveLeak1Item 40843,2
+	 EndWindow 1055052
+	 Window_YES
+	 EndWindow 1055004
+
+#火焰鼠银币40843
+# 火鼠骰子 41035
+# 1055053 \n\n\n　　　　你这是３点的火鼠骰子．\n　　　　可换３枚火焰鼠银币。\n　　　　你要兑换吗？
+#1055002 \n\n\n\n@c你要兑换吗？
+#1055003 \n\n\n\n@c想换再来找我。
+#1055004 \n\n\n\n@c你的骰子不见了。
+# 1055054 \n\n\n\n@c兑换了３枚火焰鼠银币。
+block Item 41035>0
+	 Window 1055048,NEXT
+	 Window 1055053,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 41035>0
+	 KillItem 41035
+	 GiveLeak1Item 40843,3
+	 EndWindow 1055054
+	 Window_YES
+	 EndWindow 1055004
+#火焰鼠银币40843
+# 火鼠骰子 41036
+# 1055055 \n\n\n　　　　你这是４点的火鼠骰子．\n　　　　可换４枚火焰鼠银币。\n　　　　你要兑换吗？
+#1055002 \n\n\n\n@c你要兑换吗？
+#1055003 \n\n\n\n@c想换再来找我。
+#1055004 \n\n\n\n@c你的骰子不见了。
+# 1055056 \n\n\n\n@c兑换了４枚火焰鼠银币。
+block Item 41036>0
+	 Window 1055048,NEXT
+	 Window 1055055,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 41036>0
+	 KillItem 41036
+	 GiveLeak1Item 40843,4
+	 EndWindow 1055056
+	 Window_YES
+	 EndWindow 1055004
+#火焰鼠银币40843
+# 火鼠骰子 41037
+# 1055057 \n\n\n　　　　你这是５点的火鼠骰子．\n　　　　可换５枚火焰鼠银币。\n　　　　你要兑换吗？
+#1055002 \n\n\n\n@c你要兑换吗？
+#1055003 \n\n\n\n@c想换再来找我。
+#1055004 \n\n\n\n@c你的骰子不见了。
+# 1055058 \n\n\n\n@c兑换了５枚火焰鼠银币。
+block Item 41037>0
+	 Window 1055048,NEXT
+	 Window 1055057,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 41037>0
+	 KillItem 41037
+	 GiveLeak1Item 40843,5
+	 EndWindow 1055058
+	 Window_YES
+	 EndWindow 1055004
+
+#火焰鼠银币40843
+# 火鼠骰子 41038
+# 1055059 \n\n\n　　　　你这是６点的火鼠骰子．\n　　　　可换６枚火焰鼠银币。\n　　　　你要兑换吗？
+#1055002 \n\n\n\n@c你要兑换吗？
+#1055003 \n\n\n\n@c想换再来找我。
+#1055004 \n\n\n\n@c你的骰子不见了。
+# 1055060 \n\n\n\n@c兑换了６枚火焰鼠银币。
+block Item 41038>0
+	 Window 1055048,NEXT
+	 Window 1055059,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 41038>0
+	 KillItem 41038
+	 GiveLeak1Item 40843,6
+	 EndWindow 1055060
+	 Window_YES
+	 EndWindow 1055004
+
+
+##没有骰子
+
+#1055048 \n\n\n　　你好！这是火鼠骰子兑换处，\n　　如果你有火鼠骰子，可以跟我换火焰鼠银币。 
+
+block
+  EndWindow 1055048
+ 

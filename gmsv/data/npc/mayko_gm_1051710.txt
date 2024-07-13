@@ -1,0 +1,29 @@
+#蛮蛮	mayko_gm_1051710.txt
+
+#1054947	\n\n\n\n@c呜～人家想上学啦～	1
+#1054948	\n\n\n　　　书包、笔记本、文具组还有可爱水手服，\n　　　我通通都没有，怎么去上学啦～～	1
+#1054954	\n\n\n\n@c这是～要送我的吗？？	1
+#1054955	\n\n\n\n@c你好坏！捉弄人家．．＞＜．．	
+#1054956	\n\n\n\n@c好开心喔！！我可以上学啰！！	1
+#1054957	\n\n\n\n@c这是我的点心盒，送给你吃点心！	1
+
+block Item 47661>0 && Item 47662>0 && Item 47663>0 && Item 40312 >0
+	 Window 1054947,NEXT
+	 Window 1054954,YES,NO
+	 Window_NO
+	 EndWindow 1054955
+	 Window YES Item 47661>0 && Item 47662>0 && Item 47663>0 && Item 40312 >0
+	 KillItem 47661,1
+	 KillItem 47662,1
+	 KillItem 47663,1
+	 KillItem 40312,1
+	 GiveLeak1Item 47655,1
+	 Window 1054956,NEXT
+	 EndWindow 1054957
+	 
+	 Window_YES
+	 EndWindow 11054955	 
+
+block 
+	 Window 1054947,NEXT
+	 EndWindow 1054948

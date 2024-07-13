@@ -1,0 +1,9 @@
+#ûù? ???¡2
+
+block
+	Window 21920,OK
+	Window_OK
+	EndEvent 105 = 1
+	CheckTitle
+	LeaveGroup
+	Warp 0,100,583,172

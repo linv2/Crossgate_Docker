@@ -1,0 +1,22 @@
+#mayko_item_47720.txt  春之旅行箱
+#1055801	\n\n\n@c你确定要打开春之旅行箱吗？
+block Item 47720>0
+	 Window 1055801,YES,NO
+	 
+	 Window_YES ItemSpace < 2
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1	 
+	 EndWindow 1100001
+	 
+	 Window_YES Item 47720>0 
+	  KillItem 47720,1
+	  GiveLeak1Item (47718%1$10,47717%9$25)
+	  #47717#47718
+	  GiveLeak1Item 47719,1
+	  #47719
+	  endblock
+	  Window_YES
+	  Window_NO
+	  Endblock
+	  
+	  
+

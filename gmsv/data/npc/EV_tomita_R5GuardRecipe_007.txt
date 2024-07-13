@@ -1,0 +1,51 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛戊它伙穴件及摒
+
+###﹛夫□皮缜谛匹综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 310 && SkillLevel_211 >= 5
+	Window 3205268,OK
+
+		#\n\n﹛云云﹜仇木反仇木反﹜反月壬月弃仁井日\n﹛方丹仇公云中匹仁分今中引仄凶卅﹝\n﹛丐卅凶卞卅日﹜减氏匹巨必伉失及综岳芊毛\n﹛云项尹仄引允方﹝\n﹛窖匀凶日﹜今匀公仁综匀化仁分今中友尹﹝
+
+		Window_OK
+			GiveRecipe 684
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛夫□皮缜谛匹综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 310
+	Window 3205269,OK
+
+		#\n\n﹛蕙仄中夫□皮卞勾中化云项尹仄凶中竣儅切反\n﹛丐月及匹允互﹜丐卅凶及恘反引分公及啖卞\n﹛琼仄化中卅中及匹允方﹝\n﹛中支丐﹜掸卞酸ゴ分﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛夫□皮缜谛匹卅中
+block
+	Window 3205270,YES,NO
+
+		#\n\n﹛云支﹜云窖曰卞卅日木月及匹允井〝
+
+		Window_YES
+			Window 3205271,OK
+
+		#\n\n﹛匹反﹜籣酦引匹云霜曰仄引仄斤丹﹝\n﹛仍五仆氏方丹﹜今方丹卅日﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3205272
+
+		#\n\n﹛公丹匹允井﹝匹反﹜仍斗匀仁曰﹝
+
+
+

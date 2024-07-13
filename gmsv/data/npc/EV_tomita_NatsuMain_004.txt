@@ -1,0 +1,34 @@
+#﹛笙渝蜃烂母件斥亦件﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛彰庰毕弁仿永弁及摒
+
+###﹛由□泛奴毛赚氏匹中月桦宁
+block Group > 1
+	EndWindow 3207159
+
+		#\n\n﹛仇木方曰が日及茧菲艘毛惫尹化邧?毛葛歹允﹝\n﹛ㄠ谛内勾赐卞狪井仃月互方中﹝
+
+
+
+###﹛仍邧?牖芨
+block
+	Window 3207160,NEXT
+
+		#\n\n﹛谛及阂方﹜方仁冗仇仇引匹凶升曰邋中凶﹝\n﹛が及茧菲艘毛惫尹化邧?毛葛歹公丹﹝\n﹛漆支螃★及棉匹烂?及芛填匹丐月旦戊永皿午﹜\n﹛脱互燮谧互褥卞引午匀化中凶拫分﹝\n﹛拫反が卞公木卅曰及屾毛手凶日允匹丐欠丹﹝
+	Window 3207161,OK
+
+		#\n\n﹛白白＿芴毛逦公丹卅升午哔尹厄仇午分﹝\n﹛引今卞﹜彰濯曰坛午卅月分欠丹井日卅﹝\n﹛＿＿升丹仄凶〝﹛仇仇反忆丹午仇欠分冗﹝\n﹛引丐中中﹝匹反﹜垫仁互方中″
+
+		Window_OK ItemSpace < 2
+			EndWindow 3207162
+
+		#\n\n﹛漆及が卞邧?毛葛歹允及反拑咥分﹝\n﹛绂坁毛帮咥仄化引凶仁月互方中﹝
+
+		Window_OK
+			GiveItem 607941,1
+			GiveItem 631052,1
+			LeaveGroup
+			Warp 0,59500,213,204
+
+
+

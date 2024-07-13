@@ -1,0 +1,216 @@
+#伉伊□﹛甩伙穴﹛熬仃尥仃及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+block Item 14630 >=1 && ItemCreateTime 14630 >= 31
+
+	Window 3201426,next
+		#\n\n﹛丐曰扎曰扎曰扎\n﹛累互迍仃切扎匀化月友℅
+
+	Window 3201427,ok
+		#\n\n﹛伄及云累反ㄢㄟ坌匹迍仃切扎丹井日友﹝\n﹛籣酦匹﹜台心凶中卅田瓦□卞疯挕萃仄化枃尹壬\n﹛引凶ㄢㄟ坌反厘暹屺匹允及方氏﹝
+	
+
+	Window_ok
+
+		KillItemall 14630
+		KillItemall 14631
+		KillItemall 607693
+		KillItemall 607694
+		KillItemall 607695
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && Item 607693 >=1 && Item 607694 >=1 && Item 607695 >=1 && ItemCreateTime 14630 <= 30
+
+	Window 3201428,next
+		#\n\n﹛赶谛杴及Ⅱ楷田瓦□手\n﹛苇勾井匀凶心凶中友〝\n﹛互氏壬木﹜詨域谛分″
+
+	Window 3201429,yes,no
+		#\n\n﹛元扎﹜疯挕萃允月井日\n﹛伄及累﹜切斤中躯仄化心﹝
+
+	Window_yes Item 14630 == 0
+
+		EndWindow 3201430
+		#\n\n﹛丐木〝云累侹午仄凶〝
+
+	Window_yes
+
+		KillItemall 14630
+		GiveItem 14630,1
+
+		EndWindow 3201431
+		#\n\n﹛优诮″ヶ嗡及萍″\n﹛仇木匹﹜引凶\n﹛ㄢㄟ坌反迍仃卅中匹允及方氏﹝
+
+
+	Window_no
+
+
+		EndWindow 3201432
+		#\n\n﹛中中及〝\n﹛云累迍仃切扎丹井手匹允方〝
+
+
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && Item 607693 >=1  && Item 607694 >=1 && ItemCreateTime 14630 <= 30
+
+	Window 3201433,next
+		#\n\n﹛き谛杴及Ⅱ楷田瓦□手\n﹛苇勾井匀凶心凶中友〝\n﹛赶谛杴及田瓦□井日愈詨及桦赭卞反﹜\n﹛瞿曰坁毛乒件旦正□丢□伙匹\n﹛霜匀凶杅互镀中方″
+
+	Window 3201434,yes,no
+		#\n\n﹛元扎﹜疯挕萃允月井日\n﹛伄及累﹜切斤中躯仄化心﹝
+
+	Window_yes Item 14630 == 0
+
+		EndWindow 3201435
+		#\n\n﹛丐木〝云累侹午仄凶〝
+
+	Window_yes
+
+		KillItemall 14630
+		GiveItem 14630,1
+
+		EndWindow 3201436
+		#\n\n﹛优诮″ヶ嗡及腻″\n﹛仇木匹﹜引凶\n﹛ㄢㄟ坌反迍仃卅中匹允及方氏﹝
+
+
+	Window_no
+
+
+		EndWindow 3201437
+		#\n\n﹛中中及〝\n﹛云累迍仃切扎丹井手匹允方〝
+
+
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && Item 607693 >=1 && ItemCreateTime 14630 <= 30
+
+	Window 3201438,next
+		#\n\n﹛域谛杴及Ⅱ楷田瓦□卞反\n﹛莘尹凶心凶中友〝\n﹛Ⅱ楷卞反芺户簿井毛\n﹛邀仄卞支匀午中凶杅互啼匹允及方氏﹝
+
+	Window 3201439,yes,no
+		#\n\n﹛元扎﹜疯挕萃允月井日\n﹛伄及累﹜切斤中躯仄化心﹝
+
+	Window_yes Item 14630 == 0
+
+		EndWindow 3201440
+		#\n\n﹛丐木〝云累侹午仄凶〝
+
+	Window_yes
+
+		KillItemall 14630
+		GiveItem 14630,1
+
+		EndWindow 3201441
+		#\n\n﹛优诮″ヶ嗡及珃″\n﹛仇木匹﹜引凶\n﹛ㄢㄟ坌反迍仃卅中匹允及方氏﹝
+
+
+	Window_no
+
+
+		EndWindow 3201442
+		#\n\n﹛中中及〝\n﹛云累迍仃切扎丹井手匹允方〝
+
+
+
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && ItemCreateTime 14630 <= 30
+
+	Window 3201443,yes,no
+		#\n\n﹛拑仪卞云累反枃尹凶心凶中友\n﹛切斤中躯仄化心﹝
+
+	Window_yes Item 14630 == 0
+
+		EndWindow 3201444
+		#\n\n﹛丐木〝云累侹午仄凶〝
+
+	Window_yes
+
+		KillItemall 14630
+		GiveItem 14630,1
+
+		EndWindow 3201445
+		#\n\n﹛优诮″ヶ嗡及隙″\n﹛仇木匹﹜引凶\n﹛ㄢㄟ坌反迍仃卅中匹允及方氏﹝
+
+
+	Window_no
+
+
+		EndWindow 3201446
+		#\n\n﹛中中及〝\n﹛云累迍仃切扎丹井手匹允方〝
+
+
+
+
+block Item 14631 >= 1
+
+	LocalCount1 = Random 2,0
+
+	If LocalCount1 == 1
+		EndWindow 3201447
+		#\n\n﹛手丹旦正□玄仄化引允匹允及方℅℅″″
+		EndBlock
+
+	else
+		EndWindow 3201448
+		#\n\n﹛甲件玄匹允井丑〝\n﹛丹℅氏﹜云累反﹜支匀天曰﹜\n﹛云累及毁杹笮卞妏仁及互恌中匹允方℅﹝
+		EndBlock
+
+	endif
+
+
+###########﹛辅笛据拑仄﹛##############
+
+
+block 
+
+
+
+	Window 3201449,next
+		#\n\n﹛漆ざ反﹜域コ卞域蘸\n﹛缰及厘扎卞剩引木凶昮谛琼互请骨尹月\n﹛夫穴件民永弁卅ざ﹝
+
+	Window 3201450,next
+		#\n\n﹛公及恌五ざ毛筏ゴ仄化\n﹛拨芞夫穴件民永弁左伉巨件泛□伉件弘毛\n﹛掸雒中凶仄引允及匹允﹝
+
+	Window 3201451,yes,no
+		#\n\n﹛辅笛反愤苀﹜伙□伙反棵签﹜\n﹛操圴反公仇公仇﹝\n﹛升丹匹允〝辅笛仄化心引六氏井〝
+
+
+	Window_yes Item 14631 >= 1
+
+		endWindow 3201452\n﹛辅笛据﹝
+		#\n\n﹛丐曰扎﹜手丹枃匀切扎化月友〝
+
+	Window_yes ItemSpace == 0
+
+		endWindow 3201453
+		#\n\n﹛丐℅﹜儅切坁互域ベ匹\n﹛辅笛据手欐六卅中卅丑﹝\n﹛卅月屯仁旦矢□旦毛坞仃化云中化友﹝
+
+
+	Window_yes
+
+
+		Window 3201454,next
+		#\n\n﹛反中反中﹜\n﹛辅笛仄引允匹允及友〝
+
+		Window 3201455,next
+		#\n\n﹛仇及左伉巨件泛□伉件弘反﹜\n﹛缟曰伀迋尺及皿伊未件玄毛赐?卞螂户化\n﹛坞及?杅尺霜曰?仃引仄斤丹﹜\n﹛匀化普元及匹允及方﹝
+
+		Window 3201456,next
+		#\n\n﹛丹℅匀氏午﹜\n﹛丐午﹜呁醒匹澎坌仃仄凶杅互\n﹛啼井卅匀化质手丐月匹允井日\n﹛卅月屯仁﹜竻琼毛芘匀化心化友﹝
+
+		Window 3201457,ok
+		#\n\n﹛元扎﹜仇及辅笛据毛儅匀化\n﹛燮内反缟曰伀迋尺及皿伊未件玄及\n﹛云累毛枃匀化五化友﹝
+
+		Window_ok
+
+			GiveItem 14631,1
+
+	
+	Window_no
+
+
+		endWindow 3201458
+		#\n\n﹛丐日丐日﹜\n﹛介□氏友氏﹝\n﹛元扎﹜引凶公及丹切友﹝
+

@@ -1,0 +1,123 @@
+#乒件旦正□甩件泛奴件弘
+#
+#﹛﹛﹛钒铵熬尥﹛﹛﹛NPCID﹛810005
+#
+
+
+###﹛狪仄喘仃凶谛及GlobalFlag84℅88及中内木井互??
+BLock GlobalFlag84 == 1 || GlobalFlag85 == 1 || GlobalFlag86 == 1 || GlobalFlag87 == 1 || GlobalFlag88 == 1
+#﹛甩件正□据﹋623000﹌毛赭儅
+	If HItem 623000 >= 1
+		Window 3207335,Yes,No
+
+		#\n\n﹛氏〝\n﹛引分﹜蟆荚及操圴毛枃匀化中卅中心凶中分互﹜\n﹛愈赓井日支曰跶允勾手曰井〝
+
+			Window_Yes
+				Window 3207336,OK
+
+		#\n\n﹛歹井匀凶﹝\n\﹛匹反﹜赭儅仄化中月楮洘失奶泛丞反\n﹛蝈化忒仄化手日丹冗﹝
+
+					Window_OK
+						KillItemAll 623000
+						KillItemAll 623001
+						KillItemAll 623002
+						KillItemAll 623003
+						KillItemAll 623004
+						KillItemAll 623005
+						KillItemAll 623006
+						KillItemAll 623007
+						KillItemAll 623008
+						KillItemAll 623009
+						KillItemAll 623010
+						KillItemAll 623011
+						KillItemAll 623012
+						KillItemAll 623013
+						KillItemAll 623014
+						KillItemAll 623015
+						KillItemAll 623016
+						GlobalFlag84 = 0
+						GlobalFlag85 = 0
+						GlobalFlag86 = 0
+						GlobalFlag87 = 0
+						GlobalFlag88 = 0
+
+			Window_No
+				EndWindow 3207337
+
+		#\n\n﹛匹反﹜镀仁操圴毛枃中卞垫仁仪分﹝
+
+	else
+		Window 3207338,OK
+
+		#\n\n﹛氏〝\n﹛引分﹜蟆荚及操圴毛枃匀化中卅中心凶中分互﹜\n﹛甩件正□据毛儅匀化中卅中卅﹝\n﹛愈赓井日支曰跶允仄井卅中冗﹝
+
+			Window_OK
+				KillItemAll 623000
+				KillItemAll 623001
+				KillItemAll 623002
+				KillItemAll 623003
+				KillItemAll 623004
+				KillItemAll 623005
+				KillItemAll 623006
+				KillItemAll 623007
+				KillItemAll 623008
+				KillItemAll 623009
+				KillItemAll 623010
+				KillItemAll 623011
+				KillItemAll 623012
+				KillItemAll 623013
+				KillItemAll 623014
+				KillItemAll 623015
+				KillItemAll 623016
+				GlobalFlag84 = 0
+				GlobalFlag85 = 0
+				GlobalFlag86 = 0
+				GlobalFlag87 = 0
+				GlobalFlag88 = 0
+
+
+###﹛狪仄喘仃凶谛互甩件正□据毛赭儅
+Block HItem 623000 >= 1
+#﹛由□泛奴及簿井互中内木井及正□必永玄唬帢圴毛赭儅仄化中月井?蝇
+	If PHItem 623001,0 >= 1 || PHItem 623002,0 >= 1 || PHItem 623003,0 >= 1 || PHItem 623004,0 >= 1 || PHItem 623005,0 >= 1 || PHItem 623005,0 >= 1 || PHItem 623006,0 >= 1 || PHItem 623007,0 >= 1 || PHItem 623008,0 >= 1 || PHItem 623009,0 >= 1 || PHItem 623010,0 >= 1 || PHItem 623011,0 >= 1 || PHItem 623012,0 >= 1 || PHItem 623013,0 >= 1 || PHItem 623014,0 >= 1 || PHItem 623015,0 >= 1 || PHItem 623016,0 >= 1
+		EndWindow 3207339
+
+		#\n\n﹛云﹜互氏壬匀化螂户化中月迋分卅﹝\n﹛操圴毛枃中凶中及卅日蔽弇熬尥尺垫匀化仁木﹝
+	else
+		EndWindow 3207340
+
+		#\n\n﹛引分﹜正□必永玄乒件旦正□毛\n﹛逦仄化中卅中迋分卅﹝\n﹛正□必永玄乒件旦正□卞勾中化反﹜\n﹛树扷羼间樊支﹜职及辅笛樊井日妏仃月分欠丹﹝\n﹛互氏壬木方﹝
+	endif
+
+
+###﹛晓筏动陆
+Block
+	Window 3207341,Yes,No
+
+		#\n\n﹛方仁侳化仁木凶﹝\n﹛台反﹜乒件旦正□甩件泛奴件弘厘莘及\n﹛辅笛熬尥毛垫卅匀化中月﹝\n﹛岳歜卞杀元化﹜操圴互请月冗﹝\n﹛楝手辅笛仄化心月井中〝
+
+		Window_Yes 
+			Window 3207342,OK
+
+		#\n\n﹛匹反﹜甩件正□据毛欐仄化云仇丹﹝\n﹛仇木反﹜甩件泛奴件弘辅笛樊及据匹丐曰﹜\n﹛愈詨卞操圴午跟晶允月啃卞手优邰分﹝\n﹛由□泛奴匹辅笛允月卅日﹜蝈够儅匀化垫仃方﹝
+
+				Window_OK HItem 623000 >= 1
+					EndWindow 3207343
+
+		#\n\n﹛云匀午﹜湃卞儅匀化中凶及井﹝\n﹛元扎丐﹜欐允优邰反卅中卅﹝
+
+				Window_OK ItemSpace < 1
+					EndWindow 3207344
+
+		#\n\n﹛云中云中﹜绂坁互中匀天中元扎卅中井﹝\n﹛甩件正□据互欐六卅中冗﹝
+
+				Window_OK
+					GiveLeak1Item 623000,1
+					EndWindow 3207345
+
+		#\n\n﹛甩件泛奴件弘及择称反﹜\n﹛挃曰及濩抸溢卞妏中化仁木﹝
+
+		Window_No
+			EndWindow 3207346
+
+		#\n\n﹛公丹井﹝\n﹛竣互轾中凶凛卞匹手辅笛仄化心化仁木﹝

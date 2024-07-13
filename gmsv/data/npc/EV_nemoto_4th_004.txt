@@ -1,0 +1,64 @@
+##ㄥ璃コ筏ゴ奶矛件玄﹛by漪呿
+## NPC“勒衔樊失伙田旦
+
+## OT辅笛据毛呁醒赭儅
+block Item 622010 > 1
+	Window "\n\n﹛甲乓失□永甩永甩永甩＿＿甩央永″〝\n﹛云中″云蟆″\n﹛卅氏匹辅笛据毛公氏卅卞儅匀化中月氏分″〝\n﹛尕恳毛仄化中中及反﹜仇及台分仃分冗″\n﹛匋璋分″甲乓失□永甩永甩永甩央央″",OK
+		Window_OK
+			KillItemAll 622010
+
+## 旦正件皿＞＞ㄡ＝及OT辅笛据毛赭儅
+block Item 622010 == 1 && StampCount 622010 == 2
+	EndWindow "\n\n﹛引分仇氏卅赭毛豽訬仄化中月及井﹝\n﹛方匀吊升台及掸董笺恔卞卅曰凶中方丹分卅″\n﹛甲乓央□甩永甩央″\n﹛云侗心午丐日壬﹜丐及蛭及方丹卞﹜\n﹛云蟆手豳衬卅虫卞荼瞻仄化支欠丹井″〝\n﹛甲乓□永甩甩甩央″"
+
+## 旦正件皿＞＞ㄠ＝及OT辅笛据毛赭儅
+block Item 622010 == 1 && StampCount 622010 == 1
+	Window "\n\n﹛甲乓失□甩永甩央□″\n﹛ㄥ璃コ筏ゴ匹忏井木凶云蟆琼及酦井日\n﹛掸董笺恔毛茧允屯仁﹜\n﹛仇氏卅赭卞引匹侳化支匀凶冗″\n﹛抰互检仄仃木壬﹜仇及撙杽卞蚕尹化心方″",NEXT
+
+	Window "\n\n﹛平伉及翘匹台互芘荻仄凶阂间及抩蟆反\n﹛示件玉匹丐月﹝\n﹛今丑﹜???井??井蚕尹化心欠″",YES,NO
+
+		Window_YES Item 622010 == 0
+			EndWindow "\n\n﹛氏﹜辅笛据互卅中匹反卅中井″\n﹛请跶仄化仇中″狪反公木井日分″\n﹛甲乓□永甩永甩央″"
+
+		Window_YES Item 622010 > 1
+			Window "\n\n﹛仇日″云蟆″\n﹛仇及台毛犒仄嘻中化尕恳毛⑸仁卅升﹜袱今氏″\n﹛匋璋分″甲乓□永甩永甩央″",OK
+				Window_OK
+					KillItemAll 622010
+
+		Window_YES
+			Window "\n\n﹛甲乓失□甩甩甩甩甩央″\n﹛尕恳荸分″\n﹛沶窜骚曰﹜云蟆及抰毛赡仁冗″",OK
+				Window_OK
+					KillItemAll 622010
+					Encount 2|||0|||||0|306324|||||||||
+					Endblock
+
+		Window_NO Item 622010 == 0
+			EndWindow "\n\n﹛氏﹜辅笛据互卅中匹反卅中井″\n﹛请跶仄化仇中″狪反公木井日分″\n﹛甲乓□永甩永甩央″"
+
+		Window_NO Item 622010 > 1
+			Window "\n\n﹛仇日″云蟆″\n﹛仇及台毛犒仄嘻中化尕恳毛⑸仁卅升﹜袱今氏″\n﹛匋璋分″甲乓□永甩永甩央″",OK
+				Window_OK
+					KillItemAll 622010
+
+		Window_NO
+			Window "\n\n﹛甲乓央□永甩永甩永甩央″\n﹛恳荸分″\n﹛今化反云蟆﹜台及白央件分欠丹″\n﹛甲乓央□甩永甩甩″\n﹛冂帎卞台及扔奶件毛仁木化支欠丹″",NEXT
+				Window "\n\n﹛孔氏﹜戏骋﹜\n﹛台反穸仄中谛棉匹反卅中及匹卅﹝\n﹛戚及民尼永弁禾奶件玄尺及甲件玄反﹜卅中″\n﹛愤恘匹茧仄癫化月氏分卅″\n﹛甲乓□永甩永甩永甩″",OK
+					Window_OK
+						AddStampCount 622010,+1
+						SystemMessage 3012037 
+
+
+## 失伙田旦谛溥毛赭儅
+block Item 622012 >= 1
+	EndWindow "\n\n﹛孔氏匀″\n﹛台及掸恘反仇氏卅手及匹反卅中冗″\n﹛＿＿匹手引丑﹜云蟆及恘手カ户化支欠丹﹝\n﹛午匀化云五及伤?树扷毛仁木化支月﹝\n﹛左伉巨件泛□伉件弘及愈酦﹜\n﹛奶□伙支本仿伙市卞手箫毛扪氏匹心欠﹝\n﹛台互蜕尹月及反仇仇引匹分″\n﹛甲乓央□永甩永甩甩央央″"
+
+
+## 旦正件皿＞＞ㄠ＝引凶反＞ㄡ＝匹反卅中OT辅笛据毛赭儅
+block Item 622010 == 1
+	if StampCount 622010 == 0 || StampCount 622010 >2
+		EndWindow "\n\n﹛云蟆反卅井卅井﹜\n﹛掸董笺恔午仄化及豳撙互丐月卅﹝\n﹛公及竣互丐月卅日﹜\n﹛中勾匹手脱★及蒂菜赭卞侳月互中中﹝\n﹛凶分仄﹜抰及忡据卅升拑中互卅″\n﹛甲乓失□永甩永甩永甩央央央″"
+	endif
+
+## 晓筏动陆
+block
+	EndWindow "\n\n﹛甲乓□永甩永甩″\n﹛ㄥ璃コ筏ゴ匹げ歹丹仇及白央□伊件毕崭匹﹜\n﹛漆蘸及掸董笺恔毛苇勾仃化支月冗″"

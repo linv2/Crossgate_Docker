@@ -1,0 +1,135 @@
+##########################
+# 晓菟缜         by 漪呿 #
+# ←扲?←               #
+##########################
+
+
+######## 豢迕琼侂填膜咥鼎动晓 ################
+block Job >= 384 && Job <= 389
+
+#### ≦肮嫖及顶≧毛赭儅
+	if Item 622040 >= 1
+		EndWindow 3208309
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛坞匀吊分
+
+	else
+
+#### ≦肮嫖及顶﹋母立□﹌≧
+		if Item 622048 >= 1
+			EndWindow 3208310
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛坞匀吊分
+
+	else
+
+#### 绂坁互中匀天中
+			if Itemspace == 0
+				EndWindow 3208311
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛绂坁互中匀天中分
+
+	else
+
+#### ≦肮嫖及顶≧毛尕赭儅﹜≦肮嫖及顶≧毛芨尹月
+				if Item 622040 == 0
+					GiveLeak1Item 622040,1
+					Endblock
+
+				endif
+			endif
+		endif
+	endif
+Endblock
+
+
+
+
+
+
+
+
+######## 豢迕琼朹湛膜咥鼎动晓 ################
+block Job >= 374 && Job <= 379
+
+#### ≦肮嫖及痿≧毛赭儅
+	if Item 622039 >= 1
+		EndWindow 3208312
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛坞匀吊分
+
+	else
+
+#### ≦肮嫖及痿﹋母立□﹌≧
+		if Item 622047 >= 1
+			EndWindow 3208313
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛坞匀吊分
+
+	else
+
+#### 绂坁互中匀天中
+			if Itemspace == 0
+				EndWindow 3208314
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛绂坁互中匀天中分
+
+	else
+
+#### ≦肮嫖及痿≧毛尕赭儅﹜≦肮嫖及痿≧毛芨尹月
+				if Item 622039 == 0
+					GiveLeak1Item 622039,1
+					Endblock
+
+				endif
+			endif
+		endif
+	endif
+Endblock
+
+
+
+
+
+
+
+
+######## 豢迕琼椎烂衔动晓 ################
+block Job >= 394 && Job <= 399
+
+#### ≦＊及藂檗≧毛赭儅
+	if Item 622041 >= 1
+		EndWindow 3208315
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛坞匀吊分
+
+	else
+
+#### 绂坁互中匀天中
+		if Itemspace == 0
+			EndWindow 3208316
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛绂坁互中匀天中分
+
+	else
+
+#### ≦＊及藂檗≧毛尕赭儅﹜≦＊及藂檗毛芨尹月≧
+			if Item 622041 == 0
+				GiveLeak0Item 622041,1
+				Endblock
+
+			endif
+		endif
+	endif
+Endblock
+
+
+
+
+
+#### 晓筏动陆
+block
+	EndWindow 3208317
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛坞匀吊分
+

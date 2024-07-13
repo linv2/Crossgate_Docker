@@ -1,0 +1,17 @@
+######压矿娃娃-银矿######
+##有 压矿娃娃(银) 银矿大于400个 物品栏无空位
+block Item 47054 >= 1 && Item 9602 >= 400 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+##有 压矿娃娃(银) 银矿大于400个 物品栏空位大于1 耐久度大于1
+block Item 47054 >= 1 && Item 9602 >= 400 && ItemSpace >= 1 && ItemDur 47054 > 1
+	 KillItem 9602,400
+	 GiveStackItem 9613,20
+	 SetDur 47054,-1
+	 
+##有 压矿娃娃(银) 银矿大于400个 物品栏空位大于1 
+block Item 47054 >= 1 && Item 9602 >= 400 && ItemSpace >= 1 
+	 KillItem 9602,400
+	 GiveStackItem 9613,20
+	 KillItem 47054

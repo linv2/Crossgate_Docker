@@ -1,0 +1,35 @@
+####1500金币VIP	mayko_gm_10517618.txt
+
+####1500枚金币兑换商　　40844
+
+
+block Item 40844 >= 1500
+	 Window 1055038,YES,NO  ####1055038	\n\n　　　　您现在有1500金币，\n　　　　要兑换时雨召唤证吗？
+
+	 Window_YES Item 40844>=1500
+	 KillItem 40844,1500
+	 GiveLeak1Item 46639,1
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 
+	 ##
+	 Window_NO
+	 Window 1055039,YES,NO  ##要兑换梅兹召唤证吗？
+	 Window_YES Item 40844>=1500
+	 KillItem 40844,1500
+	 GiveLeak1Item 47689,1
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 	
+	 Window_NO
+	 EndWindow 1109723 
+	 
+block Item 40844 > 0 
+	 EndWindow 1055068	 
+				
+block 
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 EndWindow 1109723
+	 							 	 

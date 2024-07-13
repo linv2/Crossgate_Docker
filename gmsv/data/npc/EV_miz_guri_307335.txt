@@ -1,0 +1,15 @@
+#庄趸弘伉白巧件忯凯弁巨旦玄“宎衔用目奶
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block
+	setaction 10
+	Window 206914,OK
+	Window_OK
+	Window 206915,OK
+	Window_OK
+	leavegroup
+	playse 211,1,1
+	Warp 0,46004,8,11
+

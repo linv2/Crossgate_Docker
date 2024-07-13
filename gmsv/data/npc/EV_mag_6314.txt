@@ -1,0 +1,213 @@
+#
+#德特老爷爷
+#map 4020 9 3
+#资深过关的死老头
+
+########## 没酒没起司 ##########
+block Item 18440 == 0 && Item 18441 == 0
+	#\n\n我从很久以前就很爱喝酒配起司。我虽然毕生都在寻找究极的酒和起司，但是却都不了了之。
+	#只要能吃到那些东西，就算死了我也甘愿。你有听过哪里的酒或起司很好吃的吗？	0
+	EndWindow 14625,OK
+
+########## 有酒没起司 ##########
+block Item 18440 == 1 && Item 18441 == 0
+	#\n\n喔喔！你也爱喝酒吗？说到酒就会想到起司，这两者是缺一不可的。你也是这么想的吧？	0
+	EndWindow 14626,OK
+
+########## 没酒有起司 ##########
+block Item 18440 == 0 && Item 18441 == 1
+	#\n\n喔喔！你也爱吃起司吗？说到起司就会想到酒，这两者是缺一不可的。你也是这么想的吧？
+	EndWindow 14627,OK
+
+########## 有酒与起司 ##########
+block Item 18440 == 1 && Item 18441 == 1
+#\n\n哦．．．这酒和起司好像很好吃的样子．．．可以把它让给我吗？	
+	Window 14628,YES,NO
+	Window_NO
+	#\n\n什么嘛！年轻人还这么小气！
+	EndWindow 14629,OK
+	Window_YES
+	#\\n\n喔喔！你真是个好人。就让我来尝尝吧！
+	Window 14630,OK
+########## 酒放过头了##########
+#block ItemCreateTime 18440 >= 71
+	Window_OK ItemCreateTime 18440 >= 71
+	KillItem 18440
+	KillItem 18441
+	#\n\n好酸喔！！！\n这、这是啥米鸟酒啊！这种东西是人在喝的吗？
+	EndWindow 14631,OK
+########## 起司放过头了##########
+#block ItemCreateTime 18441 >= 131
+	Window_OK ItemCreateTime 18441 >= 131
+	KillItem 18440
+	KillItem 18441
+	#\n\n呸呸呸！！！\n这、这是啥米起司啊！这种起司是人在吃的吗？
+	EndWindow 14632,OK
+########## 酒的时间不够##########
+#block ItemCreateTime 18440 <= 58
+	Window_OK ItemCreateTime 18440 <= 58
+	KillItem 18440
+	KillItem 18441
+	#\\n\n嗯．．．这酒可能还要再等一段时间才会变的比较好喝。
+	EndWindow 14633,OK
+########## 起司的时间不够##########
+#block ItemCreateTime 18441 <= 118
+	Window_OK ItemCreateTime 18441 <= 118
+	KillItem 18440
+	KillItem 18441
+	#\n\n嗯．．．这起司可能还要再等一段时间才会变的比较好吃。
+	EndWindow 14634,OK
+########## 完美的酒跟起司 ##########
+	#block ItemCreateTime 18440 >= 59 && ItemCreateTime 18440 <= 61 && ItemCreateTime 18441 >= 119 && ItemCreateTime 18441 <= 121
+	Window_OK ItemCreateTime 18440 >= 59 && ItemCreateTime 18440 <= 61 && ItemCreateTime 18441 >= 119 && ItemCreateTime 18441 <= 121
+	KillItem 18440
+	KillItem 18441
+	#\n\n哇！！！！\n太棒了！\n我已经有好几十年没吃过这么棒的酒和起司了！哈哈哈！好吃好吃！	
+	Window 14635,YES
+	########## 战斗系 ##########
+	Window_YES Job >= 11 && Job <= 167
+#	GiveStackItem(18447%1$1,18448%1$5,16001%1$5,16002%1$5,13700%1$1,15203%3$3)
+	GiveLeak1Item(18447%1$1,18448%1$5,16001%1$5,16002%1$5,13700%1$1,15203%3$3,18453%1$1)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+	########## 医生护士 ##########
+	Window_YES Job >= 431 && Job <= 447
+#	GiveStackItem(18447%1$1,18448%1$5,16001%1$5,16002%1$5,13700%1$1,15203%3$3)
+	GiveLeak1Item(18447%1$1,18448%1$5,16001%1$5,16002%1$5,13700%1$1,15203%3$3,18453%1$1)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+	########## 炼金术士 ##########
+	Window_YES Job >= 1001 && Job <= 1007
+#	GiveStackItem(18447%1$1,18448%1$5,16001%1$5,16002%1$5,13700%1$1,15203%3$3)
+	GiveLeak1Item(18447%1$1,18448%1$5,16001%1$5,16002%1$5,13700%1$1,15203%3$3,18453%1$1)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK	
+	########## 过关的生产系职业 ##########
+	Window_YES JobRank == 1
+	EndEvent 92 = 1
+#	GiveStackItem(18447%1$1,18448%1$5,16001%1$5,16002%1$5,13700%1$1,15203%3$3)
+	GiveLeak1Item(18447%1$1,18448%1$5,16001%1$5,16002%1$5,13700%1$1,15203%3$3,18453%1$1)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+	########## 重解或见习生 ##########
+	Window_YES
+#	GiveItem 18440
+#	GiveStackItem(18447%1$1,18448%1$5,16001%1$5,16002%1$5,13700%1$1,15203%3$3)
+	GiveLeak1Item(18447%1$1,18448%1$5,16001%1$5,16002%1$5,13700%1$1,15203%3$3,18453%1$1)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+
+########## 酒很好起司ok ##########
+#block ItemCreateTime 18440 >= 59 && ItemCreateTime 18440 <= 61 && ItemCreateTime 18441 >= 122 && ItemCreateTime 18441 <= 130
+	Window_OK ItemCreateTime 18440 >= 59 && ItemCreateTime 18440 <= 61 && ItemCreateTime 18441 >= 122 && ItemCreateTime 18441 <= 130
+	KillItem 18440
+	KillItem 18441
+	#\n\n呵呵！这酒真是棒透了。\n起司也还不错吃。你真是一个懂酒的人呀！
+	Window 14636,YES
+	########## 战斗系 ##########
+	Window_YES Job >= 11 && Job <= 167
+#	GiveStackItem(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	GiveLeak1Item(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+	########## 医护 ##########
+	Window_YES Job >= 431 && Job <= 447
+#	GiveStackItem(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	GiveLeak1Item(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+	########## 炼金术士 ##########
+	Window_YES Job >= 1001 && Job <= 1007
+#	GiveStackItem(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	GiveLeak1Item(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK	
+	########## 生产系 ##########
+	Window_YES JobRank == 1
+	EndEvent 92 = 1
+#	GiveStackItem(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	GiveLeak1Item(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+	########## 重解或见习生 ##########
+	Window_YES
+#	GiveStackItem(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	GiveLeak1Item(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+
+########## 起司很棒酒ok ##########
+#block ItemCreateTime 18441 >= 119 && ItemCreateTime 18441 <= 121 && ItemCreateTime 18440 >= 62 && ItemCreateTime <= 70
+	Window_OK ItemCreateTime 18441 >= 119 && ItemCreateTime 18441 <= 121 && ItemCreateTime 18440 >= 62 && ItemCreateTime 18440 <= 70
+	KillItem 18440
+	KillItem 18441
+	#\n\n呵呵！这起司真是棒透了。\n酒也还不错喝。你真是一个懂起司的人呀！
+	Window 14637,YES
+	########## 战斗系 ##########
+	Window_YES Job >= 11 && Job <= 167
+#	GiveStackItem(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	GiveLeak1Item(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+	########## 医护 ##########
+	Window_YES Job >= 431 && Job <= 447
+#	GiveStackItem(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	GiveLeak1Item(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+	
+	########## 炼金术士 ##########
+	Window_YES Job >= 1001 && Job <= 1007
+#	GiveStackItem(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	GiveLeak1Item(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+	
+	########## 生产系 ##########
+	Window_YES JobRank == 1
+	EndEvent 92 = 1
+#	GiveStackItem(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	GiveLeak1Item(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+	########## 重解或见习生 ##########
+	Window_YES
+#	GiveStackItem(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	GiveLeak1Item(9205%1$1,9214%1$1,9223%1$1,9232%1$1,15202%2$3)
+	#\n\n为了答谢你，我送你一个好东西吧！
+	EndWindow 14656,OK
+
+	##########酒与起司ok ##########
+	#block ItemCreateTime 18440 >= 62 && ItemCreateTime 18440 <= 70 && ItemCreateTime 18441 >= 122 && ItemCreateTime 18441 <= 130
+	Window_OK ItemCreateTime 18440 >= 62 && ItemCreateTime 18440 <= 70 && ItemCreateTime 18441 >= 122 && ItemCreateTime 18441 <= 130
+	KillItem 18440
+	KillItem 18441
+	#\n\n嗯．．．这酒和起司都不错，蛮好吃的。
+	Window 14638,YES
+	########## 战斗系 ##########
+	Window_YES Job >= 11 && Job <= 167
+	#\n\n有机会记得再带好吃的酒和起司来吧！\n只要它的品质够好，我一定会好好答谢你的。
+	EndWindow 14658,OK
+	
+	########## 医护 ##########
+	Window_YES Job >= 431 && Job <= 447
+	#\n\n有机会记得再带好吃的酒和起司来吧！\n只要它的品质够好，我一定会好好答谢你的。
+	EndWindow 14658,OK
+	
+	########## 炼金术士 ##########
+	Window_YES Job >= 1000 && Job <= 1007
+	#\n\n有机会记得再带好吃的酒和起司来吧！\n只要它的品质够好，我一定会好好答谢你的。
+	EndWindow 14658,OK	
+	
+	
+	########## 生产系 ##########
+	Window_YES JobRank == 1
+	EndEvent 92 = 1
+	#\n\n有机会记得再带好吃的酒和起司来吧！\n只要它的品质够好，我一定会好好答谢你的。
+	EndWindow 14658,OK
+	########## 已解过或练习生##########
+	Window_YES
+	#\n\n有机会记得再带好吃的酒和起司来吧！\n只要它的品质够好，我一定会好好答谢你的。
+	EndWindow 14658,OK
+
+

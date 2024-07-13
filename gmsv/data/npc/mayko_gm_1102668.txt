@@ -1,0 +1,177 @@
+##mayko_gm_1102668.txt 长袍
+
+#硬皮袍	5224	10400	7	18211	20	10401	8	10402	5	10002	10
+
+#1111347	\n\n\n@c你好！！我负责支援新星长袍制作：
+
+#1111316	\n\n你现在有硬皮袍材料麻布7份，鹿皮20份，木棉布8份，毛毡5份，黄月木10份，
+
+
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111354	\n\n\n@c代工费是７００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 10400>=7 && item 18211 >=20 && item 10401 >= 8 && item 10002>=10 && item 10402 >=5
+
+	Window 1111347,next
+	Window 1111316,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111354,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 699
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -700
+		killitem 10400,7
+		killitem 18211,20
+		killitem 10401,8
+		killitem 10002,10
+		killitem 10402,5
+		GiveLeak1Item 5224,1
+		endwindow 1111335
+
+
+#环袍	5223	10400	5	9612	8	10402	7	10403	3	10002	10
+
+
+#1111347	\n\n\n@c你好！！我负责支援新星长袍制作：
+
+#1111317	\n\n你现在有环袍材料麻布5份，铁条8份，毛毡7份，绵3份，黄月木10份，
+
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111354	\n\n\n@c代工费是７００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 10400>=5 && item 9612 >=8 && item 10402 >= 7 && item 10403 >=3 && item  10002>=10
+
+	Window 1111347,next
+	Window 1111317,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+	Window 1111354,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 699
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -700
+		killitem 10400,5
+		killitem 9612,8
+		killitem 10402,7
+		killitem 10403,3
+		killitem 10002,10
+		GiveLeak1Item 5223,1
+		endwindow 1111335
+
+#圣者之袍	5250	10403	13	9615	10	10405	5	10005	10		
+
+#1111347	\n\n\n@c你好！！我负责支援新星长袍制作：
+
+#1111318	\n\n你现在有圣者之袍材料绵13份，金条10份，绢布5份，赤松10份，
+
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111353	\n\n\n@c代工费是３５００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 10403>=13  && item 9615 >= 10 && item 10405>=5 && item 10005>=10
+
+	Window 1111347,next
+	Window 1111318,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111353,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 3499
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -3500
+		killitem 10403,13
+		killitem 9615,10
+		killitem 10405,5
+		killitem 10005,10
+		
+		GiveLeak1Item 5250,1
+		endwindow 1111335
+		
+#战斗长袍	5253	18211	20	10403	20	10404	6	9616	5	10005	10
+#1111347	\n\n\n@c你好！！我负责支援新星长袍制作：
+
+#1111319	\n\n你现在有战斗长袍材料鹿皮20份，绵20份，细线6份，白金条5份，赤松10份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111353	\n\n\n@c代工费是３５００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 18211 >= 20 && item 10403>=20  && item 10404 >= 6 && item 9616>= 5 && item 10005>=5
+
+	Window 1111347,next
+	Window 1111319,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111353,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 3499
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -3500
+		killitem 18211,20
+		killitem 10403,20
+		killitem 10404,6
+		killitem 9616,5
+		killitem 10005,10
+		
+		GiveLeak1Item 5253,1
+		endwindow 1111335
+
+##没有袍材料
+#1111347	\n\n\n@c你好！！我负责支援新星长袍制作：
+#1111255	\n\n制做硬皮袍需要麻布7份，鹿皮20份，木棉布8份，毛毡5份，黄月木10份，	1
+#1111256	\n\n制做环袍需要麻布5份，铁条8份，毛毡7份，绵3份，黄月木10份，	1
+#1111257	\n\n制做圣者之袍需要绵13份，金条10份，绢布5份，赤松10份，	1
+#1111258	\n\n制做战斗长袍需要鹿皮20份，绵20份，细线6份，白金条5份，赤松10份，	1
+
+#1111355\n\n\n@c准备好材料再来找我！！
+
+block 
+	Window 1111347,next
+	Window 1111255,next
+	Window 1111256,next
+	Window 1111257,next
+	window 1111258,next
+	endwindow 1111355
+	

@@ -1,0 +1,23 @@
+#####破坏狂头盔	dodo_item_47193.txt
+###双点得到破坏狂一只
+ 
+block PetSpace == 0 
+	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+	 EndWindow 1100004
+	 
+block Item 47193 >= 1
+	 ##1053911	\n\n\n\n\n@c你是否要召唤破坏狂出来？	1
+	 Window 1053911,YES,NO
+	 	 Window_NO
+	 	 	 
+	 	 Window_YES  PetSpace == 0 
+	 	 	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+	 		 EndWindow 1100004	 	
+	 
+	 	 Window_YES Item 47193 >= 1
+	 	 	 KillItem 47193,1
+	 	 	 GivePet 102153
+	 	 	 ##1053912	\n\n\n\n@c破坏狂已成功召唤！	1
+			 EndWindow 1053912
+			 
+	 	 	 

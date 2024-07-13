@@ -1,0 +1,56 @@
+
+block
+
+
+
+				LocalCount0 = random 3,0
+
+				if LocalCount0 == 1
+
+
+#					Window "\n\n﹛户℅匀仄匀″″户℅匀仄匀″″户℅匀仄匀″″",next
+					Window 3006862,next
+
+
+#					EndWindow "\n\n﹛?毛℅?毛℅仁℅歹℅六℅欠℅″″"
+					EndWindow 3006863
+
+
+				else
+
+					if LocalCount0 == 2
+
+#						Window "\n\n﹛丐及﹜赶ざ手蝎井中手及毛罹屯化卅中氏匹允﹝",next
+						Window 3006864,next
+
+
+#						EndWindow "\n\n﹛云午勾中反﹜任奴正□﹜紧ざ反揖由件﹜\n﹛漆ざ反踹分仃＿＿"
+						EndWindow 3006865
+
+
+
+					else
+
+#						Window "\n\n﹛呏蛹匀凶℅",next
+						Window 3006866,next
+
+
+#						EndWindow "\n\n﹛扑尼白升仇℅〝"
+						EndWindow 3006867
+
+
+					endif
+
+				endif
+
+
+
+
+
+
+
+
+
+
+
+

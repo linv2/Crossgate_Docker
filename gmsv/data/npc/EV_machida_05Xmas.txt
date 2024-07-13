@@ -1,0 +1,91 @@
+#
+#仁勾仄凶支
+#
+
+###﹛2006/12/25 00:00:01动嫦卅日﹛###
+block CheckRealTime 2006/12/25,00:00:01 == 1
+#block CheckRealTime 2006/12/8,15:00:00 == 1
+
+
+	EndWindow "\n\n﹛侳コ及弁伉旦穴旦仇公\n﹛恌中仇午丐月今″\n﹛元扎丐﹜引凶侳コ﹜啼仄心卞仄化化友氏″″",OK
+
+
+############## 仁勾仄凶手匀化月 ##############
+block Item 620041 >= 1
+
+	EndWindow "\n\n﹛仍户氏友□﹜\n﹛夫午曰域勾五曰卅及方氏﹝",OK
+
+
+
+############## 仁勾仄凶手匀化卅中 ##############
+block Item 620041 == 0
+	Window "\n\n﹛丐□中戈升曰心氏﹜云壬歹□中仁曰允引允″″\n﹛及切斤匀午蟆＿＿\n﹛域コ少曰及仁勾仄凶盒今氏匹允″\n﹛漆コ手﹜\n﹛弁伉旦穴旦市仿□及恦毛丐仄日匀凶\n﹛丿虫及襞木卅中伞驯匹允卞斤欠﹝",next
+
+	Window "\n\n﹛手℅弁伉旦穴旦午反﹜\n﹛蝈螺楮溢卅中普元匹\n﹛恌中阂卞玄仿它穴毛″\n﹛允心引六氏﹜公及井歹曰\n﹛漆コ手皿伊未件玄反\n﹛き呿峏化匹匀允″",next
+
+	Window "\n\n﹛聊蛔弁伉旦穴旦井戈曰毛枃匀凶\n﹛尕僧卅丐卅凶﹜\n﹛公木匹手勾少日卅Ⅲ卞扙仃\n﹛竣互勾仃壬公及引引齐匀化中凶丐卅凶﹜",next
+
+	if Petlevel 302400 >= 1
+
+		Window "\n\n﹛公氏卅丐卅凶及\n﹛弁伉旦穴旦井戈曰毛\n﹛灿及侔毛儅勾井戈曰卞荼瞻雄祭″",next
+
+		Window "\n\n﹛升丹允月〝\n﹛漆荼瞻仄切扎丹〝",yes,no
+
+		Window_NO
+
+			Window "\n\n﹛荼瞻扔□申旦反\n﹛奶皮引匹分井日友□",next
+
+			gotoF case01
+
+		Window_YES Petlevel 302400 >= 1
+
+			Window "\n\n﹛日元扎□曰斤□井中\n﹛请匹方灿及侔毛儅勾市丞伉″",ok
+
+
+
+				Window_ok
+
+				KillPetl 302400
+				GivePet 302401
+
+				gotoF case01
+
+
+		Window_YES
+
+			EndWindow "\n\n﹛丐曰扎℅〝\n﹛⑧仆切扎匀化月方〝\n﹛弁伉旦穴旦井戈曰〝",OK
+
+
+
+
+	else
+
+		Window "\n\n﹛公氏卅丐卅凶及\n﹛弁伉旦穴旦井戈曰毛\n﹛灿及侔毛儅勾井戈曰卞荼瞻雄祭″\n﹛齐匀化月杅反﹜嫔?洘木化五化友″",next
+
+*case01*
+
+		Window "\n\n﹛匹﹜皿伊未件玄仁勾仄凶﹜中月〝",YES,NO
+
+
+		Window_NO
+
+			EndWindow "\n\n﹛尹〝\n﹛蛔コ匹蘑曰凶井日\n﹛邰日卅中匀化〝﹛少℅℅℅℅℅″",OK
+
+		Window_YES Item 620041 >= 1
+
+			EndWindow "\n\n﹛仍户氏友□﹜\n﹛夫午曰域勾五曰卅及方氏﹝",OK
+
+		Window_YES Item 620041 == 0 && ItemSpace == 0
+
+			EndWindow "\n\n﹛儅切坁毛帮咥仄化五化友氏﹝",OK
+
+		Window_YES Item 620041 == 0 && ItemSpace != 0
+
+			Window "\n\n﹛反℅中″\n﹛奶皮互聊亢化井日钒仃化心化友氏﹝",ok
+
+			window_ok
+
+				GiveItem 620041
+
+
+	endif

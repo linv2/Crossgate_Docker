@@ -1,0 +1,58 @@
+#	mayko_gm_1102680.txt	菟丝
+#1111429	\n\n\n　　　　我不相信～\n　　　　我不相信我会输给不起眼的华蓉月瑁～～	1
+
+#1111428	\n\n\n\n@c这样呀～～	1
+																					
+#1111403	\n\n\n　　　　良辰美景奈何天，\n　　　　赏心乐事谁家院。	1
+#1111404	\n\n　　　　唉．．．\n　　　　为何我情路坎苛，\n　　　　良人远去～～～呜～～～	1
+#1111405	\n\n　　　　看姑娘秀外慧中，\n　　　　为何在此饮泣。	1
+#1111406	\n\n\n\n@c奴家名唤菟丝，感叹情路坎坷，故在此叹息。	1
+#1111407	\n\n　　　　这位官人，你我萍水相逢，\n　　　　算是有缘，奴家有事相求，\n　　　　不知官人是否应允。	1
+#1111408	\n\n\n\n@c但说无妨。	1
+#1111409	\n\n　　　　奴家过去有两位青山之交，\n　　　　不知为何均离奴家远去，\n　　　　奴家想得知因由。	1
+#1111410	\n\n\n\n@c只是单纯青山之交．．．．	1
+#1111411	\n\n\n　　　　．．．．\n　　　　这．．．\n　　　　是情郎．．．	1
+#1111412	\n\n\n\n@c好吧！在下应允即是。	1
+#1111413	\n\n　　　　奴家只知一人前往纸鸢山后，不知去向，\n　　　　一个隐居于菇之森，\n　　　　这有奴家亲笔书信，劳烦官人了。	1
+#1111414	\n\n　　　　奴家只知一人前往纸鸢山后，不知去向，\n　　　　一个隐居于菇之森，劳烦官人了。	1
+#1101832	\n\n请解散队伍！
+#3207404	\n\n　你身上的东西好像太多了…\n　麻烦您空两个栏位出来。
+block item 212 >0 || item 41162 >0
+	 endwindow 1111429
+	 
+block item 41160 >0 && item 41161 >0 && group == 1
+	 killitem 41160,1
+	 killitem 41161,1
+	 window 1111428,ok
+	 window_ok
+	 warp 0,32190,4,7
+	 end
+block item 41160 >0 && item 41161 >0	 
+	 endwindow 1101832
+	 
+block item 41164 >0 
+	 endwind 1111414	 
+block item 41159 >0 
+	 endwind 1111414	 
+block 
+	 LeaveGroup
+	 window 1111403,next
+	 window 1111404,next
+	 window 1111405,next
+	 window 1111406,next	 
+	 window 1111407,next
+	 window 1111408,next
+	 window 1111409,next
+	 window 1111410,next
+	 window 1111411,next
+	 window 1111412,next
+	 window 1111413,ok
+	 window_ok itemspace >1	 
+	 GiveLeak1Item 41164,1
+	 GiveLeak1Item 41159,1
+	 endblock
+	 window_ok
+	 endwindow 3207404
+	 
+
+ 

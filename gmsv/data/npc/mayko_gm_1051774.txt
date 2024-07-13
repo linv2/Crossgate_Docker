@@ -1,0 +1,1386 @@
+##### 想去哪就去哪-猎物 #####
+
+
+##■ 检查人数
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 Window_NO 
+	 	 endblock
+#	1055576	传说的鹿皮	100,654,247　#	
+block Item 47717 >= 1 && StrCmpChat == 1055576
+	 
+	 ##1055689	\n\n\n@c你想去的是传说的鹿皮的采集区吗？？
+
+	 Window 1055689,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送传说的鹿皮采集点
+	 Warp 0,100,654,247
+	 
+#	1055577	番茄	#	
+block Item 47717 >= 1 && StrCmpChat == 1055577
+	 
+	 ##1055690	\n\n\n@c你想去的是番茄的采集区吗？？
+
+	 Window 1055690,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送蕃茄采集点
+	 Warp 0,100,490,196
+	
+#	1055578	高级番茄 1158,18,8	
+
+
+block Item 47717 >= 1 && StrCmpChat == 1055578
+	 
+	 ###	1055691	\n\n\n@c你想去的是高级番茄的采集区吗？？
+
+	 Window 1055691,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送高级蕃茄采集点
+	 Warp 0,1156,18,8
+	 
+#	1055579	蝙蝠	1152,16,3#	
+
+block Item 47717 >= 1 && StrCmpChat == 1055579
+	 
+	 ##1055692	\n\n\n@c你想去的是蝙蝠的采集区吗？？
+
+	 Window 1055692,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送蝙蝠采集点
+	 Warp 0,1152,16,3
+
+#	1055580	鸡蛋	100,551,163
+block Item 47717 >= 1 && StrCmpChat == 1055580
+	 ##	1055693	\n\n\n@c你想去的是鸡蛋的采集区吗？？
+         Window 1055693,NEXT
+         #1055750	\n\n\n@c传送费用是50G，可以吗？？	1
+	 Window 1055750,YES,NO
+	 Window_NO
+	 ##1055764	在奇利村东南的树与岩石周围(297,361)有蛋的采集区。
+	 EndWindow 1055764
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 50
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >49
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -50
+	 	 	 KillItem 47717
+	 	 	 ##传送鸡蛋	采集点
+	 	 	 Warp 0,100,551,163
+#	1055581	小麦粉	100,724,235#	1055694	\n\n\n@c你想去的是小麦粉的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055581
+	 #1055694	\n\n\n@c你想去的是小麦粉的采集区吗？？
+         Window 1055694,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 ##1055765	米内葛尔岛(616,378)有小麦采集区。
+	 EndWindow 1055765
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -200
+	 	 	 KillItem 47717
+	 	 	 ##传送小麦粉采集点
+	 	 	 Warp 0,100,724,235
+
+#	1055582	鹿皮	59500,174,180#	
+block Item 47717 >= 1 && StrCmpChat == 1055582
+	 
+	 ##1055695	\n\n\n@c你想去的是鹿皮的采集区吗？？
+
+	 Window 1055695,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送鹿皮采集点
+	 Warp 0,59500,174,180
+#	1055583	神圣米	59500,179,178#	  改....30001,100,295
+block Item 47717 >= 1 && StrCmpChat == 1055583
+	 
+	 ##1055696	\n\n\n@c你想去的是神圣米的采集区吗？？
+
+	 Window 1055696,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送神圣米采集点
+	 #Warp 0,30001,100,295
+	 warp 0,59500,179,178
+#	1055584	葱	100,659,236
+block Item 47717 >= 1 && StrCmpChat == 1055584
+	 ##	1055697	\n\n\n@c你想去的是葱的采集区吗？？
+         Window 1055697,NEXT
+         #1055750	\n\n\n@c传送费用是50G，可以吗？？	1
+	 Window 1055750,YES,NO
+	 Window_NO
+	 ##1055766	库鲁克斯哥拉尔域(333,465)有葱采集区。
+	 EndWindow 1055766
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 50
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >49
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -50
+	 	 	 KillItem 47717
+	 	 	 ##传送葱	采集点
+	 	 	 Warp 0,100,659,236
+#	1055585	牛奶	100,684,337#	1055698	\n\n\n@c你想去的是牛奶的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055585
+	 ##	1055698	\n\n\n@c你想去的是牛奶的采集区吗？？
+         Window 1055698,NEXT
+         #1055750	\n\n\n@c传送费用是50G，可以吗？？	1
+	 Window 1055750,YES,NO
+	 Window_NO
+	 ##1055767	米内葛尔岛(635,388)有牛奶采集区。
+	 EndWindow 1055767
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 50
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >49
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -50
+	 	 	 KillItem 47717
+	 	 	 ##传送牛奶	采集点
+	 	 	 Warp 0,100,684,337
+
+#	1055586	青椒	100,592,287
+block Item 47717 >= 1 && StrCmpChat == 1055586
+	 #	1055699	\n\n\n@c你想去的是青椒的采集区吗？？
+         Window 1055699,NEXT
+         #1055750	\n\n\n@c传送费用是50G，可以吗？？	1
+	 Window 1055750,YES,NO
+	 Window_NO  #1111657	你可以在德威特岛找找采集点。	1
+	 ##1055768	布拉基姆高地(68,195)有青椒采集区。
+	 EndWindow 1111657
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 50
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >49
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -50
+	 	 	 KillItem 47717
+	 	 	 ##传送青椒	采集点
+	 	 	 Warp 0,100,592,287
+#	1055587	大豆	59510,111,54#	1055700	\n\n\n@c你想去的是大豆的采集区吗？？  30001,312,153
+block Item 47717 >= 1 && StrCmpChat == 1055587
+	 #	1055700	\n\n\n@c你想去的是大豆的采集区吗？？
+         Window 1055700,NEXT
+         #1055750	\n\n\n@c传送费用是50G，可以吗？？	1
+	 Window 1055750,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 50
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >49
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -50
+	 	 	 KillItem 47717
+	 	 	 ##传送大豆	采集点
+	 	 	 #Warp 0,30001,312,153
+	 	 	 warp 0,59510,111,54
+#	1055588	石鲷鱼	坎村南门出去(33000,674,387)#	1055701	\n\n\n@c你想去的是石鲷鱼的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055588
+	 	 #1055701	\n\n\n@c你想去的是石鲷鱼的采集区吗？？
+         Window 1055701,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送石鲷鱼采集点
+	 	 	 Warp 0,33000,674,387	 
+
+#	1055589	盐	59500,201,211
+block Item 47717 >= 1 && StrCmpChat == 1055589
+	 
+	 ###	1055702	\n\n\n@c你想去的是盐的采集区吗？？
+
+	 Window 1055702,YES,NO
+	 Window_NO
+	 ##1055769	伊尔村出去的海岸(693,341)有盐采集区。
+	 EndWindow 1055769	
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送盐采集点
+	 Warp 0,59500,201,211
+	 
+#	1055590	酱油	100,501,163
+block Item 47717 >= 1 && StrCmpChat == 1055590
+	 
+	 ##	1055703	\n\n\n@c你想去的是酱油的采集区吗？？
+
+	 Window 1055703,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送酱油采集点
+	 Warp 0,100,501,163
+	 
+#	1055591	白菜	59502,190,58#	
+
+block Item 47717 >= 1 && StrCmpChat == 1055591  #30001,260,170
+	 
+	 ##	1055704	\n\n\n@c你想去的是白菜的采集区吗？？
+
+	 Window 1055704,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送白菜采集点
+	 #Warp 0,30001,260,170
+	 warp 0,59502,190,58
+
+#	1055592	亚留特狮子的皮	100,621,33#	1055705	\n\n\n@c你想去的是亚留特狮子的皮的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055592
+	 #1055705	\n\n\n@c你想去的是亚留特狮子的皮的采集区吗？？
+         Window 1055705,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -200
+	 	 	 KillItem 47717
+	 	 	 ##传送亚留特狮子的皮采集点
+	 	 	 Warp 0,100,621,33
+###############################################2009/1/19追加
+#1055855	腐烂的皮	1
+#1055861	\n\n\n@c你想去的是腐烂的皮的采集区吗？？	1
+block Item 47717 >= 1 && StrCmpChat == 1055855
+	 #1055861	\n\n\n@c你想去的是腐烂的皮的采集区吗？？	1
+         Window 1055861,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -200
+	 	 	 KillItem 47717
+	 	 	 ##传送亚留特狮子的皮/腐烂的皮采集点
+	 	 	 Warp 0,100,621,33
+###############################################
+#1055857	狐皮	1
+#1055862	\n\n\n@c你想去的是狐皮的采集区吗？？	1
+block Item 47717 >= 1 && StrCmpChat == 1055856
+	 #1055862	\n\n\n@c你想去的是狐皮的采集区吗？？	1
+         Window 1055862,NEXT
+         #1055755	\n\n\n@c传送费用是1500G，可以吗？？	1
+	 Window 1055755,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >1499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1500
+	 	 	 KillItem 47717
+	 	 	 ##传送狐皮采集区
+	 	 	 Warp 0,15568,40,30
+	 	 	 
+###############################################	 	 	 
+	 	 	 
+#	1055593	芹菜	100,498,56#	1055706	\n\n\n@c你想去的是芹菜的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055593
+	 #1055706	\n\n\n@c你想去的是芹菜的采集区吗？？
+         Window 1055706,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 ##1055770	芙蕾雅亚留特域(601,47)有芹菜采集区。
+	 EndWindow 1055770
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -200
+	 	 	 KillItem 47717
+	 	 	 ##传送芹菜采集点
+	 	 	 Warp 0,100,498,56
+#	1055594	鸡肉	100,436,44#	1055707	\n\n\n@c你想去的是鸡肉的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055594
+	 #1055707	\n\n\n@c你想去的是鸡肉的采集区吗？？
+         Window 1055707,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 ##1055771	库鲁克斯哥拉尔域(266,378)鸡肉采集区。
+	 EndWindow 1055771
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -200
+	 	 	 KillItem 47717
+	 	 	 ##传送鸡肉采集点
+	 	 	 Warp 0,100,436,44
+
+#	1055595	竹笋	100,514,196#	1055708	\n\n\n@c你想去的是竹笋的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055595
+	 ##	1055708	\n\n\n@c你想去的是竹笋的采集区吗？？
+         Window 1055708,NEXT
+         #1055750	\n\n\n@c传送费用是50G，可以吗？？	1
+	 Window 1055750,YES,NO
+	 Window_NO ##1111657	你可以在德威特岛找找采集点。	1
+	 ##1055772	法兰城遗迹(135,117)有竹笋采集区。
+	 EndWindow 1111657	
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 50
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >49
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -50
+	 	 	 KillItem 47717
+	 	 	 ##传送竹笋	采集点
+	 	 	 Warp 0,100,514,196
+	 	 	 
+#	1055596	海苔	100,621,27#	
+block Item 47717 >= 1 && StrCmpChat == 1055596
+	 #1055709	\n\n\n@c你想去的是海苔的采集区吗？？
+         Window 1055709,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -200
+	 	 	 KillItem 47717
+	 	 	 ##传送海苔采集点
+	 	 	 Warp 0,100,621,27
+#	1055597	竹荚鱼	100,644,61#	1055710	\n\n\n@c你想去的是竹荚鱼的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055597
+	 #1055710	\n\n\n@c你想去的是竹荚鱼的采集区吗？？
+         Window 1055710,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -200
+	 	 	 KillItem 47717
+	 	 	 ##传送竹荚鱼采集点
+	 	 	 Warp 0,100,644,61
+#	1055598	摩斯蜥蜴  索奇亚(300,528,326)	#	1055711	\n\n\n@c你想去的是摩斯蜥蜴的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055598
+	 #1055711	\n\n\n@c你想去的是摩斯蜥蜴的采集区吗？？
+         Window 1055711,NEXT
+         #1055752	\n\n\n@c传送费用是500G，可以吗？？
+
+	 Window 1055752,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -500
+	 	 	 KillItem 47717
+	 	 	 ##传送摩斯蜥蜴采集点
+	 	 	 
+	 	 	 Warp 0,300,528,326
+##############2009/1/19追加
+#1055852	腐烂的树枝	1
+#1055858	\n\n\n@c你想去的是腐烂的树枝的采集区吗？？	1	
+block Item 47717 >= 1 && StrCmpChat == 1055852
+	 #1055858	\n\n\n@c你想去的是腐烂的树枝的采集区吗？？	1
+	
+	 Window 1055858,NEXT
+	 Window 1055752,YES,NO
+         #1055752	\n\n\n@c传送费用是500G，可以吗？？
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >499
+	 ##删除采集传送卷
+	 AddGold -500
+	 KillItem 47717
+	
+	 ##传送烂树枝树枝采集点
+	 Warp 0,300,275,405
+##############	 	 	 	 
+#	1055599	井底蛙	 角笛大风穴(13001,135,5)#	1055712	\n\n\n@c你想去的是井底蛙的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055599
+	 #1055712	\n\n\n@c你想去的是井底蛙的采集区吗？？
+         Window 1055712,NEXT
+         #1055752	\n\n\n@c传送费用是500G，可以吗？？
+
+	 Window 1055752,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -500
+	 	 	 KillItem 47717
+	 	 	 ##传送井底蛙	采集点
+	 	 	 
+	 	 	 Warp 0,13001,135,5
+#	1055600	恶魔鱼	索奇亚(300,282,404) #	1055713	\n\n\n@c你想去的是恶魔鱼的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055600
+	 #1055713	\n\n\n@c你想去的是恶魔鱼的采集区吗？？
+         Window 1055713,NEXT
+         #1055752	\n\n\n@c传送费用是500G，可以吗？？
+
+	 Window 1055752,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -500
+	 	 	 KillItem 47717
+	 	 	 ##传送恶魔鱼	采集点
+	 	 	 Warp 0,300,282,404
+	 	 	 
+	 	 	 
+#	1055601	牛肉	100,460,134#	1055714	\n\n\n@c你想去的是牛肉的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055601
+	 ##	1055714	\n\n\n@c你想去的是牛肉的采集区吗？？
+         Window 1055714,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 ##1055773	库鲁克斯哥拉尔域(372,418)有牛肉采集区。
+	 EndWindow 1055773
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -199
+	 	 	 KillItem 47717
+	 	 	 ##传送牛肉	采集点
+	 	 	 Warp 0,100,460,134
+	 	 	 
+
+#	1055602	星鳗	100,425,466#	1055715	\n\n\n@c你想去的是星鳗的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055602
+	 ##	1055715	\n\n\n@c你想去的是星鳗的采集区吗？？
+         Window 1055715,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 ##1055774	索奇亚奇利域(365,265)有星鳗采集区。
+	 EndWindow 1055774
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -199
+	 	 	 KillItem 47717
+	 	 	 ##传送星鳗	采集点
+	 	 	 Warp 0,100,425,466
+#	1055603	姜	索奇亚加纳域(300,415,298)#	1055716	\n\n\n@c你想去的是姜的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055603
+	 #1055716	\n\n\n@c你想去的是姜的采集区吗？？
+         Window 1055716,NEXT
+         #1055752	\n\n\n@c传送费用是500G，可以吗？？
+
+	 Window 1055752,YES,NO
+	 Window_NO
+	 ##1055775	法兰城北东的山间(489,140)(番茄)有姜采集区。
+	 EndWindow 1055775
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -500
+	 	 	 KillItem 47717
+	 	 	 ##传送姜采集点
+	 	 	 
+	 	 	 Warp 0,300,415,298
+#	1055604	胡椒	库鲁克斯米诺基亚域(43000,549,857)   
+block Item 47717 >= 1 && StrCmpChat == 1055604
+	 #1055717	\n\n\n@c你想去的是胡椒的采集区吗？？
+         Window 1055717,NEXT
+         #1055755	\n\n\n@c传送费用是1500G，可以吗？？	1
+	 Window 1055755,YES,NO
+	 Window_NO#1111658	你可以在杰诺姆岛找找采集点。	1
+	 ##1055776	布拉基姆高地(150,267)有胡椒采集区。
+	 EndWindow 1111658
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >1499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1500
+	 	 	 KillItem 47717
+	 	 	 ##传送胡椒采集区
+	 	 	 Warp 0,43000,549,857
+#	1055605	马铃薯	莎莲娜杰诺瓦域(400,190,469)#	
+block Item 47717 >= 1 && StrCmpChat == 1055605
+	 
+	 #1055718	\n\n\n@c你想去的是马铃薯的采集区吗？？
+
+         Window 1055718,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO  #1111658	你可以在杰诺姆岛找找采集点。	1
+	 ##1055777	布拉基姆高地(224,327)有马铃薯采集区。
+	 EndWindow 1111658
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送马铃薯采集点
+	 	 	 Warp 0,400,190,469
+#	1055606	芝麻娃娃	59502,198,128#	1055719	\n\n\n@c你想去的是芝麻娃娃的采集区吗？？ =>30001,350,625
+block Item 47717 >= 1 && StrCmpChat == 1055606
+	 ##1055719	\n\n\n@c你想去的是芝麻娃娃的采集区吗？？
+         Window 1055719,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -199
+	 	 	 KillItem 47717
+	 	 	 ##传送芝麻娃娃	采集点
+	 	 	 #Warp 0,30001,350,625
+	 	 	 warp 0,59502,198,128
+#	1055607	大黑虾	59500,170,150 =>30001,415,470
+block Item 47717 >= 1 && StrCmpChat == 1055607
+	 ##	1055720	\n\n\n@c你想去的是大黑虾的采集区吗？？
+         Window 1055720,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -199
+	 	 	 KillItem 47717
+	 	 	 ##传送大黑虾	采集点
+	 	 	 #Warp 0,30001,415,470
+	 	 	 warp 0,59500,170,150
+#	1055608	鲑鱼	59502,202,161  =>30001,372,222
+block Item 47717 >= 1 && StrCmpChat == 1055608
+	 ##	1055721	\n\n\n@c你想去的是鲑鱼的采集区吗？？
+         Window 1055721,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -199
+	 	 	 KillItem 47717
+	 	 	 ##传送鲑鱼	采集点
+	 	 	 #Warp 0,30001,372,222
+	 	 	 warp 0,59502,202,161
+#	1055609	猪肉	炎洞前的平原(100,300,440)#	1055722	\n\n\n@c你想去的是猪肉的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055609	
+	 ##	1055722	\n\n\n@c你想去的是猪肉的采集区吗？？
+         Window 1055722,NEXT
+         #1055751	\n\n\n@c传送费用是200G，可以吗？？
+
+	 Window 1055751,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 200
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >199
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -199
+	 	 	 KillItem 47717
+	 	 	 ##传送猪肉	采集点
+	 	 	 Warp 0,100,300,440
+#	1055610	恋爱苹果	莎莲娜杰诺瓦(400,267,558)
+block Item 47717 >= 1 && StrCmpChat == 1055610
+	 ##	1055723	\n\n\n@c你想去的是恋爱苹果的采集区吗？？
+         Window 1055723,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送恋爱苹果采集点
+	 	 	 Warp 0,400,267,558	 
+#	1055611	花蜜结晶	德威特岛美洛平原(30001,492,426)
+block Item 47717 >= 1 && StrCmpChat == 1055611
+	 ##	1055724	\n\n\n@c你想去的是花蜜结晶的采集区吗？？
+         Window 1055724,NEXT
+         #1055750	\n\n\n@c传送费用是50G，可以吗？？	1
+	 Window 1055750,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 50
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >49
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -50
+	 	 	 KillItem 47717
+	 	 	 ##传送花蜜结晶	采集点
+	 	 	 Warp 0,30001,492,426 	 
+	 	 
+	 	 
+	 	 
+##■ 有采集传送卷 && 字串比对  米	 
+block Item 47717 >= 1 && StrCmpChat == 1051407
+	 
+	 #	1055725	\n\n\n@c你想去的是米的采集区吗？？
+
+	 Window 1055725,NEXT
+         #1055752	\n\n\n@c传送费用是500G，可以吗？？
+
+	 Window 1055752,YES,NO
+	 Window_NO
+
+	 ##1055778	库鲁克斯哥拉尔域(263,348)有米采集区。
+	 EndWindow 1055778
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -500
+	 	 	 KillItem 47717
+	 	 	 ##传送米采集点
+	 	 	 Warp 0,00300,626,304 		 	
+	 	 	 
+##■ 有采集传送卷 && 字串比对  高级奶油	 
+block Item 47717 >= 1 && StrCmpChat == 1051408
+	 #	1055727	\n\n\n@c你想去的是高级奶油的采集区吗？？
+
+	 Window 1055727,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 ##1055779	布拉基姆高地(194,140)有高级奶油采集区。
+	 EndWindow 1055779
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送高级奶油采集点
+	 	 	 Warp 0,00400,154,349		 		
+	 	 	 
+##■ 有采集传送卷 && 字串比对  辣椒	 
+block Item 47717 >= 1 && StrCmpChat == 1051409
+	 #	1055728	\n\n\n@c你想去的是辣椒的采集区吗？？
+
+	 Window 1055728,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 ##1055780	库鲁克斯哥拉尔域(331,361)有辣椒采集区。
+	 EndWindow 1055780
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送辣椒采集点
+	 	 	 Warp 0,00400,309,447 		 		
+	 	 	 
+##■ 有采集传送卷 && 字串比对 咖哩块  	 
+block Item 47717 >= 1 && StrCmpChat == 1051410
+	 #	1055729	\n\n\n@c你想去的是咖哩块的采集区吗？？
+
+	 Window 1055729,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 ##1055781	布拉基姆高地(131,224)有咖哩块采集区。1111657	你可以在德威特岛找找采集点。	1
+	 EndWindow 1111657
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送 咖哩块采集点
+	 	 	 Warp 0,00400,265,430 		 		
+	 	 	 
+##■ 有采集传送卷 && 字串比对  螃蟹	 
+block Item 47717 >= 1 && StrCmpChat == 1051411
+	 #	1055730	\n\n\n@c你想去的是螃蟹的采集区吗？？
+
+	 Window 1055730,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 ##1055782	米内葛尔坎那贝拉域(566,348)有螃蟹采集区。
+	 EndWindow 1055782
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送螃蟹采集点
+	 	 	 Warp 0,00400,318,503 		 		
+	 	 	 
+##■ 有采集传送卷 && 字串比对  霜降牛肉	 
+block Item 47717 >= 1 && StrCmpChat == 1051412
+	 #	1055731	\n\n\n@c你想去的是霜降牛肉的采集区吗？？
+
+	 Window 1055731,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送霜降牛肉采集点
+	 	 	 Warp 0,00400,554,271 		 		
+	 	 	 
+##■ 有采集传送卷 && 字串比对  阿巴尼斯哈密瓜	 
+block Item 47717 >= 1 && StrCmpChat == 1051413
+	 #	1055732	\n\n\n@c你想去的是阿巴尼斯哈密瓜的采集区吗？？
+
+	 Window 1055732,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送阿巴尼斯哈密瓜采集点
+	 	 	 Warp 0,04400,90,77 		 		
+	 	 	 
+##■ 有采集传送卷 && 字串比对  湿地毒蛇	 
+block Item 47717 >= 1 && StrCmpChat == 1051414
+	 #	1055733	\n\n\n@c你想去的是湿地毒蛇的采集区吗？？
+
+	 Window 1055733,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送湿地毒蛇采集点
+	 	 	 Warp 0,04457,37,49 	
+#------------mayko追加		 	 	 
+##■ 有采集传送卷 && 字串比对 钢骑之矿
+##■ 有传送卷 && 字串比对 钢骑之矿
+block Item 47717 >= 1 && StrCmpChat == 1051394
+	  #1055629	\n\n\n@c你想去的是钢骑之矿的采集区吗？？
+         Window 1055629,NEXT
+         #1055752	\n\n\n@c传送费用是500G，可以吗？？
+
+	 Window 1055752,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -500
+	 	 	 KillItem 47717
+	 	 	 ##传送钢骑之矿采集点
+	 	 	 
+	 	 	 Warp 0,15203,50,50 
+###################################2009/1/19追加
+#1055853	海贼的宝箱	1
+#1055859	\n\n\n@c你想去的是海贼的宝箱的采集区吗？？	1
+block Item 47717 >= 1 && StrCmpChat == 1055853
+	 #1055629	\n\n\n@c你想去的是海贼的宝箱的采集区吗？？
+         Window 1055859,NEXT	 	 	 
+         #1055752	\n\n\n@c传送费用是500G，可以吗？？
+
+	 Window 1055752,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -500
+	 	 	 KillItem 47717
+	 	 	 ##传送钢骑之矿采集点
+	 	 	 
+	 	 	 Warp 0,15203,50,50 
+#########################################################################################	 	 	 
+block Item 47717 >= 1 && StrCmpChat == 1054644
+#	1055726	\n\n\n@c你想去的是砂糖的采集区吗？？
+
+	 Window 1055726,NEXT
+         #1055753	\n\n\n@c传送费用是1000G，可以吗？？	1
+	 Window 1055753,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1000
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold > 999
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1000
+	 	 	 KillItem 47717
+	 	 	 ##传送砂糖采集点
+	 	 	 Warp 0,04400,85,46	
+	 	 	 
+#	1055613	伊势虾	库鲁克斯哥拉尔域(43000,147,402)　#	
+block Item 47717 >= 1 && StrCmpChat == 1055613
+	 #1055734	\n\n\n@c你想去的是伊势虾的采集区吗？？
+         Window 1055734,NEXT
+         #1055755	\n\n\n@c传送费用是1500G，可以吗？？	1
+	 Window 1055755,YES,NO
+	 Window_NO
+	 ##1055783	这样吧！！你在魔法大学附近找找采集点吧！！
+	 EndWindow 1055783
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >1499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1500
+	 	 	 KillItem 47717
+	 	 	 ##传送伊势虾采集区
+	 	 	 Warp 0,43000,147,402
+	 	 	 
+#	1055614	海胆	库鲁克斯哥拉尔域(43000,163,412)　
+block Item 47717 >= 1 && StrCmpChat == 1055614
+	 ##	1055735	\n\n\n@c你想去的是海胆的采集区吗？？
+         Window 1055735,NEXT
+         #1055755	\n\n\n@c传送费用是1500G，可以吗？？	1
+	 Window 1055755,YES,NO
+	 Window_NO
+	 ##1055783	这样吧！！你在魔法大学附近找找采集点吧！！
+	 EndWindow 1055783
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >1499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1500
+	 	 	 KillItem 47717
+	 	 	 ##传送海胆采集区
+	 	 	 Warp 0,43000,163,412
+	 	 	 
+#	1055615	鱼翅	库鲁克斯哥拉尔域(43000,389,535) #	
+block Item 47717 >= 1 && StrCmpChat == 1055615
+	 #1055736	\n\n\n@c你想去的是鱼翅的采集区吗？？
+         Window 1055736,NEXT
+         #1055755	\n\n\n@c传送费用是1500G，可以吗？？	1
+	 Window 1055755,YES,NO
+	 Window_NO
+	 ##1055783	这样吧！！你在魔法大学附近找找采集点吧！！
+	 EndWindow 1055783
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >1499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1500
+	 	 	 KillItem 47717
+	 	 	 ##传送鱼翅采集区
+	 	 	 Warp 0,43000,389,535
+#	1055616	鳖	库鲁克斯哥拉尔域(43000,298,291)
+block Item 47717 >= 1 && StrCmpChat == 1055616
+	 ##	1055737	\n\n\n@c你想去的是鳖的采集区吗？？
+         Window 1055737,NEXT
+         #1055755	\n\n\n@c传送费用是1500G，可以吗？？	1
+	 Window 1055755,YES,NO
+	 Window_NO
+	 ##1055783	这样吧！！你在魔法大学附近找找采集点吧！！
+	 EndWindow 1055783
+	 
+	 Window_YES Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 Window_YES Gold < 1500
+	 ##3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+ 	 
+
+	 	 Window_YES Item 47717 >= 1  && Group == 1  && Gold >1499
+	 	 	 ##删除采集传送卷
+	 	 	 AddGold -1500
+	 	 	 KillItem 47717
+	 	 	 ##传送鳖 采集区
+	 	 	 Warp 0,43000,298,291
+#	1055617	生物？	#100,654,247	1055738	\n\n\n@c你想去的是生物？的采集区吗？？
+block Item 47717 >= 1 && StrCmpChat == 1055617
+	 
+	 ##1055738	\n\n\n@c你想去的是生物？的采集区吗？？
+
+	 Window 1055738,YES,NO
+	 Window_NO
+	 #1055754	\n\n\n@c想清楚再说吧！
+	 EndWindow 1055754
+	 
+	 Window_YES Group > 1
+	 ##1051416	\n\n\n\n@c只能一个人通过。	1
+	 EndWindow 1051416
+ 	 
+
+	 Window_YES Item 47717 >= 1  && Group == 1
+	 ##删除采集传送卷
+	 KillItem 47717
+	 ##传送传说的生物？采集点
+	 Warp 0,100,654,247
+	 	 	 

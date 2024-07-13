@@ -1,0 +1,118 @@
+#庍褥奶矛件玄泛旦玄
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## ㄢ及桦宁 ##########
+block MetamoCount == 3
+	#云蟆反＞3＝分﹝骚曰?仃化方仄″
+	Window 10960,OK,CANCEL
+	
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+	Warp 0,777,204,205
+
+
+########## ㄢ方曰聂中桦宁 ##########
+block MetamoCount >= 3
+	#云蟆反＞3＝方曰聂中﹝请跶仄化仇中﹝
+	Window 10959,OK
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+
+
+########## ㄢ方曰剂卅中桦宁 ##########
+block MetamoCount <= 3 && MetamoCount >= 1
+	#云蟆反＞3＝方曰剂卅中﹝请跶仄化仇中﹝
+	Window 10958,OK
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+
+
+########## 庍褥仄化云日内﹜裆岭及铣毛仄化中月桦宁 ##########
+block MetamoCount == 0 && BBimage >= 100000 && BBimage <= 100173 
+		#＞3＝元扎卅中乩夫它反窖匀凶窖匀凶﹝
+		Window 10957,OK
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+
+block MetamoCount == 0 && BBimage >= 105000 && BBimage <= 105173 
+		#＞3＝元扎卅中乩夫它反窖匀凶窖匀凶﹝
+		Window 10957,OK
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+
+block MetamoCount == 0 && BBimage >= 106000 && BBimage <= 106173 
+		#＞3＝元扎卅中乩夫它反窖匀凶窖匀凶﹝
+		Window 10957,OK
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+
+
+########## 庍褥仄化云日内﹜辉岭及铣毛仄化中月桦宁##########
+block MetamoCount == 0 && BBimage >= 100252 && BBimage <= 100423 
+		#＞3＝元扎卅中井日分户卅氏分﹝仍户氏友﹝
+		Window 10956,OK
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+
+block MetamoCount == 0 && BBimage >= 105252 && BBimage <= 105423 
+		#＞3＝元扎卅中井日分户卅氏分﹝仍户氏友﹝
+		Window 10956,OK
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+
+block MetamoCount == 0 && BBimage >= 106252 && BBimage <= 106423 
+		#＞3＝元扎卅中井日分户卅氏分﹝仍户氏友﹝
+		Window 10956,OK
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+
+########## 庍褥仄化云日内﹜矢永玄及铣毛仄化中月桦宁 ##########
+block MetamoCount == 0 && BBimage >= 101000 && BBimage <= 101935 
+		#＞3＝元扎卅中樊反骚木氏﹝匀化云蟆左伊及蜕邯坌井月〝
+		Window 10955,OK
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+
+block MetamoCount == 0 && BBimage >= 107000 && BBimage <= 107935 
+		#＞3＝元扎卅中樊反骚木氏﹝匀化云蟆左伊及蜕邯坌井月〝
+		Window 10955,OK
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+
+########## 庍褥仄化云日内﹜栋咥樊及铣毛仄化中月桦宁 ##########
+block MetamoCount == 0 && BBimage >= 100425 && BBimage <= 100805 
+	#丐氏凶反＞3＝元扎卅中仃升﹜冂帎卞骚匀化方仄″
+	Window 10954,OK,CANCEL
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+	Warp 0,777,204,205
+
+block MetamoCount == 0 && BBimage >= 105425 && BBimage <= 105805 
+	#丐氏凶反＞3＝元扎卅中仃升﹜冂帎卞骚匀化方仄″
+	Window 10954,OK,CANCEL
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+	Warp 0,777,204,205
+
+block MetamoCount == 0 && BBimage >= 106425 && BBimage <= 106805 
+	#丐氏凶反＞3＝元扎卅中仃升﹜冂帎卞骚匀化方仄″
+	Window 10954,OK,CANCEL
+
+	#----- 它奶件玉它??及桦宁 -----#
+	Window_OK
+	Warp 0,777,204,205
+

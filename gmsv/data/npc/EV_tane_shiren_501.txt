@@ -1,0 +1,23 @@
+
+block
+
+#	Window "\n\n﹛戊戊穴犯侳正欠廿﹝匿奶欠廿﹝",next
+	Window 3006992,next
+
+
+#	Window "\n\n﹛愈詨用魂柈母欠廿﹝\n﹛欠廿玄爵它欠廿",next
+	Window 3006993,next
+
+
+#	Window "\n\n﹛左抇扔件甩﹜蜕奶穴扑正﹝\n﹛失瓜正甩擎怍窗都亥﹜玄﹝\n﹛擎怍窗都甩\n﹛拑蛲瓜⑹平甩域濠扑瓜奶﹜\n﹛芴煌瓜仪乒哔巨瓜奶﹜玄﹝",next
+	Window 3006994,next
+
+
+#	Window "\n\n﹛愤坌用褥虫布﹜巍用燮穴犯窗都瓦瓜永泛奶弁用仲\n﹛台甩﹜奶丢□斥﹜扑穴旦欠廿﹝",ok
+	Window 3006995,ok
+
+
+	Window_ok
+
+		Encount 2|0,59524,68,75||0|||||10|305004|||||||||
+

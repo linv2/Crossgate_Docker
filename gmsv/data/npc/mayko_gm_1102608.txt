@@ -1,0 +1,24 @@
+#WatchEx		0	1102225
+#102767	没有钥匙进不去。	
+#102768	要使用钥匙进屋吗？
+###□一般
+
+block Item 47296 >= 1  && Xpos >= 14  && Ypos > 5  && Ypos < 8
+	 Window 1110632,YES,NO 
+ 	 Window_YES Group > 1
+ 	 EndWindow 1100000
+	 Window_YES
+	 	LeaveGroup
+	 	killitem 47296,1
+	 	GiveLeak1Item (18411%35$1,18412%35$1,607735%30$1)
+ 	 	
+	  Endblock
+		 
+ 	 Window_NO 
+	  Endblock 	 	
+	  
+block Xpos >= 14  && Ypos > 5  && Ypos < 8
+	 #Warp 0,32137,4,9
+	 EndWindow 1110629
+
+	

@@ -1,0 +1,23 @@
+
+block
+
+
+
+	if globalFlag25 == 1
+
+
+		Play_SE 260,320,240
+		shapenext 110016
+
+	endif
+
+
+	if Xpos == 151 && Ypos == 132 &&  globalFlag25 == 1
+
+			LeaveGroup
+			warp 0,59705,119,149
+
+	endif
+
+
+

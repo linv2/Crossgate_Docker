@@ -1,0 +1,16 @@
+#Óò¼ò¼ëØÆ»¯òåÕ¸µæÆ¼
+#·¥¡õÃó0
+
+
+Block Xpos == 157 && Ypos == 93
+
+if Item_621017 == 1 && StampCount_621017 >= 6
+
+	LeaveGroup
+	warp 0,59986,54,60
+else
+
+	LeaveGroup
+	warp 0,59986,94,20
+	
+endif

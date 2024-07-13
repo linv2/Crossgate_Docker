@@ -1,0 +1,22 @@
+#####兵寮内书库入口
+
+#1109317	\n\n\n@c门上锁着，要打开吗？。
+#1109318	\n\n\n@c门上锁着打不开。
+
+
+
+	 
+block Item 40802>0
+
+ 	Window 1109317,YES,NO 			
+ 		 Window_YES 
+		 Warp 0,31901,21,17
+		
+
+		 Window_NO
+		 Endblock
+
+block
+	EndWindow 1109318
+ 		
+

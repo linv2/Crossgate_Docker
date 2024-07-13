@@ -1,0 +1,16 @@
+#####星系移民赠品	露比头饰产生器	din_item_47313.txt	
+###能力说明：双点后可取得八个露比头饰以及两个露比头饰SP。
+
+##空间不足
+block ItemSpace < 10
+	 ##1100003	\n\n\n\n\n@c物品栏请留十个空位。	1
+	 EndWindow 1100003
+
+##GM专用
+block Item 46404 >=1
+	 GiveLeak1Item 47314,8
+	 GiveLeak1Item 47315,2
+##一般	 
+block 
+	 ##1746920	GM专用！违者斩立决！	12
+	 EndWindow 1746920

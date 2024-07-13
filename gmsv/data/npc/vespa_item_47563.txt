@@ -1,0 +1,95 @@
+##20070205_ec 
+##道具名称：2007新春福袋
+##功能：点出道具_请参见文件_2007年2月_新年喜庆福袋.xls
+
+	 
+# ##■物品栏不够
+ block ItemSpace < 5
+	 ##1052925	\n\n  你的物品拦位不够喔！	1
+	 EndWindow 1052925
+ 
+##■以随机决定点出的奖品组
+
+block ItemSpace >=5 && Item 47563 >=1
+	 localCount0 =  random 8,0
+	 if localCount0 == 1
+	 	 KillItem 47563,1
+	 	 GiveLeak1Item 45568,1
+	 	 GiveLeak1Item 47325,1
+	 	  GiveStackItem 47221,3
+	 	 GiveLeak1Item 47327,1
+	 	 GiveLeak1Item 46866,1
+	 	 GiveLeak1Item 47471,1
+	 	 
+	 else
+	 	 if localCount0 == 2
+	 		 KillItem 47563,1
+	 		 GiveLeak1Item 45569,1
+	 		 GiveLeak1Item 47321,1
+	 		 GiveStackItem 47221,3
+	 		 GiveLeak1Item 47169,1
+	 		 GiveLeak1Item 47393,1
+	 		 GiveLeak1Item 46996,1
+	 	 else
+	 		 if localCount0 == 3
+	 		 	 KillItem 47563,1
+	 		 	 GiveLeak1Item 45570,1
+	 		 	 GiveLeak1Item 46865,1
+	 		 	 GiveStackItem  46320,2
+	 		 	 GiveLeak1Item 45515,1
+	 		 	 GiveStackItem 47166,3
+	 		 	 GiveLeak1Item 47471,1
+	 		 else
+	 		 	 if localCount0 == 4
+	 		 	 	 KillItem 47563,1
+	 		 	 	 GiveLeak1Item 45570,1
+	 		 	 	 GiveLeak1Item 45513,1
+	 		 	 	 GiveLeak1Item 47317,1
+	 		 	 	 GiveStackItem 47320,3
+	 		 	 	 GiveLeak1Item 47394,1
+	 		 	 	 GiveLeak1Item 47471,1
+	 		 	 else
+	 		 	 	 if localCount0 == 5
+	 		 	 	 	 KillItem 47563,1
+	 		 	 	 	 GiveLeak1Item 45570,1
+	 		 	 	 	 GiveLeak1Item 46295,1
+	 		 	 	 	 GiveLeak1Item 46297,1
+	 		 	 	 	 GiveLeak1Item 46299,1
+	 		 	 	 	 GiveLeak1Item 47562,1
+	 		 	 	 	 GiveLeak1Item 18660,1
+	 		 	 	 else
+	 		 	 	 	 if localCount0 == 6
+	 		 	 	 	 	 KillItem 47563,1
+	 		 	 	 	 	 GiveLeak1Item 45568,1
+	 		 	 	 	 	 GiveLeak1Item 46405,1
+	 		 	 	 	 	 GiveLeak1Item 47562,1
+	 		 	 	 	 	 GiveLeak1Item 46866,1
+	 		 	 	 	 	 GiveLeak1Item 47006,1
+	 		 	 	 	 else
+	 		 	 	 		 if  localCount0 == 7
+	 		 	 	 		 	 KillItem 47563,1
+	 		 	 	 			 GiveLeak1Item 45569,1
+	 		 	 	 			 GiveLeak1Item 46279,1
+	 		 	 	 			 GiveLeak1Item 47331,1
+	 		 	 	 			 GiveStackItem  18452,5
+	 		 	 	 			 GiveLeak1Item 45987,1
+	 		 	 	 		 else
+	 		 	 	 		 	 if localCount0 == 8
+	 		 	 	 		 	 	 KillItem 47563,1
+	 		 	 	 		 	 	 GiveLeak1Item 45570,1
+	 		 	 	 		 	 	 GiveLeak1Item 46994,1
+	 		 	 	 		 	 	 GiveLeak1Item 45515,1
+	 		 	 	 		 	 	 GiveLeak1Item 47317,1
+	 		 	 	 		 	 	 GiveLeak1Item 45513,1
+								 endif
+							 endif
+						 endif
+					 endif
+				 endif
+			 endif
+		 endif
+	 endif
+endblock
+
+						 
+	 	  

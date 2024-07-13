@@ -1,0 +1,42 @@
+
+#灾害补助
+
+
+	 
+	 		 	 
+block Item 41116 >0 && ItemCreateTime 41116>3600
+#	两天半		 
+	 killitem 41116,1
+	 GiveLeak1Item 41117,1
+	 endwindow 1110671
+block item 41116>0
+	 endwindow 1110672	
+
+
+block item 41115>0 ##战或不战	 
+	 window 1110666,next
+	 Window 1110667,next
+	 Window 1110668,next
+	 Window 1110669,next	 
+	 Window 1110670,yes,no
+	 Window_no
+	 killitem 41115,1
+	 GiveLeak1Item 41116,1
+	 endwindow 1110671
+	 Window_yes
+	 LeaveGroup
+	 killitem 41115,1
+	 Encount 2|||0|||||0|40311|||||||||	 
+	 Endblock
+	 
+block item 41113>0
+	 killitem 41113,1
+	 GiveLeak1Item 41114,1
+	 endwindow 1110663
+block item 41111>0
+	 killitem 41111,1
+	 GiveLeak1Item 41112,1
+	 endwindow 1110659
+	 
+block 
+	 endwindow 1110658	 

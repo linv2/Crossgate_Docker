@@ -1,0 +1,50 @@
+#卷	鼠类一级点传送卷	mayko_item_47744.txt
+#1055878	\n\n\n@c你想传送到大地鼠的一级点吗？	1
+#1055879	\n\n\n@c你想传送到火焰鼠的一级点吗？	1
+#1055880	\n\n\n@c你想传送到宝石鼠的一级点吗？	1
+#1055881	\n\n\n@c你想传送到恶梦鼠的一级点吗？	1
+#1055882	\n\n\n@c你想传送到水蓝鼠的一级点吗？	1
+
+
+block Item 47744 >0 #大地鼠
+	 Window 1055878,YES,NO
+	 Window_YES Item 47744==0
+	 Endblock
+	 Window_YES
+	 KillItem 47744,1
+	 Warp 0,100,156,197
+	 endblock
+	 Window_NO ##火焰鼠
+	 	 Window 1055879,YES,NO
+	 	  Window_YES Item 47744==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 47744,1
+	 	  Warp 0,300,235,326
+	 	  endblock
+	 Window_NO ##宝石鼠
+	 	 Window 1055880,YES,NO
+	 	  Window_YES Item 47744==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 47744,1
+	 	  Warp 0,21006,24,6	 	  
+	 	  endblock	 
+	 Window_NO ##恶梦鼠
+	 	 Window 1055881,YES,NO
+	 	  Window_YES Item 47744==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 47744,1
+	 	  Warp 0,33120,33,40	 	  
+	 	  endblock
+	 Window_NO ##水蓝鼠
+	 	 Window 1055882,YES,NO
+	 	  Window_YES Item 47744==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 47744,1
+	 	  Warp 0,32115,54,21	 	  
+	 	  endblock
+	 	  Window_NO
+	 	  EndWindow 1055891

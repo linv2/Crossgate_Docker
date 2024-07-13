@@ -1,0 +1,17 @@
+#
+#¹×¸
+#
+
+block
+	Window 22142,Yes,No
+		Window_No
+			EndWindow 15684,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 10000
+		Window_Yes Item 18984 == 0
+			EndWindow 22143
+		Window_Yes Item 18984 >= 1
+			KillItem 18984,1
+			GiveLeak1Item 18983,999
+			Message 4011
+		Window_Yes

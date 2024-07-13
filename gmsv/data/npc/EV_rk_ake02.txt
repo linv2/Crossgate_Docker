@@ -1,0 +1,11 @@
+#????
+
+block Item 16218 >= 1
+	Window 21645,YES
+		Window_YES
+			Window 21646,OK
+				Window_OK
+					KillItemall 16218
+					GiveItem 16219
+block
+	Message 21644

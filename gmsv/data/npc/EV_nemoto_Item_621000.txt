@@ -1,0 +1,105 @@
+#
+#田□伙’犯’伉(乒件旦正□云卞亢曰)
+#
+
+##田□伙’犯’伉毛2蜊动晓儅匀化中月
+block Item 621000 >= 2
+	EndWindow 4200021
+	#\n\n﹛田□伙’犯’伉反ㄡ勾动晓儅匀化中月午\n﹛罹屯日木引六氏﹝
+
+##失奶泛丞及坞五旦矢□旦互3蜊恍坢
+block ItemSpace < 3
+	EndWindow 4200022
+	#\n\n﹛失奶泛丞勂毛ㄢ勾动晓坞仃化井日\n﹛罹屯化仁分今中﹝
+
+## 矢永玄勂卞坞五互卅中
+block petspace == 0
+	EndWindow 4200023
+	#\n\n﹛乒件旦正□勂毛ㄠ勾动晓坞仃化井日\n﹛罹屯化仁分今中﹝
+
+##失奶泛丞及坞五旦矢□旦互3蜊动晓
+block Itemspace  >= 3
+	LocalCount31 = random 100,0
+	Window 4200024,OK
+	#\n\n﹛田□伙’犯’伉毛罹屯引允﹝
+
+##晓筏丢永本□斥刓憎酦卞田□伙’犯’伉互喂尹凶
+			Window_OK LocalCount31 >= 0 && LocalCount31 <= 100 && Item 621000 > 1
+				EndWindow 4200025
+				#\n\n﹛田□伙’犯’伉反ㄡ勾动晓儅匀化中月午\n﹛罹屯日木引六氏﹝
+
+##晓筏丢永本□斥刓憎酦卞﹜失奶泛丞勂及坞五互箫曰卅仁卅匀凶
+			Window_OK LocalCount31 >= 0 && LocalCount31 <= 100 && Itemspace < 3
+				EndWindow 4200026
+				#\n\n﹛失奶泛丞勂毛ㄢ勾动晓坞仃化井日\n﹛罹屯化仁分今中﹝
+
+##20⊙及割峔匹75泔毛4本永玄芨尹月
+			Window_OK LocalCount31 >= 81 && LocalCount31 <= 100
+				KillItem 621000,1,(3012001)
+				GiveStackItem 15605,3
+				GiveStackItem 15605,3
+				GiveStackItem 15605,3
+				GiveStackItem 15605,3
+			Endblock
+
+##20⊙及割峔匹丢永玄本永玄毛芨尹月
+			Window_OK LocalCount31 >= 61 && LocalCount31 <= 80
+				KillItem 621000,1,(3012001)
+				GiveLeak1Item 18195,2
+				GiveLeak1Item 18194,1
+				GiveLeak1Item 18231,1
+			Endblock
+
+##20⊙及割峔匹幼伙乒件酦扲檗本永玄毛芨尹月
+			Window_OK LocalCount31 >= 41 && LocalCount31 <= 60
+				KillItem 621000,1,(3012001)
+				GiveLeak1Item 608400,1
+				GiveLeak1Item 608410,1
+				GiveLeak1Item 608420,1
+				GiveLeak1Item 608430,1
+			Endblock
+
+##20⊙及割峔匹皮□旦玄甩□皮毛4蜊芨尹月
+			Window_OK LocalCount31 >= 21 && LocalCount31 <= 40
+				KillItem 621000,1,(3012001)
+				GiveLeak1Item 607680,4
+			Endblock
+
+##10⊙及割峔匹皮□旦玄甩□皮﹜皮□旦玄甩□皮SP毛2蜊内勾芨尹月
+			Window_OK LocalCount31 >=11  && LocalCount31 <= 20
+				Killitem 621000,1,(3012001)
+				GiveLeak1Item 607680,2
+				GiveLeak1Item 607685,2
+			Endblock
+
+##4⊙及割峔匹乒件旦正□戊奶件1M毛4本永玄芨尹月
+			Window_OK LocalCount31 >= 7 && LocalCount31 <= 10
+				Killitem 621000,1,(3012001)
+				GiveStackItem 620032,50
+				GiveStackItem 620032,50
+				GiveStackItem 620032,50
+				GiveStackItem 620032,50
+			Endblock
+
+##3⊙及割峔匹冂厘伙□件平亘□皮本永玄毛芨尹月
+			Window_OK LocalCount31 >= 4 && LocalCount31 <= 6
+				Killitem 621000,1,(3012001)
+				GiveLeak1Item 18025,1
+				GiveLeak1Item 18046,1
+				GiveLeak1Item 18067,1
+				GiveLeak1Item 18088,1
+			Endblock
+
+##2⊙及割峔匹幼伙乒件赎﹣2﹜打皮伉件及残嬴五﹜失奶扑乓平乓件犯奴□毛芨尹月
+			Window_OK LocalCount31 >= 2 && LocalCount31 <= 3
+				Killitem 621000,1,(3012001)
+				GiveLeak1Item 608700,2
+				GiveLeak1Item 608606,1
+				GiveLeak1Item 608604,1
+			Endblock
+
+##1⊙及割峔匹扑伉它旦毛芨尹月
+			Window_OK LocalCount31 == 1 && petspace > 0
+				Killitem 621000,1,(3012001)
+				Givepet 313900
+			Endblock

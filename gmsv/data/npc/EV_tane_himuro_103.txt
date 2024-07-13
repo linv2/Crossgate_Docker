@@ -1,0 +1,77 @@
+# 7 "EV_tane_himuro_103.txt"
+# 1 "header/global0.h" 1
+# 8 "EV_tane_himuro_103.txt" 2
+
+block
+
+
+
+
+
+
+                        if LocalCount5 == 5
+
+                                LocalCount5 = random 2,0
+
+                                if LocalCount5 == 1
+
+
+
+
+                                        LocalCount5 = 5
+
+
+
+                                        Window 3006778,next
+
+
+
+                                        EndWindow 3006779
+
+
+
+                                else
+                                        LocalCount5 = 0
+
+
+
+                                        Window 3006780,next
+
+
+
+                                        Window 3006781,ok
+
+
+                                        window_ok Itemspace >= 1
+
+                                        giveitem 607648,1
+
+                                        window_ok Itemspace <= 0
+
+
+                                        EndWindow 3006782
+
+
+                                endif
+
+
+
+                        else
+
+
+
+                                LocalCount5 = 5
+
+
+
+                                Window 3006783,next
+
+
+
+
+                                EndWindow 3006784
+
+
+
+
+                        endif

@@ -1,0 +1,33 @@
+
+block
+
+
+if  Xpos == 22 && Ypos == 39
+
+	if LocalFlag0 == 0
+
+
+		Play_SE 260,320,240
+		shapenext 103011
+
+		LocalFlag0 = 1
+
+	endif
+
+endif
+
+
+if Xpos == 29 && Ypos == 38
+
+	if LocalFlag0 == 1
+
+
+			warp 0,59674,27,24
+
+	endif
+
+endif
+
+
+
+

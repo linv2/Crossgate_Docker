@@ -1,0 +1,22 @@
+#时之宝箱 mayko_item_47747.txt
+#1055876	\n\n\n@c你要打开时之箱吗？
+
+
+block Item 47747>0
+	 Window 1055876,YES,NO
+
+	 Window_YES ItemSpace < 4
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 EndWindow 1100001
+
+	 Window_YES Item 47747 > 0
+	  KillItem 47747,1
+	  GiveLeak1Item 47746,3
+	  GiveLeak1Item 47748,1
+	  GiveLeak1Item 47174,1
+	  GiveLeak1Item (47741%33$1,47742%33$1,47743%33$1)
+
+	 endblock
+	  Window_YES
+	  Window_NO
+	  Endblock

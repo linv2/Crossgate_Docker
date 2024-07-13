@@ -1,0 +1,6 @@
+#市件瓜矛仿及蚝
+#岁仪刉狨笮任奴伙
+
+block
+	Window 22283,Next
+	EndWindow 22284,OK

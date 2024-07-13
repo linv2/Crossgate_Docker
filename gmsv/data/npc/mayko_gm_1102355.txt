@@ -1,0 +1,13 @@
+###缪丽儿
+
+#1109528	生者是无法进入里面的，回去吧
+#1109529	那么，你只有化为亡灵的命了～～～
+block
+	 Window 1109528,YES,NO
+	 Window_NO
+	 Window 1109529,OK
+	 Window_OK
+	 Encount 2|0,31909,22,38||0|||||0|103144|||||||||	 
+	 Endblock
+	 Window_YES
+	 Endblock

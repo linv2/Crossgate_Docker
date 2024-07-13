@@ -1,0 +1,42 @@
+#
+#PUK3_Main1
+#
+#瓜奶失□伙﹋巨疋夫□弘﹌
+
+
+Block
+
+	Window 3207063,Next
+
+		#\n\n﹛＿＿枑匀化五凶井＿＿﹝\n﹛豪ゴ互じ匀凶方丹分互﹜厘暹屺匹丐匀凶井〝
+	
+	Window 3207064,Next
+
+		#\n\n﹛孔戈﹜支反曰窒支日\n﹛恌仁卅中仇午互粟仇曰公丹分＿＿﹝\n﹛分互﹜脱反凶分仇丹仄化﹜\n﹛云潜卞鳗尹月仇午仄井请侳厄＿＿﹝
+	
+	Window 3207065,OK
+
+		#\n\n﹛云厄仄卞仇木毛离公丹﹝\n﹛台及筏盛分＿＿﹝\n﹛漆詨云厄仄毛⑼仁誊卞卅月分欠丹﹝
+	
+	
+		Window_OK ItemSpace == 0
+		
+			EndWindow 3207066
+
+		#\n\n﹛儅切坁互中匀天中及方丹分卅﹝
+			
+		
+	
+		Window_OK
+		
+			EndEvent 206 = 1
+			CheckTitle
+			
+			GiveItem 621015,1
+			
+			LeaveGroup
+			
+			warp 0,59526,188,70
+			
+			
+

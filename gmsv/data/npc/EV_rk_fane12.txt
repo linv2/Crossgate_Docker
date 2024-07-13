@@ -1,0 +1,28 @@
+#??
+
+#耨樊及据毛湃卞儅匀化中月卅日
+block Item 16403 >= 1
+	EndWindow 22731,OK
+
+#
+block
+	Window 22728,Yes,No
+		Window_No
+			EndWindow 22729,OK
+		Window_Yes
+			Window 22730,Yes,No
+				Window_Yes
+					Window 22731,OK
+						Window_OK gold < 100
+							EndWindow 10005
+						Window_OK
+							AddGold -100
+				Window_No
+					Window 22732,OK
+						Window_OK ItemSpace == 0
+							EndWindow 10000
+						Window_OK gold < 2000
+							EndWindow 10005
+						Window_OK
+							AddGold -2000
+							GiveItem 16403,1

@@ -1,0 +1,37 @@
+block Item 607666 >= 2
+
+				endWindow "\n\n﹛澎饼反域骚内勾钒仃化仁分今中﹝"
+
+
+
+block
+
+
+
+				globalFlag15 = 0
+				globalFlag16 = 0
+				globalFlag17 = 0
+				globalFlag18 = 0
+				globalFlag19 = 0
+				globalFlag20 = 0
+				globalFlag21 = 0
+				globalFlag22 = 0
+				globalFlag23 = 0
+				globalFlag24 = 0
+
+
+
+
+#				Window "\n\n﹛移﹛冗氏介中﹛失伙田旦",ok
+
+				Window "\n\n﹛襞匀化中月井″\n﹛民亦戊及粟蜓反﹜衙医丢平扑戊分″\n﹛癫凛反﹜尕牁赢熨及泔﹜螃及婉心坁午中歹木﹜\n﹛失旦泛市及叹牺乒件泛旦穴反\n﹛掸毛允曰勾少仄化\n﹛域ざ卞市永皿匹ㄤㄟベ手婉氏匹中凶及分″\n﹛匹反″",ok
+
+
+
+
+				Window_ok
+
+
+				killitem 607666,1,(3007158)
+				giveItem 15200,1
+

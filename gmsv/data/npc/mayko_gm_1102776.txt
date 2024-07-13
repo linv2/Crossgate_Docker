@@ -1,0 +1,27 @@
+block item 41260 >0 && item 41261 >0
+	#1111924	\n\n\n　　　　这刚好是一组小妖精的壳，\n　　　　看来真有小妖精的存在。	1
+	#1111925	\n\n\n　　　　我这边有先前拾获的卵，\n　　　　跟这个卵壳花纹是一样的。	1
+	Window 1111924,next
+	Window 1111925,next
+	Window 1111926,ok
+	#1111926	\n\n\n　　　　谢谢你的情报，\n　　　　我这有份小礼物送你，\n　　　　谢谢你让我大开眼界。	1
+	Window_ok  item 41260 >0 && item 41261 >0
+	killitem 41260,1
+	killitem 41261,1
+	
+	GiveLeak1Item (41299%1$1,41045%33$1,41046%33$1,41047%33$1)
+	leavegroup 
+	warp 0,400,261,569
+	endblock	
+	Window_ok
+	endblock
+	
+block 
+	Window 1111904,yes,no
+	window_no
+	endblock
+	Window_yes
+	leavegroup 
+	warp 0,400,261,569
+	endblock		
+		

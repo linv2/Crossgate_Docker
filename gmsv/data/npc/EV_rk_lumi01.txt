@@ -1,0 +1,26 @@
+#????????????
+#§קתן???
+
+block
+	Window 22353,YES,NO
+		Window_NO
+		Window_Yes Level < 40 && Job <= 200
+			EndWindow 22354
+		Window_Yes Job >= 431 && Job <= 437
+			Window 22356,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,43000,476,528
+		Window_Yes Job >= 441 && Job <= 447
+			Window 22356,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,43000,476,528
+		Window_Yes Job >= 201 && Job <= 477
+			Window 22355,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,43000,476,528
+		Window_Yes
+			LeaveGroup
+			Warp 0,43000,476,528

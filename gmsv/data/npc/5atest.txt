@@ -1,0 +1,495 @@
+###20070104
+block spirit == 2
+	 setspirit +1
+
+block spirit == 1
+	 setspirit -1
+	
+##装备破坏王
+block Gold == 200
+	 Encount 3|0,555,33,36||0|||||0|900074||||||||| 
+	 
+#水龙之剑
+block Gold == 101 && Item 200 == 1
+	 SetDur 200,-299
+
+#水龙之斧
+block Gold == 102 && Item 205 == 1
+	 SetDur 205,-299
+
+#水龙之枪
+block Gold == 103 && Item 210 == 1
+	 SetDur 210,-299
+
+#水龙之弓
+block Gold == 104 && Item 215 == 1
+	 SetDur 215,-199
+
+#水龙之杖	 
+block Gold == 105 && Item 220 == 1
+	 SetDur 220,-199
+
+#冰龙
+block Gold == 106 && Item 225 == 1
+	 SetDur 225,-299
+	 
+#水龙的小刀
+block Gold == 107 && Item 230 == 1
+	 SetDur 230,-299
+	 
+#水龙之盔
+block Gold == 108 && Item 235 == 1
+	 SetDur 235,-199
+
+#水龙之帽
+block Gold == 109 && Item 240 == 1
+	 SetDur 240,-199
+
+#水龙之铠
+block Gold == 110 && Item 245 == 1
+	 SetDur 245,-199
+	 
+#水龙之服
+block Gold == 111 && Item 250 == 1
+	 SetDur 250,-119
+
+#水龙法袍
+block Gold == 112 && Item 255 == 1
+	 SetDur 255,-199
+	 
+#水龙之靴
+block Gold == 113 && Item 260 == 1
+	 SetDur 260,-199
+
+#水龙之鞋
+block Gold == 114 && Item 265 == 1
+	 SetDur 265,-199
+
+#水龙之盾
+block Gold == 115 && Item 270 == 1
+	 SetDur 270,-199
+
+#朴素的手环
+block Gold == 116 && Item 7200 == 1
+	 SetDur 7200,-299
+	 
+#旧横笛
+block Gold == 117 && Item 8400 == 1
+	 SetDur 8400,-29
+	 
+#土气的项链
+block Gold == 118 && Item 7600 == 1
+	 SetDur 7600,-799
+
+#土气的戒指
+block Gold == 119 && Item 8000 == 1
+	 SetDur 8000,-49
+
+#木雕的耳环
+block Gold == 120 && Item 6800 == 1
+	 SetDur 6800,-299
+
+#奇石步摇
+block Gold == 121 && Item 40874 == 1
+	 SetDur 40874,-49
+	 
+#地的水晶
+block Gold == 122 && Item 9201 == 1
+	 SetDur 9201,-1499
+
+#100G掉魂一格
+block Gold == 100 && spirit == 0
+	 setspirit -1
+
+#可以学到是品加工新配方1.猫眼耳环2.钛金耳饰
+block Gold == 10
+	 GiveRecipe 217
+	 GiveRecipe 277
+
+######20061127
+#block 
+#	 SetInjury -1
+#block 
+#	 Window 1053138,NEXT 
+#	 Window 1053139,NEXT 
+#	 Window 1053140,NEXT
+#	 Window 1053141,NEXT 
+#	 Window 1053142,NEXT 
+#	 Window 1053143,NEXT 
+#	 Window 1053144,NEXT 
+#	 Window 1053145,NEXT
+#	 Window 1053146,NEXT 
+#	 Window 1053147,NEXT
+#	 Window 1053148,NEXT 
+#	 Window 1053149,NEXT 
+#	 Window 1053150,NEXT 
+#	 Window 1053151,NEXT 
+#	 Window 1053152,NEXT 
+#	 Window 1053153,NEXT 
+#	 Window 1053154,NEXT
+#	 Window 1053155,NEXT 
+#	 Window 1053156,NEXT 
+#	 Window 1053157,NEXT 
+#	 Window 1053158,NEXT 
+#	 Window 1053159,NEXT 
+#	 Window 1053160,NEXT 
+#	 Window 1053161,NEXT 
+#	 Window 1053162,NEXT 
+#	 Window 1053163,NEXT 
+#	 Window 1053164,NEXT 
+#	 Window 1053165,NEXT 
+#	 Window 1053166,NEXT 
+#	 Window 1053167,NEXT 
+#	 Window 1053168,NEXT 
+#	 Window 1053169,NEXT 
+#	 Window 1053170,NEXT 
+#	 Window 1053171,NEXT 
+#	 Window 1053172,NEXT 
+#	 Window 1053173,NEXT 
+#	 Window 1053174,NEXT 
+#	 Window 1053175,NEXT 
+#	 Window 1053176,NEXT 
+#	 Window 1053177,NEXT 
+#	 Window 1053178,NEXT 
+#	 Window 1053179,NEXT 
+#	 Window 1053180,NEXT
+#	 Window 1053181,NEXT 
+#	 Window 1053182,NEXT 
+#	 Window 1053183,NEXT 
+#	 Window 1053184,NEXT 
+#	 Window 1053185,NEXT 
+#	 Window 1053186,NEXT 
+#	 Window 1053187,NEXT 
+#	 Window 1053188,NEXT 
+#	 Window 1053189,NEXT 
+#	 Window 1053190,NEXT 
+#	 Window 1053191,NEXT 
+#	 Window 1053192,NEXT 
+#	 Window 1053193,NEXT 
+#	 Window 1053194,NEXT 
+#	 Window 1053195,NEXT 
+#	 Window 1053196,NEXT 
+#	 Window 1053197,NEXT 
+#	 Window 1053198,NEXT 
+#	 Window 1053199,NEXT 
+#	 Window 1053200,NEXT 
+#	 Window 1053201,NEXT 
+#	 Window 1053202,NEXT 
+#	 Window 1053203,NEXT 
+#	 Window 1053204,NEXT 
+#	 Window 1053205,NEXT 
+#	 Window 1053206,NEXT 
+#	 Window 1053207,NEXT 
+#	 Window 1053208,NEXT 
+#	 Window 1053209,NEXT 
+#	 Window 1053210,NEXT
+#	 Window 1053211,NEXT
+#	 Window 1053212,NEXT
+#	 Window 1053213,NEXT
+#	 Window 1053214,NEXT
+#	 Window 1053215,NEXT
+#	 Window 1053216,NEXT
+#	 Window 1053217,NEXT
+#	 Window 1053218,NEXT
+#	 Window 1053219,NEXT
+#	 Window 1053220,NEXT
+#	 Window 1053221,NEXT
+#	 Window 1053222,NEXT
+#	 Window 1053223,NEXT
+#	 Window 1053224,NEXT
+#	 Window 1053225,NEXT
+#	 Window 1053226,NEXT
+#	 Window 1053227,NEXT
+#	 Window 1053228,NEXT
+#	 Window 1053229,NEXT
+#	 Window 1053230,NEXT
+#	 Window 1053231,NEXT
+#	 Window 1053232,NEXT
+#	 Window 1053233,NEXT
+#	 Window 1053234,NEXT
+#	 Window 1053235,NEXT
+#	 Window 1053236,NEXT
+#	 EndWindow 1053237
+#
+#block 
+#	 Encount 3|0,32767,117,114||0|||||0|260122|||||||||	
+#	 
+#block
+#	
+#	 Window "\n\n @g,239511 @",NEXT
+#	 Window "\n\n @g,239512 @",NEXT 
+#	 Window "\n\n @g,239513 @",NEXT 
+#	 Window "\n\n @g,239514 @",NEXT 
+#	 Window "\n\n @g,252050 @",NEXT 
+#	 EndWindow "\n\n @g,252051 @" 
+#	  
+#endblock 
+#		
+#block 
+#	 Encount 3|0,32377,99,14||0|||||0|260117||||||||| 
+
+################### 鼠王惊奇蛋活动说明
+#PREV_1:
+#	 ##1050630	3\n\n这里有鼠王惊奇蛋的活动说明：\n\n @c惊奇蛋的玩法\n @c奖品的交换方式\n @c关于奖品的内容	1
+#	 Window 1050630,SELECT[1]_10,SELECT[2]_10,SELECT[3]_10,OK
+#	 
+##### 惊奇蛋的玩法####
+#SELECT[1]_10:
+#	 ##1050631	\n\n双击鼠王惊奇蛋，将有意想不到的发现。试试看吧！	1
+#	 Window 1050631,OK
+#	 	 Window_OK 
+#	 	 	 AddGold +1
+#	 
+##### 奖品的交换方式####
+#SELECT[2]_10:
+#	 ##1050632	\n\n奖品就藏在惊奇蛋中，假如抽到兑换卷，可找柜台人员兑换。
+#	 Window 1050632,OK,PREV_1
+#	 
+##### 关于奖品的内容####
+#PREV_2:
+#SELECT[3]_10:
+#	 ##1050633	3\n\n奖品内容如下，同一奖的奖品将是随机得到。\n\n @c头奖\n @c二奖\n @c三奖\n @c四奖\n @c五奖\n @c六奖
+#	 Window 1050633,SELECT[1]_20,SELECT[2]_20,SELECT[3]_20,SELECT[4]_20,SELECT[5]_20,SELECT[6]_20,PREV_1
+#	 
+#	 	 #### 头奖 ####
+#	 	 SELECT[1]_20:
+#	 	 ##1050634  \n\n当然就是1级“鼠王”一只啰！
+#	 	 Window 1050634,OK,PREV_2
+#	 	 
+#	 	 #### 二奖 ####
+#	 	 SELECT[2]_20:
+#	 	 ##1050635  \n\n  二奖奖品将是以下随机得到。\n\n @c地元素石\n @c水元素石\n @c火元素石\n @c风元素石\n @c鼠王图鉴卡
+#	 	 Window 1050635,OK,PREV_2
+#	 	 
+#	 	 #### 三奖 ####
+#	 	 SELECT[3]_20:
+#	 	 ##1050636  \n\n  三奖奖品将是以下随机得到。\n\n @c水蓝鼠娃娃一只\n @c大地鼠娃娃一只\n @c火焰鼠娃娃一只\n @c宝石鼠娃娃一只\n  请将兑换卷拿至一楼柜台换取。
+#	 	 Window 1050636,OK,PREV_2
+#	 	 	 	 
+#	 	 #### 四奖 ####
+#	 	 SELECT[4]_20:
+#                 ##1050637  \n\n  四奖奖品将是以下随机得到。\n @c特制雕鱼烧3个\n @c试验红药水3个             	   	 	 
+#	 	 Window 1050637,OK,PREV_2
+#	 	 	 	 
+#	 	 #### 五奖 ####
+#	 	 SELECT[5]_20:	 	 
+#	 	 ##1050638  \n\n  五奖奖品将是以下随机得到。\n @c面包一组\n @c生命力回复药(75)一组
+#	 	 Window 1050638,OK,PREV_2
+#	 	 
+#	 	 #### 六奖 ####
+#	 	 SELECT[6]_20:		 	 
+#	 	 ##1050639  \n\n  六奖奖品将是以下随机得到。\n @c5张封印卡\n @c20颗铜矿\n @c20根印度轻木\n @c20个苹果薄荷\n @c20张鹿皮\n @c20个蕃茄\n @c20颗鸡蛋
+#	 	 Window 1050639,OK,PREV_2	 
+#	 
+#	 
+
+#####开启FLG测试#######
+#block
+#	 EndEvent 5 = 1
+#	 AddGold +1
+
+###########################
+#block
+#	 Window 1100009,YES,NO
+#	 	 Window_YES
+#			 EndEvent 51 = 1
+#		 Window_NO
+#			 EndEvent 59 = 1
+#
+#
+#
+
+#################### 降物品耐久
+#block 
+#	 setdur 2446,-100 
+#################### 测试 SetVisitor
+#block Visitor == 0
+#	 AddGold -1
+#	 SetVisitor +1
+#	
+#block Visitor == 1
+#	 AddGold 1
+#	 SetVisitor +1
+#
+#block Visitor == 2
+#	 AddGold 2
+#	 SetVisitor +1
+#	 
+#block Visitor == 3
+#	 AddGold 3
+#	 SetVisitor +1
+#
+#block Visitor == 4
+#	 AddGold 4	 
+#	 
+#block Visitor == 5
+#	 AddGold 5
+#
+#block Visitor == 6
+#	 AddGold 6	 
+################### 测试废材抽大奖npc得奖机率
+#■奖品种类机率：
+#
+#千元魔石 16%
+#二千魔石 16%
+#魔石     32%
+#彩券     13%
+#合成宝石 28%
+#手套     13%
+#重来种子 13%
+#block 
+#		 GiveLeak1Item(45133%8$1,45134%8$1,45135%8$1,45136%8$1,45137%4$1,45138%4$1,45139%4$1,45140%4$1,19574%10$1,19575%10$1,13603%6$1,13613%6$1,13623%6$1,13633%6$1,13643%6$1,13653%6$1,13663%6$1,40007%10$1,40008%10$1,16800%1$1,16801%1$1,16802%1$1,16803%1$1,16804%1$1,16805%1$1,16806%1$1,16811%1$1,16807%1$1,16808%1$1,16809%1$1,16810%1$1,16812%1$1,16819%1$1,16813%1$1,16814%1$1,16815%1$1,16816%1$1,16817%1$1,16818%1$1)
+
+###给宠
+#block Level >=1
+#	 AddGold 1
+#	 GivePet 1
+#	 AddGold 100
+#
+#	 
+###给封印卡
+###block Level >=1
+#	 GiveLeak1Item 2029,1
+#	 GiveLeak1Item 3635,1
+#	 GiveLeak1Item 4431,1
+#	 GiveLeak1Item 6032,1
+#	 	 
+##测试 Endwindow
+#block Level >=1
+#	 AddGold 1	
+#	 EndWindow 1599999
+#	 AddGold 10 ##这一行不会执行
+
+
+##测试对话框字串排版
+#block Level >=1
+#	 Window 1599999,NEXT
+
+##测试 拥有技能检查(料理3级以上) 
+#block SkillLevel 215 >3
+#	 AddGold 1	 
+#
+#block Level >1
+#	 AddGold 10
+
+##测试 豪腕商人 钱的判断
+#block Gold >= 1500 && Gold < 2000
+#	 AddGold 1	 
+#
+#block Gold >= 2000 
+#	 AddGold 2
+#	 
+#block Gold < 1500 	
+#	 AddGold 15
+	 
+##测试 执行顺序
+#	 
+#block level>10
+#	 AddGold 10	 
+#	 
+#block level>1
+#	 AddGold 1
+#
+
+##测试 所持金钱
+#block Gold == 1865
+#	 AddGold 2
+
+
+##测试 随机给物品 %机率 $个数
+#block level>1
+# 	 killLeak1Item 18310,10
+#	 killLeak1Item 15202,10
+#	 GiveLeak1Item(18310%3$1,15202%1$1)
+
+	
+## 测试物品交换(数量不同)
+#block level>1
+#	 AddGold 1	 		
+
+#block Item 10402 ==20 && ItemCreateTime >1
+#	 AddGold 1
+#	 
+#block Item 10402 ==20 && ItemCreateTime <1
+#	 AddGold -2	 
+	
+#block Item 18211 >= 40
+#	GiveLeak1Item 18211,20	#鹿皮
+#	killleak1item 18211,40
+#	GiveLeak1Item 10402,20	#毛
+
+
+##测试 视窗跳跃
+##沟田5
+
+##PREV_00:
+	 
+##	 Window 60264,SELECT[1]_100,SELECT[2]_100,SELECT[3]_100,CANCEL
+
+
+##SELECT[1]_100:
+	 
+##	 Window 990214,OK,PREV_00
+##SELECT[2]_100:
+	 
+##	 Window 990215,OK,PREV_00
+##SELECT[3]_100:
+	 
+##	 Window 990216,OK,PREV_00
+
+
+###测试 字串比对
+#
+#block StrCmpChat == 1999903
+#	 AddGold 3
+#	 EndWindow 1100009
+
+#block StrCmpChat != 1999903
+#	 AddGold -2
+#	 Window 1100002,NEXT
+	 		
+ 
+##测试多重 window_yes
+#block Level>=1
+#	 ##1100322	\n什么？幽绪？没错，就是他救了我，我一直想向他道谢，只是真的没有勇气再去一次。
+#	 Window 1100322,YES,NO 
+#	 	 Window_YES Level >10
+#	 	 	 AddGold 10 
+#	 	 Window_YES Level >1
+#	 	 	 AddGold 1
+#	 	 	 
+#		 Window_NO 
+#		 	 AddGold -9										 	 	 
+
+##测试window
+#block level>=1
+	  
+	 ##\n\n仁慈的旅行者啊！\n意倾听我的故事，答应我的请求吗?
+##	Window 1100001,YES,NO
+#	 	 Window_NO
+#	 	 	 ##真是不好意思,打扰你了!
+#	 	 	 EndWindow 1100009
+#		 Window_YES 
+#		 	 ##\n\n在这个与外隔绝的村中，有二个和我从小一起玩到大的好朋友，一个是次郎、另一个是花子，我们彼此之间意气相投，无所不谈，于是三个人就结拜成为兄妹。\n	8
+#			 ##\n\n只是到了成年以后，我们两个男人都同时爱上了义妹花子。我身为大哥，只好默默的退出，成全他们两个，于是我就一个人出外旅行经商，希望能忘了这件事情，又过了几年，我终于能衣锦还乡，功成名就的回来了，也因而继承了村长的位置。\n	8
+#			 ##\n\n二弟他看了之后很羡慕，于是便不顾小妹的反对，毅然决然的离开了，并留下了一年之约，说他将在一年后回来结婚与义妹花子结婚，没想到之后三年过去了，他依然没有回来。\n	8
+#			 ##\n\n小妹伤心的想要结束自己的生命，就在此时我终于忍不住，向她告白了，我说我从没有放弃过爱她的念头，并告诉她，我愿意等她，保护她一辈子，或许是我的诚意终于打动了她，她并没有再作傻事了。\n	8
+#			 ##\n\n一年后之后，或许小妹认为二弟已经死了，或者是被我的诚意所打动，小妹终于愿意嫁给我了，之后我们过的非常快乐。\n	8
+#			 ##\n\n但是，二弟他……他终于还是回来了！他当上了魔军第二部队的首领光荣的回来了，回来想跟小妹结婚！然而他没想到我们居然结婚了，于是便抓走了小妹！\n		 	 	 	  
+#			 Window 1100002,NEXT
+#		  	 Window 1100003,NEXT,PREV
+#	  		 Window 1100004,OK,CANCEL 
+#	  		 Window 1100005,OK,CANCEL 
+#	  		 Window 1100006,OK,CANCEL 
+#	   		 Window 1100007,OK,CANCEL 
+	  
+#	  GiveLeak1Item 37777,2		#测试加敏材料
+#         KillItem 18211,20		
+#	  GiveLeak1Item 18211,20	#鹿皮
+#	  GiveLeak1Item 10400,20	#麻
+#	  GiveLeak1Item 10401,20	#木棉
+#	  GiveLeak1Item 10402,20	#毛
+
+################### 测试传送 ###################
+##	 Warp 0,9002,129,129,0,9002,135,137,0,9002,130,142,0,9002,123,136
+	 

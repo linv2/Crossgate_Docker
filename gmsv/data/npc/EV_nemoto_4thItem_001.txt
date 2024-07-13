@@ -1,0 +1,13 @@
+## 4璃コ筏ゴ奶矛件玄﹛by漪呿
+## 失奶泛丞“基嬴镙’绝 - ID:622018
+
+## 椭瘀卅仄
+block
+	Window "\n\n﹛基嬴镙’绝毛婉心引允井〝",YES,NO
+#		Window_YES Item 622018 < 1
+#			EndWindow "\n\n﹛仄引匀凶﹜仇廿仄化仄引匀凶″"
+		Window_YES
+			KillItemAll 622018,(3012034)
+			EndWindow "\n\n﹛打弁打弁打弁＿＿永″″\n﹛丹﹜丹引中″\n﹛卅氏午手中尹卅中萝蔬今互濮怉分″"
+		Window_NO
+Endblock

@@ -1,0 +1,47 @@
+
+#衙五凛医毛襞月手及
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+block globalFlag42 == 1
+
+
+
+
+
+block globalFlag39 == 1 && XPos == 63 && YPos == 87 && Group == 1
+
+
+	window 3202454,ok
+
+		#\n\n﹛妐蜕＿＿戊玄田＿＿\n﹛市弁本奶用戊玄田＿＿
+
+	window_ok globalFlag39 == 1 && XPos == 63 && YPos == 87 && Group == 1
+	
+	GAglobalFlag41 = 1
+
+	Encount 3|||0|||||0|305190|||||||||
+
+
+block globalFlag38 == 1 && XPos == 63 && YPos == 87 && Group == 1
+
+
+
+
+	window 3202455,ok
+
+		#\n\n﹛妐蜕＿＿戊玄田＿＿\n﹛市弁本奶用戊玄田＿＿
+
+	window_ok globalFlag38 == 1 && XPos == 63 && YPos == 87 && Group == 1
+	
+	GAglobalFlag41 = 1
+
+	Encount 3|||0|||||0|305190|||||||||
+
+
+
+block
+
+
+
+

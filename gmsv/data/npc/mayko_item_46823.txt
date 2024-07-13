@@ -1,0 +1,16 @@
+#
+#¹íÖ®Ô¼Êø46823
+#
+
+##############  ##############
+block
+#\n\n\n\n@c
+	Window 1053269,YES,NO
+	Window_YES
+	KillItem 46823,1,(1053270)
+	LeaveGroup
+	Warp 0,32381,49,33
+	Endblock
+	Window_NO
+	Endblock
+

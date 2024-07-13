@@ -1,0 +1,123 @@
+#伉田□旦母件斥亦件﹛坌渭﹛戏遣及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+
+
+block skilllevel 200 <= 0 && skilllevel 201 <= 0 && skilllevel 202 <= 0 && skilllevel 203 <= 0 && skilllevel 204 <= 0 && skilllevel 205 <= 0 && skilllevel 206 <= 0 && skilllevel 207 <= 0 && skilllevel 208 <= 0 && skilllevel 209 <= 0 && skilllevel 210 <= 0 && skilllevel 211 <= 0 && skilllevel 212 <= 0 && skilllevel 213 <= 0 && skilllevel 214 <= 0 && skilllevel 215 <= 0 && skilllevel 216 <= 0 && skilllevel 225 <= 0 && skilllevel 226 <= 0 && skilllevel 227 <= 0
+
+	EndWindow 3006632,OK
+
+
+
+
+block Group == 1 && Item 9340 >= 1
+
+	Window 3006015,next
+
+
+
+	Window 3006014,yes,no
+
+		Window_yes Group != 1
+
+#\n\n﹛域谛匹辅日木方
+
+			EndWindow 3006045
+
+		Window_yes Item 9390 >= 1 || Item 9391 >= 1 || Item 9392 >= 1 
+
+#\n\n﹛擎昵及恘毛℅
+
+			EndWindow 3006095
+
+
+		Window_yes
+
+		Warp 0,59605,57,146
+
+		Window_no
+
+		EndWindow 3006043,OK
+
+
+
+block Group == 1 && Item 9341 >= 1
+
+	Window 3006015,next
+
+
+
+	Window 3006014,yes,no
+
+		Window_yes Group != 1
+
+#\n\n﹛域谛匹辅日木方
+
+			EndWindow 3006045
+
+		Window_yes Item 9390 >= 1 || Item 9391 >= 1 || Item 9392 >= 1 
+
+#\n\n﹛擎昵及恘毛℅
+
+			EndWindow 3006095
+
+
+		Window_yes
+
+		Warp 0,59631,57,146
+
+		Window_no
+
+		EndWindow 3006043,OK
+
+
+
+
+block Group == 1 && Item 9342 >= 1
+
+	Window 3006015,next
+
+
+
+	Window 3006014,yes,no
+
+		Window_yes Group != 1
+
+#\n\n﹛域谛匹辅日木方
+
+			EndWindow 3006045
+
+		Window_yes Item 9390 >= 1 || Item 9391 >= 1 || Item 9392 >= 1 
+
+#\n\n﹛擎昵及恘毛℅
+
+			EndWindow 3006095
+
+
+
+		Window_yes
+
+		Warp 0,59647,57,146
+
+		Window_no
+
+		EndWindow 3006043,OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+block 
+		EndWindow 3006044,OK

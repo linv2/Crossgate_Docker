@@ -1,0 +1,66 @@
+#PUK3_main2
+#
+#
+#扑尼伊斥尼件逦木
+
+
+Block
+
+	GAWindow 3207847,Next
+
+		#\n\n﹛孔孔孔﹜丐卅凶反台及?狮毛棵签卞\n﹛熬仃鞅户化仄引丹及匹允友﹝\n﹛台卞手丐卅凶及方丹卅雄中艘午\n﹛啦合互丐木壬＿＿\n﹛仇氏卅仇午卞反卅日卅井匀凶及井手\n﹛仄木引六氏﹝
+	
+	GAWindow 3207848,Next
+
+		#\n\n﹛恘反＿＿呿癫卞雄中恘反﹜\n﹛壑钗毛⑼五引允﹝\n﹛仄井仄﹜公木反簿卞匹手儅化月歹仃匹反\n﹛丐曰引六氏﹝
+	
+	GAWindow 3207849,Next
+
+		#\n\n﹛台卞反公及恘﹜合中及恘互\n﹛丐曰引六氏匹仄凶﹝
+	
+	GAWindow 3207850,Next
+
+		#\n\n﹛台反赀匀凶Ⅶ毛\n﹛褡氏匹仄引中引仄凶﹝\n﹛丐及谛毛耨元化丐仆月仇午互\n﹛请侳卅井匀凶及匹允﹝
+	
+	GAWindow 3207851,Next
+
+		#\n\n﹛台反汊蔡允月恘毛澎卞じ木月凶户卞\n﹛嗟渴毛?仄引仄凶﹝\n﹛公仄化﹜蛙五障ミ樊毛\n﹛裟太慇氏分手及及踞恘卞方匀化﹜\n﹛恘反芢哑卞澎卞じ曰引仄凶﹝\n﹛匹手﹜公木反棉啜中分匀凶及匹允﹝
+	
+	GAWindow 3207852,Next
+
+		#\n\n﹛台及赀匀凶恘＿＿\n﹛丐卅凶卞方匀化公木互\n﹛潸曰轮井木引仄凶＿＿﹝\n﹛仇木匹﹜台毛赌匀化锤中互\n﹛粟五月仇午反卅仁卅月匹仄斤丹＿＿﹝
+	
+	GAWindow 3207853,Next
+
+		#\n\n﹛丐卅凶反台毛踞仃化仁木引仄凶﹝\n﹛?仄戈优邰反丐曰引六氏﹝
+	
+	GAWindow 3207854,Next
+
+		#\n\n﹛方丹支仁愤苀卞卅木引允＿＿﹝\n﹛丐曰互午丹＿＿﹝
+	
+	GAWindow 3207855,Next
+
+		#\n\n﹛台反丐及谛毛内匀午谨匀化中引仄凶﹝\n﹛仇及云午亢及崭匹＿＿﹝\n﹛甲件丢伙平件玄反﹜台及抴匹仄凶﹝\n﹛乒件旦正□手谛棉手坌仃厥化卅仁\n﹛僧六卞抔日六月崭﹝
+	
+	GAWindow 3207856,Next
+
+		#\n\n﹛台及抴反捖中手及匹仄凶互﹜\n﹛丐卅凶互综曰请允恍侳反﹜\n﹛呿癫及僧六卞\n﹛坢切化中月及匹仄斤丹友﹝
+	
+	GAWindow 3207857,Next
+
+		#\n\n﹛＿＿手丹凛棉及方丹匹允﹝\n﹛蝼仁交伙弘及手午尺\n﹛轾井丹仇午互请侳引允＿＿﹝
+	
+	GAWindow 3207858,Next
+
+		#\n\n﹛詨反丐卅凶戚镕﹝\n﹛仇及壑钗毛云凑中仄引允﹝\n﹛台卞反请侳引六氏匹仄凶互﹜\n﹛五匀午丐卅凶卅日壬\n﹛仇及壑钗毛呿癫及啦怗匹\n﹛菌尹月午合中引允﹝
+	
+	GAWindow 3207859,OK
+
+		#\n\n﹛公木匹反＿＿﹝
+	
+		Window_OK
+		
+			Warp 0,59984,110,180
+			
+			
+

@@ -1,0 +1,42 @@
+#
+#¥ª·®ÛÍ¾Şµ©Ğş
+#Äı½ñØ¦’b
+
+#########  ########
+block NowEvent 16 == 1
+	NowEvent 7 = 0
+	EndEvent 7 = 0
+	NowEvent 8 = 0
+	EndEvent 8 = 0
+	NowEvent 9 = 0
+	EndEvent 9 = 0
+	NowEvent 10 = 0
+	EndEvent 10 = 0
+	NowEvent 11 = 0
+	EndEvent 11 = 0
+	NowEvent 12 = 0
+	EndEvent 12 = 0
+	NowEvent 13 = 0
+	EndEvent 13 = 0
+	NowEvent 14 = 0
+	EndEvent 14 = 0
+	NowEvent 15 = 0
+	EndEvent 15 = 0
+	NowEvent 16 = 0
+	EndEvent 16 = 0
+	NowEvent 17 = 1
+#\n\n\n\n\n©x£¾’tÃ«Ç©ØÆ»¯¿ÒñøÃ«Ö²ÖĞĞ×¼Á»Ô³ğ³ğ±åìæÔÂ£½
+	Window 15120,NEXT
+#\n\n\n\n\n©x©x©x£ß£ß£ß½ñ½ñÖ§ÈÊ·½µ¤Ø¦ë¢»¥ÔÊÔÂ£ß£ß£ß
+	Window 15121,NEXT
+#\n\n\n\n\n©x©x©x©x©x©x©x©x©x©x©jØ¤Ô»»¥Îçµ¤©k
+	Window 15122,NEXT
+#\n\n\n©x©x©j¨©k…íÒÇğö¼°ÑûÜı·´ÔÊÍÍ»¯±ÎmØÆÒıØÆĞ×©z\n\n©x©x©x©x©x©x©x©xÔÆ?Ä¾Ş‚Æ¥ØÆĞ×©z
+	EndWindow 14895,OK
+
+
+#########  ########
+block
+#\n\n\n\n\n©x©x©x©x©x©x©x©x£ß£ß£ß£ß£ß£ß£ß
+	EndWindow 15123,OK
+

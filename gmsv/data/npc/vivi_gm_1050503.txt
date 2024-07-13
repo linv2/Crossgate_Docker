@@ -1,0 +1,77 @@
+########### 魔力大会考2 ###########
+######■加尔的助手
+##■检查烛台时间1
+block Item 45332 == 1 
+	 ##1050680	\n\n\n\n您的蜡烛已经熄灭了，真可惜，您不能再待在这儿了！
+	 Window 1050680,OK
+	 Window_OK
+	 KillItem 45332
+	 Warp 0,30110,15,30
+##■检查烛台时间2
+block Item 45331 == 1 && ItemCreateTime 45331 > 5
+  	 KillItem 45331
+  	 GiveLeak1Item 45332
+  	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间3
+block Item 45330 == 1 && ItemCreateTime 45330 > 10
+	 KillItem 45330
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间4
+block Item 45330 == 1 && ItemCreateTime 45330 > 5
+	 KillItem 45330
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间5
+block Item 45329 == 1 && ItemCreateTime 45329 > 15
+	 KillItem 45329
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间6
+block Item 45329 == 1 && ItemCreateTime 45329 > 10
+	 KillItem 45329
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间7
+block Item 45329 == 1 && ItemCreateTime 45329 > 5
+	 KillItem 45329
+	 GiveLeak1Item 45330
+	 ##1050678	\n\n\n\n@c比赛将在10分钟以内结束！
+         EndWindow 1050678
+##■检查烛台时间8
+block Item 45329 == 1 && ItemCreateTime 45329 <= 5
+	 ##1050681	\n\n\n\n快去跟加尔先生说话，蜡烛已经点燃了！
+	 EndWindow 1050681
+##■检查烛台时间9
+block Item 45330 == 1 && ItemCreateTime 45330 <= 5
+	 ##1050681	\n\n\n\n快去跟加尔先生说话，蜡烛已经点燃了！
+	 EndWindow 1050681
+##■检查烛台时间10
+block Item 45331 == 1 && ItemCreateTime 45331 <= 5
+	 ##1050681	\n\n\n\n快去跟加尔先生说话，蜡烛已经点燃了！
+	 EndWindow 1050681
+         
+##■有未点燃的烛台
+block Item 45335 == 1 
+	 ##1050682	\n让我说明一下游戏规则：\n\n参赛者必须在烛台的蜡烛熄灭之前，通过五个关卡，就可以获得最后的胜利！
+	 Window 1050682,NEXT
+	 	 ##1050683	\n各关卡是以“是非题”为挑战项目，假如中间有答错任何一题，就算挑战失败；并且请留一格空的物品栏。\n\n我已经把蜡烛点燃了，请您拿着吧！
+	 	 Window 1050683,OK
+	 	 	 Window_OK Item 45335 == 1
+	 	 	 	 KillItem 45335
+	 			 GiveLeak1Item 45329
+
+##■一般	 
+block
+	 ##1050684	\n\n\n咦？您的烛台呢？没有烛台我无法帮您点燃耶！\n这样无法参赛喔！
+	 Window 1050684,OK
+	 	 Window_OK
+	 	 	 Warp 0,30110,15,30
+	 	 	 
+	 	 
+

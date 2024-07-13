@@ -1,0 +1,15 @@
+#妖精之书	mayko_item_47642.txt
+#妖精召唤书上卷	47626
+#妖精召唤书中卷	47627
+#妖精召唤书下卷	47628
+#1054940	\n\n\n\n\n@c打开宝箱。	1
+
+
+block
+
+	 Window 1054940,OK
+	 
+	 Window_OK
+	 KillItem 47642,1 
+	 GiveLeak1Item (47626%2$1,47627%1$1,47628%2$1)
+	 endblock

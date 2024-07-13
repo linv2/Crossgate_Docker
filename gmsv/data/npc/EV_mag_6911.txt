@@ -1,0 +1,15 @@
+#
+#泛伙立玉□伙
+#
+############## 熔丐曰 ##############
+block EquipItem == 18589 || EquipItem == 18590 || EquipItem == 18591 || EquipItem == 18592 || EquipItem == 18593 || EquipItem == 18594 || EquipItem == 18595
+#\n\n\n\n@c庤及赢互カ户月掸恘﹜魂今六化手日云丹﹝
+	Window 15357,OK
+	Window_OK EquipItem == 18589 || EquipItem == 18590 || EquipItem == 18591 || EquipItem == 18592 || EquipItem == 18593 || EquipItem == 18594 || EquipItem == 18595
+	Encount 3|0,20118,36,37||0|||||0|10025|||||||||
+
+############## 熔卅仄 ##############
+block
+#\n\n\n\n@c穻卅五樊毛骚允歹仃卞反中井卅中﹝
+	EndWindow 15358,OK
+

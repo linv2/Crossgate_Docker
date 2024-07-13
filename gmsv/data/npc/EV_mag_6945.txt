@@ -1,0 +1,338 @@
+#
+#Éý¼°ÈÊÈÕÖÐ±¹Ä¯Ïþ»¥ÔÈ»¯ÔÂ¾®ÏîÒüÔÂNPC
+#ÇÐÔÈ³ðÖÐ»Ô¼°ºÒ
+#
+#15480
+#\n\n©x³ßÒü¨”Þ¥ØÆÖÐØ¤·ÖØ¦Ã«–‡µ¤Ð×»§±å»¥ÊÏÈÉÔÈ»¯ÔÂ¼°¨”Ø¤ÊÏØ¦ÇÐÌ«¼°Ø¤·ÖØ¦Ã«Ê§·º±åÔÊÔÂØ¦ÊÏ»¯©y×óÐþ¹ÏÊÖÐ×ÖÐØÆÐ×³ðÎçØ¦ÖÐ¼°ÓÑ©zÈÊÔÊ©zØ¤Ø¦Ð×ÓòÏ·ÄÀ’t·ÖØêÉý©yØ©¼þÎçÆ¹¼þ¾®ÈÕØ¤·ÖØ¦Ã«–‡µ¤±å·´©yÒý·ÖÒý·ÖóïÔ»Ø¦ÖÐ´õÓÑ©z
+#15481
+#\n\n©xÔÆ·½¨”Ø¤Ø¦Ð×Ø¤·ÖØ¦·òÎç¹´–‡µ¤Ð×»§±åÓÅÉØ±å»¥ÊÏÈÉÔÈ»¯ÔÂ¼°ÓÑ©z¹«µ¤ÖÐµ¤¼°Ã«£¾ÊÐÉúÐþ¸¥¼þØøÒàÛÍÍßÑ¨Á¢ÒÁÕý³â¼þ±¾ÄÌ£½ÔÈ»¯ÖÐµ¤ÊÏ·ÖÔÈ»¯©zÈÊÔÊ©zÉý¼°ÈÊÈÕÖÐÆ¥Ø¤·ÖØ¦Ã«–‡ÒüÔÂ¾®ÔÈ»¯¨”ÅHnÇíÔÀ\1/4ÔÈ»¯Îç³ðÇ·¾®Ø¦¨”
+#15482
+#\n\n©x»ÃÒü¨”Ø¤Ø¦Ð×Òý·Ö»¥ÊÏÈÉÔÈ»¯ÔÂ¼°¨”¿×µ¤ÊÏ©y¹«ÊÏØ¦±åØ¤·ÖØ¦»¥‚\ØÆÖÐØ¦ÈÕØ¤Ð×ØÆ»¥ÞÍØê»¯Ø¤ÆÍ·½ÔÈ¾®¨”ÖÐÈÕØ¦ÖÐ¨”Ø¦±å·½©y£¾ÎìÓñÆ¹ÍßÎìÉê»ïØÀ¹Ï×óÐþ¹Ï£½¼°ÈÊÁù±å©zÆÝ¼°Ø¤·ÖØ¦ÒýÆ¥¨”Ð×ÉÙÊÏ©y¢ù·´ÐýÒüÐ×ÊÏÔªÔúØ¦ÖÐ¨”Æ¹¼þÎçØ©¼þ·½Ô»Ø¤Ð×ØÆ¼°»Ãµ¤»¥Ø¤·ÖØ¦¼°±¾¼þµ©Ø¤ÔÂ·´ÄÚØ¦ÊÏ·ÖØêÉýØ¦Ø¤©z£¾–ˆïÜÃ«¸ÉÔÈ»¯X¹´»Ô£½»¯¼°·´Éý¡õÔÆ¨”£¾´òÆ¤Øø¼þÎçÚçÔÂñÉ£½¨”·Ö»§¨”ÇÐÖ®©z
+#15483
+#\n\n©xØ¤Ô»Ôú¨”³ðÊÏ±åÇÐ·´ÎìÉê»ï©zØ¤Ø¦Ð×¼°Þ¥ØÆÖÐØ¤·ÖØ¦·½©z£¾ÎìÉê»ï@n£½©zÖÐÖÐØ¤·ÖØ¦·Ö´õ©zµ¤ÔÈÎçÔ»ÔÊÔÂ´õ·½ÓÑ©zÖ§·Ö¨”Ø¤©y¹«µ¤©yÖ§ÔÈÌìÔ»Ø©¼þÎçÆ¹¼þ¼°»Ãµ¤»¥ÖÐÖÐ¼°ÓÑ©z±¾¼þµ©Ø¦ÖÐ´õ©yØ¤Ø¦Ð×©zÒýØ¤¹«Ä¾·ÖØê»¥ÊÏÈÉÄ¾ÈÉ©yÆÝ¼°Ø¤·ÖØ¦ÒýÆ¥¹«µ¤ÆúÈÊ·´Ø¦ÖÐÊÏÔªÔúØ¦ÖÐ¨”×óÐþ¹Ï¼°ÛÖîÎÔÈ»¯¹ÏÔý·Ö´õ©zØ¤·ÖØ¦Æ¥ÇëÛÖ»¥è£ÒýÔÂ¼°ÓÑ©z
+
+######################################################################
+#	¾ô¢ÈÑÌ
+######################################################################
+##Ð×¶·Ð×µ¤ÁÊã×¨G½ñ½é»§ÈÊÍ³ë¢ +5000©j0%¨G25%©k+1250
+block Job >= 11 && Job <= 167 && Fame >= 5001 && Fame <= 6250 && HaveTitle == 6
+	EndWindow 15480,OK
+##Ð×¶·Ð×µ¤ÁÊã×¨G½ñ½é»§ÈÊÍ³ë¢ +5000©j26%¨G50%©k
+block Job >= 11 && Job <= 167 && Fame >= 6251 && Fame <= 7500 && HaveTitle == 6
+	EndWindow 15481,OK
+##Ð×¶·Ð×µ¤ÁÊã×¨G½ñ½é»§ÈÊÍ³ë¢ +5000©j51%¨G75%©k
+block Job >= 11 && Job <= 167 && Fame >= 7501 && Fame <= 8750 && HaveTitle == 6
+	EndWindow 15482,OK
+##Ð×¶·Ð×µ¤ÁÊã×¨G½ñ½é»§ÈÊÍ³ë¢ +5000©j76%¨G99%©k
+block Job >= 11 && Job <= 167 && Fame >= 8751 && Fame <= 9999 && HaveTitle == 6
+	EndWindow 15483,OK
+
+##½ñ½é»§ÈÊÍ³ë¢¨G»©±å»ûÅÅ +10000©j0%¨G25%©k+2500
+block Job >= 11 && Job <= 167 && Fame >= 10001 && Fame <= 12500 && HaveTitle == 7
+	EndWindow 15480,OK
+##½ñ½é»§ÈÊÍ³ë¢¨G»©±å»ûÅÅ +10000©j26%¨G50%©k
+block Job >= 11 && Job <= 167 && Fame >= 12501 && Fame <= 15000 && HaveTitle == 7
+	EndWindow 15481,OK
+##½ñ½é»§ÈÊÍ³ë¢¨G»©±å»ûÅÅ +10000©j51%¨G75%©k
+block Job >= 11 && Job <= 167 && Fame >= 15001 && Fame <= 17500 && HaveTitle == 7
+	EndWindow 15482,OK
+##½ñ½é»§ÈÊÍ³ë¢¨G»©±å»ûÅÅ +10000©j76%¨G99%©k
+block Job >= 11 && Job <= 167 && Fame >= 17501 && Fame <= 19999 && HaveTitle == 7
+	EndWindow 15483,OK
+
+##»©±å»ûÅÅ¨GÍ¿Øê?ÈÊµ÷ë® +13000©j0%¨G25%©k+3250
+block Job >= 11 && Job <= 167 && Fame >= 20001 && Fame <= 23250 && HaveTitle == 8
+	EndWindow 15480,OK
+##»©±å»ûÅÅ¨GÍ¿Øê?ÈÊµ÷ë® +13000©j26%¨G50%©k
+block Job >= 11 && Job <= 167 && Fame >= 23251 && Fame <= 26500 && HaveTitle == 8
+	EndWindow 15481,OK
+##»©±å»ûÅÅ¨GÍ¿Øê?ÈÊµ÷ë® +13000©j51%¨G75%©k
+block Job >= 11 && Job <= 167 && Fame >= 26501 && Fame <= 29750 && HaveTitle == 8
+	EndWindow 15482,OK
+##»©±å»ûÅÅ¨GÍ¿Øê?ÈÊµ÷ë® +13000©j76%¨G99%©k
+block Job >= 11 && Job <= 167 && Fame >= 29751 && Fame <= 32999 && HaveTitle == 8
+	EndWindow 15483,OK
+
+##Í¿Øê?ÈÊµ÷ë®¨G°åÎåë®ÍÆ +17000©j0%¨G25%©k+4250
+block Job >= 11 && Job <= 167 && Fame >= 33001 && Fame <= 37250 && HaveTitle == 9
+	EndWindow 15480,OK
+##Í¿Øê?ÈÊµ÷ë®¨G°åÎåë®ÍÆ +17000©j26%¨G50%©k
+block Job >= 11 && Job <= 167 && Fame >= 37251 && Fame <= 41500 && HaveTitle == 9
+	EndWindow 15481,OK
+##Í¿Øê?ÈÊµ÷ë®¨G°åÎåë®ÍÆ +17000©j51%¨G75%©k
+block Job >= 11 && Job <= 167 && Fame >= 41501 && Fame <= 45750 && HaveTitle == 9
+	EndWindow 15482,OK
+##Í¿Øê?ÈÊµ÷ë®¨G°åÎåë®ÍÆ +17000©j76%¨G99%©k
+block Job >= 11 && Job <= 167 && Fame >= 45751 && Fame <= 49999 && HaveTitle == 9
+	EndWindow 15483,OK
+
+##°åÎåë®ÍÆ¨GÐ×Ø¦Ì«ÈÊàÅÃÖ +20000©j0%¨G25%©k+5000
+block Job >= 11 && Job <= 167 && Fame >= 50001 && Fame <= 55000 && HaveTitle == 10
+	EndWindow 15480,OK
+##°åÎåë®ÍÆ¨GÐ×Ø¦Ì«ÈÊàÅÃÖ +20000©j26%¨G50%©k
+block Job >= 11 && Job <= 167 && Fame >= 55001 && Fame <= 60000 && HaveTitle == 10
+	EndWindow 15481,OK
+##°åÎåë®ÍÆ¨GÐ×Ø¦Ì«ÈÊàÅÃÖ +20000©j51%¨G75%©k
+block Job >= 11 && Job <= 167 && Fame >= 60001 && Fame <= 65000 && HaveTitle == 10
+	EndWindow 15482,OK
+##°åÎåë®ÍÆ¨GÐ×Ø¦Ì«ÈÊàÅÃÖ +20000©j76%¨G99%©k
+block Job >= 11 && Job <= 167 && Fame >= 65001 && Fame <= 69999 && HaveTitle == 10
+	EndWindow 15483,OK
+
+##Ð×Ø¦Ì«ÈÊàÅÃÖ¨GÔø¼õØ¦ÔÂ¼óã± +30000©j0%¨G25%©k+7500
+block Job >= 11 && Job <= 167 && Fame >= 70001 && Fame <= 77500 && HaveTitle == 11
+	EndWindow 15480,OK
+##Ð×Ø¦Ì«ÈÊàÅÃÖ¨GÔø¼õØ¦ÔÂ¼óã± +30000©j26%¨G50%©k
+block Job >= 11 && Job <= 167 && Fame >= 77501 && Fame <= 85000 && HaveTitle == 11
+	EndWindow 15481,OK
+##Ð×Ø¦Ì«ÈÊàÅÃÖ¨GÔø¼õØ¦ÔÂ¼óã± +30000©j51%¨G75%©k
+block Job >= 11 && Job <= 167 && Fame >= 85001 && Fame <= 92500 && HaveTitle == 11
+	EndWindow 15482,OK
+##Ð×Ø¦Ì«ÈÊàÅÃÖ¨GÔø¼õØ¦ÔÂ¼óã± +30000©j76%¨G99%©k
+block Job >= 11 && Job <= 167 && Fame >= 92501 && Fame <= 99999 && HaveTitle == 11
+	EndWindow 15483,OK
+
+######################################################################
+#	ðôçÇÚÐ¨Gãï¹Ü¸ó
+######################################################################
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +1000©j0%¨G25%©k+250
+block Job >= 201 && Job <= 367 && Fame >= 3001 && Fame <= 3250 && HaveTitle == 53
+	EndWindow 15480,OK
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +1000©j26%¨G50%©k
+block Job >= 201 && Job <= 367 && Fame >= 3251 && Fame <= 3500 && HaveTitle == 53
+	EndWindow 15481,OK
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +1000©j51%¨G75%©k
+block Job >= 201 && Job <= 367 && Fame >= 3501 && Fame <= 3750 && HaveTitle == 53
+	EndWindow 15482,OK
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +1000©j76%¨G99%©k
+block Job >= 201 && Job <= 367 && Fame >= 3751 && Fame <= 3999 && HaveTitle == 53
+	EndWindow 15483,OK
+
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +2000©j0%¨G25%©k+500
+block Job >= 201 && Job <= 367 && Fame >= 4001 && Fame <= 4500 && HaveTitle == 54
+	EndWindow 15480,OK
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +2000©j26%¨G50%©k
+block Job >= 201 && Job <= 367 && Fame >= 4501 && Fame <= 5000 && HaveTitle == 54
+	EndWindow 15481,OK
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +2000©j51%¨G75%©k
+block Job >= 201 && Job <= 367 && Fame >= 5001 && Fame <= 5500 && HaveTitle == 54
+	EndWindow 15482,OK
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +2000©j76%¨G99%©k
+block Job >= 201 && Job <= 367 && Fame >= 5501 && Fame <= 5999 && HaveTitle == 54
+	EndWindow 15483,OK
+
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3000©j0%¨G25%©k+750
+block Job >= 201 && Job <= 367 && Fame >= 6001 && Fame <= 6750 && HaveTitle == 55
+	EndWindow 15480,OK
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3000©j26%¨G50%©k
+block Job >= 201 && Job <= 367 && Fame >= 6751 && Fame <= 7500 && HaveTitle == 55
+	EndWindow 15481,OK
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3000©j51%¨G75%©k
+block Job >= 201 && Job <= 367 && Fame >= 7501 && Fame <= 8250 && HaveTitle == 55
+	EndWindow 15482,OK
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3000©j76%¨G99%©k
+block Job >= 201 && Job <= 367 && Fame >= 8251 && Fame <= 8999 && HaveTitle == 55
+	EndWindow 15483,OK
+
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +5000©j0%¨G25%©k+1250
+block Job >= 201 && Job <= 367 && Fame >= 9001 && Fame <= 10250 && HaveTitle == 56
+	EndWindow 15480,OK
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +5000©j26%¨G50%©k
+block Job >= 201 && Job <= 367 && Fame >= 10251 && Fame <= 11500 && HaveTitle == 56
+	EndWindow 15481,OK
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +5000©j51%¨G75%©k
+block Job >= 201 && Job <= 367 && Fame >= 11501 && Fame <= 12750 && HaveTitle == 56
+	EndWindow 15482,OK
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +5000©j76%¨G99%©k
+block Job >= 201 && Job <= 367 && Fame >= 12751 && Fame <= 13999 && HaveTitle == 56
+	EndWindow 15483,OK
+
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +6000©j0%¨G25%©k+1500
+block Job >= 201 && Job <= 367 && Fame >= 14001 && Fame <= 15500 && HaveTitle == 57
+	EndWindow 15480,OK
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +6000©j26%¨G50%©k
+block Job >= 201 && Job <= 367 && Fame >= 15501 && Fame <= 17000 && HaveTitle == 57
+	EndWindow 15481,OK
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +6000©j51%¨G75%©k
+block Job >= 201 && Job <= 367 && Fame >= 17001 && Fame <= 18500 && HaveTitle == 57
+	EndWindow 15482,OK
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +6000©j76%¨G99%©k
+block Job >= 201 && Job <= 367 && Fame >= 18501 && Fame <= 19999 && HaveTitle == 57
+	EndWindow 15483,OK
+
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +9000©j0%¨G25%©k+2250
+block Job >= 201 && Job <= 367 && Fame >= 20001 && Fame <= 22250 && HaveTitle == 58
+	EndWindow 15480,OK
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +9000©j26%¨G50%©k
+block Job >= 201 && Job <= 367 && Fame >= 22251 && Fame <= 24500 && HaveTitle == 58
+	EndWindow 15481,OK
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +9000©j51%¨G75%©k
+block Job >= 201 && Job <= 367 && Fame >= 24501 && Fame <= 26750 && HaveTitle == 58
+	EndWindow 15482,OK
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +9000©j76%¨G99%©k
+block Job >= 201 && Job <= 367 && Fame >= 26751 && Fame <= 28999 && HaveTitle == 58
+	EndWindow 15483,OK
+
+######################################################################
+#	Ä¤†AçÇÚÐ¨GÏÎ¸ó
+######################################################################
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +2000©j0%¨G25%©k+500
+block Job >= 371 && Job <= 447 && Fame >= 4001 && Fame <= 4500 && HaveTitle == 53
+	EndWindow 15480,OK
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +2000©j26%¨G50%©k
+block Job >= 371 && Job <= 447 && Fame >= 4501 && Fame <= 5000 && HaveTitle == 53
+	EndWindow 15481,OK
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +2000©j51%¨G75%©k
+block Job >= 371 && Job <= 447 && Fame >= 5001 && Fame <= 5500 && HaveTitle == 53
+	EndWindow 15482,OK
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +2000©j76%¨G99%©k
+block Job >= 371 && Job <= 447 && Fame >= 5501 && Fame <= 6000 && HaveTitle == 53
+	EndWindow 15483,OK
+
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +3000©j0%¨G25%©k+750
+block Job >= 371 && Job <= 447 && Fame >= 6001 && Fame <= 6750 && HaveTitle == 54
+	EndWindow 15480,OK
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +2000©j26%¨G50%©k
+block Job >= 371 && Job <= 447 && Fame >= 6751 && Fame <= 7500 && HaveTitle == 54
+	EndWindow 15481,OK
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +2000©j51%¨G75%©k
+block Job >= 371 && Job <= 447 && Fame >= 7501 && Fame <= 8250 && HaveTitle == 54
+	EndWindow 15482,OK
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +2000©j76%¨G99%©k
+block Job >= 371 && Job <= 447 && Fame >= 8251 && Fame <= 8999 && HaveTitle == 54
+	EndWindow 15483,OK
+
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +4000©j0%¨G25%©k+1000
+block Job >= 371 && Job <= 447 && Fame >= 9001 && Fame <= 10000 && HaveTitle == 55
+	EndWindow 15480,OK
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3000©j26%¨G50%©k
+block Job >= 371 && Job <= 447 && Fame >= 10001 && Fame <= 11000 && HaveTitle == 55
+	EndWindow 15481,OK
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3000©j51%¨G75%©k
+block Job >= 371 && Job <= 447 && Fame >= 11001 && Fame <= 12000 && HaveTitle == 55
+	EndWindow 15482,OK
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3000©j76%¨G99%©k
+block Job >= 371 && Job <= 447 && Fame >= 12001 && Fame <= 12999 && HaveTitle == 55
+	EndWindow 15483,OK
+
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +6000©j0%¨G25%©k+1500
+block Job >= 371 && Job <= 447 && Fame >= 13000 && Fame <= 14500 && HaveTitle == 56
+	EndWindow 15480,OK
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +5000©j26%¨G50%©k
+block Job >= 371 && Job <= 447 && Fame >= 14501 && Fame <= 16000 && HaveTitle == 56
+	EndWindow 15481,OK
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +5000©j51%¨G75%©k
+block Job >= 371 && Job <= 447 && Fame >= 16001 && Fame <= 17500 && HaveTitle == 56
+	EndWindow 15482,OK
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +5000©j76%¨G99%©k
+block Job >= 371 && Job <= 447 && Fame >= 17501 && Fame <= 18999 && HaveTitle == 56
+	EndWindow 15483,OK
+
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +8000©j0%¨G25%©k+2000
+block Job >= 371 && Job <= 447 && Fame >= 19001 && Fame <= 21000 && HaveTitle == 57
+	EndWindow 15480,OK
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +6000©j26%¨G50%©k
+block Job >= 371 && Job <= 447 && Fame >= 21001 && Fame <= 23000 && HaveTitle == 57
+	EndWindow 15481,OK
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +6000©j51%¨G75%©k
+block Job >= 371 && Job <= 447 && Fame >= 23001 && Fame <= 25000 && HaveTitle == 57
+	EndWindow 15482,OK
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +6000©j76%¨G99%©k
+block Job >= 371 && Job <= 447 && Fame >= 25001 && Fame <= 26999 && HaveTitle == 57
+	EndWindow 15483,OK
+
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +10000©j0%¨G25%©k+2500
+block Job >= 371 && Job <= 447 && Fame >= 27001 && Fame <= 29500 && HaveTitle == 58
+	EndWindow 15480,OK
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +9000©j26%¨G50%©k
+block Job >= 371 && Job <= 447 && Fame >= 29501 && Fame <= 32000 && HaveTitle == 58
+	EndWindow 15481,OK
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +9000©j51%¨G75%©k
+block Job >= 371 && Job <= 447 && Fame >= 32001 && Fame <= 34500 && HaveTitle == 58
+	EndWindow 15482,OK
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +9000©j76%¨G99%©k
+block Job >= 371 && Job <= 447 && Fame >= 34501 && Fame <= 36999 && HaveTitle == 58
+	EndWindow 15480,OK
+
+######################################################################
+#	Îå³ðÔ»¨G³Ûá¨
+######################################################################
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +500©j0%¨G25%©k+125
+block Job >= 451 && Job <= 477 && Fame >= 2501 && Fame <= 2625 && HaveTitle == 53
+	EndWindow 15480,OK
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +2000©j26%¨G50%©k
+block Job >= 451 && Job <= 477 && Fame >= 2626 && Fame <= 2750 && HaveTitle == 53
+	EndWindow 15481,OK
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +2000©j51%¨G75%©k
+block Job >= 451 && Job <= 477 && Fame >= 2751 && Fame <= 2875 && HaveTitle == 53
+	EndWindow 15482,OK
+##À„Ã«…ãÈÊ·®¨G”ã±åÞ¥»û +2000©j76%¨G99%©k
+block Job >= 451 && Job <= 477 && Fame >= 2876 && Fame <= 2999 && HaveTitle == 53
+	EndWindow 15483,OK
+
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +1500©j0%¨G25%©k+375
+block Job >= 451 && Job <= 477 && Fame >= 3001 && Fame <= 3375 && HaveTitle == 54
+	EndWindow 15480,OK
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +2000©j26%¨G50%©k
+block Job >= 451 && Job <= 477 && Fame >= 3376 && Fame <= 3750 && HaveTitle == 54
+	EndWindow 15481,OK
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +2000©j51%¨G75%©k
+block Job >= 451 && Job <= 477 && Fame >= 3751 && Fame <= 4125 && HaveTitle == 54
+	EndWindow 15482,OK
+##”ã±åÞ¥»û¨GÔë¼°½§Éµ +2000©j76%¨G99%©k
+block Job >= 451 && Job <= 477 && Fame >= 4126 && Fame <= 4499 && HaveTitle == 54
+	EndWindow 15483,OK
+
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3500©j0%¨G25%©k+875
+block Job >= 451 && Job <= 477 && Fame >= 4501 && Fame <= 5375 && HaveTitle == 55
+	EndWindow 15480,OK
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3000©j26%¨G50%©k
+block Job >= 451 && Job <= 477 && Fame >= 5376 && Fame <= 6250 && HaveTitle == 55
+	EndWindow 15481,OK
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3000©j51%¨G75%©k
+block Job >= 451 && Job <= 477 && Fame >= 6251 && Fame <= 7125 && HaveTitle == 55
+	EndWindow 15482,OK
+##Ôë¼°½§Éµ¨G²×éØØ¦ÔÂÀ„ +3000©j76%¨G99%©k
+block Job >= 451 && Job <= 477 && Fame >= 7126 && Fame <= 7999 && HaveTitle == 55
+	EndWindow 15483,OK
+
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +4000©j0%¨G25%©k+1000
+block Job >= 451 && Job <= 477 && Fame >= 8001 && Fame <= 9000 && HaveTitle == 56
+	EndWindow 15480,OK
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +5000©j26%¨G50%©k
+block Job >= 451 && Job <= 477 && Fame >= 9001 && Fame <= 10000 && HaveTitle == 56
+	EndWindow 15481,OK
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +5000©j51%¨G75%©k
+block Job >= 451 && Job <= 477 && Fame >= 10001 && Fame <= 11000 && HaveTitle == 56
+	EndWindow 15482,OK
+##²×éØØ¦ÔÂÀ„¨Gó¦±å¤¸ÔÂ +5000©j76%¨G99%©k
+block Job >= 451 && Job <= 477 && Fame >= 11001 && Fame <= 11999 && HaveTitle == 56
+	EndWindow 15483,OK
+
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +5000©j0%¨G25%©k+1250
+block Job >= 451 && Job <= 477 && Fame >= 12001 && Fame <= 13250 && HaveTitle == 57
+	EndWindow 15480,OK
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +6000©j26%¨G50%©k
+block Job >= 451 && Job <= 477 && Fame >= 13251 && Fame <= 14500 && HaveTitle == 57
+	EndWindow 15481,OK
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +6000©j51%¨G75%©k
+block Job >= 451 && Job <= 477 && Fame >= 14501 && Fame <= 15750 && HaveTitle == 57
+	EndWindow 15482,OK
+##ó¦±å¤¸ÔÂ¨GÕõÖ¤Ã«¶×ÈÊ·® +6000©j76%¨G99%©k
+block Job >= 451 && Job <= 477 && Fame >= 15751 && Fame <= 16999 && HaveTitle == 57
+	EndWindow 15483,OK
+
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +8000©j0%¨G25%©k+2000
+block Job >= 451 && Job <= 477 && Fame >= 17001 && Fame <= 19000 && HaveTitle == 58
+	EndWindow 15480,OK
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +9000©j26%¨G50%©k
+block Job >= 451 && Job <= 477 && Fame >= 19001 && Fame <= 21000 && HaveTitle == 58
+	EndWindow 15481,OK
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +9000©j51%¨G75%©k
+block Job >= 451 && Job <= 477 && Fame >= 21001 && Fame <= 23000 && HaveTitle == 58
+	EndWindow 15482,OK
+##ÕõÖ¤Ã«¶×ÈÊ·®¨Gó¦ôï +9000©j76%¨G99%©k
+block Job >= 451 && Job <= 477 && Fame >= 23001 && Fame <= 24999 && HaveTitle == 58
+	EndWindow 15483,OK
+
+

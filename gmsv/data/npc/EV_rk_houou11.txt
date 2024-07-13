@@ -1,0 +1,17 @@
+#??????жа
+
+block Item 16330 >= 1
+	EndWindow 22092,OK
+
+block Item 16329 >= 1
+	Window 22090,Yes,No
+		Window_NO
+		Window_Yes ItemSpace == 0
+			EndWindow 10000,OK
+		Window_Yes
+			Window 22091,OK
+			Window_OK
+			GiveItem 16330,1
+
+block
+	EndWindow 22092,OK

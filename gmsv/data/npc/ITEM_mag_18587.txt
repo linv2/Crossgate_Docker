@@ -1,0 +1,13 @@
+#
+#…í’tÃñÒàÎì
+#
+
+##############  ##############
+block
+#\n\n\n\n\n@cÃñÒàÎìÒÁ¡õĞşÃ«î¾ÍÍÒıÔÊ¾®¨”
+#	Window ,YES,NO
+#	Window_YES
+	KillItem 18587,(15268)
+	SetCharm +30
+#	Window_NO
+

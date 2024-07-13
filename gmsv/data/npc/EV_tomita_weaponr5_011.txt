@@ -1,0 +1,52 @@
+#﹛港盒及拨叶﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛必件本平及摒
+
+###﹛痿缜谛匹痿综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 200 && SkillLevel_200 >= 5
+	Window 3203059,OK
+
+		#\n\n﹛孔戈﹜珃反萧仄坌卅中方丹分卅﹝\n﹛蕙仄中痿及抩反幕综脐刨午中丹﹝\n﹛匹反﹜仇及痿及综岳芊毛鳗牖仄方丹﹝\n﹛章卞窖匀化﹜综岳卞拻戈互方中﹝
+
+		Window_OK
+			GiveRecipe 24
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛痿缜谛分互痿综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 200
+	Window 3203060,OK
+
+		#\n\n﹛弁夫及支勾互苇赀匀凶方丹分卅﹝\n﹛允引氏互﹜云厄仄反引分﹜歹仄及痿毛\n﹛综岳匹五月珃匹反卅中﹝\n﹛手丹剂仄珃毛晓仆化井日侳月互方中﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+
+###﹛痿缜谛匹反卅中
+block
+	Window 3203061,YES,NO
+
+		#\n\n﹛允引氏互﹜痿缜谛动陆午狪毛允月凛棉反卅中﹝\n﹛歹仄及⑵反﹜痿综岳匹及仇午匹中匀天中匹友﹝\n﹛峏切蛔曰凶中及井〝
+
+		Window_YES
+			Window 3203062,OK
+
+		#\n\n﹛匹反﹜今日壬分﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3203063
+
+		#\n\n﹛匹反﹜职毛癫凶匀化仁木﹝
+
+
+

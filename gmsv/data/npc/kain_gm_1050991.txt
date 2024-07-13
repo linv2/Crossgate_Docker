@@ -1,0 +1,269 @@
+## 亚诺曼城 旅馆 -- 精修回力标匠
+## 青铜回力镖2801木制大型回力镖	2806追迹者2812彩光回力镖2815暗杀回力镖2820杀敌回力镖2823锐角回力镖2832
+## 狮子回力镖2834阿修塔罗回力镖	2843翼鹿回力镖2848鸫回力镖2850蛇狮回力镖2859雄翼牛回力镖2862闪光回力镖2863
+## 熊翼回力镖+	2870凶豹回力镖2871赤狮回力镖2874天使之翼2887普利辛回力镖2889治愈回力镖2898天秤回力镖2899
+
+
+## 带着 耐久度擦拭布 45988 & 一把武器　点 Yes 后回复武器 100 耐久度　并且收走一个耐久度擦拭布
+block Item 45988 >= 1 && Item 2801 == 1
+	 ##1052100  @c \n\n 确定要修理青铜回力镖吗？
+	 Window 1052100,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2801,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+	 
+block Item 45988 >= 1 && Item 2806 == 1
+	 ##1052101  @c \n\n 确定要修理木制大型回力镖吗？
+	 Window 1052101,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2806,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 2812 == 1
+	 ##1052102   @c \n\n 确定要修理追迹者吗？
+	 Window 1052102,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2812,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 2815 == 1
+	 ##1052103   @c \n\n 确定要修理彩光回力镖吗？
+	 Window 1052103,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2815,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 2820 == 1
+	 ##1052104   @c \n\n 确定要修理暗杀回力镖吗？
+	 Window 1052104,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2820,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 2823 == 1
+	 ##1052105   @c \n\n 确定要修理杀敌回力镖吗？
+	 Window 1052105,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2823,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 2832 == 1
+	 ##1052106   @c \n\n 确定要修理锐角回力镖吗？
+	 Window 1052106,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2832,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 2834 == 1
+	 ##1052107   @c \n\n 确定要修理狮子回力镖吗？
+	 Window 1052107,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2834,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 2843 == 1
+	 ##1052108   @c \n\n 确定要修理阿修塔罗回力镖吗？
+	 Window 1052108,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2843,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+	 
+block Item 45988 >= 1 && Item 2848 == 1
+	 ##105209   @c \n\n 确定要修理翼鹿回力镖吗？
+	 Window 1052109,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2848,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	 
+
+block Item 45988 >= 1 && Item 2850 == 1
+	 ##1052110   @c \n\n 确定要修理鸫回力镖吗？
+	 Window 1052110,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2850,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	 
+
+block Item 45988 >= 1 && Item 2859 == 1
+	 ##1052111   @c \n\n 确定要修理蛇狮回力镖吗？
+	 Window 1052111,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2859,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+	 
+block Item 45988 >= 1 && Item 2862 == 1
+	 ##1052112  @c \n\n 确定要修理雄翼牛回力镖吗？
+	 Window 1052112,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2862,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	 
+
+block Item 45988 >= 1 && Item 2863 == 1
+	 ##1052113   @c \n\n 确定要修理闪光回力镖吗？
+	 Window 1052113,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2863,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	
+
+block Item 45988 >= 1 && Item 2870 == 1
+	 ##1052114  @c \n\n 确定要修理熊翼回力镖+吗？
+	 Window 1052114,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2870,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	
+
+block Item 45988 >= 1 && Item 2871 == 1
+	 ##1052115   @c \n\n 确定要修理凶豹回力镖吗？
+	 Window 1052115,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2871,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	
+
+block Item 45988 >= 1 && Item 2874 == 1
+	 ##1052116   @c \n\n 确定要修理赤狮回力镖吗？
+	 Window 1052116,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2874,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	
+
+block Item 45988 >= 1 && Item 2887 == 1
+	 ##1052117   @c \n\n 确定要修理天使之翼吗？
+	 Window 1052117,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2887,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	
+
+block Item 45988 >= 1 && Item 2889 == 1
+	 ##1052118  @c \n\n 确定要修理普利辛回力镖吗？
+	 Window 1052118,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2889,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014		 
+	 
+block Item 45988 >= 1 && Item 2898 == 1
+	 ##1052119  @c \n\n 确定要修理治愈回力镖吗？
+	 Window 1052119,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2898,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014		 
+	 
+block Item 45988 >= 1 && Item 2899 == 1
+	 ##1052120   @c \n\n 确定要修理天秤回力镖吗？
+	 Window 1052120,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1
+	 KillItem 45988,1
+	 SetDur 2899,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014			 
+
+## 有武器耐久擦拭布	 
+block Item 45988 >=1
+	 ####1052012	\n\n  我可以帮你回复武器的耐久度喔！想不想试试看？\n  但是你只能带一把你想修的武器给我，不然修错把  我可不负责喔。	1
+	 EndWindow 1052012
+	 
+	 
+## 没有带 耐久度擦拭布　45988
+block 
+	 ##1052015	\n 我们是追求最高修理技巧的师匠，我们的手艺已经到了登峰造极的境界，现在只要你带着特殊的道具过来，我们就可以免费帮你把武器恢复100的耐久度哦。
+	 EndWindow 1052015

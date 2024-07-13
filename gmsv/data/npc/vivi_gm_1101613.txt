@@ -1,0 +1,129 @@
+###### 新手任务-冒险者训练中心 ######
+####■ 新手任务解说员
+##■ 有100朵感恩百合花 && 有职业
+block Item 40126 >= 100 && Job != 1
+	 ##1101286	 \n\n你帮助人的热血情操真是令人敬佩啊！\n想用100朵百合花换礼物吗？
+	 Window 1101286,YES,NO
+	 	 Window_YES Item 40126 >= 100
+	 	 	 KillItem 40126,100
+	 	 	 GiveLeak1Item 40129
+	 	 Window_NO
+	 	 
+##■ 有50朵感恩百合花 && 有职业
+block Item 40126 >= 50 && Job != 1
+	 ##1101287	\n\n帮助人是这么快乐，相信你已经迷上了吧？\n想用50朵百合花换礼物吗？
+	 Window 1101287,YES,NO
+	 	 Window_YES Item 40126 >= 50
+	 	 	 KillItem 40126,50
+	 	 	 GiveLeak1Item 40128
+	 	 Window_NO
+	 	 
+##■ 有10朵感恩百合花 && 有职业
+block Item 40126 >= 10 && Job != 1
+	 ##1101288	\n\n帮助人是快乐的，相信你已经体会到了！\n想用10朵百合花换礼物吗？
+	 Window 1101288,YES,NO
+	 	 Window_YES Item 40126 >= 10
+	 	 	 KillItem 40126,10
+	 	 	 GiveLeak1Item 40127
+	 	 Window_NO
+##■ 有见习教师徽章 && 有职业
+block Item 40127 >= 1 && Job != 1
+	 ##1101378	\n\n你已经是这世界里的教师了啊！感谢你的帮忙！
+	 EndWindow 1101378
+##■ 有教师徽章 && 有职业
+block Item 40128 >= 1 && Job != 1
+	 ##1101378	\n\n你已经是这世界里的教师了啊！感谢你的帮忙！
+	 EndWindow 1101378
+##■ 有热血教师徽章 && 有职业
+block Item 40129 >= 1 && Job != 1
+	 ##1101378	\n\n你已经是这世界里的教师了啊！感谢你的帮忙！
+	 EndWindow 1101378	 	 
+##■ 有职业
+block Job != 1
+	 ##1101289	\n\n假如你能收集到10朵感恩的百合花，就可以跟我换一份神秘礼物喔！\n想知道如何得到感恩的百合花吗？
+	 Window 1101289,YES,NO
+	 	 Window_NO
+	 	 Window_YES
+	 	 	 ##1101290	\n感恩的百合花是新手拿来感谢帮助过他的勇者，所以当你帮助了刚到这世界的新手，相信他就会送你感恩的百合花，以表达他的谢意。\n去试试看吧，说不定你因此又多交了一个好朋友喔！
+	 	 	 EndWindow 1101290
+	 	 	 
+##■ 有结业证明4/5 
+block Item 40123 == 1 
+	 ##1101291	\n\n想要再回去参加新手特训吗？
+	 Window 1101291,YES,NO
+	 	 Window_NO
+	 	 Window_YES Group > 1
+	 	 	 ##1100000 \n请解散队伍。
+	 	 	 EndWindow 1100000
+	 	 Window_YES Group == 1	 
+	 	 	 Warp 0,32013,24,14
+	 	 	 	 	 	 
+##■ 有结业证明3/5
+block Item 40122 == 1
+	 ##1101291	\n\n想要再回去参加新手特训吗？
+	 Window 1101291,YES,NO
+	 	 Window_NO
+	 	 Window_YES Group > 1
+	 	 	 ##1100000 \n请解散队伍。
+	 	 	 EndWindow 1100000
+	 	 Window_YES Group == 1	 
+	 	 	 Warp 0,32012,39,20
+	 
+##■ 有结业证明2/5
+block Item 40121 ==1
+	 ##1101291	\n\n想要再回去参加新手特训吗？
+	 Window 1101291,YES,NO
+	 	 Window_NO
+	 	 Window_YES Group > 1
+	 	 	 ##1100000 \n请解散队伍。
+	 	 	 EndWindow 1100000
+	 	 Window_YES Group == 1	 
+	 	 	 Warp 0,32005,29,88
+	 	 	 
+##■ 有结业证明1/5
+block Item 40120 == 1
+	 ##1101291	\n\n想要再回去参加新手特训吗？
+	 Window 1101291,YES,NO
+	 	 Window_NO
+	 	 Window_YES Group > 1
+	 	 	 ##1100000 \n请解散队伍。
+	 	 	 EndWindow 1100000
+	 	 Window_YES Group == 1	 
+	 	 	 Warp 0,32002,16,12	
+	 	 	 
+##■ 有结业证明 && 感恩的百合花	 
+block Item 40124 == 1 && Item 40126 >= 1
+	 ##1101292	\n\n你可以将你身上的那朵百合花交给在这个世界里帮助你的人。\n当你把百合花交出去之后，再拿着结业证明到这里来找我吧！
+	 EndWindow 1101292
+
+##■ 有结业证明
+block Item 40124 == 1
+	 ##1101293	\n\n你做的很好！要用结业证明交换新手徽章吗？
+	 Window 1101293,YES,NO
+	 	 Window_YES Item 40124 == 1
+	 	 	 KillItem 40124
+	 	 	 GiveLeak1Item 40125	 	 
+	 	 Window_NO
+	 	 
+##■ 有新手徽章
+block Item 40125 >= 1
+	 ##1101379	\n\n恭喜你通过新手特训，你胸前的徽章正在闪闪发亮呢！若尚未就职又想要知道就职情报，可到职业介绍 (195,50)所问问。
+	 EndWindow 1101379
+
+##■ 游民
+block Job == 1
+	 ##1101294	\n\n你是否尚未接受过新手的特别训练呢？	
+	 Window 1101294,YES,NO
+	 	 Window_NO
+	 	 Window_YES
+	 	 ##1101295	\n\n想要去试试看新手特训吗？
+	 	 Window 1101295,YES,NO
+	 	 	 Window_NO
+	 	 	 Window_YES Group > 1
+	 	 	 	 ##1100000 \n请解散队伍。
+	 	 	 	 EndWindow 1100000
+	 	 	 Window_YES Group == 1	 
+	 	 	 	 Warp 0,32001,6,7
+
+	 	 	 	 
+	 	 	  	  	 	 	 

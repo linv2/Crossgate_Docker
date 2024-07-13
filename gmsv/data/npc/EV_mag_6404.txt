@@ -1,0 +1,22 @@
+#
+#未矛母奶
+#
+
+############## 优谖旦平伙儅匀化中月 ##############
+############## 坁咥僎猾烟R8 ##############
+block Skilllevel 0>= 8 || Skilllevel 1 >= 8 || Skilllevel 3 >= 8 || Skilllevel 4 >= 8 || Skilllevel 5 >= 8 || Skilllevel 6 >= 8 || Skilllevel 7 >= 8 || Skilllevel 8 >= 8 || Skilllevel 9 >= 8 || Skilllevel 11 >= 8 || Skilllevel 12 >= 8 || Skilllevel 94 >= 8 || Skilllevel 95 >= 8 || Skilllevel 96 >= 8
+#\n\n﹛脱互⑺辿卞沧啦毛憎允手及欥
+	Window 14792,OK
+	Window_OK
+	Warp 0,24039,16,19
+
+#############爆弹师投掷技能8级优待#############
+block Skilllevel 2002 >= 8
+	Window 14792,OK
+	Window_OK
+	Warp 0,24039,16,19
+
+############## 优谖旦平伙儅匀化中卅中 ##############
+block
+	encount 3|0,24071,20,20||0|||||0|12005|||||||||
+

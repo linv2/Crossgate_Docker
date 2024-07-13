@@ -1,0 +1,87 @@
+#池塘管理员	mayko_gm_1051798.txt
+
+#水生植物种子	41078
+#栽培记录１	41079
+#栽培记录２	41080
+#栽培记录３	41081
+
+#红莲法冠	47295
+#青莲冠	47297
+#水之营养剂	18796
+
+block Item 47295>0
+	 Window 1110625,NEXT
+	 EndWindow 1110626
+block Item 47297>0
+	 Window 1110625,NEXT
+	 EndWindow 1110626
+
+
+
+#1110625	\n\n\n\n@c真不愧是被称为圣花的花呀～	1
+#1110626	\n\n\n\n@c出污泥而不染，濯清涟而不妖。	1
+
+
+#1110617	\n\n\n　　　　你真的拿到种子了呀！！\n　　　　不过种在水中的话，\n　　　　应该需要水之营养剂吧！！	1
+#1110618	\n\n\n　　　　你现在有种子跟水之营养剂，\n　　　　我来试种看看！！	1
+#1110619	\n\n\n\n@c好像还没有什么动静呢。	1
+#1110620	\n\n\n　　　　好像有长了一点点，\n　　　　您能不能帮我买个水之营养剂呢？？	1
+#1110621	\n\n\n\n@c似乎在抽芽呢。	1
+#1110622	\n\n\n　　　　有开花的迹象了，\n　　　　能不能再帮我买个水之营养剂呢？？	1
+#1110623	\n\n\n\n@c等待花开吧......	1
+#1110624	\n\n\n　　　　水中花开了，\n　　　　我依照花的样子做了个头冠送您，\n　　　　谢谢您的帮忙。	1
+
+
+
+block Item 41081>0 && ItemCreateTime 41081>120
+	 KillItem 41081,1
+	 GiveLeak1Item (47297%50$1,47295%50$1)
+	 EndWindow 1110624
+block Item 41081>0
+	 EndWindow 1110623
+
+####
+block Item 41080>0 && ItemCreateTime 41080>120 && Item 18796 >0
+	 KillItem 41080
+	 KillItem 18796
+	 GiveLeak1Item 41081,1
+	 EndWindow 1110623
+
+block Item 41080>0 && ItemCreateTime 41080>120
+	 EndWindow 1110622
+block Item 41080>0
+	 EndWindow 1110621
+####
+
+block Item 41079>0 && ItemCreateTime 41079>120 && Item 18796 >0
+	 KillItem 41079
+	 KillItem 18796
+	 GiveLeak1Item 41080,1
+	 EndWindow 1110621
+
+block Item 41079>0 && ItemCreateTime 41079>120
+	 EndWindow 1110620
+block Item 41079>0
+	 EndWindow 1110619
+
+block Item 41078>0 && Item 18796 >0
+	 KillItem 41078,1
+	 KillItem 18796,1
+	 GiveLeak1Item 41079,1
+	 EndWindow 1110618
+
+block Item 41078>0
+	 EndWindow 1110617
+
+#1110617	\n\n\n　　　　你真的拿到种子了呀！！\n　　　　不过种在水中的话，\n　　　　应该需要水之营养剂吧！！	1
+
+
+
+#1110612	\n\n\n　　　　有种在水面上开的花，\n　　　　你说过了吗？？	1
+#1110613	\n\n\n　　　　开于水中的花，\n　　　　是某种宗教的是圣花。	1
+#1110614	\n\n\n　　　　我听说珊妮有水中花的种子，\n　　　　可以向她要看看！！	1
+block 
+	 Window 1110612,NEXT
+	 Window 1110613,NEXT
+	 EndWindow 1110614
+	 

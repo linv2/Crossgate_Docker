@@ -1,0 +1,11 @@
+#mayko_gm_1102650.txt 南恰特拉第一通道
+#1110757	\n\n\n　　　　玄武大人正在闹头痛，\n　　　　谁靠近它就会被打。	1
+
+#1110760	\n\n\n\n@c请你去买止痛药喔！！	1
+
+block item 18233 >0
+	 endwindow 1110775
+block 
+	 window 1110757,next
+	 Endwindow 1110760
+	 	 

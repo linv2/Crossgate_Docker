@@ -1,0 +1,172 @@
+##mayko_gm_1102666.txt 铠甲
+
+#轻型锁炼甲	4420	9611	6	9612	10	10002	20				
+
+#1111345	\n\n\n@c你好！！我负责支援新星铠甲制作：
+#1111308	\n\n你现在有轻型锁炼甲材料铜条6份，铁条10份，黄月木20份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111354	\n\n\n@c代工费是７００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 9611>=6 && item 9612 >=10 && item 10002 >= 20
+
+	Window 1111345,next
+	Window 1111308,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111354,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 699
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -700
+		killitem 9611,6
+		killitem 9612,10
+		killitem 10002,20
+		
+		GiveLeak1Item 4420,1
+		endwindow 1111335
+
+
+#环甲	4421	9611	5	9612	4	10001	20	9613	5	9614	4
+
+#1111345	\n\n\n@c你好！！我负责支援新星铠甲制作：
+
+#1111309	\n\n你现在有环甲材料铜条5份，铁条4份，枞20份，银条5份，纯银条4份，
+
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111354	\n\n\n@c代工费是７００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 9611>=5 && item 9612 >=4 && item 10001 >= 20 && item 9613 >=5 && item 9614>=4
+
+	Window 1111345,next
+	Window 1111309,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111354,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 699
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -700
+		killitem 9611,5
+		killitem 9612,4
+		killitem 9613,5
+		killitem 9614,4
+		killitem 10001,20
+		GiveLeak1Item 4421,1
+		endwindow 1111335
+
+#重铁板甲	4459	9613	5	9614	5	9615	5	10004	20	9616	10
+	
+#1111345	\n\n\n@c你好！！我负责支援新星铠甲制作：
+
+#1111310	\n\n你现在有重铁板甲材料银条5份，纯银条5份，金条5份，琵琶木20份，白金条10份，
+
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111353	\n\n\n@c代工费是３５００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 9613>=5  && item 9614 >= 5 && item 9615 >=5 && item 10004>=20 && item 9616>=10
+
+	Window 1111345,next
+	Window 1111310,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111353,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 3499
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -3500
+		killitem 9613,5
+		killitem 9614,5
+		killitem 9615,5
+		killitem 9616,10
+		killitem 10004,20
+		GiveLeak1Item 4459,1
+		endwindow 1111335
+		
+#铁板半身甲	4458	9613	6	9614	6	9615	6	9616	10	10005	20			
+
+#1111345	\n\n\n@c你好！！我负责支援新星铠甲制作：
+#1111311	\n\n你现在有铁板半身甲材料银条6份，纯银条6份，金条6份，白金条10份，赤松20份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111353	\n\n\n@c代工费是３５００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 9613 >= 6 && item 9614>=6  && item 9615 >= 6 && item 9616>= 10 && item 10005>=20
+
+	Window 1111345,next
+	Window 1111311,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111353,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 3499
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -3500
+		killitem 9613,6
+		killitem 9614,6
+		killitem 9615,6
+		killitem 9616,10
+		killitem 10005,20
+		
+		GiveLeak1Item 4458,1
+		endwindow 1111335
+
+##没有铠材料
+#1111345	\n\n\n@c你好！！我负责支援新星铠甲制作：
+#1111247	\n\n制做轻型锁炼甲需要铜条6份，铁条10份，黄月木20份，
+#1111248	\n\n制做环甲需要铜条5份，铁条4份，枞20份，银条5份，纯银条4份，
+#1111249	\n\n制做重铁板甲需要银条5份，纯银条5份，金条5份，琵琶木20份，白金条10份，
+#1111250	\n\n制做铁板半身甲需要银条6份，纯银条6份，金条6份，白金条10份，赤松20份，
+
+#1111355\n\n\n@c准备好材料再来找我！！
+
+block 
+	Window 1111345,next
+	Window 1111247,next
+	Window 1111248,next
+	Window 1111249,next
+	window 1111250,next
+	endwindow 1111355
+	

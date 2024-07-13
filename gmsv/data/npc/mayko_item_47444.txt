@@ -1,0 +1,86 @@
+###### 空现金袋 ###### 
+
+##有 装满酱油箱 物品栏不足10个
+block Item 47444 >= 1 && ItemSpace < 1
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+##
+block Item 47444 >= 1 && ItemSpace >= 1 && Gold >=10100
+	  Window 1054693,YES,NO
+	  Window_YES ItemSpace < 1
+	  EndWindow 1100002
+	  Window_YES Gold<10100
+	  EndWindow 3
+	  Window_YES
+	  AddGold -10100
+	  KillItem 47444,1
+	  GiveLeak1Item (47447%1$1)
+	  endblock
+	  Window_NO Item 47444 >= 1 && ItemSpace >= 1 && Gold >=5050
+	  	 Window 1054694,YES,NO
+	  	 Window_YES ItemSpace < 1
+	  	 EndWindow 1100002
+	  	 Window_YES Gold<5050
+	  	 EndWindow 3
+	  	 Window_YES
+	  	 AddGold -5050
+	  	 KillItem 47444,1
+	  	 GiveLeak1Item (47446%1$1)
+	  	 endblock
+		 Window_NO Item 47444 >= 1 && ItemSpace >= 1 && Gold >=3030
+		 	 Window 1054695,YES,NO
+	  	 	 Window_YES ItemSpace < 1
+	  	 	 EndWindow 1100002
+	  	 	 Window_YES Gold<3030
+	  	 	 EndWindow 3
+	  	 	 Window_YES
+	  	 	 AddGold -3030
+	  	 	 KillItem 47444,1
+	  	 	 GiveLeak1Item (47445%1$1)
+	  	 	 endblock
+	  	 	 Window_NO
+			 EndWindow 1054696
+	  	  endblock
+	  endblock
+#=====================
+block Item 47444 >= 1 && ItemSpace >= 1 && Gold >=5050
+	 Window 1054694,YES,NO
+	 Window_YES ItemSpace < 1
+	 EndWindow 1100002
+	 Window_YES Gold<5050
+	 EndWindow 3
+	 Window_YES
+	 AddGold -5050
+	 KillItem 47444,1
+	 GiveLeak1Item (47446%1$1)
+	 endblock
+	 Window_NO Item 47444 >= 1 && ItemSpace >= 1 && Gold >=3030
+		 Window 1054695,YES,NO
+	  	 Window_YES ItemSpace < 1
+	  	 EndWindow 1100002
+	  	 Window_YES Gold<3030
+	  	 EndWindow 3
+	  	 Window_YES
+	  	 AddGold -3030
+	  	 KillItem 47444,1
+	  	 GiveLeak1Item (47445%1$1)
+	  	 endblock
+	  	 Window_NO
+		 EndWindow 1054696
+	  endblock
+#===========================================================	  
+block Item 47444 >= 1 && ItemSpace >= 1 && Gold >=3030
+	 Window 1054695,YES,NO
+	 Window_YES ItemSpace < 1
+	 EndWindow 1100002
+	 Window_YES Gold<3030
+	 EndWindow 3
+	 Window_YES
+	 AddGold -3030
+	 KillItem 47444,1
+	 GiveLeak1Item (47445%1$1)
+	 endblock
+	 Window_NO
+	 EndWindow 1054696
+	  

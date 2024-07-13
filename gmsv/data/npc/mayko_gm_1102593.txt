@@ -1,0 +1,21 @@
+#WatchEx		0	1102225
+#102767	没有钥匙进不去。	
+#102768	要使用钥匙进屋吗？
+###□一般
+
+block Item 41061 >= 1  &&  Xpos == 61 && Ypos >= 56 && Ypos <= 57
+	 Window 1102768,YES,NO 
+ 	 Window_YES Group > 1
+ 	 EndWindow 1100000
+	 Window_YES
+	 	LeaveGroup
+ 	 	Warp 0,32137,4,9
+	  Endblock
+		 
+ 	 Window_NO 
+	  Endblock 	 	
+	  
+block Xpos == 61 && Ypos >= 56 && Ypos <= 57
+	 #Warp 0,32137,4,9
+	 EndWindow 1102767
+	

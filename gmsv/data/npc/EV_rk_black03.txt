@@ -1,0 +1,8 @@
+#ÈÓ°Ç¼þÊÐ
+
+block
+	Window 22902,Next
+	Window 22903,Next
+	Window 22904,OK
+		Window_OK
+			Encount 2|0,50000,19,91||0|||||0|25056|||||||||

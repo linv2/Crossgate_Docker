@@ -1,0 +1,49 @@
+#阿里	1102529	
+#32281	36	31	mayko_gm_1102529.txt	
+#1110344	\n　　　老婆！不要有事呀！！\n　　　我的老婆要生孩子了，可是半天都过去了～\n　　　我想去城南找神女求平安符，可是这下子又不敢离开！	1
+#1110345	\n\n\n\n@c您能帮我这个忙吗？	1
+#1110346	\n\n\n\n@c真是谢谢你！	1
+#1110347	\n\n\n　　　唉～～我再想想办法好了。\n　　　老婆呀～～你可别有事呀～～	1
+#1110348	\n\n\n　　　这是给我老婆的平安符吗？？\n　　　真是太谢谢你了。	1
+#1110349	\n\n　　　我刚想到住丝米村的母亲，\n　　　渴望抱孙很久了，\n　　　麻烦你再帮我送封信。	1
+#1110350	\n\n\n\n@c麻烦你消息给丝米的母亲大人！	1
+#1110351	\n\n\n　　　这是～～母亲的心意～～\n　　　真是太好了～～	1
+#1110352	\n\n\n　　　内人已经生了，\n　　　这链子，就送给您做纪念吧！	1
+#1110353	\n\n\n\n@c谢谢您～～	1
+
+#安产平安炼	41016
+#阿里的信	41023
+#平安符	41024
+#阿里家书	41025
+#鸡酒	41026
+
+block Item 41016>0
+	 EndWindow 1110353
+block Item 41026>0
+	 KillItem 41026,1
+	 GiveLeak1Item 41016,1
+	 Window 1110351,NEXT
+	 EndWindow 1110352
+block Item 41025>0
+	 EndWindow  1110350
+block Item 41024>0
+	 KillItem 41024,1
+	 GiveLeak1Item 41025,1
+	 Window 1110348,NEXT
+	 EndWindow 1110349
+block Item 41023>0
+	 EndWindow 1110346
+block 
+	 Window 1110344,NEXT
+	 Window 1110345,YES,NO
+	 Window_YES ItemSpace == 0
+	 EndWindow 1110347
+	 Window_YES 
+	 GiveLeak1Item 41023,1
+	 EndWindow 1110346
+	 Window_NO
+	 EndWindow 1110347
+	 
+	 
+
+

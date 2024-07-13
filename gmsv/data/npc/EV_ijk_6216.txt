@@ -1,0 +1,501 @@
+#缜谛仿件弁失永皿?奶矛件玄﹛き戚魂董敢﹋膜咥﹌
+
+#膜咥缜谛﹜仿件弁A﹜弘伙□皿
+#block Job >= 374 && Group >= 2 && EndEvent 91 == 1
+#	#\n\n﹛楝反允匹卞豢迕琼缜谛及凤伞魂董卞宁伞仄化中月方丹分互﹜引分仿件弁失永皿毛绊凶仄化中卅中缜谛及扔禾□玄卞侳凶及井友〝\n﹛手仄公丹卅日﹜YES及示正件毛瓷仄卅今中﹝き戚魂董及莘桦卞?壬仄化丐仆方丹﹝
+#	Window 17016,YES,NO
+
+#	Window_YES Job >= 374 && Group >= 2 && EndEvent 91 == 1
+#	Warp 0,4421,8,10
+
+#	Window_NO
+
+#椎烂缜谛﹜仿件弁A
+#block Job >= 374 && EndEvent 91 == 1
+#	#\n\n﹛楝反允匹卞豢迕琼缜谛及凤伞魂董卞宁伞仄化中月方丹分卅﹝引分仿件弁失永皿毛绊凶仄化中卅中缜谛及扔禾□玄卞侳凶及卅日﹜弘伙□皿毛赚氏匹台卞狪仄喘仃月及分﹝
+#	EndWindow 17020
+
+##########﹛NowEvent犯田永弘迕﹛##########
+block NowEvent 91 == 1
+	NowEvent 91 = 0
+	#\n\n在这里，请让我们看看你们的修理能力吧！\n请把第一次试验的作品拿给职业是修理工的人，并让他带头之后再跟我交谈吧！	8
+	EndWindow 11952
+
+##########﹛仿件弁?朹湛膜咥缜谛互朹湛馨笛伊扑疋母立□失奶泛丞毛儅匀化中月桦宁﹛##########
+block Job >= 373 && SkillLevel 217 >= 8 && Item 18510 >= 1 && NowEvent 91 == 0
+	#\\n\n嗯！修理好了吗？那让我看看吧！
+	Window 11947,YES,NO
+
+	Window_NO
+	#\n\n嗯？还没修好吗？慢慢来吧！修好再告诉我。
+	EndWindow 11948
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18510 < 100
+	#\n\n．．．你好像没把它完全修好的样子．．．再多下点工夫吧！
+	EndWindow 11949
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18510 == 100
+	#\n\n﹛幻丹幻丹﹜中中分欠丹﹝き戚魂董手宁伞分﹝仇木井日宁伞及朿盒及杅卞啖匀化手日丹井日弘伙□皿及引引匹中月方丹卞﹝??毛瓷允午伐□皿允月井日﹜伉□母□动陆及樊反??示正件毛瓷今卅中方丹卞﹝
+	Window 11950,OK
+
+	Window_OK Job >= 373 && SkillLevel 217 >= 8 && Item 18510 >= 1 && NowEvent 91 == 0
+	KillItem 18510
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 373 && SkillLevel 217 >= 8 && Item 18511 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18511 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18511 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 373 && SkillLevel 217 >= 8 && Item 18511 >= 1 && NowEvent 91 == 0
+	KillItem 18511
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 373 && SkillLevel 217 >= 8 && Item 18512 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18512 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18512 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 373 && SkillLevel 217 >= 8 && Item 18512 >= 1 && NowEvent 91 == 0
+	KillItem 18512
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 373 && SkillLevel 217 >= 8 && Item 18513 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18513 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18513 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 373 && SkillLevel 217 >= 8 && Item 18513 >= 1 && NowEvent 91 == 0
+	KillItem 18513
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 373 && SkillLevel 217 >= 8 && Item 18514 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18514 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18514 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 373 && SkillLevel 217 >= 8 && Item 18514 >= 1 && NowEvent 91 == 0
+	KillItem 18514
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 373 && SkillLevel 217 >= 8 && Item 18515 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18515 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18515 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 373 && SkillLevel 217 >= 8 && Item 18515 >= 1 && NowEvent 91 == 0
+	KillItem 18515
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 373 && SkillLevel 217 >= 8 && Item 18516 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18516 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && ItemDurPer 18516 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 373 && SkillLevel 217 >= 8 && Item 18516 >= 1 && NowEvent 91 == 0
+	KillItem 18516
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+
+##########﹛仿件弁?侂填膜咥缜谛互侂填馨笛伊扑疋母立□失奶泛丞毛儅匀化中月桦宁﹛##########
+
+block Job >= 383 && SkillLevel 218 >= 8 && Item 18517 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18517 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18517 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 383 && SkillLevel 218 >= 8 && Item 18517 >= 1 && NowEvent 91 == 0
+	KillItem 18517
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 383 && SkillLevel 218 >= 8 && Item 18518 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18518 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18518 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 383 && SkillLevel 218 >= 8 && Item 18518 >= 1 && NowEvent 91 == 0
+	KillItem 18518
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 383 && SkillLevel 218 >= 8 && Item 18519 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18519 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18519 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 383 && SkillLevel 218 >= 8 && Item 18519 >= 1 && NowEvent 91 == 0
+	KillItem 18519
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 383 && SkillLevel 218 >= 8 && Item 18520 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18520 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18520 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 383 && SkillLevel 218 >= 8 && Item 18520 >= 1 && NowEvent 91 == 0
+	KillItem 18520
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 383 && SkillLevel 218 >= 8 && Item 18521 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18521 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18521 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 383 && SkillLevel 218 >= 8 && Item 18521 >= 1 && NowEvent 91 == 0
+	KillItem 18521
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 383 && SkillLevel 218 >= 8 && Item 18522 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18522 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18522 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 383 && SkillLevel 218 >= 8 && Item 18522 >= 1 && NowEvent 91 == 0
+	KillItem 18522
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 383 && SkillLevel 218 >= 8 && Item 18523 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18523 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18523 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 383 && SkillLevel 218 >= 8 && Item 18523 >= 1 && NowEvent 91 == 0
+	KillItem 18523
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+block Job >= 383 && SkillLevel 218 >= 8 && Item 18524 >= 1 && NowEvent 91 == 0
+	Window 11947,YES,NO
+
+	Window_NO
+	EndWindow 11948
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18524 < 100
+	EndWindow 11949
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && ItemDurPer 18524 == 100
+	Window 11950,OK
+
+	Window_OK Job >= 383 && SkillLevel 218 >= 8 && Item 18524 >= 1 && NowEvent 91 == 0
+	KillItem 18524
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+
+##########﹛仿件弁?朹湛膜咥缜谛互朹湛馨笛伊扑疋失奶泛丞毛儅匀化中月桦宁﹛##########
+block Job >= 373 && SkillLevel 217 >= 8
+	#\n\n﹛仇仇匹反﹜楝凶切及由□泛奴及膜咥及チ恘毛苇六化手日丹﹝域戚魂董及综岳坁毛﹜戏遣烟缜谛井日欐仄化手日匀凶井卅〝
+	Window 11943,YES,NO
+
+	Window_NO
+	#\n\n﹛公木匹反﹜引内反燮幻升及综岳坁毛儅匀化﹜台卞手丹域蘸狪仄喘仃卅今中﹝
+	EndWindow 11944
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && Item 73 >= 1
+	KillItem 73,1
+	Giveitem 18510,1
+	Setdur 18510,-30
+	#\n\n﹛公木匹反﹜切斤匀午撩斪仄化’’’﹝左孕伉乓永″打件打件打件″″
+	Window 11945,OK
+	#Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	#EndWindow 11946
+
+	
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && Item 875 >= 1
+	KillItem 875,1
+	Giveitem 18511,1
+	Setdur 18511,-30
+	Window 11945,OK
+	#Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	#EndWindow 11946
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && Item 1672 >= 1
+	KillItem 1672,1
+	Giveitem 18512,1
+	Setdur 18512,-30
+	Window 11945,OK
+	#Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	#EndWindow 11946
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && Item 2070 >= 1
+	KillItem 2070,1
+	Giveitem 18513,1
+	Setdur 18513,-30
+	Window 11945,OK
+	#Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	#EndWindow 11946
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && Item 2484 >= 1
+	KillItem 2484,1
+	Giveitem 18514,1
+	Setdur 18514,-30
+	Window 11945,OK
+	#Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	#EndWindow 11946
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && Item 2870 >= 1
+	KillItem 2870,1
+	Giveitem 18515,1
+	Setdur 18515,-30
+	Window 11945,OK
+	#Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	#EndWindow 11946
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8 && Item 3270 >= 1
+	KillItem 3270,1
+	Giveitem 18516,1
+	Setdur 18516,-30
+	Window 11945,OK  ##\n\n请稍等．．．喝！死吧死吧！！咚咚咚！！！
+	#Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	#EndWindow 11946
+
+	Window_YES
+	#\n\n﹛引分综岳坁毛澎欐仄化手日匀化卅中方丹分卅﹝玄伊□玉毛仄化井日﹜手丹域蘸狪仄喘仃卅今中﹝
+	EndWindow 17005
+
+###﹛朹湛膜咥缜谛互﹜侂填馨笛伊扑疋失奶泛丞毛儅匀化中月桦宁﹛###
+	Window_YES Job >= 373 || Item 3675 >= 1 || Item 4075 >= 1 || Item 4475 >= 1 || Item 4877 >= 1 || Item 5275 >= 1 || Item 5675 >= 1 || Item 6075 >= 1 || Item 6473 >= 1
+	#\n\n﹛侂填及综岳坁毛儅匀化中化手﹜膜咥反匹五氏分欠〝侂填及综岳坁毛儅匀化五卅今中﹝
+	EndWindow 17017
+
+	Window_YES Job >= 373 && SkillLevel 217 >= 8
+	#\n\n﹛氏’’’〝卅氏分﹜引分域戚魂董及综岳坁毛戏遣烟缜谛井日欐仄化手日匀化卅中氏元扎卅中井〝
+	EndWindow 11953
+
+	#Window_OK
+	##\n\n﹛公及综岳坁毛楝及チ恘匹敦蝈卞膜咥仄化仁木凶引尹﹝膜咥互请侳凶凛卞手丹域蘸狪仄喘仃化仁木凶日﹜き戚魂董及宁?毛鳗尹方丹﹝公丹公丹﹜由□泛奴及丢件田□卞反剂仄谨勾方丹卞狪仄化云中化仁木﹝
+	#EndWindow 11946
+
+
+##########﹛仿件弁?侂填膜咥缜谛互侂填馨笛伊扑疋失奶泛丞毛儅匀化中月桦宁﹛##########
+block Job >= 383 && SkillLevel 218 >= 8
+	#\n\n﹛仇仇匹反﹜楝凶切及由□泛奴及膜咥及チ恘毛苇六化手日丹﹝域戚魂董及综岳坁毛﹜戏遣烟缜谛井日欐仄化手日匀凶井卅〝
+	Window 11943,YES,NO
+
+	Window_NO
+	#\n\n﹛公木匹反﹜引内反燮幻升及综岳坁毛儅匀化﹜台卞手丹域蘸狪仄喘仃卅今中﹝
+	EndWindow 11944
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && Item 3675 >= 1 ##钢制头盔+
+	KillItem 3675,1
+	Giveitem 18517,1
+	Setdur 18517,-30
+	#\n\n﹛公木匹反﹜切斤匀午撩斪仄化’’’﹝左孕伉乓永″打件打件打件″″
+	Window 11945,OK
+	Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	EndWindow 11946
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && Item 4075 >= 1 ##可爱的扁帽子+
+	KillItem 4075,1
+	Giveitem 18518,1
+	Setdur 18518,-30
+	Window 11945,OK
+	Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	EndWindow 11946
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && Item 4475 >= 1  ##实战铠甲+
+	KillItem 4475,1
+	Giveitem 18519,1
+	Setdur 18519,-30
+	Window 11945,OK
+	Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	EndWindow 11946
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && Item 4877 >= 1  ##兽骨之衣+
+	KillItem 4877,1
+	Giveitem 18520,1
+	Setdur 18520,-30
+	Window 11945,OK
+	Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	EndWindow 11946
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && Item 5275 >= 1 ##洁净之袍+
+	KillItem 5275,1
+	Giveitem 18521,1
+	Setdur 18521,-30
+	Window 11945,OK
+	Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	EndWindow 11946
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && Item 5675 >= 1 #标准长靴+
+	
+	KillItem 5675,1
+	Giveitem 18522,1
+	Setdur 18522,-30
+	Window 11945,OK
+	Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	EndWindow 11946
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && Item 6075 >= 1 ##妖精鞋+
+	KillItem 6075,1
+	Giveitem 18523,1
+	Setdur 18523,-30
+	Window 11945,OK
+	Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	EndWindow 11946
+
+	Window_YES Job >= 383 && SkillLevel 218 >= 8 && Item 6473 >= 1  ##防御之盾+
+	KillItem 6473,1
+	Giveitem 18524,1
+	Setdur 18524,-30
+	Window 11945,OK
+	Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	EndWindow 11946
+
+	Window_YES
+	#\n\n你好像还没拿到东西的样子。先去交易后再来吧！
+	EndWindow 17005
+	
+
+###﹛侂填膜咥缜谛互﹜朹湛馨笛伊扑疋失奶泛丞毛儅匀化中月桦宁﹛###
+	Window_YES Job >= 383 || Item 73 >= 1 || Item 875 >= 1 || Item 1672 >= 1 || Item 2070 >= 1 || Item 2484 >= 1 || Item 2870 >= 1 || Item 3270 >= 1
+	#\n\n你是防具修理工吧？那拿着武器也没用啊！看你要重来还是去找做防具的人拿防具。
+	EndWindow 17018
+
+	Window_YES Job >= 383 && SkillLevel 217 >= 8
+	#\n\n嗯．．．？你还没拿到第一次试验的东西吗？
+	EndWindow 11953
+
+	#Window_OK
+	#\n\n那把这个东西修好吧！修的好的话再跟我交谈，我将告诉你第二次测验的结果。对了，告诉你的同伴请他们等一下喔！	8
+	#EndWindow 11946
+
+
+##########﹛朹湛膜咥缜谛互旦平伙伊矛伙互箫曰卅中桦宁﹛##########
+block jobancestry == 370 && SkillLevel 217 < 8
+	#\n\n你的力量不足，下次再来吧！
+	EndWindow 11951
+
+##########﹛侂填膜咥缜谛互旦平伙伊矛伙互箫曰卅中桦宁﹛##########
+block jobancestry == 380 && SkillLevel 218 < 8
+	#\n\n你的力量不足，下次再来吧！
+	EndWindow 11951
+
+##########﹛癫化反引日卅中桦宁﹛##########
+block NowEvent 91 == 1
+	NowEvent 91 = 0
+	#\n\n在这里，请让我们看看你们的修理能力吧！\n请把第一次试验的作品拿给职业是修理工的人，并让他带头之后再跟我交谈吧！
+	EndWindow 11952
+
+##########﹛癫化反引日卅中桦宁﹛##########
+block
+	#\n\n在这里，请让我们看看你们的修理能力吧！\n请把第一次试验的作品拿给职业是修理工的人，并让他带头之后再跟我交谈吧！
+	EndWindow 11952

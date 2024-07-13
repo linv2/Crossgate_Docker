@@ -1,0 +1,168 @@
+##mayko_gm_1102665.txt 帽子
+
+#硬皮帽	4022	9611	4	18211	20	10401	5	10402	4		
+
+#1111344	\n\n\n@c你好！！我负责支援新星帽子制作：
+#1111304	\n\n你现在有硬皮帽材料铜条4份，鹿皮20份，木棉布5份，毛毡4份，
+
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111354	\n\n\n@c代工费是７００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 9611>=4 && item 18211 >=20 && item 10401 >= 5 && item 10402 >=4
+
+	Window 1111344,next
+	Window 1111304,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111354,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 699
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -700
+		killitem 9611,4
+		killitem 18211,20
+		killitem 10401,5
+		killitem 10402,4
+		GiveLeak1Item 4022,1
+		endwindow 1111335
+
+
+#可爱的帽子	4020	10400	6	10401	6	10402	5	12803	20		
+
+#1111344	\n\n\n@c你好！！我负责支援新星帽子制作：
+#1111305	\n\n你现在有可爱的帽子材料麻布6份，木棉布6份，毛毡5份，果梨20份，
+
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111354	\n\n\n@c代工费是７００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 10400>=6 && item 10401 >=6 && item 10402 >= 5 && item 12803 >=20
+
+	Window 1111344,next
+	Window 1111305,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111354,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 699
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -700
+		killitem 10400,6
+		killitem 10401,6
+		killitem 10402,5
+		killitem 12803,20
+		GiveLeak1Item 4020,1
+		endwindow 1111335
+
+#装饰着花的帽子	4054	12801	20	12802	20	12803	20	10403	19	12804	20
+	
+#1111344	\n\n\n@c你好！！我负责支援新星帽子制作：
+#1111306	\n\n你现在有装饰着花的帽子材料柠檬草20份，蝴蝶花20份，果梨20份，绵19份，桃木20份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111353	\n\n\n@c代工费是３５００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 12801>=20  && item 12802 >= 20 && item 12803 >=20 && item 10403>=19 && item 12804>=20
+
+	Window 1111344,next
+	Window 1111306,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111353,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 3499
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -3500
+		killitem 12801,20
+		killitem 12802,20
+		killitem 12803,20
+		killitem 10403,19
+		killitem 12804,20
+		GiveLeak1Item 4054,1
+		endwindow 1111335
+		
+#青铜帽子	4051	9611	15	10403	14	12805	20				
+
+#1111344	\n\n\n@c你好！！我负责支援新星帽子制作：
+#1111307	\n\n你现在有青铜帽子材料铜条15份，绵14份，番红花20份，
+#1111333	\n\n\n@c你要做这防具吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111353	\n\n\n@c代工费是３５００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111335	\n\n\n@c防具制作好啰！！
+
+block item 9611 >= 15 && item 10403>=14  && item 12805 >= 20
+
+	Window 1111344,next
+	Window 1111307,next
+	Window 1111333,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111353,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 3499
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -3500
+		killitem 9611,15
+		killitem 10403,14
+		killitem 12805,20
+		
+		GiveLeak1Item 4051,1
+		endwindow 1111335
+
+##没有帽材料
+#1111344	\n\n\n@c你好！！我负责支援新星帽子制作：
+
+#1111243	\n\n制做硬皮帽需要铜条4份，鹿皮20份，木棉布5份，毛毡4份，
+#1111244	\n\n制做可爱的帽子需要麻布6份，木棉布6份，毛毡5份，果梨20份，
+#1111245	\n\n制做装饰着花的帽子需要柠檬草20份，蝴蝶花20份，果梨20份，绵19份，桃木20份，
+#1111246	\n\n制做青铜帽子需要铜条15份，绵14份，番红花20份，
+
+#1111355\n\n\n@c准备好材料再来找我！！
+
+block 
+	Window 1111344,next
+	Window 1111243,next
+	Window 1111244,next
+	Window 1111245,next
+	window 1111246,next
+	endwindow 1111355
+	

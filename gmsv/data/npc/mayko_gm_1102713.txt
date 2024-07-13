@@ -1,0 +1,5 @@
+block
+	Window 1111497,ok
+	Window_ok
+	Encount 2|0,32196,15,15||0|||||0|40344|||||||||	
+endblock	

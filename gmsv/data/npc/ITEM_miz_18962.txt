@@ -1,0 +1,28 @@
+#
+#ºëØø°×ÇÉ¼þ¼°ï±
+#
+
+#######################################
+#…í?É¬ÀÃ#
+block Item 18962 >= 1 && itemcreatetime 18962 >= 1440 && petspace >= 1
+
+	Window 206802,OK
+	Window_OK
+	playse 304,1,1
+	KillItem 18962,(206808)
+	givepet 21212,(206803)
+
+
+block Item 18962 >= 1 && itemcreatetime 18962 >= 1440 && petspace == 0
+
+	EndWindow 206807,OK
+
+block Item 18962 >= 1 && itemcreatetime 18962 >= 1000
+
+	playse 304,1,1
+	EndWindow 206801
+
+block Item 18962 >= 1
+
+	EndWindow 206800,OK
+

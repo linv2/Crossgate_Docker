@@ -1,0 +1,189 @@
+#mayko_gm_1102675.txt  新手武器  杖
+
+
+#魔之手杖	2435	10000	20	9612	14	10001	20	9613	2	10002	20
+
+#1111340	\n\n\n@c你好！！我负责支援新星杖制作：
+
+
+#1111288	\n\n你现在有魔之手杖材料印度轻木20份，铁条14份，枞20份，银条2份，黄月木20份，
+
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111351	\n\n\n@c代工费是１０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+block item 10000>=20 && item 9612 >=14	&& item 10001 >= 20 && item 9613 >=2 && item 10002 >= 20
+	Window 1111340,next
+	Window 1111288,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111351,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -1000
+		killitem 10000,20
+		killitem 9612,14
+		killitem 10001,20
+		killitem 9613,2
+		killitem 10002,20
+		GiveLeak1Item 2435,1
+		endwindow 1111334
+
+#魔之权杖	2434	10000	20	9612	11	9613	8	10002	20	10003	20
+
+#1111340	\n\n\n@c你好！！我负责支援新星杖制作：
+
+#1111289	\n\n你现在有魔之权杖材料印度轻木20份，铁条11份，银条8份，黄月木20份，铁杉20份，
+
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111351	\n\n\n@c代工费是１０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+
+block item 10000>=20 && item 9612 >=11 && item 9613 >= 8 && item 10002 >=20 && item 10003 >= 20
+	Window 1111340,next
+	Window 1111289,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 111356
+	Window_yes
+		Window 1111351,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -1000
+		killitem 10000,20
+		killitem 9612,11
+		killitem 9613,8
+		killitem 10002,20
+		killitem 10003,20
+		GiveLeak1Item 2434,1
+		endwindow 1111334
+
+
+#元素之杖	2461	10002	20	10003	20	10004	20	10005	20	9616	16
+
+
+#1111340	\n\n\n@c你好！！我负责支援新星杖制作：
+
+
+#1111290	\n\n你现在有元素之杖材料黄月木20份，铁杉20份，琵琶木20份，赤松20份，白金条16份，
+
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111352	\n\n\n@c代工费是５０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+block item 10002>=20 && item 10003 >=20 && item 10004 >= 20 && item 10005 >=20 && item 9616 >= 16
+	Window 1111340,next
+	Window 1111290,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 111356
+	Window_yes
+		Window 1111352,yes,no
+		Window_no
+		endwindow 1111356
+		Window_yes gold < 4999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -5000
+		killitem 10002,20
+		killitem 10003,20
+		killitem 10004,20
+		killitem 10005,20
+		killitem 9616,16
+		GiveLeak1Item 2461,1
+		endwindow 1111334
+
+
+
+
+block  item 10003 > 19  && item 10004 > 19 && item 10005 >= 20 && item 9616 >= 17 && item 10006 >= 20
+#item 10003>=20 && item 10004 >= 20 && item 10005 >=20 && item 9616 >=17 && 10006 >=20
+	Window 1111340,next
+	Window 1111291,next
+	Window 1111332,yes,no
+	Window_no
+	Endwindow 1111356
+	Window_yes
+		Window 1111352,yes,no
+		Window_no
+		endwindow 1111356	#\n\n\n@c想制作再来找我！！	1
+		Window_yes gold < 4999
+		endwindow 3006707
+		Window_yes ItemSpace == 0
+		endwindow 1051843
+		Window_yes
+		ADDgold -5000
+		killitem 10003,20
+		killitem 10004,20
+		killitem 10005,20
+		killitem 9616,17
+		killitem 10006,20
+		
+		GiveLeak1Item 2462,1
+		endwindow 1111334
+
+
+#神圣之杖	2462	10003	20	10004	20	10005	20	9616	17	10006	20
+#1111340	\n\n\n@c你好！！我负责支援新星杖制作：
+			
+#1111291	\n\n你现在有神圣之杖材料铁杉20份，琵琶木20份，赤松20份，白金条17份，朴20份，
+
+#1111332	\n\n\n@c你要做这武器吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#1111352	\n\n\n@c代工费是５０００，您接受吗？
+#1111356	\n\n\n@c想制作再来找我！！
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+#1111334	\n\n\n@c武器制作好啰！！
+
+
+
+
+
+
+#####没杖材料
+
+#1111340	\n\n\n@c你好！！我负责支援新星杖制作：
+
+#1111227	\n\n制做魔之手杖需要印度轻木20份，铁条14份，枞20份，银条2份，黄月木20份，
+#1111228	\n\n制做魔之权杖需要印度轻木20份，铁条11份，银条8份，黄月木20份，铁杉20份，
+#1111229	\n\n制做元素之杖需要黄月木20份，铁杉20份，琵琶木20份，赤松20份，白金条16份，
+#1111230	\n\n制做神圣之杖需要铁杉20份，琵琶木20份，赤松20份，白金条17份，朴20份，
+
+#1111355\n\n\n@c准备好材料再来找我！！
+
+block 
+	Window 1111340,next
+	Window 1111227,next
+	Window 1111228,next
+	Window 1111229,next
+	Window 1111230,next
+	Endwindow 1111355
+

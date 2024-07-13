@@ -1,0 +1,5 @@
+#############■鼠王-有动作
+block
+	 setaction 2
+	 Message 1050645
+	 setaction 0

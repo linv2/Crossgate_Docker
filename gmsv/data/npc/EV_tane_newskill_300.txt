@@ -1,0 +1,15 @@
+
+block
+
+
+
+
+
+
+	Window 3200662,next
+		#\n\n﹛亥伙弁\n﹛＞仇日﹜撩斪卅蛊分卅﹝鴃澎卞块丹卅﹝＝
+
+	endWindow 3200663
+		#\n\n﹛田□犯件\n﹛＞公及旦平乩平反﹜\n﹛脱日互潠及箄分﹝＝
+
+

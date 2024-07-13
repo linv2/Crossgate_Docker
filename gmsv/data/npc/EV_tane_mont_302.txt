@@ -1,0 +1,83 @@
+
+
+block
+
+
+
+
+
+
+			if LocalCount0 == 5
+
+				LocalCount0 = random 2,0
+
+				if LocalCount0 == 1
+
+					LocalCount0 = 5
+
+
+#					Window 3200593,next
+		#\n\n﹛?仄井匀凶卅丑﹜丹氏﹝
+					Window 3006933,next
+
+
+#					EndWindow 3200594
+		#\n\n﹛丐木反﹜\n﹛?仄井匀凶﹝
+					EndWindow 3006934
+
+
+
+
+				else
+					LocalCount0 = 5
+
+
+#					Window 3200595,next
+		#\n\n﹛洈阕互﹜洈毛裟少﹜\n﹛粹中凶壬井曰及﹜梗支井卅苹及累互﹝
+					Window 3006935,next
+
+
+#					EndWindow 3200596
+		#\n\n﹛匹手﹜仇及翘匹反﹜\n﹛洈阕互澎卞じ日卅中氏分方友＿＿
+					EndWindow 3006936
+
+
+
+				endif
+
+
+
+			else
+
+					LocalCount0 = 5
+
+
+#				Window 3200597,next
+		#\n\n﹛冞反友﹜\n﹛仇仇匹﹜虏及方丹卅\n﹛洈及顺毛苇凶仇午互丐月氏匹允方﹝
+				Window 3006937,next
+
+#				Window 3200598,next
+		#\n\n﹛粹中凶壬井曰及\n﹛梗支井卅洈阕互\n﹛哝曰井仃凶洈毛螂户＿＿
+				Window 3006938,next
+
+
+#				EndWindow 3200599
+		#\n\n﹛苹ざ卞五日五日午\n﹛ご及方丹卞绞仁\n﹛抴及方丹卞?仄中＿＿
+				EndWindow 3006939
+
+
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+###### 猎物保存箱 ######可放10组小麦
+
+##轻木大于400个 物品栏无空位
+block Item 12400 >= 400 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+##轻木大于400个 物品栏空位大于1	 
+block Item 12400 >= 400 && ItemSpace >= 1
+	 KillItem 12400,400
+	 KillItem 47435,1
+	 GiveLeak1Item 47436
+
+	 
+
+	

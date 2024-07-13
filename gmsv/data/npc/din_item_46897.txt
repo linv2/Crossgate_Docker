@@ -1,0 +1,9 @@
+##puk3包装-虚拟物品-特调咖啡糖  din_item_46897.txt
+##能力说明：双点后会出现永久称号-天界骑士
+
+############# 一般 ######################
+block Item 46897 >=1
+	 KillItem 46897,1
+	 EndEvent 152 = 1
+	 CheckTitle 
+	 endblock

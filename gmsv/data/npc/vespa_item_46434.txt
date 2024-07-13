@@ -1,0 +1,24 @@
+#########　Item ：彩券福袋 46434
+#########　双点随机得到大地鼠、宝石鼠、火焰鼠彩券任1张,共5次
+block  ItemSpace >=1
+	 ##1052652	\n\n@c是否想兑换彩券呢？
+	 Window 1052652,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 46434 >=2
+	 	 	 ##1052653	 \n\n\n彩券福袋\n如果持有２个以上是无法使用的喔～
+			 EndWindow 1052653
+			 
+	 	 Window_YES Item 46434 ==1 && ItemDur 46434 ==1
+	 	 	 ##1052654	彩券福袋消失了。
+			 KillItem 46434,1,(1052654)
+			 GiveLeak1Item(19574%1$1,19575%1$1,19576%1$1)
+		 Window_YES Item 46434 ==1 && ItemDur 46434 >1 && ItemSpace >=1
+			 ##1052655	使用了彩券福袋。
+ 			 GiveLeak1Item(19574%1$1,19575%1$1,19576%1$1)
+ 			 SetDur 46434,-1
+			 Message 1052655	 	 	 
+		
+ block
+  	 ##1100002	\n\n\n\n\n@c物品栏空间不足。		 
+  	 EndWindow 1100002    					 	 

@@ -1,0 +1,372 @@
+#幼伙乒件赎跟晶NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛午匀井尹バ及摒
+
+###﹛惘弁伉永弁
+block StrCmpChat == R
+	Window 3202593,NEXT
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛赎午扲檗﹜午匀井尹屯之﹜\n﹛五木中卅幼伙乒件扲檗毛﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之
+	Window 3202594,NEXT
+
+		#\n\n﹛扲檗ㄠ蜊匹澎卞じ月﹜仇及裟太赎及躲チ反﹜\n﹛爵及今卅井卞蹄中凶午五﹜\n﹛幼伙乒件涂仃勾五扎云卅什今心﹜\n﹛侳月手?殿﹜侳卅中手?殿之﹜
+	EndWindow 3202595
+
+		#\n\n﹛俓仄中卅日﹜项尹化方﹜\n﹛儅匀化月扲檗项尹化方﹜\n﹛厘﹜酦﹜凝匹蚕尹凶日﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+
+
+###﹛民乓永玄じ恘＞凝＝
+block StrCmpChat == 3004826
+
+	If Item_608300 >= 1
+		Window 3202596,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛切中今中扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+			Window_OK Item_608300 >= 1 && ItemSpace >= 1
+				KillItem 608300,1
+				GiveItemEX 608700,1,3202597
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+				EndBlock
+
+			Window_OK Item_608300 >= 1
+				EndWindow 3202598
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3202599
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+				EndBlock
+
+	else
+		If Item_608310 >= 1
+			Window 3202600,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛切中今中扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+				Window_OK Item_608310 >= 1 && ItemSpace >= 1
+					KillItem 608310,1
+					GiveItemEX 608700,1,3202601
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+					EndBlock
+
+				Window_OK Item_608310 >= 1
+					EndWindow 3202602
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3202603
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+					EndBlock
+
+		else
+			If Item_608320 >= 1
+				Window 3202604,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛切中今中扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+					Window_OK Item_608320 >= 1 && ItemSpace >= 1
+						KillItem 608320,1
+						GiveItemEX 608700,1,3202605
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+						EndBlock
+
+					Window_OK Item_608320 >= 1
+						EndWindow 3202606
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3202607
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+						EndBlock
+
+			else
+				If Item_608330 >= 1
+					Window 3202608,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛切中今中扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+						Window_OK Item_608330 >= 1 && ItemSpace >= 1
+							KillItem 608330,1
+							GiveItemEX 608700,1,3202609
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+							EndBlock
+
+						Window_OK Item_608330 >= 1
+							EndWindow 3202610
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+							EndBlock
+
+						Window_OK
+							EndWindow 3202611
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+							EndBlock
+
+				else
+					EndWindow 3202612
+
+		#\n\n﹛掖反漱月方﹜漱月友掖反﹜\n﹛切中今中扲檗﹜升仇卞手卅中﹜\n﹛棉啜尹凶及卅日﹜蜕中跶仄﹜\n﹛公木井日赎午﹜午匀井尹屯之﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘＞酦＝
+block StrCmpChat == 3004827
+
+	If Item_608400 >= 1
+		Window 3202613,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛酦什日中及扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+			Window_OK Item_608400 >= 1 && ItemSpace >= 1
+				KillItem 608400,1
+				GiveItemEX 608700,1,3202614
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+				EndBlock
+
+			Window_OK Item_608400 >= 1
+				EndWindow 3202615
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3202616
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+				EndBlock
+
+	else
+		If Item_608410 >= 1
+			Window 3202617,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛酦什日中及扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+				Window_OK Item_608410 >= 1 && ItemSpace >= 1
+					KillItem 608410,1
+					GiveItemEX 608700,1,3202618
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+					EndBlock
+
+				Window_OK Item_608410 >= 1
+					EndWindow 3202619
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3202620
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+					EndBlock
+
+		else
+			If Item_608420 >= 1
+				Window 3202621,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛酦什日中及扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+					Window_OK Item_608420 >= 1 && ItemSpace >= 1
+						KillItem 608420,1
+						GiveItemEX 608700,1,3202622
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+						EndBlock
+
+					Window_OK Item_608420 >= 1
+						EndWindow 3202623
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3202624
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+						EndBlock
+
+			else
+				If Item_608430 >= 1
+					Window 3202625,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛酦什日中及扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+						Window_OK Item_608430 >= 1 && ItemSpace >= 1
+							KillItem 608430,1
+							GiveItemEX 608700,1,3202626
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+							EndBlock
+
+						Window_OK Item_608430 >= 1
+							EndWindow 3202627
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+							EndBlock
+
+						Window_OK
+							EndWindow 3202628
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+							EndBlock
+
+				else
+					EndWindow 3202629
+
+		#\n\n﹛掖反漱月方﹜漱月友掖反﹜\n﹛酦什日中及扲檗﹜升仇卞手卅中﹜\n﹛棉啜尹凶及卅日﹜蜕中跶仄﹜\n﹛公木井日赎午﹜午匀井尹屯之﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛民乓永玄じ恘＞厘＝
+block StrCmpChat == 3004828
+
+	If Item_608500 >= 1
+		Window 3202630,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛厘五中扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+			Window_OK Item_608500 >= 1 && ItemSpace >= 1
+				KillItem 608500,1
+				GiveItemEX 608700,1,3202631
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+				EndBlock
+
+			Window_OK Item_608500 >= 1
+				EndWindow 3202632
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3202633
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+				EndBlock
+
+	else
+		If Item_608510 >= 1
+			Window 3202634,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛厘五中扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+				Window_OK Item_608510 >= 1 && ItemSpace >= 1
+					KillItem 608510,1
+					GiveItemEX 608700,1,3202635
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+					EndBlock
+
+				Window_OK Item_608510 >= 1
+					EndWindow 3202636
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3202637
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+					EndBlock
+
+		else
+			If Item_608520 >= 1
+				Window 3202638,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛厘五中扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+					Window_OK Item_608520 >= 1 && ItemSpace >= 1
+						KillItem 608520,1
+						GiveItemEX 608700,1,3202639
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+						EndBlock
+
+					Window_OK Item_608520 >= 1
+						EndWindow 3202640
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3202641
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+						EndBlock
+
+			else
+				If Item_608530 >= 1
+					Window 3202642,OK
+
+		#\n\n﹛午匀井尹屯之﹜午匀井尹屯之﹜\n﹛厘五中扲檗﹜儅匀化月及〝\n﹛蹄仃壬幼伙乒件侳月井手襞木厄﹜\n﹛幼伙乒件赎午﹜午匀井尹屯之﹝
+
+						Window_OK Item_608530 >= 1 && ItemSpace >= 1
+							KillItem 608530,1
+							GiveItemEX 608700,1,3202643
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+							EndBlock
+
+						Window_OK Item_608530 >= 1
+							EndWindow 3202644
+
+		#\n\n﹛帮咥仄方﹜帮咥仄方﹜\n﹛绂坁互中匀天中﹜丐仆日木卅中﹝
+							EndBlock
+
+						Window_OK
+							EndWindow 3202645
+
+		#\n\n﹛壅尹凶﹜壅尹凶方﹜扲檗互壅尹凶﹜\n﹛壅尹凶日﹜赎反丐仆日木卅中﹝
+							EndBlock
+
+				else
+					EndWindow 3202646
+
+		#\n\n﹛掖反漱月方﹜漱月友掖反﹜\n﹛厘五中扲檗﹜升仇卞手卅中﹜\n﹛棉啜尹凶及卅日﹜蜕中跶仄﹜\n﹛公木井日赎午﹜午匀井尹屯之﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+

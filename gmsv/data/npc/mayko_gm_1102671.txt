@@ -1,0 +1,127 @@
+#mayko_gm_1102671.txt  新手武器  剑
+
+#1111336	\n\n\n@c你好！！我负责支援新星剑制作：	1
+#1111351	\n\n\n@c代工费是1０００，您接受吗？	1
+#1111352	\n\n\n@c代工费是５０００，您接受吗？	1
+#1111211	\n\n制做面包剑需要铜条7份，铁条6份，银条5份，	1
+#1111212	\n\n制做双手剑需要铁条10份，枞20份，银条8份，铁杉20份，	1
+#1111213	\n\n制做猪牙剑需要银条10份，纯银条10份，铁杉20份，琵琶木20份，白金条8份，	1
+#1111214	\n\n制做双刃阔剑需要纯银条6份，金条10份，琵琶木20份，白金条10份，朴20份，	1
+#1111272	\n\n你现在有面包剑材料铜条7份，铁条6份，银条5份，	1
+#1111273	\n\n你现在有双手剑材料铁条10份，枞20份，银条8份，铁杉20份，	1
+#1111274	\n\n你现在有猪牙剑材料银条10份，纯银条10份，铁杉20份，琵琶木20份，白金条8份，	1
+#1111275	\n\n你现在有双刃阔剑材料纯银条6份，金条10份，琵琶木20份，白金条10份，朴20份，	1
+#1111332	\n\n\n@c你要做这武器吗？	1
+#1111334	\n\n\n@c武器制作好啰！！	1
+#1111355	\n\n\n@c准备好材料再来找我！！	1
+#3006707	\n\n　很抱歉，\n　你的金钱不够喔。	1
+#1051843	\n\n\n\n\n@c物品栏的空间不足。	
+
+#面包剑	22	9611	7	9612	6	9613	5				
+
+block item 9611> 6 && item 9612 > 5  &&  item 9613 >4
+	 window 1111272,next
+	 Window 1111332,yes,no
+	 Window_no
+	 Endwindow 1111356
+	 Window_yes
+	 Window 1111351,yes,no
+	 Window_no
+	 Endwindow 1111356
+	 Window_yes gold < 999
+	 Endwindow 3006707
+	 Window_yes ItemSpace > 0
+	 addgold -1000
+	 killitem 9611,7
+	 killitem 9612,6
+	 killitem 9613,5
+	 GiveLeak1Item 22,1
+	 endwindow 1111334
+	 Window_yes
+	 endwindow 1051843
+#双手剑	28	9612	10	10001	20	9613	8	10003	20		
+block item 9612>= 10 && item 10001 >= 20  &&  item 9613 >= 8 && item 10003 >=20
+	 window 1111273,next
+	 Window 1111332,yes,no
+	 Window_no
+	 Endwindow 1111356
+	 Window_yes
+	 Window 1111351,yes,no
+	 Window_no
+	 Endwindow 1111356
+	 Window_yes gold < 999
+	 Endwindow 3006707
+	 Window_yes ItemSpace > 0
+	 addgold -1000
+	 killitem 9612,10
+	 killitem 9613,8
+	 killitem 10001,20
+	 killitem 10003,20
+	 GiveLeak1Item 28,1
+	 endwindow 1111334
+	 Window_yes
+	 endwindow 1051843
+
+#1111352	\n\n\n@c代工费是５０００，您接受吗？	1
+	 
+#猪牙剑	56	9613	10	9614	10	10003	20	10004	20	9616	8
+#1111274	\n\n你现在有猪牙剑材料银条10份，纯银条10份，铁杉20份，琵琶木20份，白金条8份，	1
+
+block item 9613>= 10 && item 9614 >= 10  &&  item 10003 >= 20 && item 10004 >=20 && item 9616 >= 8
+	 window 1111274,next
+	 Window 1111332,yes,no
+	 Window_no
+	 Endwindow 1111356
+	 Window_yes
+	 Window 1111352,yes,no
+	 Window_no
+	 Endwindow 1111356
+	 Window_yes gold < 4999
+	 Endwindow 3006707
+	 Window_yes ItemSpace > 0
+	 addgold -5000
+	 killitem 9613,10
+	 killitem 9614,10
+	 killitem 9616,8
+	 killitem 10004,20
+	 killitem 10003,20
+	 GiveLeak1Item 56,1
+	 endwindow 1111334
+	 Window_yes
+	 endwindow 1051843
+
+
+#双刃阔剑	57	9614	6	9615	10	10004	20	9616	10	10006	20	 
+#1111275	\n\n你现在有双刃阔剑材料纯银条6份，金条10份，琵琶木20份，白金条10份，朴20份，	1
+
+block item 9615>= 10 && item 9614 >= 6  &&  item 10006 >= 20 && item 10004 >=20 && item 9616 >= 10
+	 window 1111275,next
+	 Window 1111332,yes,no
+	 Window_no
+	 Endwindow 1111356
+	 Window_yes
+	 Window 1111352,yes,no
+	 Window_no
+	 Endwindow 1111356
+	 Window_yes gold < 4999
+	 Endwindow 3006707
+	 Window_yes ItemSpace > 0
+	 addgold -5000
+	 killitem 9615,10
+	 killitem 9614,10
+	 killitem 9616,10
+	 killitem 10004,20
+	 killitem 10006,20
+	 GiveLeak1Item 57,1
+	 endwindow 1111334
+	 Window_yes
+	 endwindow 1051843
+	 
+block 
+	window 1111336,next
+	Window 1111211,next
+	Window 1111212,next	
+	Window 1111213,next	
+	Window 1111214,next
+	endwindow 1111355
+	

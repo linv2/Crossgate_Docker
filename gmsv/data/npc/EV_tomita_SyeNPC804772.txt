@@ -1,0 +1,44 @@
+#©x³âÅÒÌï¡õ¥èÔ»©x??©xŽx÷ú
+#
+#©x©x©x·¥¡õÃó¼°Þð
+
+###©x±Ø¡õÐþÇëòØ©j¤¨©k
+block LocalFlag0 == 1 && Xpos >= 245 && Xpos <= 247 && Ypos == 133
+
+	If Localflag1 == 0
+
+		Play_SE 260,320,240
+		ShapeNext 103011
+
+		LocalFlag1 = 1
+
+	endif
+
+
+
+###©x±Ø¡õÐþÇëòØ©jà©k
+block LocalFlag0 == 1 && Xpos >= 237 && Xpos <= 247 && Ypos == 127
+
+	If Localflag1 == 0
+
+		Play_SE 260,320,240
+		ShapeNext 103011
+
+		LocalFlag1 = 1
+
+	endif
+
+
+
+###©x¨59801 120,119
+block LocalFlag0 == 1 && Xpos == 244 && Ypos == 130
+
+	If LocalFlag1 == 1
+
+			Message 3004893
+			Warp 0,59801,120,119
+
+	endif
+
+
+

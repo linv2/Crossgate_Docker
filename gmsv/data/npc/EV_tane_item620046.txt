@@ -1,0 +1,11 @@
+#
+#kaisuukenn
+#
+
+
+block
+	Endwindow 3204340,ok
+
+		#\n\n©x @g,239523 @
+
+

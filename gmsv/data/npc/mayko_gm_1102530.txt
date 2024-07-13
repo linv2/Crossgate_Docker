@@ -1,0 +1,50 @@
+#森之神女	1102530	
+#32276	89	133	mayko_gm_1102530.txt	
+#1110354	\n\n\n　　　我正在祈祷～\n　　　没事就请回吧！	1
+#1110355	\n\n　　　祈求产妇平安呀～\n　　　如果有星沙*10,瓶子,蚕丝一束(20个)\n　　　就能做平安符了！	1
+#1110356	\n\n\n　　　求产妇平安呀～～\n　　　你都准备好了材料～	1
+#1110357	\n\n\n　　　嗯嗯～～\n　　　等一下喔～～	1
+#1110358	\n\n\n　　　神女把星砂倒入瓶中，\n　　　用蚕丝绑好。	1
+#1110359	\n\n\n\n@c神女念咒～	1
+#1110360	\n\n\n\n@c吽达麻～吽达麻～莎婆萨达麻～	1
+#1110361	\n\n\n　　　平安符好了～\n　　　你给产妇戴着就好了～	1
+#1110362	\n\n\n　　　给产妇戴着平安符，\n　　　就能顺利生产～	1
+
+#安产平安炼	41016
+#阿里的信	41023
+#平安符	41024
+#阿里家书	41025
+#鸡酒	41026
+
+block Item 41016>0
+	 EndWindow 1110362
+block Item 41024>0
+	 EndWindow 1110362
+block Item 41025>0
+	 EndWindow 1110362
+block Item 41026>0
+	 EndWindow 1110362
+block Item 41023>0 && Item 40743>19 && Item 9702>2 && Item 18314>0
+	 Window 1110356,NEXT
+	 Window 1110357,NEXT
+	 Window 1110358,NEXT
+	 Window 1110359,NEXT
+	 Window 1110360,OK
+	 Window_OK Item 41023>0 && Item 40743>19 && Item 9702>2 && Item 18314>0
+	 KillItem 41023,1
+ 	 KillItem 40743,20
+	 KillItem 9702,3
+	 KillItem 18314,1
+	 GiveLeak1Item 41024,1
+	 EndWindow 1110361
+	 Window_OK
+	 EndWindow 1110355
+#如果有星沙*3,瓶子,蚕丝一束(20个)
+#蚕丝40743
+#星之砂9702
+#瓶子18314
+	 
+block Item 41023>0
+	 EndWindow 1110355
+block 
+	 EndWindow 1110354	

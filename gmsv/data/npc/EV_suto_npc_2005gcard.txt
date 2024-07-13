@@ -1,0 +1,131 @@
+
+block StrCmpChat == 3007208
+
+*case01*
+	Window 3205481,Yes,No
+
+		#\n\n﹛反中﹜反元户引仄化″及市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝
+		Window_No
+			EndWindow 3205482,OK
+
+		#\n\n﹛丐木〝邰日卅中及〝
+		Window_Yes ItemSpace == 0
+			EndWindow 3205483,OK
+
+		#\n\n﹛失奶泛丞互中匀天中分友﹝
+		Window_Yes Gold <= 49
+			EndWindow 3205484,OK
+
+		#\n\n﹛云嗯互箫曰卅中友﹝
+		Window_Yes
+			Window 3205485,OK
+
+		#\n\n﹛反中﹜咍蘸丐曰℅″\n﹛仇木匹识内井仄互曰支及丐卅凶手\n﹛合中毛鳗尹日木月友″
+				Window_OK
+					AddGold -50
+					GiveItem 621001,1
+
+
+
+
+block StrCmpChat==3007209
+
+*case02*
+	Window 3205486,Yes,No
+
+		#\n\n﹛反中﹜内匀午中匀仄斤″及市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝
+		Window_No
+			EndWindow 3205487,OK
+
+		#\n\n﹛丐木〝邰日卅中及〝
+		Window_Yes ItemSpace == 0
+			EndWindow 3205488,OK
+
+		#\n\n﹛失奶泛丞互中匀天中分友﹝
+		Window_Yes Gold <= 49
+			EndWindow 3205489,OK
+
+		#\n\n﹛云嗯互箫曰卅中友﹝
+		Window_Yes
+			Window 3205490,OK
+
+		#\n\n﹛反中﹜咍蘸丐曰℅″\n﹛锳倾﹜内匀午域踝卞卅氏井＿＿\n﹛中尹中尹﹜卅氏匹手卅中及﹝
+				Window_OK
+					AddGold -50
+					GiveItem 621002,1
+
+
+
+block StrCmpChat==3007210
+
+
+*case03*
+	Window 3205491,Yes,No
+
+		#\n\n﹛反中﹜调及罹俓及市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝
+		Window_No
+			EndWindow 3205492,OK
+
+		#\n\n﹛丐木〝邰日卅中及〝
+		Window_Yes ItemSpace == 0
+			EndWindow 3205493,OK
+
+		#\n\n﹛失奶泛丞互中匀天中分友﹝
+		Window_Yes Gold <= 49
+			EndWindow 3205494,OK
+
+		#\n\n﹛云嗯互箫曰卅中友﹝
+		Window_Yes
+			Window 3205495,OK
+
+		#\n\n﹛反中﹜咍蘸丐曰℅″\n﹛卅井卅井骚驯心毛蓟少及友﹝\n﹛割井卞仇及筐濡反\n﹛云中仄中坁互凶匀仁今氏丐月方友℅
+				Window_OK
+					AddGold -50
+					GiveItem 621003,1
+
+
+
+
+
+block StrCmpChat==3007211
+ gotoB case01
+
+
+
+
+block StrCmpChat==3007212
+ gotoB case02
+
+
+block StrCmpChat==3007213
+ gotoB case03
+
+
+block
+
+
+	Window 3205496,next
+
+		#\n\n﹛云菁仄少曰匹之℅允″\n﹛帎木及筐濡手聊亢﹜蕙凶卅请莘中及筐濡匹允﹝\n﹛蕙仄中云竻琼卞蕙喀渝及市□玉毛瞿曰引仄斤″
+
+	Window 3205497,next
+
+		#\n\n﹛云卅元心渝棉蜃烂及弘伉□犯奴件弘市□玉互\n﹛漆卅日﹜卅氏午域呦ㄤㄟ?″\n﹛母皮伙弁伉永弁允木壬窒荚匹手苇木月方﹝
+	
+	Window 3205498,next
+
+		#\n\n﹛赶潘挀丐月井日﹜驯五卅及毛蓟氏匹﹜\n﹛市□玉?﹞市□玉?﹞市□玉?匀化蜕匀化\n﹛台卞镗妐仄化友″
+	
+	Window 3205499,next
+
+		#\n﹛﹛﹛﹛市□玉?反仇氏卅及﹝\n\n﹛ @g,239524 @
+	
+	Window 3205500,next
+
+		#\n﹛﹛﹛﹛匹﹜市□玉?反仇氏卅及﹝\n\n﹛ @g,239525 @
+	
+	Endwindow 3205501
+
+		#\n﹛﹛﹛﹛愈詨及市□玉?反仇氏卅及﹝\n\n﹛ @g,239526 @
+	
+

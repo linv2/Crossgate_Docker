@@ -1,0 +1,32 @@
+#艾芝 mayko_gm_1102627.txt  浮空岛
+
+#1110683	\n\n\n\n@c我想一下～	1
+##41127
+#41128
+#41129
+#1110695	\n\n\n\n@c不知道买的起买不起！！
+#1110696	\n\n\n\n@c这里我还是负担不起呀！！
+
+
+block item 41129>0  ##成交了
+#1110691	\n\n　　　　谢谢你帮忙跑腿，\n　　　　这地方我蛮满意的！！
+
+	 endwindow 1110689
+block item 41128>0  ##合约
+	 endwindow 1110689
+block item 41127>0  ##渥悬
+	 endwindow 1110689
+	 
+
+	 
+###以下为看屋心路	 
+block item 41124>0
+	 endwindow 1110695
+	 
+block item 41130 >0 && itemspace >0
+	 GiveLeak1Item 41124,1
+	 endwindow 1110683
+block item 41130>0
+	endwindow  1052925	 
+block 
+	 endwindow 1110694	

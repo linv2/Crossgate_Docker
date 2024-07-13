@@ -1,0 +1,66 @@
+
+block Item 620030 == 0
+
+#if Xpos >= 79
+
+#		LocalFlag2 = 0
+
+#endif
+
+#if Xpos >= 72 && Xpos <= 78 && Ypos >= 127 && Ypos <= 133 && Item 620030 == 0
+
+#	if LocalFlag2 == 0
+
+#		LocalFlag2 = 1
+#		endwindow 3203273
+
+		#\n\n©xØ¤Ø¦Ð×·´Òý·Ö©y\n©x³ð¼°ÛÆ±åñ×¸êÍÍÎåÆ¥·´Ø¤Ô»ÒýÁùÊÏ©z
+
+#		Play_SE 260,320,240
+#		shapenext 103011
+
+
+
+#	endif
+
+#endif
+
+
+if Xpos == 75 && Ypos == 130 && Item 620030 == 0
+
+
+		endwindow 3203274
+
+		#\n\n©xØ¤Ø¦Ð×·´Òý·Ö©y\n©x³ð¼°ÛÆ±åñ×¸êÍÍÎåÆ¥·´Ø¤Ô»ÒýÁùÊÏ©z
+
+
+
+endif
+
+
+
+
+block Item 620030 >= 1
+
+
+#if Xpos >= 79
+
+#		LocalFlag2 = 0
+
+#endif
+
+
+if Xpos == 75 && Ypos == 130 && Item 620030 >= 1
+
+
+
+			LeaveGroup
+			warp 0,1530,17,6
+			
+
+
+endif
+
+
+
+

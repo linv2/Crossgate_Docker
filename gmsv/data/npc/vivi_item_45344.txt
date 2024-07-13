@@ -1,0 +1,13 @@
+######■使用钥匙2
+##■检查人数
+block Group > 4
+	 ##1050839	\n\n\n\n@c钥匙最多只能让四人通过！
+	 Window 1050839,YES,NO 
+	 	 Window_YES Group > 4
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■传送	 	 	 
+block 
+	 KillItem 45344
+	 Warp 0,32692,3,10

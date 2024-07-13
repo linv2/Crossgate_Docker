@@ -1,0 +1,258 @@
+#Ê§»ïÓÉÉúµ©ÇÌÓ®Õı·ÂÍßØÀ
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+
+#====·°ÈÊ·®Ø¦çÇÚĞ======#
+
+##########ğôçÇÚĞ##########
+block Job == 203 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+
+##########ççÇÚĞ##########
+block Job == 213 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########¼üçÇÚĞ##########
+block Job == 223 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########İÔçÇÚĞ##########
+block Job == 233 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+
+##########ÏğçÇÚĞ##########
+block Job == 243 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+
+##########Æ¤¡õ¶ª·Â¼şçÇÚĞ##########
+block Job == 253 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+
+##########¹ÏÄÌ°×çÇÚĞ##########
+block Job == 263 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########³¡çÇÚĞ##########
+block Job == 273 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########Ù¦ºÒçÇÚĞ##########
+block Job == 283 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########¶¥çÇÚĞ##########
+block Job == 293 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##################šõçÇÚĞ####################
+block Job == 303 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########·ò¡õÆ¤çÇÚĞ##########
+block Job == 313 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########Æ¤¡õÖ­çÇÚĞ##########
+block Job == 323 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########Ğ¨çÇÚĞ##########
+block Job == 333 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########¼úçÇÚĞ##########
+block Job == 343 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########Æ©†A¸ó##########
+block Job == 353 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########ãï¹Ü¸ó##########
+block Job == 363 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########Ä¤†A–_Õ¿##########
+block Job == 373 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########Ä¤†AëÌî##########
+block Job == 383 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########×µÀÃÏÎ##########
+block Job == 393 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########¶ÔÖ´##########
+block Job == 403 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########¼ëÓ£##########
+block Job == 413 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+##########ÓªÚĞ##########
+block Job == 423 && HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14155
+########·°ÈÊ·®Ø¦ÚĞ###################
+block HaveTitle == 61
+	Window 14152,OK
+	Window_OK
+	EndWindow 14154
+
+
+##########ğôçÇÚĞ##########
+block Job == 203
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########ççÇÚĞ##########
+block Job == 213
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########¼üçÇÚĞ##########
+block Job == 223
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########İÔçÇÚĞ##########
+block Job == 233
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+
+##########ÏğçÇÚĞ##########
+block Job == 243
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+
+##########Æ¤¡õ¶ª·Â¼şçÇÚĞ##########
+block Job == 253
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+
+##########¹ÏÄÌ°×çÇÚĞ##########
+block Job == 263
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########³¡çÇÚĞ##########
+block Job == 273
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########Ù¦ºÒçÇÚĞ##########
+block Job == 283
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########¶¥çÇÚĞ##########
+block Job == 293
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##################šõçÇÚĞ####################
+block Job == 303
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########·ò¡õÆ¤çÇÚĞ##########
+block Job == 313
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########Æ¤¡õÖ­çÇÚĞ##########
+block Job == 323
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########Ğ¨çÇÚĞ##########
+block Job == 333
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########¼úçÇÚĞ##########
+block Job == 343
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########Æ©†A¸ó##########
+block Job == 353
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########ãï¹Ü¸ó##########
+block Job == 363
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########Ä¤†A–_Õ¿##########
+block Job == 373
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########Ä¤†AëÌî##########
+block Job == 383
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########×µÀÃÏÎ##########
+block Job == 393
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########¶ÔÖ´##########
+block Job == 403
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########¼ëÓ£##########
+block Job == 413
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+##########ÓªÚĞ##########
+block Job == 423
+	Window 14152,OK
+	Window_OK
+	EndWindow 14153
+
+
+##########É§éÙ######
+block
+	EndWindow 14152
+#³ğÊÏØ¦à¼°Õ¸ÒıÆ¥·½µ¤ÎåĞ×¼°·á©z
+#ÖÏ±åÊÖØ¦ÖĞÎç³ğÇ·ÔªÔú»¥
+#Òı³ó¼ÁØÆØ¤ÔÈĞ×ÒıÔÈ»¯ÖĞÎåØ¦½ñÄ¾

@@ -1,0 +1,2113 @@
+block Item  47696 >0 && Item 601416 >0 ## 灵力头盔
+	 Window 1055301 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  601416 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  601416 ==1
+	 SetDur 601416,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理灵力头盔吗？
+block Item 47696 >0 && Item 601415 >0 ## 正义头盔
+	 Window 1055302 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  601415 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  601415 ==1
+	 SetDur 601415,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理正义头盔吗？
+block Item 47696 >0 && Item 601400 >0 ## 圣骑士之盔
+	 Window 1055303 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  601400 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  601400 ==1
+	 SetDur 601400,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理圣骑士之盔吗？
+block Item 47696 >0 && Item 18970 >0 ## 皇后手镯
+	 Window 1055304 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  18970 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  18970 ==1
+	 SetDur 18970,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理皇后手镯吗？
+block Item 47696 >0 && Item 3693 >0 ## 白金头盔
+	 Window 1055305 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3693 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3693 ==1
+	 SetDur 3693,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理白金头盔吗？
+block Item 47696 >0 && Item 3692 >0 ## 圣龙头盔
+	 Window 1055306 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3692 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3692 ==1
+	 SetDur 3692,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理圣龙头盔吗？
+block Item 47696 >0 && Item 3683 >0 ## 羽毛头盔
+	 Window 1055307 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3683 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3683 ==1
+	 SetDur 3683,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理羽毛头盔吗？
+block Item 47696 >0 && Item 3682 >0 ## 龙盔
+	 Window 1055308 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3682 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3682 ==1
+	 SetDur 3682,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理龙盔吗？
+block Item 47696 >0 && Item 3675 >0 ## 钢制头盔+
+	 Window 1055309 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3675 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3675 ==1
+	 SetDur 3675,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理钢制头盔+吗？
+block Item 47696 >0 && Item 3671 >0 ## 铆钉头盔
+	 Window 1055310 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3671 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3671 ==1
+	 SetDur 3671,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理铆钉头盔吗？
+block Item 47696 >0 && Item 3670 >0 ## 博流盖尔头盔
+	 Window 1055311 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3670 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3670 ==1
+	 SetDur 3670,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理博流盖尔头盔吗？
+block Item 47696 >0 && Item 3664 >0 ## 钢制头盔
+	 Window 1055312 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3664 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3664 ==1
+	 SetDur 3664,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理钢制头盔吗？
+block Item 47696 >0 && Item 3662 >0 ## 骑士头盔
+	 Window 1055313 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3662 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3662 ==1
+	 SetDur 3662,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理骑士头盔吗？
+block Item 47696 >0 && Item 3654 >0 ## 巴比克头盔
+	 Window 1055314 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3654 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3654 ==1
+	 SetDur 3654,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理巴比克头盔吗？
+block Item 47696 >0 && Item 3651 >0 ## 利刃头盔
+	 Window 1055315 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3651 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3651 ==1
+	 SetDur 3651,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理利刃头盔吗？
+block Item 47696 >0 && Item 3642 >0 ## 开放式头盔
+	 Window 1055316 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3642 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3642 ==1
+	 SetDur 3642,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理开放式头盔吗？
+block Item 47696 >0 && Item 3640 >0 ## 葛理克头盔
+	 Window 1055317 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3640 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3640 ==1
+	 SetDur 3640,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理葛理克头盔吗？
+block Item 47696 >0 && Item 3635 >0 ## 角饰头盔
+	 Window 1055318 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3635 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3635 ==1
+	 SetDur 3635,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理角饰头盔吗？
+block Item 47696 >0 && Item 3632 >0 ## 霸葛头盔
+	 Window 1055319 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3632 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3632 ==1
+	 SetDur 3632,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理霸葛头盔吗？
+block Item 47696 >0 && Item 3622 >0 ## 金属护额
+	 Window 1055320 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3622 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3622 ==1
+	 SetDur 3622,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理金属护额吗？
+block Item 47696 >0 && Item 3620 >0 ## 铁制头盔
+	 Window 1055321 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3620 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3620 ==1
+	 SetDur 3620,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理铁制头盔吗？
+block Item 47696 >0 && Item 3612 >0 ## 铜铁皮盔
+	 Window 1055322 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3612 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3612 ==1
+	 SetDur 3612,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理铜铁皮盔吗？
+block Item 47696 >0 && Item 3611 >0 ## 铁板布盔
+	 Window 1055323 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3611 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3611 ==1
+	 SetDur 3611,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理铁板布盔吗？
+block Item 47696 >0 && Item 3602 >0 ## 铜制头盔
+	 Window 1055324 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3602 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3602 ==1
+	 SetDur 3602,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理铜制头盔吗？
+block Item 47696 >0 && Item 3601 >0 ## 硬皮头盔
+	 Window 1055325 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  3601 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  3601 ==1
+	 SetDur 3601,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理硬皮头盔吗？
+block Item 47696 >0 && Item 237 >0 ## 依古诺头盔
+	 Window 1055326 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  237 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  237 ==1
+	 SetDur 237,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理依古诺头盔吗？
+block Item 47696 >0 && Item 235 >0 ## 水龙头盔
+	 Window 1055327 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  235 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  235 ==1
+	 SetDur 235,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理水龙头盔吗？
+block Item 47696 >0 && Item 601616 >0 ## 神官帽
+	 Window 1055328 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  601616 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  601616 ==1
+	 SetDur 601616,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理神官帽吗？
+block Item 47696 >0 && Item 601615 >0 ## 贝斯神帽
+	 Window 1055329 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  601615 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  601615 ==1
+	 SetDur 601615,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理贝斯神帽吗？
+block Item 47696 >0 && Item 601600 >0 ## 剑客帽
+	 Window 1055330 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  601600 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  601600 ==1
+	 SetDur 601600,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理剑客帽吗？
+block Item 47696 >0 && Item 4092 >0 ## 妖精之帽
+	 Window 1055331 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4092 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4092 ==1
+	 SetDur 4092,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理妖精之帽吗？
+block Item 47696 >0 && Item 4091 >0 ## 黄昏之帽
+	 Window 1055332 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4091 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4091 ==1
+	 SetDur 4091,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理黄昏之帽吗？
+block Item 47696 >0 && Item 4084 >0 ## 魔术师之帽
+	 Window 1055333 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4084 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4084 ==1
+	 SetDur 4084,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理魔术师之帽吗？
+block Item 47696 >0 && Item 4082 >0 ## 羽毛帽
+	 Window 1055334 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4082 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4082 ==1
+	 SetDur 4082,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理羽毛帽吗？
+block Item 47696 >0 && Item 4075 >0 ## 可爱的扁帽子+
+	 Window 1055335 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4075 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4075 ==1
+	 SetDur 4075,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理可爱的扁帽子+吗？
+block Item 47696 >0 && Item 4074 >0 ## 时髦避暑帽子
+	 Window 1055336 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4074 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4074 ==1
+	 SetDur 4074,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理时髦避暑帽子吗？
+block Item 47696 >0 && Item 4070 >0 ## 军帽
+	 Window 1055337 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4070 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4070 ==1
+	 SetDur 4070,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理军帽吗？
+block Item 47696 >0 && Item 4064 >0 ## 淑女帽
+	 Window 1055338 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4064 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4064 ==1
+	 SetDur 4064,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理淑女帽吗？
+block Item 47696 >0 && Item 4062 >0 ## 可爱的扁帽子
+	 Window 1055339 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4062 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4062 ==1
+	 SetDur 4062,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理可爱的扁帽子吗？
+block Item 47696 >0 && Item 4054 >0 ## 装饰着花的帽子
+	 Window 1055340 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4054 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4054 ==1
+	 SetDur 4054,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理装饰着花的帽子吗？
+block Item 47696 >0 && Item 4051 >0 ## 青铜帽子
+	 Window 1055341 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4051 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4051 ==1
+	 SetDur 4051,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理青铜帽子吗？
+block Item 47696 >0 && Item 4042 >0 ## 高级帽子
+	 Window 1055342 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4042 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4042 ==1
+	 SetDur 4042,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理高级帽子吗？
+block Item 47696 >0 && Item 4040 >0 ## 蓝徽章之帽
+	 Window 1055343 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4040 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4040 ==1
+	 SetDur 4040,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理蓝徽章之帽吗？
+block Item 47696 >0 && Item 4032 >0 ## 时髦帽子
+	 Window 1055344 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4032 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4032 ==1
+	 SetDur 4032,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理时髦帽子吗？
+block Item 47696 >0 && Item 4031 >0 ## 鸭舌帽
+	 Window 1055345 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4031 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4031 ==1
+	 SetDur 4031,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理鸭舌帽吗？
+block Item 47696 >0 && Item 4022 >0 ## 硬皮帽
+	 Window 1055346 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4022 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4022 ==1
+	 SetDur 4022,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理硬皮帽吗？
+block Item 47696 >0 && Item 4020 >0 ## 可爱的帽子
+	 Window 1055347 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4020 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4020 ==1
+	 SetDur 4020,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理可爱的帽子吗？
+block Item 47696 >0 && Item 4013 >0 ## 皮帽
+	 Window 1055348 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4013 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4013 ==1
+	 SetDur 4013,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理皮帽吗？
+block Item 47696 >0 && Item 4011 >0 ## 轻帽
+	 Window 1055349 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4011 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4011 ==1
+	 SetDur 4011,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理轻帽吗？
+block Item 47696 >0 && Item 4004 >0 ## 麻布帽
+	 Window 1055350 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4004 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4004 ==1
+	 SetDur 4004,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理麻布帽吗？
+block Item 47696 >0 && Item 4001 >0 ## 硬帽
+	 Window 1055351 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4001 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4001 ==1
+	 SetDur 4001,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理硬帽吗？
+block Item 47696 >0 && Item 242 >0 ## 荷莱松之帽
+	 Window 1055352 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  242 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  242 ==1
+	 SetDur 242,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理荷莱松之帽吗？
+block Item 47696 >0 && Item 241 >0 ## 头目之帽
+	 Window 1055353 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  241 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  241 ==1
+	 SetDur 241,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理头目之帽吗？
+block Item 47696 >0 && Item 240 >0 ## 水龙之帽
+	 Window 1055354 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  240 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  240 ==1
+	 SetDur 240,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理水龙之帽吗？
+block Item 47696 >0 && Item 601816 >0 ## 守护铠甲
+	 Window 1055355 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  601816 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  601816 ==1
+	 SetDur 601816,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理守护铠甲吗？
+block Item 47696 >0 && Item 601815 >0 ## 红绳威铠
+	 Window 1055356 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  601815 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  601815 ==1
+	 SetDur 601815,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理红绳威铠吗？
+block Item 47696 >0 && Item 601800 >0 ## 剑齿铠甲
+	 Window 1055357 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  601800 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  601800 ==1
+	 SetDur 601800,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理剑齿铠甲吗？
+block Item 47696 >0 && Item 4491 >0 ## 骑士铠甲
+	 Window 1055358 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4491 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4491 ==1
+	 SetDur 4491,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理骑士铠甲吗？
+block Item 47696 >0 && Item 4490 >0 ## 漆黑之铠
+	 Window 1055359 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4490 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4490 ==1
+	 SetDur 4490,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理漆黑之铠吗？
+block Item 47696 >0 && Item 4484 >0 ## 帝王之铠
+	 Window 1055360 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4484 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4484 ==1
+	 SetDur 4484,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理帝王之铠吗？
+block Item 47696 >0 && Item 4481 >0 ## 亡灵铠甲
+	 Window 1055361 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4481 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4481 ==1
+	 SetDur 4481,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理亡灵铠甲吗？
+block Item 47696 >0 && Item 4475 >0 ## 轻短铠甲+
+	 Window 1055362 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4475 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4475 ==1
+	 SetDur 4475,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理轻短铠甲+吗？
+block Item 47696 >0 && Item 4471 >0 ## 野兽铠甲
+	 Window 1055363 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4471 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4471 ==1
+	 SetDur 4471,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理野兽铠甲吗？
+block Item 47696 >0 && Item 4470 >0 ## 重金属铠甲
+	 Window 1055364 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4470 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4470 ==1
+	 SetDur 4470,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理重金属铠甲吗？
+block Item 47696 >0 && Item 4464 >0 ## 实战铠甲
+	 Window 1055365 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4464 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4464 ==1
+	 SetDur 4464,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理实战铠甲吗？
+block Item 47696 >0 && Item 4461 >0 ## 黄金铠甲
+	 Window 1055366 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4461 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4461 ==1
+	 SetDur 4461,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理黄金铠甲吗？
+block Item 47696 >0 && Item 4459 >0 ## 重铁板甲
+	 Window 1055367 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4459 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4459 ==1
+	 SetDur 4459,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理重铁板甲吗？
+block Item 47696 >0 && Item 4458 >0 ## 铁板半身甲
+	 Window 1055368 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4458 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4458 ==1
+	 SetDur 4458,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理铁板半身甲吗？
+block Item 47696 >0 && Item 4444 >0 ## 索状铠甲
+	 Window 1055369 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4444 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4444 ==1
+	 SetDur 4444,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理索状铠甲吗？
+block Item 47696 >0 && Item 4442 >0 ## 长型金属铠甲
+	 Window 1055370 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4442 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4442 ==1
+	 SetDur 4442,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理长型金属铠甲吗？
+block Item 47696 >0 && Item 4434 >0 ## 金属皮甲
+	 Window 1055371 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4434 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4434 ==1
+	 SetDur 4434,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理金属皮甲吗？
+block Item 47696 >0 && Item 4430 >0 ## 钢铁铠甲
+	 Window 1055372 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4430 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4430 ==1
+	 SetDur 4430,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理钢铁铠甲吗？
+block Item 47696 >0 && Item 4421 >0 ## 环甲
+	 Window 1055373 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4421 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4421 ==1
+	 SetDur 4421,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理环甲吗？
+block Item 47696 >0 && Item 4420 >0 ## 轻型锁炼甲
+	 Window 1055374 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4420 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4420 ==1
+	 SetDur 4420,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理轻型锁炼甲吗？
+block Item 47696 >0 && Item 4411 >0 ## 轻型铠甲
+	 Window 1055375 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4411 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4411 ==1
+	 SetDur 4411,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理轻型铠甲吗？
+block Item 47696 >0 && Item 4410 >0 ## 青铜铠甲
+	 Window 1055376 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4410 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4410 ==1
+	 SetDur 4410,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理青铜铠甲吗？
+block Item 47696 >0 && Item 4405 >0 ## 护心甲
+	 Window 1055377 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4405 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4405 ==1
+	 SetDur 4405,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理护心甲吗？
+block Item 47696 >0 && Item 4400 >0 ## 软皮甲
+	 Window 1055378 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4400 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4400 ==1
+	 SetDur 4400,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理软皮甲吗？
+block Item 47696 >0 && Item 247 >0 ## PRAHS-08ZM
+	 Window 1055379 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  247 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  247 ==1
+	 SetDur 247,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理PRAHS-08ZM吗？
+block Item 47696 >0 && Item 245 >0 ## 水龙之铠
+	 Window 1055380 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  245 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  245 ==1
+	 SetDur 245,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理水龙之铠吗？
+block Item 47696 >0 && Item 602016 >0 ## 幻想之服
+	 Window 1055381 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602016 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602016 ==1
+	 SetDur 602016,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理幻想之服吗？
+block Item 47696 >0 && Item 602015 >0 ## 海洋之服
+	 Window 1055382 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602015 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602015 ==1
+	 SetDur 602015,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理海洋之服吗？
+block Item 47696 >0 && Item 602001 >0 ## 功夫装
+	 Window 1055383 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602001 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602001 ==1
+	 SetDur 602001,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理功夫装吗？
+block Item 47696 >0 && Item 4893 >0 ## 灵魂之服
+	 Window 1055384 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4893 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4893 ==1
+	 SetDur 4893,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理灵魂之服吗？
+block Item 47696 >0 && Item 4892 >0 ## 不死鸟之服
+	 Window 1055385 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4892 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4892 ==1
+	 SetDur 4892,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理不死鸟之服吗？
+block Item 47696 >0 && Item 4883 >0 ## 女神之衣
+	 Window 1055386 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4883 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4883 ==1
+	 SetDur 4883,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理女神之衣吗？
+block Item 47696 >0 && Item 4882 >0 ## 勇者之衣
+	 Window 1055387 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4882 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4882 ==1
+	 SetDur 4882,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理勇者之衣吗？
+block Item 47696 >0 && Item 4877 >0 ## 兽骨之衣+
+	 Window 1055388 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4877 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4877 ==1
+	 SetDur 4877,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理兽骨之衣+吗？
+block Item 47696 >0 && Item 4873 >0 ## 步兵战衣
+	 Window 1055389 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4873 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4873 ==1
+	 SetDur 4873,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理步兵战衣吗？
+block Item 47696 >0 && Item 4871 >0 ## 疾风之衣
+	 Window 1055390 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4871 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4871 ==1
+	 SetDur 4871,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理疾风之衣吗？
+block Item 47696 >0 && Item 4867 >0 ## 骨衣
+	 Window 1055391 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4867 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4867 ==1
+	 SetDur 4867,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理骨衣吗？
+block Item 47696 >0 && Item 4860 >0 ## 超级衣服
+	 Window 1055392 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4860 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4860 ==1
+	 SetDur 4860,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理超级衣服吗？
+block Item 47696 >0 && Item 4855 >0 ## 长索锥衣
+	 Window 1055393 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4855 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4855 ==1
+	 SetDur 4855,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理长索锥衣吗？
+block Item 47696 >0 && Item 4853 >0 ## 索锥上衣
+	 Window 1055394 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4853 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4853 ==1
+	 SetDur 4853,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理索锥上衣吗？
+block Item 47696 >0 && Item 4845 >0 ## 环服
+	 Window 1055395 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4845 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4845 ==1
+	 SetDur 4845,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理环服吗？
+block Item 47696 >0 && Item 4844 >0 ## 士兵护衣
+	 Window 1055396 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4844 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4844 ==1
+	 SetDur 4844,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理士兵护衣吗？
+block Item 47696 >0 && Item 4834 >0 ## 布甲
+	 Window 1055397 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4834 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4834 ==1
+	 SetDur 4834,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理布甲吗？
+block Item 47696 >0 && Item 4833 >0 ## 榇甲
+	 Window 1055398 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4833 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4833 ==1
+	 SetDur 4833,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理榇甲吗？
+block Item 47696 >0 && Item 4823 >0 ## 硬皮服
+	 Window 1055399 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4823 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4823 ==1
+	 SetDur 4823,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理硬皮服吗？
+block Item 47696 >0 && Item 4821 >0 ## 锁炼装
+	 Window 1055400 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4821 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4821 ==1
+	 SetDur 4821,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理锁炼装吗？
+block Item 47696 >0 && Item 4813 >0 ## 皮装
+	 Window 1055401 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4813 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4813 ==1
+	 SetDur 4813,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理皮装吗？
+block Item 47696 >0 && Item 4812 >0 ## 羽毛装
+	 Window 1055402 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4812 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4812 ==1
+	 SetDur 4812,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理羽毛装吗？
+block Item 47696 >0 && Item 4806 >0 ## 保护衣
+	 Window 1055403 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4806 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4806 ==1
+	 SetDur 4806,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理保护衣吗？
+block Item 47696 >0 && Item 4803 >0 ## 旅人之服
+	 Window 1055404 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  4803 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  4803 ==1
+	 SetDur 4803,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理旅人之服吗？
+block Item 47696 >0 && Item 252 >0 ## ミネルバのパンツ
+	 Window 1055405 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  252 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  252 ==1
+	 SetDur 252,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理ミネルバのパンツ吗？
+block Item 47696 >0 && Item 250 >0 ## 水龙之服
+	 Window 1055406 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  250 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  250 ==1
+	 SetDur 250,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理水龙之服吗？
+block Item 47696 >0 && Item 602216 >0 ## 和平之袍
+	 Window 1055407 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602216 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602216 ==1
+	 SetDur 602216,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理和平之袍吗？
+block Item 47696 >0 && Item 602215 >0 ## 共鸣之袍
+	 Window 1055408 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602215 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602215 ==1
+	 SetDur 602215,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理共鸣之袍吗？
+block Item 47696 >0 && Item 602200 >0 ## 治愈之袍
+	 Window 1055409 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602200 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602200 ==1
+	 SetDur 602200,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理治愈之袍吗？
+block Item 47696 >0 && Item 18803 >0 ## 狐皮披风
+	 Window 1055410 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  18803 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  18803 ==1
+	 SetDur 18803,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理狐皮披风吗？
+block Item 47696 >0 && Item 5291 >0 ## 奇迹之袍
+	 Window 1055411 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5291 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5291 ==1
+	 SetDur 5291,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理奇迹之袍吗？
+block Item 47696 >0 && Item 5290 >0 ## 灵魂之袍
+	 Window 1055412 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5290 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5290 ==1
+	 SetDur 5290,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理灵魂之袍吗？
+block Item 47696 >0 && Item 5282 >0 ## 圣袍
+	 Window 1055413 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5282 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5282 ==1
+	 SetDur 5282,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理圣袍吗？
+block Item 47696 >0 && Item 5281 >0 ## 黑暗之袍
+	 Window 1055414 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5281 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5281 ==1
+	 SetDur 5281,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理黑暗之袍吗？
+block Item 47696 >0 && Item 5275 >0 ## 洁净之袍+
+	 Window 1055415 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5275 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5275 ==1
+	 SetDur 5275,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理洁净之袍+吗？
+block Item 47696 >0 && Item 5274 >0 ## 勇者之袍
+	 Window 1055416 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5274 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5274 ==1
+	 SetDur 5274,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理勇者之袍吗？
+block Item 47696 >0 && Item 5272 >0 ## 死神之袍
+	 Window 1055417 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5272 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5272 ==1
+	 SetDur 5272,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理死神之袍吗？
+block Item 47696 >0 && Item 5262 >0 ## 时之袍
+	 Window 1055418 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5262 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5262 ==1
+	 SetDur 5262,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理时之袍吗？
+block Item 47696 >0 && Item 5261 >0 ## 冠军之袍
+	 Window 1055419 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5261 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5261 ==1
+	 SetDur 5261,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理冠军之袍吗？
+block Item 47696 >0 && Item 5253 >0 ## 战斗长袍
+	 Window 1055420 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5253 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5253 ==1
+	 SetDur 5253,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理战斗长袍吗？
+block Item 47696 >0 && Item 5250 >0 ## 圣者之袍
+	 Window 1055421 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5250 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5250 ==1
+	 SetDur 5250,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理圣者之袍吗？
+block Item 47696 >0 && Item 5244 >0 ## 圣堂之袍
+	 Window 1055422 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5244 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5244 ==1
+	 SetDur 5244,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理圣堂之袍吗？
+block Item 47696 >0 && Item 5242 >0 ## 东方法衣
+	 Window 1055423 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5242 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5242 ==1
+	 SetDur 5242,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理东方法衣吗？
+block Item 47696 >0 && Item 5233 >0 ## 乌鸦之袍
+	 Window 1055424 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5233 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5233 ==1
+	 SetDur 5233,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理乌鸦之袍吗？
+block Item 47696 >0 && Item 5231 >0 ## 月亮之袍
+	 Window 1055425 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5231 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5231 ==1
+	 SetDur 5231,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理月亮之袍吗？
+block Item 47696 >0 && Item 5224 >0 ## 硬皮袍
+	 Window 1055426 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5224 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5224 ==1
+	 SetDur 5224,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理硬皮袍吗？
+block Item 47696 >0 && Item 5223 >0 ## 环袍
+	 Window 1055427 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5223 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5223 ==1
+	 SetDur 5223,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理环袍吗？
+block Item 47696 >0 && Item 5212 >0 ## 网袍
+	 Window 1055428 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5212 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5212 ==1
+	 SetDur 5212,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理网袍吗？
+block Item 47696 >0 && Item 5211 >0 ## 风袍
+	 Window 1055429 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5211 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5211 ==1
+	 SetDur 5211,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理风袍吗？
+block Item 47696 >0 && Item 5206 >0 ## 羽毛袍
+	 Window 1055430 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5206 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5206 ==1
+	 SetDur 5206,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理羽毛袍吗？
+block Item 47696 >0 && Item 5205 >0 ## 轻皮袍
+	 Window 1055431 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5205 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5205 ==1
+	 SetDur 5205,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理轻皮袍吗？
+block Item 47696 >0 && Item 257 >0 ## 能源之袍
+	 Window 1055432 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  257 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  257 ==1
+	 SetDur 257,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理能源之袍吗？
+block Item 47696 >0 && Item 255 >0 ## 水龙之御衣
+	 Window 1055433 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  255 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  255 ==1
+	 SetDur 255,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理水龙之御衣吗？
+block Item 47696 >0 && Item 602416 >0 ## 试力鞋
+	 Window 1055434 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602416 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602416 ==1
+	 SetDur 602416,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理试力鞋吗？
+block Item 47696 >0 && Item 602415 >0 ## 幸运靴
+	 Window 1055435 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602415 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602415 ==1
+	 SetDur 602415,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理幸运靴吗？
+block Item 47696 >0 && Item 602400 >0 ## 防护靴
+	 Window 1055436 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602400 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602400 ==1
+	 SetDur 602400,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理防护靴吗？
+block Item 47696 >0 && Item 5691 >0 ## 龙之靴
+	 Window 1055437 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5691 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5691 ==1
+	 SetDur 5691,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理龙之靴吗？
+block Item 47696 >0 && Item 5690 >0 ## 秘密之靴
+	 Window 1055438 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5690 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5690 ==1
+	 SetDur 5690,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理秘密之靴吗？
+block Item 47696 >0 && Item 5681 >0 ## 钻石长靴
+	 Window 1055439 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5681 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5681 ==1
+	 SetDur 5681,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理钻石长靴吗？
+block Item 47696 >0 && Item 5680 >0 ## 钻石靴
+	 Window 1055440 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5680 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5680 ==1
+	 SetDur 5680,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理钻石靴吗？
+block Item 47696 >0 && Item 5675 >0 ## 标准长靴+
+	 Window 1055441 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5675 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5675 ==1
+	 SetDur 5675,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理标准长靴+吗？
+block Item 47696 >0 && Item 5673 >0 ## 芙蕾雅之靴
+	 Window 1055442 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5673 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5673 ==1
+	 SetDur 5673,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理芙蕾雅之靴吗？
+block Item 47696 >0 && Item 5671 >0 ## 流水之靴
+	 Window 1055443 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5671 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5671 ==1
+	 SetDur 5671,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理流水之靴吗？
+block Item 47696 >0 && Item 5664 >0 ## 水晶靴
+	 Window 1055444 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5664 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5664 ==1
+	 SetDur 5664,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理水晶靴吗？
+block Item 47696 >0 && Item 5660 >0 ## 银靴
+	 Window 1055445 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5660 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5660 ==1
+	 SetDur 5660,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理银靴吗？
+block Item 47696 >0 && Item 5654 >0 ## 钢制长靴
+	 Window 1055446 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5654 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5654 ==1
+	 SetDur 5654,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理钢制长靴吗？
+block Item 47696 >0 && Item 5653 >0 ## 钢靴
+	 Window 1055447 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5653 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5653 ==1
+	 SetDur 5653,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理钢靴吗？
+block Item 47696 >0 && Item 5641 >0 ## 蜥蜴长靴
+	 Window 1055448 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5641 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5641 ==1
+	 SetDur 5641,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理蜥蜴长靴吗？
+block Item 47696 >0 && Item 5640 >0 ## 蜥蜴靴
+	 Window 1055449 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5640 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5640 ==1
+	 SetDur 5640,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理蜥蜴靴吗？
+block Item 47696 >0 && Item 5631 >0 ## 锁炼靴
+	 Window 1055450 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5631 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5631 ==1
+	 SetDur 5631,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理锁炼靴吗？
+block Item 47696 >0 && Item 5630 >0 ## 锁炼长靴
+	 Window 1055451 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5630 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5630 ==1
+	 SetDur 5630,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理锁炼长靴吗？
+block Item 47696 >0 && Item 5621 >0 ## 编织的靴子
+	 Window 1055452 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5621 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5621 ==1
+	 SetDur 5621,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理编织的靴子吗？
+block Item 47696 >0 && Item 5620 >0 ## 厚底靴
+	 Window 1055453 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5620 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5620 ==1
+	 SetDur 5620,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理厚底靴吗？
+block Item 47696 >0 && Item 5614 >0 ## 硬皮靴
+	 Window 1055454 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5614 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5614 ==1
+	 SetDur 5614,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理硬皮靴吗？
+block Item 47696 >0 && Item 5612 >0 ## 长靴
+	 Window 1055455 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5612 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5612 ==1
+	 SetDur 5612,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理长靴吗？
+block Item 47696 >0 && Item 5601 >0 ## 皮靴
+	 Window 1055456 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5601 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5601 ==1
+	 SetDur 5601,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理皮靴吗？
+block Item 47696 >0 && Item 5600 >0 ## 软皮靴
+	 Window 1055457 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  5600 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  5600 ==1
+	 SetDur 5600,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理软皮靴吗？
+block Item 47696 >0 && Item 262 >0 ## 稀有长靴9
+	 Window 1055458 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  262 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  262 ==1
+	 SetDur 262,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理稀有长靴9吗？
+block Item 47696 >0 && Item 260 >0 ## 水龙巨靴
+	 Window 1055459 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  260 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  260 ==1
+	 SetDur 260,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理水龙巨靴吗？
+block Item 47696 >0 && Item 602616 >0 ## 大木屐
+	 Window 1055460 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602616 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602616 ==1
+	 SetDur 602616,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理大木屐吗？
+block Item 47696 >0 && Item 602615 >0 ## 守护之鞋
+	 Window 1055461 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602615 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602615 ==1
+	 SetDur 602615,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理守护之鞋吗？
+block Item 47696 >0 && Item 602601 >0 ## 特制舞鞋
+	 Window 1055462 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  602601 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  602601 ==1
+	 SetDur 602601,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理特制舞鞋吗？
+block Item 47696 >0 && Item 6091 >0 ## 龙之鞋
+	 Window 1055463 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6091 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6091 ==1
+	 SetDur 6091,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理龙之鞋吗？
+block Item 47696 >0 && Item 6090 >0 ## 黄金鞋
+	 Window 1055464 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6090 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6090 ==1
+	 SetDur 6090,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理黄金鞋吗？
+block Item 47696 >0 && Item 6081 >0 ## 力量之鞋
+	 Window 1055465 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6081 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6081 ==1
+	 SetDur 6081,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理力量之鞋吗？
+block Item 47696 >0 && Item 6080 >0 ## 神秘之鞋
+	 Window 1055466 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6080 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6080 ==1
+	 SetDur 6080,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理神秘之鞋吗？
+block Item 47696 >0 && Item 6075 >0 ## 妖精鞋+
+	 Window 1055467 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6075 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6075 ==1
+	 SetDur 6075,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理妖精鞋+吗？
+block Item 47696 >0 && Item 6074 >0 ## 精致高级鞋
+	 Window 1055468 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6074 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6074 ==1
+	 SetDur 6074,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理精致高级鞋吗？
+block Item 47696 >0 && Item 6072 >0 ## 白金鞋
+	 Window 1055469 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6072 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6072 ==1
+	 SetDur 6072,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理白金鞋吗？
+block Item 47696 >0 && Item 6064 >0 ## 妖精鞋
+	 Window 1055470 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6064 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6064 ==1
+	 SetDur 6064,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理妖精鞋吗？
+block Item 47696 >0 && Item 6063 >0 ## 紫水晶鞋
+	 Window 1055471 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6063 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6063 ==1
+	 SetDur 6063,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理紫水晶鞋吗？
+block Item 47696 >0 && Item 6054 >0 ## 战斗鞋
+	 Window 1055472 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6054 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6054 ==1
+	 SetDur 6054,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理战斗鞋吗？
+block Item 47696 >0 && Item 6052 >0 ## 骑士鞋
+	 Window 1055473 ,YES,NO  
+	 Window_YES Item 47696 >= 1 && Item  6052 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6052 ==1
+	 SetDur 6052,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理骑士鞋吗？
+block Item 47696 >0 && Item 6042 >0 ## 蜥蜴鞋
+	 Window 1055474 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item  6042 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item  6042 ==1
+	 SetDur 6042,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理蜥蜴鞋吗？
+block Item 47696 >0 && Item 6040 >0 ## 维京鞋
+	 Window 1055475 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6040 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6040 ==1
+	 SetDur 6040,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理维京鞋吗？
+block Item 47696 >0 && Item 6033 >0 ## 薄板鞋
+	 Window 1055476 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6033 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6033 ==1
+	 SetDur 6033,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理薄板鞋吗？
+block Item 47696 >0 && Item 6031 >0 ## 锁炼鞋
+	 Window 1055477 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6031 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6031 ==1
+	 SetDur 6031,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理锁炼鞋吗？
+block Item 47696 >0 && Item 6025 >0 ## 战鞋
+	 Window 1055478 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6025 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6025 ==1
+	 SetDur 6025,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理战鞋吗？
+block Item 47696 >0 && Item 6022 >0 ## 光之鞋
+	 Window 1055479 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6022 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6022 ==1
+	 SetDur 6022,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理光之鞋吗？
+block Item 47696 >0 && Item 6011 >0 ## 安全鞋
+	 Window 1055480 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6011 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6011 ==1
+	 SetDur 6011,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理安全鞋吗？
+block Item 47696 >0 && Item 6010 >0 ## 皮鞋
+	 Window 1055481 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6010 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6010 ==1
+	 SetDur 6010,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理皮鞋吗？
+block Item 47696 >0 && Item 6002 >0 ## 马车鞋
+	 Window 1055482 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6002 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6002 ==1
+	 SetDur 6002,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理马车鞋吗？
+block Item 47696 >0 && Item 6001 >0 ## 运动鞋
+	 Window 1055483 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6001 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6001 ==1
+	 SetDur 6001,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理运动鞋吗？
+block Item 47696 >0 && Item 267 >0 ## 稀有鞋9
+	 Window 1055484 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 267 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 267 ==1
+	 SetDur 267,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理稀有鞋9吗？
+block Item 47696 >0 && Item 265 >0 ## 水龙之鞋
+	 Window 1055485 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 265 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 265 ==1
+	 SetDur 265,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理水龙之鞋吗？
+block Item 47696 >0 && Item 602816 >0 ## 重型防御盾
+	 Window 1055486 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 602816 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 602816 ==1
+	 SetDur 602816,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理重型防御盾吗？
+block Item 47696 >0 && Item 602815 >0 ## 突猛盾
+	 Window 1055487 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 602815 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 602815 ==1
+	 SetDur 602815,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理突猛盾吗？
+block Item 47696 >0 && Item 602800 >0 ## 圣者之盾
+	 Window 1055488 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 602800 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 602800 ==1
+	 SetDur 602800,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理圣者之盾吗？
+block Item 47696 >0 && Item 6491 >0 ## 勇者之盾
+	 Window 1055489 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6491 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6491 ==1
+	 SetDur 6491,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理勇者之盾吗？
+block Item 47696 >0 && Item 6490 >0 ## 黑暗之盾
+	 Window 1055490 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6490 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6490 ==1
+	 SetDur 6490,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理黑暗之盾吗？
+block Item 47696 >0 && Item 6481 >0 ## 火龙之盾
+	 Window 1055491 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6481 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6481 ==1
+	 SetDur 6481,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理火龙之盾吗？
+block Item 47696 >0 && Item 6480 >0 ## 漆黑之盾
+	 Window 1055492 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6480 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6480 ==1
+	 SetDur 6480,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理漆黑之盾吗？
+block Item 47696 >0 && Item 6477 >0 ## 力量之盾
+	 Window 1055493 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6477 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6477 ==1
+	 SetDur 6477,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理力量之盾吗？
+block Item 47696 >0 && Item 6473 >0 ## 防御之盾+
+	 Window 1055494 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6473 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6473 ==1
+	 SetDur 6473,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理防御之盾+吗？
+block Item 47696 >0 && Item 6470 >0 ## 镜之盾
+	 Window 1055495 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6470 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6470 ==1
+	 SetDur 6470,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理镜之盾吗？
+block Item 47696 >0 && Item 6463 >0 ## 黄金之盾
+	 Window 1055496 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6463 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6463 ==1
+	 SetDur 6463,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理黄金之盾吗？
+block Item 47696 >0 && Item 6461 >0 ## 防守之盾
+	 Window 1055497 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6461 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6461 ==1
+	 SetDur 6461,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理防守之盾吗？
+block Item 47696 >0 && Item 6458 >0 ## 风之盾
+	 Window 1055498 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6458 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6458 ==1
+	 SetDur 6458,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理风之盾吗？
+block Item 47696 >0 && Item 6457 >0 ## 狮子盾
+	 Window 1055499 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6457 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6457 ==1
+	 SetDur 6457,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理狮子盾吗？
+block Item 47696 >0 && Item 6449 >0 ## 反光之盾
+	 Window 1055500 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6449 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6449 ==1
+	 SetDur 6449,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理反光之盾吗？
+block Item 47696 >0 && Item 6447 >0 ## 蜥蜴盾
+	 Window 1055501 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6447 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6447 ==1
+	 SetDur 6447,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理蜥蜴盾吗？
+block Item 47696 >0 && Item 6437 >0 ## 士兵盾
+	 Window 1055502 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6437 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6437 ==1
+	 SetDur 6437,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理士兵盾吗？
+block Item 47696 >0 && Item 6434 >0 ## 重盾
+	 Window 1055503 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6434 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6434 ==1
+	 SetDur 6434,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理重盾吗？
+block Item 47696 >0 && Item 6427 >0 ## 漩涡重盾
+	 Window 1055504 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6427 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6427 ==1
+	 SetDur 6427,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理漩涡重盾吗？
+block Item 47696 >0 && Item 6425 >0 ## 哥特盾
+	 Window 1055505 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6425 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6425 ==1
+	 SetDur 6425,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理哥特盾吗？
+block Item 47696 >0 && Item 6412 >0 ## 鸢盾
+	 Window 1055506 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6412 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6412 ==1
+	 SetDur 6412,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理鸢盾吗？
+block Item 47696 >0 && Item 6410 >0 ## 板盾
+	 Window 1055507 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6410 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6410 ==1
+	 SetDur 6410,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理板盾吗？
+block Item 47696 >0 && Item 6402 >0 ## 小型盾
+	 Window 1055508 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6402 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6402 ==1
+	 SetDur 6402,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理小型盾吗？
+block Item 47696 >0 && Item 6401 >0 ## 小圆盾
+	 Window 1055509 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 6401 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 6401 ==1
+	 SetDur 6401,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理小圆盾吗？
+block Item 47696 >0 && Item 272 >0 ## 血腥王之盾
+	 Window 1055510 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 272 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 272 ==1
+	 SetDur 272,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理血腥王之盾吗？
+block Item 47696 >0 && Item 270 >0 ## 水龙之盾
+	 Window 1055511 ,YES,NO   
+	 Window_YES Item 47696 >= 1 && Item 270 >=2
+	 EndWindow   1055117
+	 Window_YES Item 47696 >= 1 && Item 270 ==1
+	 SetDur 270,+10
+	 KillItem  47696,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　超级防具魔布，\n　　　　能将你的防具耐久恢复１０，　　　　你确定要修理水龙之盾吗？
+block	 
+EndWindow 1055513
+##\n\n\n@你没有任何防具需要回复耐久喔！！	1

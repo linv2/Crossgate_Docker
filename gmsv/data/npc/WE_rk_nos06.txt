@@ -1,0 +1,4 @@
+#ÓÃµ©°×Äá·ÂÐþµ©©x“²¿¢
+
+block XPos >= 60 && XPos <= 79 && YPos >= 80 && YPos <= 99
+	SetLp -1

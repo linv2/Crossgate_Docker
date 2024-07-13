@@ -1,0 +1,45 @@
+#????
+
+#?????ûè¥x?
+block EndEvent 111 == 1
+	EndWindow 22182,OK
+
+#?????ûè¥x?
+block EndEvent 112 == 1
+	EndWindow 22183,OK
+
+#?????þ­???þ°???
+block NowEvent 112 == 1 && Item 16364 >= 1
+	Window 22184,Next
+	Window 22185,Next
+	Window 22280,OK
+		Window_OK
+			KillItemAll 16364
+			NowEvent 112 = 0
+			EndEvent 112 = 1
+			EndEvent 59 = 1
+			Checktitle
+			LeaveGroup
+			Warp 0,33000,464,476
+
+#?????þ­??
+block NowEvent 112 == 1
+	EndWindow 22186,OK
+
+#??????????
+block EndEvent 58 == 1
+	Window 22187,YES,NO
+		Window_NO
+			EndWindow 22188,OK
+		Window_YES
+			Window 22189,Next
+			Window 22190,YES,NO
+				Window_NO
+					EndWindow 22191,OK
+				Window_YES
+					Window 22192,OK
+						Window_OK
+							NowEvent 112 = 1
+
+block
+	EndWindow 22193,OK

@@ -1,0 +1,19 @@
+#mayko_gm_1102739.txt 法兰城学者
+
+block item 47785 >0
+endwindow 1111685
+
+block item 47784 >0
+	killitem 47784,1
+	GiveLeak1Item 47785,1
+	
+	#1111663	月夜下的香花呀，应该是月夜百合吧。	1
+	#1111664	我曾在南恰特拉通道看过，移植过数次，就算能存活，也无法开花。	1
+	#1111665	你先在南恰特拉通道，找找看有没有种子。	1
+	Window 1111663,next
+	Window 1111664,next
+	endwindow 1111665
+
+
+block
+endwindow 1111685

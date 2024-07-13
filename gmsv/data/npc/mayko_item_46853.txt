@@ -1,0 +1,443 @@
+#
+#救世魂46853
+#
+
+##############  ##############
+block 							
+	##\n\n\n\n        我是救世魂！帮你组合鬼之物品！						
+	Window 1053369,OK						
+
+############弓
+ 		Window_OK item 46709>0 && item 46791 >0					
+ 			##你现在有帕里斯之矛积木与说明书,要组合成帕里斯之矛吗？				
+ 			Window 1053294,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46709<1 || item 46791 <1 || item 46853<1			
+	 	 		##咦～你的东西突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 		killitem 46709,1	 	 	 
+	 	 	 	killitem 46791,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46840,1			
+	 	 	 	##救世魂与xxxx,xxxx消失了！出现了xxxxxx			
+	 	 	 	EndWindow 1053348			
+	 	 	 				
+	 	 	 				
+ 		Window_OK item 46710>0 && item 46792 >0					
+							
+ 		##你现在有XXXX的物品可以契合,要契合成xxxx吗					
+ 			Window 1053296,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46710<1 || item 46792 <1 || item 46853<1			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46710,1	 	 	 
+	 	 	 	killitem 46792,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46841,1	 	 	
+	 	 	 	##枪之魂与xxxx,xxxx消失了！出现了xxxxxx			
+	 	 	 	EndWindow 1053349			
+	 	 	  				
+ 							
+ 		Window_OK item 46711>0 && item 46793 >0					
+		####你现在有波赛顿之戟的物品可以契合,要契合成波赛顿之戟吗					
+ 			Window 1053298,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46711<1 || item 46793 <1 || item 46853<1			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46711,1	 	 	 
+	 	 	 	killitem 46793,1 			
+	 	 	 	killitem 46853,1 	 	 	 
+	 	 	 	GiveLeak1Item 46842,1			
+	 	 	 	##枪之魂与xxxx,xxxx消失了！出现了xxxxxx			
+	 	 	 	EndWindow 1053350
+################小刀
+
+ 		Window_OK item 46721>0 && item 46803 >0					
+ 			##你现在有实验刀积木与说明书,要组合成实验刀吗？				
+ 			Window 1053302,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46721<1 || item 46803 <1 || item 46853<1			
+	 	 		##咦～你的东西突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 		killitem 46721,1	 	 	 
+	 	 	 	killitem 46803,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46837,1			
+	 	 	 	##实验刀积木与说明书消失了！出现了实验刀。			
+	 	 	 	EndWindow 1053351			
+	 	 	 				
+	 	 	 				
+ 		Window_OK item 46722>0 && item 46804 >0					
+							
+ 		##你现在有解剖刀积木与说明书,要组合成解剖刀吗？					
+ 			Window 1053304,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46722<1 || item 46804 <1 || item 46853<1			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46722,1	 	 	 
+	 	 	 	killitem 46804,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46838,1	 	 	
+	 	 	 	##解剖刀积木与说明书消失了！出现了解剖刀。			
+	 	 	 	EndWindow 1053352			
+	 	 	  				
+ 							
+ 		Window_OK item 46723>0 && item 46805 >0					
+		####你现在有手术刀积木与说明书,要组合成手术刀吗？					
+							
+ 			Window 1053306,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46723<1 || item 46805 <1 || item 46853<1			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46723,1	 	 	 
+	 	 	 	killitem 46805,1 			
+	 	 	 	killitem 46853,1 	 	 	 
+	 	 	 	GiveLeak1Item 46839,1			
+	 	 	 	##小刀魂、手术刀积木与说明书消失了！出现了手术刀。			
+	 	 	 	EndWindow 1053353			
+ 		Window_OK item 46726>0 && item 46806 >0					
+ 			##你现在有燕子镖积木与说明书,要组合成燕子镖吗？				
+ 			Window 1053310,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46726<1 || item 46806 <1 || item 46853<1			
+	 	 		##咦～你的东西突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 		killitem 46726,1	 	 	 
+	 	 	 	killitem 46806,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46834,1			
+	 	 	 	##燕子镖积木与说明书消失了！出现了燕子镖。			
+	 	 	 	EndWindow 1053354			
+	 	 	 				
+	 	 	 				
+ 		Window_OK item 46727>0 && item 46807 >0					
+							
+ 		##你现在有金燕飞积木与说明书,要组合成金燕飞吗？					
+ 			Window 1053312,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46727<1 || item 46807 <1 || item 46853<1			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46727,1	 	 	 
+	 	 	 	killitem 46807,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46835,1	 	 	
+	 	 	 	###飞积木与说明书消失了！出现了金燕飞。			
+	 	 	 	EndWindow 1053355
+	 	 	  				
+ 							
+ 		Window_OK item 46728>0 && item 46808 >0					
+		####你现在有飞燕银梭积木与说明书,要组合成飞燕银梭吗？					
+ 			Window 1053314,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46728<1 || item 46808 <1			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46728,1	 	 	 
+	 	 	 	killitem 46808,1 			
+	 	 	 	killitem 46853,1 	 	 	 
+	 	 	 	GiveLeak1Item 46836,1			
+	 	 	 	##镖之魂、飞燕银梭积木与说明书消失了！出现了飞燕银梭。			
+	 	 	 	EndWindow 1053356
+##############杖
+
+ 		Window_OK item 46718>0 && item 46800 >0					
+ 			##你现在有翔风之杖积木与说明书,要组合成翔风之杖吗？				
+ 			Window 1053318,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46718<1 || item 46800 < 1|| item 46853<1			
+	 	 		##咦～你的东西突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 		killitem 46718,1	 	 	 
+	 	 	 	killitem 46800,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46831,1			
+	 	 	 	##杖之魂、翔风之杖积木与说明书消失了！出现了翔风之杖。			
+	 	 	 	EndWindow 1053357
+	 	 	 				
+	 	 	 				
+ 		Window_OK item 46719>0 && item 46801 >0					
+							
+ 		##你现在有流星之杖积木与说明书,要组合成流星之杖吗？					
+ 			Window 1053320,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46719<1 || item 46801 < 1|| item 46853<1			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46719,1	 	 	 
+	 	 	 	killitem 46801,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46832,1	 	 	
+	 	 	 	##杖之魂、流星之杖积木与说明书消失了！出现了流星之杖。			
+	 	 	 	EndWindow 1053358	
+	 	 	  				
+ 							
+ 		Window_OK item 46720>0 && item 46802 >0					
+		####你现在有蚀月之杖积木与说明书,要组合成蚀月之杖吗？					
+ 			Window 1053322,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46720<1 || item 46802 < 1|| item 46853<1			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46720,1	 	 	 
+	 	 	 	killitem 46802,1 			
+	 	 	 	killitem 46853,1 	 	 	 
+	 	 	 	GiveLeak1Item 46833,1			
+	 	 	 	##杖之魂、蚀月之杖积木与说明书消失了！出现了蚀月之杖。			
+	 	 	 	EndWindow 1053359
+
+###########剑
+			
+ 		Window_OK item 46706>0 && item 46788 >0					
+ 			##你现在有影秀与说明书，要组合成影秀吗？				
+ 			Window 1053326,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46706<1 || item 46788 <1 || item 46853<1 			
+	 	 		##咦～你的东西突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 		killitem 46706,1	 	 	 
+	 	 	 	killitem 46788,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46828,1			
+	 	 	 	##剑之魂、影秀积木与说明书消失了！出现了影秀。			
+	 	 	 	EndWindow 1053360
+	 	 	 				
+	 	 	 				
+ 		Window_OK item 46707>0 && item 46789 >0					
+							
+ 		##你现在有葵纹剑与说明书，要组合成葵纹剑吗？					
+ 			Window 1053328,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        		 			
+	 			Window_YES item 46707<1 || item 46789 <1 || item 46853<1 			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46707,1	 	 	 
+	 	 	 	killitem 46789,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46829,1	 	 	
+	 	 	 	##			
+	 	 	 	EndWindow 1053361	
+	 	 	  				
+ 							
+ 		Window_OK item 46708>0 && item 46790 >0					
+		####					
+ 			Window 1053330,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        		 			
+	 			Window_YES item 46708<1 || item 46790 <1 || item 46853<1 			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46708,1	 	 	 
+	 	 	 	killitem 46790,1 			
+	 	 	 	killitem 46853,1 	 	 	 
+	 	 	 	GiveLeak1Item 46830,1			
+	 	 	 	##			
+	 	 	 	EndWindow 1053362
+################斧
+
+
+ 		Window_OK item 46712>0 && item 46794 >0					
+ 			##你现在有哥布林之斧积木与说明书，要组合成哥不林之斧吗？				
+ 			Window 1053334,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46712<1 || item 46794 <1 || item 46853<1 			
+	 	 		##咦～你的东西突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 		killitem 46712,1	 	 	 
+	 	 	 	killitem 46794,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46825,1			
+	 	 	 	##斧之魂、哥不林之斧积木与说明书消失了！\n出现了哥不林之斧。			
+	 	 	 	EndWindow 1053363
+	 	 	 				
+	 	 	 				
+ 		Window_OK item 46713>0 && item 46795 >0					
+							
+ 		##你现在有精灵之斧积木与说明书，\n  要组合成精灵之斧吗？					
+ 			Window 1053336,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        		 			
+	 			Window_YES item 46713<1 || item 46795 <1 || item 46853<1 			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46713,1	 	 	 
+	 	 	 	killitem 46795,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46826,1	 	 	
+	 	 	 	##斧之魂、精灵之斧积木与说明书消失了！\n 出现了精灵之斧。			
+	 	 	 	EndWindow 1053364	
+	 	 	  				
+ 							
+ 		Window_OK item 46714>0 && item 46796 >0					
+		####你现在有坦泰之斧积木与说明书，\n 要组合成坦泰之斧吗？					
+ 			Window 1053338,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        		 			
+	 			Window_YES item 46714<1 || item 46796 <1 || item 46853<1 			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46714,1	 	 	 
+	 	 	 	killitem 46796,1 			
+	 	 	 	killitem 46853,1 	 	 	 
+	 	 	 	GiveLeak1Item 46827,1			
+	 	 	 	##斧之魂、坦泰斧积木与说明书消失了！\n 出现了坦泰之斧。			
+	 	 	 	EndWindow 1053365
+
+###############弓
+
+ 		Window_OK item 46715>0 && item 46797 >0					
+ 			##你现在有奥德赛之弓积木与说明书，\n 要组合成奥德赛之弓吗？				
+ 			Window 1053342,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        					
+	 			Window_YES item 46715<1 || item 46797 <1 || item 46853<1 			
+	 	 		##咦～你的东西突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 		killitem 46715,1	 	 	 
+	 	 	 	killitem 46797,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46843,1			
+	 	 	 	##弓之魂、奥德赛之弓积木与说明书消失了！\n 出现了奥德赛之弓。			
+	 	 	 	EndWindow 1053366
+	 	 	 				
+	 	 	 				
+ 		Window_OK item 46716>0 && item 46798 >0					
+							
+ 		## 你现在有爱神之弓积木与说明书，\n 要组合成爱神之弓吗？					
+ 			Window 1053344,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        		 			
+	 			Window_YES item 46716<1 || item 46798 <1 || item 46853<1 			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46716,1	 	 	 
+	 	 	 	killitem 46798,1 			
+	 	 	 	killitem 46853,1 			
+	 	 	 	GiveLeak1Item 46844,1	 	 	
+	 	 	 	##弓之魂、爱神之弓积木与说明书消失了！\n出现了爱神之弓。			
+	 	 	 	EndWindow 1053367	
+	 	 	  				
+ 							
+ 		Window_OK item 46717>0 && item 46799 >0					
+		####你现在有阿波罗之弓积木与说明书，\n要组合成阿波罗之弓吗？					
+ 			Window 1053346,YES,NO				
+ 	 			Window_NO 			
+	 	        	##你真是傻，留着没用的东西作什么！				
+	 	        	EndWindow 1053287				
+	 	        		 			
+	 			Window_YES item 46717<1 || item 46799 <1 || item 46853<1 			
+	 	 	 	##咦～你的物品突然不见，是不是掉了。			
+	 	 	 	EndWindow 1053288			
+	 	 	 				
+				Window_YES 			
+	 	 	 	killitem 46717,1	 	 	 
+	 	 	 	killitem 46799,1 			
+	 	 	 	killitem 46853,1 	 	 	 
+	 	 	 	GiveLeak1Item 46845,1			
+	 	 	 	## 弓之魂、阿波罗之弓积木与说明书消失了！\n  出现了阿波罗之弓。			
+	 	 	 	EndWindow 1053368	
+
+################NO
+
+		Window_OK 					
+		##可惜你没有可以契合的物品,我无法帮助你					
+		EndWindow 1053290					

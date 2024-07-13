@@ -1,0 +1,24 @@
+#宠物情人--夏咪的母亲
+##有雪之樱
+block Item 46236 >= 1
+	 ##1052333 \n\n\n  假如这是他们的愿望…\n  我这个作母亲的...也只好成全了...
+	 EndWindow 1052333
+##有护身符
+block Item 46235 >= 1 
+	 ##1052334 \n\n\n\n@c拜托你了！
+	 EndWindow 1052334
+	 
+block
+	 ##1052335 \n\n  你是@n吧！谢谢你救了小女！\n\n  但是她说要去找西西尔克，我很担心！\n  唉～这两个孩子～麻烦你将这个带给夏咪吧～
+	 Window 1052335,NO,YES
+	 	 Window_NO
+	 	 Window_YES
+	 	 	 ##1052336 \n\n\n  谢谢你！
+	 	 	 Window 1052336,OK
+	 	 	 	 Window_OK ItemSpace < 1
+				 ##1051843	\n\n\n\n\n@c物品栏的空间不足。		 
+				 EndWindow 1051843
+				 Window_OK ItemSpace >= 1
+	 	 	 	 GiveLeak1Item(46235%100$1)
+
+	 

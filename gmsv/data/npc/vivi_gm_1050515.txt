@@ -1,0 +1,95 @@
+########### 魔力大会考62 ###########
+######■恩格的助手
+##■有烛台(时间已过)和金色徽章
+block Item 45332 == 1 && Item 45336 == 1
+	 ##1050807	\n\n好不容易来到最后一关，蜡烛却熄了，看来只有给你安慰奖的份了，下次在努力吧！
+	 Window 1050807,OK 
+	 Window_OK Item 45332 == 1 && Item 45336 == 1
+	     KillItem 45332
+	     KillItem 45336
+	     GiveLeak1Item 45334
+	     Warp 0,30110,15,30
+##■有烛台(时间已过)
+block Item 45332 == 1 
+	 ##1050807	\n\n好不容易来到最后一关，蜡烛却熄了，看来只有给你安慰奖的份了，下次在努力吧！
+	 Window 1050807,OK 
+	 Window_OK Item 45332 == 1 
+	     KillItem 45332
+	     GiveLeak1Item 45334
+	     Warp 0,30110,15,30
+	     
+##■检查烛台时间1
+block Item 45331 == 1 && ItemCreateTime 45331 > 5
+  	 KillItem 45331
+  	 GiveLeak1Item 45332
+  	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间2
+block Item 45330 == 1 && ItemCreateTime 45330 > 10
+	 KillItem 45330
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间3
+block Item 45330 == 1 && ItemCreateTime 45330 > 5
+	 KillItem 45330
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间4
+block Item 45329 == 1 && ItemCreateTime 45329 > 15
+	 KillItem 45329
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间5
+block Item 45329 == 1 && ItemCreateTime 45329 > 10
+	 KillItem 45329
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间6
+block Item 45329 == 1 && ItemCreateTime 45329 > 5
+	 KillItem 45329
+	 GiveLeak1Item 45330
+	 ##1050678	\n\n\n\n@c比赛将在10分钟以内结束！
+         EndWindow 1050678
+##■检查烛台时间8
+block Item 45329 == 1 && ItemCreateTime 45329 <= 5 && Item 45336 == 1
+	 ##1050808	\n\n你能在时间内完成所有问答，实在太强了！\n\n这个礼物请你收下！
+         Window 1050808,OK
+             Window_OK Item 45329 == 1 && Item 45336 == 1
+             	 KillItem 45329
+             	 KillItem 45336
+             	 GiveLeak1Item (45333%1$1,45334%1$5)
+             	 ##1050809	\n\n\n\n这可是之前那位主考官莫罗依所亲手制作的，慢慢享用吧！
+   	         Window 1050809,OK
+   	             Window_OK
+   	             Warp 0,30110,15,30
+             	 
+##■检查烛台时间9
+block Item 45330 == 1 && ItemCreateTime 45330 <= 5 && Item 45336 == 1
+	 ##1050808	\n\n你能在时间内完成所有问答，实在太强了！\n\n这个礼物请你收下！
+         Window 1050808,OK
+             Window_OK Item 45330 == 1 && Item 45336 == 1
+             	 KillItem 45330
+             	 KillItem 45336
+             	 GiveLeak1Item (45333%1$1,45334%1$5)
+             	 ##1050809	\n\n\n\n这可是之前那位主考官莫罗依所亲手制作的，慢慢享用吧！
+   	         Window 1050809,OK
+   	             Window_OK
+   	             Warp 0,30110,15,30
+##■检查烛台时间10
+block Item 45331 == 1 && ItemCreateTime 45331 <= 5 && Item 45336 == 1
+	 ##1050808	\n\n你能在时间内完成所有问答，实在太强了！\n\n这个礼物请你收下！
+         Window 1050808,OK
+             Window_OK Item 45331 == 1 && Item 45336 == 1
+             	 KillItem 45331
+             	 KillItem 45336
+             	 GiveLeak1Item (45333%1$1,45334%1$5)
+             	 ##1050809	\n\n\n\n这可是之前那位主考官莫罗依所亲手制作的，慢慢享用吧！
+   	         Window 1050809,OK
+   	             Window_OK
+   	             Warp 0,30110,15,30
+block 
+	 EndWindow 1053059	## \n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1   	             

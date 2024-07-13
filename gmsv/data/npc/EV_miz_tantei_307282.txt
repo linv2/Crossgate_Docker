@@ -1,0 +1,30 @@
+#茧樱弁巨旦玄“枆?
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+##########﹛ENDFLG 73 o?﹛﹛NOWFLG 74 o?﹛ ENDFLG 74 o?﹛＞凶凶仁＝﹛#######
+block endevent73 == 1 && nowevent74 == 1 && endevent74 == 1 && strcmpchat == 206723
+	playse 208,1,1
+	Window 206617,OK
+	Window_OK
+	leavegroup
+	endevent73 = 0
+	nowevent74 = 0
+	endevent74 = 0
+	Warp 0,33269,12,9
+
+##########﹛ENDFLG 73 o?﹛NOWFLG 74 o?﹛ ENDFLG 74 o?﹛＞五仁＝﹛#######
+block endevent73 == 1 && nowevent74 == 1 && endevent74 == 1 && strcmpchat == 206721
+
+	EndWindow 206616,OK
+
+###########﹛＞心月＝﹛##############
+block strcmpchat == 206720
+
+	EndWindow 206615,OK
+
+###########﹛窒手卅仄﹛##############
+block 
+
+	EndWindow 206614,OK
+

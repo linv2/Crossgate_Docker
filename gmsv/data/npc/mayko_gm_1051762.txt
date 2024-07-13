@@ -1,0 +1,46 @@
+####2000金币VIP	mayko_gm_1051762.txt
+
+####2000枚金币兑换商　　40844
+
+block PetSpace == 0 
+	 EndWindow 12123
+	 ##12123	\n\n我想给你宠物，可是你的宠物栏已经满了。\n等你清出空间后再来一次吧！	8
+block Item 40844 >= 2000
+	 Window 1055040,YES,NO  ##1055040	\n\n　　　　您现在有2000金币，\n　　　　要兑换沉默之龙诺利吗？	1
+
+	 Window_YES Item 40844>=2000 && PetSpace > 0 
+	 KillItem 40844,2000
+	 #GiveLeak1Item 47587,1
+	 GivePet 103323
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 
+	 ##
+	 Window_NO
+	 Window 1055041,YES,NO  ##\n\n\n@c要兑换盲目之龙艾汀吗？	1
+	 ##12123	\n\n我想给你宠物，可是你的宠物栏已经满了。\n等你清出空间后再来一次吧！	8
+	 Window_YES Item 40844>=2000 && PetSpace > 0 
+	 KillItem 40844,2000
+	 GivePet 103324
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 	
+	 ##
+	 Window_NO
+	 Window 1055042,YES,NO  ##要兑换失翼之龙杜瓦吗？
+	 Window_YES Item 40844>=2000 && PetSpace > 0 
+	 KillItem 40844,2000
+	 GivePet 103325
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 	
+	 Window_NO
+	 EndWindow 1109723 
+block Item 40844 > 0 
+	 EndWindow 1055068				
+block 
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 EndWindow 1109723
+	 							 	 

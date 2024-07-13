@@ -1,0 +1,52 @@
+#﹛戽木厄蕨及?辉﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛母件斥亦件尺?壬允牁谛及摒
+
+###﹛奶乩伉件弘毛儅匀化中月桦宁
+
+block Item_603000 >= 1
+	EndWindow 3200454
+		#\n\n﹛云斪反竣卞じ匀化仁木凶井及丰＿﹝\n﹛孔予﹜孔予﹜孔予﹜孔予＿＿﹝
+
+
+###﹛由□泛奴□毛赚氏匹中月桦宁
+
+block Group >= 2
+	EndWindow 3200455
+		#\n\n﹛卞亢支井分及丰﹜丹日支引仄中及丰＿﹝\n﹛歹仄及挃卞手﹜樯反＿＿﹝
+
+
+###﹛签卩匹狪仄井仃凶桦宁
+
+block
+	Window 3200456,YES,NO
+		#\n\n﹛中﹜腾凶凶凶凶凶永″﹛儅炕及慑竣互＿﹝\n﹛允引氏互﹜澎毛躯仄化仁木氏井〝
+
+		Window_YES Group < 2 && Item_603000 == 0
+			ShapeNext 14578
+			Window 3200457,OK
+		#\n\n﹛云云﹜窒午褪濠卅永″\n﹛云蟆今氏卅日﹜伀毛踞仃化仁木月卞啜中卅中﹝\n﹛公曰扎永″″
+
+				Window_OK Group < 2
+					Warp 0,59715,245,123
+
+				Window_OK
+					EndWindow 3200458
+		#\n\n﹛＿午合匀凶互﹜谛互喂尹凶及匹霜木氏﹝\n﹛酸ゴ拑ゴ元扎﹝
+
+		Window_YES Group < 2
+			EndWindow 3200459
+		#\n\n﹛云支﹜云厄仄卞反域蘸踞仃日木化中凶卅﹝\n﹛⑺元樊卞き蘸手﹜午中丹及反竣互娄仃月﹝\n﹛仄壬日仁菱氏匹中木壬怂月元扎欠丹﹝\n﹛丐曰互午丹﹝
+
+		Window_YES
+			EndWindow 3200460
+		#\n\n﹛丹□戈﹜伀及葭卞踞仃毛霜欠丹午合丹凶互﹜\n﹛域蘸卞ㄡ谛动晓反拑咥元扎﹝丐五日户方丹﹝
+
+		Window_NO
+			EndWindow 3200461
+		#\n\n﹛谛树手目永正弁伊手卅中壑及酦分卅﹝\n﹛白件永″﹛中中方﹜夫午曰匹窖月歹中﹝\n﹛升丹六移炕卅氏分井日﹝
+
+
+EndBlock
+
+

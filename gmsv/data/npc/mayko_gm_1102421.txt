@@ -1,0 +1,42 @@
+#40882
+#40883
+#40884
+#11379	\n\n哼！那就算了！	8
+#1109786	\n\n\n　　　我是风之使者小恋，\n　　　有召唤风之妖精的能力。	1
+#1109787	\n\n\n　　　如果想召唤风之妖精，\n　　　需要有精灵羽纱与精灵之杖。	1
+#1109788	\n\n\n　　　然后我在以花妖之蜜引诱，\n　　　就可以召唤风之妖精。	1
+#1109781	\n\n\n　　　你现在有精灵羽纱、精灵之杖还有花妖之蜜，\n　　　要召唤风之妖精吗？	1
+#1109782	\n\n\n@c你的东西怎么不见了。	1
+#1109783	\n\n\n@c开始召唤，别走开喔。	1
+#1109784	\n\n\n@c索索…夫夫…索夫…特特…斯斯…达达…………	1
+#1109785	\n\n\n@c妖精召唤出来啰。	1
+
+block Item 40882 >= 1 && Item 40883 >= 1 && Item 40884 >= 1 
+	 Window 1109786,NEXT
+	 Window 1109781,YES,NO
+	 Window_NO
+	 EndWindow 11379
+	 Window_YES PetSpace < 1
+	 EndWindow 1109551
+	
+	 Window_YES Item 40882 >= 1 && Item 40883 >= 1 && Item 40884 >= 1 
+	 	 Window 1109783,NEXT
+	 	 Window 1109784,OK
+	 	 Window_OK Item 40882 >= 1 && Item 40883 >= 1 && Item 40884 >= 1 
+	 	 KillItem 40882,1
+	 	 KillItem 40883,1
+	 	 KillItem 40884,1
+	  	 GivePet 41240
+	 	 EndWindow 1109785
+	 	 
+	 	 Window_OK 
+	 	 EndWindow 1109782
+		
+	 Window_YES 
+	 EndWindow 1109782
+
+block
+	 Window 1109786,NEXT
+	 Window 1109787,NEXT
+	 EndWindow 1109788
+	

@@ -1,0 +1,11 @@
+#¹ÏÊÐÐþÆ½¼°?¥Î
+
+block Floor == 33000 && Xpos >= 534 && Xpos <= 566 && Ypos >= 413 && Ypos <= 443
+	Window 22252,Next
+	Window 22253,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,37008,36,33
+
+block
+			EndWindow 22254,OK

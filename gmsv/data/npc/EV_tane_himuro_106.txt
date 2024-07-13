@@ -1,0 +1,68 @@
+
+block
+
+
+
+
+
+
+			if LocalCount8 == 5
+
+				LocalCount8 = random 2,0
+
+				if LocalCount8 == 1
+
+
+
+					LocalCount8 = 5
+
+
+
+#					EndWindow "\n\n﹛杴及蟆及陶卞丐中化月Ⅱ楷互\n﹛樯及伄撮卞骚元化月氏分方﹝"
+					EndWindow 3006904
+
+
+
+				else
+
+					LocalCount8 = 5
+					
+
+#					EndWindow "\n\n﹛Ⅱ楷及崦及伄撮卞\n﹛樯及忡绣芢湛互侹切化月仃升\n﹛悸歞卞钒仃切扎渣卅中方﹝"
+					EndWindow 3006905
+
+
+
+				endif
+
+
+
+			else
+
+
+				LocalCount8 = 2
+
+#				Window "\n\n﹛云支仇氏卅质卞\n﹛钟仄中﹝",next
+				Window 3006906,next
+
+
+#				EndWindow "\n\n﹛丐氏凶手伄撮泞茧腹井友〝"
+				EndWindow 3006907
+
+
+
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+###########©xÖÏÊÖØ¦ØÆ©x##############
+
+
+block globalFlag36 == 1 && globalFlag35 == 1 && Xpos == 3 && Ypos == 10
+
+	warp 0,59500,244,76
+
+
+block globalFlag35 == 1 && Xpos == 3 && Ypos == 10 && globalFlag10 == 1
+
+	LeaveGroup
+	warp 0,59714,131,62
+
+
+block Xpos == 3 && Ypos == 10
+
+	warp 0,59500,244,76
+
+
+
+
+
+block Xpos >= 5
+
+		globalFlag10 = 1
+
+
+
+			LeaveGroup
+
+
+
+
+block Xpos >= 0 && Ypos >= 0
+
+		globalFlag10 = 1
+
+
+
+

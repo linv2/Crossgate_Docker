@@ -1,0 +1,56 @@
+#
+#栽培木	mayko_item_47632.txt	
+#花苗47629
+#栽培木47632
+#607736	新芽之心
+#青色之花	mayko_item_47635.txt
+#######################################
+#呿?涩烂#
+block Item 47629>= 1  && Item 47632>= 1 
+
+	 Window 1054928,YES,NO
+	 Window_YES Item 47629>= 1  && Item 47632>= 1 
+
+	 KillItem 47629,1
+	 KillItem 47632,1
+	
+	 GiveLeak1Item 47635,1	 
+	 Endblock
+	 	 
+	 Window_NO
+	 	 Window 1054929,YES,NO
+		 Window_YES Item 47632>0
+		 KillItem 47632,1
+		 GiveLeak1Item 607736,1	
+		 Endblock
+		 Window_YES
+		 Window_NO
+		 Endblock	 	 
+		 
+	 Window_YES Item 47629>= 1  && Item 47632>= 1 
+
+	 KillItem 47629,1
+	 KillItem 47632,1
+	
+	 GiveLeak1Item 47635,1	 
+	 Endblock
+	 Window_YES
+	 	 Window 1054929,YES,NO
+		 Window_YES Item 47632>0
+		 KillItem 47632,1
+		 GiveLeak1Item 607736,1	
+		 Endblock
+		 Window_YES
+		 Window_NO
+		 Endblock
+
+
+block 
+ 	 Window 1054929,YES,NO
+	 Window_YES Item 47632>0
+	 KillItem 47632,1
+	 GiveLeak1Item 607736,1	
+	 Endblock
+	 Window_YES
+	 Window_NO
+	 Endblock

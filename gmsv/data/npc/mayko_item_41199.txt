@@ -1,0 +1,57 @@
+#1111570	先到里谢里雅堡一楼的厨房(103,21)找料理长米其巴拿水果蕃茄       
+#1111571	拿着水果蕃茄到伊尔村(682,343)的巴侬的家(42,72)跟伊尔村的祭司换取匆忙写下的信                                                 
+#1111572	然后到法兰城的竞技场(123,161)的中央广场找新嫁娘艾莉佳(51,13)换取流行的项链                                                   
+#1111573	再到法兰城的科特利亚酒吧(219,136)找服务生春美换取自豪的食谱，
+#1111574	然后和酒吧的主人说话到拿厨师推荐函。                             
+#1111575	拿着推荐函到伊尔村的旧金山酒店(32,65)找厨师印普德(15,4)说话选择就职即可   
+
+block item 18131 >0
+	window 1111575,next
+	window 1111688,yes,no
+	window_yes 
+	warp 0,2002,15,5
+	leavegroup 
+	Window_no
+	endblock
+	
+block item 18159 >0
+	window 1111574,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1101,22,13
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 18160 >0
+	window 1111573,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1101,17,13
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 18161 >0
+	window 1111572,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1401,51,14
+	 leavegroup 
+	 Window_no
+	 endblock
+
+block item 18162 >0
+	window 1111571,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,2014,8,6
+	 leavegroup 
+	 Window_no
+	 endblock
+block 
+	window 1111570,next
+	window 1111688,yes,no
+	window_yes 
+	warp 0,1502,8,7
+	leavegroup 
+	Window_no
+	endblock

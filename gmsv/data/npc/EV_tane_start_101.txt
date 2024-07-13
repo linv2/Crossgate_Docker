@@ -1,0 +1,45 @@
+
+block Item 600004 >= 1
+
+	endwindow 3203292
+
+		#\n\n﹛朹湛反母皮伙弁伉永弁仄化\n﹛隶?仄卅仃木壬\n﹛泙卞峏凶厄冗﹝
+
+
+block ItemSpace < 1
+
+	endwindow 3203293
+
+		#\n\n﹛儅切坁互中匀天中及方丹分卅﹝
+
+block Group >= 2
+
+	endwindow 3203294
+
+		#\n\n﹛卩曰匹仇中﹝
+
+
+block Group == 1
+
+
+	window 3203295,ok
+
+		#\n\n﹛歹木反痿毛潮月樊﹝\n﹛公卅凶及恘毛魂今六化枃云丹″
+
+	window_ok Group >= 2
+
+		endwindow 3203296
+
+		#\n\n﹛卩曰匹仇中﹝
+
+
+	window_ok
+	
+		Encount 3|||0|||||0|305265|||||||||
+
+
+
+
+
+
+

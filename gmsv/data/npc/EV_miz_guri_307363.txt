@@ -1,0 +1,17 @@
+#庄趸弘伉白巧件忯凯弁巨旦玄“玉弁正□
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block nowevent83 == 1
+
+	Window 206951,OK
+	Window_OK
+	leavegroup
+	Warp 0,43100,172,186
+
+
+block
+
+	Window 206949,NEXT
+	EndWindow 206950,OK

@@ -1,0 +1,31 @@
+##酒吧房间内
+#衣柜
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+#■ 有手稿 或 沾湿的手稿
+block Item 40307 >= 1 || Item 40308 >= 1
+	 ##1102223	\n\n\n\n@c里面除了几件衣服外，空无一物。	
+	 EndWindow 1102223
+	 
+#■ 有手电筒
+block Item 40302 >= 1
+	 ##1102224	\n\n\n  用手电筒仔细检查，发现衣柜里面有夹层！\n\n  把他敲开看看好了！	
+	 Window 1102224,NEXT
+	 ##1102225	\n\n\n  找到了一份用信封装好的文件，不知道是谁写的手  稿，没有署名。	1
+	 Window 1102225,OK 
+	 	 Window_OK ItemSpace == 0
+		 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 	 	 EndWindow 1100001
+	 	 Window_OK ItemSpace >= 1
+	 	 	 GiveLeak1Item (40307%1$1)
+	 	 	 
+#■ 一般	 
+block
+	 ##1102223	\n\n\n\n@c里面除了几件衣服外，空无一物。	
+	 EndWindow 1102223

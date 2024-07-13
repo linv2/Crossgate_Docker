@@ -1,0 +1,20 @@
+#1110475	\n\n\n　　　　家中的靴子突然爆走了，\n　　　　帮我抓一下他们吧。	1
+#1110476	\n\n\n\n@c您可以把鞋带拿给我作证明。	1
+#1110477	\n\n\n\n@c有两条一样的鞋带，我会送您一双靴子。	1
+#1110478	\n\n\n　　　　您真的拿了两条鞋带了呀！！\n　　　　这双靴子就依约送给您。	1
+
+
+block Item 603220>1 && ItemSpace <1
+	 EndWindow 1100001	 
+block Item 603220>1
+	 Window 1110478,OK
+	 Window_OK Item 603220>1 && ItemSpace <1
+	 EndWindow 1100001
+	 Window_OK Item 603220>1 
+	 KillItem 603220,2
+	 GiveLeak1Item 41050,1
+	 Endblock
+block 
+	 Window 1110475,NEXT
+	 Window 1110476,NEXT
+	 EndWindow 1110477 

@@ -1,0 +1,61 @@
+##### 鲁得
+	 
+block EndEvent 151 == 1	 
+##可以搭船时的对话
+ 	Window 1102383,YES,NO 	
+		Window_NO
+ 		EndWindow 1102385
+ 		Window_Yes Level < 40
+	 	EndWindow 1102462
+ 		Window_YES Gold >= 1000
+ 		AddGold -1000
+ 		LeaveGroup
+		Warp 0,40004,19,55
+		EndWindow 1102396
+
+ 		Window_YES
+ 		EndWindow 3 	
+##制作过程中鲁德提示段 	
+ block Item 40716 >0 
+	 EndWindow 1102460 	
+ block Item 40717 >0 
+	 EndWindow 1102461  
+ block Item 40718 >0 
+	 EndWindow 1102461  
+ block Item 40719 >0  
+	 EndWindow 1102461  
+ block Item 40720 >0  
+	 EndWindow 1102461  
+ block Item 40721 >0 
+	 EndWindow 1102461 
+ block Item 40722 >0 
+	 EndWindow 1102461  
+ block Item 40723 >0  
+	 EndWindow 1102461  
+ block Item 40724 >0 
+	 EndWindow 1102461   
+ block Item 40725 >0 
+	 EndWindow 1102461  
+ block Item 40727 >0 
+	 EndWindow 1102461 
+##鲁得的对话段	 
+ block 
+ 	 Window 1102386,NEXT
+ 	 Window 1102387,NEXT
+ 	 Window 1102388,NEXT
+ 	 Window 1102389,NEXT
+ 	 Window 1102390,YES,NO 	
+ 	 	 Window_NO
+ 		 EndWindow 1102393
+ 		 Window_YES Gold >= 100 && ItemSpace >= 1
+
+ 		 AddGold -100
+ 		 GiveLeak1Item 40716,1
+ 		 Window 1102391,NEXT
+ 		 EndWindow 1102392
+ 		 
+ 		 Window_YES Gold >= 100
+ 		 EndWindow 1100001
+ 		 
+ 		 Window_YES
+ 		 EndWindow 3 	

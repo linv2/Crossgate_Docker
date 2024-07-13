@@ -1,0 +1,12 @@
+#小黑 摩顿村海村克瑞 mayko_gm_1102624.txt
+#\n\n\n\n@c不晓得这间房子客人感觉怎么样！！
+#\n\n\n\n@c带客人看屋也是很累的！！
+
+block item 41129>0
+	 endwindow 1110693
+block item 41128>0
+	 endwindow 1110693
+block item 41127>0
+	 endwindow 1110693
+block 
+	 endwindow 1110682

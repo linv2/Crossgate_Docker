@@ -1,0 +1,13 @@
+###### 侍者 ######
+block Item 45436 == 1
+	 ##1050926	\n\n\n\n@c要到舞台上去吗？	1
+	 Window 1050926,YES,NO
+	 	 Window_YES Item 45436 == 1
+	 	 	 Warp 0,32640,29,5
+	 	 	 
+	 	 Window_NO
+	 
+##一般
+block
+	 ##1050927	\n\n\n\n@c这是主办人专用舞台喔！	1
+	 EndWindow 1050927

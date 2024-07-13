@@ -1,0 +1,23 @@
+#mayko_gm_1102653.txt
+#1110765	\n\n\n　　　　朱雀大人不知为何火气大，\n　　　　我好怕它引起火山爆发	1
+#1110766	\n\n\n\n@c拿点茶叶给朱雀大人吃就好了。	1
+#1110767	\n\n\n\n@c这村子可以用伐木技巧采到茶叶喔！！	1
+#1110768	\n\n\n\n@c你要茶叶给朱雀大人吗！！	1
+#1110769	\n\n\n\n@c麻烦你拿茶叶给朱雀大人吃喔！！	1
+
+
+block item 12901 >0
+	Window 1110765,next
+	Window 1110768,yes,no
+	Window_yes
+	Window 1110769,ok
+	Window_ok
+	warp 0,32160,25,28
+	endblock
+	Window_no
+	Endwindow 1110767
+block
+	 Window 1110765,next
+	 Window 1110766,ok
+	 Window_no
+	 Endwindow 1110767

@@ -1,0 +1,16 @@
+
+
+block Xpos == 190 && Ypos == 69
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+
+block Xpos == 189 && Ypos == 70
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+

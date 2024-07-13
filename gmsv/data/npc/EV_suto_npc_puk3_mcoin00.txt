@@ -1,0 +1,642 @@
+#Æ¹¼þµ©Õý¡õÎìÄÌ¼þ©xÌÏˆV¸ú¾§???
+#
+#
+#
+#
+#µ©ÐþËüÕýÖ­ØÀ
+
+
+
+
+
+
+
+
+
+#ÆËÄá°×¤¸ÈÛ¼°k†AÃ«ÏôÂÅØÆÐ×èëÄþ©z
+
+Block StrCmpChat == 3010000
+
+	if ItemSpace >= 1
+
+		Window 3206144,Yes,No
+
+		#\n\n©x¶ò©y£¾ÆËÄá°×¤¸ÈÛ¼°k†A£½ÊÐ©zØ¤Ä¾·´fÖÐÔý©z\n©xî¾ÍÍˆ^Æ¥Ø¤ÔÈ»¯î¾ÍÍˆ^Æ¥·´Ø¦ÄÌ£ß£ß©z\n©xÇÐØ¦ÐÄ±å©y¸ú¾§ÎìÄÌ¼þÐÑ·´\n©x1?Ã«100ßÏ¾®5?Ã«20ßÏ\n©xÊÖØÆÈÊ·´10?Ã«10ßÏÄ¸©z\n©x¸ú¾§ØÆÐ×ØêÄ¾ÈÉ¹«Ä¾·ÖØê¼°ÐÑÃ«åÃÀ²ÔÊÔÂÊÏ·Ö¹Ï©z
+	
+		Window_Yes ItemSpace >= 1 && Leak1Item_620032 >= 100
+		
+				Window 3206145,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+				
+					Window_OK ItemSpace >= 1 && Leak1Item_620032 >= 100
+					
+						KillLeak1Item 620032,100
+						GiveItem 621000,1
+						
+						EndBlock
+						
+					Window_OK Leak1Item_620032 <= 99
+					
+						GotoF case10
+						
+					Window_OK ItemSpace < 1
+					
+						EndWindow 3206146
+
+		#\n\n©xÊ§ÄÌ·ºØ©„ÆÃ«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+		
+		
+						EndBlock
+		
+		Window_Yes ItemSpace >= 1 && Leak1Item_620033 >= 20
+		
+				Window 3206147,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+				
+					Window_OK ItemSpace >= 1 && Leak1Item_620033 >= 20
+					
+						KillLeak1Item 620033,20
+						GiveItem 621000,1
+						
+						EndBlock
+						
+					Window_OK Leak1Item_620033 <= 19
+					
+						GotoF case10
+						
+					Window_OK ItemSpace < 1
+					
+						EndWindow 3206148
+
+		#\n\n©xÊ§ÄÌ·ºØ©„ÆÃ«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+		
+						
+						EndBlock
+		
+		Window_Yes ItemSpace >= 1 && Leak1Item_620034 >= 10
+		
+				Window 3206149,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+				
+					Window_OK ItemSpace >= 1 && Leak1Item_620034 >= 10
+					
+						KillLeak1Item 620034,10
+						GiveItem 621000,1
+						
+						EndBlock
+						
+					Window_OK Leak1Item_620034 <= 9
+					
+						GotoF case10
+						
+					Window_OK ItemSpace < 1
+					
+						EndWindow 3206150
+
+		#\n\n©xÊ§ÄÌ·ºØ©„ÆÃ«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+						
+						
+						EndBlock
+						
+		Window_Yes ItemSpace < 1
+		
+			GotoF case12
+			
+		Window_Yes
+		
+			GotoF case14
+
+		
+		Window_No
+		
+			GotoF case13
+			
+	else
+		
+		EndWindow 3206151
+
+		#\n\n©xÊ§ÄÌ·ºØ©„ÆÃ«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+		
+	endif
+
+
+
+
+
+#ó¦ªI¼°Á¥?Ã«ÏôÂÅØÆÐ×èëÄþ
+
+Block StrCmpChat == 3010002
+
+	if ItemSpace >= 1
+	
+		Window 3206152,Yes,No
+
+		#\n\n©x¶ò£¾ó¦ªI¼°Á¥?£½ÊÐ©zàµÔªÈÕÄ¾Ð×ÃñÊÐ·Â©z\n©xÔÆó¡·´ÓúÐÛ¼°ÃñÊÐ·ÂÃ«©y\n©xÅì±å¤¸Ä¾ÔÂ³ðÎç±åØ¦ÔÂ¹Ï©z\n©xÇÐØ¦ÐÄ±å©y¸ú¾§ÎìÄÌ¼þÐÑ·´\n©x10?Ã«500ßÏ¾®1000?Ã«5ßÏÄ¸©z\n©xÒýØê»¯Ö§ÈÕÊÏÔý©z\n©x¸ú¾§ØÆÐ×ØêÄ¾ÈÉ¹«Ä¾·ÖØê¼°ÐÑÃ«åÃÀ²ÔÊÔÂÊÏ·Ö¹Ï©z
+	
+		Window_Yes ItemSpace >= 1 && Leak1Item_620034 >= 500
+		
+				Window 3206153,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+				
+					Window_OK ItemSpace >= 1 && Leak1Item_620034 >= 500
+					
+						KillLeak1Item 620034,500
+						GiveItem 607743,1
+						
+						EndBlock
+						
+					Window_OK Leak1Item_620034 <= 499
+					
+						GotoF case10
+						
+					Window_OK ItemSpace < 1
+					
+						EndWindow 3206154
+
+		#\n\n©xÊ§ÄÌ·ºØ©„ÆÃ«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+						
+						
+						
+		Window_Yes ItemSpace >= 1 && Leak1Item_621006 >= 5
+		
+				Window 3206155,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+				
+					Window_OK ItemSpace >= 1 && Leak1Item_621006 >= 5
+					
+						KillLeak1Item 621006,5
+						GiveItem 607743,1
+						
+						EndBlock
+						
+					Window_OK Leak1Item_620034 <= 4
+					
+						GotoF case10
+						
+					Window_OK ItemSpace < 1
+					
+						EndWindow 3206156
+
+		#\n\n©xÊ§ÄÌ·ºØ©„ÆÃ«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+						
+						
+						
+		Window_Yes ItemSpace < 1 
+		
+			GotoF case12
+			
+		Window_Yes
+			
+			GotoF case14
+		
+		Window_No
+		
+			GotoF case13
+			
+	else
+		
+		EndWindow 3206157
+
+		#\n\n©xÊ§ÄÌ·ºØ©„ÆÃ«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+		
+	endif
+
+
+
+
+#÷©žC¼°Æ¹¼þµ©Õý¡õÃ«ÏôÂÅØÆÐ×èëÄþ
+
+Block StrCmpChat == 3010003
+	
+	
+	if PetSpace >= 1
+		
+		Window 3206158,Yes,No
+
+		#\n\n©x¶ò©y¶òØÆ©y÷©žC¼°Æ¹¼þµ©Õý¡õ»¥»ÃØÆÖÐ¼°ÊÐ©z\n©x£ß£ßµ¤¸ê©y´õ¾®ÔÈÕý©z\n©xÇÐØ¦ÐÄ±å¸ú¾§ÎìÄÌ¼þÐÑ·´\n©x1000?Ã«10ßÏ¾®1Ûê?Ã«1ßÏÄ¸©z\n©xòë»§ÈÕÄ¾ÔÂ¾®¹Ï©z\n©x¸ú¾§ØÆÐ×ØêÄ¾ÈÉ¹«Ä¾·ÖØê¼°ÐÑÃ«åÃÀ²ÔÊÔÂÊÏ·Ö¹Ï©z
+		
+		
+		Window_Yes PetSpace >=1 && Leak1Item_620035 >= 1
+		
+			Window 3206159,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+			
+				Window_OK PetSpace >=1 && Leak1Item_620035 >= 1
+				
+					KillLeak1Item 620035,1
+					GivePet 312100
+					
+					EndBlock
+					
+					Window_OK Leak1Item_620035 == 0
+					
+						GotoF case10
+						
+					Window_OK PetSpace < 1
+					
+						EndWindow 3206160
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+						
+						
+			EndBlock
+						
+		Window_Yes PetSpace >=1 && Leak1Item_621006 >= 10
+		
+			Window 3206161,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+			
+				Window_OK PetSpace >=1 && Leak1Item_621006 >= 10
+				
+					KillLeak1Item 621006,10
+					GivePet 312100
+					
+					EndBlock
+					
+					Window_OK Leak1Item_620035 <= 9
+					
+						GotoF case10
+						
+					Window_OK PetSpace < 1
+					
+						EndWindow 3206162
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+						
+						
+				EndBlock
+						
+		Window_Yes PetSpace < 1
+		
+			EndWindow 3206163
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+			
+		Window_Yes
+			
+			GotoF case14
+		
+		Window_No
+		
+			GotoF case13
+			
+	else
+		
+		EndWindow 3206164
+
+		#\n\n©xÊ¸ÓÀÐþ¼°èëô÷Ã«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+		
+	endif
+	
+	
+	
+	
+
+#ÆêÑÃ¼°Æ¹¼þµ©Õý¡õÃ«ÏôÂÅØÆÐ×èëÄþ
+
+Block StrCmpChat == 3010004
+
+
+	if PetSpace >= 1
+	
+		Window 3206165,Yes,No
+
+		#\n\n©x¹«µ¤¾®©y¹«µ¤¾®©yÆêÑÃ¼°Æ¹¼þµ©Õý¡õÊÐ©z\n©x³ðÖÐ¹´·´ÆêÑÃ¼°À„ÖîÆ¥×ÛÈÕÄ¾Ð×ÈÕØÆÖÐÔý©z\n©xÇÐØ¦ÐÄ±å¸ú¾§ÎìÄÌ¼þÐÑ·´©y\n©x1Ûê?Ã«10ßÏ¾®10Ûê?Ã«1ßÏÄ¸©z\n©xòë»§ÔÂ¼°ÀåŽßÄ¸©z\n©x¸ú¾§ØÆÐ×ØêÄ¾ÈÉåÃÀ²ÔÊÔÂÊÏ·Ö¹Ï©z
+	
+		
+				Window_Yes PetSpace >= 1 && Leak1Item_620036 >= 1
+		
+					Window 3206166,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+			
+						Window_OK PetSpace >= 1 && Leak1Item_620036 >= 1
+				
+							KillLeak1Item 620036,1
+							GivePet 309000
+					
+							EndBlock
+					
+							Window_OK Leak1Item_620036 == 0
+						
+								GotoF case10
+						
+							Window_OK PetSpace < 1
+					
+								EndWindow 3206167
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+						
+						
+				EndBlock
+#####################################1Ûê©j620035©k10ßÏ
+				Window_Yes PetSpace >= 1 && Leak1Item_620035 >= 10
+		
+					Window 3206168,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+			
+						Window_OK PetSpace >= 1 && Leak1Item_620035 >= 10
+				
+							KillLeak1Item 620035,10
+							GivePet 309000
+					
+							EndBlock
+					
+							Window_OK Leak1Item_620035 <= 9
+						
+								GotoF case10
+						
+							Window_OK PetSpace < 1
+					
+								EndWindow 3206169
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+						
+						
+				EndBlock
+#####################################
+						
+				Window_Yes PetSpace < 1
+		
+						EndWindow 3206170
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+						
+				Window_Yes
+			
+						GotoF case14
+						
+				Window_No
+		
+						GotoF case13
+
+			
+	else
+		
+		EndWindow 3206171
+
+		#\n\n©xÊ¸ÓÀÐþ¼°èëô÷Ã«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+		
+
+	endif
+	
+	
+	
+	
+#çÖîÎ¼°Æ¹¼þµ©Õý¡õÃ«ÏôÂÅØÆÐ×èëÄþ
+	
+Block StrCmpChat == 3010005
+	
+	if PetSpace >= 1
+		
+		Window 3206172,Yes,No
+
+		#\n\n©xçÖîÎ¼°Æ¹¼þµ©Õý¡õ»¥‚\ØÆÖÐ¼°ÊÐ¨”\n©xØ¤Ô»ÔúØ¤©yçÖîÎÃ«ÉáÊ²ÊÏÄ¸©z\n©x»¥ÊÏÈÉÔÈ»¯È¦»¯ÔÂÊÏ·Ö¹Ï©z\n©xÇÐØ¦ÐÄ±å¸ú¾§ÎìÄÌ¼þÐÑ·´©y\n©x1Ûê?Ã«20ßÏ¾®10Ûê?Ã«2ßÏÄ¸©z\n©xòë»§ÈÕÄ¾ÔÂ¾®¹Ï©z\n©x¸ú¾§ØÆÐ×ØêÄ¾ÈÉ¹«Ä¾·ÖØê¼°ÐÑÃ«åÃÀ²ÔÊÔÂÊÏ·Ö¹Ï©z
+		
+		Window_Yes PetSpace >=1 && Leak1Item_620036 >= 2
+		
+			Window 3206173,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+			
+				Window_OK PetSpace >=1 && Leak1Item_620036 >= 2
+				
+					KillLeak1Item 620036,2
+					GivePet 309600
+					
+					EndBlock
+					Window_OK Leak1Item_620036 <= 1
+					
+						GotoF case10
+						
+					Window_OK PetSpace < 1
+					
+						EndWindow 3206174
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+					
+						
+						
+				EndBlock
+						
+#####################################1Ûê©j620035©k20ßÏ
+			Window_Yes PetSpace >= 1 && Leak1Item_620035 >= 20
+		
+					Window 3206175,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+			
+						Window_OK PetSpace >= 1 && Leak1Item_620035 >= 20
+				
+							KillLeak1Item 620035,20
+							GivePet 309600
+					
+							EndBlock
+					
+							Window_OK Leak1Item_620035 <= 19
+						
+								GotoF case10
+						
+							Window_OK PetSpace < 1
+					
+								EndWindow 3206176
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+						
+						
+				EndBlock
+#####################################
+						
+						
+		Window_Yes PetSpace < 1 
+		
+			EndWindow 3206177
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+			
+		Window_Yes
+			
+				GotoF case14
+		
+		Window_No
+		
+			GotoF case13
+			
+	else
+		
+		EndWindow 3206178
+
+		#\n\n©xÊ¸ÓÀÐþ¼°èëô÷Ã«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+		
+	endif
+	
+	
+	
+	
+	
+	
+	
+#ÈÃÍÍÔÂÆ¹¼þµ©Õý¡õÎçÏôÂÅ
+
+Block StrCmpChat == 3010007
+
+	if PetSpace >= 1
+
+			Window 3206179,Yes,No
+
+		#\n\n©x¿º½ï£ß£ß¶ò©y¶òØÆ©z…íñ²±åÈÃÍÍÔÂÆ¹¼þµ©Õý¡õÃ«\n©xÅì±å¤¸Ä¾ÔÂ¹´ÊÖÔ»ÊÐ©z\n©xÓòÎ­¾®´õÖÐÖÐÞ‚Æ¥©y\n©x³ðÖÐ¹´¼°…ën·´æÖÖÐÊÏÄ¸©z\n©x·Ö¾®ÈÕ£¾ÈÃÍÍÔÂ£½ÎçÖÐ´õÄ¾»¯ÖÐ»ï©z\n©x¸ú¾§ØÆÐ×ØêÄ¾ÈÉ©y\n©x1Ûê?Ã«30ßÏ¾®10Ûê?Ã«3ßÏåÃÀ²ÔÊÔÂÊÏÄ¸©z
+		
+			Window_Yes PetSpace >=1 && Leak1Item_620036 >= 3
+		
+			Window 3206180,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+			
+				Window_OK PetSpace >=1 && Leak1Item_620036 >= 3
+				
+					KillLeak1Item 620036,3
+					GivePet 310300
+					
+					EndBlock
+					Window_OK Leak1Item_620036 <= 2
+					
+						GotoF case10
+						
+					Window_OK PetSpace < 1
+					
+						EndWindow 3206181
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+					
+						
+						
+						EndBlock
+						
+#####################################1Ûê©j620035©k30ßÏ
+			Window_Yes PetSpace >= 1 && Leak1Item_620035 >= 30
+		
+					Window 3206182,OK
+
+		#\n\n©xÇÐÔúÊÏÎçƒ}ÔÈ»¯ÔÂ¹Ï©zÆ¥·´¸ú¾§Ä¸©z
+			
+						Window_OK PetSpace >= 1 && Leak1Item_620035 >= 30
+				
+							KillLeak1Item 620035,30
+							GivePet 310300
+					
+							EndBlock
+					
+							Window_OK Leak1Item_620035 <= 29
+						
+								GotoF case10
+						
+							Window_OK PetSpace < 1
+					
+								EndWindow 3206183
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+						
+						
+				EndBlock
+#####################################
+						
+						
+			Window_Yes PetSpace < 1
+		
+				EndWindow 3206184
+
+		#\n\n©xÊÏ©yÊ¸ÓÀÐþ»¥ÊÖ»¯Ø¦ÖÐÔý¨”
+
+			Window_Yes
+							GotoF case14
+
+
+			Window_No
+		
+				GotoF case13
+			
+	else
+		
+		EndWindow 3206185
+
+		#\n\n©xÊ¸ÓÀÐþ¼°èëô÷Ã«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+		
+	endif
+	
+	
+	
+#Æ¹¼þµ©Õý¡õÎìÄÌ¼þ¼°ÖÏÄ¾¾®Ã«¨à¹´Æ¥ÊÖô÷ƒ}¼°èëÄþ©z
+
+Block
+
+	Window 3206186,Next
+
+		#\n\n©x³ð³ð·´Æ¹¼þµ©Õý¡õÎìÄÌ¼þ¸ú¾§ô÷Ä¸©z\n©x»©GÆ¥·´Ø¤ÔÂ»¥©yÒýØ¤©y„\¼°»ï¡õÐþÆ¥·´©y\n©xØ¦¾®Ø¦¾®Åì±å¤¸ÈÕØ¦ÖÐÊÖ¼°ÊÖØ¤»ï©z
+
+	EndWindow 3206187
+
+		#\n\n©x¸ú¾§ÌÏˆV·´©yÔæ?Ã«Î­»¯ÈÊÒÁ©z\n©xè£ÒýÔÈÐ×ÈÕ\n©x\n©xÆËÄá°×¤¸ÈÛ¼°k†A\n©x\n©xÎçÖÐµ¤¿×µ¤±å‚\ØÆÖÐÌÏˆVÃ«ÍÉÔÈ»¯ÈÊÒÁ©z
+	
+	
+	
+#Æ¹¼þµ©Õý¡õÎìÄÌ¼þÃ«»_áNÆ¥ÛÕØÆÐ×èëÄþ©j¸¥¡õµ©¨à¨ß?©k
+
+Block
+
+	*case10*
+
+	EndWindow 3206188
+
+		#\n\n©xÒ´·´ÖÐØêÒýÁùÊÏº¥©z\n©xÎìÄÌ¼þ©yƒ}ÔÈ»¯Ø¦ÖÐÔªÔúØ¤©yØ¦ÖÐÆ¥ÔÊÊÐ©z
+	
+	
+	
+#Ó¬ÔÈÐ×èëÄþ¼°?É±©j¸¥¡õµ©¨à¨à?©k
+
+Block
+
+	*case11*
+	
+	EndWindow 3206189
+
+		#\n\n©x½ñÖÐÆ¥ÔÊÊÐ©zÒý©yÖÐ¹´Æ¥ÊÖ‚FÔÂ»¥·½Ç·ÆË©z
+	
+#Ê§ÄÌ·ºØ©»¥ÖÐÔÈÌìÖÐ¼°ÎçÎå©j¸¥¡õµ©¨à¨á?©k
+
+Block
+
+	*case12*
+	
+	EndWindow 3206190
+
+		#\n\n©xÊ§ÄÌ·ºØ©„ÆÃ«¸îâçÔÊÔÂ¼°·´ÀÃéÞÔªÔúØ¦ÖÐÊÐ¨”
+	
+#½÷´°Šq©j¸¥¡õµ©¨à¨â?©k
+
+Block
+
+	*case13*
+	
+	EndWindow 3206191
+
+		#\n\n©xÒý©yÐÑÃ«åÃÀ²ØÆÐ×ÈÕ©yÒýÐ×‚F¹Ï©z
+	
+	
+#Æ¹¼þµ©Õý¡õ»¥ÖÐÔÈÌìÖÐ¼°ÎçÎå©j¸¥¡õµ©14?©k
+
+Block
+
+	*case14*
+	
+	EndWindow 3206192
+
+		#\n\n©xÊÏ©yÐÑÃ«åÃÀ²ÔÊÔÂ»¥·½Ç·ÆË
+

@@ -1,0 +1,19 @@
+#úó§Æ???
+
+#????þ­??
+block NowEvent 111 == 1
+	EndWindow 22222,OK
+
+#????þ­?????????
+block NowEvent 112 == 1 && Item 16360 >= 1
+	Window 22223,Yes,No
+		Window_NO
+			EndWindow 22224,OK
+		Window_YES
+			Window 22225,OK
+				Window_OK
+					KillItemAll 16360
+					GiveItem 16361,1
+#????þ­??
+block NowEvent 112 == 1
+	EndWindow 22255,OK

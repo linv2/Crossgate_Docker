@@ -1,0 +1,8 @@
+#–Ž–}¼°Ê§·¸Å«¡õ¼þ
+
+block
+	Window 22972,Yes,No
+		Window_No
+		Window_Yes
+			Encount 2|0,43826,71,50||0|||||0|25053|||||||||
+

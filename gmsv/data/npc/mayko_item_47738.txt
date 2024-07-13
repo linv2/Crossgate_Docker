@@ -1,0 +1,17 @@
+#女神福袋	mayko_item_47738.txt
+#1747738	内含万用药袋一袋，铁牛A活力饮料6瓶，卡时小闹钟min一个。
+
+block ItemSpace < 3
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	  EndWindow 1100001
+block 
+	  Window 1055851,YES,NO
+	 #1055851	\n\n\n\n@c你要打开福袋吗？	1
+	  Window_YES
+	  KillItem 47738,1
+	  GiveLeak1Item 46423,1
+	  GiveLeak1Item 46413,6
+	  GiveLeak1Item 46775,1
+	  Window_NO
+	  endblock
+	 

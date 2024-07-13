@@ -1,0 +1,15 @@
+#Ä§ÎïÕÙ»½Æ¿	mayko_item_47748.txt
+	
+block Item 47748>0	
+	 Window 1055892,YES,NO
+	 Window_YES PetSpace != 0 && Item 47748 >0
+	 # Window 1110563,OK
+	  #Window_OK
+	  KillItem 47748,1
+	  GivePet (103334%39,103335%1,103336%60)
+
+	  endblock
+	  Window_YES PetSpace == 0
+	  EndWindow 21417
+	  Window_YES
+	  Window_NO

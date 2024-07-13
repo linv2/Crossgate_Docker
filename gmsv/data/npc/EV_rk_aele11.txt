@@ -1,0 +1,10 @@
+#
+#¥√Á∆€∆œ∑
+#
+
+block
+#\n\n\n\n@c©x – –”¿∑∫∆Ωπœ»”°ıƒÃ
+ Window 21298,Yes,No
+  Window_Yes
+   encount 2|0,15569,22,21||0|||||0|11011|||||||||
+  Window_NO

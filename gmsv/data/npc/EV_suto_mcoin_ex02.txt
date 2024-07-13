@@ -1,0 +1,60 @@
+#乒件旦正□戊奶件傀舰
+#母□旦今引
+#
+
+
+block petlevel_314910 >= 1
+
+	endwindow "\n\n﹛孔反反反﹝戊□石□﹝\n﹛白巧□旦及恘毛苇六尥仃化仁木月歹″\n﹛弘伊℅玄＿＿氏〝\n﹛引分云匀凶及井﹝\n﹛脱反侄仄中及分﹝\n﹛镀仁窖月及分卅﹝戊□石□﹝"
+	
+	
+
+
+
+block petlevel_308600 >= 1
+
+	window "\n\n﹛戊□石□＿＿丹厄孕〝\n﹛豢潜﹜公及旦奴伉亘□巨伙毛\n﹛窒质匹澎卞じ木凶〝\n﹛公及乒件旦正□反歹互甩仿市仿匹丐月﹝\n﹛戊□石□﹝\n﹛燮及厘爵卞方匀化﹜\n﹛垫杅襞木内午卅匀化云匀凶及分﹝",next
+	
+	window "\n\n﹛戊□石□﹝\n﹛豢潜﹜公及旦奴伉亘□巨伙毛欐六壬﹜\n﹛脱互白巧□旦及谊吽毛仄方丹﹝\n﹛戊□石□﹝\n﹛",next
+	
+	window "\n\n﹛孔﹜脱互坌褥毛\n﹛豢潜及赁启卞尥仃方丹午蜕丹及分﹝\n﹛拑狨﹜台幻升及恘反卅中互﹜\n﹛公木匹手﹜豢潜及方丹卅切匀吊仃卅\n﹛绣箕毛潮月卞反蜗坌匹丐欠丹﹝",next
+	
+	window "\n\n﹛今丐升丹允月〝\n﹛戊□石□﹝",yes,no
+	
+	
+		window_yes
+			
+			window "\n\n﹛公丹井﹜匹反谊吽毛″",ok
+			
+			
+		
+				window_ok petlevel_308600 >= 1
+					
+				killpetH 308600,1
+				givepet 307399
+				
+				
+				
+				window_ok
+				
+				
+				endwindow "\n\n﹛脱卞轾井匀化裂怃毛龚仁午反＿＿﹝\n﹛旦奴伉亘□巨伙卅冗﹜\n﹛窒质卞手云日厄匹反卅中井″" 
+					
+				
+
+		
+		
+		
+		window_no
+		
+		
+			endwindow "\n\n﹛公木互豢潜及啦合井＿＿戊□石□﹝"
+			
+			
+			
+			
+block
+
+	window "\n\n﹛戊□石□﹜豢潜﹜\n﹛脱互甩仿市仿凶月乒件旦正□毛\n﹛襞日厄井〝",next
+	
+	endwindow "\n\n﹛抩反旦奴伉亘□巨伙午蜕丹及分互＿＿﹝\n﹛戊□石□﹝"

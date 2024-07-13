@@ -1,0 +1,499 @@
+#
+#斥亘未永矢元中今氏
+#
+#############﹛R布伙丞﹛###############
+block Item 17747 >= 1 && Item 17748 >= 1 && Item 17749 >= 1 && Item 17750 >= 1 && petlevel 34 == 1
+#\n\n﹛云手仄欠豳笺互缭匀化云月及℅℅\n歹仄卞エ六化手日尹凶日﹜布伙丞毛荼瞻仄化支月互升丹元扎〝
+	Window 206694,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18918 >= 1 && Item 18919 >= 1 && Item 18920 >= 1 && petlevel 501 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 17747 >= 1 && Item 17748 >= 1 && Item 17749 >= 1 && Item 17750 >= 1 && petlevel 34 == 1
+	KillItem 17747,1
+	KillItem 17748,1
+	KillItem 17749,1
+	KillItem 17750,1
+	KillPetl 34,1
+	GivePet 2032
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+############## R旦仿奶丞 ##############
+block Item 18918 >= 1 && Item 18919 >= 1 && Item 18920 >= 1 && petlevel 501 == 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬旦仿奶丞毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15752,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18918 >= 1 && Item 18919 >= 1 && Item 18920 >= 1 && petlevel 501 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18918 >= 1 && Item 18919 >= 1 && Item 18920 >= 1 && petlevel 501 == 1
+	KillItem 18918,1
+	KillItem 18919,1
+	KillItem 18920,1
+	KillPetl 501,1
+	GivePet 2027
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+############## R伉扒□玉穴件 ##############
+block Item 18921 >= 1 && Item 18922 >= 1 && Item 18923 >= 1 && Item 18924 >= 1  && petlevel 701 == 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬伉扒□玉穴件毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15753,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18921 >= 1 && Item 18922 >= 1 && Item 18923 >= 1 && Item 18924 >= 1  && petlevel 701 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18921 >= 1 && Item 18922 >= 1 && Item 18923 >= 1 && Item 18924 >= 1  && petlevel 701 == 1
+	KillItem 18921,1
+	KillItem 18922,1
+	KillItem 18923,1
+	KillItem 18924,1
+	KillPetl 701,1
+	GivePet 2028
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+############## R疋弘立□田永玄 ##############
+block Item 18925 >= 1 && Item 18926 >= 1 && Item 18927 >= 1 && Item 18928 >= 1 && Item 18929 >= 1 && petlevel 243 == 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬疋弘立□田永玄毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15754,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18925 >= 1 && Item 18926 >= 1 && Item 18927 >= 1 && Item 18928 >= 1 && Item 18929 >= 1 && petlevel 243 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18925 >= 1 && Item 18926 >= 1 && Item 18927 >= 1 && Item 18928 >= 1 && Item 18929 >= 1 && petlevel 243 == 1
+	KillItem 18925,1
+	KillItem 18926,1
+	KillItem 18927,1
+	KillItem 18928,1
+	KillItem 18929,1
+	KillPetl 243,1
+	GivePet 2029
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+############## R犯奴弘打皮伉件 ##############
+block Item 18934 >= 1 && Item 18935 >= 1 && Item 18936 >= 1 && Item 18937 >= 1 && Item 18938 >= 1 && petlevel 804 == 1
+
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬犯奴弘打皮伉件毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15755,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18934 >= 1 && Item 18935 >= 1 && Item 18936 >= 1 && Item 18937 >= 1 && Item 18938 >= 1 && petlevel 804 == 1
+
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18934 >= 1 && Item 18935 >= 1 && Item 18936 >= 1 && Item 18937 >= 1 && Item 18938 >= 1 && petlevel 804 == 1
+
+	KillItem 18934,1
+	KillItem 18935,1
+	KillItem 18936,1
+	KillItem 18937,1
+	KillItem 18938,1
+	KillPetl 804,1
+	GivePet 2030
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+############## 乒用失奶RR ##############
+block Item 18939 >= 1 && Item 18940 >= 1 && Item 18941 >= 1 && Item 18942 >= 1 && Item 18943 >= 1 && petlevel 2050 == 1 && Item 18631 >= 1
+
+#\n\n﹛孔戈孔戈﹜公丹井″正永疋左平乓井″仇木卅日壬R乒用失奶毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15756,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18939 >= 1 && Item 18940 >= 1 && Item 18941 >= 1 && Item 18942 >= 1 && Item 18943 >= 1 && petlevel 2050 == 1 && Item 18631 >= 1
+
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18939 >= 1 && Item 18940 >= 1 && Item 18941 >= 1 && Item 18942 >= 1 && Item 18943 >= 1 && petlevel 2050 == 1 && Item 18631 >= 1
+
+	KillItem 18939,1
+	KillItem 18940,1
+	KillItem 18941,1
+	KillItem 18942,1
+	KillItem 18943,1
+	Killitem 18631,1
+	KillPetl 2050,1
+	GivePet 2031
+
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+##############  ##############
+block Item 18641 >= 1 && Item 18642 >= 1 && Item 18643 >= 1 && petlevel 101 == 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬札件申毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15412,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18641 >= 1 && Item 18642 >= 1 && Item 18643 >= 1 && petlevel 101 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18641 >= 1 && Item 18642 >= 1 && Item 18643 >= 1 && petlevel 101 == 1
+	KillItem 18641,1
+	KillItem 18642,1
+	KillItem 18643,1
+	KillPetl 101,1
+	GivePet 2019
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+##############  ##############
+block Item 18644 >= 1 && Item 18645 >= 1 && Item 18646 >= 1 && Item 18647 >= 1 && petlevel 332 == 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬乒用失奶毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15413,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18644 >= 1 && Item 18645 >= 1 && Item 18646 >= 1 && Item 18647 >= 1 && petlevel 332 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18644 >= 1 && Item 18645 >= 1 && Item 18646 >= 1 && petlevel 332 == 1
+	KillItem 18644,1
+	KillItem 18645,1
+	KillItem 18646,1
+	KillItem 18647,1
+	KillPetl 332,1
+	GivePet 2020
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+##############  ##############
+block Item 18648 >= 1 && Item 18649 >= 1 && Item 18650 >= 1 && Item 18651 >= 1 && Item 18652 >= 1 && petlevel 421 == 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬乒伙示伙毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15414,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18648 >= 1 && Item 18649 >= 1 && Item 18650 >= 1 && Item 18651 >= 1 && Item 18652 >= 1 && petlevel 421 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18648 >= 1 && Item 18649 >= 1 && Item 18650 >= 1 && Item 18651 >= 1 && Item 18652 >= 1 && petlevel 421 == 1
+	KillItem 18648,1
+	KillItem 18649,1
+	KillItem 18650,1
+	KillItem 18651,1
+	KillItem 18652,1
+	KillPetl 421,1
+	GivePet 2021
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+##############  ##############
+block Item 18653 >= 1 && Item 18654 >= 1 && Item 18655 >= 1 && Item 18656 >= 1 && Item 18657 >= 1 && petlevel 612 >= 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬仿疋永玄立立永弁毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15415,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18653 >= 1 && Item 18654 >= 1 && Item 18655 >= 1 && Item 18656 >= 1 && Item 18657 >= 1 && petlevel 612 >= 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18653 >= 1 && Item 18654 >= 1 && Item 18655 >= 1 && Item 18656 >= 1 && Item 18657 >= 1 && petlevel 612 >= 1
+	KillItem 18653,1
+	KillItem 18654,1
+	KillItem 18655,1
+	KillItem 18656,1
+	KillItem 18657,1
+	KillPeth 612,1
+	GivePet 2022
+#\n\n﹛丐曰扎″〝升丹仄凶仇午元扎﹜歹仄午仄凶仇午互切仇匀午棉啜尹化仄手丹凶歹中″歹反反﹜引丐公丹杴仁元日毛峏化月匹卅中﹝膻竣反坛竣元扎冗﹝﹝
+	EndWindow 14058,OK
+
+##############  ##############
+block Item 18602 >= 1 && Item 18603 >= 1 && Item 18604 >= 1 && petlevel 21 == 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬用永市□毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15380,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18602 >= 1 && Item 18603 >= 1 && Item 18604 >= 1 && petlevel 21 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18602 >= 1 && Item 18603 >= 1 && Item 18604 >= 1 && petlevel 21 == 1
+	KillItem 18602,1
+	KillItem 18603,1
+	KillItem 18604,1
+	KillPetl 21,1
+	GivePet 2013
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+##############  ##############
+block Item 18605 >= 1 && Item 18606 >= 1 && Item 18607 >= 1 && petlevel 23 == 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬白尼奶弁仿永玄毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15381,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18605 >= 1 && Item 18606 >= 1 && Item 18607 >= 1 && petlevel 23 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18605 >= 1 && Item 18606 >= 1 && Item 18607 >= 1 && petlevel 23 == 1
+	KillItem 18605,1
+	KillItem 18606,1
+	KillItem 18607,1
+	KillPetl 23,1
+	GivePet 2014
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+##############  ##############
+block Item 18608 >= 1 && Item 18609 >= 1 && Item 18610 >= 1 && Item 18611 >= 1 && petlevel 831 == 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬甩□疋□毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15382,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18608 >= 1 && Item 18609 >= 1 && Item 18610 >= 1 && Item 18611 >= 1 && petlevel 831 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18608 >= 1 && Item 18609 >= 1 && Item 18610 >= 1 && Item 18611 >= 1 && petlevel 831 == 1
+	KillItem 18608,1
+	KillItem 18609,1
+	KillItem 18610,1
+	KillItem 18611,1
+	KillPetl 831,1
+	GivePet 2015
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+##############  ##############
+block Item 18612 >= 1 && Item 18613 >= 1 && Item 18614 >= 1 && Item 18615 >= 1 && petlevel 712 == 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬伐奶失□丞毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15383,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18612 >= 1 && Item 18613 >= 1 && Item 18614 >= 1 && Item 18615 >= 1 && petlevel 712 == 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18612 >= 1 && Item 18613 >= 1 && Item 18614 >= 1 && Item 18615 >= 1 && petlevel 712 == 1
+	KillItem 18612,1
+	KillItem 18613,1
+	KillItem 18614,1
+	KillItem 18615,1
+	KillPetl 712,1
+	GivePet 2016
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+##############  ##############
+block Item 18616 >= 1 && Item 18617 >= 1 && Item 18618 >= 1 && Item 18619 >= 1 && Item 18620 >= 1 && petlevel 616 >= 1
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬疋亘失立立永弁毛荼瞻匹五公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15384,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18616 >= 1 && Item 18617 >= 1 && Item 18618 >= 1 && Item 18619 >= 1 && Item 18620 >= 1 && petlevel 616 >= 1
+#\n\n﹛幻丹井幻丹井″元扎互﹜荼瞻仄凶银中呺反旦平伙毛蝈朿侉木化仄引丹互公木匹手中中氏井及丹〝
+	Window 15407,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18616 >= 1 && Item 18617 >= 1 && Item 18618 >= 1 && Item 18619 >= 1 && Item 18620 >= 1 && petlevel 616 >= 1
+	KillItem 18616,1
+	KillItem 18617,1
+	KillItem 18618,1
+	KillItem 18619,1
+	KillItem 18620,1
+	KillPeth 616,1
+	GivePet 2017
+#\n\n﹛丐曰扎″〝升丹仄凶仇午元扎﹜歹仄午仄凶仇午互切仇匀午棉啜尹化仄手丹凶歹中″歹反反﹜引丐公丹杴仁元日毛峏化月匹卅中﹝膻竣反坛竣元扎冗﹝
+	EndWindow 15387,OK
+
+##############  ##############
+block Item 18621 >= 1 && Item 18622 >= 1 && Item 18623 >= 1 && Item 18624 >= 1 && Item 18625 >= 1 && Item 14950 >= 1 && Item 14951 >= 1 && Item 14952 >= 1 && Item 14953 >= 1 && petspace == 0
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬田件玉伊夫毛综木公丹元扎互﹜云蟆今氏公木动晓银中呺毛儅化氏方丹元扎及丹﹝
+	EndWindow 15406,OK
+
+##############  ##############
+block Item 18621 >= 1 && Item 18622 >= 1 && Item 18623 >= 1 && Item 18624 >= 1 && Item 18625 >= 1 && Item 14950 >= 1 && Item 14951 >= 1 && Item 14952 >= 1 && Item 14953 >= 1 && petspace != 0
+#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬田件玉伊夫毛综木公丹元扎卅﹝支匀化心月井中及丹〝
+	Window 15385,YES,NO
+	Window_NO
+#\n\n﹛幻丹井幻丹井﹜竣互轾中凶日引凶侳月互中中﹝
+	EndWindow 15388,OK
+	Window_YES Item 18621 >= 1 && Item 18622 >= 1 && Item 18623 >= 1 && Item 18624 >= 1 && Item 18625 >= 1 && Item 14950 >= 1 && Item 14951 >= 1 && Item 14952 >= 1 && Item 14953 >= 1 && petspace != 0
+	KillItem 18621,1
+	KillItem 18622,1
+	KillItem 18623,1
+	KillItem 18624,1
+	KillItem 18625,1
+	KillItem 14950,1
+	KillItem 14951,1
+	KillItem 14952,1
+	KillItem 14953,1
+	GivePet 2018
+#\n\n﹛升丹元扎升丹元扎﹝歹仄卞井井木壬仇氏卅手氏元扎化﹝
+	EndWindow 15386,OK
+
+#############﹛R布伙丞楮溢﹛###############
+block Item 17747 >= 1 || Item 17748 >= 1 || Item 17749 >= 1 || Item 17750 >= 1
+
+#云云℅℅″″云蟆今氏缰螺坁及尹℅豳笺毛手匀午月及℅\n公氏卅豳笺互ㄣ勾手丐木壬﹜?布伙丞互匹五月井手仄木氏卅℅
+
+	EndWindow 206693,OK
+
+##############  ##############
+block Item 18918 >= 1 || Item 18919 >= 1 || Item 18920 >= 1
+#\n\n﹛幻丹幻丹﹜歹仄及襞日卅中荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝升木升木﹜仇木反升丹支日旦仿奶丞及荼瞻涩煌豭及迋元扎卅﹝孔戈孔戈﹜升丹支日仇及涩煌豭反蝈朿匹ㄢ潘挀丐月迋元扎卅﹝公木午旦仿奶丞及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+	EndWindow 15757,OK
+
+##############  ##############
+block Item 18921 >= 1 || Item 18922 >= 1 || Item 18923 >= 1 || Item 18924 >= 1
+
+#\n\n﹛幻丹幻丹﹜歹仄及襞日卅中荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝升木升木﹜仇木反升丹支日伉扒□玉穴件及荼瞻涩煌豭及迋元扎卅﹝孔戈孔戈﹜升丹支日仇及涩煌豭反蝈朿匹ㄣ潘挀丐月迋元扎卅﹝公木午伉扒□玉穴件及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+
+	EndWindow 15758,OK
+
+##############  ##############
+block Item 18925 >= 1 || Item 18926 >= 1 || Item 18927 >= 1 || Item 18928 >= 1 || Item 18929 >= 1
+
+#\n\n﹛幻丹幻丹﹜歹仄及襞日卅中荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝升木升木﹜仇木反升丹支日疋弘立□田永玄及荼瞻涩煌豭及迋元扎卅﹝孔戈孔戈﹜升丹支日仇及涩煌豭反蝈朿匹ㄤ潘挀丐月迋元扎卅﹝公木午疋弘立□田永玄及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+
+	EndWindow 15759,OK
+
+##############  ##############
+block Item 18934 >= 1 || Item 18935 >= 1 || Item 18936 >= 1 || Item 18937 >= 1 || Item 18938 >= 1
+
+#\n\n﹛幻丹幻丹﹜歹仄及襞日卅中荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝升木升木﹜仇木反升丹支日犯奴弘打皮伉件及荼瞻涩煌豭及迋元扎卅﹝孔戈孔戈﹜升丹支日仇及涩煌豭反蝈朿匹ㄤ潘挀丐月迋元扎卅﹝公木午犯奴弘打皮伉件及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+
+	EndWindow 15760,OK
+
+##############  ##############
+block Item 18939 >= 1 || Item 18940 >= 1 || Item 18941 >= 1 || Item 18942 >= 1 || Item 18943 >= 1
+
+#\n\n﹛幻丹幻丹﹜歹仄及襞日卅中荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝升木升木﹜仇木反＿卅氏午″歹仄及综匀凶R乒用失奶及荼瞻涩煌豭及迋元扎卅中井﹝荼瞻及晓卞荼瞻午反＿＿孔戈孔戈﹜升丹支日仇及涩煌豭反蝈朿匹ㄤ潘挀丐月迋元扎卅﹝公木午R乒用失奶及LV1毛洘木化＿公木午＿＿
+
+#戈戈丰﹝厘仪卅午仇欠互方仁苇尹卅中冗中﹝窒井失奶泛丞互优邰卅迋元扎卅﹝厘缠及荼瞻涩煌豭卅日苇凶分仃匹允什卞咥荸匹五月互﹜荼瞻及晓卞荼瞻午卅月午＿仇曰扎丑﹛峸檗及伐扑手＿﹝幺螺庍唱读卅恘互优邰元扎午合丹氏元扎互﹜平□失奶泛丞互窒井反荸日氏冗中﹝卅卞井庍唱毛娄五粟仇仄公丹卅豳笺分午合丹氏元扎互＿
+
+
+	Window 15761,NEXT
+	EndWindow 15762,OK
+
+
+
+
+
+
+
+
+#############  ##############
+block Item 18641 >= 1 || Item 18642 >= 1 || Item 18643 >= 1
+#\n\n﹛幻丹幻丹﹜札件申及荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝匀化平乓件犯奴及支勾歹仄及?瞽涩煌豭及镕き蚁卞引匹澎毛分仄云匀凶卅﹝仄井凶及卅中支勾元扎″札件申及荼瞻涩煌豭反蝈朿匹3潘挀丐月氏元扎﹝公木午札件申及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+
+	EndWindow 15408,OK
+
+##############  ##############
+block Item 18644 >= 1 || Item 18645 >= 1 || Item 18646 >= 1 || Item 18647 >= 1
+#\n\n﹛幻丹幻丹﹜乒用失奶及荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝匀化平乓件犯奴及支勾歹仄及?瞽涩煌豭及镕き蚁卞引澎毛分仄云匀凶卅﹝仄井凶及卅中支勾元扎″乒用失奶及荼瞻涩煌豭反蝈朿匹4潘挀丐月氏元扎﹝公木午乒用失奶及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+	EndWindow 15409,OK
+
+##############  ##############
+block Item 18648 >= 1 || Item 18649 >= 1 || Item 18650 >= 1 || Item 18651 >= 1 || Item 18652 >= 1
+#\n\n﹛幻丹幻丹﹜乒伙示伙及荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝匀化平乓件犯奴及支勾歹仄及?瞽涩煌豭及镕き蚁卞引匹澎毛分仄云匀凶卅﹝仄井凶及卅中支勾元扎″乒伙示伙及荼瞻涩煌豭反蝈朿匹5潘挀丐月氏元扎﹝公木午乒伙示伙及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+	EndWindow 15410,OK
+
+##############  ##############
+block Item 18653 >= 1 || Item 18654 >= 1 || Item 18655 >= 1 || Item 18656 >= 1 || Item 18657 >= 1
+#\n\n﹛幻丹幻丹﹜仿疋永玉立立永弁及荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝匀化平乓件犯奴及支勾歹仄及?瞽涩煌豭及镕き蚁卞引匹澎毛分仄云匀凶卅﹝仄井凶及卅中支勾元扎″仿疋永玉立立永弁及荼瞻涩煌豭反蝈朿匹5潘挀丐月氏元扎﹝公木午仿疋永玉立立永弁毛洘木化仁木壬荼瞻仄化支月冗中﹝
+	EndWindow 15411,OK
+
+#############  ##############
+block Item 18602 >= 1 || Item 18603 >= 1 || Item 18604 >= 1
+#\n\n﹛幻丹幻丹﹜用永市□及荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝用永市□及荼瞻涩煌豭反蝈朿匹3潘挀丐月氏元扎﹝公木午用永市□及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+	EndWindow 15374,OK
+
+##############  ##############
+block Item 18605 >= 1 || Item 18606 >= 1 || Item 18607 >= 1
+#\n\n﹛幻丹幻丹﹜白尼奶弁仿永玄及荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝白尼奶弁仿永玄及荼瞻涩煌豭反蝈朿匹3潘挀丐月氏元扎﹝公木午白尼奶弁仿永玄及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+	EndWindow 15375,OK
+
+##############  ##############
+block Item 18608 >= 1 || Item 18609 >= 1 || Item 18610 >= 1 || Item 18611 >= 1
+#\n\n﹛幻丹幻丹﹜甩□疋□及荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝甩□疋□及荼瞻涩煌豭反蝈朿匹4潘挀丐月氏元扎﹝公木午甩□疋□及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+	EndWindow 15376,OK
+
+##############  ##############
+block Item 18612 >= 1 || Item 18613 >= 1 || Item 18614 >= 1 || Item 18615 >= 1
+#\n\n﹛幻丹幻丹﹜伐奶失□丞及荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝伐奶失□丞及荼瞻涩煌豭反蝈朿匹4潘挀丐月氏元扎﹝公木午伐奶失□丞及LV1毛洘木化仁木壬荼瞻仄化支月冗中﹝
+	EndWindow 15377,OK
+
+##############  ##############
+block Item 18616 >= 1 || Item 18617 >= 1 || Item 18618 >= 1 || Item 18619 >= 1 || Item 18620 >= 1
+#\n\n﹛幻丹幻丹﹜疋亘失立立永弁及荼瞻涩煌豭毛儅匀化月方丹元扎卅﹝疋亘失立立永弁及荼瞻涩煌豭反蝈朿匹5潘挀丐月氏元扎﹝公木午疋亘失立立永弁毛洘木化仁木壬荼瞻仄化支月冗中﹝
+	EndWindow 15378,OK
+
+##############  ##############
+block Item 18621 >= 1 || Item 18622 >= 1 || Item 18623 >= 1 || Item 18624 >= 1 || Item 18625 >= 1
+#\n\n﹛幻丹幻丹﹜井日仁曰田件玉伊夫及涩煌豭毛儅匀化月方丹元扎卅﹝田件玉伊夫及涩煌豭反蝈朿匹5潘挀丐月氏元扎﹝公木午田件玉伊夫﹜田件犯奴永玄﹜由奶伊奶玄﹜弁仿永扑乓□及市□玉毛儅匀化仁木壬综匀化支月冗中﹝
+	EndWindow 15379,OK
+
+##############  ##############
+block
+#\n\n﹛歹仄扎井日仁曰缜谛及斥亘未永矢午中丹手及元扎﹝仇及白央□伊件毕崭卞反银中呺毛中欠中欠中元仁月蛊日互云月午妏中化反月井鳞井日珃毛阶中卞支匀化五凶氏元扎﹝仄井仄卅氏匹手﹜失伙田卅氏凶日切文丹支勾反卅井卅井铣毛蜇今氏日仄仁化及丹﹜仇木元扎阶中丐丹仇午手匹五氏﹝
+	Window 15370,NEXT
+#\n\n﹛引丐杽锁反公木分仃匹反卅中氏元扎互＿＿掸反域踝卞仇及崭尺欐匀化五凶歹仄及缯抯及平乓件犯奴互﹜歹仄及?瞽及涩煌豭毛儅切请仄化升仇井尺垫匀化仄引匀凶氏元扎＿＿云引尹今氏﹜方井匀凶日缯抯毛茧仄化手日尹氏井及丹﹝
+	Window 15371,YES,NO
+	Window_NO
+#\n\n﹛丹丹戈﹜漱匀凶手氏元扎及丹﹝
+	EndWindow 15372,OK
+	Window_YES
+#\n\n﹛公丹井公丹井﹜公曰扎踞井月歹中﹝缯及抩蟆反＞平乓件犯奴＝元扎互﹜抩蟆幻升丐引匀切斤欠中抯匹反卅中井日竣毛勾仃卅今木﹝公木井日﹜平乓件犯奴及儅匀化中月涩煌豭毛澎卞じ木凶日歹仄卞忒仄化仁木氏井﹝云斪卞丐氏凶及银中呺毛荼瞻仄化支月冗中﹝歹仄扎仄扎仄扎仄扎﹝
+	EndWindow 15373,OK
+

@@ -1,0 +1,57 @@
+#Í³«±¾ÒÁ¼þ
+
+block EndEvent 142 == 1
+	Window 22914,Next
+	Window 22915,OK
+		Window_OK
+			LeaveGroup
+#			Warp 0,51005,7,23
+			Warp 0,51002,96,77
+
+block EndEvent 141 == 1
+	Window 22917,OK
+		Window_OK
+			LeaveGroup
+#			Warp 0,43000,857,695
+			Warp 0,51002,96,81
+
+block NowEvent 140 == 1 && Item 16423 >= 1
+	Window 22918,OK
+		Window_OK
+			LeaveGroup
+#			Warp 0,48000,25,25
+			Warp 0,51002,96,72
+
+block NowEvent 140 == 1 && Item 16408 >= 1
+	Window 22918,OK
+		Window_OK
+			Window 22916,OK
+				Window_OK Item 16408 >= 1
+					KillItem 16408,1
+					GiveItem 16423,1
+					LeaveGroup
+#					Warp 0,48000,25,25
+					Warp 0,51002,96,72
+				Window_OK ItemSpace == 0
+					EndWindow 10000
+				Window_OK Item 16408 >= 2
+					KillItem 16408,1
+					GiveItem 16423,1
+					LeaveGroup
+#					Warp 0,48000,25,25
+					Warp 0,51002,96,72
+				Window_OK
+
+block NowEvent 140 == 1
+	Window 22918,OK
+		Window_OK
+			LeaveGroup
+#			Warp 0,48000,25,25
+			Warp 0,51002,96,72
+
+block
+	Window 22919,Next
+	Window 22920,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,58000,38,37

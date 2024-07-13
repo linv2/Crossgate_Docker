@@ -1,0 +1,24 @@
+################### 书堆
+
+block	 
+	 #1102522	带来希望的人呀！你来晚了！封印已被破坏！	
+	 #1102523	能阻止秘法问世的方法，就藏在这本日记里！	
+	 #1102524	日记你拿去吧！	
+	 Window 1102522,NEXT
+	 Window 1102523,NEXT
+	 Window 1102524,OK
+
+	 Window_OK Item 40715>0
+	 LeaveGroup
+	 Warp 0,32201,190,207
+	 Endblock
+	 
+	 Window_OK ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001 
+	 
+	 Window_OK
+ 	 GiveLeak1Item 40715,1	 	
+ 	 LeaveGroup
+	 Warp 0,32201,190,207	 
+	  Endblock

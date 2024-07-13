@@ -1,0 +1,18 @@
+block Item 607662 >= 2
+
+				endWindow "\n\n﹛晓咺五反域箫内勾茧匀化仁分今中﹝"
+
+
+
+
+block CheckRealTime 2004/2/15,00:00:01 == 1
+#block CheckRealTime 2004/1/27,13:00:01 == 1
+
+
+		killitem 607662,1,(3007157)
+		GiveItem (18648 %10,18649 %10,18650 %10,18651 %10,18652 %10,15605 %25,3202 %25)
+
+
+block
+
+		EndWindow "\n\n﹛梂卞窒井じ匀化中月日仄中互\n﹛方仁歹井日卅中﹝"

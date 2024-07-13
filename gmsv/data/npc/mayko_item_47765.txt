@@ -1,0 +1,18 @@
+#####蛮力提神饮料 id 46413 
+#####增加卡时1小时
+
+block 
+	 ##1052582	\n\n\n您要使用“铁牛A活力饮料”来加值打卡时数吗？使用后不管增加多少卡时，仍受限于上限六小时喔！	1																																																																																																				
+	 Window 1055927,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47765 >= 1 && FeverSec >= 21599
+	 	 	 ##1052256	\n\n\n\n@c您的卡时已满！	1
+			 EndWindow 1052256
+	 	 
+	 	 Window_YES Item 47765 >= 1 && FeverSec < 21599
+	 	 	 KillItem 47765
+	 	 	 AddFeverSec +3600
+		 	 ##1052480	\n\n@c感觉到精神百倍！
+			 EndWindow 1052480
+			 			

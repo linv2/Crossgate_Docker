@@ -1,0 +1,24 @@
+#####不可思议系列三：恶梦#####
+##花盆
+##■ 信箱钥匙
+block Item 40284 >= 1	 
+	 ##1102074	\n\n\n\n@c花盆底下已无任何东西。	1
+	 EndWindow 1102074
+	 
+##■ 一般
+block 
+	 ##1101960	\n\n\n\n  怎么看都是很普通的花盆，里面种着不知名的杂草  。	1
+	 Window 1101960,NEXT
+	 	 ##1101961	\n\n\n\n@c要把花盆拿起来检查吗？	1
+	 	 Window 1101961,YES,NO 
+	 	 	 Window_NO 
+	 	 	 Window_YES 
+	 	 	 	 ##1101962	\n\n\n\n@c花盆底下掉出了一把钥匙！	1
+	 	 	 	 Window 1101962,OK
+	 	 	 	 	 Window_OK ItemSpace == 0
+					 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 					 EndWindow 1100001
+	 					 
+	 				 Window_OK ItemSpace >= 1	 
+	 	 	 	 	 	 GiveLeak1Item (40284%1$1)
+	 	

@@ -1,0 +1,9 @@
+block
+#15673?\n\n\n\n\n@c????????????
+	Window 1109729,YES,NO
+	
+	Window_YES
+	LeaveGroup
+	Warp 0,32295,14,12
+	Window_NO
+

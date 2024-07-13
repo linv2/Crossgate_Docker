@@ -1,0 +1,17 @@
+#
+#¢Èó¦¼°Ì¤
+#
+##############  ¢Èó¦¼°Ì¤©x##############
+block Item 17721 >= 1 && Item 17733 >= 1 && Item 17775 >= 1 && Item 17783 >= 1
+
+	Window 206676,OK
+	Window_OK
+	KillItem 17721,1
+	KillItem 17733,1
+	KillItem 17775,1
+	KillItem 17783,1
+	GiveItem 17720
+
+block Item 17783 >= 1
+
+	EndWindow 206680,OK

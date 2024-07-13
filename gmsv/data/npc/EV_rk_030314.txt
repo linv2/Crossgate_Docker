@@ -1,0 +1,95 @@
+#2006Ê¯·¥ÄÌÐþ·¸¡õ
+#ÀÛÔàÐÄÄ©ÒÁÄÌ½»
+
+#3.14¶¯æÏ·´¥èÈÕØ¦ÖÐ
+block CheckRealTime 2007/03/14,00:00:01 == 1
+#block CheckRealTime 2007/02/16,15:00:01 == 1
+	EndWindow 21937,OK
+
+#»ÔÁëÆ½ÅÒ·ÂÛÍÕýÃ«·´ÔªÈÊ
+block BBImage >= 100250 && BBImage <= 100423
+	EndWindow 22038,OK
+block BBImage >= 105250 && BBImage <= 105423
+	EndWindow 22038,OK
+block BBImage >= 106250 && BBImage <= 106423
+	EndWindow 22038,OK
+
+#¥öÖÐÃñØ¨¡õØøÓÀÃóÎç?ÍÉØÆÐ×èëÄþ
+block StrCmpChat==4031
+	Window 22111,Yes,No
+		Window_No
+			EndWindow 21941,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 15258,OK
+		Window_Yes Gold <= 499
+			EndWindow 21942,OK
+		Window_Yes
+			Window 22110,OK
+				Window_OK
+					AddGold -500
+					GiveItem 16339
+
+#Á²ÖÐÃñØ¨¡õØøÓÀÃóÎç?ÍÉØÆÐ×èëÄþ
+block StrCmpChat==4032
+	Window 22112,Yes,No
+		Window_No
+			EndWindow 21941,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 15258,OK
+		Window_Yes Gold <= 499
+			EndWindow 21942,OK
+		Window_Yes
+			Window 22110,OK
+				Window_OK
+					AddGold -500
+					GiveItem 16340
+
+#Ä»ÖÐÃñØ¨¡õØøÓÀÃóÎç?ÍÉØÆÐ×èëÄþ
+block StrCmpChat==4033
+	Window 22113,Yes,No
+		Window_No
+			EndWindow 21941,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 15258,OK
+		Window_Yes Gold <= 499
+			EndWindow 21942,OK
+		Window_Yes
+			Window 22110,OK
+				Window_OK
+					AddGold -500
+					GiveItem 16341
+
+#Õ±ÖÐÃñØ¨¡õØøÓÀÃóÎç?ÍÉØÆÐ×èëÄþ
+block StrCmpChat==4034
+	Window 22114,Yes,No
+		Window_No
+			EndWindow 21941,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 15258,OK
+		Window_Yes Gold <= 149
+			EndWindow 21942,OK
+		Window_Yes
+			Window 22110,OK
+				Window_OK
+					AddGold -150
+					GiveItem 16342
+
+#´ÃçÆÖÐÃñØ¨¡õØøÓÀÃóÎç?ÍÉØÆÐ×èëÄþ
+block StrCmpChat==4035
+	Window 22115,Yes,No
+		Window_No
+			EndWindow 21941,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 15258,OK
+		Window_Yes Gold <= 499
+			EndWindow 21942,OK
+		Window_Yes
+			Window 22110,OK
+				Window_OK
+					AddGold -500
+					GiveItem 16343
+#
+block 
+	Window 22039,Next
+	EndWindow 22040,OK
+

@@ -1,0 +1,66 @@
+#奶矛件玄泛旦玄
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 厘卅引内迋 豢邧? ##########
+block Item 18431 >= 6 && Item 18432 >= 6 && Item 18433 >= 6 && Item 18434 >= 6 && Group == 1
+	#椭瘀“鬼傻示旦嗜ㄣ潘挀丐月桦宁
+	#丐曰互午丹豢邧?晓仆月方″
+	Window 13037,OK
+
+	#----- 它奶件玉它OK匹坞五失奶泛丞互ㄟ及桦宁 -----#
+	Window_OK itemspace == 0
+	#儅切坁互域ベ分方﹝
+	EndWindow 13012
+
+	#仍邧?“
+	Window_OK itemspace >= 0 && Item 18431 >= 6 && Item 18432 >= 6 && Item 18433 >= 6 && Item 18434 >= 6
+	Killitem 18431,6
+	Killitem 18432,6
+	Killitem 18433,6
+	Killitem 18434,6
+	#仍邧?﹋兜蝈皮□汁’厘卅引内及拸’厘卅引内及嗯亿’厘卅引内及夫仆﹌
+	GiveLeak1Item(18470%1$1,18471%2$1,18472%2$1,18473%1$1)
+	LeaveGroup
+	Warp 0,300,626,209
+
+
+########## 五仇曰’甩件正□动陆及缜仅及桦宁 ##########
+
+#block  Group >= 2 && SkillLevel 225 < 2 || Group >= 2 && SkillLevel 226 < 2
+	#椭瘀“弘伙□皿匹2谛动84晓匹﹋き谛杴殖戈﹌旦平伙伊矛伙ㄠ卅日
+	#EndWindow 13058
+
+
+########## 五仇曰’甩件正□缜仅匹润恅/?睡旦平伙伊矛伙ㄡ动晓及桦宁 ##########
+block JobAncestry == 450 && Group >= 1 || JobAncestry == 460 && Group >= 1 || SkillLevel 225 >= 2 && Group >= 1 || SkillLevel 226 >= 2 && Group >= 1 
+	Window 13033,NEXT
+
+	#鬼中嗜毛忯凯仄化五化仁木﹝
+	Window 13034,YES,NO
+
+	#----- 它奶件玉它Y13503ES匹坞五失奶泛丞互ㄟ及桦宁 -----#
+	#Window_YES itemspace == 0
+	#酸ゴ卅互日坞五互箫曰引六氏﹝
+	#EndWindow 13012
+
+	#----- 它奶件玉它YES及桦宁 -----#
+	#厘卅引内迋豢轼及酦尺伐□皿﹝
+	#伐□皿允月﹋穴永皿??﹜白夫失﹜?甄伓﹜?甄伓﹌
+	Window_YES JobAncestry == 450 && Group >= 1 || JobAncestry == 460 && Group >= 1 || SkillLevel 225 >= 2 && Group >= 1 || SkillLevel 226 >= 2 && Group >= 1 
+	Warp 0,13505,10,19
+
+	#----- 它奶件玉它NO及桦宁 -----#
+	#它孕永仁月仄中不℅﹝
+	Window_NO 
+	EndWindow 13052
+
+
+########## 五仇曰’甩件正□动陆及缜仅及桦宁 ##########
+block 
+	Window 13033,NEXT
+	EndWindow 13035
+
+

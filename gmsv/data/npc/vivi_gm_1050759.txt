@@ -1,0 +1,13 @@
+##### 烤猪 ####
+block Item 45437 >= 1
+	 ##1050921	\n\n\n\n@c已经拿过啰！	1
+	 EndWindow 1050921
+	 
+##尚未取用
+block 
+	 ##1050920	\n\n\n\n@c需要来一份餐点吗？	1
+	 Window 1050920,YES,NO
+	 	 Window_YES
+	 	 	 GiveLeak1Item 45437
+	 	 Window_NO
+	 

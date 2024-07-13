@@ -1,0 +1,69 @@
+#mayko_item_41186.txt
+#1111587	到法兰城凯蒂夫人的店(196,78)找鉴定师马尔弗拿“钙矿”。
+#1111588	再到国营第24坑道(351,145)地下1F把钙矿给矿工毕夫鲁(34,7)，拿到“给山男的信”。
+#1111589	出法兰城东门往上走到山男的家(509,153)，把信给山男哈葛莉特后，拿到“梦露草”。
+#1111590	将梦露草拿给矿工毕夫鲁后，会拿到“给葛利玛的信”。
+#1111591	到法兰城葛莉玛之家(216,43)将信交给葛利玛，拿到“有关矿石成分的笔记”。
+#1111592	到法兰城凯蒂夫人的店(196,78)跟鉴定师马尔弗说话，回答“钙”后，  拿到“鉴定师推荐信”。
+#1111593	最后到法兰城强哥杂货店(191,37)找鉴定师巴姆可就职。
+block item 18135 >0
+	 window 1111593,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,1051,12,12
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 18241 >0
+	 window 1111592,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,1031,13,10
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 18168 >0
+	 window 1111591,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,1150,12,13
+	 leavegroup 
+	 Window_no
+	 endblock
+	 
+block item 18165 >0
+	window 1111590,next
+	 Window 1111688,yes,no
+	 Window_yes
+	 leavegroup 
+	 warp 0,11013,34,7
+	 Window_no
+	 endblock
+#block item 18164 >0
+block item 18167 >0
+	window 1111589,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1155,8,3
+	 leavegroup 
+	 Window_no
+	 endblock
+
+block item 18166 > 0
+	 window 1111588,next
+	  
+	 Window 1111688,yes,no
+	 Window_yes
+	 leavegroup 
+	 warp 0,11013,34,7
+	 Window_no
+	 endblock
+
+block 
+	 window 1111587,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,1031,13,10
+	 leavegroup 
+	 Window_no
+	 endblock

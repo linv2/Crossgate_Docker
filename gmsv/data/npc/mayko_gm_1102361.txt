@@ -1,0 +1,9 @@
+#Event	梦靥之室	mayko_gm_1102361.txt																		
+#Event	梦靥之室	mayko_gm_1102361.txt																		
+#1109555	\n\n\n@c梦靥之室
+#1109556	\n\n\n　　　此室之女帝，\n　　　均挣扎于自我与阿尔卡迪亚之间。
+
+block
+	 Window 1109555,NEXT
+	 EndWindow 1109556
+	 

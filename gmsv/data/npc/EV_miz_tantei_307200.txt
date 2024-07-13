@@ -1,0 +1,72 @@
+#茧樱弁巨旦玄“扑旦正□弗奶(3)
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛NOWFLG 69 on﹛ ＞失伉田奶...＝﹛##############
+block endevent69 == 1 && strcmpchat == 206740
+
+	Window 206324,NEXT
+	EndWindow 206326,OK
+
+block nowevent69 == 1 && strcmpchat == 206740
+
+	Window 206324,NEXT
+	Window 206326,OK
+	Window_OK
+	leavegroup
+	endevent69 = 1
+
+###########﹛＞仿永平□弁仿它件＝﹛##############
+block strcmpchat == 206730
+
+	EndWindow 206329,OK
+
+###########﹛＞用瓜用瓜＝﹛##############
+block strcmpchat == 206734
+
+	EndWindow 206327,OK
+
+###########﹛＞正件弘仿丞＝﹛##############
+block strcmpchat == 206729
+
+	EndWindow 206328,OK
+
+###########﹛＞玉弁正□白奴旦＝﹛##############
+block strcmpchat == 206731
+
+	EndWindow 206329,OK
+
+###########﹛＞巨奶立伉□＝﹛##############
+block strcmpchat == 206732
+
+	EndWindow 206329,OK
+
+###########﹛＞它奴件幼旦＝﹛##############
+block strcmpchat == 206727
+
+	EndWindow 206329,OK
+
+###########﹛＞皿伉件泛奴□＝﹛##############
+block strcmpchat == 206728
+
+	EndWindow 206333,OK
+
+###########﹛＞白仿件弁伉件＝﹛##############
+block strcmpchat == 206736
+
+	EndWindow 206334,OK
+
+###########﹛＞甩件弁＝﹛##############
+block strcmpchat == 206726
+
+	EndWindow 206335,OK
+
+###########﹛＞布永泛件＝﹛##############
+block strcmpchat == 206735
+
+	EndWindow 206336,OK
+
+###########﹛窒手拑仄﹛##############
+block
+	EndWindow 206323,OK
+

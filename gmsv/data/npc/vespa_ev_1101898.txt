@@ -1,0 +1,140 @@
+##########　ＮＰＣ ：水手裘尼ＩＤ：1101898
+##########　ＭＡＰ：30113 (17.8)
+##########　亚诺曼城酒吧里
+##########　作用：1.任务开启提示 2. 开关任务旗标
+
+
+##■旗标为１&& 艾斯潘之石　 ##问玩家是否要放弃任务_删除能源石是怕之后旗标归0在奇怪洞窟偷渡
+block Item 40325 >=1 && globalFlag 480 == 1
+	 ##1102122	\n\n你想放弃去那个不可思议的小岛吗？
+	 Window 1102122,NO,YES
+	 	 Window_NO
+	 	 	 ##1102123	\n\n那就一股作气的往前冲啊！
+	 	 	 EndWindow 1102123
+	 	 	 
+	 	 Window_YES  
+	 	 	 ##1102124	\n\n真想不透．．．我当初不是把地图给一个漂亮的小妞吗？怎么会到了你手上啊！\n反正你都想放弃了！那东西就给我吧！
+			 Window 1102124,OK
+			 	 Window_OK
+			 	 	 if Item 40325>=1
+			 	 		 KillItem 40325,1
+			 	 	
+			 	 	 #else
+			 	 	 endif 
+			 	 	  if Item 40328 >=1
+			 	 	 	 KillItem 40328,1
+			 	 	 #else
+			 	 	 endif
+			 	 	 if Item 40311 >=1
+			 	 		 KillItem 40311,1
+			 	 	 #else
+			 	 	 endif
+			 	 	 if globalFlag 480 == 1
+			 	 	 globalFlag 480 = 0
+			 	 	 #else
+					 endif
+						 		 
+#			 	 	 KillLeak1item 40325,1
+#			 	 	 KillLeak1item 40328,1
+#			 	 	 KillLeak1item 40311,1
+#			 	 	 globalFlag 480 = 0
+			 
+#####■旗标为1 ##是否放弃任务
+block globalFlag 480 == 1
+	 ##1102122	\n\n你想放弃去那个不可思议的小岛吗？
+	 Window 1102122,YES,NO
+	 	 Window_NO
+	 	 	 ##1102123	\n\n那就一股作气的往前冲啊！
+			 EndWindow 1102123
+		 Window_YES
+		 	 ##1102125	\n\n好吧！每个人喜欢过的生活都不一样！没有勇气冒险的人就待在陆地上！
+		 	 globalFlag 480 = 0
+		 	 EndWindow 1102125
+		 	 
+#####■有”剩下的地图块”
+block Item 40328 >=1
+	 ##1102126	\n\n疑？你手上那是．．．\n喏．．．偷偷告诉你，如果你想到那个地方的话，去找阿帕吧！
+	 EndWindow 1102126
+	 
+#####■有”２片地图块”&& 女性图号		
+block  Item 40311 >=1 &&  BBImage >= 100250 && BBImage <= 100423  ||   Item 40311 >=1 && BBImage >= 105250 && BBImage <= 105423  ||  Item 40311 >=1 && BBImage >= 106250 && BBImage <= 106423
+
+	 ##1102127	\n\n嘿嘿！这个发现很了不起吧！漂亮的小妞！
+	 EndWindow 1102127
+		
+####■有”２片地图块”&& 男性图号
+block   Item 40311 >=1 &&  BBImage >= 100000 && BBImage <= 100173  || Item 40311 >=1 && BBImage >= 105000 && BBImage <= 105173  ||  Item 40311 >=1 && BBImage >= 106000 && BBImage <= 106173
+
+	 ##1102128	\n\n这是．．．？！刚刚那小妞呢？！
+	 EndWindow 1102128
+	 		
+#####■ 有假发 || 水手服 || 蝴蝶结(我是小女孩那一个ITEM) || 裸奔小妹护身符 (0623新增)
+block  EQUIPITEM== 40313  || EQUIPITEM == 40314  || EQUIPITEM==  40312 || EQUIPITEM == 40261 || EQUIPITEM == 40361
+
+	 ##1102129	\n\n嘿～漂亮的小妞！你是来陪我喝酒的吗？\n\n（活到这个年纪终于．．．去死团再见啦！泪．．．）
+	 Window 1102129,NEXT 
+	 ##1102130	\n\n来来来！哥哥告诉你！我到过一个奇异的地方喔！\n那里有少见的怪物，奇怪的物品．．．最重要的是，还有一座闪闪发亮的水晶山啊！\n（她一定会被我吸引的．．．嘿嘿！）
+	 Window 1102130,NEXT 
+	 ##1102131	\n\n多去几次，我就会变成一个有钱人！那么我就能拥有一艘自己的船，四处流浪冒险．．．（太棒了！看她的眼神，我好像被深深崇拜着！）
+	 Window 1102131,NEXT 
+ 	 ##1102132	\n\n‘你相信吗？’
+	 Window 1102132,YES,NO 
+	 	  Window_YES 
+	 	  	 ##1102133	\n\n哈哈哈～这就是身为一个海上男儿的浪漫啊～为了心中的理想，于是生活在海上。
+			 EndWindow 1102133
+		 Window_NO 
+			 ##1102134	\n\n什么？！你不相信！那给你一样东西吧！我能证明我没有吹牛～
+			 ##1102135 	\n\n你有兴趣看看吗？
+			 Window 1102134,NEXT 
+			 Window 1102135,NO,YES 
+			 	 Window_NO 
+			 	 	 ##1102136	\n\n不想看就算了！我绝对不会欺骗像你这种漂亮的妹妹。
+					 EndWindow 1102136
+				 Window_YES  ItemSpace <1
+				 	 ##1102137	\n\n你好像拿不下任何东西啦！
+					 EndWindow 1102137
+				 Window_YES ItemSpace >=1
+				 	 ##1102138	\n\n就是这个，要找到那个地方，没这还真找不到呢！ 
+					 Window 1102138,OK 
+					 	 Window_OK 
+							 GiveLeak1Item 40311,1
+							   globalFlag 480 = 0				 	 	 
+
+
+#####■女性图号
+block  BBImage >= 100250 && BBImage <= 100423  ||  BBImage >= 105250 && BBImage <= 105423  ||  BBImage >= 106250 && BBImage <= 106423 ||  BBImage >= 100650 && BBImage <= 100655
+
+
+	 ##1102129	\n\n嘿～漂亮的小妞！你是来陪我喝酒的吗？\n\n（活到这个年纪终于．．．去死团再见啦！泪．．．）
+	 Window 1102129,NEXT 
+	 ##1102130	\n\n来来来！哥哥告诉你！我到过一个奇异的地方喔！\n那里有少见的怪物，奇怪的物品．．．最重要的是，还有一座闪闪发亮的水晶山啊！\n（她一定会被我吸引的．．．嘿嘿！）
+	 Window 1102130,NEXT 
+	 ##1102131	\n\n多去几次，我就会变成一个有钱人！那么我就能拥有一艘自己的船，四处流浪冒险．．．（太棒了！看她的眼神，我好像被深深崇拜着！）
+	 Window 1102131,NEXT 
+ 	 ##1102132	\n\n‘你相信吗？’
+	 Window 1102132,YES,NO 
+	 	  Window_YES 
+	 	  	 ##1102133	\n\n哈哈哈～这就是身为一个海上男儿的浪漫啊～为了心中的理想，于是生活在海上。
+			 EndWindow 1102133
+		 Window_NO 
+			 ##1102134	\n\n什么？！你不相信！那给你一样东西吧！我能证明我没有吹牛～
+			 ##1102135 	\n\n你有兴趣看看吗？
+			 Window 1102134,NEXT 
+			 Window 1102135,NO,YES 
+			 	 Window_NO 
+			 	 	 ##1102136	\n\n不想看就算了！我绝对不会欺骗像你这种漂亮的妹妹。
+					 EndWindow 1102136
+				 Window_YES  ItemSpace <1
+				 	 ##1102137	\n\n你好像拿不下任何东西啦！
+					 EndWindow 1102137
+				 Window_YES ItemSpace >=1
+				 	 ##1102138	\n\n就是这个，要找到那个地方，没这还真找不到呢！ 
+					 Window 1102138,OK 
+					 	 Window_OK 
+							 GiveLeak1Item 40311,1
+							   globalFlag 480 = 0		
+		
+#####■一般　 ##男性图号
+block
+	 ##1102139	\n\n走开！走开！\n我只跟漂亮妹妹说话！
+	 EndWindow 1102139

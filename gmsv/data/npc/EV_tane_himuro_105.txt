@@ -1,0 +1,69 @@
+
+block
+
+
+			if LocalCount3 == 5
+
+				LocalCount3 = random 2,0
+
+				if LocalCount3 == 1
+
+
+
+					LocalCount3 = 5
+
+
+#					Window "\n\n﹛≦漆歾及云井内≧镕铨摒反\n﹛潠及箄冂螂﹝",next
+					Window 3006898,next
+
+
+#					EndWindow "\n\n﹛扔皮正奶玄伙反﹜\n﹛≦鳗濩及穻樊互驯氏分怗≧"
+					EndWindow 3006899
+
+
+
+				else
+
+
+					LocalCount3 = 5
+
+
+#					Window "\n\n﹛≦漆歾及云井内≧镕诡摒反\n﹛?梦罹圴冂螂﹝",next
+					Window 3006900,next
+
+
+#					EndWindow "\n\n﹛卅引仇午?梦罹圴毛赓户化罹匀凶蛊匀化\n﹛拑辞塑辞匿中午合丹﹝"
+					EndWindow 3006901
+
+
+				endif
+
+
+
+			else
+
+
+				LocalCount3 = 5
+
+
+#				Window "\n\n﹛≦漆歾及云井内≧反\n﹛鳗濩及罹螃互筏仄凶鳗濩及云井内螂﹝",next
+				Window 3006902,next
+
+
+#				EndWindow "\n\n﹛丐及樟呿毛儅匀午仁午\n﹛丐午丐午卅卞井午忐厍﹝"
+				EndWindow 3006903
+
+
+
+
+			endif
+
+
+
+
+
+
+
+
+
+

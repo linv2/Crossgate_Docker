@@ -1,0 +1,11 @@
+#mayko_gm_1102813.txt ÐñÈÕ´å ÊØ
+block item 41317 >0
+	window 1111843,ok
+	window_ok
+	leavegroup 
+	warp 0,31808,17,17
+	endblock
+block
+	endwindow 1111855
+	
+

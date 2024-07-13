@@ -1,0 +1,31 @@
+##mayko_gm_1051619.txt
+##姬儿 30010	217	146
+##1054413	\n\n　　我只是想知道爸爸是什么样的人，\n　　妈咪就很生气～
+##1054414	\n\n\n@c呜～呜～呜～
+##1054415	\n　　我听说这个城的通灵师，可以帮人到地狱寻人。　　通灵师爷爷说我太小，不让我到地狱找爸爸，\n　　他说只要有人愿意帮我就可以了。
+##1054416	\n\n\n@c你可以帮我吗？？
+##1054417	\n　　你真是个好人，我听过月心爷爷说过，\n　　我爸爸叫作”仲时”，\n　　听说莲花可以超渡恶鬼，　　\n　　麻烦你带给我爸爸。
+##1054418	\n\n\n@c呜～呜～呜～我讨厌你～～～
+##1054431	\n\n\n@c我终于见到爸爸了，谢谢你。
+
+block item 47295>0
+	 EndWindow 1054431
+block item 47293>0
+	 Window 1054413,NEXT
+	 EndWindow 1054414
+block
+
+	 Window 1054413,NEXT
+	 Window 1054415,YES,NO 
+	 Window_NO 	
+	 EndWindow 1054418
+
+	 Window_YES  ItemSpace < 1 
+	 EndWindow 1100001	
+	 
+	 Window_YES 
+	 GiveLeak1Item 47293,1
+	 EndWindow 1054417
+	
+
+

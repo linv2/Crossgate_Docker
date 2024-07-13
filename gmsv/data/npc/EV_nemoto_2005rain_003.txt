@@ -1,0 +1,50 @@
+## 2005コャ惚蜃烂弁巨旦玄﹛by漪呿
+##	裒木凶累じ澎
+
+block Item_622003 >= 1
+
+	EndWindow 3220000
+
+		#\n\n﹛箫葭卞﹜裒木凶累互侹切化中月﹝\n\n﹛仇及彶曰卞反﹜\n﹛立术伐伉及累反粹中化中卅中方丹分﹝
+
+block Item_622004 >= 1
+
+	
+	EndWindow 3220001
+
+		#\n\n﹛箫葭卞﹜裒木凶累互侹切化中月﹝\n\n﹛仇及彶曰卞反﹜\n﹛立术伐伉及累反粹中化中卅中方丹分﹝
+
+block Item_622005 >= 1
+
+	EndWindow 3220002
+
+		#\n\n﹛箫葭卞﹜裒木凶累互侹切化中月﹝\n\n﹛仇及彶曰卞反﹜\n﹛立术伐伉及累反粹中化中卅中方丹分﹝
+	
+block Item_607745 >= 1
+
+	EndWindow 3220003
+
+		#\n\n﹛箫葭卞﹜裒木凶累互侹切化中月﹝\n\n﹛仇及彶曰卞反﹜\n﹛立术伐伉及累反粹中化中卅中方丹分﹝
+
+#### ＞裒木凶累＝尕赭儅
+block Item 622002 < 1
+		Window 3220004,YES,NO
+
+		#\n\n﹛箫葭卞﹜裒木凶累互侹切化中月﹝\n﹛胶中引允井〝
+
+## 绂坁互中匀天中
+			Window_YES Itemspace == 0
+				EndWindow 3220005
+
+		#\n\n﹛绂坁互中匀天中匹胶尹卅中﹝
+## ＞裒木凶累＝毛ㄠ勾芨尹月﹝
+			Window_YES
+				GiveLeak1Item 622002,1
+
+			Window_NO
+Endblock
+
+#### ＞裒木凶累＝毛赭儅
+block Item 622002 >= 1
+	EndWindow 3220006
+		#\n\n﹛箫葭卞﹜裒木凶累互侹切化中月﹝\n\n﹛仇及彶曰卞反﹜\n﹛立术伐伉及累反粹中化中卅中方丹分﹝

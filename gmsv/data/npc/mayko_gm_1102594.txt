@@ -1,0 +1,38 @@
+#1110543	\n\n\n\n@c我好想要一朵百合花喔！！	1
+#1110544	\n\n　　　可否麻烦你，到南恰特拉山的海边，\n　　　问问琪琪姐姐可否摘给我。	1
+#1110545	\n\n\n\n@c麻烦你到南恰特拉山的海边找琪琪姐姐。	1
+#1110546	\n\n\n\n@c麻烦你，期待鲁恩能让百合花开花。	1
+
+#1110557	\n\n\n　　　好美的百合花呀～\n　　　真是谢谢您啰！	1
+#1110558	\n\n\n\n@c一点小物让您消消暑！	1
+#1110559	\n\n\n\n@c西瓜很清凉很消暑喔！！	1
+block Item 45447>0
+	 EndWindow 1110559
+block Item 607748>0
+	 EndWindow 1110559	 
+
+block Item 41064>0
+	 Window 1110577,OK
+	 Window_OK Item 41064>0
+	 KillItem 41064,1
+	 GiveLeak1Item (45447%9$1,607748%1$1)
+	 EndWindow 1110558
+	 Window_OK
+	 EndWindow 1053288
+	 #1053288	\n\n\n\n@c咦～你的东西突然不见，是不是掉了。	1
+block Item 41066>0
+	 EndWindow 1110546
+block Item 41063>0
+	 EndWindow 1110546	
+block Item 41065>0
+	 EndWindow 1110545
+block 
+	 Window 1110602,NEXT
+	 Window 1110544,YES,NO
+	 Window_NO
+	 EndWindow 1110543
+	 Window_YES ItemSpace < 1
+	 EndWindow 1110522
+	 Window_YES 
+	 GiveLeak1Item 41065,1
+	 EndWindow 1110545

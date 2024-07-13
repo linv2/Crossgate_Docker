@@ -1,0 +1,9 @@
+#ώδ©ψ
+
+block Item 16336 >= 1 ||  Item 16331 >= 1 ||  Item 16332 >= 1 ||  Item 16333 >= 1
+	Window 22076,Next
+	Window 22077,Next
+	EndWindow 22078,OK
+
+block
+	EndWindow 22076,OK

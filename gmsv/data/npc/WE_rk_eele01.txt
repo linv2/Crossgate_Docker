@@ -1,0 +1,5 @@
+#¥U?¥n??????01
+
+block XPos == 38 && YPos == 40
+	Play_se 213,240,320
+	Message 21598

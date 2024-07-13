@@ -1,0 +1,118 @@
+#Ä¸¼þ³âÒà¼þÐþ·ÂÓÀÃó©x©x??©xŽx÷ú
+#
+#©x©x©xÆËÄá·ÂÓÀËüÄáÓÀÄ©¼°ÏÔ42±Õ©j²³–©dÅ»©k
+
+###©x3004859£¾æØÜìØ¦âãÆYÆÕ¡å©x·¥¡õÃóÐþ·ÂÓÀÃó·Ö¡å£½
+###©x3004860£¾àß±å²³AØ¦ÆÕç§»¥Ø¤ÔÈÐ×¡å£½
+###©x3004857£¾àß¾®ÈÕØÎ»¥ˆeÎåÇëÐ×¡å©xLP¨äºÌÄÌ¼þÐþìµÆ±¡å£½
+###©x3004858£¾Œô¾®ÈÕØÎ»¥ˆeÎåÇëÐ×¡å©xLP¨âºÌÄÌ¼þÐþìµÆ±¡å£½
+###©x3004746£¾Á§Çø±å³ªÊß»¥XÇÐ³ð»§Ð×¡å£½
+###©x3004747£¾³ªÊß»¥ÛÕÒüÐ×¡å£½
+
+
+###©x°×·Âºëµ©ÄÌÓÀÃñ
+block Xpos == 138 && Ypos >= 64 && Ypos <= 66
+
+		If LocalFlag2 == 0
+
+			Message 3004860
+			Message 3004746
+			LocalFlag2 = 1
+			EndBlock
+
+		endif
+
+
+
+###©xÐþ·ÂÓÀÃó©j°×·ÂºëÃQ¼°ÐÄ©k
+block Xpos == 142 && Ypos >= 64 && Ypos <= 66
+	If LocalFlag2 == 1
+
+		Play_SE 274,320,240
+		Message 3004857
+		SetLp -5
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó©j°×·ÂºëÃQ¼°ÐÄ©k
+block Xpos == 13 && Ypos >= 64 && Ypos <= 66
+	If LocalFlag2 == 1
+
+		Play_SE 274,320,240
+		Message 3004857
+		SetLp -5
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó©j°×·ÂºëÃQ¼°ÐÄ©k
+block Xpos >= 135 && Xpos <= 137 && Ypos == 63
+	If LocalFlag2 == 1
+
+		Play_SE 274,320,240
+		Message 3004857
+		SetLp -5
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó©j°×·ÂºëÃQ¼°ÐÄ©k
+block Xpos >= 135 && Xpos <= 137 && Ypos == 67
+	If LocalFlag2 == 1
+
+		Play_SE 274,320,240
+		Message 3004857
+		SetLp -5
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó©j°×·ÂºëÃQ¼°ÐÄ©k
+block Xpos >= 139 && Xpos <= 141 && Ypos == 63
+	If LocalFlag2 == 1
+
+		Play_SE 274,320,240
+		Message 3004857
+		SetLp -5
+		EndBlock
+
+	endif
+
+
+
+###©xÐþ·ÂÓÀÃó©j°×·ÂºëÃQ¼°ÐÄ©k
+block Xpos >= 139 && Xpos <= 140 && Ypos == 67
+	If LocalFlag2 == 1
+
+		Play_SE 274,320,240
+		Message 3004857
+		SetLp -5
+		EndBlock
+
+	endif
+
+
+
+###©x°×·ÂºëÛÍØøÊ§
+block Xpos ==141  && Ypos == 67
+
+	If LocalFlag2 == 1
+
+		Message 3004860
+		Message 3004747
+		LocalFlag2 = 0
+		EndBlock
+
+	endif
+
+
+

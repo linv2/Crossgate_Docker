@@ -1,0 +1,34 @@
+#¼ëÓ£ÛÍ¾Şµ©Ğş¡°Õı¼şºë·ÂØ©(1)
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+###########©xñÉ©x############
+block bbimage >=100000 && bbimage <= 100200
+
+	EndWindow 206266,OK
+
+block bbimage >=105000 && bbimage <= 105200
+
+	EndWindow 206266,OK
+
+block bbimage >=106000 && bbimage <= 106200
+
+	EndWindow 206266,OK
+
+
+###########©x»Ô©x############
+block bbimage >= 100250 && bbimage <= 100500
+
+	EndWindow 206966,OK
+
+block bbimage >= 105250 && bbimage <= 105500
+
+	EndWindow 206966,OK
+
+block bbimage >= 106250 && bbimage <= 106500
+
+	EndWindow 206966,OK
+
+###########©xÖÏÊÖØ¦ØÆ©x##############
+block 
+
+	EndWindow 206266,OK

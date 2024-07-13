@@ -1,0 +1,104 @@
+# 2005コ 拨芞左伉巨件泛□伉件弘    #
+# NPC:斥亘它仿件                   #
+
+
+### 膻缁辅曰及据毛呁醒赭儅
+block Item 622006 > 1
+	Window "\n\n﹛孔孔孔﹜母丢母丢﹝\n﹛据反域勾分仃分﹝膻缁手据手匋璋分友﹝",OK
+		Window_OK
+			KillItemAll 622006
+			KillItemAll 622007
+			KillItemAll 622008
+			KillItemAll 622009
+Endblock
+
+
+
+### 膻缁辅曰及据及正奶穴□互15坌毛聊亢凶午五
+block Item 622006 == 1 && ItemCreateTime 622006 >= 15
+	Window "\n\n﹛丐丐﹜母丢分友﹝\n﹛公木﹜公及据﹝\n﹛手丹躲绊互卅中方﹝\n﹛孔孔孔﹜愈赓井日分友﹝孔孔孔﹝",OK
+		Window_OK
+			KillItemAll 622006
+			KillItemAll 622007
+			KillItemAll 622008
+			KillItemAll 622009
+Endblock
+
+
+
+### 云凑中膻缁’攴毛呁醒赭儅
+block Item 622009 > 1
+	Window "\n\n﹛孔孔孔﹜＞云凑中膻缁’攴＝反域勾及心分冗﹝\n﹛中井氏友尹﹝\n﹛匋璋今六化手日丹冗﹝",OK
+		Window_OK
+			KillItemAll 622009
+
+
+
+### 云凑中膻缁’攴及旦正件皿＞ㄠ 卅云井勾 膻缁辅曰及据毛赭儅
+block Item 622009 == 1
+	if StampCount 622009 == 1 && Item 622006 == 1
+		EndWindow "\n\n﹛孔孔孔﹜蔽歹匀凶氏分友﹝\n﹛＿＿公丹﹜它末件今氏卞扷屡友﹝\n﹛丹氏﹝歹井匀凶方﹝\n﹛孔孔孔﹝"
+
+	else
+### 云凑中膻缁’攴午膻缁辅曰及据毛赭儅
+		if Item 622006 == 1
+			EndWindow "\n\n﹛孔孔孔﹜镀仁垫仁氏分友﹝\n﹛弗伊皮伊件及蕨分方﹝"
+
+		else
+
+## 云凑中膻缁’攴毛赭儅﹜膻缁辅曰及据毛尕赭儅
+			if Item 622006 == 0
+				Window "\n\n﹛楝奴﹜据互卅中方﹝据互﹝\n﹛母丢母丢﹝孔孔孔﹝",OK
+					Window_OK
+						KillItemAll 622006
+						KillItemAll 622007
+						KillItemAll 622008
+						KillItemAll 622009
+			endif
+		endif
+	endif
+
+
+### 云凑中膻缁’阂﹜云凑中膻缁’扈﹜云凑中膻缁’攴 及中内木井赭儅﹜膻缁辅曰及据毛尕赭儅
+block Item 622007 >= 1 || Item 622008 >= 1 || Item 622009 >= 1
+	if Item 622006 == 1
+
+		GotoF case1
+
+	else
+		if Item 622006 == 0
+				Window "\n\n﹛楝奴﹜据互卅中方﹝据互﹝\n﹛母丢母丢﹝孔孔孔﹝",OK
+			Window_OK
+				KillItemAll 622006
+				KillItemAll 622007
+				KillItemAll 622008
+				KillItemAll 622009
+
+		endif
+		Endblock
+	endif
+Endblock
+
+
+
+### 膻缁辅曰及据毛赭儅
+block Item 622006 == 1
+	*case1*
+
+	Window "\n\n﹛楝奴﹜公及膻缁辅曰及据反＿＿﹝\n﹛孔孔孔﹜楝互它末件今氏及井歹曰井＿＿﹝\n﹛丹氏﹜元扎丐云凑中允月方﹝孔孔孔﹝\n﹛示弁反友﹜弗伊皮伊件及蕨卞蛛月粖辉今氏卞\n﹛蓎匀化手日匀化中月氏分﹝\n﹛俇氏分方﹝",OK
+		Window_OK ItemSpace == 0
+			EndWindow "\n\n﹛楝奴﹜绂坁互中匀天中元扎卅中井﹝\n﹛母丢母丢﹝孔孔孔﹝"
+
+		Window_OK
+			GiveLeak1Item 622009,1
+
+Endblock
+
+
+
+### 晓筏动陆
+block
+	EndWindow "\n\n﹛愈嗤恌中缰竣分匀凶井日友﹝\n﹛缰及燠手摨昜卞苇尹月方﹝孔孔孔﹝"
+Endblock
+
+

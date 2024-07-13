@@ -1,0 +1,78 @@
+#ýú??¥J?ûé
+##########????????ýÍ?#######
+block ItemSpace == 0
+	Window 14036,YES,NO
+	Window_YES
+	EndWindow 10000
+	Window_NO
+
+##########?????¡Š????ýÍ? ##########
+block Group >= 2
+   #?¡q?¡k???????
+   
+	Window 14036,YES,NO
+	Window_YES
+	Window 14046,OK
+	Window_No
+
+
+##########ý¢?????????ýÍ? ##########
+block Item 18360 >= 1 && Group == 1 && ItemSpace >= 1
+   #?¡q?¡k???????
+   
+	Window 14036,YES,NO
+
+	Window_YES ItemSpace == 0
+	EndWindow 10000
+	Window_YES ItemSpace >= 1
+	Window 14037,OK
+	Window_OK ItemSpace == 0
+	EndWindow 10000
+	Window_OK ItemSpace >= 1 && Item 18360 >= 1 && Group == 1
+	KillItem 18360,1
+	GiveItem 18368,1
+	Warp 0,15303,47,35
+	Window_No
+
+##########ý¢???????????????ýÍ? ##########
+block Item 18368 >= 1 && Group == 1 && ItemSpace >= 1
+   #?¡q?¡k???????
+   
+	Window 14036,YES,NO
+
+	Window_YES ItemSpace == 0
+	EndWindow 10000
+	Window_YES ItemSpace >= 1
+	Window 14037,OK
+	Window_OK ItemSpace == 0
+	EndWindow 10000
+	Window_OK ItemSpace >= 1 && Item 18368 >= 1 && Group == 1
+	KillItem 18368,1
+	GiveItem 18369,1
+	Warp 0,15303,47,35
+	Window_No
+
+##########ý¢???????????????ýÍ? ##########
+block Item 18369 >= 1 && Group == 1 && ItemSpace >= 1
+   #?¡q?¡k???????
+   
+	Window 14036,YES,NO
+
+	Window_YES ItemSpace == 0
+	EndWindow 10000
+	Window_YES ItemSpace >= 1
+	Window 14037,OK
+	Window_OK ItemSpace == 0
+	EndWindow 10000
+	Window_OK ItemSpace >= 1 && Item 18369 >= 1 && Group == 1
+	KillItem 18369,1
+	GiveItem 18372,1
+	Warp 0,15303,47,35
+	Window_No
+
+#########ý¢??????????ýÍ?###################################
+block
+	Window 14036,YES,NO
+	Window_YES
+	EndWindow 14038
+	Window_NO  

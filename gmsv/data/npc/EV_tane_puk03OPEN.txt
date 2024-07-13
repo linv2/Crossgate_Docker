@@ -1,0 +1,71 @@
+#
+#takefushi
+#
+
+##############  ##############
+
+block CheckRealTime 2004/12/25,00:00:00 == 1
+#block CheckRealTime 2004/12/10,15:00:00 == 1
+
+	EndWindow 3203255
+
+		#\n\n﹛萧仄歹仃卅中及匹允方℅\n﹛手丹左扑穴奶卅及匹允﹜互丰﹝
+
+
+block Item 620040 <= 0
+
+	Window 3203256,next
+
+		#\n\n﹛互丰℅平亘旦泛及翘井日\n﹛推及晓及仇及章卞午予℅切扎仁″\n﹛允月猷及云蔷互匹五凶匹允方℅
+
+	Window 3203257,next
+
+		#\n\n﹛公木匹﹜交伉市切扎氏反﹜仇及捶坞及票﹜\n﹛平乓件矢□件亢扎月及失伙田奶玄卞\n﹛中公仄氏匹月歹仃匹允方℅互丰＿＿
+
+	Window 3203258,yes,no
+
+		#\n\n﹛仇木手云鉼切扎氏凶切及じ情?午\n﹛云恳畸及云杺医及正丢卅及匹允﹝\n﹛匹﹜筏ゴ圴邰曰引允井匹允方予℅〝
+
+	window_no
+
+	EndWindow 3203259
+
+		#\n\n﹛互丰丰丰＿＿\n﹛邰日卅中匹允井丑﹝\n﹛云丹切卞窖木卅中匹允丰﹝
+
+	window_yes Item 620040 >= 1
+
+	EndWindow 3203260
+
+		#\n\n﹛仍户氏卅今中匹允﹝\n﹛云夫午曰﹜云域勾引匹卅及匹允方﹝
+
+	window_yes Itemspace <= 0
+
+	EndWindow 3203261
+
+		#\n\n﹛手切手及互中匀天中匹\n﹛欐六卅中匹允及匹允方﹝
+
+
+	window_yes Itemspace >= 1
+
+	Window 3203262,next
+
+		#\n\n﹛互丰℅℅匹歹匹歹﹜\n﹛云欐仄允月匹允方﹜仍谊丝少仁欠℅℅
+
+	Window 3203263,ok
+
+		#\n\n﹛凶分仄﹜蜗き畸き蜗诡ざ动嫦元扎卅五扎\n﹛钒井卅中及匹允方﹝\n﹛镗啦允月及匹允方﹝
+
+	window_ok
+
+	GiveItem 620040,1
+
+
+
+
+block Item 620040 >= 1
+
+		EndWindow 3203264
+
+		#\n\n﹛仍户氏卅今中匹允﹝\n﹛云夫午曰﹜云域勾引匹卅及匹允方﹝
+
+

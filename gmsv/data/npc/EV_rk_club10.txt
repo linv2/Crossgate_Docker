@@ -1,0 +1,27 @@
+#
+#勒泔管阁仿件汁央
+#
+
+###﹛泔管阁匹交伉及抩铜市它件玄互ㄡ卅日﹛###
+block Job >=362 && Job <=367 && Item 16240 == 1 && StampCount 16240 == 2
+#\n\n﹛反丑℅匀﹜立旦术切扎氏匀化呿癫卞中中阂分卅丑﹝凶户秽互请月方﹝\n﹛失伙田＿手永﹜手午中″台及匿厘卅月阁麸及蒂菜卞方曰
+#勾中卞菜伤及譬宁卞岳跦仄凶氏分﹝\n\n﹛仇及≦幻木泔≧匹漆ざ仇公立旦术切扎氏毛蕊曰轾井六化苇六月冗″
+	Window 21585,Next
+#\n\n﹛氏氏匀〝幻木泔及综曰杅互襞曰凶中匀化〝\n\n﹛酷杅卅中卅﹜元扎丑禾泛玄白仿奶匹澎毛藉匀化支欠丹﹝
+	Window 21586,Yes,No
+		Window_No
+		Window_Yes Item 18964 == 0
+			Endwindow 21874
+		Window_Yes Item 18964 >= 1
+			KillItem 18964,1
+			GiveRecipe 973
+#\n\n﹛手什手什＿﹝\n﹛仇木反伤?及譬宁分井日今﹜濮覆卞?怍卞仄化云中化仁木方卅﹝\n\n﹛壬木凶日升氏卅?互谨匀化中月井﹜哔尹月分仃匹雯欠仄中方﹝
+			Endwindow 21587
+
+
+###﹛泔管阁动陆交伉及抩铜市它件玄互ㄡ卅日﹛###
+block Item 16240 == 1 && StampCount 16240 == 2
+	EndWindow 21588
+
+block
+	Endwindow 21584

@@ -1,0 +1,7 @@
+Window 1111904,yes,no
+	window_no
+	endblock
+	Window_yes
+	leavegroup 
+	warp 0,31959,48,33
+	endblock		

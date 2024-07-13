@@ -1,0 +1,32 @@
+###################################
+# 扔奶皮仿旦玄旦平伙弁巨  by 漪呿 #
+# ←赈太凶?(谛昍牦)←            #
+###################################
+
+#### 绂坁互域ベ
+block Itemspace == 0
+	EndWindow 3219758
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛绂坁互中匀天中分
+
+#### ≦赈太凶萼≧﹜≦谛昍牦≧毛赭儅
+block Item 622063 >= 1 && Item 622064 >= 1
+	EndWindow 3219759
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛坞匀吊分
+
+#### ≦赈太凶萼≧毛赭儅﹜≦谛昍牦≧毛尕赭儅
+block Item 622063 >= 1 && Item 622064 == 0
+	GiveLeak1Item 622064,1
+	EndWindow 3219760
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛谛昍牦毛澎卞じ木凶
+
+#### ≦赈太凶萼≧毛尕赭儅----晓筏动陆
+block
+	EndWindow 3219761
+
+		#\n\n\n\n﹛﹛﹛﹛萼瑙互冂溃卅溥毛仄化中月﹝\n﹛﹛﹛﹛毁迕及萼匹卅中午钒井卅中方丹分﹝
+
+
+

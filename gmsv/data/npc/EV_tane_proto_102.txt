@@ -1,0 +1,70 @@
+/*
+伉伊□﹛boukenyado及谛
+厘妐侬﹜凝妐侬及嗉帎反卅中
+'_'反厶心?壬仄
+*/
+
+#include "./header/global0.h"
+
+block
+
+
+
+
+
+
+//			if LocalCount0 == 5
+
+//				LocalCount0 = random 1,0
+
+//				if LocalCount0 == 1
+
+//		ㄡ荚杴动嫦
+
+
+					Window "\n\n﹛?梦今六凶中卅日﹜笺恔毛升仇井卞嘻中化\n﹛赢中コ畸毛井仃月仪友﹝",next
+
+					EndWindow "\n\n﹛匹手﹜谛反庍歹匀化中仁乒用方﹝\n﹛公氏卅﹜赢中棉\n﹛谨匀化日木卅中歹友之﹜分木手﹝"
+
+					LocalCount0 = 5
+
+/*
+				else
+
+
+					Window "\n\n﹛",next
+
+					EndWindow "\n\n﹛",next
+
+					LocalCount0 = 5
+
+				endif
+*/
+
+
+			else
+
+//			域荚杴
+
+				Window "\n\n﹛锹庍歹日内﹜剪仁化中中饕＿＿",next
+
+
+				EndWindow "\n\n﹛?梦〝扤曰乒用〝\n﹛凛棉毛元匀仁曰井仃化\n﹛菽切化中匀凶乒用﹜丹孔孔＿＿"
+
+
+				LocalCount0 = 5
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

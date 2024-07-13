@@ -1,0 +1,27 @@
+#########　Item ：■携带小护士 46430
+#########　双点可回复FP1000、LP500,但需要花费1000魔币 , 可使用 10次。（NEW !!）
+block
+	 ##1052644	\n\n@c是否想使用携带小护士呢？
+	 Window 1052644,YES,NO
+	 	 Window_NO
+	 	 
+		Window_YES Item 46430 >=2
+			##1052645	\n\n\n携带小护士\n如果持有２个以上是无法使用的喔～
+			EndWindow 1052645
+		Window_YES Item 46430 ==1 && Gold <1000
+			##		\n\n很抱歉，你的钱不够了。
+			EndWindow 3
+		Window_YES Item 46430 ==1  && ItemDur 46430 ==1 && Gold >1000
+			##1052646	携带小护士消失了。
+			KillItem 46430,1,(1052646)
+			AddGold -1000
+			setfp +1000
+			setlp +500
+		Window_YES Item 46430 ==1 && ItemDur 46430 >1 && Gold >1000
+			##1052647	使用了携带小护士。
+			AddGold -1000
+			setfp +1000
+			setlp +500
+			SetDur 46430,-1
+			Message 1052647
+	 	 	 

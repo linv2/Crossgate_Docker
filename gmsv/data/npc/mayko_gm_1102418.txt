@@ -1,0 +1,42 @@
+#1109746	\n\n\n\n@c听说村外某个钓鱼老头，知到岚之一族的事。	1
+#1109747	\n\n\n\n@c我跟他撒娇很久，他就是不理我。	1
+#1109748	\n\n　　　　香桩在担心我呀，\n　　　　就是是搞不定那个钓鱼老头，\n　　　　才不敢去见她呀！	1
+#1109749	\n\n\n\n@c你帮我去套那老头子口风吧！	1
+#1109750	\n\n\n\n@c你真不够意思。	1
+#1109751	\n\n\n\n@c就麻烦你去跟那老头打交道吧！	1
+#1109752	\n\n\n\n@c真的跟老头子套到情报了呀～～	1
+#1109753	\n\n\n　　　　你太帅了～\n　　　　不过我还想在这边多留一会，\n　　　　香桩那就麻烦你了～	1
+#1109754	\n\n\n　　　　我还想在这边多留一会，\n　　　　香桩那就麻烦你了～	1
+#香桩的信物40876
+#雨慈的形容40877
+#竹隐的迷题40878
+#竹隐的书信40879
+#雨慈的书信40880
+#香桩的书信40881
+
+block Item 40881>0
+	 EndWindow 1109754
+block Item 40880>0
+	 EndWindow 1109754
+block Item 40879>0
+	 Window 1109752,OK
+	 Window_OK
+	 KillItem 40879,1
+	 GiveLeak1Item 40880,1
+	 EndWindow 1109753
+block Item 40878 >0
+	 EndWindow 1109751
+block Item 40877 >0	 	 
+	 EndWindow 1109751
+block Item 40876 >0
+	 Window 1109748,NEXT
+	 Window 1109749,YES,NO
+	 Window_NO
+	 EndWindow 1109750	 
+	 Window_YES
+	 KillItem 40876,1
+	 GiveLeak1Item 40877,1
+	 EndWindow 1109751
+block 	 	 
+	 Window 1109746,NEXT
+	 EndWindow 1109747

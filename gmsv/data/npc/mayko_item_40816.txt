@@ -1,0 +1,52 @@
+##40816 爱情花盆
+
+#小花苗	40819
+
+#206121	在土里加入了肥料	0
+#206109	\n\n  能快一点发芽有多好～	0
+#1109494	\n\n\n　　　已经一天了，\n　　　要加入土之营养剂吗？？
+#1109497	\n\n\n　　　糟了～\n　　　两天没照顾已经枯死了！
+#206112	长大了！	0
+#1109509	\n\n\n　　　已经一天了，\n　　　得加入营养剂或除虫剂吧！
+#土之营养剂	18795
+#1109490	\n\n\n\n@c还是算了吧～～
+#1109482	\n\n\n\n@c你好像掉了什么东西啰。
+
+#block Item 40817>0 || Item 40818>0
+#	 EndWindow 1109516
+
+block Item 40816 > 1
+	 EndWindow 1109516
+
+
+##超过两天  240*6*2=1440*2=2880
+block Item 40816 > 0 && ItemCreateTime 40816 > 2880
+	 Window 1109497,OK
+	 Window_OK Item 40816 > 0
+	 KillItem 40816,1 
+	 Window_OK
+	 Endblock
+#1-2天　有营养剂
+block Item 40816 >= 0 && ItemCreateTime 40816 > 1440 && Item 18795 > 0
+	 Window 1109494,YES,NO
+
+	 Window_NO
+	 EndWindow 1109490
+
+	 Window_YES Item 40816 = 0 || Item 18795 = 0
+
+	 EndWindow 1109482
+
+	 Window_YES
+	 Window 206121,NEXT
+	 KillItem 40816,1
+	 KillItem 18795,1
+	 GiveLeak1Item 40819,1
+	 EndWindow 206112
+#1-2天　无营养剂
+block Item 40816 >= 0 && ItemCreateTime 40816 >= 1440
+	 EndWindow 1109509
+#未满一天
+block
+	 EndWindow 206117
+

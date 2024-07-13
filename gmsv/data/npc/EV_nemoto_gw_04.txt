@@ -1,0 +1,54 @@
+#GW疵嗯Ⅱ楷
+#平□失奶泛丞ミ幵溢＞犯奴弘戚牬＝
+
+## 允匹卞岳嗯丢布生毛儅匀化中月
+block Item 607737 >= 1
+	EndWindow 3205357
+
+		#\n\n﹛左丢□﹜中中缙丢布生儅匀化月分卅﹝\n﹛方仁僻宁匀午月升﹝
+
+## 忮癫毛ㄡ勾动晓儅匀化中月
+block Item 622000 >= 2
+	Window 3205358,OK
+
+		#\n\n﹛氏﹜左丢□卅氏匹忮癫毛公氏卅卞儅匀化氏分〝\n﹛犯奴弘脐卞庍卅乒件罹歹允歹仃卞中井友尹分匹\n﹛鬼中仃升左奶仿互蝈朿罹屯切扎丹升″
+	Window_OK
+		KillItemall 622000
+Endblock
+
+## 允匹卞忮癫毛儅匀化中月
+block Item 622000 == 1
+	EndWindow 3205359
+
+		#\n\n﹛乒正乒正仄化月午市扔市扔卞卅匀切引丹升″\n﹛镀仁犯奴弘脐卞?仃化幻仄中升﹝
+
+## 晓筏失奶泛丞毛尕赭儅
+block
+	Window 3205360,NEXT
+
+		#\n\n﹛左丢□﹜中中赭卞骚曰互井匀凶升″\n﹛允引友尹分互﹜仇及忮癫毛燮卞中月反内及\n﹛犯奴弘脐卞?仃切仁曰″\n﹛コ卞ㄠ蘸及厘酷仪分匀化舰曰濠曰允亢化\n﹛左仿互紧ざ及゜井日臻内卞综匀凶忮癫毛\n﹛侉木化垫匀切引匀凶分﹝
+	Window 3205361,YES,NO
+
+		#\n\n﹛左仿仇仇引匹侳月氏匹弁正弁正分匹\n﹛左丢□卞俇戈仄井友尹升﹝\n\n﹛儅匀化匀化仁木月分井〝
+## 失奶泛丞勂卞坞五互卅中
+	Window_YES Itemspace == 0
+		EndWindow 3205362
+
+		#\n\n﹛公木动晓儅化卅中心凶中分升﹝\n﹛?仃化仁木月卅日﹜\n﹛失奶泛丞勂毛帮咥仄化幻仄中升﹝
+## 莘狪酦卞忮癫互喂尹凶
+	Window_YES Item 622000 >= 1
+		Window 3205363,OK
+
+		#\n\n﹛丐木﹜卅氏匹忮癫儅匀化氏分〝\n﹛引分欐仄化卅中升﹝\n﹛公匀切反澎综曰元扎友尹分升″\n﹛公氏卅手氏左奶仿互罹屯切扎丹升″
+		Window_OK
+			KillItemall 622000
+## 忮癫毛芨尹月
+	Window_YES
+		GiveLeak1Item 622000,1
+	EndWindow 3205364
+
+		#\n\n﹛俇氏分升″
+## 蝇日木凶
+	Window_NO
+		EndWindow 3205365
+		#\n\n﹛支匀天曰﹜籥莘及谛棉反挕凶中分＿﹝

@@ -1,0 +1,87 @@
+#
+#穴□泛件旦
+#
+
+block Item 607699 >= 1
+
+	globalFlag31 = 1
+	globalFlag32 = 0
+	globalFlag33 = 0
+	globalFlag34 = 0
+
+	Window 3201122,yes,no
+		#\n\n﹛引化″公仇卅蛊″\n﹛仁允友凶手及毛忒仄化赡仇丹″″
+
+
+		Window_yes
+
+							KillItem 607699,1
+
+			window 3201123,ok
+		#\n\n﹛幻丹﹜溃鴃卅艘互仃分﹝\n﹛分互﹜仇木匹袱仄化支月歹仃卞反中井氏卅″″
+
+				Window_ok
+
+							Encount 3|0,59502,135,104||0|||||0|305163|||||||||
+
+		Window_no
+
+			Window 3201124,next
+		#\n\n﹛幻云〝泭蝇仄凶台卞﹜\n﹛勒④切⑺螺匹鴃匀凶井日午蜕匀化﹜\n﹛愤别木凶井〝
+
+			window 3201125,ok
+		#\n\n﹛手反支﹜\n﹛芢枢反六氏″″
+
+
+				Window_ok
+							Encount 3|0,59502,135,104||0|||||0|305163|||||||||
+
+block Item 14664 >= 1
+
+	globalFlag31 = 1
+	globalFlag32 = 0
+	globalFlag33 = 0
+	globalFlag34 = 0
+
+
+					Window 3201126,next
+		#\n\n﹛孔戈﹜公仇卅蛊﹜\n﹛仄壬仄谨凶木方﹝
+
+					Window 3201127,next
+		#\n\n﹛筑迋﹜\n﹛公及莠及乒用毛﹜嘻中化中匀化枃云丹﹝
+
+					Window 3201128,no
+		#\n\n﹛公丹﹜\n﹛公及骭颬及称鼎坁及仪分﹝
+
+						Window_no
+
+							Encount 3|0,59502,135,104||0|||||0|305163|||||||||
+
+block
+
+	globalFlag31 = 1
+	globalFlag32 = 0
+	globalFlag33 = 0
+	globalFlag34 = 0
+
+
+		Window 3201129,next
+		#\n\n﹛孔氏﹜筑迋卅升卞反迕反卅中﹝
+
+		Window 3201130,next
+		#\n\n﹛中支﹜引化﹜\n﹛剂★手及毛谍友凶中﹝
+
+		Window 3201131,yes,no
+		#\n\n﹛卅卞井﹜仇丹﹜\n﹛残中﹜锉及方丹卅﹜\n﹛骭颬及称鼎坁毛\n﹛儅匀化中月蛊毛襞日厄井〝
+
+
+		Window_yes
+
+			Endwindow 3201132
+		#\n\n﹛幻予〝\n﹛请侳木壬﹜仇仇引匹\n﹛洘木化侳化俓仄中乒用分互﹝
+
+		Window_no
+
+			EndWindow 3201133
+		#\n\n﹛公丹井﹜\n﹛卅日﹜手丹迕反卅中﹝\n﹛升仇冗卅曰午手\n﹛蛔厄月互方中﹝
+

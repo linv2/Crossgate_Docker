@@ -1,0 +1,51 @@
+#热歹木凶衙枆
+
+
+#巨伙ㄡ羁毛手匀化中化﹜昡箪及潟挎午拨勾及筵踏毛手匀化中月
+
+
+block EndEvent 56 == 1 && Item 16438 >= 1 && Item 16440 >= 1 && Item 16441 >= 1 && Item 16442 >= 1 && Item 16443 >= 1 && Item 16444 >= 1 && Item 16445 >= 1 && Item 16446 >= 1
+	Window 23185,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,33000,479,372
+
+
+#仿件ㄡ羁毛手匀化中化﹜昡箪及潟挎午拨勾及筵踏毛手匀化中月
+
+
+block EndEvent 64 == 1 && Item 16438 >= 1 && Item 16440 >= 1 && Item 16441 >= 1 && Item 16442 >= 1 && Item 16443 >= 1 && Item 16444 >= 1 && Item 16445 >= 1 && Item 16446 >= 1
+	Window 23185,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,33000,479,372
+
+
+
+
+#巨伙ㄡ羁毛儅匀化中月↓昡箪及潟挎毛儅匀化中月
+block EndEvent 56 == 1 && Item 16438 >= 1
+	Window 3200420,OK
+		#\n\n﹛伙申反仇及梂匹云引尹毛谨匀化中月﹝\n﹛失伙市犯奴失卞洘卅月樊及儅勾\n﹛拨勾及筵及据毛准仆方﹝
+		Window_OK
+			LeaveGroup
+			Warp 0,33000,479,372
+
+
+#仿件ㄡ羁毛儅匀化中月卅日↓昡箪及潟挎毛儅匀化中月
+block EndEvent 64 == 1 && Item 16438 >= 1
+	Window 3200421,OK
+		#\n\n﹛伙申反仇及梂匹云引尹毛谨匀化中月﹝\n﹛失伙市犯奴失卞洘卅月樊及儅勾\n﹛拨勾及筵及据毛准仆方﹝
+		Window_OK
+			LeaveGroup
+			Warp 0,33000,479,372
+
+#巨伙ㄡ羁毛儅匀化中月卅日
+block EndEvent 56 == 1
+	EndWindow 23186,OK
+#仿件ㄡ羁毛儅匀化中月卅日
+block EndEvent 64 == 1
+	EndWindow 23186,OK
+#
+block
+		EndWindow 23233,OK

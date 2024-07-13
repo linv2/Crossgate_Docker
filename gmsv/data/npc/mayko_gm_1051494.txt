@@ -1,0 +1,41 @@
+##袜子商黛拉，以五十魔币购买圣诞袜
+
+block   Item 46933 >0		
+#■　有装满礼物的圣诞袜圣诞袜(free版)
+	EndWindow 1053588	
+	 #你的袜子不是装满了礼物，快打开吧！
+block   Item 46930 >0 && ItemCreateTime 46930> 1440			
+## ■　有悬挂证明圣诞袜（free版）	已超过24hr		
+	EndWindow 1053589	
+	 #你的袜子挂在圣诞树上好一阵子了，要不要去拿下来！
+block   Item 46930 >0 	
+	EndWindow 1053590			
+##	■　有悬挂证明（便宜版）　时间未到
+	 #你的袜子不是挂在圣诞树吗，要有点耐心喔！
+block   Item 46928 >0 		
+##	■　圣诞袜（free版）
+	EndWindow 1053591
+	 #我不是给你袜子了，别太贪心喔！
+block	
+	 ##■　没有上面的东西
+	 Window 1053592,YES,NO
+	 ##我这有些漂亮的袜子，一只300块，你想买一圣诞袜吗？
+	 Window_YES ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 Window_YES Gold >= 300
+ 		AddGold -300
+	
+     	 GiveLeak1Item 46928,1
+     	 EndWindow 1053593
+	 ##得到圣诞袜
+	 Window_YES
+	 EndWindow 1053594
+	 ##你的钱不够呀～～～
+
+	 Window_NO
+		
+	 #不要呀！好可惜喔！
+
+	 EndWindow 1053595
+	

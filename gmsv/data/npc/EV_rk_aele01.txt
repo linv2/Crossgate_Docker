@@ -1,0 +1,32 @@
+#
+#杹?扑伙白
+#
+
+##﹛伊矛伙ㄢㄟ恍坢及爵衔烟及桦宁
+block Level < 30 && Job == 0
+#\n\n﹛氘及魂柈卞蔺爵仄化心卅中〝\n\n﹛＿午蜕中凶中午仇欠分仃升﹜丐卅凶及雄今分午引分渣莴友﹝\n﹛中勾井雄仁卅匀化井日引凶仁月午中中歹﹝
+ Endwindow 21348
+
+block Level < 30 && Job >= 11 && Job < 200
+#\n\n﹛氘及魂柈卞蔺爵仄化心卅中〝\n\n﹛＿午蜕中凶中午仇欠分仃升﹜丐卅凶及雄今分午引分渣莴友﹝\n﹛中勾井雄仁卅匀化井日引凶仁月午中中歹﹝
+ Endwindow 21348
+
+block Level < 30 && Job >= 431 && Job < 450
+#\n\n﹛氘及魂柈卞蔺爵仄化心卅中〝\n\n﹛＿午蜕中凶中午仇欠分仃升﹜丐卅凶及雄今分午引分渣莴友﹝\n﹛中勾井雄仁卅匀化井日引凶仁月午中中歹﹝
+ Endwindow 21348
+
+
+############## 椭瘀毛坢凶仄化中月 ##############
+block
+#\n\n﹛丐卅凶卅井卅井雄公丹友﹝\n\n﹛＿氘及魂柈卞蔺爵仄化心卅中〝
+	Window 21349,Yes,No
+         Window_Yes Group == 1
+         Window 21304,OK
+          Window_OK
+		LeaveGroup
+          Warp 0,15564,21,7
+### 弘伙□皿反元五 ###
+         Window_Yes Group != 1
+#\n\n﹛仇及燮卞褡戈卅日夫午曰内勾云凑中友﹝
+          EndWindow 21287
+         Window_No

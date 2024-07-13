@@ -1,0 +1,55 @@
+#
+#Øø¡õ°×ºÌÓÀĞş©jÊÖÊÏµ©©x¨àó¸±Õ©k
+#
+
+##############©xÒı·Ö¶ÆÖĞ©x#################
+#block Itemcratetime 18871 <= 2880
+#
+#	EndWindow ,OK
+#
+##############  ÖÍÄş©x##############
+block Itemcreatetime 18871 <= 10080
+
+	Window 206118,YES,NO
+	Window_YES
+	EndWindow 206109,OK
+	
+	Window_NO Item 18795 >= 1
+	Window 206105,YES,NO
+	Window_YES
+	Window 206109,OK
+	Window_OK
+	Killitem 18795,1,(206121)
+	Killitem 18871,1,(206111)
+	GiveItem 18874,1,(206112)
+	
+	Window_NO Item 18796 >= 1
+	Window 206106,YES,NO
+	Window_YES
+	Window 206109,OK
+	Window_OK
+	Killitem 18796,1,(206122)
+	Killitem 18871,1,(206111)
+	GiveItem 18873,1,(206112)
+
+	Window_NO Item 18797 >= 1
+	Window 206107,YES,NO
+	Window_YES
+	Window 206109,OK
+	Window_OK
+	Killitem 18797,1,(206123)
+	Killitem 18871,1,(206111)
+	GiveItem 18873,1,(206112)
+
+	Window_NO
+	EndWindow 206109,OK
+
+##############©xÔŞ¾®ÔÈĞ×©x################
+block Itemcreatetime 18871 >= 10081
+
+	Window 206108,OK
+	Window_OK
+	KillItem 18871,1,(206114)
+	
+
+

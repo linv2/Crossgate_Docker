@@ -1,0 +1,32 @@
+#te_item_41335.txt
+
+
+block
+	##1055932	\n\n\n\n\n@c你是否使用此道具．．．	1																						
+	Window 1055932,YES,NO
+	Window_NO
+
+	Window_YES  itemspace <= 5 
+	 	##1100002	\n\n\n\n\n@c物品栏的空间不足。	1																					
+	 	EndWindow 1100002
+ 
+	Window_YES itemspace >= 6
+		KillItem 41335,1
+	 	GiveLeak1Item	47798
+		GiveLeak1Item	45986
+		GiveLeak1Item	47681
+		GiveLeak1Item	46943,10
+		GiveLeak1Item	46944,10
+		GiveLeak1Item	46945,10
+
+		EndWindow
+
+#	圣诞礼包				
+#	项目	作用	价值	特价	
+#	47798	火鹤	宠物	600	　
+#	45986	技能屋进入证	训练	200	　
+#	47681	宠物屋进入证	训练	200	　
+#	46943	牛奶糖*10	FP10	0	
+#	46944	棒棒糖*10	FP20	0	
+#	46945	巧克力*10	FP30	0	　
+#		　	　	1000	650

@@ -1,0 +1,19 @@
+################### 上山
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 EndWindow 1100000
+block Item 40711 >= 1 
+	Window 1102541,YES,NO 
+		 Window_YES Group > 1
+	 	 EndWindow 1100000
+	 	 
+	 	 Window_YES 
+		 	 LeaveGroup
+	 	 	 Warp 0,32217,25,44	
+		  Endblock
+		 
+	 	 Window_NO 
+		  Endblock
+block
+	 EndWindow 1102543
+	 	 	 

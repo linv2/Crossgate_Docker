@@ -1,0 +1,126 @@
+##########################
+# ÏþÝËçÇ         by äô…í #
+# ¡û´Ã¼°–?¡û           #
+##########################
+
+
+#### ¨QÄâÖÐ¼°ÀÛ¨RÃ«ô÷ƒ}
+block Item 622043 >= 1 || Item 622044 >= 1 || Item 622045 >= 1 || Item 622046 >= 1 || Item 622051 >= 1 || Item 622052 >= 1 || Item 622053 >= 1 || Item 622054 >= 1 || Item 622055 >= 1 || Item 622056 >= 1 || Item 622057 >= 1 || Item 622058 >= 1 || Item 622059 >= 1 || Item 622060 >= 1 || Item 622061 >= 1 || Item 622062 >= 1
+	Window 3207961,OK
+
+		#\n\n©x¹«¼°ÄâÖÐ¼°ÀÛ·´©y³ð³ð¾®ÈÕÛÆ³ß·´\n©xƒ}ÇÐ‘@»§Ø¦ÖÐ³ðÎç±åØ¦ÔÈ»¯ÖÐÔÂÊÏ·Ö©z\n©x¹íÖÐÊÏ·ÖØêÉý©y\n©x³ðÇÐÈÕÆ¥Æg¾®ÈÕÁù»¯ÊÖÈÕµ¤ÓÑ©z
+		Window_OK
+			KillItemAll 622043
+			KillItemAll 622044
+			KillItemAll 622045
+			KillItemAll 622046
+			KillItemAll 622051
+			KillItemAll 622052
+			KillItemAll 622053
+			KillItemAll 622054
+			KillItemAll 622055
+			KillItemAll 622056
+			KillItemAll 622057
+			KillItemAll 622058
+			KillItemAll 622059
+			KillItemAll 622060
+			KillItemAll 622061
+			KillItemAll 622062
+			Endblock
+
+#### Dºë»ï¡õÃó
+
+## »¿åÃÇíÆ©†A¸ó¶¯Ïþ
+block Job >= 354 && Job <= 359
+
+	GoToF case1
+
+## »¿åÃÇíãï¹Ü¸ó¶¯Ïþ
+block Job >= 364 && Job <= 369
+
+	GoToF case1
+
+## »¿åÃÇí–_Õ¿Ä¤†A¶¦¶¯Ïþ
+block Job >= 374 && Job <= 379
+
+	GoToF case1
+
+## »¿åÃÇíëÌîÄ¤†A¶¦¶¯Ïþ
+block Job >= 384 && Job <= 389
+
+	GoToF case1
+
+## »¿åÃÇí×µÀÃÏÎ¶¯Ïþ
+block Job >= 394 && Job <= 399
+
+	GoToF case1
+
+## »¿åÃÇíÎå³ðÔ»
+block Job >= 454 && Job <= 459
+
+	GoToF case1
+
+## »¿åÃÇíÈóÚÐ
+block Job >= 464 && Job <= 469
+
+	GoToF case1
+
+## »¿åÃÇí³Ûá¨
+block Job >= 474 && Job <= 479
+
+	GoToF case1
+
+## ÒëŠi«z¼ëÓ£¶¯Ïþ
+block Job >= 414 && Job <= 419
+
+	GoToF case1
+
+## ÓªÚÐ¶¯Ïþ
+block Job >= 424 && Job <= 429
+
+	GoToF case1
+
+## ·ÄÖ¯¹¤
+block Job >= 1014 && Job <= 1019
+
+	GoToF case1
+
+*case1*
+
+	Window 3207962,YES,NO
+
+		#\n\n©x³ð¼°ÛÆ·´©y¨àÚÐ¾®¨áÚÐÆ¥\n©xñ×ÊÏÆ¥ÊÖÈÕµ¤³ðÎç±åØ¦ÔÂ¾®ÈÕ©y\n©xÎåÇÐÊÏÎçÈìÕÏÕºÃ«°ïÒü»¯¾®ÈÕñ×ÊÏ·Ö–f»¥fÖÐ·½©z©xÉÍ?·´fÖÐ¾®Ø¦¨”
+
+		Window_NO
+			EndWindow 3207963
+
+		#\n\n©xÉÍ?»¥Æ¥ÎåÐ×ÈÕë¢Ã«¾®Øê»¯ÓÑ©z
+
+
+		Window_YES
+			Window 3207964,NEXT
+
+		#\n\n©x¹«Ä¾ÔªÔú³ó©y³ð¼°ÄâÖÐ¼°ÀÛÃ«ƒ}ÔÈ»¯©y\n©x—W³ßñ×ÊÏÆ¥ÓÑ©z
+			
+			Window 3207965,OK
+
+		#\n\n©x»_áN±åØ¤ÔÂÛÍØøµ©Õý»ï¼°Ö´·´©y\n©x³ð¼°ÀÛ»¥Ýà±åØ¦ÔÈ»¯ÖÐÔÂÊÏ·Ö©z\n©xÖ´ÎçÄâÖÐ¼°ÀÛ»¥¢ËÔªçÆÆ¥©y¹«¼°ÀÛ»¥\n©x¿ÒØÆÈÊÖ´¼°µÑÁÞÃ«°¾Øê»¯ÖÐÔÂÁÝ±å·ÖØê\n©x›«»¥·°ÈÊ·½µ¤±åØ¦ÔÈ»¯ÖÐÔÂ©z\n©x·½ÈÊÁ§Ô»Ã«Î­»¯©yßÙÒü»¯©y\n©xé¬Ø¦ÈÕÎåÔÈÎçÓúÔ‰ÒýÆ¥Ð×ÉýÔ»ååØêÔÂ·½©z
+
+######## ç¦ˆ^»¥ÖÐÔÈÌìÖÐ
+				Window_OK Itemspace == 0
+					EndWindow 3207966
+
+		#\n\n©x¹«Ä¾¶¯Ïþƒ}»¯Ø¦ÖÐÐÄÐ×ÖÐ·ÖÓÑ©z
+
+				Window_OK
+					GiveLeak1Item 622044,1
+					LeaveGroup
+					warp 0,59930,28,92
+
+
+#### Ïþ·¤¶¯Â½
+block
+	EndWindow 3207967
+
+		#\n\n©xé¬·´©y³ð¼°ÛÆ³ßñ×¸ê·ïÉ¡·´Ø¦ÖÐ·½µ¤·ÖÓÑ©z
+

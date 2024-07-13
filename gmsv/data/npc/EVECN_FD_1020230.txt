@@ -1,0 +1,20 @@
+##ÓÞÈË½Ú_±¦Ïä
+block item 34552 >=1 && item 34553 >=1 && nowEvent 255 == 1
+	window 1020493,yes,no
+		window_yes item 34552 >=1 && item 34553 >=1 && nowEvent 255 == 1
+			killitem 34552,1
+			killitem 34553,1
+			giveleak1item 34554,1
+		window_no
+
+block item 34552 >=1 && item 34553 >=1
+	window 1020493,yes,no
+		window_yes item 34552 >=1 && item 34553 >=1
+			endEvent 255 = 1
+			killitem 34552,1
+			killitem 34553,1
+			giveleak1item 34554,1
+		window_no
+
+block
+	endwindow 1020494,ok

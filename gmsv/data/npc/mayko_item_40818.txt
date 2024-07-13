@@ -1,0 +1,52 @@
+##40818 勇气花盆
+##block   Item 40723 >0 && ItemCreateTime 40723>240
+##	##有材料单且过4hr
+#小花苗	40821
+
+#206123	喷洒除虫剂	0
+#206109	\n\n  能快一点发芽有多好～	0
+#1109496	\n\n\n　　　已经一天了，要加入除虫剂吗？？
+#1109497	\n\n\n　　　糟了～\n　　　两天没照顾已经枯死了！
+#206112	长大了！	0
+
+#除虫剂	18797
+
+#1109490	\n\n\n\n@c还是算了吧～～
+#1109482	\n\n\n\n@c你好像掉了什么东西啰。
+#block Item 40816>0 || Item 40817>0
+#	 EndWindow 1109516
+
+block Item 40818 > 1
+	 EndWindow 1109516
+
+##超过两天  240*6*2=1440*2=2880
+block Item 40818 > 0 && ItemCreateTime 40818 > 2880
+	 Window 1109497,OK
+	 Window_OK Item 40818 > 0
+	 KillItem 40818,1
+	 Window_OK
+	 Endblock
+#1-2天　有营养剂
+block Item 40818 > 0 && ItemCreateTime 40818 > 1440 && Item 18797 > 0
+	 Window 1109496,YES,NO
+
+	 Window_NO
+	 EndWindow 1109490
+
+	 Window_YES Item 40818 = 0 || Item 18797 = 0
+
+	 EndWindow 1109482
+
+	 Window_YES
+	 Window 206123,NEXT
+	 KillItem 40818,1
+	 KillItem 18797,1
+	 GiveLeak1Item 40821,1
+	 EndWindow 206112
+#1-2天　无营养剂
+block Item 40818 > 0 && ItemCreateTime 40818 > 1440
+	 EndWindow 1109509
+#未满一天
+block
+	 EndWindow 206117
+

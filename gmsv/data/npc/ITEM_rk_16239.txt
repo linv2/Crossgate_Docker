@@ -1,0 +1,46 @@
+#
+#???юЏък
+#
+block StampCount 16239 == 3
+	Window 21731,Yes,No
+		Window_No
+		Window_Yes
+			Window 21732,Next
+				Play_SE 78,320,240
+				Window 21733,Next
+					Play_SE 63,320,240
+					Window 21734,Next
+					EndWindow 21839
+
+block StampCount 16239 == 2
+	Window 21731,Yes,No
+		Window_No
+		Window_Yes
+			Window 21732,Next
+				Play_SE 78,320,240
+				Window 21733,Next
+					Play_SE 63,320,240
+					Window 21734,Next
+					EndWindow 21823
+
+block StampCount 16239 == 1
+	Window 21731,Yes,No
+		Window_No
+		Window_Yes
+			Window 21732,Next
+				Play_SE 78,320,240
+				Window 21733,Next
+					Play_SE 63,320,240
+					Window 21734,Next
+					EndWindow 21822
+
+block
+	Window 21731,Yes,No
+		Window_No
+		Window_Yes
+			Window 21732,Next
+				Play_SE 78,320,240
+				Window 21733,Next
+					Play_SE 63,320,240
+					Window 21734,Next
+					EndWindow 21735

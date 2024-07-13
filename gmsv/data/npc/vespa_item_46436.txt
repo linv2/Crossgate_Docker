@@ -1,0 +1,26 @@
+########　Item ：铜矿娃娃 46436
+#########　可把400个铜矿压成1组铜条
+
+block Item 46436 >=2
+	 ##1052656	\n\n有２个以上的铜矿娃娃是无法使用的喔～
+	 EndWindow 1052656
+	 
+block Item 46436 ==1 &&  Item 9600 >= 400 && ItemSpace < 1 
+	 ## 1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+block  Item 46436 ==1 &&  Item 9600 >= 400 && ItemSpace >= 1  && ItemDur 46436 ==1
+	 KillItem 9600,400
+	 KillItem 46436,1
+	 GiveStackItem 9611,20
+	 
+block  Item 46436 ==1 &&  Item 9600 >= 400 && ItemSpace >= 1  && ItemDur 46436 > 1
+	 KillItem 9600,400
+	 SetDur 46436,-1
+	 GiveStackItem 9611,20
+block
+	 ##1052657	\n\n身上必须有４００个矿石并且身上有１个空格才能使用！
+	 EndWindow 1052657
+	 
+
+

@@ -1,0 +1,43 @@
+#mayko_gm_1102588.txt
+#芬芬
+#1110537	\n\n　　　鲁德大叔这老板不知发啥神经，\n　　　不准我去他的研究小屋！\n　　　就不要忘了带钥匙，叫我帮他开门！！	1
+#1110538	\n\n\n　　　你要问巨花？\n　　　那不如找我老板鲁德教授！	1
+#1110539	\n\n\n　　　教授住在靠港口的屋子，\n　　　不知道有没有上锁。	1
+#1110540	\n\n\n　　　迷糊的老板有时会忘了带钥匙，\n　　　有备份在我这，你先拿去用吧！！	1
+#1110541	\n\n\n\n@c鲁德教授住在靠港口的屋子。	1
+
+
+
+#1110589	\n\n\n　　　胡说八道，\n　　　教授龟在屋子里啦...。
+#1110590	\n\n\n　　　那臭味可能是恶臭之枪吧，\n　　　老爹该不会去西南方密林找恶臭之枪。
+#士兵的命令状										41073
+#芬芬手绘图										41074
+block Item 41074>0
+	 EndWindow 1110591
+block Item 41073>0
+	 Window 1110589,OK
+	 Window_OK Item 41073>0
+	 KillItem 41073,1
+	 GiveLeak1Item 41074,1
+	 EndWindow 1110590
+	 Window_OK
+	 EndWindow 1053288
+	 #1053288	\n\n\n\n@c咦～你的东西突然不见，是不是掉了。	1	 
+
+
+
+block Item 41061>0
+	 EndWindow 1110541
+block Item 41060>0
+	 Window 1110538,NEXT
+	 Window 1110539,OK
+	 Window_OK Item 41060>0
+	 KillItem 41060,1
+	 GiveLeak1Item 41061,1
+	 EndWindow 1110540
+	 Window_OK
+	 EndWindow 1053288
+	 #1053288	\n\n\n\n@c咦～你的东西突然不见，是不是掉了。	1
+	 
+block 
+	 EndWindow 1110537

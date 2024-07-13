@@ -1,0 +1,48 @@
+#弁仿奶穴□夫永平□
+#
+#
+#
+#
+
+
+
+
+
+Block Trialflg == 8
+
+		
+			Window 3220010,Yes,No
+
+		#\n\n﹛仇及晓卞瓒曰凶中分午〝\n﹛孔氏﹝筑迋及方丹卅\n﹛藤尹化中卅中瓦亘□市穴□互\n﹛仇及岕毛瓒痤仄五木月午反合尹氏﹝\n﹛丐五日户欠﹝
+			
+					
+					Window_Yes
+					
+							EndWindow 3220011
+
+		#\n\n﹛公丹分﹜藤尹化﹜请跶仄化侳中″
+					
+					
+					Window_No
+					
+							Window 3220012,Next
+
+		#\n\n﹛卅卞不﹜公木匹手瓒月午中丹及井﹝\n﹛＿＿孔氏﹝酷杅卅中﹝\n﹛丐五日户及鬼今反カ户化支月﹝
+							
+							Window 3220013,OK
+
+		#\n\n﹛分互﹜藤尹化中卅中樊匹反籣酦匹恘谘五月﹝\n﹛云木及综匀凶\n﹛仿弁仿弁瓒辄Ⅶ匹域竣卞瓒月互中中﹝
+							
+									Window_OK
+									
+										leaveGroup
+										warp 0,59966,155,147
+
+
+block 
+
+		endWindow 3220014
+
+		#\n\n﹛氏〝眸反夫永弁弁仿奶穴□分﹝\n﹛仇及燮及辄毛杴隙仄化中月午仇欠卅及今﹝
+
+

@@ -1,0 +1,43 @@
+#ÆËØø¡õ¼þ
+
+#¾Þ»ï
+block EndEvent 119 == 1
+	Window 23013,Next
+	Window 23014,Next
+	Window 23015,Next
+	Window 23016,Next
+	Window 23017,Next
+	Window 23018,Next
+	Window 23019,Next
+	Window 23020,OK
+		Window_OK
+			KillItemAll 16428
+			NowEvent 119 = 0
+			EndEvent 119 = 0
+			NowEvent 145 = 0
+			EndEvent 145 = 0
+			EndEvent 55 = 1
+			CheckTitle
+			LeaveGroup
+			Warp 0,43753,7,32
+
+#·Â¼þ
+block EndEvent 120 == 1
+	Window 23013,Next
+	Window 23014,Next
+	Window 23015,Next
+	Window 23016,Next
+	Window 23021,Next
+	Window 23022,Next
+	Window 23023,Next
+	Window 23024,OK
+		Window_OK
+			KillItemAll 16428
+			NowEvent 120 = 0
+			EndEvent 120 = 0
+			NowEvent 145 = 0
+			EndEvent 145 = 0
+			EndEvent 63 = 1
+			CheckTitle
+			LeaveGroup
+			Warp 0,43753,7,32

@@ -1,0 +1,34 @@
+#Ë¦ÄÌÒÁÃ¬»ïéùØêÝ±Õ°Øj©x©x??©xŽx÷ú
+#
+#©x©x©xâêØÆ±Ø¡õÐþ©jÕ±©k¼°Þð
+
+###©xÕ±¼°ÉË?ŠqÌ¤Ã«¨åòÛ¶¯Ïþô÷ƒ}
+block Item_631004 == 0 && Item_631005 == 0 && Item_631006 == 0 && Item_631008 == 0 && Item_631009 == 0 && Item_631010 == 0 && Item_631011 == 0 && Item_631012 == 0 && Item_631013 == 0 && Item_631014 == 0 && Item_631015 == 0
+
+	If Item_631003 >= 6 && Xpos == 172 && Ypos == 191
+
+		If LocalFlag0 == 0
+
+			Play_SE 260,320,240
+			ShapeNext 103011
+			LocalFlag0 = 1
+
+		endif
+
+	endif
+
+
+	If Item_631003 >= 6 && Xpos == 174 && Ypos == 187
+
+		If LocalFlag0 == 1
+
+			KillItem 631003,6,(3004897)
+			LeaveGroup
+			Warp 0,59750,140,77
+
+		endif
+
+	endif
+
+
+

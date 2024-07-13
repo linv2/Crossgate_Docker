@@ -1,0 +1,34 @@
+###■逆星_鉴定师特殊掉落
+###■钢骑原矿		每取出2个钢骑原矿,耐久扣1
+
+ 
+
+ ####□矿工能使用
+block  Job >=471 && Job < 479
+	 ##1110258	\n\n是否想切割钢骑原矿呢？
+	 Window 1110258,YES,NO
+	 	 Window_NO
+	 	 
+	 	  Window_YES ItemSpace < 2
+	 	 	 ##1051843	\n\n\n\n\n@c物品栏的空间不足。																																																																																																			
+			 EndWindow 1051843
+	 	 
+	 	 Window_YES Item 40953 >=2
+	 	 	 ##1110259	\n\n\n钢骑原矿\n如果持有２个以上是无法使用的喔～
+			 EndWindow 1110259
+		 Window_YES Item 40953 ==1  && ItemDur 40953 ==1
+		 	 ##1110260	钢骑原矿消失了。
+			 KillItem 40953,1,(1110260)
+			 GiveStackItem  18449,2
+			 
+		 Window_YES Item 40953 ==1 && ItemDur 40953 >1		 
+	 	 	 ##1110261	使用了钢骑原矿。
+			  GiveStackItem  18449,2
+	 	 	 SetDur 40953,-1
+	 	 	 Message 1110261
+
+ ####□一般
+ block
+ 	 ##1110245	\n\n‘似乎只有矿工才能处理这块矿石！’	1
+	 EndWindow 1110245
+

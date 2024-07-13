@@ -1,0 +1,11 @@
+#ож╫П╢Э(10000)	mayko_item_47447.txt
+block Item 47447 >= 1 
+	 Window 1054697,YES,NO
+	 Window_YES Gold>990000
+	 EndWindow 1054698
+	 Window_YES 
+	 AddGold 10000
+	 KillItem 47447,1
+
+	 Window_NO
+	 EndWindow 1054696

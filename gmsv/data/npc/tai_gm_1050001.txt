@@ -1,0 +1,35 @@
+###################营业许可证兑换处
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+	 	 	 
+
+################### 有兑换券
+block Item 45142 >=1 
+	 ##1201311	\n\n啊哈！你的运气真是太好了！\n现在居然还有空位？！\n\n你确定要把营业许可证交给我，\n兑换成营业许可证吗？
+	 Window 1201311,YES,NO 
+	 	 Window_YES Item 45142 >=1 
+	 	 	 ##1201313	\n\n\n\n@c欢迎你加入我们御用流动摊贩的行列！ ^_^
+			 Window 1201313,NEXT
+			 ##兑换券消失，给许可证
+			 KillItem 45142
+			 GiveLeak1Item 45141
+	 	 Window_NO 
+	 	 	 ##1201315	\n\n\n机会难得耶！\n你再多考虑一下嘛！
+			 EndWindow 1201315
+
+################### 一般
+block 
+	 ##1201317	\n\n\n\n@c今天的市集真是热闹啊！
+	 EndWindow 1201317
+
+
+
+
+	 

@@ -1,0 +1,15 @@
+#Žè¼°ÒøÖÐ(15554)
+#
+
+block
+
+  Window 21322,OK
+    Window_OK Itemspace != 0
+     killitemall 18768
+     killitemall 18783
+     killitemall 18784
+     giveitem 18780,1
+     LeaveGroup
+        Warp 0,1530,15,6
+    Window_OK
+         Endwindow 10000

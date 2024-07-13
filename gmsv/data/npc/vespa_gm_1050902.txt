@@ -1,0 +1,114 @@
+##############守岁裁判员 1050902 1500(43,70)
+#######正式版
+
+#########已有“根性试验之证”(45734)
+block Item 45734 >= 1 
+	 ##1051715	\n\n加油吧～传说守岁守的越久，父母会越长寿喔～
+	 EndWindow 1051715
+
+######无２级以上技能或是人物等级１０级以上
+block Level >= 10 ||  SkillLevel 0 >= 2  || SkillLevel 1>= 2 || SkillLevel 2 >= 2 || SkillLevel 3 >= 2 || SkillLevel 4 >=  2 || SkillLevel 5 >= 2 || SkillLevel 6 >= 2 || SkillLevel 7 >= 2 || SkillLevel 8 >= 2 || SkillLevel 9 >= 2 || SkillLevel 10 >=  2 || SkillLevel 11 >= 2 || SkillLevel 12 >= 2 || SkillLevel 13 >= 2 || SkillLevel 14 >=  2 || SkillLevel 15 >=  2 || SkillLevel 16 >= 2 || SkillLevel 17 >= 2 || SkillLevel 18 >= 2 || SkillLevel 19 >= 2 || SkillLevel 20 >=  2 || SkillLevel 21 >= 2 || SkillLevel 22 >= 2 || SkillLevel 23 >= 2 || SkillLevel 24 >= 2 || SkillLevel 25 >= 2 || SkillLevel 26 >= 2 || SkillLevel 27 >= 2 || SkillLevel 28 >= 2 || SkillLevel 29 >= 2 || SkillLevel 30 >=  2 || SkillLevel 31 >= 2 || SkillLevel 32 >= 2 || SkillLevel 33 >= 2 || SkillLevel 34 >= 2 || SkillLevel 35 >=2 || SkillLevel 36 >=2 || SkillLevel 37 >= 2 || SkillLevel 38 >= 2 || SkillLevel 39 >= 2 || SkillLevel 40 >= 2
+	 ##1051716	\n\n我是国王所派的守岁裁判员，这是国王特别为您所举办的新年活动。\n让我来为您解说这个活动如何进行。
+	 ##1051717	\n\n首先您必须向我领取“根性试验之证”。\n您只要在线上并保留着“根性试验之证”，时间越久，能换到的奖品越好～\n是否要参加这个活动呢？
+	 Window 1051716,NEXT
+	 Window 1051717,YES,NO
+	 	 Window_YES ItemSpace < 1
+	 	 	 ##1051718	\n\n您身上的东西好像满了喔．．．
+			 EndWindow 1051718
+		  Window_YES ItemSpace >=1
+		  	 ##1051719	\n\n要记得“根性试验之证”登出即会消失，请您小心！
+			 GiveLeak1Item 45734
+			 EndWindow 1051719
+		 Window_NO 
+		 	 ##1051720	\n\n国王提供的奖品真的很不错！您真的不想参加吗？
+			 EndWindow 1051720
+	 
+block Level >= 10 || SkillLevel 41>= 2 || SkillLevel 42>= 2 || SkillLevel 43 >= 2 || SkillLevel 44 >= 2 || SkillLevel 45 >= 2 || SkillLevel 46 >= 2 || SkillLevel 47 >= 2 || SkillLevel 48 >= 2 || SkillLevel 49 >= 2 || SkillLevel 50 >= 2 || SkillLevel 51 >= 2 SkillLevel 52 >= 2 SkillLevel 53 >= 2 || SkillLevel 54 >= 2 || SkillLevel 55 >= 2 || SkillLevel 56 >= 2 || SkillLevel 57 >= 2 || SkillLevel 58 >= 2 || SkillLevel 59 >= 2 || SkillLevel 60 >= 2 || SkillLevel 61 >= 2 || SkillLevel 62 >= 2 || SkillLevel 63 >=2 || SkillLevel 64 >= 2 || SkillLevel 65 >= 2|| SkillLevel 66 >= 2 || SkillLevel 67 >= 2 || SkillLevel 68 >= 2 || SkillLevel 69 >= 2 || SkillLevel 70 >= 2 || SkillLevel 71 >= 2 || SkillLevel 72 >= 2 || SkillLevel 73 >= 2 || SkillLevel 74 >=2 || SkillLevel 75 >= 2|| SkillLevel 76 >= 2 || SkillLevel 77 >= 2 || SkillLevel 78 >= 2 || SkillLevel 79 >= 2 || SkillLevel 80 >= 2 || SkillLevel  81 >= 2 
+	 ##1051716	\n\n我是国王所派的守岁裁判员，这是国王特别为您所举办的新年活动。\n让我来为您解说这个活动如何进行。
+	 ##1051717	\n\n首先您必须向我领取“根性试验之证”。\n您只要在线上并保留着“根性试验之证”，时间越久，能换到的奖品越好～\n是否要参加这个活动呢？
+	 Window 1051716,NEXT
+	 Window 1051717,YES,NO
+	 	 Window_YES ItemSpace < 1
+	 	 	 ##1051718	\n\n您身上的东西好像满了喔．．．
+			 EndWindow 1051718
+		  Window_YES ItemSpace >=1
+		  	 ##1051719	\n\n要记得“根性试验之证”登出即会消失，请您小心！
+			 GiveLeak1Item 45734
+			 EndWindow 1051719
+		 Window_NO 
+		 	 ##1051720	\n\n国王提供的奖品真的很不错！您真的不想参加吗？
+			 EndWindow 1051720
+	 	 
+block Level >= 10 || SkillLevel 82 >= 2 || SkillLevel 83 >= 2 || SkillLevel 84 >= 2 || SkillLevel 85 >= 2 || SkillLevel 86 >= 2 || SkillLevel 87 >= 2 || SkillLevel 88 >= 2 || SkillLevel 89 >= 2 || SkillLevel 90 >= 2 || SkillLevel 91 >= 2 || SkillLevel 92 >= 2 || SkillLevel 93 >= 2 || SkillLevel 94 >= 2 || SkillLevel 95 >= 2 || SkillLevel 96 >= 2 || SkillLevel 97 >= 2 || SkillLevel 98 >= 2 || SkillLevel 99 >= 2 || SkillLevel 100 >= 2 || SkillLevel 101 >= 2 || SkillLevel 101 >= 2 || SkillLevel 102 >= 2 || SkillLevel 103 >= 2 || SkillLevel 104 >= 2 || SkillLevel 105 >= 2 || SkillLevel 106 >= 2 || SkillLevel 107 >= 2 || SkillLevel 108 >= 2 || SkillLevel 109 >= 2 || SkillLevel 110 >= 2 || SkillLevel 111>= 2 || SkillLevel 112 >= 2 || SkillLevel 113 >= 2 || SkillLevel 114 >= 2 || SkillLevel 115 >= 2 || SkillLevel 116 >= 2 || SkillLevel 117 >= 2 || SkillLevel 118 >= 2 || SkillLevel 119 >= 2 || SkillLevel  120 >= 2 
+	 ##1051716	\n\n我是国王所派的守岁裁判员，这是国王特别为您所举办的新年活动。\n让我来为您解说这个活动如何进行。
+	 ##1051717	\n\n首先您必须向我领取“根性试验之证”。\n您只要在线上并保留着“根性试验之证”，时间越久，能换到的奖品越好～\n是否要参加这个活动呢？
+	 Window 1051716,NEXT
+	 Window 1051717,YES,NO
+	 	 Window_YES ItemSpace < 1
+	 	 	 ##1051718	\n\n您身上的东西好像满了喔．．．
+			 EndWindow 1051718
+		  Window_YES ItemSpace >=1
+		  	 ##1051719	\n\n要记得“根性试验之证”登出即会消失，请您小心！
+			 GiveLeak1Item 45734
+			 EndWindow 1051719
+		 Window_NO 
+		 	 ##1051720	\n\n国王提供的奖品真的很不错！您真的不想参加吗？
+			 EndWindow 1051720
+	 
+block Level >= 10 || SkillLevel 121 >= 2 || SkillLevel 122 >= 2 || SkillLevel 123 >= 2 || SkillLevel 124 >= 2 || SkillLevel 125 >= 2 || SkillLevel 126 >= 2 || SkillLevel 127 >= 2 || SkillLevel 128 >= 2 || SkillLevel 129 >= 2 || SkillLevel 130 >= 2 || SkillLevel 131 >= 2 || SkillLevel 132 >= 2 || SkillLevel 133 >= 2 || SkillLevel 134 >= 2 || SkillLevel 135 >= 2 || SkillLevel 136 >= 2 || SkillLevel 137 >= 2 || SkillLevel 138 >= 2 || SkillLevel 139 >= 2 || SkillLevel 140 >= 2 || SkillLevel 141 >= 2 || SkillLevel 142 >= 2 || SkillLevel 143 >= 2 || SkillLevel 144 >= 2 || SkillLevel 145 >= 2 || SkillLevel 146 >=2 || SkillLevel 147 >= 2 || SkillLevel 148 >= 2 || SkillLevel 149 >= 2 || SkillLevel 150 >= 2 || SkillLevel 151 >= 2 || SkillLevel 152 >= 2 || SkillLevel 153 >= 2 || SkillLevel 154 >= 2 || SkillLevel 155 >= 2 || SkillLevel 156 >= 2 || SkillLevel 157 >= 2 || SkillLevel 158 >= 2 || SkillLevel 159 >= 2 || SkillLevel 160 >= 2
+	 ##1051716	\n\n我是国王所派的守岁裁判员，这是国王特别为您所举办的新年活动。\n让我来为您解说这个活动如何进行。
+	 ##1051717	\n\n首先您必须向我领取“根性试验之证”。\n您只要在线上并保留着“根性试验之证”，时间越久，能换到的奖品越好～\n是否要参加这个活动呢？
+	 Window 1051716,NEXT
+	 Window 1051717,YES,NO
+	 	 Window_YES ItemSpace < 1
+	 	 	 ##1051718	\n\n您身上的东西好像满了喔．．．
+			 EndWindow 1051718
+		  Window_YES ItemSpace >=1
+		  	 ##1051719	\n\n要记得“根性试验之证”登出即会消失，请您小心！
+			 GiveLeak1Item 45734
+			 EndWindow 1051719
+		 Window_NO 
+		 	 ##1051720	\n\n国王提供的奖品真的很不错！您真的不想参加吗？
+			 EndWindow 1051720
+	 
+block Level >= 10 || SkillLevel 161 >= 2 || SkillLevel 162 >= 2 || SkillLevel 163 >= 2 || SkillLevel 164 >= 2 || SkillLevel 165 >= 2 || SkillLevel 166 >= 2 || SkillLevel 167 >= 2 || SkillLevel 168 >= 2 || SkillLevel 169 >= 2 ||  SkillLevel 170 >= 2 || SkillLevel 171 >= 2 || SkillLevel 172 >= 2 || SkillLevel 173 >= 2 || SkillLevel 174 >= 2 || SkillLevel 175 >= 2 || SkillLevel 176 >= 2 || SkillLevel 177 >= 2 || SkillLevel 178 >= 2 || SkillLevel 179 >= 2 || SkillLevel 180 >= 2 || SkillLevel 181 >= 2 || SkillLevel 182 >= 2 || SkillLevel 183 >= 2 || SkillLevel 184 >= 2 || SkillLevel 185 >= 2 || SkillLevel 186 >=2 || SkillLevel 187 >= 2 || SkillLevel 188 >= 2 || SkillLevel 189 >= 2 || SkillLevel 190 >= 2 || SkillLevel 191 >= 2 || SkillLevel 192 >= 2 || SkillLevel 193 >= 2 || SkillLevel 194 >= 2 || SkillLevel 195 >= 2 || SkillLevel 196 >= 2 || SkillLevel 197 >= 2 || SkillLevel 198 >= 2 || SkillLevel 199 >= 2 || SkillLevel 200 >= 2 
+	 ##1051716	\n\n我是国王所派的守岁裁判员，这是国王特别为您所举办的新年活动。\n让我来为您解说这个活动如何进行。
+	 ##1051717	\n\n首先您必须向我领取“根性试验之证”。\n您只要在线上并保留着“根性试验之证”，时间越久，能换到的奖品越好～\n是否要参加这个活动呢？
+	 Window 1051716,NEXT
+	 Window 1051717,YES,NO
+	 	 Window_YES ItemSpace < 1
+	 	 	 ##1051718	\n\n您身上的东西好像满了喔．．．
+			 EndWindow 1051718
+		  Window_YES ItemSpace >=1
+		  	 ##1051719	\n\n要记得“根性试验之证”登出即会消失，请您小心！
+			 GiveLeak1Item 45734
+			 EndWindow 1051719
+		 Window_NO 
+		 	 ##1051720	\n\n国王提供的奖品真的很不错！您真的不想参加吗？
+			 EndWindow 1051720
+	 
+block Level >= 10 || SkillLevel 201 >= 2 || SkillLevel 202 >= 2 || SkillLevel 203 >= 2 || SkillLevel 204 >= 2 || SkillLevel 205 >= 2 || SkillLevel 206 >= 2 || SkillLevel 207 >= 2 || SkillLevel 208 >= 2 || SkillLevel 209 >= 2 || SkillLevel 210 >= 2 || SkillLevel  211 >= 2 || SkillLevel 212 >= 2 || SkillLevel 213 >= 2 || SkillLevel 214 >= 2 || SkillLevel 215 >= 2 || SkillLevel 216 >= 2 || SkillLevel 217 >= 2 || SkillLevel 218 >= 2 || SkillLevel 219 >= 2 || SkillLevel  220 >= 2 || SkillLevel 221 >= 2 || SkillLevel 222 >= 2 || SkillLevel 223 >= 2 || SkillLevel 224 >= 2 || SkillLevel 225 >= 2 || SkillLevel 226 >= 2 || SkillLevel 227 >= 2
+	 ##1051716	\n\n我是国王所派的守岁裁判员，这是国王特别为您所举办的新年活动。\n让我来为您解说这个活动如何进行。
+	 ##1051717	\n\n首先您必须向我领取“根性试验之证”。\n您只要在线上并保留着“根性试验之证”，时间越久，能换到的奖品越好～\n是否要参加这个活动呢？
+	 Window 1051716,NEXT
+	 Window 1051717,YES,NO
+	 	 Window_YES ItemSpace < 1
+	 	 	 ##1051718	\n\n您身上的东西好像满了喔．．．
+			 EndWindow 1051718
+		  Window_YES ItemSpace >=1
+		  	 ##1051719	\n\n要记得“根性试验之证”登出即会消失，请您小心！
+			 GiveLeak1Item 45734
+			 EndWindow 1051719
+		 Window_NO 
+		 	 ##1051720	\n\n国王提供的奖品真的很不错！您真的不想参加吗？
+			 EndWindow 1051720
+	 
+	 
+#########一般
+block
+	 ##1051714	\n\n很抱歉，这个活动的参加资格为‘任一技能２级以上’、‘人物等级１０级以上’。\n您还不能参加喔～
+	 EndWindow 1051714
+			 
+			 
+	 	 	 
+	 

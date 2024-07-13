@@ -1,0 +1,10 @@
+#?ü®?
+
+block Item 16229 >= 1
+	Window 21624,YES,NO
+		Window_YES
+			KillItem 16229,1,(21625)
+			GiveItem 16228
+		Window_NO
+block
+	EndWindow 21626

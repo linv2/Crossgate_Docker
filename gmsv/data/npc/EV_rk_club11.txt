@@ -1,0 +1,106 @@
+#
+#本奶戊
+#
+
+#雇撮吨谨痹毛儅匀化中月卅日
+block Item 16272 >= 1 || Item 16273 >= 1
+	Endwindow 21876
+
+#
+block nowtime == 3
+			Endwindow 21816
+
+#域ざ烦聊仄化中卅中卅日
+block Item 16241 == 1 && ItemCreateTime 16241 <= 1439
+			Endwindow 21850
+
+#本奶戊及抩铜市它件玄互100动晓卅日卅日
+block Item 16241 == 1 && StampCount 16241 >= 100
+	Endwindow 21876
+
+#本奶戊及抩铜市它件玄互99卅日
+block Item 16241 == 1 && StampCount 16241 == 99
+			AddStampCount 16241
+			Endwindow 22289
+
+##﹛本奶戊及抩铜市它件玄互29卅日
+block Item 16241 == 1 && StampCount 16241 == 29
+			AddStampCount 16241
+			Endwindow 21863
+
+##﹛本奶戊及抩铜市它件玄互16卅日
+block Item 16241 == 1 && StampCount 16241 == 16
+			AddStampCount 16241
+			Endwindow 21962
+
+##﹛本奶戊及抩铜市它件玄互6卅日
+block Item 16241 == 1 && StampCount 16241 == 6
+			AddStampCount 16241
+			Endwindow 21862
+
+##﹛本奶戊及抩铜市它件玄互ㄣ动晓卅日
+block Item 16241 == 1 && StampCount 16241 >= 4
+			AddStampCount 16241
+			Endwindow 21849
+##﹛本奶戊及抩铜市它件玄互ㄢ卅日
+block Item 16241 == 1 && StampCount 16241 == 3
+			Endwindow 21848
+
+#仄斤丹斗ヽ彰仿□丢件互丐匀化Item 16241 == 1 && StampCount 16241 == 2
+block Item 18968 >= 1 && Item 16241 == 1 && StampCount 16241 == 2
+	Window 21752,Yes
+		Window_Yes
+			Window 21753,OK
+
+				Window_OK
+					KillItem 18968
+					AddStampCount 16241
+					LeaveGroup
+					Warp 0,1165,19,38
+
+##﹛Item 16241 == 1 && StampCount 16241 == 2卅日
+block Item 16241 == 1 && StampCount 16241 == 2
+	Window 21749,Next
+	Window 21750,Next
+	EndWindow 21751
+
+#﹛Item 16241 == 1 && StampCount 16241 == 1
+block Item 16241 == 1 && StampCount 16241 == 1
+	Window 21740,Next
+	Window 21741,Next
+	Window 21742,Yes
+	Window_Yes
+	Window 21743,Next
+	Window 21744,Next
+	Window 21745,Next
+	Window 21746,Next
+	Play_SE 75,320,240
+	Window 21747,Next
+	Window 21748,OK
+		Window_OK
+			AddStampCount 16241
+			LeaveGroup
+			Warp 0,2431,7,3,	0,2431,5,28
+
+
+##﹛本奶戊及抩铜毛儅匀化中卅中卅日
+block
+	Window 21589,Next
+	Window 21590,Yes,No
+		Window_No
+			Endwindow 21591
+		Window_Yes Gold <= 40
+			Endwindow 10005
+		Window_Yes
+			AddGold -40
+			Window 21736,Next
+			Window 21737,Next
+			Window 21738,Next
+			Window 21739,OK
+				Window_OK ItemSpace == 0
+					Endwindow 10000
+				Window_OK
+					GiveItem 16241
+					AddStampCount 16241
+					LeaveGroup
+					Warp 0,1165,19,38

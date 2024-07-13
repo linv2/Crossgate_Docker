@@ -1,0 +1,83 @@
+#﹛戽木厄蕨及?辉﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛伀及摒
+
+###﹛由□泛奴毛赚氏匹中月
+
+block Group >= 2
+
+	EndWindow 3200462
+		#\n\n﹛丐日丐日﹜厘尴今氏友﹝它白白＿﹝\n﹛厘仪卅云狪分井日﹜夫午曰内勾侳化友﹝
+
+
+###﹛湃卞奶乩伉件弘毛儅匀化中月﹋坳互域及芺侂瞬﹌
+
+
+block Item_603000 >= 1
+
+	EndWindow 3200463
+		#\n\n﹛丐日﹜升仇井匹莘匀凶井仄日〝\n﹛巨永﹜斥亦本白奴□甘〝﹛云累〝\n﹛窒公木〝﹛蝈螺歹井日卅中歹﹝它白白＿＿﹝
+
+
+###﹛弁伉失椭瘀毛坢凶仄化中月
+
+block Item_607901 >= 30 && Item_607900 >= 1
+	Window 3200464,YES,NO
+		#\n\n﹛螂户化五化仁木凶及友﹝仇木匹窖木月歹﹝\n﹛元扎丐﹜斥亦本白奴□甘午云累毛手日丹歹方﹝
+
+		Window_YES Item_607901 >= 30 && Item_607900 >= 1 && Group < 2
+			Window 3200465,NEXT
+		#\n\n﹛它白白﹜丐曰互午丹﹝云斪卞﹜仇木毛丐仆月﹝\n\n\n@c﹛民亘永″\n\n\n﹛它白白﹜白央□旦玄平永旦方﹝
+			Window 3200466,OK
+		#\n\n﹛丐丐﹜莠井仄中歹友﹜斥亦本白奴□甘﹝\n﹛公仄化﹜公及云累﹝窒化艘哗方中妪曰＿﹝\n﹛熬仃午月蟆井日＿戽仁卅匀化＿＿五凶歹﹝\n﹛镀仁＿＿切斤丹＿分中＿＿＿﹝
+
+				Window_OK Group < 2
+					KillItemAll 607901
+					KillItemAll 607900
+					Warp 0,59714,111,127
+
+				Window_OK
+					KillItemAll 607901
+					KillItemAll 607900
+					EndWindow 3200467
+		#\n\n﹛＿萌卞谛互侳凶井日﹜杴互创户切扎匀凶歹﹝\n﹛支曰跶仄友﹜手丹域蘸螂户化五化﹝它白白＿﹝
+
+
+		Window_YES Group < 2
+			EndWindow 3200468
+		#\n\n﹛丐日﹜箫曰卅仁卅匀化月歹﹝\n﹛侹午仄切扎匀凶氏元扎卅中〝\n﹛它白白﹜云匀切斤仇切斤中卅及友﹝
+
+
+		Window_YES
+			EndWindow 3200469
+		#\n\n﹛丐日丐日﹜夫午曰内勾匀化蜕匀凶及卞＿﹝\n﹛仇木元扎狪互褡引卅中歹方﹝
+
+
+		Window_NO
+			EndWindow 3200470
+		#\n\n﹛丐日﹜检仄仁卅匀切扎匀凶及〝\n﹛匹手﹜儅匀化中化手窒及泙卞手峏凶卅中歹方﹝\n﹛中中歹﹜竣互庍歹匀凶日引凶侳化友﹜它白白﹝
+
+
+###﹛失奶泛丞反儅匀化中月互﹜椭瘀反坢凶仄化中卅中
+
+block Item_607901 >= 1 || Item_607900 >= 1
+	EndWindow 3200471
+		#\n\n﹛歹凶仄及凶户卞﹜呿癫卞丐曰互午丹﹝\n﹛匹手﹜公木分仃元扎﹜引分戽木公丹卞卅中歹﹝\n﹛手丹剂仄互氏壬匀化友﹜它白白﹝
+
+
+###﹛失奶泛丞反儅匀化中卅中
+
+block
+	Window 3200472,NEXT
+		#\n\n﹛它白白﹜踞仃卞侳化仁木凶及友﹝丐曰互午丹﹝\n﹛仇仇反抴及壑钗﹝歹凶仄反抴呺卞方匀化﹜\n﹛愤坌及抴卞岉元仇户日木化仄引匀凶及﹝\n﹛手丹域蘸戽木壬?仃请六月氏分仃升﹜
+
+	Window 3200473,NEXT
+		#\n\n﹛公及凶户卞反﹜歹凶仄互凝今中滞井日内匀午\n﹛旳中化臻化中凶云谛溥及斥亦本白奴□甘午﹜\n﹛妪曰卞兜戽躲绊互丐月白尼失伉□疋夫□午中丹\n﹛云累互ㄢㄟ呿动晓优邰卅及方﹝
+
+	Window 3200474,NEXT
+		#\n\n﹛云凑中﹜仇及燮卞丐月抴呺及斨莱卞垫匀化﹜\n﹛斥亦本白奴□甘午ㄢㄟ呿及白尼失伉□疋夫□毛\n﹛呺坁井日畴中忒仄化五化永″\n﹛云斪反允月歹﹝手丹﹜丐卅凶分仃互俇曰卅及﹝
+
+	EndWindow 3200475
+		#\n\n﹛丐﹜公丹公丹﹜凶引卞分仃升﹜斨莱及じ曰轼互\n﹛苇尹卅中午五互丐月及方﹝\n﹛匹手﹜仄壬日仁仄凶日蜇木月井日﹜\n﹛丐歹化卅中匹谨匀化友﹝它白白＿﹝
+
+

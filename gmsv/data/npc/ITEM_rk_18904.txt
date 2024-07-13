@@ -1,0 +1,28 @@
+#?????????
+#15552	??????????‏_????
+
+#
+
+block Item 18904 >= 2
+	EndWindow 21470
+
+block Item 18904 == 1
+#\n\n\n\n@c??????????תי?????
+	Window 21466,YES,NO
+	Window_YES Item 18904 == 1
+	KillItem 18904,1,(21467)
+	LeaveGroup
+	Warp 0,15578,24,40
+	Window_YES
+	Window_NO
+
+#block
+#\n\n\n\n@c~~?תי?????
+#	Window 15540,YES,NO
+#	Window_YES Item 18779 == 1
+#	SetDur 18779,-1
+#	Warp 0,1000,81,88
+
+#	Window_YES
+#	Window_NO
+

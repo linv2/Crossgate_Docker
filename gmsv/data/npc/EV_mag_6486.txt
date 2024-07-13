@@ -1,0 +1,29 @@
+#
+#侂谛及飓﹋佮﹌
+#
+############## 佮赁及庤及熔丐月﹋佮赁及庤中卅中10F尺﹌ ##############
+#え赁熔ㄢ反佮赁及詨匹仄井じ澎匹五卅中及匹椭瘀卞殖户月
+#竟癫樊反10?元扎卅仁ㄠ?尺﹋熔手匀化卅中醮棉午宁峸匹五卅仁卅月及匹﹌
+block Item 18590 == 1 || Item 18591 == 1 || Item 18592 == 1 || Item 18595 == 1
+#\n\n\n\n@c巨伙母□玉仿打件及熔毛准仆引允井〝
+	Window 15306,YES,NO
+	Window_YES Item 18590 == 1 || Item 18591 == 1 || Item 18592 == 1 || Item 18595 == 1
+#\n\n\n\n@cが﹜湃卞佮赁午隋卞丐曰
+	Window 15359,OK
+	Window_OK Item 18590 == 1 || Item 18591 == 1 || Item 18592 == 1 || Item 18595 == 1
+	LeaveGroup
+#	Warp 0,20110,10,8
+	Warp 0,20101,7,37
+	Window_NO
+
+############## 佮赁及庤及熔卅中﹋佮赁及庤中月10F尺﹌ ##############
+block Item 18590 == 0 && Item 18591 == 0 && Item 18592 == 0 && Item 18595 == 0
+#\n\n\n\n@c巨伙母□玉仿打件及熔毛准仆引允井〝
+#	Window 15306,YES,NO
+#	Window_YES Item 18590 == 0 && Item 18591 == 0 && Item 18592 == 0 && Item 18595 == 0
+	LeaveGroup
+	Warp 0,20114,45,10
+	Window_NO
+
+
+

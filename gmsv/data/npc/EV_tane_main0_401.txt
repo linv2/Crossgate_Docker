@@ -1,0 +1,27 @@
+#丢奶件﹛’’丰角怷矷
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+
+
+block Xpos == 246 && Ypos == 76
+
+
+if globalFlag10 == 1
+
+			LeaveGroup
+	warp 0,59564,5,10
+
+else
+
+			LeaveGroup
+	warp 0,59560,5,10
+
+endif
+
+
+
+

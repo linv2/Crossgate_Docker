@@ -1,0 +1,41 @@
+
+
+block
+
+
+
+
+
+
+				LocalCount10 = random 2,0
+
+				if LocalCount10 == 1
+
+
+
+#					endWindow "\n\n©x”»‘»”»‘»”»‘»\n©x”»‘»”»» ”»°ı"
+					endWindow 3006965
+
+
+
+				else
+
+
+
+#					endWindow "\n\n©x	» ‘»π¥©y» π¥» π¥®G"
+					endWindow 3006966
+
+
+
+				endif
+
+
+
+
+
+
+
+
+
+
+

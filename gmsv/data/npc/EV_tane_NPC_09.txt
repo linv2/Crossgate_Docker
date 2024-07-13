@@ -1,0 +1,184 @@
+
+
+block item 10003 >= 40
+
+	Window"\n\n﹛汁布毛汁布痹卞\n﹛引午户化仄引中引允井〝",yes,no
+
+		Window_yes item 10003 <= 39
+
+			gotoF case00
+
+		Window_yes
+
+			killitem 10003,40
+			giveitem 620019,1
+
+
+		Window_no
+		
+			gotoF case01
+
+
+
+block item 10004 >= 40
+
+	Window"\n\n﹛甲田毛甲田痹卞\n﹛引午户化仄引中引允井〝",yes,no
+
+		Window_yes item 10004 <= 39
+
+			gotoF case00
+
+		Window_yes
+
+			killitem 10004,40
+			giveitem 620020,1
+
+
+		Window_no
+		
+			gotoF case01
+
+
+block item 10005 >= 40
+
+	Window"\n\n﹛失市穴汁毛失市穴汁痹卞\n﹛引午户化仄引中引允井〝",yes,no
+
+		Window_yes item 10005 <= 39
+
+			gotoF case00
+
+		Window_yes
+
+			killitem 10005,40
+			giveitem 620021,1
+
+
+		Window_no
+		
+			gotoF case01
+
+
+block item 10006 >= 40
+
+	Window"\n\n﹛石左用平毛石左用平痹卞\n﹛引午户化仄引中引允井〝",yes,no
+
+		Window_yes item 10006 <= 39
+
+			gotoF case00
+
+		Window_yes
+
+			killitem 10006,40
+			giveitem 620022,1
+
+
+		Window_no
+		
+			gotoF case01
+
+
+block item 10007 >= 40
+
+	Window"\n\n﹛旦幼毛旦幼痹卞\n﹛引午户化仄引中引允井〝",yes,no
+
+		Window_yes item 10007 <= 39
+
+			gotoF case00
+
+		Window_yes
+
+			killitem 10007,40
+			giveitem 620023,1
+
+
+		Window_no
+		
+			gotoF case01
+
+
+block item 10008 >= 40
+
+	Window"\n\n﹛甲用平毛甲用平痹卞\n﹛引午户化仄引中引允井〝",yes,no
+
+		Window_yes item 10008 <= 39
+
+			gotoF case00
+
+		Window_yes
+
+			killitem 10008,40
+			giveitem 620024,1
+
+
+		Window_no
+		
+			gotoF case01
+
+
+block item 10009 >= 40
+
+	Window"\n\n﹛玄生伉戊毛玄生伉戊痹卞\n﹛引午户化仄引中引允井〝",yes,no
+
+		Window_yes item 10009 <= 39
+
+			gotoF case00
+
+		Window_yes
+
+			killitem 10009,40
+			giveitem 620025,1
+
+
+		Window_no
+		
+			gotoF case01
+
+
+block item 10010 >= 40
+
+
+	Window"\n\n﹛扑件弘夫□伙毛扑件弘夫□伙痹卞\n﹛引午户化仄引中引允井〝",yes,no
+
+		Window_yes item 10010 <= 39
+
+			gotoF case00
+
+		Window_yes
+
+			killitem 10010,40
+			giveitem 620026,1
+
+
+		Window_no
+		
+			gotoF case01
+
+
+
+block
+
+
+	Window"\n\n﹛儅切坁旦矢□旦及\n﹛坞五尕箫卞云ゾ心及杅及云澎鳗中毛中凶仄引允﹝",next
+
+	Window "\n\n﹛汁布﹜甲田﹜失市穴汁﹜\n﹛石左用平﹜旦幼﹜甲用平﹜\n﹛玄生伉戊﹜扑件弘夫□伙﹜",next
+
+	Window "\n\n﹛?ㄣ动晓及枆笺ㄣㄟ呿毛\n﹛卅氏午域呦及市□玉卞朼元化仄引中引允﹝\n﹛云儅切扪太卞﹜厘庍忐厍″",next
+
+	window "\n\n﹛厘庍仍驯刉及迋阂卅及匹\n﹛娄五粮五﹜荼袜?手\n﹛秋匹云坌仃中凶仄引允﹝",next
+
+	endwindow "\n\n﹛市□玉反愤裘荸铄滇″\n﹛母皮伙弁伉永弁匹\n﹛穑甄卞枆笺卞荸铄第チ″\n﹛仇及窗莘卞嫔?″"
+	
+
+block
+
+*case00*
+	endwindow "\n\n﹛醒互箫曰引六氏友﹝"
+	
+
+block
+
+*case01*
+	endwindow "\n\n﹛公丹匹允井﹝\n﹛仍じ曰迕及端反﹜\n﹛中勾匹手云邠友仁分今中﹝"
+
+
+

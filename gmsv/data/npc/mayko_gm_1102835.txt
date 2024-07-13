@@ -1,0 +1,20 @@
+#mayko_gm_1102778.txt 亚纪往丝米
+
+block globalFlag 487 == 1
+#1111777	\n\n\n　　　　你要使用传送石吗？\n　　　传送费是１０００。	1
+	Window 1111912,yes,no
+	Window_yes gold <2000
+	#3	\n\n很抱歉，你的钱不够了。	12
+	endwindow 3
+	Window_yes
+	Addgold -2000
+	leavegroup 
+	warp 0,32282,66,35
+	endblock
+	Window_no
+	endblock
+block 
+globalFlag 487 = 1
+#1111773	\n\n\n　　　　欢迎来到亚纪城，\n　　　　现在您可以使用通往丝米村的传送石了。
+endwindow 1111907
+

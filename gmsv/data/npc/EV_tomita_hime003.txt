@@ -1,0 +1,62 @@
+#﹛戽木厄蕨及?辉﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛镝屡允月裆及摒
+
+###﹛奶乩伉件弘毛儅匀化中月﹋坳互域及芺侂瞬﹌
+
+block Item_603000 >= 1
+
+	Window 3200476,OK
+		#\n\n﹛丐氏凶﹜赓户化元扎卅中卅﹝\n﹛酸ゴ卅互日﹜ㄡ氻杴及玉斥亦它反中卅中兮﹝\n﹛丐壬方﹝
+
+		Window_OK
+			Warp 0,59715,233,121
+
+
+###﹛骄中臻谛溥毛儅匀化中月
+
+block Item_607900 >= 1
+
+	EndWindow 3200477
+		#\n\n﹛谛溥毛儅匀化中月卅﹝\n﹛元扎丐﹜手丹丐中勾卞迕反卅中分欠﹝\n﹛芴煌卅仇午反﹜仄卅中杅互中中﹝
+
+
+###﹛白尼失伉□疋夫□毛赶蜗呿动晓儅匀化中月
+
+block Item_607901 >= 30
+
+	EndWindow 3200478
+		#\n\n﹛漆丐中勾卞狪仄井仃月午﹜爵丹仇午卞卅月兮﹝\n﹛创貊反匹五化月分欠丹卅﹝
+
+
+###﹛白尼失伉□疋夫□互赶蜗呿恍坢
+
+block Item_607901 >= 1
+
+	Window 3200479,YES,NO
+		#\n\n﹛漆反引分﹜丐中勾午楮歹日卅中杅互中中兮﹝\n﹛六匀井仁及塑洢互﹜踹及芃卞卅月井日卅﹝\n﹛枑曰凶中井〝
+
+		Window_YES
+			Warp 0,59715,233,121
+
+		Window_NO
+			EndWindow 3200480
+		#\n\n﹛芴煌卅云濡莞匀化歹仃井﹝鬼井匀凶卅﹝
+
+
+###﹛窒手儅匀化中卅中
+
+block
+
+	Window 3200481,OK
+		#\n\n﹛漆及丐氏凶元扎﹜丐中勾卞锹澎卞今木卅中兮﹝\n﹛枑匀化﹜公木卅曰及迕啦毛仄化五卅﹝
+
+		Window_OK
+			Warp 0,59715,233,121
+
+
+EndBlock
+
+
+
+

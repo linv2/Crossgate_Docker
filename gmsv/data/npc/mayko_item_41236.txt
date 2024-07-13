@@ -1,0 +1,145 @@
+#火把？	火把										18315	26089	0	26		0	0	0	84	1	1	1	1	0					0	0	0	0	0	0																																															0							0	1	0			0	140000	188315	100	0	0			0
+#剑？	艾里克的大剑										18316	20064	10	0		1	0	0	84	1	1	1	3	0					0	0	0	0	0	0																																															0							0	1	0			1	140000	188316	100	0	0			0
+#戒指？	贤者的戒指										18317	27618	500	18		0	1	1	72	1	1	1	3	0	130	150			0	0	0	0	0	0	3	5	3	5																																											1	10						0	1	0			1	140000	188317	100	0	0			0
+#树苗？	生命之花										18318	27907	1	26		0	0	0	0	1	1	1	1	0					0	0	0	0	0	0																																															0							0	1	0			1	140000	188318	100	0	0			0
+#剑？	艾里克的大剑										18319	20064	10	0		1	0	0	0	1	1	1	3	0					0	0	0	0	0	0																																															0							0	1	0			1	140000	188316	100	0	0			0
+
+
+##1111778	\n\n　　　你现在已经正职了，\n　　　就再努力一点吧，\n　　　等级LV25可以前往莎莲那。	1
+#1111779	\n\n　　　等可以去莎莲那，\n　　　你再准备去打神兽，\n　　　LV50或本职技能LV6，\n　　　再找双王晋阶吧！！	1
+
+block  job == 12 II job == 22 || job == 32 || job == 42 || job == 52 || job ==62 || job == 72 || job == 82 
+	window 1111778,next
+	endwindow 1111779
+	
+block  job == 92 II job == 102 || job == 132 || job == 142 || job == 152 || job ==162 || job == 112 || job == 122 
+	window 1111778,next
+	endwindow 1111779
+block  job == 1002 II job == 432 || job == 442 
+	window 1111778,next
+	endwindow 1111779	
+block level <20
+#1111764	\n\n　　　出法兰城南门,\n　　　到达维诺亚洞(472,315)后，\n　　　一层一层往下走，走到出洞后往南，\n　　　即是维诺亚村。	1
+#1111765	\n\n　　　战斗系，医生护士与爆弹师，\n　　　等级需满20级才能进去。	1
+	window 1111764,next
+	endwindow 1111765
+block EndEvent 93 == 1	&& job == 11 && title < 7
+	endwindow 1111774
+block EndEvent 93 == 1	&& job == 21 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 31 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 41 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 51 && title < 7
+	endwindow 1111774
+block EndEvent 93 == 1	&& job == 61 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 71 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 81 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 91 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 101 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 111 && title < 7
+	endwindow 1111774
+block EndEvent 93 == 1	&& job == 121 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 131 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 141 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 151 && title < 7
+	endwindow 1111774
+block EndEvent 93 == 1	&& job == 161 && title < 7
+	endwindow 1111774	
+block EndEvent 93 == 1	&& job == 1001 && title < 7	
+	endwindow 1111774
+#1111774	\n\n　　　你的称号还没到呢喃的歌声，\n　　　没办法晋阶喔！	1	
+block EndEvent 93 == 1	&& job == 431 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 431 && SkillLevel 223 < 4	
+	endwindow 1111776	
+block EndEvent 93 == 1	&& job == 441 && title < 54		
+	endwindow 1111775
+block EndEvent 93 == 1	&& job == 441 && SkillLevel 224 < 4	
+	endwindow 1111776		
+#1111774	\n\n　　　你的称号还没到呢喃的歌声，\n　　　没办法晋阶喔！	1
+#1111775	\n\n　　　你的称号还没到刻于新月之铭，\n　　　没办法晋阶喔！	1
+##
+#   忍者   │ 暗杀
+#  格斗士  │ 混乱攻击
+#  封印师  │ 精灵的盟约
+#  驯兽师  │ 调教
+#  饲养师  │ 宠物强化
+#  传教士  │ 三种补血魔法，气绝回复
+#   巫师   │ 三种恢复魔法，洁净魔法
+#   舞者   │ 跳舞
+#   盗贼   │ 偷窃
+#爆弹　炸弹转化
+#1111776	\n\n　　　你的本职技能还没LV4耶，\n　　　没办法晋阶喔！	1
+block EndEvent 93 == 1	&& job == 61 &&  SkillLevel 61 >= 4   ##传教	
+	endwindow 1111777	
+block EndEvent 93 == 1	&& job == 61 &&  SkillLevel 62 >= 4   ##传教	
+	endwindow 1111777
+block EndEvent 93 == 1	&& job == 61 &&  SkillLevel 63 >= 4   ##传教	
+	endwindow 1111777		
+block EndEvent 93 == 1	&& job == 61 &&  SkillLevel 68 >= 4   ##传教	
+	endwindow 1111777	
+block EndEvent 93 == 1	&& job == 61 
+	endwindow 1111776		
+block EndEvent 93 == 1	&& job == 131 &&  SkillLevel 64 >= 4   ##巫师
+	endwindow 1111777
+block EndEvent 93 == 1	&& job == 131 &&  SkillLevel 65 >= 4   ##巫师
+	endwindow 1111777	
+block EndEvent 93 == 1	&& job == 131 &&  SkillLevel 66 >= 4   ##巫师
+	endwindow 1111777	
+block EndEvent 93 == 1	&& job == 131 &&  SkillLevel 67 >= 4   ##巫师
+	endwindow 1111777
+block EndEvent 93 == 1	&& job == 131    ##巫师
+	endwindow 1111776		
+		
+block EndEvent 93 == 1	&& job == 91 &&  SkillLevel 69 < 4  ##封印
+	endwindow 1111776	
+block EndEvent 93 == 1	&& job == 101 &&  SkillLevel 70 < 4  ##饲养师
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 111 &&  SkillLevel 71 < 4  ##驯兽师
+	endwindow 1111776	
+block EndEvent 93 == 1	&& job == 121 &&  SkillLevel 72 < 4  ##盗贼
+	endwindow 1111776		
+block EndEvent 93 == 1	&& job == 141 &&  SkillLevel 94 < 4  ##格斗士
+	endwindow 1111776
+block EndEvent 93 == 1	&& job == 151 &&  SkillLevel 96 < 4  ##忍者
+	endwindow 1111776			
+block EndEvent 93 == 1	&& job == 161 &&  SkillLevel 98 < 4  ##舞者
+	endwindow 1111776	
+block EndEvent 93 == 1	&& job == 1001 &&  SkillLevel 2001 < 4  ##舞者
+	endwindow 1111776	
+####
+block EndEvent 93 == 1
+	endwindow 1111777
+#1111777	\n\n\n\n@c你现在可以到就职处去晋升为正职啰。	1
+
+	
+#1111772	\n\n　　　把树苗？\n　　　拿去法兰城凯蒂夫人的店(196,78)\n　　　找凯蒂夫人(17,12)鉴定，得到生命之花。	1
+#1111773	\n\n　　　拿生命之花到维诺亚村(331,481)，\n　　　在村长家(40,36)找村长(16,7)说话，\n　　　即可获得进阶资格。	1
+block leak1item 18318 >0
+	endwindow 1111773
+block item 18318 >0
+	endwindow 1111906
+block item 18316 > 0 || item 18319 >0 
+	endwindow 1111905
+	
+block item 18315 >0 
+	window 1111869,next
+	endwindow 1111770
+#1111769	\n\n　　　到维诺亚村的西北方，\n　　　布满青苔的洞窟(380,353)，\n　　　走到最顶楼(8F)最里面，\n　　　利用黄色传送水晶传送到"叹息的森林"，\n　　　跟树精长老说话。	1
+#1111770	\n\n\n\n@c战斗完再跟年轻的树精说话。	1
+	
+block 	
+	window 1111764,next
+	endwindow 1111768
+#1111764	\n\n　　　出法兰城南门,\n　　　到达维诺亚洞(472,315)后，\n　　　一层一层往下走，走到出洞后往南，\n　　　即是维诺亚村。	1
+#1111768	\n\n　　　到维诺亚村(331,481)找佣兵艾里克(7,5)拿火把	1

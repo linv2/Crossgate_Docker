@@ -1,0 +1,11 @@
+#ыв
+
+#
+block
+	Window 23154,Next
+	Window 23155,Next
+	Window 23156,OK
+		Window_OK
+			Play_Se 134,320,240
+			LeaveGroup
+			Warp 0,46060,14,16

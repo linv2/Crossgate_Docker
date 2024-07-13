@@ -1,0 +1,34 @@
+#1111504	\n\n\n@c你想去伊尔吗？	1
+#1111505	\n\n\n@c你想去圣拉鲁卡吗？	1
+#1111506	\n\n　　　我在这里帮助想就职的人，\n　　　你如果没有职业且等级１０以内，\n　　　我可以送你到圣拉鲁卡或伊尔。	1
+#1111507	\n\n\n@c你的等级超过十级啰！！	1
+#1111508	\n\n\n　　　你有职业耶，你放弃职业变成游民再来吧！\n　　　需要我送你到游民申请处吗？	1	
+block level >10
+	endwindow 1111507
+block	job == 1
+	 Window 1111506,next
+	 Window 1111504,yes,no
+	 Window_yes
+	 window 1111551,ok
+	 window_ok
+	 LeaveGroup
+	 warp 0,2000,43,33
+	 endblock
+	 Window_no
+	 	Window 1111505,yes,no
+	 	Window_yes
+	 	window 1111551,ok
+	 	window_ok
+	 	LeaveGroup
+		warp 0,2300,35,71
+	 	Window_no
+	 	endblock
+	 endblock
+block	 
+	 Window 1111508,yes,no
+	 Window_yes
+	 
+	 LeaveGroup
+	 warp 0,1000,84,44
+	 Window_no
+	 endblock 

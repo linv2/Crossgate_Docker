@@ -1,0 +1,28 @@
+#
+#?þ¬???
+#
+
+
+block Item 16306 >= 2
+	Endwindow 21990
+
+block EndEvent106 == 1
+	Window 21999,Yes,No
+		Window_NO
+		Window_YES
+			KillItem 16306,1,(21991)
+			Play_SE 273,320,240
+			EndEvent106 = 0
+			EndEvent107 = 1
+			CheckTitle
+			EndWindow 21987,OK
+
+block
+	Window 21988,YES,NO
+		Window_NO
+		Window_YES
+			KillItem 16306,1,(21991)
+			Play_SE 273,320,240
+			EndEvent107 = 1
+			CheckTitle
+			EndWindow 21987,OK

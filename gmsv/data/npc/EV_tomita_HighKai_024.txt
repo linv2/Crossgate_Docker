@@ -1,0 +1,27 @@
+#甩奶伊矛伙轾仃荼瞻豭﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛绖敢赢﹋ㄠ﹌及摒
+
+###﹛狪仄井仃凶午五
+block
+	GAWindow 3204642,YES,NO
+
+		#\n\n﹛域?梂卞中月雄祭宎分互﹜掸董及鬼排黍匹\n﹛井卅曰阳佌祭仄化中月方丹分﹝\n﹛冂卞迕仪匹手卅中蜃曰﹜嗤勿井卅中杅互恌中﹝\n﹛娄五忒允井〝
+
+		Window_YES
+			GAWindow 3204643,OK
+
+		#\n\n﹛丹戈﹜公丹仄凶杅互恌中﹝\n﹛厘仪卅爵中及蟆卞抰毛侹午仄凶午丐匀化反﹜\n﹛丐及壑匹交伙弘鹧卞宁歹允涌互卅中井日卅﹝\n﹛匹反﹜枑月互方中﹝
+
+				Window_OK
+					Warp 0,59750,57,160
+
+		Window_NO
+			GAWindow 3204644,OK
+
+		#\n\n﹛公丹井﹝匹反﹜蜗坌卞竣毛勾仃月及分冗﹝
+
+				Window_OK
+
+
+

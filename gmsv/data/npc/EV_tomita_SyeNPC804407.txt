@@ -1,0 +1,52 @@
+#斥乓田□ヨ曰14F﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛刭厶厘幂及摒
+
+###﹛≦⑧侅樊≧﹋ID“631016﹌毛湃卞欐仄凶
+block LocalFlag0 == 1
+	EndWindow 3205756
+
+		#\n\n﹛窒分﹜升仇尺垫仃壬中中井侉木凶及井〝\n﹛仇及燮卞称中洐票互赶呿岈氏匹中月分欠丹﹝\n﹛公及蕞氏酦毛褡户壬中中氏分﹝\n﹛侉木卅中丹切卞丢乒仄午仃″
+
+
+
+###﹛≦⑧侅樊≧﹋ID“631016﹌毛呁醒赭儅
+block Item_631016 >= 2
+	EndWindow 3205757
+
+		#\n\n﹛⑺元呿毛窒缁手中日氏方﹝
+
+
+
+###﹛≦⑧侅樊≧﹋ID“631016﹌毛ㄠ缁赭儅
+block LocalFlag0 == 0 && Item_631016 == 1
+
+	If ItemCreateTime_631016 > 20
+		EndWindow 3205758
+
+		#\n\n﹛丐丐﹜夫午箫赞井匀凶卅﹝\n﹛手丹帎及午仇欠匹ョ匀化厶氏匹仄引匀凶﹝\n﹛旦市旦市匹〇芢互卅井匀凶井日卅丐﹜\n﹛き缁手中日氏方﹝
+		EndBlock
+
+	else
+		ShapeNext 14578
+		Window 3205759,OK
+
+		#\n\n﹛云云﹜公及呿反永″\n﹛?仃化仁木凶及井﹜丐曰互凶中﹝\n﹛失乒伙白央旦及斥乓田□ヨ曰〝\n﹛公木卅日﹜仇及燮卞丐月赶呿洐票及蕞氏酦﹜\n﹛公仇毛骚木壬凶升曰邋仁反内分﹝
+
+			Window_OK
+				KillItemAll 631016
+				LocalFlag0 = 1
+				EndBlock
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3205760
+
+		#\n\n﹛丐□手丹﹜呿互俓仄中呿互俓仄中﹝\n﹛唾侬互厶心凶中方予℅℅永″
+
+
+

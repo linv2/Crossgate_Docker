@@ -1,0 +1,17 @@
+###dodo_item_40839.txt
+####■武神福袋
+block Item 40839 >= 1
+##1109527	\n\n\n\n\n@c想打开这个充满惊喜的福袋吗？	1																																																																																																			
+	 Window 1109527,YES,NO
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace < 3 
+	 	 	 ##1054521	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的三格位置。	1
+			 EndWindow 1054521
+	 	 
+	 	 Window_YES Item 40839 >= 1 && ItemSpace >= 3
+	 	 	 GiveLeak1Item (46780%25$6,46541%25$6,46542%25$6,46543%25$6)
+	 	 	 GiveLeak1Item (46906%30$3,46907%10$3,46908%30$3,46909%30$3)
+	 	 	 GiveLeak1Item (46008%20$1,46012%4$1,46014%10$1,46015%40$1,46016%20$1,46018%5$1,40838%1$1)
+	 	 	 KillItem 40839
+	 	 	 

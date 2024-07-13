@@ -1,0 +1,25 @@
+#########　Item ：■携带护理包 46433
+#########　双点可回复FP500、LP250,但需要花费500魔币 , 可使用 10次。（NEW !!）
+
+block
+	 ##1052648	\n\n@c是否想使用携带护理包呢？
+	 Window 1052648,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 46433 >=2
+	 	 	 ##1052649	\n\n\n携带护理包\n如果持有２个以上是无法使用的喔～
+			 EndWindow 1052649
+		 Window_YES Item 46433 ==1  && ItemDur 46433 ==1
+		 	 ##1052650	携带护理包消失了。
+			 KillItem 46433,1,(1052650)
+			 AddGold -500
+			 setfp +500
+			 setlp +250
+		 Window_YES Item 46433 ==1 && ItemDur 46433 >1		 
+	 	 	 ##1052651	使用了携带护理包。
+			 AddGold -500
+			 setfp +500
+			 setlp +250
+	 	 	 SetDur 46433,-1
+	 	 	 Message 1052651
+			 

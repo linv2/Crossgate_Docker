@@ -1,0 +1,24 @@
+#茧樱弁巨旦玄“玉失
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛＞凶凶仁＝﹛##############
+block strcmpchat == 206723
+	playse 216,1,1
+	playse 216,1,1
+	EndWindow 206487,OK
+
+###########﹛＞心月＝﹛##############
+block strcmpchat == 206720
+
+	EndWindow 206521,OK
+
+###########﹛＞五仁＝﹛##############
+block strcmpchat == 206721
+
+	EndWindow 206479,OK
+
+###########﹛窒手卅仄﹛##############
+block 
+
+	EndWindow 206520,OK

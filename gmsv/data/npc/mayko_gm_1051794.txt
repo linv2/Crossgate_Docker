@@ -1,0 +1,85 @@
+##mayko_gm_1051794.txt	
+#1055869	\n\n\n　　　　你有一枚金币，\n　　　　要换超级武器魔布与超级防具魔布各三块吗？	1
+#1055870	\n\n\n　　　　你有三十五枚银币，\n　　　　要换超级武器魔布与超级防具魔布各一块吗？	1
+#1055871	\n\n\n　　　　你好，我是夏日赠奖员，\n　　　　负责发送这个夏天的特别红利商品。	1
+#1055872	\n\n\n　　　　２００９／７／６～２００９／９／１４，\n　　　　举办特殊红利兑换。	1
+#1055873	\n\n\n　　　　三十五枚火焰鼠银币，\n　　　　可以换超级武器魔布与超级防具魔布各一块。	1
+#1055874	\n\n\n　　　　一枚水蓝金币，\n　　　　可以要换超级武器魔布与超级防具魔布各三块。	1
+#1055875	\n\n\n@c只有这个夏天才有的福利喔！！	1
+#火焰鼠银币	40843
+#水蓝鼠金币	40844
+#超级武器魔布	47695
+#超级防具魔布	47696
+
+#1055868	\n\n\n@c你的物品栏不够。	1		
+#Window_OK ItemSpace < 1
+#1109482	\n\n\n\n@c你好像掉了什么东西啰。	1
+
+block Item 40844>0
+	 Window 1055871,NEXT
+	 Window 1055869,YES,NO
+
+	 
+	 Window_YES Item 40844>0 && ItemSpace >1
+	 KillItem 40844,1
+	 GiveLeak1Item 47695,3
+	 GiveLeak1Item 47696,3
+	 Window 1055872,NEXT
+	 EndWindow 1055875
+	 Window_YES ItemSpace < 2
+	 	 EndWindow  1055868
+	  Window_YES Item 40844<1
+	 	 EndWindow 1109482	 	 
+	 
+	 Window_NO Item 40843>34
+	
+	 Window 1055870,YES,NO
+	 	 Window_NO
+	 	 Window 1055874,NEXT
+	 	 Window 1055873,NEXT
+	 	 EndWindow 1055875
+	 	 
+	 	 Window_YES ItemSpace < 2
+	 	 EndWindow  1055868
+	 	 Window_YES Item 40843<35
+	 	 EndWindow 1109482	 	 
+	 	 Window_YES
+	 	 KillItem 40843,35
+	 	 GiveLeak1Item 47695,1
+	 	 GiveLeak1Item 47696,1
+	         Window 1055872,NEXT
+	         EndWindow 1055875	
+	 Window_NO        	 
+	 	 Window 1055874,NEXT
+	 	 Window 1055873,NEXT
+	 	 EndWindow 1055875
+	 
+	 
+	 
+block Item 40843>34
+	 Window 1055871,NEXT
+	 Window 1055870,YES,NO
+	 	 Window_NO
+	 	 Window 1055874,NEXT
+	 	 Window 1055873,NEXT
+	 	 EndWindow 1055875
+	 	 
+	 	 Window_YES ItemSpace < 2
+	 	 EndWindow  1055868
+	 	 Window_YES Item 40843<35
+	 	 EndWindow 1109482	 	 
+	 	 Window_YES
+	 	 KillItem 40843,35
+	 	 GiveLeak1Item 47695,1
+	 	 GiveLeak1Item 47696,1
+	         Window 1055872,NEXT
+	         EndWindow 1055875	 
+	 	 
+
+block 
+	 Window 1055871,NEXT
+	 Window 1055872,NEXT
+	 Window 1055873,NEXT
+	 Window 1055874,NEXT
+	 EndWindow 1055875
+

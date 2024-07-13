@@ -1,0 +1,30 @@
+#####À’…∫ƒ»“≈ È
+
+
+
+ 				
+ 		
+block 
+	 Window 1109334,NEXT
+	 Window 1109335,YES,NO
+	 Window_YES
+	 	 Window 1109336,NEXT
+	 	 Window 1109337,NEXT
+	 	 Window 1109338,NEXT
+	 	 Window 1109339,NEXT
+	 	 Window 1109340,NEXT
+	 	 Window 1109341,NEXT
+	 	 Window 1109342,NEXT
+	 	 Window 1109343,NEXT
+	 	 Window 1109344,NEXT
+	 	 Window 1109345,NEXT
+	 	 Window 1109346,NEXT
+	 	 Window 1109347,NEXT
+	 	 Window 1109348,NEXT
+	 	 Window 1109349,NEXT
+	 	 Window 1109350,NEXT
+		 EndWindow 1109351		 
+	 	
+
+	 Window_NO
+endblock

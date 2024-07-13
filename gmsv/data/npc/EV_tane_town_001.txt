@@ -1,0 +1,35 @@
+#リレー　银行　秘书の人
+#大文字、小文字の?别はない
+#'_'はみ飞ばし
+
+
+#######################
+
+block
+
+	endWindow 3002119
+
+
+#	Window 3002119,next
+
+
+
+#	Window 3002120,yes,no
+#		Window_yes
+
+#					Window 3002121,ok
+
+#					window_ok skilllevel 215 < 1 
+
+#					EndWindow 4000006
+
+#					Window_ok
+
+#					Giverecipe 947
+
+
+
+#		Window_no
+
+#		EndWindow 3002122
+

@@ -1,0 +1,20 @@
+#####星系移民赠品	露比变身卡产生器	din_item_47305.txt	
+###能力说明：双点后可取得五种露比变身卡各两张。
+
+##空间不足
+block Item 46404 >=1 && ItemSpace <5
+	 ##1050874	\n\n\n\n@c物品栏至少要有五个空位。	1
+	 EndWindow 1050874
+
+##GM专用
+block Item 46404 >=1
+	 GiveStackItem 45859,2
+	 GiveStackItem 47306,2
+	 GiveStackItem 47307,2
+	 GiveStackItem 47308,2
+	 GiveStackItem 47309,2
+
+##一般	 
+block 
+	 ##1746920	GM专用！违者斩立决！	12
+	 EndWindow 1746920

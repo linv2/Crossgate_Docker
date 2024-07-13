@@ -1,0 +1,37 @@
+#珊妮	mayko_gm_1051799.txt
+#1110613	\n\n\n　　　　开于水中的花，\n　　　　是某种宗教的是圣花。
+
+#水生植物种子	41078
+#栽培记录１	41079
+#栽培记录２	41080
+#栽培记录３	41081
+
+#红莲法冠	47295
+#青莲冠	47297
+
+block Item 47295>0
+	 EndWindow 1110613
+block Item 47297>0
+	 EndWindow 1110613
+block Item 471078>0
+	 EndWindow 1110613	 
+block Item 471079>0
+	 EndWindow 1110613
+block Item 471080>0
+	 EndWindow 1110613	 
+block Item 471081>0
+	 EndWindow 1110613	 
+block Item 41078>0
+	 EndWindow 1110613
+
+block 
+	 Window 1110615,NEXT
+	 Window 1110616,OK
+	 Window_OK ItemSpace < 1
+	 EndWindow 1569036
+	 Window_OK
+	 GiveLeak1Item 41078,1
+	 endblock
+	 
+#1110615	\n\n\n　　　　我这边有水中花的种子，\n　　　　可是不知道能不能种耶！！
+#1110616	\n\n\n　　　　如果你想要试试看，\n　　　　我可以给你一个！！

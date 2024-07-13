@@ -1,0 +1,15 @@
+#空篮子	mayko_item_41017.txt	
+#1110383	\n\n\n　　　　面包篮可装5组面包，\n　　　要装进去吗？？	1
+#15201
+
+block Item 15201>14
+	 Window 1110383,YES,NO
+	 Window_YES Item 15201>14
+	 KillItem 15201,15
+	 KillItem 41017,1
+	 GiveLeak1Item 41041,1
+	 endbolck
+	 Window_YES
+	 Window_NO
+	 endblock
+

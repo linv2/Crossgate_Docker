@@ -1,0 +1,7 @@
+###展场包_醋饭寿司收纳餐盒
+
+block Item 15216 >=9
+	 KillItem 15216,9
+	 KillItem 46777,1
+	 GiveStackItem 46782,1
+	 

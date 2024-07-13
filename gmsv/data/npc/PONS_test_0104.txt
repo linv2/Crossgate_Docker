@@ -1,0 +1,31 @@
+#
+#禾件旦申永弁泛旦玄▼胀沓笮▼期 烂铢
+#
+
+################################################################################
+#
+################################################################################
+
+block Leak1item_15212 >= 1 || Item_18555 >= 1
+            EndWindow "\n\n﹛伐正扑及请?反蔽歹匀凶失伙生﹝",OK
+
+block Leak0item_15212 >= 1 && ItemSpace >= 1
+    Window "\n\n﹛末用罹屯坁毛正母匹椎烂仄化失必月失伙生﹝",YES,NO
+        Window_YES
+            KillLeak0item 15212,1
+            GiveLeak1item 15212,1
+            EndWindow "\n\n﹛椎烂仄凶失伙亥﹝",OK
+        Window_NO
+            EndWindow "\n\n﹛公丹失伙市﹝",OK
+
+block Leak0item_15212
+    Window "\n\n﹛末用罹屯坁毛正母匹椎烂仄化失必月失伙生﹝",YES,NO
+        Window_YES
+            EndWindow "\n\n﹛失奶泛丞毛帮咥仄卅中午椎烂匹五卅中失伙亥﹝",OK
+        Window_NO
+            EndWindow "\n\n﹛公丹失伙市﹝",OK
+
+block
+    EndWindow "\n\n﹛伐正扑反箕杴嫉崭谛及市件’泛奶扑﹜失伙亥﹝",OK
+
+

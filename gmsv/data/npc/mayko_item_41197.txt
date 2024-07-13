@@ -1,0 +1,77 @@
+#1111555	到法兰城流行商店(117.112)找希蜜(12.2)，选“是”取得希蜜的信。
+#1111556	到法兰城织布工坊(116.119)找妮雅(8.9)。
+#1111557	在织布工坊找玛歌(15.2)学习剪取体验
+#1111558	到东门外(566.161)剪取20个麻。
+#1111559	将20个麻,找织布工坊(116.119)的织麻布的潘朵拉(17,5)织成麻布
+#1111562	后找妮雅对话后交出希蜜的信，然后得到妮雅的信。
+#1111560	到流行商店找希蜜，交出麻布与妮雅的信后可得到纺织工推荐信。
+#1111561	到织布工坊找维丝塔就职后，找黛西学习剪取技能。
+block item 40751 >0
+	window 1111561,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,32262,8,3
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 40750 >0 && item 10400 >0
+	 window 1111560,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,1162,12,3
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 40749 >0 && item 10400 >0
+	window 1111562,next
+	window 1111688,yes,no
+	 window_yes 
+	# warp 0,1162,12,3
+	warp 0,32262,7,9
+	 leavegroup 
+	 Window_no
+	 endblock
+	
+block item 40738 >19
+	 window 1111559,next
+	 window 1111688,yes,no
+	 window_yes 
+	 warp 0,32262,17,4
+	 leavegroup 
+	 Window_no
+	 endblock
+block skilllevel 2003 >0
+	 window 1111558,next
+	
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,100,566,161
+	 leavegroup 
+	 Window_no
+	 endblock
+	 	 
+block item 40750 >0
+	window 1111557,next
+	window 1111556,next
+	window 1111688,yes,no
+	window_yes 
+	warp 0,32262,14,2
+	leavegroup 
+	Window_no
+	endblock
+block item 40749 >0
+	window 1111556,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,32262,7,9
+	 leavegroup 
+	 Window_no
+	 endblock
+block 
+	window 1111555,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1162,12,3
+	 leavegroup 
+	 Window_no
+	 endblock

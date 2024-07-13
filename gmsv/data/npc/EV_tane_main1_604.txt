@@ -1,0 +1,80 @@
+
+
+block
+
+
+
+
+
+LocalCount13 = random 10,0
+
+
+if  Xpos == 141 && Ypos == 54
+
+
+	if LocalCount13 == 1
+	
+		warp 0,59707,276,134
+
+	else
+	
+		if LocalCount13 == 2
+		
+			warp 0,59707,264,122
+	
+		else
+			if LocalCount13 == 3
+
+				warp 0,59707,240,98
+
+			else
+				if LocalCount13 == 4
+
+					warp 0,59707,252,110
+
+				else
+					if LocalCount13 == 5
+
+						warp 0,59707,276,134
+
+					else
+						if LocalCount13 == 6
+						
+							warp 0,59707,264,122
+						
+						else
+							if LocalCount13 == 7
+							
+								warp 0,59707,240,98
+							
+							else
+
+								if LocalCount13 == 8
+								
+									warp 0,59707,225,85
+								
+								else
+									if LocalCount13 == 9
+								
+									warp 0,59707,209,69
+								
+									else
+										if LocalCount13 == 10
+									
+										warp 0,59707,225,85
+									
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+
+
+
+endif
+

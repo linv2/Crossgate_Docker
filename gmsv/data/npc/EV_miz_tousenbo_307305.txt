@@ -1,0 +1,69 @@
+#çÖÆ±»¿•O¼°Îçµ¤ÁùÊÏØ¥Æ½ÅÒ·Â¡°Ê§Ðþ³âØ©
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+###########©xÀå»©¼°éAÊÉ©x##############
+block Item 18990 >= 1
+
+	setaction 13
+	Window 206971,OK
+	Window_OK
+	Warp 0,33000,313,349
+
+###########©x©x##############
+block endevent89 == 1
+
+	setaction 0
+	Window 206741,YES,NO
+	Window_YES
+	setaction 16
+	EndWindow 206746,OK
+	Window_NO
+	Window 206742,OK
+	Window_OK
+	setaction 11
+	Window 206743,YES,NO
+	Window_YES
+	setaction 16
+	EndWindow 206746,OK
+	Window_NO
+	Window 206744,YES,NO
+	Window_NO
+	setaction 16
+	EndWindow 206754,OK
+	Window_YES
+	setaction 14
+	Window 206745,OK
+	Window_OK
+	endevent89 = 0
+	Encount 3|0,33000,313,349||0|||||0|20016|||||||||
+
+###########©x©x##############
+block
+
+	setaction 0
+	Window 206741,YES,NO
+	Window_YES
+	setaction 16
+	EndWindow 206746,OK
+	Window_NO
+	Window 206742,OK
+	Window_OK
+	setaction 11
+	Window 206743,YES,NO
+	Window_YES
+	setaction 16
+	EndWindow 206746,OK
+	Window_NO
+	Window 206744,YES,NO
+	Window_NO
+	setaction 16
+	EndWindow 206754,OK
+	Window_YES
+	setaction 14
+	Window 206745,OK
+	Window_OK
+	Encount 3|0,33000,313,349||0|||||0|20016|||||||||
+
+
+

@@ -1,0 +1,16 @@
+#汕母件斥亦件“贿曰驯五及穴□扔
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+#################################################
+block
+
+	Window 219000,NEXT
+	Window 219001,NEXT
+	Window 219002,NEXT
+	Window 219003,NEXT
+	Window 219004,NEXT
+	EndWindow 219005
+
+
+
+ 

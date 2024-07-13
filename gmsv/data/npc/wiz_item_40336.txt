@@ -1,0 +1,12 @@
+#########亚诺鳗鱼饭wiz_item_40336.txt
+
+####一般
+block
+	 Window 1102293,YES,NO
+	 ##1102293	\n\n\n  要吃下去吗？
+	 Window_YES Item 40336 >= 1
+	 	 KillItem 40336
+	 	 ##失去亚诺鳗鱼饭
+	 	 GiveLeak1Item 40340
+	 	 ##得到白天打扫要诀
+	 Window_NO

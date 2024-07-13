@@ -1,0 +1,44 @@
+
+
+block
+
+
+
+
+
+
+				LocalCount10 = random 2,0
+
+				if LocalCount10 == 1
+
+
+
+#					Window "\n\n©xÉ§µæ÷±»§·Ö©z",no
+					Window 3006970,no
+
+					window_no
+
+					Encount 3|0,59504,214,112||0|||||0|305003|||||||||
+
+
+				else
+
+
+
+#					endWindow "\n\n©x½ÑÄ¾©z"
+					endWindow 3006971
+
+
+
+				endif
+
+
+
+
+
+
+
+
+
+
+

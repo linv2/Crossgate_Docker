@@ -1,0 +1,76 @@
+###################################
+# 皮伊奶弁旦平伙弁巨      by 漪呿 #
+# ←白奴□打(弁巨熬尥)←          #
+###################################
+
+#### ≦敛中扲檗≧引凶反≦毡中扲檗≧毛赭儅
+block Item 622068 >= 1 || Item 622069 >= 1
+
+	GoToF case1
+Endblock
+
+#### ≦失件泛瓜≧井≦由玄仿奶玄≧毛赭儅
+block Item 607727 >= 1 || Item 607738 >= 1
+	Window 3219636,YES,NO
+
+		#\n\n﹛云支云支〝\n﹛楝反﹜旦平伙ヨ曰及扑□田卞反\n﹛莘尹卅井匀凶及井中〝\n﹛酸ゴ分匀凶友﹝\n﹛匹﹜手丹域蘸蔺爵允月及井卅〝
+
+		Window_YES
+			Window 3219637,OK
+
+		#\n\n﹛元扎丐﹜伊瓦□及赭尺霜匀化丐仆方丹﹝
+
+				Window_OK
+					LeaveGroup
+					warp 0,59883,173,243
+					Endblock
+
+		Window_NO
+			EndWindow 3219638
+
+		#\n\n﹛云支云支﹜示弁及镀宁鳔分匀凶井﹝\n﹛佹莴及斥乓穴毛仄化鬼井匀凶友﹝
+			EndBlock
+
+
+#### 晓筏动陆
+block
+	Window 3219639,YES,NO
+
+		#\n\n﹛支丑﹜幺螺分仃升﹜\n﹛楝反仿奶母□毛银匀化中月井中〝\n﹛掸反愈嗤﹜示弁及竻琼互\n﹛脰渝读卅乒件旦正□旦平伙毛哔尹化﹜\n﹛公木毛ヨ曰请仄化中月氏分﹝\n﹛示弁午必□丞毛仄化鴃化壬﹜\n﹛楝卞手ヨ匀化丐仆月氏分仃升友﹝支月井中〝
+
+		Window_YES
+			Window 3219640,NEXT
+
+		#\n\n﹛引内伙□伙及濩抸分﹝\n﹛仇木井日楝互垫仁ㄡ仳赭及朿盒匹﹜\n﹛敛井毡及扲檗毛ㄠ蜊内勾枃丹﹝\n﹛公及扲檗互﹜徆杅敛引凶反毡卅日失正伉″\n﹛楝卞旦平伙毛ヨ匀化丐仆方丹﹝
+
+			Window 3219641,OK
+
+		#\n\n﹛敛午毡互ㄠ蜊内勾卞卅匀化仄引匀凶日﹜\n﹛酸ゴ分仃升甩术伊分﹝\n﹛公及凛反﹜示弁井日楝卞\n﹛酸ゴ操毛丐仆方丹﹝\n﹛公木元扎﹜中匀化日匀仄扎中″
+
+				Window_OK Item 622068 >= 1 || Item 622069 >= 1
+
+					GoToF case1
+					Endblock
+
+				Window_OK
+					LeaveGroup
+					warp 0,59883,173,243
+					Endblock
+
+		Window_NO
+			EndWindow 3219642
+
+		#\n\n﹛楝卞反优邰卅井匀凶井卅﹝\n﹛酸ゴ分卅﹝
+
+
+
+
+*case1*
+
+	KillItemAll 622068
+	KillItemAll 622069
+	EndWindow 3219643
+
+		#\n\n﹛云支云支〝\n﹛升丹仄化公及扲檗毛儅匀化中月及井卅〝\n﹛公木毛儅匀化切扎\n﹛示弁午及必□丞卞反蔺爵匹五卅中方﹝\n﹛仇切日匹苂井欠丹﹝
+
+

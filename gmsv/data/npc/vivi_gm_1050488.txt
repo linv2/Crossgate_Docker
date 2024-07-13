@@ -1,0 +1,63 @@
+#############■白色情人节活动，卖花小姑娘-梅朵
+#############物品栏已满
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+	 
+#############■有买玩偶
+block Item 45306 >= 1
+	 ##1050621 \n\n谢谢你的捧场，想不想站上舞台对你喜欢的人大声告白呢？我跟舞台管理员索鲁很熟，假如他看到你跟我买了这么多东西，一定会很高兴让你使用舞台的！	
+	 EndWindow 1050621
+
+#############■有买 鲜花 && 巧克力
+block Item 45304 >= 1 && Item 45305 >=1
+	 ##1050622 \n\n偷偷告诉你，其实我们这边最畅销的是可爱玩偶！\n听说买了玩偶的人，都有情人终成眷属了呢！要不要也买一只呢？
+	 Window 1050622,YES,NO
+	 
+		 Window_NO
+			 
+	 	 Window_YES ItemSpace > 0 && Gold >= 3600 && Item 45306 == 0
+	 	 	 AddGold -3600
+	 	 	 GiveLeak1Item 45306
+	 	 	 ##1050623 \n\n这是您要的可爱玩偶！要好好爱惜她喔！
+	 	 	 EndWindow 1050623
+	 	 
+	 	 Window_YES ItemSpace > 0 && Gold < 3600
+		 	 ##1050628 \n\n钱不够阿？没关系！快去赚吧，我最近都在这摆摊，赚够了再来找我喔！
+		 	 EndWindow 1050628
+		 
+#############■有买巧克力
+block Item 45304 >= 1
+
+     	 ##1050624 \n\n不如再买点鲜花吧？搭配巧克力，最能传心意！
+	 Window 1050624,YES,NO 
+	 
+		 Window_NO
+	
+	 	 Window_YES ItemSpace > 0 && Gold >= 1500 && Item 45305 == 0
+	         	 AddGold -1500
+	         	 GiveLeak1Item 45305
+	         	 ##1050629 \n\n谢谢惠顾！！
+	         	 EndWindow 1050629
+	         Window_YES ItemSpace > 0 && Gold < 1500
+		 	 ##1050628 \n\n钱不够阿？没关系！快去赚吧，我最近都在这摆摊，赚够了再来找我喔！
+		 	 EndWindow 1050628
+	
+#############■一般
+block 
+	 ##\n\n要不要来点浪漫的情人节礼物呢？情人节送巧克力最适合了！
+	 Window 1050625,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES ItemSpace > 0 && Gold >= 999 && Item 45304 == 0
+	         	 AddGold -999
+	         	 GiveLeak1Item 45304
+	         	 ##1050629 \n\n谢谢惠顾！！
+	         	 EndWindow 1050629
+	         Window_YES ItemSpace > 0 && Gold < 999
+		 	 ##1050628 \n\n钱不够阿？没关系！快去赚吧，我最近都在这摆摊，赚够了再来找我喔！
+		 	 EndWindow 1050628
+
+		 	         	         	
+	 
+	 	 

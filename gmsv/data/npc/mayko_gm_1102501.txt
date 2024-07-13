@@ -1,0 +1,15 @@
+#1102501学者  mayko_gm_1102501.txt
+#1110277	\n\n\n　　　你想了解圣女传说？\n　　　嗯～你似乎不是这世界的人，\n　　　也许传说里的那个人吧～
+#1110278	\n\n\n　　　我把资料装在上了锁的书夹，\n　　　放在公寓的书架上，你去看看吧～
+block Item 40977 >0
+	 EndWindow 1110278
+block ItemSpace < 1 
+	 EndWindow 1100001
+block
+	 Window 1110277,NEXT
+	 
+	 
+	 GiveLeak1Item 40977,1	 
+	 EndWindow 1110278
+ 
+	 

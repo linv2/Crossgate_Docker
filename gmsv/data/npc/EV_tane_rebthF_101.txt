@@ -1,0 +1,109 @@
+#ÿ¯ÃÔ°ıµ©ƒ∏º˛≥‚“‡º˛©x€–Œº©xæÙœŒº∞⁄–
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©x÷œ ÷ÿ¶ÿ∆©x##############
+
+
+block Group == 1 && Item 9340 >= 1
+
+
+	Window 3006013,next
+
+#\n©xên√´∑∆ªß œŒÁ¡˘ÿ∆∑Æ©y
+#\n©xµÊ» ª•∑Ω÷–©z
+
+	Window 3006012,yes,no
+
+		Window_yes Group != 1
+
+#\n\n©x”Ú⁄–∆•∏®»’ƒæ∑Ω
+
+			EndWindow 3006045
+
+		Window_yes Item 9390 >= 1 || Item 9391 >= 1 || Item 9392 >= 1 
+
+#\n\n©x«ÊÍ«º∞ên√´®G
+
+			EndWindow 3006095
+
+
+		Window_yes
+
+		Warp 0,59603,57,146
+
+		Window_no
+
+		EndWindow 3006043,OK
+
+
+block Group == 1 && Item 9341 >= 1
+
+
+	Window 3006013,next
+
+#\n©xên√´∑∆ªß œŒÁ¡˘ÿ∆∑Æ©y
+#\n©xµÊ» ª•∑Ω÷–©z
+
+	Window 3006012,yes,no
+
+		Window_yes Group != 1
+
+#\n\n©x”Ú⁄–∆•∏®»’ƒæ∑Ω
+
+			EndWindow 3006045
+
+		Window_yes Item 9390 >= 1 || Item 9391 >= 1 || Item 9392 >= 1 
+
+#\n\n©x«ÊÍ«º∞ên√´®G
+
+			EndWindow 3006095
+
+
+		Window_yes
+
+		Warp 0,59629,57,146
+
+		Window_no
+
+		EndWindow 3006043,OK
+
+
+
+block Group == 1 && Item 9342 >= 1
+
+
+
+	Window 3006013,next
+
+#\n©xên√´∑∆ªß œŒÁ¡˘ÿ∆∑Æ©y
+#\n©xµÊ» ª•∑Ω÷–©z
+
+	Window 3006012,yes,no
+
+		Window_yes Group != 1
+
+#\n\n©x”Ú⁄–∆•∏®»’ƒæ∑Ω
+
+			EndWindow 3006045
+
+		Window_yes Item 9390 >= 1 || Item 9391 >= 1 || Item 9392 >= 1 
+
+#\n\n©x«ÊÍ«º∞ên√´®G
+
+			EndWindow 3006095
+
+
+		Window_yes
+
+		Warp 0,59645,57,146
+
+		Window_no
+
+		EndWindow 3006043,OK
+
+
+
+
+block 
+		EndWindow 3006044,OK

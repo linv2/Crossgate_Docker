@@ -1,0 +1,30 @@
+########### 接力赛文斗篇41 ###########
+######■壁炉
+##■检查队伍
+block Group > 4
+	 ##1050841	\n\n\n\n@c壁炉的空间只够四个人通过。
+	 Window 1050841,YES,NO 
+	 	 Window_YES Group > 4
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■传送至32688	 	 	 
+block Item 45347 == 1 
+    ##1050778	\n\n\n\n@c你感到一阵天旋地转！
+    Window 1050778,OK
+        Window_OK Item 45347 == 1 && Group <= 4
+        KillItem 45347
+        Warp 0,32697,19,11
+
+##■传送至32689	
+block Item 45348 == 1 
+    ##1050778	\n\n\n\n@c你感到一阵天旋地转！
+    Window 1050778,OK
+        Window_OK Item 45348 == 1 && Group <= 4
+        KillItem 45348
+        Warp 0,32698,19,11
+        
+##■一般
+block
+  ##1050779	\n\n\n\n@c生火用的壁炉。
+  EndWindow 1050779

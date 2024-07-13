@@ -1,0 +1,54 @@
+##########　ＮＰＣ：吉博_第11幕 ＩＤ：1102024
+##########　ＭＡＰ：32078 (68 5)
+#########　  开旗标用的小鼠
+##########　作用：回到现实篇
+
+
+##■队伍人数 >1
+block  Group >1
+
+	 ##1102192	\n\n‘把队伍解散吧！’
+	 EndWindow 1102192
+
+
+block Item 40362 >=1
+	 ##1102376	\n\n‘是否把小鼠抓起来？’
+	 Window 1102376,YES,NO
+	 	 Window_NO
+	 	 Window_YES Item 40362 >=1
+	 	 
+	 		 if  globalFlag 482== 0 &&  globalFlag 481== 0
+	 		 	 KillItem 40362,1
+	 	 	 	 GiveLeak1Item 40376,1
+	 	 		  globalFlag 481= 1
+ 	 	 	 	 Warp 0,30001,259,279
+ 	 	 	 
+			 endif
+			 
+			 if    globalFlag 482== 0 &&  globalFlag 481== 1
+			 	 KillItem 40362,1
+			 	 GiveLeak1Item 40376,1
+			 	 Warp 0,30001,259,279
+			 endif
+			 
+			 if   globalFlag 482== 1 &&  globalFlag 481== 0
+			  	 KillItem 40362,1
+				 GiveLeak1Item 40376,1
+			 	 globalFlag 481= 1
+			 	 Warp 0,30001,259,279
+		
+			 endif
+			 
+			 if   globalFlag 482== 1 &&  globalFlag 481== 1
+			 	  KillItem 40362,1
+			 	  GiveLeak1Item 40376,1
+			 	 KillItem 40362,1
+			 	 Warp 0,30001,259,279
+
+			 endif
+
+
+##■一般
+block
+	 ##1102377	\n\n“吱～～吱～～～”
+	 EndWindow 1102377		

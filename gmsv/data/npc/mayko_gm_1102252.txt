@@ -1,0 +1,21 @@
+##### 诺斯菲拉特 爱尔柏塔镇
+
+##持有真实之眼，才能穿越虚像～
+##想进入爱尔柏塔镇吗？？
+##真实之眼消失了～
+	 
+block Item 18443 >0
+
+ 	Window 1109311,YES,NO 			
+ 		Window_YES Item 18443 >0
+ 		KillItem 18443,1
+		Warp 0,32088,21,12
+		
+		Window_YES
+ 		EndWindow 1109312
+
+		Window_NO
+ 				
+ 		
+block 
+EndWindow 1109310

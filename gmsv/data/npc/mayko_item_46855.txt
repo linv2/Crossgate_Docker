@@ -1,0 +1,163 @@
+#
+#斧之魂	46855
+#
+############################
+#block  job==214
+block Job >213 && Job<218 ## 御用~S3
+	##我是斧之魂！我将为你服务！(御用)
+	Window 1053333,OK
+ 		Window_OK item 46712>0 && item 46794 >0
+ 			##你现在有哥布林之斧积木与说明书，要组合成哥不林之斧吗？
+ 			Window 1053334,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46712<1 || item 46794 <1 || item 46855<1 
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46712,1	 	 	 
+	 	 	 	killitem 46794,1 
+	 	 	 	killitem 46855,1 
+	 	 	 	GiveLeak1Item 46825,1
+	 	 	 	##斧之魂、哥不林之斧积木与说明书消失了！\n出现了哥不林之斧。
+	 	 	 	EndWindow 1053335
+	 	 	 
+	 	 	 
+ 		Window_OK item 46713>0 && item 46795 >0
+
+ 		##你现在有精灵之斧积木与说明书，\n  要组合成精灵之斧吗？
+ 			Window 1053336,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        		 			
+	 			Window_YES item 46713<1 || item 46795 <1 || item 46855<1 
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46713,1	 	 	 
+	 	 	 	killitem 46795,1 
+	 	 	 	killitem 46855,1 
+	 	 	 	GiveLeak1Item 46826,1	 	 
+	 	 	 	##斧之魂、精灵之斧积木与说明书消失了！\n 出现了精灵之斧。
+	 	 	 	EndWindow 1053337
+	 	 	  		
+ 	
+ 		Window_OK item 46714>0 && item 46796 >0
+		####你现在有坦泰之斧积木与说明书，\n 要组合成坦泰之斧吗？
+ 			Window 1053338,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        		 			
+	 			Window_YES item 46714<1 || item 46796 <1 || item 46855<1 
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46714,1	 	 	 
+	 	 	 	killitem 46796,1 
+	 	 	 	killitem 46855,1 	 	 	 
+	 	 	 	GiveLeak1Item 46827,1
+	 	 	 	##斧之魂、坦泰斧积木与说明书消失了！\n 出现了坦泰之斧。
+	 	 	 	EndWindow 1053339
+ 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290
+		 
+block  job==213
+	##我是斧之魂！我将为你服务！(资深段)
+	Window 1053333,OK
+ 		Window_OK item 46712>0 && item 46794 >0
+ 			##你现在有哥布林之斧积木与说明书，要组合成哥不林之斧吗？
+ 			Window 1053334,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46712<1 || item 46794 <1 || item 46855<1 
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46712,1	 	 	 
+	 	 	 	killitem 46794,1 
+	 	 	 	killitem 46855,1 
+	 	 	 	GiveLeak1Item 46825,1
+	 	 	 	##斧之魂、哥不林之斧积木与说明书消失了！\n出现了哥不林之斧。
+	 	 	 	EndWindow 1053335
+	 	 	 
+	 	 	 
+ 		Window_OK item 46713>0 && item 46795 >0
+
+ 		##你现在有精灵之斧积木与说明书，\n  要组合成精灵之斧吗？
+ 			Window 1053336,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        		 			
+	 			Window_YES item 46713<1 || item 46795 <1 || item 46855<1 
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46713,1	 	 	 
+	 	 	 	killitem 46795,1 
+	 	 	 	killitem 46855,1 
+	 	 	 	GiveLeak1Item 46826,1	 	 
+	 	 	 	##斧之魂、精灵之斧积木与说明书消失了！\n 出现了精灵之斧。
+	 	 	 	EndWindow 1053337
+	 	 	  		
+ 	
+ 		Window_OK item 46714>0 && item 46796 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290		 	  
+block  job==212
+	##我是斧之魂！我将为你服务！(正值)
+	Window 1053333,OK
+ 		Window_OK item 46712>0 && item 46794 >0
+ 			##你现在有哥布林之斧积木与说明书，要组合成哥不林之斧吗？
+ 			Window 1053334,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46712<1 || item 46794 <1 || item 46855<1 
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46712,1	 	 	 
+	 	 	 	killitem 46794,1 
+	 	 	 	killitem 46855,1 
+	 	 	 	GiveLeak1Item 46825,1
+	 	 	 	##斧之魂、哥不林之斧积木与说明书消失了！\n出现了哥不林之斧。
+	 	 	 	EndWindow 1053335
+	 	 	 
+	 	 	 
+ 		Window_OK item 46713>0 && item 46795 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 
+	 	 	  		
+ 	
+ 		Window_OK item 46714>0 && item 46796 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 		
+ 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290				 	      
+block  job==211
+	##你的能力并不能驾御我，请你多加努力！
+	EndWindow 1053291
+block  
+	##你并不是造斧职人，我无法为你服务！
+	EndWindow 1053332

@@ -1,0 +1,196 @@
+# 7 "EV_tane_ahimuro_001.txt"
+# 1 "header/global0.h" 1
+# 8 "EV_tane_ahimuro_001.txt" 2
+##Modified by Gaoliang 20040323
+
+block
+
+        if Item 607640 >= 1 || Item 607644 >= 1 ||  Item 607645 >= 1 ||  Item 607646 >= 1 || Item 607647 >= 1 ||  Item 607648 >= 1 
+
+
+                EndWindow 3006723
+
+
+        endif
+
+
+if Item 12401 + Item 12100 + Item 12101 + Item 11309 + Item 12102 >= 1
+
+        if Item 12401 + Item 12100 + Item 12101 + Item 11309 + Item 12102 >= 2
+
+
+
+
+                                        EndWindow 3006724
+
+
+        else
+
+                if Item 12401 >= 1
+
+
+                                                Window 3006725,next
+
+
+
+                                                Window 3006726,ok
+
+
+                                                window_ok Gold >=100 && Item 12401 >= 1
+
+                                                killItem 12401,1
+                                                addgold -100
+                                                GiveItem 607640,1
+
+                                                window_ok Gold <= 99
+
+
+                                                EndWindow 3006727
+
+												window_ok
+
+
+                else
+                        if Item 12100 >= 1
+
+
+                                                        Window 3006728,next
+
+
+
+
+                                                        Window 3006726,ok
+
+
+                                                window_ok Gold >=100 && Item 12100 >= 1
+
+                                                        killItem 12100,1
+                                                        addgold -100
+                                                        GiveItem 607644,1
+
+                                                window_ok Gold <= 99
+
+
+                                                EndWindow 3006727
+
+												window_ok
+
+
+                        else
+                                if Item 12101 >= 1
+
+
+                                                                Window 3006729,next
+
+
+
+
+                                                                Window 3006726,ok
+
+
+                                                                window_ok Gold >=100 && Item 12101 >= 1
+                                                                killItem 12101,1
+                                                                addgold -100
+                                                                GiveItem 607645,1
+
+                                                                window_ok Gold <= 99
+
+
+                                                                EndWindow 3006727
+
+
+																window_ok
+
+
+                                else
+                                        if Item 11309 >= 1
+
+
+                                                                        Window 3006730,next
+
+
+
+                                                                        Window 3006726,ok
+
+
+                                                window_ok Gold >=100 && Item 11309 >= 1
+                                                                        killItem 11309,1
+                                                                        addgold -100
+                                                                        GiveItem 607646,1
+
+                                                window_ok Gold <= 99
+
+
+                                                EndWindow 3006727
+
+												window_ok
+
+                                        else
+                                                if Item 12102 >= 1
+
+
+                                                                                Window 3006731,next
+
+
+                                                                                Window 3006726,ok
+
+
+                                                window_ok Gold >=100 && Item 12102 >= 1
+
+                                                                                killItem 12102,1
+                                                                                addgold -100
+                                                                                GiveItem 607647,1
+
+                                                window_ok Gold <= 99
+
+
+                                                EndWindow 3006727
+
+												window_ok
+
+                                                endif
+                                        endif
+                                endif
+                        endif
+                endif
+        endif
+
+else
+
+        if LocalCount0 != 6
+
+                                                LocalCount0 = 6
+
+                                                Window 3006732,next
+
+
+
+                                                Window 3006733,next
+
+
+
+
+                                                EndWindow 3006734
+
+
+
+
+        else
+                                                LocalCount0 = 1
+
+                                                Window 3006735,next
+
+
+
+                                                Window 3007004,next
+
+
+
+                                                EndWindow 3007005
+
+
+
+
+
+        endif
+endif

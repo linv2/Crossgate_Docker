@@ -1,0 +1,37 @@
+##灰熊厉害擂台赛2006	竞技场报名员	din_gm_1051562.txt	座标：1401(35,36) 	报名参赛。
+
+####单独一人
+block Group > 1 
+	 ##1052890	\n\n  请一个一个来喔。	1
+	 EndWindow 1052890
+	 
+block 
+	 ##1052891	\n\n  您想参加擂台赛吗赛？报名费用是500魔币。	1
+ 	 Window 1052891,YES,NO
+ 	 Window_NO
+ 	 	 ##1052892	\n\n  这样啊，不过还是随时欢迎您来挑战。	1
+ 	 	 EndWindow 1052892 
+ 	 ##有500元
+ 	 Window_YES Gold >= 500
+ 	 	 ##1052893	\n\n  收您500魔币，祝你好运。	1
+ 	 	 Window 1052893,OK
+ 	 	 	 ##传送到D级挑战区
+  	 	 	 Window_OK Item 47267 >= 1
+ 	 	 	 	 AddGold -500
+ 	 	 	 	 KillItemall 47267
+ 	 	 	 	 GiveItem 47267,1
+ 	 	 	 	 Warp 0,32358,22,27
+
+ 	 	 	 Window_OK ItemSpace == 0
+ 	 	 	 	 ##1051843	\n\n\n\n\n@c物品栏的空间不足。
+ 	 	 	 	 EndWindow 1051843
+ 	 	 	 	 
+			 Window_OK 
+			 	 AddGold -500
+			 	 GiveItem 47267,1
+			 	 Warp 0,32358,22,27	 	 	 
+	 ##没有500元
+	 Window_YES Gold < 500
+ 	 	 	 ##1052894	\n\n 很抱歉喔，您的钱不够。	1
+ 	 	 	 EndWindow 1052894
+ 	 	 	 

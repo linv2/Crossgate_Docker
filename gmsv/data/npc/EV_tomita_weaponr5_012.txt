@@ -1,0 +1,52 @@
+#﹛港盒及拨叶﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛弗奶戊它及摒
+
+###﹛键缜谛匹键综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 220 && SkillLevel_202 >= 5
+	Window 3203064,OK
+
+		#\n\n﹛唦畸刨及综岳芊互襞曰凶中及分卅﹝\n﹛凛棉互检仄中井日今匀今午项尹月冗﹜公日匀″\n﹛今匀今午窖匀化﹜唦畸刨毛综匀化心欠﹝
+
+		Window_OK
+			GiveRecipe 144
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛键缜谛分互键综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 220
+	Window 3203065,OK
+
+		#\n\n﹛升丹仄化仇仇尺侳日木凶及井反襞日氏互﹜\n﹛恍诞卅樊卞蕙仄中键及综岳芊反项尹日木氏﹝\n﹛今丐﹜窖月氏分﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+
+###﹛键缜谛匹反卅中
+block
+	Window 3203066,YES,NO
+
+		#\n\n﹛台反侄仄中及分﹜梁呺毛仄卅中匹幻仄中卅﹝\n﹛仇仇井日请化垫五凶中及井〝
+
+		Window_YES
+			Window 3203067,OK
+
+		#\n\n﹛元扎丐﹜今匀今午窖月氏分﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3203068
+
+		#\n\n﹛卅日壬﹜手丹台卞狪仄井仃月卅﹝
+
+
+

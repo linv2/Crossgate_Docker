@@ -1,0 +1,8 @@
+block
+	 Window 1110455,YES,NO
+	 Window_YES
+	 KillItem 41045,1
+	 LeaveGroup
+	 Warp 0,1000,113,103
+	 Window_NO
+	 endblock

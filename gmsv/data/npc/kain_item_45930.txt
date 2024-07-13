@@ -1,0 +1,13 @@
+###### 猎物保存箱 ######可放10组青椒(40一叠)
+
+##青椒大于400个 物品栏无空位
+block Item 12002 >= 400 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+##青椒大于400个 物品栏有空位 物品栏空位大于1	 
+block Item 12002 >= 400 && ItemSpace >= 1
+	 KillItem 12002,400
+	 KillItem 45930,1
+	 GiveLeak1Item 45931
+	

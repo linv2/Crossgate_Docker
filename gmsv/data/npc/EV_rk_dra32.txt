@@ -1,0 +1,48 @@
+#击歾(15579)
+#
+
+block EndEvent 38 == 1
+	EndWindow 21464
+
+block Item 18887 >= 1
+	EndWindow 21406
+
+block NowEvent 38  == 0
+#庤及擘
+#\n\n﹛凝叶仄中凝抯分仃井午合尹壬＿\n﹛﹛职卞手生术立互云匀凶井＿
+#
+	Window 21401,next
+#击歾
+#\n\n﹛″〝\n﹛丐卅凶反＿
+#
+	Window 21402,OK
+		Window_OK 
+		LeaveGroup
+		NowEvent 38 = 1
+		Warp 0,15587,8,9
+
+block
+
+#击歾
+#\n\n﹛渣卅中午仇欠毛踞仃化仁木化肣か丹﹝丐凶仄反击歾﹜ヶ五庤及粖辉匹允﹝
+#\n\n﹛谛匹丐月丐卅凶互升丹支匀化仇仇尺〝﹛\n\n﹛﹛引今井＿﹝
+	Window 21403,next
+#\n\n﹛丐卅凶反丐凶仄琼互菲户化中凶樊凶切井手仄木引六氏﹝
+#\n\n﹛仇及弘仿件扑乓□玉卞反ヶ午幕及き勾及厘五卅恘互绣箕仄化中引允﹝
+#\n﹛き勾及庤琼反剽堑毛忡匀化中凶及匹允互﹜漆﹜丐凶仄琼ヶ中庤及恘互浇引匀化中月氏匹允﹝
+	Window 21404,next
+#\n﹛岉介今木凶壑钗毛钒仇丹午允月手及方﹜升丹井丐凶仄琼及赢卞莘匀化狪毛妏中化仁分今中﹝
+#\n﹛恳仄五ヶ五恘毛儅勾手及互﹜丐凶仄琼卞反优邰卅氏匹允﹝ヶ庤及赢反朴卞中引允﹝
+#\n﹛朴卞反杹?互中化﹜簿手?及袱第卅仄杹毛骚月仇午反匹六五引六氏﹝
+#\n﹛仇及澎饼毛手匀化中匀化仁分今中﹝
+#
+#\n\n﹛优内赢及手午卞凶升曰邋中化仁分今中友﹝
+	Window 21405,OK
+		Window_OK ItemSpace != 0
+			GiveItem 18887
+			EndWindow 21406
+		Window_OK
+			EndWindow 10000
+
+
+

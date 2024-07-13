@@ -1,0 +1,13 @@
+#############■希望之子的木笛
+#############■打开globalFlag 484
+
+
+block GlobalFlag 484 == 0
+	 ##1054903	\n\n你的通行资格已被开启！	1
+	 KillItem 47623
+	 GlobalFlag 484 = 1
+	 EndWindow 1054903
+	 
+block  GlobalFlag 484 == 1
+	 ##1054904	\n\n已打开通往诺斯菲拉特定期航班的资格。	1
+	 EndWindow 1054904

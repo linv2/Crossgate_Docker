@@ -1,0 +1,239 @@
+#
+#棠怗质失立伉失﹋2003コver.﹌
+#
+
+###﹛3/14 0:00:01动蟆卅日﹛###
+block CheckRealTime 2003/3/14,00:00:01 == 0
+		EndWindow 21937,OK
+
+ヶ中民亘□伉永皿毛儅匀化中月卅日
+block Item 16339 >= 1
+	Window 22116,Next
+	Window 22121,OK
+		Window_OK Item 16339 >= 1
+		KillItem 16339,1
+		GiveItem 16345,1
+		Window_OK
+敛中民亘□伉永皿毛儅匀化中月卅日
+block Item 16340 >= 1
+	Window 22117,Next
+	Window 22121,OK
+		Window_OK Item 16340 >= 1
+		KillItem 16340,1
+		GiveItem 16346,1
+		Window_OK
+幕中民亘□伉永皿毛儅匀化中月卅日
+block Item 16341 >= 1
+	Window 22118,Next
+	Window 22121,OK
+		Window_OK Item 16341 >= 1
+		KillItem 16341,1
+		GiveItem 16344,1
+		Window_OK
+毡中民亘□伉永皿毛儅匀化中月卅日
+block Item 16342 >= 1
+	Window 22119,Next
+	Window 22121,OK
+		Window_OK Item 16342 >= 1
+		KillItem 16342,1
+		GiveItem 19655,1
+		Window_OK
+疵缙中民亘□伉永皿毛儅匀化中月卅日
+block Item 16343 >= 1
+	Window 22120,Next
+	Window 22121,OK
+		Window_OK Item 16343 >= 1
+		KillItem 16343,1
+		GiveItem (16347$3)
+		Window_OK
+
+###﹛2/15 0:00:01动嫦卅日﹛###
+block CheckRealTime 2003/2/15,00:00:01 == 1
+		EndWindow 21937,OK
+
+###﹛裆岭平乓仿卅日﹛###
+block BBImage >= 100000 && BBImage <= 100173
+#\n\n﹛仍户氏卅今中友﹝\n﹛仇及民亦戊伊□玄反辉及阂卞仄井ヨ木卅中及方﹝
+	EndWindow 15257,OK
+block BBImage >= 105000 && BBImage <= 105173
+#\n\n﹛仍户氏卅今中友﹝\n﹛仇及民亦戊伊□玄反辉及阂卞仄井ヨ木卅中及方﹝
+	EndWindow 15257,OK
+block BBImage >= 106000 && BBImage <= 106173
+#\n\n﹛仍户氏卅今中友﹝\n﹛仇及民亦戊伊□玄反辉及阂卞仄井ヨ木卅中及方﹝
+	EndWindow 15257,OK
+
+###﹛＞聒咥民亦戊＝午?蜕仄凶桦宁﹛###
+block StrCmpChat==21969
+	Window 21940,Yes,No
+		Window_No
+			EndWindow 21941,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 15258,OK
+		Window_Yes Gold <= 99
+			EndWindow 21942,OK
+		Window_Yes
+			Window 15262,OK
+				Window_OK
+					AddGold -100
+					GiveItem 18586
+
+###﹛＞呿抰民亦戊＝午?蜕仄凶桦宁﹛###
+block StrCmpChat==21970
+	Window 21943,Yes,No
+		Window_No
+			EndWindow 15265,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 15258,OK
+		Window_Yes Gold <= 1999
+			EndWindow 21942,OK
+		Window_Yes
+			Window 21944,OK
+				Window_OK
+					AddGold -2000
+					GiveItem 18587
+
+###﹛＞蛲羞阂盒民亦戊＝午?蜕仄凶桦宁﹛###
+block StrCmpChat==21972
+	Window 21945,Yes,No
+		Window_No
+			EndWindow 15265,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 15258,OK
+		Window_Yes Gold <= 9
+			EndWindow 21942,OK
+		Window_Yes
+			Window 21946,OK
+				Window_OK
+					AddGold -10
+					GiveItem 16303
+
+###﹛＞澎综曰民亦戊＝午?蜕仄凶桦宁﹛###
+block StrCmpChat==21971
+	Window 21947,Yes,No
+		Window_No
+			EndWindow 15265,OK
+		Window_Yes ItemSpace <= 5
+			EndWindow 21975,OK
+		Window_Yes Gold <= 799
+			EndWindow 21942,OK
+		Window_Yes
+			Window 21948,OK
+				Window_OK
+					AddGold -800
+					GiveItem 16308
+					GiveItem 12400,20
+					GiveItem 12411,10
+					GiveItem 12404,20
+					GiveItem 16309,10
+					GiveItem 16310,20
+
+###﹛＞嫖菟民亦戊＝午?蜕仄凶桦宁﹛###
+block StrCmpChat==21973
+	Window 21949,Yes,No
+		Window_No
+			EndWindow 15265,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 15258,OK
+		Window_Yes Gold <= 19999
+			EndWindow 21942,OK
+		Window_Yes
+			Window 21966,OK
+				Window_OK
+					AddGold -20000
+					GiveItem 16305
+
+###﹛＞琅褫民亦戊＝午?蜕仄凶桦宁﹛###
+block StrCmpChat==21974
+	Window 21967,Yes,No
+		Window_No
+			EndWindow 15265,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 15258,OK
+		Window_Yes Gold <= 199
+			EndWindow 21942,OK
+		Window_Yes
+			Window 21968,OK
+				Window_OK
+					AddGold -200
+					GiveItem 16306
+###﹛公及职及桦宁﹋辉岭平乓仿匹狪仄喘仃凶桦宁﹌###
+block
+	Window 21938,Next
+	EndWindow 21939,OK
+
+
+### ╲2002ver.###
+
+##############  ##############
+#block BBImage >= 100000 && BBImage <= 100173
+#\n\n﹛仍户氏卅今中友﹝\n﹛仇及民亦戊伊□玄反辉及阂卞仄井ヨ木卅中及方﹝
+#	EndWindow 15257,OK
+
+#block BBImage >= 105000 && BBImage <= 105173
+#\n\n﹛仍户氏卅今中友﹝\n﹛仇及民亦戊伊□玄反辉及阂卞仄井ヨ木卅中及方﹝
+#	EndWindow 15257,OK
+#
+#block BBImage >= 106000 && BBImage <= 106173
+#\n\n﹛仍户氏卅今中友﹝\n﹛仇及民亦戊伊□玄反辉及阂卞仄井ヨ木卅中及方﹝
+#	EndWindow 15257,OK
+#
+##############  ##############
+#block ItemSpace == 0
+#\n\n﹛丐日丐日﹜儅切坁互中匀天中及方丹友﹝
+#	EndWindow 15258,OK
+#
+##############  ##############
+#block 
+#\n\n﹛仇仇匹反田伊件正奶件犯□引匹及冂帎蜃烂齿圴午仄化民亦戊伊□玄毛ヨ匀化中月及﹝聒咥民亦戊午呿抰民亦戊及孔凶勾互丐月及方﹝苇凶杴反徆杅午手⑺元分仃升﹜躲绊反蝈螺啜丹及﹝
+#	Window 15259,NEXT
+#\n\n﹛聒咥民亦戊反1蜊100Gold﹝FP互切斤匀午分仃荚汊允月及﹝石件玄卞聒咥匀化市件斥井仄日﹝\n﹛公木井日呿抰民亦戊互1蜊2000Gold﹝云袄蟾反舰月仃升﹜允仍中躲绊互丐月及方﹝\n﹛丐﹜公丹公丹﹝徆杅午手椎烂仄卅中午聒咥井呿抰井歹井日卅中方丹卞卅匀化月井日竣毛勾仃化#友″聒咥及勾手曰匹呿抰欐仄切扎匀凶曰﹜呿抰及勾手曰匹聒咥欐仄切扎匀凶曰仄凶日＿＿丐凶仄毚エ午木卅中歹＿＿
+#	Window 15260,NEXT
+#\n\n﹛丐卅凶互俓仄中及反聒咥民亦戊〝
+#	Window 15261,YES,NO
+#	Window_YES ItemSpace == 0
+#\n\n﹛丐日丐日﹜儅切坁互中匀天中及方丹友﹝
+#	EndWindow 15258,OK
+#	Window_YES BBImage >= 100250 && BBImage <= 100423 && Gold >= 100
+#	AddGold -100
+#	GiveItem 18586
+#
+#	Window_YES BBImage >= 105250 && BBImage <= 105423 && Gold >= 100
+#	AddGold -100
+#	GiveItem 18586
+#
+#	Window_YES BBImage >= 106250 && BBImage <= 106423 && Gold >= 100
+#	AddGold -100
+#	GiveItem 18586
+#
+#\n\n﹛云匀仃℅﹝谛棉楮溢反厘仪分手及友﹝甩奶﹜聒咥民亦戊﹝中勾手云壑狪卞卅匀化月丐及谛卞升丹冗﹝
+#	EndWindow 15262,OK
+#	Window_YES
+#\n\n﹛丐曰扎曰扎﹝聒咥民亦戊反1蜊100Gold友﹝公氏卅卞嫖仁卅中午合丹仃升卅℅〝\n﹛100Gold迕啦仄凶日引凶五化友﹝
+#	EndWindow 15263,OK
+#	Window _NO
+#\n\n﹛歹毛″″呿抰民亦戊互俓仄中及友″仁丹℅″恋仃月歹″丐卅凶及竣儅切互鳗歹月午中中歹友﹝\n﹛1蜊2000Gold分仃升中中井仄日〝
+#	Window 15264,YES,NO
+#	Window_NO
+#\n\n﹛丐日﹜酸ゴ﹝中中夫午苇勾仃化引凶侳化友﹝
+#	EndWindow 15265,OK
+#	Window_YES ItemSpace == 0
+#\n\n﹛丐日丐日﹜儅切坁互中匀天中及方丹友﹝
+#	EndWindow 15258,OK
+#	Window_YES BBImage >= 100250 && BBImage <= 100423 && Gold >= 2000
+#	AddGold -2000
+#	GiveItem 18587
+#
+#	Window_YES BBImage >= 105250 && BBImage <= 105423 && Gold >= 2000
+#	AddGold -2000
+#	GiveItem 18587
+
+#	Window_YES BBImage >= 106250 && BBImage <= 106423 && Gold >= 2000
+#	AddGold -2000
+#	GiveItem 18587
+
+#\n\n﹛反中﹜仇木互呿抰民亦戊﹝苇凶杴互聒咥民亦戊午⑺元分井日竣毛勾仃化友﹝\n﹛丐″公丹公丹″仇及呿抰民亦戊﹜丐氏引曰赢仁忡绣仄化云仁午市申切扎匀化罹屯日木卅仁卅匀切扎丹井日镀户卞罹屯化友﹝田伊件正奶件犯□毛聊亢凶日躲绊及忡据反匹五卅中歹方﹝
+#	EndWindow 15266,OK
+#	Window_YES
+#\n\n﹛只卞袄蟾反勾仃日木卅中歹″2000Gold卅氏化兜中兜中″\n﹛云嗯迕啦仄凶日引凶侳化友℅
+#	EndWindow 15269,OK
+

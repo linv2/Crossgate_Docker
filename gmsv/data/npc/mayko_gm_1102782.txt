@@ -1,0 +1,17 @@
+#mayko_gm_1102782.txt 湖畔的传令兵
+
+#1111791	\n　　　　入口就在后方的那棵树，\n　　　　这是钥匙。	1
+#1111792	\n\n\n\n@c入口就在后方的那棵树。	1
+
+
+
+block item 42168 >0
+	endwindow 1111792
+block item 41267 >0
+	killitem 41267,1
+	GiveLeak1Item  41268, 1   
+	
+	endwindow 1111791
+
+block
+	endwindow 1111800

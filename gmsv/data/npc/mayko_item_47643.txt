@@ -1,0 +1,15 @@
+#农家宝箱	mayko_item_47643.txt	
+#花苗	47629
+#栽培木	47632
+
+#1054940	\n\n\n\n\n@c打开宝箱。	1
+
+
+block
+
+	 Window 1054940,OK
+	 
+	 Window_OK
+	 KillItem 47643,1 
+	 GiveLeak1Item (47629%10$1,47632%5$1)
+	 endblock

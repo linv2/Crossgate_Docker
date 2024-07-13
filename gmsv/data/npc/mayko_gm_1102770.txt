@@ -1,0 +1,16 @@
+#1111751	\n\n\n　　　　最近花园常传出一股臭味，\n　　　　讨厌的口臭臭又来捣蛋了。	1
+#1111752	\n\n\n\n@c你可以帮我赶走它们吗？	1
+#1111753	\n　　　　那麻烦你，\n　　　　到我们的秘秘花园修理它们，\n　　　　拿三个口臭臭的种子当证明给我。	1
+
+block 
+	window 1111751,next
+	Window 1111752,yes,no
+	Window_yes
+		window 1111753,ok
+		Window_ok
+		leavegroup 
+		warp 0,32469,17,77
+		endblock
+	window_no
+	endblock	
+	

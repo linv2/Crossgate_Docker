@@ -1,0 +1,16 @@
+#
+#云烟迋副〇溢
+#
+
+###﹛宁蜕邯互蜕尹凶卅日﹛###
+block StrCmpChat == 21523
+#\n\n﹛暧’扔’帎″\n﹛公木互癫饕及扑旦泛丞匹允﹝\n\n﹛公木匹反﹜仍斗匀仁曰升丹冗﹝
+	Window 21524,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,2431,46,33
+		Window_OK
+###﹛宁蜕邯毛邰菲﹛###
+#\n\n﹛＿中日匀仄扎中引六﹝\n﹛幺螺匹允互じ饕及宁蜕邯毛升丹冗﹝\n\n﹛台卞轾井匀化宁蜕邯毛蜕匀化仁分今中﹝
+block
+	EndWindow 21525

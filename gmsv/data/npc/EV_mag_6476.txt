@@ -1,0 +1,16 @@
+#
+#え赁及庤螃
+#
+##############  ##############
+block
+#\n\n\n\n@c脱反え赁庤螃\n@c凛及辉螃市伊件迋及抰卞方曰\n@c牰赁毛苂井月樊
+	Window 15304,NEXT
+#\n\n\n\n@cが互蕞卞穻毛憎允及匹丐木壬\n@c脱互熔及恘手躯公丹
+	Window 15303,YES,NO
+	Window_NO
+#\n\n\n\n@c迕拑五マ反蛔厄屯仄
+	EndWindow 15305,OK
+	Window_YES
+	Encount 3|0,20117,67,63||0|||||0|10014|||||||||
+
+

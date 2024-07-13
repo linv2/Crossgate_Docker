@@ -1,0 +1,11 @@
+#mayko_gm_1102654.txt
+
+
+block
+#1110756	\n\n\n\n@cÄãÒª·ÅÆúÂğ£¿
+	Window 1110756,yes,no
+	Window_yes
+	warp 0,43600,79,64
+	Window_no
+
+	endblock

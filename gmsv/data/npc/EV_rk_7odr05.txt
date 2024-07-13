@@ -1,0 +1,49 @@
+#?¢P??µ÷??
+
+#???????ÿµ????µ÷????©è???‡·??
+block EndEvent 111 == 1 && NowEvent 108 == 1 && Item 16358 >= 1
+	Window 22165,Next
+	Window 22166,OK
+		Window_OK EndEvent 111 == 1 && NowEvent 108 == 1 && Item 16358 >= 1
+			KillItemAll 16358
+			EndEvent 111 = 0
+			NowEvent 108 = 0
+			EndEvent 108 = 1
+			GiveItem 16359,1
+#???????ÿµ????µ÷????©è?????
+block EndEvent 111 == 1 && NowEvent 108 == 1 && Item 16358 == 0
+	Window 22167,OK
+		Window_OK
+			EndEvent 111 = 0
+			NowEvent 108 = 0
+
+#?????˚Ë√Ù?
+#block EndEvent 51 == 1
+#	EndWindow 22164,OK
+
+#?????˛≠??
+block NowEvent 111 == 1
+	EndWindow 22168,OK
+
+#??????????
+block EndEvent 50 == 1
+	Window 22169,NEXT
+	Window 22170,NEXT
+	Window 22171,NEXT
+	Window 22172,YES,NO
+		Window_NO
+			EndWindow 22173,OK
+		Window_YES
+			Window 22174,NEXT
+			Window 22175,OK
+				Window_OK
+					EndEvent 111 = 0
+					NowEvent 108 = 1
+					NowEvent 111 = 1
+
+#??????????
+block EndEvent 58 == 1
+	EndWindow 22176,OK
+
+block
+	EndWindow 22177,OK

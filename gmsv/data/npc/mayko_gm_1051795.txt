@@ -1,0 +1,59 @@
+#汐夏	mayko_gm_1051795.txt
+
+#1055907	\n\n\n　　　　姐姐一点也不怪我吗？？\n　　　　姐姐，你真好！！
+
+block Item 47296>0
+	 EndWindow 1055907
+block Item 47755>0	 
+	 EndWindow 1055907
+
+block Item 47754 >0
+	 EndWindow 1055899 #1055899	\n\n\n\n@c愿姐姐脚踏莲华，前往极乐。
+
+block Item 47753>0
+	 Window 1055897,OK
+	 Window_OK ItemSpace < 1
+	 EndWindow 1569036
+	 Window_OK
+	 GiveLeak1Item 47754,1
+	 EndWindow 1055898
+	 	 
+	 
+#1055897	\n\n\n\n@c要为亡姐祈冥福吗？？
+#1055898	\n\n\n　　　　谢谢你的通知，\n　　　　这是纸花，麻烦你了！！
+
+block Item 47752 >0
+	 EndWindow 1055918 #1055918	\n\n\n\n@c能帮我把道歉信送给幸村哥吗？？
+
+
+block Item 47751>0
+	 KillItem 47751,1
+	 GiveLeak1Item 47752,1
+	 Window 1055917,NEXT
+	 EndWindow 1055918 
+#1055917	\n\n\n\n@c那是．．．幸村哥的情书。
+#1055918	\n\n\n\n@c能帮我把道歉信送给幸村哥吗？？
+
+block Item 47750>0 
+	 Window 1055911,NEXT
+	 EndWindow 1055912
+#1055911	\n\n\n\n@c幸村哥应该在姐姐死去的水边附近吧......
+#1055912	\n\n\n　　　　是我害死姐姐...\n　　　　呜.....
+。
+block ItemSpace < 1
+
+	 EndWindow 3201106
+block
+	 Window 1055923,NEXT
+	 Window 1055924,NEXT
+	 Window 1055925,NEXT
+	 Window 1055909,NEXT
+	 GiveLeak1Item 47750,1	 
+	 EndWindow 1055910
+
+
+#1055923	\n\n\n\n@c姐姐的生日快到了。	1
+#1055924	\n\n\n　　　　要不是我，\n　　　　要不是我姐姐怎么会死。	1
+#1055925	\n\n\n　　　　她就快结婚了～\n　　　　因为我～～	1
+#1055909	\n\n\n　　　　这是，姐姐的画像，\n　　　　我只能看着画回忆姐姐。	1
+#1055900	\n\n\n\n@c麻烦你帮我送给无缘的姐夫幸村。

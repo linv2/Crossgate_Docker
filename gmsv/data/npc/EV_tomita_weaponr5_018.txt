@@ -1,0 +1,36 @@
+#©x¸ÛºÐ¼°²¦Ò¶©x©x??©xŽx÷ú
+#
+#©x©x©x·¥¡õÃó±Ø¡õÐþ¨à¼°Þð
+
+###©xÕ±ÖÐÊ¯ÄÌÓÀµ©»ïÃ«ô÷ƒ}
+
+block
+
+	If Item_607950 >= 1 && Xpos == 233 && Ypos == 118
+
+		If LocalFlag0 == 0
+
+			Play_SE 260,320,240
+			ShapeNext 103011
+
+			LocalFlag0 = 1
+
+		endif
+
+	endif
+
+
+	If Item_607950 >= 1 && Xpos == 237 && Ypos == 115
+
+		If LocalFlag0 == 1
+
+			KillItemAll 607950,(3004994)
+			LeaveGroup
+			Warp 0,59715,341,177
+
+		endif
+
+	endif
+
+
+

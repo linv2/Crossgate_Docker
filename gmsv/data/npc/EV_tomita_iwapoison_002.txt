@@ -1,0 +1,46 @@
+#©xÄ»•iîù¼°¸ÛºÐ©x??©xŽx÷ú
+#
+#©x©x©xØÎ¼°Þð
+
+block Xpos == 153 && Ypos == 189
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+block Xpos == 153 && Ypos == 190
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+block Xpos == 153 && Ypos == 191
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+block Xpos == 154 && Ypos == 191
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+block Xpos == 152 && Ypos == 190
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+block Xpos == 151 && Ypos == 190
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+

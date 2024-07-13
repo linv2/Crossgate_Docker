@@ -1,0 +1,84 @@
+#LV50绅亢桦弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛绒衔弁仿白玄及摒
+
+###﹛弃中弥及隙挎﹋607965﹌毛赭儅
+block Item_607965 >= 1
+	GAWindow 3203893,NEXT
+
+		#\n\n﹛公及隙挎反台及坁分方﹝\n﹛歹介歹介?仃卞侳化仁木化丐曰互午丹﹝\n﹛公木反﹜坞及?杅井日?侳仄凶弥及瑞弅匹\n﹛综匀凶钟仄中坁匹友﹝
+	GAWindow 3203894,NEXT
+
+		#\n\n﹛尕合腔卅仇午卞隙挎井日妏仇尹月弥及擘互﹜\n﹛丐日斗月渣か毛仪蟆卞襞日六化仁木月及分﹝\n﹛＿孔戈﹜?仃化手日匀化云中化撩斪卅及分互﹜\n﹛镀仁忒仄化仁木卅中井友﹝
+	GAWindow 3203895,OK
+
+		#\n\n﹛隙挎卞方月午﹜楝反梁螃及冞分公丹分井日友﹝\n﹛仇仇匹莘匀凶及互褥及尕扪﹜韶氏匹手日丹″″
+
+		Window_OK Item_607965 >= 1
+			KillItemAll 607965,(3004831)
+			Encount 3|0,59715,192,18||0|||||0|305222|||||||||
+
+		Window_OK
+			GAWindow 3203896,OK
+
+		#\n\n﹛隙挎互卅仁卅匀凶＿﹝\n﹛公木午手﹜反元户井日卅井匀凶及井﹝\n﹛弥及隙挎毛撩仁仄凶分仃分午中丹及卞﹜\n﹛仇丹手⑹虭允月午反树仃卅中﹝
+
+
+
+###﹛痿及潟澡曰﹋607964﹌毛赭儅
+block Item_607964 >= 1
+	GAWindow 3203897,NEXT
+
+		#\n\n﹛公及潟澡曰﹜台反襞匀化中月冗﹝\n﹛＿公丹分﹜台午⑺元绒衔及白奴伉永皿互\n﹛褥卞勾仃化中凶潟澡曰分﹝\n﹛割井﹜?及侅五竻谛及痿匹综匀凶坁分午井＿﹝
+	GAWindow 3203898,OK
+
+		#\n\n﹛公丹中丹厘仪卅坁互侹切化中凶午蜕丹仇午反﹜\n﹛?互勖昵卞逦今木凶午中丹仇午分欠丹井〝\n﹛中支﹜公及潟澡曰及?允月芶竣井日允月午﹜\n﹛?互勖昵及恳虫午手哔尹日木月卅﹝
+
+
+
+###﹛珈惟及珃挎﹋607963﹌毛赭儅
+block Item_607963 >= 1
+	GAWindow 3203899,OK
+
+		#\n\n﹛哗怗卅丹尹卞渣莴卅酷仪毛瓷仄勾仃化仄引中﹜\n﹛厘庍萧仄沭卅中﹝\n﹛仁木什木手竣毛勾仃化仁木﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	GAWindow 3203900,NEXT
+
+		#\n\n﹛勖昵绒衔及扫反台手妏中化中月﹝\n﹛恳虫反雯日仁﹜梁螃毛遗户月樊升手匹丐欠丹﹝\n﹛公仇匹芶竣卞条木凶珃挎毛胶匀凶及分互﹜\n﹛褐邰卅澎互井曰卞啜中卅中﹝
+	GAWindow 3203901,YES,NO
+
+		#\n\n﹛梁螃黎扬反台凶切互优内剩鞅允月﹝\n﹛楝卞反﹜仇及梁螃遗ブ樊毛弅勿仃化俓仄中﹝\n﹛娄五熬仃化仁木卅中分欠丹井〝
+
+		Window_YES ItemSpace >= 1
+			GAWindow 3203902,OK
+
+		#\n\n﹛公木反丐曰互凶中﹝\n﹛匹反﹜仇及珃挎毛儅匀化中匀化仁木﹝\n﹛隅恘卞普桨允月﹝
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 607963,1,3203903
+
+		#\n\n﹛公及啦竣反丐曰互凶中互﹜珃挎互欐六卅中冗﹝\n﹛帮咥仄化仁木﹝
+
+				Window_OK
+					GAWindow 3203904,OK
+
+		#\n\n﹛公及啦竣反丐曰互凶中互﹜珃挎互欐六卅中冗﹝\n﹛帮咥仄化仁木﹝
+
+		Window_YES
+			GAWindow 3203905,OK
+
+		#\n\n﹛公及啦竣反丐曰互凶中互﹜珃挎互欐六卅中冗﹝\n﹛帮咥仄化仁木﹝
+
+		Window_NO
+			GAWindow 3203906,OK
+
+		#\n\n﹛公丹井﹝\n﹛引丐﹜梁螃呿虫今尹馨中忒仄化仄引尹壬﹜\n﹛勖昵毛隶丹梁螃遗ブ樊手壅尹月分欠丹﹝
+
+
+
+
+

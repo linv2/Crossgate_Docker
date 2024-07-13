@@ -1,0 +1,18 @@
+#泛旦玄﹛由伊民尼件﹛旦奶永民及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block XPos == 0 && Ypos == 1
+
+#	window "化允午℅"
+#	Message 21597
+#	ChangePal 2,10
+	Window 14047,Ok
+	Window_Ok
+	Giveitem 9604
+
+#	Warp 0,555,0,0
+#	Window_NO
+#	Encount 2|0,33229,22,13||0|||||0|20002|||||||||
+	

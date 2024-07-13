@@ -1,0 +1,27 @@
+# 5 "EV_tane_himuro_201.txt"
+# 1 "header/global0.h" 1
+# 6 "EV_tane_himuro_201.txt" 2
+
+block
+
+                        LocalCount2 = random 2,0
+
+
+
+
+ 
+
+                                                if LocalCount2 == 1
+
+                                                        Play_SE 266,320,240
+                                                        KillItem 15312,1(3007022)
+                                                        SetLp -55
+
+                                                else
+
+                                                        Play_SE 266,320,240
+                                                        KillItem 15312,1(3007022)
+                                                        SetFp -15
+
+
+                                                endif

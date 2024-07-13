@@ -1,0 +1,284 @@
+## 亚诺曼城 旅馆 -- 精修剑匠
+## 阔剑3长剑8突刺剑16火舌剑18面包剑22双手剑28双刃长剑37锁刃剑39格斗剑42长锷剑48猪牙剑56
+## 双刃阔剑57长军刀63巨剑67护身短剑70长军刀+73细柄短剑77钢硬巨剑87细刃重剑88青龙刀94曲刀97
+
+## 带着 耐久度擦拭布 45988 & 一把武器　点 Yes 后回复武器 100 耐久度　并且收走一个耐久度擦拭布
+block Item 45988 >= 1 && Item 97 == 1
+	 ##1052016	\n\n\n  “武器耐久擦拭布”只能使用一次，确定要修理曲  刀吗？	1
+	 Window 1052016,YES,NO
+	 Window_NO 
+		 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+		 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 97 == 1
+		 KillItem 45988,1
+		 SetDur 97,+100
+		 ##1052014	\n\n  成功了，你的武器耐久度已经回复了。	1
+		 EndWindow 1052014
+	 
+block Item 45988 >= 1 && Item 94 == 1
+	 ##1052017	\n\n\n  “武器耐久擦拭布”只能使用一次，确定要修理青  龙刀吗？	1
+	 Window 1052017,YES,NO
+	 Window_NO 
+	 	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 94 == 1
+	 	 KillItem 45988,1
+	 	 SetDur 94,+100 
+	 	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 88 == 1
+	 ##1052018  @c \n\n 确定要修理细刃重剑吗？
+	 Window 1052018,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 88 == 1
+	 KillItem 45988,1
+	 SetDur 88,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 87 == 1
+
+	 ##1052019  @c \n\n 确定要修理钢硬巨剑吗？
+	 Window 1052019,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 87 == 1
+	 KillItem 45988,1
+	 SetDur 87,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 77 == 1
+
+	 ##1052020  @c \n\n 确定要修理细柄短剑吗？
+	 Window 1052020,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 77 == 1
+	 KillItem 45988,1
+	 SetDur 77,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 73 == 1
+
+	 ##1052021  @c \n\n 确定要修理长军刀+吗？
+	 Window 1052021,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 73 == 1
+	 KillItem 45988,1
+	 SetDur 73,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 70 == 1
+
+	 ##1052022  @c \n\n 确定要修理护身短剑吗？
+	 Window 1052022,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 70 == 1
+	 KillItem 45988,1
+	 SetDur 70,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 67 == 1
+
+	 ##1052023  @c \n\n 确定要修理巨剑吗？
+	 Window 1052023,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 67 == 1
+	 KillItem 45988,1
+	 SetDur 67,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+
+block Item 45988 >= 1 && Item 63 == 1
+
+	 ##1052024  @c \n\n 确定要修理长军刀吗？
+	 Window 1052024,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 63 == 1
+	 KillItem 45988,1
+	 SetDur 63,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+	 
+block Item 45988 >= 1 && Item 57 == 1
+
+	 ##1052025  @c \n\n 确定要修理双刃阔剑吗？
+	 Window 1052025,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 57 == 1
+	 KillItem 45988,1
+	 SetDur 57,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	 
+
+block Item 45988 >= 1 && Item 56 == 1
+
+	 ##1052026  @c \n\n 确定要修理猪牙剑吗？
+	 Window 1052026,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 56 == 1
+	 KillItem 45988,1
+	 SetDur 56,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	 
+
+block Item 45988 >= 1 && Item 48 == 1
+
+	 ##1052027  @c \n\n 确定要修理长锷剑吗？
+	 Window 1052027,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 48 == 1
+	 KillItem 45988,1
+	 SetDur 48,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014
+	 
+block Item 45988 >= 1 && Item 42 == 1
+
+	 ##1052028  @c \n\n 确定要修理格斗剑吗？
+	 Window 1052028,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 42 == 1
+	 KillItem 45988,1
+	 SetDur 42,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	 
+
+block Item 45988 >= 1 && Item 39 == 1
+
+	 ##1052029  @c \n\n 确定要修理锁刃剑吗？
+	 Window 1052029,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 39 == 1
+	 KillItem 45988,1
+	 SetDur 39,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	
+
+block Item 45988 >= 1 && Item 37 == 1
+
+	 ##1052030  @c \n\n 确定要修理双刃长剑吗？
+	 Window 1052030,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 37 == 1
+	 KillItem 45988,1
+	 SetDur 37,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	
+
+block Item 45988 >= 1 && Item 28 == 1
+
+	 ##1052031  @c \n\n 确定要修理双手剑吗？
+	 Window 1052031,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 28 == 1
+	 KillItem 45988,1
+	 SetDur 28,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	
+
+block Item 45988 >= 1 && Item 22 == 1
+
+	 ##1052032  @c \n\n 确定要修理面包剑吗？
+	 Window 1052032,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 22 == 1
+	 KillItem 45988,1
+	 SetDur 22,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	
+
+block Item 45988 >= 1 && Item 18 == 1
+
+	 ##1052033  @c \n\n 确定要修理火舌剑吗？
+	 Window 1052033,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 18 == 1
+	 KillItem 45988,1
+	 SetDur 18,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014	
+
+block Item 45988 >= 1 && Item 16 == 1
+
+	 ##1052034  @c \n\n 确定要修理突刺剑吗？
+	 Window 1052034,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 16 == 1
+	 KillItem 45988,1
+	 SetDur 16,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014		 
+	 
+block Item 45988 >= 1 && Item 8 == 1
+
+	 ##1052035  @c \n\n 确定要修理长剑吗？
+	 Window 1052035,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 8 == 1
+	 KillItem 45988,1
+	 SetDur 8,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014		 
+	 
+block Item 45988 >= 1 && Item 3 == 1
+
+	 ##1052036  @c \n\n 确定要修理阔剑吗？
+	 Window 1052036,YES,NO
+	 Window_NO 
+	 ##1052013 \n\n 好吧，等你需要的时候再来找我。
+	 EndWindow 1052013
+	 Window_YES Item 45988 >= 1 && Item 3 == 1
+	 KillItem 45988,1
+	 SetDur 3,+100 
+	 ##1052014 \n\n 成功了，你的武器已经修好了。
+	 EndWindow 1052014			 
+
+## 有武器耐久擦拭布	 
+block Item 45988 >=1
+	 ####1052012	\n\n  我可以帮你回复武器的耐久度喔！想不想试试看？\n  但是你只能带一把你想修的武器给我，不然修错把  我可不负责喔。	1
+	 EndWindow 1052012
+	 
+## 没有带 耐久度擦拭布　45988
+block 
+	 ##1052015	\n\n  我们是追求最高修理技巧的师匠，我们的手艺已经  到了登峰造极的境界，只要你有神奇的“武器耐久  擦拭布”，我们就可以帮你回复武器耐久度，但仅  限于回复100或武器的最高上限值喔！	1
+	 EndWindow 1052015

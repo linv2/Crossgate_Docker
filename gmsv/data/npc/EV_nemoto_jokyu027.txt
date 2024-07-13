@@ -1,0 +1,145 @@
+##########################
+# 晓菟缜         by 漪呿 #
+# ←苇霜月樊←           #
+##########################
+
+
+#### A弘伙□皿引凶反B弘伙□皿
+## 痿诸阁?动晓
+block Job >= 14 && Job <= 19
+
+	GoToF case1
+
+## 爵忕诸阁?动晓
+block Job >= 24 && Job <= 29
+
+	GoToF case1
+
+## 嗤启绒衔动晓
+block Job >= 34 && Job <= 39
+
+	GoToF case1
+
+## 菰诸阁?动晓
+block Job >= 44 && Job <= 49
+
+	GoToF case1
+
+## 宎衔赢动晓
+block Job >= 54 && Job <= 59
+
+	GoToF case1
+
+## 申扑亦永皿动晓﹋弁伊伉永弁﹌
+block Job >= 64 && Job <= 69
+
+	GoToF case1
+
+## 它奴扒□玉动晓﹋呺诸阁﹌
+block Job >= 74 && Job <= 79
+
+	GoToF case1
+
+## 它巧□夫永弁﹋热诸阁﹌
+block Job >= 84 && Job <= 89
+
+	GoToF case1
+
+##扑乓□穴件动晓﹋粖诸阁﹌
+block Job >= 134 && Job <= 139
+
+	GoToF case1
+
+## 伞⑷诸阁?动晓
+block Job >= 144 && Job <= 149
+
+	GoToF case1
+
+## 排动晓﹋オ樊﹌
+block Job >= 154 && Job <= 159
+
+	GoToF case1
+
+## 朼执诸阁?动晓
+block Job >= 94 && Job <= 99
+
+	GoToF case1
+
+## 甩奶皮伉□母□
+block Job >= 104 && Job <= 109
+
+	GoToF case1
+
+# 譬项诸阁?动晓
+block Job >= 114 && Job <= 119
+
+	GoToF case1
+
+## 玄伉永弁旦正□动晓﹋霉篑﹌
+block Job >= 124 && Job <= 129
+
+	GoToF case1
+
+## 旦□由□旦正失动晓﹋阽曰阂﹌
+block Job >= 164 && Job <= 169
+
+	GoToF case1
+
+## 屻赢动晓
+block Job >= 434 && Job <= 439
+
+	GoToF case1
+
+## 豢迕琼衔阁动晓
+block Job >= 444 && Job <= 449
+
+	GoToF case1
+
+## 爆弹师
+block Job >= 1004 && Job <= 1009
+
+	GoToF case1	
+
+
+*case1*
+
+#### ≦玉仿打件甩□玄≧毛赭儅
+	if Item 622042 >= 1
+		GAWindow 3208320,OK
+
+		#\n\n﹛云?木迋匹允﹝\n﹛方仁仇仇引匹凶升曰邋五引仄凶友﹝\n﹛公木匹反﹜\n﹛玉仿打件甩□玄反仇切日匹苂井曰引允﹝\n﹛愈詨卞﹜\n﹛丐卅凶卞午化手莘中凶互匀化中月谛互中引允﹝\n﹛拟中及累毛儅匀化﹜?辉及赭尺垫匀化仁分今中﹝
+
+			Window_OK Item 622042 == 0
+				GAEndWindow 3208321
+
+		#\n\n﹛仇切日卞玉仿打件甩□玄毛欐仄化赡井卅中午﹜\n﹛燮尺反仍副〇匹五引六氏方﹝
+
+			Window_OK
+				KillItemAll 622042
+				warp 0,59934,93,12
+				Endblock
+
+	else
+
+#### ≦玉仿打件甩□玄≧毛尕赭儅
+		if Item 622042 == 0
+			GAEndWindow 3208322
+
+		#\n\n﹛皮仿永弁用失卞中月﹜\n﹛皮仿永弁玉仿打件卞反莘中引仄凶井〝\n﹛丐木毛逦仄﹜公及据毛\n﹛仇仇尺儅匀化五化仁分今中﹝
+
+		endif
+	endif
+Endblock
+
+
+#### 晓筏动陆
+block
+	Window 3208323,OK
+
+		#\n\n﹛丐卅凶反﹜\n﹛仇及燮尺褡戈凤伞反卅中方丹匹允友﹝
+		Window_OK
+			LeaveGroup
+			warp 0,59505,166,87
+Endblock
+
+

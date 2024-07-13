@@ -1,0 +1,33 @@
+#宠物情人--西西尔克
+##检查物品栏有无樱枝
+block Item 46234 >= 1
+	         ##1052312 \n\n\n  西西尔克喃喃地念着“请...一定要交给夏咪...”
+		 Window 1052312,NEXT
+		 ##1052313 \n\n\n\n@c雪...更大了！
+		 EndWindow 1052313 
+block
+	 ##1052314 \n\n\n  地上躺了一名男子，似乎还活着，要帮助他吗？
+	 Window 1052314,YES,NO
+	 Window_NO
+	 Window_YES
+	 	 ##1052315 \n西西尔克：\n\n  你...你是谁?
+		 Window 1052315,NEXT
+		 ##1052316 \n@n：\n\n  我是@n！\n  你怎么一个人倒在这里？
+		 Window 1052316,NEXT
+		 ##1052317 \n西西尔克：\n\n  我...我离不开，脚已经…\n  你...你愿意帮助我吗？
+		 Window 1052317,YES,NO
+		 	 Window_NO
+		   	 ##1052318 \n\n\n@c这就是愿望的代价吗？夏咪...
+		   	 EndWindow 1052318
+		   	 Window_YES
+		   	 ##1052319 \n西西尔克：\n\n  请...请将这根樱枝交给在克瑞村的夏咪！\n  请你一定要...交给夏咪..\n  我...只是希望她幸福…\n\n  请她...忘了我吧！
+			 Window 1052319,OK
+	 	 	 	 Window_OK ItemSpace < 1
+				 ##1051843	\n\n\n\n\n@c物品栏的空间不足。		 
+				 EndWindow 1051843
+				 Window_OK ItemSpace >= 1
+				 ##给樱之树枝
+		 		 GiveLeak1Item(46234%100$1)
+				 ##传出去？
+				  
+			

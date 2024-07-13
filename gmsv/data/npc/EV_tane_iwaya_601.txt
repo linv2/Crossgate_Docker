@@ -1,0 +1,65 @@
+
+block
+
+
+
+
+
+
+
+			if LocalCount0 == 5
+
+				LocalCount0 = random 2,0
+
+				if LocalCount0 == 1
+
+
+#					Window "\n\n﹛仇仇卞云蟆及菲户月手及反拑中﹝窒手卅中﹝\n﹛蛔月互恌中﹝",yes,no
+					Window 3006908,yes,no
+
+
+					Window_yes
+
+#						EndWindow "\n\n﹛公丹﹜公木互恌中﹝"
+						EndWindow 3006909
+
+
+					Window_no
+
+#						Window "\n\n﹛妏五坌仃及卅中蛊分＿＿",next
+						Window 3006910,next
+
+
+						Encount 2|0,59685,84,81||0|||||10|305002|||||||||
+
+
+				else
+
+					LocalCount0 = 5
+
+
+#					EndWindow "\n\n﹛台反?谛分﹝\n﹛窒手卅中?谛分﹝\n﹛窒手卅中质及?谛分﹝",next
+					EndWindow 3006911,next
+
+
+				endif
+
+
+
+			else
+
+
+				LocalCount0 = 5
+
+
+#				Window "\n\n﹛仇及唬泞反仇仇匹云仄引中分﹝",next
+				Window 3006912,next
+
+#				Window "\n\n﹛仇及燮卞反窒手卅中﹝\n﹛拑中﹝窒手卅中﹝\n﹛窒手卅中﹝",next
+				Window 3006913,next
+
+
+#				endWindow "\n\n﹛拑仪卅丹切卞﹜\n﹛云午卅仄仁夫五丐仆月互恌中﹝"
+				endWindow 3006914
+
+			endif

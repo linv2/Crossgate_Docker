@@ -1,0 +1,12 @@
+####dodo_item_47397.txt
+####■1.传羽收纳盒(满)
+##身上有传羽收纳盒(满) >= 1
+block Item 47397 >= 1 
+	 ##1109521	\n\n\n\n\n想把传送石优待卷拿出来吗？	1																																																																																																			
+	 Window 1109521,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47397 >= 1
+	 	 	 KillItem 47397
+	 	 	 GiveLeak1Item 18660
+	 	 	 

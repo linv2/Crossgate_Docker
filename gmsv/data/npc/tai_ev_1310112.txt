@@ -1,0 +1,416 @@
+################### 魔力卡 强化回力镖
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 物品栏已满
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 EndWindow 1100001	 	 	 
+
+###################有赤狮回力镖   2874      && 红檀木 50011 && 天空彩带 50016 && 太阳织布 50017 && GROUP==1
+block Item 2874 >=1 && Item 50011>=1 && Item 50016 >=1 && Item 50017>=1 &&  Group ==1
+	 ##1201119	\n你确定要强化你的赤狮回力镖吗？
+	 Window 1201119,YES,NO 
+	 	 Window_YES ItemDurPer 2874 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2874 == 100 && Group ==1 && Item 50011>=1 && Item 50016 >=1 && Item 50017>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2874
+			 	 KillItem 50011
+			 	 KillItem 50016
+			 	 KillItem 50017			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50516
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有凶豹回力镖  2871      && 红檀木 50011 && 天空彩带 50016 && 太阳织布 50017 && GROUP==1
+block Item 2871 >=1 && Item 50011>=1 && Item 50016 >=1 && Item 50017>=1 &&  Group ==1
+	 ##1201121	\n你确定要强化你的凶豹回力镖吗？
+	 Window 1201121,YES,NO 
+	 	 Window_YES ItemDurPer 2871 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2871 == 100 && Group ==1 && Item 50011>=1 && Item 50016 >=1 && Item 50017>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2871
+			 	 KillItem 50011
+			 	 KillItem 50016
+			 	 KillItem 50017			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50515
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有闪光回力镖   2863         && 红檀木 50011 && 天空彩带 50016 && GROUP==1
+block Item 2863 >=1 && Item 50011>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201123	\n你确定要强化你的闪光回力镖吗？
+	 Window 1201123,YES,NO 
+	 	 Window_YES ItemDurPer 2863 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2863 == 100 && Group ==1 && Item 50011>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2863
+			 	 KillItem 50011
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50514
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有雄翼牛回力镖         2862 && 红檀木 50011 && 天空彩带 50016 && GROUP==1
+block Item 2862 >=1 && Item 50011>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201125	\n你确定要强化你的雄翼牛回力镖吗？
+	 Window 1201125,YES,NO 
+	 	 Window_YES ItemDurPer 2862 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2862 == 100 && Group ==1 && Item 50011>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2862
+			 	 KillItem 50011
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50513
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有鸫回力镖     2850         && 红檀木 50011 && 天空彩带 50016 && GROUP==1
+block Item 2850 >=1 && Item 50011>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201127	\n你确定要强化你的鸫回力镖吗？
+	 Window 1201127,YES,NO 
+	 	 Window_YES ItemDurPer 2850 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2850 == 100 && Group ==1 && Item 50011>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2850
+			 	 KillItem 50011
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50512
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+			 
+###################有蛇狮回力镖   2859         && 红檀木 50011 && 天空彩带 50016 && GROUP==1
+block Item 2859 >=1 && Item 50011>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201129	\n你确定要强化你的蛇狮回力镖吗？
+	 Window 1201129,YES,NO 
+	 	 Window_YES ItemDurPer 2859 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2859 == 100 && Group ==1 && Item 50011>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2859
+			 	 KillItem 50011
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50511
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有阿修塔罗回力镖       2843 && 红檀木 50011 && 天空彩带 50016 && GROUP==1
+block Item 2843 >=1 && Item 50011>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201131	\n你确定要强化你的阿修塔罗回力镖吗？
+	 Window 1201131,YES,NO 
+	 	 Window_YES ItemDurPer 2843 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2843 == 100 && Group ==1 && Item 50011>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2843
+			 	 KillItem 50011
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50510
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有翼鹿回力镖   2848         && 红檀木 50011 && 天空彩带 50016 && GROUP==1
+block Item 2848 >=1 && Item 50011>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201133	\n你确定要强化你的翼鹿回力镖吗？
+	 Window 1201133,YES,NO 
+	 	 Window_YES ItemDurPer 2848 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2848 == 100 && Group ==1 && Item 50011>=1 && Item 50016 >=1
+			 	 ##失去武器及物品 
+			 	 KillItem 2848
+			 	 KillItem 50011
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50509
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有锐角回力镖   2832         && 红檀木 50011 && 天空彩带 50016 && GROUP==1
+block Item 2832 >=1 && Item 50011>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201135	\n你确定要强化你的锐角回力镖吗？
+	 Window 1201135,YES,NO 
+	 	 Window_YES ItemDurPer 2832 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2832 == 100 && Group ==1 && Item 50011>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2832
+			 	 KillItem 50011
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50508
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有狮子回力镖   2834         && 红檀木 50011 && 天空彩带 50016 && GROUP==1
+block Item 2834 >=1 && Item 50011>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201137	\n你确定要强化你的狮子回力镖吗？
+	 Window 1201137,YES,NO 
+	 	 Window_YES ItemDurPer 2834 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2834 == 100 && Group ==1 && Item 50011>=1 && Item 50016 >=1
+ 			 	 ##失去武器及物品
+			 	 KillItem 2834
+			 	 KillItem 50011
+			 	 KillItem 50016
+			 	 ##得到武器
+			 	 GiveLeak1Item 50507
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有杀敌回力镖   2823         && 红檀木 50011 && GROUP==1
+block Item 2823 >=1 && Item 50011>=1  &&  Group ==1
+	 ##1201139	\n你确定要强化你的杀敌回力镖吗？
+	 Window 1201139,YES,NO 
+	 	 Window_YES ItemDurPer 2823 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2823 == 100 && Group ==1 && Item 50011>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2823
+			 	 KillItem 50011			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50506
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983			 			 			 
+
+###################有暗杀回力镖   2820         && 红檀木 50011 && GROUP==1
+block Item 2820 >=1 && Item 50011>=1  &&  Group ==1
+	 ##1201141	\n你确定要强化你的暗杀回力镖吗？
+	 Window 1201141,YES,NO 
+	 	 Window_YES ItemDurPer 2820 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2820 == 100 && Group ==1 && Item 50011>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2820
+			 	 KillItem 50011			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50505
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有彩光回力镖   2815         && 红檀木 50011 && GROUP==1
+block Item 2815 >=1 && Item 50011>=1  &&  Group ==1
+	 ##1201143	\n你确定要强化你的彩光回力镖吗？
+	 Window 1201143,YES,NO 
+	 	 Window_YES ItemDurPer 2815 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2815 == 100 && Group ==1 && Item 50011>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2815
+			 	 KillItem 50011			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50504
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有追迹者       2812         && 红檀木 50011 && GROUP==1
+block Item 2812 >=1 && Item 50011>=1  &&  Group ==1
+	 ##1201145	\n你确定要强化你的追迹者吗？
+	 Window 1201145,YES,NO 
+	 	 Window_YES ItemDurPer 2812 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2812 == 100 && Group ==1 && Item 50011>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2812
+			 	 KillItem 50011			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50503
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有青铜回力镖   2801         && 红檀木 50011 && GROUP==1
+block Item 2801 >=1 && Item 50011>=1  &&  Group ==1
+	 ##1201147	\n你确定要强化你的青铜回力镖吗？
+	 Window 1201147,YES,NO 
+	 	 Window_YES ItemDurPer 2801 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2801 == 100 && Group ==1 && Item 50011>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2801
+			 	 KillItem 50011			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50502
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有木制大型回力镖      2806  && 红檀木 50011 && GROUP==1
+block Item 2806 >=1 && Item 50011>=1  &&  Group ==1
+	 ##1201149	\n你确定要强化你的木制大型回力镖吗？
+	 Window 1201149,YES,NO 
+	 	 Window_YES ItemDurPer 2806 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2806 == 100 && Group ==1 && Item 50011>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2806
+			 	 KillItem 50011			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50501
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################一般
+block 
+	 ##1201151	\n如果你拿下列特定组合的物品给我，\n我就能强化你所持有的回力镖。\n一级、二级与三级回力镖，所需的材料为红檀木。\n四级、五级、六级与七级回力镖所需的材料为红檀木与天空彩带。\n八级回力镖所需的材料为红檀木、天空彩带与太阳织布。
+	 EndWindow 1201151
+				 			 			 			 			 				 

@@ -1,0 +1,10 @@
+#????þ›?úó
+
+block Item 16409 >= 1
+	Window 22780,Yes,No
+		Window_No
+		Window_Yes
+			SetLp +3000
+			SystemMessage 4354
+			KillItem 16409,1,(22781)
+			GiveItem (16410%900,16411%100),1

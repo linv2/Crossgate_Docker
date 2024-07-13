@@ -1,0 +1,165 @@
+#丢奶件﹛唬泞﹛汁央□’峇怷
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+
+block Item 620029 >= 1 && petlevel 300002 == 1
+
+	Window 3202513,YES,NO
+
+		#\n\n﹛孔戈孔戈﹜仇木分仃缭匀化云木壬\n﹛峖扔丢毛荼瞻匹五公丹元扎卅﹝\n﹛支匀化心月井〝
+
+	Window_NO
+
+		EndWindow 3202514
+
+		#\n\n﹛公丹井﹜菁仄少曰卞\n﹛芴匀凶由□汁匹综匀凶\n﹛市穴示戊互\n﹛罹中凶井匀凶氏元扎互及丹﹝
+
+	Window_YES  Item 620029 >= 1 && petlevel 300002 == 1
+
+		Window 3202515,YES,NO
+
+		#\n\n﹛荼瞻仄凶银中呺反\n﹛旦平伙毛蝈朿侉木化仄引丹互\n﹛中中井卅〝
+
+
+			Window_NO
+
+				EndWindow 3202516
+
+		#\n\n﹛公丹井﹜\n﹛菁仄少曰卞\n﹛瑜午愈坁卞\n﹛引心木化心凶井匀凶氏元扎互及丹﹝
+
+
+			Window_YES  Item 620029 >= 1 && petlevel 300002 == 1
+
+				Window 3202517,ok
+
+		#\n\n﹛公丹井﹜卅日\n﹛剂仄引匀午木中″\n﹛夫匀夫匀夫″
+
+					Window_ok  Item 620029 >= 1 && petlevel 300002 == 1
+
+							KillItem 620029,1
+
+							KillPetl 300002,1
+
+							GivePet 300005
+
+
+
+
+block Item 620029 >= 1
+
+
+	window 3202518,next
+
+		#\n\n﹛云云﹜楝\n﹛埘螺卞手哔衙喀樊及歹仄互\n﹛礿域荼瞻匹五月呺坁及\n﹛涩煌豭毛儅匀化云月卅丑﹝
+
+
+	endwindow 3202519
+
+		#\n\n﹛伊矛伙ㄠ及峖扔丢毛慑木化五凶日\n﹛中支﹜洘木化五凶日\n﹛切斤中切斤中午荼瞻仄化支月冗中﹝
+
+
+
+block globalFlag36 == 1 && globalFlag10 == 1
+
+			window 3202520,next
+
+		#\n\n﹛云云丹﹜楝反中勾冗支及﹝\n﹛必件平匹支匀午月井丑℅
+
+			endwindow 3202521
+
+		#\n\n﹛月月〝月月中尹〝\n﹛升匀井及衙妐踏匹\n﹛苇凶仪互丐月方丹卅拑中方丹卅＿＿
+
+
+
+block globalFlag10 == 1
+
+#\n\n﹛云丹﹜平立井〝\n﹛’’丰邢砟牉紫中エ鉹瓣④炊瓣县咫吽
+
+
+
+	EndWindow 3006585,OK
+
+
+block Item 14664 >= 1 && Item 14665 >= 1
+
+#\n\n﹛卅氏元扎〝\n﹛’’丰角彖遢銴舅膉?\n﹛挃及笮卞瑁引匀午’炕\n﹛公氏卅仪手襞日氏及井〝楝反〝
+
+
+
+	EndWindow 3006540,OK
+
+
+
+block Item 14664 >= 1
+
+
+			LocalCount4 = random 2,0
+
+				if LocalCount4 == 1
+
+#\n\n﹛卅卞〝’楔牊芵鉴媦啎舅膉鴃\n﹛仄井手﹜\n﹛穴永民亦匹﹜布泛件卅白奴□’伢洃舅耤\n﹛衙?诸卅氏化六六仇引仄中坁反’咫擗鞳炕
+
+
+
+	EndWindow 3006515,OK
+
+				else
+
+#\n\n﹛﹛汁央□’n﹛＞丹’竣中吽\n﹛﹛漆反厘仪卅白奴□’犮’憧纽璊舅耤\n﹛﹛仇氏卅午仇牙戏扎凤恔手卅中’\n﹛﹛＿＿’舅耤十’?’═’楔帣?冞銴丑\n﹛﹛公丹仄凶日﹜苇化支’
+
+	window 3006516,next
+
+	window 3006517,next
+
+	window 3006518,next
+
+	window 3006519,next
+
+	window 3006520,next
+
+
+	EndWindow 3006521,OK
+
+				endif
+
+block 
+
+#\n\n﹛云〝\n﹛云赓卞云杴卞井井’\n﹛’楔牊芵鉴媦啎峊舰﹛憧’?膜匮唌\n﹛掸反仇及唬泞毛?苇仄凶及反﹜’楔吨鞲舅耤
+
+
+
+
+
+
+	window 3002025,next
+
+
+#\n\n﹛穻樊’璆鞲抵狫胪?壑’’’n﹛虏及厘’韖掍﹛憧’鞳\n﹛公及掸箕毛割井户’峇珊峇咫擗恟握舅膉瓣缣
+
+
+
+
+	window 3002026,next
+
+#
+
+#	window 3002013,next
+
+#\n\n﹛褪溶’豸洁\n﹛云午亢狪午蜇掸及嗉帎毛勾仃牙耦午\n﹛方仁变日’县滮峇舅膉活纂胪汹洃洁
+
+
+
+
+
+
+
+
+	EndWindow 3002027,OK
+
+
+
+

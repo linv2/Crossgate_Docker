@@ -1,0 +1,63 @@
+#乒件旦正□戊奶件傀舰
+#弘伊□玄今氏
+#
+
+
+block petlevel_314909 >=1
+
+
+	endwindow "\n\n﹛厘濠卞允月疋亥﹝"
+
+
+
+block petlevel_309300 >= 1
+
+	window "\n\n﹛丐丐﹜楝″\n﹛楝及公及矢永玄″\n﹛公及平乓永玄丢失疋亥﹝\n﹛公及戊反示弁及竻琼疋亥﹝\n﹛燮ざ井日垫杅尕抸卞卅匀化化艘ミ仄凶疋亥﹝",next
+	
+	window "\n\n﹛公及戊毛忒仄化幻仄中疋亥﹝\n﹛手切欠氏﹜凶分午反蜕歹卅中疋亥﹝",next
+	
+	window "\n\n﹛示弁及坌褥毛丐仆月疋亥﹝\n﹛仇及棉目件卅云衔樊今氏卞\n﹛综匀化手日匀凶疋亥﹝",next
+	
+	window "\n\n﹛示弁愤褥元扎卅中井日﹜\n﹛公氏卅卞雄仁卅中仃升﹜\n﹛五匀午泙卞峏勾疋亥﹝",yes,no
+	
+	
+		window_yes
+			
+			window "\n\n﹛丐曰互午丹疋亥″",ok
+		
+			
+		
+				window_ok petlevel_309300 >= 1
+				
+					killpetH 309300,1
+					givepet 307398
+				
+				window_ok
+				
+					endwindow "\n\n﹛丐﹜平乓永玄丢失卅氏化蛛卅中疋亥方〝"
+
+		
+		
+		
+		window_no
+		
+		
+			endwindow "\n\n﹛公丹＿＿酸ゴ疋亥﹝"
+			
+			
+			
+			
+
+
+
+
+
+
+
+block
+
+	window "\n\n﹛艘ミ疋亥＿＿﹝\n﹛丐﹜ケ及跸及方丹卅伞驯毛仄凶\n﹛乒件旦正□毛苇卅井匀凶疋亥〝",next
+	
+	window "\n\n﹛示弁及竻琼卅氏分疋亥﹝\n﹛愈嗤怍恅互喂尹化月井日﹜\n﹛手仄井允月午升仇井匹\n﹛忯引匀切扎匀凶氏元扎卅中井匀化﹜\n﹛艘ミ仄化月疋亥﹝",next
+	
+	endwindow "\n\n﹛升仇井匹苇井仃凶日项尹化俓仄中疋亥﹝\n﹛平乓永玄丢失匀化蜕丹疋亥﹝"

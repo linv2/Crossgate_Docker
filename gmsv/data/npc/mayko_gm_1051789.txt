@@ -1,0 +1,216 @@
+#宠物零食商		1051789
+#1055842	\n\n\n　　　　我是宠物零食商，\n　　　　欢迎购买宠物零食。	1
+#1055843	\n\n\n@c不过～我只收怪物硬币喔！！	1
+#1055844	\n\n\n　　　　你有１Ｍ宠物硬币，\n　　　　要买宠物糖果吗？	1
+#1055845	\n\n\n　　　　你有５Ｍ宠物硬币，\n　　　　要买宠物绵花糖吗？	1
+#1055846	\n\n\n　　　　你有１０Ｍ宠物硬币，\n　　　　要买宠物蜂蜜蛋糕吗？	1
+#1055847	\n\n\n@c想买宠物零食再来找我！！	1
+#宠物硬币一万M	620035	宠物硬币十万M	620036	宠物硬币1000M	621006
+#宠物硬币1M	620032	宠物硬币5M	620033	宠物硬币10M	620034
+#宠物糖果	47731	宠物绵花糖	47732	宠物蜂蜜蛋糕	47733
+#1055848	\n\n\n@c请不要拿大钞给我！！
+
+block ItemSpace == 0
+	 EndWindow 11716
+block Item 620032>0 && Item 620033 >0 && Item 620034 >0  ## 1,5,10
+	 Window 1055842,NEXT
+	 Window 1055844,YES,NO
+
+	 Window_YES Item 620032>0
+		KillItem 620032,1
+		GiveLeak1Item 47731,1
+	 	EndWindow 1055847
+	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 ## EndWindow 1055848
+	
+	 ## Window_YES
+	 	 ## Window 1055845,YES,NO
+	 	 ## Window_YES Item 620033>0
+	 	 ## KillItem 620033,1
+	 	 ## GiveLeak1Item 47732,1
+	 	 ## EndWindow 1055847
+	 	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 	 ## EndWindow 1055848	 	 
+	 	 ## Window_NO
+	 	 	 ## Window 1055846,YES,NO
+	 	 	 ## Window_YES Item 620034>0
+	 	 	 ## KillItem 620034,1
+	 	 	 ## GiveLeak1Item 47733,1
+	 	 	 ## EndWindow 1055847
+	 	 	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 	 	 ## EndWindow 1055848
+	 	 	 ## Window_NO
+	 	 	 ## EndWindow 1055847
+
+	 
+	 Window_NO
+	 	 Window 1055845,YES,NO
+
+	 	 Window_YES Item 620033>0
+		 	 KillItem 620033,1
+		 	 GiveLeak1Item 47732,1
+	 		 EndWindow 1055847
+	 	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 	 ## EndWindow 1055848
+	 	 Window_NO
+	 	 	 Window 1055846,YES,NO
+
+	 	 	 Window_YES Item 620034>0
+		 	 	 KillItem 620034,1
+		 	 	 GiveLeak1Item 47733,1
+	 		 	 EndWindow 1055847
+	 	 	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 	 	 ## EndWindow 1055848
+	 	 	 Window_NO
+	 	 	 	EndWindow 1055847
+
+#############################两种M
+block Item 620032>0 && Item 620033 >0  ## 1,5
+	 Window 1055842,NEXT
+	 Window 1055844,YES,NO
+
+	 Window_YES Item 620032>0
+		 KillItem 620032,1
+		 GiveLeak1Item 47731,1
+		 EndWindow 1055847
+	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 ## EndWindow 1055848
+	
+	 ## Window_YES
+	 	 ## Window 1055845,YES,NO
+	 	 ## Window_YES Item 620033>0
+	 	 ## KillItem 620033,1
+	 	 ## GiveLeak1Item 47732,1
+	 	 ## EndWindow 1055847
+	 	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 	 ## EndWindow 1055848	 	 
+	 	 ## Window_NO
+	 	 ## EndWindow 1055847
+	 
+	 Window_NO
+	 	 Window 1055845,YES,NO
+
+	 	 Window_YES Item 620033>0
+		 	 KillItem 620033,1
+	 		 GiveLeak1Item 47732,1
+		 	 EndWindow 1055847
+	 	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 	 ## EndWindow 1055848
+	 	 Window_NO
+	 	 	EndWindow 1055847	 	
+#============================================================	 	  
+block Item 620032>0 && Item 620034 >0  ## 1,10
+	 Window 1055842,NEXT
+	 Window 1055844,YES,NO
+
+	 Window_YES Item 620032>0
+		 KillItem 620032,1
+		 GiveLeak1Item 47731,1
+		 EndWindow 1055847
+	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 ## EndWindow 1055848
+	 ## Window_YES
+	 	 ## Window 1055846,YES,NO
+	 	 ## Window_YES Item 620034>0
+	 	 ## KillItem 620034,1
+	 	 ## GiveLeak1Item 47733,1
+	 	 ## EndWindow 1055847
+	 	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 	 ## EndWindow 1055848
+	 	 ## Window_NO
+	 	 ## EndWindow 1055847	 	 
+	 
+	 Window_NO
+	 	 Window 1055846,YES,NO
+
+	 	 Window_YES Item 620034>0
+		 	 KillItem 620034,1
+		 	 GiveLeak1Item 47733,1
+	 		 EndWindow 1055847
+	 	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 	 ## EndWindow 1055848
+	 	 Window_NO
+	 	 	EndWindow 1055847	 	
+#============================================================
+block Item 620033>0 && Item 620034 >0  ## 5,10
+	 Window 1055842,NEXT
+	 Window 1055845,YES,NO
+
+	 Window_YES Item 620033>0
+		 KillItem 620033,1
+		 GiveLeak1Item 47732,1
+	 	EndWindow 1055847
+	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 ## EndWindow 1055848
+	 ## Window_YES
+	 	 ## Window 1055846,YES,NO
+	 	 ## Window_YES Item 620034>0
+	 	 ## KillItem 620034,1
+	 	 ## GiveLeak1Item 47733,1
+	 	 ## EndWindow 1055847
+	 	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 	 ## EndWindow 1055848
+	 	 
+	 
+	 Window_NO
+	 	 Window 1055846,YES,NO
+
+	 	 Window_YES Item 620034>0
+		 	 KillItem 620034,1
+		 	 GiveLeak1Item 47733,1
+	 		 EndWindow 1055847
+	 	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 	 ## EndWindow 1055848
+	 	 Window_NO
+	 	 	EndWindow 1055847	 	 
+#############################只有一种
+block Item 620032>0 ## 1
+	 Window 1055842,NEXT
+	 Window 1055844,YES,NO
+
+	 Window_YES Item 620032>0
+		 KillItem 620032,1
+		 GiveLeak1Item 47731,1
+		 EndWindow 1055847
+	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 ## EndWindow 1055848
+
+	 Window_NO
+		 EndWindow 1055847
+#============================================================
+block Item 620033>0 ## 5
+	 Window 1055842,NEXT
+	 Window 1055845,YES,NO
+
+	 Window_YES Item 620033>0
+		 KillItem 620033,1
+		 GiveLeak1Item 47732,1
+		 EndWindow 1055847
+	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 ## EndWindow 1055848
+	 
+	 Window_NO
+	 	EndWindow 1055847
+#============================================================
+block Item 620034>0 ## 10
+	 Window 1055842,NEXT
+	 Window 1055846,YES,NO
+
+	 Window_YES Item 620034>0
+		 KillItem 620034,1
+		 GiveLeak1Item 47733,1
+		 EndWindow 1055847
+	 ## Window_YES Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 ## EndWindow 1055848
+	 
+	 Window_NO
+	 	EndWindow 1055847
+#############################没有适当的
+block Item 620035>0 || Item 620036 >0 || Item 620037 >0
+	 Window 1055842,NEXT
+	 EndWindow 1055848
+#============================================================	 
+block 
+	 Window 1055842,NEXT
+	 EndWindow 1055843	 
+	 

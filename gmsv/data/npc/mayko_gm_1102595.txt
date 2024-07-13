@@ -1,0 +1,51 @@
+#雨云	33200	182	153	mayko_gm_1102595.txt	
+
+
+#1110576	\n\n\n　　　原来穗花山奈就是野姜花呀，\n　　　以前常在溪流边看到呢。	1
+#1110577	\n\n\n　　　我包几颗粽子看看，\n　　　你等一下喔．．．．。	1
+#1110578	\n\n\n\n@c开始蒸粽子了。	1
+#1110579	\n\n\n\n@c正在蒸粽子，等一下喔。	1
+#1110580	\n\n\n\n@c快蒸好了，再等一会吧。	1
+#1110581	\n\n\n　　　好了～香喷喷的姜花粽，\n　　　慢慢品尝喔～。	1
+#1110582	\n\n\n\n@c野姜花粽的味道很特别耶。	1
+
+
+#1053288	\n\n\n\n@c咦～你的东西突然不见，是不是掉了。	1
+
+#叶子41071
+#姜花粽子41072
+block Item 41072>0
+	 EndWindow 1110582
+block Item 41071>0
+	 Window 1110576,NEXT
+	 Window 1110577,OK
+	 Window_OK Item 41071 == 0
+	 EndWindow 1053288
+	 Window_OK
+	 KillItem 41071,1
+	 GiveLeak1Item 41072,1
+	 Window 1110578,NEXT
+	 Window 1110579,NEXT
+	 Window 1110580,NEXT
+	 EndWindow 1110581
+	 	 
+
+#====================================
+#1110564	\n　　　听说用穗花山奈的叶子，\n　　　也可以包粽子。	1
+#1110565	\n\n\n\n@c可是穗花山奈长的什么样呢？	1
+#1110566	\n\n　　　我记得可可说过这是水边植物，\n　　　她现在跟琪琪做研究，\n　　　麻烦您帮我问问他！！	1
+#1110567	\n\n\n\n@c可可在南洽特拉山海岸边做研究的样子。	1
+
+block Item 41068>0
+	 EndWindow 1110567
+block 
+	 Window 1110564,OK
+	 Window_OK ItemSpace < 1
+	 EndWindow 1110565
+	  
+	 Window_OK
+
+	 Window 1110565,NEXT
+	 Window 1110566,NEXT
+	 GiveLeak1Item 41068,1
+	 EndWindow 1110567

@@ -1,0 +1,98 @@
+#显及丝挚﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛魂杽敢弘夫旦及摒
+
+###﹛乒夫甩正弗丐月中反穴奶件白仿伐□毛赭儅
+block Item_607700 >= 1 || Item_607702 >= 1
+	EndWindow 3204752
+
+		#\n\n﹛＿＿公及﹜弁仿它件＿丝挚毛碧引六凶卅﹝\n﹛＿魂杽卞蚕尹月仇午反＿＿＿匹五卅中﹝
+
+
+
+###﹛平乒母丢母扑蔺爵据毛赭儅
+block Item_607970 >= 1
+	GAWindow 3204753,YES,NO
+
+		#\n\n﹛＿＿蔺爵樊＿分卅﹝＿镕赶及魂杽反﹜\n﹛≦抸ざ匹五月仇午反漆ざ支日卅中岭坌≧\n﹛蚕尹反＿＿???﹜??匹＿＿＿﹝
+
+		Window_YES Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204754
+
+		#\n\n﹛＿漆及荚蚕＿カ户卅中﹝\n﹛＿咥苀反＿＿＿公及弁仿它件＿﹝
+
+		Window_YES Item_607970 >= 1
+			GAWindow 3204755,OK
+
+		#\n\n﹛＿＿＿瓜穴弗乒用井﹝\n﹛＿?彊仄化戚及魂杽尺＿＿垫仃﹝
+
+				Window_OK Item_607700 >= 1 || Item_607702 >= 1
+					EndWindow 3204756
+
+		#\n\n﹛＿漆及荚蚕＿カ户卅中﹝\n﹛＿咥苀反＿＿＿公及弁仿它件＿﹝
+
+				Window_OK Item_607970 >= 1
+					Warp 0,59814,94,141
+
+				Window_OK
+					EndWindow 3204757
+
+		#\n\n﹛＿漆及荚蚕＿カ户卅中﹝\n﹛＿咥苀反＿蔺爵据互＿＿卅中＿﹝
+
+		Window_YES
+			EndWindow 3204758
+
+		#\n\n﹛＿漆及荚蚕＿カ户卅中﹝\n﹛＿咥苀反＿蔺爵据互＿＿卅中＿﹝
+
+		Window_NO Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204759
+
+		#\n\n﹛＿漆及荚蚕＿カ户卅中﹝\n﹛＿咥苀反＿＿＿公及弁仿它件＿﹝
+
+		Window_NO Item_607970 >= 1
+			GAWindow 3204760,OK
+
+		#\n\n﹛＿＿＿伐□市石伉永弁井﹝\n﹛＿?彊仄化戚及魂杽尺＿＿垫仃﹝
+
+				Window_OK Item_607700 >= 1 || Item_607702 >= 1
+					EndWindow 3204761
+
+		#\n\n﹛＿漆及荚蚕＿カ户卅中﹝\n﹛＿咥苀反＿＿＿公及弁仿它件＿﹝
+
+				Window_OK Item_607970 >= 1
+					Warp 0,59814,200,72
+
+				Window_OK
+					EndWindow 3204762
+
+		#\n\n﹛＿漆及荚蚕＿カ户卅中﹝\n﹛＿咥苀反＿蔺爵据互＿＿卅中＿﹝
+
+		Window_NO
+			EndWindow 3204763
+
+		#\n\n﹛＿漆及荚蚕＿カ户卅中﹝\n﹛＿咥苀反＿蔺爵据互＿＿卅中＿﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3204764,YES,NO
+
+		#\n\n﹛＿蔺爵据＿＿卅中＿魂杽及荚蚕＿＿匹五卅中﹝\n﹛＿潸曰跶允井＿＿蔺爵据〝
+
+		Window_YES
+			Window 3204765,OK
+
+		#\n\n﹛戚反撩仁允卅＿＿＿斨珌＿＿﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59801,93,79
+
+		Window_NO
+			EndWindow 3204766
+
+		#\n\n﹛狪仄井仃月卅＿＿＿斨珌＿＿﹝
+
+
+

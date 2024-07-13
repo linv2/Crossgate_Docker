@@ -1,0 +1,69 @@
+/*
+伉伊□﹛boukenyado及谛
+厘妐侬﹜凝妐侬及嗉帎反卅中
+'_'反厶心?壬仄
+*/
+
+#include "./header/global0.h"
+
+block
+
+
+
+
+
+
+			if LocalCount0 == 5
+
+				LocalCount0 = random 1,0
+
+				if LocalCount0 == 1
+
+//		ㄡ荚杴动嫦
+
+
+					Window "\n\n﹛",next
+
+					EndWindow "\n\n﹛"
+
+					LocalCount0 = 5
+
+				else
+
+
+					Window "\n\n﹛",next
+
+					EndWindow "\n\n﹛",next
+
+					LocalCount0 = 5
+
+				endif
+
+
+
+			else
+
+//			域荚杴
+
+				Window "\n\n﹛",next
+
+
+				EndWindow "\n\n﹛"
+
+
+				LocalCount0 = 5
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

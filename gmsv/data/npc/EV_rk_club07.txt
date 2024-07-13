@@ -1,0 +1,23 @@
+#
+#立伉□
+#
+
+#弗件及抩铜市它件玄互ㄢ动晓及桦宁
+block Item 16239 == 1 && StampCount 16239 >= 3
+	EndWindow 21843
+
+#弗件尺及澎饼毛手匀化中月卅日
+block Item 16244 == 1
+	EndWindow 21842
+
+##由仿打井日及澎饼毛手匀化中月卅日
+block Item 18982 >= 1
+	Window 21563,Next
+	Window 21564,Next
+	Window 21842,OK
+		Window_OK
+			KillItemall 18982
+			GiveItem 16244
+
+block
+	EndWindow 21562

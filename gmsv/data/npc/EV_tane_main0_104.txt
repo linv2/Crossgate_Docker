@@ -1,0 +1,109 @@
+#丢奶件﹛唬泞﹛中及谛﹛’#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+
+block globalFlag36 == 1 && globalFlag10 == 1
+
+
+			window 3202226,next
+
+		#\n\n﹛升丹手﹜漆゜反匹允﹝\n﹛允心引六氏互﹜汁央□伙ヲ衔反\n﹛漆侄仄中白伉毛仄化中月及匹允﹝\n﹛呿谛反侄仄中勾手曰卅及匹\n﹛幻匀午中化丐仆化票今中﹝
+
+			endwindow 3202227
+
+		#\n\n﹛尺〝\n﹛伙伙奶巨ヲ衔〝\n﹛中尹﹜公及方丹卅杅﹜\n﹛台反绣元井友引允互＿＿
+
+
+block globalFlag10 == 1
+
+#\n\n﹛’’丰角竣鞳═エ驮哄\n﹛中尹﹜’县楔\n﹛引分踞澎卞卅匀化’珊䴗中滮峇\n﹛绣元晓仆井友引允﹝
+
+
+	window 3006536,next
+
+	window 3006537,next
+
+	window 3006538,next
+
+
+#\n\n﹛割井﹜’藱砥═酗帠驮咫鬅n﹛娄匀旋仄化垫匀凶＿＿午﹝
+
+
+	EndWindow 3006539,OK
+
+block Item 14664 >= 1 && Item 14665 >= 1
+
+#\n\n﹛’’丰角竣鞳═エ驮哄\n﹛中尹﹜’县楔\n﹛引分踞澎卞卅匀化’珊䴗中滮峇\n﹛绣元晓仆井友引允﹝
+
+
+	window 3006536,next
+
+	window 3006537,next
+
+	window 3006538,next
+
+
+#\n\n﹛割井﹜’藱砥═酗帠驮咫鬅n﹛娄匀旋仄化垫匀凶＿＿午﹝
+
+
+	EndWindow 3006539,OK
+
+
+block Item 14664 >= 1
+
+
+#\n\n﹛斥亦旦奶\n﹛＞仇仇反﹜哔衙喀樊及\n﹛﹛汁央□’峇庛朴瞍欲エ驮活纂\n﹛﹛尹尹﹜反中﹜反中﹜\n﹛﹛剂★﹜云谨切毛＿＿
+
+
+
+
+
+	window 3006525,next
+
+	window 3006526,next
+
+	window 3006527,next
+	
+	window 3006528,next
+
+	window 3006529,next
+
+	window 3006530,next
+
+	window 3006531,next
+	
+	window 3006532,next
+
+	window 3006533,next
+	
+	window 3006534,next
+
+
+#\n\n﹛汁央□’n﹛＞升’１’恣Ⅵ珩蟛䴗羷韪中④鉹式\n﹛﹛仇’羃瓣Ⅴ啎惜\n﹛﹛庈媪卅丐中勾手﹜莘匀化仁’’舅膉式\n﹛﹛幻’═酗’羃瓣Ⅴ啎情
+
+
+	Window 3006535,OK
+
+	window_ok
+
+	globalFlag8 = 1
+	GiveItem 14665,1
+
+
+
+
+block 
+
+#\n\n﹛允心引六氏﹝\n﹛З谻反窒裕井﹜云侄仄中氏匹允﹝
+
+
+
+
+	EndWindow 3006594,OK
+
+
+
+

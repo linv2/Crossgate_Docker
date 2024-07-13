@@ -1,0 +1,12 @@
+#1102357
+#471	180
+
+
+block	Xpos ==471  && Ypos == 180 &&  EndEvent 151 == 1
+	 LeaveGroup
+	 warp 0,31910,13,17
+	 Endblock
+block	 Xpos ==471  && Ypos == 180
+	 EndWindow 206417
+block	
+	 Endblock

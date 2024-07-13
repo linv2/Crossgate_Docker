@@ -1,0 +1,111 @@
+#伙申﹋失伙市犯奴失﹌
+
+
+
+block EndEvent 56 == 1 && globalFlag26 == 1
+
+	Window 3200436,Next
+		#\n\n﹛支丑﹜@n楝井〝〝\n﹛仇氏卅午仇欠毛云辣忷井中〝\n﹛丹仃仃仃仃仃﹝
+
+	Window 3200437,Next
+		#\n\n﹛冞反扑打玄﹝\n﹛中仁日浔怗及酷仪午反中匀化手\n﹛仇丹侄仄仁切扎﹜\n﹛手丹﹜支氏卅匀切扎丹方友之﹝
+	
+	Window 3200438,Next
+		#\n\n﹛云支﹜云支﹜\n﹛仇及左乒民乓反\n﹛敦蝈卞母丢卞卅匀切扎匀凶卅丑﹝\n﹛@n楝互丐氏引曰琅仄仁健丹井日\n﹛＿＿丹仃仃仃仃﹝
+	
+	Window 3200439,Next
+		#\n\n﹛丐氏引曰冞及扑打玄毛﹜\n﹛喂支今卅中匹幻仄中卅丑﹝\n﹛仇氏卅左乒民乓匹手﹜\n﹛锳厌澎棉粕井井匀化月氏分兮﹝
+
+	Window 3200440,ok
+		#\n\n﹛引丑﹜中中今﹝\n﹛丐凶日仄中左乒民乓反\n﹛午匀仁卞迕啦今木化月仄友﹝\n﹛漆蘸反莽今卅中匹云仁木方﹝\n﹛丹仃仃仃仃仃仃﹝
+
+	Window_OK
+
+			EndEvent 57 = 1
+			CheckTitle
+			LeaveGroup
+			Warp 0,33608,130,60
+
+
+block EndEvent 64 == 1 && globalFlag26 == 1
+
+	Window 3200441,Next
+		#\n\n﹛支丑﹜@n楝井〝〝\n﹛仇氏卅午仇欠毛云辣忷井中〝\n﹛丹仃仃仃仃仃﹝
+
+	Window 3200442,Next
+		#\n\n﹛冞反扑打玄﹝\n﹛中仁日浔怗及酷仪午反中匀化手\n﹛仇丹侄仄仁切扎﹜\n﹛手丹﹜支氏卅匀切扎丹方友之﹝
+	
+	Window 3200443,Next
+		#\n\n﹛云支﹜云支﹜\n﹛仇及左乒民乓反\n﹛敦蝈卞母丢卞卅匀切扎匀凶卅丑﹝\n﹛@n楝互丐氏引曰琅仄仁健丹井日\n﹛＿＿丹仃仃仃仃﹝
+	
+	Window 3200444,Next
+		#\n\n﹛丐氏引曰冞及扑打玄毛﹜\n﹛喂支今卅中匹幻仄中卅丑﹝\n﹛仇氏卅左乒民乓匹手﹜\n﹛锳厌澎棉粕井井匀化月氏分兮﹝
+
+	Window 3200445,ok
+		#\n\n﹛引丑﹜中中今﹝\n﹛丐凶日仄中左乒民乓反\n﹛午匀仁卞迕啦今木化月仄友﹝\n﹛漆蘸反莽今卅中匹云仁木方﹝\n﹛丹仃仃仃仃仃仃﹝
+
+
+
+	Window_OK
+
+
+			EndEvent 65 = 1
+			CheckTitle
+			LeaveGroup
+			Warp 0,33608,130,60
+
+
+
+#伙申
+
+
+
+block EndEvent 56 == 1
+
+
+
+	Window 3200446,Next
+		#\n\n﹛支丑﹜@n楝元扎卅中井〝\n﹛怉卅午仇欠匹莘丹友之﹝\n﹛丹仃仃仃仃仃﹝
+
+	Window 3200447,Next
+		#\n\n﹛尹〝冞井中〝\n﹛切斤匀午沓抔迕匹友﹝\n﹛动蟆丐勾井匀凶齿圴及﹜\n﹛引丑﹜失白正□弗失心凶中卅手氏今﹝
+
+	Window 3200448,Next
+		#\n\n﹛孔戈〝\n﹛仇及云手切扎反﹜\n﹛引分银尹月心凶中分友﹝\n﹛膜咥仄化云仁井卅〝
+
+	Window 3200449,ok
+		#\n\n﹛元扎﹜@n楝﹜抩酸检仄中仃升\n﹛冞反酷仪互匹五凶井日\n﹛云中午引允月方﹝\n﹛元扎﹜引凶﹜升仇井匹﹝\n﹛丹仃仃仃﹝
+
+		Window_OK
+
+			EndEvent 57 = 1
+			CheckTitle
+			LeaveGroup
+			SystemMessage 4457
+			Warp 0,33000,468,381
+
+
+block EndEvent 64 == 1
+
+
+
+	Window 3200450,Next
+		#\n\n﹛支丑﹜@n楝元扎卅中井〝\n﹛怉卅午仇欠匹莘丹友之﹝\n﹛丹仃仃仃仃仃﹝
+
+	Window 3200451,Next
+		#\n\n﹛尹〝冞井中〝\n﹛切斤匀午沓抔迕匹友﹝\n﹛动蟆丐勾井匀凶齿圴及﹜\n﹛引丑﹜失白正□弗失心凶中卅手氏今﹝
+
+	Window 3200452,Next
+		#\n\n﹛孔戈〝\n﹛仇及云手切扎反﹜\n﹛引分银尹月心凶中分友﹝\n﹛膜咥仄化云仁井卅〝
+
+	Window 3200453,ok
+		#\n\n﹛元扎﹜@n楝﹜抩酸检仄中仃升\n﹛冞反酷仪互匹五凶井日\n﹛云中午引允月方﹝\n﹛元扎﹜引凶﹜升仇井匹﹝\n﹛丹仃仃仃﹝
+
+		Window_OK
+
+			EndEvent 65 = 1
+			CheckTitle
+			LeaveGroup
+			SystemMessage 4457
+			Warp 0,33000,468,381
+

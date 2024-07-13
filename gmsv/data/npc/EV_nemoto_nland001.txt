@@ -1,0 +1,57 @@
+##########################
+# 用永市□仿件玉 by 漪呿 #
+# ←手亢曰市□楝←       #
+##########################
+
+### 用永市□卞庍褥仄化中月
+block BBimage == 101020
+	Window 3206841,YES,NO
+
+		#\n\n﹛支丑支丑﹜云谨切仄化引仄凶方″\n﹛酦卞じ匀凶日痴翎卅氏井六内醮恌仁生永″\n﹛今丑今丑﹜斗匀仁曰仄化匀化生永″
+
+		Window_YES BBimage != 101020
+			EndWindow 3206842
+
+		#\n\n﹛用永市□动陆反じ桦恔毛赡中化月方″\n﹛云域谛迋ㄤㄟ?分方″
+
+		Window_YES
+			LeaveGroup
+			warp 0,59505,218,194
+
+		Window_NO
+			EndWindow 3206843
+
+		#\n\n﹛丐木﹜芛太卞五凶氏元扎卅中及〝
+
+
+### 晓筏动陆
+block
+	Window 3206844,YES,NO
+
+		#\n\n﹛用永市□仿件玉尺方丹仇公″\n﹛尹〝示弁反用永市□元扎卅中分欠匀化〝\n﹛称井中仇午反竣卞仄卅中匹方生永″\n﹛今丑今丑﹜\n﹛谛棉反云域谛迋ㄤㄟ?匹じ桦匹五月方″\n﹛じ匀化心月井中〝
+
+		Window_YES Gold < 50
+			EndWindow 3206845
+
+		#\n\n﹛尹之匀″〝\n﹛丐氏凶﹜ㄤㄟ?儅匀化卅中及永〝\n﹛仇氏卅赭卞芛太卞侳月蟆卞﹜\n﹛田奶玄匹手茧仄凶幻丹互中中氏元扎卅中井中〝
+
+		Window_YES
+			Window 3206846,OK
+
+		#\n\n﹛酦卞中月用永市□琼反\n﹛仇仇卞芛太卞侳化月分仃分井日﹜\n﹛烦董袄手仁木卅中仄朼执手匹五卅中方永″\n﹛仁木什木手﹜奶斥丢凶曰仄卅中匹生永″
+				Window_OK
+					AddGold -50
+					LeaveGroup
+					warp 0,59505,218,194
+
+		Window_NO
+			EndWindow 3206847
+
+		#\n\n﹛公丹井中﹜酸ゴ分卅丑﹝\n﹛引凶芛太卞五化方生永″
+
+
+
+
+
+
+

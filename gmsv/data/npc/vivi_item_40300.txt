@@ -1,0 +1,9 @@
+##水
+#■ 有手稿跟水
+block Item 40307 >= 1 && Item 40300 >= 1
+	 ##1102227	\n\n\n\n@c把水洒在手稿上，渐渐显现出文字来了。	1
+	 Window 1102227,OK
+	 	 Window_OK Item 40307 >= 1 && Item 40300 >= 1
+		 KillItemall 40307
+		 KillItemall 40300
+		 GiveLeak1Item (40308%1$1)

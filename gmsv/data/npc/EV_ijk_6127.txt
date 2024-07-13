@@ -1,0 +1,193 @@
+#搬运工波克波可	6127	2301 14 2
+#EV_ijk_6127.txt
+
+
+
+########## 仿皮伊正□毛儅匀化中月桦宁 ##########
+block Item 18418 >= 1
+	#\n\n那封情书你应该不需要吧？\n让我来帮你处理掉好吗？
+	Window 11693,YES,NO
+
+	Window_YES Item 18418 >= 1
+	KillItem 18418,1
+	#\n\n好！那我找时间再拿去给店长看好了．．．\n啊！没事没事！我会拿去丢的！
+	EndWindow 11694
+
+	Window_NO
+	#\n\n呵呵呵．．．我不会拿这情书去捉弄店长的啦！嘿嘿嘿．．．
+	EndWindow 11695
+
+########## 澎饼毛儅匀化中月桦宁 ##########
+block Item 18417 >= 1
+	#\n\n真是麻烦你不少。\n为了答谢你，店里的素材就给你吧！
+	Window 11696,OK
+
+	Window_OK
+	#\n\n想要“铁20个”吗？
+	Window 11697,YES,NO
+
+	Window_YES Item 18417 >= 1
+	KillItem 18417,1
+	GiveLeak1Item 9601,20
+	#\n\n那拿去吧！谢谢你。
+	Window 11700,OK
+
+	Window_NO
+	#\n\n想要“银10个”吗？
+	Window 11698,YES,NO
+
+	Window_YES Item 18417 >= 1
+	KillItem 18417,1
+	GiveLeak1Item 9602,20
+	#\n\n那拿去吧！谢谢你。
+	Window 11700,OK
+
+	Window_NO
+	#\n\n想要“枞木20条”吗？
+	Window 11699,YES,NO
+
+	Window_YES Item 18417 >= 1
+	KillItem 18417,1
+	GiveLeak1Item 10001,20
+	#\n\n那拿去吧！谢谢你。
+	Window 11700,OK
+
+	Window_NO
+	#\n\n想要“柠檬草20株”吗？
+	Window 11701,YES,NO
+
+	Window_YES Item 18417 >= 1
+	KillItem 18417,1
+	GiveLeak1Item 12801,20
+	#\n\n那拿去吧！谢谢你。
+	Window 11700,OK
+
+	Window_NO
+	#\n\n想要“木棉20枚”吗？
+	Window 11702,YES,NO
+
+	Window_YES Item 18417 >= 1
+	KillItem 18417,1
+	GiveLeak1Item 10401,20
+	#\n\n那拿去吧！谢谢你。
+	Window 11700,OK
+
+	Window_NO
+	#\n\n想要“毛毡10枚”吗？
+	Window 11703,YES,NO
+
+	Window_YES Item 18417 >= 1
+	KillItem 18417,1
+	GiveLeak1Item 10402,10
+	#\n\n那拿去吧！谢谢你。
+	Window 11700,OK
+
+	Window_NO
+	#\n\n想要“牛奶20瓶”吗？
+	Window 11704,YES,NO
+
+	Window_YES Item 18417 >= 1
+	KillItem 18417,1
+	GiveLeak1Item 12401,20
+	#\n\n那拿去吧！谢谢你。
+	Window 11700,OK
+
+	Window_NO
+	#\n\n想要“盐10个”吗？	8
+	Window 11705,YES,NO
+
+	Window_YES Item 18417 >= 1
+	KillItem 18417,1
+	GiveLeak1Item 12402,10
+	#\n\n那拿去吧！谢谢你。
+	Window 11700,OK
+
+	Window_NO
+	#\n\n嗯．．．其他的素材就没有了耶！
+	EndWindow 11706
+
+	Window_OK
+	#\n\n真是谢谢你帮我把箱子搬到仓库里．．．\n咦？从里面掉出了这封信吗？\n这是什么信呢？嗯．．．	8
+	Window 11707,OK
+
+	Window_OK ItemSpace >= 1
+	GiveLeak1Item 18418,1
+	#\\n\n哈哈．．．这是以前店长写给他暗恋的人的情书嘛！\n嘿嘿嘿！真有趣！\n不过会放在那种箱子里，那表示他根本没有寄出去嘛！	8
+	EndWindow 11708
+
+	Window_OK
+	#\n\n哈哈．．．这是以前店长写给他暗恋的人的情书嘛！\n嘿嘿嘿！真有趣！\n不过会放在那种箱子里，那表示他根本没有寄出去嘛！	8
+	EndWindow 11709
+
+########## ＊及?毛儅匀化中月桦宁 ##########
+block Item 18415 >= 1
+	#\n\n可以请你把那箱子拿到地下4楼的仓库里去吗？另外，如果你有看到箱子的钥匙，记得帮我看看箱子里装了什么东西哦！	8
+	EndWindow 11710
+
+########## 伊矛伙15动晓及桦宁 ##########
+block Level >= 15
+	#\n\n不知这箱子里放的是什么．．．\n唉！真头痛！虽想把它处理掉，但是地下有魔族出现，根本就不可能下的去．．．	8
+	Window 11711,OK
+	
+	Window_OK Job >= 1010 && Job < 1020 && Group == 1
+	#\n\n喔！你是生产系的人吧？那你应该知道这下面的情况吧？\n
+	#拜托你帮我把这箱子搬到最底层的仓库里好吗？\n因为最近地下出现了魔族，
+	#我根本就没办法下去．．．	8
+	Window 11712,YES,NO
+
+	Window_OK Job >= 200 && Job < 430 && Group == 1
+	#\n\n喔！你是生产系的人吧？那你应该知道这下面的情况吧？\n
+	#拜托你帮我把这箱子搬到最底层的仓库里好吗？\n因为最近地下出现了魔族，
+	#我根本就没办法下去．．．	8
+	Window 11712,YES,NO
+
+	Window_OK Job >= 450 && Job < 480 && Group == 1
+	#\n\n真头痛．．．\n啊！你来的正好！\n可以帮我把这箱子搬到最底层的仓库里吗？\n
+	#最近地下出现了魔族，我根本就没办法下去．．．	8
+	Window 11739,YES,NO
+
+	Window_OK Job >= 1010 && Job < 1020 && Group >= 2
+	#\n\n别一次那么多人找我讲话嘛！\n一个一个来吧！
+	EndWindow 11713
+	
+
+	Window_OK Job >= 200 && Job < 430 && Group >= 2
+	#\n\n别一次那么多人找我讲话嘛！\n一个一个来吧！
+	EndWindow 11713
+
+	Window_OK Job >= 450 && Job < 480 && Group == 2
+	#\n\n别一次那么多人找我讲话嘛！\n一个一个来吧！
+	EndWindow 11713
+
+	Window_OK
+
+	Window_NO
+	#\n\n这样啊．．．那我找别人好了。
+	EndWindow 11714
+
+	Window_YES Job >= 200 && Job < 430 && Group == 1 && ItemSpace >= 1
+	GiveItem 18415,1
+	#\n\n那箱子就拿去吧！很重哦！记得把它拿去最下层的仓库里放。\n拜托你了。	8
+	EndWindow 11715
+
+	Window_YES Job >= 450 && Job < 480 && Group == 1 && ItemSpace >= 1
+	GiveItem 18415,1
+	#\n\n那箱子就拿去吧！很重哦！记得把它拿去最下层的仓库里放。\n拜托你了。	8
+	EndWindow 11715
+	Window_YES Job >= 1010 && Job < 1020 && Group == 1 && ItemSpace >= 1
+	GiveItem 18415,1
+	#\n\n那箱子就拿去吧！很重哦！记得把它拿去最下层的仓库里放。\n拜托你了。	8
+	EndWindow 11715	
+
+	Window_YES ItemSpace == 0
+	#\n\n哎呀！你的物品栏满了啦！
+	EndWindow 11716
+
+	Window_YES Group >= 2
+	#\n\n别一次那么多人找我讲话嘛！\n一个一个来吧！
+	EndWindow 11713
+
+########## 丐化反引日卅中桦宁 ##########
+block 
+	#\n\n这个店的卖场在2楼对吧？\n而商品则是在1楼做出来的。\n另外仓库是在地下．．．很大吧？	8
+	EndWindow 11717

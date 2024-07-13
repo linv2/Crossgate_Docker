@@ -1,0 +1,6 @@
+#¥U?¥n??????13
+
+block XPos == 74 && YPos >= 53 && YPos <= 54
+	Play_se 207,240,320
+	Message 21597
+	SetLp -20

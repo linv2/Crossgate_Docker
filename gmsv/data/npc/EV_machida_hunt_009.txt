@@ -1,0 +1,155 @@
+#Æ¹¼þµ©Õý¡õË¦¼þ·ºÅ«¼þºë
+#
+#©x©x©x²ÙˆVÂ¦™æØÆÒç©j12¨G15³æ©k©x©x©xNPCID©x810011
+#
+#©xÒøåÃ·ò¡õÊÐ»ïÊÐËü¼þÐþ
+#©x©xLocalCount1©x©x©xÊ§ÄÌ·ºØ©¸î\Æ¥ÒøåÃ
+#
+
+
+###©xªIØÆ´­ØêÐ×ÚÐ¼°GlobalFlag87»¥??
+#©xË¦¼þÕý¡õ¾ÝÃ«ô÷ƒ}
+Block GlobalFlag87 == 1 && HItem 623000 >= 1
+	Window 3207408,OK
+
+		#\n\n©xÔÆ»§Æ¥Îçµ¤ÈÔ½éÖÐÒýÔÊ©z\n©x³ðÇÐÈÕ»¥©yË¦¼þ·ºÅ«¼þºëÐÑ¨à¨á¨G¨à¨ä³æ¼°²ÙˆV\n©xÎçØ¦Ô»ÒýÔÊ©z\n©xÔÆ°¾ØêäúÔ»Æ±½ñÖÐ©z
+
+		Window_OK HItem 623000 >= 1 && ItemSpace >= 2
+			KillItemAll 623000
+			KillItemAll 623001
+			KillItemAll 623002
+			KillItemAll 623003
+			KillItemAll 623004
+			KillItemAll 623005
+			KillItemAll 623006
+			KillItemAll 623007
+			KillItemAll 623008
+			KillItemAll 623009
+			KillItemAll 623010
+			KillItemAll 623011
+			KillItemAll 623012
+			KillItemAll 623013
+			KillItemAll 623014
+			KillItemAll 623015
+			KillItemAll 623016
+			If HItem 623022 >= 1 || HItem 623023 >= 1 || HItem 623024 >= 1
+				GiveLeak1Item (18452%33$1,18454%33$1,18455%34$1)
+			else
+				LocalCount1 = Random 10,0
+				If LocalCount1 >= 8
+					GiveLeak1Item 623023,1
+				else
+					GiveLeak1Item (18452%33$1,18454%33$1,18455%34$1)
+				endif
+			endif
+			GiveLeak1Item 623021,1
+			GlobalFlag84 = 0
+			GlobalFlag85 = 0
+			GlobalFlag86 = 0
+			GlobalFlag87 = 0
+			GlobalFlag88 = 0
+			LeaveGroup
+			Warp 0,59959,206,268
+#			Warp 0,59998,347,249
+
+		Window_OK ItemSpace < 2
+			EndWindow 3207409
+
+		#\n\n©xç¦ˆ^»¥ÖÐÔÈÌìÖÐ¼°Þ‚Æ¥ÔÊÓÑ¨”\n©xÎëÎåÃ«¨á¹´×ÛÔÈ»¯Æ±½ñÖÐ©z
+
+		Window_OK
+			Window 3207410,OK
+
+		#\n\n©xÎç©yºÏÖÐÒýØÆÐ×»¥©y\n©xË¦¼þÕý¡õ¾ÝÃ«ÔÆƒ}ÇÐÆ¥Ø¦ÖÐÞ‚Æ¥ÔÊÓÑ©z\n©x²ÙˆV·´Ë¦¼þÕý¡õ¾ÝÎçÂ¦Îå¾§ÒüÎçØ¦Ô»ÒýÔÊ©z\n©x’ƒÈÊØÆ»¯ØÆÒýÔÈÐ×–f·´©yÊÖµ¤ÓòÕº©y\n©xÓúâÙ¾®ÈÕË¦¼þ·ºÅ«¼þºëÃ«µæØ¦ÔÈ»¯ÈÊ·Ö½ñÖÐ©z
+
+				Window_OK
+					KillItemAll 623001
+					KillItemAll 623002
+					KillItemAll 623003
+					KillItemAll 623004
+					KillItemAll 623005
+					KillItemAll 623006
+					KillItemAll 623007
+					KillItemAll 623008
+					KillItemAll 623009
+					KillItemAll 623010
+					KillItemAll 623011
+					KillItemAll 623012
+					KillItemAll 623013
+					KillItemAll 623014
+					KillItemAll 623015
+					KillItemAll 623016
+					GlobalFlag84 = 0
+					GlobalFlag85 = 0
+					GlobalFlag86 = 0
+					GlobalFlag87 = 0
+					GlobalFlag88 = 0
+					LeaveGroup
+					Warp 0,59959,206,268
+#					Warp 0,59998,347,249
+
+#©xÏþ·¤¶¯Â½
+Block GlobalFlag87 == 1
+	Window 3207411,OK
+
+		#\n\n©xË¦¼þÕý¡õ¾ÝÃ«ÔÆƒ}ÇÐÆ¥Ø¦ÖÐÞ‚Æ¥ÔÊÓÑ©z\n©x²ÙˆV·´Ë¦¼þÕý¡õ¾ÝÎçÂ¦Îå¾§ÒüÎçØ¦Ô»ÒýÔÊ©z\n©x’ƒÈÊØÆ»¯ØÆÒýÔÈÐ×–f·´©yÊÖµ¤ÓòÕº©y\n©xÓúâÙ¾®ÈÕË¦¼þ·ºÅ«¼þºëÃ«µæØ¦ÔÈ»¯ÈÊ·Ö½ñÖÐ©z
+
+		Window_OK
+			KillItemAll 623001
+			KillItemAll 623002
+			KillItemAll 623003
+			KillItemAll 623004
+			KillItemAll 623005
+			KillItemAll 623006
+			KillItemAll 623007
+			KillItemAll 623008
+			KillItemAll 623009
+			KillItemAll 623010
+			KillItemAll 623011
+			KillItemAll 623012
+			KillItemAll 623013
+			KillItemAll 623014
+			KillItemAll 623015
+			KillItemAll 623016
+			GlobalFlag84 = 0
+			GlobalFlag85 = 0
+			GlobalFlag86 = 0
+			GlobalFlag87 = 0
+			GlobalFlag88 = 0
+			LeaveGroup
+			Warp 0,59959,206,268
+#			Warp 0,59998,347,249
+
+
+###©xÏþ·¤¶¯Â½
+Block
+	Window 3207412,OK
+
+		#\n\n©xÔÆÖ§¨”\n©xÔÆ¾®ØÆÖÐÆ¥ÔÊÓÑ©z\n©xØ¤Ø¦Ð×·´©yÖÏ¾®¼°Åìà¨ÖÐÆ¥©y\n©x³ð³ð³ß‚F»¯ØÆÒýÔÈÐ×Þ‚Æ¥ÔÊÓÑ©z\n©xÂ½³ßÇëØÆ»¯Ø¤ÆÍÒýØÆ½ïµ¤©z\n©x¥´¼°¿Ð©yèú›ŸÊ§ÄÌ·ºØ©·´òå»¯ß¯ØÆ»¯ÉÄÎåÒýÔÊ©z
+
+		Window_OK
+			KillItemAll 623000
+			KillItemAll 623001
+			KillItemAll 623002
+			KillItemAll 623003
+			KillItemAll 623004
+			KillItemAll 623005
+			KillItemAll 623006
+			KillItemAll 623007
+			KillItemAll 623008
+			KillItemAll 623009
+			KillItemAll 623010
+			KillItemAll 623011
+			KillItemAll 623012
+			KillItemAll 623013
+			KillItemAll 623014
+			KillItemAll 623015
+			KillItemAll 623016
+			GlobalFlag84 = 0
+			GlobalFlag85 = 0
+			GlobalFlag86 = 0
+			GlobalFlag87 = 0
+			GlobalFlag88 = 0
+			LeaveGroup
+			Warp 0,59959,206,268
+#			Warp 0,59998,347,249

@@ -1,0 +1,4 @@
+#êóĞï©xÓ×Á¢ÓÀÛÍ±Ø¡õĞş
+
+block XPos == 97 && YPos == 85 && PlayerAction 1
+	SystemMessage 21898

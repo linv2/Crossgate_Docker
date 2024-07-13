@@ -1,0 +1,51 @@
+#################
+#	由件脐		#
+#################
+
+####窒井卞庍褥仄化月午五####
+block bbimage != trueimage
+	#僎猾″
+	setaction 5
+############################
+
+####辉岭分匀凶日####
+block Imagetype == 0
+	#澎饼GET
+	GiveItem 19670,1
+####################
+
+
+####厄中什月心儅匀化月午五####
+block HaveItem == 19672
+	#本伉白12
+	Window 990266,OK
+##############################
+
+####云嗯互丐月午五####
+block Gold >= 100
+	#本伉白ㄧ
+	Window 990262,Yes,No
+		#YES匹失奶泛丞勂卞坞五互丐月午五
+		Window_Yes ItemSpace != 0
+			#100G歹凶允
+			addgold -100
+			#厄中什月心GET
+			GiveItem 19672
+			#本伉白ㄨ
+			EndWindow 990263,OK
+		#YES匹失奶泛丞勂卞坞五互卅中午五
+		Window_Yes ItemSpace == 0
+			#本伉白15
+			EndWindow 990269,OK
+		#NO分匀凶午五
+		Window_No
+			#本伉白10
+			EndWindow 990264,OK
+######################
+
+####公木动陆及午五####
+block
+	#本伉白11
+	Window 990265,OK
+##########################
+

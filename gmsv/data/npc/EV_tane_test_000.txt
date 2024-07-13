@@ -1,0 +1,20 @@
+#泛旦玄﹛由伊民尼件﹛旦奶永民及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block
+
+	Window "由伊民尼件化允午\n﹛yes互≦哗≧\n﹛no互≦踹≧",YES,NO
+
+        Window_YES
+			Window "≦哗≧及缙匹允",OK
+				Window_OK
+				ChangePal 32,180
+				EndWindow"仇氏卅普元"
+		
+		Window_NO
+			Window "≦踹≧及缙匹允",OK
+				Window_OK
+				ChangePal 33,180
+				EndWindow"仇氏卅普元"

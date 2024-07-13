@@ -1,0 +1,77 @@
+
+###包装蛋
+#1054637	\n\n\n\n@c这是可以打包碎片的蛋，	1
+#1054638	\n\n\n\n@c你要打包五个地水晶碎片吗？	1
+#1054639	\n\n\n\n@c你要打包五个水水晶碎片吗？	1
+#1054640	\n\n\n\n@c你要打包五个火水晶碎片吗？	1
+#1054641	\n\n\n\n@c你要打包五个风水晶碎片吗？	1
+#1054642	\n\n\n\n@c碎片不足！	1
+#1054643	\n\n\n\n@c要打包时再点选我吧！	1
+##14830
+
+block 
+#=============================	 地
+	 Window 1054637,NEXT 
+	 Window 1054638,YES,NO
+	  
+	 Window_YES Item 18310<5
+	 EndWindow 1054642
+	 Window_YES ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 14830	
+	 Window_YES 
+	 KillItem 47384,1
+	 KillItem 18310,5
+	 GiveLeak1Item 47385,1		 	 
+	 Endblock
+#=============================	 水
+	 Window_NO 
+
+	 Window 1054639,YES,NO
+	  
+	 Window_YES Item 18311<5
+	 EndWindow 1054642
+	 Window_YES ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 14830		 
+	 Window_YES 
+	 KillItem 47384,1
+	 KillItem 18311,5
+	 GiveLeak1Item 47386,1		 	 
+	 Endblock
+#=============================	 火
+	 Window_NO 
+
+	 Window 1054640,YES,NO
+	  
+	 Window_YES Item 18312<5
+	 EndWindow 1054642
+	 Window_YES ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 14830		 
+
+	 Window_YES 
+	 KillItem 47384,1
+	 KillItem 18312,5
+	 GiveLeak1Item 47387,1		 	 
+	 Endblock
+
+#=============================	风	 	 	 
+	 
+	 Window_NO 	 
+	 Window 1054641,YES,NO
+	  
+	 Window_YES Item 18313<5
+	 EndWindow 1054642
+	 Window_YES ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 14830		 
+	
+	 Window_YES 
+	 KillItem 47384,1
+	 KillItem 18313,5
+	 GiveLeak1Item 47388,1		 	 
+	 Endblock	 
+#=======================================
+	 Window_NO
+	 EndWindow 1054643	 

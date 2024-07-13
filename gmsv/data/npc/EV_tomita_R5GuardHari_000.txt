@@ -1,0 +1,105 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛?谛甩伉乩穴及摒
+
+###﹛甩伉□穴奶仿皮毛赭儅
+block Item_607996 >= 1
+	EndWindow 3204940
+
+		#\n\n﹛云蟆卞支匀凶公及珃挎分互卅﹜仇及左伊互\n﹛擎熔慇户化澎综曰仄凶坁分﹝厘仪卞仄欠方﹝\n﹛公及珃挎毛儅匀化中月蜃曰﹜左伊反云蟆毛\n﹛朹⑷ネ午仄化カ户化支月井日卅﹝
+
+
+###﹛甩伉乩穴执及亲毛赭儅
+block Item_607995 >= 1
+	If Item_607995 >= 2
+		EndWindow 3204941
+
+		#\n\n﹛窒匹亲毛呁醒儅匀化月氏分〝\n﹛术伙毛允月卅″﹛亲反升木井ㄠ勾卞仄欠﹝\n﹛分中凶中分卅﹜扔示泛件匹手卅中巠卞\n﹛亲毛凶仁今氏儅勾卅氏化﹜戏啦竣分冗″
+		EndBlock
+
+	else
+		If StampCount_607995 >= 4
+			Window 3204942,OK
+
+		#\n\n﹛云蟆﹜呿癫卞仄勾仇中蛊分卅﹝\n﹛公及ジ匀仇今卞反亲互票互月兮﹝\n﹛仇中勾毛支月井日﹜手丹揪忮仄化仁木﹝
+
+				Window_OK Item_607995 >= 2
+					EndWindow 3204943
+
+		#\n\n﹛窒匹亲毛呁醒儅匀化月氏分〝\n﹛术伙毛允月卅″﹛亲反升木井ㄠ勾卞仄欠﹝
+					EndBlock
+
+				Window_OK Item_607996 >= 1
+					EndWindow 3204944
+
+		#\n\n﹛窒分﹜手丹儅匀化月及井﹝\n﹛左伊反ㄡ勾手支月幻升竣蟆方仁卅中冗﹝
+					EndBlock
+
+				Window_OK Item_607995 == 1 && StampCount_607995 >= 4 && ItemSpace >= 1
+					KillItemAll 607995
+					GiveItemEX 607996,1,3204945
+
+		#\n\n﹛六匀井仁嫦辅及据毛支欠丹匀化中丹及卞﹜\n﹛绂坁互中匀天中元扎卅中井﹝窒午井仄欠﹝
+					CheckTitle
+					EndBlock
+
+				Window_OK Item_607995 == 1 && StampCount_607995 >= 4
+					EndWindow 3204946
+
+		#\n\n﹛六匀井仁嫦辅及据毛支欠丹匀化中丹及卞﹜\n﹛绂坁互中匀天中元扎卅中井﹝窒午井仄欠﹝
+					EndBlock
+
+				Window_OK Item_607995 == 1 && StampCount_607995 < 4
+					EndWindow 3204947
+
+		#\n\n﹛云中﹜公木反今匀五及亲午啜丹元扎卅中井﹝\n﹛术伙毛允月蛊卞反窒手支日氏″
+					EndBlock
+
+				Window_OK
+					EndWindow 3204948
+
+		#\n\n﹛云中﹜左伊互仇木井日欐允坁反亲午跟晶分﹝\n﹛亲毛欐今卅中午支日卅中井日卅﹝
+					EndBlock
+
+		else
+			EndWindow 3204949
+
+		#\n\n﹛仄勾仇中卅﹜云蟆﹝左伊反侄仄中氏分﹝\n﹛云蟆心凶中卅刭佌樊午芛氏匹月粕反卅中″
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛侂填缜谛及据毛赭儅
+block Item_631000 >= 1
+	Window 3204950,OK
+
+		#\n\n﹛丹戈﹜割井卞侂填缜谛及方丹分卅﹝\n﹛方仄﹜公及侂填缜谛及据毛欐仄凶日﹜\n﹛骚匀化中中冗﹝
+
+		Window_OK Item_631000 >= 1
+			LeaveGroup
+			KillItemAll 631000
+			Warp 0,59715,157,143
+
+		Window_OK
+			EndWindow 3204951
+
+		#\n\n﹛云中﹜侂填缜谛及据互壅尹凶冗﹝\n﹛据毛儅凶卅中蛊反﹜簿匹丐欠丹午骚今氏永″″
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3204952,OK
+
+		#\n\n﹛窒分云蟆反〝\n﹛筑迋及方丹卅蛊毛骚允歹仃卞反中井氏″\n﹛左伊及亲卞拟匀化﹜獭五及户仄化支月永″″
+
+		Window_OK
+			LeaveGroup
+			Encount 3|0,59679,259,77||0|||||0|306039|||||||||
+
+
+

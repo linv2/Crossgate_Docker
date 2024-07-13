@@ -1,0 +1,58 @@
+#显及丝挚﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛项憎敢丢伉□及摒
+
+###﹛乒夫甩正弗丐月中反穴奶件白仿伐□毛赭儅
+block Item_607700 >= 1 || Item_607702 >= 1
+	EndWindow 3204820
+
+		#\n\n﹛丝挚匹枃匀凶弁仿它件毛儅匀化月友﹝\n﹛簿井及澎踞仃匹侳化月卅日恌中仃升友﹜\n﹛弁仿它件毛井五螂户化ヨ欠丹卅氏化\n﹛熔艺分匀凶日﹜噩襞仄卅中方﹝
+
+
+
+###﹛平乒母丢母扑蔺爵据毛赭儅
+block Item_607970 >= 1
+	GAWindow 3204821,NEXT
+
+		#\n\n﹛仍仁欠丹今氏﹝\n﹛魂杽敢及坁蜕中卞呏峏化切扎分户分方﹝\n﹛公木毛忆匀化熬仃峸允及互﹜域谛蟆及厘谛\n﹛分井日友﹝
+	GAWindow 3204822,OK
+
+		#\n\n﹛今丐﹜戚互中方中方丝挚及钖酷晓仆分方﹝\n﹛仇木井日霜月斨莱毛骚曰?仃化﹜域?梂卞中月\n﹛魂恘幂午鴃扙允月及今﹝\n﹛魂恘幂卞鴃化壬﹜徽木化域谛蟆午中丹歹仃﹝\n﹛元扎﹜垫匀化五卅﹝
+
+		Window_OK Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204823
+
+		#\n\n﹛云支﹜仇及丝挚匹枃匀凶弁仿它件互丐月友﹝\n﹛烦董樊反峚杅卞引歹曰卅方﹝
+
+		Window_OK Item_607970 >= 1
+			Warp 0,59818,161,106
+
+		Window_OK
+			EndWindow 3204824
+
+		#\n\n﹛云支﹜蔺爵橇毛撩仁仄凶方丹分友﹝\n﹛潸曰卞枑月井﹜簿井及尥五骄中卞卅曰卅方﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3204825,YES,NO
+
+		#\n\n﹛平乒母丢母扑及蔺爵据互卅中氏分友﹝\n﹛潸曰卞枑月井中〝
+
+		Window_YES
+			Window 3204826,OK
+
+		#\n\n﹛丐氏引曰昍逦井仃月氏元扎卅中方﹝\n﹛元扎﹜垫匀午中匹﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59801,93,79
+
+		Window_NO
+			EndWindow 3204827
+
+		#\n\n﹛蔺爵据毛儅凶内卞侳化月匀化仇午反﹜\n﹛簿井及尥五骄中卅氏分欠〝\n﹛分匀凶日﹜构匀化公及簿井今氏卞勾中化卅方﹝
+
+
+

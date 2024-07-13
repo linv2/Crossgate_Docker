@@ -1,0 +1,15 @@
+################### оби╫
+
+block 
+	Window 1102542,YES,NO 
+		 Window_YES Group > 1
+	 	 EndWindow 1100000	 	 
+	 	 Window_YES 
+		 	 LeaveGroup
+	 	 	 Warp 0,32216,28,58
+		  Endblock
+		 
+	 	 Window_NO 
+		  Endblock
+
+	 	 	 

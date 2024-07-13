@@ -1,0 +1,38 @@
+#??©?
+
+block Item 16294 >= 1
+	Window 21896,Yes,No
+	Window_No
+	Window_Yes ItemSpace == 0
+		EndWindow 10000
+	Window_Yes Item 16294 >= 1
+	KillItem 16294,1,(21934)
+	GiveItem(16274%1,16275%1,16276%1,16277%1,16278%1,16279%1,16280%1,16281%1,16282%1,16283%1,16284%1,16285%1,16286%1,16287%1,16301%7$3)
+
+block Item 16289 == 1 && ItemCreateTime 16289 >= 15 && StampCount 16289 == 23
+	Window 21896,Yes,No
+	Window_No
+	Window_Yes ItemSpace == 0
+		EndWindow 10000
+	Window_Yes Item 16289 == 1 && ItemCreateTime 16289 >= 15 && StampCount 16289 == 23
+	KillItem 16289,1,(21956)
+	GiveItem(16274%1,16275%1,16276%1,16277%1,16278%1,16279%1,16280%1,16281%1,16282%1,16283%1,16284%1,16285%1,16286%1,16287%1,16301%7$3)
+
+
+block Item 16289 == 1 && ItemCreateTime 16289 <= 14
+	Window 21896,Yes,No
+	Window_No
+	Window_Yes
+	EndWindow 21952,OK
+
+block Item 16289 == 1
+	Window 21896,Yes,No
+	Window_No
+	Window_Yes ItemSpace == 0
+		EndWindow 10000
+	Window_Yes Item 16289 == 1
+	AddStampCount 16289
+	GiveItem(16274%1,16275%1,16276%1,16277%1,16278%1,16279%1,16280%1,16281%1,16282%1,16283%1,16284%1,16285%1,16286%1,16287%1,16301%7)
+
+block
+	EndWindow 21951,OK

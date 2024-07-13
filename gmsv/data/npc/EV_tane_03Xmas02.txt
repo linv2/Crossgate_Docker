@@ -1,0 +1,41 @@
+#
+#仁勾仄凶支
+#
+
+###﹛2002/12/25 00:00:01动嫦卅日﹛###
+block CheckRealTime 2003/12/25,00:00:00 == 1
+#block CheckRealTime 2003/12/17,16:00:00 == 1
+
+
+	EndWindow "\n\n﹛域コ酦﹜弁伉旦穴旦分匀凶日﹜\n﹛云扜今氏﹜云抇今氏互凶中尺氏＿＿\n﹛元扎丐﹜引凶侳コ＿＿",OK
+
+
+############## 仁勾仄凶手匀化月 ##############
+block Item 607651 >= 1
+
+	EndWindow "\n\n﹛仍户氏﹜\n﹛夫午曰域勾五曰＿＿仍户氏＿＿",OK
+############## 仁勾仄凶手匀化卅中 ##############
+block Item 607651 == 0
+	Window "\n\n﹛丢伉□弁伉旦穴旦＿＿及切斤匀午蟆\n﹛＿＿反内仄凶〝\n﹛仁勾仄凶盒今氏﹜及﹜失伙田奶玄切丹＿＿",next
+
+
+	Window "\n\n﹛＿＿盒陆及田奶玄反﹜捶中＿＿\n﹛＿＿湿﹜嫦月午﹜韶卞公丹＿＿\n﹛天午日匀仄文﹜戽中方＿＿",next
+
+	Window "\n\n﹛匹﹜皿伊未件玄仁勾仄凶﹜中月〝",YES,NO
+
+
+	Window_NO
+
+	EndWindow "\n\n﹛邰日卅中〝\n﹛孔℅氏＿＿",OK
+
+
+	Window_YES Item 607651 == 0 && ItemSpace == 0
+	EndWindow "\n\n﹛儅切坁﹜中匀天中﹝",OK
+
+	Window_YES Item 607651 == 0 && ItemSpace != 0
+
+	Window "\n\n﹛钒仃月及反﹜奶皮互聊亢化井日﹝",next
+
+	GiveItem 607651
+
+

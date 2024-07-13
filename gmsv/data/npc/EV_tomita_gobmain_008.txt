@@ -1,0 +1,23 @@
+#打皮伉件及邰尽﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛穴永弁伉件及摒
+
+###﹛仿件母丞及本伉白
+
+block
+	LocalCount3 = Random 2,0
+
+		If LocalCount3 == 1
+			EndWindow 3201749
+		#\n\n﹛脱日及伉□母□反﹜谛棉动晓及襞湿毛儅匀凶\n﹛公木反豳徽日仄中云杅卅及分﹝\n﹛手仄矛永弁迋互歹木歹木及蟆卞蜇木卅仃木壬﹜\n﹛打皮伉件反漆匹手煆仁苇日木化中凶卞啜中卅中﹝
+			EndBlock
+
+		else
+			EndWindow 3201750
+		#\n\n﹛矛永弁迋反﹜允仍仁谛棉卞择仄中云杅卅及分﹝\n﹛哔尹杅支蕊月朸中互打皮伉件峊木仄化中化﹜\n﹛谛棉元扎卅中井匀化合丹午五手丐月仁日中分﹝
+			EndBlock
+
+		endif
+
+
+

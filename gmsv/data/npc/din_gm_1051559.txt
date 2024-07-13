@@ -1,0 +1,27 @@
+##ATI异业结合活动	无名的渔夫	din_gm_1051559.txt
+##贩卖钓竿NPC
+block Item 47223 >= 1
+	 ##1054314	\n\n  小伙子，你已经有了钓竿，快去享受一下钓鱼的乐趣吧。	
+	 EndWindow 1054314
+	 
+block 
+	 ##1054311	\n\n  小伙子，你看起来似乎有心事，\n  想必是为了什么事情而困扰吧！\n  人生如浮云，凡事放宽心，何必太计较。\n  钓鱼可以放松心情、稳定情绪，\n  要不要尝试看看阿！\n  包准让你心旷神怡有不一样的感受。	
+	 Window 1054311,NEXT 
+	 ##1054312	\n\n  刚好我有多的钓竿，\n  不知道你有没有兴趣钓个鱼，\n  念在你我有缘相遇，\n  一根钓竿只算你成本价100G如何？	
+	 Window 1054312,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Gold <100
+	 	 ##65174	\n\n你的钱好像不够哦！真可惜。	2
+		 EndWindow 65174
+		 
+		 Window_YES ItemSpace == 0
+		 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 	 EndWindow 1100001
+	 	 
+	 	 Window_YES Gold >= 100 && ItemSpace >= 1
+	 	 AddGold -100
+	 	 GiveLeak1Item 47223,1
+	 	 ##1054313	\n\n  小伙子，这钓竿要小心使用阿！\n  由于材质的关系只能钓10次，\n  请小心使用！	
+		 EndWindow 1054313
+	 	 

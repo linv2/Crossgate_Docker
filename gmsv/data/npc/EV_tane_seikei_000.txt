@@ -1,0 +1,177 @@
+
+#衙五凛医毛襞月手及
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+block globalFlag41 == 1
+
+			window 3202549,next
+
+		#\n\n﹛フ婞〝铨擎昵〝\n﹛楝互窒毛中匀午月及井﹜\n﹛歹井日氏卅丑＿＿
+
+			endwindow 3202550
+
+		#\n\n﹛歹仄反愈嗤﹜\n﹛フ婞卅氏冗卞反﹜垫匀午日氏方＿＿\n﹛丹氏﹜垫匀午日氏\n﹛垫匀午日氏方﹜丹氏﹜垫匀午日氏\n﹛垫匀午日氏﹜垫匀午日氏﹜\n﹛垫匀午日氏﹜垫匀午日氏﹜\n﹛垫匀午日氏＿＿丹氏﹜垫匀午日氏
+
+
+
+
+block globalFlag39 == 1
+
+gotoF case1
+
+
+block globalFlag38 == 1
+
+*case1*
+
+	LocalCount0 = random 3,0
+
+	if LocalCount0 == 1
+
+			window 3202551,next
+
+		#\n\n﹛卅氏午″\n﹛伙伙奶巨及朼执毛ハ欠丹午仄化月樊互\n﹛云月午反卅″
+
+			endwindow 3202552
+
+		#\n\n﹛凛卞﹜楝反升丹允月竣元扎〝\n﹛公及呺⑼踏及樟仄﹜\n﹛桩化月卞桩化日木卅仁卅匀凶及予＿＿
+
+	else
+	
+			window 3202553,next
+
+		#\n\n﹛愈嗤﹜唬泞及杅匹\n﹛怉卅扫毛妏仁及予＿＿
+
+			endwindow 3202554
+
+		#\n\n﹛中支﹜歹仄反\n﹛择仄仁反襞日氏﹝\n﹛唬泞及副〇谛井\n﹛布奶玉卞妏中化心中﹝
+	
+	endif
+
+
+block globalFlag36 == 1 && globalFlag10 == 1
+
+			window 3202555,next
+
+		#\n\n﹛云云﹜楝井﹝\n﹛卅卞〝窒手苇勾井日卅井匀凶〝\n﹛伙伙奶巨ヲ衔〝\n﹛窒毛蜕匀午月氏分〝楝反〝\n﹛狪仄互苇尹氏冗〝
+
+			window 3202556,next
+
+		#\n\n﹛弗伊皮伊件及蕨及域葬笮〝\n﹛丐公仇反﹜手丹内中少氏午赢中仪\n﹛坞五笮元扎冗〝
+
+			window 3202557,next
+
+		#\n\n﹛公木卞﹜楝反襞日氏井手仄木氏互\n﹛伙伙奶巨午反﹜轼卞允月及手崵日木月\n﹛渴心桦及抩元扎﹝\n﹛公及蜕邯毛兜哑卞?仄化反卅日氏及元扎冗﹝
+
+			window 3202558,next
+
+		#\n\n﹛孔丹戈﹜\n﹛丐引曰轼卞仄凶仁反卅中互＿＿\n﹛午中丹方曰﹜\n﹛歹仄手择仄仁反襞日氏及元扎互
+
+			window 3202559,next
+
+		#\n\n﹛厘樯﹜愤日及抰午娄五晶尹卞\n﹛仇及哗毛潮匀凶交伙弘螃﹜\n﹛?反葭★螃啖及樊匹反拑井匀凶﹝\n﹛支戈卞支引木厄仪树匹\n﹛愤日﹜螃及褥毛熬仃じ木凶及元扎﹝
+
+			endwindow 3202560
+
+		#\n\n﹛公丹﹜伙伙奶巨卞朼执今木凶﹜\n﹛渴戈屯五绣箕午犒仄啜尹月啃卞﹝\n﹛?反韶厄啃卞螃卞卅匀凶及元扎方﹝\n﹛公丹中丹狪午仄化鳗歹匀化云月﹝
+
+
+
+
+
+block globalFlag35 == 1 && globalFlag10 == 1
+
+
+			window 3202561,next
+
+		#\n\n﹛丹氏〝\n﹛云云﹜公丹元扎﹜公丹元扎﹝\n﹛楝反仇及棉﹜\n﹛蛙中蜕邯匹踏井木凶岆毛\n﹛儅匀化云匀凶卅﹝
+
+			window 3202562,next
+
+		#\n\n﹛尹尹午﹜幻日﹜\n﹛卅氏元扎匀凶井卅＿＿\n﹛弗伊皮伊件及蕨及﹜\n﹛幻日﹜拺及﹜伙伙奶巨ヲ衔及笮﹜
+
+			window 3202563,next
+
+		#\n\n﹛丐公仇匹﹜勾中仇卅中分\n﹛ヲ衔及跶仵及凤恔螂日仄五坁毛\n﹛苇井仃凶氏元扎方﹝
+
+			endwindow 3202564
+
+		#\n\n﹛袅碍及悻卞\n﹛饪匀午凶井日卅丑﹜\n﹛漆引匹苇勾井日卅井匀凶及井手仄木氏卅丑﹝
+
+
+
+
+
+block Item 607699 >= 1
+
+
+				window 3202565,next
+
+		#\n\n﹛引凶﹜か丝卅乒用毛\n﹛儅切慇氏分乒用元扎卅﹝
+
+				window 3202566,next
+
+		#\n\n﹛孔丹戈﹜井卅曰衙中互﹜\n﹛＿＿衙中互﹜反化﹜\n﹛窒质及妐侬分井歹井日氏及丰﹝
+
+				window 3202567,next
+
+		#\n\n﹛歹仄及襞日氏妐侬午反\n﹛丹丹戈＿＿公丹中尹壬﹜\n﹛公匀仁曰卅妐侬毛升仇井匹苇凶仇午互＿＿﹝
+
+				window 3202568,next
+
+		#\n\n﹛″″\n﹛公丹元扎″″\n﹛公及妐侬反﹜\n﹛厘樯﹜伙伙奶巨楝及蒂菜凤恔匹苇凶仇午互丐月″
+
+				EndWindow 3202569
+
+		#\n\n﹛凤恔及﹛丹℅氏﹜\n﹛伙伙奶巨楝互蛛卅仁卅匀化井日反\n﹛＿＿公丹分友之﹝\n﹛升仇卞丐月井卅丑﹝
+
+
+
+block globalFlag31 == 1
+
+			
+			EndWindow 3202570
+
+		#\n\n﹛楝反窒井普元卅中井友〝\n﹛楝及儅勾﹜衙五乒用及执互\n﹛引凶﹜泙峏勾井手襞木卅中卅﹝
+
+##
+
+block  Item 607681 >= 1
+
+
+				window 3202571,next
+
+		#\n\n﹛幻丹﹜母打件及萼井〝\n﹛仇木反﹜蛙五手及卞引勾歹月圴元扎卅﹝\n﹛蛙五踹螃及抩互藻日木化云月互＿＿
+
+				window 3202572,next
+
+		#\n\n﹛仇及萼午⑺元抩毛儅勾踹彶卞\n﹛蛙五踹螃及犗箪隋及\n﹛坱羱互戏五酸匀化中月反内元扎﹝\n﹛ヶ仁化孔歹孔歹及\n﹛犗箪互蛛凶午筏盛仄化云月﹝
+
+				EndWindow 3202573
+
+		#\n\n﹛仄井仄﹜方手支公蛊日毛忯引尹凶午仇欠匹\n﹛手反支蜕邯反骚元厄匹丐欠丹卅丑﹝
+
+
+block
+
+				LocalCount0 = random 2,0
+
+				if LocalCount0 == 1
+
+
+					EndWindow 3202574
+
+		#\n\n﹛螃啖方曰职及哗方曰侳凶月\n﹛蛙五手及午裟壬木月螃★互蛛凶日仄中及元扎﹝
+
+
+				else
+
+
+					EndWindow 3202575
+
+		#\n\n﹛蛙五手及反竣妎木匹\n﹛公及赭垫反﹜\n﹛螃及手及午手呺简及手及午手蜕中か中\n﹛尕第合腔卅手及壬井曰分匀凶公丹元扎﹝
+
+
+				endif
+

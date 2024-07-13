@@ -1,0 +1,17 @@
+#
+#宎衔正仿□田
+#
+
+##﹛伊矛伙ㄢㄟ恍坢及桦宁
+block Level < 30
+#\n\n﹛仇及燮卞褡戈及反引分楝卞反拑咥分卅﹝\n\n﹛渣卅中井日娄五忒仄卅今中﹝
+ Endwindow 21486
+
+############## 椭瘀毛坢凶仄化中月 ##############
+block
+#\n\n﹛楝卅日壬﹜引丑仇及燮卞褡氏匹手厘暹屺井卅﹝\n\n﹛＿褡戈及井〝
+	Window 21487,Yes,No
+        Window_Yes
+		LeaveGroup
+		Warp 0,15592,42,3
+	Window_No

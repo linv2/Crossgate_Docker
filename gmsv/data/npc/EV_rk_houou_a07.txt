@@ -1,0 +1,22 @@
+#ýø????
+
+#block EndEvent 126 == 1
+#	EndWindow 22324
+
+block Item 16378 >= 1
+	Window 22325,NEXT
+	Window 22326,YES,NO
+		Window_YES ItemSpace == 0
+			EndWindow 10000
+		Window_YES Item 16378 >= 1
+			Window 22328,OK
+				Window_OK
+					KillItem 16378,1
+					GiveItem 18541,1
+					EndEvent 126 = 1
+					CheckTitle
+		Window_YES
+		Window_NO
+			EndWindow 22327
+block
+	EndWindow 22329,OK

@@ -1,0 +1,48 @@
+
+block Item 620030 == 0 && EndEvent 2 == 1 && Item  620031 == 0
+
+	endwindow 3203302
+
+		#\n\n﹛厘仪卅据毛桩化化仄引匀凶及井尹〝\n﹛黎扬衔田它失卞锹襟仄化心月仇午元扎﹝
+
+
+
+block Item  620031 >= 1 || EndEvent 2 == 1
+
+	endwindow 3203303
+
+		#\n\n﹛が及魂仄反\n﹛蝈化蔽歹匀凶﹝\n﹛燮毛萌互木月及互\n﹛方欠仄井欠﹝
+
+
+block Item  620031 == 0 && EndEvent 2 == 0 && ItemSpace < 1
+
+	endwindow 3203304
+
+		#\n\n﹛儅切坁毛帮咥仄化\n﹛引凶狪仄井仃月仇午元扎﹝
+
+block Group >= 2 && Item 620031 == 0 && EndEvent 2 == 0
+
+	endwindow 3203305
+
+		#\n\n﹛卩曰匹引中日木方﹝
+
+
+block Item 620031 == 0 && EndEvent 2 == 0 &&  Group == 1
+
+	window 3203306,ok
+
+		#\n\n﹛傧反庣及?毛潮月樊﹝\n﹛が及恘毛苇六化手日丹冗尹
+
+	window_ok Group >= 2
+
+		endwindow 3203307
+
+		#\n\n﹛卩曰匹引中日木方﹝
+
+
+	window_ok
+	
+		Encount 3|||0|||||0|305267|||||||||
+
+
+

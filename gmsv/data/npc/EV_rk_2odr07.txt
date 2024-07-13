@@ -1,0 +1,13 @@
+#»¥ÈÕÈÊÐ×
+
+#²¼·Âµ©¼°³âÒàÓÀÆ½ ÒýÐ×·´ õß¼°¤¸ÔÈÐ×³âÒàÓÀÆ½Ã«ƒ}ÔÈ»¯ÖÐÔÂ
+block Item 16432 >= 1 || Item 16433 >= 1
+	EndWindow 23244,OK
+#
+block
+	Window 23147,Yes,No
+		Window_No
+		Window_Yes ItemSpace == 0
+			EndWindow 10000,OK
+		Window_Yes
+			GiveItem 16432,1

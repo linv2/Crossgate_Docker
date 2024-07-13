@@ -1,0 +1,36 @@
+#???
+
+#??
+block EndEvent 53 == 1
+	Window 22872,Next
+	Window 22873,Next
+	Window 22874,Next
+	Window 22875,Next
+	Window 22876,Next
+	Window 22877,Next
+	Window 22878,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK
+			KillItemAll 16418
+			GiveItem 16419,1
+			EndEvent 117 = 1
+			LeaveGroup
+			Warp 0,43000,701,695
+#??
+block EndEvent 61 == 1
+	Window 22872,Next
+	Window 22873,Next
+	Window 22874,Next
+	Window 22875,Next
+	Window 22876,Next
+	Window 22877,Next
+	Window 22878,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK
+			KillItemAll 16418
+			GiveItem 16419,1
+			EndEvent 118 = 1
+			LeaveGroup
+			Warp 0,43000,701,695

@@ -1,0 +1,10 @@
+###ÇàÁú´óÈË
+block item 41145 >0
+	 killitem 41145
+	 Window 1110741,ok
+	 Window_ok
+	 Encount 2|0,32154,55,48||0|||||0|40314|||||||||	 
+	#Encount 2|0,32154,55,48||0|||||0|40319|||||||||	
+	 Endblock
+block 
+	endWindow 1110741

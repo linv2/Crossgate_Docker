@@ -1,0 +1,36 @@
+##ÓÞÈË½Ú_ÔªÌ«
+block item 34555 >= 1 || item 34556 >= 1 || item 34557 >= 1 || item 34558 >= 1 || item 34559 >= 1 || item 34560 >= 1
+	endwindow 1020466,ok
+
+block item 34554 >=1 && itemspace >= 1
+	setaction 13
+	window 1020467,next
+	window 1020468,next
+	window 1020469,yes,no
+		window_yes
+			window 1020470,ok
+			window_ok item 34554 >= 1 && itemspace >= 1
+			killitem 34554,1
+			giveleak1item(34555%1$1,34556%1$1,34557%1$1,34558%2$1,34559%2$1,34560%2$1)
+		window_no
+			endwindow 1020471,ok
+
+block item 34553 >= 1
+	endwindow 1020472,ok
+
+block item 34552 >= 1
+	endwindow 1020473,ok
+
+block
+	window 1020474,yes,no
+		window_yes
+			window 1020475,next
+			window 1020476,next
+			window 1020477,next
+			window 1020478,next
+			window 1020479,ok
+			window_ok itemspace >= 1
+				nowEvent 255 = 0
+				giveleak1item 34552,1
+		window_no
+			endwindow 1020480,ok

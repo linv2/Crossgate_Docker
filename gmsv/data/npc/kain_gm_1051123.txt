@@ -1,0 +1,128 @@
+## 拉霸赌场彩票兑换小姐 32338 15,10
+
+##身上有彩球 依照数量兑换彩票
+block Item 46021 == 20
+   	 KillItem 46021,20
+	 GiveStackItem 46022,20
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 19
+   	 KillItem 46021,19
+	 GiveStackItem 46022,19
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 18
+   	 KillItem 46021,18
+	 GiveStackItem 46022,18
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 17
+   	 KillItem 46021,17
+	 GiveStackItem 46022,17
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 16
+   	 KillItem 46021,16
+	 GiveStackItem 46022,16
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 15
+   	 KillItem 46021,15
+	 GiveStackItem 46022,15
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 14
+   	 KillItem 46021,14
+	 GiveStackItem 46022,14
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 13
+   	 KillItem 46021,13
+	 GiveStackItem 46022,13
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 12
+   	 KillItem 46021,12
+	 GiveStackItem 46022,12
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 11
+   	 KillItem 46021,11
+	 GiveStackItem 46022,11
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 10
+   	 KillItem 46021,10
+	 GiveStackItem 46022,10
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 9
+   	 KillItem 46021,9
+	 GiveStackItem 46022,9
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 8
+   	 KillItem 46021,8
+	 GiveStackItem 46022,8
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 7
+   	 KillItem 46021,7
+	 GiveStackItem 46022,7
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 6
+   	 KillItem 46021,6
+	 GiveStackItem 46022,6
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 5
+   	 KillItem 46021,5
+	 GiveStackItem 46022,5
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 4
+   	 KillItem 46021,4
+	 GiveStackItem 46022,4
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 3
+   	 KillItem 46021,3
+	 GiveStackItem 46022,3
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 2
+   	 KillItem 46021,2
+	 GiveStackItem 46022,2
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+block Item 46021 == 1
+   	 KillItem 46021,1
+	 GiveStackItem 46022,1
+	 ## \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+## 身上无彩球
+block
+	 ##1052211 把彩球拿过来就可以换成彩票哦^^
+	 EndWindow 1052211
+	 

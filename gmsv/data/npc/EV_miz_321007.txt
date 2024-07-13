@@ -1,0 +1,17 @@
+#汕母件斥亦件“怚珌及泛件扑件
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛﹛##############
+block 
+	Window 219032,YES,NO
+	
+	Window_YES
+	Window 219015,OK
+	Window_OK
+	
+	setaction 5
+	EndWindow 219016,OK
+	
+	Window_NO
+	EndWindow 219017,OK

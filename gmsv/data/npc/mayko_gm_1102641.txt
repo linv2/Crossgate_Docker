@@ -1,0 +1,11 @@
+
+###Ð¡·ï»Ë
+block 
+	 Window 1110735,ok
+	 Window_ok
+	 Encount 2|0,32152,34,34||0|||||0|25017|||||||||	 
+	 Endblock
+
+	 
+	 		 	 
+		 	 

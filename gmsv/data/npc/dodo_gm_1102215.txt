@@ -1,0 +1,38 @@
+###dodo_gm_1102215.txt
+###10.甲虫			葛西生态研究的对象。											
+###□身上有甲虫的样本
+block Item 40764 >= 1
+	 ##15322
+	 EndWindow 15322
+	 
+###□身上有采集棒
+block Item 40763 >= 1
+	 ##1102849	\n\n\n\n\n@c是否要偷偷从甲虫身上采集样本？	1
+	 Window 1102849,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 40763 >= 1 && ItemSpace == 0
+			 ##1109302	\n\n\n\n\n身上似乎没有多余的空位可以采集！	1
+			 EndWindow 1109302
+	 	 
+	 	 Window_YES Item 40763 >= 1 && ItemSpace >= 1
+	 	 	 localCount0 = random 99,0
+	 	 	 
+	 	 	 if localCount0 >= 0 && localCount0 <= 95
+	 	 	 ##1102850	甲虫似乎被惊动了！	1
+			 Message 1102850
+			 ##（进入战斗。）
+			 Encount 3|0,33000,303,427||0|||||0|40170|||||||||
+			 
+			 endif
+
+			 if localCount0 >= 96 && localCount0 <= 99 
+			 ##（得到甲虫的样本。）
+			 GiveLeak1Item 40764
+			 
+###□一般
+block 
+	 ##2515	．．．呜．．．	1
+	 #Message 2515
+	 Encount 3|0,33000,303,427||0|||||0|40171|||||||||
+	

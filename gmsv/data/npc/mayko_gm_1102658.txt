@@ -1,0 +1,23 @@
+#1111172	\n\n\n　　　　要阅读四方守护圣兽的回忆，\n　　　　进入到梦土吗？	1
+#mayko_gm_1102658.txt
+block Endevent 164 == 1
+	Window 1111172,yes,no
+	window_yes
+	warp 0,32183,26,33
+	window_no
+	endblock
+
+block item 41146>0 && item 41149>0 && item 41151>0 && item 41153 >0
+	 Window 1111172,yes,no
+	 Window_yes item 41146>0 && item 41149>0 && item 41151>0 && item 41153 >0
+	 killitem 41146,1
+	 killitem 41149,1
+	 killitem 41151,1
+	 killitem 41153,1
+	 EndEvent 164 = 1
+	 GiveLeak1Item 41217,3
+	 warp 0,32183,26,33
+	 endblock
+	 Window_yes
+	 Window_no
+	 Endblock

@@ -1,0 +1,35 @@
+#######■啃字虫蛋“贝”wiz_item_45827.txt
+
+###有贝字珠
+block Item 45815 >= 1
+	 ##1051906	\n\n\n  @c要打开吗？
+	 Window 1051906,YES,NO
+	 Window_NO
+	 Window_YES Item 45815 >= 1
+	 	 KillItem 45815
+	 	 KillItem 45827
+	 	 EndWindow 1051907
+	 	 ##1051907	\n\n\n  哇！竟然出现“啃字虫”，把一个字珠吃掉了！
+		 #失去吃字虫蛋
+		 #失去贝字珠
+
+###有开锋魔铲
+block Item 45809 >= 1
+	 ##1051906	\n\n\n  @c要打开吗？
+	 Window 1051906,YES,NO
+	 Window_NO
+	 Window_YES Item 45809 >= 1
+	 	 KillItem 45809
+	 	 KillItem 45827
+	 	 EndWindow 1051908
+	 	 ##1051908	\n  哇！竟然出现了“盲目之虫”，把一个魔铲吃掉\n  了！
+
+###一般
+block
+ 	 ##1051906	\n\n\n  @c要打开吗？
+	 Window 1051906,YES,NO
+	 Window_NO
+	 Window_YES
+	 	 KillItem 45827
+	 	 ##1051909	\n\n\n  @c里面什么也没有！
+		 EndWindow 1051909

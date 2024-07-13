@@ -1,0 +1,28 @@
+#?§÷???
+
+#???????þ­????
+block NowEvent 116 == 1
+	Window 22584,YES,NO
+		Window_YES
+			Window 22585,OK
+				Window_OK
+					KillItemAll 16396
+					KillItemAll 16397
+					KillItemAll 16398
+					KillItemAll 16399
+					NowEvent 116 = 0
+					EndEvent 116 = 0
+		Window_NO
+			EndWindow 22586,OK
+
+#?????????????
+block EndEvent 60 == 1
+	Window 22587,OK
+		Window 22587,OK
+			Window_OK
+				NowEvent 116 = 1
+				LeaveGroup
+				Warp 0,33116,11,13
+#
+block
+	EndWindow 22588,OK

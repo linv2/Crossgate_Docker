@@ -1,0 +1,38 @@
+#
+#禾件旦申永弁泛旦玄▼胀沓笮▼亥扑用□乩
+#
+
+################################################################################
+#
+################################################################################
+
+block Item_15212 >= 1
+            EndWindow "\n\n﹛蛭虴元扎卅中仃升中中氏匹允″?",OK
+
+block Item_18161 >= 1 && Item_12004 >= 2 && Item_12410 >= 2 && Item_11200 >= 1 && Item_12404 >= 1 && ItemSpace >=1 && Gold >= 490
+    Window "\n\n﹛中日匀仄扎中引六﹜\n\n﹛厘戴曰午傻阂匹ㄣㄨㄟ晚﹋暧慇﹌卞卅曰引允﹝\n\n﹛皮汁毛云综曰仄引仄斤丹井〝",YES,NO
+        Window_YES
+            Killitem 12004,2
+            Killitem 12410,2
+            Killitem 11200,1
+            Killitem 12404,1
+            AddGold -490
+            GiveLeak0item 15212,1
+            EndWindow "\n\n﹛丐曰互午丹仍介中引仄凶□﹝",OK
+        Window_NO
+            EndWindow "\n\n﹛歹介歹介扔奶玄匹袄蟾毛譬屯化五凶及卞＿＿﹝",OK
+
+block Item_18161 >= 1 && Item_12004 >= 2 && Item_12410 >= 2 && Item_11200 >= 1 && Item_12404 >= 1 && Gold >= 490
+    Window "\n\n﹛中日匀仄扎中引六﹜\n\n﹛厘戴曰午傻阂匹ㄣㄨㄟ晚﹋暧慇﹌卞卅曰引允﹝\n\n﹛皮汁毛云综曰仄引仄斤丹井〝",YES,NO
+        Window_YES
+            EndWindow "\n\n﹛儅切坁互中匀天中匹允方□﹝",OK
+        Window_NO
+            EndWindow "\n\n﹛歹介歹介扔奶玄匹袄蟾毛譬屯化五凶及卞＿＿﹝",OK
+
+
+block
+    EndWindow "\n\n﹛厘戴曰午戏锉匹ㄣㄨㄟ晚﹋暧慇﹌匹□允﹝",OK
+
+
+
+

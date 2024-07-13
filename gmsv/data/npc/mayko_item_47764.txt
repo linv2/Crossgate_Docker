@@ -1,0 +1,16 @@
+	 ##1109582	\n\n\n\n\n@c现在想使用‘趴踢的白龙’舞出龙之舞吗？	1																																																																																																			
+block	 
+	 Window 1110627,YES,NO
+
+	 	 Window_NO 
+	 	 endbock
+	 	 Window_YES ItemSpace < 2 
+	 	 	 ##1054496	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的二格位置。	1
+			 EndWindow 1054496
+	 	 
+	 	 Window_YES ItemSpace >= 2 && Item 47764>= 1
+	 	 	 																																																																																																			
+			 	 	 KillItem 47764,1
+			 	 	 GiveLeak1Item (47467%40$1,47468%1$1,47469%59$1)
+					# GiveLeak1Item 47470
+					 endblock

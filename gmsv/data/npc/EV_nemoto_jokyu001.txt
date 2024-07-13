@@ -1,0 +1,250 @@
+##########################
+# ÏþÝËçÇ         by äô…í #
+# ¡ûéÞ?¡û               #
+##########################
+
+#### »¿åÃÇí©y¸ó?¶¯Ïþ¼°ÛÍ·Âµ©¼°Æ½ÅÒ·ÂÛÍÕý¡õ
+## ðôÖî¸ó?¶¯Ïþ
+block Job >= 14 && Job <= 19
+
+	GoToF case1
+
+## ¾ôçÖî¸ó?¶¯Ïþ
+block Job >= 24 && Job <= 29
+
+	GoToF case1
+
+## àÍÆôÈÞÏÎ¶¯Ïþ
+block Job >= 34 && Job <= 39
+
+	GoToF case1
+
+## ÝÔÖî¸ó?¶¯Ïþ
+block Job >= 44 && Job <= 49
+
+	GoToF case1
+
+## ŒaÏÎÓ®¶¯Ïþ
+block Job >= 54 && Job <= 59
+
+	GoToF case1
+
+## ÉêÆËÒàÓÀÃó¶¯Ïþ©jÛÍÒÁØøÓÀÛÍ©k
+block Job >= 64 && Job <= 69
+
+	GoToF case1
+
+## ËüÅ«°Ç¡õÓñ¶¯Ïþ©j…ëÖî¸ó©k
+block Job >= 74 && Job <= 79
+
+	GoToF case1
+
+## ËüÇÉ¡õ·òÓÀÛÍ©jÈÈÖî¸ó©k
+block Job >= 84 && Job <= 89
+
+	GoToF case1
+
+##ÆËÅÒ¡õÑ¨¼þ¶¯Ïþ©j»ŠÖî¸ó©k
+block Job >= 134 && Job <= 139
+
+	GoToF case1
+
+## É¡¢ÈÖî¸ó?¶¯Ïþ
+block Job >= 144 && Job <= 149
+
+	GoToF case1
+
+## ÅÅ¶¯Ïþ©j¥ª·®©k
+block Job >= 154 && Job <= 159
+
+	GoToF case1
+
+## –aÖ´Öî¸ó?¶¯Ïþ
+block Job >= 94 && Job <= 99
+
+	GoToF case1
+
+## Ë¦ÄÌÆ¤Øø¡õÄ¸¡õ
+block Job >= 104 && Job <= 109
+
+	GoToF case1
+
+# Æ©ÏîÖî¸ó?¶¯Ïþ
+block Job >= 114 && Job <= 119
+
+	GoToF case1
+
+## ÐþØøÓÀÛÍµ©Õý¡õ¶¯Ïþ©jÃ¹óñ©k
+block Job >= 124 && Job <= 129
+
+	GoToF case1
+
+## µ©¡õÓÉ¡õµ©ÕýÊ§¶¯Ïþ©jÚçÔ»ºÒ©k
+block Job >= 164 && Job <= 169
+
+	GoToF case1
+
+## ÒëŠi«z¼ëÓ£¶¯Ïþ
+block Job >= 414 && Job <= 419
+
+	GoToF case1
+
+## ÓªÚÐ¶¯Ïþ
+block Job >= 424 && Job <= 429
+
+	GoToF case1
+
+## ŒãÓ®¶¯Ïþ
+block Job >= 434 && Job <= 439
+
+	GoToF case1
+
+## »¿åÃÇíÏÎ¸ó¶¯Ïþ
+block Job >= 444 && Job <= 449
+
+	GoToF case1
+
+## »¿åÃÇíðôçÇÚÐ¶¯Ïþ
+block Job >= 204 && Job <= 209
+
+	GoToF case1
+
+## »¿åÃÇíççÇÚÐ¶¯Ïþ
+block Job >= 214 && Job <= 219
+
+	GoToF case1
+
+## »¿åÃÇí¼üçÇÚÐ¶¯Ïþ
+block Job >= 224 && Job <= 229
+
+	GoToF case1
+
+## »¿åÃÇíÝÔçÇÚÐ¶¯Ïþ
+block Job >= 234 && Job <= 239
+
+	GoToF case1
+
+## »¿åÃÇíÏðçÇÚÐ¶¯Ïþ
+block Job >= 244 && Job <= 249
+
+	GoToF case1
+
+## »¿åÃÇí÷ÇÌîçÇÚÐ¶¯Ïþ
+block Job >=254 && Job <= 259
+
+	GoToF case1
+
+## »¿åÃÇí¹ÏÄÌ°×çÇÚÐ¶¯Ïþ
+block Job >= 264 && Job <= 269
+
+	GoToF case1
+
+## »¿åÃÇí³¡çÇÚÐ¶¯Ïþ
+block Job >= 274 && Job <= 279
+
+	GoToF case1
+
+## »¿åÃÇíÙ¦ºÒçÇÚÐ¶¯Ïþ
+block Job >= 284 && Job <= 289
+
+	GoToF case1
+
+## »¿åÃÇí¶¥çÇÚÐ¶¯Ïþ
+block Job >= 294 && Job <= 299
+
+	GoToF case1
+
+## »¿åÃÇíšõçÇÚÐ¶¯Ïþ
+block Job >= 304 && Job <= 309
+
+	GoToF case1
+
+## »¿åÃÇí·ò¡õÆ¤çÇÚÐ¶¯Ïþ
+block Job >= 314 && Job <= 319
+
+	GoToF case1
+
+## »¿åÃÇíÆ¤¡õÖ­çÇÚÐ¶¯Ïþ
+block Job >= 324 && Job <= 329
+
+	GoToF case1
+
+## »¿åÃÇíÐ¨çÇÚÐ¶¯Ïþ
+block JOb >= 334 && Job <= 339
+
+	GoToF case1
+
+## »¿åÃÇí¼úçÇÚÐ¶¯Ïþ
+block Job >= 344 && Job <= 349
+
+	GoToF case1
+
+## »¿åÃÇíÆ©†A¸ó¶¯Ïþ
+block Job >= 354 && Job <= 359
+
+	GoToF case1
+
+## »¿åÃÇíãï¹Ü¸ó¶¯Ïþ
+block Job >= 364 && Job <= 369
+
+	GoToF case1
+
+## »¿åÃÇí–_Õ¿Ä¤†A¶¦¶¯Ïþ
+block Job >= 374 && Job <= 379
+
+	GoToF case1
+
+## »¿åÃÇíëÌîÄ¤†A¶¦¶¯Ïþ
+block Job >= 384 && Job <= 389
+
+	GoToF case1
+
+## »¿åÃÇí×µÀÃÏÎ¶¯Ïþ
+block Job >= 394 && Job <= 399
+
+	GoToF case1
+
+## »¿åÃÇíÎå³ðÔ»
+block Job >= 454 && Job <= 459
+
+	GoToF case1
+
+## »¿åÃÇíÈóÚÐ
+block Job >= 464 && Job <= 469
+
+	GoToF case1
+
+## »¿åÃÇí³Ûá¨
+block Job >= 474 && Job <= 479
+
+	GoToF case1
+block Job >= 1004 && Job <= 1009
+
+	GoToF case1	
+block Job >= 1014 && Job <= 1019
+
+	GoToF case1		
+
+
+
+
+*case1*
+
+	Window 3207920,YES,NO
+
+		#\n\n©xÀ„Ã«ÉË»§©yÌÀ²Ó¼°Êþ¤«±åXÇÐéù¾®ÔÈ»¯ÎåÐ×·®·½©z©x½ñÈÕØ¦ÔÂ»ê–®Ã«°¾ØêÔÂ´´õö·´Ø¤ÔÂ¾®¨”
+
+		Window_YES
+			LeaveGroup
+			warp 0,59930,16,99
+
+		Window_NO
+			Endblock
+
+
+
+
+#### Ïþ·¤¶¯Â½
+block
+	EndWindow 3207921
+		#\n\n©x·ïÉ¡’ƒÎå·®©yÂúÖÊ±åàÍäÎÔÂÍÍ¾®ÈÕÄÚ©z

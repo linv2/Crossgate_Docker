@@ -1,0 +1,146 @@
+#????????
+
+#EndFLG138?ON???????????????????????9??ýÆ??
+block Item 16408 >= 1 && EndEvent 138 == 1 && Item 16410 >= 9
+	Window 22691,Next
+	Window 22692,Next
+	Window 22693,Next
+	Window 22694,Next
+	Window 22695,Next
+	Window 22696,Next
+	Window 22697,Next
+	Window 22698,Next
+	Window 22699,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000,OK
+		Window_OK Item 16408 >= 1 && Item 16410 >= 9
+			KillItemAll 16393
+			KillItemAll 16407
+			KillItem 16410,9
+			GiveItem 16411,1
+#			GiveItem 16408,1
+			NowEvent 137 = 0
+			NowEvent 138 = 0
+			EndEvent 138 = 0
+			EndEvent 139 = 1
+			CheckTitle
+			LeaveGroup
+			Warp 0,43800,125,87
+		Window_OK Item 16408 >= 1
+			KillItemAll 16393
+			KillItemAll 16407
+			GiveItem 16409,1
+#			GiveItem 16408,1
+			NowEvent 137 = 0
+			NowEvent 138 = 0
+			EndEvent 138 = 0
+			EndEvent 139 = 1
+			CheckTitle
+			LeaveGroup
+			Warp 0,43800,125,87
+		Window_OK
+
+#EndFLG138?ON????????????????
+block Item 16408 >= 1 && EndEvent 138 == 1
+	Window 22691,Next
+	Window 22692,Next
+	Window 22693,Next
+	Window 22694,Next
+	Window 22695,Next
+	Window 22696,Next
+	Window 22697,Next
+	Window 22698,Next
+	Window 22699,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000,OK
+		Window_OK Item 16408 >= 1
+			KillItemAll 16393
+			KillItemAll 16407
+			GiveItem 16409,1
+#			GiveItem 16408,1
+			NowEvent 137 = 0
+			NowEvent 138 = 0
+			EndEvent 138 = 0
+			EndEvent 139 = 1
+			CheckTitle
+			LeaveGroup
+			Warp 0,43800,125,87
+
+#EndFLG138?ON?????????????????????9??ýÆ??
+block Item 16393 >= 1 && EndEvent 138 == 1 && Item 16410 >= 9
+	Window 22691,Next
+	Window 22692,Next
+	Window 22693,Next
+	Window 22694,Next
+	Window 22695,Next
+	Window 22696,Next
+	Window 22697,Next
+	Window 22698,Next
+	Window 22699,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000,OK
+		Window_OK Item 16393 >= 1 && Item 16410 >= 9
+			KillItemAll 16393
+			KillItemAll 16407
+			KillItem 16410,9
+			GiveItem 16411,1
+			GiveItem 16408,1
+			NowEvent 137 = 0
+			NowEvent 138 = 0
+			EndEvent 138 = 0
+			EndEvent 139 = 1
+			CheckTitle
+			LeaveGroup
+			Warp 0,43800,125,87
+		Window_OK Item 16393 >= 1
+			KillItemAll 16393
+			KillItemAll 16407
+			GiveItem 16409,1
+			GiveItem 16408,1
+			NowEvent 137 = 0
+			NowEvent 138 = 0
+			EndEvent 138 = 0
+			EndEvent 139 = 1
+			CheckTitle
+			LeaveGroup
+			Warp 0,43800,125,87
+		Window_OK
+
+#EndFLG138?ON??????????????
+block Item 16393 >= 1 && EndEvent 138 == 1
+	Window 22691,Next
+	Window 22692,Next
+	Window 22693,Next
+	Window 22694,Next
+	Window 22695,Next
+	Window 22696,Next
+	Window 22697,Next
+	Window 22698,Next
+	Window 22699,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000,OK
+		Window_OK Item 16393 >= 1
+			KillItemAll 16393
+			KillItemAll 16407
+			GiveItem 16409,1
+			GiveItem 16408,1
+			NowEvent 137 = 0
+			NowEvent 138 = 0
+			EndEvent 138 = 0
+			EndEvent 139 = 1
+			CheckTitle
+			LeaveGroup
+			Warp 0,43800,125,87
+#?????or???????????????
+block Item 16393 >= 1 || Item 16408 >= 1
+	Window 22691,Next
+	Window 22779,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,43800,125,87
+#
+block
+	Window 22700,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,43800,125,87

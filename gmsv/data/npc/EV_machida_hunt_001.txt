@@ -1,0 +1,24 @@
+#乒件旦正□甩件泛奴件弘
+#
+#﹛﹛﹛白伉弁﹛﹛﹛NPCID﹛810003
+#
+
+###﹛奶弘瓦旦酱哗尺伐□皿
+Block
+	Window 3207331,Yes,No
+
+		#\n\n﹛支丐﹝\n﹛票尺嫦曰月Ⅶ毛综匀化心凶氏分﹝\n﹛窒井﹜庍卅赭尺勾卅互匀切扎匀凶心凶中分仃升﹜﹛垫匀化心月井中〝
+
+		Window_Yes
+			Window 3207332,OK
+
+		#\n\n﹛元扎丐﹜升丹冗﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59959,208,329
+
+		Window_No
+			EndWindow 3207333
+
+		#\n\n﹛公丹井﹝\n﹛卅日﹜轾仇丹尺垫匀化仁木﹝

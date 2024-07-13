@@ -1,0 +1,64 @@
+###定期船
+###西丝 坎那贝拉村33500	奶焗竹荚鱼
+
+block Item 40717 >0     
+	 ##有奶焗竹荚鱼
+	 EndWindow 1102428
+     	 ##奶焗竹荚鱼不是做好了吗？快送去给詹森老爹，冷了就不好吃。
+block   Item 40719 >0 && ItemCreateTime 40719>120
+	 ##有材料单且过2hr
+	 Window 1102456,OK
+	 Window_OK ItemSpace < 1 
+		 ##物品栏已满
+	        EndWindow 1102427	 	 	 
+		  	        
+		Window_OK Item 40719 >0 
+	 		##奶焗竹荚鱼做好了，快拿去给詹森老爹吃吧。
+	 		#扣材料单
+	 		killitem 40719,1
+	 		#//得到 奶焗竹荚鱼
+	  		GiveLeak1Item 40717,1
+	 		Endwindow 1102429
+			 	
+block   Item 40719 >0	 	
+     	##未满2hr		
+     	##奶焗竹荚鱼还要一阵子才作好，请你再等一下。  
+	Endwindow 1102430     		
+block   Item 40718 >0 && Item 12401 >19 && Item 12402 >9 && Item 11601 >19  
+	Window 1102453,YES,NO
+	##你的材料已经准备好了呀！要作料理吗？
+	Windows_no
+		##想要做再来找我。     
+		EndWindow 1102454
+	Window_yes ItemSpace < 1 
+		##物品栏已满
+	        EndWindow 1100001
+	Window_yes  Item 40718 >0 && Item 12401 >19 && Item 12402 >9 && Item 11601 >19        
+		killitem 40718,1
+		killitem 12401,20
+		killitem 12402,10
+		killitem 11601,20
+     		GiveLeak1Item 40719,1
+     		##奶焗竹荚鱼的材料，你已经准备好了呀！\n
+     		##那我现在开始帮你做，不过这比较花时间，请你过一阵子再来吧！
+     		EndWindow 1102431
+block   Item 40718 >0        		
+	##你先去准备材料吧！这道料理要什么材料，我都写在材料单上！
+	EndWindow 1102432     			
+block   Item 40716 >0 
+	Window 1102433,yes,no 	     
+     	##哦！鲁得介绍你来找我的？\n是要帮詹森老爹做竹荚鱼料理呀？
+     	Window_no
+     		##不是呀！那就是我会错意啰。
+     		EndWindow 1102455
+     	Window_yes  ItemSpace < 1 
+     		##物品栏已满
+	        EndWindow 1100001
+     	Window_yes  Item 40716 >0 
+		killitem 40716,1
+     		GiveLeak1Item 40718,1
+     		##这是奶焗竹荚鱼的材料清单，你先帮我准备材料吧！
+     		EndWindow 1102434
+block
+	##坎那贝拉村是个海港城市，可惜现在海盗出没的关系，不要说商船，连渔船都少了许多。
+	EndWindow 1102435

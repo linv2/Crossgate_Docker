@@ -1,0 +1,12 @@
+###2006EC 10月份_回复药包(600)(空)	din_item_47320.txt
+###能力说明：可收纳九组生命力回复药（600）
+
+block Item 15613 < 27
+	 ##1054441	\n\n\n\n\n  你身上的＋６００水不足２７个喔！所以无法收纳  。	1
+	 EndWindow 1054441
+
+block Item 15613 >=27
+	 KillItem 15613,27
+	 KillItem 47320,1
+	 GiveLeak1Item 47321,1
+	 

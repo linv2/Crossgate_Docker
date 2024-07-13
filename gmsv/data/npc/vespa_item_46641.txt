@@ -1,0 +1,7 @@
+###´óÓîÖÜÄêÇìÓÃ_×°ÂúÊÙÏ²¹ø²ÍºÐ
+
+	 
+block ItemSpace >=3
+	 KillItem 46641,1
+	 GiveStackItem 15211,9
+	 

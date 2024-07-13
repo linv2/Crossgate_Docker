@@ -1,0 +1,18 @@
+#泛旦玄奶矛件玄﹋平亘旦泛弝﹌﹛??巟鼹﹛凌001
+#
+#﹛﹛﹛伙奶及摒
+
+###﹛狪仄井仃日木凶午五
+block
+	Window 3200755,YES,NO
+		#\n\n﹛坞互敛中友℅﹝推互ヶ中友℅﹝\n﹛午仇欠匹楝反℅﹜中中谛℅〝
+
+		Window_YES
+			EndWindow 3200756
+		#\n\n﹛公丹卅及℅﹜公木反兜艘分友℅﹝\n﹛公木元扎丐℅﹜失玉田奶旦毛℅丐仆方丹℅﹝\n﹛厘仪卅蜕邯反℅﹜夫匀仁曰忒仄化℅﹝
+
+		Window_NO
+			EndWindow 3200757
+		#\n\n﹛公丹卅及℅﹜公木反艘ミ分友℅﹝\n﹛＿＿＿窖匀化仁木卅中〝
+
+

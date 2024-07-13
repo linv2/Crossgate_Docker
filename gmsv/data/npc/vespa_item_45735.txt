@@ -1,0 +1,60 @@
+########红包袋的判断	ID:45735
+
+#####是否要使用红包袋
+block
+	 ## 1051729	\n\n过年了耶～是不是该准备压岁钱送人呢？
+	 Window 1051729,YES,NO
+	 	 Window_NO
+	 	 	 ##1051730	\n\n再想想好了，这一送下去．．．\n可不知要花多少钱呢～
+			 EndWindow 1051730
+			 
+		 Window_YES
+		 	 ##1051731	\n\n该放入多少钱比较好呢？包入６００金币好吗？
+			 Window 1051731,YES,NO
+			 	 Window_YES Gold < 600
+			 	 	 ##1051732	\n\n糟了，身上钱不够．．．该努力赚钱了．．．
+					 EndWindow 1051732
+				 Window_YES Gold >= 600
+				 	 ##1051733	把%d个金币放入红包袋中。
+				 	 AddGold -600,(1051733)
+				 	 KillLeak1item 45735
+				 	 GiveLeak1Item 45736
+				  Window_NO
+					 ##1051734	\n\n那该放入多少钱呢？包入１６００金币好了．．．
+					 Window 1051734,YES,NO
+					 	 Window_YES Gold < 1600
+					 	 	 ##1051735	\n\n糟了，今年忙着冲等，身上的钱都败光了！
+					 	 	 EndWindow 1051735
+					 	 Window_YES Gold >= 1600
+					 	 	 AddGold -1600,(1051733)
+					 	 	 KillLeak1item 45735
+					 	 	 GiveLeak1Item 45737
+						 Window_NO
+						 	 ##1051736	\n\n那该放入多少钱呢？包入６０００金币好了！
+						 	 Window 1051736,YES,NO 
+						 	 	 Window_YES Gold < 6000
+						 	 	 	 ##1051737	\n\n身上的钱不够耶～现在去打魔石还来的及吗？
+									 EndWindow 1051737
+								 Window_YES Gold >= 6000
+								 	 AddGold -6000,(1051733)
+								 	 KillLeak1item 45735
+								 	 GiveLeak1Item 45738
+								  Window_NO
+								  	 ##1051738	\n\n那该放入多少钱呢？包入１００００金币好了．．．
+								  	  Window 1051738,YES,NO
+								  	  	 Window_YES Gold < 10000
+								  	  	 	 ##1051739	\n\n糟了！之前把身上的钱都败光了！
+											 EndWindow 1051739
+										 Window_YES Gold >= 10000
+										 	 AddGold -10000,(1051733)
+										 	 KillLeak1item 45735
+										 	 GiveLeak1Item 45739
+										  Window_NO
+										  	 ##1051740	\n\n冲等练技买装备要花不少钱．．．．\n还是留一点给自己吧．．．
+											 EndWindow 1051740
+ 
+								 	
+						 	 	 	 
+					 	 	 
+				 	 
+			 	 	 

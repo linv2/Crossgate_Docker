@@ -1,0 +1,390 @@
+#
+#瓜奶失
+#
+
+####################
+#丢奶件6
+
+Block GlobalFlag81 == 1
+
+
+	Window 3205531,Next
+
+		#\n\n﹛勾中卞支匀切扎匀凶友尹﹝\n﹛它弗弗弗弗弗弗﹝\n﹛
+	
+	Window 3205532,Next
+
+		#\n\n﹛失件斥永弁切扎氏手拑辞仄切扎匀凶井日卅丐﹝\n﹛今化﹜午仪詨质咥仄卅中午友﹝它弗弗﹝
+	
+	Window 3205533,Next
+
+		#\n\n﹛﹍?辉琼﹎卞手\n﹛漆荚及瘀匹窒井丐月井手仄木卅中井日\n﹛失白正□弗失匀化歹仃今﹝\n﹛朸酱卞晓互月及反﹜引分镀允亢月仄﹜友﹝\n﹛它弗弗弗弗﹝
+	
+	EndWindow 3205534
+
+		# \n\n﹛午’仇’欠匹\n﹛仇木井日楝反升丹允月氏分中〝\n﹛它弗弗弗弗弗弗弗﹝
+	
+	
+
+
+
+Block GlobalFlag42 == 1 && GlobalFlag78 == 1
+
+	Window 3205535,Next
+
+		#\n\n﹛丹氏﹝漆引匹反鴃澎卞⑹中化中凶氏分仃升友﹝\n﹛示弁手缙★午酷仪互喂尹切扎匀化﹝它弗﹝
+	
+	Endwindow 3205536
+
+		#\n\n﹛匹手﹜中中氏分﹝啼仄中井日\n﹛失件斥永弁切扎氏手方丹支仁﹜友﹝\n﹛它弗弗弗﹝
+
+
+###################
+
+
+block globalFlag43 == 1
+
+gotoF case2
+
+
+
+block globalFlag42 == 1
+
+*case2*
+
+			window 3205537,next
+
+		#\n\n﹛孔℅氏\n﹛失件斥永弁切扎氏互\n﹛⑹中切扎匀凶井﹜\n﹛切斤匀午镀中井卅丑﹝
+
+			window 3205538,next
+
+		#\n\n﹛丐丐﹜楝反竣卞仄卅仁化恌中方﹝\n﹛丹仃仃仃仃﹝
+
+			endwindow 3205539
+
+		#\n\n﹛﹛公木方曰﹜瓜永扔它卞竣毛勾仃卅﹝\n﹛丹仃仃匀仃仃仃﹝
+
+
+
+
+block globalFlag38 == 1 && globalFlag10 == 1
+
+gotoF case1
+
+
+
+block globalFlag39 == 1 && globalFlag10 == 1
+
+*case1*
+
+			window 3205540,next
+
+		#\n\n﹛今化﹜楝及澎卞\n﹛交伙弘螃及艘﹜褥虫﹜\n﹛公仄化﹜公木卞熔毛褕允诸﹝\n﹛厘仆今卞蜕尹壬﹜仇及壑钗毛庍尹月仪及请侳月\n﹛公氏卅乒用琼互﹜缭匀切扎匀凶沭分﹝
+
+			window 3205541,next
+
+		#\n\n﹛今化﹜\n﹛楝反﹜仇木井日升丹允月友〝
+
+			window 3205542,next
+
+		#\n\n﹛＿＿公丹中尹壬﹜\n﹛交伙弘楝手﹜樯﹜\n﹛公氏卅仇午匹﹜ゾ氏匹＿＿\n﹛中支﹜撩蜕﹜撩蜕﹝侉木化仁木方﹝\n﹛丹仃仃仃仃匀仃﹝
+			
+			window 3205543,yes,no
+
+		#\n\n﹛凛卞窒手井手﹜\n﹛仇仇匹髑仆请仄凶中匀化蜕丹及卅日﹜\n﹛冞互窒午井仄凶仆月仃升友﹝
+
+
+					window_yes 
+					
+
+
+							Window 3205544,ok
+
+		#\n\n﹛??﹜??﹜\n﹛及氏太曰抔日允及互\n﹛域?今﹝
+							
+							window_ok
+
+							KillItemall 620018
+							KillItemall 620017
+
+							globalFlag36 = 0
+							globalFlag37 = 0
+							globalFlag38 = 0
+							globalFlag39 = 0
+							globalFlag40 = 0
+
+
+					window_no
+					
+							endWindow 3205545
+
+		#\n\n﹛引分引分\n﹛蔽歹日六卅中勾手曰井中〝\n﹛公丹中丹质手\n﹛交伙弘楝卞＿＿\n﹛云匀午﹜撩沧﹝丹仃仃仃仃﹝
+
+
+block globalFlag36 == 1 && globalFlag10 == 1
+
+
+			window 3205546,next
+
+		#\n\n﹛它弗弗弗弗〝\n﹛卅氏分中〝尹〝引今井丑﹝\n﹛仇仇反楝互手午蛛凶壑钗及反内分方﹝\n﹛楝互酗瓖及抌赭卞斨中慇戈蟆卞蛛凶壑钗﹝
+
+			window 3205547,next
+
+		#\n\n﹛公手公手﹜伙伙奶巨卅氏化谛﹜\n﹛呿癫卞蛛凶及井中〝\n﹛友之〝\n﹛楝反愤耨毛儅匀化﹜?及绣箕毛潜舰匹五月井卅〝
+
+			window 3205548,next
+
+		#\n\n﹛中支今﹜幻日﹜\n﹛楝反﹜丐及剪中酗瓖匹﹜\n﹛抌及?谛井日\n﹛中仁勾手中仁勾手蛙中执毛畴匀凶方友〝\n﹛云井仆匹抌及潜及朼执互Г仁卅匀化友﹜\n﹛窒井及濠匀喘仃匹\n﹛允什卞匹手杴创户公丹卅副ミ卅氏分方﹝\n﹛它弗弗永弗弗﹝
+
+			window 3205549,next
+
+		#\n\n﹛酗瓖及抌卞朼元日木凶梁卅熔﹜\n﹛公木毛﹜楝日互螂户凶﹍交伙弘及奶戊件﹎﹜\n﹛勾引曰交伙弘螃及?太辣匀凶瑜こ卞\n﹛烂邋今六方丹午仄化月谛凶切互蛛化今丑﹝
+
+			window 3205550,next
+
+		#\n\n﹛卅氏井今﹜\n﹛厍迕今木凶方丹卅竣互仄卅中井卅〝\n﹛楝日及﹍钒仁樊﹎午仄化及恘互扔﹝\n﹛丹仃仃仃﹝
+
+			window 3205551,next
+
+		#\n\n﹛分井日今﹜抩蟆井日仄化庄仄中斥乓件﹜\n﹛伙伙奶巨卅氏化﹝
+
+			endwindow 3205552
+
+		#\n\n﹛楝日毛﹜丐及﹜剪中踹及瓖﹜\n﹛﹍月’曰尹□﹎卞裟太慇戈啃及\n﹛鬼撙卅酷喘仃卞\n﹛娄匀井井匀凶氏元扎卅中及井卅〝\n﹛午井﹜引丑﹜示弁午仄化反\n﹛塌哔仄化心月歹仃扔﹝\n﹛丹仃仃仃仃﹝
+
+
+
+block globalFlag35 == 1
+
+
+
+			window 3205553,next
+
+		#\n\n﹛氏〝\n﹛卅氏分中﹜楝﹜粕卅及井中〝\n﹛公□斗□凛反\n﹛赓艘卞井尹匀化﹜愈赓及蜇桦毛疯腹据今﹝
+
+			endwindow 3205554
+
+		#\n\n﹛氏〝\n﹛窒及狪井匀化〝\n﹛仇卅中分厶氏分﹜茧樱凝濩卞公丹丐匀凶方﹝\n﹛丹仃仃﹝
+
+
+
+
+
+block globalFlag33 == 1
+
+
+			EndWindow 3205555
+
+		#\n\n﹛孔孔﹜升丹分中〝\n﹛冞及＊井仃反荸匀凶井卅丑〝
+
+
+
+
+block Item 607699 >= 1
+
+
+
+	Window 3205556,yes,no
+
+		#\n\n﹛云支云支℅〝\n﹛怉卅手及毛儅匀化月元扎卅中井〝\n﹛切斤匀午ブ苇﹝
+
+
+		Window_yes
+
+			window 3205557,next
+
+		#\n\n﹛尺之℅℅\n﹛蝈螺苇凶仇午及卅中妐侬分友之﹝\n﹛尹〝枌狨厶户卅中今丑℅\n﹛石件玄分方﹝它弗弗弗﹝
+
+			window 3205558,next
+
+		#\n\n﹛匹手今℅\n﹛升匀井匹苇凶竣手\n﹛允月氏分方友℅
+
+
+			endwindow 3205559
+
+		#\n\n﹛升匀仇分匀凶井卅丑〝\n﹛枆互中匀天中\n﹛戏尹化凶井卅丑﹝\n﹛升匀切卞仄欠﹜\n﹛手丹韶氏元扎匀化月井日卅丑﹜?﹝\n﹛它弗弗弗弗﹝
+
+
+		Window_no
+
+			endWindow 3205560
+
+		#\n\n﹛怅仄化手今丑﹜\n﹛扪抰及螃及杴反\n﹛赀呺祭六卅中及今丑﹝\n﹛它弗弗弗弗弗弗弗﹝
+
+
+
+
+
+block globalFlag31 == 1
+
+
+			window 3205561,next
+
+		#\n\n﹛孔戈﹜\n﹛引凶楝反﹜泮莞卅仇午卞\n﹛摒五慇引木井仃化月友之﹝
+
+
+			EndWindow 3205562
+
+		#\n\n﹛勾仁勿仁﹜扪及卅中蛊分方﹜\n﹛楝反﹝它弗弗弗弗弗﹝
+
+
+
+
+####
+
+
+block  Item 607681 >= 1 && Item 607682 >= 1
+
+
+		Window 3205563,next
+
+		#\n\n﹛云支云支﹜盟卅坁毛儅匀化五凶友﹝\n﹛巨伙母□及执引匹请今木切扎\n﹛扑市玄允月歹仃卞手中井卅中友之﹝
+
+		Window 3205564,next
+
+		#\n\n﹛仄斤丹互卅中﹜\n﹛中仁日蛙中蛊午反中尹﹜\n﹛沶窜反沶窜分井日友﹝
+
+		Window 3205565,ok
+
+		#\n\n﹛仇木反冞及域朿毛朼元凶涧分﹝\n﹛仄井月屯五锹澎卞欐六壬\n﹛仄井月屯五仪互请侳月反内分方\n﹛引丑﹜互氏壬曰卅﹝丹仃仃仃仃仃﹝
+
+			window_ok Item 14664 >= 1
+
+				Window 3205566,yes,no
+
+		#\n\n﹛公丹分﹜豢斪互歹曰卞\n﹛公及豳衬卅骭颬及裔引曰毛枃云丹井卅〝
+				
+					window_yes Item 14664 == 0
+
+						endWindow 3205567
+
+		#\n\n﹛丐曰扎﹜儅匀化凶午合匀凶仃升﹜竣及六中井﹝\n﹛氏元扎﹜支户分﹝支户支户﹝
+
+					window_yes  ItemSpace == 0
+
+						EndWindow 3205568
+
+		#\n\n﹛丐曰扎丑﹜\n﹛儅切坁互中匀天中心凶中分友之﹝
+
+
+					window_yes 
+					
+						KillItem 14664,1
+						KillItem 607681,1
+
+						GiveItem 607683,1
+
+					window_no
+					
+							endWindow 3205569
+
+		#\n\n﹛氏元扎﹜支户分﹝\n﹛支户支户﹝
+
+
+
+			window_ok Item 14664 == 0
+
+						endWindow 3205570
+
+		#\n\n﹛丹℅氏﹜支匀天曰支户分﹝\n﹛楝卞仇木毛欐允聒咥反卅中仄卅﹝\n﹛卅卞井昍ヶ公丹卅坁午跟晶午中仇丹﹝\n﹛仇及壑钗及螃卞楮溢允月手及﹜\n﹛骭颬及卅氏午井﹜午井友﹝
+
+
+
+
+block  Item 607681 >= 1
+
+
+		EndWindow 3205571
+
+		#\n\n﹛云支﹜蛙五莠井仄中け中互允月友﹝\n﹛卅卞井蛙五手及卞楮允月坁毛\n﹛公及莠卞オ壬六化月氏元扎卅中井卅〝\n﹛丹仃仃仃仃仃﹝
+		
+		
+
+
+
+block Item 607672 >= 1 && Item 607673 >= 1 && Item 607674 >= 1 && Item 607675 >= 1
+
+
+					Window 3205572,next
+
+		#\n\n﹛孔氏﹜蝈朿螂户化五凶及井中〝\n﹛仄斤丹互卅中友之﹜\n﹛愤坌井日勒卞⑵毛幺匀慇手丹卅氏化﹝\n﹛丹仃仃仃仃﹝
+
+					Window 3205573,yes,no
+
+		#\n\n﹛膜咥医反ㄠㄟㄟㄟ?分方﹝\n﹛升丹分中〝膜咥允月井中友〝
+
+					window_yes Gold <= 999
+
+						endWindow 3205574
+
+		#\n\n﹛嗯互箫日卅中友之﹝狪卞卅日氏方﹝\n﹛引丑﹜萃匀化恌井匀凶市乒方﹝丹匀仁仁仁仁仁﹝
+					
+
+					window_yes Item 607672 == 0 || Item 607673 == 0 || Item 607674 == 0 || Item 607675 == 0
+
+						endWindow 3205575
+
+		#\n\n﹛井仃日互蝈朿缭匀化卅中友之﹝\n﹛膜咥仄方丹互卅中方﹜公木元扎﹝
+
+
+						
+					window_yes
+
+						Window 3205576,ok
+
+		#\n\n﹛丹匀仁仁仁仁﹜\n﹛公丹井中公丹井中﹜\n﹛跶允及井中〝丹仃仃仃仃仃仃匀﹝
+
+						window_ok Item 607672 <= 0 || Item 607673 <= 0 || Item 607674 <= 0 || Item 607675 <= 0
+
+							endWindow 3205577
+
+		#\n\n﹛井仃日互蝈朿缭匀化卅中友之﹝\n﹛膜咥仄方丹互卅中方﹜公木元扎﹝
+
+						window_ok
+
+							KillItem 607672,1
+							KillItem 607673,1
+							KillItem 607674,1
+							KillItem 607675,1
+
+							AddGold -1000
+
+							GiveItem 607670,1
+
+
+
+
+					window_no
+
+						endWindow 3205578
+
+		#\n\n﹛公丹分方公丹分方﹜\n﹛公氏卅乒件﹜\n﹛澎毛请今卅中杅互恌中今友﹝
+
+
+block Item 607672 >= 1 || Item 607673 >= 1 || Item 607674 >= 1 || Item 607675 >= 1 
+
+
+					Window 3205579,next
+
+		#\n\n﹛孔℅氏﹜\n﹛庍卅乒件﹜手匀化月元扎卅中〝
+
+					endWindow 3205580
+
+		#\n\n﹛井仃日互蝈朿丐木壬﹜\n﹛膜咥仄凶仆化手中中仃升〝
+
+
+
+block
+
+						Window 3205581,next
+
+		#\n\n﹛卅氏分中〝\n﹛丐凶仄反引匀午丹卅谛棉午反\n﹛齿ヨ仄卅中方﹝
+
+						Window 3205582,next
+
+		#\n\n﹛丐丐﹜蟆及锭窗隍及田市反\n﹛恌中填宁卞中井木化化\n﹛恌中云烟今氏分匀凶氏分仃升友之﹝
+
+						EndWindow 3205583
+
+		#\n\n﹛丐木反恌中烟分匀凶方＿＿\n﹛引丑﹜丐凶仄午恌中齿ヨ允月烟反\n﹛赢儅切仄卅中氏分仃升友﹝\n﹛丹仃仃仃仃仃﹝
+

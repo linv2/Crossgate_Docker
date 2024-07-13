@@ -1,0 +1,34 @@
+block Item 607665 >= 2
+
+				endWindow "\n\n﹛澎饼反域骚内勾钒仃化仁分今中﹝"
+
+
+
+block
+
+
+				globalFlag15 = 0
+				globalFlag16 = 0
+				globalFlag17 = 0
+				globalFlag18 = 0
+				globalFlag19 = 0
+				globalFlag20 = 0
+				globalFlag21 = 0
+				globalFlag22 = 0
+				globalFlag23 = 0
+				globalFlag24 = 0
+
+
+				Window "\n\n﹛厘庍丹引中弗□平分匀凶﹝\n﹛闽唳及弗□平盒及仁六卞仇及台卞塽什午反﹜\n﹛域?谛卞仄化反﹜\n﹛卅井卅井竣及厍中凶蛊分午中尹方丹﹝\n﹛医嗯毛聂户卞嘻中化云中凶﹝\n﹛熬仃潸月互中中﹝弁弁弁永",ok
+
+				Window_ok gold < 998501
+
+
+
+
+				killitem 607665,1,(3007158)
+				addgold 1500
+
+				Window_ok
+				
+				endWindow "\n\n﹛算幵互域ベ匹﹜\n﹛医嗯毛熬仃潸木卅中﹝"

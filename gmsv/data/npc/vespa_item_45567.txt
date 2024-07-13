@@ -1,0 +1,22 @@
+####跨年新年任务 神签 ID:45567
+
+block luck == 1
+	 ##1051587	打开了神签。
+	 KillItem  45567,1,(1051587)
+	 GiveLeak1Item 45572
+	 
+block luck == 2
+	 KillItem   45567,1,(1051587)
+	 GiveLeak1Item 45571
+	 
+block luck == 3
+	 KillItem   45567,1,(1051587)
+	 GiveLeak1Item 45570
+	 
+block luck == 4
+	 KillItem   45567,1,(1051587)
+	 GiveLeak1Item 45569
+	 
+block luck == 5
+	 KillItem   45567,1,(1051587)
+	 GiveLeak1Item 45568	 

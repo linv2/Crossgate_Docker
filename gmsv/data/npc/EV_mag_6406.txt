@@ -1,0 +1,17 @@
+#
+#穴泛奴失
+#
+
+############## 优谖旦平伙儅匀化中月 ##############
+############## 怀踞烟旦平伙R8 ##############
+block Skilllevel 13 >= 8 || Skilllevel 14 >= 8 || Skilllevel 15 >= 8 || Skilllevel 16 >= 8 || Skilllevel 17 >= 8 || Skilllevel 18 >= 8 || Skilllevel 32 >= 8 || Skilllevel 33 >= 8 || Skilllevel 34 >= 8 || Skilllevel 35 >= 8 || Skilllevel 36 >= 8 || Skilllevel 37 >= 8 || Skilllevel 38 >= 8 || Skilllevel 39 >= 8 || Skilllevel 40 >= 8 || Skilllevel 41 >= 8 || Skilllevel 42 >= 8 || Skilllevel 43 >= 8 || Skilllevel 44 >= 8 || Skilllevel 45 >= 8 || Skilllevel 46 >= 8 || Skilllevel 47 >= 8 || Skilllevel 48 >= 8 || Skilllevel 49 >= 8 || Skilllevel 50 >= 8 || Skilllevel 51 >= 8 || Skilllevel 52 >= 8 || Skilllevel 53 >= 8 || Skilllevel 54 >= 8 || Skilllevel 55 >= 8 || Skilllevel 56 >= 8 || Skilllevel 57 >= 8 || Skilllevel 58 >= 8 || Skilllevel 59 >= 8 || Skilllevel 60 >= 8
+#\n\n﹛脱互⑺辿卞沧啦毛憎允手及欥
+	Window 14792,OK
+	Window_OK
+	Warp 0,24059,23,4
+
+############## 优谖旦平伙儅匀化中卅中 ##############
+block
+	encount 3|0,24073,22,15||0|||||0|12007|||||||||
+
+

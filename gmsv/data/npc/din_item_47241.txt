@@ -1,0 +1,23 @@
+#####希特拉召唤证	din_item_47241.txt
+###双点得到希特拉一只
+ 
+block PetSpace == 0 
+	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+	 EndWindow 1100004
+	 
+block Item 47241 >= 1
+	 ##1054317	\n\n@c你是否要使用召唤证．．．召唤希特拉出来？	1
+	 Window 1054317,YES,NO
+	 	 Window_NO
+	 	 	 
+	 	 Window_YES  PetSpace == 0 
+	 	 	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+	 		 EndWindow 1100004	 	
+	 
+	 	 Window_YES Item 47241 >= 1
+	 	 	 KillItem 47241,1
+	 	 	 GivePet 21701
+	 	 	 ##1054318	\n\n\n\n@c希特拉已成功召唤！	1
+			 EndWindow 1054318
+			 
+	 	 	 

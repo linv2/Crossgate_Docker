@@ -1,0 +1,17 @@
+#??????
+#
+
+#
+block Item 18905 >= 2
+	EndWindow 21470
+
+block Item 18905 == 1
+#\n\n\n\n@c¦Ûúø??????????
+	Window 21472,YES,NO
+		Window_YES PetSpace != 0 && Item 18905 == 1
+			KillItem 18905,1,(21473)
+			GivePet 245
+		Window_YES PetSpace == 0
+			EndWindow 21417
+		Window_YES
+		Window_NO

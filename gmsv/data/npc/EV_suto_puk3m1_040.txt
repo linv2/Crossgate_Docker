@@ -1,0 +1,55 @@
+#
+#PUK3_Main1
+#
+#犯□玄斥尼伊斥尼件午交伙弘
+
+
+Block
+
+	GAWindow 3206950,Next
+
+		#\n﹛交伙弘\n﹛\n﹛＞菁仄少曰分卅＿＿＝
+	
+	GAWindow 3206951,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞丹氏﹝蟆反手匀午莘尹凶及卞友＝
+	
+	GAWindow 3206952,Next
+
+		#\n﹛交伙弘\n﹛\n﹛＞侄仄中匀化仪反\n﹛﹛优邰午今木化中月匀化仇午分﹝\n﹛﹛帎卞竣卞炕戈仇午元扎卅中＝
+	
+	GAWindow 3206953,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞交伙弘＿＿引凶拑咥仄化月友＝
+	
+	GAWindow 3206954,Next
+
+		#\n﹛交伙弘\n﹛\n﹛＞公氏卅仇午反卅中＝
+	
+	GAWindow 3206955,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞丹丹氏﹝\n﹛﹛葵阞毛舰匀化拑咥仄化月赭午井\n﹛﹛允什卞歹井月方﹝\n﹛﹛＿＿台手⑺元分井日＝
+	
+	GAWindow 3206956,Next
+
+		#\n﹛交伙弘\n﹛\n﹛＞＿＿升丹中丹啦怗分〝＝
+	
+	GAWindow 3206957,Next
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞五匀午台手葵阞毛舰匀化拑咥仄化月＿＿﹝\n﹛﹛幻氏午反凶分切斤匀午\n﹛﹛统毛统丹及互晓澎卅分仃\n﹛﹛分匀凶及卞＿＿﹝
+	
+	GAWindow  3206958,Next
+
+		#\n\n﹛﹛中勾及引卞井统伀分卅氏化\n﹛﹛郖今木化＿＿蝈螺湖仄仁卅中方＝
+	
+	GAWindow 3206959,Next
+
+		#\n﹛交伙弘\n﹛\n﹛＞＿＿公丹分卅﹝\n﹛﹛＿＿眸手败芮卅氏化中丹湛元扎卅中﹝\n﹛﹛匹手﹜公木匹手﹜拺尹Ⅶ祭分午仄化手﹜\n﹛﹛簿井互优邰午仄化仁木月卅日壬﹜\n﹛﹛眸反公及渝谨毛\n﹛﹛峚濠曰凶仁反卅中＿＿﹝\n﹛﹛公木卞漆反＿＿楝互中月仄＝
+	
+	GAWindow 3206960,OK
+
+		#\n﹛扑尼伊斥尼件\n﹛\n﹛＞交伙弘＿＿＝
+	
+		Window_OK
+		
+			warp 0,59984,158,55

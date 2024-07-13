@@ -1,0 +1,51 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛斥□件及摒
+
+###﹛贱缜谛匹综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 340 && SkillLevel_214 >= 5
+	Window 3205248,OK
+
+		#\n\n﹛贱缜谛午仄化及烦董反蜗坌卅方丹友﹝\n﹛兮夫﹜台及它伙伉甲扑□伙玉及综岳芊毛\n﹛盛尹化中匀化幻仄中歹﹝\n﹛仄匀井曰⑵及酦卞对心仇戈及方﹝
+
+		Window_OK
+			GiveRecipe 864
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛贱缜谛匹综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 340
+	Window 3205249,OK
+
+		#\n\n﹛台及蕙仄中贱卞勾中化襞月卞反﹜切斤匀午\n﹛烦董尕箫心凶中方﹝\n﹛手匀午忭雄仄化井日侳化切斤丹分中﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛贱缜谛匹卅中
+block
+	Window 3205250,YES,NO
+
+		#\n\n﹛贱缜谛元扎卅中歹友﹝迕仪反碧氏分及〝
+
+		Window_YES
+			Window 3205251,OK
+
+		#\n\n﹛元扎﹜港盒及请轼引匹霜月歹﹝田奶田奶″
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3205252
+
+		#\n\n﹛元扎﹜燮卞迕仪毛碧引六化五卅今中方﹝
+
+
+

@@ -1,0 +1,75 @@
+#################裁判员助理　1050903 1500(45,70)检查“根性试验之证”生成时间，并给予礼物
+#########正式版
+
+#######未满１２０分钟
+
+block ItemCreateTime 45734 < 120  && Item 45734 >= 1
+	 ##1051721	\n\n别急别急～才过一下子，就想换奖品啊～\n再守久一点吧！ 
+	 EndWindow 1051721
+	 
+######已生成１20分钟
+block ItemCreateTime 45734 >= 120 && ItemCreateTime 45734 < 360  && Item 45734 >= 1
+	 ##1051722	\n\n您确定要换成奖品吗？再守久一点，奖品会更好喔！\n您真的要换吗？
+	 Window 1051722,YES,NO
+	 	 Window_YES Item 45734 >= 1&& ItemSpace < 2
+	 	 	 ##1051718	\n\n您身上的东西好像满了喔．．．
+			 EndWindow 1051718
+		 Window_YES ItemCreateTime 45734 >= 120 &&ItemSpace >=2
+		 	 KillLeak1item 45734
+		 	 GiveLeak1Item 19574,1
+		 	 GiveLeak1Item 19575,1
+		 	 GiveLeak1Item 19576,1
+		 	 
+		  Window_NO
+		  	 ##1051723	\n\n那就请您继续加油！
+			 EndWindow 1051723
+			 
+######己生成３60分钟
+block ItemCreateTime 45734 >= 360  && ItemCreateTime 45734 < 720  && Item 45734 >= 1
+	 ##1051722	\n\n您确定要换成奖品吗？再守久一点，奖品会更好喔！\n您真的要换吗？
+	 Window 1051722,YES,NO
+	 	 Window_YES Item 45734 >= 1
+	 	 	 KillLeak1item 45734
+		 	 GiveLeak1Item (50001%1$1,50002%1$1,50003%1$1,50004%1$1,50005%1$1,50006%1$1,50007%1$1,50008%1$1,50009%1$1,50010%1$1,50011%1$1,50012%1$1,50013%1$1,50014%1$1,50015%1$1,50016%1$1,50017%1$1,50018%1$1)
+	 	  Window_NO 
+		  	 ##1051723	\n\n那就请您继续加油！
+			 EndWindow 1051723
+######已生成720分钟
+block ItemCreateTime 45734 >= 720 && ItemCreateTime 45734 < 1440  && Item 45734 >= 1
+	 ##1051722	\n\n您确定要换成奖品吗？再守久一点，奖品会更好喔！\n您真的要换吗？
+	 Window 1051722,YES,NO
+	 	 Window_YES Item 45734 >= 1
+	 	 	 KillLeak1item 45734
+	 	 	 GiveLeak1Item (45220%1$1,45221%1$1,45222%1$1,45223%1$1)
+	 	  Window_NO
+	 	  	 ##1051724	\n\n那就请您继续加油！最好的?品可是留给坚持到最后的人呢～
+			 EndWindow 1051724
+#####已生成1440分钟
+block ItemCreateTime 45734 >= 1440  && ItemCreateTime 45734 < 10080  && Item 45734 >= 1
+	 ##1051725	\n\n您确定要换成奖品吗？再守久一点，奖品会更好喔！\n您真的要换吗？不再继续吗？现在换实在太可惜了．．．
+	 Window 1051725,YES,NO
+	 	  Window_YES Item 45734 >= 1
+	 	 	 KillLeak1item 45734
+	 	 	 GiveLeak1Item 40009
+	 	 Window_NO
+	 	 	 ##1051726	\n\n真是太不可思议了～请您一定要继续坚持下去啊！！
+			 EndWindow 1051726 
+#####１０080 分钟
+block ItemCreateTime 45734 >= 10080  && Item 45734 >= 1
+	 ##1051727	\n\n您真是了不起啊～能坚持这么久！\n我想国王的奖赏一定会让你满意的！\n而您也不需要在等待下去了．．．
+	 Window 1051727 ,OK
+	 	 Window_OK  ItemSpace >=1
+	 	 	 KillLeak1item 45734
+	 	 	 GiveLeak1Item 45124
+	 	 	 GiveLeak1Item 45743
+	 	  Window_OK ItemCreateTime 45734 >= 10080  && Item < 1
+	 	  	 ##1051718	\n\n您身上的东西好像满了喔．．．
+			 EndWindow 1051718
+			 
+#####一般
+block
+	 ##1051728	\n\n如果您想参加守岁活动，请洽守岁裁判员～
+	 EndWindow 1051728
+	 
+	 	 	 
+	 	 	

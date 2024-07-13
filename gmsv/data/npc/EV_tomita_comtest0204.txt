@@ -1,0 +1,230 @@
+#失奶泛丞楮洘蕙戊穴件玉掸董﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛PEquipItem及摒
+
+###﹛由□泛奴蝈够及隶?勂卞丐月失奶泛丞毛割カ仄引允
+
+###﹛ㄡ?杴毛民尼永弁
+
+Block Group >= 2
+
+	Window "\n\n﹛仇仇匹反﹍PEquipItem﹎及割カ毛允月氏分卅﹝\n﹛ㄡ?杴及谛互用□穴伙末□玉毛隶?仄化月井\n﹛示弁互蚕尹月氏分卅﹝",OK
+
+		Window_OK Group < 2
+			EndWindow "\n\n﹛籣酦匹谛醒互庍歹匀凶日﹜漱月氏分卅﹝"
+
+		Window_OK Group >= 2 && PEquipItem 12,2 >= 1
+			EndWindow "\n\n﹛丹□氏﹜ㄡ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中月氏分卅﹝\n﹛仇匀切卞轾仃卅中匹俓仄中氏分卅﹝"
+
+		Window_OK Group >= 2
+			EndWindow "\n\n﹛尹尹午﹜ㄡ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中卅中氏分卅﹝\n﹛匹手﹜绂坁及杅反歹井日卅中氏分卅﹝"
+
+
+
+Block
+	Window "\n\n﹛漱匀凶卅﹜ㄡ?杴及谛毛苇方丹卞手﹜\n﹛公氏卅卞中卅中氏分卅﹝",OK
+
+		Window_OK Group >= 2 && PEquipItem 12,2 >= 1
+			EndWindow "\n\n﹛丹□氏﹜ㄡ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中月氏分卅﹝\n﹛仇匀切卞轾仃卅中匹俓仄中氏分卅﹝"
+
+		Window_OK Group >= 2
+			EndWindow "\n\n﹛尹尹午﹜ㄡ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中卅中氏分卅﹝\n﹛匹手﹜绂坁及杅反歹井日卅中氏分卅﹝"
+
+		Window_OK
+
+
+###﹛旦弁伉皿玄枞蝇
+block
+
+block
+
+
+
+###﹛惘弁伉永弁
+
+Block StrCmpChat == R
+	EndWindow "\n\n﹛仇仇匹反﹍PEquipItem﹎及割カ毛允月氏分卅﹝\n﹛窒?杴及谛毛割カ仄凶中及井﹜0井日5及\n﹛?剩醒侬匹蚕尹化俓仄中氏分卅﹝公仄凶日﹜\n﹛公及谛互用□穴伙末□玉毛隶?仄化月井升丹井\n﹛示弁互蚕尹月氏分卅﹝"
+
+
+###﹛ㄤ毛じ恘
+
+Block StrCmpChat == 3004925 && Group >= 5
+
+	Window "\n\n﹛ㄤ?杴及谛卅氏分卅﹝中引﹜苇月氏分卅﹝",OK
+
+		Window_OK Group >= 5
+
+			If PEquipItem 12,5 >= 1
+				EndWindow "\n\n﹛丹□氏﹜ㄤ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中月氏分卅﹝\n﹛仇匀切卞轾仃卅中匹俓仄中氏分卅﹝"
+				EndBlock
+
+			else
+				EndWindow "\n\n﹛尹尹午﹜ㄤ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中卅中氏分卅﹝\n﹛匹手﹜绂坁及杅反歹井日卅中氏分卅﹝"
+				EndBlock
+
+			endif
+
+
+		Window_OK
+			EndWindow "\n\n﹛籣酦匹谛醒互庍歹匀凶日﹜漱月氏分卅﹝"
+
+
+Block StrCmpChat == 3004925
+
+	EndWindow "\n\n﹛漱匀凶卅﹜ㄤ?杴及谛毛苇方丹卞手﹜\n﹛公氏卅卞中卅中氏分卅﹝"
+
+
+
+###﹛ㄣ毛じ恘
+
+Block StrCmpChat == 3004924 && Group >= 4
+
+	Window "\n\n﹛ㄣ?杴及谛卅氏分卅﹝中引﹜苇月氏分卅﹝",OK
+
+		Window_OK Group >= 4
+
+			If PEquipItem 12,4 >= 1
+				EndWindow "\n\n﹛丹□氏﹜ㄣ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中月氏分卅﹝\n﹛仇匀切卞轾仃卅中匹俓仄中氏分卅﹝"
+				EndBlock
+
+			else
+				EndWindow "\n\n﹛尹尹午﹜ㄣ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中卅中氏分卅﹝\n﹛匹手﹜绂坁及杅反歹井日卅中氏分卅﹝"
+				EndBlock
+
+			endif
+
+
+		Window_OK
+			EndWindow "\n\n﹛籣酦匹谛醒互庍歹匀凶日﹜漱月氏分卅﹝"
+
+
+Block StrCmpChat == 3004924
+
+	EndWindow "\n\n﹛漱匀凶卅﹜ㄣ?杴及谛毛苇方丹卞手﹜\n﹛公氏卅卞中卅中氏分卅﹝"
+
+
+
+###﹛ㄢ毛じ恘
+
+Block StrCmpChat == 3004923 && Group >= 3
+
+	Window "\n\n﹛ㄢ?杴及谛卅氏分卅﹝中引﹜苇月氏分卅﹝",OK
+
+		Window_OK Group >= 3
+
+			If PEquipItem 12,3 >= 1
+				EndWindow "\n\n﹛丹□氏﹜ㄢ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中月氏分卅﹝\n﹛仇匀切卞轾仃卅中匹俓仄中氏分卅﹝"
+				EndBlock
+
+			else
+				EndWindow "\n\n﹛尹尹午﹜ㄢ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中卅中氏分卅﹝\n﹛匹手﹜绂坁及杅反歹井日卅中氏分卅﹝"
+				EndBlock
+
+			endif
+
+
+		Window_OK
+			EndWindow "\n\n﹛籣酦匹谛醒互庍歹匀凶日﹜漱月氏分卅﹝"
+
+
+Block StrCmpChat == 3004923
+
+	EndWindow "\n\n﹛漱匀凶卅﹜ㄢ?杴及谛毛苇方丹卞手﹜\n﹛公氏卅卞中卅中氏分卅﹝"
+
+
+
+###﹛ㄡ毛じ恘
+
+Block StrCmpChat == 3004922 && Group >= 2
+
+	Window "\n\n﹛ㄡ?杴及谛卅氏分卅﹝中引﹜苇月氏分卅﹝",OK
+
+		Window_OK Group >= 2
+
+			If PEquipItem 12,2 >= 1
+				EndWindow "\n\n﹛丹□氏﹜ㄡ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中月氏分卅﹝\n﹛仇匀切卞轾仃卅中匹俓仄中氏分卅﹝"
+				EndBlock
+
+			else
+				EndWindow "\n\n﹛尹尹午﹜ㄡ?杴及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中卅中氏分卅﹝\n﹛匹手﹜绂坁及杅反歹井日卅中氏分卅﹝"
+				EndBlock
+
+			endif
+
+
+		Window_OK
+			EndWindow "\n\n﹛籣酦匹谛醒互庍歹匀凶日﹜漱月氏分卅﹝"
+
+
+Block StrCmpChat == 3004922
+
+	EndWindow "\n\n﹛漱匀凶卅﹜ㄡ?杴及谛毛苇方丹卞手﹜\n﹛公氏卅卞中卅中氏分卅﹝"
+
+
+
+###﹛ㄠ毛じ恘
+
+Block StrCmpChat == 3004921
+
+	Window "\n\n﹛燮⑵及谛卅氏分卅﹝中引﹜苇月氏分卅﹝",OK
+
+		Window_OK
+
+			If PEquipItem 12,1 >= 1
+				EndWindow "\n\n﹛丹□氏﹜燮⑵及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中月氏分卅﹝\n﹛仇匀切卞轾仃卅中匹俓仄中氏分卅﹝"
+				EndBlock
+
+			else
+				EndWindow "\n\n﹛尹尹午﹜燮⑵及谛反﹜用□穴伙末□玉毛\n﹛隶?仄化中卅中氏分卅﹝\n﹛匹手﹜绂坁及杅反歹井日卅中氏分卅﹝"
+				EndBlock
+
+			endif
+
+
+
+###﹛ㄟ毛じ恘
+
+Block StrCmpChat == 3004930
+
+	Window "\n\n﹛楝凶切蝈够卅氏分卅﹝中引﹜苇月氏分卅﹝",OK
+
+		Window_OK
+
+			If PEquipItem 12,0 >= 5
+				EndWindow "\n\n﹛云云﹜ㄤ谛蝈够互用□穴伙末□玉毛隶?仄化\n﹛中月氏分卅﹝ㄤ谛反﹜弁奶件泛永玉卅氏分卅﹝"
+				EndBlock
+
+			else
+				If PEquipItem 12,0 >= 4
+					EndWindow "\n\n﹛用□穴伙末□玉毛隶?仄化中月及反﹜\n﹛ㄣ谛卅氏分卅﹝ㄣ谛反﹜市伙泛永玉卅氏分卅﹝"
+					EndBlock
+
+				else
+					If PEquipItem 12,0 >= 3
+						EndWindow "\n\n﹛用□穴伙末□玉毛隶?仄化中月及反﹜\n﹛ㄢ谛卅氏分卅﹝ㄢ谛反﹜玄伉左卅氏分卅﹝"
+						EndBlock
+
+					else
+						If PEquipItem 12,0 >= 2
+							EndWindow "\n\n﹛用□穴伙末□玉毛隶?仄化中月及反﹜\n﹛ㄡ谛卅氏分卅﹝ㄡ谛反﹜戊件申卅氏分卅﹝"
+							EndBlock
+
+						else
+							If PEquipItem 12,0 >= 1
+								EndWindow "\n\n﹛用□穴伙末□玉毛隶?仄化中月及反﹜\n﹛ㄠ谛分仃卅氏分卅﹝ㄠ谛反﹜末夫卅氏分卅﹝"
+
+							else
+								EndWindow "\n\n﹛楝凶切及酦卞﹜用□穴伙末□玉毛隶?仄化中月\n﹛谛反中卅中氏分卅﹝中卅中反﹜未夫卅氏分卅﹝"
+
+							endif
+
+						endif
+
+					endif
+
+				endif
+
+			endif
+
+
+

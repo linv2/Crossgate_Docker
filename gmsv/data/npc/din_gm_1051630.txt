@@ -1,0 +1,63 @@
+##puk4包装-管理装备的海贼 din_gm_1051630.txt
+##功能：用钥匙换海贼装备
+
+##身上有银钥匙
+block Item 47337 >= 1
+	 ##1054480	\n\n 我是管理组织装备的海贼，我们的装备都是最好的  ！
+	 Window 1054480,NEXT 
+	 ##1054470	\n\n 组织现在急需海贼钥匙，如果你有可以跟我交换一些  报酬…	
+	 Window 1054470,NEXT 
+	 ##1054482	\n\n  您要使用“海贼银钥匙”跟他交换“海贼套装  ”吗？
+	 Window 1054482,YES,NO 
+		 Window_NO 
+		 
+		 Window_YES ItemSpace < 5
+			 ##1050874	\n\n\n\n@c物品栏至少要有五个空位。	1
+			 EndWindow 1050874
+		 
+		 Window_YES Item 47337 >= 2
+		 	 ##1054473	\n\n 你身上这么多银钥匙到底要给哪一支？\n\n  请先把多的钥匙放到别的地方吧…	
+			 EndWindow 1054473
+
+		 Window_YES Item 47337 == 1 && ItemDur 47337 == 1
+		 	 KillItem 47337
+			 GiveLeak1Item 47348
+			 GiveLeak1Item 47349
+			 GiveLeak1Item 47350
+			 GiveLeak1Item 47351
+			 GiveLeak1Item 47352
+
+		 Window_YES Item 47337 == 1
+ 			 SetDur 47337,-1
+			 GiveLeak1Item 47348
+			 GiveLeak1Item 47349
+			 GiveLeak1Item 47350
+			 GiveLeak1Item 47351
+			 GiveLeak1Item 47352
+			  
+##身上有铜钥匙
+block Item 47336 >= 1
+	 ##1054480	\n\n 我是管理组织装备的海贼，我们的装备都是最好的  ！
+	 Window 1054480,NEXT 
+	 ##1054470	\n\n 组织现在急需海贼钥匙，如果你有可以跟我交换一些  报酬…	
+	 Window 1054470,NEXT 
+	 ##1054481	\n\n  您要使用“海贼铜钥匙”跟他交换“海贼套装”吗？
+	 Window 1054481,YES,NO 
+	 	 Window_NO 
+
+		 Window_YES ItemSpace < 5
+			 ##1050874	\n\n\n\n@c物品栏至少要有五个空位。	1
+			 EndWindow 1050874
+	 	 
+	 	 Window_YES Item 47336 >= 1
+	 	 	 KillItem 47336
+			 GiveLeak1Item 47348
+			 GiveLeak1Item 47349
+			 GiveLeak1Item 47350
+			 GiveLeak1Item 47351
+			 GiveLeak1Item 47352
+
+block
+	 ##1054480	\n\n 我是管理组织装备的海贼，我们的装备都是最好的  ！
+	 EndWindow 1054480
+		 	 

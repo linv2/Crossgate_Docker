@@ -1,0 +1,17 @@
+
+block Xpos == 120 && Ypos == 149
+
+
+	window 3200148,yes,no
+		#\n\n©x»©Ïş±å–Ô»ÒıÔÊ¾®¨”
+	
+		window_yes
+
+			warp 0,59502,150,131
+
+		window_no
+
+
+
+
+

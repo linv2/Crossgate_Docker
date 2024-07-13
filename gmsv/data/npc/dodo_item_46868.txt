@@ -1,0 +1,16 @@
+###dodo_item_46868.txt
+###月饼			里面藏有纸条的月饼
+###跟工读生拿的第一个月饼
+block Item 46868 >= 1 
+	 ##1053496	\n\n\n\n\n@c你已经将月饼拿在手上，现在是否要吃月饼？	1
+	 Window 1053496,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES ItemSpace < 1 
+	 	 	 ##1053477	\n\n\n\n\n@c你的身上物品携带的太多了。	1
+			 EndWindow 1053477 
+			 	 	 	 
+	 	 Window_YES Item 46868 >= 1 && ItemSpace >= 1 
+	 	 	 ##1053497	月饼中出现了物品。	1
+	 	 	 KillItem 46868,(1053497) 
+	 	 	 GiveLeak1Item 46870 
+	 	 

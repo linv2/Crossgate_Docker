@@ -1,0 +1,8 @@
+###
+##mako_gm_1102308.txt
+
+
+block	Xpos >416 && Ypos >220
+	 
+	EndWindow 1109359
+	

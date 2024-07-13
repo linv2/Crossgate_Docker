@@ -1,0 +1,20 @@
+#Event	晶月	mayko_gm_1102694.txt	
+
+#1111471	您不是这村子的人吧！	1
+#1111472	\n　　　你想知道真相，\n　　　那先到往山的矿路，\n　　　取得十个水晶珠吧！	1
+
+#1111483	\n　　　十个水晶珠，\n　　　看来你真的想知道真相，\n　　　那您去见守护之花吧！	1
+block item 41177>0 && item 41173 >= 10
+	Window 1111483,ok
+	Window_ok item 41177>0 && item 41173 >= 10
+	killitem 41173,10
+	killitem 41177,1
+	leavegroup 
+	warp 0,32193,8,8
+	Window_ok
+	endblock
+block item 41177 >0
+	window 1111471,next
+	endwindow 1111472
+block 
+	endwindow 1111471

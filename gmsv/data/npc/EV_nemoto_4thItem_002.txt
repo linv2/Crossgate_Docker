@@ -1,0 +1,12 @@
+## 4璃コ筏ゴ奶矛件玄﹛by漪呿
+## 失奶泛丞“只迕及辞玾 - ID:622019
+
+## 椭瘀卅仄
+block
+	Window "\n\n﹛蛭绝互只迕仄化中月﹜\n﹛蛭绝及澎综曰辞玾分﹝\n﹛手匀午方仁苇化心引允井〝",YES,NO
+		Window_YES
+			Window "\n\n﹛丐及厘五卅澎匹综匀凶午反合尹卅中仁日中﹜\n﹛薄称卅瞻曰卞卅匀化中月﹝\n﹛凝今仁﹜≦蛭绝≧午抩蟆手じ匀化中月﹝",NEXT
+			KillItemAll 622019,(3012035)
+			EndWindow "\n\n﹛＿＿布民乓件永″\n\n﹛仄引匀凶﹜澎毛唤日六化﹜\n﹛辞玾毛喃匀化仄引匀凶″"
+		Window_NO
+			EndWindow "\n\n﹛莽仄凶日穴术奶﹜支户化云仇丹﹝"

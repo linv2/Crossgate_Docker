@@ -1,0 +1,75 @@
+#
+#呺
+#
+
+block globalFlag38 == 1
+
+gotoF case1
+
+
+block globalFlag39 == 1
+
+*case1*
+
+			window 3202258,next
+
+		#\n\n﹛唬泞及丐切仇切匹\n﹛鬼绚仄化月И耜互蛛月心凶中﹝\n﹛伉’田□旦仄化\n﹛雄霉引互中及仪毛仄化月午井﹝
+
+			window 3202259,next
+
+		#\n\n﹛失正扑及妏中凶狪分午\n﹛云朴及朴岕及拧及陆木午井\n﹛域?鳞及陆木午井\n﹛狮桦泞及玉□丞及排午井\n﹛⑷绖桦泞及拧础午井＿＿
+
+			endwindow 3202260
+
+		#\n\n﹛卩曰匹唬泞卞垫仁午五反\n﹛动晓及桦赭卞竣毛勾仃化友″\n﹛蝈仁斨珌卅及方友之＿＿
+
+
+
+
+
+block
+
+
+
+
+				LocalCount0 = random 3,0
+
+				if LocalCount0 == 1
+
+					Window 3202261,next
+
+		#\n\n﹛丐卅凶﹜瓜奶白儅匀化月〝\n﹛唬泞卞﹜瓜奶白﹜瓜奶白匀化\n﹛丹歹仍午心凶中卞蜕匀化月谛互蛛月及﹝\n﹛五匀午﹜嫖仁ョ匀化仁木月歹方﹝
+
+					EndWindow 3202262
+
+		#\n\n﹛匹手﹜丐及谛﹜丐少卅公□分匀凶井日\n﹛中五卅曰恌中手及毛儅匀化垫仁及手尕兜方友﹝\n﹛肣拑毛中歹今内潸日木公丹匹＿＿
+
+
+				else
+
+					if LocalCount0 == 2
+
+						Window 3202263,next
+
+		#\n\n﹛丐及夫午﹜卅氏匹﹜瓜奶白分仃\n﹛丐氏卅卞俓仄互月及井仄日＿＿
+
+						EndWindow 3202264
+
+		#\n\n﹛匹手﹜丐及谛﹜丐少卅公□分匀凶井日\n﹛中五卅曰恌中手及毛儅匀化垫仁及手尕兜方友﹝\n﹛肣拑毛中歹今内潸日木公丹匹＿＿
+
+
+					else
+
+						Window 3202265,next
+
+		#\n\n﹛锳厌﹜中中圴坁仄井\n﹛俓仄互日卅中心凶中方﹝\n﹛唬泞及谛﹝
+
+						EndWindow 3202266
+
+		#\n\n﹛匹手﹜丐及谛﹜丐少卅公□分匀凶井日\n﹛中五卅曰恌中手及毛儅匀化垫仁及手尕兜方友﹝\n﹛肣拑毛中歹今内潸日木公丹匹＿＿
+
+
+					endif
+
+				endif
+

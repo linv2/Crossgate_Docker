@@ -1,0 +1,98 @@
+#20050617﹛伊矛伙剽羁⑷绖桦莘桦濩抸NPC旦弁伉皿玄
+#
+#
+
+########## 丢永本□斥它奶件玉它钒仁 ##########
+PREV_00:
+	#赓渝蓟枪丢永本□斥
+	Window 3012220,SELECT[1]_100,SELECT[2]_100,SELECT[3]_100,SELECT[4]_100,CANCEL
+
+########## PREV_00井日SELECT[1]毛瓷仄凶桦宁 ##########
+SELECT[1]_100:
+	#⑷绖桦及〇芢毛濩抸
+	Window 3012221,OK,PREV_00
+
+########## PREV_00井日SELECT[2]毛瓷仄凶桦宁 ##########
+SELECT[2]_100:
+	#⑷绖桦及厌岳毛濩抸
+	Window 3012222,OK,PREV_00
+
+########## PREV_00井日SELECT[3]毛瓷仄凶桦宁 ##########
+PREV_100:
+SELECT[3]_100:
+	#备⑷绖桦及濩抸蓟枪℅蟆彸℅
+	Window 3012223,Next_100,PREV_00
+
+	##########NEXT_100毛瓷仄凶桦宁##############
+	PREV_200:
+	NEXT_100:
+	#备⑷绖桦蓟枪濩抸℅詨彸℅
+	Window 3012224,SELECT[1]_200,SELECT[2]_200,SELECT[3]_200,SELECT[4]_200,SELECT[5]_200,SELECT[6]_200,SELECT[7]_200,SELECT[8]_200,PREV_100
+
+	########## PREV_100井日SELECT[1]毛瓷仄凶桦宁 ##########
+	SELECT[1]_200:
+		#LVㄠ⑷绖桦濩抸℅蟆彸℅
+		Window 3012226,NEXT_110
+		
+		NEXT_110:
+		#LVㄠ⑷绖桦濩抸℅詨彸℅
+		Window 3012227,OK,PREV_200
+
+	########## PREV_100井日SELECT[2]毛瓷仄凶桦宁 ##########
+	SELECT[2]_200:
+		#LVㄠㄟ⑷绖桦濩抸℅蟆彸℅
+		Window 3012228,NEXT_120
+		NEXT_120:
+		#LVㄠㄟ⑷绖桦濩抸℅詨彸℅
+		Window 3012229,OK,PREV_200
+
+	########## PREV_100井日SELECT[3]毛瓷仄凶桦宁 ##########
+	SELECT[3]_200:
+		#LVㄡㄟ⑷绖桦濩抸℅蟆彸℅
+		Window 3012230,NEXT_130
+		NEXT_130:
+		#LVㄡㄟ⑷绖桦濩抸℅詨彸℅
+		Window 3012231,OK,PREV_200
+
+	########## PREV_100井日SELECT[4]毛瓷仄凶桦宁 ##########
+	SELECT[4]_200:
+		#LVㄢㄟ⑷绖桦濩抸℅蟆彸℅
+		Window 3012232,NEXT_140
+		NEXT_140:
+		#LVㄢㄟ⑷绖桦濩抸℅詨彸℅
+		Window 3012233,OK,PREV_200
+
+	########## NEXT_100井日SELECT[5]毛瓷仄凶桦宁 
+	SELECT[5]_200:
+		#LVㄣㄟ⑷绖桦濩抸℅蟆彸℅
+		Window 3012234,NEXT_150
+		NEXT_150:
+		#LVㄣㄟ⑷绖桦濩抸℅詨彸℅
+		Window 3012235,OK,PREV_200
+
+	########## PREV_100井日SELECT[6]毛瓷仄凶桦宁 ##########
+	SELECT[6]_200:
+		#LVㄤㄟ⑷绖桦濩抸℅蟆彸℅
+		Window 3012236,NEXT_160
+		NEXT_160:
+		#LVㄤㄟ⑷绖桦濩抸℅詨彸℅
+		Window 3012237,OK,PREV_200
+
+	########## PREV_100井日SELECT[7]毛瓷仄凶桦宁 ##########
+	SELECT[7]_200:
+		#LVㄥㄟ⑷绖桦濩抸℅蟆彸℅
+		Window 3012238,NEXT_170
+		NEXT_170:
+		#LVㄥㄟ⑷绖桦濩抸℅詨彸℅
+		Window 3012239,OK,PREV_200
+
+	########## PREV_100井日SELECT[8]毛瓷仄凶桦宁 ##########
+	SELECT[8]_200:
+		#支匀天曰中中
+		Window 3012240,OK,PREV_200
+
+########## PREV_00井日SELECT[5]毛瓷仄凶桦宁 ##########
+SELECT[4]_100:
+
+	#\n\n\n引凶云旋仄仁分今中﹝\n\n
+	Window 3012225,OK,PREV_00

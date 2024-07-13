@@ -1,0 +1,14 @@
+#?üÓúö???
+
+#EndFLG?138?ON??¤G???ý»????????
+block EndEvent 138 == 1 && Item 16407 >= 1
+	EndWindow 22678,OK
+
+#EndFLG?138?ON
+block EndEvent 138 == 1
+	EndWindow 22679,OK
+
+#
+block
+	EndWindow 22680,OK
+

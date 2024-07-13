@@ -1,0 +1,91 @@
+#1111202	\n\n\n@c你好，我是夏日红利回馈员，今年暑假的兑换品是：	1
+#1111203	\n\n\n@c１个火焰鼠银币，可兑换１６个女神苹果；	1
+#1111204	\n\n\n@c５个火焰鼠银币，可兑换一个记忆之晶；	1
+#1111205	\n\n\n@c４０个火焰鼠银币，可兑换一个超级武器魔布或超级防具魔布；	1
+#1111206	\n\n\n@c你现在有４０火焰鼠银币，你要换超级武器魔布吗？	1
+#1111207	\n\n\n@c你现在有４０火焰鼠银币，你要换超级防具魔布吗？	1
+#1111208	\n\n\n@c你现在有５个火焰鼠银币，要兑换一个记忆之晶吗？	1
+#1111209	\n\n\n@c你现在有１个火焰鼠银币，要兑换１００个女神苹果吗？	1
+#1111210	\n\n\n@c想换东西记得来找我喔！！	1
+
+
+block item 40843 >0 && ItemSpace == 0	 ###有银币没格子
+	 Window 1111202,next
+	 Window 1111203,next
+	 Window 1111204,next
+	 Window 1111205,next
+	 endWindow 1111210
+
+
+block item 40843 >39 ##超过40个鼠银
+	 Window 1111202,next
+	 Window 1111203,next
+	 Window 1111204,next
+	 Window 1111205,next
+	 Window 1111206,yes,no
+	 	 Window_yes item 40843 >39
+	 	 killitem 40843,40
+	 	 GiveLeak1Item 47695,1
+	 	 Endblock
+	 	 Window_no
+	 	 Window 1111207,yes,no
+	 	 	Window_yes item 40843 >39
+	 	 	killitem 40843,40
+	 	 	GiveLeak1Item 47696,1
+	 	 	Endblock
+	 	 	Window_no
+	 	 		Window 1111208,yes,no
+	 	 		Window_yes item 40843 >4
+				killitem 40843,5
+	 	 		GiveLeak1Item 41155,1
+	 	 		Endblock
+	 	 		Window_no
+	 	 			Window 1111209,yes,no
+	 	 			Window_yes item 40843 >0
+	 	 			killitem 40843,1
+	 	 			GiveLeak1Item 47761,16
+	 	 			Endblock
+	 	 			Window_no
+	 	 			endwindow 1111210
+
+block item 40843 >4 ##五个鼠银
+	 Window 1111202,next
+	 Window 1111203,next
+	 Window 1111204,next
+	 Window 1111205,next
+	 Window 1111208,yes,no
+	 Window_yes item 40843 >4
+		killitem 40843,5
+		GiveLeak1Item 41155,1
+		Endblock
+		Window_no
+			Window 1111209,yes,no
+	 		Window_yes item 40843 >0
+	 		killitem 40843,1
+	 		GiveLeak1Item 47761,16
+	 		Endblock
+	 		Window_no
+	 		endwindow 1111210
+block item 40843>0 ##至少一个鼠银
+	 Window 1111202,next
+	 Window 1111203,next
+	 Window 1111204,next
+	 Window 1111205,next
+
+	Window 1111209,yes,no
+	Window_yes  item 40843 >0
+	killitem 40843,1
+	GiveLeak1Item 47761,16
+	Endblock
+	Window_no
+	endwindow 1111210
+
+
+
+block
+	 Window 1111202,next
+	 Window 1111203,next
+	 Window 1111204,next
+	 Window 1111205,next
+	 endWindow 1111210
+	 

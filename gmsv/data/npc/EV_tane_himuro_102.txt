@@ -1,0 +1,65 @@
+
+block
+
+
+
+
+
+
+			if LocalCount3 == 5
+
+				LocalCount3 = random 2,0
+
+				if LocalCount3 == 1
+
+
+
+					LocalCount3 = 5
+
+#					Window "\n\n﹛扤曰乒用〝\n﹛公丹友之＿＿",next
+					Window 3006892,next
+
+
+#					EndWindow "\n\n﹛伄撮匹手丐木壬中中氏分仃升﹝\n﹛伄撮匹窒伝コ手及棉﹜\n﹛中欠中欠卅乒用毛臻井仄化心月﹜午﹝"
+					EndWindow 3006893
+
+
+
+
+				else
+					LocalCount3 = 5
+
+
+#					Window "\n\n﹛友壬友壬仄凶仄凶乒用反\n﹛褥虫卞恌中及方﹝",next
+					Window 3006894,next
+
+
+#					EndWindow "\n\n﹛剪中午仇欠匹\n﹛窒蜗コ手窒伝コ手臻井六化\n﹛友壬友壬友壬友壬友壬友壬\n﹛友壬友壬友壬今六凶乒用反﹝",next
+					EndWindow 3006895,next
+
+
+				endif
+
+
+
+			else
+
+
+				LocalCount3 = 5
+
+
+#				Window "\n\n﹛锻及陆卞公廿嫦月惚\n﹛饪塑仄中云饕匹﹜扇⑴仄中裆凶切互＿＿",next
+				Window 3006896,next
+
+
+#				EndWindow "\n\n﹛丐凶仄卞葵毛绉木氏壬井曰及嗤仁匹\n﹛扤匀凶乒用及云狪毛\n﹛丹孔孔＿＿"
+				EndWindow 3006897
+
+
+
+
+			endif
+
+
+
+

@@ -1,0 +1,14 @@
+#庄趸弘伉白巧件忯凯弁巨旦玄“哗票尺及闭蟾
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block 
+
+	Window 206930,YES,NO
+	Window_YES
+	leavegroup
+	playse 306,1,1
+	warp 0,46006,7,10
+	Window_NO
+

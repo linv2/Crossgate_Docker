@@ -1,0 +1,34 @@
+######### 地狱祭 ########
+##玛帕斯 离开
+
+
+block	group >1
+        ##我一次只跟一个人说话！
+        EndWindow  1053060
+block	Item 46848 >=999
+	##1053069	没想到你能取得这么多鬼纱！你离开吧！
+
+ 	Window 1053069,OK
+ 		 Window_OK group >1
+ 	         	##你是想带人偷渡吗？门都没有！
+ 	         	EndWindow 1053061
+ 		 Window_OK Item 46848< 998	         	
+ 	         	##1053059	你的东西怎么少了！想丢地帮人作弊吗！	
+ 	         	EndWindow 1053059 	         	
+ 	         Window_OK Item 46848>= 999
+ 	         	killitem 46848,999
+ 	         	LeaveGroup
+ 	         	##warp 0,32360,n3,n4  下一张地图
+		 	warp 0,32383,3,6
+ 	         	Endblock
+ 	         
+block 	Item 46848 >=1	
+	##这一点铅粉就想离开，否则别想离开！
+	EndWindow 1053070
+block
+	##天堂有路你不走，地狱无门你倒自己闯进来！\n哼！贪心鬼！以为我会轻易放你吗！\n 
+	##如果你拿些鬼纱给我，也许我会让你离开这里！
+	EndWindow 1053068
+	
+
+			 

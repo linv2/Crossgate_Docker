@@ -1,0 +1,69 @@
+#npc位置11004,33,3
+#6096 哈洞小路收费npc  
+#矿工尤达彭
+
+
+########## 爵⑷烟缜仅反骚今卅中’戏遣烟反骚允 ##########
+block Group == 1
+	#\n\n这里是给商人和生产系职业的人才能优先通过的通道。\n因为里面很窄，所以非得限制人数不可。
+	Window 11439,OK
+##战斗系
+	Window_OK Job >= 10 && Job < 170 && Group == 1
+	#\n\n很抱歉你不能利用此通道。\n因为这里是商人和生产系职业的人才能优先通过的。	8
+	EndWindow 11440
+##炼金术士追加	
+	Window_OK Job >= 1000 && Job < 1010 && Group == 1
+	##1102907	\n\n你是炼金术士呀，炼金术士比照战斗系，很抱歉你不能利用此通道。	8
+	EndWindow 1102907
+
+##纺织工追加
+	Window_OK Job >= 1010 && Job < 1020 && Group == 1
+	#\n\n商人和生产系以及无职的人有权利用这通道喔！\n要使用吗？\n\n过路费是５００个金币。	8
+	Window 11443,YES,NO	
+##生产系与特殊系
+	Window_OK Job >= 200 && Job < 430 && Group == 1
+		#11441	\n\n商人和生产系以及无职的人有权利用这通道喔！\n要使用吗？\n\n过路费是５００个金币。	8
+	Window 11441,YES,NO
+
+	Window_OK Job == 1 && Group == 1
+	#11441	\n\n商人和生产系以及无职的人有权利用这通道喔！\n要使用吗？\n\n过路费是５００个金币。	8	
+	Window 11441,YES,NO
+##医生护士
+	Window_OK Job >= 430 && Job < 450 && Group == 1
+	#11442	\n\n医师和护士不能利用本通道。\n很抱歉。	8
+	EndWindow 11442
+##采集系
+	Window_OK Job >= 450 && Job < 480 && Group == 1
+	#\n\n商人和生产系以及无职的人有权利用这通道喔！\n要使用吗？\n\n过路费是５００个金币。	8
+	Window 11443,YES,NO
+##追加  游民	
+	Window_OK Job =>0 && Job < 10 && Group == 1
+	#\n\n商人和生产系以及无职的人有权利用这通道喔！\n要使用吗？\n\n过路费是５００个金币。	8
+	Window 11443,YES,NO
+	
+	Window_OK
+	#\n\n这里只能一个人一个人单独通过。
+	EndWindow 11562
+
+
+	Window_YES Gold >= 500 && Group == 1
+	AddGold -500
+	Warp 0,11004,24,7
+
+	Window_YES Gold < 500
+	#\n\n你的钱不够。\n很抱歉。
+	EndWindow 11445
+
+	Window_YES Group > 1
+	#\n\n这里只能一个人一个人单独通过。
+	EndWindow 11562
+
+	Window_NO
+	#\n\n这条路是为了保护非战斗系职业的人的安全而做的。\n欢迎你随时利用。\n我都会为你服务的。
+	EndWindow 11444
+
+
+########## 组队 ##########
+block Group > 1
+	#\n\n这里只能一个人一个人单独通过。
+	EndWindow 11562

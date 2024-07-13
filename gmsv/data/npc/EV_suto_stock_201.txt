@@ -1,0 +1,100 @@
+#域简茧仄化蝈崭垫萍
+#仿白央泛奴ㄡ
+
+
+Block Item_621017 >= 2
+
+	Window 3220369,OK
+
+		#\n\n﹛卅氏分﹜公氏卅卞手匀化儅匀化反中井氏忒仄卅今中″
+	
+		Window_OK
+		
+			KillitemAll 621017
+
+Block Item_621017 == 1 && StampCount_621017 >= 6
+
+	Window 3220370,Next
+
+		#\n﹛仿白央泛奴\n﹛＞＿＿卅氏午﹜\n﹛﹛呿癫卞螂引匀化仁木月午反＿＿﹝\n﹛﹛台反﹜台反﹜卅氏午中丹僧六手及卅氏分﹝\n﹛﹛仍幻匀仍幻匀＿＿﹝\n﹛﹛分互﹜手丹赢仁反卅中公丹分＿＿＝
+	
+	Window 3220371,Next
+
+		#\n﹛奶□布件\n﹛＞褪扜＿＿公氏卅卞钟六切引匀化＿＿＝
+	
+	Window 3220372,Next
+
+		#\n﹛扑伙任央□\n﹛＞＿＿永﹝仇氏卅合中毛允月及卅日壬﹜\n﹛﹛手匀午镀仁侳月屯五分匀凶＝
+
+	Window 3220373,Next
+
+		#\n﹛白奴瓦奴\n﹛＞扜今氏＿＿＝
+	
+	Window 3220374,Next
+
+		#\n﹛仿白央泛奴\n﹛＞打石永﹜打石永﹜打石永﹜什孔予永＝
+
+	Window 3220375,Next
+
+		#\n﹛穴□泛奴件\n﹛＞分﹜厘暹屺井″〝产卞卅匀凶幻丹互中中＝
+
+	Window 3220376,Next
+
+		#\n﹛仿白央泛奴\n﹛＞丐﹜丐丐﹝匹手厘暹屺分﹝\n﹛﹛仁﹜泔毛婉户壬侹切邋仁﹝\n﹛﹛允引卅中互潸匀化仁木卅中井〝＝
+
+	Window 3220377,Next
+
+		#\n﹛末它乩□\n﹛＞仇木匹允井〝＝
+	
+	Window 3220378,Next
+
+		#\n﹛仿白央泛奴\n﹛＞公﹜公丹﹝公木分＝
+	
+	Window 3220379,Next
+
+		#\n﹛戊瓦□\n﹛＞＿＿引匀化﹜＝
+
+	Window 3220380,Next
+
+		#\n﹛奶□布件\n﹛＞升丹仄凶〝镀仁泔毛褪扜卞＿＿＝
+
+	Window 3220381,Next
+
+		#\n﹛戊瓦□\n﹛＞丹丹氏﹝\n﹛﹛仇木﹜仇及泔＿＿\n﹛﹛氘梁〇汋泔匀化踏中化丐月＿＿＝
+	
+	Window 3220382,Next
+
+		#\n﹛域⑺\n﹛＞尹尹尹尹尹尹尹″〝＝
+	
+	Window 3220383,Next
+
+		#\n﹛白奴瓦奴\n﹛＞＿＿仄井手阴鞅户分公丹分＿＿＝
+	
+	Window 3220384,OK
+
+		#\n﹛奶□布件\n﹛＞仇及予℅℅℅℅℅″″＝
+	
+		Window_OK
+			
+			leavegroup
+			Warp 0,59986,101,20
+			
+	
+	
+Block
+	
+	Window 3220385,Next
+
+		#\n﹛仿白央泛奴\n﹛＞丹″＿＿手丹﹜手丹分户分＿＿＝\n﹛\n﹛域⑺\n﹛＞云扜今氏℅℅″″＝
+	
+	Window 3220386,Next
+
+		#\n\n﹛仿白央泛奴反仪濠木凶﹝
+	
+	Window 3220387,OK
+
+		#\n\n﹛午合匀凶日﹜\n﹛臻化仄引匀凶分仃分匀凶﹝
+	
+	Window_OK
+	leaveGroup
+		warp 0,59521,157,94

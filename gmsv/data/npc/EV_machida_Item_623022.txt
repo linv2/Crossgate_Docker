@@ -1,0 +1,42 @@
+# 乒件旦正□甩件泛奴件弘 ≦尕合腔卅嚣≧
+# ItemID: 622022
+#
+
+
+###﹛中内木井及尕合腔卅嚣﹋ID:623022﹜623023﹜623024﹌毛呁醒赭儅
+Block Item 623022 > 1 || Item 623023 > 1 || Item 623024 > 1
+	EndWindow 3207420
+
+		#\n\n﹛尕合腔卅嚣反﹜\n﹛ㄡ勾动晓儅匀化中月午钒仃日木引六氏﹝
+
+Block Item 623023 >= 1 || Item 623024 >= 1 
+	EndWindow 3207421
+
+		#\n\n﹛尕合腔卅嚣反﹜\n﹛ㄡ勾动晓儅匀化中月午钒仃日木引六氏﹝
+
+
+###﹛晓筏动陆
+Block
+	Window 3207422,YES,NO
+
+		#\n\n﹛尕合腔卅嚣毛钒仃化心引允井〝
+
+		Window_YES Item 623022 < 1
+			EndBlock
+
+		Window_YES Item 623022 > 1 || Item 623023 > 1 || Item 623024 > 1
+			EndWindow 3207423
+
+		#\n\n﹛尕合腔卅嚣反﹜\n﹛ㄡ勾动晓儅匀化中月午钒仃日木引六氏﹝
+
+		Window_YES Petspace >= 1
+			KillItem 623022,1,(3011038)
+			GivePet (21211%90,303500%10)
+
+		Window_YES
+			EndWindow 3207424
+
+		#\n\n﹛酦卞窒井互中月互﹜请化仇日木卅中方丹分﹝
+
+		Window_NO
+			EndBlock

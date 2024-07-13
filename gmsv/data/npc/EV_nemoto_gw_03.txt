@@ -1,0 +1,86 @@
+#GW疵嗯Ⅱ楷
+#筏ゴ圴?ヨ溢＞犯奴弘脐＝
+
+## 岳嗯丢布生毛赭儅
+block Item 607737 >= 1
+	EndWindow 3205346
+
+		#\n\n﹛中支丑﹜犯奴弘戚牬及忮癫反愈嫖分﹝\n﹛赋抰潠匹竣宁手じ匀凶仇午分仄﹜\n﹛酷仪乒伉乒伉渲舰月分方″
+
+## ＞犯奴弘脐尺及云忮癫＝毛ㄡ勾动晓赭儅
+block Item 622000 >= 2
+	Window 3205347,OK
+
+		#\n\n﹛失件正互儅匀化月及反犯奴弘戚牬及忮癫分井〝\n﹛匹手﹜公氏卅卞丐月及反云井仄中分＿\n﹛絮坁匹左奶仿毛鹆公丹凶匀化公丹反中井卅中分″\n﹛?午仄化﹜左奶仿互蝈朿罹屯切扎丹分方″
+	Window_OK
+		KillItemall 622000
+Endblock
+## ＞犯奴弘脐尺及云忮癫＝ㄠ勾赭儅
+block Item 622000 == 1
+	Window 3205348,OK
+
+		#\n\n﹛公﹜公木反犯奴弘戚牬互综匀凶忮癫″〝\n﹛歹介歹介?仃卞侳化仁木凶分井〝\n﹛丹丰丰﹜丐曰互化尹分﹝\n﹛籥莘及谛棉反挕凶中匀化妏中化凶分互﹜\n﹛失件正反穸仄中分卅丐﹝仇木卞潠匹手丐木壬\n﹛蜕丹仇午卅仄分匹＿中支﹜公氏卅仇午方曰\n﹛云斪卞仇木毛皿伊未件玄允月分方﹝
+
+## 失奶泛丞勂卞坞五互卅中
+	Window_OK Itemspace == 0
+		EndWindow 3205349
+
+		#\n\n﹛公木动晓儅化友尹心凶中分卅﹝\n﹛欐仄凶中坁互丐月井日﹜帮咥仄化幻仄中分﹝
+## 犯奴弘脐及珃懔毛芨尹月
+	Window_OK Item 622000 == 1
+		KillItemall 622000
+		GiveLeak1Item 18671,1
+Endblock
+
+## ＞泔迕赋抰潠＝毛ㄡ勾动晓赭儅
+block Item 622001 >= 2
+	Window 3205350,OK
+
+		#\n\n﹛失件正互儅匀化月及反泔迕赋抰潠分井〝\n﹛匹手﹜丐及虏及潠互公氏卅卞丐月及反\n﹛云井仄中分＿絮坁匹左奶仿毛鹆公丹凶匀化\n﹛公丹反中井卅中分″\n﹛?午仄化﹜左奶仿互蝈朿婉氏元扎丹分方″
+	Window_OK
+		KillItemall 622001
+Endblock
+## ＞泔迕赋抰潠＝ㄠ勾赭儅
+block Item 622001 == 1
+	Window 3205351,NEXT
+
+		#\n\n﹛公﹜公木反丐及虏及潠﹜泔迕赋抰潠″〝\n﹛谛棉凶切及棉元扎痲僖卞恌中匀化氏匹\n﹛方仁婉引木化月日仄中分互﹜左奶仿凶切卞反\n﹛澎及?井友尹嫖菟潠分匹﹝
+	Window 3205352,OK
+
+		#\n\n﹛尹〝犯奴弘?切扎氏互左奶仿卞〝〝\n﹛丐曰互化尹分﹝歹介歹介?仃化仁木化﹜\n﹛失件正手穸仄中恌中谛分卅丑﹝\n﹛左奶仿及普桨及竣儅切毛熬仃潸匀化俓仄中分﹝
+
+## 失奶泛丞勂卞坞五互卅中
+	Window_OK Itemspace == 0
+		EndWindow 3205353
+
+		#\n\n﹛公木动晓儅化友尹心凶中分卅﹝\n﹛欐仄凶中坁互丐月井日﹜帮咥仄化幻仄中分﹝
+## 允匹卞岳嗯丢布生毛儅匀化中月
+	Window_OK Item 607737 >= 1
+		EndWindow 3205354
+
+		#\n\n﹛氏〝手丹欐仄化凶分井﹝
+## 岳嗯丢布生毛芨尹月
+	Window_OK Item 622001 == 1
+		KillItemall 622001
+		GiveLeak1Item 607737,1
+Endblock
+
+##﹛平□失奶泛丞尕赭儅
+block
+	Window 21198,YES,NO
+## 云嗯互箫曰卅中
+	Window_YES Gold < 90
+		EndWindow 3205355
+
+		#\n\n﹛云嗯互卅五扎ヨ日友尹分﹝
+## YES蓟枪匹云嗯互丐木壬犯奴弘脐及珃懔毛芨尹月
+	Window_YES ItemSpace != 0
+		AddGold -90
+		Giveitem 18671
+## 失奶泛丞域ベ
+	Window_YES
+		EndWindow 3205356
+
+		#\n\n﹛俓仄中卅日失奶泛丞勂帮咥允月分﹝
+	Window_NO
+Endblock

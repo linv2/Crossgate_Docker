@@ -1,0 +1,33 @@
+block Item 41062>1
+	 EndWindow 1110561
+	
+	 
+	
+	
+block Item 41062==1	
+	 Window 1110562,YES,NO
+	 Window_YES PetSpace != 0 && Item 41062 == 1
+	 # Window 1110563,OK
+	  #Window_OK
+	  KillItem 41062,1
+	  GivePet (421%12,422%20,423%15,424%15,103309%5,304099%10,304199%10,304200%10,100089%3)
+	  EndWindow 1110563
+	  Window_YES PetSpace == 0
+	  EndWindow 21417
+	  Window_YES
+	  Window_NO
+	  
+
+
+
+
+#巨大的花	100089
+#绿色口臭鬼	421
+#黄色口臭鬼	422
+#蓝色口臭鬼	423
+#红色口臭鬼	424
+#侯爵花妖	103309
+#走路花妖	304099
+#跑步花妖	304199
+#舞蹈花妖	304200
+

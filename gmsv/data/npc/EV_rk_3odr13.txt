@@ -1,0 +1,15 @@
+#Ñ¨ÄÌÑ¨ÄÌã×
+
+
+#Ñ¨ÄÌÑ¨ÄÌã×Ã«ƒ}ÔÈ»¯ÖÐÔÂ
+block Item 16430 >= 1
+	EndWindow 23084,OK
+#
+block
+	Window 23085,Yes,No
+		Window_No
+		Window_Yes ItemSpace == 0
+			EndWindow 10000,OK
+		Window_Yes
+			GiveItem 16430,1
+

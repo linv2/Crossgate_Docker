@@ -1,0 +1,45 @@
+#####不可思议系列三：恶梦#####
+##信箱
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■ 有信箱钥匙
+block Item 40284 >= 1
+	 ##1101957	\n\n\n\n@c快要满出信来的信箱，要打开看看吗？	1
+	 Window 1101957,YES,NO
+	 Window_NO 
+	 
+	 Window_YES
+	 	 ##1101958	\n\n\n\n@c要有心理准备喔！	1
+	 	 Window 1101958,OK
+	 	 	 Window_OK ItemSpace == 0
+	 		 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 		 	 EndWindow 1100001
+	 		 Window_OK ItemSpace >= 3
+	 		 	 shapenext 260009	 
+	 		 	 KillItem 40284
+	 		 	 GiveLeak1Item (40285%1$1)
+	 		 	 GiveLeak1Item (40286%1$1,40287%1$1,40288%1$1,40289%1$1,40290%1$1)
+	 		 	 GiveLeak1Item (40286%1$1,40287%1$1,40288%1$1,40289%1$1,40290%1$1)
+	 		 	 GiveLeak1Item (40286%1$1,40287%1$1,40288%1$1,40289%1$1,40290%1$1)
+	 		 Window_OK ItemSpace == 2
+	 		 	 shapenext 260009
+	 		 	 KillItem 40284
+	 		 	 GiveLeak1Item (40285%1$1)
+	 		 	 GiveLeak1Item (40286%1$1,40287%1$1,40288%1$1,40289%1$1,40290%1$1)
+	 		 	 GiveLeak1Item (40286%1$1,40287%1$1,40288%1$1,40289%1$1,40290%1$1)	 		 	 
+	 		 Window_OK ItemSpace == 1
+	 		 	 shapenext 260009
+	 		 	 KillItem 40284
+	 		 	 GiveLeak1Item (40285%1$1)
+	 		 	 GiveLeak1Item (40286%1$1,40287%1$1,40288%1$1,40289%1$1,40290%1$1)
+
+##■ 一般
+block 
+	 ##1101959	\n\n\n\n@c亚诺曼城大道路四十三号信箱。	1
+	 EndWindow 1101959

@@ -1,0 +1,28 @@
+####3月EC
+###■400水增质瓶(满)		每取出1瓶+400药水,耐久扣1  给予1个+400药水
+
+
+ ####□一般
+block
+	 ##1054796	\n\n是否想使用400水增质瓶(满)呢？	1
+	 Window 1054796,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1																																																																																																			
+			 EndWindow 1054495
+	 	 
+	 	 Window_YES Item 47587 >=2
+	 	 	 ##1054797	\n\n\n400水增质瓶(满)\n如果持有２个以上是无法使用的喔～	1
+			 EndWindow 1054797
+		 Window_YES Item 47587 ==1  && ItemDur 47587 ==1
+		 	 ##1054798	400水增质瓶(满)消失了。	
+			 KillItem 47587,1,(1054798)
+			 GiveLeak1Item 47589,1
+			 
+		 Window_YES Item 47587 ==1 && ItemDur 47587 >1		 
+	 	 	 ##1054799	使用了400水增质瓶(满)。	
+			 GiveLeak1Item 47589,1
+	 	 	 SetDur 47587,-1
+	 	 	 Message 1054799
+	 	 	 

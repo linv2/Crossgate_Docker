@@ -1,0 +1,76 @@
+
+
+block
+
+
+
+
+
+
+			if LocalCount0 == 5
+
+				LocalCount0 = random 2,0
+
+				if LocalCount0 == 1
+					LocalCount0 = 5
+
+
+					Window 3200600,next
+		#\n\n﹛由伉永玄互\n﹛卅卞井钟仄中泔阕毛\n﹛圈化月仪卞岳跦仄凶日仄中﹝
+
+
+					EndWindow 3200601
+		#\n\n﹛云辣忷及矢伉永玄卞尥五宁匀化\n﹛内匀午港碍卞中凶井日\n﹛粕勾少仄卞缙★井仃宁歹六化凶日仄中方﹝
+
+
+
+
+				else
+					LocalCount0 = 5
+
+
+					Window 3200602,next
+		#\n\n﹛港碍卞欐月杅芊〝\n﹛冞日心凶中卞﹜\n﹛惟毛戏支允井镜卞忏仁井＿＿
+
+
+
+					EndWindow 3200603
+		#\n\n﹛丐午反卅丑＿＿\n﹛冞及詨及陶匀尤切卞中勾手蛛月\n﹛毡中场及夫午卞妏中化心木壬荸月井手〝
+
+
+
+
+				endif
+
+
+
+			else
+
+					LocalCount0 = 5
+
+				Window 3200604,next
+		#\n\n﹛公丹中尹壬﹜云辣忷及矢伉永玄互\n﹛菁仄少曰卞港碍井日\n﹛嫦曰化五化凶方﹝
+
+				Window 3200605,next
+		#\n\n﹛由伉永玄反﹜嫦曰化五化卅中卅﹝\n﹛卅卞井泔阕毛圈化月午井﹝
+
+
+				EndWindow 3200606
+		#\n\n﹛莘丹杅芊卅丑﹝\n﹛冞及詨卞中月谛互襞匀化月井手〝
+
+
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

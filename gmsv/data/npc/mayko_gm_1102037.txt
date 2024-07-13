@@ -1,0 +1,64 @@
+###定期船
+###瑞秋 坎那贝拉村  石烧螃蟹
+
+block  	Item 40721 >0     
+	##有石烧螃蟹
+	EndWindow 1102436
+     	##快把石烧螃蟹送到詹森老爹那里，冷了就不好吃。
+block   Item 40723 >0 && ItemCreateTime 40723>240
+	##有材料单且过4hr
+	Window 1102456,OK
+	Window_ok ItemSpace < 1 
+		##物品栏已满
+	        EndWindow 1102427	 	 	 
+	 Window_OK Item 40723 >0
+	 	##石烧螃蟹做好了，快拿去给詹森老爹吃吧。
+	 	#扣材料单
+	 	killitem 40723,1
+	 	#//得到 奶焗竹荚鱼
+	  	GiveLeak1Item 40721,1
+	 	Endwindow 1102437
+block   Item 40723 >0	 	
+     	##未满4hr		
+     	##石烧螃蟹还要一阵子才作好，请你再等一下。     
+	Endwindow 1102438
+block   Item 40722 >0 && Item 9637 >19 && Item 12001 >9 && Item 12412 >19  
+		##石烧螃蟹(9637达马斯矿20+12001姜10+12412螃蟹20) 
+	Window 1102453,YES,NO
+	##你的材料已经准备好了呀！要作料理吗？
+	Windows_no
+		##想要做再来找我。     
+		EndWindow 1102454
+	Window_yes ItemSpace < 1 
+		##物品栏已满
+	        EndWindow 1100001
+	Window_yes  Item 40722 >0 && Item 9637 >19 && Item 12001 >9 && Item 12412 >19  
+		killitem 40722,1
+		killitem  9637,20
+		killitem 12001,10
+		killitem 12412,20
+     		GiveLeak1Item 40723,1
+     		##石烧螃蟹的材料，你已经准备好了呀！\n
+     		##那我现在开始帮你做，不过这比较花时间，请你过一阵子再来吧！
+     		EndWindow 1102439
+     		
+block   Item 40722 >0        		
+	##你先去准备材料吧！这道料理要什么材料，我都写在材料单上！
+	EndWindow 1102440
+block   Item 40720 >0 
+	Window 1102441,yes,no 	     
+     	##
+     	Window_no
+     		##不是呀！那就是我会错意啰。
+     		EndWindow 1102455
+     	Window_yes  ItemSpace < 1 
+     		##物品栏已满
+	        EndWindow 1100001
+     	Window_yes  Item 40720 >0 
+		killitem 40720,1
+     		GiveLeak1Item 40722,1
+     		##这是石烧螃蟹的材料清单，你先帮我准备材料吧！
+     		EndWindow 1102442
+block
+	##
+	EndWindow 1102443

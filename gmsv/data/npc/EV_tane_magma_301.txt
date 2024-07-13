@@ -1,0 +1,16 @@
+
+block
+
+#	Window "\n\n﹛窒手苇尹厄﹝\n﹛窒手妏仇尹厄﹝",next
+	Window 3006930,next
+
+#	Window "\n\n﹛仇及哗及瓖匹汤弥韩﹝\n﹛手反支螃啖卅升菾手⑺螺﹝",next
+	Window 3006931,next
+
+#	Window "\n\n﹛侳中﹝\n﹛≦卅曰坛卅中≧互﹜云锹澎仄方丹﹝",ok
+	Window 3006932,ok
+
+	Window_ok
+
+		Encount 2|0,59500,200,35||0|||||0|305006|||||||||
+

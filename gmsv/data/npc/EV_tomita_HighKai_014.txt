@@ -1,0 +1,55 @@
+#甩奶伊矛伙轾仃荼瞻豭﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛荼瞻绖敢及摒
+
+###﹛皮伙□皮伉□玉魂泔毛赭儅
+block Item_631007 >= 1
+	EndWindow 3204572
+
+		#\n\n﹛公及魂泔分仃升友﹜凛棉孺蜃反卅中仃升﹜\n﹛镀中卞旋仄凶仇午反卅中方﹝\n﹛窒仄欠锹澎反﹜手及嬷仁竣互墓中井日友尹﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3204573,YES,NO
+
+		#\n\n﹛丐丐平立﹜切斤匀午俇引木化仁木卅中井卅﹝\n﹛仇及泔毛梂及乒件旦正□卞?仃化俓仄中氏分﹝\n﹛呿癫反台互愤坌匹支日卅五扎中仃卅中氏分互﹜\n﹛升丹手蛊午反?曰互宁歹卅仁化友尹﹝\n﹛娄五熬仃化仁木月井中〝
+
+		Window_YES Item_631007 >= 1
+			EndWindow 3204574
+
+		#\n\n﹛丐木﹜手丹儅匀化中月友﹝\n﹛失失永″﹛公丹井﹜手丹欐仄化中凶氏分卅﹝
+
+		Window_YES ItemSpace >= 1
+			Window 3204575,OK
+
+		#\n\n﹛丐曰互午丹﹜普桨允月方﹝\n﹛仇木互?仃月泔﹜皮伙□皮伉□玉魂泔分﹝\n﹛卅月屯仁萌中匹俇戈方﹝
+
+				Window_OK Item_631007 >= 1
+					EndWindow 3204576
+
+		#\n\n﹛丐木﹜手丹儅匀化中月友﹝\n﹛失失永″﹛公丹井﹜手丹欐仄化中凶氏分卅﹝
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 631007,1,3204577
+
+		#\n\n﹛丹□氏﹜绂坁卞坞五互卅中方丹分冗﹝\n﹛酷杅卅中﹜职及谛卞俇戈午允月井﹝
+
+				Window_OK
+					EndWindow 3204578
+
+		#\n\n﹛丹□氏﹜绂坁卞坞五互卅中方丹分冗﹝\n﹛酷杅卅中﹜职及谛卞俇戈午允月井﹝
+
+		Window_YES
+			EndWindow 3204579
+
+		#\n\n﹛丹□氏﹜绂坁卞坞五互卅中方丹分冗﹝\n﹛酷杅卅中﹜职及谛卞俇戈午允月井﹝
+
+		Window_NO
+			EndWindow 3204580
+
+		#\n\n﹛公木反酸ゴ分﹝\n﹛引丐中中支﹜职毛癫凶月方﹝
+
+
+

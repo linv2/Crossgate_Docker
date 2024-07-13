@@ -1,0 +1,85 @@
+#≦反元户化及云勾井中≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛民平﹋风﹌及摒
+
+###﹛抩铜毛呁醒赭儅
+
+block Item_607904 >= 2
+	EndWindow 3200848
+		#\n\n﹛云午手分切市□玉毛中仁勾手手匀化月卅氏化﹜\n﹛云井仄中冗﹝\n﹛交□市奶允月勾手曰分卅﹝井心勾仁冗″″
+
+
+
+###﹛抩铜毛赭儅
+
+block Item_607904 == 1
+
+	If StampCount_607904 == 4 && Item_12001 >= 5 && Item_12406 >= 5 && Item_12802 >= 5 && Item_12805 >= 5 && Item_12823 >= 3
+		Window 3200849,OK
+		#\n\n﹛巨巨永﹜手匀化五化仁木凶及〝\n﹛允仍中允仍中﹜丐曰互午丐曰互午﹝\n﹛支匀凶丐﹜切扎氏午云勾井中匹五凶″\n﹛元扎﹜反支仁井尹欠匀午﹝
+
+			Window_OK Item_607904 >= 2
+				EndWindow 3200850
+		#\n\n﹛失永﹜云午手分切市□玉互孔尹化月″\n﹛夫午曰ㄠ引中卅及卞内月中冗﹜丐匀切中仃″
+				EndBlock
+
+			Window_OK Item_607904 == 0
+				EndWindow 3200851
+		#\n\n﹛云午手分切市□玉反升丹仄凶及〝\n﹛卅中谛井日反﹜手日歹卅中方﹝\n﹛分匀化﹜云午手分切元扎卅中氏分手氏﹝
+				EndBlock
+
+			Window_OK Item_12001 >= 5 && Item_12406 >= 5 && Item_12802 >= 5 && Item_12805 >= 5 && Item_12823 >= 3
+				KillItem 12001,5
+				KillItem 12406,5
+				KillItem 12802,5
+				KillItem 12805,5
+				KillItem 12823,3
+				AddStampCount 607904,+1
+				EndBlock
+
+			Window_OK
+				EndWindow 3200852
+		#\n\n﹛丐木﹜方仁心凶日凶曰卅中﹝\n﹛引分引勾及井﹜中支分卅丐﹝
+				EndBlock
+
+	else
+		If StampCount_607904 == 4
+			EndWindow 3200853
+		#\n\n﹛扒奶伉亦□引分仇卅中方﹝\n﹛丐公太卞中五凶中卅丐＿﹝
+			EndBlock
+
+		else
+			If StampCount_607904 == 3
+				EndWindow 3200854
+		#\n\n﹛甩奶正汁及正永弁﹜卅卞仄化氏分欠﹝\n﹛云公中卅丐﹝
+				EndBlock
+
+			else
+				If StampCount_607904 == 2
+					EndWindow 3200855
+		#\n\n﹛中引友﹜仁允曰及扒奶伉亦□引匀化月及﹝\n﹛中匀仄斤卞引勾〝
+					EndBlock
+
+				else
+					EndWindow 3200856
+		#\n\n﹛云勾井中匀化﹜廿丹仃氏心凶中匹凶及仄中友﹝\n﹛丐仄凶手云勾井中仄凶中卅丐﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛抩铜尕赭儅
+
+block
+	EndWindow 3200857
+		#\n\n﹛友尹友尹友尹﹜升仇井日五凶及〝\n﹛失永﹜仄日卅中谛午仄扎屯匀切扎母丢卅氏分﹝\n﹛元扎﹜田奶田奶″
+
+
+

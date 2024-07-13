@@ -1,0 +1,20 @@
+#炕卞脤允樊(15557)
+#
+
+block
+ Changepal 15,180
+#\n庤及擘“\n\n﹛丐卅凶反瑶Ё毛觙赽中﹜酸月罹屯坁反由件域濠木分仃匹允﹝\n﹛公氏卅桦昍匹结尹化塑仄氏匹中月谛互蜇木凶午仄引仄斤丹﹝\n\n﹛丐卅凶反由件毛?坌歹仃化丐仆引允井〝
+ Window 21319,yes,no
+#
+  Window_yes
+   LeaveGroup
+   Warp 0,15553,11,19
+  Window_no
+#\n帎及庤及擘“\n\n﹛公丹井﹝公木卅日き勾卞域勾分卅﹝\n\n﹛愈詨及由件反云蟆互蝈化罹屯月井﹋反中毛蓟枪﹌\n﹛结尹凶樊卞蝈化芨尹月井分﹝﹋中中尹毛蓟枪﹌
+   Window 21320,yes,no
+	Window_yes
+	   LeaveGroup
+	   Warp 0,15553,15,19
+	  Window_no
+	   LeaveGroup
+	   Warp 0,15553,13,19

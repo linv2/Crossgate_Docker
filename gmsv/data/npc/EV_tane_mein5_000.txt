@@ -1,0 +1,59 @@
+
+#衙五凛医毛襞月手及
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+block globalFlag41 == 1
+
+
+			endwindow 3202444
+
+		#\n\n﹛＿＿
+
+
+
+
+block globalFlag39 == 1
+
+gotoF case1
+
+
+block globalFlag38 == 1
+
+*case1*
+
+
+
+			window 3202445,next
+
+		#\n\n﹛云﹜云云﹜\n﹛五＿＿﹜楝井﹝\n﹛云﹜云云丹﹜心凶﹜苇凶午手﹜歹仄反﹝\n﹛フ婞毛＿＿耵★午﹜\n﹛呺坁毛娄五洘木化＿＿擎昵螃互﹜
+
+			window 3202446,next
+
+		#\n\n﹛丹﹜丹什什﹜中﹜\n﹛卅氏匹﹜\n﹛卅氏匹侉木午匀凶氏元扎欠丹卅丑﹝
+
+			window 3202447,next
+
+		#\n\n﹛哗踹绍氘及擎昵螃\n﹛丐支勾日互＿＿丐支勾日互\n﹛仇及﹜仇及章毛莽仄凶氏元扎＿＿\n﹛丐及凛手＿＿
+
+			window 3202448,next
+
+		#\n\n﹛卅氏匹﹜卅氏匹﹜\n﹛歹仄反﹜歹仄日反﹜\n﹛侉木化云匀凶及井卅丑﹝\n﹛仇氏卅卞厘仪卅仪毛﹜\n﹛仇氏卅卞厘庍卅仪毛﹜\n﹛丐丐＿＿
+
+			endwindow 3202449
+
+		#\n\n﹛公丹元扎﹜侉木化﹜侉木化云匀凶＿＿\n﹛侉木化＿＿卅兮＿＿〝
+
+
+
+block
+
+			GAwindow 3202450,next
+
+		#\n\n﹛氏〝\n﹛歾及辣忷元扎方﹝
+
+			GAendwindow 3202451
+
+		#\n\n﹛卅卞井﹜卅卞井\n﹛仇及唬泞毛心月午\n﹛窒井毛合中请仄井仃月氏元扎互＿＿
+
+

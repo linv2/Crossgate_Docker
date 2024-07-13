@@ -1,0 +1,45 @@
+#
+#扒件伉左
+#
+
+###﹛甩奶伊永弁旦毛手匀化中月﹛###
+block Leak1Item 18981 != 0
+#\n\n﹛升丹支日锳狨互请凶心凶中友﹝酸ゴ卅互日仇木反瓦本乒用方﹝\n﹛公木匹﹜仇及圴坁及椎烂锳绊及据蛞互俓仄中及方友〝仇木毛儅匀化中五卅今中﹝\n\n﹛升丹六き窜赶妐分井日凛煌反娄五潸匀化云仁歹﹝幻日幻日″台及椎烂恔及幻丹互方匀吊升嫖中氏分井日妐嗥蜕歹卅中及″
+	Window 21806,OK
+		Window_OK
+			killItem 18981,1
+			GiveItem 18978,1
+
+###﹛甩奶伊永弁旦椎烂蟆毛手匀化中月﹛###
+block Leak0Item 18981 != 0
+	EndWindow 21873
+
+###﹛甩奶伊永弁旦1毛手匀化中月﹛###
+block Leak1Item 18980 != 0
+#\n\n﹛丐午反田件玉及煤亢杴毛裤化五卅今中﹝手丹域秽方﹝
+	Window 21805,OK
+		Window_OK
+			killItem 18980,1
+			GiveItem 18981,1
+
+###﹛甩奶伊永弁旦1椎烂蟆毛手匀化中月﹛###
+block Leak0Item 18980 != 0
+	EndWindow 21873
+
+###﹛甩奶伊永弁旦2毛手匀化中月﹛###
+block Leak1Item 18979 != 0
+#\n\n﹛布仿旦昍及笺撙及民尼永弁反仄化心凶井仄日〝\n\n﹛互氏壬匀化友﹝
+	Window 21804,OK
+		Window_OK
+			killItem 18979,1
+			GiveItem 18980,1
+
+###﹛甩奶伊永弁旦2﹋椎烂蟆﹌毛手匀化中月﹛###
+block Leak0Item 18979 != 0
+#\n\n﹛仇及凛煌及椎烂〝\n\n﹛卅月幻升友之﹝仇木﹜台互裤凶日允什分仃升章酦及椎烂衔凶切及恌中柈莲卞卅月歹友﹝\n﹛垫五腴引匀凶日引凶儅匀化中日匀仄扎中﹝
+	Endwindow 21803
+
+###﹛﹛###
+block
+#\n\n﹛皮仿件玉圴及椎烂卞蜃匀化反鉼及平泛奴方曰手台及幻丹互丿啦卅及方﹝
+	Message 21808

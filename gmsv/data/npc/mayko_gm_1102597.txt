@@ -1,0 +1,16 @@
+#雅芸	33234	29	33	mayko_gm_1102597.txt
+
+#可可的信41069
+#雅芸手绘图41070
+#1110571	\n　　　穗花山奈呀～\n　　　是在南恰特拉山的另一头，\n　　　你在河流边找找看吧！
+#1110572	\n\n\n\n@c你是要找穗花山奈呀～。
+block Item 41070>0
+
+	 EndWindow 1110571
+block Item 41069>0
+	 KillItem 41069,1
+	 GiveLeak1Item 41070,1
+	 EndWindow 1110571
+block 
+	 EndWindow 1110572
+	

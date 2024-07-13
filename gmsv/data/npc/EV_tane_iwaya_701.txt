@@ -1,0 +1,25 @@
+
+block
+
+	if Itemspace >= 1
+	
+		giveItem 14664,1
+		globalFlag7 = 1
+
+	endif
+
+#	Window "\n\n﹛⑵及酦卞擘互黍仁＿＿",next
+	Window 3006915,next
+
+#	Window "\n\n﹛＿＿＞台及戽曰毛佶仆月卅\n﹛＞台反﹜手丹﹜蜗坌爵匀凶＿",next
+	Window 3006916,next
+
+#	Window "\n\n﹛＿＿＞台反﹜手丹?木凶﹝\n﹛＞瑷啖及戋方﹜台毛戽日六化仁木＿＿",next
+	Window 3006917,next
+
+#	Window "\n\n﹛＿＿＞台毛厍迕允月卅″″",next
+	Window 3006918,next
+	
+	warp 0,59503,267,267
+	
+	

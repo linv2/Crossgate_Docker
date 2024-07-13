@@ -1,0 +1,1002 @@
+#
+#升及仁日中惫寞晓互匀化月井项尹月NPC
+#切匀仇中辉及阂
+#
+#15480
+#\n\n﹛尺尹〝蕙仄中丐分卅毛枃丹凶户卞互氏壬匀化月及〝丐氏卅切太及丐分卅毛失泛卞允月卅氏化﹜左玄瓜手凶中仄凶仇午卅中及友﹝仁允﹝丐卅凶域戏睦抰分仃升﹜丞件午乒件井日丐分卅毛枃丹卞反﹜引分引分箫曰卅中歹友﹝
+#15481
+#\n\n﹛云方〝丐卅凶丐分卅夫午勾枃丹凶户卞优韶卞互氏壬匀化月及友﹝公丹中丹及毛＞市生玄弗件伉亦弁瓦穴立伊正斥件本奶＝匀化中丹氏分匀化﹝仁允﹝升及仁日中匹丐分卅毛枃尹月井匀化〝臜恘琼岳峔1/4匀化午仇欠井卅〝
+#15482
+#\n\n﹛幻尹〝丐卅凶引分互氏壬匀化月及〝孔丹氏﹜公氏卅卞丐分卅互俓仄中卅日丐凶仄互尥仃化丐仆方匀井〝中日卅中〝卅卞方﹜＞戊玉乒瓦戊申伙乩瓜左玄瓜＝及仁六卞﹝戚及丐分卅引匹〝凶少氏﹜Ⅸ反旋尹凶氏元扎卅中〝乒件午丞件方曰丐凶仄及幻丹互丐分卅及本件旦丐月反内卅氏分仃升卅丐﹝＞枅镘毛干匀化峏勾辉＝化及反升□云〝＞打皮伉件午阽月裆＝〝分户〝切之﹝
+#15483
+#\n\n﹛丐曰扎〝仇氏卞切反戊申伙﹝丐卅凶及蕙仄中丐分卅方﹝＞戊申伙@n＝﹝中中丐分卅分歹﹝丹匀午曰允月歹方友﹝支分〝丐﹜公丹﹜支匀天曰丞件午乒件及幻丹互中中及友﹝本件旦卅中歹﹜丐卅凶﹝引丐公木分仃互氏壬木壬﹜戚及丐分卅引匹公丹弃仁反卅中氏元扎卅中〝左玄瓜及壑钗匀化瓜札分歹﹝丐分卅匹请壑互瑁引月及友﹝
+#15484
+#\n\n﹛幻卞斤〝丐卅凶仁日中及丐分卅﹜钟仄仁卅中井日饬怗卅中歹友﹝
+#15485
+#\n\n﹛丐卅凶友〝阂间井日凶仁今氏丐分卅毛手日匀化肣赡缰卞卅匀化月夫午匀化﹝左玄瓜及仁六卞戊玉乒心凶中﹝仁允﹝丐午升及仁日中匹戚及丐分卅手日尹月井〝公木分仃手日匀凶日手丹蜗坌元扎卅中及井卅〝
+#15492
+#\n\n﹛反匀五曰蜕匀化蕙仄中丐分卅互手日尹月午合丹歹﹝台琼及杅互怚恘读卅及反歹井月仃升﹜凶引卞反夫□本件旦及丞件午乒件卞手狪仄喘仃化丐仆凶日升丹﹝
+
+######################################################################
+#	战斗系
+######################################################################
+##水面上的小草+5000﹋0%℅25%﹌+1250
+block Job >= 11 && Job <= 167 && Fame >= 5001 && Fame <= 6250 && HaveTitle == 6
+	EndWindow 15480
+##水面上的小草+5000﹋26%℅50%﹌
+block Job >= 11 && Job <= 167 && Fame >= 6251 && Fame <= 7500 && HaveTitle == 6
+	EndWindow 15481
+##水面上的小草+5000﹋51%℅75%﹌
+block Job >= 11 && Job <= 167 && Fame >= 7501 && Fame <= 8750 && HaveTitle == 6
+	EndWindow 15482
+##水面上的小草+5000﹋76%℅99%﹌
+block Job >= 11 && Job <= 167 && Fame >= 8751 && Fame <= 9999 && HaveTitle == 6
+	EndWindow 15483
+##水面上的小草+5000﹋100%℅﹌
+block Job >= 11 && Job <= 167 && HaveTitle == 6 && Fame >= 10000
+	EndWindow 15492
+
+##呢喃的歌声+10000﹋0%℅25%﹌+2500
+block Job >= 11 && Job <= 167 && Fame >= 10001 && Fame <= 12500 && HaveTitle == 7
+	EndWindow 15480
+##呢喃的歌声+10000﹋26%℅50%﹌
+block Job >= 11 && Job <= 167 && Fame >= 12501 && Fame <= 15000 && HaveTitle == 7
+	EndWindow 15481
+##呢喃的歌声+10000﹋51%℅75%﹌
+block Job >= 11 && Job <= 167 && Fame >= 15001 && Fame <= 17500 && HaveTitle == 7
+	EndWindow 15482
+##呢喃的歌声+10000﹋76%℅99%﹌
+block Job >= 11 && Job <= 167 && Fame >= 17501 && Fame <= 19999 && HaveTitle == 7
+	EndWindow 15483
+##呢喃的歌声+10000﹋100%℅﹌
+block Job >= 11 && Job <= 167 && Fame >= 20000 && HaveTitle == 7
+	EndWindow 15492
+
+##地上的月影+13000﹋0%℅25%﹌+3250
+block Job >= 11 && Job <= 167 && Fame >= 20001 && Fame <= 23250 && HaveTitle == 8
+	EndWindow 15480
+##地上的月影+13000﹋26%℅50%﹌
+block Job >= 11 && Job <= 167 && Fame >= 23251 && Fame <= 26500 && HaveTitle == 8
+	EndWindow 15481
+##地上的月影+13000﹋51%℅75%﹌
+block Job >= 11 && Job <= 167 && Fame >= 26501 && Fame <= 29750 && HaveTitle == 8
+	EndWindow 15482
+##地上的月影+13000﹋76%℅99%﹌
+block Job >= 11 && Job <= 167 && Fame >= 29751 && Fame <= 32999 && HaveTitle == 8
+	EndWindow 15483
+##地上的月影+13000﹋100%℅%﹌
+block Job >= 11 && Job <= 167 && Fame >= 33000 && HaveTitle == 8
+	EndWindow 15492
+
+##奔跑的春风+17000﹋0%℅25%﹌+4250
+block Job >= 11 && Job <= 167 && Fame >= 33001 && Fame <= 37250 && HaveTitle == 9
+	EndWindow 15480
+##奔跑的春风+17000﹋26%℅50%﹌
+block Job >= 11 && Job <= 167 && Fame >= 37251 && Fame <= 41500 && HaveTitle == 9
+	EndWindow 15481
+##奔跑的春风+17000﹋51%℅75%﹌
+block Job >= 11 && Job <= 167 && Fame >= 41501 && Fame <= 45750 && HaveTitle == 9
+	EndWindow 15482
+##奔跑的春风+17000﹋76%℅99%﹌
+block Job >= 11 && Job <= 167 && Fame >= 45751 && Fame <= 49999 && HaveTitle == 9
+	EndWindow 15483
+##奔跑的春风+17000﹋100%℅﹌
+block Job >= 11 && Job <= 167 && Fame >= 50000 && HaveTitle == 9
+	EndWindow 15492
+
+##苍之风云+20000﹋0%℅25%﹌+5000
+block Job >= 11 && Job <= 167 && Fame >= 50001 && Fame <= 55000 && HaveTitle == 10
+	EndWindow 15480
+##苍之风云+20000﹋26%℅50%﹌
+block Job >= 11 && Job <= 167 && Fame >= 55001 && Fame <= 60000 && HaveTitle == 10
+	EndWindow 15481
+##苍之风云+20000﹋51%℅75%﹌
+block Job >= 11 && Job <= 167 && Fame >= 60001 && Fame <= 65000 && HaveTitle == 10
+	EndWindow 15482
+##苍之风云+20000﹋76%℅99%﹌
+block Job >= 11 && Job <= 167 && Fame >= 65001 && Fame <= 69999 && HaveTitle == 10
+	EndWindow 15483
+##苍之风云+20000﹋100%℅﹌
+block Job >= 11 && Job <= 167 && Fame >= 70000 && HaveTitle == 10
+	EndWindow 15492
+
+
+##摇曳的金星+30000﹋0%℅25%﹌+7500
+block Job >= 11 && Job <= 167 && Fame >= 70001 && Fame <= 77500 && HaveTitle == 11
+	EndWindow 15480
+##摇曳的金星+30000﹋26%℅50%﹌
+block Job >= 11 && Job <= 167 && Fame >= 77501 && Fame <= 85000 && HaveTitle == 11
+	EndWindow 15481
+##摇曳的金星+30000﹋51%℅75%﹌
+block Job >= 11 && Job <= 167 && Fame >= 85001 && Fame <= 92500 && HaveTitle == 11
+	EndWindow 15482
+##摇曳的金星+30000﹋76%℅99%﹌
+block Job >= 11 && Job <= 167 && Fame >= 92501 && Fame <= 99999 && HaveTitle == 11
+	EndWindow 15483
+##摇曳的金星+30000﹋100%℅﹌
+block Job >= 11 && Job <= 167 && Fame >= 100000 && HaveTitle == 11
+	EndWindow 15492
+
+
+#############################
+#### ╲2005/12/27 馨筏╲ ####
+#############################
+
+
+##欢喜的慈雨+30000﹋0%℅25%﹌+7500
+block Job >= 11 && Job <= 167 && Fame >= 100001 && Fame <= 107500 && HaveTitle == 12
+	EndWindow 15480
+##欢喜的慈雨+30000﹋26%℅50%﹌
+block Job >= 11 && Job <= 167 && Fame >= 107501 && Fame <= 115000 && HaveTitle == 12
+	EndWindow 15481
+##欢喜的慈雨+30000﹋51%℅75%﹌
+block Job >= 11 && Job <= 167 && Fame >= 115001 && Fame <= 122500 && HaveTitle == 12
+	EndWindow 15482
+##欢喜的慈雨+30000﹋76%℅99%﹌
+block Job >= 11 && Job <= 167 && Fame >= 122501 && Fame <= 129999 && HaveTitle == 12
+	EndWindow 15483
+##欢喜的慈雨+30000﹋100%℅﹌
+block Job >= 11 && Job <= 167 && Fame >= 130000 && HaveTitle == 12
+	EndWindow 15492
+
+
+##蕴含的太阳+30000﹋0%℅25%﹌+7500
+block Job >= 11 && Job <= 167 && Fame >= 130001 && Fame <= 137500 && HaveTitle == 86
+	EndWindow 15480
+##蕴含的太阳+30000﹋26%℅50%﹌
+block Job >= 11 && Job <= 167 && Fame >= 137501 && Fame <= 145000 && HaveTitle == 86
+	EndWindow 15481
+##蕴含的太阳+30000﹋51%℅75%﹌
+block Job >= 11 && Job <= 167 && Fame >= 145001 && Fame <= 152500 && HaveTitle == 86
+	EndWindow 15482
+##蕴含的太阳+30000﹋76%℅99%﹌
+block Job >= 11 && Job <= 167 && Fame >= 152501 && Fame <= 159999 && HaveTitle == 86
+	EndWindow 15483
+##蕴含的太阳+30000﹋100%℅﹌
+block Job >= 11 && Job <= 167 && Fame >= 160000 && HaveTitle == 86
+	EndWindow 15492
+
+
+##敬畏的极静+30000﹋0%℅25%﹌+10000
+block Job >= 11 && Job <= 167 && Fame >= 160001 && Fame <= 170000 && HaveTitle == 87
+	EndWindow 15480
+##敬畏的极静+30000﹋26%℅50%﹌
+block Job >= 11 && Job <= 167 && Fame >= 170001 && Fame <= 180000 && HaveTitle == 87
+	EndWindow 15481
+##敬畏的极静+30000﹋51%℅75%﹌
+block Job >= 11 && Job <= 167 && Fame >= 180001 && Fame <= 190000 && HaveTitle == 87
+	EndWindow 15482
+##敬畏的极静+30000﹋76%℅99%﹌
+block Job >= 11 && Job <= 167 && Fame >= 190001 && Fame <= 199999 && HaveTitle == 87
+	EndWindow 15483
+##敬畏的极静+30000﹋100%℅﹌
+block Job >= 11 && Job <= 167 && Fame >= 200000 && HaveTitle == 87
+	EndWindow 15492
+
+
+##无际的青空
+block Job >= 11 && Job <= 167 && Fame >= 200000
+	Window 15485,next
+	EndWindow 3007287
+###
+######################################################################
+#	战斗系  爆弹师
+######################################################################
+##(水面上的小草)  0%℅25%
+block Job >= 1001 && Job <= 1007 && Fame >= 6000 && Fame <= 7500 && HaveTitle == 6
+	EndWindow 15480
+##(水面上的小草) 26%℅50%
+block Job >= 1001 && Job <= 1007 && Fame >= 7501 && Fame <= 9000 && HaveTitle == 6
+	EndWindow 15481
+##(水面上的小草)  51%℅75%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 9001 && Fame <= 10500 && HaveTitle == 6
+	EndWindow 15482
+##(水面上的小草) 76%℅99%
+block Job >= 1001 && Job <= 1007 && Fame >= 10501 && Fame <= 11999 && HaveTitle == 6
+	EndWindow 15483
+##(水面上的小草) ﹋100%℅﹌
+block Job >= 1001 && Job <= 1007 && HaveTitle == 6 && Fame >= 12000
+	EndWindow 15492
+
+##呢喃的歌声 ﹋0%℅25%﹌+2500
+block Job >= 1001 && Job <= 1007 && Fame >= 12001 && Fame <= 14750 && HaveTitle == 7
+	EndWindow 15480
+##呢喃的歌声 ﹋26%℅50%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 14751 && Fame <= 17500 && HaveTitle == 7
+	EndWindow 15481
+##呢喃的歌声 ﹋51%℅75%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 17501 && Fame <= 20250 && HaveTitle == 7
+	EndWindow 15482
+##呢喃的歌声 ﹋76%℅99%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 20251 && Fame <= 22999 && HaveTitle == 7
+	EndWindow 15483
+##呢喃的歌声 ﹋100%℅﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 23000 && HaveTitle == 7
+	EndWindow 15492
+
+##地上的月影 ﹋0%℅25%﹌+3250
+block Job >= 1001 && Job <= 1007 && Fame >= 23001 && Fame <= 26500 && HaveTitle == 8
+	EndWindow 15480
+##地上的月影 ﹋26%℅50%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 26501 && Fame <= 30000 && HaveTitle == 8
+	EndWindow 15481
+##地上的月影 ﹋51%℅75%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 30001 && Fame <= 33500 && HaveTitle == 8
+	EndWindow 15482
+##地上的月影 ﹋76%℅99%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 33501 && Fame <= 36999 && HaveTitle == 8
+	EndWindow 15483
+##地上的月影 ﹋100%℅%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 37000 && HaveTitle == 8
+	EndWindow 15492
+
+##奔跑的春风 ﹋0%℅25%﹌+4250
+block Job >= 1001 && Job <= 1007 && Fame >= 37001 && Fame <= 41500 && HaveTitle == 9
+	EndWindow 15480
+##奔跑的春风 ﹋26%℅50%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 41501 && Fame <= 46000 && HaveTitle == 9
+	EndWindow 15481
+##奔跑的春风 ﹋51%℅75%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 46001 && Fame <= 50500 && HaveTitle == 9
+	EndWindow 15482
+##奔跑的春风 ﹋76%℅99%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 50501 && Fame <= 54999 && HaveTitle == 9
+	EndWindow 15483
+##奔跑的春风 ﹋100%℅﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 55000 && HaveTitle == 9
+	EndWindow 15492
+
+##苍之风云 ﹋0%℅25%﹌+5000
+block Job >= 1001 && Job <= 1007 && Fame >= 55001 && Fame <= 61250 && HaveTitle == 10
+	EndWindow 15480
+##苍之风云 ﹋26%℅50%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 61251 && Fame <= 67500 && HaveTitle == 10
+	EndWindow 15481
+##苍之风云 +20000﹋51%℅75%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 67501 && Fame <= 73750 && HaveTitle == 10
+	EndWindow 15482
+##苍之风云 +20000﹋76%℅99%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 73751 && Fame <= 79999 && HaveTitle == 10
+	EndWindow 15483
+##苍之风云 +20000﹋100%℅﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 80000 && HaveTitle == 10
+	EndWindow 15492
+
+
+##摇曳的金星 +30000﹋0%℅25%﹌+7500
+block Job >= 1001 && Job <= 1007 && Fame >= 80001 && Fame <= 87500 && HaveTitle == 11
+	EndWindow 15480
+##摇曳的金星 +30000﹋26%℅50%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 87501 && Fame <= 95000 && HaveTitle == 11
+	EndWindow 15481
+##摇曳的金星 +30000﹋51%℅75%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 95001 && Fame <= 102500 && HaveTitle == 11
+	EndWindow 15482
+##摇曳的金星 +30000﹋76%℅99%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 102501 && Fame <= 109999 && HaveTitle == 11
+	EndWindow 15483
+##摇曳的金星 +30000﹋100%℅﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 110000 && HaveTitle == 11
+	EndWindow 15492
+#======================================================================	
+
+##欢喜的慈雨+110000﹋0%℅25%﹌+7500
+block Job >= 1001 && Job <= 1007 && Fame >= 110001 && Fame <= 119999 && HaveTitle == 12
+	EndWindow 15480
+##欢喜的慈雨+110000﹋26%℅50%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 120000 && Fame <= 129999 && HaveTitle == 12
+	EndWindow 15481
+##欢喜的慈雨+110000﹋51%℅75%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 130000 && Fame <= 139999 && HaveTitle == 12
+	EndWindow 15482
+##欢喜的慈雨+110000﹋76%℅99%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 140000 && Fame <= 149999 && HaveTitle == 12
+	EndWindow 15483
+##欢喜的慈雨+110000﹋100%℅﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 150000 && HaveTitle == 12
+	EndWindow 15492
+
+
+##蕴含的太阳+150000﹋0%℅25%﹌+7500
+block Job >= 1001 && Job <= 1007 && Fame >= 150001 && Fame <= 159999 && HaveTitle == 86
+	EndWindow 15480
+##蕴含的太阳+150000﹋26%℅50%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 160000 && Fame <= 169999 && HaveTitle == 86
+	EndWindow 15481
+##蕴含的太阳+150000﹋51%℅75%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 170000 && Fame <= 179999 && HaveTitle == 86
+	EndWindow 15482
+##蕴含的太阳+150000﹋76%℅99%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 180000 && Fame <= 189999 && HaveTitle == 86
+	EndWindow 15483
+##蕴含的太阳+150000﹋100%℅﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 190000 && HaveTitle == 86
+	EndWindow 15492
+
+##敬畏的极静+190000﹋0%℅25%﹌+10000
+block Job >= 1001 && Job <= 1007 && Fame >= 190001 && Fame <= 202499 && HaveTitle == 87
+	EndWindow 15480
+##敬畏的极静+190000﹋26%℅50%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 202500 && Fame <= 214999 && HaveTitle == 87
+	EndWindow 15481
+##敬畏的极静+190000﹋51%℅75%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 215000 && Fame <= 227499 && HaveTitle == 87
+	EndWindow 15482
+##敬畏的极静+190000﹋76%℅99%﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 227500 && Fame <= 239999 && HaveTitle == 87
+	EndWindow 15483
+##敬畏的极静+190000﹋100%℅﹌
+block Job >= 1001 && Job <= 1007 && Fame >= 240000 && HaveTitle == 87
+	EndWindow 15492
+
+
+##贤者之石拥有者
+block Job >= 1001 && Job <= 1007 && Fame >= 240000
+	Window 15485,next
+	EndWindow 3007287	
+
+
+############################
+#### ╱2005/12/27馨筏╱ ####
+############################
+
+
+######################################################################
+#	痿缜谛℅泔管阁
+######################################################################
+##追求技巧的人 +1000﹋0%℅25%﹌+250
+block Job >= 201 && Job <= 367 && Fame >= 3001 && Fame <= 3250 && HaveTitle == 53
+	EndWindow 15480
+##追求技巧的人 +1000﹋26%℅50%﹌
+block Job >= 201 && Job <= 367 && Fame >= 3251 && Fame <= 3500 && HaveTitle == 53
+	EndWindow 15481
+##追求技巧的人 +1000﹋51%℅75%﹌
+block Job >= 201 && Job <= 367 && Fame >= 3501 && Fame <= 3750 && HaveTitle == 53
+	EndWindow 15482
+##追求技巧的人 +1000﹋76%℅99%﹌
+block Job >= 201 && Job <= 367 && Fame >= 3751 && Fame <= 3999 && HaveTitle == 53
+	EndWindow 15483
+##追求技巧的人 +1000﹋100%℅﹌
+block Job >= 201 && Job <= 367 && Fame >= 4000 && HaveTitle == 53
+	EndWindow 15492
+
+##刻于新月之铭+2000﹋0%℅25%﹌+500
+block Job >= 201 && Job <= 367 && Fame >= 4001 && Fame <= 4500 && HaveTitle == 54
+	EndWindow 15480
+##刻于新月之铭+2000﹋26%℅50%﹌
+block Job >= 201 && Job <= 367 && Fame >= 4501 && Fame <= 5000 && HaveTitle == 54
+	EndWindow 15481
+##刻于新月之铭+2000﹋51%℅75%﹌
+block Job >= 201 && Job <= 367 && Fame >= 5001 && Fame <= 5500 && HaveTitle == 54
+	EndWindow 15482
+##刻于新月之铭+2000﹋76%℅99%﹌
+block Job >= 201 && Job <= 367 && Fame >= 5501 && Fame <= 5999 && HaveTitle == 54
+	EndWindow 15483
+##刻于新月之铭+2000﹋100%℅﹌
+block Job >= 201 && Job <= 367 && Fame >= 6000 && HaveTitle == 54
+	EndWindow 15492
+
+##掌上的明珠 +3000﹋0%℅25%﹌+750
+block Job >= 201 && Job <= 367 && Fame >= 6001 && Fame <= 6750 && HaveTitle == 55
+	EndWindow 15480
+##掌上的明珠 +3000﹋26%℅50%﹌
+block Job >= 201 && Job <= 367 && Fame >= 6751 && Fame <= 7500 && HaveTitle == 55
+	EndWindow 15481
+##掌上的明珠 +3000﹋51%℅75%﹌
+block Job >= 201 && Job <= 367 && Fame >= 7501 && Fame <= 8250 && HaveTitle == 55
+	EndWindow 15482
+##掌上的明珠 +3000﹋76%℅99%﹌
+block Job >= 201 && Job <= 367 && Fame >= 8251 && Fame <= 8999 && HaveTitle == 55
+	EndWindow 15483
+##掌上的明珠 +3000﹋100%℅﹌
+block Job >= 201 && Job <= 367 && Fame >= 10000 && HaveTitle == 55
+	EndWindow 15492
+
+##敬虔的技巧月 +5000﹋0%℅25%﹌+1250
+block Job >= 201 && Job <= 367 && Fame >= 9001 && Fame <= 10250 && HaveTitle == 56
+	EndWindow 15480
+##敬虔的技巧月 +5000﹋26%℅50%﹌
+block Job >= 201 && Job <= 367 && Fame >= 10251 && Fame <= 11500 && HaveTitle == 56
+	EndWindow 15481
+##敬虔的技巧月 +5000﹋51%℅75%﹌
+block Job >= 201 && Job <= 367 && Fame >= 11501 && Fame <= 12750 && HaveTitle == 56
+	EndWindow 15482
+##敬虔的技巧月 +5000﹋76%℅99%﹌
+block Job >= 201 && Job <= 367 && Fame >= 12751 && Fame <= 13999 && HaveTitle == 56
+	EndWindow 15483
+##敬虔的技巧月 +5000﹋100%℅﹌
+block Job >= 201 && Job <= 367 && Fame >= 14000 && HaveTitle == 56
+	EndWindow 15492
+
+##踏入神的领域 +6000﹋0%℅25%﹌+1500
+block Job >= 201 && Job <= 367 && Fame >= 14001 && Fame <= 15500 && HaveTitle == 57
+	EndWindow 15480
+##踏入神的领域 +6000﹋26%℅50%﹌
+block Job >= 201 && Job <= 367 && Fame >= 15501 && Fame <= 17000 && HaveTitle == 57
+	EndWindow 15481
+##踏入神的领域 +6000﹋51%℅75%﹌
+block Job >= 201 && Job <= 367 && Fame >= 17001 && Fame <= 18500 && HaveTitle == 57
+	EndWindow 15482
+##踏入神的领域 +6000﹋76%℅99%﹌
+block Job >= 201 && Job <= 367 && Fame >= 18501 && Fame <= 19999 && HaveTitle == 57
+	EndWindow 15483
+##踏入神的领域 +6000﹋100%℅﹌
+block Job >= 201 && Job <= 367 && Fame >= 20000 && HaveTitle == 57
+	EndWindow 15492
+
+##贤者+9000﹋0%℅25%﹌+2250
+block Job >= 201 && Job <= 367 && Fame >= 20001 && Fame <= 22250 && HaveTitle == 58
+	EndWindow 15480
+##贤者+9000﹋26%℅50%﹌
+block Job >= 201 && Job <= 367 && Fame >= 22251 && Fame <= 24500 && HaveTitle == 58
+	EndWindow 15481
+##贤者+9000﹋51%℅75%﹌
+block Job >= 201 && Job <= 367 && Fame >= 24501 && Fame <= 26750 && HaveTitle == 58
+	EndWindow 15482
+##贤者+9000﹋76%℅99%﹌
+block Job >= 201 && Job <= 367 && Fame >= 26751 && Fame <= 28999 && HaveTitle == 58
+	EndWindow 15483
+##贤者+9000﹋100%℅﹌
+block Job >= 201 && Job <= 367 && Fame >= 29000 && HaveTitle == 58
+	EndWindow 15492
+
+
+############################
+#### ╲2005/12/27馨筏╲ ####
+############################
+
+
+##神匠+9000﹋0%℅25%﹌+2250
+block Job >= 201 && Job <= 367 && Fame >= 29001 && Fame <= 31250 && HaveTitle == 59
+	EndWindow 15480
+##神匠+9000﹋26%℅50%﹌
+block Job >= 201 && Job <= 367 && Fame >= 31251 && Fame <= 33500 && HaveTitle == 59
+	EndWindow 15481
+##神匠+9000﹋51%℅75%﹌
+block Job >= 201 && Job <= 367 && Fame >= 33501 && Fame <= 35750 && HaveTitle == 59
+	EndWindow 15482
+##神匠+9000﹋76%℅99%﹌
+block Job >= 201 && Job <= 367 && Fame >= 35751 && Fame <= 37999 && HaveTitle == 59
+	EndWindow 15483
+##神匠+9000﹋100%℅﹌
+block Job >= 201 && Job <= 367 && Fame >= 38000 && HaveTitle == 59
+	EndWindow 15492
+
+
+##弥卞磉允绖℅缰哗谛 +9000﹋0%℅25%﹌+2250
+block Job >= 201 && Job <= 367 && Fame >= 38001 && Fame <= 40250 && HaveTitle == 88
+	EndWindow 15480
+##弥卞磉允绖℅缰哗谛 +9000﹋26%℅50%﹌
+block Job >= 201 && Job <= 367 && Fame >= 40251 && Fame <= 42500 && HaveTitle == 88
+	EndWindow 15481
+##弥卞磉允绖℅缰哗谛 +9000﹋51%℅75%﹌
+block Job >= 201 && Job <= 367 && Fame >= 42501 && Fame <= 44750 && HaveTitle == 88
+	EndWindow 15482
+##弥卞磉允绖℅缰哗谛 +9000﹋76%℅99%﹌
+block Job >= 201 && Job <= 367 && Fame >= 44751 && Fame <= 46999 && HaveTitle == 88
+	EndWindow 15483
+##弥卞磉允绖℅缰哗谛 +9000﹋100%℅﹌
+block Job >= 201 && Job <= 367 && Fame >= 47000 && HaveTitle == 88
+	EndWindow 15492
+
+
+##缰哗谛℅檗儅勾叶樊 +13000﹋0%℅25%﹌+3250
+block Job >= 201 && Job <= 367 && Fame >= 47001 && Fame <= 50250 && HaveTitle == 89
+	EndWindow 15480
+##缰哗谛℅檗儅勾叶樊 +13000﹋26%℅50%﹌
+block Job >= 201 && Job <= 367 && Fame >= 50251 && Fame <= 53500 && HaveTitle == 89
+	EndWindow 15481
+##缰哗谛℅檗儅勾叶樊 +13000﹋51%℅75%﹌
+block Job >= 201 && Job <= 367 && Fame >= 53501 && Fame <= 56750 && HaveTitle == 89
+	EndWindow 15482
+##缰哗谛℅檗儅勾叶樊 +13000﹋76%℅99%﹌
+block Job >= 201 && Job <= 367 && Fame >= 56751 && Fame <= 59999 && HaveTitle == 89
+	EndWindow 15483
+##缰哗谛℅檗儅勾叶樊 +13000﹋100%℅﹌
+block Job >= 201 && Job <= 367 && Fame >= 60000 && HaveTitle == 89
+	EndWindow 15492
+
+
+##贤者之石拥有者
+block Job >= 201 && Job <= 367 && Fame >= 60000
+	Window 15485,next
+	EndWindow 3007287
+
+
+############################
+#### ╱2005/12/27馨筏╱ ####
+############################
+
+
+######################################################################
+#	膜咥缜谛℅衔阁
+######################################################################
+##追求技巧的人 +2000﹋0%℅25%﹌+500
+block Job >= 371 && Job <= 447 && Fame >= 4001 && Fame <= 4500 && HaveTitle == 53
+	EndWindow 15480
+##追求技巧的人 +2000﹋26%℅50%﹌
+block Job >= 371 && Job <= 447 && Fame >= 4501 && Fame <= 5000 && HaveTitle == 53
+	EndWindow 15481
+##追求技巧的人 +2000﹋51%℅75%﹌
+block Job >= 371 && Job <= 447 && Fame >= 5001 && Fame <= 5500 && HaveTitle == 53
+	EndWindow 15482
+##追求技巧的人 +2000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 5501 && Fame <= 5999 && HaveTitle == 53
+	EndWindow 15483
+##追求技巧的人 +2000﹋100%℅﹌
+block Job >= 371 && Job <= 447 && Fame >= 6000 && HaveTitle == 53
+	EndWindow 15492
+
+##刻于新月之铭+3000﹋0%℅25%﹌+750
+block Job >= 371 && Job <= 447 && Fame >= 6001 && Fame <= 6750 && HaveTitle == 54
+	EndWindow 15480
+##刻于新月之铭+2000﹋26%℅50%﹌
+block Job >= 371 && Job <= 447 && Fame >= 6751 && Fame <= 7500 && HaveTitle == 54
+	EndWindow 15481
+##刻于新月之铭+2000﹋51%℅75%﹌
+block Job >= 371 && Job <= 447 && Fame >= 7501 && Fame <= 8250 && HaveTitle == 54
+	EndWindow 15482
+##刻于新月之铭+2000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 8251 && Fame <= 8999 && HaveTitle == 54
+	EndWindow 15483
+##刻于新月之铭+2000﹋100%℅﹌
+block Job >= 371 && Job <= 447 && Fame >= 10000 && HaveTitle == 54
+	EndWindow 15492
+
+##掌上的明珠 +4000﹋0%℅25%﹌+1000
+block Job >= 371 && Job <= 447 && Fame >= 9001 && Fame <= 10000 && HaveTitle == 55
+	EndWindow 15480
+##掌上的明珠 +3000﹋26%℅50%﹌
+block Job >= 371 && Job <= 447 && Fame >= 10001 && Fame <= 11000 && HaveTitle == 55
+	EndWindow 15481
+##掌上的明珠 +3000﹋51%℅75%﹌
+block Job >= 371 && Job <= 447 && Fame >= 11001 && Fame <= 12000 && HaveTitle == 55
+	EndWindow 15482
+##掌上的明珠 +3000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 12001 && Fame <= 12999 && HaveTitle == 55
+	EndWindow 15483
+##掌上的明珠 +3000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 13000 && HaveTitle == 55
+	EndWindow 15492
+
+##敬虔的技巧月 +6000﹋0%℅25%﹌+1500
+block Job >= 371 && Job <= 447 && Fame >= 13000 && Fame <= 14500 && HaveTitle == 56
+	EndWindow 15480
+##敬虔的技巧月 +5000﹋26%℅50%﹌
+block Job >= 371 && Job <= 447 && Fame >= 14501 && Fame <= 16000 && HaveTitle == 56
+	EndWindow 15481
+##敬虔的技巧月 +5000﹋51%℅75%﹌
+block Job >= 371 && Job <= 447 && Fame >= 16001 && Fame <= 17500 && HaveTitle == 56
+	EndWindow 15482
+##敬虔的技巧月 +5000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 17501 && Fame <= 18999 && HaveTitle == 56
+	EndWindow 15483
+##敬虔的技巧月 +5000﹋100%℅﹌
+block Job >= 371 && Job <= 447 && Fame >= 19000 && HaveTitle == 56
+	EndWindow 15492
+
+##踏入神的领域 +8000﹋0%℅25%﹌+2000
+block Job >= 371 && Job <= 447 && Fame >= 19001 && Fame <= 21000 && HaveTitle == 57
+	EndWindow 15480
+##踏入神的领域 +6000﹋26%℅50%﹌
+block Job >= 371 && Job <= 447 && Fame >= 21001 && Fame <= 23000 && HaveTitle == 57
+	EndWindow 15481
+##踏入神的领域 +6000﹋51%℅75%﹌
+block Job >= 371 && Job <= 447 && Fame >= 23001 && Fame <= 25000 && HaveTitle == 57
+	EndWindow 15482
+##踏入神的领域 +6000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 25001 && Fame <= 26999 && HaveTitle == 57
+	EndWindow 15483
+##踏入神的领域 +6000﹋100%℅﹌
+block Job >= 371 && Job <= 447 && Fame >= 27000 && HaveTitle == 57
+	EndWindow 15492
+
+##贤者+10000﹋0%℅25%﹌+2500
+block Job >= 371 && Job <= 447 && Fame >= 27001 && Fame <= 29500 && HaveTitle == 58
+	EndWindow 15480
+##贤者+9000﹋26%℅50%﹌
+block Job >= 371 && Job <= 447 && Fame >= 29501 && Fame <= 32000 && HaveTitle == 58
+	EndWindow 15481
+##贤者+9000﹋51%℅75%﹌
+block Job >= 371 && Job <= 447 && Fame >= 32001 && Fame <= 34500 && HaveTitle == 58
+	EndWindow 15482
+##贤者+9000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 34501 && Fame <= 36999 && HaveTitle == 58
+	EndWindow 15483
+##贤者+9000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 37000 && HaveTitle == 58
+	EndWindow 15492
+
+
+############################
+#### ╲2005/12/27馨筏╲ ####
+############################
+
+
+##神匠+10000﹋0%℅25%﹌+2500
+block Job >= 371 && Job <= 447 && Fame >= 37001 && Fame <= 39500 && HaveTitle == 59
+	EndWindow 15480
+##神匠+9000﹋26%℅50%﹌
+block Job >= 371 && Job <= 447 && Fame >= 39501 && Fame <= 42000 && HaveTitle == 59
+	EndWindow 15481
+##神匠+9000﹋51%℅75%﹌
+block Job >= 371 && Job <= 447 && Fame >= 42001 && Fame <= 44500 && HaveTitle == 59
+	EndWindow 15482
+##神匠+9000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 44501 && Fame <= 46999 && HaveTitle == 59
+	EndWindow 15483
+##神匠+9000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 47000 && HaveTitle == 59
+	EndWindow 15492
+
+
+##弥卞磉允绖℅缰哗谛 +10000﹋0%℅25%﹌+2500
+block Job >= 371 && Job <= 447 && Fame >= 47001 && Fame <= 49500 && HaveTitle == 88
+	EndWindow 15480
+##弥卞磉允绖℅缰哗谛 +9000﹋26%℅50%﹌
+block Job >= 371 && Job <= 447 && Fame >= 49501 && Fame <= 52000 && HaveTitle == 88
+	EndWindow 15481
+##弥卞磉允绖℅缰哗谛 +9000﹋51%℅75%﹌
+block Job >= 371 && Job <= 447 && Fame >= 52001 && Fame <= 54500 && HaveTitle == 88
+	EndWindow 15482
+##弥卞磉允绖℅缰哗谛 +9000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 54501 && Fame <= 56999 && HaveTitle == 88
+	EndWindow 15483
+##弥卞磉允绖℅缰哗谛 +9000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 57000 && HaveTitle == 88
+	EndWindow 15492
+
+
+##缰哗谛℅檗儅勾叶樊 +13000﹋0%℅25%﹌+3250
+block Job >= 371 && Job <= 447 && Fame >= 57001 && Fame <= 59500 && HaveTitle == 89
+	EndWindow 15480
+##缰哗谛℅檗儅勾叶樊 +13000﹋26%℅50%﹌
+block Job >= 371 && Job <= 447 && Fame >= 59501 && Fame <= 62000 && HaveTitle == 89
+	EndWindow 15481
+##缰哗谛℅檗儅勾叶樊 +13000﹋51%℅75%﹌
+block Job >= 371 && Job <= 447 && Fame >= 62001 && Fame <= 64500 && HaveTitle == 89
+	EndWindow 15482
+##缰哗谛℅檗儅勾叶樊 +13000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 64501 && Fame <= 69999 && HaveTitle == 89
+	EndWindow 15483
+##缰哗谛℅檗儅勾叶樊 +13000﹋76%℅99%﹌
+block Job >= 371 && Job <= 447 && Fame >= 70000 && HaveTitle == 89
+	EndWindow 15492
+
+
+##贤者之石拥有者
+block Job >= 371 && Job <= 447 && Fame >= 70000
+	Window 15485,next
+	EndWindow 3007287
+
+
+############################
+#### ╱2005/12/27馨筏╱ ####
+############################
+
+
+######################################################################
+#	五仇曰℅驰屺
+######################################################################
+##追求技巧的人 +500﹋0%℅25%﹌+125
+block Job >= 451 && Job <= 477 && Fame >= 2501 && Fame <= 2625 && HaveTitle == 53
+	EndWindow 15480
+##追求技巧的人 +2000﹋26%℅50%﹌
+block Job >= 451 && Job <= 477 && Fame >= 2626 && Fame <= 2750 && HaveTitle == 53
+	EndWindow 15481
+##追求技巧的人 +2000﹋51%℅75%﹌
+block Job >= 451 && Job <= 477 && Fame >= 2751 && Fame <= 2875 && HaveTitle == 53
+	EndWindow 15482
+##追求技巧的人 +2000﹋76%℅99%﹌
+block Job >= 451 && Job <= 477 && Fame >= 2876 && Fame <= 2999 && HaveTitle == 53
+	EndWindow 15483
+##追求技巧的人 +2000﹋100%℅﹌
+block Job >= 451 && Job <= 477 && Fame >= 3000 && HaveTitle == 53
+	EndWindow 15492
+
+##刻于新月之铭+1500﹋0%℅25%﹌+375
+block Job >= 451 && Job <= 477 && Fame >= 3001 && Fame <= 3375 && HaveTitle == 54
+	EndWindow 15480
+##刻于新月之铭+2000﹋26%℅50%﹌
+block Job >= 451 && Job <= 477 && Fame >= 3376 && Fame <= 3750 && HaveTitle == 54
+	EndWindow 15481
+##刻于新月之铭+2000﹋51%℅75%﹌
+block Job >= 451 && Job <= 477 && Fame >= 3751 && Fame <= 4125 && HaveTitle == 54
+	EndWindow 15482
+##刻于新月之铭+2000﹋76%℅99%﹌
+block Job >= 451 && Job <= 477 && Fame >= 4126 && Fame <= 4499 && HaveTitle == 54
+	EndWindow 15483
+##刻于新月之铭+2000﹋100%℅﹌
+block Job >= 451 && Job <= 477 && Fame >= 4500 && HaveTitle == 54
+	EndWindow 15492
+
+##掌上的明珠 +3500﹋0%℅25%﹌+875
+block Job >= 451 && Job <= 477 && Fame >= 4501 && Fame <= 5375 && HaveTitle == 55
+	EndWindow 15480
+##掌上的明珠 +3000﹋26%℅50%﹌
+block Job >= 451 && Job <= 477 && Fame >= 5376 && Fame <= 6250 && HaveTitle == 55
+	EndWindow 15481
+##掌上的明珠 +3000﹋51%℅75%﹌
+block Job >= 451 && Job <= 477 && Fame >= 6251 && Fame <= 7125 && HaveTitle == 55
+	EndWindow 15482
+##掌上的明珠 +3000﹋76%℅99%﹌
+block Job >= 451 && Job <= 477 && Fame >= 7126 && Fame <= 7999 && HaveTitle == 55
+	EndWindow 15483
+##掌上的明珠 +3000﹋100%℅﹌
+block Job >= 451 && Job <= 477 && Fame >= 8000 && HaveTitle == 55
+	EndWindow 15492
+
+##敬虔的技巧月 +4000﹋0%℅25%﹌+1000
+block Job >= 451 && Job <= 477 && Fame >= 8001 && Fame <= 9000 && HaveTitle == 56
+	EndWindow 15480
+##敬虔的技巧月 +5000﹋26%℅50%﹌
+block Job >= 451 && Job <= 477 && Fame >= 9001 && Fame <= 10000 && HaveTitle == 56
+	EndWindow 15481
+##敬虔的技巧月 +5000﹋51%℅75%﹌
+block Job >= 451 && Job <= 477 && Fame >= 10001 && Fame <= 11000 && HaveTitle == 56
+	EndWindow 15482
+##敬虔的技巧月 +5000﹋76%℅99%﹌
+block Job >= 451 && Job <= 477 && Fame >= 11001 && Fame <= 11999 && HaveTitle == 56
+	EndWindow 15483
+##敬虔的技巧月 +5000﹋100%℅﹌
+block Job >= 451 && Job <= 477 && Fame >= 12000 && HaveTitle == 56
+	EndWindow 15492
+
+##踏入神的领域 +5000﹋0%℅25%﹌+1250
+block Job >= 451 && Job <= 477 && Fame >= 12001 && Fame <= 13250 && HaveTitle == 57
+	EndWindow 15480
+##踏入神的领域 +6000﹋26%℅50%﹌
+block Job >= 451 && Job <= 477 && Fame >= 13251 && Fame <= 14500 && HaveTitle == 57
+	EndWindow 15481
+##踏入神的领域 +6000﹋51%℅75%﹌
+block Job >= 451 && Job <= 477 && Fame >= 14501 && Fame <= 15750 && HaveTitle == 57
+	EndWindow 15482
+##踏入神的领域 +6000﹋76%℅99%﹌
+block Job >= 451 && Job <= 477 && Fame >= 15751 && Fame <= 16999 && HaveTitle == 57
+	EndWindow 15483
+##踏入神的领域 +6000﹋100%℅﹌
+block Job >= 451 && Job <= 477 && Fame >= 17000 && HaveTitle == 57
+	EndWindow 15492
+
+##贤者+8000﹋0%℅25%﹌+2000
+block Job >= 451 && Job <= 477 && Fame >= 17001 && Fame <= 19000 && HaveTitle == 58
+	EndWindow 15480
+##贤者+9000﹋26%℅50%﹌
+block Job >= 451 && Job <= 477 && Fame >= 19001 && Fame <= 21000 && HaveTitle == 58
+	EndWindow 15481
+##贤者+9000﹋51%℅75%﹌
+block Job >= 451 && Job <= 477 && Fame >= 21001 && Fame <= 23000 && HaveTitle == 58
+	EndWindow 15482
+##贤者+9000﹋76%℅99%﹌
+block Job >= 451 && Job <= 477 && Fame >= 23001 && Fame <= 24999 && HaveTitle == 58
+	EndWindow 15483
+##贤者+9000﹋100%℅﹌
+block Job >= 451 && Job <= 477 && Fame >= 25000 && HaveTitle == 58
+	EndWindow 15492
+
+
+############################
+#### ╲2005/12/27馨筏╲ ####
+############################
+
+
+##神匠+9000﹋0%℅25%﹌+2250
+block Job >= 451 && Job <= 477 && Fame >= 25001 && Fame <= 27250 && HaveTitle == 59
+	EndWindow 15480
+##神匠+9000﹋26%℅50%﹌
+block Job >= 451 && Job <= 477 && Fame >= 27251 && Fame <= 29500 && HaveTitle == 59
+	EndWindow 15481
+##神匠+9000﹋51%℅75%﹌
+block Job >= 451 && Job <= 477 && Fame >= 29501 && Fame <= 31750 && HaveTitle == 59
+	EndWindow 15482
+##神匠+9000﹋76%℅99%﹌
+block Job >= 451 && Job <= 477 && Fame >= 31751 && Fame <= 33999 && HaveTitle == 59
+	EndWindow 15483
+##神匠+9000﹋100%℅﹌
+block Job >= 451 && Job <= 477 && Fame >= 34000 && HaveTitle == 59
+	EndWindow 15492
+
+##摘星的技巧+9000﹋0%℅25%﹌+2250
+block Job >= 451 && Job <= 477 && Fame >= 34001 && Fame <= 36250 && HaveTitle == 88
+	EndWindow 15480
+##摘星的技巧+9000﹋26%℅50%﹌
+block Job >= 451 && Job <= 477 && Fame >= 36251 && Fame <= 38500 && HaveTitle == 88
+	EndWindow 15481
+##摘星的技巧+9000﹋51%℅75%﹌
+block Job >= 451 && Job <= 477 && Fame >= 38501 && Fame <= 40750 && HaveTitle == 88
+	EndWindow 15482
+##摘星的技巧+9000﹋76%℅99%﹌
+block Job >= 451 && Job <= 477 && Fame >= 40751 && Fame <= 42999 && HaveTitle == 88
+	EndWindow 15483
+##摘星的技巧+9000﹋100%℅﹌
+block Job >= 451 && Job <= 477 && Fame >= 43000 && HaveTitle == 88
+	EndWindow 15492
+
+##万物创造者+17000﹋0%℅25%﹌+4250
+block Job >= 451 && Job <= 477 && Fame >= 43001 && Fame <= 47250 && HaveTitle == 89
+	EndWindow 15480
+##万物创造者+17000﹋26%℅50%﹌
+block Job >= 451 && Job <= 477 && Fame >= 47251 && Fame <= 51500 && HaveTitle == 89
+	EndWindow 15481
+##万物创造者+17000﹋51%℅75%﹌
+block Job >= 451 && Job <= 477 && Fame >= 51501 && Fame <= 55750 && HaveTitle == 89
+	EndWindow 15482
+##万物创造者+17000﹋76%℅99%﹌
+block Job >= 451 && Job <= 477 && Fame >= 55751 && Fame <= 59999 && HaveTitle == 89
+	EndWindow 15483
+##万物创造者+17000﹋100%℅﹌
+block Job >= 451 && Job <= 477 && Fame >= 60000 && HaveTitle == 89
+	EndWindow 15492
+
+##贤者之石拥有者
+block Job >= 451 && Job <= 477 && Fame >= 60000
+	Window 15485,next
+	EndWindow 3007287
+
+############################
+#### 2006,9,19纺织工
+############################
+
+
+
+##追求技巧的人 +500﹋0%℅25%﹌+125
+block Job >= 1011 && Job <= 1017 && Fame >= 2501 && Fame <= 2625 && HaveTitle == 53
+	EndWindow 15480
+##追求技巧的人 +2000﹋26%℅50%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 2626 && Fame <= 2750 && HaveTitle == 53
+	EndWindow 15481
+##追求技巧的人 +2000﹋51%℅75%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 2751 && Fame <= 2875 && HaveTitle == 53
+	EndWindow 15482
+##追求技巧的人 +2000﹋76%℅99%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 2876 && Fame <= 2999 && HaveTitle == 53
+	EndWindow 15483
+##追求技巧的人 +2000﹋100%℅﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 3000 && HaveTitle == 53
+	EndWindow 15492
+
+##刻于新月之铭+1500﹋0%℅25%﹌+375
+block Job >= 1011 && Job <= 1017 && Fame >= 3001 && Fame <= 3375 && HaveTitle == 54
+	EndWindow 15480
+##刻于新月之铭+2000﹋26%℅50%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 3376 && Fame <= 3750 && HaveTitle == 54
+	EndWindow 15481
+##刻于新月之铭+2000﹋51%℅75%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 3751 && Fame <= 4125 && HaveTitle == 54
+	EndWindow 15482
+##刻于新月之铭+2000﹋76%℅99%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 4126 && Fame <= 4499 && HaveTitle == 54
+	EndWindow 15483
+##刻于新月之铭+2000﹋100%℅﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 4500 && HaveTitle == 54
+	EndWindow 15492
+
+##掌上的明珠 +3500﹋0%℅25%﹌+875
+block Job >= 1011 && Job <= 1017 && Fame >= 4501 && Fame <= 5375 && HaveTitle == 55
+	EndWindow 15480
+##掌上的明珠 +3000﹋26%℅50%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 5376 && Fame <= 6250 && HaveTitle == 55
+	EndWindow 15481
+##掌上的明珠 +3000﹋51%℅75%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 6251 && Fame <= 7125 && HaveTitle == 55
+	EndWindow 15482
+##掌上的明珠 +3000﹋76%℅99%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 7126 && Fame <= 7999 && HaveTitle == 55
+	EndWindow 15483
+##掌上的明珠 +3000﹋100%℅﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 8000 && HaveTitle == 55
+	EndWindow 15492
+
+##敬虔的技巧月 +4000﹋0%℅25%﹌+1000
+block Job >= 1011 && Job <= 1017 && Fame >= 8001 && Fame <= 9000 && HaveTitle == 56
+	EndWindow 15480
+##敬虔的技巧月 +5000﹋26%℅50%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 9001 && Fame <= 10000 && HaveTitle == 56
+	EndWindow 15481
+##敬虔的技巧月 +5000﹋51%℅75%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 10001 && Fame <= 11000 && HaveTitle == 56
+	EndWindow 15482
+##敬虔的技巧月 +5000﹋76%℅99%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 11001 && Fame <= 11999 && HaveTitle == 56
+	EndWindow 15483
+##敬虔的技巧月 +5000﹋100%℅﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 12000 && HaveTitle == 56
+	EndWindow 15492
+
+##踏入神的领域 +5000﹋0%℅25%﹌+1250
+block Job >= 1011 && Job <= 1017 && Fame >= 12001 && Fame <= 13250 && HaveTitle == 57
+	EndWindow 15480
+##踏入神的领域 +6000﹋26%℅50%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 13251 && Fame <= 14500 && HaveTitle == 57
+	EndWindow 15481
+##踏入神的领域 +6000﹋51%℅75%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 14501 && Fame <= 15750 && HaveTitle == 57
+	EndWindow 15482
+##踏入神的领域 +6000﹋76%℅99%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 15751 && Fame <= 16999 && HaveTitle == 57
+	EndWindow 15483
+##踏入神的领域 +6000﹋100%℅﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 17000 && HaveTitle == 57
+	EndWindow 15492
+
+##贤者+8000﹋0%℅25%﹌+2000
+block Job >= 1011 && Job <= 1017 && Fame >= 17001 && Fame <= 19000 && HaveTitle == 58
+	EndWindow 15480
+##贤者+9000﹋26%℅50%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 19001 && Fame <= 21000 && HaveTitle == 58
+	EndWindow 15481
+##贤者+9000﹋51%℅75%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 21001 && Fame <= 23000 && HaveTitle == 58
+	EndWindow 15482
+##贤者+9000﹋76%℅99%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 23001 && Fame <= 24999 && HaveTitle == 58
+	EndWindow 15483
+##贤者+9000﹋100%℅﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 25000 && HaveTitle == 58
+	EndWindow 15492
+
+
+##神匠+9000﹋0%℅25%﹌+2250
+block Job >= 1011 && Job <= 1017 && Fame >= 25001 && Fame <= 27250 && HaveTitle == 59
+	EndWindow 15480
+##神匠+9000﹋26%℅50%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 27251 && Fame <= 29500 && HaveTitle == 59
+	EndWindow 15481
+##神匠+9000﹋51%℅75%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 29501 && Fame <= 31750 && HaveTitle == 59
+	EndWindow 15482
+##神匠+9000﹋76%℅99%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 31751 && Fame <= 33999 && HaveTitle == 59
+	EndWindow 15483
+##神匠+9000﹋100%℅﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 34000 && HaveTitle == 59
+	EndWindow 15492
+
+##摘星的技巧+9000﹋0%℅25%﹌+2250
+block Job >= 1011 && Job <= 1017 && Fame >= 34001 && Fame <= 36250 && HaveTitle == 88
+	EndWindow 15480
+##摘星的技巧+9000﹋26%℅50%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 36251 && Fame <= 38500 && HaveTitle == 88
+	EndWindow 15481
+##摘星的技巧+9000﹋51%℅75%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 38501 && Fame <= 40750 && HaveTitle == 88
+	EndWindow 15482
+##摘星的技巧+9000﹋76%℅99%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 40751 && Fame <= 42999 && HaveTitle == 88
+	EndWindow 15483
+##摘星的技巧+9000﹋100%℅﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 43000 && HaveTitle == 88
+	EndWindow 15492
+
+##万物创造者+17000﹋0%℅25%﹌+4250
+block Job >= 1011 && Job <= 1017 && Fame >= 43001 && Fame <= 47250 && HaveTitle == 89
+	EndWindow 15480
+##万物创造者+17000﹋26%℅50%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 47251 && Fame <= 51500 && HaveTitle == 89
+	EndWindow 15481
+##万物创造者+17000﹋51%℅75%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 51501 && Fame <= 55750 && HaveTitle == 89
+	EndWindow 15482
+##万物创造者+17000﹋76%℅99%﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 55751 && Fame <= 59999 && HaveTitle == 89
+	EndWindow 15483
+##万物创造者+17000﹋100%℅﹌
+block Job >= 1011 && Job <= 1017 && Fame >= 60000 && HaveTitle == 89
+	EndWindow 15492
+
+##贤者之石拥有者
+block Job >= 1011 && Job <= 1017 && Fame >= 60000
+	Window 15485,next
+	EndWindow 3007287
+############################
+#### ╱2005/12/27馨筏╱ ####
+############################
+
+
+######################################################################
+#	公及职
+######################################################################
+block
+	EndWindow 15484
+
+

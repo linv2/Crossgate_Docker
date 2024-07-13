@@ -1,0 +1,188 @@
+######### 地狱祭 ########
+##阿法  换魔水
+
+
+block Item 46852 >= 99
+	 ##1053071	呵～呵～你居然有９９个黑水晶，我拿个魔族的水晶跟你换，好不好呀？	
+	 Window 1053071,YES,NO
+	 	 Window_NO 
+	 	         ##不要就算了。
+	 	         EndWindow 1053073
+	 	 Window_YES Item 46852 <99
+	 	 	 ##1053109	咦～你的物品突然不够，是不是掉了。
+	 	 	 EndWindow 1053109
+		 Window_YES ItemSpace < 1 
+		         ##物品栏已满
+		         EndWindow 1100001	 	 	 
+	 	 Window_YES Item 46852 >= 99
+	 	 	 #//失去十个黑水晶
+	 	 	 killitem 46852,99
+	 	 	 #//得到 魔族的水晶	
+	  	 	 GiveLeak1Item 18450,1
+	 	 	 ##1053072	这是魔族的水晶，你拿去吧。
+			 EndWindow 1053072
+
+
+##贝塔  猫眼石
+
+
+block Item 46849 >= 10
+	 ##1053075	这不是猫眼石矿嘛？你有十份呀！！通通送我好不好，我拿猫眼石碎片跟你换？	
+
+	 Window 1053075,YES,NO
+	 	 Window_NO 
+	 	         ##小气鬼。
+	 	         EndWindow 1053077
+	 	 Window_YES Item 46849 <10
+	 	 	 ##1053109	咦～你的物品突然不够，是不是掉了。
+	 	 	 EndWindow 1053109
+		 Window_YES ItemSpace < 1 
+		         ##物品栏已满
+		         EndWindow 1100001		 	 	 
+	 	 Window_YES Item 46849 >= 10
+	 	 	 #//失去十个猫眼石矿
+	 	 	 killitem 46849,10
+	 	 	 #//得到 
+	 	 	
+	 	 	 GiveLeak1Item 13700,1
+	 	 	 ##1053076	好，这是猫眼石，要收好喔。
+			 EndWindow 1053076
+block Item 46851 >= 99
+	 ##1053079   我十个破碎誓言！我想试着拼凑起来，我拿誓言之证跟你换好吗？
+
+	 Window 1053079,YES,NO
+	 	 Window_NO 
+	 	         ##你真是傻，留着没用的东西作什么！
+	 	         EndWindow 1053081
+	 	 Window_YES Item 46851 <99
+	 	 	 ##1053109	咦～你的物品突然不够，是不是掉了。
+	 	 	 EndWindow 1053109
+		 Window_YES ItemSpace < 1 
+		         ##物品栏已满
+		         EndWindow 1100001		 	 	 
+	 	 Window_YES Item 46851 >= 99
+	 	 	 #//失去十个誓言之证碎片
+	 	 	 killitem 46851,99
+	 	 	 #//得到 
+	 	 	 
+	 	 	 GiveLeak1Item 18451,1
+	 	 	 ##105308080	好，这是誓言之证，要收好喔。
+			 EndWindow 1053080
+
+##嘉玛  火焰之魂
+
+
+block Item 46850 >= 10
+	 ##1053083   真没想到你居然有那么多来自地狱的火种。\n你把十个火种交出来，我给你一个火焰之魂？
+
+
+	 Window 1053083,YES,NO
+	 	 Window_NO 
+	 	         ##小心可别玩火自焚喔。
+	 	         EndWindow 1053085
+	 	 Window_YES Item 46850 <10
+	 	 	 ##1053109	咦～你的物品突然不够，是不是掉了。
+	 	 	 EndWindow 1053109
+		 Window_YES ItemSpace < 1 
+		         ##物品栏已满
+		         EndWindow 1100001		 	 	 
+	 	 Window_YES Item 46850 >= 10
+	 	 	 #//失去十个誓言之证碎片
+	 	 	 killitem 46850,10
+	 	 	 #//得到 
+	 	 	
+	 	 	 GiveLeak1Item 18452,1
+	 	 	 ##105308084	好，这是火焰之魂，要收好喔。
+
+			 EndWindow 1053084
+block Item 46724 >= 10
+	 ##1053091   看来你身上有不少银水晶！我拿圣魔石，跟你换十个银水晶，好吗？	
+
+
+	 Window 1053091,YES,NO
+	 	 Window_NO 
+	 	         ##不换成圣魔石？好吧！等你那天想换再来吧。
+	 	         EndWindow 1053093
+	 	 Window_YES Item 46724 <10
+	 	 	 ##1053109	咦～你的物品突然不够，是不是掉了。
+	 	 	 EndWindow 1053109
+		 Window_YES ItemSpace < 1 
+		         ##物品栏已满
+		         EndWindow 1100001		 	 	 
+	 	 Window_YES Item 46724 >= 10
+	 	 	 #//失去十个银水晶
+	 	 	 killitem 46724,10
+	 	 	 #//得到 
+	 	 	
+	 	 	 GiveLeak1Item 40057,1
+	 	 	 ##1053092	好，这是圣魔石 收好喔。
+			 EndWindow 1053092
+block Item 46725 >= 10
+	 ##1053095  唔！那不是传说中草根吗，你身上的草根够提炼出一瓶妖草的血，要提炼吗？	
+
+
+	 Window 1053095,YES,NO
+	 	 Window_NO 
+	 	         ##想换妖草的血再跟我说吧。
+	 	         EndWindow 1053097
+	 	Window_YES Item 46725 <10
+	 	 	 ##1053109	咦～你的物品突然不够，是不是掉了。
+	 	 	 EndWindow 1053109
+		 Window_YES ItemSpace < 1 
+		         ##物品栏已满
+		         EndWindow 1100001		 	 	 
+	 	 Window_YES Item 46725 >= 10
+	 	 	 #//失去十个草根
+	 	 	 killitem 46725,10
+	 	 	 #//得到 
+	 	 	
+	 	 	 GiveLeak1Item 18456,1
+	 	 	 ##1053096	好，这是妖草的血，要收好喔。
+
+			 EndWindow 1053096
+block 	Item 46725 >= 1
+   	##真唔！那不是传说中草根吗，可惜数量不够，没办法提炼妖草的血。
+	EndWindow 1053104
+
+block 	Item 46724>= 1
+   	##真可惜你的银水晶少了点，要不然我想圣魔石跟你交换。
+	EndWindow 1053103			 
+			 
+block 	Item 46851 >= 1
+   	##可惜你身上的破碎誓言不到９９个，有９９个的话也许能拼成完整的誓言之证！
+	EndWindow 1053101			 
+block 	Item 46850 >= 1
+   	##可惜你的火种太少，要不然我想拿火焰之魂跟你交换。
+	EndWindow 1053102
+					 
+block 	Item 46849 >= 1
+   	##真可惜，如果有十个猫眼石矿，我愿意拿猫眼石碎片跟你交换！
+	EndWindow 1053100		
+block 	Item 46852 >= 1
+   	##真可惜，如果有９９个黑水晶，我愿意拿魔族水晶跟你交换！
+	EndWindow 1053099
+#....	
+block
+	 ##1053074 听说三座地狱之门被打开了，不晓得鬼王藏在里面的东西，有没有被挖了出来！
+         ##      \n听说鬼王的宝藏中有黑水晶，真的很想要黑水晶。
+	 Window 1053074,next
+#block 
+	 ##1053078 听说地府内有猫眼石矿脉，不知道那里的猫眼石品质好不好！
+	 ##      \n猫眼石的产量很少，如果有足够猫眼石矿，我就可以请人作猫眼石饰品了！
+	 Window 1053078,next
+#block 
+	 ##1053082 
+	 ##我听说在地狱深处，有人们自毁誓言，\n
+	 ##而产生的破碎誓言，不知道是不是真的！\n
+	 ##不过誓言碎了，能再拼凑起来吗？。
+
+	 Window 1053082,next
+#block 
+	 ##1053086 我听说地狱深处，有奇特的火种。\n来自地狱的火种，点起来不知是一般的火，还是鬼火！	
+	 Window 1053086,next
+#block 
+	 ##1053094 听说银水晶也有驱魔效果，不晓得是不是真！\n我真想拿一些银水晶来试试驱魔效果。
+	 Window 1053094,next
+#block 
+	 ##1053098 我听说用地狱一种奇特的草根，提炼的出妖草的血！\n我想那只是传说，我只在古书上见过，并没有看过真的草根。
+	 EndWindow 1053098	 	 	 	 	 

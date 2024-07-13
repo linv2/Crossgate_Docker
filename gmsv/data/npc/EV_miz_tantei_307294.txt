@@ -1,0 +1,14 @@
+#茧樱弁巨旦玄“玉失
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block 
+
+	Window 206422,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33280,65,23
+	Window_NO
+

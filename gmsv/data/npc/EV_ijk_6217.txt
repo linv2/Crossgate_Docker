@@ -1,0 +1,112 @@
+#缜谛仿件弁失永皿?奶矛件玄﹛き戚魂董敢﹋椎烂﹌
+
+#椎烂缜谛﹜仿件弁A﹜弘伙□皿
+#block Job >= 384 && Group >= 2 && EndEvent 91 == 1
+#	#\n\n﹛楝反允匹卞豢迕琼缜谛及凤伞魂董卞宁伞仄化中月方丹分互﹜引分仿件弁失永皿毛绊凶仄化中卅中缜谛及扔禾□玄卞侳凶及井友〝\n﹛手仄公丹卅日﹜YES及示正件毛瓷仄卅今中﹝き戚魂董及莘桦卞?壬仄化丐仆方丹﹝
+#	Window 17016,YES,NO
+
+#	Window_YES Job >= 384 && Group >= 2 && EndEvent 91 == 1
+#	Warp 0,4421,8,10
+
+#	Window_NO
+
+#椎烂缜谛﹜仿件弁A
+#block Job >= 384 && EndEvent 91 == 1
+#	#\n\n﹛楝反允匹卞豢迕琼缜谛及凤伞魂董卞宁伞仄化中月方丹分卅﹝引分仿件弁失永皿毛绊凶仄化中卅中缜谛及扔禾□玄卞侳凶及卅日﹜弘伙□皿毛赚氏匹台卞狪仄喘仃月及分﹝
+#	EndWindow 17020
+
+##########﹛NowEvent犯田永弘迕﹛##########
+block NowEvent 91 == 1
+	NowEvent 91 = 0
+	#\n\n﹛仇仇匹反﹜楝凶切及由□泛奴及椎烂及チ恘毛苇六化手日丹﹝椎烂衔卞域戚魂董及综岳坁毛欐仄﹜台卞狪仄喘仃卅今中﹝
+	EndWindow 11957
+
+##########﹛仿件弁?椎烂衔互恔咥伊扑疋母立□失奶泛丞毛儅匀化中月桦宁﹛##########
+block Job >= 393 && SkillLevel 219 >= 8 && Item 18525 >= 1
+	#\n\n﹛孔戈﹜椎烂反请侳凶井卅〝公木匹反苇六化手日云丹井﹝
+	Window 11958,YES,NO
+
+	Window_NO
+	#\n\n﹛氏〝引分椎烂请侳化中卅中及井卅〝斗匀仁曰支木壬中中井日﹜椎烂请侳凶日台卞苇六卅今中﹝
+	EndWindow 11959
+
+	Window_YES Job >= 393 && SkillLevel 219 >= 8 && Leak0Item 18525 >= 1
+	#\n\n﹛﹝仇及综岳坁反引分敦蝈卞椎烂反匹五化中卅中方丹分﹝手丹剂仄渲舰匀化心卅今中﹝
+	EndWindow 11960
+
+	Window_YES Job >= 393 && SkillLevel 219 >= 8 && Leak1Item 18525 >= 1
+	#\n\n﹛幻丹幻丹﹜中中分欠丹﹝き戚魂董手宁伞分﹝仇木井日宁伞及朿盒及杅卞啖匀化手日丹井日弘伙□皿及引引匹中月方丹卞﹝??毛瓷允午伐□皿允月井日﹜伉□母□动陆及樊反??示正件毛瓷今卅中方丹卞﹝
+	Window 11950,OK
+
+	Window_OK
+	KillItem 18525
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+##########﹛仿件弁?椎烂衔互泔伊扑疋母立□失奶泛丞毛儅匀化中月桦宁﹛##########
+block Job >= 393 && SkillLevel 219 >= 8 && Item 18526 >= 1
+	Window 11958,YES,NO
+
+	Window_NO
+	EndWindow 11959
+
+	Window_YES Job >= 393 && SkillLevel 219 >= 8 && Leak0Item 18526 >= 1
+	EndWindow 11960
+
+	Window_YES Job >= 393 && SkillLevel 219 >= 8 && Leak1Item 18526 >= 1
+	Window 11950,OK
+
+	Window_OK
+	KillItem 18526
+	NowEvent 91 = 1
+	Warp 0,4421,8,10
+
+
+##########﹛仿件弁?椎烂衔互罹屯坁’泔馨笛伊扑疋失奶泛丞毛儅匀化中月桦宁﹛##########
+block Job >= 393 && SkillLevel 219 >= 8
+	#\n\n﹛仇仇匹反﹜楝凶切及由□泛奴及椎烂及チ恘毛苇六化手日丹﹝域戚魂董及综岳坁毛﹜戏遣烟缜谛井日欐仄化手日匀凶井卅〝
+	Window 11954,YES,NO
+
+	Window_NO
+	#\n\n﹛公木匹反﹜引内反燮幻升及综岳坁毛儅匀化﹜台卞手丹域蘸狪仄喘仃卅今中﹝
+	EndWindow 11944
+
+###﹛罹屯坁及桦宁
+
+	Window_YES Job >= 393 && SkillLevel 219 >= 8 && Item 15230 >= 1
+	KillItem 15230,1
+	Giveitem 18525,1
+	#\n\n﹛公木匹反﹜仇木方曰き戚魂董毛撕曰垫丹﹝凶匀凶漆﹜域戚魂董及综岳坁卞切斤匀午仄凶呺诸毛雒仄凶﹝楝及椎烂チ恘互仿件弁失永皿卞苇宁丹分仃岳赢仄化中凶日﹜か卅仁葭及铣毛苇请允仇午互匹五月分欠丹﹝魂仄化心卅今中﹝
+	Window 11955,OK
+
+###﹛泔及桦宁
+
+	Window_YES Job >= 393 && SkillLevel 219 >= 8 && Item 15630 >= 1
+	KillItem 15630,1
+	Giveitem 18526,1
+	Window 11955,OK
+
+	Window_YES Item 15230 == 0
+	#\n\n﹛引分综岳坁毛澎欐仄化手日匀化卅中方丹分卅﹝玄伊□玉毛仄化井日﹜手丹域蘸狪仄喘仃卅今中﹝
+	EndWindow 17005
+
+	Window_OK
+	#\n\n﹛公及综岳坁毛楝及チ恘匹椎烂仄凶引尹﹝椎烂互请侳木壬﹜手丹域蘸台卞狪仄喘仃月仇午分﹝公及凛﹜楝琼反き戚魂董卞手宁伞允月分欠丹﹝
+	EndWindow 11956
+
+
+##########﹛椎烂衔互旦平伙伊矛伙互箫曰卅中桦宁﹛##########
+block jobancestry == 390 && SkillLevel 219 < 8
+	#\n\n﹛楝及恘反仿件弁失永皿及湘赏袄卞箫曰化中卅中方丹分卅﹝膜垫仄化井日手丹域蘸侳月午中中﹝
+	EndWindow 11951
+
+##########﹛癫化反引日卅中桦宁﹛##########
+block NowEvent 91 == 1
+	NowEvent 91 = 0
+	#\n\n﹛仇仇匹反﹜楝凶切及由□泛奴及椎烂及チ恘毛苇六化手日丹﹝椎烂衔卞域戚魂董及综岳坁毛欐仄﹜台卞狪仄喘仃卅今中﹝
+	EndWindow 11957
+
+##########﹛癫化反引日卅中桦宁﹛##########
+block
+	#\n\n﹛仇仇匹反﹜楝凶切及由□泛奴及椎烂及チ恘毛苇六化手日丹﹝椎烂衔卞域戚魂董及综岳坁毛欐仄﹜台卞狪仄喘仃卅今中﹝
+	EndWindow 11957

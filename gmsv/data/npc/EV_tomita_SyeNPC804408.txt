@@ -1,0 +1,52 @@
+#斥乓田□ヨ曰14F﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛檐厶厘幂及摒
+
+###﹛≦脐珃?戴筏≧﹋ID“631017﹌毛湃卞欐仄凶
+block LocalFlag1 == 1
+	EndWindow 3205761
+
+		#\n\n﹛引今井﹜升仇尺垫仁及井侉木凶及井〝\n﹛仇及燮卞赶呿岈氏分洐票互丐月分欠丹﹝\n﹛公及轾井匀化尔础及洐票分﹝\n﹛匀凶仁﹜コ湮曰卞壑狪嬴井六月氏元扎卅中方﹝
+
+
+
+###﹛≦脐珃?戴筏≧﹋ID“631017﹌毛呁醒赭儅
+block Item_631017 >= 2
+	EndWindow 3205762
+
+		#\n\n﹛公丹支匀化窒缁手苇六日木月午﹜\n﹛丐曰互凶心互Г木月卅﹝\n﹛中日卅中方﹝
+
+
+
+###﹛≦脐珃?戴筏≧﹋ID“631017﹌毛ㄠ缁赭儅
+block LocalFlag1 == 0 && Item_631017 == 1
+
+	If ItemCreateTime_631017 > 25
+		EndWindow 3205763
+
+		#\n\n﹛丹□氏﹜俓仄中及反割井卞仇及呿分互﹜\n﹛仇木反母丢分卅﹝\n﹛左申互瑞仃化中月仄﹜橇谪手井卅曰鬼中﹝\n﹛歹仄反?呿卞仇分歹月戊伊弁正□卅氏分﹝
+		EndBlock
+
+	else
+		ShapeNext 14578
+		Window 3205764,OK
+
+		#\n\n﹛云丹云丹云丹﹜引今卞仇及呿分″\n﹛引今井仇木幻升及?呿互澎卞じ月午反＿﹝\n﹛申□旦玄及斥乓田□ヨ曰〝\n﹛丐丐﹜公木反仇及燮卞丐月赶呿洐票﹜\n﹛公及轾井匀化尔础及洐票毛褡户壬方中﹝
+
+			Window_OK
+				KillItemAll 631017
+				LocalFlag1 = 1
+				EndBlock
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3205765
+
+		#\n\n﹛衙呿盒毛苇井仃卅井匀凶井〝\n﹛中中笛蛹谨切仁凶太木化仄引匀凶﹝\n﹛丐℅丐﹜戽中＿＿﹝
+
+
+

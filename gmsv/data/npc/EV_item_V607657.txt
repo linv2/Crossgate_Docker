@@ -1,0 +1,38 @@
+block Item 607657 >= 2
+
+				endWindow "\n\n　请一封一封开信。"
+
+
+
+block ItemSpace < 1
+
+				endWindow "\n\n　赠り物を受け取る\n　スペースがひとつ足りません。"
+
+
+block
+
+				globalFlag15 = 0
+				globalFlag16 = 0
+				globalFlag17 = 0
+				globalFlag18 = 0
+				globalFlag19 = 0
+				globalFlag20 = 0
+				globalFlag21 = 0
+				globalFlag22 = 0
+				globalFlag23 = 0
+				globalFlag24 = 0
+
+
+				Window "\n\n　あ、あの、\n　こ、こんにちわ～\n　って、手纸じゃか～\n　えっと、女の子からこういうの贳うのって～\n　あたし、初めてだけど、\n　なんだろ、なんか男のコから贳うより、\n　どきどきしちゃって～やばいかも。",next
+
+				Window "\n\n　あの、とりあえず、\n　お?に、これ、受け取って下さい。\n　よろしくお愿いします～、お～？なのかな？",ok
+
+
+				Window_ok
+
+				killitem 607657,1,(3007163)
+				giveItem 607668,1
+				giveItem 18542,1
+
+
+

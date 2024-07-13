@@ -1,0 +1,6 @@
+#þ£?????
+
+block EndEvent 126 == 1 && EndEvent 127 == 1
+	EndWindow 22341,OK
+block
+	EndWindow 22335,OK

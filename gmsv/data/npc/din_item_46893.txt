@@ -1,0 +1,31 @@
+##puk3包装-虚拟物品-魔力PUK包  din_item_46893.txt
+##能力说明：双点后会随机出现１颗糖果以及一个模型。
+
+
+############# 空间不足2 ######################
+block ItemSpace < 2
+	 ##1052438	\n\n\n\n@c物品栏请留两格空位。	1
+	 EndWindow 1052438
+
+############# 一般 ######################
+block Item 46893 >=1
+ 	 localCount0  = random 100,1
+		 	
+ 	 if localCount0 == 1	
+	 	 KillItem 46893,1,(1053540) 
+		 GiveLeak1Item (46896%1$1)
+	 	 GiveLeak1Item (46899%1$1)
+	 endif
+
+	 if localCount0 >= 2 && localCount0 <= 49 
+	 	 KillItem 46893,1,(1053540) 
+		 GiveLeak1Item (46894%1$1)
+	 	 GiveLeak1Item (46897%1$1)	 	
+	 endif
+	 
+	 if localCount0 >= 50 && localCount0 <= 100
+	 	 KillItem 46893,1,(1053540) 
+		 GiveLeak1Item (46895%1$1)
+	 	 GiveLeak1Item (46898%1$1)
+	 endif 	 	
+endblock 	 

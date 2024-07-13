@@ -1,0 +1,12 @@
+block 
+	 Window 1054946,YES,NO
+	 Window_YES 
+ 	 KillItem 47649,1
+	 GiveLeak1Item (47175%3$1,47318%2$1,47443%3$1,47195%1$1,47196%1$1)
+ 	 Window_NO
+ 	 endblock
+ 	 
+#47175
+#47318
+#47443
+ 	 

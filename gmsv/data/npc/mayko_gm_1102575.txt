@@ -1,0 +1,23 @@
+#1110482	守在这边，寒风一直吹，真冷呀。	1
+#1110483	真想弄点木炭生火取暖！	1
+#1110484	你想过去的话，帮我弄块木炭！！	1
+#1110485	木炭要送我，好让你通过这里吗？	1
+#木炭	9707
+block Item 9707>0
+	 Window 1110482,NEXT
+	 Window 1110483,NEXT 
+	 Window 1110485,YES,NO
+	 Window_NO
+	 EndWindow 1110484
+	 Window_YES Item 9707==0
+	 EndWindow 1110484
+	 Window_YES
+	 KillItem 9707,1
+	 LeaveGroup
+	 Warp 0,32134,14,14
+	 endblock
+
+block 
+	 Window 1110482,NEXT
+	 Window 1110483,NEXT
+	 EndWindow 1110484	 

@@ -1,0 +1,146 @@
+block 
+	 Window 1054570,NEXT
+       # Window 1054581,NEXT
+#=======================
+	 Window 1054560,YES,NO
+	 Window_YES Gold<100
+	 EndWindow 1053594
+	 Window_YES Item 40105<1
+	 EndWindow 1054569		
+	 Window_YES 
+	 AddGold -100
+	 KillItem 40105
+	 Window 1054572,NEXT
+	 Window 1054573,NEXT
+	 Window 1054574,NEXT
+	 Window 1054575,NEXT 	 
+	 GiveLeak1Item (40105%9999$1,18859%1$1)
+	 #平民帽	99.9900%	破烂的帽子	0.0100%
+	 Endblock 	 	 
+#=======================
+	 Window_NO
+	 Window 1054561,YES,NO
+
+	 Window_YES Gold<100
+	 EndWindow 1053594
+	 Window_YES Item 40106<1
+	 EndWindow 1054569		
+	 Window_YES
+	 AddGold -100
+	 KillItem 40106
+	 Window 1054572,NEXT
+	 Window 1054573,NEXT
+	 Window 1054574,NEXT
+	 Window 1054575,NEXT 	 
+	 GiveLeak1Item (40106%99992$1,18858%8$1) 
+	 #平民盔	99.9920%	生锈的头盔 18858 0.0080%
+	 Endblock
+#=======================
+	 Window_NO
+	 Window 1054562	,YES,NO
+
+	 Window_YES Gold<100
+	 EndWindow 1053594
+	 Window_YES Item 40107<1
+	 EndWindow 1054569
+	 Window_YES
+	 AddGold -100
+	 KillItem 40107
+	 Window 1054572,NEXT
+	 Window 1054573,NEXT
+	 Window 1054574,NEXT
+	 Window 1054575,NEXT 	 
+	 GiveLeak1Item (40107%9999$1,18860%1$1)
+	 #平民铠	99.9900%生锈的铠	0.0100%	18860	
+	 Endblock
+#=======================	 
+	 Window_NO
+
+	 Window 1054563	,YES,NO
+
+	 Window_YES Gold<100
+	 EndWindow 1053594
+	 Window_YES Item 40108<1
+	 EndWindow 1054569
+	 Window_YES
+	 AddGold -100
+	 KillItem 40108
+	 Window 1054572,NEXT
+	 Window 1054573,NEXT
+	 Window 1054574,NEXT
+	 Window 1054575,NEXT 	 
+	 GiveLeak1Item (40108%99996$1,18861%4$1) 
+	 #平民衣	99.9960%破烂的衣服	0.0040%	18861
+	 Endblock
+#=======================	 
+	 Window_NO
+	 Window 1054564	,YES,NO
+	 Window_YES Gold<100
+	 EndWindow 1053594
+	 Window_YES Item 40109<1
+	 EndWindow 1054569
+	 Window_YES
+ 	 AddGold -100
+	 KillItem 40109
+	 Window 1054572,NEXT
+	 Window 1054573,NEXT
+	 Window 1054574,NEXT
+	 Window 1054575,NEXT 	 	 
+	 GiveLeak1Item (40109%99996$1,18862%4$1) 
+	 #平民袍	99.9960%破烂的袍	0.0040%	18862	
+	 Endblock
+#=======================	 
+	 Window_NO
+	 Window 1054565	,YES,NO
+	 Window_YES Gold<100
+	 EndWindow 1053594
+	 Window_YES Item 40110<1
+	 EndWindow 1054569
+	 Window_YES
+	 AddGold -100
+	 KillItem 40110
+	 Window 1054572,NEXT
+	 Window 1054573,NEXT
+	 Window 1054574,NEXT
+	 Window 1054575,NEXT 	 
+	 #GiveLeak1Item (47356%1$1,47357%1$1,47358%1$1,47359%1$1,47360%1$1,47361%1$1)	 	 
+	 GiveLeak1Item (40110%99992$1,18863%8$1) 	
+	 #平民靴	99.9920%破烂的靴子	0.0080%	18863	
+	 Endblock
+#=======================	 
+	 Window_NO
+	 Window 1054566	,YES,NO
+	 Window_YES Gold<100
+	 EndWindow 1053594
+	 Window_YES Item 40111<1
+	 EndWindow 1054569
+	 Window_YES
+	 AddGold -100
+	 KillItem 40111
+	 Window 1054572,NEXT
+	 Window 1054573,NEXT
+	 Window 1054574,NEXT
+	 Window 1054575,NEXT 	 
+	 GiveLeak1Item (40111%9999$1,18864%1$1)	 
+	 #平民鞋	99.9900%破烂的鞋子	0.0100%	18864	
+	 Endblock
+#=======================	 
+	 Window_NO
+	 Window 1054567	,YES,NO
+	 
+	 Window_YES Gold<100
+	 EndWindow 1053594
+	 Window_YES Item 40112<1
+	 EndWindow 1054569
+	 Window_YES
+	 AddGold -100
+	 KillItem 40112
+	 Window 1054572,NEXT
+	 Window 1054573,NEXT
+	 Window 1054574,NEXT
+	 Window 1054575,NEXT 	 
+	 GiveLeak1Item (40112%9999$1,18865%1$1)	 
+	 #平民盾	99.9900%生锈的盾	0.0100%	18865	
+	 Window_NO
+	 EndWindow 1054571
+	 

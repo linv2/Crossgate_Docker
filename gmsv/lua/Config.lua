@@ -1,0 +1,43 @@
+--[[
+Lua功能模块控制开关
+如要关闭某个功能，请在该行的最前面，加入--
+--]]
+--useModule("OnlinePlayer");		--玩家在线列表（必须）
+useModule("Welcome");				--游戏公告
+--useModule("myLogin");				--原地登录
+--useModule("fram");					--声望查询
+--useModule("LvOnePet");				--1级宠物提醒和宠物变异(默认关闭宠物变异)
+--useModule("xd");					--宠物洗档
+--useModule("t");						--队长踢人
+--useModule("NewbieBless");			--天使庇护
+--useModule("namechanger");			--在线改名
+--useModule("expSetting");			--阶梯经验 在线经验加成 经验道具
+--useModule("jyjc");					--经验加成道具
+--useModule("getpetBp");				--宠物算档
+--useModule("hunter");				--日常猎杀任务
+--useModule("autowarp");				--VIP发放员和副本传送
+--useModule("announce");				--走动宣传npc
+--useModule("question");				--答题相关
+--useModule("ng");					--便捷按钮 内挂相关
+--useModule("packagesort");			--战斗结束自动整理背包
+--useModule("laba");					--喇叭
+--useModule("title");					--称号属性加成
+--useModule("Signin");				--签到
+--tbl_TJBX_npc = {};					--天降宝箱
+--useModule("TJBX");					--天降宝箱
+--tbl_routineinfo = {};				--每日任务
+--useModule("routine_too");			--每日任务
+--useModule("GoldMap");				--藏宝图 or 挖宝
+--useModule("RightChar");				--GM右键操作相关
+--useModule("TmpNpc");				--GM右键操作相关
+--useModule("phb");					--排行榜
+--useModule("Shortcut");				--快速加点
+--useModule("MateChage");				--形象修改NPC
+--useModule("item");					--耐久诱魔香相关
+--useModule("item_tbl");				--耐久诱魔香相关
+----展示诱魔香
+----诱魔香?	诱魔香(50步)				LUA_useInTohelos						666242	26221	0	43		0	1	0	72	1	1	1	10	0	50	50			0	0	0	0	0	0																																															8	0	100					0	0	1			0			100	0	0			0
+--useModule("Tohelos");				--时限驱魔香
+----展示驱魔香
+----	驱魔香(2分钟)				LUA_useTohelosQ						730023	26586	8000	26		0	1	0	72	1	1	10	1	0	0	0			0	0	0	0	0	0																																																						0	0	1			0			100	0	0			0
+--useModule("jp");					--全局掉落 可以限定时间 限定个数

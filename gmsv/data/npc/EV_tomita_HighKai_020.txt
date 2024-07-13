@@ -1,0 +1,77 @@
+#甩奶伊矛伙轾仃荼瞻豭﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛佌庰它尼奶玉及摒
+
+###﹛皿□市涩煌豭及中内木井毛赭儅
+block Item_631008 >= 1 || Item_631009 >= 1 || Item_631010 >= 1 || Item_631011 >= 1 || Item_631012 >= 1 || Item_631013 >= 1 || Item_631014 >= 1 || Item_631015 >= 1
+
+	GAWindow 3204622,OK
+
+		#\n\n﹛荼瞻卞方曰﹜眸反手匀午雄仁卅月﹝\n﹛分井日﹜厘中卅月爵中卞唱钗谛卅升拑迕分﹝\n﹛峏切蛔木永″″
+
+		Window_OK
+			Warp 0,59505,228,157
+
+
+
+###﹛皮伙□皮伉□玉魂泔毛呁醒赭儅
+block Item_631007 > 1
+	GAWindow 3204623,OK
+
+		#\n\n﹛筑迋﹜卅兮公氏卅卞魂泔毛儅匀化中月氏分﹝\n﹛躲绊互琅昝分井日﹜ㄠ荚ㄠベ午瑁户凶反内分﹝\n﹛眸毛诮允竣井″﹛公氏卅蛊及泔卅升婉户氏″\n﹛请化垫仃永″″
+
+		Window_OK
+			Warp 0,59505,228,157
+
+
+
+###﹛皮伙□皮伉□玉魂泔毛赭儅
+block Item_631007 == 1
+
+	If ItemCreateTime_631007 < 2
+		GAWindow 3204624,OK
+
+		#\n\n﹛云云﹜仍塑洢分匀＿氏〝﹛筑迋﹜唱钗谛分卅﹝\n﹛伤?及掸董桦卞引匹膳じ仄化中月午反﹜\n﹛衬及烩宎分卅﹝岳ヘ仄化支月永″″
+
+			Window_OK Item_631007 >= 1
+				KillItemAll 631007,(3004896)
+				Encount 3|0,59505,228,157||0|||||0|306310|||||||||
+				EndBlock
+
+			Window_OK
+				EndWindow 3204625
+
+		#\n\n﹛午合匀凶互﹜眸凶切雄祭宎互敦岳仄凶漆﹜\n﹛脱互岁尴反拑衬分﹝\n﹛怍屡卅曰窒卅曰鴃澎卞仄欠﹝
+				EndBlock
+
+	else
+		GAWindow 3204626,OK
+
+		#\n\n﹛赞中赞中赞中赞中﹜赞中冗永″″\n﹛爵中反嗤中午中丹及卞窒毛仄化中月及分″\n﹛云引仃卞泔互啜丹永″\n﹛袱今氏﹜袱今氏冗巧﹜獭五及户仄化支月永″″
+
+			Window_OK Item_631007 >= 1
+				KillItemAll 631007,(3004896)
+				Encount 3|0,59505,228,157||0|||||0|306311|||||||||
+				EndBlock
+
+			Window_OK
+				EndWindow 3204627
+
+		#\n\n﹛白永﹜竣做今木化魂泔毛桩化凶方丹分卅﹝\n﹛浇中樊中元户反岭卞宁歹氏﹝\n﹛袱仄化支月井日峏切蛔木﹝
+				EndBlock
+
+	endif
+
+
+
+###晓筏失奶泛丞毛尕赭儅
+block
+	GAWindow 3204628,OK
+
+		#\n\n﹛筑迋反唱钗谛匹反卅中井﹝\n﹛仇仇反峏切じ曰嗟鞅分﹝峏切蛔木永″″
+
+		Window_OK
+			Warp 0,59750,208,310
+
+
+

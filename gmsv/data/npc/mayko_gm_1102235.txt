@@ -1,0 +1,15 @@
+
+#柯马特依港湾官员	0	1102236
+#1102806	\n\n\n\n　　　　　　要进入柯马特依吗？	1
+
+
+block
+#15673?\n\n\n\n\n@c????????????
+	Window 1102806,YES,NO
+	
+	Window_YES
+	LeaveGroup
+	Warp 0,32080,32,25
+	Window_NO
+
+

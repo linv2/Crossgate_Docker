@@ -1,0 +1,56 @@
+#弥嫦月萋	萋?谛左□扒		300 204 236	6131
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## 由□泛奴匹﹜じ桦袱第据毛儅匀化中月桦宁 ##########
+block Group >= 2 && Item 18376 >= 1
+	#\n\n﹛方匀″≦弥嫦月萋≧匹犯□玄井中〝公木卅日﹜仇及Ⅶ毛内匀午晓互匀化中仃壬垫仃月方﹝卅氏卅日﹜籣酦引匹副〇仄化垫仇丹井〝
+	Window 11765,YES,NO
+
+####---- 2005/6/23 馨筏 ----####
+	Window_YES Group < 2 && Item 18376 >= 1
+		EndWindow "\n\n﹛仇仇反域谛匹垫匀化手﹜\n﹛五匀午云手仄欠仁卅中午合丹方﹝\n﹛尹〝眸〝\n﹛眸及仇午反升丹匹手中中元扎卅中﹝什允氏﹝"
+
+	Window_YES Item 18376 == 0
+		EndWindow "\n\n﹛じ桦袱第据反中日卅中及井中〝"
+####---- 仇仇引匹馨筏〇芢 ----#### 
+
+	Window_YES Group >= 2 && Item 18376 >= 1
+	Warp 0,13002,75,83
+
+	Window_NO
+	#\n\n﹛仇仇日尺氏反雄中呺恘毛儅匀凶呺简互请月井日﹜竣毛勾仃卅方﹝
+	EndWindow 11727
+
+########## 由□泛奴及桦宁 ##########
+block Group >= 2 && ItemSpace >= 1
+	#\n\n﹛方匀″≦弥嫦月萋≧匹犯□玄井中〝幻日﹜仇木互仇仇及じ桦袱第据今﹝仇及萋及じ桦孺蜃反歾℅苹引匹分仃分井日友﹝镞蟆卞反卅匀凶日转桦仄化仁木方﹝
+	Window 11726,YES,NO
+
+####---- 2005/6/23 馨筏 ----####
+	Window_YES Group < 2
+		EndWindow "\n\n﹛仇仇反域谛匹垫匀化手﹜\n﹛五匀午云手仄欠仁卅中午合丹方﹝\n﹛尹〝眸〝\n﹛眸及仇午反升丹匹手中中元扎卅中﹝什允氏﹝"
+
+	Window_YES Item 18376 >= 1
+		Window "\n\n﹛公及じ桦袱第据反\n﹛渝蜃互濠木化中月氏元扎卅中井〝\n﹛仇木午跟晶仄化丐仆方丹﹝",OK
+			Window_OK
+				KillItemAll 18376
+				GiveLeak1Item 18376,1
+				Endblock
+####---- 仇仇引匹馨筏〇芢 ----####
+
+	Window_YES Group >= 2 && ItemSpace >= 1
+	GiveLeak1Item 18376,1
+
+	Window_YES Group >= 2
+	#\n\n﹛楝反绂坁卞坞五互卅中方丹分﹝じ桦袱第据互欐六卅中冗﹝云洘木及杅反升丹井卅〝
+	EndWindow 11763
+
+	Window_NO
+	#\n\n﹛仇仇日尺氏反雄中呺恘毛儅匀凶呺简互请月井日﹜竣毛勾仃卅方﹝
+	EndWindow 11727
+
+########## 丐化反引日卅中桦宁 ##########
+block
+	#\n\n﹛仇仇反域谛匹垫匀化手﹜五匀午云手仄欠仁卅中午合丹方﹝尹〝眸〝眸及仇午反升丹匹手中中元扎卅中﹝什允氏﹝
+	EndWindow 11728

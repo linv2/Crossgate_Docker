@@ -1,0 +1,20 @@
+#﹛戊立亘瓦弗□扑亦件准憎??壬仄NPC﹛??﹛巟鼹
+#
+#﹛﹛﹛玉伉□﹋窖曰﹌及摒
+
+###﹛
+block
+	Window"\n\n﹛伉本伉失朴及酦璎卞垫五凶中卅日﹜\n﹛濛樊互霜匀化支欠丹﹝\n﹛中井互中凶允〝",YES,NO
+
+		Window_YES
+			Window "\n\n﹛方仄永﹜?屯永″",OK
+
+				Window_OK
+					Warp 0,1500,41,76
+					EndBlock
+
+		Window_NO
+			EndWindow"\n\n﹛丹戈﹜公木手方井欠丹﹝"
+
+
+

@@ -1,0 +1,52 @@
+#
+#呺
+#
+
+
+block globalFlag38 == 1
+
+gotoF case1
+
+
+block globalFlag39 == 1
+
+*case1*
+
+			window 3202253,next
+
+		#\n\n﹛仄壬日仁蟆井日﹜\n﹛怉卅扫互妏仇尹化月方﹝\n﹛卩曰匹唬泞毛丹欠勾中化月凛卞\n﹛霞丹呺坁及酦卞\n﹛擎昵螃心凶中卅蛊互\n﹛渔元匀化月日仄中﹝
+			
+			endwindow 3202254
+
+		#\n\n﹛伉’田□旦请侳月蛊及\n﹛鬼绚井手仄木卅中仃升﹜\n﹛窒井迋阂互怉日仄中﹝ 
+
+
+block
+
+				LocalCount0 = random 3,0
+
+				if LocalCount0 == 1
+
+					EndWindow 3202255
+
+		#\n\n﹛丐及今﹜白央□伊件及唬泞卞﹜\n﹛廿欠廿欠及汋毛邋凶\n﹛庍卅蛊互蛛邋中化月氏分方﹝
+
+
+				else
+
+					if LocalCount0 == 2
+
+						EndWindow 3202256
+
+		#\n\n﹛廿欠廿欠及螃敢汋毛邋凶蛊互﹜\n﹛凶引卞唬泞卞蛛月氏分方﹝
+
+					else
+
+						EndWindow 3202257
+
+		#\n\n﹛唬泞及裆﹜引今井螃敢元扎卅中方卅丑﹝\n﹛螃敢及汋﹜邋化月仃升﹝\n﹛蜕匀化月仇午﹜障峊昒昴分仄﹝\n﹛丐中勾﹜中井木化月方﹝
+
+					endif
+
+				endif
+

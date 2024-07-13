@@ -1,0 +1,29 @@
+#1054712	\n\n\n　　　　　白白说她是新手，要去冒险，\n　　　　　跑到立葛曲洞附近的雪之谷去了。	1
+#1054713	\n\n\n@c白妈妈的汤圆很好吃喔！	1
+
+block
+                        if LocalCount5 == 5
+                                LocalCount5 = random 4,0
+                                if LocalCount5 == 4
+                                        LocalCount5 = 5
+                                        
+                                        EndWindow 1054712
+                                else
+					if LocalCount5 == 3
+						LocalCount5 = 5
+                        	                EndWindow 11054713
+					else
+					     if LocalCount5 == 2
+						LocalCount5 = 5                                        
+                        	                EndWindow 1054712
+                        	             else
+                        	                LocalCount5 = 5
+                        	               	EndWindow 1054713
+	                                       
+                        	     	     endif	
+             				endif
+             			endif	
+                        else
+                                LocalCount5 = 5
+                                EndWindow 1054712
+                        endif

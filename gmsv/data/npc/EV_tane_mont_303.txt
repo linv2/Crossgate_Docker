@@ -1,0 +1,76 @@
+
+
+block
+
+
+
+
+
+
+			if LocalCount1 == 5
+
+				LocalCount0 = random 2,0
+
+				if LocalCount1 == 1
+
+					LocalCount1 = 5
+
+
+#					Window "\n\n﹛仇及翘﹜兜蝈﹝\n﹛歹仄日﹜毙井卞抔日允分仃﹝",next
+					Window 3006940,next
+
+
+#					EndWindow "\n\n﹛呺坁﹜舅支ケ及方丹卅手及﹝\n﹛歹仄日互蜕中妏井六木壬﹜鬼今﹜仄卅中﹝"
+					EndWindow 3006941
+
+
+
+				else
+
+					LocalCount1 = 5
+
+
+#					Window "\n\n﹛⑧仆凶幼伙玉及峇阂﹜厘缠仇仇卞侳月﹝",next
+					Window 3006942,next
+
+
+#					EndWindow "\n\n﹛匹手﹜莘尹化手\n﹛公中勾﹜窖月仇午反卅中﹝"
+					EndWindow 3006943
+
+
+
+
+				endif
+
+
+
+			else
+
+#				Window "\n\n﹛仇仇反﹜\n﹛峇褪毛撩匀凶曰﹜峇褪井日⑧仆化五凶曰仄凶\n﹛幼伙玉乒件旦正□及翘﹝",next
+				Window 3006944,next
+
+
+#				Window "\n\n﹛歹仄日﹜手丹﹜螃啖卞反窖木卅中﹝\n﹛仇仇匹毙井卞抔日允﹝",next
+				Window 3006945,next
+
+
+#				EndWindow "\n\n﹛歹仄日﹜引仄及杅﹝\n﹛濮侗仄化呺坁卞卅匀凶蛊手中月﹝"
+				EndWindow 3006946
+
+
+				LocalCount1 = 5
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+#域简茧仄化蝈崭垫萍
+#抩扱
+
+
+Block Item_621017 >= 2
+
+
+	Window 3220397,OK
+
+		#\n\n﹛卅兮井﹜抩扱互呁醒丐月＿＿﹝\n﹛质坌仄凶幻丹互方今公丹分﹝
+	
+		Window_OK
+		
+			KillitemAll 621017,(3010071)
+			
+			
+Block Item_621017 == 1 && StampCount_621017 == 6
+
+	EndWindow 3220398
+
+		#\n\n﹛奶□布件﹜白奴瓦奴﹜戊瓦□﹜\n﹛穴□泛奴件﹜末它乩□﹜扑伙任央□\n﹛及抩蟆互竭匀化中月﹝\n﹛抩扱卞抩蟆毛踏仁旦矢□旦反卅中﹝\n﹛蝈够及抩蟆互公欠匀化中月﹝
+
+
+Block Item_621017 == 1 && StampCount_621017 == 5
+
+	EndWindow 3220399
+
+		#\n\n﹛奶□布件﹜白奴瓦奴﹜\n﹛戊瓦□﹜穴□泛奴件﹜\n﹛末它乩□\n﹛及抩蟆互竭匀化中月﹝\n﹛丐午域谛及抩蟆毛踏仁旦矢□旦互丐月﹝
+	
+	
+	
+Block Item_621017 == 1 && StampCount_621017 == 4
+
+	EndWindow 3220400
+
+		#\n\n﹛奶□布件﹜白奴瓦奴﹜\n﹛戊瓦□﹜穴□泛奴件\n﹛及抩蟆互竭匀化中月﹝\n﹛丐午き谛及抩蟆毛踏仁旦矢□旦互丐月﹝
+	
+	
+Block Item_621017 == 1 && StampCount_621017 == 3
+
+
+	EndWindow 3220401
+
+		#\n\n﹛奶□布件﹜白奴瓦奴﹜戊瓦□\n﹛及抩蟆互竭匀化中月﹝\n﹛丐午赶谛及抩蟆毛踏仁旦矢□旦互丐月﹝
+	
+Block Item_621017 == 1 && StampCount_621017 == 2
+
+	EndWindow 3220402
+
+		#\n\n﹛奶□布件﹜白奴瓦奴\n﹛及抩蟆互竭匀化中月﹝\n﹛丐午铨谛及抩蟆毛踏仁旦矢□旦互丐月﹝
+	
+	
+Block Item_621017 == 1 && StampCount_621017 == 1
+
+	EndWindow 3220403
+
+		#\n\n﹛奶□布件及抩蟆互竭匀化中月﹝\n﹛丐午诡谛及抩蟆毛踏仁旦矢□旦互丐月﹝
+	
+Block
+
+	EndWindow 3220404
+
+		#\n\n﹛引分抩扱反ヶ饼匹丐月﹝\n﹛丐午牰谛及抩蟆毛踏仁旦矢□旦互丐月﹝

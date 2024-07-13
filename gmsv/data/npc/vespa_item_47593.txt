@@ -1,0 +1,138 @@
+## 逆之星包装虚拟赠品_小白龙设计图 （身上只能放置要改造的招财猫，改造后不论原等级多少，等级将变为LV1）
+##改造小白龙 enemybase ID:10058 enemyID:41213
+##重覆改造中型龙 
+ 
+####□ 宠物栏是空的
+block PetSpace == 5
+	 ##21389	你好像没有带宠物喔！	1
+	 EndWindow 21389
+
+####□ 小白龙设计图>= 2
+block Item 47593 >= 2
+	 ##206650	\n\n持有两个以上是不能使用的。	0
+	 EndWindow 206650
+	 
+####□身上只能留下要改的宠
+block  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783
+
+####□身上有 小白龙设计图== 1、小白龙>=1 、宠物空格为4格
+block Item 47593 == 1 &&  PetLevel 10058 >= 1 && PetSpace == 4
+	 ##1054803	\n\n是否要改造“小白龙”这只宠物？\n\n请注意：\n\n１：改造后无法恢复。\n\n２：改变后等级回恢为１级并且能力重置。	1
+	 Window 1054803,YES,NO
+	 	 Window_YES  Item 47593 == 1 &&  PetLevel 10058 >= 1 && PetSpace == 4
+			  KillItem 47593,1
+		 	  KillPetl   10058
+			  GivePet (103299%1,103300%1,103301%1,103302%1,103303%1)
+		 Window_NO 
+
+####□身上有 小白龙设计图== 1、角龙>=1 、宠物空格为4格(不会在得到角龙)
+block Item 47593 == 1 &&  PetLevel 103115 >= 1 && PetSpace == 4
+	 ##1054804	\n\n使用秘技之法请注意：\n\n\n1.可改变角龙。\n\n\n2.随机改造为不同的龙型，并且回到１级状态，能力重置。\n\n\n3.并且请你牺牲“生命力500点”、“小白龙设计图”\n\n\n作为交换的代价	1
+	 Window 1054804,YES,NO
+	 	 Window_YES  Item 47593 == 1 &&  PetLevel 103115 >= 1 && PetSpace == 4 && lp < 500
+	 	 	 ##1054811	\n\n\n\n‘你的生命力不足．．．’	1
+			 EndWindow 1054811
+		 Window_YES  Item 47593 == 1 &&  PetLevel 103115 >= 1 && PetSpace == 4 && lp >= 501
+		 	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+			 Window 1054771,OK
+			 	 Window_OK  Item 47593 == 1 &&  PetLevel 103115 >= 1 && PetSpace == 4 && lp > 500
+			 	 	 KillItem 47593,1
+			 	 	 KillPetl 103115
+			 	 	 setlp -500
+			 	 	 GivePet(103300%6,103301%6,103302%6,103303%6,103304%1)
+		 Window_NO
+		 
+
+####□身上有 小白龙设计图== 1、亢龙>=1 、宠物空格为4格(不会再得到亢龙)
+block Item 47593 == 1 &&  PetLevel 103116 >= 1 && PetSpace == 4
+	 ##1054805	\n\n使用秘技之法请注意：\n\n\n1.可改变亢龙。\n\n\n2.随机改造为不同的龙型，并且回到１级状态，能力重置。\n\n\n3.并且请你牺牲“生命力500点”、“小白龙设计图”\n\n\n作为交换的代价．．．	1
+	 Window 1054805,YES,NO
+	 	 Window_YES  Item 47593 == 1 &&  PetLevel 103116 >= 1 && PetSpace == 4 && lp<500
+	 	 	 ##1054811	\n\n\n\n‘你的生命力不足．．．’	1
+			 EndWindow 1054811
+		 Window_YES Item 47593 == 1 &&  PetLevel 103116 >= 1 && PetSpace == 4 && lp>=501
+		 	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+			 Window 1054771,OK
+			 	 Window_OK Item 47593 == 1 &&  PetLevel 103116 >= 1 && PetSpace == 4 && lp>=501
+			 	 	 KillItem 47593,1
+			 	 	 KillPetl 103116
+			 	 	 setlp -500
+			 	 	  GivePet(103299%6,103301%6,103302%6,103303%6,103304%1)
+		 Window_NO
+
+####□身上有 小白龙设计图== 1、氐龙>=1 、宠物空格为4格(不会再得到氐龙)
+block Item 47593 == 1 &&  PetLevel 103117 >= 1 && PetSpace == 4
+	 ##1054806	\n\n使用秘技之法请注意：\n\n\n1.可改变氐龙。\n\n\n2.随机改造为不同的龙型，并且回到１级状态，能力重置。\n\n\n3.并且请你牺牲“生命力500点”、“小白龙设计图”\n\n\n作为交换的代价．．．	1
+	 Window 1054806,YES,NO
+	 	 Window_YES Item 47593 == 1 &&  PetLevel 103117 >= 1 && PetSpace == 4 && lp<500
+	 	 	 ##1054811	\n\n\n\n‘你的生命力不足．．．’	1
+			 EndWindow 1054811
+		 Window_YES Item 47593 == 1 &&  PetLevel 103117 >= 1 && PetSpace == 4 && lp>=501
+		 	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+			 Window 1054771,OK
+			 	 Window_OK  Item 47593 == 1 &&  PetLevel 103117 >= 1 && PetSpace == 4 && lp>=501
+					 KillItem 47593,1
+					 KillPetl 103117
+					 setlp -500
+					 GivePet(103299%6,103300%6,103302%6,103303%6,103304%1)
+		 Window_NO
+		 
+					   
+####□身上有 小白龙设计图== 1、箕龙>=1 、宠物空格为4格(不会再得到箕龙)
+block Item 47593 == 1 &&  PetLevel 103118 >= 1 && PetSpace == 4
+	 ##1054807	\n\n使用秘技之法请注意：\n\n\n1.可改变箕龙。\n\n\n2.随机改造为不同的龙型，并且回到１级状态，能力重置。\n\n\n3.并且请你牺牲“生命力500点”、“小白龙设计图”作为交换的代价．．．	1
+	 Window 1054807,YES,NO
+	 	 Window_YES Item 47593 == 1 &&  PetLevel 103118 >= 1 && PetSpace == 4 && lp <500
+	 	 	 ##1054811	\n\n\n\n‘你的生命力不足．．．’	1
+			 EndWindow 1054811
+		 Window_YES Item 47593 == 1 &&  PetLevel 103118 >= 1 && PetSpace == 4 && lp >=501
+		 	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+			 Window 1054771,OK
+				window_ok Item 47593 == 1 &&  PetLevel 103118 >= 1 && PetSpace == 4 && lp >=501
+					 KillItem 47593,1
+					 KillPetl 103118
+					 setlp -500
+					   GivePet(103299%6,103300%6,103301%6,103303%6,103304%1)
+		 Window_NO
+		 
+					   
+####□身上有 小白龙设计图== 1、心龙>=1 、宠物空格为4格
+block Item 47593 == 1 &&  PetLevel 103119 >= 1 && PetSpace == 4
+	 ##1054808	\n\n使用秘技之法请注意：\n\n\n1.可改变心龙。\n\n\n2.随机改造为不同的龙型，并且回到１级状态，能力重置。\n\n\n3.并且请你牺牲“生命力500点”、“小白龙设计图”\n\n\n作为交换的代价．．．	1
+	 Window 1054808,YES,NO
+	 	 Window_YES Item 47593 == 1 &&  PetLevel 103119 >= 1 && PetSpace == 4 && lp < 500
+	 	 	 ##1054811	\n\n\n\n‘你的生命力不足．．．’	1
+			 EndWindow 1054811
+		 Window_YES Item 47593 == 1 &&  PetLevel 103119 >= 1 && PetSpace == 4 && lp >=501
+		 	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+			 Window 1054771,OK
+			 	 Window_OK Item 47593 == 1 &&  PetLevel 103119 >= 1 && PetSpace == 4 && lp >=501
+			 	 	 KillItem 47593,1
+			 	 	 KillPetl 103119
+			 	 	 setlp -500
+			 	 	 GivePet(103299%6,103300%6,103301%6,103302%6,103304%1)
+		 Window_NO
+			 	 	 
+
+####□身上有 小白龙设计图== 1、天使之龙>=1 、宠物空格为4格
+block Item 47593 == 1 &&  PetLevel 103120 >= 1 && PetSpace == 4
+	 ##1054809	\n\n使用秘技之法请注意：\n\n\n1.可改变天使之龙。\n\n\n2.随机改造为不同的龙型，并且回到１级状态，能力重置。\n\n\n3.并且请你牺牲“生命力500点”、“小白龙设计图”\n\n\n作为交换的代价．．．	1
+	 Window 1054809,YES,NO
+	 	 Window_YES Item 47593 == 1 &&  PetLevel 103120 >= 1 && PetSpace == 4 && lp < 500
+	 	 	  ##1054811	\n\n\n\n‘你的生命力不足．．．’	1
+			 EndWindow 1054811
+		 Window_YES Item 47593 == 1 &&  PetLevel 103120 >= 1 && PetSpace == 4 && lp >=501
+		 	 ##1054771	\n\n一经交换就无法后悔．．．你是否愿意吗？	1
+			 Window 1054771,OK
+			 	 Window_OK  Item 47593 == 1 &&  PetLevel 103120 >= 1 && PetSpace == 4 && lp >=501
+			 	 	 KillItem 47593,1
+			 	 	 KillPetl 103120
+			 	 	 setlp -500
+			 	 	  GivePet(103299%3,103300%3,103301%3,103302%3,103303%3)
+	 	 
+####□一般
+block
+	 ##1054810	\n\n\n\n‘没有发生任意事情．．．’	1
+	 EndWindow 1054810

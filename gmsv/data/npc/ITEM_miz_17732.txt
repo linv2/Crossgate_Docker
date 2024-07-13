@@ -1,0 +1,27 @@
+#
+#兴蕊
+#
+############## 兴蕊毛ㄡ勾动晓儅匀化月 ##############
+block Item 17732 >= 2
+	EndWindow 206669,OK
+
+############## 兴蕊及酸曰DUR互1 ##############
+block ItemDur 17732 == 1
+
+	Window 206670,YES,NO
+	Window_YES ItemDur 17732 == 1
+	KillItem 17732,1,(206671)
+	playse 163,1,1
+
+	Window_NO
+
+############## 兴蕊及酸曰DUR互2动晓 ##############
+block ItemDur 17732 >= 2
+
+	Window 206670,YES,NO
+	Window_YES ItemDur 17732 >= 2
+	SetDur 17732,-1
+	playse 163,1,1
+
+	Window_NO
+

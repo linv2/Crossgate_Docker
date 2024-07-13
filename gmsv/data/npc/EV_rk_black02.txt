@@ -1,0 +1,11 @@
+#—√÷–‡¶Ù¡
+
+block EndEvent 139 == 1
+	Window 22900,Yes,No
+		Window_No
+		Window_Yes
+			LeaveGroup
+			Warp 0,47029,50,181
+
+block
+	EndWindow 22901,OK

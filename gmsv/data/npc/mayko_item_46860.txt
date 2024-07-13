@@ -1,0 +1,164 @@
+#
+#枪之魂	46860
+#
+############################
+#block  job==224
+block Job >223 && Job<228 ## 御用~S3
+	##我是枪之魂！我将为你服务！(御用)
+	Window 1053293,OK
+ 		Window_OK item 46709>0 && item 46791 >0
+ 			##你现在有帕里斯之矛积木与说明书,要组合成帕里斯之矛吗？
+ 			Window 1053294,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46709<1 || item 46791 <1 || item 46860<1
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46709,1	 	 	 
+	 	 	 	killitem 46791,1 
+	 	 	 	killitem 46860,1 
+	 	 	 	GiveLeak1Item 46840,1
+	 	 	 	##枪之魂与xxxx,xxxx消失了！出现了xxxxxx
+	 	 	 	EndWindow 1053295
+	 	 	 
+	 	 	 
+ 		Window_OK item 46710>0 && item 46792 >0
+
+ 		##你现在有XXXX的物品可以契合,要契合成xxxx吗
+ 			Window 1053296,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46710<1 || item 46792 <1 || item 46860<1
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46710,1	 	 	 
+	 	 	 	killitem 46792,1 
+	 	 	 	killitem 46860,1 
+	 	 	 	GiveLeak1Item 46841,1	 	 
+	 	 	 	##枪之魂与xxxx,xxxx消失了！出现了xxxxxx
+	 	 	 	EndWindow 1053297
+	 	 	  		
+ 	
+ 		Window_OK item 46711>0 && item 46793 >0
+		####你现在有波赛顿之戟的物品可以契合,要契合成波赛顿之戟吗
+ 			Window 1053298,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46711<1 || item 46793 <1 || item 46860<1
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46711,1	 	 	 
+	 	 	 	killitem 46793,1 
+	 	 	 	killitem 46860,1 	 	 	 
+	 	 	 	GiveLeak1Item 46842,1
+	 	 	 	##枪之魂与xxxx,xxxx消失了！出现了xxxxxx
+	 	 	 	EndWindow 1053299
+ 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290
+		 
+block  job==223
+	##我是枪之魂！我将为你服务！(资深段)
+	Window 1053293,OK
+ 		Window_OK item 46709>0 && item 46791 >0
+ 			##你现在有帕里斯之矛积木与说明书,要组合成帕里斯之矛吗？
+ 			Window 1053294,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46709<1 || item 46791 <1 || item 46860<1
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46709,1	 	 	 
+	 	 	 	killitem 46791,1 
+	 	 	 	killitem 46860,1 
+	 	 	 	GiveLeak1Item 46840,1
+	 	 	 	##枪之魂与xxxx,xxxx消失了！出现了xxxxxx
+	 	 	 	EndWindow 1053295
+	 	 	 
+	 	 	 
+ 		Window_OK item 46710>0 && item 46792 >0
+
+ 		##你现在有XXXX的物品可以契合,要契合成xxxx吗
+ 			Window 1053296,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46710<1 || item 46792<1 || item 46860<1
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46710,1	 	 	 
+	 	 	 	killitem 46792,1 
+	 	 	 	killitem 46860,1 
+	 	 	 	GiveLeak1Item 46841,1	 	 
+	 	 	 	##枪之魂与xxxx,xxxx消失了！出现了xxxxxx
+	 	 	 	EndWindow 1053297
+	 	 	  		
+ 	
+ 		Window_OK item 46711>0 && item 46793 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290		 
+block  job==222
+	##我是枪之魂！我将为你服务！(正值)
+	Window 1053293,OK
+ 		Window_OK item 46709>0 && item 46791 >0
+ 			##你现在有帕里斯之矛积木与说明书,要组合成帕里斯之矛吗？
+ 			Window 1053294,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46709<1 || item 46791 <1 || item 46860<1
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46709,1	 	 	 
+	 	 	 	killitem 46791,1 
+	 	 	 	killitem 46860,1 
+	 	 	 	GiveLeak1Item 46840,1
+	 	 	 	##枪之魂与xxxx,xxxx消失了！出现了xxxxxx
+	 	 	 	EndWindow 1053295
+	 	 	 
+	 	 	 
+ 		Window_OK item 46710>0 && item 46792 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+		EndWindow 1053289 
+ 		
+	 	 	  		
+ 	
+ 		Window_OK item 46711>0 && item 46793 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 		
+ 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290			 	      
+block  job==221
+	##你的能力并不能驾御我，请你多加努力！
+	EndWindow 1053291
+block  
+	##你并不是造枪职人，我无法为你服务！
+	EndWindow 1053292

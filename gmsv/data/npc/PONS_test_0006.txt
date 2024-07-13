@@ -1,0 +1,28 @@
+#
+#∫Ãº˛µ©…Í”¿€Õ∑∫µ©–˛
+#
+
+################################################################################
+#
+################################################################################
+
+block
+     SetAction 0
+     Window "\n\n©xÿ§» ÿ∆ΩÔ œ0",NEXT
+     SetAction 1
+     Window "\n\n©xÿ§» ÿ∆ΩÔ œ1",NEXT
+     SetAction 2
+     Window "\n\n©xÿ§» ÿ∆ΩÔ œ2",NEXT
+     SetAction 3
+     Window "\n\n©xÿ§» ÿ∆ΩÔ œ3",NEXT
+     SetAction 4
+     Window "\n\n©xÿ§» ÿ∆ΩÔ œ4",NEXT
+     SetAction 5
+     Window "\n\n©xÿ§» ÿ∆ΩÔ œ5",NEXT
+     SetAction 6
+     Window "\n\n©xÿ§» ÿ∆ΩÔ œ6",NEXT
+     SetAction 7
+     Window "\n\n©xÿ§» ÿ∆ΩÔ œ7",NEXT
+     SetAction 8
+     Window "\n\n©xÿ§» ÿ∆ΩÔ œ8",NEXT
+     

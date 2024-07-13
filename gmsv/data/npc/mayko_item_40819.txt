@@ -1,0 +1,49 @@
+
+#小花苗	40819	花苗	40822 爱情版
+#48hr-72hr 追加  花蜜结晶	40033
+
+##1109498	\n\n\n\n@c又过了两天要加入花蜜结晶吗？？
+##1109510	\n\n\n\n@c又过了两天，是不是得催花了！
+#1109490	\n\n\n\n@c还是算了吧～～
+#206112	长大了！	0
+#206117	\n\n  为什么不快点长大啊～	0
+#1109512	\n\n\n　　　糟了～～过太久了～\n　　　花苞凋谢了～～
+#1109514	\n\n\n\n@c加上特殊材料。
+#block Item 40820>0 || Item 40821>0
+#	 EndWindow 1109516
+
+block Item 40819 > 1
+	 EndWindow 1109516
+
+##超过三天  2880+1440=4320
+block Item 40819 > 0 && ItemCreateTime 40819 > 4320
+	 Window 1109512,OK
+	 Window_OK Item 40819 > 0
+	 KillItem 40819,1
+	 Window_OK
+	 Endblock
+#2-3天　有花蜜结晶
+#block Item 40819>0 && ItemCreateTime 40819>2880 && Item 40033>0
+block Item 40819 >0 && Item 40033 > 0 && ItemCreateTime 40819 > 2880
+	 Window 1109498,YES,NO
+
+	 Window_NO
+	 EndWindow 1109490
+
+	 Window_YES Item 40819 = 0 || Item 40033 = 0
+
+	 EndWindow 1109482
+
+	 Window_YES
+	 Window 1109514,NEXT
+	 KillItem 40819,1
+	 KillItem 40033,1
+	 GiveLeak1Item 40822,1
+	 EndWindow 206112
+#1-2天　无花蜜结晶
+block Item 40819 >= 0 && ItemCreateTime 40819 > 2880
+	 EndWindow 1109510
+#未满一天
+block
+	 EndWindow 206117
+

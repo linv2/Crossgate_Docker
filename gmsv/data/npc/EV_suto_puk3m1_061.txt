@@ -1,0 +1,12 @@
+#
+#PUK3_Main1
+#
+#宎衔﹋爵桦﹌
+
+
+Block
+
+	GAEndWindow 3206981
+
+		#\n\n﹛脱★反鴃化月及分欠丹井〝
+	

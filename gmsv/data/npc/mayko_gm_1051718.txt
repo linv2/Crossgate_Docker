@@ -1,0 +1,133 @@
+#玩骰子的水鼠1051718	30110	34	27
+
+
+#水鼠骰子47667
+#水蓝鼠金币40844
+
+#1055017	\n\n\n　　你好！这是水鼠骰子兑换处，\n　　如果你有水鼠骰子，可以跟我换水鼠金币。
+#1054990	\n\n\n　　　　你这是１点的水鼠骰子．\n　　　　可换１枚水鼠金币。\n　　　　你要兑换吗？
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055005	\n\n\n\n@c兑换了１枚水鼠金币。
+block Item 47667>0
+	 Window 1055017,NEXT
+	 Window 1054990,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47667>0
+	 KillItem 47667
+	 GiveLeak1Item 40844,1
+	 EndWindow 1055005
+	 Window_YES
+	 EndWindow 1055004
+#水鼠骰子47668
+#水蓝鼠金币40844
+
+#1055017	\n\n\n　　你好！这是水鼠骰子兑换处，\n　　如果你有水鼠骰子，可以跟我换水鼠金币。
+#1054991	\n\n\n　　　　你这是２点的水鼠骰子．\n　　　　可换２枚水鼠金币。\n　　　　你要兑换吗？
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055006	\n\n\n\n@c兑换了２枚水鼠金币。
+block Item 47668>0
+	 Window 1055017,NEXT
+	 Window 1054991,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47668>0
+	 KillItem 47668
+	 GiveLeak1Item 40844,2
+	 EndWindow 1055006
+	 Window_YES
+	 EndWindow 1055004	 
+
+#水鼠骰子47669
+#水蓝鼠金币40844
+
+
+#1055017	\n\n\n　　你好！这是水鼠骰子兑换处，\n　　如果你有水鼠骰子，可以跟我换水鼠金币。
+#1054992	\n\n\n　　　　你这是３点的水鼠骰子．\n　　　　可换３枚水鼠金币。\n　　　　你要兑换吗？
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055007	\n\n\n\n@c兑换了３枚水鼠金币。
+
+block Item 47669>0
+	 Window 1055017,NEXT
+	 Window 1054992,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47669>0
+	 KillItem 47669
+	 GiveLeak1Item 40844,3
+	 EndWindow 1055007
+	 Window_YES
+	 EndWindow 1055004 
+
+
+#水鼠骰子47670
+#水蓝鼠金币40844
+#1055017	\n\n\n　　你好！这是水鼠骰子兑换处，\n　　如果你有水鼠骰子，可以跟我换水鼠金币。
+#1054993	\n\n\n　　　　你这是４点的水鼠骰子．\n　　　　可换４枚水鼠金币。\n　　　　你要兑换吗？
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055008	\n\n\n\n@c兑换了４枚水鼠金币。
+block Item 47670>0
+	 Window 1055017,NEXT
+	 Window 1054993,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47670>0
+	 KillItem 47670
+	 GiveLeak1Item 40844,4
+	 EndWindow 1055008
+	 Window_YES
+	 EndWindow 1055004
+#水鼠骰子47671
+#水蓝鼠金币40844
+#1055017	\n\n\n　　你好！这是水鼠骰子兑换处，\n　　如果你有水鼠骰子，可以跟我换水鼠金币。
+#1054994	\n\n\n　　　　你这是５点的水鼠骰子．\n　　　　可换５枚水鼠金币。\n　　　　你要兑换吗？
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055009	\n\n\n\n@c兑换了５枚水鼠金币。
+block Item 47671>0
+	 Window 1055017,NEXT
+	 Window 1054994,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47671>0
+	 KillItem 47671
+	 GiveLeak1Item 40844,5
+	 EndWindow 1055009
+	 Window_YES
+	 EndWindow 1055004	
+#水鼠骰子47672
+#水蓝鼠金币4084
+#1055017	\n\n\n　　你好！这是水鼠骰子兑换处，\n　　如果你有水鼠骰子，可以跟我换水鼠金币。
+#1054995	\n\n\n　　　　你这是６点的水鼠骰子．\n　　　　可换６枚水鼠金币。\n　　　　你要兑换吗？
+#1055002	\n\n\n\n@c你要兑换吗？	1
+#1055003	\n\n\n\n@c想换再来找我。	1
+#1055004	\n\n\n\n@c你的骰子不见了。	1
+#1055010	\n\n\n\n@c兑换了６枚水鼠金币。
+
+block Item 47672>0
+	 Window 1055017,NEXT
+	 Window 1054995,YES,NO
+	 Window_NO
+	 EndWindow 1055003
+	 Window_YES Item 47672>0
+	 KillItem 47672
+	 GiveLeak1Item 40844,6
+	 EndWindow 1055010
+	 Window_YES
+	 EndWindow 1055004	
+
+
+##没有骰子
+#1055017	\n\n\n　　你好！这是水鼠骰子兑换处，\n　　如果你有水鼠骰子，可以跟我换水鼠金币。
+block
+	 EndWindow 1055017 
+	

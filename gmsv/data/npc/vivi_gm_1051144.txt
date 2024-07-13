@@ -1,0 +1,16 @@
+#### 点心试吃摊 ####
+## 拿取时间终了(到达1000个)
+block Visitor > 1000
+	 ##1052264	\n\n\n\n@c里面已经没有食物可以拿了。	1
+	 EndWindow  1052264
+
+## 身上有大侠汉堡包
+block Item 46076 >= 1 || bankitem 46076 >= 1
+	 ##1052265	\n\n\n\n@c已经拿过了。	1
+	 EndWindow 1052265
+	 
+## 尚未拿取
+block 
+	 SetVisitor +1
+	 GiveLeak1Item 46076
+	 

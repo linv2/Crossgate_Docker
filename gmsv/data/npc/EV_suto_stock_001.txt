@@ -1,0 +1,137 @@
+#域简茧仄化蝈崭垫萍
+#仿白央泛奴ㄠ
+
+
+Block Item_607705 >= 1
+
+	EndWindow 3220264
+
+		#\n\n﹛阂间凶切反窖匀化中匀凶方﹝\n﹛匹手仇木井日反﹜允什卞莘尹月﹝\n﹛丐曰互午丹﹝\n﹛楝及云井仆匹笮简及忐毛潸曰枑允仇午互请侳凶﹝
+
+
+Block Item_621017 >= 2
+
+	Window 3220265,OK
+
+		#\n\n﹛厄厄﹜公氏卅卞欐仄凶井及丹＿＿﹝\n﹛坁侉木互幛仁化仇引匀凶手及分﹝\n﹛丐中允引厄互﹜公木反忒仄化中凶分仇丹﹝
+	
+		Window_OK
+		
+			KillitemAll 621017
+			
+			
+Block Item_621017 == 1 && StampCount_621017 >=6
+
+	Window 3220266,Next
+
+		#\n\n﹛卅＿＿窒手皮汁仇午反卅井匀凶欠丹卞\n﹛＿＿域杀炕谛卅氏分井日及﹝
+	
+	Window 3220267,Next
+
+		#\n\n﹛扣窖曰云匀凶＿＿﹝\n﹛匹手﹜湖仄井匀凶及丹﹝\n﹛扣互艘ミ仄化五化仁木凶＿＿\n﹛公木互坌井木壬坢箫分﹝
+	
+	Window 3220268,OK
+
+		#\n\n﹛公丹﹜楝卞反引分云斪毛仄化卅井匀凶﹝\n﹛竣儅切分互﹜熬仃潸匀化仁木﹝
+	
+	
+		Window_OK Item_621017 == 1
+		
+			KillItem 621017,1
+			Giveitem 607705,1
+			leavegroup
+			warp 0,59521,157,94
+	
+		Window_OK
+		
+			EndWindow 3220269
+
+		#\n\n﹛＿＿中支﹜台互仍邧?毛犒仄晓仆月及反﹜\n﹛抩扱午隋卞阂间凶切毛\n﹛洘木化五化仁木凶手及分仃分﹝
+		
+		
+
+
+
+
+Block Item_621017 == 1
+
+	Window 3220270,Next
+
+		#\n\n﹛允引卅中﹝凶及氏分方﹝\n﹛手丹阂间及抩蟆反\n﹛域谛仄井创尹化中卅仁化及丹＿＿﹝
+	
+	Window 3220271,Next
+
+		#\n\n﹛公及抩反奶□布件午蜕匀化﹜\n﹛赢裆卅及分互阂间凶切互请化垫匀凶及反\n﹛丐中勾互き蜗碟及午五分匀凶﹝
+
+	EndWindow 3220272
+
+		#\n\n﹛奶□布件反嫖中午仇欠互\n﹛驯五分匀凶井日卅丐＿＿﹝\n﹛升仇卞垫匀凶井及丹＿＿﹝
+
+
+Block
+
+	Window 3220273,Next
+
+		#\n\n﹛仆孔氏﹝仆孔氏﹝仆孔﹜仆孔﹝\n﹛仆幻氏″仆幻﹜仆幻﹝\n﹛允﹜允引卅中＿＿牁中燮膻中及匹卅﹝\n﹛手丹赢仁反卅中午衔樊卞手蜕歹木化云月﹝
+	
+	Window 3220274,Next
+
+		#\n\n﹛丐丐﹜台及笮简反﹜\n﹛愈詨引匹侳化仁木卅中分欠丹﹝\n﹛台互阂间凶切毛馨中请仄化仄引匀凶氏分﹝\n﹛酸ゴ分互酷杅互卅中﹝\n﹛愤仅愤丿午中丹支勾分方﹝
+	
+	Window 3220275,Next
+
+		#\n\n﹛忆匀化仁木﹜仇及牁中廿木毛＿＿﹝\n﹛匹手﹜愈詨仁日中反\n﹛阂间凶切卞莘中凶中及丹＿＿﹝\n﹛六户化桨曰凶中及分﹝
+	
+	Window 3220276,Yes,No
+
+		#\n\n﹛公丹分＿＿及丹〝\n﹛云厄仄﹜昍逦午反云手丹互﹜\n﹛仇及牁中廿木及俇心毛妏中化仁木厄井〝
+	
+		Window_No
+		
+			EndWindow 3220277
+
+		#\n\n﹛公丹井﹜酸ゴ分及丹﹝\n﹛引丐﹜酷杅及卅中仇午卅氏分互﹝
+		
+		Window_Yes
+		
+			Window 3220278,Next
+
+		#\n\n﹛卅氏午﹜妏中化仁木月及井﹝\n﹛丐曰互凶中及丹﹝\n﹛元勾反﹜台反阂间凶切午\n﹛痴翎仄化仄引匀化及﹝\n﹛扣﹜笮毛请化垫匀化仄引匀凶氏分﹝
+			
+			Window 3220279,Next
+
+		#\n\n﹛葆奢反台分﹝\n﹛台反酷仪壬井曰仄化中化﹜\n﹛笮璎毛话心卅井匀凶＿＿﹝\n﹛抇褪手手丹中卅仁化＿＿卅及卞台反″
+			
+			Window 3220280,Next
+
+		#\n\n﹛分井日﹜\n﹛愈詨卞阂间凶切卞鳗尹化幻仄中及分﹝\n﹛台互＞允引卅中＝午中匀化中凶仇午毛＿＿﹝\n﹛公仄化﹜\n﹛请侳木壬莘匀化狪互仄凶中午＿＿﹝
+			
+			Window 3220281,Next
+
+		#\n\n﹛仄井仄﹜台手仇及コ昦分﹝\n﹛手丹阂间及抩蟆匹创尹化中月及反\n﹛域谛仄井云日氏﹝\n﹛蝈够匹牰谛中凶及反\n﹛创尹化中月及分互＿＿﹝
+			
+			Window 3220282,Next
+
+		#\n\n﹛公及域谛及抩反奶□布件午蜕匀化﹜\n﹛赢裆卅及分方﹝\n﹛奶□布件反嫖中午仇欠互\n﹛驯五分匀凶井日卅丐＿＿﹝\n﹛升仇卞垫匀凶井及丹＿＿﹝
+			
+			Window 3220283,OK
+
+		#\n\n﹛公丹﹜公丹﹜午曰丐尹内﹜\n﹛仇木毛欐仄化云仇丹﹝\n﹛阂间凶切卞莘匀凶日\n﹛抩蟆毛井中化手日匀化仁木﹝
+			
+				
+				Window_OK Item_621017 >= 1
+				
+						EndWindow 3220284
+
+		#\n\n﹛手丹欐仄凶方丹分及丹﹝
+						
+				Window_OK ItemSpace == 0
+				
+						EndWindow 3220285
+
+		#\n\n﹛手化卅中方丹分及丹﹝
+				
+				
+				Window_OK
+				
+						Giveitem 621017,1

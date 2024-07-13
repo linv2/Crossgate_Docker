@@ -1,0 +1,14 @@
+#
+#幕及筏盛﹋幕及祸藷﹌
+#
+
+##############  ##############
+block
+#\n\n\n\n@c﹛幕及筏盛毛银中引允井〝
+	Window 21242,YES,NO
+	Window_YES
+	KillItem 18767,1,(21247)
+	LeaveGroup
+	Warp 0,15541,20,21
+	Window_NO
+

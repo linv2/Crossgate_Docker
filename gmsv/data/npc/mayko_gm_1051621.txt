@@ -1,0 +1,16 @@
+##mayko_gm_1051621.txt
+##仲时(魔物)32270	48	7
+##1054424	\n\n　　你说～我的女儿想见我？？\n　　可是我已经变成魔物了．．．．	1
+##1054425	\n\n\n@c啊～～你手上的是．．．．	1
+
+block item 47294>0
+	 Window 1054424,next
+	 Window 1054425,ok
+	 Window_OK item 47294>0
+	 KillItem 47294,1
+	 Warp 0,32272,13,7
+	 Endblock
+block 
+	 EndWindow 1054424
+	 
+	 

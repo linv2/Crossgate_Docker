@@ -1,0 +1,1257 @@
+###################din_gm_1051338.TXT
+###################神之左手 17232 11015(51,3)第四阶段任务最终NPC，依KEY 4 的不同给予不同之宝藏序号。
+###################■身上有智慧之声：牡羊
+block Item 46498 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052791	\n\n  在地下城里饿肚子的调查员412，他最想吃的是蛋\n  炒饭？
+			 Window 1052791,YES,NO 
+			 	 Window_YES 
+			 	 Window_NO 
+			 	 	 ##1052792	\n\n  拉席老奶奶再也不敢住在法兰城的旅馆里是因为旅  馆太吵？
+				 	 Window 1052792,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052793	\n\n  研究员真中的家里掉落在地上的书有3本？
+							 Window 1052793,YES,NO 
+							 	 Window_YES 
+							 	 Window_NO 
+							 	 	 ##1052794	\n\n  竞技场迷宫第一名的奖品是【疾风的戒指】？
+								 	 Window 1052794,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052795	\n\n  收集哥布林的绿色头盔可以跟爱头盔的波月换电影  卷？
+								 	 		 Window 1052795,YES,NO 
+								 	 			 Window_YES
+								 	 			 Window_NO 
+								 	 			 	 ##1052851	\n\n  (第四关 SN) 牡羊
+													 EndWindow 1052851
+	
+		 	 else 
+		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052796	\n\n  打完树精长老后拿到树苗，鉴定后可以得到生命之  花？
+			 	 Window 1052796,YES,NO 
+			 	 	 Window_NO  
+			 	 	 Window_YES  
+			 	 	 	 ##1052797	\n\n  在护士就职流程当中回答护士的问题里头，标准答  案是荷洛？
+				 	 	 Window 1052797,YES,NO
+				 	 	 	 Window_NO  
+				 	 	 	 Window_YES  
+				 	 	 	 	 ##1052798	\n\n  巫师遭袭事件事件中，要在55分钟之内打倒露比？
+				 	 	 	 	 Window 1052798,YES,NO 
+							 	 	 Window_YES 
+							 	 	 Window_NO 
+							 	 	 	 ##1052799	\n\n  提高宠物封印的机率的技能为【精灵的盟约】？
+								 	 	 Window 1052799,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052800	\n\n  蒂娜村晚上无法利用传送石传送进去？
+								 	 		 	 Window 1052800,YES,NO 
+								 	 			 	 Window_NO
+								 	 			 	 Window_YES 
+								 	 			 	 	 ##1052851	\n\n  (第四关 SN) 牡羊
+													 	 EndWindow 1052851
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052801	\n\n  宠物邮件在哈贝鲁村可学到？
+			 		 Window 1052801,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052802	\n\n  启程之间共有10个传送石？
+				 	 		 Window 1052802,YES,NO
+				 	 	 		 Window_YES 
+				 	 	 		 Window_NO 
+				 	 	 	 		 ##1052803	\n\n  黑暗医生的躲藏的家是护士这个职业的就职任务？
+							 		 Window 1052803,YES,NO 
+							 	 		 Window_YES 
+							 	 		 Window_NO 
+							 	 	 		 ##1052804	\n\n  忍者这种职业可以使用暗杀技能？
+								 	 		 Window 1052804,YES,NO 
+								 		 		 Window_NO 
+								 		 		 Window_YES 
+								 	 		 		 ##1052805	\n\n  麻布可以在达美姊妹店购买到？
+								 	 		 		 Window 1052805,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052851	\n\n  (第四关 SN) 牡羊
+													 		 EndWindow 1052851
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：金牛
+block Item 46499 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052806	\n\n  赖光的头盔是打牛鬼后随机取得的？
+			 Window 1052806,YES,NO 
+			 	 Window_NO  
+			 	 Window_YES  
+			 	 	 ##1052807	\n\n  土蜘蛛是在地之洞穴可以抓到？
+				 	 Window 1052807,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052808	\n\n  图书馆女孩米雪儿请玩家将【爱情的悲剧】这本书  交给香料店的莉莉露？
+							 Window 1052808,YES,NO 
+							 	 Window_YES 
+							 	 Window_NO 
+							 	 	 ##1052809	\n\n  里谢里堡中料理长米其巴请玩家将水果蕃茄送到伊  尔村？
+								 	 Window 1052809,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052810	\n\n  法兰城中的费纳甘提到用苹果花拿来煮汤对美容有  效？
+								 	 		 Window 1052810,YES,NO 
+								 	 			 Window_YES
+								 	 			 Window_NO 
+								 	 			 	 ##1052852	\n\n  (第四关 SN) 金牛
+													 EndWindow 1052852
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052811	\n\n  圣拉鲁卡村是以矿山和药而闻名？
+			 	 Window 1052811,YES,NO 
+			 	 	 Window_NO  
+			 	 	 Window_YES  
+			 	 	 	 ##1052812	\n\n  火焰鼠产地在索奇亚岛。
+				 	 	 Window 1052812,YES,NO
+				 	 	 	 Window_NO  
+				 	 	 	 Window_YES  
+				 	 	 	 	 ##1052813	\n\n  绿色水晶是对应地属性。
+				 	 	 	 	 Window 1052813,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052814	\n\n  初创角色时，每个人有30点可以配置。
+								 	 	 Window 1052814,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052815	\n\n  法兰城中，豪华屋14天的租金是5000G。
+								 	 		 	 Window 1052815,YES,NO 
+								 	 			 	 Window_YES 
+								 	 			 	 Window_NO 
+								 	 			 	 	 ##1052852	\n\n  (第四关 SN) 金牛
+													 	 EndWindow 1052852
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052816	\n\n  搭船到阿凯鲁法城的船票每张500G。
+			 		 Window 1052816,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052817	\n\n  舞者的就职方式中，必须先准备“报酬的金币”。
+				 	 		 Window 1052817,YES,NO
+				 	 	 		 Window_YES 
+				 	 	 		 Window_NO 
+				 	 	 	 		 ##1052818	\n\n  舞者Lv6的舞步-森巴，不是敌一体即死，就是舞者  亡。
+							 		 Window 1052818,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052819	\n\n  技能“刻印”可以在阿凯鲁法村学到。
+								 	 		 Window 1052819,YES,NO 
+								 		 		 Window_NO 
+								 		 		 Window_YES 
+								 	 		 		 ##1052820	\n\n  战斗时，最大的10个角色合击时，\n  会出现“Perfect!”的字样。
+								 	 		 		 Window 1052805,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052852	\n\n  (第四关 SN) 金牛
+													 		 EndWindow 1052852
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：双子
+block Item 46500 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052821	\n\n  “微笑印章”可在法兰城的冒险旅馆里买到。
+			 Window 1052821,YES,NO 
+			 	 Window_NO  
+			 	 Window_YES  
+			 	 	 ##1052822	\n\n  侦探就职的任务中，杀害葛登的凶手是菲斯医生  。
+				 	 Window 1052822,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052823	\n\n  里谢里雅堡灵堂内的黄金迷宫一共有100层。
+							 Window 1052823,YES,NO 
+							 	 Window_NO  
+							 	 Window_YES  
+							 	 	 ##1052824	\n\n  种族属性中，不死系克金属系。
+								 	 Window 1052824,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052825	\n\n  技能“暗杀”只有忍者跟士兵能学习。
+								 	 		 Window 1052825,YES,NO 
+								 	 			 Window_NO 
+								 	 			 Window_YES 
+								 	 			 	 ##1052853	\n\n  (第四关 SN) 双子
+													 EndWindow 1052853	
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052826	\n\n  阿凯鲁法村中并没有鉴定屋。
+			 	 Window 1052826,YES,NO 
+			 	 	 Window_YES   
+			 	 	 Window_NO   
+			 	 	 	 ##1052827	\n\n  到阿凯鲁法村的方法有搭船跟搭热气球。
+				 	 	 Window 1052827,YES,NO
+				 	 	 	 Window_YES   
+				 	 	 	 Window_NO   
+				 	 	 	 	 ##1052828	\n\n  蕃茄酱所需原料是5颗蕃茄，一个空瓶。
+				 	 	 	 	 Window 1052828,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052829	\n\n  黄金铠甲跟漆黑之铠都是LV10的铠甲。
+								 	 	 Window 1052829,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052830	\n\n  白钥匙可以开黑宝箱。
+								 	 		 	 Window 1052830,YES,NO 
+								 	 			 	 Window_YES 
+								 	 			 	 Window_NO 
+								 	 			 	 	 ##1052853	\n\n  (第四关 SN) 双子
+													 	 EndWindow 1052853
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052831	\n\n  地下竞技场中，一共有羽量级、轻量级、中量级以  及重量级四个组别。
+			 		 Window 1052831,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052832	\n\n  工作职业称号LV2为“虔诚的技巧”。
+				 	 		 Window 1052832,YES,NO
+				 	 	 		 Window_YES 
+				 	 	 		 Window_NO 
+				 	 	 	 		 ##1052833	\n\n  兔耳吓人箱改造后的外型是阴影。
+							 		 Window 1052833,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052834	\n\n  技能“连击”可在法兰城的竞技场学习。
+								 	 		 Window 1052834,YES,NO 
+								 		 		 Window_YES  
+								 		 		 Window_NO 
+								 	 		 		 ##1052835	\n\n  技能“急救”可在法兰城，城东医院里学习。
+								 	 		 		 Window 1052835,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052853	\n\n  (第四关 SN) 双子
+													 		 EndWindow 1052853
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：巨蟹
+block Item 46501 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052836	\n\n  “哥布林之家”里的怪物主要以水蜘蛛为主。
+			 Window 1052836,YES,NO 
+			 	 Window_YES   
+			 	 Window_NO  
+			 	 	 ##1052837	\n\n  在鲶鱼大王的体内使用LV1伐木技能可以取得不\n  同种类的恶玉菌。
+				 	 Window 1052837,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052838	\n\n  在古文明调查团的任务中，到奇利村东北边的风  之石碑可取得火之石版。
+							 Window 1052838,YES,NO 
+							 	 Window_YES  
+							 	 Window_NO
+							 	 	 ##1052839	\n\n  装备夏贝特之笛后可得到称号“吹横笛名师”。
+								 	 Window 1052839,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052840	\n\n  装备“带着星光的手环”可以获得称号“永恒的白  马王子”。
+								 	 		 Window 1052840,YES,NO 
+								 	 			 Window_NO 
+								 	 			 Window_YES 
+								 	 			 	 ##1052854	\n\n  (第四关 SN) 巨蟹
+													 EndWindow 1052854
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052841	\n\n  每一个人物身上最多可以同时携带四只宠物。
+			 	 Window 1052841,YES,NO 
+			 	 	 Window_YES   
+			 	 	 Window_NO   
+			 	 	 	 ##1052842	\n\n  跟专管称号的NPC说话，如果身上没钱会得到称\n  号“穷鬼”。
+				 	 	 Window 1052842,YES,NO
+				 	 	 	 Window_NO   
+				 	 	 	 Window_YES   
+				 	 	 	 	 ##1052843	\n\n  白金可在维诺雅洞穴里挖掘到。
+				 	 	 	 	 Window 1052843,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052844	\n\n  “神眼”是打倒水蜘蛛后随机取的道具。
+								 	 	 Window 1052844,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052845	\n\n  打倒流星山丘的大地鼠随机可以取得“陨石”。
+								 	 		 	 Window 1052845,YES,NO 
+								 	 			 	 Window_NO  
+								 	 			 	 Window_YES  
+								 	 			 	 	 ##1052854	\n\n  (第四关 SN) 巨蟹
+													 	 EndWindow 1052854
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052846	\n\n  任务商队袭击中打倒打倒山贼“伊欧那”随机可获  得“超级内裤”。
+			 		 Window 1052846,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052847	\n\n  阿卡斯击倒的任务，限制是必须解过佛利波罗任务  。
+				 	 		 Window 1052847,YES,NO
+				 	 	 		 Window_NO  
+				 	 	 		 Window_YES  
+				 	 	 	 		 ##1052848	\n\n  要通过巴洛斯任务，限制是必须解过阿卡斯任务。
+							 		 Window 1052848,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052849	\n\n  最终改造阿鲁巴斯需要的护士帽、医生、而且物品  必须5级以上的猎人、矿工采集。
+								 	 		 Window 1052849,YES,NO 
+								 		 		 Window_YES  
+								 		 		 Window_NO 
+								 	 		 		 ##1052850	\n\n  魔女之家进入的咒语为【法术】？
+								 	 		 		 Window 1052850,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052854	\n\n  (第四关 SN) 巨蟹
+													 		 EndWindow 1052854
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：狮子
+block Item 46502 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052791	\n\n  在地下城里饿肚子的调查员412，他最想吃的是蛋\n  炒饭？
+			 Window 1052791,YES,NO 
+			 	 Window_YES 
+			 	 Window_NO 
+			 	 	 ##1052792	\n\n  拉席老奶奶再也不敢住在法兰城的旅馆里是因为旅  馆太吵？
+				 	 Window 1052792,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052793	\n\n  研究员真中的家里掉落在地上的书有3本？
+							 Window 1052793,YES,NO 
+							 	 Window_YES 
+							 	 Window_NO 
+							 	 	 ##1052794	\n\n  竞技场迷宫第一名的奖品是【疾风的戒指】？
+								 	 Window 1052794,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052795	\n\n  收集哥布林的绿色头盔可以跟爱头盔的波月换电影  卷？
+								 	 		 Window 1052795,YES,NO 
+								 	 			 Window_YES
+								 	 			 Window_NO 
+								 	 			 	 ##1052855	\n\n  (第四关 SN) 狮子
+													 EndWindow 1052855
+	
+		 	 else 
+		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052796	\n\n  打完树精长老后拿到树苗，鉴定后可以得到生命之  花？
+			 	 Window 1052796,YES,NO 
+			 	 	 Window_NO  
+			 	 	 Window_YES  
+			 	 	 	 ##1052797	\n\n  在护士就职流程当中回答护士的问题里头，标准答  案是荷洛？
+				 	 	 Window 1052797,YES,NO
+				 	 	 	 Window_NO  
+				 	 	 	 Window_YES  
+				 	 	 	 	 ##1052798	\n\n  巫师遭袭事件事件中，要在55分钟之内打倒露比？
+				 	 	 	 	 Window 1052798,YES,NO 
+							 	 	 Window_YES 
+							 	 	 Window_NO 
+							 	 	 	 ##1052799	\n\n  提高宠物封印的机率的技能为【精灵的盟约】？
+								 	 	 Window 1052799,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052800	\n\n  蒂娜村晚上无法利用传送石传送进去？
+								 	 		 	 Window 1052800,YES,NO 
+								 	 			 	 Window_NO
+								 	 			 	 Window_YES 
+								 	 			 	 	 ##1052855	\n\n  (第四关 SN) 狮子
+													 	 EndWindow 1052855
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052801	\n\n  宠物邮件在哈贝鲁村可学到？
+			 		 Window 1052801,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052802	\n\n  启程之间共有10个传送石？
+				 	 		 Window 1052802,YES,NO
+				 	 	 		 Window_YES 
+				 	 	 		 Window_NO 
+				 	 	 	 		 ##1052803	\n\n  黑暗医生的躲藏的家是护士这个职业的就职任务？
+							 		 Window 1052803,YES,NO 
+							 	 		 Window_YES 
+							 	 		 Window_NO 
+							 	 	 		 ##1052804	\n\n  忍者这种职业可以使用暗杀技能？
+								 	 		 Window 1052804,YES,NO 
+								 		 		 Window_NO 
+								 		 		 Window_YES 
+								 	 		 		 ##1052805	\n\n  麻布可以在达美姊妹店购买到？
+								 	 		 		 Window 1052805,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052855	\n\n  (第四关 SN) 狮子
+													 		 EndWindow 1052855
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：处女
+block Item 46503 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052806	\n\n  赖光的头盔是打牛鬼后随机取得的？
+			 Window 1052806,YES,NO 
+			 	 Window_NO  
+			 	 Window_YES  
+			 	 	 ##1052807	\n\n  土蜘蛛是在地之洞穴可以抓到？
+				 	 Window 1052807,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052808	\n\n  图书馆女孩米雪儿请玩家将【爱情的悲剧】这本书  交给香料店的莉莉露？
+							 Window 1052808,YES,NO 
+							 	 Window_YES 
+							 	 Window_NO 
+							 	 	 ##1052809	\n\n  里谢里堡中料理长米其巴请玩家将水果蕃茄送到伊  尔村？
+								 	 Window 1052809,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052810	\n\n  法兰城中的费纳甘提到用苹果花拿来煮汤对美容有  效？
+								 	 		 Window 1052810,YES,NO 
+								 	 			 Window_YES
+								 	 			 Window_NO 
+								 	 			 	 ##1052856	\n\n  (第四关 SN) 处女
+													 EndWindow 1052856
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052811	\n\n  圣拉鲁卡村是以矿山和药而闻名？
+			 	 Window 1052811,YES,NO 
+			 	 	 Window_NO  
+			 	 	 Window_YES  
+			 	 	 	 ##1052812	\n\n  火焰鼠产地在索奇亚岛。
+				 	 	 Window 1052812,YES,NO
+				 	 	 	 Window_NO  
+				 	 	 	 Window_YES  
+				 	 	 	 	 ##1052813	\n\n  绿色水晶是对应地属性。
+				 	 	 	 	 Window 1052813,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052814	\n\n  初创角色时，每个人有30点可以配置。
+								 	 	 Window 1052814,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052815	\n\n  法兰城中，豪华屋14天的租金是5000G。
+								 	 		 	 Window 1052815,YES,NO 
+								 	 			 	 Window_YES 
+								 	 			 	 Window_NO 
+								 	 			 	 	 ##1052856	\n\n  (第四关 SN) 处女
+													 	 EndWindow 1052856
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052816	\n\n  搭船到阿凯鲁法城的船票每张500G。
+			 		 Window 1052816,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052817	\n\n  舞者的就职方式中，必须先准备“报酬的金币”。
+				 	 		 Window 1052817,YES,NO
+				 	 	 		 Window_YES 
+				 	 	 		 Window_NO 
+				 	 	 	 		 ##1052818	\n\n  舞者Lv6的舞步-森巴，不是敌一体即死，就是舞者  亡。
+							 		 Window 1052818,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052819	\n\n  技能“刻印”可以在阿凯鲁法村学到。
+								 	 		 Window 1052819,YES,NO 
+								 		 		 Window_NO 
+								 		 		 Window_YES 
+								 	 		 		 ##1052820	\n\n  战斗时，最大的10个角色合击时，\n  会出现“Perfect!”的字样。
+								 	 		 		 Window 1052805,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052856	\n\n  (第四关 SN) 处女
+													 		 EndWindow 1052856
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：天秤
+block Item 46504 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052821	\n\n  “微笑印章”可在法兰城的冒险旅馆里买到。
+			 Window 1052821,YES,NO 
+			 	 Window_NO  
+			 	 Window_YES  
+			 	 	 ##1052822	\n\n  侦探就职的任务中，杀害葛登的凶手是菲斯医生  。
+				 	 Window 1052822,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052823	\n\n  里谢里雅堡灵堂内的黄金迷宫一共有100层。
+							 Window 1052823,YES,NO 
+							 	 Window_NO  
+							 	 Window_YES  
+							 	 	 ##1052824	\n\n  种族属性中，不死系克金属系。
+								 	 Window 1052824,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052825	\n\n  技能“暗杀”只有忍者跟士兵能学习。
+								 	 		 Window 1052825,YES,NO 
+								 	 			 Window_NO 
+								 	 			 Window_YES 
+								 	 			 	 ##1052857	\n\n  (第四关 SN) 天秤
+													 EndWindow 1052857
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052826	\n\n  阿凯鲁法村中并没有鉴定屋。
+			 	 Window 1052826,YES,NO 
+			 	 	 Window_YES   
+			 	 	 Window_NO   
+			 	 	 	 ##1052827	\n\n  到阿凯鲁法村的方法有搭船跟搭热气球。
+				 	 	 Window 1052827,YES,NO
+				 	 	 	 Window_YES   
+				 	 	 	 Window_NO   
+				 	 	 	 	 ##1052828	\n\n  蕃茄酱所需原料是5颗蕃茄，一个空瓶。
+				 	 	 	 	 Window 1052828,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052829	\n\n  黄金铠甲跟漆黑之铠都是LV10的铠甲。
+								 	 	 Window 1052829,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052830	\n\n  白钥匙可以开黑宝箱。
+								 	 		 	 Window 1052830,YES,NO 
+								 	 			 	 Window_YES 
+								 	 			 	 Window_NO 
+								 	 			 	 	 ##1052857	\n\n  (第四关 SN) 天秤
+													 	 EndWindow 1052857
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052831	\n\n  地下竞技场中，一共有羽量级、轻量级、中量级以  及重量级四个组别。
+			 		 Window 1052831,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052832	\n\n  工作职业称号LV2为“虔诚的技巧”。
+				 	 		 Window 1052832,YES,NO
+				 	 	 		 Window_YES 
+				 	 	 		 Window_NO 
+				 	 	 	 		 ##1052833	\n\n  兔耳吓人箱改造后的外型是阴影。
+							 		 Window 1052833,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052834	\n\n  技能“连击”可在法兰城的竞技场学习。
+								 	 		 Window 1052834,YES,NO 
+								 		 		 Window_YES  
+								 		 		 Window_NO 
+								 	 		 		 ##1052835	\n\n  技能“急救”可在法兰城，城东医院里学习。
+								 	 		 		 Window 1052835,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052857	\n\n  (第四关 SN) 天秤
+													 		 EndWindow 1052857
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：天蝎
+block Item 46505 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052836	\n\n  “哥布林之家”里的怪物主要以水蜘蛛为主。
+			 Window 1052836,YES,NO 
+			 	 Window_YES   
+			 	 Window_NO  
+			 	 	 ##1052837	\n\n  在鲶鱼大王的体内使用LV1伐木技能可以取得不\n  同种类的恶玉菌。
+				 	 Window 1052837,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052838	\n\n  在古文明调查团的任务中，到奇利村东北边的风  之石碑可取得火之石版。
+							 Window 1052838,YES,NO 
+							 	 Window_YES  
+							 	 Window_NO
+							 	 	 ##1052839	\n\n  装备夏贝特之笛后可得到称号“吹横笛名师”。
+								 	 Window 1052839,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052840	\n\n  装备“带着星光的手环”可以获得称号“永恒的白  马王子”。
+								 	 		 Window 1052840,YES,NO 
+								 	 			 Window_NO 
+								 	 			 Window_YES 
+								 	 			 	 ##1052858	\n\n  (第四关 SN) 天蝎
+													 EndWindow 1052858
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052841	\n\n  每一个人物身上最多可以同时携带四只宠物。
+			 	 Window 1052841,YES,NO 
+			 	 	 Window_YES   
+			 	 	 Window_NO   
+			 	 	 	 ##1052842	\n\n  跟专管称号的NPC说话，如果身上没钱会得到称\n  号“穷鬼”。
+				 	 	 Window 1052842,YES,NO
+				 	 	 	 Window_NO   
+				 	 	 	 Window_YES   
+				 	 	 	 	 ##1052843	\n\n  白金可在维诺雅洞穴里挖掘到。
+				 	 	 	 	 Window 1052843,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052844	\n\n  “神眼”是打倒水蜘蛛后随机取的道具。
+								 	 	 Window 1052844,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052845	\n\n  打倒流星山丘的大地鼠随机可以取得“陨石”。
+								 	 		 	 Window 1052845,YES,NO 
+								 	 			 	 Window_NO  
+								 	 			 	 Window_YES  
+								 	 			 	 	 ##1052858	\n\n  (第四关 SN) 天蝎
+													 	 EndWindow 1052858
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052846	\n\n  任务商队袭击中打倒打倒山贼“伊欧那”随机可获  得“超级内裤”。
+			 		 Window 1052846,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052847	\n\n  阿卡斯击倒的任务，限制是必须解过佛利波罗任务  。
+				 	 		 Window 1052847,YES,NO
+				 	 	 		 Window_NO  
+				 	 	 		 Window_YES  
+				 	 	 	 		 ##1052848	\n\n  要通过巴洛斯任务，限制是必须解过阿卡斯任务。
+							 		 Window 1052848,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052849	\n\n  最终改造阿鲁巴斯需要的护士帽、医生、而且物品  必须5级以上的猎人、矿工采集。
+								 	 		 Window 1052849,YES,NO 
+								 		 		 Window_YES  
+								 		 		 Window_NO 
+								 	 		 		 ##1052850	\n\n  魔女之家进入的咒语为【法术】？
+								 	 		 		 Window 1052850,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052858	\n\n  (第四关 SN) 天蝎
+													 		 EndWindow 1052858
+				 endif 
+			 endif 
+		 endblock
+###################■身上有智慧之声：射手
+block Item 46506 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052791	\n\n  在地下城里饿肚子的调查员412，他最想吃的是蛋\n  炒饭？
+			 Window 1052791,YES,NO 
+			 	 Window_YES 
+			 	 Window_NO 
+			 	 	 ##1052792	\n\n  拉席老奶奶再也不敢住在法兰城的旅馆里是因为旅  馆太吵？
+				 	 Window 1052792,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052793	\n\n  研究员真中的家里掉落在地上的书有3本？
+							 Window 1052793,YES,NO 
+							 	 Window_YES 
+							 	 Window_NO 
+							 	 	 ##1052794	\n\n  竞技场迷宫第一名的奖品是【疾风的戒指】？
+								 	 Window 1052794,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052795	\n\n  收集哥布林的绿色头盔可以跟爱头盔的波月换电影  卷？
+								 	 		 Window 1052795,YES,NO 
+								 	 			 Window_YES
+								 	 			 Window_NO 
+								 	 			 	 ##1052859	\n\n  (第四关 SN) 射手
+													 EndWindow 1052859
+		 	 else 
+		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052796	\n\n  打完树精长老后拿到树苗，鉴定后可以得到生命之  花？
+			 	 Window 1052796,YES,NO 
+			 	 	 Window_NO  
+			 	 	 Window_YES  
+			 	 	 	 ##1052797	\n\n  在护士就职流程当中回答护士的问题里头，标准答  案是荷洛？
+				 	 	 Window 1052797,YES,NO
+				 	 	 	 Window_NO  
+				 	 	 	 Window_YES  
+				 	 	 	 	 ##1052798	\n\n  巫师遭袭事件事件中，要在55分钟之内打倒露比？
+				 	 	 	 	 Window 1052798,YES,NO 
+							 	 	 Window_YES 
+							 	 	 Window_NO 
+							 	 	 	 ##1052799	\n\n  提高宠物封印的机率的技能为【精灵的盟约】？
+								 	 	 Window 1052799,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052800	\n\n  蒂娜村晚上无法利用传送石传送进去？
+								 	 		 	 Window 1052800,YES,NO 
+								 	 			 	 Window_NO
+								 	 			 	 Window_YES 
+								 	 			 	 	 ##1052859	\n\n  (第四关 SN) 射手
+													 	 EndWindow 1052859
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052801	\n\n  宠物邮件在哈贝鲁村可学到？
+			 		 Window 1052801,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052802	\n\n  启程之间共有10个传送石？
+				 	 		 Window 1052802,YES,NO
+				 	 	 		 Window_YES 
+				 	 	 		 Window_NO 
+				 	 	 	 		 ##1052803	\n\n  黑暗医生的躲藏的家是护士这个职业的就职任务？
+							 		 Window 1052803,YES,NO 
+							 	 		 Window_YES 
+							 	 		 Window_NO 
+							 	 	 		 ##1052804	\n\n  忍者这种职业可以使用暗杀技能？
+								 	 		 Window 1052804,YES,NO 
+								 		 		 Window_NO 
+								 		 		 Window_YES 
+								 	 		 		 ##1052805	\n\n  麻布可以在达美姊妹店购买到？
+								 	 		 		 Window 1052805,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052859	\n\n  (第四关 SN) 射手
+													 		 EndWindow 1052859
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：魔猲
+block Item 46507 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052806	\n\n  赖光的头盔是打牛鬼后随机取得的？
+			 Window 1052806,YES,NO 
+			 	 Window_NO  
+			 	 Window_YES  
+			 	 	 ##1052807	\n\n  土蜘蛛是在地之洞穴可以抓到？
+				 	 Window 1052807,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052808	\n\n  图书馆女孩米雪儿请玩家将【爱情的悲剧】这本书  交给香料店的莉莉露？
+							 Window 1052808,YES,NO 
+							 	 Window_YES 
+							 	 Window_NO 
+							 	 	 ##1052809	\n\n  里谢里堡中料理长米其巴请玩家将水果蕃茄送到伊  尔村？
+								 	 Window 1052809,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052810	\n\n  法兰城中的费纳甘提到用苹果花拿来煮汤对美容有  效？
+								 	 		 Window 1052810,YES,NO 
+								 	 			 Window_YES
+								 	 			 Window_NO 
+								 	 			 	 ##1052860	\n\n  (第四关 SN) 魔猲
+													 EndWindow 1052860
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052811	\n\n  圣拉鲁卡村是以矿山和药而闻名？
+			 	 Window 1052811,YES,NO 
+			 	 	 Window_NO  
+			 	 	 Window_YES  
+			 	 	 	 ##1052812	\n\n  火焰鼠产地在索奇亚岛。
+				 	 	 Window 1052812,YES,NO
+				 	 	 	 Window_NO  
+				 	 	 	 Window_YES  
+				 	 	 	 	 ##1052813	\n\n  绿色水晶是对应地属性。
+				 	 	 	 	 Window 1052813,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052814	\n\n  初创角色时，每个人有30点可以配置。
+								 	 	 Window 1052814,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052815	\n\n  法兰城中，豪华屋14天的租金是5000G。
+								 	 		 	 Window 1052815,YES,NO 
+								 	 			 	 Window_YES 
+								 	 			 	 Window_NO 
+								 	 			 	 	 ##1052860	\n\n  (第四关 SN) 魔猲
+													 	 EndWindow 1052860
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052816	\n\n  搭船到阿凯鲁法城的船票每张500G。
+			 		 Window 1052816,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052817	\n\n  舞者的就职方式中，必须先准备“报酬的金币”。
+				 	 		 Window 1052817,YES,NO
+				 	 	 		 Window_YES 
+				 	 	 		 Window_NO 
+				 	 	 	 		 ##1052818	\n\n  舞者Lv6的舞步-森巴，不是敌一体即死，就是舞者  亡。
+							 		 Window 1052818,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052819	\n\n  技能“刻印”可以在阿凯鲁法村学到。
+								 	 		 Window 1052819,YES,NO 
+								 		 		 Window_NO 
+								 		 		 Window_YES 
+								 	 		 		 ##1052820	\n\n  战斗时，最大的10个角色合击时，\n  会出现“Perfect!”的字样。
+								 	 		 		 Window 1052805,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052860	\n\n  (第四关 SN) 魔猲
+													 		 EndWindow 1052860
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：水瓶
+block Item 46508 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052821	\n\n  “微笑印章”可在法兰城的冒险旅馆里买到。
+			 Window 1052821,YES,NO 
+			 	 Window_NO  
+			 	 Window_YES  
+			 	 	 ##1052822	\n\n  侦探就职的任务中，杀害葛登的凶手是菲斯医生  。
+				 	 Window 1052822,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052823	\n\n  里谢里雅堡灵堂内的黄金迷宫一共有100层。
+							 Window 1052823,YES,NO 
+							 	 Window_NO  
+							 	 Window_YES  
+							 	 	 ##1052824	\n\n  种族属性中，不死系克金属系。
+								 	 Window 1052824,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052825	\n\n  技能“暗杀”只有忍者跟士兵能学习。
+								 	 		 Window 1052825,YES,NO 
+								 	 			 Window_NO 
+								 	 			 Window_YES 
+								 	 			 	 ##1052861	\n\n  (第四关 SN) 水瓶
+													 EndWindow 1052861
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052826	\n\n  阿凯鲁法村中并没有鉴定屋。
+			 	 Window 1052826,YES,NO 
+			 	 	 Window_YES   
+			 	 	 Window_NO   
+			 	 	 	 ##1052827	\n\n  到阿凯鲁法村的方法有搭船跟搭热气球。
+				 	 	 Window 1052827,YES,NO
+				 	 	 	 Window_YES   
+				 	 	 	 Window_NO   
+				 	 	 	 	 ##1052828	\n\n  蕃茄酱所需原料是5颗蕃茄，一个空瓶。
+				 	 	 	 	 Window 1052828,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052829	\n\n  黄金铠甲跟漆黑之铠都是LV10的铠甲。
+								 	 	 Window 1052829,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052830	\n\n  白钥匙可以开黑宝箱。
+								 	 		 	 Window 1052830,YES,NO 
+								 	 			 	 Window_YES 
+								 	 			 	 Window_NO 
+								 	 			 	 	 ##1052861	\n\n  (第四关 SN) 水瓶
+													 	 EndWindow 1052861
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052831	\n\n  地下竞技场中，一共有羽量级、轻量级、中量级以  及重量级四个组别。
+			 		 Window 1052831,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052832	\n\n  工作职业称号LV2为“虔诚的技巧”。
+				 	 		 Window 1052832,YES,NO
+				 	 	 		 Window_YES 
+				 	 	 		 Window_NO 
+				 	 	 	 		 ##1052833	\n\n  兔耳吓人箱改造后的外型是阴影。
+							 		 Window 1052833,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052834	\n\n  技能“连击”可在法兰城的竞技场学习。
+								 	 		 Window 1052834,YES,NO 
+								 		 		 Window_YES  
+								 		 		 Window_NO 
+								 	 		 		 ##1052835	\n\n  技能“急救”可在法兰城，城东医院里学习。
+								 	 		 		 Window 1052835,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052861	\n\n  (第四关 SN) 水瓶
+													 		 EndWindow 1052861
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：双鱼
+block Item 46509 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052836	\n\n  “哥布林之家”里的怪物主要以水蜘蛛为主。
+			 Window 1052836,YES,NO 
+			 	 Window_YES   
+			 	 Window_NO  
+			 	 	 ##1052837	\n\n  在鲶鱼大王的体内使用LV1伐木技能可以取得不\n  同种类的恶玉菌。
+				 	 Window 1052837,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052838	\n\n  在古文明调查团的任务中，到奇利村东北边的风  之石碑可取得火之石版。
+							 Window 1052838,YES,NO 
+							 	 Window_YES  
+							 	 Window_NO
+							 	 	 ##1052839	\n\n  装备夏贝特之笛后可得到称号“吹横笛名师”。
+								 	 Window 1052839,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052840	\n\n  装备“带着星光的手环”可以获得称号“永恒的白  马王子”。
+								 	 		 Window 1052840,YES,NO 
+								 	 			 Window_NO 
+								 	 			 Window_YES 
+								 	 			 	 ##1052862	\n\n  (第四关 SN) 双鱼
+													 EndWindow 1052862
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052841	\n\n  每一个人物身上最多可以同时携带四只宠物。
+			 	 Window 1052841,YES,NO 
+			 	 	 Window_YES   
+			 	 	 Window_NO   
+			 	 	 	 ##1052842	\n\n  跟专管称号的NPC说话，如果身上没钱会得到称\n  号“穷鬼”。
+				 	 	 Window 1052842,YES,NO
+				 	 	 	 Window_NO   
+				 	 	 	 Window_YES   
+				 	 	 	 	 ##1052843	\n\n  白金可在维诺雅洞穴里挖掘到。
+				 	 	 	 	 Window 1052843,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052844	\n\n  “神眼”是打倒水蜘蛛后随机取的道具。
+								 	 	 Window 1052844,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052845	\n\n  打倒流星山丘的大地鼠随机可以取得“陨石”。
+								 	 		 	 Window 1052845,YES,NO 
+								 	 			 	 Window_NO  
+								 	 			 	 Window_YES  
+								 	 			 	 	 ##1052862	\n\n  (第四关 SN) 双鱼
+													 	 EndWindow 1052862
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052846	\n\n  任务商队袭击中打倒打倒山贼“伊欧那”随机可获  得“超级内裤”。
+			 		 Window 1052846,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052847	\n\n  阿卡斯击倒的任务，限制是必须解过佛利波罗任务  。
+				 	 		 Window 1052847,YES,NO
+				 	 	 		 Window_NO  
+				 	 	 		 Window_YES  
+				 	 	 	 		 ##1052848	\n\n  要通过巴洛斯任务，限制是必须解过阿卡斯任务。
+							 		 Window 1052848,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052849	\n\n  最终改造阿鲁巴斯需要的护士帽、医生、而且物品  必须5级以上的猎人、矿工采集。
+								 	 		 Window 1052849,YES,NO 
+								 		 		 Window_YES  
+								 		 		 Window_NO 
+								 	 		 		 ##1052850	\n\n  魔女之家进入的咒语为【法术】？
+								 	 		 		 Window 1052850,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052862	\n\n  (第四关 SN) 双鱼
+													 		 EndWindow 1052862
+				 endif 
+			 endif 
+		 endblock
+###################■身上有智慧之声：猎户
+block Item 46510 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052821	\n\n  “微笑印章”可在法兰城的冒险旅馆里买到。
+			 Window 1052821,YES,NO 
+			 	 Window_NO  
+			 	 Window_YES  
+			 	 	 ##1052822	\n\n  侦探就职的任务中，杀害葛登的凶手是菲斯医生  。
+				 	 Window 1052822,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052823	\n\n  里谢里雅堡灵堂内的黄金迷宫一共有100层。
+							 Window 1052823,YES,NO 
+							 	 Window_NO  
+							 	 Window_YES  
+							 	 	 ##1052824	\n\n  种族属性中，不死系克金属系。
+								 	 Window 1052824,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052825	\n\n  技能“暗杀”只有忍者跟士兵能学习。
+								 	 		 Window 1052825,YES,NO 
+								 	 			 Window_NO 
+								 	 			 Window_YES 
+								 	 			 	 ##1052863	\n\n  (第四关 SN) 猎户
+													 EndWindow 1052863
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052826	\n\n  阿凯鲁法村中并没有鉴定屋。
+			 	 Window 1052826,YES,NO 
+			 	 	 Window_YES   
+			 	 	 Window_NO   
+			 	 	 	 ##1052827	\n\n  到阿凯鲁法村的方法有搭船跟搭热气球。
+				 	 	 Window 1052827,YES,NO
+				 	 	 	 Window_YES   
+				 	 	 	 Window_NO   
+				 	 	 	 	 ##1052828	\n\n  蕃茄酱所需原料是5颗蕃茄，一个空瓶。
+				 	 	 	 	 Window 1052828,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052829	\n\n  黄金铠甲跟漆黑之铠都是LV10的铠甲。
+								 	 	 Window 1052829,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052830	\n\n  白钥匙可以开黑宝箱。
+								 	 		 	 Window 1052830,YES,NO 
+								 	 			 	 Window_YES 
+								 	 			 	 Window_NO 
+								 	 			 	 	 ##1052863	\n\n  (第四关 SN) 猎户
+													 	 EndWindow 1052863
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052831	\n\n  地下竞技场中，一共有羽量级、轻量级、中量级以  及重量级四个组别。
+			 		 Window 1052831,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052832	\n\n  工作职业称号LV2为“虔诚的技巧”。
+				 	 		 Window 1052832,YES,NO
+				 	 	 		 Window_YES 
+				 	 	 		 Window_NO 
+				 	 	 	 		 ##1052833	\n\n  兔耳吓人箱改造后的外型是阴影。
+							 		 Window 1052833,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052834	\n\n  技能“连击”可在法兰城的竞技场学习。
+								 	 		 Window 1052834,YES,NO 
+								 		 		 Window_YES  
+								 		 		 Window_NO 
+								 	 		 		 ##1052835	\n\n  技能“急救”可在法兰城，城东医院里学习。
+								 	 		 		 Window 1052835,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052863	\n\n  (第四关 SN) 猎户
+													 		 EndWindow 1052863
+				 endif 
+			 endif 
+	 	 endblock 		
+###################■身上有智慧之声：飞马
+block Item 46511 >=1	 	 
+	 ##1052765	\n\n  真正的勇者阿．．．\n  我就是掌管光明的神圣女神之左手．．．
+	 Window 1052765,NEXT 
+	 ##1052766	\n\n  在诺瓦把我送到这里来之后我不知道已经多久，  但这真是个漫长的日子，我一直在等待具有勇者  血统的人带着我回到女神的身边。
+	 Window 1052766,NEXT 
+	 ##1052767	\n\n  希望你可别辜负我的期望了．．．\n  接受以下的考验吧！\n\n  愿光明女神祝福你．．．
+	 Window 1052767,YES,NO 
+	 	 Window_NO 
+		 ##1052764	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052764
+		 
+		 Window_YES 
+		 	 localCount0  = random 3,0
+		 	
+		 	 if localCount0 == 1
+		 	 ##1052836	\n\n  “哥布林之家”里的怪物主要以水蜘蛛为主。
+			 Window 1052836,YES,NO 
+			 	 Window_YES   
+			 	 Window_NO  
+			 	 	 ##1052837	\n\n  在鲶鱼大王的体内使用LV1伐木技能可以取得不\n  同种类的恶玉菌。
+				 	 Window 1052837,YES,NO
+				 	 	 Window_YES 
+				 	 	 Window_NO 
+				 	 	 	 ##1052838	\n\n  在古文明调查团的任务中，到奇利村东北边的风  之石碑可取得火之石版。
+							 Window 1052838,YES,NO 
+							 	 Window_YES  
+							 	 Window_NO
+							 	 	 ##1052839	\n\n  装备夏贝特之笛后可得到称号“吹横笛名师”。
+								 	 Window 1052839,YES,NO 
+								 		 Window_NO 
+								 		 Window_YES 
+								 	 		 ##1052840	\n\n  装备“带着星光的手环”可以获得称号“永恒的白  马王子”。
+								 	 		 Window 1052840,YES,NO 
+								 	 			 Window_NO 
+								 	 			 Window_YES 
+								 	 			 	 ##1052864	\n\n  (第四关 SN) 飞马
+													 EndWindow 1052864
+		 	 else 		 	 
+		 	 	 if localCount0 == 2
+		 	 	 ##1052841	\n\n  每一个人物身上最多可以同时携带四只宠物。
+			 	 Window 1052841,YES,NO 
+			 	 	 Window_YES   
+			 	 	 Window_NO   
+			 	 	 	 ##1052842	\n\n  跟专管称号的NPC说话，如果身上没钱会得到称\n  号“穷鬼”。
+				 	 	 Window 1052842,YES,NO
+				 	 	 	 Window_NO   
+				 	 	 	 Window_YES   
+				 	 	 	 	 ##1052843	\n\n  白金可在维诺雅洞穴里挖掘到。
+				 	 	 	 	 Window 1052843,YES,NO 
+							 	 	 Window_NO  
+							 	 	 Window_YES  
+							 	 	 	 ##1052844	\n\n  “神眼”是打倒水蜘蛛后随机取的道具。
+								 	 	 Window 1052844,YES,NO 
+								 		 	 Window_NO 
+								 		 	 Window_YES 
+								 	 		 	 ##1052845	\n\n  打倒流星山丘的大地鼠随机可以取得“陨石”。
+								 	 		 	 Window 1052845,YES,NO 
+								 	 			 	 Window_NO  
+								 	 			 	 Window_YES  
+								 	 			 	 	 ##1052864	\n\n  (第四关 SN) 飞马
+													 	 EndWindow 1052864
+				 else
+				 	 if localCount0 == 3		 	 		 	  	
+					 ##1052846	\n\n  任务商队袭击中打倒打倒山贼“伊欧那”随机可获  得“超级内裤”。
+			 		 Window 1052846,YES,NO 
+			 	 		 Window_NO 
+			 	 		 Window_YES 
+			 	 	 		 ##1052847	\n\n  阿卡斯击倒的任务，限制是必须解过佛利波罗任务  。
+				 	 		 Window 1052847,YES,NO
+				 	 	 		 Window_NO  
+				 	 	 		 Window_YES  
+				 	 	 	 		 ##1052848	\n\n  要通过巴洛斯任务，限制是必须解过阿卡斯任务。
+							 		 Window 1052848,YES,NO 
+							 	 		 Window_NO  
+							 	 		 Window_YES  
+							 	 	 		 ##1052849	\n\n  最终改造阿鲁巴斯需要的护士帽、医生、而且物品  必须5级以上的猎人、矿工采集。
+								 	 		 Window 1052849,YES,NO 
+								 		 		 Window_YES  
+								 		 		 Window_NO 
+								 	 		 		 ##1052850	\n\n  魔女之家进入的咒语为【法术】？
+								 	 		 		 Window 1052850,YES,NO 
+								 	 			 		 Window_YES
+								 	 			 		 Window_NO 
+								 	 			 	 		 ##1052864	\n\n  (第四关 SN) 飞马
+													 		 EndWindow 1052864
+				 endif 
+			 endif 
+		 endblock
+################### 一般
+block 
+	 ##1052768	\n\n\n\n  @c一尊看起来不起眼的石像。
+	 EndWindow 1052768

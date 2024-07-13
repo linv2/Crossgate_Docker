@@ -1,0 +1,250 @@
+
+#1054671	\n\n\n招牌师要买烧酒鸡呀～～\n真伤脑筋，现在没材料耶～
+#1054672	\n\n　　　这样吧～\n　　　我开出菜单，你帮我搜集，我就帮你煮烧酒鸡。
+#1054673	\n\n\n　　　中药包向中药商买就好了，\n　　　快去准备材料吧～
+#1054674	\n\n\n\n@c快去准备其他材料吧～
+#1054675	\n　　　你这么快就准备好了～\n　　　那我开始做啰～
+#1054676	\n\n\n\n@c好了～快拿去吧～
+#1054677	\n\n\n\n@c快拿去给招牌师吧～
+#1054678	\n\n　　　烧酒鸡材料：\n　　　鸡肉五份，中药包一份，酒一瓶。\n　　　酒可以选用大吟酿鬼酒、鬼酒、甜酒或是贝纳希。
+#大吟酿鬼酒	17700
+#鬼酒	18232
+#甜酒	607653
+#贝纳希	18965
+#鸡肉	11201
+#烧酒鸡	47428
+#中药包	47427
+#1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+#1054679	要使用大吟酿鬼酒来煮烧酒鸡吗？	1
+#1054680	要使用鬼酒来煮烧酒鸡吗？	1
+#1054681	要使用甜酒来煮烧酒鸡吗？	1
+#1054682	要使用贝纳希来煮烧酒鸡吗？	1
+#1054683	那就算了！	1
+
+
+block Item 47428>0
+	 EndWindow 1054677
+##大银酿鬼酒 
+block Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 17700>0
+	 Window 1054675,NEXT
+	 Window 1054679,YES,NO
+	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 17700>0
+	 KillItem 47427,1	 
+	 KillItem 47430,1
+	 KillItem 11201,5
+	 KillItem 17700,1
+	 GiveLeak1Item 47428,1	
+	 EndWindow 1054676
+	 Window_YES
+	 EndWindow 1053059
+	 ##不用大吟酿  有鬼酒
+	 Window_NO Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18232>0
+	 	 Window 1054680,YES,NO
+	 	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18232>0
+	 	 KillItem 47427,1
+	 	 KillItem 47430,1
+	 	 KillItem 11201,5
+	 	 KillItem 18232,1
+	 	 GiveLeak1Item 47428,1	
+	 	 EndWindow 1054676
+	 	 Window_YES
+	 	 EndWindow 1053059
+	 	 ##不用大吟酿  不用鬼酒 有甜酒
+	 	 Window_NO Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 607653>0
+	 	 	 Window 1054681,YES,NO
+	 	 	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 607653>0
+	 	 	 KillItem 47427,1
+	 	 	 KillItem 47430,1
+	 	 	 KillItem 11201,5
+	 	 	 KillItem 607653,1
+	 	 	 GiveLeak1Item 47428,1	
+	 	 	 EndWindow 1054676
+	 	 	 Window_YES
+	 	 	 EndWindow 1053059
+	 	 	 ##不用大吟酿 不用鬼酒 不用甜酒 有贝那希	
+	 	 	 Window_NO Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 	 	 	 Window 1054682,YES,NO
+	 	 	 	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 	 	 	 KillItem 47427,1
+	 	 	 	 KillItem 47430,1
+	 	 	 	 KillItem 11201,5
+	 	 	 	 KillItem 18965,1
+	 	 	 	 GiveLeak1Item 47428,1	
+	 	 	 	 EndWindow 1054676
+	 	 	 	 Window_YES
+	 	 	 	 EndWindow 1053059
+	 	 	 	 Window_NO
+	 	 	 	 EndWindow 1054683
+	 	 	 ##不用大吟酿 不用鬼酒 不用甜酒 没贝那希	 
+	 	 	 Window_NO
+	 	         EndWindow 1054683 	 
+	 	 	 
+	 	 ##不用大吟酿 不用鬼酒 没甜酒 有贝那希	 
+	 	 Window_NO Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 	 	 Window 1054682,YES,NO
+	 	 	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 	 	 KillItem 47427,1
+	 	 	 KillItem 47430,1
+	 	 	 KillItem 11201,5
+	 	 	 KillItem 18965,1
+	 	 	 GiveLeak1Item 47428,1	
+	 	 	 EndWindow 1054676
+	 	 	 Window_YES
+	 	 	 EndWindow 1053059
+	 	 	 Window_NO
+	 	 	 EndWindow 1054683
+	 	 ##不用大吟酿 不用鬼酒 没甜酒 没贝那希		 
+	 	 Window_NO
+	 	 EndWindow 1054683 
+	 	 	 
+	 	 
+	 ##不用大吟酿 没鬼酒 有甜酒
+	 Window_NO Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 607653>0
+	 	 Window 1054681,YES,NO
+	 	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 607653>0
+	 	 KillItem 47427,1
+	 	 KillItem 47430,1
+	 	 KillItem 11201,5
+	 	 KillItem 607653,1
+	 	 GiveLeak1Item 47428,1	
+	 	 EndWindow 1054676
+	 	 Window_YES
+	 	 EndWindow 1053059
+	 	 ##不用大吟酿 没鬼酒 不用甜酒 有贝那希 	 
+		 Window_NO Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 	 	 Window 1054682,YES,NO
+	 	 	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 	 	 KillItem 47427,1
+	 	 	 KillItem 47430,1
+	 	 	 KillItem 11201,5
+	 	 	 KillItem 18965,1
+	 	 	 GiveLeak1Item 47428,1	
+	 	 	 EndWindow 1054676
+	 	 	 Window_YES
+	 	 	 EndWindow 1053059
+	 	 	 Window_NO
+	 	 	 EndWindow 1054683              	 
+	 	  ##不用大吟酿 没鬼酒 不用甜酒 没贝那希 	 
+	 	  Window_NO
+	 	  EndWindow 1054683 	 
+	 
+	 	 
+	 ##不用大吟酿 没鬼酒 没甜酒 有贝那希
+	 Window_NO Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 	 Window 1054682,YES,NO
+	 	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 	 KillItem 47427,1
+	 	 KillItem 47430,1
+	 	 KillItem 11201,5
+	 	 KillItem 18965,1
+	 	 GiveLeak1Item 47428,1	
+	 	 EndWindow 1054676
+	 	 Window_YES
+	 	 EndWindow 1053059
+	 	 Window_NO
+	 	 EndWindow 1054683
+	 	 
+	 ##不用大吟酿 没鬼酒 没甜酒 没贝那希	 
+	 Window_NO
+	 EndWindow 1054683	 
+	 
+	 
+	 
+	 
+##鬼酒
+block Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18232>0
+	 Window 1054680,YES,NO
+	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18232>0
+	 KillItem 47427,1
+	 KillItem 47430,1
+	 KillItem 11201,5
+	 KillItem 18232,1
+	 GiveLeak1Item 47428,1	
+	 EndWindow 1054676
+	 Window_YES
+	 EndWindow 1053059
+	 Window_NO Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 607653>0
+	 Window 1054681,YES,NO
+	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 607653>0
+	 KillItem 47427,1
+	 KillItem 47430,1
+	 KillItem 11201,5
+	 KillItem 607653,1
+	 GiveLeak1Item 47428,1	
+	 EndWindow 1054676
+	 Window_YES
+	 EndWindow 1053059
+	 Window_NO Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 Window 1054682,YES,NO
+	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 KillItem 47427,1
+	 KillItem 47430,1
+	 KillItem 11201,5
+	 KillItem 18965,1
+	 GiveLeak1Item 47428,1	
+	 EndWindow 1054676
+	 Window_YES
+	 EndWindow 1053059
+	 Window_NO
+	 EndWindow 1054683
+##甜酒
+block Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 607653>0
+	 Window 1054681,YES,NO
+	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 607653>0
+	 KillItem 47427,1
+	 KillItem 47430,1
+	 KillItem 11201,5
+	 KillItem 607653,1
+	 GiveLeak1Item 47428,1	
+	 EndWindow 1054676
+	 Window_YES
+	 EndWindow 1053059
+	 Window_NO Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 Window 1054682,YES,NO
+	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 KillItem 47427,1
+	 KillItem 47430,1
+	 KillItem 11201,5
+	 KillItem 18965,1
+	 GiveLeak1Item 47428,1	
+	 EndWindow 1054676
+	 Window_YES
+	 EndWindow 1053059
+	 Window_NO
+	 EndWindow 1054683
+	 
+##贝纳希
+block Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 Window 1054682,YES,NO
+	 Window_YES Item 47427>0 && Item 47430>0 && Item 11201>4 && Item 18965>0
+	 KillItem 47427,1
+	 KillItem 47430,1
+	 KillItem 11201,5
+	 KillItem 18965,1
+	 GiveLeak1Item 47428,1	
+	 EndWindow 1054676
+	 Window_YES
+	 EndWindow 1053059
+	 Window_NO
+	 EndWindow 1054683	 
+	 
+block Item 47427>0 && Item 47430>0
+	 EndWindow 1054674
+block Item 47430>0
+	 EndWindow 1054673
+block Item 47429>0
+	 Window 1054671,NEXT
+	 Window 1054672,OK
+	 
+	 Window_OK ItemSpace < 1 
+		##物品栏已满
+      	 EndWindow 1100001	 
+      	 Window_OK
+      	 KillItem 47429,1
+      	 GiveLeak1Item 47430,1	
+      	 EndWindow 1054673	 
+
+block 
+	 EndWindow 1054670
+
+

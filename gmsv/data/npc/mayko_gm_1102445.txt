@@ -1,0 +1,229 @@
+#猫大王	1102445	
+#32273	70	58
+
+#1109824	\n\n\n　　　嗯～～好香的味道～\n　　　你身上有香草是吧！可以送我吗！
+#1109825	\n\n\n\n@c哎呀呀～～数量不太够喔！
+#1109826	\n\n\n\n@c你要把１０朵苹果薄荷送给我吗？
+#1109827	\n\n\n\n@c你要把９朵柠檬草送给我吗？
+#1109839	\n\n\n\n@c谢谢你！这是送你的小礼物！
+#苹果薄荷12800	柠檬草	12801	飘浮之香40705
+
+#10苹果薄荷
+block ItemSpace < 1 
+	 EndWindow 1109823
+block Item 12800>9
+	 Window 1109824,NEXT
+	 Window 1109826,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12800>9
+	 KillItem 12800,10
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 
+	 Window_YES
+	 EndWindow 1109825
+	 
+#9柠檬草
+block Item 12801>8
+	 Window 1109824,NEXT
+	 Window 1109827,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12801>8
+	 KillItem 12801,9
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 
+
+#1109824	\n\n\n　　　嗯～～好香的味道～\n　　　你身上有香草是吧！可以送我吗！
+#1109825	\n\n\n\n@c哎呀呀～～数量不太够喔！
+#1109828	\n\n\n\n@c你要把８朵蝴蝶花送给我吗？
+#1109829	\n\n\n\n@c你要把７朵果梨送给我吗？
+#1109839	\n\n\n\n@c谢谢你！这是送你的小礼物！	 
+#蝴蝶花	12802	果梨	12803	飘浮之香40705
+
+#8蝴蝶花
+block Item 12802>7
+	 Window 1109824,NEXT
+	 Window 1109828,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12802>7
+	 KillItem 12802,8
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 
+#7果梨
+block Item 12803>6
+	 Window 1109824,NEXT
+	 Window 1109829,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12803>6
+	 KillItem 12803,7
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 	 
+	 
+#1109824	\n\n\n　　　嗯～～好香的味道～\n　　　你身上有香草是吧！可以送我吗！
+#1109825	\n\n\n\n@c哎呀呀～～数量不太够喔！
+#1109830	\n\n\n\n@c你要把６朵桃木送给我吗？
+#1109831	\n\n\n\n@c你要把５朵番红花送给我吗？
+#1109839	\n\n\n\n@c谢谢你！这是送你的小礼物！	 
+#桃木	12804	番红花	12805飘浮之香40705
+#6桃木
+block Item 12804>5
+	 Window 1109824,NEXT
+	 Window 1109830,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12804>5
+	 KillItem 12804,6
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 
+#5蕃红花
+block Item 12805>4
+	 Window 1109824,NEXT
+	 Window 1109831,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12805>4
+	 KillItem 12805,5
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 	 
+
+#1109824	\n\n\n　　　嗯～～好香的味道～\n　　　你身上有香草是吧！可以送我吗！
+#1109825	\n\n\n\n@c哎呀呀～～数量不太够喔！
+#1109832	\n\n\n\n@c你要把４朵百里香送给我吗？
+#1109833	\n\n\n\n@c你要把３朵瞿麦送给我吗？
+#1109839	\n\n\n\n@c谢谢你！这是送你的小礼物！	 
+#百里香	12806	瞿麦	12807	飘浮之香40705
+
+#4百里香
+block Item 12806>3
+	 Window 1109824,NEXT
+	 Window 1109832,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12806>3
+	 KillItem 12806,4
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 
+#3瞿麦
+block Item 12807>2
+	 Window 1109824,NEXT
+	 Window 1109833,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12807>2
+	 KillItem 12807,3
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 	 
+
+#1109824	\n\n\n　　　嗯～～好香的味道～\n　　　你身上有香草是吧！可以送我吗！
+#1109825	\n\n\n\n@c哎呀呀～～数量不太够喔！
+#1109834	\n\n\n\n@c你要把２朵茴香送给我吗？
+#1109835	\n\n\n\n@c你要把１朵七叶树送给我吗？
+#1109839	\n\n\n\n@c谢谢你！这是送你的小礼物！	
+#茴香	12808	七叶树	12809	飘浮之香40705
+
+#２朵茴香
+block Item 12808>1
+	 Window 1109824,NEXT
+	 Window 1109834,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12808>1
+	 KillItem 12808,2
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 
+#１朵七叶树
+block Item 12809>0
+	 Window 1109824,NEXT
+	 Window 1109835,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12809>0
+	 KillItem 12809,1
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 	
+
+#1109824	\n\n\n　　　嗯～～好香的味道～\n　　　你身上有香草是吧！可以送我吗！
+#1109825	\n\n\n\n@c哎呀呀～～数量不太够喔！
+#1109836	\n\n\n\n@c你要把３根魔法红萝卜送给我吗？
+#1109837	\n\n\n\n@c你要把３枝香草送给我吗？
+#1109838	\n\n\n\n@c你要把６朵冰冻爱丽丝送给我吗？
+#1109839	\n\n\n\n@c谢谢你！这是送你的小礼物！
+
+#魔法红萝卜12810 香草	12811	冰冻爱丽丝12822	飘浮之香40705
+#３根魔法红萝卜
+block Item 12810>2
+	 Window 1109824,NEXT
+	 Window 1109836,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12810>2
+	 KillItem 12810,3
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 	
+#３枝香草
+block Item 12811>2
+	 Window 1109824,NEXT
+	 Window 1109837,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12811>2
+	 KillItem 12811,3
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 	
+#６朵冰冻爱丽丝
+block Item 12822>5
+	 Window 1109824,NEXT
+	 Window 1109838,YES,NO
+	 Window_NO 
+	 EndWindow 1109452
+	 
+	 Window_YES Item 12822>5
+	 KillItem 12822,6
+	 GiveLeak1Item 40705,1
+	 EndWindow 1109839
+	 Window_YES
+	 EndWindow 1109825	 	 
+	 	 
+
+#1109823	\n\n\n　　　呦！\n　　　你还真有心，要陪我在这看风景吗？
+block
+	 EndWindow 1109823	 	 
+	

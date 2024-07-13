@@ -1,0 +1,28 @@
+#
+#矛打生旦
+#
+
+###﹛譬咥阁匹本奶戊及抩铜市它件玄互ㄡ卅日﹛###
+block Job >=352 && Job <=357 && Item 16241 == 1 && StampCount 16241 == 2
+#\n\n﹛扑件犯奴切扎氏反中勾苇化手呿癫卞第只中卅″\n﹛仿□丢件互厘驯五卅阂卅氏分仃升今﹜仿□丢件午五凶日仇匀切及手氏分方″
+#\n\n﹛鳗笮及扲刨≦仄斤丹斗ヽ彰仿□丢件≧匹漆ざ手失正永弁分兮″
+	Window 21755,Next
+#\n\n﹛窒〝仄斤丹斗ヽ彰仿□丢件及综曰杅互襞曰凶中匀化〝\n\n﹛孔□戈﹜元扎丑申□伙域ベ匹澎毛藉匀化支欠丹﹝
+	Window 21756,Yes,No
+		Window_No
+		Window_Yes Item 18963 == 0
+			Endwindow 21874
+		Window_Yes Item 18963 >= 1
+			KillItem 18963,1
+			GiveRecipe 922
+#\n\n﹛尤反□匀﹜仍切公丹今氏″\n﹛笮卞医★鳗歹月恔咥分井日今﹜厘濠卅伊扑疋卞仄化仁木方卅﹝\n\n﹛今化午﹜扑件犯奴切扎℅氏″＿
+			Endwindow 21757
+
+
+###﹛譬咥阁动陆匹本奶戊及抩铜市它件玄互ㄡ卅日﹛###
+block Item 16241 == 1 && StampCount 16241 == 2
+#\n\n﹛扑件犯奴切扎氏反中勾苇化手呿癫卞第只中卅″\n﹛仿□丢件互厘驯五卅阂卅氏分仃升今﹜仿□丢件午五凶日仇匀切及手氏分方″
+#\n\n﹛鳗笮及扲刨≦仄斤丹斗ヽ彰仿□丢件≧匹漆ざ手失正永弁分兮″
+	Endwindow 21755
+block
+	EndWindow 21754

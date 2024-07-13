@@ -1,0 +1,34 @@
+#PUK3_main3
+#
+#
+#螃敢3→母件斥亦件
+
+
+Block item_621007 >= 1
+	
+		GAWindow 3219814,next
+
+		#\n\n﹛丐及赚缟及谛棉反﹜\n﹛漪濮支仄卞今木化仄引匀凶﹝\n﹛辉﹜阂升手﹜牁谛＿＿\n﹛楮溢允月樊匹丐木壬﹜\n﹛心卅楮溢卅仁诮今木化中匀凶﹝
+		
+		GAWindow 3219815,OK
+
+		#\n\n﹛?辉﹜失件斥永弁手峚濠曰卅升\n﹛粟仇今卅仃木壬恌井匀凶及分互卅﹝\n﹛卅卞手仄卅仃木壬﹜扣﹜\n﹛螃及豢袱匹尪狟卞抔日六凶手及毛＿＿﹝\n﹛窒斗尹﹜?辉反峚濠匀凶及分欠丹＿＿﹝
+		
+					Window_OK
+		
+						warp 0,59984,279,260
+		
+				
+					
+					
+Block
+
+		GAWindow 3219816,OK
+
+		#\n\n﹛台反锤中毛侗引厄﹝\n﹛中支﹜善甂分卅＿＿﹝\n﹛台反恘毛儅凶厄分仃分﹝\n﹛燮卞褡戈互方中﹝
+		
+				Window_OK
+				
+				warp 0,59984,279,260
+		
+		

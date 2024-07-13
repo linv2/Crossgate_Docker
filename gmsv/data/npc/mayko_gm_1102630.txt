@@ -1,0 +1,26 @@
+#艾芝 mayko_gm_1102623.txt 克瑞
+#1110683	\n\n\n\n@c我想一下～	1
+#1110692	\n\n　　　　其实这里也不错！\n　　　　不过不是我的菜！	1
+#41127
+#41128
+#41129
+#1110694	\n\n\n\n@c这边房价不知如何！！
+
+#克瑞村看屋件										41123
+
+
+block item 41129>0
+	 endwindow 1110692
+block item 41128>0
+	 endwindow 1110692
+block item 41127>0
+	 endwindow 1110692
+block item 41123>0
+	 endwindow 1110692
+block item 41130 >0 && itemspace >0
+	 GiveLeak1Item 41123,1
+	 endwindow 1110683
+block item 41130>0
+	endwindow  1052925	 
+block 
+	 endwindow 1110694	 

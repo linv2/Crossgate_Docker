@@ -1,0 +1,25 @@
+#¢ð???????
+
+#EndFLG?138?ON??¤G???ý»????????
+block EndEvent 138 == 1 && Item 16407 >= 1
+	Window 22671,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,43811,31,19
+
+#EndFLG?138?ON
+block EndEvent 138 == 1
+	Window 22672,Next
+	Window 22673,Next
+	Window 22674,Next
+	Window 22675,OK
+		Window_OK
+			Encount 2|0,43811,31,19||0|||||0|25021|||||||||
+#NowFLG?138?ON
+block NowEvent 138 == 1
+	EndWindow 22676,OK
+
+#
+block
+	EndWindow 22677,OK
+

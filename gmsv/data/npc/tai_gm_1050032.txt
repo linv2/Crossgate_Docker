@@ -1,0 +1,61 @@
+################### 魔力情人 鬼月 安迪将军
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+	 	 	 
+################### 物品栏已满
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 EndWindow 1100001	 	 	 
+
+################### 有英雄帖
+block Item 45150>=1
+	 ##1100446	\n\n\n\n@c那就拜托你们啰！	1	 	 	 
+	 EndWindow 1100446
+
+################### 有 GM信物 && level >= 55
+block Item 45162 >=1 && Level >=55	
+	 ##1050051	\n这是代表GM平安的信物，\n就让我将它呈献给国王陛下吧！\n\n另外，再给予你新的勇者的称号。
+	 Window 1050051,YES,NO 
+	 	 Window_YES Group ==1 
+	 	 	 ##回收 GM 信物，给予 GM 奖状(六级)
+	 	 	 KillItem 45162
+	 	 	 GiveLeak1Item 45165
+	 	 Window_NO 
+	 	 
+################### 有 GM信物 && level>=36 && level <= 54
+block Item 45162 >=1 && Level >=36 && Level <= 54	
+	 ##1050051	\n这是代表GM平安的信物，\n就让我将它呈献给国王陛下吧！\n\n另外，再给予你新的勇者的称号。
+	 Window 1050051,YES,NO 
+	 	 Window_YES Group ==1 
+	 	 	 ##回收 GM 信物，给予 GM 奖状(五级)
+	 	 	 KillItem 45162
+	 	 	 GiveLeak1Item 45164
+	 	 Window_NO 	 	 
+
+################### 有 GM信物 && level <= 35
+block Item 45162 >=1 && Level <= 35	
+	 ##1050051	\n这是代表GM平安的信物，\n就让我将它呈献给国王陛下吧！\n\n另外，再给予你新的勇者的称号。
+	 Window 1050051,YES,NO 
+	 	 Window_YES Group ==1 
+	 	 	 ##回收 GM 信物，给予 GM 奖状(四级)
+	 	 	 KillItem 45162
+	 	 	 GiveLeak1Item 45163
+	 	 Window_NO 	 	 	 	 
+	 
+################### 一般
+block 
+	 ##1050052	\n在前不久的日子里，\n英勇的GM为了拯救全城不被厉鬼入侵，\n而误中了诸王的陷阱，\n现在国王颁发命令，\n请全魔力的勇士们抛头颅、洒热血，\n前往拯救GM吧！！\n\n这位勇士，你愿意挑战这各不可能的任务吗？
+	 Window 1050052,YES,NO 
+	 	 Window_YES
+	 	 	 ##获得【英雄帖】
+	 	 	 GiveLeak1Item 45150
+	 	 Window_NO 
+	 	 	 ##1050053	\n\n那就快去逃难吧！\n这里可能快沦陷了！
+	 		 EndWindow 1050053
+	 		 

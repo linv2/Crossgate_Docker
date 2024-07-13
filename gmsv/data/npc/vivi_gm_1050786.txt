@@ -1,0 +1,198 @@
+##### 想去哪就去哪-猎物 #####
+##■ 检查人数
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 Window_NO 
+	 	 
+##■ 有任意钥匙 && 字串比对  米	 
+block Item 45513 >= 1 && StrCmpChat == 1051407
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送米采集点
+	 	 	 Warp 0,00300,626,304
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送米采集点
+	 	 	 Warp 0,00300,626,304 		 	
+	 	 	 
+##■ 有任意钥匙 && 字串比对  高级奶油	 
+block Item 45513 >= 1 && StrCmpChat == 1051408
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送高级奶油采集点
+	 	 	 Warp 0,00400,154,349
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送高级奶油采集点
+	 	 	 Warp 0,00400,154,349		 		
+	 	 	 
+##■ 有任意钥匙 && 字串比对  辣椒	 
+block Item 45513 >= 1 && StrCmpChat == 1051409
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送辣椒采集点
+	 	 	 Warp 0,00400,309,447
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送辣椒采集点
+	 	 	 Warp 0,00400,309,447 		 		
+	 	 	 
+##■ 有任意钥匙 && 字串比对 咖哩块  	 
+block Item 45513 >= 1 && StrCmpChat == 1051410
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送 咖哩块采集点
+	 	 	 Warp 0,00400,265,430
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送 咖哩块采集点
+	 	 	 Warp 0,00400,265,430 		 		
+	 	 	 
+##■ 有任意钥匙 && 字串比对  螃蟹	 
+block Item 45513 >= 1 && StrCmpChat == 1051411
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送螃蟹采集点
+	 	 	 Warp 0,00400,318,503
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送螃蟹采集点
+	 	 	 Warp 0,00400,318,503 		 		
+	 	 	 
+##■ 有任意钥匙 && 字串比对  霜降牛肉	 
+block Item 45513 >= 1 && StrCmpChat == 1051412
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送霜降牛肉采集点
+	 	 	 Warp 0,00400,554,271
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送霜降牛肉采集点
+	 	 	 Warp 0,00400,554,271 		 		
+	 	 	 
+##■ 有任意钥匙 && 字串比对  阿巴尼斯哈密瓜	 
+block Item 45513 >= 1 && StrCmpChat == 1051413
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送阿巴尼斯哈密瓜采集点
+	 	 	 Warp 0,04400,90,77
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送阿巴尼斯哈密瓜采集点
+	 	 	 Warp 0,04400,90,77 		 		
+	 	 	 
+##■ 有任意钥匙 && 字串比对  湿地毒蛇	 
+block Item 45513 >= 1 && StrCmpChat == 1051414
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送湿地毒蛇采集点
+	 	 	 Warp 0,04457,37,49
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送湿地毒蛇采集点
+	 	 	 Warp 0,04457,37,49 	
+#------------mayko追加		 	 	 
+##■ 有任意钥匙 && 字串比对 钢骑之矿
+block Item 45513 >= 1 && StrCmpChat == 1051394
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送钢骑之矿采集点
+	 	 	 Warp 0,15203,50,50
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送钢骑之矿采集点
+	 	 	 Warp 0,15203,50,50 
+
+block Item 45513 >= 1 && StrCmpChat == 1054644
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送砂糖采集点
+	 	 	 Warp 0,04400,85,46
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送砂糖采集点
+	 	 	 Warp 0,04400,85,46	 	 	 	 		 	 	 	 			 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 		 	 

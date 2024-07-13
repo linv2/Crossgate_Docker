@@ -1,0 +1,18 @@
+##抓宠王GM专用勋章产生器
+##因为gm觉得用gm tools有点麻烦,所以新增一个物品方便作业
+##能力说明：双点后会出现六个勋章
+
+############# 空间不足时 ######################
+block ItemSpace < 6
+	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 EndWindow 1100002
+	 
+block 
+	 GiveLeak1Item 46647
+	 GiveLeak1Item 46648
+	 GiveLeak1Item 46649
+	 GiveLeak1Item 46650
+	 GiveLeak1Item 46651
+	 GiveLeak1Item 46652
+	 EndWindow 668
+	 

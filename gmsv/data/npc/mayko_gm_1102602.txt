@@ -1,0 +1,3 @@
+#mayko_gm_1102602.txt	
+block
+	 EndWindow 1110601

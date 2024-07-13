@@ -1,0 +1,24 @@
+#mayko_gm_1102819.txt  侍女荷月...故事的起点
+##需完成春樱4
+#1111837	\n　　　　亚纪公主在日曜之域出事了，\n　　　　这怎么办。	1
+#1111838	\n　　　　我已经通知月心将军了，\n　　　　将军在碧波镇等候您。	1
+#1111857	\n\n\n\n@c月心将军在碧波镇等候您。	1
+block endevent 168 == 1
+	endwindow 1111849
+	Window 1111837,next
+block item 41314 >0 || item 41315 >0 || item 41316 >0 || item 41317 >0  || item 41318 >0 || item 41319 >0
+	endwindow 1111857
+
+
+block item 41313 >0
+	endwindow 1111857
+	
+block  endevent 169 == 1
+	Window 1111837,next
+	
+	GiveLeak1Item  41313,1
+	
+	endWindow 1111838
+block 
+	endwindow 1111849
+

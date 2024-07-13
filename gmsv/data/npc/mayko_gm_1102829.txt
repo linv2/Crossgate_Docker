@@ -1,0 +1,26 @@
+#1111882	\n\n\n\n@c原来是萝卜的魔力不足呀～	1
+#1111883	\n\n\n\n@c兔毛？？怎么会掉毛了？	1
+#1111884	\n\n\n\n@c你要放弃了吗？	1
+#1111870	\n\n\n\n@c谢谢你～这小礼物送你。	1
+block item 41333>0
+	killitem 41333,1
+	GiveLeak1Item (41299%1$1,41045%33$1,41046%33$1,41047%33$1)
+	window 1111882,next
+	window 1111870,ok
+	window_ok
+	leavegroup 
+	warp 0,4400,28,81
+	endblock
+	
+
+block item 41332 >0
+	endwindow 1111883
+
+	
+block 
+	window 1111884,yes,no
+	window_yes
+		leavegroup 
+	warp 0,4400,28,81
+	window_no
+	endblock

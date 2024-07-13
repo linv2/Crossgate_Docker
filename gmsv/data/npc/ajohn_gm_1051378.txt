@@ -1,0 +1,184 @@
+####抓宠王####
+##放宠区传送处
+■单独一人
+block Group > 1
+	 LeaveGroup
+
+■有抓宠王参赛黄羽21～40
+block Item 46673 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,13,149
+
+block Item 46674 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,22,149
+
+block Item 46675 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,31,149
+
+block Item 46676 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,40,149
+
+block Item 46677 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,49,149
+
+block Item 46678 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,58,149
+
+block Item 46679 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,67,149
+
+block Item 46680 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,76,149
+
+block Item 46681 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,85,149
+
+block Item 46682 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,94,149
+
+block Item 46683 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,104,149
+
+block Item 46684 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,113,149
+
+block Item 46685 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,122,149
+
+block Item 46686 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,131,149
+
+block Item 46687 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,140,149
+
+block Item 46688 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,149,149
+
+block Item 46689 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,158,149
+
+block Item 46690 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,167,149
+
+block Item 46691== 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,176,149
+
+block Item 46692 == 1
+	 ##1053011	\n\n  您好～这边是‘放宠区’重送处。	1
+	 Window 1053011,OK
+	 Window_OK
+	 	 Warp 0,32359,185,149
+
+■一般
+block
+	 ##1053012	\n\n  恩?!没有参赛羽毛是不可以进入的喔！	1
+	 Window 1053012,OK
+	 Window_OK
+	 Warp 0,32359,194,99
+
+
+
+
+
+
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+	 	 
+■有抓宠王参赛黄羽21～40
+\n\n  您好～这边是‘放宠区’重送处。
+
+■一般
+\n\n  恩?!没有参赛羽毛是不可以进入的喔！

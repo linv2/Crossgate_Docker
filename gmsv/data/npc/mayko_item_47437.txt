@@ -1,0 +1,16 @@
+###### 空葱箱#####可放10组葱(40一叠，专放葱)，可使用50次
+
+##葱大于400个 物品栏无空位
+block Item 12004 >= 400 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+##葱大于400个 物品栏空位大于1	 
+block Item 12004 >= 400 && ItemSpace >= 1
+	 KillItem 12004,400
+	 KillItem 47437,1
+	 GiveLeak1Item 47438
+
+	 
+
+	

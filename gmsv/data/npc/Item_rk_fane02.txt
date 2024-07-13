@@ -1,0 +1,10 @@
+#????
+
+block Item 16411 >= 1
+	Window 22782,Next
+	Window 22783,OK
+		Window_OK PetSpace == 0 
+			EndWindow 22306,OK
+		Window_OK
+			KillItem 16411,1,(22781)
+			GivePet 21504

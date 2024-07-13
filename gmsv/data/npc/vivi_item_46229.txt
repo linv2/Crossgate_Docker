@@ -1,0 +1,20 @@
+##### 爱斯波波改造图 #####
+##有改造图 跟 爱斯波波1只
+block Item 46229 >= 1 && PetLevel 103006 >= 30 && PetSpace < 4
+	 ##1052304	\n\n\n@c改造说明书：只能对单独一只波波进行改造。	1
+	 EndWindow 1052304
+	 
+block Item 46229 >= 1 && PetLevel 103006 >= 30 && PetSpace == 4
+	 ##1052305	\n\n\n\n@c改造说明书：改造一但开始，就无法回复。	1
+	 Window 1052305,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46229 >= 1 && PetLevel 103006 >= 30 && PetSpace == 4
+	 	 	 KillItem 46229
+	 	 	 KillPeth 103006,30
+			 GivePet(103106%1)
+			 ##1052306	\n\n\n\n@c改造说明书：改造完成！	1
+			 EndWindow 1052306
+			 
+block 
+	 ##1052307	\n\n\n  改造说明书：需有一只30级以上的爱斯波波，才能  进行改造。	1
+	 EndWindow 1052307

@@ -1,0 +1,11 @@
+
+##
+block 
+	window 1111824,ok
+	Window_ok
+	 Encount 2|0,31803,29,14||0|||||0|40384|||||||||	 
+	 Endblock
+
+	 
+	 		 	 
+		 	 

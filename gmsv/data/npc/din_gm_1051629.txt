@@ -1,0 +1,51 @@
+##puk4包装-管理宝箱的海贼 din_gm_1051629.txt
+##功能：用钥匙换宝箱
+
+##身上有银钥匙
+block Item 47337 >= 1
+	 ##1054477	\n\n 我是管理组织宝箱的海贼，没事别来打扰我！
+	 Window 1054477,NEXT 
+	 ##1054470	\n\n 组织现在急需海贼钥匙，如果你有可以跟我交换一些  报酬…	
+	 Window 1054470,NEXT 
+	 ##1054479	\n\n  您要使用“海贼银钥匙”跟他交换“海贼结晶宝箱  ”吗？
+	 Window 1054479,YES,NO 
+		 Window_NO 
+		 
+		 Window_YES ItemSpace == 0
+		 	 ##1051843	\n\n\n\n\n@c物品栏的空间不足。	
+			 EndWindow 1051843
+		 
+		 Window_YES Item 47337 >= 2
+		 	 ##1054473	\n\n 你身上这么多银钥匙到底要给哪一支？\n\n  请先把多的钥匙放到别的地方吧…	
+			 EndWindow 1054473
+
+		 Window_YES Item 47337 == 1 && ItemDur 47337 == 1
+		 	 KillItem 47337
+			 GiveLeak1Item 47341
+
+		 Window_YES Item 47337 == 1
+ 			 SetDur 47337,-1
+			 GiveLeak1Item 47341
+			  
+##身上有铜钥匙
+block Item 47336 >= 1
+	 ##1054477	\n\n 我是管理组织宝箱的海贼，没事别来打扰我！
+	 Window 1054477,NEXT 
+	 ##1054470	\n\n 组织现在急需海贼钥匙，如果你有可以跟我交换一些  报酬…	
+	 Window 1054470,NEXT 
+	 ##1054478	\n\n  您要使用“海贼铜钥匙”跟他交换“海贼结晶宝箱  ”吗？
+	 Window 1054478,YES,NO 
+	 	 Window_NO 
+
+		 Window_YES ItemSpace == 0
+		 	 ##1051843	\n\n\n\n\n@c物品栏的空间不足。	
+			 EndWindow 1051843
+	 	 
+	 	 Window_YES Item 47336 >= 1
+	 	 	 KillItem 47336
+			 GiveLeak1Item 47341
+
+block
+	 ##1054477	\n\n 我是管理组织宝箱的海贼，没事别来打扰我！
+	 EndWindow 1054477
+		 	 

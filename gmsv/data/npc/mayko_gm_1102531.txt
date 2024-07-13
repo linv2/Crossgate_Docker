@@ -1,0 +1,30 @@
+#阿里的妈妈	1102531	
+#32282	35	55	
+#mayko_gm_1102531.txt
+
+#1110363	\n\n\n\n@c媳妇怀孕，预产期快到了吧！	1
+#1110364	\n　　　哦～～媳妇快生呀～～\n　　　我这有鸡酒，麻烦你送到我儿子那～\n　　　给我媳妇补一补～	1
+#1110365	\n\n\n\n@c希望媳妇能顺利生下孩子。	1
+#1110366	\n\n\n　　　媳妇生了～母子均安～\n　　　真是太好了	1
+
+#安产平安炼	41016
+#阿里的信	41023
+#平安符	41024
+#阿里家书	41025
+#鸡酒	41026
+
+block Item 41016>0
+	 EndWindow 1110366
+block Item 41026>0
+	 EndWindow 1110365	 
+block Item 41025>0
+	 KillItem 41025
+	 GiveLeak1Item 41026,1
+	 EndWindow 1110364	 
+block Item 41023>0
+	 EndWindow 1110363
+block Item 41024>0
+	 EndWindow 1110363	 
+block
+	 EndWindow 1110363
+	 

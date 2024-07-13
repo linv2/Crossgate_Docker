@@ -1,0 +1,53 @@
+#﹛斥乓田□ヨ曰﹛??﹛巟鼹
+#
+#﹛﹛﹛穴永民ヨ曰〝及辉及摒
+
+###﹛狪仄井仃月
+block
+	Window 3205278,NEXT
+
+		#\n\n﹛扑弁扑弁﹜扑弁扑弁﹜弁旦件﹜弁旦件＿＿﹝\n﹛辉午踏中化﹍夫午﹎匀化厶戈及方﹝\n﹛铲户化中凶穴永民鼎桦互绍仪匹勾少木化＿\n﹛扑弁扑弁﹜仇及穴永民互愈詨及云蛟嗯＿＿﹝
+	Window 3205279,YES,NO
+
+		#\n\n﹛云凑中匹允﹜手丹赶ざ手罹屯化卅中氏匹允﹝\n﹛仇及穴永民毛ㄠ蜊50000?匹ョ匀化仁分今中″\n﹛条木化化手﹜毕撮豢迕琼及愈嫖菟圴匹允﹝\n﹛云丿卅氏匹允﹜云ョ中丿卅氏匹允﹜扑弁扑弁﹝
+		Window_YES Gold >= 50000 && ItemSpace >= 1
+			Window 3205280,OK
+
+		#\n\n﹛丐日丐日﹜仇氏卅澎卞娄匀井井月卅氏化﹜\n﹛丐卅凶匀化左永民亦戊民亦奶卅及友﹝\n﹛公木午手﹜旦永玄戊玉永戊奶卅及井仄日﹝\n﹛分井日匀化﹜芢枢反仄卅中歹方﹝\n﹛牖仅恔分午合匀化﹜萸仁萸仁云嗯毛囮丹及友﹝
+
+				Window_OK Gold >= 50000 && ItemSpace >= 1
+					AddGold -50000
+					GiveItemEX 631001,1,3205281
+
+		#\n\n﹛丐日酸ゴ友﹝\n﹛六匀井仁及市乒卅及卞﹜欐允坞五互卅中歹﹝
+
+				Window_OK Gold >= 50000
+					EndWindow 3205282
+
+		#\n\n﹛丐日酸ゴ友﹝\n﹛六匀井仁及市乒卅及卞﹜欐允坞五互卅中歹﹝
+
+				Window_OK
+					EndWindow 3205283
+
+		#\n\n﹛螫啦反丹木仄中仃升﹜云嗯互卅中歹方﹝\n﹛奻佼谛卞迕反卅中歹﹝
+
+		Window_YES Gold >= 50000
+			EndWindow 3205284
+
+		#\n\n﹛丐日酸ゴ友﹝\n﹛六匀井仁及市乒卅及卞﹜欐允坞五互卅中歹﹝
+
+		Window_YES
+			EndWindow 3205285
+
+		#\n\n﹛螫啦反丹木仄中仃升﹜云嗯互卅中歹方﹝\n﹛奻佼谛卞迕反卅中歹﹝
+
+		Window_NO
+			Window 3205286,NEXT
+
+		#\n\n﹛丐日﹜娄匀井井日卅中及〝﹛卅井卅井叶中歹﹝\n﹛元扎丐﹜公氏卅云厍轼今氏卅丐卅凶卞﹜\n﹛中中仇午项尹化丐仆月﹝\n﹛仇及梂卞中月斥乓田□ヨ曰卅氏分仃升﹜
+			EndWindow 3205287
+
+		#\n\n﹛掸反仇及引引褡氏匹手凶升曰邋仃卅中及﹝\n﹛帎及闭卞丐月旦奶永民挚及伐□皿毛银丹及方﹝\n﹛公木互丐月及反割井﹜ㄤ闭分匀凶井仄日﹝
+
+
+

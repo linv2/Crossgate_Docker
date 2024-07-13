@@ -1,0 +1,594 @@
+#乒件旦正□甩件泛奴件弘
+#
+#﹛﹛﹛蔽弇熬尥﹛﹛﹛NPCID﹛810007
+#
+#﹛银迕夫□市伙市它件玄
+#﹛﹛LocalCount15﹛﹛﹛正□必永玄失奶泛丞蜊醒煌遥ㄠ
+#﹛﹛LocalCount16﹛﹛﹛正□必永玄失奶泛丞蜊醒煌遥ㄡ
+#
+
+
+###﹛狪仄喘仃凶谛及GlobalFlag84℅88及中内木井互??
+BLock GlobalFlag84 == 1 || GlobalFlag85 == 1 || GlobalFlag86 == 1 || GlobalFlag87 == 1 || GlobalFlag88 == 1
+#﹛甩件正□据﹋623000﹌毛赭儅
+	If HItem 623000 >= 1
+		Window 3207360,Yes,No
+
+		#\n\n﹛丐卅凶反﹜蟆荚及操圴毛引分枃匀化中卅中迋\n﹛匹允友﹝\n﹛枃中卞垫五引允井〝
+
+			Window_Yes
+				Window 3207361,OK
+
+		#\n\n﹛公木匹反﹜操圴跟晶赭尺仍副〇谯仄引允﹝\n﹛公仇匹﹜操圴娄欐仄溢卞狪仄喘仃化仁分今中﹝\n﹛公及端﹜赭儅今木化中月正□必永玄唬帢圴反\n﹛蝈化忒萃仄化赡五引允及匹﹜仍弇噩票今中﹝
+
+					Window_OK GlobalFlag84 == 1 && HItem 623000 >= 1
+						LeaveGroup
+						Warp 0,59958,240,308
+#						Warp 0,59998,346,233
+
+					Window_OK GlobalFlag85 == 1 && HItem 623000 >= 1
+						LeaveGroup
+						Warp 0,59958,200,348
+#						Warp 0,59998,347,234
+
+					Window_OK GlobalFlag86 == 1 && HItem 623000 >= 1
+						LeaveGroup
+						Warp 0,59958,170,318
+#						Warp 0,59998,348,235
+
+					Window_OK GlobalFlag87== 1 && HItem 623000 >= 1
+						LeaveGroup
+						Warp 0,59958,139,289
+#						Warp 0,59998,349,236
+
+					Window_OK GlobalFlag88 == 1 && HItem 623000 >= 1
+						LeaveGroup
+						Warp 0,59958,110,258
+#						Warp 0,59998,350,237
+
+					Window_OK HItem 623000 < 1
+						Window 3207362,OK
+
+		#\n\n﹛云支〝\n﹛甩件正□据毛拑仁仄化仄引匀凶迋匹允友﹝\n﹛萧仄沭丐曰引六氏互﹜\n﹛愈赓井日支曰跶仄化票今中﹝
+
+							Window_OK
+								KillItemAll 623001
+								KillItemAll 623002
+								KillItemAll 623003
+								KillItemAll 623004
+								KillItemAll 623005
+								KillItemAll 623006
+								KillItemAll 623007
+								KillItemAll 623008
+								KillItemAll 623009
+								KillItemAll 623010
+								KillItemAll 623011
+								KillItemAll 623012
+								KillItemAll 623013
+								KillItemAll 623014
+								KillItemAll 623015
+								KillItemAll 623016
+								GlobalFlag84 = 0
+								GlobalFlag85 = 0
+								GlobalFlag86 = 0
+								GlobalFlag87 = 0
+								GlobalFlag88 = 0
+
+			Window_No 
+				EndWindow 3207363
+
+		#\n\n﹛公丹匹允井﹝\n﹛操圴毛枃中凶仁卅匀凶日﹜引凶云旋仄票今中﹝
+
+#﹛甩件正□据毛尕赭儅
+	else
+		Window 3207364,OK
+
+		#\n\n﹛丐卅凶反﹜蟆荚及操圴毛引分枃匀化中卅中迋\n﹛匹允友﹝\n﹛匹手﹜甩件正□据毛云儅切匹卅中迋卅及匹﹜\n﹛萧仄沭丐曰引六氏互﹜愈赓井日支曰跶仄化\n﹛票今中﹝
+
+			Window_OK
+				KillItemAll 623001
+				KillItemAll 623002
+				KillItemAll 623003
+				KillItemAll 623004
+				KillItemAll 623005
+				KillItemAll 623006
+				KillItemAll 623007
+				KillItemAll 623008
+				KillItemAll 623009
+				KillItemAll 623010
+				KillItemAll 623011
+				KillItemAll 623012
+				KillItemAll 623013
+				KillItemAll 623014
+				KillItemAll 623015
+				KillItemAll 623016
+				GlobalFlag84 = 0
+				GlobalFlag85 = 0
+				GlobalFlag86 = 0
+				GlobalFlag87 = 0
+				GlobalFlag88 = 0
+	endif
+
+
+###﹛由□泛奴〇及簿井及globalflag84℅88及中内木井互??
+Block PgFlag 84,0 == 1 || PgFlag 85,0 == 1 || PgFlag 86,0 == 1 || PgFlag 87,0 == 1 || PgFlag 88,0 == 1
+	EndWindow 3207365
+
+		#\n\n﹛云支〝\n﹛丐卅凶杅及酦匹﹜蟆荚及操圴毛\n﹛引分枃匀化中卅中杅互中日匀仄扎月迋匹允友﹝\n﹛萧仄沭丐曰引六氏互﹜\n﹛公及杅互台卞狪仄喘仃化仁分今中﹝
+
+
+###﹛由□泛奴蝈够互甩件正□据毛赭儅
+#﹛由□泛奴互ㄤ谛及桦宁
+Block Group == 5 && PHItem 623000,1 >= 1 && PHItem 623000,2 >= 1 && PHItem 623000,3 >= 1 && PHItem 623000,4 >= 1 && PHItem 623000,5 >= 1
+		GoToF itemcount-1
+
+#﹛由□泛奴互ㄣ谛及桦宁
+Block Group == 4 && PHItem 623000,1 >= 1 && PHItem 623000,2 >= 1 && PHItem 623000,3 >= 1 && PHItem 623000,4 >= 1
+		GoToF itemcount-1
+
+#﹛由□泛奴互ㄢ谛及桦宁
+Block Group == 3 && PHItem 623000,1 >= 1 && PHItem 623000,2 >= 1 && PHItem 623000,3 >= 1
+		GoToF itemcount-1
+
+#﹛由□泛奴互ㄡ谛及桦宁
+Block Group == 2 && PHItem 623000,1 >= 1 && PHItem 623000,2 >= 1
+		GoToF itemcount-1
+
+#﹛由□泛奴互ㄠ谛及桦宁
+Block Group == 1 && PHItem 623000,0 >= 1
+		GoToF itemcount-1
+
+
+###﹛由□泛奴〇及簿井互甩件正□据毛赭儅
+Block PHItem 623000,0 >= 1
+	Window 3207366,Next
+
+		#\n\n﹛云支〝\n﹛甩件正□据毛云儅切匹卅中杅互\n﹛中日匀仄扎月迋匹允﹝\n﹛甩件正□据互拑中午操圴毛欐允仪互请侳引六氏﹝
+	
+	EndWindow 3207367
+
+		#\n\n﹛操圴午跟晶仄凶中桦宁反﹜\n﹛蝈够互甩件正□据毛儅匀凶橇谪匹﹜\n﹛仇仇尺侳化票今中﹝
+
+
+###﹛晓筏动陆
+Block
+	EndWindow 3207368
+
+		#\n\n﹛仇仇反﹜甩件泛奴件弘蔽弇熬尥匹允﹝\n﹛甩件泛奴件弘毛垫中凶中杅反﹜钒铵熬尥尺\n﹛垫匀化票今中﹝
+
+
+
+
+
+
+###﹛正□必永玄失奶泛丞蜊醒市它件玄
+Block
+*itemcount-1*
+	LocalCount15 = 0
+
+	If PHItem 623001,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623002,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623003,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623004,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623005,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623006,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623007,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623008,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623009,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623010,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623011,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623012,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623013,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623014,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623015,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	If PHItem 623016,0 >= 1
+		LocalCount15 += 1
+	endIf
+
+	GoToF countcheck-1
+
+
+###﹛甩件泛奴件弘蔽弇割カ﹛正□必永玄失奶泛丞蜊醒卞杀元化﹜丢永本□斥毛庍尹月
+Block
+*countcheck-1*
+	If LocalCount15 == 0
+		EndWindow 3207369
+
+		#\n\n﹛引分﹜正□必永玄毛逦仄化中引六氏友〝\n﹛正□必永玄唬帢圴互螂引匀凶日﹜\n﹛仇仇尺侳化票今中﹝
+	else
+		If LocalCount15 == 1
+			Window 3207370,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄠ蜊云儅切匹允友﹝
+		else
+			If LocalCount15 == 2
+				Window 3207371,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄡ蜊云儅切匹允友﹝
+			else
+				If LocalCount15 == 3
+					Window 3207372,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄢ蜊云儅切匹允友﹝
+				else
+					If LocalCount15 == 4
+						Window 3207373,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄣ蜊云儅切匹允友﹝
+					else
+						If LocalCount15 == 5
+							Window 3207374,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄤ蜊云儅切匹允友﹝
+						else
+							If LocalCount15 == 6
+								Window 3207375,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄥ蜊云儅切匹允友﹝
+							else
+								If LocalCount15 == 7
+									Window 3207376,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄦ蜊云儅切匹允友﹝
+								else
+									If LocalCount15 == 8
+										Window 3207377,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄧ蜊云儅切匹允友﹝
+									else
+										If LocalCount15 == 9
+											Window 3207378,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄨ蜊云儅切匹允友﹝
+										else
+											If LocalCount15 == 10
+												Window 3207379,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄠㄟ蜊云儅切匹允友﹝
+											else
+												If LocalCount15 == 11
+													Window 3207380,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄠㄠ蜊云儅切匹允友﹝
+												else
+													If LocalCount15 == 12
+														Window 3207381,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄠㄡ蜊云儅切匹允友﹝
+													else
+														If LocalCount15 == 13
+															Window 3207382,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄠㄢ蜊云儅切匹允友﹝
+														else
+															If LocalCount15 == 14
+																Window 3207383,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄠㄣ蜊云儅切匹允友﹝
+															else
+																If LocalCount15 == 15
+																	Window 3207384,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄠㄤ蜊云儅切匹允友﹝
+																else
+																	If LocalCount15 == 16
+																		Window 3207385,Next
+
+		#\n\n﹛正□必永玄唬帢圴毛ㄠㄥ蜊云儅切匹允友﹝
+																	else
+																		EndWindow 3207386
+
+		#\n\n﹛＿中仁勾引匹醒尹凶井侉木化仄引中引仄凶﹝\n﹛手丹域蘸狪仄喘仃化仁分今中﹝
+																	endIf
+																endIf
+															endIf
+														endIf
+													endIf
+												endIf
+											endIf
+										endIf
+									endIf
+								endIf
+							endIf
+						endIf
+					endIf
+				endIf
+			endIf
+		endIf
+	endIf
+
+
+	Window 3207387,Yes,No
+
+		#\n\n﹛甩件泛奴件弘毛蔽弇仄化﹜操圴跟晶赭尺\n﹛垫五引允井〝
+
+		Window_Yes
+			Window 3207388,OK
+
+		#\n\n﹛公木匹反﹜操圴跟晶赭尺仍副〇谯仄引允﹝\n﹛公仇匹﹜操圴娄欐仄溢卞狪仄喘仃化仁分今中﹝\n﹛公及端﹜赭儅今木化中月正□必永玄唬帢圴反\n﹛蝈化忒萃仄化赡五引允及匹﹜仍弇噩票今中﹝
+
+				Window_OK PgFlag 84,0 == 1 || PgFlag 85,0 == 1 || PgFlag 86,0 == 1 || PgFlag 87,0 == 1 || PgFlag 88,0 == 1
+					EndWindow 3207389
+
+		#\n\n﹛云支〝\n﹛中勾及棉卞井﹜湃卞操圴跟晶尺垫匀凶杅互\n﹛渔元匀化中引允友﹝\n﹛萧仄沭丐曰引六氏互﹜公及杅互﹜\n﹛台卞狪仄喘仃化仁分今中﹝
+
+				Window_OK Group == 5
+					If PHItem 623000,1 < 1 || PHItem 623000,2 < 1 || PHItem 623000,3 < 1 || PHItem 623000,4 < 1 || PHItem 623000,5 < 1
+						GoToF itemlost
+					else
+						GoToF itemcount-2
+					endif
+
+				Window_OK Group == 4
+					If PHItem 623000,1 < 1 || PHItem 623000,2 < 1 || PHItem 623000,3 < 1 || PHItem 623000,4 < 1
+						GoToF itemlost
+					else
+						GoToF itemcount-2
+					endif
+
+				Window_OK Group == 3
+					If PHItem 623000,1 < 1 || PHItem 623000,2 < 1 || PHItem 623000,3 < 1
+						GoToF itemlost
+					else
+						GoToF itemcount-2
+					endif
+
+				Window_OK Group == 2
+					If PHItem 623000,1 < 1 || PHItem 623000,2 < 1
+						GoToF itemlost
+					else
+						GoToF itemcount-2
+					endif
+
+				Window_OK Group == 1
+					If PHItem 623000,1 < 1
+						GoToF itemlost
+					else
+						GoToF itemcount-2
+					endif
+
+				Window_OK
+					GoToF itemcount-2
+
+		Window_No
+			EndWindow 3207390
+
+		#\n\n﹛公丹匹允井﹝操圴卞跟晶仄凶仁卅匀凶日﹜\n﹛引凶云旋仄票今中﹝
+
+
+###﹛莘狪酦卞﹜由□泛奴及簿井及甩件正□据互拑仁卅匀凶桦宁
+Block
+*itemlost*
+	EndWindow 3207391
+
+		#\n\n﹛云支〝\n﹛甩件正□据毛拑仁仄凶杅互\n﹛中日匀仄扎月迋匹允友﹝\n﹛甩件正□据互拑中午操圴毛欐允仪互请侳引六氏﹝﹛甩件正□据毛儅匀化﹜引凶侳化票今中﹝
+
+
+###﹛正□必永玄失奶泛丞蜊醒市它件玄﹛ㄡ荚杴
+Block
+*itemcount-2*
+	LocalCount16 = 0
+
+	If PHItem 623001,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623002,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623003,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623004,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623005,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623006,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623007,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623008,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623009,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623010,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623011,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623012,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623013,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623014,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623015,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	If PHItem 623016,0 >= 1
+		LocalCount16 += 1
+	endIf
+
+	GoToF countcheck-2
+
+
+###﹛正□必永玄失奶泛丞蜊醒ㄠ荚杴午ㄡ荚杴及?胜﹛域谯仄化凶日操圴跟晶赭尺伐□皿
+#﹛ㄠ℅ㄡ﹜ㄢ℅ㄥ﹜ㄦ℅ㄠㄠ﹜ㄠㄡ℅ㄠㄤ﹜ㄠㄥ蜊及ㄤ组赭
+Block
+*countcheck-2*
+	If LocalCount15 == 1 && LocalCount16 == 1
+		GoToF ido1-1
+	endIf
+
+	If LocalCount15 == 2 && LocalCount16 == 2
+		GoToF ido1-1
+	endIf
+
+	If LocalCount15 == 3 && LocalCount16 == 3
+		GoToF ido1-2
+	endIf
+
+	If LocalCount15 == 4 && LocalCount16 == 4
+		GoToF ido1-2
+	endIf
+
+	If LocalCount15 == 5 && LocalCount16 == 5
+		GoToF ido1-2
+	endIf
+
+	If LocalCount15 == 6 && LocalCount16 == 6
+		GoToF ido1-2
+	endIf
+
+	If LocalCount15 == 7 && LocalCount16 == 7
+		GoToF ido1-3
+	endIf
+
+	If LocalCount15 == 8 && LocalCount16 == 8
+		GoToF ido1-3
+	endIf
+
+	If LocalCount15 == 9 && LocalCount16 == 9
+		GoToF ido1-3
+	endIf
+
+	If LocalCount15 == 10 && LocalCount16 == 10
+		GoToF ido1-3
+	endIf
+
+	If LocalCount15 == 11 && LocalCount16 == 11
+		GoToF ido1-3
+	endIf
+
+	If LocalCount15 == 12 && LocalCount16 == 12
+		GoToF ido1-4
+	endIf
+
+	If LocalCount15 == 13 && LocalCount16 == 13
+		GoToF ido1-4
+	endIf
+
+	If LocalCount15 == 14 && LocalCount16 == 14
+		GoToF ido1-4
+	endIf
+
+	If LocalCount15 == 15 && LocalCount16 == 15
+		GoToF ido1-4
+	endIf
+
+	If LocalCount15 == 16 && LocalCount16 == 16
+		GoToF ido1-5
+	endIf
+
+	EndWindow 3207392
+
+		#\n\n﹛云支〝\n﹛今匀五醒尹凶凛午正□必永玄唬帢圴及\n﹛醒互啜丹心凶中匹允友﹝\n﹛醒尹跶仄引允及匹﹜引凶狪仄喘仃化仁分今中﹝
+
+
+###﹛由□泛奴蝈够及GlobalFlag毛??卞仄化﹜操圴跟晶赭ㄠ﹋ㄠ℅ㄡ蜊﹌尺伐□皿
+Block
+*ido1-1*
+	GAGlobalFlag84 = 1
+	Warp 0,59958,240,308
+#	Warp 0,59998,346,233
+
+
+###﹛由□泛奴蝈够及GlobalFlag毛??卞仄化﹜操圴跟晶赭ㄡ﹋ㄢ℅ㄥ蜊﹌尺伐□皿
+Block
+*ido1-2*
+	GAGlobalFlag85 = 1
+	Warp 0,59958,200,348
+#	Warp 0,59998,347,234
+
+
+###﹛由□泛奴蝈够及GlobalFlag毛??卞仄化﹜操圴跟晶赭ㄢ﹋ㄦ℅ㄠㄠ蜊﹌尺伐□皿
+Block
+*ido1-3*
+	GAGlobalFlag86 = 1
+	Warp 0,59958,170,318
+#	Warp 0,59998,348,235
+
+
+###﹛由□泛奴蝈够及GlobalFlag毛??卞仄化﹜操圴跟晶赭ㄣ﹋ㄠㄡ℅ㄠㄤ蜊﹌尺伐□皿
+Block
+*ido1-4*
+	GAGlobalFlag87 = 1
+	Warp 0,59958,139,289
+#	Warp 0,59998,349,236
+
+
+###﹛由□泛奴蝈够及GlobalFlag毛??卞仄化﹜操圴跟晶赭ㄤ﹋ㄠㄥ蜊﹌尺伐□皿
+Block
+*ido1-5*
+	GAGlobalFlag88 = 1
+	Warp 0,59958,110,258
+#	Warp 0,59998,350,237

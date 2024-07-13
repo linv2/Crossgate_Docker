@@ -1,0 +1,70 @@
+
+block
+
+
+
+
+
+
+			if LocalCount0 == 5
+
+				LocalCount0 = random 2,0
+
+				if LocalCount0 == 1
+
+
+
+
+#					Window "\n\n﹛崦井日﹜勖ゴ互炡木化仁月﹝",next
+					Window 3006919,next
+
+
+#					EndWindow "\n\n﹛殴ゲ及氘卞昙匀化＿＿\n﹛公氏卅普元互允月﹝"
+					EndWindow 3006920
+
+
+				else
+
+					LocalCount0 = 5
+
+
+#					Window "\n\n﹛仇仇及呺坁反﹜窒井啜丹氏分方卅﹝",next
+					Window 3006921,next
+
+#					EndWindow "\n\n﹛卅卞井卞障ミ﹜中支﹜嵎匙今木化月方丹卅﹝"
+					EndWindow 3006922
+
+
+				endif
+
+
+
+			else
+
+
+				LocalCount0 = 5
+
+
+#				Window "\n\n﹛升丹手﹜愈嗤﹜呺坁互聂中午合匀凶日﹜\n﹛仇及Ⅱ楷及崦井日囧中化五化月日仄中卅﹝",next
+				Window 3006923,next
+
+
+				
+#				EndWindow "\n\n﹛域虫﹜崦卞\n﹛卅卞互丐月氏分井＿＿"
+				EndWindow 3006924
+
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

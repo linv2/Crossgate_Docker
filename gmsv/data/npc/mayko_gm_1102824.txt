@@ -1,0 +1,11 @@
+#1111871	\n\n\n　　　　我从姐姐那拿了一些魔法粉，\n　　　　想到后山去玩，你想一起来吗？
+
+block
+	window 1111871,yes,no
+	window_yes
+	leavegroup 
+	warp 0,31812,27,133
+	endblock
+	window_no
+	endblock
+

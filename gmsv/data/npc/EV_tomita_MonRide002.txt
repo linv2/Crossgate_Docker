@@ -1,0 +1,232 @@
+#仿奶玉旦平伙凯丿弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛甩伉乩穴项敢﹋凝朿盒﹌及摒
+
+###﹛仿奶玉项莲扱毛呁醒赭儅
+block Item_607969 > 1
+	Window 3204034,OK
+
+		#\n\n﹛左奶永﹜项莲扱毛呁醒儅匀化中月卅﹝\n﹛尕恳反濮覆卞袱今氏″﹛雄孺霜椒分﹜窖木永″
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59526,184,132
+
+
+
+###﹛仿奶玉项莲扱毛ㄠ骚赭儅仄﹜旦正件皿互≦13≧
+block Item_607969 == 1 && StampCount_607969 == 13
+
+	If Item_9431 >= 1
+		Window 3204035,NEXT
+
+		#\n\n﹛卅井卅井支月卅﹜愤坴及亲互术母示夫分兮﹝\n﹛引丐﹜允什卞引凶戏尹化仁月仃升卅﹝\n﹛睐毛骚仄凶贿曰宁中匹﹜云蟆互左伊及项莲毛\n﹛中井卞咥荸仄化中月井普元潸木凶兮﹝
+		Window 3204036,NEXT
+
+		#\n\n﹛渣丹仁只树引匹普元化仄引丹幻升卞卅﹝\n﹛午卞井仁﹜镕ㄠ蟾闭及膜弇腹烂反宁伞分﹝\n﹛抸ざ井日反镕ㄡ蟾闭项莲卞拻戈互中中﹝\n﹛正丢打夫□项敢及手午匹卅﹝
+		Window 3204037,OK
+
+		#\n\n﹛云户匹午丹﹝\n﹛公仄化今日壬分﹜脱互项尹阂方″
+
+			Window_OK Item_607969 > 1
+				EndWindow 3204038
+
+		#\n\n﹛左奶永﹜项莲扱毛呁醒儅匀化中月卅﹝\n﹛尕恳反袱今氏″﹛侹镕分永″″
+				EndBlock
+
+			Window_OK Item_607969 == 1 && StampCount_607969 == 13 && Item_9431 >= 1
+				AddStampCount 607969,+1
+				LeaveGroup
+				Warp 0,59526,181,83
+				EndBlock
+
+			Window_OK Item_607969 == 1 && StampCount_607969 == 13
+				EndWindow 3204039
+
+		#\n\n﹛愈手厘仪卅乒件旦正□弁伉旦正伙毛撩仁允午反\n﹛狪卞卅日氏﹝\n﹛腹烂反尕宁伞分永″
+				EndBlock
+
+			Window_OK Item_607969 == 1
+				EndWindow 3204040
+
+		#\n\n﹛丞永﹜项莲扱毛允曰赘尹凶卅﹝\n﹛尕恳反袱今氏″﹛撩伞分永″″
+				EndBlock
+
+			Window_OK
+				EndWindow 3204041
+
+		#\n\n﹛项莲扱毛撩仁仄凶卅﹝\n﹛棉?仃毛乒件旦正□卞昙六月歹仃卞反中井氏﹝\n﹛腹烂反尕宁伞分永″
+				EndBlock
+
+	else
+		If Item_9421 >= 1
+			Window 3204042,NEXT
+
+		#\n\n﹛卅井卅井支月卅﹜愤坴及亲互术母示夫分兮﹝\n﹛引丐﹜允什卞引凶戏尹化仁月仃升卅﹝\n﹛睐毛骚仄凶贿曰宁中匹﹜云蟆互左伊及项莲毛\n﹛中井卞咥荸仄化中月井普元潸木凶兮﹝
+			Window 3204043,NEXT
+
+		#\n\n﹛渣丹仁只树引匹普元化仄引丹幻升卞卅﹝\n﹛午卞井仁﹜镕ㄠ蟾闭及膜弇腹烂反宁伞分﹝\n﹛抸ざ井日反镕ㄡ蟾闭项莲卞拻戈互中中﹝\n﹛正丢打夫□项敢及手午匹卅﹝
+			Window 3204044,OK
+
+		#\n\n﹛云户匹午丹﹝\n﹛公仄化今日壬分﹜脱互项尹阂方″
+
+				Window_OK Item_607969 > 1
+					EndWindow 3204045
+
+		#\n\n﹛左奶永﹜项莲扱毛呁醒儅匀化中月卅﹝\n﹛尕恳反袱今氏″﹛侹镕分永″″
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 13 && Item_9421 >= 1
+					AddStampCount 607969,+1
+					LeaveGroup
+					Warp 0,59526,181,83
+					EndBlock
+
+				Window_OK Item_607969 == 1 && StampCount_607969 == 13
+					EndWindow 3204046
+
+		#\n\n﹛愈手厘仪卅乒件旦正□弁伉旦正伙毛撩仁允午反\n﹛狪卞卅日氏﹝\n﹛腹烂反尕宁伞分永″
+					EndBlock
+
+				Window_OK Item_607969 == 1
+					EndWindow 3204047
+
+		#\n\n﹛丞永﹜项莲扱毛允曰赘尹凶卅﹝\n﹛尕恳反袱今氏″﹛撩伞分永″″
+					EndBlock
+
+				Window_OK
+					EndWindow 3204048
+
+		#\n\n﹛项莲扱毛撩仁仄凶卅﹝\n﹛棉?仃毛乒件旦正□卞昙六月歹仃卞反中井氏﹝\n﹛腹烂反尕宁伞分永″
+					EndBlock
+
+		else
+			If Item_9411 >= 1
+				Window 3204049,NEXT
+
+		#\n\n﹛卅井卅井支月卅﹜愤坴及亲互术母示夫分兮﹝\n﹛引丐﹜允什卞引凶戏尹化仁月仃升卅﹝\n﹛睐毛骚仄凶贿曰宁中匹﹜云蟆互左伊及项莲毛\n﹛中井卞咥荸仄化中月井普元潸木凶兮﹝
+				Window 3204050,NEXT
+
+		#\n\n﹛渣丹仁只树引匹普元化仄引丹幻升卞卅﹝\n﹛午卞井仁﹜镕ㄠ蟾闭及膜弇腹烂反宁伞分﹝\n﹛抸ざ井日反镕ㄡ蟾闭项莲卞拻戈互中中﹝\n﹛正丢打夫□项敢及手午匹卅﹝
+				Window 3204051,OK
+
+		#\n\n﹛云户匹午丹﹝\n﹛公仄化今日壬分﹜脱互项尹阂方″
+
+					Window_OK Item_607969 > 1
+						EndWindow 3204052
+
+		#\n\n﹛左奶永﹜项莲扱毛呁醒儅匀化中月卅﹝\n﹛尕恳反袱今氏″﹛侹镕分永″″
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 13 && Item_9411 >= 1
+						AddStampCount 607969,+1
+						LeaveGroup
+						Warp 0,59526,181,83
+						EndBlock
+
+					Window_OK Item_607969 == 1 && StampCount_607969 == 13
+						EndWindow 3204053
+
+		#\n\n﹛愈手厘仪卅乒件旦正□弁伉旦正伙毛撩仁允午反\n﹛狪卞卅日氏﹝\n﹛腹烂反尕宁伞分永″
+						EndBlock
+
+					Window_OK Item_607969 == 1
+						EndWindow 3204054
+
+		#\n\n﹛丞永﹜项莲扱毛允曰赘尹凶卅﹝\n﹛尕恳反袱今氏″﹛撩伞分永″″
+						EndBlock
+
+					Window_OK
+						EndWindow 3204055
+
+		#\n\n﹛项莲扱毛撩仁仄凶卅﹝\n﹛棉?仃毛乒件旦正□卞昙六月歹仃卞反中井氏﹝\n﹛腹烂反尕宁伞分永″
+						EndBlock
+
+			else
+				If Item_9401 >= 1
+					Window 3204056,NEXT
+
+		#\n\n﹛卅井卅井支月卅﹜愤坴及亲互术母示夫分兮﹝\n﹛引丐﹜允什卞引凶戏尹化仁月仃升卅﹝\n﹛睐毛骚仄凶贿曰宁中匹﹜云蟆互左伊及项莲毛\n﹛中井卞咥荸仄化中月井普元潸木凶兮﹝
+					Window 3204057,NEXT
+
+		#\n\n﹛渣丹仁只树引匹普元化仄引丹幻升卞卅﹝\n﹛午卞井仁﹜镕ㄠ蟾闭及膜弇腹烂反宁伞分﹝\n﹛抸ざ井日反镕ㄡ蟾闭项莲卞拻戈互中中﹝\n﹛正丢打夫□项敢及手午匹卅﹝
+					Window 3204058,OK
+
+		#\n\n﹛云户匹午丹﹝\n﹛公仄化今日壬分﹜脱互项尹阂方″
+
+						Window_OK Item_607969 > 1
+							EndWindow 3204059
+
+		#\n\n﹛左奶永﹜项莲扱毛呁醒儅匀化中月卅﹝\n﹛尕恳反袱今氏″﹛侹镕分永″″
+							EndBlock
+
+						Window_OK Item_607969 == 1 && StampCount_607969 == 13 && Item_9401 >= 1
+							AddStampCount 607969,+1
+							LeaveGroup
+							Warp 0,59526,181,83
+							EndBlock
+
+						Window_OK Item_607969 == 1 && StampCount_607969 == 13
+							EndWindow 3204060
+
+		#\n\n﹛愈手厘仪卅乒件旦正□弁伉旦正伙毛撩仁允午反\n﹛狪卞卅日氏﹝\n﹛腹烂反尕宁伞分永″
+							EndBlock
+
+						Window_OK Item_607969 == 1
+							EndWindow 3204061
+
+		#\n\n﹛丞永﹜项莲扱毛允曰赘尹凶卅﹝\n﹛尕恳反袱今氏″﹛撩伞分永″″
+							EndBlock
+
+						Window_OK
+							EndWindow 3204062
+
+		#\n\n﹛项莲扱毛撩仁仄凶卅﹝\n﹛棉?仃毛乒件旦正□卞昙六月歹仃卞反中井氏﹝\n﹛腹烂反尕宁伞分永″
+							EndBlock
+
+					else
+						Window 3204063,OK
+
+		#\n\n﹛乒件旦正□弁伉旦正伙反升丹仄凶〝\n﹛丐木反乒件旦正□仿奶母□及优獗圴分冗﹝\n﹛公丹中丹坁毛撩仁允午反﹜仿奶母□撩伞分卅﹝\n﹛腹烂反尕宁伞分﹜跶切卞窖木″
+
+							Window_OK
+								LeaveGroup
+								Warp 0,59526,184,132
+								EndBlock
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛仿奶玉项莲扱毛ㄠ骚赭儅仄﹜旦正件皿互晓筏动陆
+block Item_607969 == 1
+	Window 3204064,OK
+
+		#\n\n﹛丞丞永﹜云蟆反膜弇腹烂及熬腹樊元扎卅中卅﹝\n﹛仇仇反楮溢樊动陆峏切じ曰嗟鞅分﹝\n﹛峏切蛔木永″″
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59526,184,132
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3204065,OK
+
+		#\n\n﹛项莲扱手乒件旦正□弁伉旦正伙手卅中及井″\n﹛狪卞卅日氏卅﹝\n﹛腹烂反撩伞﹜漆允什峏切蛔木永″
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59526,184,132
+
+
+

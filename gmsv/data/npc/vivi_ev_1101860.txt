@@ -1,0 +1,29 @@
+#####不可思议系列三：恶梦#####
+##客房里的华医生
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+#■ 有玻璃杯
+block Item 40299 >= 1
+	 ##1102011	\n\n\n\n@c水… 帮我跟服务生要杯水…	1
+	 EndWindow 1102011
+	 
+#■ 有诊寮表
+block Item 40291 >= 1
+	 ##1102012	\n\n\n\n@c好… 好冷！难道我也…	1
+	 Window 1102012,NEXT 
+	 ##1102011	\n\n\n\n@c水… 帮我跟服务生要杯水…	1
+	 Window 1102011,OK 
+	 	 Window_OK Item 40291 >= 1
+	 	 	 KillItem 40291
+	 	 	  GiveLeak1Item (40299%1$1)
+#■ 一般
+block
+	 ##1102014	\n\n\n\n@c好… 好冷！	1
+	 EndWindow 1102014 
+				

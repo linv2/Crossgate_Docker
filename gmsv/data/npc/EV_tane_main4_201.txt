@@ -1,0 +1,47 @@
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+block 
+
+	LocalCount1 = random 5,0
+
+			if LocalCount1 == 1
+
+				Encount 2|||0|||||5|305182|||||||||
+
+			else
+			
+				if LocalCount1 == 2
+			
+			
+					Encount 2|||0|||||5|305181|||||||||
+			
+			
+				else
+					if LocalCount1 == 3
+
+
+						Encount 2|||0|||||5|305182|||||||||
+
+
+					else
+
+						if LocalCount1 == 4
+
+
+							Encount 2|0,59714,163,100||0|||||5|305181|||||||||
+
+
+						else
+
+							Encount 2|||0|||||5|305182|||||||||
+
+
+						endif
+					endif
+				endif
+			endif
+
+

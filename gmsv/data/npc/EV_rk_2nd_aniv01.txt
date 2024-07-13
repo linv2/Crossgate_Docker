@@ -1,0 +1,28 @@
+#????
+
+#7/31 0:00:00????¦h¦¹???????????
+block CheckRealTime 2003/07/30,14:40:00 == 1 && Item 18774 >= 1
+	Window 22661,OK
+		Window_OK Item 18774 >= 1
+			KillItemAll 18774
+			GiveItem 16387,1
+		Window_OK
+#
+block CheckRealTime 2003/07/30,14:40:00 == 1
+	EndWindow 22669,OK
+
+#???????????
+block Item 18774 >= 1
+	EndWindow 22662,OK
+
+#
+block
+	Window 22663,YES,NO
+		Window_No
+			Window 22665,OK
+				Window_OK ItemSpace == 0
+					EndWindow 10000,OK
+				Window_OK
+					GiveItem 18774,1
+		Window_Yes
+			EndWindow 22664,OK

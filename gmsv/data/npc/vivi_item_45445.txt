@@ -1,0 +1,7 @@
+######■ 中秋节-物品item02 啤酒######
+block Item 45445 >= 1 
+	 ##1050933	\n\n\n\n@c啵！	1
+	 Window 1050933,OK
+	 	 Window_OK Item 45445 >= 1 
+	 	 	 KillItem 45445
+	 	 	 GiveLeak1Item 45446

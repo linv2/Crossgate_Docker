@@ -1,0 +1,38 @@
+##########################
+# 晓菟缜         by 漪呿 #
+# ←扲?←               #
+##########################
+
+## 译奿珃茧樱动晓
+block Job >= 414 && Job <= 419
+	if ItemSpace == 0
+		EndWindow 3208411
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛绂坁互中匀天中分
+
+	else
+
+		if Item 622049 >= 1
+			EndWindow 3208412
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛坞匀吊分
+
+	else
+
+			if Item 622049 == 0
+				GiveLeak1Item 622049,1
+				Endblock
+
+			endif
+		endif
+	endif
+Endblock
+
+######## 晓筏动陆
+block
+	EndWindow 3208413
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛坞匀吊分
+
+
+

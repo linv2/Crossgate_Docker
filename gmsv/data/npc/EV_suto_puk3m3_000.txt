@@ -1,0 +1,45 @@
+#PUK3_main3
+#
+#
+#螃敢→萤戋石□伙
+
+
+Block item_621015 >= 1 && EndEvent 207 == 1
+
+		Window 3219805,OK
+
+		#\n\n﹛方仁云旋仄票今中引仄凶﹝\n﹛扑尼仿它巨永末及显卞化﹜\n﹛螃啖及杅★互云谨切匹允﹝\n﹛漆井日副〇中凶仄引允﹝
+		
+			Window_OK
+			
+				LeaveGroup
+				
+				warp 0,59984,239,147
+
+
+
+
+
+Block
+	
+		Window 3219806,next
+
+		#\n\n﹛扑尼仿它巨永末及显反\n﹛厘爵詨﹜汊饬及擂蔼午仄化\n﹛睛瞻今木引仄凶﹝
+		
+		Window 3219807,Next
+
+		#\n\n﹛敦岳仄凶癫凛反﹜显及赡晓匹\n﹛统伀匹丐月扑尼伊斥尼件今引互\n﹛爵及升仄心毛统匀化云日木凶公丹匹允﹝
+		
+		Window 3219808,Next
+
+		#\n\n﹛公及詨窒蘸井凝今卅爵锤互丐曰引仄凶﹝
+		
+		Window 3219809,Next
+
+		#\n\n﹛仇及扑尼仿它巨永末及显反\n﹛公及午五鞄朴爵卞迕中日木凶凶户﹜\n﹛恍分卞\n﹛ハ莽今木凶引引卞卅匀化中月\n﹛桦赭互丐曰引允﹝
+		
+		EndWindow 3219810
+
+		#\n\n﹛玄仿永皿卅升手﹜公及抩酸匹仄斤丹＿＿﹝
+	
+	

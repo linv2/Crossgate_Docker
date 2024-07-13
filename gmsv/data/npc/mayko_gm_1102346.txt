@@ -1,0 +1,116 @@
+##潘妮
+##32087,473,180
+
+
+#1109445	哥哥最近闷闷不乐，该怎么让他心情好一点呢？
+#1109446	啊～～你手中那三个种子，可以借我看一下吗？
+#1109447	你好坏心～～～
+#1109448	嗯～～
+#1109449	跟哥哥当年取得的种子一样，可是哥哥当年只种成功两种花。
+#1109450	如果你能把三种花都种出来，我想哥哥也会很高兴。
+#1109451	你想种看看吗？？
+#1109452	那就算了！
+#1109453	我记得哥拉尔城有位很会种花的园丁拉姆，你可以去请教他。
+#1109454	他如果不理你的话，你把这个东西拿给他，他一定会理你。
+#1109455	麻烦你一定要找到拉姆喔～～～
+#1109456	你找到拉姆啦～～他不相信是我拜托你的呀～～
+#1109457	那～～这个拿给他，
+#1109458	他总该相信了吧。
+#1109459	你真的种出来了呀！可惜哥哥不在　再过几个月他回来时，一定会很高兴。
+#1109460	这三朵花我先留着，那天你再到我家找我.......
+#1109479	这个先给你，三朵花我先留着啰！！
+
+##猫女之铃 40833
+block Item 40833>0		 	
+	EndWindow 1109481
+
+	 ##过几个月要来找我喔~~~
+	 ##哥哥回家了，你可以进屋子找他喔 1109480 (主线5改)	
+##有三朵花
+#40830,40831,40832
+
+block Item 40830>0 && Item 40831>0 && Item 40832>0
+	 Window 1109459,NEXT
+	 Window 1109460,OK
+	     
+	 Window_OK  ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 
+      	 Window_OK Item 40830>0 && Item 40831>0 && Item 40832>0	&& Item 40829>0 
+         GiveLeak1Item 40833,1	
+         KillItem 40830,1
+         KillItem 40831,1
+         KillItem 40832,1   
+         KillItem 40829,1     
+         EndEvent 151 = 1
+         EndWindow 1109479         
+         
+      	 Window_OK Item 40830>0 && Item 40831>0 && Item 40832>0
+         GiveLeak1Item 40833,1	
+         KillItem 40830,1
+         KillItem 40831,1
+         KillItem 40832,1  
+         EndEvent 151 = 1             
+         EndWindow 1109479                  
+         
+      	 Window_OK 
+      	 EndWindow 1109482
+##栽培法40829
+block Item 40829>0
+	 EndWindow 1109483
+
+##小雀的信40828
+block Item 40828>0
+	 EndWindow 1109483
+##潘妮的发夹40827	 
+block Item 40827>0
+	 EndWindow 1109458	 
+
+##拉姆的花戒指40825
+block Item 40825>0
+	 Window 1109456,NEXT
+	 
+	 Window 1109457,OK
+	 Window_OK Item 1109425 = 0 
+	 EndWindow 1109482
+	 
+	 Window_OK  ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 
+      	 Window_OK 
+         GiveLeak1Item 40827,1	
+         KillItem 40825,1         
+	 EndWindow 1109458
+##潘妮的饰品40826
+block Item 40826>0
+	 EndWindow 1109455
+##种子	 
+block Item 40812>0 && Item 40813>0 && Item 40814>0
+	 Window 1109445,NEXT
+	 Window 1109446,YES,NO
+	 Window_NO
+	 EndWindow 1109447
+	 Window_YES
+	 
+	 Window 1109449,NEXT
+	 Window 1109450,NEXT
+	 Window 1109451,YES,NO
+	 	 Window_NO
+	 	 EndWindow 1109452
+	 	 Window_YES
+	 	 Window 1109453,OK
+	 	 Window_OK ItemSpace < 1 
+	 	 ##物品栏已满
+	 	 EndWindow 1100001
+	 	 Window_OK
+	 	 GiveLeak1Item 40826,1	       
+       		 EndWindow 1109454         	 	 	 
+block 
+	 EndWindow 1109445
+	 
+
+
+
+

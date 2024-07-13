@@ -1,0 +1,32 @@
+##超过两天  240*6*2=1440*2=2880
+#block Item 40818>0 && ItemCreateTime 40818>2880
+#花苗	40822	爱情之花	40830
+##三天  2880+1440=4320
+##六天  4320+4320=8640
+#1109501	\n\n\n\n@c今天花应该开了吧！！
+#1109502	\n\n\n　　　糟了～～过太久了～\n　　　花都谢了～～
+#block Item 40823>0 || Item 40824>0
+#	 EndWindow 1109516
+block Item 40822>1
+	 EndWindow 1109516
+block Item 40822>0 && ItemCreateTime 40822>8640
+	 Window 1109502,OK
+	 Window_OK Item 40822>0	 
+	 KillItem 40822,1
+	 Window_OK
+	 Endblock
+
+
+
+block Item 40822>0 && ItemCreateTime 40822>4320
+	 Window 1109501,OK
+	 Window_OK Item 40822>0	 
+	 KillItem 40822,1
+	 GiveLeak1Item 40830,1	
+	 Window_OK
+	 Endblock
+block
+	 EndWindow 1109515
+
+
+	

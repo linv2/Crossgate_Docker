@@ -1,0 +1,98 @@
+#显及丝挚﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛魂杽敢它奴伙及摒
+
+###﹛乒夫甩正弗丐月中反穴奶件白仿伐□毛赭儅
+block Item_607700 >= 1 || Item_607702 >= 1
+	EndWindow 3204767
+
+		#\n\n﹛甩甩甩甩甩﹜显陆及谛分友﹜仍塑洢今氏﹝\n﹛甩甩甩甩甩甩甩﹜魂杽反拑咥分方﹝\n﹛分匀化﹜勾中愈嗤支匀凶壬井曰匹仄斤﹝\n﹛楝及儅匀化月弁仿它件互据蛞分﹜甩甩甩甩甩﹝
+
+
+
+###﹛平乒母丢母扑蔺爵据毛赭儅
+block Item_607970 >= 1
+	GAWindow 3204768,YES,NO
+
+		#\n\n﹛≦仇木引匹及魂杽敢卞变曰毛普元化中月〝≧\n﹛甩甩甩甩甩﹜仇木互愈詨及魂杽分方﹝\n﹛仇木卞方匀化﹜楝及扪抰互瑁引月﹜卅氏化友﹝\n﹛厘仆今分方友﹜甩甩甩甩甩甩甩﹝
+
+		Window_YES Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204769
+
+		#\n\n﹛甩甩甩﹜荚蚕反拑躲卞卅匀切扎匀凶友﹝\n﹛丝挚匹手日匀凶弁仿它件毛儅匀化中月谛反﹜\n﹛跶涛辅笛匹五卅中氏分方﹜甩甩甩甩甩﹝
+
+		Window_YES Item_607970 >= 1
+			GAWindow 3204770,OK
+
+		#\n\n﹛甩甩甩甩﹜丐凶仄卞反卅兮变匀化中月及井﹜\n﹛蝈螺歹井日卅中卅丐﹝\n﹛?陴曶邂元扎卅中及﹜甩甩甩﹝\n﹛午卞井仁﹜戚尺褡氏匹方﹝甩甩甩甩甩甩甩﹝
+
+				Window_OK Item_607700 >= 1 || Item_607702 >= 1
+					EndWindow 3204771
+
+		#\n\n﹛甩甩甩﹜荚蚕反拑躲卞卅匀切扎匀凶友﹝\n﹛丝挚匹手日匀凶弁仿它件毛儅匀化中月谛反﹜\n﹛跶涛辅笛匹五卅中氏分方﹜甩甩甩甩甩﹝
+
+				Window_OK Item_607970 >= 1
+					Warp 0,59814,247,90
+
+				Window_OK
+					EndWindow 3204772
+
+		#\n\n﹛甩甩甩﹜蔺爵据互卅仁卅匀凶友﹝\n﹛酸ゴ分仃升﹜荚蚕反拑躲分方﹜甩甩甩甩甩﹝
+
+		Window_YES
+			EndWindow 3204773
+
+		#\n\n﹛甩甩甩﹜蔺爵据互卅仁卅匀凶友﹝\n﹛酸ゴ分仃升﹜荚蚕反拑躲分方﹜甩甩甩甩甩﹝
+
+		Window_NO Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204774
+
+		#\n\n﹛甩甩甩﹜荚蚕反拑躲卞卅匀切扎匀凶友﹝\n﹛丝挚匹手日匀凶弁仿它件毛儅匀化中月谛反﹜\n﹛跶涛辅笛匹五卅中氏分方﹜甩甩甩甩甩﹝
+
+		Window_NO Item_607970 >= 1
+			GAWindow 3204775,OK
+
+		#\n\n﹛甩甩甩甩﹜窒午手合歹卅井匀凶午反允仍中友﹝\n﹛ヂ缰竣午中丹及反﹜楝及凶户卞丐月蜕邯分友﹝\n﹛引丐﹜公木卅日公木匹中中氏元扎卅中及﹝\n﹛云戚尺升丹冗﹜甩甩甩甩甩甩甩﹝
+
+				Window_OK Item_607700 >= 1 || Item_607702 >= 1
+					EndWindow 3204776
+
+		#\n\n﹛甩甩甩﹜荚蚕反拑躲卞卅匀切扎匀凶友﹝\n﹛丝挚匹手日匀凶弁仿它件毛儅匀化中月谛反﹜\n﹛跶涛辅笛匹五卅中氏分方﹜甩甩甩甩甩﹝
+
+				Window_OK Item_607970 >= 1
+					Warp 0,59814,291,133
+
+				Window_OK
+					EndWindow 3204777
+
+		#\n\n﹛甩甩甩﹜蔺爵据互卅仁卅匀凶友﹝\n﹛酸ゴ分仃升﹜荚蚕反拑躲分方﹜甩甩甩甩甩﹝
+
+		Window_NO
+			EndWindow 3204778
+
+		#\n\n﹛甩甩甩﹜蔺爵据互卅仁卅匀凶友﹝\n﹛酸ゴ分仃升﹜荚蚕反拑躲分方﹜甩甩甩甩甩﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3204779,YES,NO
+
+		#\n\n﹛甩甩甩甩甩﹜蔺爵据互卅中方丹分友﹝\n﹛魂杽毛熬仃月卞反潸曰跶允仄井卅中仃升﹜\n﹛甩甩甩﹜升丹允月〝
+
+		Window_YES
+			Window 3204780,OK
+
+		#\n\n﹛甩甩甩﹜元扎丐垫匀化云中匹﹜\n﹛甩甩甩甩甩﹜仇匀切反锳厌昍逦卅氏分仃升﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59801,93,79
+
+		Window_NO
+			EndWindow 3204781
+
+		#\n\n﹛甩甩甩﹜午蜕丹仇午反﹜职及蔺爵樊及怀踞毛\n﹛仄化月氏分友﹝\n﹛分匀凶日﹜狪仄井仃月及反支户化俓仄中卅丐﹝\n﹛甩甩甩甩甩＿＿﹝
+
+
+

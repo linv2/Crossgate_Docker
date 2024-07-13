@@ -1,0 +1,36 @@
+#????¦Þþ°
+
+block
+	Window 22824,Yes,No
+		Window_No
+			EndWindow 22825,OK
+		Window_Yes
+			Window 22826,Yes,No
+				Window_No
+					EndWindow 22827,OK
+				Window_Yes
+					Window 22828,Next
+					Window 22829,Yes,No
+						Window_No
+							EndWindow 22830,OK
+						Window_Yes
+							Window 22831,Yes,No
+								Window_Yes
+									EndWindow 22832,OK
+								Window_No
+									Window 22833,Yes,No
+										Window_Yes
+											EndWindow 22834,OK
+										Window_No
+											Window 22835,Yes,No
+												Window_No
+													EndWindow 22836,OK
+												Window_Yes
+													Window 22837,Yes,No
+														Window_No
+															EndWindow 22838,OK
+														Window_Yes
+															Window 22839,OK
+																Window_OK
+																	LeaveGroup
+																	Warp 0,46030,29,3

@@ -1,0 +1,18 @@
+block Item 47681 >0
+	 Window 1055023,NEXT
+	 Window 1055025,YES,NO
+	 #1055026	\n\n\n@c您要离开宠物技能学习屋吗？？	1
+	 Window_YES Item 47681>0
+	 KillItem 47681,1
+	 LeaveGroup
+	 Warp 0,32104,83,73	
+	 endblock
+	 Window_YES
+	 Window_NO
+	 endblock
+	 
+block
+	 Window 1055023,NEXT
+	 EndWindow  1055024
+	 #1055024	\n\n\n@c您没有进入证，无法进入宠物技能学习屋。
+

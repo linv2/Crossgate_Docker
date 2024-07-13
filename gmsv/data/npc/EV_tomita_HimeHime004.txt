@@ -1,0 +1,97 @@
+#仿奶玉旦平伙凯丿弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛戊伉□瓜及摒
+
+###﹛戏遣烟匹伀伀药及仍骚垫由旦毛赭儅﹋ㄠ﹌
+block Item_607968 >= 1 && Job >= 200 && Job < 430
+	EndWindow 3203369
+
+		#\n\n﹛公及由旦反﹜ㄢ荚肣躲匹允﹝\n﹛公及詨反疯太云鉼今引卞市汁失必今木引允互﹜\n﹛恌中仇午反赢仁粮井卅中午中丹项楛分午合匀化﹜\n﹛丐五日户化云嗯毛囮匀化仁分今中﹝
+
+
+
+###﹛戏遣烟匹伀伀药及仍骚垫由旦毛赭儅﹋ㄡ﹌
+block Item_607968 >= 1 && Job >= 450 && Job < 480
+	EndWindow 3203370
+
+		#\n\n﹛公及由旦反﹜ㄢ荚肣躲匹允﹝\n﹛公及詨反疯太云鉼今引卞市汁失必今木引允互﹜\n﹛恌中仇午反赢仁粮井卅中午中丹项楛分午合匀化﹜\n﹛丐五日户化云嗯毛囮匀化仁分今中﹝
+
+
+
+###﹛爵⑷烟匹伀伀药及仍骚垫由旦毛赭儅
+block Item_607968 >= 1
+	EndWindow 3203371
+
+		#\n\n﹛公及由旦反﹜ㄢ荚肣躲匹允﹝\n﹛公及詨反疯太云鉼今引午鴃扙卞卅曰引允互﹜\n﹛戚反聂剂澎笛蛹仄化丐仆月午中丹及互﹜\n﹛厘谛及覆杀分午合中引允﹝
+
+
+
+###﹛戏遣烟匹仍骚垫由旦毛尕赭儅﹋ㄠ﹌
+block Job >= 200 && Job < 430
+	Window 3203372,OK
+
+		#\n\n﹛失伉扑失云鉼今引卞市汁失必今木凶谛匹允友﹝\n﹛仇及骚垫由旦毛熬仃潸匀化仁分今中﹝\n﹛仇木互丐木壬﹜云鉼今引卞500?囮歹内卞\n﹛丐及顺毛ㄢ荚骚聊匹五引允﹝
+
+		Window_OK Item_607968 >= 1
+			EndWindow 3203373
+
+		#\n\n﹛湃卞儅匀化中月及匹允友﹝\n﹛ㄠ谛ㄠ骚午瑁引匀化中月及匹﹜\n﹛公木动晓反欐六引六氏﹝
+
+		Window_OK ItemSpace >= 1
+			GiveItemEX 607968,1,3203374
+
+		#\n\n﹛绂坁互中匀天中分井日﹜由旦互欐六引六氏﹝
+
+		Window_OK
+			EndWindow 3203375
+
+		#\n\n﹛绂坁互中匀天中分井日﹜由旦互欐六引六氏﹝
+
+
+
+###﹛戏遣烟匹仍骚垫由旦毛尕赭儅﹋ㄡ﹌
+block Job >= 450 && Job < 480
+	Window 3203376,OK
+
+		#\n\n﹛失伉扑失云鉼今引卞市汁失必今木凶谛匹允友﹝\n﹛仇及骚垫由旦毛熬仃潸匀化仁分今中﹝\n﹛仇木互丐木壬﹜云鉼今引卞500?囮歹内卞\n﹛丐及顺毛ㄢ荚骚聊匹五引允﹝
+
+		Window_OK Item_607968 >= 1
+			EndWindow 3203377
+
+		#\n\n﹛湃卞儅匀化中月及匹允友﹝\n﹛ㄠ谛ㄠ骚午瑁引匀化中月及匹﹜\n﹛公木动晓反欐六引六氏﹝
+
+		Window_OK ItemSpace >= 1
+			GiveItemEX 607968,1,3203378
+
+		#\n\n﹛绂坁互中匀天中分井日﹜由旦互欐六引六氏﹝
+
+		Window_OK
+			EndWindow 3203379
+
+		#\n\n﹛绂坁互中匀天中分井日﹜由旦互欐六引六氏﹝
+
+
+
+###﹛爵⑷烟匹仍骚垫由旦毛尕赭儅
+block
+	Window 3203380,OK
+
+		#\n\n﹛失伉扑失云鉼今引卞鴃匀凶谛匹允友﹝\n﹛仇及骚垫由旦毛熬仃潸匀化仁分今中﹝\n﹛失伉扑失云鉼今引午及鴃扙毛仄卅中匹﹜\n﹛丐及顺毛ㄢ荚骚聊匹五引允﹝
+
+		Window_OK Item_607968 >= 1
+			EndWindow 3203381
+
+		#\n\n﹛湃卞儅匀化中月及匹允友﹝\n﹛ㄠ谛ㄠ骚午瑁引匀化中月及匹﹜\n﹛公木动晓反欐六引六氏﹝
+
+		Window_OK ItemSpace >= 1
+			GiveItemEX 607968,1,3203382
+
+		#\n\n﹛绂坁互中匀天中分井日﹜由旦互欐六引六氏﹝
+
+		Window_OK
+			EndWindow 3203383
+
+		#\n\n﹛绂坁互中匀天中分井日﹜由旦互欐六引六氏﹝
+
+
+

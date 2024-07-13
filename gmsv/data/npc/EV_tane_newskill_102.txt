@@ -1,0 +1,67 @@
+
+block
+
+
+			if LocalCount8 == 5
+
+				LocalCount8 = random 2,0
+
+				if LocalCount8 == 1
+
+
+
+					LocalCount8 = 5
+
+
+
+					EndWindow 3200618
+		#\n\n﹛?谛及苇莲中琼反﹜芼骚互厍井卅中井日\n﹛窖曰反?仃瑙毛骚匀凶杅互啼井手友﹝
+#					EndWindow 3006985
+
+
+
+				else
+
+
+					LocalCount8 = 5
+
+
+
+					EndWindow 3200619
+		#\n\n﹛嫖中午仇欠卞晓月卞反＿＿\n﹛反仄仍〝趸〝
+#					EndWindow 3006986
+
+
+				endif
+
+
+
+			else
+
+
+				LocalCount8 = 5
+
+
+				Window 3200620,next
+		#\n\n﹛仇仇分仃及狪分仃升﹜掸反?谛及蛛月惧曰顺毛骚日卅仁化手\n﹛琼谛琼及港碍卞中仃月?仃瑙互丐月日仄中及﹝
+#				Window 3006987,next
+
+
+				EndWindow 3200621
+		#\n\n﹛＿＿匹手﹜じ轼互嫖允亢化晓木卅中及方友﹝
+#				EndWindow 3006988
+
+
+
+
+			endif
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+#﹛璋剀祸母件斥亦件﹋蛙笙菱心母件斥亦件﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛彰评戊汁?及摒
+
+###﹛懦恞及珃挎毛赭儅
+
+block Item_607927 >= 1
+	EndWindow 3202761
+
+		#\n\n﹛珃挎及勾仃艘哗反中井互戊汁〝\n﹛彰匹请侳化月戊汁井日﹜夫氏支曰允月戊汁﹝\n﹛戊汁戊汁戊汁戊汁戊汁＿＿﹝
+
+
+
+###﹛懦恞及珃挎毛尕赭儅
+
+block
+	Window 3202762,YES,NO
+
+		#\n\n﹛仇仇引匹侳月午反﹜卅井卅井珃厍五戊汁﹝\n﹛筏ゴ卞珃挎反中井互戊汁〝\n﹛袄蟾反88?午坱僮互曰匹户匹凶中戊汁﹝
+
+		Window_YES Gold < 88
+			EndWindow 3202763
+
+		#\n\n﹛云嗯互箫曰氏戊汁﹝
+
+		Window_YES ItemSpace < 1
+			EndWindow 3202764
+
+		#\n\n﹛儅切坁中匀天中戊汁﹝
+
+		Window_YES Item_607927 >= 1
+			EndWindow 3202765
+
+		#\n\n﹛反曰扎﹜手丹儅匀化月戊汁﹝ㄠ谛ㄠ勾戊汁﹝
+
+		Window_YES
+			Window 3202766,OK
+
+		#\n\n﹛今允互﹜珃厍五及谛反脐匀呏戊汁﹝\n﹛褥毛彰卞仄化⑸中凶呕?互丐月戊汁﹝\n﹛丐曰互午戊汁﹝
+
+				Window_OK Gold < 88
+					EndWindow 3202767
+
+		#\n\n﹛云嗯互箫曰氏戊汁﹝
+
+				Window_OK ItemSpace < 1
+					EndWindow 3202768
+
+		#\n\n﹛儅切坁中匀天中戊汁﹝
+
+				Window_OK Item_607927 >= 1
+					EndWindow 3202769
+
+		#\n\n﹛反曰扎﹜手丹儅匀化月戊汁﹝ㄠ谛ㄠ勾戊汁﹝
+
+				Window_OK
+					AddGold -88
+					GiveItemEX 607927,1,3202770
+
+		#\n\n﹛儅切坁中匀天中戊汁﹝
+
+		Window_NO
+			EndWindow 3202771
+
+		#\n\n﹛酸ゴ戊汁﹝引凶褥互称月戊汁﹝
+
+
+

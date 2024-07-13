@@ -1,0 +1,152 @@
+#¼ëÓ£åÃÄÌÃ¬¼þÐþ·ºµ©Ðþ195 207
+#ÓúâÙ±åÍÖðö»¥ÓòÚÛØÆÐ×Æ¤·òÓÀÛÍÃ«ÖÊ†AÔÊÔÂ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+########## ŽßÁ¥ØÆ»¯ÔÆÈÕÄÚ©yñÉÁë¼°Ï³Ã«ØÆ»¯ÖÐÔÂèëÄþ ##########
+block MetamoCount == 0 && BBimage >= 100000 && BBimage <= 100173 
+	#ñÉÁë¼°–f·´³ðÇÐÈÕ¾®ÈÕÉýµ¤Èß©z
+	Window 10819,OK,CANCEL
+	
+	# --- OK¼°èëÄþ --- #
+		Window_OK
+		Warp 0,777,204,205	
+
+block MetamoCount == 0 && BBimage >= 105000 && BBimage <= 105173 
+	#ñÉÁë¼°–f·´³ðÇÐÈÕ¾®ÈÕÉýµ¤Èß©z
+	Window 10819,OK,CANCEL
+	
+	# --- OK¼°èëÄþ --- #
+		Window_OK
+		Warp 0,777,204,205	
+
+block MetamoCount == 0 && BBimage >= 106000 && BBimage <= 106173 
+	#ñÉÁë¼°–f·´³ðÇÐÈÕ¾®ÈÕÉýµ¤Èß©z
+	Window 10819,OK,CANCEL
+	
+	# --- OK¼°èëÄþ --- #
+		Window_OK
+		Warp 0,777,204,205	
+
+########## ŽßÁ¥ØÆ»¯ÔÆÈÕÄÚ©y»ÔÁë¼°Ï³Ã«ØÆ»¯ÖÐÔÂèëÄþ##########
+block MetamoCount == 0 && BBimage >= 100252 && BBimage <= 100423 
+	#³ð³ð·´ñÉÁëØÆ¾®É§Ä¾ÒýÁùÊÏ·½©z
+	EndWindow 10818
+
+block MetamoCount == 0 && BBimage >= 105252 && BBimage <= 105423 
+	#³ð³ð·´ñÉÁëØÆ¾®É§Ä¾ÒýÁùÊÏ·½©z
+	EndWindow 10818
+
+block MetamoCount == 0 && BBimage >= 106252 && BBimage <= 106423 
+	#³ð³ð·´ñÉÁëØÆ¾®É§Ä¾ÒýÁùÊÏ·½©z
+	EndWindow 10818
+
+########## ŽßÁ¥ØÆ»¯ÔÆÈÕÄÚ©yÊ¸ÓÀÐþ¼°Ï³Ã«ØÆ»¯ÖÐÔÂèëÄþ ##########
+block MetamoCount == 0 && BBimage >= 101000 && BBimage <= 101935 
+	#Ê¸ÓÀÐþ¼°ƒ}ÇÐ‘@ÐÄ·´àµ÷±Æ¥ÔÊ¡¯¡¯¡¯©zÔÈ»¯©yØ¤Ä¾¨”ÆëÖÐÇ±·´Éý³ð¾®ØÆÈÕ¨”
+	EndWindow 10817
+
+block MetamoCount == 0 && BBimage >= 107000 && BBimage <= 107935 
+	#Ê¸ÓÀÐþ¼°ƒ}ÇÐ‘@ÐÄ·´àµ÷±Æ¥ÔÊ¡¯¡¯¡¯©zÔÈ»¯©yØ¤Ä¾¨”ÆëÖÐÇ±·´Éý³ð¾®ØÆÈÕ¨”
+	EndWindow 10817
+
+########## ŽßÁ¥ØÆ»¯ÔÆÈÕÄÚ©y¶°†A·®¼°Ï³Ã«ØÆ»¯ÖÐÔÂèëÄþ ##########
+block MetamoCount == 0 && BBimage >= 100425 && BBimage <= 100805 
+	#Ø¤Ø¦Ð×–f·´ØçŽ±åÉ§ÔÈ»¯ÉÄÖÐ»¯éAÑáÆ¥ÔÊ©z
+	EndWindow 10816,OK,CANCEL
+
+	#----- ËüÄÌ¼þÓñËü??¼°èëÄþ -----#
+		Window_OK
+		Warp 0,777,204,205
+
+block MetamoCount == 0 && BBimage >= 105425 && BBimage <= 105805 
+	#Ø¤Ø¦Ð×–f·´ØçŽ±åÉ§ÔÈ»¯ÉÄÖÐ»¯éAÑáÆ¥ÔÊ©z
+	EndWindow 10816,OK,CANCEL
+
+	#----- ËüÄÌ¼þÓñËü??¼°èëÄþ -----#
+		Window_OK
+		Warp 0,777,204,205
+
+block MetamoCount == 0 && BBimage >= 106425 && BBimage <= 106805 
+	#Ø¤Ø¦Ð×–f·´ØçŽ±åÉ§ÔÈ»¯ÉÄÖÐ»¯éAÑáÆ¥ÔÊ©z
+	EndWindow 10816,OK,CANCEL
+
+	#----- ËüÄÌ¼þÓñËü??¼°èëÄþ -----#
+		Window_OK
+		Warp 0,777,204,205
+
+
+########## ŽßÁ¥ØÆ»¯©yñÉÁë¼°Ï³Ã«ØÆ»¯ÖÐÔÂèëÄþ ##########
+block MetamoCount >= 1 && BBimage >= 100000 && BBimage <= 100173 
+	#Òü¡õÎç©yñÉÁë¼°–fÆ¥ÔÊÓÑ¨”³ðÇÐÈÕ¾®ÈÕÉýµ¤Èß©z
+	Window 10815,OK,CANCEL
+	
+	# --- OK¼°èëÄþ --- #
+		Window_OK
+		Warp 0,777,204,205	
+
+block MetamoCount >= 1 && BBimage >= 105000 && BBimage <= 105173 
+	#Òü¡õÎç©yñÉÁë¼°–fÆ¥ÔÊÓÑ¨”³ðÇÐÈÕ¾®ÈÕÉýµ¤Èß©z
+	Window 10815,OK,CANCEL
+	
+	# --- OK¼°èëÄþ --- #
+		Window_OK
+		Warp 0,777,204,205
+
+block MetamoCount >= 1 && BBimage >= 106000 && BBimage <= 106173 
+	#Òü¡õÎç©yñÉÁë¼°–fÆ¥ÔÊÓÑ¨”³ðÇÐÈÕ¾®ÈÕÉýµ¤Èß©z
+	Window 10815,OK,CANCEL
+	
+	# --- OK¼°èëÄþ --- #
+		Window_OK
+		Warp 0,777,204,205
+
+########## ŽßÁ¥ØÆ»¯©y»ÔÁë¼°Ï³Ã«ØÆ»¯ÖÐÔÂèëÄþ##########
+block MetamoCount >= 1 && BBimage >= 100252 && BBimage <= 100423 
+	#³ð³ð·´ñÉÁëØÆ¾®É§Ä¾ÒýÁùÊÏ·½©z
+	EndWindow 10818
+
+block MetamoCount >= 1 && BBimage >= 105252 && BBimage <= 105423 
+	#³ð³ð·´ñÉÁëØÆ¾®É§Ä¾ÒýÁùÊÏ·½©z
+	EndWindow 10818
+
+block MetamoCount >= 1 && BBimage >= 106252 && BBimage <= 106423 
+	#³ð³ð·´ñÉÁëØÆ¾®É§Ä¾ÒýÁùÊÏ·½©z
+	EndWindow 10818
+
+
+########## ŽßÁ¥ØÆ»¯©yÊ¸ÓÀÐþ¼°Ï³Ã«ØÆ»¯ÖÐÔÂèëÄþ ##########
+block MetamoCount >= 1 && BBimage >= 101000 && BBimage <= 101935 
+	#Ê¸ÓÀÐþ¼°ƒ}ÇÐ‘@ÐÄ·´àµ÷±Æ¥ÔÊ¡¯¡¯¡¯©zÔÈ»¯©yØ¤Ä¾¨”ÆëÖÐÇ±·´Éý³ð¾®ØÆÈÕ¨”
+	EndWindow 10817
+
+block MetamoCount >= 1 && BBimage >= 107000 && BBimage <= 107935 
+	#Ê¸ÓÀÐþ¼°ƒ}ÇÐ‘@ÐÄ·´àµ÷±Æ¥ÔÊ¡¯¡¯¡¯©zÔÈ»¯©yØ¤Ä¾¨”ÆëÖÐÇ±·´Éý³ð¾®ØÆÈÕ¨”
+	EndWindow 10817
+
+
+########## ŽßÁ¥ØÆ»¯©y¶°†A·®¼°Ï³Ã«ØÆ»¯ÖÐÔÂèëÄþ ##########
+block MetamoCount >= 1 && BBimage >= 100425 && BBimage <= 100805 
+	#Ø¤Ø¦Ð×–f·´ØçŽ±åÉ§ÔÈ»¯ÉÄÖÐ»¯éAÑáÆ¥ÔÊ©z
+	EndWindow 10816,OK,CANCEL
+
+	#----- ËüÄÌ¼þÓñËü??¼°èëÄþ -----#
+		Window_OK
+		Warp 0,777,204,205
+
+block MetamoCount >= 1 && BBimage >= 105425 && BBimage <= 105805 
+	#Ø¤Ø¦Ð×–f·´ØçŽ±åÉ§ÔÈ»¯ÉÄÖÐ»¯éAÑáÆ¥ÔÊ©z
+	EndWindow 10816,OK,CANCEL
+
+	#----- ËüÄÌ¼þÓñËü??¼°èëÄþ -----#
+		Window_OK
+		Warp 0,777,204,205
+
+block MetamoCount >= 1 && BBimage >= 106425 && BBimage <= 106805 
+	#Ø¤Ø¦Ð×–f·´ØçŽ±åÉ§ÔÈ»¯ÉÄÖÐ»¯éAÑáÆ¥ÔÊ©z
+	EndWindow 10816,OK,CANCEL
+
+	#----- ËüÄÌ¼þÓñËü??¼°èëÄþ -----#
+		Window_OK
+		Warp 0,777,204,205
+

@@ -1,0 +1,16 @@
+#########抓小强屋 (1050919
+
+######有十八级勋章，生成满一周,有幻惑的章鱼丸
+block Item 45483 >= 1 && ItemCreateTime 45483 >= 10080 && Item 45747 >= 1
+	 ##1051786	\n\n\n  要把诱饵放入吗？
+	 Window 1051786,YES,NO
+	 Window_YES Item 45483 >= 1 && ItemCreateTime 45483 >= 10080 && Item 45747 >= 1
+		 KillItem 45747
+		 Encount 3|0,30112,11,4||0|||||0|103053|||||||||
+	 Window_NO 
+	 EndWindow 1051787
+	 ##1051787	\n\n\n  有股不详的预感，还是先不要放进去吧。
+
+block
+	 EndWindow 1051788
+	 ##1051788	\n\n\n  这装置是强狩人为了抓小强而设置的。

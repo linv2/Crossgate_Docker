@@ -1,0 +1,19 @@
+#茧樱弁巨旦玄“濩抸旦正□玄
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block strcmpchat == 206723
+	playse 131,1,1
+	EndWindow 206554,OK
+
+block 
+
+	Window 206377,OK
+	Window_OK
+	changepal 15,150
+	Window 206378,OK
+	Window_OK
+	leavegroup
+	Warp 0,33278,11,13
+

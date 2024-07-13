@@ -1,0 +1,19 @@
+#泛旦玄奶矛件玄﹋平亘旦泛弝﹌﹛??巟鼹﹛凌001
+#
+#﹛﹛﹛巨田件旦及摒
+
+###﹛狪仄井仃日木凶午五
+block
+	Window 3200758,YES,NO
+		#\n\n﹛邠杽筏ゴ卞﹜切斤匀午仄凶必□丞毛\n﹛仄化中井卅中井〝
+		Window_YES
+			Window 3200759,NEXT
+		#\n\n﹛伙□伙反戚及午云曰分﹝\n﹛仇及翘及升仇井卞台及矢永玄互ㄡ⑵中月﹝\n﹛域杅井日杽锁午卅月剪寞毛妏五﹜\n﹛公木毛荸中化仁木﹝
+			EndWindow 3200760
+		#\n\n﹛蚕尹反﹜啦怗及丐月≦夫日互卅≧及蜕邯分﹝\n﹛公木毛手丹域杅及矢永玄卞项尹化仁木﹝\n﹛恳荸卅日﹜切斤匀午仄凶操圴毛褡歼仄方丹﹝\n﹛匹反﹜痲⑷毛笔月﹝
+
+		Window_NO
+			EndWindow 3200761
+		#\n\n﹛孔丹氏﹜酸ゴ分卅﹝\n﹛匹手引丐﹜蹒箕毛啼仄氏匹仁木方﹝
+
+

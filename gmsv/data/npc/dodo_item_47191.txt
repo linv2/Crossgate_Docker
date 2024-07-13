@@ -1,0 +1,1616 @@
+###初心者之钥	dodo_item_47191.txt
+###能力说明：根据职业，根据等级给予所适合之武器。
+
+###################■等级超过三十
+block Level > 30
+	 ##1053915	\n\n\n\n\n@c非常抱歉，你已经超过使用初心者之钥的等级啰。	1																																																																															
+	 EndWindow 1053915
+
+###################■职业：游民
+block Job == 1
+	 ##1053908	\n\n\n\n\n@c没有职业是不能使用初心者之钥生成装备的喔！	1																																																																																																			
+	 EndWindow 1053908
+	 
+###################■职业：剑士
+block Job >= 11 && Job <= 17
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace < 6
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、头盔、铠甲、靴、盾牌(等级一)
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47142
+	 	 	 GiveLeak1Item 47148
+	 	 	 GiveLeak1Item 47157
+	 	 	 GiveLeak1Item 47163
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、头盔、铠甲、靴、盾牌(等级二)
+	 	 	 GiveLeak1Item 47122
+	 	 	 GiveLeak1Item 47143
+	 	 	 GiveLeak1Item 47149
+	 	 	 GiveLeak1Item 47158
+	 	 	 GiveLeak1Item 47164
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、头盔、铠甲、靴、盾牌(等级三)
+	 	 	 GiveLeak1Item 47123
+	 	 	 GiveLeak1Item 47144
+	 	 	 GiveLeak1Item 47150
+	 	 	 GiveLeak1Item 47159
+	 	 	 GiveLeak1Item 47165
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、头盔、铠甲、靴、盾牌(等级一)
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47142
+	 	 	 GiveLeak1Item 47148
+	 	 	 GiveLeak1Item 47157
+	 	 	 GiveLeak1Item 47163
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、头盔、铠甲、靴、盾牌(等级二)
+	 	 	 GiveLeak1Item 47122
+	 	 	 GiveLeak1Item 47143
+	 	 	 GiveLeak1Item 47149
+	 	 	 GiveLeak1Item 47158
+	 	 	 GiveLeak1Item 47164
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、头盔、铠甲、靴、盾牌(等级三)
+	 	 	 GiveLeak1Item 47123
+	 	 	 GiveLeak1Item 47144
+	 	 	 GiveLeak1Item 47150
+	 	 	 GiveLeak1Item 47159
+	 	 	 GiveLeak1Item 47165
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：战斧斗士
+block Job >= 21 && Job <= 27
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace < 6
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予斧、头盔、铠甲、靴、盾牌(等级一)
+	 	 	 GiveLeak1Item 47124
+	 	 	 GiveLeak1Item 47142
+	 	 	 GiveLeak1Item 47148
+	 	 	 GiveLeak1Item 47157
+	 	 	 GiveLeak1Item 47163
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予斧、头盔、铠甲、靴、盾牌(等级二)
+	 	 	 GiveLeak1Item 47125
+	 	 	 GiveLeak1Item 47143
+	 	 	 GiveLeak1Item 47149
+	 	 	 GiveLeak1Item 47158
+	 	 	 GiveLeak1Item 47164
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予斧、头盔、铠甲、靴、盾牌(等级三)
+	 	 	 GiveLeak1Item 47126
+	 	 	 GiveLeak1Item 47144
+	 	 	 GiveLeak1Item 47150
+	 	 	 GiveLeak1Item 47159
+	 	 	 GiveLeak1Item 47165
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予斧、头盔、铠甲、靴、盾牌(等级一)
+	 	 	 GiveLeak1Item 47124
+	 	 	 GiveLeak1Item 47142
+	 	 	 GiveLeak1Item 47148
+	 	 	 GiveLeak1Item 47157
+	 	 	 GiveLeak1Item 47163
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予斧、头盔、铠甲、靴、盾牌(等级二)
+	 	 	 GiveLeak1Item 47125
+	 	 	 GiveLeak1Item 47143
+	 	 	 GiveLeak1Item 47149
+	 	 	 GiveLeak1Item 47158
+	 	 	 GiveLeak1Item 47164
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予斧、头盔、铠甲、靴、盾牌(等级三)
+	 	 	 GiveLeak1Item 47126
+	 	 	 GiveLeak1Item 47144
+	 	 	 GiveLeak1Item 47150
+	 	 	 GiveLeak1Item 47159
+	 	 	 GiveLeak1Item 47165
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910			 
+			 
+###################■职业：骑士
+block Job >= 31 && Job <= 37
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 4
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予枪、头盔、铠甲、靴、盾牌(等级一)
+	 	 	 GiveLeak1Item 47127
+	 	 	 GiveLeak1Item 47142
+	 	 	 GiveLeak1Item 47148
+	 	 	 GiveLeak1Item 47157
+	 	 	 GiveLeak1Item 47163
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予枪、头盔、铠甲、靴、盾牌(等级二)
+	 	 	 GiveLeak1Item 47128
+	 	 	 GiveLeak1Item 47143
+	 	 	 GiveLeak1Item 47149
+	 	 	 GiveLeak1Item 47158
+	 	 	 GiveLeak1Item 47164
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予枪、头盔、铠甲、靴、盾牌(等级三)
+	 	 	 GiveLeak1Item 47129
+	 	 	 GiveLeak1Item 47144
+	 	 	 GiveLeak1Item 47150
+	 	 	 GiveLeak1Item 47159
+	 	 	 GiveLeak1Item 47165
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予枪、头盔、铠甲、靴、盾牌(等级一)
+	 	 	 GiveLeak1Item 47127
+	 	 	 GiveLeak1Item 47142
+	 	 	 GiveLeak1Item 47148
+	 	 	 GiveLeak1Item 47157
+	 	 	 GiveLeak1Item 47163
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予枪、头盔、铠甲、靴、盾牌(等级二)
+	 	 	 GiveLeak1Item 47128
+	 	 	 GiveLeak1Item 47143
+	 	 	 GiveLeak1Item 47149
+	 	 	 GiveLeak1Item 47158
+	 	 	 GiveLeak1Item 47164
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予枪、头盔、铠甲、靴、盾牌(等级三)
+	 	 	 GiveLeak1Item 47129
+	 	 	 GiveLeak1Item 47144
+	 	 	 GiveLeak1Item 47150
+	 	 	 GiveLeak1Item 47159
+	 	 	 GiveLeak1Item 47165
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：弓箭手
+block Job >= 41 && Job <= 47
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予弓、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47130
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予弓、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47131
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予弓、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47132
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予弓、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47130
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予弓、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47131
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予弓、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47132
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：士兵
+block Job >= 51 && Job <= 57
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 8
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予弓、帽子、衣服、鞋、剑、头盔、铠甲、靴、盾牌(等级一)
+	 	 	 GiveLeak1Item 47130
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47142
+	 	 	 GiveLeak1Item 47148
+	 	 	 GiveLeak1Item 47157
+	 	 	 GiveLeak1Item 47163
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予小刀、帽子、衣服、鞋、斧、头盔、铠甲、靴、盾牌(等级二)
+	 	 	 GiveLeak1Item 47137
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 GiveLeak1Item 47125
+	 	 	 GiveLeak1Item 47143
+	 	 	 GiveLeak1Item 47149
+	 	 	 GiveLeak1Item 47158
+	 	 	 GiveLeak1Item 47164
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予标、帽子、衣服、鞋、枪、头盔、铠甲、靴、盾牌(等级三)
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 GiveLeak1Item 47129
+	 	 	 GiveLeak1Item 47144
+	 	 	 GiveLeak1Item 47150
+	 	 	 GiveLeak1Item 47159
+	 	 	 GiveLeak1Item 47165
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予弓、帽子、衣服、鞋、剑、头盔、铠甲、靴、盾牌(等级一)
+	 	 	 GiveLeak1Item 47130
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47142
+	 	 	 GiveLeak1Item 47148
+	 	 	 GiveLeak1Item 47157
+	 	 	 GiveLeak1Item 47163
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予小刀、帽子、衣服、鞋、斧、头盔、铠甲、靴、盾牌(等级二)
+	 	 	 GiveLeak1Item 47137
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 GiveLeak1Item 47125
+	 	 	 GiveLeak1Item 47143
+	 	 	 GiveLeak1Item 47149
+	 	 	 GiveLeak1Item 47158
+	 	 	 GiveLeak1Item 47164
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予标、帽子、衣服、鞋、枪、头盔、铠甲、靴、盾牌(等级三)
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 GiveLeak1Item 47129
+	 	 	 GiveLeak1Item 47144
+	 	 	 GiveLeak1Item 47150
+	 	 	 GiveLeak1Item 47159
+	 	 	 GiveLeak1Item 47165
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910	
+			 
+###################■职业：传教士
+block Job >= 61 && Job <= 67
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47139
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47140
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47141
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47139
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47140
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47141
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+
+###################■职业：魔术师
+block Job >= 71 && Job <= 77
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47139
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47140
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47141
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47139
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47140
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47141
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 			 
+###################■职业：咒术师
+block Job >= 81 && Job <= 87
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47139
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47140
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47141
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47139
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47140
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47141
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：封印师
+block Job >= 91 && Job <= 97
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 6
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、弓、帽子、衣服、鞋、剑、盾牌(等级一)
+	 	 	 GiveLeak1Item 47139
+	 	 	 GiveLeak1Item 47130
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47163
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、小刀、帽子、衣服、鞋、斧、盾牌(等级二)
+	 	 	 GiveLeak1Item 47140
+	 	 	 GiveLeak1Item 47137
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 GiveLeak1Item 47125
+	 	 	 GiveLeak1Item 47164
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、标、帽子、衣服、鞋、枪、盾牌(等级三)
+	 	 	 GiveLeak1Item 47141
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 GiveLeak1Item 47129
+	 	 	 GiveLeak1Item 47165
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、弓、帽子、衣服、鞋、剑、盾牌(等级一)
+	 	 	 GiveLeak1Item 47139
+	 	 	 GiveLeak1Item 47130
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47163
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、小刀、帽子、衣服、鞋、斧、盾牌(等级二)
+	 	 	 GiveLeak1Item 47140
+	 	 	 GiveLeak1Item 47137
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 GiveLeak1Item 47125
+	 	 	 GiveLeak1Item 47164
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、标、帽子、衣服、鞋、枪、盾牌(等级三)
+	 	 	 GiveLeak1Item 47141
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 GiveLeak1Item 47129
+	 	 	 GiveLeak1Item 47165
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910	
+			 
+###################■职业：饲养师
+block Job >= 101 && Job <= 107
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47133
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47134
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47133
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47134
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：驯兽师
+block Job >= 111 && Job <= 117
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47136
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47137
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47138
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47136
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47137
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47138
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910			 	
+			 
+###################■职业：盗贼
+block Job >= 121 && Job <= 127
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47136
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47137
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47138
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47136
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47137
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47138
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：巫师
+block Job >= 131 && Job <= 137
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47139
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47140
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47141
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47139
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47140
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予杖、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47141
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：格斗士
+block Job >= 141 && Job <= 147
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：忍者
+block Job >= 151 && Job <= 157
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、斧头、回力标、小刀(等级一)
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47124
+	 	 	 GiveLeak1Item 47133
+	 	 	 GiveLeak1Item 47136
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、斧头、回力标、小刀(等级二)
+	 	 	 GiveLeak1Item 47122
+	 	 	 GiveLeak1Item 47125
+	 	 	 GiveLeak1Item 47134
+	 	 	 GiveLeak1Item 47137
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、斧头、回力标、小刀(等级三)
+	 	 	 GiveLeak1Item 47123
+	 	 	 GiveLeak1Item 47126
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47138
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、斧头、回力标、小刀(等级一)
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47124
+	 	 	 GiveLeak1Item 47133
+	 	 	 GiveLeak1Item 47136
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、斧头、回力标、小刀(等级二)
+	 	 	 GiveLeak1Item 47122
+	 	 	 GiveLeak1Item 47125
+	 	 	 GiveLeak1Item 47134
+	 	 	 GiveLeak1Item 47137
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、斧头、回力标、小刀(等级三)
+	 	 	 GiveLeak1Item 47123
+	 	 	 GiveLeak1Item 47126
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47138
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+
+###################■职业：舞者
+block Job >= 161 && Job <= 167
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47133
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47134
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47133
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47134
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+
+###################■职业：武防制造系、药剂师、厨师、鉴定士、侦探、仙人
+block Job >= 201 && Job <= 427
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47122
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47123
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47122
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47123
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：护士
+block Job >= 431 && Job <= 437
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47133
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47134
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47133
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47134
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予回力标、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47135
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：医师
+block Job >= 441 && Job <= 447
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47136
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47137
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47138
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47136
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47137
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予小刀、帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47138
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+###################■职业：樵夫、猎人、矿工
+block Job >= 451 && Job <= 477
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47122
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47123
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级一)
+	 	 	 GiveLeak1Item 47121
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级二)
+	 	 	 GiveLeak1Item 47122
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予剑、帽子、袍、鞋(等级三)
+	 	 	 GiveLeak1Item 47123
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+
+###################■职业：纺织工
+block Job >= 1011 && Job <= 1017
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace < 6
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予斧、头盔、袍、靴(等级一)
+	 	 	 GiveLeak1Item 47124
+	 	 	 GiveLeak1Item 47142
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47157
+	 	 	 
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予斧、头盔、袍、靴(等级二)
+	 	 	 GiveLeak1Item 47125
+	 	 	 GiveLeak1Item 47143
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47158
+	 	 	 
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予斧、头盔、铠甲、靴(等级三)
+	 	 	 GiveLeak1Item 47126
+	 	 	 GiveLeak1Item 47144
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47159
+	 	 	 
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予斧、头盔、袍、靴(等级一)
+	 	 	 GiveLeak1Item 47124
+	 	 	 GiveLeak1Item 47142
+	 	 	 GiveLeak1Item 47154
+	 	 	 GiveLeak1Item 47157
+	 	 	 
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予斧、头盔、袍、靴(等级二)
+	 	 	 GiveLeak1Item 47125
+	 	 	 GiveLeak1Item 47143
+	 	 	 GiveLeak1Item 47155
+	 	 	 GiveLeak1Item 47158
+	 	 	 
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予斧、头盔、袍、靴(等级三)
+	 	 	 GiveLeak1Item 47126
+	 	 	 GiveLeak1Item 47144
+	 	 	 GiveLeak1Item 47156
+	 	 	 GiveLeak1Item 47159
+	 	 	 
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+
+###################■职业：爆弹师
+block Job >= 1001 && Job <= 1007
+	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
+	 Window 1053909,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace <= 3
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level <= 9
+	 	 	 KillItem 47191
+	 	 	 ###################■给予帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 10 && Level <= 19
+	 	 	 KillItem 47191
+	 	 	 ###################■给予帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && ItemDur 47191 == 1 && Level >= 20 && Level <= 29
+	 	 	 KillItem 47191
+	 	 	 ###################■给予帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level <= 9
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予帽子、衣服、鞋(等级一)
+	 	 	 GiveLeak1Item 47145
+	 	 	 GiveLeak1Item 47151
+	 	 	 GiveLeak1Item 47160
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 10 && Level <= 19
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予帽子、衣服、鞋(等级二)
+	 	 	 GiveLeak1Item 47146
+	 	 	 GiveLeak1Item 47152
+	 	 	 GiveLeak1Item 47161
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+	 	 	 
+	 	 Window_YES Item 47191 >=1 && Level >= 20 && Level <= 29
+	 	 	 SetDur 47191,-1
+	 	 	 ###################■给予帽子、衣服、鞋(等级三)
+	 	 	 GiveLeak1Item 47147
+	 	 	 GiveLeak1Item 47153
+	 	 	 GiveLeak1Item 47162
+	 	 	 ##1053910	\n\n\n\n\n@c请小心使用生成出来的装备。	1
+			 EndWindow 1053910
+			 
+block 
+	 ##1053908	\n\n\n\n\n@c没有职业是不能使用初心者之钥生成装备的喔！	1																																																																																																			
+	 EndWindow 1053908
+				 			 			 		 			 			 		 				 			 		 			 			 			 

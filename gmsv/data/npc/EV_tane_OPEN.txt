@@ -1,0 +1,53 @@
+#
+#takefushi
+#
+###﹛2002/12/25 00:00:00动蟆卅日﹛###
+#block CheckRealTime 2002/12/25,00:00:00 == 0
+#\n\n\n\n@c﹛引分弁伉旦穴旦奶皮毛聊亢化中引六氏﹝
+#	EndWindow "\n\n﹛晓菟缜穴旦正□及母立□匹允﹝",OK
+##############  ##############
+
+#block CheckRealTime 2003/12/21,00:00:00 == 1
+block CheckRealTime 2003/12/12,15:30:00 == 1
+
+	EndWindow "\n\n﹛仍户氏卅今中﹜\n﹛手丹云仄引中卅及﹝"
+
+
+block Item 607650 <= 0
+
+	Window "\n\n﹛友之﹜襞匀化月〝\n﹛云朴及璎卞﹜\n﹛庍卅必□玄手升五互蜇木凶心凶中方﹝",next
+
+	Window "\n\n﹛匹﹜白夫立旦及蹈阂及呬及台午仄化反\n﹛奶立手卅仁筏ゴ圴毛ミ匀化心月仇午卞﹝",next
+
+	Window "\n\n﹛奶立手卅今仆卅筏ゴ圴﹜邰月〝",yes,no
+
+	window_no
+
+	EndWindow "\n\n﹛奶立手卅sage卅\n﹛筏ゴ圴分手氏友＿＿"
+
+	window_yes Item 607650 >= 1
+
+	EndWindow "\n\n﹛中仁勾手俓仄互月鬼中阂反﹜龉狪毛＿＿云匀午″＿＿″″"
+
+	window_yes Itemspace <= 0
+
+	EndWindow "\n\n﹛儅切坁﹜中匀天中元扎氏﹝"
+
+
+	window_yes Itemspace >= 1
+
+	Window "\n\n﹛反中﹜奶立手卅今仆卅筏ゴ圴﹝",next
+
+	Window "\n\n﹛凶分仄﹜蜗き畸き蜗域ざ动嫦元扎卅五扎\n﹛钒仃引六氏﹝\n﹛丐氏分允凶氏〝",ok
+
+	window_ok
+
+	GiveItem 607650,1
+
+
+
+
+block Item 607650 >= 1
+
+	EndWindow "\n\n﹛中仁勾手俓仄互月鬼中阂反﹜﹜龉狪毛＿＿云匀午″＿＿″″"
+

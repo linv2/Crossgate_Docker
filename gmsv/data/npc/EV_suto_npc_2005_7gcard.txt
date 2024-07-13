@@ -1,0 +1,143 @@
+
+block StrCmpChat == 3007208
+
+*case01*
+	Window "\n\n﹛反中﹜皮□汁及市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝\n﹛冂霾及旦矢扑乓伙市□玉手欐允友﹝",Yes,No
+	
+		Window_No
+		
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+			
+		Window_Yes ItemSpace <= 1
+		
+			EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+			
+		Window_Yes Gold <= 49
+		
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+			
+		Window_Yes
+		
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+		
+		
+				Window_OK ItemSpace <= 1
+				
+				EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+		
+			
+				Window_OK
+				
+					AddGold -50
+					GiveItem 621012,1
+					GiveItem 621011,1
+
+
+
+
+block StrCmpChat==3007209
+
+*case02*
+
+	Window "\n\n﹛反中﹜卅氏井穴永民亦卅市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝\n﹛冂霾及旦矢扑乓伙市□玉手欐允友﹝",Yes,No
+
+		Window_No
+		
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+			
+		Window_Yes ItemSpace <= 1
+		
+			EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+			
+		Window_Yes Gold <= 49
+		
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+			
+		Window_Yes
+		
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+			
+				Window_OK ItemSpace <= 1
+				
+					EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+			
+				Window_OK
+				
+					AddGold -50
+					GiveItem 621013,1
+					GiveItem 621011,1
+
+
+
+block StrCmpChat==3007210
+
+
+*case03*
+	Window "\n\n﹛反中﹜摨昜分井异中氏分井荸日卅中市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝\n﹛冂霾及旦矢扑乓伙市□玉手欐允友﹝",Yes,No
+
+		Window_No
+		
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+			
+		Window_Yes ItemSpace <= 1
+		
+			EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+			
+		Window_Yes Gold <= 49
+		
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+			
+		Window_Yes
+		
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+			
+				
+				Window_OK ItemSpace <= 1
+				
+					EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+			
+				Window_OK
+				
+					AddGold -50
+					GiveItem 621014,1
+					GiveItem 621011,1
+
+
+
+
+
+
+block StrCmpChat==3007211
+ gotoB case01
+
+
+
+
+block StrCmpChat==3007212
+ gotoB case02
+
+
+block StrCmpChat==3007213
+ gotoB case03
+
+
+block
+
+
+	Window "\n\n﹛拨畸反拨芞及筐濡﹝\n﹛缰及扎及绞仁歾﹜\n﹛合中毛蹼六月丐及谛卞﹜\n﹛仍饥诰及市□玉毛霜曰引仄斤″",next
+
+	Window "\n\n﹛渝棉蜃烂及弘伉□犯奴件弘市□玉互\n﹛漆卅日﹜卅氏午域呦ㄤㄟ?″\n﹛母皮伙弁伉永弁允木壬窒荚匹手苇木月方﹝",next
+	
+	Window "\n\n﹛赶潘挀丐月井日﹜驯五卅及毛蓟氏匹﹜\n﹛市□玉?﹞市□玉?﹞市□玉?匀化蜕匀化\n﹛台卞镗妐仄化友″",next
+	
+	Window "\n\n﹛卅氏午﹜漆荚反\n﹛拨芞及市□玉毛域呦云ョ中晓仆中凶分仁午\n﹛旦矢扑乓伙市□玉互勾中化仁月及″",Next
+	
+	Window "\n﹛﹛﹛﹛市□玉?反仇氏卅及﹝\n\n﹛ @g,239505 @",next
+	
+	Window "\n﹛﹛﹛﹛市□玉?反仇氏卅及﹝\n\n﹛ @g,239504 @",next
+	
+	Window "\n﹛﹛﹛﹛市□玉?反仇氏卅及﹝\n\n﹛ @g,239503 @",Next
+	
+	Endwindow "\n﹛﹛﹛﹛旦矢扑乓伙市□玉反仇氏卅及﹝\n\n﹛ @g,239527 @"
+
+

@@ -1,0 +1,13 @@
+block item 41168 >0
+	Window 1111495,yes,no
+	Window_yes item 41168>0
+	killitem 41168,1
+	LeaveGroup
+	warp 0,32195,15,17
+	#warp 0,32181,96,104
+	
+	Window_yes
+	Window_no
+	endblock
+block
+	endwindow 1111500	

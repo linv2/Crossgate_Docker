@@ -1,0 +1,32 @@
+#?????
+
+block EndEvent 117 == 1
+	Window 22804,Next
+	Window 22805,Next
+	Window 22806,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000,OK
+		Window_OK
+			NowEvent 117 = 0
+			EndEvent 117 = 0
+			EndEvent 54 = 1
+			CheckTitle
+			KillItemAll 16419
+			GiveItem 16420,1
+block EndEvent 118 == 1
+	Window 22807,Next
+	Window 22808,Next
+	Window 22809,Next
+	Window 22810,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000,OK
+		Window_OK
+			NowEvent 118 = 0
+			EndEvent 118 = 0
+			EndEvent 62 = 1
+			CheckTitle
+			KillItemAll 16419
+			GiveItem 16420,1
+
+block
+	EndWindow 22811,OK

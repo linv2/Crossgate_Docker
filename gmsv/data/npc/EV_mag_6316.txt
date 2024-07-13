@@ -1,0 +1,12 @@
+#虏邂爵筏迭﹛衙及戋迭﹛末伙平失瑶Ё
+#
+
+##########  ##########
+block
+#\n\n﹛脱互芘中毛熬仃月井〝
+	Window 14567,YES,NO
+	Window_YES
+	Warp 0,3300,20,28
+	Window_NO
+#\n\n﹛创貊及拑中手及反峏切蛔月互方中﹝
+	EndWindow 14568

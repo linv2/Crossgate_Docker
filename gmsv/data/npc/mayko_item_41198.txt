@@ -1,0 +1,63 @@
+#药剂师
+#1111563	先到圣拉鲁卡村(135,219)的医院(37,50)跟罗山人说话拿到给山男的信 
+#1111564	再到山男的家(509,153)跟山男哈葛利特换取梦露草                  
+#1111565	然后到法兰城的贝蒂的家(231,102)找农夫贝蒂换取高级蕃茄          
+#1111566	再回到山男的家(509,153)跟山男哈葛利特换取莫洛草                
+#1111567	最后回到圣拉鲁卡村(135,219)的医院(37,50)跟看护实习生德拉格说话拿到药剂师推荐信                                               
+#1111568	拿着推荐信到圣拉鲁卡村(135,219)的医院(37,50)二楼找药剂师柯尼(12,5)说话选择就职即可
+#1111569	你的等级未满十级，需要帮忙送到山男家门口吗？
+#1111537	你没有职业且等级在10以内，可以到法兰城(195,50)职业介绍所，请就职辅助员送你到圣拉鲁卡或伊尔。
+block item 18132 >0
+	window 1111568,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,2311,12,6
+	 leavegroup 
+	 Window_no
+	 endblock
+
+block item 18163 >0
+	window 1111567,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,2310,8,5
+	 leavegroup 
+	 Window_no
+	 endblock
+
+
+block item 18158 >0
+	window 1111566,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1155,8,3
+	 leavegroup 
+	 Window_no
+	 endblock
+block item 18165 >0
+	Window 1111565,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1156,15,18
+	 leavegroup 
+	 Window_no
+	 endblock
+	
+
+block item 18164 >0
+	window 1111564,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1155,8,3
+	 leavegroup 
+	 Window_no
+	 endblock
+
+block 
+	window 1111563,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,2310,8,5
+	 leavegroup 
+	 Window_no
+	 endblock

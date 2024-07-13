@@ -1,0 +1,45 @@
+block Item 607656 >= 2
+
+				endWindow 3204302
+
+		#\n\n﹛澎饼反域骚内勾钒仃化仁分今中﹝
+
+block ItemSpace < 1
+
+				endWindow 3204303
+
+		#\n\n﹛瞿曰坁毛熬仃潸月\n﹛旦矢□旦互夫午勾箫曰引六氏﹝
+
+block
+
+				globalFlag15 = 0
+				globalFlag16 = 0
+				globalFlag17 = 0
+				globalFlag18 = 0
+				globalFlag19 = 0
+				globalFlag20 = 0
+				globalFlag21 = 0
+				globalFlag22 = 0
+				globalFlag23 = 0
+				globalFlag24 = 0
+
+
+
+
+				Window 3204304,next
+
+		#\n\n﹛蟆峎\n﹛丐凶仄反仇氏卅手及枃丹及赓户化匹\n﹛卅氏井﹜丹引仁蜕尹卅中氏分仃升予℅\n﹛午卞井仁﹜丐曰互午℅﹜\n﹛厘仪卞仄引匀化云仁友﹝\n﹛匀化﹜公木元扎﹜迍仃切扎丹井℅〝
+
+				Window 3204305,ok
+
+		#\n\n﹛午卞井仁﹜丐曰互午﹝允仍中升五升五仄凶℅\n﹛分井日﹜井歹曰卞仇木﹜熬仃潸匀化﹝\n﹛丐氏凶互﹜丐凶仄午芛屯月幻升\n﹛雄中谛分午中中友℅
+
+
+				Window_ok
+
+				killitem 607656,1,(3007163)
+				giveItem 607668,1
+				giveItem 607741,1
+
+
+

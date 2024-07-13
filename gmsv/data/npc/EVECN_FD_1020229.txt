@@ -1,0 +1,8 @@
+##愚人节_传送的石像
+block item 34552 >=1 && item 34553 >=1
+	window 1020492,yes,no
+		window_yes item 34552 >=1 && item 34553 >=1
+			nowEvent 255 = 1
+			LeaveGroup
+			warp 0,32723,47,46
+		window_no

@@ -1,0 +1,11 @@
+###### 装满葱箱 ###### 可释放10组葱(40一叠葱)
+
+##有 装满葱箱 物品栏不足10个
+block Item 47438 >= 1 && ItemSpace < 10
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+##有 装满葱箱 物品栏空位大于10	 
+block Item 47438 >= 1 && ItemSpace >= 10
+	  KillItem 47438,1
+	  GiveLeak1Item (12004%1$400)

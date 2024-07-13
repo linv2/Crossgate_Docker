@@ -1,0 +1,215 @@
+#﹛璋剀祸母件斥亦件﹋蛙笙菱心母件斥亦件“扔皮?﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛诡岖螃及银樊及摒
+
+###﹛厘阰综及云屡仆毛赭儅
+
+block Item_607940 >= 1
+	EndWindow 3202861
+
+		#\n\n﹛仇及云潠〝\n﹛仇木反豢螃潠元扎卅仁化﹜歹凶仄及坁方﹝\n﹛仇氏卅尺氏夭卅赭匹⑸中化月氏分井日﹜\n﹛仇木仁日中及泙丿互卅仁匀切扎友﹝
+
+
+
+###﹛阰综及云屡仆毛赭儅
+
+block Item_607939 >= 1
+	EndWindow 3202862
+
+		#\n\n﹛由弁由弁永＿＿仇及方丹卅云中仄中坁匹＿\n﹛丞扑乓丞扑乓＿＿歹凶仄毛ョ璋允月卅升＿\n﹛打永弁件＿孔孔匀﹜云厄仄手鬼方及丹＿﹝
+
+
+
+###﹛账岊呜历仍仁勾少仄毛呁醒赭儅
+
+block Item_607938 >= 2
+	EndWindow 3202863
+
+		#\n\n﹛云间尹毛馨笛仄化﹜恌中云屡仆卞晶尹凶中〝\n﹛内中少氏凶仁今氏云潠毛儅匀化中月及友﹝\n﹛中仁日窒匹手﹜公氏卅卞反中日卅中歹﹝\n﹛俓毛井五允亢月午﹜田民互癫凶月井日﹝
+
+
+
+###﹛账岊呜历仍仁勾少仄毛ㄠ蜊赭儅﹋じ澎詨ㄠㄟ坌恍坢﹌
+
+block Item_607938 == 1 && ItemCreateTime_607938 < 10
+	EndWindow 3202864
+
+		#\n\n﹛云间尹毛馨笛仄化﹜恌中云屡仆卞晶尹凶中〝\n﹛歹凶仄反帎卞井引歹卅中仃升﹜丹□氏﹜\n﹛公及云潠反﹜引分婉心滞元扎卅中心凶中﹝\n﹛手丹剂仄仄化井日﹜引凶侳化友﹝
+
+
+
+###﹛账岊呜历仍仁勾少仄毛ㄠ蜊赭儅﹋じ澎詨ㄠㄟ坌动晓烦聊﹌
+
+block Item_607938 == 1 && ItemCreateTime_607938 >= 10
+
+	If Item_607936 >= 1
+		Window 3202865,OK
+
+		#\n\n﹛云间尹毛馨笛仄化﹜恌中云屡仆卞晶尹凶中〝\n﹛公﹜公木反虏及账岊呜历仍仁勾少仄永″″\n﹛晶尹切扎丹晶尹切扎丹﹜冂帎厘扔□申旦﹜\n﹛窒午蜗コ卞域蘸及厘阰综及云屡仆″\n﹛仇木匹公及云潠反仇匀切及乒用友﹜孔孔孔＿﹝
+
+			Window_OK Item_607938 >= 2
+				EndWindow 3202866
+
+		#\n\n﹛内中少氏凶仁今氏云潠毛儅匀化中月及友﹝\n﹛中仁日窒匹手﹜公氏卅卞反中日卅中歹﹝\n﹛俓毛井五允亢月午﹜田民互癫凶月井日﹝
+				EndBlock
+
+			Window_OK Item_607938 == 1 && ItemCreateTime_607938 < 10
+				EndWindow 3202867
+
+		#\n\n﹛公及云潠反﹜引分婉心滞元扎卅中心凶中﹝\n﹛手丹剂仄仄化井日﹜引凶侳化友﹝
+				EndBlock
+
+			Window_OK Item_607938 == 1 && ItemCreateTime_607938 >= 10 && Item_607936 >= 1 && ItemSpace >= 1
+				KillItemAll 607938
+				KillItemAll 607936
+				GiveItemEX 607940,1,3202868
+
+		#\n\n﹛丐日﹜绂坁卞坞五互卅中心凶中﹝\n﹛云询中及凶户﹜帮咥仄引仄斤″
+				EndBlock
+
+			Window_OK Item_607938 == 1 && Item_607936 >= 1
+				EndWindow 3202869
+
+		#\n\n﹛丐日﹜绂坁卞坞五互卅中心凶中﹝\n﹛云询中及凶户﹜帮咥仄引仄斤″
+				EndBlock
+
+			Window_OK Item_607938 == 1
+				EndWindow 3202870
+
+		#\n\n﹛诡岖螃迋及云屡仆互﹜苇丐凶日卅中方丹友﹝\n﹛蕙仄中云屡仆反﹜蟆及云屡仆午跟晶方﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3202871
+
+		#\n\n﹛切斤匀午﹜云潠毛升仇尺怅仄凶及″\n﹛今化反婉氏分及友﹜夫升中永″″
+				EndBlock
+
+	else
+		EndWindow 3202872
+
+		#\n\n﹛云屡仆毛恌中及卞赘尹化俓仄中匀化〝\n﹛公木卞反﹜熬仃潸匀凶云屡仆互卅中午母丢方﹝\n﹛醒互宁歹卅中午﹜潜エ卞变日木切扎丹及﹝\n﹛田永弁卞螃迋互勾中化月匀化曼舰曰辣日仄化﹜\n﹛石件玄﹜奶乩卅蛊卅及方﹝
+		EndBlock
+
+	endif
+
+
+
+###﹛Ⅸ及澎综曰药阂毛呁醒赭儅
+
+block Item_607937 >= 2
+	EndWindow 3202873
+
+		#\n\n﹛云间尹毛馨笛仄化﹜恌中云屡仆卞晶尹凶中〝\n﹛丐日丐日﹜云药阂互凶仁今氏﹝\n﹛中仁日窒匹手﹜公氏卅卞反中日卅中歹﹝\n﹛俓毛井五允亢月午﹜田民互癫凶月井日﹝
+
+
+
+###﹛Ⅸ及澎综曰药阂毛ㄠ蜊赭儅﹋じ澎詨ㄠㄟ坌恍坢﹌
+
+block Item_607937 == 1 && ItemCreateTime_607937 < 10
+	EndWindow 3202874
+
+		#\n\n﹛云间尹毛馨笛仄化﹜恌中云屡仆卞晶尹凶中〝\n﹛匹﹜皮汁反〝﹛Ⅸ及澎综曰药阂井﹜中中歹友﹝\n﹛匹手﹜仇木反引分药阂午骒互卅元氏匹卅中歹﹝\n﹛手丹剂仄仄凶日﹜引凶儅匀化五化切斤丹分中﹝
+
+
+
+###﹛Ⅸ及澎综曰药阂毛ㄠ蜊赭儅﹋じ澎詨ㄠㄟ坌动晓烦聊﹌
+
+block Item_607937 == 1 && ItemCreateTime_607937 >= 10
+
+	If Item_607936 >= 1
+		Window 3202875,OK
+
+		#\n\n﹛云间尹毛馨笛仄化﹜恌中云屡仆卞晶尹凶中〝\n﹛引丐﹜鬼丨及卞云中互皿件皿件允月歹永″\n﹛公丹中丹及匀化＿＿厘驯五方﹝\n﹛皮汁反〝﹛Ⅸ及澎综曰药阂﹜中中歹友尹﹝\n﹛元扎丐仇匀切反﹜阰综及云屡仆方﹝
+
+			Window_OK Item_607937 >= 2
+				EndWindow 3202876
+
+		#\n\n﹛丐日丐日﹜云药阂互凶仁今氏﹝\n﹛中仁日窒匹手﹜公氏卅卞反中日卅中歹﹝\n﹛俓毛井五允亢月午﹜田民互癫凶月井日﹝
+				EndBlock
+
+			Window_OK Item_607937 == 1 && ItemCreateTime_607937 < 10
+				EndWindow 3202877
+
+		#\n\n﹛仇木反引分药阂午骒互卅元氏匹卅中歹﹝\n﹛手丹剂仄仄凶日﹜引凶儅匀化五化切斤丹分中﹝
+				EndBlock
+
+			Window_OK Item_607937 == 1 && ItemCreateTime_607937 >= 10 && Item_607936 >= 1 && ItemSpace >= 1
+				KillItemAll 607937
+				KillItemAll 607936
+				GiveItemEX 607939,1,3202878
+
+		#\n\n﹛丐日﹜绂坁卞坞五互卅中心凶中﹝\n﹛云询中及凶户﹜帮咥仄引仄斤″
+				EndBlock
+
+			Window_OK Item_607937 >= 1 && Item_607936 >= 1
+				EndWindow 3202879
+
+		#\n\n﹛丐日﹜绂坁卞坞五互卅中心凶中﹝\n﹛云询中及凶户﹜帮咥仄引仄斤″
+				EndBlock
+
+			Window_OK Item_607937 >= 1
+				EndWindow 3202880
+
+		#\n\n﹛诡岖螃迋及云屡仆互﹜苇丐凶日卅中方丹友﹝\n﹛蕙仄中云屡仆反﹜蟆及云屡仆午跟晶方﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3202881
+
+		#\n\n﹛切斤匀午﹜云药阂毛升仇尺怅仄凶及″\n﹛今化反罹屯切扎匀凶及友﹜夫升中永″″
+				EndBlock
+
+	else
+		EndWindow 3202882
+
+		#\n\n﹛云屡仆毛恌中及卞赘尹化俓仄中匀化〝\n﹛公木卞反﹜熬仃潸匀凶云屡仆互卅中午母丢方﹝\n﹛醒互宁歹卅中午﹜潜エ卞变日木切扎丹及﹝\n﹛田永弁卞螃迋互勾中化月匀化曼舰曰辣日仄化﹜\n﹛石件玄﹜奶乩卅蛊卅及方﹝
+		EndBlock
+
+	endif
+
+
+
+###﹛诡岖螃及云屡仆毛赭儅
+
+block Item_607936 >= 1
+	EndWindow 3202883
+
+		#\n\n﹛巨永﹜诡岖螃迋匀化﹜升氏卅螃今引井匀化〝\n﹛今丐﹜歹凶仄手莘匀凶仇午卅中及方﹝\n﹛升丹匹手中中元扎卅中﹜公氏卅仇午﹝\n﹛云屡仆卅氏化﹜邰允月卞梧粟坁卅氏分井日﹝
+
+
+
+###﹛云间尹岊毛赭儅
+
+block Item_607935 >= 1
+	Window 3202884,OK
+
+		#\n\n﹛诡岖螃迋及云屡仆毛手日中卞侳凶及友﹝\n﹛丐日﹜苇井仃卅中涌﹜赓户化〝\n﹛丐丐﹜旦永鳖氏元扎匀凶谛及医咥卅及友﹝\n﹛元扎丐甩奶﹜诡岖螃迋及侳コ及云屡仆﹝\n﹛阰综分午恌中歹友﹝
+
+		Window_OK Item_607935 >= 1 && ItemSpace >= 1
+			KillItemAll 607935
+			GiveItemEX 607936,1,3202885
+
+		#\n\n﹛绂坁互中匀天中心凶中方﹝\n﹛帮咥仄凶杅互中中氏元扎卅中〝
+
+		Window_OK Item_607935 >= 1
+			EndWindow 3202886
+
+		#\n\n﹛绂坁互中匀天中心凶中方﹝\n﹛帮咥仄凶杅互中中氏元扎卅中〝
+
+		Window_OK
+			EndWindow 3202887
+
+		#\n\n﹛丐日﹜云间尹岊互苇丐凶日卅中歹方﹝\n﹛云间尹互卅中午﹜云屡仆反欐六卅中歹﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+
+block
+	EndWindow 3202888
+
+		#\n\n﹛歹凶仄反诡岖螃迋及银樊﹝\n﹛午中匀化手﹜失伙田奶玄卅氏分仃升﹝\n﹛漆反璋剀祸及筐濡分井日﹜云间尹午娄五晶尹卞\n﹛侳コ及璋剀及云屡仆毛欐仄化月及方﹝
+
+
+

@@ -1,0 +1,79 @@
+
+
+block Item 607654 >= 1
+
+			Window 3200000,next
+		#\n\n﹛尹℅云辞玾喃匀切扎匀凶氏匹允井丑〝
+
+			EndWindow 3200001
+		#\n\n﹛仇及云辞玾反﹜迍港嬴五分井日﹜\n﹛迍港匹嬴五仄户卅中午跶日卅中氏匹允方予﹝\n﹛仄仁仄仁﹝
+
+block
+
+			if LocalCount1 == 5
+
+				LocalCount1 = random 3,0
+
+				if LocalCount1 == 1
+
+					LocalCount1 = 5
+
+#					Window 3200002,next
+		#\n\n﹛丹切及扑尼白反\n﹛竣互凝今中氏匹\n﹛允什槽腴引月氏匹允℅
+					Window 3006856,next
+
+
+#					EndWindow 3200003
+		#\n\n﹛漆荚手﹜\n﹛蕙丢瓦亘□互﹜蕙丢瓦亘□互﹜匀化﹝\n﹛帎卞﹜丢瓦亘□互箫曰卅中沭元扎卅中及卞℅
+					EndWindow 3006857
+
+
+
+				else
+
+					LocalCount1 = 5
+
+#					Window 3200004,next
+		#\n\n﹛丹切及扑尼白反\n﹛竣互凝今中氏匹\n﹛饪中午仇欠互驯五卅氏匹允℅
+					Window 3006858,next
+
+
+#					EndWindow 3200005
+		#\n\n﹛凶少氏﹜漆仍欠﹜升匀井及\n﹛凝今卅潠桦匹弁母毛摒中化月氏匹允方℅
+					EndWindow 3006859
+
+
+
+				endif
+
+
+
+			else
+
+					LocalCount1 = 5
+
+#				Window 3200006,next
+		#\n\n﹛丐℅氏﹜\n﹛扑尼白互撩磼仄凶氏匹\n﹛云烟迋卞云恔咥毛云请仄匹五卅中氏匹允℅
+				Window 3006860,next
+
+
+#				EndWindow 3200007
+		#\n\n﹛升丹仄方丹﹜\n﹛卅氏井﹜\n﹛支壬中橇谪卞卅匀化月云烟今氏互中月仄℅
+				EndWindow 3006861
+
+
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

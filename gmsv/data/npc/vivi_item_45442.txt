@@ -1,0 +1,4 @@
+######■ 中秋节-物品item02 柚子######
+block Item 45442 >= 1 
+	 KillItem 45442
+	 GiveLeak1Item (45443%10$1,45444%1$1)

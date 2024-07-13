@@ -1,0 +1,39 @@
+#çÖÆ±»¿•O¼°Îçµ¤ÁùÊÏØ¥Æ½ÅÒ·Â¡°×Ï(Ç²ï±áN©k
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+###########©x©x##############
+block nowevent89 == 1 
+
+	setaction 0
+	Window 206972,YES,NO
+	Window_YES
+	setaction 5
+	Window 206973,OK
+	Window_OK
+	nowevent89 = 0
+	Warp 0,33298,314,346
+	Window_NO
+	EndWindow 206974
+
+###########©x©x##############
+block endevent89 == 1
+
+	setaction 0
+	Window 206975,OK
+	Window_OK
+	setaction 5
+
+###########©x©x##############
+block Item 18990 >= 1
+
+	setaction 0
+	EndWindow 206976,OK
+
+###########©x©x##############
+block
+
+	setaction 0
+	Window 206756,OK
+	Window_OK
+	setaction 6
+

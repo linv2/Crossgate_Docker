@@ -1,0 +1,23 @@
+
+#1111474	我就是守护之花，\n　　　这个水晶坑支撑着整个南方大陆，\n　　　也是灵魂的归依。	1
+#1111475	这些人们只顾私利，不惜破坏这里。	1
+#1111476	\n　　　因为惊动了这山的山神，\n　　　才会造成土石崩落。	1
+#1111477	\n　　　如果有心了解这村子的过去，\n　　　就拿这个给还活着的人吧！	1
+#14509	\n\n你的物品栏已经满了．．．	0
+#32174	37	27 晶月
+
+block itemspace >0 && item 41175 == 0
+	 GiveLeak1Item 41175,1
+	 Window 1111474,next
+	 Window 1111475,next
+	 Window 1111476,next
+	 Window 1111477,ok
+	 leavegroup
+	 window_ok
+	 warp 0,32181,94,66
+
+	
+	 
+	 endblock
+block 	 
+	endblock 14509

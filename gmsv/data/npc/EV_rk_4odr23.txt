@@ -1,0 +1,53 @@
+#???????
+
+block EquipItem == 16415
+	EndWindow 22897,OK
+
+block Item 16415 >= 1
+	Window 22860,Next
+	Window 22861,Next
+	Window 22862,OK
+		Window_OK EquipItem == 16415
+			EndWindow 22897,OK
+		Window_OK BBImage >= 100250 && BBImage <= 100423
+			KillItemAll 16415
+			GiveItem 16417,1
+			LeaveGroup
+			Warp 0,43000,349,592
+		Window_OK BBImage >= 105250 && BBImage <= 105423
+			KillItemAll 16415
+			GiveItem 16417,1
+			LeaveGroup
+			Warp 0,43000,349,592
+		Window_OK BBImage >= 106250 && BBImage <= 106423
+			KillItemAll 16415
+			GiveItem 16417,1
+			LeaveGroup
+			Warp 0,43000,349,592
+		Window_OK BBImage >= 104400 && BBImage <= 104423  #台湾6.0 女性 莉莉丝
+			KillItemAll 16415
+			GiveItem 16417,1
+			LeaveGroup
+			Warp 0,43000,349,592
+		Window_OK BBImage >= 104430 && BBImage <= 104453  #台湾6.0 女性 亚纪公主
+			KillItemAll 16415
+			GiveItem 16417,1
+			LeaveGroup
+			Warp 0,43000,349,592
+		Window_OK BBImage >= 120100 && BBImage <= 120123  #台湾7.0 女性 阿娜蒂雅
+			KillItemAll 16415
+			GiveItem 16417,1
+			LeaveGroup
+			Warp 0,43000,349,592
+		Window_OK
+			KillItemAll 16415
+			GiveItem 16416,1
+			LeaveGroup
+			Warp 0,43000,349,592
+
+block
+	Window 22863,Next
+	Window 22864,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46038,17,14

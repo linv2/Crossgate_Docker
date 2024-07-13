@@ -1,0 +1,23 @@
+################### 魔力情人 鬼月 士兵阿民
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+	 	 	 
+################### 一般
+block 
+	 ##1050065	\n\n你想要临阵脱逃吗？？
+	 Window 1050065,YES,NO 
+	 	 Window_YES
+	 	 	 ##1050066	\n\n你走～～你走～～\n我不要在见到你了～～\n呜呜呜～～
+			 Window 1050066,NEXT 
+			 ##传回鬼城大厅
+			 Warp 0,32600,23,31
+	 	 Window_NO 
+	 	 	 ##1050067	\n\n好家伙！\n你真是全国人民的希望呀！
+			 EndWindow 1050067
+	 		 

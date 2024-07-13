@@ -1,0 +1,28 @@
+##百人道场工作人员9  map：9109	16	10
+
+##奖赏：技能耗魔减半护身符：诸刃、崩击、吸血、洁净、残念奖
+##机率：20:10:30:30:10
+
+
+block
+	 ##1020694	\n\n恭喜你，你已经完成了本道场第九组别的挑战。\n接下来你是否要挑战本道场下一个组别？
+	window 1020694,yes,no
+		window_no
+			 ##1020695	\n\n那么，你可以获得挑战本组成功的奖励。\n\n希望你下次再接再厉，能够有更好的成绩。
+			window 1020695,ok
+				 window_ok itemspace >= 1
+					 GiveLeak1Item (46258%20$1,46259%10$1,46260%30$1,46261%10$1,46240%10$1)
+					 LeaveGroup
+					 warp 0,1000,141,148
+			window_ok
+			endwindow 10000,ok
+		window_yes
+			 ##1020696	\n\n给你本道场专用记忆，使用本记忆挑战下一个组别。\n下一个组别的挑战会更困难，请你做好充分准备后再使用本记忆。
+			window 1020696,ok
+				 window_ok itemspace >= 1
+					 GiveLeak1Item 34634,1
+					 LeaveGroup
+					 warp 0,1000,141,148
+			window_ok
+			endwindow 10000,ok
+

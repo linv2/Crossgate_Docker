@@ -1,0 +1,22 @@
+#	mayko_gm_1102682.txt
+#1111415	\n\n　　　　您要见我家官人呀～\n　　　　也罢～让菟丝死心也好～	1
+#1111420	\n\n　　　　爱一个人就像放纸鸢，\n　　　　你给他自由，他飞的越高。	1
+#1111421	\n\n　　　　你紧拉住他，\n　　　　线断了就回不来～～～	1
+
+block item 41161 >0
+	
+	 window 1111420,next
+	 endwindow 1111421
+block item 41159 >0
+	 LeaveGroup  
+	 window 1111415,ok
+	 Window_ok item 41159>0
+	 killitem 41159,1
+	 warp 0,32184,5,6
+	 endblock
+	 window_ok
+	 endblock
+block 
+	 window 1111420,next
+	 endwindow 1111421
+		 

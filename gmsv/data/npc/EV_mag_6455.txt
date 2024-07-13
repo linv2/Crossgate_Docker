@@ -1,0 +1,22 @@
+#
+#踏碍﹋本伊□生佮朿拑谛凝盒﹌ 
+#
+
+##############  ##############
+block Item 18571 == 1
+#\n\n\n\n@c﹛庄仄中手及反卅中方丹分﹝
+	EndWindow 15246,OK
+
+##############  ##############
+block
+#\n\n﹛踏碍互丐月﹝譬屯引允井〝
+	Window 15171,YES,NO
+	Window_YES ItemSpace != 0 && Item 18571 == 0
+	GiveItem 18571
+#\n\n﹛厶户卅中妐侬匹踏井木凶衙中呿毛澎卞じ木凶﹝
+	EndWindow 15172,OK
+	Window_YES
+#\n\n﹛卅卞井及呿互丐月互儅切濠木卅井匀凶﹝
+	EndWindow 15173,OK
+	Window_NO
+

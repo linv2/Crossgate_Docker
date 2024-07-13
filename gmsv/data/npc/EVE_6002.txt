@@ -1,0 +1,165 @@
+#???“场驯五及禾丞件
+#桦赭“瓜禾件罹恔圴饕
+
+#01/06/18 ijk膜恳﹛它奶件玉它12017毛OK匹蔽弇卞仄凶﹝KillItem卞娄醒毛じ木凶﹝
+#01/09/12 ijk膜恳﹛呁醒及场午痹及跟晶卞覆杀
+
+##########  ##########
+block HaveItem == 18234
+#\n\n﹛公及穸谨痹银丹及〝\n﹛喃娄匹﹛60 Gold﹛分仃升中中〝
+	Window 12010,YES,NO
+	Window_NO
+#\n\n﹛夫支井仄卅日窖匀化仁木方﹝
+	Endwindow 12011
+
+	Window_YES Itemspace <= 2
+#\n\n﹛中中仃升﹜手切五木卅中心凶中分方〝
+	Endwindow 12012
+
+	Window_YES Gold <= 59
+#\n\n﹛云嗯箫曰卅中元扎氏″
+	Endwindow 12013
+
+	Window_YES Gold >= 60 && Item 18234 >= 1
+	AddGold -60
+	KillItem 18234,1
+	GiveLeak1Item 12400,16
+	GiveLeak1Item 12401,10
+	GiveLeak1Item 12402,5
+#\n\n﹛引中升丐曰℅
+	Endwindow 12014
+
+	Window_YES
+
+##########  ##########
+block HaveItem == 18195
+#\n\n﹛云云″公木恦打皮伉件及目伙丢永玄元扎氏″卅丐卅丐﹜公木仁木方丹″公仄凶日仇及≦罹由件罹笺本永玄穸谨痹≧丐仆月方﹝
+	Window 12015,YES,NO
+	Window_NO
+#\n\n﹛切之匀﹜勾引氏友□及″
+	Endwindow 12016
+
+	Window_YES Item 18195 == 1
+	KillItem 18195,1
+	GiveLeak1Item 18234,1
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 2
+	KillItem 18195,2
+	GiveLeak1Item 18234,2
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 3
+	KillItem 18195,3
+	GiveLeak1Item 18234,3
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 4
+	KillItem 18195,4
+	GiveLeak1Item 18234,4
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 5
+	KillItem 18195,5
+	GiveLeak1Item 18234,5
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 6
+	KillItem 18195,6
+	GiveLeak1Item 18234,6
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 7
+	KillItem 18195,7
+	GiveLeak1Item 18234,7
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 8
+	KillItem 18195,8
+	GiveLeak1Item 18234,8
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 9
+	KillItem 18195,9
+	GiveLeak1Item 18234,9
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 10
+	KillItem 18195,10
+	GiveLeak1Item 18234,10
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 11
+	KillItem 18195,11
+	GiveLeak1Item 18234,11
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 12
+	KillItem 18195,12
+	GiveLeak1Item 18234,12
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 13
+	KillItem 18195,13
+	GiveLeak1Item 18234,13
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 14
+	KillItem 18195,14
+	GiveLeak1Item 18234,14
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 15
+	KillItem 18195,15
+	GiveLeak1Item 18234,15
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 16
+	KillItem 18195,16
+	GiveLeak1Item 18234,16
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 17
+	KillItem 18195,17
+	GiveLeak1Item 18234,17
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 18
+	KillItem 18195,18
+	GiveLeak1Item 18234,18
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 19
+	KillItem 18195,19
+	GiveLeak1Item 18234,19
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+	Window_YES Item 18195 == 20
+	KillItem 18195,20
+	GiveLeak1Item 18234,20
+#\n\n﹛丹尺″引元″〝云匀仃□″\n﹛公氏元扎仇木午跟晶卅″
+	Endwindow 12017
+
+block
+##########  ##########
+#\n\n﹛反丐﹜饕?卅氏化支氏卅匀切扎丹方卅丐﹝丐氏凶左奶仿及井歹曰卞打皮伉件场戊伊弁扑亦件澎鳗匀化仁氏卅中〝
+	Endwindow 12020

@@ -1,0 +1,7 @@
+##### 贺年红包-88800 ####
+block Item 45724 >= 1 && Gold > 910000
+	 ##1050188	\n\n\n\n@c身上所持有的现金过多，请先存入银行。	1
+	 EndWindow 1050188
+block Item 45724 >= 1
+	 KillItem 45724
+	 AddGold 88800 

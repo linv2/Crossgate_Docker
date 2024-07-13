@@ -1,0 +1,12 @@
+#
+#kaisuukenn
+#
+
+
+block
+#	Endwindow "\n\n  @g,239530 @",ok
+	 Window 1054580,NEXT
+	 Window "\n\n  @g,239530 @",NEXT
+	 EndWindow  1054581
+
+

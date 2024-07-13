@@ -1,0 +1,109 @@
+#打皮伉件及邰尽﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛心支仆盒﹋打皮伉件钓赫﹌及摒
+
+###﹛打皮伉件钓赫毛赭儅
+block Item_607909 >= 1
+	EndWindow 3202033
+		#\n\n﹛公及打皮伉件钓赫﹜掸卞中中缙互匹化月友﹝\n﹛综曰杅反⑺元匹手﹜⑺元坁反ㄡ勾午卅中井日﹜\n﹛喃日卅中方丹卞竣毛勾仃化仁木方﹝
+
+
+
+###﹛钓赫动陆及心支仆坁毛赭儅
+block Item_607908 >= 1 || Item_607910 >= 1 || Item_607911 >= 1 || Item_607912 >= 1 || Item_607913 >= 1
+	EndWindow 3202034
+		#\n\n﹛窒分友﹜公及互日仁凶反〝\n﹛爷诸岭及井仃日手普元日木卅中元扎卅中井﹝\n﹛捻尹丐月打皮伉件邰尽及心支仆坁午仄化﹜\n﹛公丹中丹弁术毛儅切窖匀化俓仄仁卅中卅﹝\n﹛心支仆坁反支反曰﹜歹凶仄及打皮伉件钓赫分﹝
+
+
+
+###﹛剂煽及剩毛ㄠ蜊赭儅
+block Item_607925 >= 1
+	Window 3202035,YES,NO
+		#\n\n﹛仇及邰尽及侳邠筏ゴ卞打皮伉件爷诸及伤谯﹜\n﹛打皮伉件钓赫反中井互井友〝\n﹛公及剂煽及剩ㄠ蜊午跟晶仄化丐仆方丹﹝
+
+		Window_YES
+			Window 3202036,OK
+		#\n\n﹛丹戈﹜楝反掸卞杴互嫖中﹝\n﹛爷诸毛咥荸允月樊卞请莘尹化﹜台手僧六分方﹝
+
+				Window_OK Item_607925 >= 1 && ItemSpace >= 1
+					KillItem 607925,1
+					GiveItemEX 607909,1,3202037
+		#\n\n﹛公及绂坁匹反钓赫毛欐六卅中﹝帮咥仄凶引尹﹝\n﹛帮咥帮ゝ手﹜失□玄分方﹝
+
+				Window_OK Item_607925 >= 1
+					EndWindow 3202038
+		#\n\n﹛公及绂坁匹反钓赫毛欐六卅中﹝帮咥仄凶引尹﹝\n﹛帮咥帮ゝ手﹜失□玄分方﹝
+
+				Window_OK
+					EndWindow 3202039
+		#\n\n﹛云支﹜剂煽及剩互苇丐凶日卅中卅﹝\n﹛匹反﹜仇及狪反卅井匀凶仇午卞仄方丹﹝
+
+		Window_NO
+			EndWindow 3202040
+		#\n\n﹛中日卅中午蜕丹及井﹝失件申伉□田皮伙永″″
+
+
+
+###﹛岁镁扑□伙玉毛ㄢ蜊赭儅
+block Item_607923 >= 3
+	Window 3202041,YES,NO
+		#\n\n﹛仇及邰尽及侳邠筏ゴ卞打皮伉件爷诸及伤谯﹜\n﹛打皮伉件钓赫反中井互井友〝\n﹛公及岁镁扑□伙玉ㄢ蜊午跟晶仄化丐仆方丹﹝
+
+		Window_YES
+			Window 3202042,OK
+		#\n\n﹛丹戈﹜楝反掸卞杴互嫖中﹝\n﹛爷诸毛咥荸允月樊卞请莘尹化﹜台手僧六分方﹝
+
+				Window_OK Item_607923 >= 3 && ItemSpace >= 1
+					KillItem 607923,3
+					GiveItemEX 607909,1,3202043
+		#\n\n﹛公及绂坁匹反钓赫毛欐六卅中﹝帮咥仄凶引尹﹝\n﹛帮咥帮ゝ手﹜失□玄分方﹝
+
+				Window_OK Item_607923 >= 3
+					EndWindow 3202044
+		#\n\n﹛公及绂坁匹反钓赫毛欐六卅中﹝帮咥仄凶引尹﹝\n﹛帮咥帮ゝ手﹜失□玄分方﹝
+
+				Window_OK
+					EndWindow 3202045
+		#\n\n﹛云支﹜岁镁扑□伙玉互ㄢ蜊手卅中卅﹝\n﹛匹反﹜仇及狪反卅井匀凶仇午卞仄方丹﹝
+
+		Window_NO
+			EndWindow 3202046
+		#\n\n﹛中日卅中午蜕丹及井﹝失件申伉□田皮伙永″″
+
+
+
+###﹛诠赢田术□市毛ㄤ蜊赭儅
+block Item_607924 >= 5
+	Window 3202047,YES,NO
+		#\n\n﹛仇及邰尽及侳邠筏ゴ卞打皮伉件爷诸及伤谯﹜\n﹛打皮伉件钓赫反中井互井友〝\n﹛公及诠赢田术□市ㄤ蜊午跟晶仄化丐仆方丹﹝
+
+		Window_YES
+			Window 3202048,OK
+		#\n\n﹛丹戈﹜楝反掸卞杴互嫖中﹝\n﹛爷诸毛咥荸允月樊卞请莘尹化﹜台手僧六分方﹝
+
+				Window_OK Item_607924 >= 5 && ItemSpace >= 1
+					KillItem 607924,5
+					GiveItemEX 607909,1,3202049
+		#\n\n﹛公及绂坁匹反钓赫毛欐六卅中﹝帮咥仄凶引尹﹝\n﹛帮咥帮ゝ手﹜失□玄分方﹝
+
+				Window_OK Item_607924 >= 5
+					EndWindow 3202050
+		#\n\n﹛公及绂坁匹反钓赫毛欐六卅中﹝帮咥仄凶引尹﹝\n﹛帮咥帮ゝ手﹜失□玄分方﹝
+
+				Window_OK
+					EndWindow 3202051
+		#\n\n﹛云支﹜诠赢田术□市互ㄤ蜊手卅中卅﹝\n﹛匹反﹜仇及狪反卅井匀凶仇午卞仄方丹﹝
+
+		Window_NO
+			EndWindow 3202052
+		#\n\n﹛中日卅中午蜕丹及井﹝失件申伉□田皮伙永″″
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3202053
+		#\n\n﹛台反肮嫖及爷诸﹜打皮伉件钓赫毛健丹樊分﹝\n﹛剂煽及剩卅日ㄠ蜊﹜岁镁扑□伙玉卅日ㄢ蜊﹜\n﹛诠赢田术□市卅日ㄤ蜊匹跟晶卞杀元方丹﹝
+
+
+

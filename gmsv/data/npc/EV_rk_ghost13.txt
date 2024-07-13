@@ -1,0 +1,40 @@
+#£•????
+
+#??????????
+block EndEvent 130 == 1 && NowEvent 130 == 1
+	Window 22379,Next
+	Window 22425,Next
+	Window 22426,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK NowEvent 130 == 0 && EndEvent 130 == 0 && EndEvent 131 == 1
+			EndWindow 4142
+		Window_OK EndEvent 130 == 1 && NowEvent 130 == 1
+			NowEvent 130 = 0
+			EndEvent 130 = 0
+			EndEvent 131 = 1
+			GiveItem 16383
+			CheckTitle
+
+#????????????
+block Item 16382 >= 1
+	EndWindow 22380,OK
+
+#¡q§S??????ü¬???????
+block NowEvent 130 == 1
+	Window 22381,Next
+	Window 22382,Next
+	Window 22383,Next
+	Window 22384,YES,NO
+		Window_NO
+			EndWindow 22386,OK
+		Window_YES
+			Window 22385,OK
+				Window_OK ItemSpace == 0
+					EndWindow 10000
+				Window_OK
+					GiveItem 16382
+
+#
+block
+	EndWindow 22387,OK

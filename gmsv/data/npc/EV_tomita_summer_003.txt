@@ -1,0 +1,26 @@
+#﹛璋剀祸母件斥亦件﹋蛙笙菱心母件斥亦件﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛菌赁申□玄伙及摒
+
+###﹛骚橘穴永皿卞枑允
+
+block
+	Window 3202758,YES,NO
+
+		#\n\n﹛甩失﹜笙手蔽歹匀化仄引匀凶卅丐＿﹝\n﹛云支﹜楝反仇仇井日请化窖曰凶中及井中〝
+
+		Window_YES
+			Window 3202759,OK
+
+		#\n\n﹛元扎丐﹜窖仄化丐仆方丹﹝\n﹛丐丐﹜廿仁手丐及笙卞窖曰凶中卅丐﹝
+
+				Window_OK
+					Warp 0,59510,58,63
+
+		Window_NO
+			EndWindow 3202760
+
+		#\n\n﹛元扎丐﹜窖曰凶仁卅匀凶日中勾匹手云中匹方﹝\n﹛丐丐﹜及升互哟中凶﹝牦敕互昮仄中卅丐﹝
+
+
+

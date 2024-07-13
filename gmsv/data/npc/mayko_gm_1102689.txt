@@ -1,0 +1,22 @@
+#mayko_gm_1102689.txt
+#1111431	我们正在控窑，准备在新窑，可以帮我们吗？	1
+#1111432	嗯～我们需要一些碎石头、卷贝、大黑虾、竹笋，就麻烦你了。	1
+#1111433	还欠些碎石头、卷贝、大黑虾、竹笋。	1
+#1111434	这些都有啦～～谢谢你，我们请你吃章鱼丸。	1
+#碎石头	18209 卷贝 11213 大黑虾	11306 竹笋 12003 大章鱼丸 41163
+#11573	\n\n谢谢你。	8
+
+block item 41163 >0
+	endwindow 11573
+block item 18209 >0 && item 11213>0 && item 11306 >0 && item 12003 >0
+	killitem 18209,1
+	killitem 11213,1 #
+	killitem 11306,1 #
+	killitem 12003,1
+	GiveLeak1Item 41163,1
+	endwindow 1111434
+block item 18209 > 0 || item 11213 > 0 || item 11306 >0 || item 12003 >0	
+	endwindow 1111433
+block 
+	 window 1111431,next
+	 Endwindow 1111432

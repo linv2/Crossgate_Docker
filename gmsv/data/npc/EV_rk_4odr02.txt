@@ -1,0 +1,12 @@
+#§קתן???
+
+block
+	Window 22791,Yes,No
+		Window_No
+			EndWindow 22793,OK
+		Window_Yes
+			Window 22792,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,43100,174,170
+

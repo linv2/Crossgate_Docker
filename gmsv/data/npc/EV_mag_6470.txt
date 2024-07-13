@@ -1,0 +1,26 @@
+#
+#伙申﹋白伉失示夫旦/失奶泛丞欐允﹌
+#
+
+############## 本□皮失奶泛丞儅匀化月 ##############
+block Item 18580 >= 1
+#\n\n﹛引凶芛氏匹友″＿＿仁允仁允＿＿
+	Window 15249,OK,CANCEL
+	Window_OK
+	LeaveGroup
+	Warp 0,20508,45,47
+
+############## 失奶泛丞手化卅中 ##############
+block Item 18580 == 0 && ItemSpace == 0
+#\n\n﹛引凶芛少匀化沶窜仄化″沶窜仄化方丹″″
+	EndWindow 15250,OK
+
+############## 白伉失示夫旦弁伉失仄化月 ##############
+block Item 18580 == 0 && ItemSpace != 0
+#\n\n﹛引凶芛氏匹友″″\n﹛元扎丐仇木沶窜及仄月仄分方匀″\n﹛仁允仁允
+	Window 15251,OK
+	Window_OK Item 18580 == 0 && ItemSpace != 0
+	GiveItem 18580,1
+	LeaveGroup
+	Warp 0,20508,45,47
+

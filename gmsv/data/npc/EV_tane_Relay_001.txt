@@ -1,0 +1,25 @@
+#伉伊□﹛甩伙穴﹛熬仃尥仃及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+###########﹛民仿扑拑仄﹛##############
+
+
+block 
+
+
+
+	Window 3006114,next
+
+#\n\n﹛幼伙玉毛潜疡及扣迋\n﹛孔月匀化仍辅笛仁分今℅中″
+
+	Window 3006115,OK
+
+	Window_ok Item 14639 <= 0
+
+	GiveItem 14639,1
+	
+	Window_ok Item 14639 >= 1
+
+	endWindow 3006991

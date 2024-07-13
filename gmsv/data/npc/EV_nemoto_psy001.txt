@@ -1,0 +1,184 @@
+###################################
+# 扔奶皮仿旦玄旦平伙弁巨  by 漪呿 #
+# ←玉夫扑□←                    #
+###################################
+
+#### ≦赈太凶萼≧﹜≦谛昍牦≧﹜≦歾昉五阕≧﹜≦夫民乓及脩≧﹜≦宁岳及澎娄≧毛赭儅
+block Item 622063 >= 1 && Item 622064 >= 1 && Item 622065 >= 1 && Item 622066 >= 1 && Item 622067 >= 1
+	Window 3219741,YES,NO
+
+		#\n\n﹛引丑″螂户化五化票今匀凶及匹允友″\n﹛卅氏化褪濠卅杅卅及匹仄斤丹″\n﹛今匀公仁﹜公及宁岳及澎娄毛辅哔卞\n﹛泔毛宁岳今六化赡中化手中中井仄日〝
+
+######## YES,扔奶皮仿旦玄湃潸丿樊
+		Window_YES SkillLevel_1011 >= 1
+
+			GoToF case2
+
+######## YES,?覆擂缜仅
+		#Window_YES Job >= 1000 && Job <= 1007
+		Window_YES JobAncestry == 1000
+			GoToF case2
+		Window_YES JobAncestry <= 50
+
+			GoToF case2
+
+		Window_YES JobAncestry == 120
+
+			GoToF case2
+
+		Window_YES JobAncestry >= 140 && JobAncestry <= 150
+
+			GoToF case2
+
+######## YES,覆擂缜仅
+		Window_YES JobAncestry >= 60 && JobAncestry <= 110
+
+			GoToF case1
+
+		Window_YES JobAncestry == 130 || JobAncestry == 160
+
+			GoToF case1
+
+		Window_YES JobAncestry >= 200 && JobAncestry <= 390
+
+			GoToF case1
+
+		Window_YES JobAncestry >= 410 && JobAncestry <= 470
+
+			GoToF case1
+		Window_YES JobAncestry == 1010
+
+			GoToF case1			
+
+######## NO
+		Window_NO
+			EndWindow 3219742
+
+		#\n\n﹛尹之〝\n﹛公木元扎丐﹜域虫窒及凶户卞\n﹛笺恔毛螂户化五凶及匹允井〝\n﹛啦哗及鬼中杅匹允友＿＿﹝
+
+
+
+
+#### ≦赈太凶萼≧毛赭儅
+block Item 622063 >= 1
+	EndWindow 3219743
+
+		#\n\n﹛仇及闭卞﹜公及萼匹钒仃日木月?互\n﹛蝈朿匹ㄣ勾丐曰引允﹝\n﹛酦卞じ匀化中月坁毛允屯化﹜\n﹛仇仇尺儅匀化五化赡仃引允井〝
+
+
+
+
+#### ≦谛昍牦≧﹜≦歾昉五阕≧﹜≦夫民乓及脩≧﹜≦宁岳及澎娄≧毛赭儅﹜≦赈太凶萼≧毛尕赭儅
+block Item 622063 == 0
+
+	if Item 622064 >= 1 || Item 622065 >= 1 || Item622066 >= 1 || Item 622067 >= 1
+		Window 3219744,OK
+
+		#\n\n﹛筑杅﹜萼互拑中及卞\n﹛域虫升仇匹公木毛澎卞じ木凶及匹允井〝\n﹛＿＿甩永″\n﹛引今井﹜云蟆反失奶汁及醮棉〝″\n﹛尹尹中﹜公中勾毛仇匀切尺云方仇仄″″″
+
+			Window_OK Item 622063 >= 1
+				EndWindow 3219745
+
+		#\n\n﹛丐﹜丐日〝\n﹛儅匀化中月元扎丐曰引六氏井﹝\n﹛怅仄凶曰仄化﹜盟匹允歹″\n﹛石石石＿＿﹝
+			Window_OK
+				KillItemAll 622064
+				KillItemAll 622065
+				KillItemAll 622066
+				KillItemAll 622067
+
+	else
+
+#### 晓筏动陆
+		if
+			Window 3219746,NEXT
+
+		#\n\n﹛丐丑″公仇垫仁嫖筑卅筑杅″\n﹛公丹﹜筑杅匹允″\n﹛升丹井﹜仇及\n﹛升木卅?辉毛踞仃化票今中＿＿﹝
+
+			Window 3219747,NEXT
+
+		#\n\n﹛掸反﹜啦哗鬼卅热诸阁卞热中毛井仃日木﹜\n﹛呿侳及?仄中铣午反它仿甩仿卞﹜\n﹛仇及方丹卅蝴中铣卞庍尹日木化仄引匀凶及匹允﹝﹛荸热及泔及笺恔毛螂户卞侳凶及匹允互﹜\n﹛窒六仇氏卅虫匹允井日﹜\n﹛愤苀卞⑹五荚月及手褫仁化＿＿﹝
+
+			Window 3219748,YES,NO
+
+		#\n\n﹛升丹井﹜台及医歹曰卞﹜\n﹛仇及闭卞丐月荸热及泔及笺恔毛\n﹛潸匀化五化仁木引六氏井〝
+
+				Window_YES ItemSpace == 0
+					Endwindow 3219749
+
+		#\n\n﹛欐仄凶中坁互丐月及匹允互﹜\n﹛公木动晓反儅化卅中方丹匹允友﹝
+
+				Window_YES
+					GiveLeak1Item 622063,1
+					EndWindow 3219750
+
+		#\n\n﹛丐曰互午丹仍介中引允″\n﹛泔及笺恔互ㄢ潘挀午﹜\n﹛宁岳及澎娄互ㄠ缁丐曰引允﹝\n﹛蝈朿缭匀凶日引凶仇仇尺五化票今中﹝
+
+				Window_NO
+					EndWindow 3219751
+
+		#\n\n﹛夫升中歹丑丑丑丑丑匀匀匀″″″\n﹛甲玄犯瓜扑永永永″″″\n﹛手丹﹜云蟆卞反俇引卅中井日﹜\n﹛午匀午午仇仇井日蛛卅仁卅匀化云仄引中方″
+
+		endif
+	endif
+Endblock
+
+
+
+*case1*
+
+Window 3219752,NEXT
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛＿＿＿＿示白件永″
+
+Window 3219753,OK
+
+		#\n\n﹛丹＿＿必石永″必石永″\n﹛仄﹜撩ヘ仄化仄引中引仄凶＿＿﹝\n﹛甩永″引今井﹜云蟆反失奶汁及醮棉″〝\n﹛歹介午泔互撩ヘ允月方丹卞酷轾仃凶卅〝″\n﹛尹尹中﹜午匀午午仇仇井日\n﹛蛛卅仁卅匀化云仄引中方″
+
+	Window_OK Item 622063 == 0 || Item 622064 == 0 || Item 622065 == 0 || Item 622066 == 0 || Item 622067 == 0
+
+		EndWindow 3219754
+
+		#\n\n﹛氏〝丐日〝\n﹛撩ヘ仄凶及反笺恔互箫曰卅井匀凶六中匹允友﹝\n﹛允心引六氏互﹜蝈朿螂户化井日\n﹛儅匀化五化票今中引允井〝
+
+	Window_OK
+		KillItemAll 622063
+		KillItemAll 622064
+		KillItemAll 622065
+		KillItemAll 622066
+		KillItemAll 622067
+		LeaveGroup
+		warp 0,59892,66,110
+Endblock
+
+
+
+*case2*
+
+Window 3219755,NEXT
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛＿＿＿＿示白件永″
+
+Window 3219756,OK
+
+		#\n\n﹛丹＿＿必石永″必石永″\n﹛仄﹜撩ヘ仄化仄引中引仄凶＿＿﹝\n﹛氏〝云蟆﹜呺恘互斓中友﹝\n﹛引匀凶仁﹜公木元扎泙卞峏凶卅中及方″\n﹛仇木匹手儅匀化﹜午匀午午云窖曰方″
+
+	Window_OK Item 622063 == 0 || Item 622064 == 0 || Item 622065 == 0 || Item 622066 == 0 || Item 622067 == 0
+
+		EndWindow 3219757
+
+		#\n\n﹛氏〝丐日〝\n﹛撩ヘ仄凶及反笺恔互箫曰卅井匀凶六中匹允友﹝\n﹛允心引六氏互﹜蝈朿螂户化井日\n﹛儅匀化五化票今中引允井〝
+
+	Window_OK
+		KillItemAll 622063
+		KillItemAll 622064
+		KillItemAll 622065
+		KillItemAll 622066
+		KillItemAll 622067
+		LeaveGroup
+		GiveLeak1Item 607707,1
+		warp 0,59893,71,75
+Endblock
+
+
+
+

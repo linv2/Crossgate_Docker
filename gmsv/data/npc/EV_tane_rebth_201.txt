@@ -1,0 +1,362 @@
+#ØøÌï¡õµ©Ä¸¼þ³âÒà¼þ©x¼Ô›™©xÒÁÆËñâ¼°ÚÐ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+###########©xÖÏÊÖØ¦ØÆ©x##############
+
+
+
+
+
+block Item 9342 >= 1
+
+	Window 3006051,yes,no
+
+	Window_yes skilllevel 200 >= 3
+	GiveRecipe 42
+	EndWindow 3006066
+
+	#çÇ½öµ®–®ççÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 201 >= 3
+	GiveRecipe 102
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¼üçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 202 >= 3
+
+	GiveRecipe 162
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®ÝÔçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 203 >= 3
+
+	GiveRecipe 222
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®ÏðçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 204 >= 3
+
+	GiveRecipe 282
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®÷ÇÌîçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 205 >= 3
+
+	GiveRecipe 342
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¹ÏÄÌ°×çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 206 >= 3
+
+	GiveRecipe 402
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®³¡çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 207 >= 3
+
+	GiveRecipe 462
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Ù¦ºÒçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 208 >= 3
+
+	GiveRecipe 522
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¶¥çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 209 >= 3
+
+	GiveRecipe 582
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®šõçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 210 >= 3
+
+	GiveRecipe 642
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®·ò¡õÆ¤çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 211 >= 3
+
+	GiveRecipe 702
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Æ¤¡õÖ­çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 212 >= 3
+
+	GiveRecipe 762
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Ð¨çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 213 >= 3
+
+	GiveRecipe 822
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¼úçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 214 >= 3
+
+	GiveRecipe 882
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Æ©†A¸ó¶¯Ïþ
+	Window_YES skilllevel 215 >= 3
+	GiveRecipe 942
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®ãï¹Ü¸ó¶¯Ïþ
+	Window_YES skilllevel 216 >= 3
+
+	GiveRecipe 1002
+	EndWindow 3006066
+	
+	#Ïþ·¤¶¯Â½¼°çÇ½ö
+	Window_YES
+
+	EndWindow 3006067
+	
+	Window_no
+
+	EndWindow 3006068
+
+
+
+
+
+
+
+
+
+block Item 9341 >= 1
+
+	Window 3006051,yes,no
+
+	Window_yes skilllevel 200 >= 2
+	GiveRecipe 41
+	EndWindow 3006066
+
+	#çÇ½öµ®–®ççÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 201 >= 2
+	GiveRecipe 101
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¼üçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 202 >= 2
+
+	GiveRecipe 161
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®ÝÔçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 203 >= 2
+
+	GiveRecipe 221
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®ÏðçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 204 >= 2
+
+	GiveRecipe 281
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®÷ÇÌîçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 205 >= 2
+
+	GiveRecipe 341
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¹ÏÄÌ°×çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 206 >= 2
+
+	GiveRecipe 401
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®³¡çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 207 >= 2
+
+	GiveRecipe 461
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Ù¦ºÒçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 208 >= 2
+
+	GiveRecipe 521
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¶¥çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 209 >= 2
+
+	GiveRecipe 581
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®šõçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 210 >= 2
+
+	GiveRecipe 641
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®·ò¡õÆ¤çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 211 >= 2
+
+	GiveRecipe 701
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Æ¤¡õÖ­çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 212 >= 2
+
+	GiveRecipe 761
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Ð¨çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 213 >= 2
+
+	GiveRecipe 821
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¼úçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 214 >= 2
+
+	GiveRecipe 881
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Æ©†A¸ó¶¯Ïþ
+	Window_YES skilllevel 215 >= 2
+	GiveRecipe 941
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®ãï¹Ü¸ó¶¯Ïþ
+	Window_YES skilllevel 216 >= 2
+
+	GiveRecipe 1001
+	EndWindow 3006066
+	
+	#Ïþ·¤¶¯Â½¼°çÇ½ö
+	Window_YES
+
+	EndWindow 3006067
+	
+	Window_no
+
+	EndWindow 3006068
+
+
+
+
+
+
+block Item 9340 >= 1
+
+
+	Window 3006051,yes,no
+
+	Window_yes skilllevel 200 >= 1
+	GiveRecipe 40
+	EndWindow 3006066
+
+	#çÇ½öµ®–®ççÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 201 >= 1
+	GiveRecipe 100
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¼üçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 202 >= 1
+
+	GiveRecipe 160
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®ÝÔçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 203 >= 1
+
+	GiveRecipe 220
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®ÏðçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 204 >= 1
+
+	GiveRecipe 280
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®÷ÇÌîçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 205 >= 1
+
+	GiveRecipe 340
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¹ÏÄÌ°×çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 206 >= 1
+
+	GiveRecipe 400
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®³¡çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 207 >= 1
+
+	GiveRecipe 460
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Ù¦ºÒçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 208 >= 1
+
+	GiveRecipe 520
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¶¥çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 209 >= 1
+
+	GiveRecipe 580
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®šõçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 210 >= 1
+
+	GiveRecipe 640
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®·ò¡õÆ¤çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 211 >= 1
+
+	GiveRecipe 700
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Æ¤¡õÖ­çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 212 >= 1
+
+	GiveRecipe 760
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Ð¨çÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 213 >= 1
+
+	GiveRecipe 820
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®¼úçÇÚÐ¶¯Ïþ
+	Window_YES skilllevel 214 >= 1
+
+	GiveRecipe 880
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®Æ©†A¸ó¶¯Ïþ
+	Window_YES skilllevel 215 >= 1
+	GiveRecipe 940
+	EndWindow 3006066
+	
+	#çÇ½öµ®–®ãï¹Ü¸ó¶¯Ïþ
+	Window_YES skilllevel 216 >= 1
+
+	GiveRecipe 1000
+	EndWindow 3006066
+	
+	#Ïþ·¤¶¯Â½¼°çÇ½ö
+	Window_YES
+
+	EndWindow 3006067
+	
+	Window_no
+
+	EndWindow 3006068
+
+
+block
+	EndWindow 3006043
+
+

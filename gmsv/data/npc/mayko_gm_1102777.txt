@@ -1,0 +1,12 @@
+#mayko_gm_1102777.txt
+#1111777	\n\n\n　　　　这山谷听说有飞翔的妖精，\n　　　　不知长什么样子。	1
+#1111778	\n\n\n\n@c你想进入谷中一探究竟吗？	1
+block 
+	window 1111777,next
+	Window 1111778,yes,no
+	Window_yes
+	leavegroup 
+	warp 0,32466,61,33
+	endblock	
+	window_no
+	endblock

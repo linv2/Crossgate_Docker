@@ -1,0 +1,76 @@
+#赢渝丢件泛云玵太NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛毕莱?踏敢及摒
+
+#####﹛2004コ8畸18ざ动嫦
+
+###﹛庰及瑶毛赭儅
+#block CheckRealTime 2004/8/9,20:50:00 == 1 && Item_16426 >= 1
+block CheckRealTime 2004/8/18,00:00:00 == 1 && Item_16426 >= 1
+
+	EndWindow "\n\n﹛厘庍卅仪裕匹仄凶互﹜毕崭及呺恘毛锳螂仄化\n﹛蔽秽今六引仄凶及匹仍兜艘仁分今中﹝\n﹛庰及瑶反﹜厘濠卞银匀化仁分今中友﹝"
+
+
+
+
+###﹛庰及瑶娄晶痹毛赭儅
+#block CheckRealTime 2004/8/9,20:50:00 == 1 && Item_607930 >= 1
+block CheckRealTime 2004/8/18,00:00:00 == 1 && Item_607930 >= 1
+
+	Window "\n\n﹛娄晶痹毛云儅切匹允友﹝\n﹛庰及瑶午跟晶卅今中引允井〝",YES,NO
+
+		Window_YES
+			Window "\n\n﹛匹反﹜庰及瑶毛云熬仃潸曰仁分今中﹝\n﹛筑褐卅手及匹允井日﹜厘濠卞仄化仁分今中友﹝",OK
+
+				Window_OK Item_16426 >= 1
+					EndWindow "\n\n﹛湃卞云儅切卞卅匀化中月方丹匹允友﹝\n﹛萧仄歹仃仍介中引六氏互﹜云ㄠ谛迋卞勾五\n﹛ㄠ蜊午今六化中凶分中化云曰引允﹝\n﹛升丹冗仍弇噩仁分今中﹝"
+
+				Window_OK Item_607930 >= 1 && ItemSpace >= 1
+					KillItemAll 607930
+					GiveItemEX 16426,1,"\n\n﹛云绂坁卞坞五互卅中方丹匹允﹝\n﹛帮咥今木化井日﹜引凶云旋仄仁分今中﹝"
+
+				Window_OK ItemSpace >= 1
+					EndWindow "\n\n﹛娄晶痹毛升丹卅今木凶及匹允井〝\n﹛萧仄歹仃仍介中引六氏互﹜庰及瑶反\n﹛娄晶痹互卅中午云欐仄匹五引六氏﹝"
+
+				Window_OK
+					EndWindow "\n\n﹛云绂坁卞坞五互卅中方丹匹允﹝\n﹛帮咥今木化井日﹜引凶云旋仄仁分今中﹝"
+
+		Window_NO
+			EndWindow "\n\n﹛庰及瑶午及跟晶反﹜ㄧ畸ㄠㄧざ诟蟆ㄟ凛方曰\n﹛ㄨ畸ㄠざ诟詨ㄡ凛引匹垫匀化云曰引允﹝\n﹛庰及瑶毛仍涡侗及桦宁反﹜公木引匹卞\n﹛中日仄化仁分今中友﹝"
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+#block CheckRealTime 2004/8/9,20:50:00 == 1
+block CheckRealTime 2004/8/18,00:00:00 == 1
+
+	EndWindow "\n\n﹛厘庍卅仪裕匹仄凶互﹜毕崭及呺恘毛锳螂仄化\n﹛蔽秽今六引仄凶及匹仍兜艘仁分今中﹝\n﹛仇木卞蘑曰月仇午卅仁﹜仇木井日手方欠仄仁\n﹛云凑中仄引允友﹝"
+
+
+
+
+
+#####﹛2004コ8畸18ざ动蟆
+
+###﹛庰及瑶娄晶痹毛赭儅
+block Item_607930 >= 1
+	EndWindow "\n\n﹛庰及瑶午及跟晶反﹜ㄧ畸ㄠㄧざ诟蟆ㄟ凛方曰\n﹛ㄨ畸ㄠざ诟詨ㄡ凛引匹垫中引允﹝\n﹛升丹冗侉木内卞跟晶卞中日仄化仁分今中友﹝"
+
+
+
+###﹛庰及瑶娄晶痹毛尕赭儅
+block
+	Window "\n\n﹛仇及午仇欠褐友化粟仇匀凶厘仪裕卞覆允月﹜\n﹛崭毕岒票井日及桨筵毛云鳗尹中凶仄引允﹝\n﹛≦歹介歹介唱壑钗井日裟太请仄化云五卅互日﹜\n﹛仇及凶太及方丹卅厘筋昑卅凛坞枞蝇仪裕卞\n﹛摒五慇氏匹仄引匀凶仇午毛艘方曰云玵太允月≧\n﹛午及仇午匹允﹝",NEXT
+	Window "\n\n﹛公仄化﹜崭毕岒票反公及桨筵及仄月仄午仄化﹜\n﹛庰及瑶毛ミ幵允月仇午毛瑁烂中凶仄引仄凶﹝\n﹛云ミ曰允月娄晶痹匹﹜ㄠㄧざ方曰庰及瑶午\n﹛云娄五晶尹中凶仄引允﹝\n﹛公木引匹﹜厘濠卞忡栋仄化中化仁分今中友﹝",OK
+
+		Window_OK Item_607930 >= 1
+			EndWindow "\n\n﹛湃卞云儅切卞卅匀化中月方丹匹允友﹝\n﹛萧仄歹仃仍介中引六氏互﹜云ㄠ谛迋卞勾五\n﹛ㄠ呦午今六化中凶分中化云曰引允﹝\n﹛升丹冗仍弇噩仁分今中﹝"
+
+		Window_OK ItemSpace >= 1
+			GiveItemEX 607930,1,"\n\n﹛云绂坁卞坞五互卅中方丹匹允﹝\n﹛帮咥今木化井日﹜引凶云旋仄仁分今中﹝"
+
+		Window_OK
+			EndWindow "\n\n﹛云绂坁卞坞五互卅中方丹匹允﹝\n﹛帮咥今木化井日﹜引凶云旋仄仁分今中﹝"
+
+
+

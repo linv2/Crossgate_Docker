@@ -1,0 +1,21 @@
+#ÀÕÏÎ·®…í–cåÃ??? ·¸Å«ºëÆİ ´
+#ÓúâÙ±åÍÖğö»¥ÓòÚÛØÆĞ×Æ¤·òÓÀÛÍÃ«ÖÊ†AÔÊÔÂ
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+
+####### ñâºëÁ¢¡õÌïÓÀĞşƒ}ÔÈ»¯ÖĞÔÂ ########
+block petlevel 243 >= 1
+ Window 21163,yes,no
+ Window_yes ItemSpace == 0
+  Endwindow 21189
+ Window_yes
+  Window 21164,OK
+   Window_OK petlevel_243 >= 1
+    killpetL 243
+    giveitem 18633
+   Window_OK
+ Window_no
+  Endwindow 21165
+####### ñâºëÁ¢¡õÌïÓÀĞşƒ}ÔÈ»¯ÖĞØ¦ÖĞ ########
+block
+ Endwindow 21162

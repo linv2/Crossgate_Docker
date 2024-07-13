@@ -1,0 +1,131 @@
+block Item 607663 >= 2
+
+				endWindow "\n\n﹛澎饼反域骚内勾钒仃化仁分今中﹝"
+
+block ItemSpace < 1
+
+				endWindow "\n\n﹛瞿曰坁毛熬仃潸月\n﹛旦矢□旦互夫午勾箫曰引六氏﹝"
+
+block
+
+	if BBImage >= 100000 && BBImage <= 100173
+
+				globalFlag15 = 0
+				globalFlag16 = 0
+				globalFlag17 = 0
+				globalFlag18 = 0
+				globalFlag19 = 0
+				globalFlag20 = 0
+				globalFlag21 = 0
+				globalFlag22 = 0
+				globalFlag23 = 0
+				globalFlag24 = 0
+
+
+#				Window "\n\n﹛移仿皮仿皮﹛失伙田旦﹛裆岭轾",ok
+
+							Window "\n\n﹛ブ滂\n﹛筑迋及ゲ中甩□玄反割井卞熬仃潸匀凶﹝\n﹛仇及台卞别木月午反﹜\n﹛卅井卅井苇赭及丐月支勾分﹝\n﹛台反台卞虱丹手及毛蛐心反六厄﹝\n﹛今丑﹜仇及隙挎毛澎卞潸木﹝\n﹛公仄化﹜き谛匹螃毛手译尹月嫖心毛\n﹛杴隙公丹匹反卅中井﹝\n﹛甲乓□甩永甩甩永甩″",ok
+
+
+				Window_ok
+
+				killitem 607663,1,(3007163)
+				giveItem 607669,1
+				giveItem 18537,1
+
+
+	else
+
+
+
+					if BBImage >= 105000 && BBImage <= 105173
+#裆man
+
+						globalFlag15 = 0
+						globalFlag16 = 0
+						globalFlag17 = 0
+						globalFlag18 = 0
+						globalFlag19 = 0
+						globalFlag20 = 0
+						globalFlag21 = 0
+						globalFlag22 = 0
+						globalFlag23 = 0
+						globalFlag24 = 0
+
+
+#						Window "\n\n﹛移仿皮仿皮﹛失伙田旦﹛裆岭轾仃",ok
+
+							Window "\n\n﹛ブ滂\n﹛筑迋及ゲ中甩□玄反割井卞熬仃潸匀凶﹝\n﹛仇及台卞别木月午反﹜\n﹛卅井卅井苇赭及丐月支勾分﹝\n﹛台反台卞虱丹手及毛蛐心反六厄﹝\n﹛今丑﹜仇及隙挎毛澎卞潸木﹝\n﹛公仄化﹜き谛匹螃毛手译尹月嫖心毛\n﹛杴隙公丹匹反卅中井﹝\n﹛甲乓□甩永甩甩永甩″",ok
+
+
+						Window_ok
+
+
+						killitem 607663,1,(3007163)
+						giveItem 607669,1
+						giveItem 18537,1
+
+
+
+
+					else
+
+						if BBImage >= 106000 && BBImage <= 106173
+#裆man
+
+
+							globalFlag15 = 0
+							globalFlag16 = 0
+							globalFlag17 = 0
+							globalFlag18 = 0
+							globalFlag19 = 0
+							globalFlag20 = 0
+							globalFlag21 = 0
+							globalFlag22 = 0
+							globalFlag23 = 0
+							globalFlag24 = 0
+
+
+#							Window "\n\n﹛移仿皮仿皮﹛失伙田旦﹛裆岭轾仃",ok
+
+							Window "\n\n﹛ブ滂\n﹛筑迋及ゲ中甩□玄反割井卞熬仃潸匀凶﹝\n﹛仇及台卞别木月午反﹜\n﹛卅井卅井苇赭及丐月支勾分﹝\n﹛台反台卞虱丹手及毛蛐心反六厄﹝\n﹛今丑﹜仇及隙挎毛澎卞潸木﹝\n﹛公仄化﹜き谛匹螃毛手译尹月嫖心毛\n﹛杴隙公丹匹反卅中井﹝\n﹛甲乓□甩永甩甩永甩″",ok
+
+
+							Window_ok
+
+
+							killitem 607663,1,(3007163)
+							giveItem 607669,1
+							giveItem 18537,1
+
+
+
+
+						else
+#辉woman
+
+							globalFlag15 = 0
+							globalFlag16 = 0
+							globalFlag17 = 0
+							globalFlag18 = 0
+							globalFlag19 = 0
+							globalFlag20 = 0
+							globalFlag21 = 0
+							globalFlag22 = 0
+							globalFlag23 = 0
+							globalFlag24 = 0
+
+
+							Window "\n\n﹛ブ滂\n﹛筑辉及穻竣毛湖仄仁合丹﹝\n﹛台反筑辉及方丹卅\n﹛穻竣及丐月杅毛谨切歹太化中凶﹝\n﹛今丑﹜仇及隙挎毛澎卞潸木﹝\n﹛仄井仄化﹜公及褥毛脱卞旲仆方﹝\n﹛诮仄化手韶卅卅中愈嫖及枆埘午仄化\n﹛台反筑辉毛雾ク卞云手化卅仄仄方丹﹝\n﹛甲乓□甩永甩甩永甩″",ok
+
+							Window_ok
+
+
+							killitem 607663,1,(3007163)
+							giveItem 607669,1
+							giveItem 18537,1
+
+						endif
+					endif
+
+	endif

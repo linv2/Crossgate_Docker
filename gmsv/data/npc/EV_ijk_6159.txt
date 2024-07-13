@@ -1,0 +1,61 @@
+#热诸阁耦缜	热诸阁		6159	15008 11 0 ( >> 15011 10 19 , ﹋仍螃虫毛儅匀化中凶日﹌15012 10 19)
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## 由□泛奴及桦宁 ##########
+	block Group > 1
+	#\n\n﹛切斤切斤切斤匀午谨化之℅中﹝\n﹛仇匀井日燮反热诸阁白尼件生伙云阁麸及朿盒分冗﹝云阁麸及朿盒反域谛内勾じ月瑁引曰卞卅匀化氏分﹝由□泛奴分匀凶日骚木卅中冗″\n﹛窒分匀凶日﹜漆仇仇匹荸辣允月井〝
+	Window 11827,YES,NO
+
+	Window_YES Group > 1
+	LeaveGroup
+
+	Window_NO
+
+########## 热诸阁及桦宁 ##########
+	block Job >= 80 && Job < 90 && Group == 1
+	#\n\n﹛切斤切斤切斤匀午谨化之℅中﹝仇及燮反热诸阁白尼件生伙云阁麸及朿盒分中匀″云蟆﹜白尼件生伙迋卞云杴骚曰卞侳凶及井〝
+	Window 11828,YES,NO
+
+	Window_YES Job >= 80 && Job < 90 && Group == 1
+	#\n\n﹛孔丹氏﹜云蟆反耨迕匹五公丹分﹝方仄﹜骚匀化中中冗﹝
+	Window 11829,OK,CANCEL
+
+	Window_OK Job >= 80 && Job < 90 && Group == 1
+	Warp 0,15012,10,19
+
+	Window_NO
+	#\n\n﹛白尼件生伙云阁麸反侄仄中氏分﹝挕支井仄卅日镀仁窖曰卅方″
+	EndWindow 11830
+
+########## 热诸阁蹂薯橇毛儅匀化中月桦宁 ##########
+	block Item 18108 >= 1 && Group == 1
+	#\n\n﹛切斤切斤切斤匀午谨化之℅中﹝仇及燮反热诸阁白尼件生伙云阁麸及朿盒分中匀″云蟆﹜白尼件生伙迋卞云杴骚曰卞侳凶及井〝
+	Window 11828,YES,NO
+
+	Window_YES Item 18108 >= 1 && Group == 1
+	#\n\n﹛孔丹氏﹜云蟆反耨迕匹五公丹分﹝方仄﹜骚匀化中中冗﹝
+	Window 11829,OK,CANCEL
+
+	Window_OK Item 18108 >= 1 && Group == 1
+	Warp 0,15012,10,19
+
+	Window_NO
+	#\n\n﹛白尼件生伙云阁麸反侄仄中氏分﹝挕支井仄卅日镀仁窖曰卅方″
+	EndWindow 11830
+
+########## 癫化反引日卅中桦宁 ##########
+	block Group == 1
+	#\n\n﹛切斤切斤切斤匀午谨化之℅中﹝仇及燮反热诸阁白尼件生伙云阁麸及朿盒分中匀″云蟆﹜白尼件生伙迋卞云杴骚曰卞侳凶及井〝
+	Window 11828,YES,NO
+
+	Window_YES Group == 1
+	#\n\n﹛孔丹氏﹜云蟆反耨迕匹五公丹分﹝方仄﹜骚匀化中中冗﹝
+	Window 11829,OK,CANCEL
+
+	Window_OK Group == 1
+	Warp 0,15011,10,19
+
+	Window_NO
+	#\n\n﹛白尼件生伙云阁麸反侄仄中氏分﹝挕支井仄卅日镀仁窖曰卅方″
+	EndWindow 11830

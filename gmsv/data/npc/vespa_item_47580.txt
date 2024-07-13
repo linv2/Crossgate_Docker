@@ -1,0 +1,209 @@
+####3月EC
+###■招财猫恶改图		将种族改变为金属系。（身上只能放置要改造的招财猫，改造后不论原等级多少，等级将变为LV1）
+
+
+####□ 宠物栏是空的
+block PetSpace == 5
+	 ##21389	你好像没有带宠物喔！	1
+	 EndWindow 21389
+
+####□ 招财猫恶改图>= 2
+block Item 47580 >= 2
+	 ##206650	\n\n持有两个以上是不能使用的。	0
+	 EndWindow 206650
+
+####□身上只能留下要改的宠
+block  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783
+block  itemSpace <1
+	 #13012	\n\n嗯？你的物品栏满了啦！	8
+	 EndWindow 13012	 
+
+####□身上有 招财猫恶改图== 1、百两猫>=1 、宠物空格为4格
+block Item 47580 == 1 &&  PetLevel 10068 >= 1 && PetSpace == 4
+	 ##1054778	\n\n是否要改变佰两招财猫的种族为‘金属系’？\n\n请注意：\n\n１：种族改变后不会恢复\n\n２：种族改变后等级回恢为１级。	1
+	 Window 1054778,YES,NO
+	 	 Window_YES  Item 47580 == 1 &&  PetLevel 10068 >= 1 && PetSpace == 4
+			  KillItem 47580,1
+		 	  KillPetl   10068
+			  GivePet 41249
+		 Window_NO 
+		 
+####□身上有招财猫恶改图 == 1、千两猫>=1 、宠物空格为4格
+block Item 47580 ==1 && PetLevel 10069 >=1 && PetSpace ==4
+	 ##1054779	\n\n是否要改变仟两招财猫的种族为‘金属系’？\n\n请注意：\n\n１：种族改变后不会恢复\n\n２：种族改变后等级回恢为１级。	1
+	 Window 1054779,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10069 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+			 KillPetl   10069
+	 	 	 GivePet 41250
+	 	 Window_NO
+	 	 
+
+####□身上有招财猫恶改图 == 1、万两猫>=1 、宠物空格为4格
+block Item 47580 ==1 && PetLevel  10070 >=1 && PetSpace ==4
+	 ##1054780	\n\n是否要改变万两招财猫的种族为‘金属系’？\n\n请注意：\n\n１：种族改变后不会恢复\n\n２：种族改变后等级回恢为１级。	1
+	 Window 1054780,YES,NO 
+	 	 Window_YES  Item 47580 ==1 && PetLevel  10070 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl  10070
+	 	 	 GivePet 41251
+	 	 Window_NO
+	 	 
+	 	 	 
+####□身上有招财猫恶改图 == 1、十万两猫>=1 、宠物空格为4格
+block Item 47580 ==1 && PetLevel 10071 >=1 && PetSpace ==4
+	 ##1054781	\n\n是否要改变十万两招财猫的种族为‘金属系’？\n\n请注意：\n\n１：种族改变后不会恢复\n\n２：种族改变后等级回恢为１级。	1
+	 Window 1054781,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10071 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl  10071
+	 	 	 GivePet 41252
+	 	 Window_NO
+	 	
+####□身上有招财猫恶改图 == 1、地亿万两招财猫>=1 、宠物空格为4格
+block Item 47580 ==1 && PetLevel 10072 >=1 && PetSpace ==4
+	 ##1054782	\n\n是否要改变亿万两招财猫的种族为‘金属系’？\n\n请注意：\n\n１：种族改变后不会恢复\n\n２：种族改变后等级回恢为１级。	1
+	 Window 1054782,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10072 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl 10072
+	 	 	 GivePet 41253
+	 	 Window_NO
+
+####□身上有招财猫恶改图 == 1、水亿万两招财猫>=1 、宠物空格为4格
+block Item 47580 ==1 && PetLevel 10073 >=1 && PetSpace ==4 
+	 ##1054782	\n\n是否要改变亿万两招财猫的种族为‘金属系’？\n\n请注意：\n\n１：种族改变后不会恢复\n\n２：种族改变后等级回恢为１级。	1
+	 Window 1054782,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10073 >=1 && PetSpace ==4 
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl  10073
+	 	 	 GivePet 41254
+	 	 Window_NO 
+
+####□身上有招财猫恶改图 == 1、火亿万两招财猫>=1 、宠物空格为4格 	 
+block Item 47580 ==1 && PetLevel 10074 >=1 && PetSpace ==4
+	 ##1054782	\n\n是否要改变亿万两招财猫的种族为‘金属系’？\n\n请注意：\n\n１：种族改变后不会恢复\n\n２：种族改变后等级回恢为１级。	1
+	 Window 1054782,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10074 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl 10074
+	 	 	 GivePet 41255
+	 	 Window_NO
+
+####□身上有招财猫恶改图 == 1、风亿万两招财猫>=1 、宠物空格为4格 
+block Item 47580==1 && PetLevel 10075 >=1 && PetSpace ==4
+	 ##1054782	\n\n是否要改变亿万两招财猫的种族为‘金属系’？\n\n请注意：\n\n１：种族改变后不会恢复\n\n２：种族改变后等级回恢为１级。	1
+	 Window 1054782,YES,NO
+	 	 Window_YES  Item 47580==1 && PetLevel 10075 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl  10075
+	 	 	 GivePet 41256
+#####以下为还原版
+
+#佰两招财猫	10078	20	5	8	5	10	20	25	35	100	2	0	0	0	50	50	0	0	0	0	0	0	0	0	0	4	0	0	9	104314	100	0			0	7300	7400								
+#仟两招财猫	10079	20	5	8	8	10	40	25	20	100	2	0	0	0	0	50	50	0	0	0	0	0	0	0	0	1	0	0	9	104315	100	0			0	7300	7400								
+#万两招财猫	10080	20	5	8	8	43	20	25	8	100	2	0	0	0	0	0	50	50	0	0	0	0	0	0	0	0	0	0	9	104316	100	0			0	7300	7400								
+#十万两招财猫	10081	20	5	8	35	30	20	25	5	100	2	0	0	0	50	0	0	50	0	0	0	0	0	0	0	1	0	0	9	104317	100	0			0	7300	7400								
+#亿万两招财猫	10082	20	5	8	23	23	24	23	24	300	2	0	0	0	100	10	0	0	0	0	0	0	0	0	0	3	0	0	10	104318	100	0			0	7300	7400								
+#亿万两招财猫	10083	20	5	8	23	24	23	24	23	300	2	0	0	0	0	100	10	0	0	0	0	0	0	0	0	3	0	0	10	104318	100	0			0	7300	7400								
+#亿万两招财猫	10084	20	5	8	23	23	24	24	24	300	2	0	0	0	0	0	100	10	0	0	0	0	0	0	0	3	0	0	10	104318	100	0			0	7300	7400								
+#亿万两招财猫	10085	20	5	8	24	24	23	23	24	300	2	0	0	0	10	0	0	100	0	0	0	0	0	0	0	3	0	0	10	104318	100	0			0	7300	7400								
+
+#娃娃？	招财猫扑满	vespa_item_47540.txt			IuMs						47540	99371	0	26		0	1	0	0	1	1	1	1	0					0	0																																																										0	0	1	0		0	1647540	1747540	100	0	0	0	0	0
+
+#1111484	\n\n是否要将‘金属系亿万两招财猫’还原成五个招财猫扑满？\n\n请注意：\n\n１：身上请先空五个空格\n\n２：要再取得亿万两招财猫请依原程序重新召唤。	1	
+#1111485	\n\n是否要将‘金属系佰两招财猫’还原成招财猫扑满？\n\n请注意：\n\n１：身上请先空一个空格\n\n２：要再取得佰两招财猫请依原程序重新召唤。	1	
+#1111486	\n\n是否要将‘金属系仟两招财猫’还原成招财猫扑满？\n\n请注意：\n\n１：身上请先空一个空格\n\n２：要再取得仟两招财猫请依原程序重新召唤。	1	
+#1111487	\n\n是否要将‘金属系万两招财猫’还原成招财猫扑满？\n\n请注意：\n\n１：身上请先空一个空格\n\n２：要再取得万两招财猫请依原程序重新召唤。	1	
+#1111488	\n\n是否要将‘金属系十万两招财猫’还原成招财猫扑满？\n\n请注意：\n\n１：身上请先空一个空格\n\n２：要再取得十万两招财猫请依原程序重新召唤。	1	
+
+block Item 47580 ==1 && PetLevel 10078 >=1 && itemSpace >0
+#1111485	\n\n是否要将‘金属系佰两招财猫’还原成招财猫扑满？\n\n请注意：\n\n１：身上请先空一个空格\n\n２：要再取得佰两招财猫请依原程序重新召唤。	1	
+
+	 Window 1111485,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10078 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl 10078
+	 	 	 GiveLeak1Item 47540,1
+	 	 Window_NO
+	 	 
+block Item 47580 ==1 && PetLevel 10079 >=1 && itemSpace >0
+#1111486	\n\n是否要将‘金属系仟两招财猫’还原成招财猫扑满？\n\n请注意：\n\n１：身上请先空一个空格\n\n２：要再取得仟两招财猫请依原程序重新召唤。	1	
+
+	 Window 1111486,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10079 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl 10079
+	 	 	 GiveLeak1Item 47540,1
+	 	 Window_NO	 	 
+block Item 47580 ==1 && PetLevel 10081 >=1 && itemSpace >0
+#1111488	\n\n是否要将‘金属系十万两招财猫’还原成招财猫扑满？\n\n请注意：\n\n１：身上请先空一个空格\n\n２：要再取得十万两招财猫请依原程序重新召唤。	1	
+
+	 Window 1111488,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10081 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl 10081
+	 	 	 GiveLeak1Item 47540,1
+	 	 Window_NO
+	 	 
+block Item 47580 ==1 && PetLevel 10080 >=1 && itemSpace >0
+#1111487	\n\n是否要将‘金属系万两招财猫’还原成招财猫扑满？\n\n请注意：\n\n１：身上请先空一个空格\n\n２：要再取得万两招财猫请依原程序重新召唤。	1	
+
+	 Window 1111487,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10080 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl 10080
+	 	 	 GiveLeak1Item 47540,1
+	 	 Window_NO	 	 
+block Item 47580 ==1 && PetLevel 10082 >=1 && itemSpace <5
+#13012	\n\n嗯？你的物品栏满了啦！	8
+	 #window 1111484,next
+	 EndWindow 1055868
+block Item 47580 ==1 && PetLevel 10083 >=1 && itemSpace <5
+#13012	\n\n嗯？你的物品栏满了啦！	8
+	 EndWindow 1055868	 
+block Item 47580 ==1 && PetLevel 10084 >=1 && itemSpace <5
+#13012	\n\n嗯？你的物品栏满了啦！	8
+	 EndWindow 1055868	 
+block Item 47580 ==1 && PetLevel 10085 >=1 && itemSpace <5
+#13012	\n\n嗯？你的物品栏满了啦！	8
+	 EndWindow 1055868	 
+	 
+block Item 47580 ==1 && PetLevel 10082 >=1 && itemSpace >4
+#1111484	\n\n是否要将‘金属系亿万两招财猫’还原成五个招财猫扑满？\n\n请注意：\n\n１：身上请先空五个空格\n\n２：要再取得亿万两招财猫请依原程序重新召唤。	1	
+
+	 Window 1111484,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10082 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl 10082
+	 	 	 GiveLeak1Item 47540,5
+	 	 Window_NO
+block Item 47580 ==1 && PetLevel 10083 >=1 && itemSpace >4
+#1111484	\n\n是否要将‘金属系亿万两招财猫’还原成五个招财猫扑满？\n\n请注意：\n\n１：身上请先空五个空格\n\n２：要再取得亿万两招财猫请依原程序重新召唤。	1	
+
+	 Window 1111484,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10083 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl 10083
+	 	 	 GiveLeak1Item 47540,5
+	 	 Window_NO
+block Item 47580 ==1 && PetLevel 10084 >=1 && itemSpace >4
+#1111484	\n\n是否要将‘金属系亿万两招财猫’还原成五个招财猫扑满？\n\n请注意：\n\n１：身上请先空五个空格\n\n２：要再取得亿万两招财猫请依原程序重新召唤。	1	
+
+	 Window 1111484,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10084 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl 10084
+	 	 	 GiveLeak1Item 47540,5
+	 	 Window_NO
+block Item 47580 ==1 && PetLevel 10085 >=1 && itemSpace >4
+#1111484	\n\n是否要将‘金属系亿万两招财猫’还原成五个招财猫扑满？\n\n请注意：\n\n１：身上请先空五个空格\n\n２：要再取得亿万两招财猫请依原程序重新召唤。	1	
+
+	 Window 1111484,YES,NO
+	 	 Window_YES  Item 47580 ==1 && PetLevel 10085 >=1 && PetSpace ==4
+	 	 	 KillItem 47580,1
+	 	 	 KillPetl 10085
+	 	 	 GiveLeak1Item 47540,5
+	 	 Window_NO		 	 		 	 	 	 

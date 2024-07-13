@@ -1,0 +1,11 @@
+#³âÅÒÌï¡õ¥èÔ»14F©x©x??©xŽx÷ú
+#
+#©x©x©x¸Ï…í›™Æ±©j¶û©k¼°Þð
+
+###©xLocalFlag1 == 1
+block LocalFlag1 == 1 && Xpos == 247 && Ypos >= 288 && Ypos <= 290
+
+	Warp 0,59814,161,96
+
+
+

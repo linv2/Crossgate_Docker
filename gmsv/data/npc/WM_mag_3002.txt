@@ -1,0 +1,46 @@
+#
+#白尼奶弁仿永玄仁元操圴濩抸
+#
+
+####################################
+PREV_00:
+#3\n\n﹛仇仇匹反白尼奶弁仿永玄仁元及濩抸毛仄化中引允﹝\n﹛﹛﹛﹛﹛﹛仁元及支曰杅卞勾中化\n﹛﹛﹛﹛﹛﹛丐凶曰仁元及跟晶卞勾中化\n﹛﹛﹛﹛﹛﹛操圴〇芢卞勾中化
+	Window 60233,SELECT[1]_100,SELECT[2]_100,SELECT[3]_100,CANCEL
+
+####################################
+SELECT[1]_100:
+#\n\n﹛支曰杅反午匀化手市件正件″仁元毛母皮伙弁伉永弁允月午失奶泛丞濩抸勂卞＞?＝卅升及筏寞互赐?卞蜇木引允﹝⑺元筏寞互ㄢ勾缭匀凶日厘癫凶曰″缭匀凶筏寞互操圴及羁菟卞卅曰引允﹝凶午尹壬?互ㄢ勾缭匀凶日?操匹允﹝渲舰匀化?操毛杴隙仄化仁分今中友﹝
+	Window 60234,OK,PREV_00
+
+####################################
+SELECT[2]_100:
+#\n\n﹛丐凶曰仁元反挃曰匹操圴午跟晶仄化手日尹引允﹝
+	Window 60235,OK,PREV_00
+
+####################################
+PREV_01:
+SELECT[3]_100:
+#4\n\n﹛操圴〇芢反动票及方丹卞卅匀化中引允﹝⑺域操及丹切中内木井互癫凶曰引允﹝\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛?操\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛?操\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛?操\n﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛?操
+	Window 60237,SELECT[1]_200,SELECT[2]_200,SELECT[3]_200,SELECT[4]_200,OK,PREV_00
+
+####################################
+SELECT[1]_200:
+#\n\n﹛﹛﹛﹛﹛?操及操圴反动票及窒木井匹允﹝\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛扔仿穴件母□LV1\n﹛﹛﹛﹛﹛﹛﹛﹛扑伙白LV1\n﹛﹛﹛﹛﹛﹛﹛﹛它奶件犯奴□生LV1\n﹛﹛﹛﹛﹛﹛﹛﹛用□丞LV1
+	Window 60238,OK,PREV_01
+
+####################################
+SELECT[2]_200:
+#\n\n﹛﹛﹛﹛﹛?操及操圴反动票及窒木井匹允﹝\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛由件母LV1\n﹛﹛﹛﹛﹛﹛﹛﹛平亘□LV1\n﹛﹛﹛﹛﹛﹛﹛﹛平亘□疋永玉LV1\n﹛﹛﹛﹛﹛﹛﹛﹛母件皿伉件弘LV1
+	Window 60239,OK,PREV_01
+
+####################################
+SELECT[3]_200:
+#\n\n﹛﹛﹛﹛﹛?操及操圴反动票及窒木井匹允﹝\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛扔仿穴件母□及市□玉\n﹛﹛﹛﹛﹛﹛﹛﹛扑伙白及市□玉\n﹛﹛﹛﹛﹛﹛﹛﹛它奶件犯奴□生及市□玉\n﹛﹛﹛﹛﹛﹛﹛﹛用□丞及市□玉
+	Window 60240,OK,PREV_01
+
+####################################
+SELECT[4]_200:
+#\n\n﹛﹛﹛﹛﹛?操及操圴反动票及窒木井匹允﹝\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛由件母及市□玉\n﹛﹛﹛﹛﹛﹛﹛﹛平亘□及市□玉\n﹛﹛﹛﹛﹛﹛﹛﹛平亘□疋永玉及市□玉\n﹛﹛﹛﹛﹛﹛﹛﹛母件皿伉件弘及市□玉
+	Window 60241,OK,PREV_01
+
+

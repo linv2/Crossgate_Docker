@@ -1,0 +1,284 @@
+#勒衔樊3“立生伙田及扜		6105	3220 11 10	﹋戋笮﹌
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 瓜□旦平乓永皿毛儅匀化中月桦宁 ##########
+block Item 18350 >= 1
+	#\n\n﹛公丹匹允井″抯反勒衔樊午及炼互曰毛蝇切濠匀凶及匹允友″恌井匀凶＿﹝丐及阂互允什卞仇仇卞枑匀化仁月仇午反﹜渝谨仄引六氏﹝?辉卞反﹜愤坌匹懦遥仄卅仃木壬卅日卅中仇午互凶仁今氏丐月元扎欠丹仄﹜酦★枑曰勿日中朿坌手丐月氏元扎欠﹝
+	#\n﹛台琼卞匹五月仇午反?辉互仇及笮卞枑匀化五凶日﹜蝎井仁牒尹月仇午互匹五月方丹卞赏?允月分仃匹允元扎″@n今氏﹜呿癫卞丐曰互午丹″
+	EndWindow 11608
+
+########## 谛溥毛儅匀化中月桦宁 ##########
+block Item 18347 >= 1
+	#\n\n﹛公及合中请及谛溥互﹜立生伙田及辎勾中凶艘毛剂仄反泲仄化仁木月午中中及元扎互＿﹝
+	EndWindow 11609
+
+########## 立生伙田及澎饼ㄡ毛儅匀化中月桦宁 ##########
+block Item 18349 >= 1
+	#\n\n﹛云云﹜云谨切仄化云曰引仄凶匹允元扎﹝公木反抯及澎饼匹允友﹝丐及阂互拑仪匹丐月仇午互坌井木壬公木分仃匹湖仄中匹允元扎﹝公木匹丐及阂反窒午〝
+	Window 11610,NEXT
+	#\n\n﹛公丹匹允井﹜引分丐及阂反台琼毛翕匀化中凶及匹允友＿﹝窒蘸手澎饼毛扪氏匹赡中化引凶萧仄沭卅中及匹允互﹜愈詨及俇心毛妏中化支匀化仁分今中引六氏井﹝仇及谛溥毛丐及阂卞苇六木壬五匀午坌井匀化仁木月反内匹允﹝
+	Window 11611,YES,NO
+
+	Window_YES Item 18349 >= 1
+	KillItem 18349,1
+	GiveItem 18347,1
+	#\n\n﹛丐曰互午丹仍介中引允﹝\n﹛公及谛溥反抯互苃中滞﹜内匀午厘濠卞仄化中凶手及卅及匹允元扎﹝\n﹛仇木毛苇六木壬﹜丐月中反﹜五匀午＿﹝
+	EndWindow 11612
+
+	Window_NO
+	#\n\n﹛公丹匹允井＿﹝辣★仍斨珌毛云井仃仄引仄凶﹝\n﹛丐曰互午丹仍介中引允＿﹝
+	EndWindow 11613
+
+########## 徆褪及澎饼ㄡ毛儅匀化中月桦宁 ##########
+block Item 18346 >= 1
+	#\n\n﹛勒衔樊卅氏冗午尥五宁匀化云匀凶午反＿﹝\n﹛丐及阂反呿癫反穸仄中阂卅氏元扎﹝五匀午勒衔樊午井蜕丹樊琼卞凶少日井今木化云月氏元扎欠丹﹝\n﹛镀仁踞仃化支曰凶中＿﹝
+	EndWindow 11614
+
+########## 立生伙田及澎饼ㄠ毛儅匀化中月桦宁 ##########
+block Item 18348 >= 1
+	#\n\n﹛反匀″〝公木反﹜抯及立生伙田及澎饼匹反〝\n﹛公木匹反丐及阂卞请莘尹凶及匹允友〝\n﹛匹﹜戈﹜抯反卅氏午〝
+	Window 11615,NEXT
+	#\n\n﹛＿卅氏午﹜潸曰宁歹卅井匀凶午反″\n﹛公仄化勒衔樊洘宁卅氏冗午尥五宁匀化中月午〝\n\n﹛＿手丹域蘸﹜手丹域蘸分仃仇及澎饼毛?仃化仁分今中引六氏井〝云凑中谯仄引允元扎″
+	Window 11616,YES,NO
+
+	Window_YES Item 18348 >= 1
+	KillItem 18348,1
+	GiveItem 18346,1
+	#\n\n﹛丐曰互午丹仍介中引允﹝\n﹛抯卞手丹域蘸莘中凶中域艘卅及匹允﹝方欠仄仁云凑中仄引允＿﹝
+	EndWindow 11617
+
+	Window_NO
+	#\n\n﹛公丹匹允井＿﹝\n﹛辣★仍斨珌毛云井仃仄引仄凶﹝丐曰互午丹仍介中引允＿﹝
+	EndWindow 11618
+
+########## 徆褪及澎饼ㄠ毛儅匀化中月桦宁 ##########
+block Item 18345 >= 1
+	#\n\n﹛公及澎饼毛抯卞欐仄化支匀化仁分今中﹝\n﹛升丹井云凑中中凶仄引允﹝
+	EndWindow 11619
+
+########## 左术瓦永弁及隙挎毛儅匀化中月桦宁 ##########
+block Item 18404 >= 1
+	#\n\n﹛公及隙挎＿﹝樯笮毛?太请仄凶﹜丹切及秽阂琼互儅匀化中凶手及卞公匀仁曰分﹝\n﹛引今井午反合丹互＿﹝\n﹛秽阂分仃元扎卅中氏元扎﹜切斤匀午狪毛妏中化中匀化仁木氏井〝
+	Window 11687,NEXT
+	#\n\n﹛丹切及抯互笮毛请化中匀凶匀五曰﹜枑匀化仇氏及元扎＿﹝\n﹛丐及阂互?太请仄化垫匀化井日﹜手丹きコ卞卅月﹝漆仍欠升仇匹窒毛仄化云月及支日﹝\n﹛引今井午反合丹互﹜丐氏凶﹜立生伙田匀切文丹抩蟆及抯毛妏中凶仇午反卅中井〝
+	Window 11620,YES,NO
+
+	Window_YES ItemSpace >= 1
+	#\n\n﹛卅氏午﹜妏中化心月手氏元扎﹝\n﹛匹﹜丐及阂反升仇匹﹜窒毛仄化云匀凶及元扎〝项尹化仁木氏井﹝
+	Window 11621,OK
+
+	Window_OK ItemSpace >= 1 && Item 18404 >= 1
+	GiveItem 18345,1
+	#\n\n﹛公丹井﹜公氏卅仇午互＿﹝\n﹛丐卅凶卞嫔?俇心凶中仇午互丐月氏匹允元扎﹝\n﹛手仄引凶丐及阂毛苇井仃月仇午互丐匀凶日﹜仇及澎饼毛欐仄化支匀化仁木氏井﹝
+	EndWindow 11622
+
+	Window_OK ItemSpace == 0
+	#\n\n﹛酸ゴ元扎﹜仇及澎饼毛欐仄化手日中凶中及元扎互﹜丐卅凶及绂坁卞反坞五互卅中方丹元扎﹝
+	EndWindow 11623
+
+	Window_NO
+	#\n\n﹛公丹匹允井﹜手仄恌井匀凶日匹中中氏元扎﹝\n﹛立生伙田午中丹抩蟆及抯毛苇勾仃凶日﹜仇及澎饼毛欐仄化手日尹引六氏井〝云凑中仄引允″
+	Window 11624,YES,NO
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1 && Item 18404 >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1 && Item 18404 >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1 && Item 18404 >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1 && Item 18404 >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1 && Item 18404 >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1 && Item 18404 >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1 && Item 18404 >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1 && Item 18404 >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1 && Item 18404 >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_YES ItemSpace == 0
+	#\n\n﹛酸ゴ元扎﹜仇及澎饼毛欐仄化手日中凶中及元扎互﹜丐卅凶及绂坁卞反坞五互卅中方丹元扎﹝
+	EndWindow 11623
+
+	Window_NO
+	#\n\n﹛甩央甩央﹜丐氏凶卅井卅井尹尹漪岭仄午月及丹﹝立生伙田及蟆卞请化垫匀凶﹜秽阂及左术瓜弘手云蟆今氏心凶中卅杴毛仄切斤匀凶歹″
+	EndWindow 11627
+
+
+########## 癫化反引日卅中桦宁 ##########
+block
+	#\n\n﹛丹切及抯互笮毛请化中匀凶匀五曰﹜枑匀化仇氏及元扎＿﹝\n﹛丐及阂互?太请仄化垫匀化井日﹜手丹きコ卞卅月﹝漆仍欠升仇匹窒毛仄化云月及支日﹝\n﹛引今井午反合丹互﹜丐氏凶﹜立生伙田匀切文丹抩蟆及抯毛妏中凶仇午反卅中井〝
+	Window 11620,YES,NO
+
+	Window_YES ItemSpace >= 1
+	#\n\n﹛卅氏午﹜妏中化心月手氏元扎﹝\n﹛匹﹜丐及阂反升仇匹﹜窒毛仄化云匀凶及元扎〝项尹化仁木氏井﹝
+	Window 11621,OK
+
+	Window_OK ItemSpace >= 1
+	GiveItem 18345,1
+	#\n\n﹛公丹井﹜公氏卅仇午互＿﹝\n﹛丐卅凶卞嫔?俇心凶中仇午互丐月氏匹允元扎﹝\n﹛手仄引凶丐及阂毛苇井仃月仇午互丐匀凶日﹜仇及澎饼毛欐仄化支匀化仁木氏井﹝
+	EndWindow 11622
+
+	Window_OK ItemSpace == 0
+	#\n\n﹛酸ゴ元扎﹜仇及澎饼毛欐仄化手日中凶中及元扎互﹜丐卅凶及绂坁卞反坞五互卅中方丹元扎﹝
+	EndWindow 11623
+
+	Window_NO
+	#\n\n﹛公丹匹允井﹜手仄恌井匀凶日匹中中氏元扎﹝\n﹛立生伙田午中丹抩蟆及抯毛苇勾仃凶日﹜仇及澎饼毛欐仄化手日尹引六氏井〝云凑中仄引允″
+	Window 11624,YES,NO
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_NO
+	#\n\n﹛公氏卅仇午毛蜕歹内卞云凑中仄引允元扎″
+	Window 11625,YES,NO
+
+	Window_YES ItemSpace >= 1
+	GiveItem 18345,1
+	#\n\n﹛恌井匀凶﹝匹反﹜嫔?云凑中仄引允匹允元扎﹝
+	EndWindow 11626
+
+	Window_YES ItemSpace == 0
+	#\n\n﹛酸ゴ元扎﹜仇及澎饼毛欐仄化手日中凶中及元扎互﹜丐卅凶及绂坁卞反坞五互卅中方丹元扎﹝
+	EndWindow 11623
+
+	Window_NO
+	#\n\n﹛甩央甩央﹜丐氏凶卅井卅井尹尹漪岭仄午月及丹﹝立生伙田及蟆卞请化垫匀凶﹜秽阂及左术瓜弘手云蟆今氏心凶中卅杴毛仄切斤匀凶歹″
+	EndWindow 11627

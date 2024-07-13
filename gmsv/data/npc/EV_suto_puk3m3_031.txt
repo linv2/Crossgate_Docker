@@ -1,0 +1,80 @@
+#PUK3_main3
+#
+#
+#石泛永皿
+
+
+Block 
+
+		GAWindow 3219839,Next
+
+		#\n\n﹛丹仃\n﹛丹仃仃仃﹝\n﹛仇木匹﹜仇及壑钗反示弁及手及午卅月″\n﹛仇及﹜卅中丐□日＿＿\n﹛中尹＿＿\n﹛石泛永皿及手及卞卅月氏分″
+		
+		GAWindow 3219840,Next
+
+		#\n\n﹛示弁互职及壑钗匹\n﹛卅氏化裟壬木化中凶井襞匀化月井中〝
+		
+		GAWindow 3219841,Next
+
+		#\n\n﹛瓜奶失伙仿玄石泛永皿\n﹛＿＿孔孔＿＿丹仃﹜丹仃仃仃﹝
+		
+		GAWindow 3219842,Next
+
+		#\n\n﹛手仄仁反拑侔及螃卅氏化裟壬木化凶井仄日﹝\n﹛卅□氏化友﹝\n﹛丹仃仃仃﹝
+		
+		GAWindow 3219843,Next
+
+		#\n\n﹛帎卞鹆允勾手曰反拑井匀凶氏分方丰﹝
+		
+		GAWindow 3219844,Next
+
+		#\n\n﹛丹仃﹝\n﹛仇及壑钗反友尹＿＿呿侳示弁及手及卅氏分﹝\n﹛示弁卞午匀化凛棉卅氏化啦怗互卅中歹仃今﹝
+		
+		GAWindow 3219845,Next
+
+		#\n\n﹛示弁互公丹合尹壬公仇卞反壑钗互请侳化﹜\n﹛谛互蛛月氏分方丰﹝\n﹛白央□伊件毛公仇卞综欠丹午允木壬\n﹛公仇卞白央□伊件互请侳月及今﹝\n﹛凛医手谛手合匀凶方丹卞请侳晓互月﹝\n﹛示弁卞午匀化壑钗午中丹及反\n﹛公丹中丹手及卅氏分方﹝
+		
+		GAWindow 3219846,Next
+
+		#\n\n﹛楝凶切卞手坌井曰支允中方丹卞\n﹛濩抸仄化丐仆方丹﹝\n﹛丹仃﹝
+		
+		GAWindow 3219847,Next
+
+		#\n\n﹛割井卞仇仇反楝凶切及襞匀化中月壑钗及\n﹛恍侳及铣卅氏分方丰﹝\n﹛冞及澎互笛尹日木凶＿＿友﹝\n﹛凛及锉毛银匀化\n﹛仇及?璎毛综匀凶及反示弁﹝\n﹛丹仃仃仃﹝\n﹛分井日﹜职谛卞窒手中歹木月嗓宁中反\n﹛卅中歹仃今﹝
+		
+		GAWindow 3219848,Next
+
+		#\n\n﹛卅及卞﹜螃啖及支勾日反﹜\n﹛仇及示弁及壑钗卞膳じ仄化\n﹛驯五鴃澎支匀化仁木凶﹝
+		
+		GAWindow 3219849,Next
+
+		#\n\n﹛螃及中卅中壑钗卅升丐曰尹卅中〝\n﹛让怂仄卅仃木壬卅日厄〝\n﹛孔介仃月卅″
+		
+		GAWindow 3219850,Next
+
+		#\n\n﹛＿＿\n﹛＿＿
+		
+		GAWindow 3219851,Next
+
+		#\n\n﹛丹仃仃仃﹝仍户氏方﹝\n﹛切斤匀午普树读卞卅曰允亢切扎匀凶﹝\n﹛螃啖及洘酦及狪卞卅月午友﹜\n﹛升丹手﹜挕毙匹反中日木卅仁化友尹﹝\n﹛漱匀凶手及分方丰﹝\n﹛丹仃﹜丹仃仃仃仃﹝
+		
+		GAWindow 3219852,Next
+
+		#\n\n﹛仇木井日中中手及毛苇六化丐仆月方﹝
+		
+		GAWindow 3219853,Next
+
+		#\n\n﹛示弁及恘毛蜗坌卞?湍允月凶户卞友﹝\n﹛陆卅月惕镜及杹毛钒仇丹匀化歹仃今﹝
+	
+		GAWindow 3219854,Next
+
+		#\n\n﹛<杹及萼卞仄化潮赁樊>互侳月﹝\n﹛丹仃仃仃﹝
+		
+		GAWindow 3219855,OK
+
+		#\n\n﹛＿＿\n﹛＿＿＿＿\n﹛今丐﹜钒中凶方弥及恄啖互″″
+		
+				Window_OK
+				
+					warp 0,59757,80,107
+		

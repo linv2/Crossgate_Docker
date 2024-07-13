@@ -1,0 +1,217 @@
+#营谛耦缜弁巨旦玄“玄孕□玄孕□营谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛缜仅“营谛﹛##############
+block job >= 421 && job <= 427
+
+#\n\n﹛方仁五凶卅@n﹝引℅卅卞手卅中互斗匀仁曰仄化中仁午中中冗中﹝
+
+	EndWindow 20818,OK
+
+###########﹛营谛井日及澎饼肣曰﹛##############
+block Item 18765 >= 1
+
+#\n\n﹛引分垫匀化卅井匀凶及井〝窒毛仄午月井﹜仇木手膜垫元扎冗中″敛コ及竣互庍歹月井手仄木氏﹜镀仁中井氏
+#井中″″
+
+	EndWindow 20817,OK
+
+###########﹛营谛尺及澎饼肣曰﹛##############
+block Item 18764 >= 1
+
+#\n\n﹛歹仄偶及澎饼井″帎卞厶引卅仁化手中中氏元扎互卅﹜六匀井仁分井日厶氏匹支月冗中﹝\n孔戈孔戈\n卅月幻
+#升\n仇及敛コ反﹜歹仄及票匹膜垫仄凶互匀中月方丹元扎及℅﹛歹仄手卅卞井午侄仄中褥元扎互仇仇引匹蜕歹木化反酷
+#杅互卅中冗中﹝切斤匀午引匀午木方﹝
+#\n\n﹛允日允日允日﹛允日﹛允日允日允日\n﹛云蟆今氏及膜垫手苇化支日卅中午中井氏及元扎互﹜燮卞仇及澎饼毛敛コ
+#卞?仃化仁月井〝允引氏及℅仇木手膜垫午合匀化萌中匹?仃化仁木方﹝
+
+	Window 20815,NEXT
+	Window 20816,OK
+	Window_OK
+	leavegroup
+	KillItem 18764
+	GiveItem 18765
+
+###########﹛云银中丢乒ㄠ肣曰﹛##############
+block Item 18761 >= 1 && Item 12416 >= 1 && Item 12412 >= 1 && Item 12405 >= 1
+
+#\n\n﹛仇木匹?怗中皮奶乩矛□旦毛综匀化支月冗中″公及引尹卞膜垫允月井〝瑁引曰元扎卅″元扎中仁冗中″
+
+	Window 20812,OK
+	Window_OK
+	Killitemall 18761
+	Killitemall 12412
+	Killitemall 12416
+	Killitemall 12405
+	leavegroup
+	Warp 0,45007,39,31
+
+###########﹛云银中丢乒ㄡ肣曰﹛##############
+block Item 18762 >= 1 && Item 15203 >= 1 && Item 12404 >= 1 && Item 12401 >= 1 && Item 12413 >= 1
+
+#\n\n﹛仇木匹?怗中皮奶乩矛□旦毛综匀化支月冗中″公及引尹卞膜垫允月井〝瑁引曰元扎卅″元扎中仁冗中″
+
+	Window 20813,OK
+	Window_OK
+	Killitemall 18762
+	Killitemall 15203
+	Killitemall 12404
+	Killitemall 12401
+	Killitemall 12413
+	leavegroup
+	Warp 0,45007,39,31
+
+###########﹛云银中丢乒ㄢ肣曰﹛##############
+block Item 18763 >= 1 && Item 12002 >= 1 && Item 12003 >= 1 && Item 11200 >= 1 && Item 18232 >= 1
+
+#\n\n﹛仇木匹?怗中皮奶乩矛□旦毛综匀化支月冗中″公及引尹卞膜垫允月井〝瑁引曰元扎卅″元扎中仁冗中″
+
+	Window 20814,OK
+	Window_OK
+	Killitemall 18763
+	Killitemall 12002
+	Killitemall 12003
+	Killitemall 11200
+	Killitemall 18232
+	leavegroup
+	Warp 0,45007,39,31
+
+###########﹛云银中丢乒肣曰﹛##############
+block Item 18763 >=1 || Item 18762 >= 1 || Item 18761 >= 1
+
+#\n\n﹛镀仁ョ匀化仇氏井中″呏尺匀化仄井凶卅中冗中″
+
+	EndWindow 20811,OK
+
+########### 弁伉旦正伙瓜永汁肣曰肣曰﹛##############
+block Item 18760 >=1
+
+	Window 20809,OK
+	Window_OK
+	leavegroup
+	Warp 0,45007,39,31
+
+########### 扑乓□仿仿ざ筏肣曰肣曰﹛##############
+block Item 18759 >=1
+
+	EndWindow 20895
+
+###########﹛瓜它﹛巨件玉﹛34﹛##############
+block nowevent 34 == 1 || endevent 34 == 1
+
+	EndWindow 20894
+
+###########﹛艘樟黄肣曰﹛##############
+block endevent33 == 1
+
+	EndWindow 20808
+
+block Item 18758 >= 1 && endevent32 == 1
+
+	Window 20805,NEXT
+	Window 20806,NEXT
+	Window 20807,NEXT
+	Window 20885,OK
+	Window_OK
+	endevent33 = 1
+	endevent32 = 0
+	EndWindow 20808,OK
+
+###########﹛end32肣曰﹛##############
+block endevent32 == 1
+
+	EndWindow 20804
+
+###########﹛鳜挥肣曰﹛##############
+block Item 18756 >= 1 && nowevent87 == 1
+
+#\n\n﹛仇木仇木﹜仇木互鳜挥元扎″鳜及毕迋午中丹午仇欠井日五化月公丹元扎﹝丐木匀〝升丹匹手中中仪反盛尹午月
+#冗中﹝卅氏井籥宁及中中筏盛辗撩心凶中元扎及℅\n由弁永″?怗中匀″\n丐℅℅﹛允引氏允引氏鳜挥罹丹化手丹
+#凶歹﹝
+
+	KillItemall 18756
+	EndWindow 20801,OK
+
+###########﹛鳜洘槭肣曰﹛##############
+block Item 18754 >= 1 && nowevent87 == 1
+
+#\n\n﹛仇木匀″仇木互鳜洘槭元扎″仇木反仇丹支匀化癌元化﹜打弁永″虫卞中中℅℅″\n丐℅℅﹛允引氏允引氏
+#鳜洘槭婉氏匹手丹凶歹﹝
+
+	KillItemall 18754
+	EndWindow 20800,OK
+
+###########﹛鳜昐肣曰﹛##############
+block Item 18755 >= 1 && nowevent87 == 1
+
+#\n\n﹛仇木匀″仇木互鳜昐元扎″仇及?毛仇丹支匀化ヱ中化卅﹜由弁永″?怗中℅℅″\n丐℅℅﹛允引氏允引氏
+#鳜昐罹丹化手丹凶歹﹝
+
+	KillItemall 18755
+	EndWindow 20799,OK
+
+###########﹛邂环残肣曰﹛##############
+block Item 18757 >= 1 && nowevent87 == 1
+
+#\n\n﹛云匀″邂环残毛综匀化五凶井﹝元扎中凶分仁冗中﹝\n由弁永″﹛引内℅℅\n氏〝窒井合中请仄凶冗中″筏
+#盛毛裟太枑允丝挚互丐月仇午毛合中请仄凶冗中\n分户元扎公木动陆反合中请今氏﹝
+#\n\n﹛筏盛汊唾及丝挚卞反≦艘樟黄≧午中丹冂帎卅挤芊匹瞻日木凶黄互中月元扎互﹜升丹仄化手歹仄卞筏盛毛潸曰
+#枑仄化俓仄中卅日﹜艘樟黄午中丹黄毛茧仄化五化仁木氏井〝樯反歹仄及笮卞丐匀凶氏元扎互﹝﹛簿井卞晓仆凶午合
+#丹氏元扎互卅℅℅﹛簿元扎匀凶欠丹卅〝
+#\n\n﹛凶仄井℅℅歹仄及眬阂卞晓仆凶午合丹元扎互〝分户元扎合中分六氏冗中﹝戊□仿伙彶曰匹＞艘樟黄＝午章及
+#谛卞妏中化荚木壬襞匀化月谛互域谛仁日中月井手襞木氏卅℅℅
+
+	KillItem 18757
+	nowevent87 = 0
+	endevent32 = 1
+	Window 20802,NEXT
+	Window 20803,NEXT
+	EndWindow 20804,OK
+
+###########﹛nowflg87﹛##############
+block nowevent87 == 1
+
+	EndWindow 20892
+
+###########﹛泔管阁匹奶矛件玄切扎氏午支匀化月﹛##############
+block nowevent88 == 1 && job >= 361 && job <= 369 && Item 18752 >= 1
+
+	Window 20797,NEXT
+	Window 20798,NEXT
+	Window 20884,OK
+	Window_OK
+	KillItem 18752
+	nowevent88 = 0
+	nowevent87 = 1
+	GiveRecipe 976
+
+###########﹛泔管阁匹奶矛件玄切扎氏午支匀化卅中﹛##############
+
+block job >= 361 && job <= 369
+
+	Window 20796,NEXT
+	Window 20891,OK
+	Window_OK
+	GiveRecipe 976
+
+###########﹛鳜蜓驭及鳜及潘肣曰﹛##############
+block nowevent88 == 1 && Item 18753 >= 1 && Item 18752 >= 1 || nowevent88 == 1 && Item 18755 >= 1 && Item 18752 >= 1 || nowevent88 == 1 && Item 18756 >= 1 && Item 18752 >= 1 || nowevent88 == 1 && Item 18757 >= 1 && Item 18752 >= 1 || nowevent88 == 1 && Item 18758 >= 1 && Item 18752 >= 1 || nowevent88 == 1 && Item 18754 >= 1 && Item 18752 >= 1 || nowevent88 == 1 && Item 18761 >= 1 && Item 18752 >= 1 || nowevent88 == 1 && Item 18762 >= 1 && Item 18752 >= 1 || nowevent88 == 1 && Item 18763 >= 1 && Item 18752 >= 1 || nowevent88 == 1 && Item 18765 >= 1 && Item 18752 >= 1
+
+	Window 20797,NEXT
+	Window 20798,NEXT
+	Window 20882,OK
+	Window_OK
+	KillItem 18752
+	nowevent88 = 0
+	nowevent87 = 1
+
+###########﹛窒手卅仄﹛##############
+block
+
+#\n\n﹛卅氏元扎云蟆今氏反〝中支﹜戈仄欠歹仄反卅氏元扎〝笮互仇氏卅午仇卞丐月手氏元扎井日﹜手丹窒蜗コ手谛棉
+#午狪仄化卅中氏元扎﹝芴曰卞手狪毛仄化卅中井日﹜蜕邯手侉木井仃午匀凶冗中″掖午合丹井手襞木氏互﹜愤坌及仇午
+#卅氏化兮℅℅氏兮氏盛尹化云日氏方冗中″″
+
+	EndWindow 20796,OK
+

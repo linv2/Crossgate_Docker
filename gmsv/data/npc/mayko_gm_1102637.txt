@@ -1,0 +1,22 @@
+block Item 41139 >= 1  && Item 41140 >= 1  && Item 41141 >= 1  && Item 41142 >= 1  && Item 41143 >= 1  && Ypos == 21 && Xpos > 29 && Xpos <43
+	 Window 1110736,OK
+ 	 
+	 Window_OK Item 41139 >= 1  && Item 41140 >= 1  && Item 41141 >= 1  && Item 41142 >= 1  && Item 41143 >= 1
+	 	#LeaveGroup
+	 	killitem 41140,1
+	 	killitem 41141,1
+	 	killitem 41142,1
+	 	killitem 41143,1
+	 	killitem 41139,1
+	 	Warp 0,32151,18,17
+	 Window_OK
+ 	 	
+	  Endblock
+		 
+ 	 	
+	  
+block  Ypos == 21 && Xpos > 29 && Xpos <43
+	 #Warp 0,32137,4,9
+	 #1110736
+
+	 EndWindow  1110736

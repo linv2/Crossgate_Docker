@@ -1,0 +1,101 @@
+################### 雷欧娜村 传送石管理员
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+	 	 	 
+################### 传送点没开
+block NowEvent 244 == 0
+	 NowEvent 244 = 1
+	 ##1200965	\n欢迎来到雷欧娜村。\n这里是连结亚诺曼城和雷欧娜村的传送点。\n以后你便可以自由来往两地了，请多爱用。
+	 EndWindow 1200965
+
+################### 战斗系 50级以上 && 开过传送石
+block Job < 200 && Level >=50 && NowEvent 244 == 1 
+	 ##1200967	\n这是通往亚诺曼城的传送石，要使用吗？\n费用是600元。
+	 Window 1200967,YES,NO 
+	 	 Window_YES Gold >=600 && Group ==1
+	 	 	 ##传回亚诺曼城
+	 	 	 AddGold -600
+	 	 	 Warp 0,30199,39,33
+	 	 Window_YES Gold < 600
+	 	 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 	 
+	 	 Window_NO 	 
+
+################### 炼金术士 50级以上 && 开过传送石
+block Job >= 1000 && Job < 1010 && Level >=50 && NowEvent 244 == 1 
+	 ##1200967	\n这是通往亚诺曼城的传送石，要使用吗？\n费用是600元。
+	 Window 1200967,YES,NO 
+	 	 Window_YES Gold >=600 && Group ==1
+	 	 	 ##传回亚诺曼城
+	 	 	 AddGold -600
+	 	 	 Warp 0,30199,39,33
+	 	 Window_YES Gold < 600
+	 	 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 	 
+	 	 Window_NO 	
+################### 纺织 职阶 >=3  && 开过传送石	 	 
+block Job >= 1010 && Job < 1020 && JobRank >=3 && NowEvent 244 == 1
+	 ##1200967	\n这是通往亚诺曼城的传送石，要使用吗？\n费用是600元。
+	 Window 1200967,YES,NO 
+	 	 Window_YES Gold >=600 && Group ==1
+	 	 	 ##传回亚诺曼城
+	 	 	 AddGold -600
+	 	 	 Warp 0,30199,39,33
+	 	 Window_YES Gold < 600
+	 	 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 	 
+	 	 Window_NO 	 	 	  
+################### 特殊系 职阶 >=3  && 开过传送石	 	 
+block Job >= 370 && Job < 450 && JobRank >=3 && NowEvent 244 == 1
+	 ##1200967	\n这是通往亚诺曼城的传送石，要使用吗？\n费用是600元。
+	 Window 1200967,YES,NO 
+	 	 Window_YES Gold >=600 && Group ==1
+	 	 	 ##传回亚诺曼城
+	 	 	 AddGold -600
+	 	 	 Warp 0,30199,39,33
+	 	 Window_YES Gold < 600
+	 	 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 	 
+	 	 Window_NO 	 
+
+################### 生产系 职阶 >=3  && 开过传送石	 	 
+block Job >= 200 && Job < 370 && JobRank >=3 && NowEvent 244 == 1
+	 ##1200967	\n这是通往亚诺曼城的传送石，要使用吗？\n费用是600元。
+	 Window 1200967,YES,NO 
+	 	 Window_YES Gold >=600 && Group ==1
+	 	 	 ##传回亚诺曼城
+	 	 	 AddGold -600
+	 	 	 Warp 0,30199,39,33
+	 	 Window_YES Gold < 600
+	 	 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 	 
+	 	 Window_NO 	 
+
+################### 采集系 职阶 >=3  && 开过传送石
+block Job >450 && JobRank >=3 && NowEvent 244 == 1
+	 ##1200967	\n这是通往亚诺曼城的传送石，要使用吗？\n费用是600元。
+	 Window 1200967,YES,NO 
+	 	 Window_YES Gold >=600 && Group ==1
+	 	 	 ##传回亚诺曼城
+	 	 	 AddGold -600
+	 	 	 Warp 0,30199,39,33
+	 	 Window_YES Gold < 600
+	 	 	 ##1200935	\n\n\n\n@c你带的钱不够哦！
+			 EndWindow 1200935
+	 	 	 
+	 	 Window_NO 	 
+################### 一般
+block 
+	 ##1200937	\n\n\n\n@c你没有使用此传送石的资格。
+	 EndWindow 1200937	 	 

@@ -1,0 +1,75 @@
+#﹛笙渝蜃烂母件斥亦件﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛檗萼盒及摒
+
+###﹛嗯分日中﹋607710﹌毛赭儅
+block Item_607710 >= 1
+	EndWindow 3207246
+
+		#\n\n﹛云云﹜仇及檗萼盒及萼互泙卞峏匀凶氏匹允卅﹝\n﹛方井匀凶﹜公木反掸卞方井匀凶﹝\n﹛凶分漆﹜丐孔木请今氏午允月ゲ中拸毛优韶卞\n﹛仇日尹化中月午仇欠匹丐曰引允﹝\n﹛仇木井日手檗萼盒毛升丹冗﹜方欠仄文丹卞﹝
+
+
+
+###﹛祭檗及惟﹋631054﹌午祭檗及累﹋631053﹌毛赭儅
+block Item_631054 >= 1 && Item_631053 >= 1
+	Window 3207247,YES,NO
+
+		#\n\n﹛云云﹜祭檗及累午祭檗及惟互公欠中引仄凶卅﹝\n﹛匹反﹜祭檗及萼毛综匀化手方欠仄中匹允井卅〝
+
+		Window_YES Item_631054 >= 1 && Item_631053 >= 1 && ItemSpace >= 1
+			Window 3207248,OK
+
+		#\n\n﹛仇及檗萼盒互擎熔慇户化综匀凶祭檗及萼反﹜\n﹛＊及扲?毛钒仃月仇午互匹五月及匹允﹝\n﹛凶分仄﹜侹午允午莽木化仄引丹及匹仍镗啦毛﹝\n﹛匹反﹜方欠仄文丹卞﹝
+
+				Window_OK Item_631054 >= 1 && Item_631053 >= 1 && ItemSpace >= 1
+					KillItem 631054,1
+					KillItem 631053,1
+					GiveItemEX 631055,1,3207249
+
+		#\n\n﹛云云﹜绂坁卞坞五互卅中及匹﹜\n﹛祭檗及萼毛欐六引六氏冗﹝\n﹛绂坁及帮咥毛云凑中仄引允﹝\n﹛升丹冗﹜方欠仄文丹卞﹝
+					LeaveGroup
+					Warp 0,59753,57,181
+
+				Window_OK Item_631054 >= 1 && Item_631053 >= 1
+					EndWindow 3207250
+
+		#\n\n﹛云云﹜绂坁卞坞五互卅中及匹﹜\n﹛祭檗及萼毛欐六引六氏冗﹝\n﹛绂坁及帮咥毛云凑中仄引允﹝\n﹛升丹冗﹜方欠仄文丹卞﹝
+
+				Window_OK
+					EndWindow 3207251
+
+		#\n\n﹛云云﹜笺恔互壅尹化仄引中引仄凶冗﹝\n﹛祭檗及萼互优邰卅日﹜云茧仄仁分今中﹝\n﹛升丹冗﹜方欠仄文丹卞﹝
+
+		Window_YES Item_631054 >= 1 && Item_631053 >= 1
+			EndWindow 3207252
+
+		#\n\n﹛云云﹜绂坁卞坞五互卅中及匹﹜\n﹛祭檗及萼毛欐六引六氏冗﹝\n﹛绂坁及帮咥毛云凑中仄引允﹝\n﹛升丹冗﹜方欠仄文丹卞﹝
+
+		Window_YES
+			EndWindow 3207253
+
+		#\n\n﹛云云﹜笺恔互壅尹化仄引中引仄凶冗﹝\n﹛祭檗及萼互优邰卅日﹜云茧仄仁分今中﹝\n﹛升丹冗﹜方欠仄文丹卞﹝
+
+		Window_NO
+			EndWindow 3207254
+
+		#\n\n﹛公木反酸ゴ匹允卅﹝\n﹛匹允互﹜祭檗及累手祭檗及惟手侹午允午\n﹛允什莽木引允井日﹜优邰卅日壬云镀户卞﹝\n﹛匹反﹜方欠仄文丹卞﹝
+
+
+
+###﹛祭檗及惟﹋631054﹌﹜祭檗及累﹋631053﹌及中内木井毛赭儅
+block Item_631054 >= 1 || Item_631053 >= 1
+	EndWindow 3207255
+
+		#\n\n﹛仇及檗萼盒互综月祭檗及萼反﹜祭檗及累﹜\n﹛祭檗及惟互公欠匀凶午五卞藕戏允月及匹允﹝\n﹛祭檗及萼互仍赭侗卅日壬﹜升丹冗云侉木卅仁﹝\n﹛匹反﹜方欠仄文丹卞﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3207256
+
+		#\n\n﹛＞檗萼盒﹛姹及祭檗反谘五月午手\n﹛﹛﹛﹛﹛﹛歹木萸五厄木化市幼午凶反戈月＝\n﹛升丹手﹜檗萼盒匹允﹝\n﹛祭檗及累午祭檗及惟毛云儅切中凶分仃木壬﹜\n﹛豳衬卅祭檗及萼毛云综曰中凶仄引允﹝\n﹛升丹冗﹜方欠仄文丹卞﹝
+
+
+

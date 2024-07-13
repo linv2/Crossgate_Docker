@@ -1,0 +1,44 @@
+# 扑尼仿它巨永末邧?“玉夫永皿失奶泛丞
+# ItemID:623552
+#
+
+
+###﹛＊?毛呁醒赭儅
+Block Item 623545 > 1 || Item 623546 > 1 || Item 623547 > 1 || Item 623548 > 1 || Item 623549 > 1 || Item 623550 > 1 || Item 623551 > 1 || Item 623552 > 1 || Item 623553 > 1 || Item 623554 > 1
+	EndWindow 3219942
+
+		#\n\n﹛＊?反﹜\n﹛ㄡ勾动晓儅匀化中月午钒仃日木引六氏﹝
+
+Block Item 623545 >= 1 || Item 623546 >= 1 || Item 623547 >= 1 || Item 623548 >= 1 || Item 623549 >= 1 || Item 623550 >= 1 || Item 623551 >= 1 || Item 623553 >= 1 || Item 623554 >= 1
+	EndWindow 3219943
+
+		#\n\n﹛＊?反﹜\n﹛ㄡ勾动晓儅匀化中月午钒仃日木引六氏﹝
+
+
+###﹛晓筏动陆
+Block
+	Window 3219944,YES,NO
+
+		#\n\n﹛＊?毛钒仃引允井〝
+
+		Window_YES Item 623552 < 1
+			EndBlock
+
+		Window_YES Item 623545 > 1 || Item 623546 > 1 || Item 623547 > 1 || Item 623548 > 1 || Item 623549 > 1 || Item 623550 > 1 || Item 623551 > 1 || Item 623552 > 1 || Item 623553 > 1 || Item 623554 > 1
+			EndWindow 3219945
+
+		#\n\n﹛＊?反﹜\n﹛ㄡ勾动晓儅匀化中月午钒仃日木引六氏﹝
+
+		Window_YES
+			LocalCount1 = Random 2,0
+			KillItem 623552,1,(3012317)
+			if LocalCount1 == 1
+				GiveItem(623524%10$1,623529%10$1,623531%10$1,623523%10$1,18450%10$1,13618%10$1,13678%10$1,606258%10$1,606308%10$1,621006%10$1)
+			else
+				if LocalCount1 == 2
+					GiveLeak1Item(623553%100$1)
+				endif
+			endif
+
+		Window_NO
+			EndBlock

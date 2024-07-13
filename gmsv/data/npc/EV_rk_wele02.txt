@@ -1,0 +1,30 @@
+#
+#杹?它奶件犯奴□生
+#
+
+##﹛伊矛伙ㄥㄟ恍坢及桦宁
+block Level < 60
+#\n\n﹛踹及魂柈卞蔺爵仄化心卅中〝\n\n﹛＿午蜕中凶中午仇欠分仃升﹜丐卅凶及雄今分午引分渣莴友﹝\n﹛中勾井雄仁卅匀化井日引凶仁月午中中歹﹝
+ Endwindow 21284
+
+### 踹及账弁伉旦正伙毛手匀化中卅中 ###
+##block Item 9202 == 0
+#\n\n﹛踹及魂柈卞蔺爵仄化心卅中〝\n\n﹛＿午蜕中凶中午仇欠分仃升﹜账辑卅踹及弁伉旦正伙毛儅匀化中卅中方丹友﹝\n﹛戊汁戊汁午踹及弁伉旦正伙及瑞弅毛螂户化日匀仄扎中﹝
+## Endwindow 21285
+
+############## 椭瘀毛坢凶仄化中月 ##############
+block
+#\n\n﹛丐卅凶卅井卅井雄公丹友﹝\n﹛仄井手账辑卅踹及弁伉旦正伙手手匀化中月仄″\n\n﹛＿踹及魂柈卞蔺爵仄化心卅中〝
+	Window 21286,Yes,No
+        # Window_Yes Item 9202 == 0
+        #  Endwindow 21285
+         Window_Yes Group == 1
+         Window 21304,OK
+          Window_OK
+		LeaveGroup
+          Warp 0,15542,18,18
+### 弘伙□皿反元五 ###
+         Window_Yes Group != 1
+#\n\n﹛仇及燮卞褡戈卅日夫午曰内勾云凑中友﹝
+          EndWindow 21287
+         Window_No

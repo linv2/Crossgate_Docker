@@ -1,0 +1,115 @@
+## 拉霸赌场接待员 内场 32338 (换46020 兼 带出场用)
+
+##有沙漏 且 未超过 10 分钟 (收500元给20个筹码)
+block Item 46019 >= 1 && ItemCreateTime 46019 < 5 || Item 46028 >= 1 && ItemCreateTime 46028 < 5
+   	 ##1052210 @c\n\n\n筹码需要吗？\n@c每20枚只要500元。
+	 Window 1052210,YES,NO
+	 Window_NO
+	 Window_YES Gold > 500
+	 AddGold -500 
+	 GiveStackItem 46020,20
+	 ##10168 \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+## 沙漏时间到 
+block Item 46019 >= 1 && ItemCreateTime 46019 >= 5 || Item 46028 >= 1 && ItemCreateTime 46028 >= 5
+	 ##1052207 \n\n\n\n@c拉霸时间结束，辛苦了，请到兑换处兑换精美礼物。
+	 if Item 46019 >= 1
+	 KillItem 46019
+	 endif
+	 if Item 46028 >= 1
+	 KillItem 46028
+	 endif
+	 EndWindow 1052207
+	 
+## 钱不够的判断
+block Item 46019 >= 1　&& Gold <= 500 || Item 46028 >= 1　&& Gold <= 500
+      ##3 \n\n很抱歉，你的钱不够了
+      EndWindow 3
+
+## 离开赌场　删除物品 彩球 46021 彩票 46022 小玛莉拉霸克星 46028
+block
+	 ##1052209 您要离开这个充满欢乐的地方吗？
+	 Window 1052209,YES,NO
+	 Window_NO
+	 
+	 Window_YES Group > 1
+	 LeaveGroup
+	 if Item 46021 >= 1
+	 KillItem 46021,20
+	 else
+	 end if
+	 if Item 46022 >= 1
+	 KillItem 46022,999
+	 else
+	 end if
+	 if Item 46028 >= 1
+	 KillItem 46028
+	 else
+	 end if
+	 Warp 0,30110,47,46
+		 
+	 Window_YES
+	 if Item 46021 >= 1
+	 KillItem 46021,20
+	 else
+	 end if
+	 if Item 46022 >= 1
+	 KillItem 46022,999
+	 else
+	 end if
+	 if Item 46028 >= 1
+	 KillItem 46028
+	 else
+	 end if
+	 Warp 0,30110,47,46## 拉霸赌场接待员 内场 32338 (换46020 兼 带出场用)
+
+
+46028
+
+##有沙漏 且 未超过 10 分钟 (收500元给20个筹码)
+block Item 46019 >= 1 && ItemCreateTime 46019 < 5 || Item 46028 >= 1 && ItemCreateTime 46028 < 5
+   	 ##1052210 @c\n\n\n筹码需要吗？\n@c每20枚只要500元。
+	 Window 1052210,YES,NO
+	 Window_NO
+	 Window_YES Gold > 500
+	 AddGold -500 
+	 GiveStackItem 46020,20
+	 ##10168 \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+## 沙漏时间到 
+block Item 46019 >= 1 && ItemCreateTime 46019 >= 5 || Item 46028 >= 1 && ItemCreateTime 46028 >= 5
+	 ##1052207 \n\n\n\n@c拉霸时间结束，辛苦了，请到兑换处兑换精美礼物。
+	 if Item 46019 >= 1
+	 KillItem 46019
+	 endif
+	 if Item 46028 >= 1
+	 KillItem 46028
+	 endif
+	 EndWindow 1052207
+
+## 钱不够的判断
+block Item 46019 >= 1　&& Gold <= 500 || Item 46028 >= 1　&& Gold <= 500
+      ##3 \n\n很抱歉，你的钱不够了
+      EndWindow 3
+
+## 离开赌场　删除物品 彩球 46021 彩票 46022 小玛莉拉霸克星 46028
+block
+	 ##1052209 您要离开这个充满欢乐的地方吗？
+	 Window 1052209,YES,NO
+	 Window NO
+	 Window YES
+	 if Item 46021 >= 1
+	 KillItem 46021,20
+	 else
+	 end if
+	 if Item 46022 >= 1
+	 KillItem 46022,999
+	 else
+	 end if
+	 if Item 46028 >= 1
+	 KillItem 46028
+	 else
+	 end if
+	 Warp 0,30110,47,46

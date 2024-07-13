@@ -1,0 +1,33 @@
+################### 神官恰咪
+block Item 40710>0 && Item 15213>0 && Group > 1
+	 ##1100000 \n请解散队伍。 
+	 EndWindow 1100000
+block Item 40710>0 && Item 15213>0
+	 #1102510	韩式泡菜饭是要请我吃的吗？？
+	 Window 1102510,YES,NO 
+	 	 Window_NO
+	 	 EndWindow 1102514
+	 	 Window_YES Group > 1 
+	  		 EndWindow 1100000
+	 	 Window_YES
+	 	 	 #1102511	谢谢～\n真是好吃，身体都暖洋洋呢？	1
+			 #1102512	你刚说什么？要进神殿之底？	1
+			 #1102513	嗯～入口就在后方，进去吧～	1		
+	 		 Window 1102511,NEXT				
+			 Window 1102512,NEXT				
+			 Window 1102513,OK
+			 	 Window_OK Item 15213>0
+			 	 killitem 15213,1
+			 	 LeaveGroup
+				
+	 	 	 	 Warp 0,32201,71,316
+	 		  	  Endblock	
+	 		  	 
+	 		  	 Window_OK 
+	 		  	 EndWindow 1102521
+block Item 40710>0 
+	 #1102514	好冷喔！好想吃韩式泡菜饭暖暖身子！
+	 EndWindow 1102514
+block
+	 #这里真是冷呀！
+	 EndWindow 1102515

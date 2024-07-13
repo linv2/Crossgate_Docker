@@ -1,0 +1,58 @@
+###################祈愿石           0 01101(21,7)2005情人节任务取物品npc
+
+###################有会员证
+block Item 46480 >=1
+	 ##1052723	\n\n  一颗看起来不起眼的石头．．．
+	 EndWindow 1052723
+	 
+###################身上有拿过草了
+block Item 46478 >=1 || Item 46477 >=1 || Item 46476 >=1 || Item 46475 >=1
+	 ##1052723	\n\n  一颗看起来不起眼的石头．．．
+	 EndWindow 1052723
+	 
+###################队伍不是两人
+block Group >=3 || Group <=1	 
+	 ##1052723	\n\n  一颗看起来不起眼的石头．．．
+	 EndWindow 1052723
+	 	  
+################### 一般
+block 
+	 ##1052724	\n\n\n\n  @c是你唤醒我的吗？
+	 Window 1052724,YES,NO 
+	 	 Window_NO 
+	 	 ##1052725	\n\n\n\n  @c．．．．．．
+		 EndWindow 1052725
+		 
+		 Window_YES 
+		 ##1052726	\n\n\n\n  @c让我来见证一下你们的真心吧．．．
+	 	 Window 1052726,YES,NO 
+	 	 	 Window_NO 
+	 		 ##1052725	\n\n\n\n  @c．．．．．．
+	 		 EndWindow 1052725
+	 		 
+	 		 Window_YES 
+	 		 ##1052727	\n\n\n\n  @c你愿意永不改变一开始的初衷吗？
+			 Window 1052727,YES,NO 
+			 	 Window_NO 
+			 	 ##1052725	\n\n\n\n  @c．．．．．． 
+			 	 EndWindow 1052725
+			 	 
+			 	 Window_YES 
+			 	 ##1052728	\n\n\n\n  @c你愿意永远把握着这段幸福吗？
+				 Window 1052728,YES,NO 
+				 	 Window_NO 
+				 	 ##1052725	\n\n\n\n  @c．．．．．．
+			 	 	 EndWindow 1052725
+			 	 	 
+			 	 	 Window_YES 
+			 	 	 ##1052729	\n\n\n\n  @c你愿意许下至死不变的承诺吗？
+					 Window 1052729,YES,NO 
+					 	 Window_NO 
+					 	 ##1052725	\n\n\n\n  @c．．．．．．
+					 	 
+					 	 Window_YES 
+					 	 ##1052730	\n\n\n\n  @c很好～愿幸福常伴于你们左右。
+						 Window 1052730,NEXT 
+						 ##1052731	\n\n  @c情 人 节 快乐 .★　*　★\n  @c.*★　*.　* *　　　　　★\n  @c★　            　　　　*\n  @c★　　 　  ．°∴°﹒☆°．﹒\n  @c‘*.　　               * \n  @c‘★　　　　　★\n  @c‘* ★' 
+						 GiveLeak1Item(46475%1$1,46476%1$1,46477%1$1,46478%1$1)	
+						 EndWindow 1052731

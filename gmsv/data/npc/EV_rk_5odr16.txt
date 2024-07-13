@@ -1,0 +1,24 @@
+#???üì?
+
+#???????þ­????
+block NowEvent 115 == 1
+	Window 22640,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK EndEvent 53 == 1
+			GiveItem 16397,1
+			LeaveGroup
+			Warp 0,34022,23,27
+		Window_OK
+			GiveItem 16397,1
+			LeaveGroup
+			Warp 0,34018,21,8
+#???????þ­????
+block NowEvent 116 == 1
+	Window 22641,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK
+			GiveItem 16397,1
+			LeaveGroup
+			Warp 0,34021,23,27

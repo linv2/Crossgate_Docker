@@ -1,0 +1,7 @@
+block 
+	 Window 1110470,OK #	\n\n\n\n@c我相信你值得拥有我的力量！！收下吧！！
+	 Window_OK
+	 LeaveGroup
+	 GiveLeak1Item 9333,1
+	 Warp 0,32277,52,45
+	 endblock

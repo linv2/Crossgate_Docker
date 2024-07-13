@@ -1,0 +1,32 @@
+#
+#呺
+#
+
+
+
+
+block
+
+				LocalCount0 = random 3,0
+
+				if LocalCount0 == 1
+
+					EndWindow 3200136
+		#\n\n﹛漆及失皮石□旦迋及蟆及锭窗隍互\n﹛掸反﹜垫杅尕抸卞卅匀化引仄化＿＿
+
+				else
+
+					if LocalCount0 == 2
+
+						EndWindow 3200137
+		#\n\n﹛蟆及锭窗隍﹜它奴皿伙迋反﹜\n﹛午丐月蕞歾酦﹜仇及石□伙匹﹜\n﹛﹍卅卞井﹎毛仄化中月愈酦卞﹜\n﹛弊螺午铣毛怅今木化仄引歹木引仄凶﹝
+
+					else
+
+						EndWindow 3200138
+		#\n\n﹛蟆锭窗隍它奴皿伙迋反﹜\n﹛垫杅尕抸卞卅日木月跶蟆卞﹜\n﹛＞手丹允什﹜﹍戈仇丹﹎毛苇月仇午互请侳月＝\n﹛午云匀仄扎匀化中凶公丹匹允互＿＿
+
+					endif
+
+				endif
+

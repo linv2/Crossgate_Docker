@@ -1,0 +1,23 @@
+## 积分卷兑换处
+## 彩票 46022 积分卷 46023
+
+block Item 46022 >= 75 && ItemSpace == 0
+	 ##11550	\n\n@n！你的物品栏满了啦！这样没办法给你东西啦
+	 EndWindow 11550
+
+
+block Item 46022 >= 75 && ItemSpace >= 1
+   	 ##1052226 75张彩票可以兑换一张积分卷，积分卷是可以携带出去的，想要兑换积分卷吗？
+	 Window 1052226,YES,NO
+	 Window NO
+	 Window YES Item 46022 >= 75 && ItemSpace >= 1
+	 KillItem 46022,75
+	 GiveStackItem 46023,1
+	 ##10168 \n谢谢惠顾，欢迎下次再来。
+	 EndWindow 10168
+
+
+block 
+	 ##1052227 \n\n\n\n@c75张彩票可以兑换积分卷一张，积分卷是可以携带出赌场的哦。
+	 EndWindow 1052227
+

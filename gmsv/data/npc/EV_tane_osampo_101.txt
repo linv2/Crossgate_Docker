@@ -1,0 +1,66 @@
+
+block
+
+
+
+				LocalCount0 = random 3,0
+
+				if LocalCount0 == 1
+
+
+
+					EndWindow 3200194
+		#\n\n﹛朹衔反罹歹友升嫖迒靼﹝\n﹛聂仁反块歹友之﹜凶匀凶及巨民未件﹜午﹝
+
+
+
+				else
+
+					if LocalCount0 == 2
+
+
+
+
+						EndWindow 3200195
+		#\n\n﹛濛樊及弁瓦匹反﹜域褶?匹手厘蹼虽方﹝\n﹛锉卅氏化手匀化之友之支﹝
+
+
+
+					else
+
+						Window 3200196,yes,no
+		#\n\n﹛?鳗及域褶?﹜\n﹛凶引仍仍?及伊扑疋毛襞曰凶中井友〝
+
+
+						Window_yes skilllevel 215 >= 1
+						Window 3200197,ok
+		#\n\n﹛方欠仄中﹜艘仄化妏井木方
+								Window_ok
+								GiveRecipe 956
+
+						Window_yes
+						EndWindow 3200198
+		#\n\n﹛譬咥及旦平伙毛\n﹛手匀化云日木氏方丹分卅﹝
+
+
+						Window_no
+						EndWindow 3200199
+		#\n\n﹛孔﹜峸木樊及挂丹仇午卅升﹜\n﹛耨迕六厄井＿＿
+
+
+
+					endif
+
+				endif
+
+
+
+
+
+
+
+
+
+
+
+

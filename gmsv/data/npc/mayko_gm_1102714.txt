@@ -1,0 +1,10 @@
+block 
+
+	Window 1111496,ok
+	Window_OK itemspace >0
+	GiveLeak1Item 41169,1	 
+	LeaveGroup
+	warp 0,3000,53,76
+	Window_ok
+	endblock
+	

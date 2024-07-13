@@ -1,0 +1,74 @@
+#伙申及朿盒及伙申
+
+##############  ##############
+block EndEvent 27 == 1
+#\n\n﹛票冞互雄仁卅匀凶日引凶芛氏匹丐仆月友″
+	EndWindow 15433,OK
+##############  ##############
+block NowEvent 27 == 1 && EndEvent 27 == 0
+#\n\n﹛丐□昍ヶ井匀凶″匹手票冞方歹允亢匀″\n﹛仇木丐仆月井日手匀午雄仁卅匀化方友匀″
+	Window 15434,OK
+	Window_OK NowEvent 27 == 1 && EndEvent 27 == 0
+	EndEvent 27 = 1
+	GiveItem 18675
+##############  ##############
+block Item 18663 == 0 && NowEvent 27 == 0
+#\n\n﹛丐木〝〝升丹支匀化じ匀凶及〝〝
+	EndWindow 15435,OK
+##############  ##############
+block Item 18663 != 0 && NowEvent 27 == 0
+#\n\n﹛丐″丐凶仄及云澎饼″″升仇匹胶匀凶及〝\n﹛＿＿凶井日仁元〝〝壬井卞仄化月〝
+	Window 15436,NEXT
+#\n\n﹛云井仄中卅丐﹝卅氏匹公氏卅午仇欠卞丐匀凶及井卅﹝
+	Window 15437,NEXT
+#\n\n﹛卅丐卞〝丐凶仄午犯□玄仄凶中及〝
+	Window 15438,YES
+	Window_YES
+#\n\n﹛＿孔丹氏＿
+	Window 15439,NEXT
+#\n\n﹛夫伉戊件〝
+	Window 15440,YES,NO
+	Window_YES
+#\n\n﹛支匀天曰友□﹝杴勾五互公丹斗丹杴勾五分匀凶方丹﹝
+	Window 15441,OK
+	Window_NO
+#\n\n﹛丹公丹公″杴勾五互公丹斗丹杴勾五分匀凶方丹″
+	Window 15442,OK
+	Window_OK
+#\n\n﹛切斤匀午云狪允月分仃卅日中中方〝云狪仄凶中〝
+	Window 15443,YES
+	Window_YES
+#\n\n﹛丐凶仄反伙申﹝伙申迋匹中中方﹝丐凶仄及仇午襞匀化月〝丐凶仄反友□﹜伙弁汁甩它未件及扑玉□扑乓卅氏分方﹝伙弁汁甩它未件仄匀化月〝
+	Window 15444,NEXT
+#\n\n﹛伙弁汁甩它未件反渔＾毛ハ莽仄﹜苇六喘仃及辚辆毛妠祯仄﹜蕞及﹜公仄化蕙凶卅月辚辆毛手凶日允仇午毛杴读午仄凶赚缟匹丐月﹝脱★反垫歹卅仃木壬卅日卅中﹝拑啃卅嵘绮卞谛戋毛珌歹六月拑チ卅嵘庄毛藉逦仄﹜呺简午谛棉及蹈杅互隋绣匹五月壑钗毛杴隙允及分﹝峏化方谛戋″脱日仇公互仇及崭卞蕞及兜ク毛手凶日允恘午卅月及分″
+	Window 15445,NEXT
+#\n\n﹛拑啃卅嵘绮卞谛戋毛珌歹六月拑チ卅嵘庄毛藉逦仄﹜呺简午谛棉及蹈杅互隋绣匹五月壑钗毛杴隙允及分﹝峏化方谛戋″脱日仇公互仇及崭卞蕞及兜ク毛手凶日允恘午卅月及分″
+#	Window 15446,NEXT
+#\n\n﹛匀化换芘由件白伊永玄卞踏中化丐月方﹝じ曰凶仁卅匀凶〝
+	Window 15447,YES
+	Window_YES
+#\n\n﹛元扎丐仇及灭沶踏卞抩蟆踏中化友﹝
+	Window 15448,YES
+	Window_YES
+#\n\n﹛@n匀化中丹及〝目件卅抩蟆分方友﹝丹丹氏﹜公氏卅卞?票仄卅中匹手中中方﹝伙申迋反散芢分井日抩蟆卅氏井竣卞仄卅中方﹝\n﹛丐﹜公丹分″伙申迋互手匀午中中抩蟆毛勾仃化丐仆月友﹝
+	Window 15449,YES
+	Window_YES
+#\n\n﹛丹□氏﹜丹□氏＿＿\n﹛丐″＞伙申迋及票冞毛支日六化手日匀化月@n＝卞仄方丹方″″友〝歹井曰支允中仄﹜友〝
+	Window 15450,NO
+	Window_NO
+#\n\n﹛赢允亢月〝元扎丐元扎丐﹜丹□氏午＿＿\n﹛峎仄化＞伙申迋及票冞＝匹手袱仄化丐仆月方〝方井匀凶友″中中抩蟆手日尹化″″
+	Window 15451,YES
+	Window_YES
+#\n\n﹛友尹友尹﹜票冞﹝伙申迋午手匀午芛太凶中〝
+	Window 15452,YES
+	Window_YES
+#\n\n﹛公丹分方友匀″元扎丐中仁方丹″
+	Window 15453,OK
+	Window_OK Group == 1
+	KillItem 18663,1
+	NowEvent 27 = 1
+	Encount 2|0,23501,11,8||0|||||0|10009|||||||||
+	Window_OK
+#\n\n﹛醒卞俇月卅氏化卅匀今仃卅丐中″
+	EndWindow 15491,OK
+

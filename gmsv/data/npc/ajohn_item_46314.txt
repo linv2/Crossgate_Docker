@@ -1,0 +1,31 @@
+####神秘小礼物
+block Item 46314 >= 1
+	 ##1052467	\n\n\n\n@你要打开吗。	
+	 Window 1052467,YES,NO
+	 	 Window_NO
+	 	 Window_YES
+	 	 	 ##1052468	\n\n\n\n@c你确定要打开吗。	
+	 	 	 Window 1052468,YES,NO
+	 	 	 	 Window_NO
+	 	 	 	 Window_YES
+	 	 	 	 	 ##1052469	\n\n\n\n@c你确定真的要打开吗。	
+	 	 	 	 	 Window 1052469,YES,NO
+	 	 	 	 	 	 Window_NO
+	 	 	 	 	 	 Window_YES
+	 	 	 	 	 	 	 ##1052470	\n\n\n\n@c你确定真的不后悔要打开吗。	
+	 	 	 	 		 	 Window 1052470,YES,NO
+	 	 	 	 	 	 	 	 Window_NO
+	 	 	 	 	 	 	 	 Window_YES
+	 	 	 	 	 	 	 	 	 ##1052471	\n\n\n\n@c你确定真的不后悔不反悔要打开吗。	
+	 	 	 	 	 	 	 	 	 Window 1052471,YES,NO
+	 	 	 	 	 	 	 	 	 	 Window_NO
+	 	 	 	 	 	 	 	 	 	 Window_YES
+	 	 	 	 	 	 	 	 	 	 	 ##1052472	\n\n\n\n@c你确定真的不后悔不反悔就算冒着生命的危险也要打开吗。	
+	 	 	 	 	 	 	 	 	 	 	 Window 1052472,YES,NO
+	 	 	 	 	 	 	 	 	 	 	 	 Window_NO
+	 	 	 	 	 	 	 	 	 	 	 	 Window_YES
+	 	 	 	 	 	 	 	 	 	 	 	 	 ##1052473	\n\n\n\n@c你真是个有毅力跟耐心的人，不过神秘小礼物就是不知道才叫神秘小礼物。	
+	 	 	 	 	 	 	 	 	 	 	 	 	 EndWindow 1052473
+	 	 	 	 	 	 	 	 	 	 	 
+	 	 	 	 
+	 	 	 

@@ -1,0 +1,29 @@
+#
+#瓦正弗
+#
+##############  ##############
+block Item 18630 >= 1
+#\n\n﹛公及?嗯匹仄匀井曰云铲户毛引匀午丹允月匹支氏允方﹝
+	EndWindow 15405,OK
+
+##############  ##############
+block
+#\n\n﹛オ太反诿奿今互抰匹支氏允﹝仇及仿件及?嗯匹今日卞诿奿卞卅月匹支氏允﹝
+	Window 15399,NEXT
+#\n\n﹛7500Gold匹支氏允﹝
+	Window 15400,YES,NO
+	Window_NO
+#\n\n﹛公丹匹支氏允井℅﹝
+	EndWindow 15401,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛儅切濠木卅中匹支氏允方﹝
+	EndWindow 15402,OK
+	Window_YES Gold < 7500
+#\n\n﹛箫曰卅中匹支氏允﹝
+	EndWindow 15403,OK
+	Window_YES ItemSpace != 0 && Gold >= 7500
+	AddGold -7500
+	GiveItem 18630
+#\n\n﹛引中升匹支氏允℅﹝
+	EndWindow 15404,OK
+

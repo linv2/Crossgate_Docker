@@ -1,0 +1,36 @@
+#﹛戊立亘瓦弗□扑亦件准憎??壬仄NPC﹛??﹛巟鼹
+#
+#﹛﹛﹛泛伉□﹋垫五﹌及摒
+
+###﹛PUK3毛癫化化中月
+block Trialflg >= 8
+	Window "\n\n﹛伉□扑乓验及菲谛准憎?卞垫五凶中卅日﹜\n﹛公木互仄互?壬仄化仄氏兮方丹﹝\n﹛凶分仄﹜公及凤伞互丐月卅日卅﹝\n﹛仍瑁蝇反中井卞〝",YES,NO
+
+		Window_YES Trialflg >= 8
+			Window "\n\n﹛仄井日壬﹜垫井木方″",OK
+
+				Window_OK Trialflg >= 8
+					LeaveGroup
+					Warp 0,59522,91,68
+					EndBlock
+
+				Window_OK
+					EndWindow "\n\n﹛丞丞永﹜云潜卞反公及凤伞互卅中方丹分﹝"
+					EndBlock
+
+		Window_YES
+			EndWindow "\n\n﹛丞丞永﹜云潜卞反公及凤伞互卅中方丹分﹝"
+			EndBlock
+
+		Window_NO
+			EndWindow "\n\n﹛今方丹井﹝匹反﹜引凶及窗莘卞﹝"
+			EndBlock
+
+
+
+###﹛PUK3毛癫化化中卅中
+block
+	EndWindow "\n\n﹛丞丞永﹜云潜卞反公及凤伞互卅中方丹分﹝"
+
+
+

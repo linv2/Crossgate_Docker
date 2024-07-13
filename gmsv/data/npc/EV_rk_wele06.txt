@@ -1,0 +1,11 @@
+#
+#哗晓尺窖允它奶件犯奴□生
+#
+
+block
+#\n\n\n\n@c﹛手丹哗晓卞窖曰凶中〝
+ Window 21297,Yes,No
+  Window_Yes
+   LeaveGroup
+   warp 0,100,420,575
+  Window_NO

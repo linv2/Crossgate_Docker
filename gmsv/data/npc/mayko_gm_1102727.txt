@@ -1,0 +1,13 @@
+
+###Ð¡·ï»Ë
+block 
+	 Window 1111514,yes,no
+	 Window_yes
+	 Encount 2|||0|||||0|40348|||||||||	 
+	#Encount 2|0,32152,34,34||0|||||0|40344|||||||||	
+	window_no
+	 Endblock
+
+	 
+	 		 	 
+		 	 

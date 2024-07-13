@@ -1,0 +1,24 @@
+#奶矛件玄泛旦玄
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 玉永未伉弁﹋甩□矛伙赢牁﹌##########
+block 
+	#
+	Window 13092,YES,NO
+
+	#反中及桦宁#
+	Window_YES
+	Window 13093,NEXT
+	#Window_OK
+	Window 13094,NEXT
+	#Window_OK
+	EndWindow 13095
+
+	#中中尹及桦宁#
+	Window_NO
+	EndWindow 13096
+
+

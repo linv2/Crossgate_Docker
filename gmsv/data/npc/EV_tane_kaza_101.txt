@@ -1,0 +1,35 @@
+
+block
+
+
+if  Xpos == 177 && Ypos == 138
+
+	if nowtime == 0
+
+		warp 0,59500,201,36
+
+	else
+
+		if nowtime == 1
+
+			warp 0,59500,190,109
+
+		else
+			if nowtime == 2
+
+				warp 0,59500,167,67
+
+			else
+				if nowtime == 3
+
+					warp 0,59500,201,158
+
+				endif
+			endif
+		endif
+	endif
+endif
+
+
+
+

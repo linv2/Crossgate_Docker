@@ -1,0 +1,15 @@
+#GW疵嗯Ⅱ楷
+#疆请NPC＞副〇溢 斥□伙＝
+
+block
+	Window 3205344,YES,NO
+
+		#\n\n﹛陆尺请凶中及井中〝
+		Window_YES Group != 1
+			EndWindow 3205345
+
+		#\n\n﹛ㄠ谛内勾元扎卅中午窖仄化丐仆日木卅中方﹝
+		Window_YES
+			Warp 0,59501,250,109
+		Window_NO
+Endblock

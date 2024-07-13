@@ -1,0 +1,11 @@
+#ɳ֯32277	37	27
+
+block
+	 Window 1109812,NEXT
+	 EndWindow 1109813
+
+
+	 
+	
+	 
+	 

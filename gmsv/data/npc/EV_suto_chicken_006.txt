@@ -1,0 +1,20 @@
+#
+#£¾ºëÒÁ¡õÐþÍß·¥ÐþØøÛÆÏ·¼°Å¯©jÐþØø©k±å•iîùÃQÔ»£½
+#
+#·¥¡õÃóÆ½Ø¨¡õÆ¤
+
+
+
+Block Xpos == 229 && Ypos == 51
+
+		Window 3207715,Yes,No
+
+		#\n\n©x½ÑÔ»ÒýÔÊ¾®¨”
+		
+			Window_Yes
+			
+				Warp 0,59526,172,103
+				
+			Window_No
+			
+				Endblock

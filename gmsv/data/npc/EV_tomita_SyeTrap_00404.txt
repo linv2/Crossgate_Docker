@@ -1,0 +1,21 @@
+#Ä¸¼þ³âÒà¼þÐþ·ÂÓÀÃó©x©x??©xŽx÷ú
+#
+#©x©x©xÆËÄá·ÂÓÀËüÄáÓÀÄ©¼°ÏÔ¨ã±Õ©jµ©ÄÌÓÀÃñ·¥¡õÃó©k
+
+###©x3004859£¾æØÜìØ¦âãÆYÆÕ¡å©x·¥¡õÃóÐþ·ÂÓÀÃó·Ö¡å£½
+###©x3004860£¾àß±å²³AØ¦ÆÕç§»¥Ø¤ÔÈÐ×¡å£½
+
+
+
+###©x·¥¡õÃó
+block Xpos == 50 && Ypos == 85
+
+	If LocalFlag1 == 1
+
+		Message 3004859
+		Warp 0,59804,83,133
+
+	endif
+
+
+

@@ -1,0 +1,10 @@
+#####新星系歌姬伺服器赠品	天女散花(雪蕾洁变身卡)	andyywang_item_47767.txt	
+
+block Item 47767 >=1 && item 46404 <1
+	##1055893	\n\n\n@c非法使用，道具删除。
+	killitem 47767,1
+	EndWindow 1055928
+
+block Item 47767 >=1 && item 46404 >=1
+	SprinkleAround 47766,47766,47766,47766,47766,47766,47766,47766,47766
+	endblock

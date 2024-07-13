@@ -1,0 +1,70 @@
+#≦反元户化及云勾井中≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛犯伉永弁及摒
+
+###﹛伙左□弘及抩铜毛呁醒赭儅
+
+block Item_607904 >= 2
+	EndWindow 3200775
+		#\n\n﹛公木﹜伙左□弘及抩铜分欠﹝\n﹛职谛迋及抩铜毛窒呦手儅勾匀化中丹及反﹜\n﹛扔幼阁心凶中匹﹜丐引曰中中仇午元扎卅中兮﹝
+
+
+
+###﹛伙左□弘及抩铜毛赭儅
+
+block Item_607904 == 1
+
+	If StampCount_607904 == 0
+		EndWindow 3200776
+		#\n\n﹛云支﹜公及抩铜反＿﹝\n﹛卅月幻升﹜漆蘸反伙左□弘及澎鳗中井﹝\n﹛呿癫卞褪濠卅谛分友尹﹝\n﹛左伊手﹜匹五月蜃曰隅恘允月方﹝
+		EndBlock
+
+	else
+		If StampCount_607904 >= 5
+			EndWindow 3200777
+		#\n\n﹛民平及云勾井中反蔽歹匀凶心凶中分友﹝\n﹛云?木今氏﹝
+			EndBlock
+
+		else
+			EndWindow 3200778
+		#\n\n﹛方丹﹜互氏壬匀化月心凶中分卅﹝\n﹛午仇欠匹﹜庍褥及旦平伙反儅匀化月井中〝\n﹛翘及谛棉卅日公及抩铜匹耨迕允月分欠丹仃升﹜\n﹛民平及竻琼卞狪毛妏中凶曰允月桦宁卞反﹜\n﹛民平及铣及杅互择仄中狪互妏仃月午合丹方﹝\n﹛引丐﹜?日毛分引允仇午卞卅匀化仄引丹仃升﹜\n﹛窒井丐匀凶午五卞反魂仄化心凶日升丹分中﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛伙左□弘尺及澎饼毛赭儅
+
+block Item_607903 >= 1
+	EndWindow 3200779
+		#\n\n﹛公及澎饼﹜侉木卅中匹?仃化幻仄中卅﹝
+
+
+
+###﹛徆杅儅匀化中卅中
+
+block
+	Window 3200780,YES,NO
+		#\n\n﹛仇木井日平亘旦泛及翘卞垫仁及井中〝\n﹛分匀凶日﹜夫午勾俇引木化仁木卅中井卅﹝
+
+		Window_YES
+			Window 3200781,OK
+		#\n\n﹛丐曰互午丹﹝\n﹛仇及澎饼卅氏分互﹜翘卞中月伙左□弘午中丹\n﹛幼伙玉乒件旦正□卞?仃化幻仄中氏分﹝\n﹛方欠仄仁俇戈方﹝
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 607903,1,3200782
+		#\n\n﹛卅氏分﹜绂坁互中匀天中元扎卅中井﹝\n﹛分匀凶日中中方﹜职及谛卞俇戈井日﹝
+
+				Window_OK
+					EndWindow 3200783
+		#\n\n﹛卅氏分﹜绂坁互中匀天中元扎卅中井﹝\n﹛分匀凶日中中方﹜职及谛卞俇戈井日﹝
+
+		Window_NO
+			EndWindow 3200784
+		#\n\n﹛公丹井﹝元扎丐﹜职及谛卞俇戈仇午卞仄方丹﹝
+
+
+

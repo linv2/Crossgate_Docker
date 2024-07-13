@@ -1,0 +1,44 @@
+#斨洬伊□旦	赶匏		6142 1408 5 5
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 打□伙仄凶桦宁 ##########
+	block EndEvent 46 == 1
+	#\n\n﹛方仁渲舰匀凶卅″戚荚伊□旦手渝谨仄化中月冗﹝\n﹛仇及朿盒毛请化﹜斨洬及旦正□玄哗鳔卞枑月井〝
+	Window 11785,YES,NO
+
+	Window_YES
+	Warp 0,1404,0,4
+
+	Window_NO
+
+########## 打□伙仄凶桦宁 ##########
+	block Item 18377 >= 1
+	#\n\n﹛仇仇互打□伙分冗″方仁渲舰匀凶卅″
+	Window 11775,OK
+
+	Window_OK
+	#\n\n﹛方仄方仄﹜楝互ㄢ匏分″\n﹛仇切日毛熬仃潸匀化仁木﹝
+	Window 11781,YES,NO
+
+	Window_YES Item 18377 >= 1
+	KillItem 18377,1
+	GiveLeak0Item 14490,1
+	EndEvent 46 = 1
+	#\n\n﹛仇木互操圴分﹝厘庍卅抩芡分冗″
+	EndWindow 11778
+
+	Window_NO
+	#\n\n﹛卅氏分﹜仇木互中日卅中匀化及井〝
+	EndWindow 11779
+
+########## 打□伙仄凶桦宁 ##########
+	block
+	#\n\n﹛じ桦袱第据互卅中冗﹝\n﹛仇及朿盒毛请化﹜斨洬及旦正□玄哗鳔卞枑月井〝
+	Window 11776,YES,NO
+
+	Window_YES
+	Warp 0,1404,0,4
+
+	Window_NO

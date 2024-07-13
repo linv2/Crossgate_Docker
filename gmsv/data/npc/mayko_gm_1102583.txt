@@ -1,0 +1,26 @@
+#mayko_gm_1102583.txt
+#1110512	\n\n\n\n@c火～火～火～	1
+#1110507	\n\n\n\n@c红色羽毛？火焰？	1
+#1110508	\n\n　　　　我想起来了～\n　　　　失火的时候，有火焰般的鸟飞过，\n　　　　又好像有个草人跑过。	1
+#1110509	\n\n\n　　　　遗留下这样东西，\n　　　　有兴趣您就拿去吧！	1
+#1110510	\n\n\n　　　　这东西只会勾起我痛苦的回忆，\n　　　　您还是拿去吧～	1
+block Item 41055 >0
+	   EndWindow 1110510
+block Item 47640 >0
+	   EndWindow 1110510
+block Item 17039 >0
+	   EndWindow 1110510
+block Item 16378 >5
+	    Window 1110507,NEXT
+	    Window 1110508,OK
+	    Window_OK Item 16378 >5
+	    KillItem 16378,6
+	    #火焰舞者召唤书	41055
+	    #火焰啄木鸟召唤书	47640
+	    #焰炎之花	17039
+
+	    GiveLeak1Item (17039%50$1,47640%40$1,41055%10$1)
+	    EndWindow 1110509
+
+block
+	 EndWindow 1110512

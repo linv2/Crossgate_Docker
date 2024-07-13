@@ -1,0 +1,76 @@
+#丢奶件0﹛击⑻﹛酦及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+block Item 14664 >= 1
+
+	Endwindow 3007021
+
+
+block Item 14664 < 1 && Itemspace >= 1
+
+#\n\n﹛卅卞井互黍仁﹝⑵及酦匹﹝\n﹛＿＿擘分﹝擘互妏仇尹月＿＿\n﹛毙井匹﹜公木匹中化﹜\n﹛奁及方丹卞内匀仄曰仄凶擘﹝
+
+
+
+
+
+
+
+	window 3006502,next
+
+
+#
+
+
+
+	window 3006503,next
+
+#
+
+
+	window 3006504,next
+
+#
+
+
+
+
+
+	window 3006505,next
+
+
+#
+
+
+
+	window 3006506,next
+
+
+#
+
+
+
+
+	window 3006507,next
+
+#\n\n﹛方仁苇月午刓昍卞呁豪卅昑迋互\n﹛心匀切曰午藻曰慇引木化中月﹝\n﹛酦卞廿氏支曰午溥及烂井匹卅中排互苇尹月﹝\n﹛内中少氏午衙中坁及方丹卞手苇尹月﹝
+
+
+	Window 3006508,OK
+
+
+		window_ok
+
+		globalFlag7 = 1
+		GiveItem 14664,1
+
+
+
+block
+
+	Endwindow 3006999
+

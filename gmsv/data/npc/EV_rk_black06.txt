@@ -1,0 +1,5 @@
+#ÅÏ∑Æ
+
+block
+	Window 22909,Next
+	EndWindow 22910,OK

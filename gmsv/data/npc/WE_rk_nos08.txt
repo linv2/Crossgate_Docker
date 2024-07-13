@@ -1,0 +1,5 @@
+#ÓÃµ©°×Äá·ÂÐþµ©©x“²¿¢
+
+block XPos >= 120 && XPos <= 139 && YPos >= 80 && YPos <= 99
+	SetLp -1
+endblock	

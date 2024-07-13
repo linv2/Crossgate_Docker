@@ -1,0 +1,15 @@
+#
+#Ê¯¡õ»ïÒç©jÇëéø©k
+#
+
+#
+block
+#\n\n©xÔÆ¾®ÒüÔ»±åØ¦ÈÕÄ¾ÒıÔÊ¨”
+	Window 21527,Yes,No
+		Window_No
+			Endwindow 21528
+		Window_Yes
+			Window 15684,OK
+				Window_OK
+					LeaveGroup
+          				Warp 0,1165,19,38

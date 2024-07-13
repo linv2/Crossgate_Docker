@@ -1,0 +1,166 @@
+#…«ƒ∏º˛≥‚“‡º˛°∞ñÅ?º∞±ÿ”¿”…°ı
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©x’±÷–∆Ωÿ®°ı∆§√Q‘ª©x##############
+block Item 18047 >= 1 || Item 18048 >= 1 || Item 18049 >= 1 || Item 18050 >= 1 || Item 18051 >= 1 || Item 18052 >= 1 || Item 18053 >= 1 || Item 18054 >= 1 || Item 18055 >= 1 || Item 18056 >= 1 || Item 18057 >= 1 || Item 18058 >= 1 || Item 18059 >= 1 || Item 18060 >= 1 || Item 18061 >= 1 || Item 18062 >= 1 || Item 18063 >= 1 || Item 18064 >= 1 || Item 18065 >= 1 || Item 18066 >= 1 || Item 18067 >= 1
+
+	Window 219018,NEXT
+	Window 219020,YES,NO
+
+	Window_YES Item 18047 >= 1
+	KillItem 18047
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18048 >= 1
+	KillItem 18048
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18049 >= 1
+	KillItem 18049
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18050 >= 1
+	KillItem 18050
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18051 >= 1
+	KillItem 18051
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18052 >= 1
+	KillItem 18052
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18053 >= 1
+	KillItem 18053
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18054 >= 1
+	KillItem 18054
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18055 >= 1
+	KillItem 18055
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18056 >= 1
+	KillItem 18056
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18057 >= 1
+	KillItem 18057
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18058 >= 1
+	KillItem 18058
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18059 >= 1
+	KillItem 18059
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18060 >= 1
+	KillItem 18060
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18061 >= 1
+	KillItem 18061
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18062>= 1
+	KillItem 18062
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18063 >= 1
+	KillItem 18063
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18064 >= 1
+	KillItem 18064
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18065 >= 1
+	KillItem 18065
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18066 >= 1
+	KillItem 18066
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_YES Item 18067 >= 1
+	KillItem 18067
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,14,13
+
+	Window_NO
+	EndWindow 219022,OK
+################©x÷œ ÷ÿ¶ÿ∆©x####################
+block
+	Window 219018,OK
+	Window_OK
+	setaction 10
+	EndWindow 219019,OK
+	

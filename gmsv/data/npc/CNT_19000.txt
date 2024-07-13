@@ -1,0 +1,51 @@
+#市它件玄云鉼今氏﹋泛旦玄迕NPC﹌
+
+#失奶泛丞市它件玄NPC⑹综旦弁伉皿玄
+#优内愈赓卞左皿扑亦件毛隙烂允月优邰互丐月
+#失奶泛丞ID 18000 反凶歹仄
+#失奶泛丞ID 0 反旦乒□伙末□玉
+#熬仃欐仄允月失奶泛丞反旦正永弁失奶泛丞匹卅仁化手方中
+#Type=0匹皿伊奶乩□互NPC卞失奶泛丞毛欐允
+#Total卞琼允月引匹午中丹及反﹜皮夫永弁及椭瘀匹质咥允月优邰互丐月
+#涩烂仄凶Total反赓渝祭凛卞银迕今木月分仃匹允
+
+#邰菲允月市它件玄醒
+Total=	2,	2
+#儅切慇氏匹俓仄中失奶泛丞
+#奶巨夫□丢仿件民﹋市它件玄ID“0﹌↓嗡夤檗﹋市它件玄ID“1﹌
+Item= 10002,	 9602
+#NPC及正奶皿﹛"PC井日NPC尺"
+Type=0
+#NPC井日PC卞欐允桦宁及澎醒恔﹛"漆荚反楮溢卅中"
+Gold=0
+
+
+#市它件玄互玄□正伙方曰凝今中桦宁反﹜失奶泛丞市它件玄毁迕它奶件玉它毛左□皿件允月
+block CountItemNum < $Total
+	OpenItemCountWindow 990010,990011,990012,990013,990014
+	GlobalTimerA = 0
+	Message 990014
+
+#市它件玄互玄□正伙毛译尹凶互﹜市它件玄ID互愈詨及手及匹反卅中桦宁
+#市它件玄失奶泛丞毛庍凳允月
+block CountItemNum >= $Total && CountItemID < $maxcountitemid
+	SetNextCountItemID
+#	Message "市它件玄允月失奶泛丞及庍凳"
+	OpenItemCountWindow 990010,990011,990012,990013,990014
+	GlobalTimerA = 0
+	Message 990014
+
+#市它件玄互玄□正伙毛译尹凶互﹜愈詨及市它件玄ID互隙烂今木化中化﹜
+#弘夫□田伙正奶穴□互180卍动〇及午五
+block CountItemNum >= $Total && CountItemID >= $maxcountitemid && GlobalTimerA <= 18
+	Message "骚匀化中中方℅"
+	SetFileObject 0,444,6,8,0
+
+#市它件玄互玄□正伙毛译尹凶互﹜愈詨及市它件玄ID互隙烂今木化中化﹜
+#弘夫□田伙正奶穴□互180卍毛译尹凶凛
+#市它件玄ID毛ㄟ卞枑允
+blockLoop CountItemNum >= $Total && CountItemID >= $maxcountitemid && GlobalTimerA > 18
+	SetNextCountItemID
+#	Message "市它件玄伉本永玄"
+	SetFileObject 0,444,6,8,14200
+	GlobalTimerA = 0

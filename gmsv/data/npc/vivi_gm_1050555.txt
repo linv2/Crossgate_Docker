@@ -1,0 +1,30 @@
+########### 接力赛文斗篇10 ###########
+######■木门
+##■检查队伍
+block Group > 4
+	 ##1050858	\n\n\n\n@c木门只够四个人通过。
+	 Window 1050858,YES,NO 
+	 	 Window_YES Group > 4
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■传送至32691 	 	 
+block Item 45343 == 1 
+    ##1050859	\n\n\n\n@c锁住的门打开了！
+    Window 1050859,OK
+        Window_OK Item 45343 == 1 && Group <= 4
+        KillItem 45343
+	 Warp 0,32691,3,10
+
+##■传送至32692
+block Item 45344 == 1 
+    ##1050859	\n\n\n\n@c锁住的门打开了！
+    Window 1050859,OK
+        Window_OK Item 45344 == 1 && Group <= 4
+	 KillItem 45344
+	 Warp 0,32692,3,10
+	        
+##■一般
+block
+  ##1050860	\n\n\n\n@c木门被上锁了。
+  EndWindow 1050860

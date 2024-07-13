@@ -1,0 +1,18 @@
+#1111865	\n\n\n　　　　这地方有救命的灵药，\n　　　　可是魔物们老是把人赶出来。
+#1111866	\n\n\n　　　　只要有朽木跟苞子，\n　　　　就可以种出救命灵药了。
+#1111867	\n\n\n\n@c没想到你搜集到了，这个送你吧。
+
+block item 41321 >0 && item 41322 >0
+	
+	killitem 41321,1
+	killitem 41322,1
+	GiveLeak1Item (41297%15$1,19080%50$1,607680%5$1,18536%30$1)
+	window 1111867,ok
+	Window_ok
+	leavegroup 
+	warp 0,100,173,171
+	endblock
+
+block 
+	window 1111865,next
+	endwindow 1111866

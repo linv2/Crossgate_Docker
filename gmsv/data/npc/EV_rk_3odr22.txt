@@ -1,0 +1,9 @@
+#’oó¡¼°Ø¦ÖÐ¼Á»Ô
+
+#
+block
+	Window 23105,OK
+		Window_OK
+			EndEvent 146 = 1
+			LeaveGroup
+			Warp 0,43000,457,639

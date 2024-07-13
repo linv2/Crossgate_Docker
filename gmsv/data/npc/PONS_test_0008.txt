@@ -1,0 +1,18 @@
+#∫Ãº˛µ©…Í”¿€Õ∑∫µ©–˛
+
+block XPos == 10 && YPos == 10
+Play_se 207,240,320
+
+block XPos == 10 && YPos == 12
+Play_se 207,200,300
+
+block XPos == 10 && YPos == 14
+Play_se 207,100,400
+
+block XPos == 10 && YPos == 16
+Play_se 207,400,100
+
+block XPos == 10 && YPos == 18
+Play_se 207,100,100
+
+

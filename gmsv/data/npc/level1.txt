@@ -1,0 +1,23 @@
+##Ñ«¶þµÈ
+block
+	 Window  9,YES,NO
+		 Window_YES 
+			 EndEvent 50 = 0
+			 EndEvent 51 = 0
+			 EndEvent 52 = 0
+			 EndEvent 53 = 0
+			 EndEvent 54 = 0
+			 EndEvent 55 = 0
+			 EndEvent 56 = 0
+			 EndEvent 57 = 1
+			 CheckTitle
+		 Window_NO 
+			 EndEvent 58 = 0
+			 EndEvent 59 = 0
+			 EndEvent 60 = 0
+			 EndEvent 61 = 0
+			 EndEvent 62 = 0
+			 EndEvent 63 = 0
+			 EndEvent 64 = 0
+			 EndEvent 65 = 1
+			 CheckTitle

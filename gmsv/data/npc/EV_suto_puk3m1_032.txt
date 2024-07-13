@@ -1,0 +1,46 @@
+#
+#PUK3_Main1
+#
+#章谛﹋C﹌
+
+Block LocalFlag1 == 1 && LocalFlag2 == 1 && LocalFlag4 == 1
+
+
+	Window 3206940,Next
+
+		#\n\n﹛仇及崭卞反败芮绒衔互中月及方﹝\n﹛交伙弘今引午中丹抩蟆卅氏分仃升﹜\n﹛穸仄仁化雄仁化公及晓市永戊中中及﹝\n﹛扣及⑽木卅氏分仃木升﹜\n﹛掸反交伙弘今引反统伀及扑尼伊斥尼件今引午\n﹛恌中醮日仄中及方友﹝
+	
+	Window 3206941,OK
+
+		#\n\n﹛丐丐﹜酸ゴ﹝\n﹛匹手﹜扑尼伊斥尼件今引卅日酷杅卅中井卅＿＿﹝
+	
+		Window_OK
+		
+				LeaveGroup
+			
+				warp 0,59513,116,69
+				
+				
+				
+Block LocalFlag3 == 1
+
+	EndWindow 3206942
+
+		#\n\n﹛＿＿匹手中勾井五匀午″
+
+
+				
+				
+Block
+
+	Window 3206943,Next
+
+		#\n\n﹛仇及崭卞反败芮绒衔互中月及方﹝\n﹛交伙弘今引午中丹抩蟆卅氏分仃升﹜\n﹛穸仄仁化雄仁化公及晓市永戊中中及﹝\n﹛扣及⑽木卅氏分仃木升﹜\n﹛掸反交伙弘今引反统伀及扑尼伊斥尼件今引午\n﹛恌中醮日仄中及方友﹝
+	
+	Window 3206944,OK
+
+		#\n\n﹛丐丐﹜酸ゴ﹝\n﹛匹手﹜扑尼伊斥尼件今引卅日酷杅卅中井卅＿＿﹝
+	
+		Window_OK
+		
+			Localflag3 = 1

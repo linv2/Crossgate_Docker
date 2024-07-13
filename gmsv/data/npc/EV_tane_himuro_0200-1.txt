@@ -1,0 +1,50 @@
+
+
+block Xpos == 32 && Ypos == 34
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+
+
+
+block Xpos == 30 && Ypos == 35
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+
+
+
+block Xpos == 31 && Ypos == 35
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+
+
+
+block Xpos == 32 && Ypos == 36
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+
+
+
+block Xpos == 33 && Ypos == 36
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+

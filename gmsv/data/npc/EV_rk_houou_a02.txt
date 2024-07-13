@@ -1,0 +1,69 @@
+#玄永皿皮伉□母□
+
+### 皮伉□母□’譬项诸衔’朼执诸衔卅日 ###
+########## 皿民玉仿打件(5214)毛儅匀化中月桦宁 ##########
+block job >= 90 && job < 120 && petlevel 5712 >= 1
+	#\n\n﹛幻℅﹝第只中阂互殏匀凶卅﹝\n﹛厘仪卞圈化化支木方﹝
+	EndWindow 22310
+
+########## Lv30动晓卞圈化凶裂浇卅锯(6035)毛儅匀化中月桦宁 ##########
+block job >= 90 && job < 120 && petlevel 6035 >= 30
+	#\n\n﹛云云﹝方仁公仇引匹圈化丐仆凶卅″仇木匹仇及阂手支匀午葭竣卞圈勾冗﹝\n﹛公及银中呺午﹜台互苇勾仃凶锉毛跟晶仄化支欠丹﹝
+	Window 22311,YES,NO
+
+	Window_YES job >= 90 && job < 120 && petlevel 6035 >= 30 && ItemSpace >= 1
+	Killpeth 6035,30
+	GiveItem 16380,1
+	#\n\n﹛丳桏迋手今冗云减太卞卅月分欠丹﹝\n﹛今丑﹜仇及锉毛手匀化斗仃﹝
+	EndWindow 22312
+
+	Window_YES job >= 90 && job < 120 && petlevel 6035 >= 30 && ItemSpace == 0
+	EndWindow 10000
+	Window_YES
+	Window_NO
+	#\n\n﹛公丹井﹝匹反手丹分仃剂仄域踝卞聊仍仄化手恌中互﹜
+	#中内木锯反仇及辄卞忒今卅中午母丢分冗﹝
+	EndWindow 22313
+
+########## Lv30恍坢及20056矢永玄毛儅匀化中月桦宁 ##########
+block job >= 90 && job < 120 && petlevel 6035 < 30
+	#\n\n﹛公及锯毛毛伊矛伙ㄢㄟ动晓卞引匹圈化五匀凶日﹜
+	#台井日冂帎卞邧?毛支欠丹﹝\n﹛厘庍分午合丹互厘濠卞圈化月氏分冗﹝
+	EndWindow 22314
+
+########## 皮伉□母□’譬项诸衔’朼执诸衔及桦宁 ##########
+block job >= 90 && job < 120
+	#\n\n﹛中支反支﹜丳桏迋及锯毛圈化月及反锹癫卞か仄中﹝
+	#脱★圈岳毛阀允樊卞午匀化仇木幻升及膜垫及桦反公丹卅中卅﹝
+	Window 22315,Next
+	#\n\n﹛升丹分〝云蟆手锯趸及圈岳卞蔺爵仄化心卅中井〝\n﹛凶分仄忡据嗯午仄化1000G优邰分﹝
+	Window 22316,YES,NO
+
+	Window_YES job >= 90 && job < 120 && Petspace >= 1 && Gold >= 1000
+	AddGold -1000
+	Givepet 20056
+	#\n\n﹛愤坌及毡氏侇分午合匀化厘濠卞圈化化支匀化仁木方﹝
+	#\n﹛公及阂反仇仇卞中月锯凶切及卅井匹域?裂浇卅阂卅氏分﹝
+	#扣午域踝卞葭竣恌仁芛屯月方丹卞仄化支匀化幻仄中﹝
+	EndWindow 22317,OK
+
+	Window_YES Petspace == 0
+	#\n\n﹛银中呺互中匀天中匹允﹝
+	EndWindow 22306
+
+	Window_YES Gold < 1000
+	#\n\n﹛赭儅嗯互箫曰引六氏﹝
+	EndWindow 10005
+
+	Window_NO
+	#\n\n﹛珃卞愤耨互卅中及井〝\n﹛锯趸卞坳互域及仇午互丐匀凶日厘庍分﹝
+	#愤耨及卅中樊卞反引井六日木卅中卅﹝\n﹛楝反伉玄伙布□打奶伙及伊矛伙1匹手圈化化中卅今中﹝
+	EndWindow 22318
+
+########## 银中呺楮洘动陆及缜仅及桦宁 ##########
+########## 丐化反引日卅中桦宁 ##########
+block
+	#\n\n﹛反夫℅＿﹝\n﹛丳桏迋及圈价及云澎鳗中毛仄化中月及分互﹜
+	#锯趸凶切反虫互浇仁化今允互及脱★手域塑洢分方﹝
+	#\n﹛楝﹜簿井穸膘卅圈岳樊毛襞日氏井友〝
+	EndWindow 22319

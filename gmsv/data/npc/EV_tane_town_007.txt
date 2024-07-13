@@ -1,0 +1,28 @@
+#伉伊□﹛boukenyado及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+#######################
+
+block
+		
+	Window 3006402,next
+
+
+
+
+#	Window 3002120,yes,no
+#		Window_yes
+
+#					Window 3002121,ok
+
+
+#					Giverecipe 947
+
+
+
+#		Window_no
+
+		EndWindow 3006403
+

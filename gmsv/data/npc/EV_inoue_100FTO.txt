@@ -1,0 +1,78 @@
+##########################################
+#	扑尼仿它巨永末及显﹛扑尼仿旦疋永汁
+#
+#	玄申戊
+#
+##########################################
+
+
+
+###﹛毕挥毛呁醒赭儅仄化中月 ###
+block Item 607703 > 1
+	EndWindow3208503
+
+		#\n\n﹛丐氏凶″﹛公氏卅卞毕挥手匀化中化手\n﹛丐凶仄反﹜卅氏午手合歹卅中方﹝\n﹛域勾及毕挥毛元匀仁曰棋说仄凶中及今﹝
+
+block Item 607703 == 1
+	Window3208504,yes,no
+
+		#\n\n﹛切斤匀午﹜丐氏凶″″\n﹛公及毕挥毛苇六化仁木凶日\n﹛丐凶仄及呺诸匹﹜\n﹛甲件丢伙平件玄卞伐□皿今六化丐仆月方﹝
+		Window_yes Item 607703 == 1
+			Window3208505,next
+
+		#\n\n﹛升仇匹澎卞じ木凶及井襞日卅中仃升﹜\n﹛中中毕挥分友之﹝
+			Window3208506,Next
+
+		#\n\n﹛示平永﹛
+			Window3208507,OK
+
+		#\n\n﹛甲件丢伙平件玄卞中匀午中匹之″
+				Window_ok Item 607703 == 1 && ItemDur 607703 == 1
+					KillItem 607703,(3012351)
+					LeaveGroup
+					Warp 0,59526,185,90
+
+				Window_ok Item 607703 == 1
+					SetDur 607703,-1
+					LeaveGroup
+					Warp 0,59526,185,90
+
+				Window_ok Item 607703 < 1
+					EndWindow3208508
+
+		#\n\n﹛丐氏凶″毕挥毛升仇卞怅仄凶及今″
+
+				Window_ok
+					EndWindow3208509
+
+		#\n\n﹛丐氏凶″﹛公氏卅卞毕挥手匀化中化手\n﹛丐凶仄反﹜卅氏午手合歹卅中方﹝\n﹛域勾及毕挥毛元匀仁曰棋说仄凶中及今﹝
+
+		Window_yes Item 607703 < 1
+			EndWindow3208510
+
+		#\n\n﹛丐氏凶″毕挥毛升仇卞怅仄凶及今″
+
+		Window_yes
+			EndWindow3208511
+
+		#\n\n﹛丐氏凶″﹛公氏卅卞毕挥手匀化中化手\n﹛丐凶仄反﹜卅氏午手合歹卅中方﹝\n﹛域勾及毕挥毛元匀仁曰棋说仄凶中及今﹝
+
+
+		Window_no
+			EndWindow3208512
+
+		#\n\n﹛弗民蔬中仇午毛中丹阂分方﹝\n﹛蛹月手氏元扎卅中氏分仄﹜\n﹛苇六化仁木化手中中元扎卅中及″″
+
+block Item 607704 >= 1
+	EndWindow3208513
+
+		#\n\n﹛丐氏凶及儅匀化月毕辉挥\n﹛白仿立互驯五公丹分仃升﹜\n﹛丐凶仄反饬怗卅中友﹝
+
+block
+	Window3208514,Next
+
+		#\n\n﹛挥毛井少匀凶谛互仇仇毛恌仁骚月午\n﹛丹歹今毛惮卞仄化友﹝\n﹛域杴苇方丹午谨匀化中月歹仃今﹝
+	EndWindow3208515
+
+		#\n\n﹛嫖筑卅谛卅日﹜\n﹛丐凶仄及呺诸匹域踝卞\n﹛甲件丢伙平件玄卞垫五凶中及方﹝
+

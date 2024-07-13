@@ -1,0 +1,88 @@
+#
+#PUK3_Main1
+#
+#螃啖莘襟﹋皮左﹌
+
+
+
+Block
+
+	GAWindow 3206991,Next
+
+		#\n﹛皮左\n﹛\n﹛＞＿＿引今井﹜蛙五障ミ樊毛\n﹛﹛裟太慇戈午反卅＝
+	
+	GAWindow 3206992,Next
+
+		#\n﹛失泛奴旦\n﹛\n﹛＞伉任尼伉它旦午隋卞脱★手陆尺馨中支月\n﹛﹛勾手曰分匀凶及匹仄斤丹＝
+	
+	GAWindow 3206993,Next
+
+		#\n﹛皮左\n﹛\n﹛＞公丹反中井厄＝
+	
+	GAWindow 3206994,Next
+
+		#\n﹛正穴永扑亘\n﹛\n﹛＞壑钗及兜烂反脱★螃啖及手及及澎匹\n﹛﹛手凶日今木卅仃木壬卅日卅中及分＝
+	
+	GAWindow 3206995,Next
+
+		#\n﹛皮左\n﹛\n﹛＞萨切凶丐支勾＿＿\n﹛﹛伉任尼伉它旦反升丹仄凶〝＝
+	
+	GAWindow 3206996,Next
+
+		#\n﹛正穴永扑亘\n﹛\n﹛＞孔氏﹜翱?毛摒中化⑧仆云匀凶﹝\n﹛﹛绮卞反引曰云匀化＿＿﹝\n﹛﹛赭薛反公及蠢蘸及湛＿＿匹卅仃木壬\n﹛﹛谛卞艘畴歹木凶曰卅升六氏歹＝
+	
+	GAWindow 3206997,Next
+
+		#\n﹛ 皮左\n﹛\n﹛＞蛙五障ミ樊及杴读反脱日及谛★卞覆允月\n﹛﹛蕉五硫类毛佶仆月仇午卞丐月﹝\n﹛﹛公木毛袱仄化反卅日氏＝
+	
+	GAWindow 3206998,Next
+
+		#\n﹛正穴永扑亘\n﹛\n﹛＞公丹分﹜谛卞午匀化脱日反螃﹜\n﹛﹛脱日反蕞咥﹜脱日反蝈化＝
+	
+	GAWindow 3206999,Next
+
+		#\n﹛皮左\n﹛\n﹛＞匹反﹜湃卞绮反帮匀化中月及井〝＝
+	
+	GAWindow 3207000,Next
+
+		#\n﹛正穴永扑亘\n﹛\n﹛＞拑狨分﹝\n﹛﹛俭?蕉五歹木日及凶户卞\n﹛﹛公及褥毛旲仆月及反\n﹛﹛谛卞午匀化癫螺及仪匹丐欠丹﹝\n﹛﹛螃嫦欠仄卞方匀化公及恘毛澎卞今尹允木壬﹜\n﹛﹛谛匹丐匀化手蛙五障ミ樊毛\n﹛﹛转仃月仇午互匹五月＿＿＝
+	
+	GAWindow 3207001,Next
+
+		#\n﹛皮左\n﹛\n﹛＞谛卞公及方丹卅恘毛芨尹化杽锁反卅中及井〝＝
+	
+	GAWindow 3207002,Next
+
+		#\n﹛玉伉巨皮\n﹛\n﹛＞＿＿尹尹﹝\n﹛﹛卅卞六﹜谛互螃及恘毛澎卞じ木化手\n﹛﹛公木毛蜗坌卞豢允月恘卅升儅切引允引中＝
+	
+	GAWindow 3207003,Next
+
+		#\n﹛皮左\n﹛\n﹛＞愤日昒少午〝＝
+	
+	GAWindow 3207004,Next
+
+		#\n﹛玉伉巨皮\n﹛\n﹛＞中中尹﹜昒少及匹反丐曰引六氏﹝\n﹛﹛哝钵今木月及匹允方＝
+	
+	GAWindow 3207005,Next
+
+		#\n﹛正穴永扑亘\n﹛\n﹛＞孔氏﹝脱羁尺及耨佣艘及雄今反\n﹛﹛翕中毛戏引厄井＿＿﹝\n﹛﹛塌井卅＝
+	
+	GAWindow 3207006,Next
+
+		#\n﹛失泛奴旦\n﹛\n﹛＞塌井匹丐月井日﹜\n﹛﹛谛反脱★互栋咥仄卅仃木壬卅日卅中\n﹛﹛＿＿公丹匹仄斤丹〝\n﹛﹛公木卞耨佣午反﹜噩カ允月手及匹丐匀化﹜\n﹛﹛据抸允月手及匹反卅中及匹允方＝
+	
+	GAWindow 3207007,Next
+
+		#\n﹛正穴永扑亘\n﹛\n﹛＞＿＿丐丐＝
+	
+	GAWindow 3207008,OK
+
+		#\n﹛失泛奴旦\n﹛\n﹛＞公木匹反﹜镀簧⑹五引仄斤丹﹝\n﹛﹛丐及蛙五障ミ樊迋卞仍转桦中凶分井卅仁化反\n﹛﹛壑钗互疯戏尕チ卞卅匀化仄引中引允＝
+	
+			Window_OK
+			
+				warp 0,59986,135,59
+	
+	
+	
+

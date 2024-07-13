@@ -1,0 +1,34 @@
+#PUK3_main2
+#
+#
+#·¥¡õÃóÆ½Ø¨¡õÆ¤3
+
+
+Block item_621019 >= 1 && EndEvent_206 == 1
+
+	if Xpos == 304 && Ypos == 219
+	
+	 	if LocalFlag11 == 0
+	 	
+			Play_SE 167,320,240
+			ShapeNext 103013
+
+			LocalFlag11 = 1
+		
+		endif
+
+	endif
+
+	if Xpos == 309 && Ypos == 220
+	
+		if LocalFlag11 == 1
+		
+		KillitemAll 621019,(3010074)
+		LeaveGroup
+		warp 0,59752,194,378
+		
+		endif
+		
+	endif
+		
+		

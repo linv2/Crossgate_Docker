@@ -1,0 +1,39 @@
+#
+#呺
+#
+
+
+
+
+block
+
+				LocalCount0 = random 3,0
+
+				if LocalCount0 == 1
+
+					EndWindow 3200139
+		#\n\n﹛蟆及锭窗隍及仪井〝\n﹛丐中勾域谛分仃元扎卅中方﹝\n﹛蛊及阂坌仍午壅尹切引匀凶及今﹝\n﹛项莘反夫凶怅仄卞怅仄化月仃升卅﹝
+
+				else
+
+					if LocalCount0 == 2
+
+						Window 3200140,next
+		#\n\n﹛蟆锭窗隍它奴皿伙反﹜\n﹛窒井毛项莘及﹍凛及锉﹎及嗤仁匹\n﹛苇勾仃凶日仄中卅﹝\n﹛云井仄仁卅匀凶及反公木井日分卅﹝\n﹛歾酦卞卅卞支日\n﹛打末打末铵户月方丹卞卅匀化＿＿
+
+
+						EndWindow 3200141
+		#\n\n﹛卅卞井﹜骭颬午井及扲檗及\n﹛称鼎坁匀吊中支勾日仄中互﹝\n﹛呿谛反交伙弘螃井日跶卞枃匀凶﹜\n﹛午井蜕匀化凶日仄中﹝
+
+					else
+
+						Window 3200142,next
+		#\n\n﹛公丹中尹壬﹜え及杅及Ⅱ楷及梂匹\n﹛庍卅呺坁互﹜愤坌反它奴皿伙分﹜\n﹛勾匀化凶日仄中兮﹝
+
+						EndWindow 3200143
+		#\n\n﹛帎卞蒋中井井匀化仁月午井反\n﹛仄卅井匀凶心凶中分仃升卅﹝
+
+					endif
+
+				endif
+

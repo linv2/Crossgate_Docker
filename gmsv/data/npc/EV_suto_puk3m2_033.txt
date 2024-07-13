@@ -1,0 +1,104 @@
+#PUK3_main2
+#
+#
+#瓜永扔它2
+
+
+Block
+
+	GAWindow 3207804,Next
+
+		#\n\n﹛仇仇卅日壬兜艘仄化狪互匹五月﹝\n﹛丹戈〝仇及桦赭毛襞匀化中月及井〝\n﹛仇仇反﹜螃鹧及愈票遽﹝\n﹛螃啖及扣互阼井樯卞银匀化中凶桦赭分﹝
+	
+	GAWindow 3207805,Next
+
+		#\n\n﹛楝卞反引凶普桨毛仄卅仁化反卅﹝\n﹛楝卞方匀化弁夫它及蛛桦赭互勾井户凶氏分﹝\n﹛仇木井日手俇曰卞今六化手日丹方﹝
+	
+	GAWindow 3207806,Next
+
+		#\n\n﹛今化﹜\n﹛公及瑞弅卞勾中化卅及分互＿＿＿＿
+	
+	GAWindow 3207807,Next
+
+		#\n\n﹛脱★卞欐仄化手日尹卅中井友〝
+	
+	GAWindow 3207808,Next
+
+		#\n\n﹛赚缟卞方匀化\n﹛仇午仍午仁交伙弘螃汊唾反剩鞅今木凶＿＿﹝\n﹛凳卅月澎毛昑绸仄化五凶互﹜\n﹛公木日手撩ヘ卞蔽歹匀凶﹝
+	
+	GAWindow 3207809,Next
+
+		#\n\n﹛脱★卞酸今木凶澎蟾反\n﹛﹍统伀今引﹎分仃卞卅匀化仄引匀凶及分﹝\n﹛手反支仇及壑钗毛障尹日木月及反﹜\n﹛交伙弘螃及域朿毛潸曰慇心﹜\n﹛螃及恘毛肣仄凶统伀＿＿\n﹛扑尼伊斥尼件今引分仃卅及分方﹝
+	
+	GAWindow 3207810,Next
+
+		#\n\n﹛今丐＿＿﹝
+	
+	GAWindow 3207811,Next
+
+		#\n\n﹛＿＿氏〝
+	
+	GAWindow 3207812,Next
+
+		#\n\n﹛升丹仄凶友〝踼匀化〝\n﹛厘暹屺今﹝\n﹛脱日反弁夫它及方丹卅仪反仄卅中﹝\n﹛楝手襞匀化中月分欠丹〝\n﹛公木卞楝分匀化﹜\n﹛脱★午隋卞忷氏匹五凶匹反卅中井〝\n﹛漆卞卅匀化升丹仄凶氏分﹝
+	
+	GAWindow 3207813,Next
+
+		#\n\n﹛＿＿＿＿
+	
+	GAWindow 3207814,Next
+
+		#\n\n﹛螃啖及扣互耨迕匹五卅中〝\n﹛＿＿窒毛蜕丹氏分〝\n﹛螃啖及杅★卞方匀化漆及脱★反丐月及分冗﹝
+	
+	GAWindow 3207815,Next
+
+		#\n\n﹛今丐﹜\n﹛引凶隋卞忷手丹匹反卅中井﹝\n﹛壑钗及兜ク毛\n﹛螃啖及杅★午隋卞潮欠丹匹反卅中井﹝
+	
+	GAWindow 3207816,Next
+
+		#\n\n﹛＿＿＿＿
+	
+	GAWindow 3207817,Next
+
+		#\n\n﹛窒裕澎毛犒仄翮屯化仁木卅中及分﹝
+	
+	GAWindow 3207818,Next
+
+		#\n\n﹛＿＿＿＿
+	
+	GAWindow 3207819,Next
+
+		#\n\n﹛楝毛竻匹丐月午耨元化中凶及卞﹝\n﹛窒裕″\n﹛窒裕分″咥荸仄化仁木化中月午\n﹛耨元化中凶及卞″\n﹛＿＿掖分欠丹〝公丹匹丐欠丹〝\n﹛楝互脱★毛峚濠月卅氏化＿＿﹝
+	
+	GAWindow 3207820,Next
+
+		#\n\n﹛楝毛弁夫它午⑺元方丹卞挛曰凶仁反卅中﹝\n﹛掖分午蜕匀化仁木﹝\n﹛公木分仃匹碧戈氏分﹝\n﹛暸襟匹丐木壬公木匹蝈化蔽歹月﹝
+	
+	GAWindow 3207821,Next
+
+		#\n\n﹛今丐＿＿﹝
+	
+	GAWindow 3207822,Next
+
+		#\n\n﹛＿＿＿＿＿＿
+	
+	GAWindow 3207823,Next
+
+		#\n\n﹛＿＿永弁﹝\n﹛＿＿升丹支日台反楝毛逦仄﹜\n﹛公及澎井日瑞弅毛\n﹛畴歹卅仃木壬卅日卅中方丹分＿＿﹝
+	
+	GAWindow 3207824,OK
+
+		#\n\n﹛螃啖及杅★方曰芨尹日木凶仇及恘﹜\n﹛银歹六化中凶分仁″
+	
+		Window_OK
+		
+			Encount 2|0,59984,150,140||0|||||0|308087|||||||||
+	
+
+
+	
+
+
+	
+
+

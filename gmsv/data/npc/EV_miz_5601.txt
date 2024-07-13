@@ -1,0 +1,25 @@
+#ÓªÚĞñîçÇÛÍ¾Şµ©Ğş¡°ÆËÅÒ¡õ·Â·Â¢Í¸ó©j¸²è£©k
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+###########©xÖÏÊÖØ¦ØÆ©x##############
+block endevent87 == 1
+
+	Window 20847,OK
+	Window_OK
+	endevent87 = 0
+	Warp 0,43100,119,41
+
+block
+
+	Window 20845,YES,NO
+	Window_YES
+	Window 20847,OK
+	Window_OK
+	Warp 0,43100,119,41 
+	Window_NO
+	Window 20846,OK
+	Window_OK
+	endevent87 = 1 
+	encount 3|0,45014,20,7||0|||||0|25000|||||||||
+
+	

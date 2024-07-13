@@ -1,0 +1,362 @@
+#田永玄涩煌豭﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛斥亘本永疋□瓜及摒
+
+##############################﹛涩煌豭﹛##############################
+#1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+#1110406	\n\n　　　这样吧，十级以内的吓人箱，\n　　　我加收３万魔币帮你改，可以吗？？	1	
+#1110407	\n\n　　　这样吧，１１～２０级以内的吓人箱，\n　　　我加收１０万魔币帮你改，可以吗？？	1	
+#1110408	\n\n　　　这样吧，２１～３０级以内的吓人箱，\n　　　我加收２０万魔币帮你改，可\n\n　　　以吗？？	1	
+#1110409	\n\n　　　这样吧，３１～４０级以内的吓人箱，\n　　　我加收３０万魔币帮你改，可以吗？？	1	
+#1110410	\n\n　　　这样吧，４１～５０级以内的吓人箱，\n　　　我加收４０万魔币帮你改，可以吗？？	1	
+#1110411	\n\n　　　这样吧，５１～６０级以内的吓人箱，\n　　　我加收５０万魔币帮你改，可以吗？？	1	
+#1110412	\n\n　　　这样吧，６１～７０级以内的吓人箱，\n　　　我加收６０万魔币帮你改，可以吗？？	1	
+#1110413	\n\n　　　这样吧，７１～８０级以内的吓人箱，\n　　　我加收７０万魔币帮你改，可以吗？？	1	
+#1110414	\n\n　　　这样吧，８１～９０级以内的吓人箱，\n　　　我加收８０万魔币帮你改，可以吗？？	1	
+#1110415	\n\n　　　这样吧，９１～１００级以内的吓人箱，\n　　　我加收９０万魔币帮你改，可以吗？？	1	
+#1110416	\n\n　　　你的吓人箱超过一百级喔！！\n　　　这样我要收１０枚水鼠金币喔！！\n　　　要改吗？？	1	
+#1110417	\n\n\n\n@c你的钱不够！！	1	
+#1110418	\n\n\n\n@c你的水鼠金币不够！！	1	
+
+
+##############################﹛皿□市涩煌豭﹛##############################
+
+
+	 #1110399	\n\n　　　　我是吓人箱的改造师，\n　　　　如果你有吓人箱设计图，\n　　　　可以来找我！！
+###﹛皿□市涩煌豭域挚午皿□市LV1毛ㄠ氻赭儅
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 == 1
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110398,YES,NO
+	 #1110398	\n\n\n\n@c你确定要改造吓人箱吗？？
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783
+
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 == 1	 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1					
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！
+##2-10级
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 11
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110406,YES,NO
+	 # 1110406	\n\n　　　这样吧，十级以内的吓人箱，\n　　　我加收３万魔币帮你改，可以吗？？	1
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 11 && Gold >29999 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 AddGold -30000
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Gold < 30000
+	 	 EndWindow 1110417
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！	
+##11-20级
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1  && PetLevel 611 < 21
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110407,YES,NO
+	 #1110407	\n\n　　　这样吧，１１～２０级以内的吓人箱，\n　　　我加收１０万魔币帮你改，可以吗？？
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783	 
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1  && PetLevel 611 < 21 && Gold >=100000 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 AddGold -100000
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Gold < 100000
+	 	 EndWindow 1110417
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！	
+##21-30级
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 31
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110408,YES,NO
+	 #1110408	\n\n　　　这样吧，2１～3０级以内的吓人箱，\n　　　我加收20万魔币帮你改，可以吗？？
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783	 
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 31 && Gold >=200000 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 AddGold -200000
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Gold < 200000
+	 	 EndWindow 1110417
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！
+##31-40级
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 41
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110409,YES,NO
+	 #1110409	\n\n　　　这样吧，3１～4０级以内的吓人箱，\n　　　我加收30万魔币帮你改，可以吗？？
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783	 
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1  && PetLevel 611 < 41 && Gold >=300000 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 AddGold -300000
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Gold < 300000
+	 	 EndWindow 1110417
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！
+##41-50级
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 &&  PetLevel 611 < 51
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110410,YES,NO
+	 #1110410	\n\n　　　这样吧，4１～5０级以内的吓人箱，\n　　　我加收40万魔币帮你改，可以吗？？
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783	 
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1  && PetLevel 611 < 51 && Gold >=400000 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 AddGold -400000
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Gold < 400000
+	 	 EndWindow 1110417
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！
+##51-60级
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1  && PetLevel 611 < 61
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110411,YES,NO
+	 #1110411	\n\n　　　这样吧，５１～６０级以内的吓人箱，\n　　　我加收５０万魔币帮你改，可以吗？？	1 
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783	 
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 61 && Gold >=500000 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 AddGold -500000
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Gold < 500000
+	 	 EndWindow 1110417
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！
+##61-70级
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 71
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110412,YES,NO
+	 #1110412	\n\n　　　这样吧，61~70以内的吓人箱，\n　　　我加收60币帮你改，可以吗？？	1 
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783	 
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 71 && Gold >=600000 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 AddGold -600000
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Gold < 600000
+	 	 EndWindow 1110417
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！	
+##71-80级
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 81
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110413,YES,NO
+	 #1110413	\n\n　　　这样吧，71~80以内的吓人箱，\n　　　我加收70币帮你改，可以吗？？	1 
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783	 
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 81 && Gold >=700000 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 AddGold -700000
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Gold < 700000
+	 	 EndWindow 1110417
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！
+##81-90级
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 91
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110414,YES,NO
+	 #1110414	\n\n　　　这样吧，81~90以内的吓人箱，\n　　　我加收80币帮你改，可以吗？？	1 
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783	 
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 91 && Gold >=800000 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 AddGold -800000
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Gold < 800000
+	 	 EndWindow 1110417
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！
+##91-100级
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 101
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110415,YES,NO
+	 #1110415	\n\n　　　这样吧，91~100以内的吓人箱，\n　　　我加收90w币帮你改，可以吗？？	1 
+	 Window_YES  PetSpace != 4
+	 ##1054783	\n\n宠物栏只能有一只宠物。	1
+	 EndWindow 1054783	 
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 < 101 && Gold >=900000 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 AddGold -900000
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Gold < 900000
+	 	 EndWindow 1110417
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！
+##100级以上　　＃40844　鼠金
+block Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 > 100 
+	 Window 1110397,NEXT 
+	 #1110397	\n\n　　　　你为了改造吓人箱，\n　　　　居然跑到这来找我，\n　　　　真是辛苦了！！
+	 Window 1110405,NEXT
+	 #1110405	\n\n　　　你虽然有整套改造图，\n　　　可是吓人箱不是一级的！！	1	
+	 Window 1110416,YES,NO
+	 #1110416\n\n　　　你的吓人箱超过一百级喔！！\n　　　这样我要收１０枚水鼠金币喔！！\n　　　要改吗？？	1
+	 Window_YES Item 631056 >= 1 && Item 631057 >= 1 && Item 631058 >= 1 && PetLevel 611 > 100 && Item 40844 >9 
+		 KillItem 631056,1
+		 KillItem 631057,1
+		 KillItem 631058,1
+		 KillItem 40844,10
+		 KillPetL 611
+		 GivePet 310200
+		 EndWindow 1110402
+		 #1110402	\n\n\n\n@c宠物改造好了！！
+	 Window_YES Item 40844 < 10
+	 	 EndWindow 1110418
+	 Window_YES
+	 	 EndWindow 1110400
+	 	 #1110400	\n\n\n\n@c你好像掉了改造用的物品喔！！
+	 Window_NO
+	 	 EndWindow 1110401
+		 #1110401	\n\n\n\n@c想改造再来找我！！
+		 	 		 		 	 		 	 
+block
+	 EndWindow 1110399
+	 #1110399	\n\n　　　　我是吓人箱的改造师，\n　　　　如果你有吓人箱设计图，\n　　　　可以来找我！！
+ 
+
+
+

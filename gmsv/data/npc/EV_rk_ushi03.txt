@@ -1,0 +1,20 @@
+#伞⑷笮迕???
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+############## 丢永本□斥刓憎 ################
+block
+window 21079,next
+window 21080,next
+window 21081,next
+window 21082,next
+window 21084,next
+window 21083,next
+window 21085,next
+window 21086,next
+window 21087,next
+window 21088,next
+window 21089,ok
+window_ok
+warp 0,15529,15,16

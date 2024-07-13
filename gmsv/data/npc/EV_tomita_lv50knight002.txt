@@ -1,0 +1,26 @@
+#LV50绅亢桦弁巨旦玄﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛铸璋蹂褡参够A及摒
+
+###﹛椭瘀卅仄
+block
+	Window 3203806,YES,NO
+
+		#\n\n﹛仇仇反?橘卞渣莴卅桦赭匹丐曰引允﹝\n﹛愤坌互毚エ毛儅匀化陆尺午云霜曰仄引允及匹﹜\n﹛铸璋仄化中凶分五凶中﹝\n﹛⑺啦仄化中凶分仃月匹丐曰引仄斤丹井〝
+
+		Window_YES
+			Window 3203807,OK
+
+		#\n\n﹛败蝇卞普桨允月及匹丐曰引允﹝\n﹛匹反﹜跶切卞云霜曰允月匹丐曰引允﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59503,232,315
+
+		Window_NO
+			EndWindow 3203808
+
+		#\n\n﹛酸ゴ拑ゴ匹丐曰引允﹝\n﹛仄井仄﹜合中跶仄凶午五卞反中勾匹手﹜\n﹛擘毛井仃化中凶分五凶中﹝动晓﹝
+
+
+

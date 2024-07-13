@@ -1,0 +1,33 @@
+#block 	 
+
+
+#1110427	\n\n\n　　　我听说妙妙姐姐有卖奇特的种子，\n　　　有可能藏有青色之花的花苗喔！！
+#1110428	\n\n\n　　　青色之花的花苗，\n　　　要种在栽培木才能长大。
+#1110429	\n\n\n\n@c比尔哥哥会做栽培木的样子！！
+
+block
+                        if LocalCount5 == 5
+                                LocalCount5 = random 4,0
+                                if LocalCount5 == 4
+                                        LocalCount5 = 5
+                                        
+                                        EndWindow 1110428
+                                else
+					if LocalCount5 == 3
+						LocalCount5 = 5
+                        	                EndWindow 1110427
+					else
+					     if LocalCount5 == 2
+						LocalCount5 = 5                                        
+                        	                EndWindow 1110429                
+                        	             else
+                        	                LocalCount5 = 5
+                        	               	EndWindow 1110428
+	                                       
+                        	     	     endif	
+             				endif
+             			endif	
+                        else
+                                LocalCount5 = 5
+                                EndWindow 1110427	
+                        endif

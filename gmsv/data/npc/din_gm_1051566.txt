@@ -1,0 +1,58 @@
+##灰熊厉害擂台赛2006	C级徽章收集熊	din_gm_1051566.txt    	 座标：1401(16,45) 	收集C级徽章兑换奖品。
+####有40个C级勋章
+block Item 47271 >= 40
+	 ##1054344	\n\n  您要用40个C级徽章兑换一套能力护符吗？	1
+	 Window 1054344,YES,NO
+	 	 Window_NO
+			 GoToF case1	 	
+	 	 
+	 	 Window_YES ItemSpace >= 4 && Item 47271 >= 40  ##物品拦有四格以上
+	 	 	 KillItem 47271,40
+ 	 	 	 	 GiveLeak1Item  45518
+	 	 	 	 GiveLeak1Item  45519
+ 	 	 	 	 GiveLeak1Item  45520
+ 	 	 	 	 GiveLeak1Item  45521
+	 	 
+	 	 Window_YES ItemSpace < 4   ##物品拦有四格以下
+ 	 	 	 ##1052924	\n\n  你的物品拦位不够喔！	1
+ 	 	 	 EndWindow 1052925	
+	 	 	 
+####有5个C级勋章
+block Item 47271 >= 5
+*case1*
+	 ##1054345	\n\n  您要用5个C级徽章随机兑换一个能力护符吗？	1
+	 Window 1054345,YES,NO
+	 	 Window_NO
+			 GoToF case2	 	
+	 	 
+	 	 Window_YES ItemSpace >= 1 && Item 47271 >= 5  ##物品拦有一格以上
+ 	 	 	 KillItem 47271,5
+ 	 	 	 	 GiveLeak1Item  (45518%1$1,45519%1$1,45520%1$1,45521%1$1)
+	 	 
+	 	 Window_YES ItemSpace < 1  ##物品拦有一格以下
+ 	 	 	 ##1052925	\n\n  你的物品拦位不够喔！	1
+	 	 	 EndWindow 1052925	
+
+####有1个C级勋章
+block Item 47271 >= 1
+*case2*
+	 ##1054346	\n\n  您要用1个C级徽章兑换一个C级荣誉勋章吗？	1
+	 Window 1054346,YES,NO
+	 	 Window_NO
+	 	 	 ##1052907	\n\n  您再考虑看看吧！	1
+	 	 	 EndWindow 1052907
+	 	 
+	 	 Window_YES ItemSpace >= 1 && Item 47271 >= 1  ##物品拦有一格以上
+ 	 	 	 KillItem 47271,1
+ 	 	 	 GiveItem 47276,1
+	 	 
+	 	 Window_YES ItemSpace < 1  ##物品拦有一格以下
+ 	 	 	 ##1052925	\n\n  你的物品拦位不够喔！	1
+	 	 	 EndWindow 1052925		 	 	 
+##一般
+block
+	 ##1054347	\n  只要收集C级徽章就可以跟我换奖品喔！\n  ＝＝＝＝＝＝＝＝＝奖品内容＝＝＝＝＝＝＝＝＝\n\n  能力护符全套                    40枚C级徽章\n\n  能力护符一个                     5枚C级徽章\n\n  C级荣誉勋章一枚            1枚C级勋章	1
+	 EndWindow 1054347
+
+
+   

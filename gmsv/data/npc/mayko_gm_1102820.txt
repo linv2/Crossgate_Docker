@@ -1,0 +1,21 @@
+#
+#1111859	\n\n\n　　　　我家的闹钟爆走了～\n　　　　吵的我不得安宁，真不知该怎么办～	1	
+#1111860	\n\n\n　　　　你帮我进去看看好吗～\n　　　　看有什么异状。	1	
+#1111861	\n\n\n　　　　原来是这些花粉在作怪呀～\n　　　　闹钟零件可能是卡住了才这样。	1	
+#1111862	\n\n\n\n@c谢谢你，这点礼物你收下吧～～	1
+#1111863	\n\n\n\n@c我看我改天得好好打扫一番啰～～	1
+
+block item 41326>0
+	killitem 41326,1
+	GiveLeak1Item (41323%4$1,413245%2$1,41325%4$1)
+	window 1111861,next
+	Window 1111862,next
+	endwindow 1111863
+
+block 
+	window 1111859,next
+	Window 1111860,yes,no
+	Window_yes
+	warp 0,31959,75,7
+	Window_no
+	endblock

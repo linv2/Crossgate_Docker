@@ -1,0 +1,20 @@
+#
+#杹?扔仿穴件母□
+#
+
+##﹛伊矛伙ㄣㄤ恍坢及桦宁
+block Level < 45
+#\n\n﹛梓及魂柈卞蔺爵仄化心卅中井〝\n\n﹛＿午蜕中凶中午仇欠互﹜云蟆及雄今分午引分渣莴分卅﹝\n﹛中勾井雄仁卅匀化井日引凶仁月午中中﹝
+ Endwindow 21489
+
+############## 椭瘀毛坢凶仄化中月 ##############
+block
+#\n\n﹛云引尹卅井卅井雄公丹分卅﹝\n\n﹛＿梓及魂柈卞蔺爵仄化心卅中井〝
+Window 21490,Yes,No
+	Window_No
+        Window_Yes
+		Window 21602,OK
+			Window_OK
+				LeaveGroup
+				Warp 0,15595,14,3
+			Window_OK

@@ -1,0 +1,26 @@
+#◊Øıª∫Îÿ¯∞◊«…º˛èÙø≠€Õæﬁµ©–˛°∞£™º∞à^≥Ê
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©x∞◊º˛√Q‘ª©x##############
+block Item 18947 >= 1
+
+	EndWindow 206876,OK
+
+###########©xÌ≥Õ›?Œ≠‘â©x##############
+block nowevent78 == 1
+
+	Window 206875,OK
+	Window_OK Itemspace >= 1
+	nowevent78 = 0
+	GiveItem 18947
+	Window_OK Itemspace == 0
+	EndWindow 206872,OK
+
+###########©x÷œ ÷ÿ¶ÿ∆©x##############
+block 
+
+	EndWindow 206874,OK
+
+
+

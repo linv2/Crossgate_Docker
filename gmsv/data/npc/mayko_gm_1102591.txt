@@ -1,0 +1,24 @@
+#1110517	\n\n　　　这种巨大的花朵，\n　　　是下大雨时才会在密林中盛开。	1
+#1110518	\n\n　　　但是近年来不少人破坏生态，\n　　　巨花越来越罕见。	1
+#1110519	\n\n　　　如果你有心，就拿这种子去吧！！\n　　　我也不知能开出什么样的花朵。	1
+
+
+
+block Item 41062 >0
+	 Window 1110517,NEXT
+	 EndWindow 1110518
+block Item 41061 >0
+	 Window 1110517,NEXT
+	 Window 1110518,OK
+	 Window_OK Item 41061 >0
+	 KillItem 41061,1
+	 GiveLeak1Item 41062,1
+	 EndWindow 1110519
+block 
+	 Warp 0,33500,59,57 
+	 endblock
+	 
+block Item 41061 ==0  ##想用耍赖法者 再打一次　
+	 Encount 2|0,32138,8,7||0|||||0|40287|||||||||	 
+	 EndWindow 1102540
+	 

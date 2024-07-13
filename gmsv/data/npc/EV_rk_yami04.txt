@@ -1,0 +1,19 @@
+#ÀÕÏÎ·®…í–cåÃ??? ·¸Å«ºëÆİ ´
+#ÓúâÙ±åÍÖğö»¥ÓòÚÛØÆĞ×Æ¤·òÓÀÛÍÃ«ÖÊ†AÔÊÔÂ
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+
+####### ÉıÄ¾ÀÕ°ïäßÆ¥InÄ¸Ëü¼ş ########
+block Group != 1
+ Endwindow 21197
+
+block
+ Window 21158,next
+ Window 21159,next
+ Window 21160,next
+ Window 21161,OK
+  Window_OK Group != 1
+  Window_OK
+   setcharm -1
+   message 21194
+   warp 0,400,280,364

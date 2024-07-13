@@ -1,0 +1,57 @@
+##灰熊厉害擂台赛2006	A级徽章收集熊	din_gm_1051564.txt 	 座标：1401(16,41) 	收集A级徽章兑换奖品。
+####有10个A级勋章
+block Item 47269 >= 10
+	 ##1054336	\n\n  您要用10个A级徽章兑换一颗属性10：10的完美水   晶？	1
+	 Window 1054336,YES,NO
+	 	 Window_NO
+			 GoToF case1	 	
+	 	 	 	 
+	 	 Window_YES ItemSpace >= 1 && Item 47269 >= 10  ##物品拦有一格以上
+	 	 	 KillItem 47269,10
+	  	 	 GiveItem  (46634%1$1,46635%1$1,46636%1$1,46637%1$1)
+	  	 	 
+	 	 Window_YES ItemSpace < 1  ##物品拦有一格以下
+ 	 	 	 ##1052924	\n\n  你的物品拦位不够喔！	1
+ 	 	 	 EndWindow 1052925	
+	 	 	 
+####有5个A级勋章
+block Item 47269 >= 5
+*case1*
+	 ##1054337	\n\n  您要用5个A级徽章随机兑换一颗水火或火风属性的  希望水晶吗？	1
+	 Window 1054337,YES,NO
+	 	 Window_NO
+			 GoToF case2
+	 	 
+	 	 Window_YES ItemSpace >= 1 && Item 47269 >= 5 ##物品拦有一格以上
+	 	 	 KillItem 47269,5
+	 	 	 GiveItem  (46630%1$1,46631%1$1,46632%1$1,46633%1$1)
+	 	 	 
+	 	 Window_YES ItemSpace < 1   ##物品拦有一格以下
+ 	 	 	 ##1052925	\n\n  你的物品拦位不够喔！	1
+ 	 	 	 EndWindow 1052925	
+
+####有1个A级勋章
+block Item 47269 >= 1
+*case2*
+	 ##1054338	\n\n  您要用1个A级徽章兑换一个A级荣誉勋章吗？	1
+	 Window 1054338,YES,NO
+	 	 Window_NO
+	 	 	 ##1052907	\n\n  您再考虑看看吧！	1
+	 	 	 EndWindow 1052907
+	 	 
+	 	 Window_YES ItemSpace >= 1 && Item 47269 >= 1 ##物品拦有一格以上
+	 	 	 KillItem 47269,1
+	 	 	 GiveItem 47274,1
+	 	 	 
+	 	 Window_YES ItemSpace < 1   ##物品拦有一格以下
+ 	 	 	 ##1052925	\n\n  你的物品拦位不够喔！	1
+ 	 	 	 EndWindow 1052925	
+
+	 	 	 
+##一般
+block
+	 ##1054339	\n\n  只要收集A级徽章就可以跟我换奖品喔！\n\n  ＝＝＝＝＝＝＝＝＝奖品内容＝＝＝＝＝＝＝＝＝\n\n  属性10：10的完美水晶一颗        10枚A级徽章\n\n  水火或火风属性希望水晶一颗        5枚A级徽章\n\n  A级荣誉勋章一枚            1枚A级勋章	1
+	 EndWindow 1054339
+
+
+   

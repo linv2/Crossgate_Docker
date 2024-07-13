@@ -1,0 +1,415 @@
+################### 魔力卡 强化杖
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 物品栏已满
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 EndWindow 1100001
+	 
+###################有恶魔之杖        2486  && 黄枞木 50009 && 天空彩带 50016 && 翡翠玉石 50006 && GROUP==1
+block Item 2486 >=1 && Item 50009>=1 && Item 50016 >=1 && Item 50006>=1 && Group ==1
+	 ##1201187	\n你确定要强化你的恶魔之杖吗？
+	 Window 1201187,YES,NO 
+	 	 Window_YES ItemDurPer 2486 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK
+			 	 Window_OK ItemDurPer 2486 == 100 && Group ==1 && Item 50009>=1 && Item 50016 >=1 && Item 50006>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2486
+			 	 KillItem 50009
+			 	 KillItem 50016
+			 	 KillItem 50006			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50716
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有光明短杖        2488  && 黄枞木 50009 && 天空彩带 50016 && 翡翠玉石 50006 && GROUP==1
+block Item 2488 >=1 && Item 50009>=1 && Item 50016 >=1 && Item 50006>=1 &&  Group ==1
+	 ##1201189	\n你确定要强化你的光明短杖吗？
+	 Window 1201189,YES,NO 
+	 	 Window_YES ItemDurPer 2488 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2488 == 100 && Group ==1 && Item 50009>=1 && Item 50016 >=1 && Item 50006>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2488
+			 	 KillItem 50009
+			 	 KillItem 50016
+			 	 KillItem 50006			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50715
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有隐者之杖        2478  && 黄枞木 50009 && 天空彩带 50016 && GROUP==1
+block Item 2478 >=1 && Item 50009>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201191	\n你确定要强化你的隐者之杖吗？
+	 Window 1201191,YES,NO 
+	 	 Window_YES ItemDurPer 2478 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2478 == 100 && Group ==1 && Item 50009>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2478
+			 	 KillItem 50009
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50714
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有怒音之杖        2473  && 黄枞木 50009 && 天空彩带 50016 && GROUP==1
+block Item 2473 >=1 && Item 50009>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201193	\n你确定要强化你的怒音之杖吗？
+	 Window 1201193,YES,NO 
+	 	 Window_YES ItemDurPer 2473 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2473 == 100 && Group ==1 && Item 50009>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2473
+			 	 KillItem 50009
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50713
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+
+###################有神圣之杖        2462  && 黄枞木 50009 && 天空彩带 50016 && GROUP==1
+block Item 2462 >=1 && Item 50009>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201195	\n你确定要强化你的神圣之杖吗？
+	 Window 1201195,YES,NO 
+	 	 Window_YES ItemDurPer 2462 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2462 == 100 && Group ==1 && Item 50009>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2462
+			 	 KillItem 50009
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50712
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+			 
+###################有元素之杖        2461  && 黄枞木 50009 && 天空彩带 50016 && GROUP==1
+block Item 2461 >=1 && Item 50009>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201197	\n你确定要强化你的元素之杖吗？
+	 Window 1201197,YES,NO 
+	 	 Window_YES ItemDurPer 2461 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2461 == 100 && Group ==1 && Item 50009>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2461
+			 	 KillItem 50009
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50711
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+			 
+###################有琥珀权杖        2450  && 黄枞木 50009 && 天空彩带 50016 && GROUP==1
+block Item 2450 >=1 && Item 50009>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201199	\n你确定要强化你的琥珀权杖吗？
+	 Window 1201199,YES,NO 
+	 	 Window_YES ItemDurPer 2450 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2450 == 100 && Group ==1 && Item 50009>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2450
+			 	 KillItem 50009
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50710
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有琥珀杖  2449          && 黄枞木 50009 && 天空彩带 50016 && GROUP==1
+block Item 2449 >=1 && Item 50009>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201201	\n你确定要强化你的琥珀杖吗？
+	 Window 1201201,YES,NO 
+	 	 Window_YES ItemDurPer 2449 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2449 == 100 && Group ==1 && Item 50009>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2449
+			 	 KillItem 50009
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50709
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有贤者权杖        2446  && 黄枞木 50009 && 天空彩带 50016 && GROUP==1
+block Item 2446 >=1 && Item 50009>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201203	\n你确定要强化你的贤者权杖吗？
+	 Window 1201203,YES,NO 
+	 	 Window_YES ItemDurPer 2446 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2446 == 100 && Group ==1 && Item 50009>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2446
+			 	 KillItem 50009
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50708
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有贤者手杖        2447  && 黄枞木 50009 && 天空彩带 50016 && GROUP==1
+block Item 2447 >=1 && Item 50009>=1 && Item 50016 >=1 &&  Group ==1
+	 ##1201205	\n你确定要强化你的贤者手杖吗？
+	 Window 1201205,YES,NO 
+	 	 Window_YES ItemDurPer 2447 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2447 == 100 && Group ==1 && Item 50009>=1 && Item 50016 >=1
+			 	 ##失去武器及物品
+			 	 KillItem 2447
+			 	 KillItem 50009
+			 	 KillItem 50016			 
+			 	 ##得到武器
+			 	 GiveLeak1Item 50707
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有魔之权杖        2434  && 黄枞木 50009 && GROUP==1
+block Item 2434 >=1 && Item 50009>=1  &&  Group ==1
+	 ##1201207	\n你确定要强化你的魔之权杖吗？
+	 Window 1201207,YES,NO 
+	 	 Window_YES ItemDurPer 2434 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 	 
+			 	 Window_OK ItemDurPer 2434 == 100 && Group ==1 && Item 50009>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2434
+			 	 KillItem 50009
+			 	 ##得到武器
+			 	 GiveLeak1Item 50706
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有魔之手杖        2435  && 黄枞木 50009 && GROUP==1
+block Item 2435 >=1 && Item 50009>=1  &&  Group ==1
+	 ##1201209	\n你确定要强化你的魔之手杖吗？
+	 Window 1201209,YES,NO 
+	 	 Window_YES ItemDurPer 2435 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2435 == 100 && Group ==1 && Item 50009>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2435
+			 	 KillItem 50009
+			 	 ##得到武器
+			 	 GiveLeak1Item 50705
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有激流权杖        2418  && 黄枞木 50009 && GROUP==1
+block Item 2418 >=1 && Item 50009>=1  &&  Group ==1
+	 ##1201211	\n你确定要强化你的激流权杖吗？
+	 Window 1201211,YES,NO 
+	 	 Window_YES ItemDurPer 2418 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2418 == 100 && Group ==1 && Item 50009>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2418
+			 	 KillItem 50009
+			 	 ##得到武器
+			 	 GiveLeak1Item 50704
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有大地之杖        2413  && 黄枞木 50009 && GROUP==1
+block Item 2413 >=1 && Item 50009>=1  &&  Group ==1
+	 ##1201213	\n你确定要强化你的大地之杖吗？
+	 Window 1201213,YES,NO 
+	 	 Window_YES ItemDurPer 2413 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2413 == 100 && Group ==1 && Item 50009>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2413
+			 	 KillItem 50009
+			 	 ##得到武器
+			 	 GiveLeak1Item 50703
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有权杖    2402          && 黄枞木 50009 && GROUP==1
+block Item 2402 >=1 && Item 50009>=1  &&  Group ==1
+	 ##1201215	\n你确定要强化你的权杖吗？
+	 Window 1201215,YES,NO 
+	 	 Window_YES ItemDurPer 2402 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2402 == 100 && Group ==1 && Item 50009>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2402
+			 	 KillItem 50009
+			 	 ##得到武器
+			 	 GiveLeak1Item 50702
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+
+###################有短杖    2404          && 黄枞木 50009 && GROUP==1
+block Item 2404 >=1 && Item 50009>=1  &&  Group ==1
+	 ##1201217	\n你确定要强化你的短杖吗？
+	 Window 1201217,YES,NO 
+	 	 Window_YES ItemDurPer 2404 == 100 && Group ==1
+	 	 	 ##1200975	\n\n\n\n@c请稍待片刻¨¨¨
+			 Window 1200975,NEXT 
+			 ##1200977	\n\n\n\n@c武器强化中¨¨¨
+			 Window 1200977,NEXT
+			 ##1200979	\n\n\n\n@c你的武器已经强化了！
+			 Window 1200979,OK 
+			 	 Window_OK ItemDurPer 2404 == 100 && Group ==1 && Item 50009>=1
+			 	 ##失去武器及物品
+			 	 KillItem 2404
+			 	 KillItem 50009
+			 	 ##得到武器
+			 	 GiveLeak1Item 50701
+	 	 Window_YES 
+	 	 	 ##1200981	\n你必须拿全新的武器给我，我才能帮你做强化。
+			 EndWindow 1200981
+	 	 Window_NO 
+	 	 	 ##1200983	\n那就等你有需要时再找我吧！
+			 EndWindow 1200983
+###################一般
+block 
+	 ##1201219	\n如果你拿下列特定组合的物品给我，\n我就能强化你所持有的杖。\n一级、二级与三级杖，所需的材料为黄枞木。\n四级、五级、六级与七级杖所需的材料为黄枞木与天空彩带。\n八级杖所需的材料为黄枞木、天空彩带与翡翠玉石。
+	 EndWindow 1201219

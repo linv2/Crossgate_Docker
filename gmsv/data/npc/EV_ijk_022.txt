@@ -1,0 +1,217 @@
+#侂填缜谛迕奶矛件玄泛旦玄 195 203
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## 侂填缜谛毛茧仄化中月谛 ##########
+
+### 侂填缜谛及缜仅匹卅中桦宁 ###
+
+	# --- 佹莴笮及桦宁 --- #
+	block Job >= 0 && Job < 200
+	#侂填缜谛及杅毛茧仄化月氏分﹝\n楝﹜襞日卅中井中〝
+	EndWindow 10869
+
+	# --- 朹湛缜谛及桦宁 --- #
+	block Job >= 200 && Job < 270
+	#朹湛缜谛鹧匹允卅﹝\n侂填缜谛及杅毛仍绣襞卅中匹仄斤丹井〝
+	EndWindow 10868
+
+	# --- 朹湛’侂填缜谛动陆及缜谛及桦宁 --- #
+	block Job >= 350 && Job < 470
+	#侂填缜谛及杅毛茧仄化月氏分﹝\n楝﹜襞日卅中井中〝
+	EndWindow 10869
+
+
+### 侂填缜谛及缜仅及桦宁 ###
+
+	# --- 场缜谛及桦宁 --- #
+	block Job >= 270 && Job < 280
+	#场缜谛鹧井﹝\n＞3612场＝毛综匀化俓仄中及分﹝\n斪反蚁戈″
+	Window 10867,OK,CANCEL
+
+	Window_OK Item3612 == 0
+	#综日木凶端反﹜嫔?午手台卞云歙曰仁分今木﹝
+	EndWindow 10871,OK,CANCEL
+
+	Window_OK Item3612 >= 1
+	#云云﹜公仇卞苇尹月反＞3612场＝″\n仇仇卞100GOLD丐月﹝\n公木毛歙匀化仁分今日氏井〝
+	Window 10866,OK,NO
+	
+	Window_OK
+	KillItem3612
+	AddGold 100
+	#丐曰互午丹﹝引凶俇戈方﹝
+	EndWindow 10885
+
+	Window_NO
+	#竣互庍歹匀凶日﹜中勾匹手引凶侳化仁分今中﹝
+	Message 10870
+
+
+	# --- 佴阂缜谛及桦宁 --- #
+	block Job >= 280 && Job < 290
+	#佴阂缜谛鹧井﹝\n＞4012佴阂＝毛综匀化俓仄中及分﹝\n斪反蚁戈″
+	Window 10865,OK,CANCEL
+
+	Window_OK Item4012 == 0
+	#综日木凶侂填反﹜嫔?午手台卞云歙曰仁分今木﹝
+	EndWindow 10871,OK,CANCEL
+
+	Window_OK Item4012 >= 1
+	#云云﹜公仇卞苇尹月反＞4012佴阂＝″\n仇仇卞100GOLD丐月﹝\n公木毛歙匀化仁分今日氏井〝
+	Window 10864,YES,NO
+	
+	Window_YES
+	KillItem4012
+	AddGold 100
+	#丐曰互午丹﹝引凶俇戈方﹝
+	EndWindow 10885
+
+	Window_NO
+	#竣互庍歹匀凶日﹜中勾匹手引凶侳化仁分今中﹝
+	Message 10870
+
+
+	# --- 顶缜谛及桦宁 --- #
+	block Job >= 290 && Job < 300
+	#顶缜谛鹧井﹝\n＞4412顶＝毛综匀化俓仄中及分﹝\n斪反蚁戈″
+	Window 10863,OK,CANCEL
+
+	Window_OK Item4412 == 0
+	#综日木凶侂填反﹜嫔?午手台卞云歙曰仁分今木﹝
+	EndWindow 10871,OK,CANCEL
+
+	Window_OK Item4412 >= 1
+	#云云﹜公仇卞苇尹月反＞4412顶＝″\n仇仇卞100GOLD丐月﹝\n公木毛歙匀化仁分今日氏井〝
+	Window 10862,YES,NO
+	
+	Window_YES
+	KillItem4412
+	AddGold 100
+	#丐曰互午丹﹝引凶俇戈方﹝
+	EndWindow 10885
+
+	Window_NO
+	#竣互庍歹匀凶日﹜中勾匹手引凶侳化仁分今中﹝
+	Message 10870
+
+
+	# --- 汋缜谛及桦宁 --- #
+	block Job >= 300 && Job < 310
+	#汋缜谛鹧井﹝\n＞4812汋＝毛综匀化俓仄中及分﹝\n斪反蚁戈″
+	Window 10861,OK,CANCEL
+
+	Window_OK Item4812 == 0
+	#综日木凶侂填反﹜嫔?午手台卞云歙曰仁分今木﹝
+	EndWindow 10871,OK,CANCEL
+
+	Window_OK Item4812 >= 1
+	#云云﹜公仇卞苇尹月反＞4812汋＝″\n仇仇卞100GOLD丐月﹝\n公木毛歙匀化仁分今日氏井〝
+	Window 10860,YES,NO
+	
+	Window_YES
+	KillItem4812
+	AddGold 100
+	#丐曰互午丹﹝引凶俇戈方﹝
+	EndWindow 10885
+
+	Window_NO
+	#竣互庍歹匀凶日﹜中勾匹手引凶侳化仁分今中﹝
+	Message 10870
+
+
+	# --- 夫□皮缜谛及桦宁 --- #
+	block Job >= 310 && Job < 320
+	#夫□皮缜谛鹧井﹝\n＞5212夫□皮＝毛综匀化俓仄中及分﹝\n斪反蚁戈″
+	Window 10859,OK,CANCEL
+
+	Window_OK Item5212 == 0
+	#综日木凶侂填反﹜嫔?午手台卞云歙曰仁分今木﹝
+	EndWindow 10871,OK,CANCEL
+
+	Window_OK Item5212 >= 1
+	#云云﹜公仇卞苇尹月反＞5212夫□皮＝″\n仇仇卞100GOLD丐月﹝\n公木毛歙匀化仁分今日氏井〝
+	Window 10858,YES,NO
+	
+	Window_YES
+	KillItem5212
+	AddGold 100
+	#丐曰互午丹﹝引凶俇戈方﹝
+	EndWindow 10885
+
+	Window_NO
+	#竣互庍歹匀凶日﹜中勾匹手引凶侳化仁分今中﹝
+	Message 10870
+
+
+	# --- 皮□汁缜谛及桦宁 --- #
+	block Job >= 320 && Job < 330
+	#皮□汁缜谛鹧井﹝\n＞5612皮□汁＝毛综匀化俓仄中及分﹝\n斪反蚁戈″
+	Window 10857,OK,CANCEL
+
+	Window_OK Item5612 == 0
+	#综日木凶侂填反﹜嫔?午手台卞云歙曰仁分今木﹝
+	EndWindow 10871,OK,CANCEL
+
+	Window_OK Item5612 >= 1
+	#云云﹜公仇卞苇尹月反＞5612皮□汁＝″\n仇仇卞100GOLD丐月﹝\n公木毛歙匀化仁分今日氏井〝
+	Window 10856,YES,NO
+	
+	Window_YES
+	KillItem5612
+	AddGold 100
+	#丐曰互午丹﹝引凶俇戈方﹝
+	EndWindow 10885
+
+	Window_NO
+	#竣互庍歹匀凶日﹜中勾匹手引凶侳化仁分今中﹝
+	Message 10870
+
+
+	# --- 楔缜谛及桦宁 --- #
+	block Job >= 330 && Job < 340
+	#楔缜谛鹧井﹝\n＞6012楔＝毛综匀化俓仄中及分﹝\n斪反蚁戈″
+	Window 10855,OK,CANCEL
+
+	Window_OK Item6012 == 0
+	#综日木凶侂填反﹜嫔?午手台卞云歙曰仁分今木﹝
+	EndWindow 10871,OK,CANCEL
+
+	Window_OK Item6012 >= 1
+	#云云﹜公仇卞苇尹月反＞6012楔＝″\n仇仇卞100GOLD丐月﹝\n公木毛歙匀化仁分今日氏井〝
+	Window 10854,YES,NO
+	
+	Window_YES
+	KillItem6012
+	AddGold 100
+	#丐曰互午丹﹝引凶俇戈方﹝
+	EndWindow 10885
+
+	Window_NO
+	#竣互庍歹匀凶日﹜中勾匹手引凶侳化仁分今中﹝
+	Message 10870
+
+
+	# --- 贱缜谛及桦宁 --- #
+	block Job >= 340 && Job < 350
+	#贱缜谛鹧井﹝\n＞6412贱＝毛综匀化俓仄中及分﹝\n斪反蚁戈″
+	Window 10853,OK,CANCEL
+
+	Window_OK Item6412 == 0
+	#综日木凶侂填反﹜嫔?午手台卞云歙曰仁分今木﹝
+	EndWindow 10871,OK,CANCEL
+
+	Window_OK Item6412 >= 1
+	#云云﹜公仇卞苇尹月反＞6412贱＝″\n仇仇卞100GOLD丐月﹝\n公木毛歙匀化仁分今日氏井〝
+	Window 10852,YES,NO
+	
+	Window_YES
+	KillItem6412
+	AddGold 100
+	#丐曰互午丹﹝引凶俇戈方﹝
+	EndWindow 10885
+
+	Window_NO
+	#竣互庍歹匀凶日﹜中勾匹手引凶侳化仁分今中﹝
+	Message 10870

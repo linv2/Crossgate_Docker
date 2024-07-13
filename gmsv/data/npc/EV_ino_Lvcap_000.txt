@@ -1,0 +1,31 @@
+###########﹛伊矛伙平乓永皿ミ幵弁巨旦玄﹛##############
+
+block Item 607730 >= 1
+	Window"\n\n﹛切心互儅匀化中月伊矛伙平乓永皿反﹜\n﹛左奶仿互厘濠卞仄化凶手氏卅氏分﹝\n﹛公木互卅中午﹜绖毛藤尹月仇午互\n﹛匹五卅中方﹝\n﹛医歹曰及手及毛丐仆月井日﹜忒仄化仁木方予",yes,no
+	Window_yes
+		Window"\n\n﹛仇木匹左奶仿反﹜引凶膜垫互匹五月方\n﹛左奶仿及目末弁伉反﹜切心卞丐仆月﹝\n﹛引凶﹜芛氏匹友﹝﹛壬壬丑℅中",OK
+			Window_OK Item 607730 >= 1 && ItemSpace >= 1
+				KillItem 607730,1
+				GiveLeak1Item 623581,1
+
+			Window_OK ItemSpace == 0
+				EndWindow"\n\n﹛失奶泛丞勂互中匀天中分方﹝"
+
+			Window_OK
+				EndWindow"\n\n﹛左﹜左奶仿及扲互壅尹切引匀凶″″″"
+
+	Window_no
+		EndWindow"\n\n﹛升℅仄方℅\n﹛阁麸卞﹜戊□石□匀化变日木月方﹝"
+
+
+block
+	Window"\n\n﹛友之″﹛切心匀化雄中〝\n﹛左奶仿雄仁卅曰凶中氏分﹝\n﹛布民件戊匹鴃扙仄化心卅中〝",yes,no
+	Window_yes
+		Window"\n\n﹛支凶丑″\n﹛中介″﹛鴃扙ｎ",ok
+			Window_ok
+				LeaveGroup
+				Encount 3|||0|||||0|306540|||||||||
+	Window_no
+		EndWindow"\n\n﹛尹尹℅﹝\n﹛勾引氏卅中方﹝"
+
+

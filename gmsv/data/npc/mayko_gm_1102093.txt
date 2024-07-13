@@ -1,0 +1,7 @@
+block
+	Window 1102481,NEXT
+	Window 1102482,NEXT
+	Window 1102483,NEXT
+	Window 1102484,OK
+	Window_OK
+	 Endblock

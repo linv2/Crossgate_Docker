@@ -1,0 +1,42 @@
+#卷	盾一级点传送卷	mayko_item_41214.txt
+#1111714	\n\n\n@c你想传送到盾的一级点吗？	1
+#1111715	\n\n\n@c你想传送到潜盾的一级点吗？	1
+#1111716	\n\n\n@c你想传送到强盾的一级点吗？	1
+#1111717	\n\n\n@c你想传送到神盾的一级点吗？	1
+
+
+block Item 41214 >0 #盾
+	 Window 1111714,YES,NO
+	 Window_YES Item 41214 ==0
+	 Endblock
+	 Window_YES
+	 KillItem 41214,1
+	 Warp 0,59886,121,132
+	 endblock
+	 Window_NO ##潜盾
+	 	 Window 1111715,YES,NO
+	 	  Window_YES Item 41214 ==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 41214,1
+	 	  Warp 0,43000,153,405
+	 	  endblock
+	 Window_NO ##强盾
+	 	 Window 1111716,YES,NO
+	 	  Window_YES Item 41214 ==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 41214,1
+	 	  Warp 0,43000,358,588	  
+	 	  endblock	 
+	 Window_NO ## 神盾
+	 	 Window 1111717,YES,NO
+	 	 Window_YES Item 41214 ==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 41214,1
+	 	 Warp 0,43000,729,672  	  
+	 	  endblock
+	 	  Window_NO
+	 	  EndWindow 1055891
+	

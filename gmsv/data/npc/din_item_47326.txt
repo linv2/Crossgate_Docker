@@ -1,0 +1,12 @@
+###2006EC 11月份_秘传寿司盒(空)	din_item_47326.txt
+###能力说明：可收纳九组豪华寿司组
+
+block Item 15217 < 27
+	 ##1054450	\n\n\n\n\n  你身上的豪华寿司组不足２７个喔！所以无法收    纳。	1
+	 EndWindow 1054450
+
+block Item 15217 >=27
+	 KillItem 15217,27
+	 KillItem 47326,1
+	 GiveLeak1Item 47327,1
+	 

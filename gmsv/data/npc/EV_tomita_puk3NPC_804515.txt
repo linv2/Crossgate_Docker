@@ -1,0 +1,51 @@
+#PUK3±å¿ºÖ§¾®ØÆNPC©x©x??©xŽx÷ú
+#
+#©x©x©x»Ô±Ï¼°Þð
+
+###©xÜÒŒa–cåÇ¤¸åÇ¾ÝÃ«ô÷ƒ}
+block Item_631002 >= 1
+	EndWindow 3204933
+
+		#\n\n\n\n@c£ß£ß£ß£ß£ß£ß©z
+
+
+
+###©x£ªEnter£«Æ½¡õ¤¸n
+block StrCmpChat == R
+	EndWindow 3204934
+
+		#\n\n\n\n@c£ß£ß£ß£ß£ß£ß£ß©z
+
+
+
+###©xÄþÍÉºª©l½»»ïºë©mÃ«¤¸n
+block StrCmpChat == 3004895
+	Window 3204935,OK
+
+		#\n\n\n\n@c£ß£ß£ß£ß£ß£ß£ß£ß¡å
+
+		Window_OK Item_631002 >= 1
+			EndWindow 3204936
+
+		#\n\n\n\n@c£ß£ß£ß¨”
+
+		Window_OK ItemSpace >= 1
+			GiveItemEX 631002,1,3204937
+
+		#\n\n\n\n@c£ß£ß£ß¨”
+
+		Window_OK
+			EndWindow 3204938
+
+		#\n\n\n\n@c£ß£ß£ß¨”
+
+
+
+###©xÏþ·¤¶¯Â½¼°èëÄþ
+block
+	EndWindow 3204939
+
+		#\n\n\n\n@c£ß£ß£ß£ß£ß£ß£ß©z
+
+
+

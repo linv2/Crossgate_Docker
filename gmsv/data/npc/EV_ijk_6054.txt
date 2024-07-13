@@ -1,0 +1,17 @@
+#本仿伙市隶?圴饕﹛副〇豭﹛10416,4:2303 20 16
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## 丢永本□斥它奶件玉它钒仁 ##########
+block
+	#\n﹛﹛ ﹛本仿伙市隶?圴饕﹛鼎佷﹛副〇豭\n
+	#\n
+	#﹛﹛车足足足足辰﹛﹛迂足足足足足足足足足足辛\n
+	#﹛﹛身﹛Ⅴ朿﹛﹛﹛﹛﹛﹛弃覃峊﹛﹛煆隶?﹛身\n
+	#﹛﹛身﹛侂填﹛﹛﹛﹛﹛﹛迕朹湛﹛﹛朹湛﹛﹛身\n
+	#﹛﹛身﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛身\n
+	#﹛﹛身﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛﹛身\n
+	#﹛﹛身﹛⑵朿﹛﹛箫朿﹛﹛褐隶?﹛﹛褐隶?﹛身\n
+	#﹛﹛身﹛侂填﹛﹛侂填﹛﹛侂填﹛﹛﹛朹湛﹛﹛身\n
+	#﹛﹛迂足足足足足足足足足足足足足足足足足足辰
+	EndWindow 11349

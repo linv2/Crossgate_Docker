@@ -1,0 +1,438 @@
+##角色位置100,472,316
+#维洞口守门人  矿工潘丹
+
+########## 组队中##########
+block Group > 1
+	#\\n\n这里要一个人一个人单独进入哦！
+	Window 11499,YES,NO
+
+	Window_YES Group > 1
+	LeaveGroup
+
+	Window_YES
+	Window_NO
+
+### 纺织工
+block Level < 20 && Job >= 1010 && Job < 1020  && Group == 1
+	##\n\n这里若没有２０级就不能过。\n咳．．．不过我能体谅你的心情。\n我最近在收集３级品哦．．．
+	##懂了吗？你的本行是纺织工，请带你羊毛或毛毯来找我吧！
+	Window 1102899,YES,NO
+
+#纺织工＆羊毛
+Window_YES Job >= 1010 && Job < 1020 && Item 40740 >= 20 && Group == 1
+	##\n\n哈哈！那不是我最喜欢的羊毛吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 1102900,OK,CANCEL
+	Window_OK Job >= 1010 && Job < 1020 && Item 40740 >= 20 && Group == 1
+	KillItem 40740,20
+	Warp 0,11000,20,14
+#纺织工＆毛毯
+
+Window_YES Job >= 1010 && Job < 1020 && Item 10402>=1 && Group == 1
+	##\n\n哈哈！那不是我最喜欢的毛毯吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 1102901,OK,CANCEL
+	Window_OK Job >= 1010 && Job < 1020 && Item 10402>=1 && Group == 1
+	KillItem 10402,1
+	Warp 0,11000,20,14	
+
+
+##########   制作系 ##########
+block Level < 20 && Job >= 200 && Job < 370 && Group == 1
+	#\n\n这里若没有２０级就不能过。\n咳．．．不过我能体谅你的心情。
+	#\n我最近在收集等级3的装备哦．．．懂了吗？不过你的本行若不是生产系，
+	#就算你带东西来我也不会理你的。\n请带你现任职业的等级3物品来找我吧！
+	Window 11448,YES,NO
+##铸剑&面包剑
+Window_YES Job >= 200 && Job < 210 && Item 22 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 200 && Job < 210 && Item 22 >= 1 && Group == 1
+	KillItem 22,1
+	Warp 0,11000,20,14
+##铸剑&双手剑
+Window_YES Job >= 200 && Job < 210 && Item 28 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 200 && Job < 210 && Item 28 >= 1 && Group == 1
+	KillItem 28,1
+	Warp 0,11000,20,14
+##造斧&钢斧
+Window_YES Job >= 210 && Job < 220 && Item 826 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 210 && Job < 220 && Item 826 >= 1 && Group == 1
+	KillItem 826,1
+	Warp 0,11000,20,14
+#造斧＆格斗手斧
+Window_YES Job >= 210 && Job < 220 && Item 820 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 210 && Job < 220 && Item 820 >= 1 && Group == 1
+	KillItem 820,1
+	Warp 0,11000,20,14
+#造枪＆长柄弯枪
+Window_YES Job >= 220 && Job < 230 && Item 1629 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 220 && Job < 230 && Item 1629 >= 1 && Group == 1
+	KillItem 1629,1
+	Warp 0,11000,20,14
+#造枪＆长柄尖枪
+Window_YES Job >= 220 && Job < 230 && Item 1625 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 220 && Job < 230 && Item 1625 >= 1 && Group == 1
+	KillItem 1625,1
+	Warp 0,11000,20,14
+#造弓＆强弓
+Window_YES Job >= 230 && Job < 240 && Item 2022 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 230 && Job < 240 && Item 2022 >= 1 && Group == 1
+	KillItem 2022,1
+	Warp 0,11000,20,14
+#造弓＆格斗弓
+Window_YES Job >= 230 && Job < 240 && Item 2023 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 230 && Job < 240 && Item 2023 >= 1 && Group == 1
+	KillItem 2023,1
+	Warp 0,11000,20,14
+#造杖＆魔之手杖
+Window_YES Job >= 240 && Job < 250 && Item 2435 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 240 && Job < 250 && Item 2435 >= 1 && Group == 1
+	KillItem 2435,1
+	Warp 0,11000,20,14
+#造杖＆魔之权杖
+Window_YES Job >= 240 && Job < 250 && Item 2434 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 240 && Job < 250 && Item 2434 >= 1 && Group == 1
+	KillItem 2434,1
+	Warp 0,11000,20,14
+#投掷武器工&暗杀回力镖
+Window_YES Job >= 250 && Job < 260 && Item 2820 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 250 && Job < 260 && Item 2820 >= 1 && Group == 1
+	KillItem 2820,1
+	Warp 0,11000,20,14
+#投掷武器工&杀敌回力镖
+Window_YES Job >= 250 && Job < 260 && Item 2823 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 250 && Job < 260 && Item 2823 >= 1 && Group == 1
+	KillItem 2823,1
+	Warp 0,11000,20,14
+#小刀工&滑翔小刀
+Window_YES Job >= 260 && Job < 270 && Item 3222 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 260 && Job < 270 && Item 3222 >= 1 && Group == 1
+	KillItem 3222,1
+	Warp 0,11000,20,14
+#小刀工&细直刃小刀
+Window_YES Job >= 260 && Job < 270 && Item 3229 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的武器吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 11450,OK,CANCEL
+	Window_OK Job >= 260 && Job < 270 && Item 3229 >= 1 && Group == 1
+	KillItem 3229,1
+	Warp 0,11000,20,14
+#头盔工＆金属护额
+Window_YES Job >= 270 && Job < 280 && Item 3622 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 270 && Job < 280 && Item 3622 >= 1 && Group == 1
+	KillItem 3622,1
+	Warp 0,11000,20,14
+#头盔工＆铜铁皮盔
+Window_YES Job >= 270 && Job < 280 && Item 3620 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 270 && Job < 280 && Item 3620 >= 1 && Group == 1
+	KillItem 3620,1
+	Warp 0,11000,20,14
+#帽子工＆硬皮帽
+Window_YES Job >= 280 && Job < 290 && Item 4022 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 280 && Job < 290 && Item 4022 >= 1 && Group == 1
+	KillItem 4022,1
+	Warp 0,11000,20,14
+#帽子工＆可爱的帽子
+Window_YES Job >= 280 && Job < 290 && Item 4020 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 280 && Job < 290 && Item 4020 >= 1 && Group == 1
+	KillItem 4020,1
+	Warp 0,11000,20,14
+#铠甲工＆轻型锁炼甲
+Window_YES Job >= 290 && Job < 300 && Item 4420 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 290 && Job < 300 && Item 4420 >= 1 && Group == 1
+	KillItem 4420,1
+	Warp 0,11000,20,14
+#铠甲工＆环甲
+Window_YES Job >= 290 && Job < 300 && Item 4421 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 290 && Job < 300 && Item 4421 >= 1 && Group == 1
+	KillItem 4421,1
+	Warp 0,11000,20,14
+#裁缝工＆硬皮服
+Window_YES Job >= 300 && Job < 310 && Item 4823 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 300 && Job < 310 && Item 4823 >= 1 && Group == 1
+	KillItem 4823,1
+	Warp 0,11000,20,14
+#裁缝工＆锁炼装
+Window_YES Job >= 300 && Job < 310 && Item 4821 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 300 && Job < 310 && Item 4821 >= 1 && Group == 1
+	KillItem 4821,1
+	Warp 0,11000,20,14
+#长袍工＆硬皮袍	
+Window_YES Job >= 310 && Job < 320 && Item 5224 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 310 && Job < 320 && Item 5224 >= 1 && Group == 1
+	KillItem 5224,1
+	Warp 0,11000,20,14
+#长袍工＆环袍
+Window_YES Job >= 310 && Job < 320 && Item 5223 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 310 && Job < 320 && Item 5223 >= 1 && Group == 1
+	KillItem 5223,1
+	Warp 0,11000,20,14
+#制靴工＆厚底靴
+Window_YES Job >= 320 && Job < 330 && Item 5620 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 320 && Job < 330 && Item 5620 >= 1 && Group == 1
+	KillItem 5620,1
+	Warp 0,11000,20,14
+#制靴工＆编织的靴子
+Window_YES Job >= 320 && Job < 330 && Item 5621 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 320 && Job < 330 && Item 5621 >= 1 && Group == 1
+	KillItem 5621,1
+	Warp 0,11000,20,14
+#制鞋工＆光之鞋
+Window_YES Job >= 330 && Job < 340 && Item 6022 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 330 && Job < 340 && Item 6022 >= 1 && Group == 1
+	KillItem 6022,1
+	Warp 0,11000,20,14
+#制鞋工＆战鞋
+Window_YES Job >= 330 && Job < 340 && Item 6025 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 330 && Job < 340 && Item 6025 >= 1 && Group == 1
+	KillItem 6025,1
+	Warp 0,11000,20,14
+#造盾工＆漩涡重盾
+Window_YES Job >= 340 && Job < 350 && Item 6427 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 340 && Job < 350 && Item 6427 >= 1 && Group == 1
+	KillItem 6427,1
+	Warp 0,11000,20,14
+#造盾工＆哥特盾
+Window_YES Job >= 340 && Job < 350 && Item 6425 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的防具吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11451,OK,CANCEL
+	Window_OK Job >= 340 && Job < 350 && Item 6425 >= 1 && Group == 1
+	KillItem 6425,1
+	Warp 0,11000,20,14
+#厨师＆炒面
+Window_YES Job >= 350 && Job < 360 && Item 15204 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的等级3料理吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11452,OK,CANCEL
+	Window_OK Job >= 350 && Job < 360 && Item 15204 >= 1 && Group == 1
+	KillItem 15204,1
+	Warp 0,11000,20,14
+#厨师＆青椒肉丝
+Window_YES Job >= 350 && Job < 360 && Item 15206 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的等级3料理吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11452,OK,CANCEL
+	Window_OK Job >= 350 && Job < 360 && Item 15206 >= 1 && Group == 1
+	KillItem 15206,1
+	Warp 0,11000,20,14
+#药剂师＆生命力回复药（200）
+Window_YES Job >= 360 && Job < 370 && Item 15608 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的生命力回复药吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11453,OK,CANCEL
+	Window_OK Job >= 360 && Job < 370 && Item 15608 >= 1 && Group == 1
+	KillItem 15608,1
+	Warp 0,11000,20,14
+
+#---拿错东西
+Window_YES 
+	#\n\n我想要的是担任该行业的人做出来的等级3物品。这好像不是你那行的东西吧！
+	#\n那抱歉不能给你过啦！	8
+	EndWindow 11454
+
+Window_NO
+
+
+########## 特殊系 ########## 特殊系
+block Level < 20 && Job >= 370 && Job < 430 && Group == 1
+	#\n\n这里没有等级20以上是不能过的。\n．．．咳！不过我也并非是不通人情的。
+	#\n你持有等级3的技能吗？有的话我可以破例让你过。	8
+	Window 11505,YES,NO
+#武具修理工＆武修三
+Window_YES Job >= 370 && Job < 380 && SkillLevel 217 >= 3 && Group == 1
+	#\n\n你历经千辛万苦把技能练到了等级3吗？很好，那过去吧！辛苦你了。	8
+	Window 11506,OK,CANCEL
+	Window_OK Job >= 370 && Job < 380 && SkillLevel 217 >= 3 && Group == 1
+	Warp 0,11000,20,14
+#防具修理工＆防修三
+Window_YES Job >= 380 && Job < 390 && SkillLevel 218 >= 3 && Group == 1
+	#\n\n你历经千辛万苦把技能练到了等级3吗？很好，那过去吧！辛苦你了。	8
+	Window 11506,OK,CANCEL
+	Window_OK Job >= 380 && Job < 390 && SkillLevel 218 >= 3 && Group == 1
+	Warp 0,11000,20,14
+#鉴定师＆鉴定三级
+Window_YES Job >= 390 && Job < 400 && SkillLevel 219 >= 3 && Group == 1
+	#\n\n你历经千辛万苦把技能练到了等级3吗？很好，那过去吧！辛苦你了。	8
+	Window 11506,OK,CANCEL
+	Window_OK Job >= 390 && Job < 400 && SkillLevel 219 >= 3 && Group == 1
+	Warp 0,11000,20,14
+#刻印工＆刻印三级
+Window_YES Job >= 400 && Job < 410 && SkillLevel 220 >= 3 && Group == 1
+	#\n\n你历经千辛万苦把技能练到了等级3吗？很好，那过去吧！辛苦你了。	8
+	Window 11506,OK,CANCEL
+	Window_OK Job >= 400 && Job < 410 && SkillLevel 220 >= 3 && Group == 1
+	Warp 0,11000,20,14
+#侦探&变装三级
+Window_YES Job >= 410 && Job < 420 && SkillLevel 221 >= 3 && Group == 1
+	#\n\n你历经千辛万苦把技能练到了等级3吗？很好，那过去吧！辛苦你了。	8
+	Window 11506,OK,CANCEL
+	Window_OK Job >= 410 && Job < 420 && SkillLevel 221 >= 3 && Group == 1
+	Warp 0,11000,20,14
+#仙人&变身三级
+Window_YES Job >= 420 && Job < 430 && SkillLevel 222 >= 3 && Group == 1
+	#\n\n你历经千辛万苦把技能练到了等级3吗？很好，那过去吧！辛苦你了。	8
+	Window 11506,OK,CANCEL
+	Window_OK Job >= 420 && Job < 430 && SkillLevel 222 >= 3 && Group == 1
+	Warp 0,11000,20,14
+
+Window_YES
+	#\n\n抱歉我不能让你过去。
+	EndWindow 11507
+
+Window_NO
+
+
+########## 采集系
+block Level < 20 && Job >= 450 && Group == 1
+	#\n\n这里若没有２０级就不能过。\n咳．．．不过我能体谅你的心情。
+	#\n我最近在收集等级3的装备哦．．．懂了吗？不过你的本行若不是生产系，
+	#就算你带东西来我也不会理你的。\n请带你现任职业的等级3物品来找我吧！	8
+	Window 11448,YES,NO
+#樵夫＆黄月木
+Window_YES Job >= 450 && Job < 460 && Item 10002 >= 20 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的黄月木吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11455,OK,CANCEL
+	Window_OK Job >= 450 && Job < 460 && Item 10002 >= 20 && Group == 1
+	KillItem 10002,20
+	Warp 0,11000,20,14
+#樵夫＆蝴蝶花
+Window_YES Job >= 450 && Job < 460 && Item 12802 >= 20 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的蝴蝶花吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11456,OK,CANCEL
+	Window_OK Job >= 450 && Job < 460 && Item 12802 >= 20 && Group == 1
+	KillItem 12802,20
+	Warp 0,11000,20,14
+##樵夫追加  茱萸木
+Window_YES Job >= 450 && Job < 460 && Item 10100 >= 20 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的茱萸木吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 1102904,OK,CANCEL
+	Window_OK Job >= 450 && Job < 460 && Item 10100 >= 20 && Group == 1
+	KillItem 10100,20
+	Warp 0,11000,20,14
+#########
+#猎人＆盐
+Window_YES Job >= 460 && Job < 470 && Item 12402 >= 20 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的盐吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11457,OK,CANCEL
+	Window_OK Job >= 460 && Job < 470 && Item 12402 >= 20 && Group == 1
+	KillItem 12402,20
+	Warp 0,11000,20,14
+#猎人＆酱油
+Window_YES Job >= 460 && Job < 470 && Item 12409 >= 20 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的酱油吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11458,OK,CANCEL
+	Window_OK Job >= 460 && Job < 470 && Item 12409 >= 20 && Group == 1
+	KillItem 12409,20
+	Warp 0,11000,20,14
+##猎人追加  白菜
+Window_YES Job >= 460 && Job < 470 && Item 12101 >= 20 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的白菜吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 1102905,OK,CANCEL
+	Window_OK Job >= 460 && Job < 470 && Item 12101 >= 20 && Group == 1
+	KillItem 12101,20
+	Warp 0,11000,20,14
+##
+#矿工＆银条
+Window_YES Job >= 470 && Job < 480 && Item 9613 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的银条吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11459,OK,CANCEL
+	Window_OK Job >= 470 && Job < 480 && Item 9613 >= 1 && Group == 1
+	KillItem 9613,1
+	Warp 0,11000,20,14
+#矿工＆银矿
+Window_YES Job >= 470 && Job < 480 && Item 9602 >= 20 && Group == 1
+	#n\n哈哈！那不是我最喜欢的银吗？\n如果你能把它让给我，我可以偷偷让你过去喔！	8
+	Window 11460,OK,CANCEL
+	Window_OK Job >= 470 && Job < 480 && Item 9602 >= 20 && Group == 1
+	KillItem 9602,20
+	Warp 0,11000,20,14
+##矿工追加 铝条
+Window_YES Job >= 470 && Job < 480 && Item 9700 >= 1 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的铝条吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 1102903,OK,CANCEL
+	Window_OK Job >= 470 && Job < 480 && Item 9700 >= 1 && Group == 1
+	KillItem 9700,1
+	Warp 0,11000,20,14
+##矿工追加 铝
+Window_YES Job >= 470 && Job < 480 && Item 9708 >= 20 && Group == 1
+	#\n\n哈哈！那不是我最喜欢的铝吗？\n如果你能把它让给我，我可以偷偷让你过去喔！
+	Window 1102902,OK,CANCEL
+	Window_OK Job >= 470 && Job < 480 && Item 9708 >= 20 && Group == 1
+	KillItem 9708,20
+	Warp 0,11000,20,14
+
+#--- 拿错东西 ---#
+Window_YES
+	#\n\n我想要的是担任该行业的人做出来的等级3物品。这好像不是你那行的东西吧！
+	#\n那抱歉不能给你过啦！	8
+	EndWindow 11454	
+Window_NO	
+
+
+##炼金术士特别对话
+block Level < 20 && Job >= 1000 && Job < 1010 && Group == 1
+	#\n\n你是炼金术士呀，你还是得跟战斗系一样，２０级才能通过，我是不会放水的！
+	EndWindow 1102906
+
+
+########## 战斗系 ##########战斗系
+block Level >= 20 && Group == 1
+	#\\n\n喔！你的等级够格进入这里哦！很好。\n想进去吗？
+	Window 11449,YES,NO
+	Window_YES Level >= 20 && Group == 1
+	Warp 0,11000,20,14
+	Window_NO
+
+########## 未满lv20战斗系或游民 ##########
+block
+	#\n\n战斗系职业、医生、护士与无业游民，需要等级２０才能通行！	
+	EndWindow 1102908

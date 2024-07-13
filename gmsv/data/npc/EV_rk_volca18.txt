@@ -1,0 +1,14 @@
+#?????
+
+#
+block
+	Window 22577,Next
+	Window 22578,Yes,No
+		Window_No
+			EndWindow 22579,OK
+		Window_Yes
+			SystemMessage 4274
+			Play_Se 207,320,240
+			LeaveGroup
+			SetLp -300
+			Warp 0,48023,54,45

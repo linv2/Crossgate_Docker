@@ -1,0 +1,19 @@
+#?¢r?
+
+block Item 16363 >= 1
+	EndWindow 22266,OK
+
+block Item 16365 >= 1 && NowTime == 3
+	Window 22260,NEXT
+	Window 22261,NEXT
+	Window 22262,NEXT
+	Window 22263,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000,OK
+		Window_OK Item 16363 >= 1
+			EndWindow 22266,OK
+		Window_OK
+			GiveItem 16363,1
+
+block
+	EndWindow 22259,OK

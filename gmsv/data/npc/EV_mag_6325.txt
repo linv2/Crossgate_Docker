@@ -1,0 +1,18 @@
+#虏邂爵筏迭﹛抌﹛末伙平失鳞羹
+#
+
+#失扑乓白及惮澡曰毛儅匀化中月桦宁
+block Item 16384 >= 1
+	Window 22415,YES,NO
+		Window_YES Item 16384 >= 1
+			Window 22416,OK
+				Window_OK
+					KillItem 16384,1,(4195)
+					GiveLeak1Item (18699%15,18658%1)
+
+##########  ##########
+block
+#\n\n\n\n\n﹛﹛﹛扔扒件市午公及监失扑乓白仇仇卞戽月
+	EndWindow 14598,OK
+
+

@@ -1,0 +1,5 @@
+block
+	 ##1050922	\n\n\n\n@c非常的好吃！不过吃下去后会胖一公斤！	1
+	 Window 1050922,OK
+	 	 Window_OK
+	 	 KillItem 45438

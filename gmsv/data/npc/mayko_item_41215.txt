@@ -1,0 +1,42 @@
+#卷	菇一级点传送卷	mayko_item_41215.txt
+#1111718	\n\n\n@c你想传送到翠绿菇的一级点吗？	1
+#1111719	\n\n\n@c你想传送到水蓝菇的一级点吗？	1
+#1111720	\n\n\n@c你想传送到粉红菇的一级点吗？	1
+#1111721	\n\n\n@c你想传送到星菇的一级点吗？	1
+
+
+block Item 41215 >0 #翠绿菇
+	 Window 1111718,YES,NO
+	 Window_YES Item 41215 ==0
+	 Endblock
+	 Window_YES
+	 KillItem 41215,1
+	 Warp 0,33000,459,299
+	 endblock
+	 Window_NO ##水蓝菇
+	 	 Window 1111719,YES,NO
+	 	  Window_YES Item 41215 ==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 41215,1
+	 	  Warp 0,33000,241,266
+	 	  endblock
+	 Window_NO ##粉红菇
+	 	 Window 1111720,YES,NO
+	 	  Window_YES Item 41215 ==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 41215,1
+	 	  Warp 0,35005,10,17	  ## 梅之间
+	 	  endblock	 
+	 Window_NO ## 星菇
+	 	 Window 1111721,YES,NO
+	 	 Window_YES Item 41215 ==0
+	 	  Endblock
+	 	  Window_YES
+	 	  KillItem 41215,1
+	 	 Warp 0,33000,311,79 	  
+	 	  endblock
+	 	  Window_NO
+	 	  EndWindow 1055891
+	

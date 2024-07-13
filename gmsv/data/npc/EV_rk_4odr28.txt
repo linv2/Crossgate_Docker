@@ -1,0 +1,21 @@
+#???¦Þþ°
+
+block NowEvent 54 == 1 || NowEvent 62 == 1
+	EndWindow 22893
+
+block Item 16421 >= 1 && EndEvent 53 == 1
+	Window 22879,OK
+		Window_OK
+			KillItemALL 16421
+			GiveItem 16422,1
+			NowEvent 54 = 1
+
+block Item 16421 >= 1 && EndEvent 61 == 1
+	Window 22879,OK
+		Window_OK
+			KillItemALL 16421
+			GiveItem 16422,1
+			NowEvent 62 = 1
+
+block
+		EndWindow 22880,OK

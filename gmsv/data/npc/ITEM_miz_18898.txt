@@ -1,0 +1,30 @@
+#
+#²¼ÓÀ·º¼þ¼°¤¶·¤
+#
+###############################
+block
+
+	Window 206709,OK
+	Window_OK
+	playse 58,1,1
+	Window 206710,OK
+	Window_OK
+	playse 58,1,1
+	Window 206711,OK
+	Window_OK
+	playse 58,1,1
+	Window 206712,OK
+	Window_OK
+	playse 58,1,1
+	Window 206713,OK
+	Window_OK
+	playse 58,1,1
+	Window 206714,OK
+	Window_OK
+	playse 58,1,1
+	Window 206699,OK
+	Window_OK
+	playse 58,1,1
+	EndWindow 206715,OK
+
+

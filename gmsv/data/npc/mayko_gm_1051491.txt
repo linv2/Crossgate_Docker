@@ -1,0 +1,118 @@
+##圣诞树
+
+block   Item 46933 >0
+#	■　有装满礼物的圣诞袜(free)
+	EndWindow 1053596 #袜子装满，挂不上去了
+		
+block   Item 46932 >0		
+#■　有装满礼物的圣诞袜圣诞袜
+	EndWindow 1053596  #袜子装满，挂不上去了
+	
+block   Item 46931 >0 && ItemCreateTime 46931> 720		
+##■　有悬挂证明	已超过12hr(free)
+	Window 1053597,YES,NO
+	 # 袜子装满东西了，要拿下来吗？？
+	 Window_yes ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 Window_YES Item 46931 >0
+	 #■ YES  && 有悬挂证明
+	 killitem 46931,1
+     	 GiveLeak1Item 46932,1
+	 ##得到装满东西的袜子(free)
+	 ##失去悬挂证明
+	 Endblock
+	 Window_YES
+			
+	 Window_NO
+			
+block   Item 46930 >0 && ItemCreateTime 46930> 720			
+## ■　有悬挂证明圣诞袜	已超过12hr
+
+	Window 1053597,YES,NO
+	 # 袜子装满东西了，要拿下来吗？？
+	 Window_yes ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 Window_YES Item 46930 >0
+	 #■ YES  && 有悬挂证明
+	 killitem 46930,1
+     	 GiveLeak1Item 46933,1
+	 ##得到装满东西的袜子
+	 ##失去悬挂证明
+	 Endblock
+	 Window_YES
+	 Window_NO		
+	 
+block   Item 46931 >0			
+##	■　有悬挂证明(free)
+		
+	Window 1053598,YES,NO
+	 # 袜子好像没东西，要拿下来吗？？
+	 Window_yes ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 Window_YES Item 46931 >0
+	 #■ YES  && 有悬挂证明
+	 killitem 46931,1
+     	 GiveLeak1Item 46928,1
+	 ##得到圣诞袜
+	 ##失去悬挂证明(free)
+	 Endblock
+	 Window_YES
+			
+	 Window_NO
+block   Item 46930 >0 			
+	Window 1053598,YES,NO
+	 # 袜子好像没东西，要拿下来吗？？
+	 Window_yes ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 Window_YES Item 46930 >0
+	 #■ YES  && 有悬挂证明
+	 killitem 46930,1
+     	 GiveLeak1Item 46929,1
+	 ##得到圣诞袜
+	 ##失去悬挂证明
+	 Endblock
+	 Window_YES
+			
+	 Window_NO
+block   Item 46929 >0 	
+#	■　有圣诞袜
+#		要把袜子挂上去吗
+	Window 1053599,YES,NO
+	 # 袜子好像没东西，要拿下来吗？？
+	 Window_yes ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 Window_YES Item 46929 >0
+	 #■ YES  && 有悬挂证明
+	 GiveLeak1Item 46930,1
+     	 KillLeak1Item 46929,1
+	 ##得到圣诞袜
+	 ##失去悬挂证明
+	 Endblock
+	 Window_YES
+			
+	 Window_NO
+			
+block   Item 46928 >0 		
+#	■　有圣诞袜圣诞袜
+#	■　有圣诞袜
+#		要把袜子挂上去吗
+	Window 1053599,YES,NO
+	 # 袜子好像没东西，要拿下来吗？？
+	 Window_yes ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 Window_YES Item 46928 >0
+	 #■ YES  && 有悬挂证明
+	 GiveLeak1Item 46931,1
+     	 KillLeak1Item 46928,1
+	 ##得到圣诞袜
+	 ##失去悬挂证明
+	 Endblock
+	 Window_YES
+			
+	 Window_NO

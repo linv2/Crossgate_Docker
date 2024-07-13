@@ -1,0 +1,440 @@
+#∆πº˛µ©’˝°ıŒÏƒÃº˛©x[èπ◊∏ƒ˝]???
+#
+#
+#
+#
+#µ©–˛À¸’˝÷≠ÿ¿
+#
+#
+#
+
+
+#∆πº˛µ©’˝°ıŒÏƒÃº˛º∞÷œƒææÆ√´®‡π¥∆• ÷Ù˜É}º∞ËÎƒ˛©z
+
+
+Block Leak1Item_620035 >= 1 || Leak1Item_620036 >= 1 || Leak1Item_621006 >= 1
+
+	Window 3206224,Next
+
+		#\n\n©x≥≥∑¥∆πº˛µ©’˝°ıŒÏƒÃº˛èπ◊∏Ù˜‘»‘ ©z\n©x¿ÂŒÂÿ¶ŒÏƒÃº˛√´ƒ˝ΩÒÿ¶ŒÏƒÃº˛±Â\n©x‘ ‘¬ŒÁ≥«∑‘»‘ ©z\n©xèπ◊∏“¡°ı–˛∑¥‘Ê?√´Œ≠‘¬‘»‘ ©z
+
+
+	Window 3206225,Yes,No
+
+		#\n\n©x±Â‘˙©y∆πº˛µ©’˝°ıŒÏƒÃº˛√´\n©xÉ}‘»ªØ÷–‘¬‘»‘ ”—©z\n©xèπ◊∏‘ ‘¬‘»‘ æÆ®î
+	
+		Window_No
+		
+			GotoF case11
+			
+		Window_Yes ItemSpace == 0
+						
+			GotoF case12
+			
+		Window_Yes Leak1Item_620035 >= 1 || Leak1Item_620036 >= 1 || Leak1Item_621006 >= 1
+						
+				GotoF case2
+							
+		Window_Yes
+			
+			GotoF case10
+			
+		EndBlock
+	
+	
+	
+	
+Block
+
+
+	Window 3206226,Next
+
+		#\n\n©x≥≥∑¥∆πº˛µ©’˝°ıŒÏƒÃº˛èπ◊∏Ù˜‘»‘ ©z\n©x¿ÂŒÂÿ¶ŒÏƒÃº˛√´ƒ˝ΩÒÿ¶ŒÏƒÃº˛±Â\n©x‘ ‘¬ŒÁ≥«∑‘»‘ ©z
+
+	EndWindow3206227
+
+		#\n\n©xèπ◊∏“¡°ı–˛∑¥‘Ê?√´Œ≠‘¬‘»‘ ©z
+
+
+	
+Block
+
+	*case2*
+	
+	
+	
+	if Leak1Item_620036 >= 1
+		
+		
+		Window 3206228,Yes,No
+
+		#\n\n©x10€Í?√´1ﬂœ‘»‘ ”—©z\n©x1€Í?ª•10ﬂœ±Âÿ¶‘¬‘»‘ ©z
+			
+			
+			Window_Yes Leak1Item_620036 >= 1 && ItemSpace >= 1
+			
+				KillLeak1Item 620036,1
+			 	GiveLeak1Item 620035,10
+			 	
+			 	GotoF case20
+			 	
+			
+			Window_Yes ItemSpace == 0
+			
+				GotoF case12
+			
+			
+			Window_Yes Leak1Item_620036 < 1
+			
+				GotoF case10
+			
+			Window_Yes
+			
+				GotoF case10
+				
+			Window_No  Leak1Item_620035 < 1 && Leak1Item_621006 < 1
+			
+				GotoF case11
+				
+				
+			Window_No
+			
+				GotoF case4
+				
+				
+				
+				EndBlock
+	else
+		
+		*case4*
+		
+		if Leak1Item_620035 >= 1
+		
+			
+			Window 3206229,Yes,No
+
+		#\n\n©x1€Í?√´1ﬂœ‘»‘ ”—©z\n©x1000?ª•10ﬂœ±Âÿ¶‘¬‘»‘ ©z
+			
+				Window_Yes Leak1Item_620035 >= 1 && ItemSpace >= 1
+				
+					KillLeak1Item 620035,1
+					GiveLeak1item 621006,10
+				
+					GotoF case21
+			
+				Window_Yes ItemSpace == 0
+			
+					GotoF case12
+			
+				Window_Yes Leak1Item_620035 < 1
+			
+					GotoF case10
+					
+				Window_Yes
+			
+					GotoF case10
+					
+				Window_No Leak1Item_621006 < 1
+			
+					GotoF case11
+					
+				Window_No
+			
+					GotoF case5
+					
+					EndBlock
+					
+		else
+		
+			*case5*
+			
+			if Leak1Item_621006 >= 1
+			
+			
+				Window 3206230,Yes,No
+
+		#\n\n©x1000?√´1ﬂœ‘»‘ ”—©z\n©x10?ª•100ﬂœ±Âÿ¶‘¬‘»‘ ©z
+				
+				
+					Window_Yes Leak1Item_621006 >= 1 && ItemSpace >= 1
+					
+						KillLeak1Item 621006,1
+						GiveLeak1Item 620034,100
+					
+						GotoF case22
+					
+					Window_Yes ItemSpace == 0
+					
+						GotoF case12
+						
+					Window_Yes Leak1Item_621006 < 1
+					
+						GotoF case10
+						
+					Window_Yes
+			
+						GotoF case10
+						
+					Window_No
+			
+						GotoF case11
+						
+			
+						EndBlock
+						
+						
+				else
+					
+					EndWindow 3206231
+
+		#\n\n©x”≈€¢ÿ¶ﬂœ–—√´Â√¿≤‘ ‘¬‘»‘ ©z
+					
+					
+	endif
+		endif
+			endif
+				
+	EndWindow 3206232
+
+		#\n\n©x”≈€¢ÿ¶ﬂœ–—√´Â√¿≤‘ ‘¬‘»‘ ©z
+					
+				
+	
+	EndBlock
+	
+	
+	
+Block
+
+	*case23*
+	
+	
+	
+	if Leak1Item_620036 >= 1
+		
+		
+		Window 3206233,Yes,No
+
+		#\n\n©x10€Í?√´1ﬂœ‘»‘ ”—©z\n©x1€Í?ª•10ﬂœ±Âÿ¶‘¬‘»‘ ©z
+			
+			
+			Window_Yes Leak1Item_620036 >= 1 && ItemSpace >= 1
+			
+				KillLeak1Item 620036,1
+			 	GiveLeak1Item 620035,10
+			 	
+			 	GotoF case20
+			 	
+			
+			Window_Yes ItemSpace == 0
+			
+				GotoF case12
+			
+			
+			Window_Yes Leak1Item_620036 < 1
+			
+				GotoF case10
+			
+			Window_Yes
+			
+				GotoF case10
+				
+				
+			Window_No
+			
+				GotoF case11
+				
+				
+				
+				EndBlock
+	else
+		
+		*case24*
+		
+		if Leak1Item_620035 >= 1
+		
+			
+			Window 3206234,Yes,No
+
+		#\n\n©x1€Í?√´1ﬂœ‘»‘ ”—©z\n©x1000?ª•10ﬂœ±Âÿ¶‘¬‘»‘ ©z
+			
+				Window_Yes Leak1Item_620035 >= 1 && ItemSpace >= 1
+				
+					KillLeak1Item 620035,1
+					GiveLeak1item 621006,10
+				
+					GotoF case21
+			
+				Window_Yes ItemSpace == 0
+			
+					GotoF case12
+			
+				Window_Yes Leak1Item_620035 < 1
+			
+					GotoF case10
+					
+				Window_Yes
+			
+					GotoF case10
+					
+					
+				Window_No
+			
+					GotoF case11
+					
+					EndBlock
+					
+		else
+		
+			*case25*
+			
+			if Leak1Item_621006 >= 1
+			
+			
+				Window 3206235,Yes,No
+
+		#\n\n©x1000?√´1ﬂœ‘»‘ ”—©z\n©x10?ª•100ﬂœ±Âÿ¶‘¬‘»‘ ©z
+				
+				
+					Window_Yes Leak1Item_621006 >= 1 && ItemSpace >= 1
+					
+						KillLeak1Item 621006,1
+						GiveLeak1Item 620034,100
+					
+						GotoF case22
+					
+					Window_Yes ItemSpace == 0
+					
+						GotoF case12
+						
+					Window_Yes Leak1Item_621006 < 1
+					
+						GotoF case10
+						
+					Window_Yes
+			
+						GotoF case10
+						
+					Window_No
+			
+						GotoF case11
+						
+			
+						EndBlock
+						
+						
+				else
+					
+					EndWindow 3206236
+
+		#\n\n©x”≈€¢ÿ¶ﬂœ–—√´Â√¿≤‘ ‘¬‘»‘ ©z
+					
+					
+	endif
+		endif
+			endif
+				
+	EndWindow 3206237
+
+		#\n\n©x”≈€¢ÿ¶ﬂœ–—√´Â√¿≤‘ ‘¬‘»‘ ©z
+					
+				
+	
+	EndBlock
+			
+Block
+
+	*case20*
+	
+	Window 3206238,Yes,No
+
+		#\n\n©x ÷µ§”Ú’∫èπ◊∏‘ ‘¬‘»‘ æÆ®î
+	
+		Window_yes Leak1Item_620036 >= 1
+	
+			GotoB case23
+		
+		Window_yes
+	
+			endWindow 3206239
+
+		#\n\n©x ÷µ§èπ◊∏∆•ŒÂÿ¶÷–‘»‘ ©z
+			
+		Window_No
+		
+			GotoF case11
+			
+Block
+
+	*case21*
+	
+	Window 3206240,Yes,No
+
+		#\n\n©x ÷µ§”Ú’∫èπ◊∏‘ ‘¬‘»‘ æÆ®î
+	
+		Window_yes  Leak1Item_620035 >= 1
+	
+			GotoB case24
+		
+		Window_yes
+	
+			endWindow 3206241
+
+		#\n\n©x ÷µ§èπ◊∏∆•ŒÂÿ¶÷–‘»‘ ©z
+			
+		Window_No
+		
+			GotoF case11
+			
+			
+Block
+
+	*case22*
+	
+	Window 3206242,Yes,No
+
+		#\n\n©x ÷µ§”Ú’∫èπ◊∏‘ ‘¬‘»‘ æÆ®î
+	
+		Window_yes Leak1Item_621006 >= 1
+	
+			GotoB case25
+		
+		Window_yes
+	
+			endWindow 3206243
+
+		#\n\n©x ÷µ§èπ◊∏∆•ŒÂÿ¶÷–‘»‘ ©z
+			
+		Window_No
+		
+			GotoF case11
+
+#∆πº˛µ©’˝°ıŒÏƒÃº˛√´ª_·N∆•€’ÿ∆–◊ËÎƒ˛©j∏•°ıµ©®‡®ﬂ?©k
+
+Block
+
+	*case10*
+
+	EndWindow 3206244
+
+		#\n\n©xÉ}‘»ªØÿ¶÷–‘»‘ ∑Ω©z
+	
+	
+	
+#”¨‘»–◊ËÎƒ˛º∞?…±©j∏•°ıµ©®‡®‡?©k
+Block
+	*case11*
+	
+	EndWindow 3206245
+
+		#\n\n©xπ´µ§‘»‘ æÆ©z÷–π¥∆• ÷ÇFªØ» ∑÷ΩÒ÷–‘»‘ ©z
+	
+# ßƒÃ∑∫ÿ©ª•÷–‘»ÃÏ÷–º∞ŒÁŒÂ©j∏•°ıµ©®‡®·?©k
+Block
+	*case12*
+	
+	EndWindow 3206246
+
+		#\n\n©x ßƒÃ∑∫ÿ©ª•÷–‘»ÃÏ÷–‘»‘ ©z
+
+

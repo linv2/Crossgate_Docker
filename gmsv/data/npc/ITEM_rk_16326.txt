@@ -1,0 +1,22 @@
+#
+#´ò¡õÒÁØ©¼°×ÛÔ»–f
+#
+
+block Floor == 1160 && Xpos >= 14 && Xpos <= 17 && Ypos >= 12 && Ypos <= 15 && Item 16321 >= 1 && Item 16322 >= 1&& Item 16323 >= 1 && Item 16324 >= 1 && Item 16325 >= 1
+	Window 22033,OK
+		Window_OK PetSpace == 0
+Play_SE 170,320,240
+			EndWindow 22034
+Play_SE 170,320,240
+		Window_OK
+			KillItem 16321,1,(4025)
+			KillItem 16322,1,(4026)
+			KillItem 16323,1,(4027)
+			KillItem 16324,1,(4028)
+			KillItem 16325,1,(4029)
+			KillItem 16326,1,(4030)
+			GivePet 622
+			EndWindow 22035
+
+block
+			EndWindow 22036

@@ -1,0 +1,34 @@
+#mayko_gm_1102617.txt 事主
+
+#1110654	\n\n\n\n@c我听说政府有补贴呢～
+#1110655	\n\n　　　　我又不识字！！\n　　　　年轻人，\n　　　　你能帮我找一下村干事帮忙吗？
+block item 41118>0
+	 endwindow 1110652
+block item 41117>0
+	 killitem 41117,1
+	 GiveLeak1Item 41118,1
+	 endwindow 1110673
+
+block item 41116>0
+	 endwindow 1110652
+block item 41115>0
+	 endwindow 1110652
+block item 41114>0
+	 endwindow 1110652
+block item 41113>0
+	 endwindow 1110652
+block item 41112>0
+	 endwindow 1110652
+block item 41111>0
+	 endwindow 1110652
+block item 41110>0
+	 endwindow 1110652
+block
+	 Window 1110654,next
+	 Window 1110655,yes,no
+	 Window_no
+	 endwindow 1110652
+	 Window_yes itemspace>0
+	 GiveLeak1Item 41110,1
+
+	 endblock

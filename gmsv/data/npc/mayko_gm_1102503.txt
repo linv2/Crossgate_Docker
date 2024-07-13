@@ -1,0 +1,17 @@
+##1102503樵夫 mayko_gm_1102503.txt
+#1110285	\n\n\n　　　村之西，木森森，伐木嘤嘤在林间。\n　　　挥舞铜斧戏桃枝，落花纷飞泣别离。
+#1110286	\n\n\n　　　你说你要找奇特的种子呀～\n　　　我看看～
+#1110287	\n\n\n　　　也许是这个吧～\n　　　你拿去忘忧谷口找士兵看看吧～
+block Item 40979 >0
+	 EndWindow 1110287
+block Item 40978>0
+	 Window 1110286,OK
+	 Window_OK Item 40978<1
+	 EndWindow 1109482
+	 Window_OK
+	 KillItem 40978,1
+	 GiveLeak1Item 40979,1	 
+	 EndWindow 1110287
+block 
+	 EndWindow 1110285	 
+	 

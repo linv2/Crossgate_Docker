@@ -1,0 +1,37 @@
+################### 若芙
+block Item 40710>0 && Item 9630>19 && Group > 1
+	 ##1100000 \n请解散队伍。 
+	 EndWindow 1100000
+block Item 40710>0 && Item 9630>19
+	 
+	 ##1102516	有一组永久冰石，那我应该有办法抵抗热气，送你到火炎之谷入口，要到火炎之谷吗？？
+
+	 Window 1102516,YES,NO 
+	 	 Window_NO
+	 	 EndWindow 1102520
+	 	 
+	 	 Window_YES Group > 1 
+	  		 EndWindow 1100000
+	 	 Window_YES
+	 	 	 #1102517	好吧我送你到入口～
+			
+			 Window 1102517,OK
+			 	 Window_OK Item  9630>19
+			 	 killitem 9630,20
+			 	 LeaveGroup
+				
+	 	 	 	 Warp 0,32202,11,12
+	 		  	  Endblock 	
+	 		  	 
+	 		  	 Window_OK 
+	 		  	 EndWindow 1102521
+block Item 40710>0 
+
+	 ##1102518	火炎之谷太热了，在这鬼地方，我也无法发挥能力！
+	 ##1102519	如果有永久冰石解解暑气该有多好！
+	 Window 1102518,OK
+	 Window_OK
+	 EndWindow 1102519
+block
+	 #1102520	这里很危险，快点离开吧！
+	 EndWindow 1102520

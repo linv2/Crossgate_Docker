@@ -1,0 +1,49 @@
+#Ó×»ïÓñopen©xshikenkan©xhi¼°ÚÐ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+
+
+
+###########©x14603©x##############
+
+block Item 14603 >= 1
+
+
+#\n\n©xÛÆÃ«ÃÈ»¥Ä¾ÔÂ»¥f¾®Ç·µ¤©z
+
+
+	EndWindow 3006299
+
+
+
+
+
+###########©x¾ô¢ÈÔ‰©x##############
+
+
+block Item 14605 >= 1 &&  Item 14604 >= 1 &&  Item 14602 >= 1 &&  Item 14601 >= 1
+
+	window 3006282,OK
+	
+		window_ok Itemspace <= 0
+
+			EndWindow 10000
+
+		window_ok Item 14603 >= 1
+
+			EndWindow 3006299
+
+		window_ok
+
+			GiveItem 14603,1
+
+
+
+
+block
+
+
+	EndWindow 4000005
+
+	

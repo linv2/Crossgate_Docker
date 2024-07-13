@@ -1,0 +1,89 @@
+#
+#
+#
+#
+#
+#钒井内及?
+
+Block GlobalFlag81 == 1
+
+	endWindow 3205472
+
+		#\n\n﹛允匹卞﹜坞棉及狦心反壅尹化中月﹝
+
+Block  PgFlag 81,0 == 1
+
+	
+	GAendWindow 3205473
+
+		#\n\n﹛骚月卞丐凶歹厄樊互蛛月﹝
+
+
+
+Block PallgFlag79 == 1 && PItem 621005,0 < 5 && Item_621005 >= 1
+
+
+		GAEndWindow 3205474
+
+		#\n\n﹛铄匀凶?昉及醒互箫曰卅中﹝\n﹛仇木匹反锳钗毛幺ハ匹五卅中﹝
+
+
+Block PallgFlag79 == 1 && PItem 621005,0 >= 5 && Item_621005 <= 4
+
+
+	
+		GAEndWindow 3205475
+
+		#\n\n﹛铄匀凶?昉毛岈屯卅仃木壬卅日卅中﹝\n﹛燮⑵卞螂户凶幻丹互恌今公丹分﹝
+			
+				
+	
+
+
+Block PallgFlag79 == 1 && PItem 621005,0 >= 5 && Item_621005 >= 5
+
+
+	
+		GAWindow 3205476,OK
+
+		#\n\n﹛■■?卞轾井中\n﹛诡勾及＞铄匀凶?昉＝毛\n﹛ハ梁及溥﹜菅诡赒弥卞岈屯月＿＿
+			
+			
+			Window_OK PgFlag 81,0 == 1
+			
+			GAEndWindow 3205477
+
+		#\n\n﹛骚月卞丐凶歹厄樊互蛛月﹝
+			
+			
+			
+			Window_OK PallgFlag79 == 0
+			
+			GAEndWindow 3205478
+
+		#\n\n﹛骚月卞丐凶歹厄樊互蛛月﹝
+			
+		
+
+			
+			Window_OK item_621005 < 5
+			
+				GAEndWindow 3205479
+
+		#\n\n﹛锳钗毛幺ハ匹五卅中﹝
+			
+			Window_OK
+							
+				Killitem 621005,1,(3010025)
+				Killitem 621005,1,(3010026)
+				Killitem 621005,1,(3010027)
+				Killitem 621005,1,(3010028)
+				Killitem 621005,1,(3010029)
+				
+				warp 0,59741,85,124
+				
+Block
+
+	endWindow 3205480
+
+		#\n\n﹛?反释构仄凶引引分＿＿﹝

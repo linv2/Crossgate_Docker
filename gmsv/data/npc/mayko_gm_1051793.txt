@@ -1,0 +1,64 @@
+#贴心的女孩		1051793
+
+#1055818	\n　　　　女儿节我好想要有娃娃组，\n　　　　可是爸爸妈妈没有钱．．．．	1	
+#1055819	\n　　　　如果有人能送我一组娃娃，\n　　　　我会送个小礼物给他。	1	
+#1055836	\n\n\n@c真的是女儿节娃娃组合耶！！	1	
+#1055837	\n\n\n@c要送给我原厂露比组吗？？	1	
+#1055838	\n\n\n@c要送给我原厂鼠娃娃组吗？？	1	
+#1055839	\n\n\n@c要送给我露比组吗？？	1	
+#1055840	\n\n\n@c要送给我小兔耳人偶组吗？？	1	
+#1055841	\n　　　　谢谢您！！\n　　　　您一定是个伟大的勇者！！	1
+
+#原厂露比组	47734
+block Item 47734>0
+	 Window 1055818,NEXT
+	 Window 1055836,NEXT
+	 Window 1055837,YES,NO
+	 Window_YES Item 47734>0
+	 KillItem 47734,1
+	 GiveLeak1Item 47715,1
+	 EndWindow 1055841
+	 Window_YES
+	 Window_NO
+	 EndWindow 1055819
+#原厂鼠娃娃组	47735
+block Item 47735>0
+	 Window 1055818,NEXT
+	 Window 1055836,NEXT
+	 Window 1055838,YES,NO
+	 Window_YES Item 47735>0
+	 KillItem 47735,1
+	 GiveLeak1Item 47714,1
+	 EndWindow 1055841
+	 Window_YES
+	 Window_NO
+	 EndWindow 1055819
+#露比组	47736
+block Item 47736>0
+	 Window 1055818,NEXT
+	 Window 1055836,NEXT
+	 Window 1055839,YES,NO
+	 Window_YES Item 47736>0
+	 KillItem 47736,1
+	 GiveLeak1Item 47713,1
+	 EndWindow 1055841
+	 Window_YES
+	 Window_NO
+	 EndWindow 1055819
+#小兔耳人偶组	47737
+block Item 47737>0
+	 Window 1055818,NEXT
+	 Window 1055836,NEXT
+	 Window 1055840,YES,NO
+	 Window_YES Item 47737>0
+	 KillItem 47737,1
+	 GiveLeak1Item 47712,1
+	 EndWindow 1055841
+	 Window_YES
+	 Window_NO
+	 EndWindow 1055819
+
+
+block 
+	 Window 1055818,NEXT
+	 EndWindow 1055819

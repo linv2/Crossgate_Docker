@@ -1,0 +1,23 @@
+#
+#辎勾中凶玉仿打件
+#
+##############  ##############
+block
+#\n\n\n\n@c＿＿窒樊井＿＿
+	Window 15295,NEXT
+#\n\n\n\n@c＿＿中支﹜漆反手丹窒樊匹手方中＿＿\n@c＿谛棉方＿\n@c＿＿台卞澎毛躯仄化仁木厄井＿＿
+	Window 15296,YES,NO
+	Window_NO
+#\n\n\n\n@c＿公丹井＿\n@c＿中凶仄井凶丐月引中＿
+	EndWindow 15297,OK
+	Window_YES
+#\n\n﹛＿が毛耨元方丹﹜佹莴樊方＿升丹井仇及显及梂﹜＞畸及ブ鹧＝卞云日木月市伊件迋及恘卞卅匀化幻仄中﹝漆及市伊件迋匹反田夫旦及恘反俅尹五木引中＿＿剂仄匹手丐及杅及恘卞卅月绣箕互优邰卅及分＿＿仇木方曰脱互熔毛筑鹧卞苂仃方丹＿
+	Window 15298,OK
+	Window_OK ItemSpace == 0
+#\n\n\n\n@c＿仇木方曰脱互熔毛筑鹧卞苂仃方丹＿
+	EndWindow 15299,OK
+	Window_OK ItemSpace != 0
+	GiveItem 18589
+	LeaveGroup
+	Warp 0,20101,12,37
+

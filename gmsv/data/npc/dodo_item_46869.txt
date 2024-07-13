@@ -1,0 +1,19 @@
+###dodo_item_46869.txt
+###月饼			里面藏有日月组织团员证书、物品收集单、暗号纸条。
+###跟工读生拿的第二个月饼
+block Item 46869 >= 1 
+	 ##1053496	\n\n\n\n\n@c你已经将月饼拿在手上，现在是否要吃月饼？	1
+	 Window 1053496,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES ItemSpace < 3
+	 	 	 ##1053503	\n\n\n\n你的身上物品携带的太多了，\n请留3格以上的空间。	1
+			 EndWindow 1053503
+	 	 
+	 	 Window_YES Item 46869 >= 1 && ItemSpace >= 3 
+	 	 	 ##1053497	月饼中出现了物品。	1
+	 	 	 KillItem 46869,(1053497) 
+	 	 	 ##有日月组织团员证书、物品收集单、暗号纸条。
+	 	 	 GiveLeak1Item 46871
+	 	 	 GiveLeak1Item 46872
+	 	 	 GiveLeak1Item 46873
+	 	 	 

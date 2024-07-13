@@ -1,0 +1,40 @@
+蔷???泛旦玄
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## 田□斥亦件ㄡ元扎卅中桦宁 ##########
+#block TrialFlg < 5
+#	Window "丐卅凶反嫦曰月仇午互匹五引六氏﹝",OK
+#	Window_OK
+
+########## 蔷(1)井日嫦曰木月桦宁 ##########
+block ShipCharDown1 == 1
+	#嫦曰引允井〝
+	Window "嫦曰引允井〝",YES,NO
+
+	#反中匹呿癫卞嫦曰木月桦宁
+	Window_YES ShipCharDown1 == 1
+		#蔷井日嫦曰月
+		ShipCharDown1
+
+	#反中匹嫦曰木卅井匀凶桦宁
+	Window_YES
+		#嫦曰公太木引仄凶
+		Window "嫦曰公太木引仄凶﹝",OK
+		Window_OK
+
+	#嫦曰卅中
+	Window_NO
+
+########## 蔷(1)互丐午ㄠ坌恍坢匹じ尝允月桦宁 ##########
+block ShipGetStopTime1 < 60
+	#棉手卅仁じ尝仄引允
+	Window "棉手卅仁じ尝仄引允﹝",OK
+	Window_OK
+
+########## 蔷(1)井日嫦曰木卅中桦宁 ##########
+block
+	#丐午〝坌匹じ尝仄引允
+	Window "丐午@d1匹じ尝仄引允﹝",OK
+	Window_OK

@@ -1,0 +1,65 @@
+#1111732	木塔？老哥没事找我干麻。
+#1111733	哎呀呀～～老哥不要命了是吧～～
+#1111734	麻烦你，先帮我准备单木20个吧。
+#1111735	不好意思，因为哥哥居然帮流犯传话，我只好先支开您。
+#1111736	可否麻烦您，帮我准备六个红羽毛呢？
+#1111737	再麻烦您，帮准备六个蓝羽毛还有一捆20个香草，送到雷克塔尔给木塔。
+#1111738	麻烦您了。
+#1111741	盒子？？里面的东西我会转呈上殿。
+#1111742	另外这是事主说要给您的。
+#1111743	谢谢您了～～
+#1111745	老哥也真是的，为了公主，冒这点险也是值得的～～
+#红凤凰的羽毛	16378  蓝凤凰的羽毛	16379 香草	12811 单木	10010
+#木塔的信	41227 小希的委托1	41228 小希的委托2	41229 小希的委托3	41230
+#地图	41231  神秘的盒子	41232  奇特的宝珠	41233 铲子	41234
+block item  41233 >0
+	endwindow 1111745
+block item 41232 >0
+	killitem 41232,1
+	GiveLeak1Item 41233,1
+	window 1111741,next
+	window 1111742,next
+	window 1111743,ok
+	Window_ok item 41231 >0  && item 41234 >0
+	killitem 41231,1
+	killitem 41234,1
+	endblock 
+	Window_ok item 41231 >0  
+	killitem 41231,1
+	
+	endblock 	
+	Window_ok item 41234 >0
+	
+	killitem 41234,1
+	endblock 	
+	window_ok
+	endblock
+	
+block item 41231 >0
+	endwindow 1111745
+block item 41230 >0
+	endwindow 1111737
+block item 41229 >0 && item 16378 >5
+	killitem 41229,1
+	killitem 16378,6
+	GiveLeak1Item 41230,1
+	endwindow 1111737	
+block item 41229 >0 
+	endwindow 1111736
+block item 41228 >0 && item 10010 >19
+	killitem 41228,1
+	killitem 10010,20
+	GiveLeak1Item 41229,1
+	window 1111735,next
+	endwindow 1111736
+		
+block item 41228 >0
+	endwindow 1111734	
+block item 41227 >0
+	killitem 41227,1
+	GiveLeak1Item 41228,1
+	window 1111732,next
+	window 1111733,next
+	endwindow 1111734
+block 
+	endwindow 15847

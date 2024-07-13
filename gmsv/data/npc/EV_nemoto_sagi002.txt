@@ -1,0 +1,113 @@
+###############################
+# 绒衔用芡旦平伙弁巨  by 漪呿 #
+# ←由伉件末﹋馨丹裆﹌←      #
+###############################
+
+#### 覆擂及缜仅匹丐月﹝//////热诸阁﹜粖诸阁﹜オ樊﹜阽曰阂﹜茧樱﹜营谛﹜枣赁屻﹜衔阁﹜五仇曰﹜润谛﹜驰屺﹋苇莲动晓﹌
+block JobAncestry == 80
+	GoToF case1
+	Endblock
+
+block JobAncestry == 130
+	GoToF case1
+	Endblock
+
+block JobAncestry == 150
+	GoToF case1
+	Endblock
+
+block JobAncestry == 160
+	GoToF case1
+	Endblock
+
+block JobAncestry == 410
+	GoToF case1
+	Endblock
+
+block JobAncestry == 420
+	GoToF case1
+	Endblock
+
+block JobAncestry == 430
+	GoToF case1
+	Endblock
+
+block JobAncestry == 440
+	GoToF case1
+	Endblock
+
+block JobAncestry == 450
+	GoToF case1
+	Endblock
+
+block JobAncestry == 460
+	GoToF case1
+	Endblock
+
+block JobAncestry == 470
+	GoToF case1
+	Endblock
+
+block JobAncestry == 480
+	GoToF case1
+	Endblock
+block JobAncestry == 1010
+	GoToF case1
+	Endblock	
+
+
+
+#### ≦蕞?谛飓及丢乒≧毛赭儅
+*case1*
+	if Item 622034 >= 1
+		EndWindow 3207618
+
+		#\n\n﹛五匀午引分﹜公及彶卞中月反内分﹝\n﹛失件正卞扎鬼中互﹜\n﹛弅箫毛幺匀慇氏分井日卞反﹜\n﹛愈詨引匹尥五宁匀化手日丹兮﹝
+
+	else
+
+
+#### ≦?谛飓及丢乒≧毛赭儅
+	if Item 622033 >= 1
+		Window 3207619,NEXT
+
+		#\n\n﹛云中﹜失件正﹜仇仇卞侳月引匹及棉卞﹜\n﹛眸卞方仁僻凶支勾毛苇卅井匀凶井〝
+
+		Window 3207620,OK
+
+		#\n\n﹛＿＿尹〝今匀五莘匀化﹜\n﹛?谛飓及丢乒毛熬仃潸匀凶〝\n\n﹛壬﹜壬匀井手□氏″公中勾互?谛分″\n\n﹛仇匀切互蕞?谛飓及丢乒分﹝\n﹛漆卅日棉卞宁丹″引分嗤仁卞中月反内分″\n﹛域踝卞馨匀化仁木″
+
+
+######## ≦?谛飓及丢乒≧毛匋璋仄﹜≦蕞?谛飓及丢乒≧毛芨尹月
+			Window_OK Item 622033 == 0
+				EndWindow 3207621
+
+		#\n\n﹛云中﹜失件正﹜\n﹛絮坁及?谛飓及丢乒毛升仇卞怅仄凶氏分〝\n﹛公氏卅手及﹜窒及泙卞手峏切扎六氏冗﹝
+
+			Window_OK
+				KillItemAll 622033
+				GiveLeak1Item 622034,1
+
+	else
+
+#### 晓筏动陆
+	if
+		EndWindow 3207622
+
+		#\n\n﹛云中﹜失件正﹜\n﹛仇仇卞侳月引匹及棉卞﹜\n﹛眸卞方仁僻凶支勾毛苇卅井匀凶井〝\n﹛≦穴生穴生琐善≧及?谛互﹜\n﹛眸及伞驯毛仄化仇及显尺⑧仆慇戈及毛苇凶氏分″
+
+endif
+endif
+endif
+Endblock
+
+
+#### ?覆擂缜仅
+block
+	EndWindow 3207623
+
+		#\n\n﹛鬼中互﹜漆﹜\n﹛か仪瘀毛馨匀化化侄仄中氏分﹝\n﹛迕仪卅日詨卞仄化仁木卅中井卅﹝
+
+
+
+

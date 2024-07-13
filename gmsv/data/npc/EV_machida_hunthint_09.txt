@@ -1,0 +1,152 @@
+#乒件旦正□甩件泛奴件弘
+#
+#﹛﹛﹛蒂菜樊﹛﹛﹛NPCID﹛810022
+#
+
+
+###﹛民乓永玄匹乒件旦正□抩毛?蜕仄凶桦宁
+#﹛旦□矢伉失左□弁午?蜕
+Block StrCmpChat == 3011021
+	Window 3207304,Next
+
+		#\n\n﹛旦□矢伉失左□弁井﹝\n﹛左□弁及酦匹手穸木凶チ恘毛儅匀化中月互﹜\n﹛公木幻升饮曼匹反卅中﹝\n﹛谛及?毛方仁墓日允凶户﹜\n﹛正□必永玄卞隙烂今木凶分仃分﹝
+
+	EndWindow 3207305
+
+		#\n\n﹛公及浇今斗尹井﹜\n﹛嫁匀仇及杅卞中月仪互聂中卅﹝
+
+#﹛旦市伙正奶仿件玄午?蜕
+Block StrCmpChat == 3011022
+	Window 3207306,Next
+
+		#\n\n﹛旦市伙正奶仿件玄井﹝\n﹛方曰阳佌今毛喂仄凶玉仿打旦市伙分卅﹝\n﹛仄井仄﹜チ恘读卞反厘仄凶仪反卅中﹝\n﹛公木蠢塑洢反仄卅中分欠丹﹝
+
+	EndWindow 3207307
+
+		#\n\n﹛仇及嗤仁卞中月氏元扎卅中井〝
+
+#﹛任央奶旦弁仿件民午?蜕
+Block StrCmpChat == 3011023
+	EndWindow 3207308
+
+		#\n\n﹛任央奶旦弁仿件民井﹝\n﹛雄祭荼瞻今木凶弁仿件民乓□日仄中﹝\n﹛埚心祯仁恘互醒蜗ム卞晓互匀化中月﹝\n﹛凛★﹜螂药匹请蜇允月仪手丐月井日﹜\n﹛竣毛尥仃月仪分﹝
+
+#﹛失扔伙玄伉永由□午?蜕
+Block StrCmpChat == 3011024
+	Window 3207309,Next
+
+		#\n\n﹛失扔伙玄伉永由□井﹝\n﹛邰谛剪诮迕卞冂溃譬项毛熬仃凶﹜\n﹛失弁失穴件泛奴旦分﹝\n﹛泭蝇仄化中月午域猾匹支日木月仪手丐月﹝
+
+	EndWindow 3207310
+
+		#\n\n﹛杴峏凶卅中方丹﹜丐引曰嫖中桦赭卞反\n﹛垫井卅中方丹分﹝
+
+#﹛甲亥戊穴永旦伙午?蜕
+Block StrCmpChat == 3011025
+	Window 3207311,Next
+
+		#\n\n﹛甲亥戊穴永旦伙井﹝\n﹛こ虫毛藤尹卞藤尹凶甲亥戊心凶中分卅﹝\n﹛仇及墓木凶壑钗毛戏五?仁卞反藤尹月仄井卅中﹜﹛公丹合匀化中凶凛渝互丐匀凶氏分欠丹﹝
+
+	EndWindow 3207312
+
+		#\n\n﹛愤坌互愈雄午合匀化中月六中井﹜\n﹛嫖中桦赭毛驯戈方丹分卅﹝
+
+#﹛禾伙□玄母旦正□午?蜕
+Block StrCmpChat == 3011026
+	Window 3207313,Next
+
+		#\n\n﹛禾伙□玄母旦正□井﹝\n﹛条痨今木凶坁撙互螂引匀化戏引木凶绣箕日仄中﹝﹛醮棉毛裟少仪互丐月井日﹜竣毛尥仃月仪分﹝
+
+	EndWindow 3207314
+
+		#\n\n﹛湘呿互敕虫日仄仁化卅﹜踹互丐月赭元扎卅中午\n﹛唾⑹匹五氏日仄中﹝
+
+#﹛旦泛奴件弘扑尼伙午?蜕
+Block StrCmpChat == 3011027
+	Window 3207315,Next
+
+		#\n\n﹛旦泛奴件弘扑尼伙井﹝\n﹛铜幺チ恘及嫖中绉澎毛儅匀化中月﹝\n﹛呕最手嘉中凶户﹜啦陆午澎雄中井手仄木氏﹝
+
+	EndWindow 3207316
+
+		#\n\n﹛萦坁卅及匹﹜踹彶毛驯戈方丹分卅﹝
+
+#﹛末瓦永弁皮□穴□午?蜕
+Block StrCmpChat == 3011028
+
+	Window 3207317,Next
+
+		#\n\n﹛末瓦永弁皮□穴□井﹝\n﹛?橘卞豳镀仁﹜僎猾手方仁井歹今木月井日﹜\n﹛镗啦允月仪分﹝
+
+	EndWindow 3207318
+
+		#\n\n﹛⑹五互簧中井日﹜璃曰卞窒手卅中﹜\n﹛钒仃凶桦赭卞方仁中月卅﹝
+
+#﹛任巧伙弗示丞午?蜕
+Block StrCmpChat == 3011029
+	EndWindow 3207319
+
+		#\n\n﹛任巧伙弗示丞井﹝\n﹛绍箪岭及呺诸毛伤户凶示丞日仄中﹝
+
+#﹛ヶ中蚁残午?蜕
+Block StrCmpChat == 3011030
+	EndWindow 3207320
+
+		#\n\n﹛ヶ中蚁残井﹝\n﹛雄祭今木凶布伙丞分卅﹝\n﹛叙中剩午﹜雄谕卅萍恘卞方曰衬毛猾切植仁迋阂\n﹛井日抩尥仃日木凶﹝
+
+#﹛皮夫它田永玄午?蜕
+Block StrCmpChat == 3011031
+	EndWindow 3207321
+
+		#\n\n﹛皮夫它田永玄井﹝\n﹛氘箪岭及呺诸毛伤户凶左永玄□田永玄日仄中﹝
+
+#﹛白夫旦玄打□伊丞午?蜕
+Block StrCmpChat == 3011032
+	EndWindow 3207322
+
+		#\n\n﹛白夫旦玄打□伊丞井﹝\n﹛踹箪岭及呺诸毛伤户凶失奶旦打□伊丞日仄中﹝
+
+#﹛丢泛左夫永弁午?蜕
+Block StrCmpChat == 3011033
+	Window 3207323,Next
+
+		#\n\n﹛丢泛左夫永弁井﹝\n﹛哗箪岭及呺诸毛伤户凶夫永弁日仄中﹝
+
+	EndWindow 3207324
+
+		#\n\n﹛丢泛左及六中匹﹜仇中勾及璃曰反\n﹛弁伊□正□及迋卞卅匀化中月氏分﹝
+
+#﹛白伙丢正伙穴奶件午?蜕
+Block StrCmpChat == 3011034
+	EndWindow 3207325
+
+		#\n\n﹛白伙丢正伙穴奶件井﹝\n﹛骚橘及疋永皿穴奶件方曰手阼井卞嘉中\n﹛嗯箪匹综日木化中月迋分﹝\n﹛侂豢恘互嫖中井日﹜竣毛尥仃月仪分﹝
+
+#﹛抚曰竣凝迩午?蜕
+Block StrCmpChat == 3011035
+	Window 3207326,Next
+
+		#\n\n﹛抚曰竣凝迩井﹝\n﹛泛奴□伙目奶术互抚竣毛着匀化庍唱仄凶绣箕分﹝﹛10虫匹厌岳今木﹜公木冗木チ恘互唱卅月﹝\n﹛醒互聂中井日逦允及卞塑洢允月分欠丹﹝
+
+	EndWindow 3207327
+
+		#\n\n﹛抚竣毛驯戈井日﹜\n﹛踹及嗤仁卞中月氏元扎卅中井〝
+
+#﹛由伙任央仿奶扒□午?蜕
+Block StrCmpChat == 3011036
+	EndWindow 3207328
+
+		#\n\n﹛由伙任央仿奶扒□井﹝\n﹛由伙任央仿奶扒□﹋妠祯樊﹌及抩及骚曰﹜\n﹛丐日斗月坁毛妠祯允月午蜕歹木月﹝\n﹛甲玉仿及荼瞻潘日仄中﹝
+
+
+###﹛狪仄喘仃凶谛互甩件正□据毛赭儅
+Block HItem 623000 >= 1
+	EndWindow 3207329
+
+		#\n\n﹛台反﹜正□必永玄乒件旦正□卞勾中化\n﹛蒂菜仄化中月樊分﹝\n﹛正□必永玄乒件旦正□及抩蟆毛蜕匀化仁木木壬﹜﹛公及乒件旦正□卞勾中化襞匀化中月仪毛\n﹛项尹化丐仆方丹﹝
+
+
+###﹛晓筏动陆
+Block
+	EndWindow 3207330
+		#\n\n﹛仇仇日彶反﹜阳鬼卅乒件旦正□互中月井日\n﹛竣毛尥仃凶引尹﹝

@@ -1,0 +1,19 @@
+#欐蔷盒弁夫奶甘
+
+#爵⑷烟缜仅卅日
+block Job <= 200
+	EndWindow 22269,OK
+
+#公及职及缜仅卅日
+block
+	Window 22270,Yes,No
+		Window_Yes Gold >= 200
+			Window 22268,OK
+			Window_OK
+				AddGold -200
+				LeaveGroup
+          			Warp 0,33000,318,357
+		Window_Yes
+			Endwindow 10005
+		Window_No
+			Endwindow 22267

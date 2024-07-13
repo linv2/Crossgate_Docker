@@ -1,0 +1,18 @@
+#1102327	32087	302	368
+
+block	Xpos >301 && Xpos <304 && Ypos == 368 && Item 40810 >0
+#block   Item 40810 > 0
+	killitem 40810,1
+	warp 0,32092,12,13
+	Endblock
+block	Xpos >301 && Xpos <304 && Ypos == 368 && Item 40811 >0   && ItemCreateTime 40811< 30    
+#block   Item 40811>0 && ItemCreateTime 40811 < 30 
+	killitem 40811,1
+	warp 0,32092,12,13
+	Endblock
+block	Xpos >301 && Xpos <304 && Ypos == 368 && Item 40811 >0    
+#block	Item 40811 >0 
+	EndWindow 1109405
+block	Xpos >301 && Xpos <304 && Ypos == 368
+#block
+	EndWindow 1109318

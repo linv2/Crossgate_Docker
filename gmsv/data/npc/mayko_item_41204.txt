@@ -1,0 +1,17 @@
+#1111609	到法兰城的大圣堂(154,29)，找僧侣托特。
+#1111610	回答里面僧侣托特的问题，五个问题答案均为正确。
+#1111611	找大僧侣马隆就职传教士。
+#僧侣适性检查合格证18106
+
+#block item 18106 >0
+block item 18106 >0
+	endwindow 1111611
+block 
+	window 1111609,next
+	window 1111610,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1207,16,10
+	 leavegroup 
+	 Window_no
+	 endblock	

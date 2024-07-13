@@ -1,0 +1,56 @@
+#丢奶件﹛’’丰角怷矷
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+###temporarily fixed by GaoLiang and DeDa 20040310
+block group>=2
+	EndWindow 3000000
+
+
+block Item 14664 >= 1 && Item 14665 >= 1
+
+		shapenext 14579
+
+#\n\n﹛孔﹜＿＿孔孔﹜孔
+
+	Window 3006576,next
+
+
+	Window 3006577,next
+
+	Window 3006578,next
+
+
+	Window 3006579,next
+
+	Window 3006580,next
+
+#\n\n﹛﹋＿＿’’丰角?蚺楔倔滇秅\n﹛恘拑仁蜕邯毛濠匀凶﹝\n﹛公仄化﹜手丹﹜?井卅中﹝﹌
+
+
+	Window 3006581,next
+
+		killitemall 14665
+		globalFlag7 = 0
+
+
+
+
+	Encount 3|0,59564,5,10||0|||||0|27105|||||||||
+
+
+
+
+block 
+
+
+#\n\n﹛氏〝卅卞井卅〝\n﹛鬼中互﹜台反卩曰匹蒂菜卞匋?仄凶中及分﹝\n﹛允什嗤仁卞扒件弁玄甩奶穴及章互丐’\n﹛菱戈卅日公仇引匹垫井’’疥氻咫式
+
+
+
+	EndWindow 3006562
+
+
+
+

@@ -1,0 +1,22 @@
+##星系移民赠品	冒险家背包(新)	din_item_47310.txt
+##能力说明：可点出 家族创立许可证、认养许可证*3、宠物饲料包家庭号*5、银票*1、幸福火柴盒*1。
+
+##空间不足
+block ItemSpace < 11
+	 ##1054386	\n\n\n\n\n@c物品栏请留十一个空位。	1
+	 EndWindow 1054386
+	 
+##一般	 
+block 
+	 ##1053775	\n\n\n  您好！您要打开“冒险家背包”领取里面的东西吗  ？	1
+	 Window 1053775,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace >= 11
+	 	 	 KillItem 47310,1
+	 	 	 GiveLeak1Item 14600,1
+	 	 	 GiveLeak1Item 607630,3
+	 	 	 GiveLeak1Item 46905,5
+	 	 	 GiveLeak1Item 46861,1
+	 	 	 GiveLeak1Item 47311,1
+endblock 

@@ -1,0 +1,26 @@
+
+#青鸾甲板船员	mayko_gm_1051716.txt
+
+#1054964	\n\n\n　　　想看海豚呀～\n　　　这个季节风浪太大，它们不会出现的～	1
+#1054965	\n\n\n　　　不过我这有小纪念，\n　　　一份500G，你要买吗？	1
+#1054966	\n\n\n\n@c不买呀～那真是可惜。	1
+#1054970	\n\n\n\n@c物品栏已满。
+#10168	\n谢谢惠顾，欢迎下次再来。	8
+#11445	\n\n你的钱不够。\n很抱歉。	8
+#米力娃娃(伪)	47650
+#秋季卡片	47651
+#罗修的卡片	606656
+3罗查的卡片	606657
+
+block  Gold>499
+	 Window 1054964,NEXT
+	 Window 1054965,YES,NO
+	 Window_NO
+	 EndWindow 1054966
+	 Window Gold<500
+	 EndWindow 11445
+	 Window_YES ItemSpace <1
+	 EndWindow 1054970
+	 Window_YES
+	 AddGold -500
+	 GiveLeak1Item (47650%1$1,47651%1$1,606656%1$1,606657%1$1)

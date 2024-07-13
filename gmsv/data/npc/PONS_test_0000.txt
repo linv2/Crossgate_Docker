@@ -1,0 +1,34 @@
+#
+#禾件旦申永弁泛旦玄
+#
+
+################################################################################
+#
+################################################################################
+block Trialflg == 0
+    EndWindow "\n\n﹛平扔穴及失市它件玄反 0 伊矛伙分□匀!!",OK
+
+block Trialflg == 1
+    EndWindow "\n\n﹛平扔穴及失市它件玄反 1 伊矛伙分□匀!!",OK
+
+block Trialflg == 2
+    EndWindow "\n\n﹛平扔穴及失市它件玄反 2 伊矛伙分□匀!!",OK
+
+block Trialflg == 3
+    EndWindow "\n\n﹛平扔穴及失市它件玄反 3 伊矛伙分□匀!!",OK
+
+block Trialflg == 4
+    EndWindow "\n\n﹛平扔穴及失市它件玄反 4 伊矛伙分□匀!!",OK
+
+block Trialflg == 5
+    EndWindow "\n\n﹛平扔穴及失市它件玄反 5 伊矛伙分□匀!!",OK
+
+block Trialflg == 6
+    EndWindow "\n\n﹛平扔穴及失市它件玄反 6 伊矛伙分□匀!!",OK
+
+block Trialflg == 7
+    EndWindow "\n\n﹛平扔穴及失市它件玄反 7 伊矛伙分□匀!!",OK
+
+block
+    EndWindow "\n\n﹛平扔穴及失市它件玄反 8 伊矛伙动晓分匀!!",OK
+

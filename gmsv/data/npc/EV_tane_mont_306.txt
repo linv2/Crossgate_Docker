@@ -1,0 +1,67 @@
+
+
+block
+
+
+
+
+
+
+			if LocalCount4 == 5
+
+				LocalCount4 = random 2,0
+
+				if LocalCount4 == 1
+
+			LocalCount4 = 5
+
+
+#					EndWindow "\n\n﹛廿仁切氏﹜辄及滔缙毛蠕户月及互驯五卅氏方﹝\n﹛域ざ酦﹜内℅℅匀匀午﹝"
+					EndWindow 3006960
+
+
+					LocalCount0 = 4
+
+
+
+				else
+
+			LocalCount4 = 5
+
+
+
+
+#					EndWindow "\n\n﹛廿仁切氏﹜辄及抔日仄互驯五卅氏方﹝\n﹛市瓜汀民分仄﹝"
+					EndWindow 3006961
+
+
+
+
+				endif
+
+
+
+			else
+
+
+			LocalCount4 = 5
+
+#				EndWindow "\n\n﹛挃及辄及晓卞\n﹛凶引℅卞雄公丹卅谛互蛛月氏方﹝"
+				EndWindow 3007006
+
+
+	
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

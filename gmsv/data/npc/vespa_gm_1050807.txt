@@ -1,0 +1,60 @@
+■赛钱箱对话 ID:1050807　座标: 1000(167,23)　
+
+#玩家对赛钱箱的心里对话
+block
+	 ##1051548	\n\n要不要捐献金钱呢．．．？
+	 Window 1051548,YES,NO
+	 	 Window_NO
+	 	 	 ##1051549	\n\n嗯．．．再想想好了．．．
+			 EndWindow 1051549
+		 Window_YES
+		 	 ##1051585	要捐出5G吗．．．？
+		 	 Window 1051585,YES,NO
+		 	 	 Window_YES Gold < 5
+		 	 	 	 ##1051550	\n\n啊～身上的钱不够．．．
+					 EndWindow 1051550
+				 Window_YES Gold >=5
+				 	 ##1051586	把%d个金币放入了捐献箱中。
+				 	 AddGold  -5,(1051586)
+				 	 addluck  -2,1
+				 	 ##1051551	\n\n铃～铃～双手合十许个愿喔～
+				 	 EndWindow 1051551
+				 Window_NO 
+				 	 ##1051552	\n\n那．．．要捐出50G吗？
+				 	 Window 1051552,YES,NO 
+				 	 	 Window_YES  Gold < 50
+				 	 	 	 ##1051550	\n\n啊～身上的钱不够．．．
+						 	 EndWindow 1051550
+						 Window_YES Gold >=50
+						 	  ##1051586	把%d个金币放入了捐献箱中。
+						 	 AddGold -50,(1051586)
+							 addluck -1,1
+							 ##1051551	\n\n铃～铃～双手合十许个愿喔～
+							 EndWindow 1051551
+						 Window_NO
+						  ##1051553	\n\n那．．．捐出500G吗？
+						  Window 1051553,YES,NO
+						  	 Window_YES Gold < 500
+						  	 ##1051550	\n\n啊～身上的钱不够．．．
+						  	 EndWindow 1051550
+						  	 Window_YES Gold >= 500
+						  	  	 ##1051586	把%d个金币放入了捐献箱中。
+						  	  	 AddGold -500,(1051586)
+						  	  	 addluck 0,1
+						  	  	 ##1051551	\n\n铃～铃～双手合十许个愿喔～
+							 	 EndWindow 1051551
+						  	  Window_NO 
+						  	  	 ##1051554	\n\n那．．．捐出5000G吗？
+								 Window 1051554,YES,NO
+								 	 Window_YES Gold < 5000
+								 	 	 ##1051550	\n\n啊～身上的钱不够．．．
+						 	 			 EndWindow 1051550
+						 	 		 Window_YES Gold >= 5000
+						 	 		  	 ##1051586	把%d个金币放入了捐献箱中。
+		 	 	 						 AddGold -5000,(1051586)
+		 	 	 						 addluck 1
+		 	 	 						 ##1051551	\n\n铃～铃～双手合十许个愿喔～
+							 	 		 EndWindow 1051551
+		 	 	 					 Window_NO 
+		 	 	 					 	 ##1051555	\n\n想实现愿望还是靠自己吧．．．
+										 EndWindow 1051555

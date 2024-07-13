@@ -1,0 +1,24 @@
+#?effect?
+
+#§T??ûî(þä)????????
+block Item 16397 >= 1
+	EndWindow 22659
+#???????or§T??ûî(þö)????????
+block Item 16399 >= 1 || Item 16398 >= 1
+	Window 22637,Yes,No
+		Window_No
+		Window_Yes
+			Play_Se 212,320,240
+			LeaveGroup
+			Warp 0,34021,8,5
+#?¢I???????????
+block Item 16396 >= 1
+	Window 22638,Yes,No
+		Window_No
+		Window_Yes
+			Play_Se 212,320,240
+			LeaveGroup
+			Warp 0,34019,8,5
+#
+block
+	EndWindow 22658

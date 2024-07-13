@@ -1,0 +1,113 @@
+
+
+block StrCmpChat==3007208
+	Window "\n\n﹛反中﹜凶仇嬴五市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+		Window_No
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+		Window_Yes ItemSpace == 0
+			EndWindow "\n\n﹛失奶泛丞互中匀天中分友﹝",OK
+		Window_Yes Gold <= 49
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+		Window_Yes
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+				Window_OK
+					AddGold -50
+					GiveItem 607676,1
+
+
+
+
+block StrCmpChat==3007209
+	Window "\n\n﹛反中﹜尕竣怗市伐奶奶市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+		Window_No
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+		Window_Yes ItemSpace == 0
+			EndWindow "\n\n﹛失奶泛丞互中匀天中分友﹝",OK
+		Window_Yes Gold <= 49
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+		Window_Yes
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+				Window_OK
+					AddGold -50
+					GiveItem 607677,1
+
+
+
+block StrCmpChat==3007210
+	Window "\n\n﹛反中﹜用永市□今引及市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+		Window_No
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+		Window_Yes ItemSpace == 0
+			EndWindow "\n\n﹛失奶泛丞互中匀天中分友﹝",OK
+		Window_Yes Gold <= 49
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+		Window_Yes
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+				Window_OK
+					AddGold -50
+					GiveItem 607678,1
+
+
+
+
+
+block StrCmpChat==3007211
+	Window "\n\n﹛反中﹜凶仇嬴五市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+		Window_No
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+		Window_Yes ItemSpace == 0
+			EndWindow "\n\n﹛失奶泛丞互中匀天中分友﹝",OK
+		Window_Yes Gold <= 49
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+		Window_Yes
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+				Window_OK
+					AddGold -50
+					GiveItem 607676,1
+
+
+
+
+block StrCmpChat==3007212
+	Window "\n\n﹛反中﹜尕竣怗市伐奶奶市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+		Window_No
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+		Window_Yes ItemSpace == 0
+			EndWindow "\n\n﹛失奶泛丞互中匀天中分友﹝",OK
+		Window_Yes Gold <= 49
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+		Window_Yes
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+				Window_OK
+					AddGold -50
+					GiveItem 607677,1
+
+
+
+block StrCmpChat==3007213
+	Window "\n\n﹛反中﹜用永市□今引及市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+		Window_No
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+		Window_Yes ItemSpace == 0
+			EndWindow "\n\n﹛失奶泛丞互中匀天中分友﹝",OK
+		Window_Yes Gold <= 49
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+		Window_Yes
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+				Window_OK
+					AddGold -50
+					GiveItem 607678,1
+
+
+block
+
+
+	Window"\n\n﹛调反请骨中及筐濡﹝\n﹛蕙仄中挃谛卞﹜仍饥诰及市□玉毛霜曰引仄斤丹″",next
+
+	Window "\n\n﹛渝棉蜃烂及弘伉□犯奴件弘市□玉互\n﹛漆卅日﹜卅氏午域呦ㄤㄟ?″\n﹛母皮伙弁伉永弁允木壬窒荚匹手苇木月方﹝",next
+	Window "\n\n﹛赶潘挀丐月井日﹜驯五卅及毛蓟氏匹﹜\n﹛市□玉?﹞市□玉?﹞市□玉?匀化蜕匀化\n﹛台卞镗妐仄化友″",next
+	window "\n﹛﹛﹛﹛市□玉?反仇氏卅及﹝\n\n﹛ @g,239500 @",next
+	window "\n﹛﹛﹛﹛匹﹜市□玉?反仇氏卅及﹝\n\n﹛ @g,239501 @",next
+	endwindow "\n﹛﹛﹛﹛愈詨及市□玉?反仇氏卅及﹝\n\n﹛ @g,239502 @"
+	
+

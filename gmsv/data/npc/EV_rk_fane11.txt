@@ -1,0 +1,58 @@
+#þÛ??¢D?
+
+#EndFLG?138?ON
+block EndEvent 138 == 1
+	EndWindow 22712,OK
+
+#NowFLG?138?ON
+block NowEvent 138 == 1
+	Window 22713,Next
+	Window 22714,OK
+	Window_OK
+		LeaveGroup
+		Warp 0,47025,77,122
+
+#??????????¢U????
+block Item 16404 >= 1 &&  Item 16405 >= 1&&  Item 16406 >= 1
+	Window 22715,Yes,No
+		Window_No
+			EndWindow 22717,OK
+		Window_Yes
+			Window 22716,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,43755,20,7
+#NowFLG?137?ON??
+block NowEvent 137 == 1
+	Window 22718,Yes,No
+		Window_No
+			EndWindow 22720,OK
+		Window_Yes
+			Window 22719,OK
+				Window_OK
+					KillItemAll 16404
+					KillItemAll 16405
+					KillItemAll 16406
+					NowEvent 137 = 0
+					NowEvent 138 = 0
+					EndEvent 138 = 0
+#EndFLG?133?ON??ýïûÔ?ý»????????
+block Item 16403 >= 1 && EndEvent 133 == 1
+	Window 22721,Next
+	Window 22722,Yes,No
+		Window_No
+			EndWindow 22724,OK
+		Window_Yes
+			Window 22723,OK
+				Window_OK
+					NowEvent 137 = 1
+#EndFLG?133?ON??
+block EndEvent 133 == 1
+	Window 22725,Next
+	EndWindow 22726,OK
+#ýïûÔ?ý»????????
+block Item 16403 >= 1
+	EndWindow 22775,OK
+#
+block
+	EndWindow 22727,OK

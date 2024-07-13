@@ -1,0 +1,27 @@
+################### ≤‚ ‘vistor
+#block 
+#	 GivePet (202%50,241%50)
+################### ≤‚ ‘ SetVisitor
+block Visitor == 0
+	 AddGold 1
+	 SetVisitor +1
+
+block Visitor == 1 
+         AddGold 2
+         SetVisitor +1
+         
+block Visitor == 2 
+         AddGold 3
+         SetVisitor +1
+         
+block Visitor == 3 
+         AddGold 4
+         SetVisitor +1
+
+block Visitor == 4 
+         AddGold 5
+         SetVisitor +1
+
+block Visitor == 5 
+         AddGold 6
+         SetVisitor +1

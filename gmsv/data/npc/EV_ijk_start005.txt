@@ -1,0 +1,56 @@
+#宎衔失扒申﹛14062,0:1521 47 79
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+########## 奶矛件玄互蔽弇仄化中月桦宁 ##########
+block EndEvent 2 == 1
+	#丐卅凶及方丹卅杅互仇及崭卞侳日木凶及反艘雄中匹丐曰引允﹝
+	EndWindow 12057
+
+
+########## 毕及澎饼毛儅匀化中卅中桦宁 ##########
+block Item18219 == 0 && EndEvent 2 == 0
+	#台反﹜扣迋及兜蝈毛潮月凶户﹜仇及褥毛昼歹卅中创貊匹丐曰引允匀″
+	EndWindow 11180
+
+
+########## 失奶泛丞及坞五互卅中桦宁 ##########
+block Item18219 >= 1 && ItemSpace < 2 && EndEvent 2 == 0
+	#\n\n﹛丐卅凶互云儅切及票么橇午娄五晶尹卞云欐仄允月手及互丐月及匹允互﹜绂坁卞芴春互卅中方丹匹允﹝\n﹛绂坁卞坞五毛综匀化﹜手丹域蘸中日仄化仁分今中
+	EndWindow 12122
+
+
+########## 矢永玄卞坞五互卅中桦宁 ##########
+block Item18219 >= 1 && PetSpace == 0 && EndEvent 2 == 0
+	#\n\n﹛丐卅凶互云儅切及票么橇午娄五晶尹卞银中呺毛云欐仄仄凶中及匹允互﹜绂坁卞芴春互卅中方丹匹允﹝\n﹛绂坁卞坞五毛综匀化﹜手丹域蘸中日仄化仁分今中
+	EndWindow 12123
+
+
+########## 毕及澎饼毛儅匀化中月桦宁 ##########
+block Item18219 >= 1 && EndEvent 2 == 0 && PetSpace >= 1 && ItemSpace >= 2
+	#丐卅凶及方丹卅杅卞俇日内午手﹜脱日宎衔药匹仇及崭及兜蝈反潮曰五月赭绣匹允互’’﹝\n毕及抰挓匹允﹝\n仇木毛云儅切仁分今中﹝
+	Window 11181,OK
+
+	### 呿癫卞绂坁卞坞五互丐月井〝 ###
+	Window_OK PetSpace == 0 || ItemSpace < 2
+		EndWindow 10000
+
+	### 呿癫卞椭瘀毛坢凶允 ###
+	Window_OK Item18219 >= 1 && EndEvent 2 == 0 && PetSpace >= 1 && ItemSpace >= 2
+		KillItem 18219,1
+		GiveLeak1Item 18220
+		GiveLeak1Item 18220
+		GiveLeak1Item 18220
+		GiveLeak1Item 18221
+		GiveLeak1Item 18222
+		GivePet (202%50,241%50)
+		EndEvent 2 = 1
+#		Window 12058,NEXT 
+#		 ##1101245	\n\n对了！本国有专门为新到这世界的勇者安排特训，它可以帮助你更快了解这各世界！\n你要参加吗？
+#		  Window 1101245,YES,NO 
+#			 Window_YES 
+#			 	 Warp 0,32001,6,7  	 
+#			 Window_NO 
+#			 ##1101246	\n\n好吧！假如你反悔了，就到冒险者训练中心去找一位“新手任务解说员”他会告诉你如何参加特训。
+#			 EndWindow 1101246

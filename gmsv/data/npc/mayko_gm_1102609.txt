@@ -1,0 +1,10 @@
+#mayko_gm_1102609.txt 红花区 芸芸
+
+#1110649	\n\n　　　　卡莲女神放出李贝留斯之后，\n　　　　时之塔就发生异变，\n　　　　我们不知什么是过去，\n　　　　什么是未来。 
+#1110637	\n\n\n　　　你好慢喔！！\n　　　鲁鲁都已经到这里了。 	1
+block item 41083>0
+	killitem 41083,1
+	GiveLeak1Item 41086,1
+	Endwindow 1110637
+block 
+	 endwindow 1110649

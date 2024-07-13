@@ -1,0 +1,59 @@
+ # haveleak0item 拥有未鉴定的物品
+ 
+ 
+ block leak0item 14836 >0
+ 	#killitem 14836,1
+ 	killleak0item 14836
+ 	GiveLeak1Item 14836,1
+ 	Window 1111515,next
+ 	endwindow 1111516
+#1111515	\n\n\n@c你好！我是可爱的封印小帮手。	
+#1111516	\n　　　你身上有未鉴定的小石像怪卡片，\n　　　我帮你换成已鉴定的喔！！	
+#1111517	\n\n\n@c你现在想交换封印卡吗？	
+#1111518	\n\n\n@c你想找小石像怪战斗吗？	
+#1111519	\n　　　你有魔石的话，可以跟我交换５张飞行系封印卡，\n　　　来抓小石像怪喔！！	
+block item 18005>0 || item 18026 >0  ||  item 18047 >0 || item 18068 >0
+	 window 1111518,yes,no
+	 Window_yes
+	  Encount 2|||0|||||0|5005|||||||||
+	 endblock
+	 Window_no level <11
+	 	Window 1111517,yes,no
+	 	window_yes item 18005 >0
+	 	killitem 18005,1
+	 	GiveLeak1Item 14460,5
+	 	endblock
+	 	window_yes item 18026 >0
+	 	killitem 18026,1
+	 	GiveLeak1Item 14460,5
+	 	endblock
+	 	window_yes item 18047 >0
+	 	killitem 18047,1
+	 	GiveLeak1Item 14460,5
+	 	endblock
+	 	window_yes item 18068 >0
+	 	killitem 18068,1
+	 	GiveLeak1Item 14460,5
+	 	endblock
+	 	Window_yes
+	 	Window_no
+	 	endblock
+	 window_no
+	 #1111507	\n\n\n@c你的等级超过十级啰！！	1	
+	 endwindow 1111507
+	 
+
+ 	
+block
+	 Window 1111515,next
+	 Window 1111518,yes,no
+	 Window_yes
+	 Encount 2|||0|||||0|5005|||||||||
+	 endblock
+	 Window_no job == 1
+	 endwindow 1111519
+	 window_no
+	 endblock	
+	 
+ 
+ 

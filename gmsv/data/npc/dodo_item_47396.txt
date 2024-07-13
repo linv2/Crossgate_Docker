@@ -1,0 +1,13 @@
+####dodo_item_47396.txt
+####■1.传羽收纳盒(空)
+##身上有传羽收纳盒(空)>1 && 传送石优待卷 >= 1
+block Item 47396 >= 1 && Item 18660 >= 1 
+	 ##1109520	\n\n\n\n\n想把传送石优待卷放进这一个漂亮的珠宝盒中吗？	1																																																																																																			
+	 Window 1109520,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47396 >= 1 && Item 18660 >= 1 
+	 	 	 KillItem 18660
+	 	 	 KillItem 47396
+	 	 	 GiveLeak1Item 47397
+	 	 	 

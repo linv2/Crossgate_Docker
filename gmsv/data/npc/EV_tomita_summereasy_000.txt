@@ -1,0 +1,22 @@
+#涩煌豭祸曰2006﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛弃苇及斥奶斥及摒
+
+###﹛狪仄井仃月
+
+block
+	Window "\n\n﹛丞丞丞永﹜云云永﹜苇尹月﹜苇尹月冗″\n﹛幻匀幻丹﹜仇曰扎旦打奶﹜云扲树扷分卅﹝\n﹛＿歹仄互丿啦及灿峇氩匹窒毛苇凶及井﹜\n﹛襞曰凶中井〝",YES,NO
+
+		Window_YES
+			Window "\n\n﹛歹仄互苇凶及反﹜丐木反尹尹午＿＿窒分匀仃〝\n\n﹛＿＿云云﹜公丹分﹜扲?分″″\n﹛扲?卞窒支日苇晰木厄坁互じ匀化云匀凶﹝",NEXT
+			Window "\n\n﹛瓜瓦﹜升氏卅及井匀化〝\n\n﹛丹戈﹜凝か仄公丹卅豭昍互幻午氏升分匀凶卅﹝\n﹛公木卞﹜平用戊心凶中卅霁及裔引曰手丐匀凶﹝",NEXT
+			Window "\n\n﹛瓜瓦﹜手匀午择仄仁分午〝\n\n﹛歹仄反螃今引元扎卅中″\n﹛窒井日窒引匹歹井匀化凶引月井永″\n﹛引丐﹜霁平用戊反布仿弁正分互卅﹝",NEXT
+			Window "\n\n﹛瓜瓦﹜漆蘸反扲?及丐月桦赭分午〝\n\n﹛石件玄卞云厄仄反妏五凶互曰分卅﹝\n﹛公及扲?及箕质反分卅＿＿丐﹜侉木化手丹凶″",NEXT
+			Window "\n\n﹛公丹变月卅方﹜掖分方﹜它’末’永″\n﹛扲?反ㄠ勾元扎卅中﹝\n﹛丐切仇切卞丐月凛★溥及庍歹月母件斥亦件﹜\n﹛公仇及扲?及方丹分卅﹝",NEXT
+			EndWindow"\n\n﹛＿歹仄互苇凶手及反﹜仇木匹蝈朿分﹝\n﹛丐午反﹜云厄仄及杴匹割井户月氏分卅﹝"
+
+		Window_NO
+			EndWindow "\n\n﹛石件玄卞中中及井〝\n﹛妏中化坛反卅中午合丹互及丹﹝"
+
+
+

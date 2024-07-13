@@ -1,0 +1,215 @@
+
+block StrCmpChat == 3007208
+
+*case01*
+	Window "\n\n﹛反中﹜呺辉及市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+	
+		Window_No
+		
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+			
+		Window_Yes ItemSpace <= 0
+		
+			EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+			
+		Window_Yes Gold <= 49
+		
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+			
+		Window_Yes
+		
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+		
+		
+				Window_OK ItemSpace <= 0
+				
+				EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+		
+			
+				Window_OK
+				
+					AddGold -50
+					GiveItem 620014,1
+
+
+
+
+block StrCmpChat==3007209
+
+*case02*
+	Window "\n\n﹛反中﹜云羞阂雄畴及市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+	
+		Window_No
+		
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+			
+		Window_Yes ItemSpace == 0
+		
+			EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+			
+		Window_Yes Gold <= 49
+		
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+			
+		Window_Yes
+		
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+		
+		
+				Window_OK ItemSpace == 0
+				
+				EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+		
+			
+				Window_OK
+				
+					AddGold -50
+					GiveItem 620015,1
+
+
+
+block StrCmpChat==3007210
+
+
+*case03*
+	Window "\n\n﹛反中﹜由件皿平件〝及市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+	
+		Window_No
+		
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+			
+		Window_Yes ItemSpace == 0
+		
+			EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+			
+		Window_Yes Gold <= 49
+		
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+			
+		Window_Yes
+		
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+		
+		
+				Window_OK ItemSpace == 0
+				
+				EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+		
+			
+				Window_OK
+				
+					AddGold -50
+					GiveItem 620016,1
+
+
+block StrCmpChat==3010062
+
+*case04*
+
+	Window "\n\n﹛反中﹜甩永疋□甩夫它奴件及市□玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+	
+		Window_No
+		
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+			
+		Window_Yes ItemSpace == 0
+		
+			EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+			
+		Window_Yes Gold <= 49
+		
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+			
+		Window_Yes
+		
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+		
+		
+				Window_OK ItemSpace == 0
+				
+				EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+		
+			
+				Window_OK
+				
+					AddGold -50
+					GiveItem 621021,1
+
+
+
+
+Block StrCmpChat == 3010072
+
+
+	Window "\n\n﹛反中﹜由件皿平件目永玉友﹝\n﹛ㄤㄟ?卞卅曰引允﹝",Yes,No
+	
+		Window_No
+		
+			EndWindow "\n\n﹛丐木〝邰日卅中及〝",OK
+			
+		Window_Yes ItemSpace == 0
+		
+			EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+			
+		Window_Yes Gold <= 49
+		
+			EndWindow "\n\n﹛云嗯互箫曰卅中友﹝",OK
+			
+		Window_Yes
+		
+			Window "\n\n﹛反中﹜咍蘸丐曰℅″",OK
+		
+		
+				Window_OK ItemSpace == 0
+				
+				EndWindow "\n\n﹛失奶泛丞及坞五互箫曰卅中歹友﹝",OK
+		
+			
+				Window_OK
+				
+					AddGold -50
+					GiveItem 607731,1
+
+
+block StrCmpChat==3007211
+ gotoB case01
+
+
+
+block StrCmpChat==3007212
+ gotoB case02
+
+
+block StrCmpChat==3007213
+ gotoB case03
+
+
+Block StrCmpChat==3010061
+ GotoB case04
+
+
+Block StrCmpChat == 3010072
+
+
+
+block
+
+
+	Window "\n\n﹛玄伉永弁﹛左失﹛玄伉□玄″\n﹛公欠公欠甩夫它奴件匹允方丰﹝\n﹛夭匀凶曰及弘伉□犯奴件弘市□玉毛云竻琼卞\n﹛霜曰引仄斤″",next
+
+	Window "\n\n﹛聊蛔及箕装手丐歹六化蜃烂及市□玉互\n﹛漆卅日﹜卅氏午域呦ㄤㄟ?″\n﹛母皮伙弁伉永弁允木壬窒荚匹手苇木月方﹝",next
+	
+	Window "\n\n﹛铨潘挀丐月井日﹜驯五卅及毛蓟氏匹﹜\n﹛市□玉?﹞市□玉?﹞\n﹛市□玉?﹞市□玉?匀化蜕匀化\n﹛台卞镗妐仄化友″",next
+	
+	Window "\n\n﹛公木午﹜漆荚反甩夫它奴件冂帎扔□申旦匹\n﹛由件皿平件目永玉毛﹜\n﹛ㄤㄟ?匹羼间仄切扎中引允″\n﹛俓仄中桦宁反＞由件皿平件目永玉＝\n﹛匀化蜕匀化友﹝",Next
+	
+	Window "\n﹛﹛﹛﹛市□玉?反仇氏卅及﹝\n\n﹛ @g,239512 @",next
+	
+	Window "\n﹛﹛﹛﹛市□玉?反仇氏卅及﹝\n\n﹛ @g,239513 @",next
+	
+	Window "\n﹛﹛﹛﹛市□玉?反仇氏卅及﹝\n\n﹛ @g,239514 @",Next
+	
+	window "\n﹛﹛﹛﹛市□玉?反仇氏卅及﹝\n\n﹛ @g,239530 @",Next
+	
+	EndWindow "\n﹛﹛﹛﹛由件皿平件目永玉反仇氏卅及﹝\n\n﹛ @g,252031 @"
+

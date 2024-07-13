@@ -1,0 +1,34 @@
+block Item 607658 >= 2
+
+				endWindow 3204306
+
+		#\n\n﹛澎饼反域骚内勾钒仃化仁分今中﹝
+
+
+block
+
+
+				globalFlag15 = 0
+				globalFlag16 = 0
+				globalFlag17 = 0
+				globalFlag18 = 0
+				globalFlag19 = 0
+				globalFlag20 = 0
+				globalFlag21 = 0
+				globalFlag22 = 0
+				globalFlag23 = 0
+				globalFlag24 = 0
+
+
+
+				Window 3204307,ok
+
+		#\n\n﹛升手﹜伙申分方℅\n﹛民亦戊﹜丐曰互午℅\n﹛氏午友﹜匹手丐凶仄反友℅\n﹛丐凶仄午芛屯月方丹卅雄中夫午仄井\n﹛饬怗互卅中及﹝\n﹛仍户氏友℅\n﹛云玵太卞戊伊匹手熬仃潸匀化友℅
+
+				Window_ok
+
+				killitem 607658,1,(3007158)
+				giveItem 18537,1
+
+
+

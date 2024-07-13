@@ -1,0 +1,247 @@
+#﹛港盒及拨叶﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛Ⅶ填盒及摒
+
+###﹛伐□皿迕失奶泛丞毛赭儅
+
+block Item_607950 >= 1 || Item_607951 >= 1
+	EndWindow 3203027
+
+		#\n\n﹛孔匀﹜⑨骰Ⅶ填井﹝\n﹛公丹中丹Ⅶ填反﹜左伊及浔怗元扎卅中卅﹝
+
+
+
+###﹛嗯噙﹜厘骞﹜用戊幼伉﹜缴伅﹜市瓜甩扑﹜觐绍ジ萝﹜港懦踹及升木井毛赭儅
+
+block Item_607943 >= 1 || Item_607944 >= 1 || Item_607945 >= 1 || Item_607946 >= 1 || Item_607947 >= 1 || Item_607948 >= 1 || Item_607949 >= 1
+
+	EndWindow 3203028
+
+		#\n\n﹛孔匀﹜左伊及Ⅶ填反嗓嗯じ曰分方﹝\n﹛窒仄欠﹜藤夭Ⅶ填分井日卅﹝
+
+
+
+###﹛镗妐踏毛赭儅
+
+block Item_607942 >= 1
+
+
+#﹛痿缜谛及桦宁
+	If JobAncestry == 200
+		Window 3203029,OK
+
+		#\n\n﹛嬴仃凶霁及ゲ今卞手饥及藉猾卞手觐尹粮仃月﹝\n﹛公木互左伊及嗯噙分﹝\n﹛孔匀﹜升氏卅朹湛方曰手暹屺分兮﹝
+
+			Window_OK Item_607942 >= 1 && ItemSpace >= 1
+				KillItemAll 607942
+				GiveItemEX 607943,1,3203030
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+				EndBlock
+
+			Window_OK Item_607942 >= 1
+				EndWindow 3203031
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+				EndBlock
+
+			Window_OK
+				EndWindow 3203032
+
+		#\n\n﹛孔匀﹜镗妐踏互壅尹凶卅﹝潸娄反瓜扑分﹝
+				EndBlock
+
+
+#﹛键缜谛及桦宁
+	else
+		If JobAncestry == 220
+			Window 3203033,OK
+
+		#\n\n﹛挕户井仃凶霁手仄匀井曰藤尹月﹝\n﹛公木互左伊及厘骞分﹝\n﹛孔匀﹜公仇日及朹湛方曰俇曰卞卅月兮﹝
+
+				Window_OK Item_607942 >= 1 && ItemSpace >= 1
+					KillItemAll 607942
+					GiveItemEX 607944,1,3203034
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+					EndBlock
+
+				Window_OK Item_607942 >= 1
+					EndWindow 3203035
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3203036
+
+		#\n\n﹛孔匀﹜镗妐踏互壅尹凶卅﹝潸娄反瓜扑分﹝
+					EndBlock
+
+
+#﹛忕缜谛及桦宁
+		else
+			If JobAncestry == 210
+				Window 3203037,OK
+
+		#\n\n﹛盏中喜手田正□及方丹卞濠曰侹午允﹝\n﹛公木互左伊及用戊幼伉分﹝\n﹛孔匀﹜し挤圴反塑澎分互卅﹝
+
+					Window_OK Item_607942 >= 1 && ItemSpace >= 1
+						KillItemAll 607942
+						GiveItemEX 607945,1,3203038
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+						EndBlock
+
+					Window_OK Item_607942 >= 1
+						EndWindow 3203039
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3203040
+
+		#\n\n﹛孔匀﹜镗妐踏互壅尹凶卅﹝潸娄反瓜扑分﹝
+						EndBlock
+
+
+#﹛皮□丢仿件缜谛及桦宁
+			else
+				If JobAncestry == 250
+					Window 3203041,OK
+
+		#\n\n﹛中匀凶氏绍互勾仁午穴弘穴方曰ゲ中﹝\n﹛公木互左伊及枆缴分﹝\n﹛孔匀﹜晶竣卞竣毛勾仃欠午鳗尹化仁木﹝
+
+						Window_OK Item_607942 >= 1 && ItemSpace >= 1
+							KillItemAll 607942
+							GiveItemEX 607946,1,3203042
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+							EndBlock
+
+						Window_OK Item_607942 >= 1
+							EndWindow 3203043
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+							EndBlock
+
+						Window_OK
+							EndWindow 3203044
+
+		#\n\n﹛孔匀﹜镗妐踏互壅尹凶卅﹝潸娄反瓜扑分﹝
+							EndBlock
+
+
+#﹛瓜奶白缜谛及桦宁
+				else
+					If JobAncestry == 260
+						Window 3203045,OK
+
+		#\n\n﹛域蘸韧氏分霁反互匀切曰平□皿﹝\n﹛公木互左伊及市瓜甩扑分﹝\n﹛孔匀﹜陆允及卞域塑洢分﹝
+
+							Window_OK Item_607942 >= 1 && ItemSpace >= 1
+								KillItemAll 607942
+								GiveItemEX 607947,1,3203046
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+								EndBlock
+
+							Window_OK Item_607942 >= 1
+								EndWindow 3203047
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+								EndBlock
+
+							Window_OK
+								EndWindow 3203048
+
+		#\n\n﹛孔匀﹜镗妐踏互壅尹凶卅﹝潸娄反瓜扑分﹝
+								EndBlock
+
+
+#﹛橡缜谛及桦宁
+					else
+						If JobAncestry == 240
+							Window 3203049,OK
+
+		#\n\n﹛域蘸揖仃壬港方曰手裔中﹝\n﹛公木互左伊及觐绍ジ萝分﹝\n﹛孔匀﹜银匀凶詨反﹜方仁澎毛璨尹方﹝
+
+								Window_OK Item_607942 >= 1 && ItemSpace >= 1
+									KillItemAll 607942
+									GiveItemEX 607948,1,3203050
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+									EndBlock
+
+								Window_OK Item_607942 >= 1
+									EndWindow 3203051
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+									EndBlock
+
+								Window_OK
+									EndWindow 3203052
+
+		#\n\n﹛孔匀﹜镗妐踏互壅尹凶卅﹝潸娄反瓜扑分﹝
+									EndBlock
+
+
+#﹛菰缜谛及桦宁
+						else
+							If JobAncestry == 230
+								Window 3203053,OK
+
+		#\n\n﹛尕账坁未夫匹伄方曰手挕凶中﹝\n﹛公木互左伊及港懦踹分﹝\n﹛孔匀﹜丹匀井曰婉氏分日呏毛仇歹允兮﹝
+
+									Window_OK Item_607942 >= 1 && ItemSpace >= 1
+										KillItemAll 607942
+										GiveItemEX 607949,1,3203054
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+										EndBlock
+
+									Window_OK Item_607942 >= 1
+										EndWindow 3203055
+
+		#\n\n﹛孔匀﹜绂坁卞坞五互卅中卅﹝潸娄尕第チ分﹝
+										EndBlock
+
+									Window_OK
+										EndWindow 3203056
+
+		#\n\n﹛孔匀﹜镗妐踏互壅尹凶卅﹝潸娄反瓜扑分﹝
+										EndBlock
+
+#﹛晓筏动陆及缜仅
+							else
+								EndWindow 3203057
+
+		#\n\n﹛云凶仁﹜朹湛缜谛元扎卅中卅﹝\n﹛镗妐踏毛儅匀化化手﹜孔匀﹜云杹啜中分﹝
+								EndBlock
+
+
+							endif
+
+						endif
+
+					endif
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3203058
+
+		#\n\n﹛孔匀﹜左伊反拨谛及朹湛缜谛毁迕及Ⅶ填盒今﹝\n﹛枘井月井匀化〝\n﹛孔匀﹜公木反?怍分﹝
+
+
+

@@ -1,0 +1,139 @@
+###########################达比石像黄昏wiz_ev_1101958.txt
+
+##有14升水
+block Item 40354 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40354 >= 1
+	 	 KillItem 40354
+	 	 GiveLeak1Item 40333
+	 	 #失去14升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。
+
+##有13升水
+block Item 40353 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40353 >= 1
+	 	 KillItem 40353
+	 	 GiveLeak1Item 40333
+	 	 #失去13升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。
+
+##有12升水
+block Item 40352 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40352 >= 1
+	 	 KillItem 40352
+	 	 GiveLeak1Item 40333
+	 	 #失去12升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。
+
+##有11升水
+block Item 40351 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40351 >= 1	 	 
+	 	 Window 1102282,OK
+	 	 ##1102282	\n\n\n  石像发出亮光，像是启动了什么魔法，到了一个\n  未知的空间。
+	 	 Window_OK Group <= 1
+	 	 	 KillItem 40351
+	 	 	 Warp 0,32064,5,11
+	 	 	 #失去11升水
+			 #warp入达比的内心世界
+	 	 Window_OK Group >= 2
+	 	 	 EndWindow 1100000	 
+		 	 ##1100000	\n\n\n\n\n@c请解散队伍。
+	 Window_NO 
+
+##有10升水
+block Item 40350 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40350 >= 1
+	 	 KillItem 40350
+	 	 GiveLeak1Item 40333
+	 	 #失去10升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。
+
+##有9升水
+block Item 40349 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40349 >= 1
+	 	 KillItem 40349
+	 	 GiveLeak1Item 40333
+	 	 #失去10升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。 
+
+##有8升水
+block Item 40348 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40348 >= 1
+	 	 KillItem 40348
+	 	 GiveLeak1Item 40333
+	 	 #失去8升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。
+
+##有7升水
+block Item 40347 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40347 >= 1
+	 	 KillItem 40347
+	 	 GiveLeak1Item 40333
+	 	 #失去7升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。
+
+##有6升水
+block Item 40346 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40346 >= 1
+	 	 KillItem 40346
+	 	 GiveLeak1Item 40333
+	 	 #失去6升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。
+
+##有5升水
+block Item 40345 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40345 >= 1
+	 	 KillItem 40345
+	 	 GiveLeak1Item 40333
+	 	 #失去5升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。
+
+##有4升水
+block Item 40344 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40344 >= 1
+	 	 KillItem 40344
+	 	 GiveLeak1Item 40333
+	 	 #失去4升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。
+
+##有3升水
+block Item 40343 >= 1
+	 Window 1102280,YES,NO
+	 ##1102280	\n\n\n  要用水洗吗？
+	 Window_YES Item 40343 >= 1
+	 	 KillItem 40343
+	 	 GiveLeak1Item 40333
+	 	 #失去3升水，得到清扫用具
+	 	 EndWindow 1102281
+	 	 ##1102281	\n\n\n  石像焕然一新，但什么事也没发生。

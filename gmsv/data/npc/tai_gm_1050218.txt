@@ -1,0 +1,403 @@
+################### 周年庆生产系竞赛 防具裁判
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 物品栏已满
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 EndWindow 1100001
+
+################### 有生产系的参赛证明(45169) && GROUP ==1 可爱的帽子 4020 
+block Item 45169 >=1 && Group ==1 && Item 4020 >=1
+	 ##1050127	你确定要将 可爱的帽子 交给裁判，并得到生产系积分吗？
+	 Window 1050127,YES,NO
+		 Window_YES ItemDurPer 4020 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 4020
+	 		 GiveLeak1Item 45172,1
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+################### 有生产系的参赛证明(45169) && GROUP ==1 高级帽子 4042 
+block Item 45169 >=1 && Group ==1 && Item 4042 >=1
+	 ##1050128	你确定要将 高级帽子 交给裁判，并得到生产系积分吗？
+	 Window 1050128,YES,NO
+		 Window_YES ItemDurPer 4042 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 4042
+	 		 GiveLeak1Item 45172,3
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+
+################### 有生产系的参赛证明(45169) && GROUP ==1 可爱的扁帽子 4062
+block Item 45169 >=1 && Group ==1 && Item 4062 >=1
+	 ##1050129	你确定要将 可爱的扁帽子 交给裁判，并得到生产系积分吗？
+	 Window 1050129,YES,NO
+		 Window_YES ItemDurPer 4062 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 4062
+	 		 GiveLeak1Item 45172,10
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+	 	 	 	 
+################### 有生产系的参赛证明(45169) && GROUP ==1 环甲 4421 
+block Item 45169 >=1 && Group ==1 && Item 4421 >=1
+	 ##1050130	你确定要将 环甲 交给裁判，并得到生产系积分吗？
+	 Window 1050130,YES,NO
+		 Window_YES ItemDurPer 4421 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 4421
+	 		 GiveLeak1Item 45172,1
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+################### 有生产系的参赛证明(45169) && GROUP ==1 索状铠甲 4444 
+block Item 45169 >=1 && Group ==1 && Item 4444 >=1
+	 ##1050131	你确定要将 索状铠甲 交给裁判，并得到生产系积分吗？
+	 Window 1050131,YES,NO
+		 Window_YES ItemDurPer 4444 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 4444
+	 		 GiveLeak1Item 45172,9
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+
+################### 有生产系的参赛证明(45169) && GROUP ==1 黄金铠甲 4461
+block Item 45169 >=1 && Group ==1 && Item 4461 >=1
+	 ##1050132	你确定要将 黄金铠甲 交给裁判，并得到生产系积分吗？
+	 Window 1050132,YES,NO
+		 Window_YES ItemDurPer 4461 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 4461
+	 		 GiveLeak1Item 45172,36
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+	 	 	 	 
+################### 有生产系的参赛证明(45169) && GROUP ==1 铁制头盔 3620 
+block Item 45169 >=1 && Group ==1 && Item 3620 >=1
+	 ##1050133	你确定要将 铁制头盔 交给裁判，并得到生产系积分吗？
+	 Window 1050133,YES,NO
+		 Window_YES ItemDurPer 3620 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 3620
+	 		 GiveLeak1Item 45172,1
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+################### 有生产系的参赛证明(45169) && GROUP ==1 葛理克头盔 3640 
+block Item 45169 >=1 && Group ==1 && Item 3640 >=1
+	 ##1050134	你确定要将 葛理克头盔 交给裁判，并得到生产系积分吗？
+	 Window 1050134,YES,NO
+		 Window_YES ItemDurPer 3640 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 3640
+	 		 GiveLeak1Item 45172,5
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+
+################### 有生产系的参赛证明(45169) && GROUP ==1 钢制头盔 3664
+block Item 45169 >=1 && Group ==1 && Item 3664 >=1
+	 ##1050135	你确定要将 钢制头盔 交给裁判，并得到生产系积分吗？
+	 Window 1050135,YES,NO
+		 Window_YES ItemDurPer 3664 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 3664
+	 		 GiveLeak1Item 45172,15
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+	 	 	 	 
+################### 有生产系的参赛证明(45169) && GROUP ==1 锁炼装 4821 
+block Item 45169 >=1 && Group ==1 && Item 4821 >=1
+	 ##1050136	你确定要将 锁炼装 交给裁判，并得到生产系积分吗？
+	 Window 1050136,YES,NO
+		 Window_YES ItemDurPer 4821 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 4821
+	 		 GiveLeak1Item 45172,1
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+################### 有生产系的参赛证明(45169) && GROUP ==1 士兵护衣 4844 
+block Item 45169 >=1 && Group ==1 && Item 4844 >=1
+	 ##1050137	你确定要将 士兵护衣 交给裁判，并得到生产系积分吗？
+	 Window 1050137,YES,NO
+		 Window_YES ItemDurPer 4844 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 4844
+	 		 GiveLeak1Item 45172,3
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+
+################### 有生产系的参赛证明(45169) && GROUP ==1 骨衣 4867
+block Item 45169 >=1 && Group ==1 && Item 4867 >=1
+	 ##1050138	你确定要将 骨衣 交给裁判，并得到生产系积分吗？
+	 Window 1050138,YES,NO
+		 Window_YES ItemDurPer 4867 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 4867
+	 		 GiveLeak1Item 45172,6
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+	 	 	 	 
+################### 有生产系的参赛证明(45169) && GROUP ==1 环袍 5223 
+block Item 45169 >=1 && Group ==1 && Item 5223 >=1
+	 ##1050139	你确定要将 环袍 交给裁判，并得到生产系积分吗？
+	 Window 1050139,YES,NO
+		 Window_YES ItemDurPer 5223 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 5223
+	 		 GiveLeak1Item 45172,1
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+################### 有生产系的参赛证明(45169) && GROUP ==1 圣堂之袍 5244 
+block Item 45169 >=1 && Group ==1 && Item 5244 >=1
+	 ##1050140	你确定要将 圣堂之袍 交给裁判，并得到生产系积分吗？
+	 Window 1050140,YES,NO
+		 Window_YES ItemDurPer 5244 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 5244
+	 		 GiveLeak1Item 45172,3
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+
+################### 有生产系的参赛证明(45169) && GROUP ==1 时之袍 5262
+block Item 45169 >=1 && Group ==1 && Item 5262 >=1
+	 ##1050141	你确定要将 时之袍 交给裁判，并得到生产系积分吗？
+	 Window 1050141,YES,NO
+		 Window_YES ItemDurPer 5262 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 5262
+	 		 GiveLeak1Item 45172,11
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+	 	 	 	 
+################### 有生产系的参赛证明(45169) && GROUP ==1 战鞋 6025 
+block Item 45169 >=1 && Group ==1 && Item 6025 >=1
+	 ##1050142	你确定要将 战鞋 交给裁判，并得到生产系积分吗？
+	 Window 1050142,YES,NO
+		 Window_YES ItemDurPer 6025 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 6025
+	 		 GiveLeak1Item 45172,1
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+################### 有生产系的参赛证明(45169) && GROUP ==1 蜥蜴鞋 6042 
+block Item 45169 >=1 && Group ==1 && Item 6042 >=1
+	 ##1050143	你确定要将 蜥蜴鞋 交给裁判，并得到生产系积分吗？
+	 Window 1050143,YES,NO
+		 Window_YES ItemDurPer 6042 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 6042
+	 		 GiveLeak1Item 45172,6
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+
+################### 有生产系的参赛证明(45169) && GROUP ==1 紫水晶鞋 6063
+block Item 45169 >=1 && Group ==1 && Item 6063 >=1
+	 ##1050144	你确定要将 紫水晶鞋 交给裁判，并得到生产系积分吗？
+	 Window 1050144,YES,NO
+		 Window_YES ItemDurPer 6063 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 6063
+	 		 GiveLeak1Item 45172,12
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+	 	 	 	 
+################### 有生产系的参赛证明(45169) && GROUP ==1 编织的靴子 5621 
+block Item 45169 >=1 && Group ==1 && Item 5621 >=1
+	 ##1050145	你确定要将 编织的靴子 交给裁判，并得到生产系积分吗？
+	 Window 1050145,YES,NO
+		 Window_YES ItemDurPer 5621 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 5621
+	 		 GiveLeak1Item 45172,1
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+################### 有生产系的参赛证明(45169) && GROUP ==1 蜥蜴长靴 5641 
+block Item 45169 >=1 && Group ==1 && Item 5641 >=1
+	 ##1050146	你确定要将 蜥蜴长靴 交给裁判，并得到生产系积分吗？
+	 Window 1050146,YES,NO
+		 Window_YES ItemDurPer 5641 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 5641
+	 		 GiveLeak1Item 45172,4
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+
+################### 有生产系的参赛证明(45169) && GROUP ==1 银靴 5660
+block Item 45169 >=1 && Group ==1 && Item 5660 >=1
+	 ##1050147	你确定要将 银靴 交给裁判，并得到生产系积分吗？
+	 Window 1050147,YES,NO
+		 Window_YES ItemDurPer 5660 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 5660
+	 		 GiveLeak1Item 45172,14
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+	 	 	 	 
+################### 有生产系的参赛证明(45169) && GROUP ==1 哥特盾 6425 
+block Item 45169 >=1 && Group ==1 && Item 6425 >=1
+	 ##1050148	你确定要将 哥特盾 交给裁判，并得到生产系积分吗？
+	 Window 1050148,YES,NO
+		 Window_YES ItemDurPer 6425 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 6425
+	 		 GiveLeak1Item 45172,1
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+################### 有生产系的参赛证明(45169) && GROUP ==1 反光之盾 6449 
+block Item 45169 >=1 && Group ==1 && Item 6449 >=1
+	 ##1050149	你确定要将 反光之盾 交给裁判，并得到生产系积分吗？
+	 Window 1050149,YES,NO
+		 Window_YES ItemDurPer 6449 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 6449
+	 		 GiveLeak1Item 45172,5
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+
+################### 有生产系的参赛证明(45169) && GROUP ==1 黄金之盾 6463
+block Item 45169 >=1 && Group ==1 && Item 6463 >=1
+	 ##1050150	你确定要将 黄金之盾 交给裁判，并得到生产系积分吗？
+	 Window 1050150,YES,NO
+		 Window_YES ItemDurPer 6463 ==100 && Group ==1
+		 	 ##//拿走物品
+			 ##//得到积分
+			 KillItem 6463
+	 		 GiveLeak1Item 45172,29
+
+	 	 Window_YES 
+		 	 ##1050103	\n\n你必须拿全新的制品给我，\n才能换取生产系积分。
+			 EndWindow 1050103
+	 	 	
+	 	 Window_NO 
+	 	 	 	 
+	 
+
+	 	 	 	 
+################### 有生产生参赛证明
+block Item 45169 >=1
+	 ##1050104	\n\n你可以拿特定几种生产系的装备，\n来换取生产系的积分。\n不同的装备换取的积分也不同。\n至于到底是哪些装备可以换积分，\n就让你猜一猜啰！
+	 EndWindow 1050104
+	 
+################### 一般	 
+block 
+	 ##1050105	\n\n你必须持有生产系的参赛证明，\n才能换取生产系积分。
+	 EndWindow 1050105	 

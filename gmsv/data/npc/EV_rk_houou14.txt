@@ -1,0 +1,4 @@
+#£q
+
+block
+	EndWindow 22129,OK

@@ -1,0 +1,8 @@
+###dodo_item_46887.txt
+###柚子			中秋节必吃圣品，魔+80。
+block Item 46887 >= 1 
+	 setfp +80 
+	 KillItem 46887,(1053541)
+	 GiveLeak1Item 46888
+	 
+	 

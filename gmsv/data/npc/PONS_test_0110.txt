@@ -1,0 +1,45 @@
+#
+#∫Ãº˛µ©…Í”¿€Õ∑∫µ©–˛®ã’ÕÌ≥Û–®ãÉQçW ˜íU∏Û
+#
+
+################################################################################
+#
+################################################################################
+
+PREV_00:
+	Window 991001,SELECT[1]_10,SELECT[2]_100
+
+
+PREV_10:
+SELECT[1]_10:
+SELECT[2]_10:
+	Window 991002,SELECT[1]_20,SELECT[2]_40,SELECT[3]_60,SELECT[4]_80,SELECT[5]_100
+
+SELECT[1]_20:
+	Window 991003,NEXT_30,OK,PREV_10
+NEXT_30:
+	Window 991004,OK,PREV_10
+
+SELECT[2]_40:
+	Window 991005,NEXT_50,OK,PREV_10
+NEXT_50:
+	Window 991006,OK,PREV_10
+
+
+SELECT[3]_60:
+	Window 991007,SELECT[1]_70,SELECT[2]_10
+SELECT[1]_70:
+	Window 991008,OK,PREV_10
+
+
+SELECT[4]_80:
+	Window 991009,NEXT_30,OK,PREV_10
+NEXT_90:
+	Window 991010,OK,PREV_10
+
+SELECT[5]_100:
+SELECT[2]_100:
+	Window 991011,OK
+
+
+

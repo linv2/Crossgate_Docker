@@ -1,0 +1,11 @@
+#
+#辄赡扑伙白
+#
+
+###  ###
+block
+#\n\n﹛夫文□″〝\n﹛方仁仇仇引匹凶升曰邋仃凶友﹝\n\n﹛醮棉及午仇欠卞副〇仄化丐仆月﹝
+ Window 21378,OK
+	Window_OK
+         Warp 0,15569,15,6
+	Window_OK

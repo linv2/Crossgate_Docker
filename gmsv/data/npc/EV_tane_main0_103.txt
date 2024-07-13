@@ -1,0 +1,81 @@
+#丢奶件﹛唬泞﹛斥亦扑亘及谛﹛’#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+
+block globalFlag36 == 1 && globalFlag10 == 1
+
+			window 3202224,next
+
+		#\n\n﹛中支丑﹜咍ざ咍ざ﹜\n﹛白奴□伙玉伐□弁卞娄五荚今木化\n﹛凶引氏卅中匹允方﹝
+
+			endwindow 3202225
+
+		#\n\n﹛咍゜及申□伙互云中仄中及互\n﹛礿域及菌中井卅丑﹝\n﹛尤反℅℅匀﹜丹引中卅丑﹝
+
+
+block globalFlag10 == 1
+
+#\n\n﹛＿＿胪中潠匹允﹝\n﹛汁央□’峇恲憭’磥芊\n﹛’’丰些峇峇县嶀芊纂
+
+
+
+
+
+	EndWindow 3006599,OK
+
+block Item 14664 >= 1 && Item 14665 >= 1
+
+#\n\n﹛’’丰些峞纂胪氻酗エ楔蝷式\n﹛谛盟中卅井凶匹仄凶井日﹜\n﹛谛及中卅中午仇牙暧允井友之〝\n﹛丹尤＿＿婉心聊亢凶＿＿
+
+
+
+
+
+	EndWindow 3006598,OK
+
+
+block Item 14664 >= 1
+
+#\n\n﹛庣谛今氏手﹜\n﹛’砟擗中玵韪峇酗?〩漱’\n﹛’’阭艉牏楔蝷式
+
+
+
+
+
+
+	EndWindow 3006597,OK
+
+
+
+block 
+
+
+
+#\n\n﹛孔℅﹜\n﹛汁央□’峇峇炊滮磥狟褖悀壑銵
+
+
+
+
+
+
+	window 3006595,next
+
+#\n\n﹛匹手﹜喀樊午仄化反\n﹛允仍中谛卅氏分方卅丑﹝
+
+
+
+
+
+
+
+
+
+
+	EndWindow 3006596,OK
+
+
+
+

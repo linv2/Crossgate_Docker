@@ -1,0 +1,20 @@
+## 迷宫按钮 I 48,41
+
+block
+	 
+	 ## G 开 (0)
+	 setobject 0,32337,41,20,0
+	 setobject 0,32337,42,20,0
+	 setobject 0,32337,43,20,0
+	 setobject 0,32337,44,20,0
+	 setobject 0,32337,45,20,0
+	 setobject 0,32337,46,20,0
+	 setobject 0,32337,47,20,0
+	 setobject 0,32337,48,20,0
+	 setobject 0,32337,49,20,0
+	 
+	 ## 16 雷声	 
+	 Play_Se 16,9,42
+	 ## 1052200 机关被起动了，远方似乎传来声响。
+	 Message 1052200
+	 

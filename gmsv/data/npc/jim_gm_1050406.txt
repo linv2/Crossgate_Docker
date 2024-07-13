@@ -1,0 +1,29 @@
+#############■情人节活动，情人节专业顾问
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+#############■队伍一人
+	 ##1050413	\n\n月光花园不错吧？花前月下，真是恋人约会最棒的地方了，不多玩一会儿，真的想要离开了吗？
+block Group == 1
+	 Window 1050413,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 45229 >= 1 && Item 45230 >= 1
+	 	 	 KillItem 45229
+	 	 	 KillItem 45230
+	 	 	 Warp 0,30110,11,6
+	 	 Window_YES Item 45229 >= 1
+	 	 	 KillItem 45229
+	 	 	 Warp 0,30110,11,6
+	 	 Window_YES Item 45230 >= 1
+	 	 	 KillItem 45230
+	 	 	 Warp 0,30110,11,6
+	 	 Window_YES
+	 	 	 Warp 0,30110,11,6
+	 	 	 

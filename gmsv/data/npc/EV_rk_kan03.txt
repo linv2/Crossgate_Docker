@@ -1,0 +1,5 @@
+#╩з╕е╗я░╫╤ыйx╞ЇМa
+
+#
+block
+	EndWindow 22285,OK

@@ -1,0 +1,46 @@
+#1102705	现在布料供应不足，真是伤脑筋。
+#1102706	我知道你们这些制作师父很头痛，我也没办法。
+#1102707	我也不愿意把布价上调呀～布料应不足，只好以价制量。
+#1102708	请你去问纺织工会副会长妮雅，问问缺货是怎么回事好吗？
+#1102709	喔～～那我再想想办法～
+#1102710	谢谢你呀！这封信麻烦给妮雅，顺便送一匹麻布过来！
+#1102711	布料短缺的问题就麻烦你了～
+#1102712	谢谢你把布带过来～妮雅回信给我呀～
+#1102713	是这样子的呀～不过我相信你应该能吃苦耐劳，我写个推荐书给会长维丝塔，推荐你当个纺织工。
+#1102714	带着推荐信就能长维丝塔就职啰。
+#1102759	\n只有信呀，麻布呢？	1
+block Item 40751>0 
+	 EndWindow 1102714
+block Item 40750>0 && Item 10400>0
+	 Window 1102712,NEXT
+	 Window 1102713,OK
+	 Window_OK Item 40750>0 && Item 10400>0
+	 KillItem 40750,1 
+	 KillItem 10400,1
+	 GiveLeak1Item 40751,1
+	 EndWindow 1102714
+	 Window_OK Item 40750>0
+	 EndWindow 1102759
+	 Window_OK
+	 EndWindow 1102711
+
+block Item 40750>0 
+	 EndWindow 1102759
+block Item 40749>0
+	 EndWindow 1102711
+block 
+	 Window 1102705,NEXT
+	 Window 1102706,NEXT
+	 Window 1102707,NEXT
+	 Window 1102708,YES,NO
+	
+	 Window_YES ItemSpace < 1 
+	 ##物品栏已满
+	 EndWindow 1100001
+	 
+	 Window_YES 
+     	 GiveLeak1Item 40749,1
+     	 EndWindow 1102710
+	
+	 Window_NO
+	 EndWindow 1102709

@@ -1,0 +1,63 @@
+#####盖亚之门wiz_gm_1101833.txt
+
+#有风之钥
+block Item 40279 >= 1
+	 Window 1101906,NEXT
+	 ##1101906	\n  门上似乎有个小孔。\n\n  把“风之钥”插入后，小孔发出了刺眼的亮光，\n  轰隆的一声，盖亚之门也开启了。	1
+	 Window 1101907,YES,NO
+	 ##1101907	\n\n\n  是否要进入盖亚之门里面？	1
+		 Window_NO
+		 Window_YES 
+		 	 KillItemall 40275
+		 	 KillItemall 40279
+		 	 Warp 0,32027,12,6
+		 	 ##交出纸片、风之龠，进入密室一
+
+#有地之珠
+block Item 40276 >= 1
+	 ##1101908	\n\n\n  门上有个小凹洞，是否要把“地之珠”放入？	1
+	 Window 1101908,YES,NO
+	 	 Window_NO
+	 	 Window_YES Item 40276 >= 1
+	 	 	 KillItem 40276
+	 	 	 EndWindow 1101909
+	 	 	 ##1101909	\n  珠子消失了，但什么事也没发生。\n\n  一定是什么地方搞错了，也许重新调查看看比较\n  好。	1
+
+#有水之珠
+block Item 40277 >= 1
+	 ##1101910	\n\n\n  门上有个小凹洞，是否要把“水之珠”放入？	1
+	 Window 1101910,YES,NO
+	 	 Window_NO
+	 	 Window_YES Item 40277 >= 1
+	 	 	 KillItem 40277
+	 	 	 EndWindow 1101909
+ 	 	 	 ##1101909	\n  珠子消失了，但什么事也没发生。\n\n  一定是什么地方搞错了，也许重新调查看看比较\n  好。	1
+
+#有火之珠
+block Item 40278 >= 1
+	 ##1101911	\n\n\n  门上有个小凹洞，是否要把“火之珠”放入？	1
+	 Window 1101911,YES,NO
+	 	 Window_NO
+	 	 Window_YES Item 40278 >= 1
+	 	 	 KillItem 40278
+	 	 	 EndWindow 1101909
+ 	 	 	 ##1101909	\n  珠子消失了，但什么事也没发生。\n\n  一定是什么地方搞错了，也许重新调查看看比较\n  好。	1
+
+###有SE组织的纸片
+block Item 40275 >= 1
+	 ##1101912	\n\n\n  发现旁边有个小投币孔，是否要把100元丢入？	1
+	 Window 1101912,YES,NO
+	 	 Window_NO
+	 	 Window_YES Gold >= 100
+	 	 	 AddGold -100
+	 	 	 GiveLeak1Item 40276
+	 	 	 EndWindow 1101913
+	 	 	 ##1101913	\n\n\n  投入100元，从一个小洞里得到“土之珠”。	1
+	 	 Window_YES Gold < 100
+	 	 	 EndWindow 1101914
+	 	 	 ##1101914	\n\n\n  钱不够啰。	1
+
+###一般
+block
+	 EndWindow 1101915
+	 ##1101915	\n\n\n  这个门开不起来，似乎有什么机关。	1

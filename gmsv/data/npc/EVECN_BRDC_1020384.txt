@@ -1,0 +1,28 @@
+##百人道场工作人员6  map：9106	16	10
+
+##奖赏：使魔的卡片、小蝙蝠卡片、黄金树精卡片、黑暗之戒、残念奖
+##机率：１：１：１：１：１
+
+
+block
+	 ##1020691	\n\n恭喜你，你已经完成了本道场第六组别的挑战。\n接下来你是否要挑战本道场下一个组别？
+	window 1020691,yes,no
+		window_no
+			 ##1020695	\n\n那么，你可以获得挑战本组成功的奖励。\n\n希望你下次再接再厉，能够有更好的成绩。
+			window 1020695,ok
+				 window_ok itemspace >= 1
+					 GiveLeak1Item (14837%1$1,14846%1$1,14877%1$1,18447%1$1,46240%1$1)
+				 	 LeaveGroup
+				 	 warp 0,1000,141,148
+			window_ok
+			endwindow 10000,ok
+		window_yes
+			 ##1020696	\n\n给你本道场专用记忆，使用本记忆挑战下一个组别。\n下一个组别的挑战会更困难，请你做好充分准备后再使用本记忆。
+			window 1020696,ok
+				 window_ok itemspace >= 1
+					 GiveLeak1Item 34631,1
+					 LeaveGroup
+					 warp 0,1000,141,148
+			window_ok
+			endwindow 10000,ok
+

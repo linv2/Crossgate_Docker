@@ -1,0 +1,25 @@
+#
+#垫五鞅引曰扔仿穴件母公及2
+#
+
+### 梓及诳2/2毛儅匀化中卅中 ###
+block Item 18931 == 0
+#\n\n﹛丹℅氏＿﹝\n﹛酸ゴ卅互日仇仇反垫五鞅引曰卅氏分﹝打□伙反职卞丐月井日互氏壬匀化茧仄化仁木﹝\n\n﹛午反中尹﹜六匀井仁仇仇引匹侳凶氏分仄卅﹝酸ゴ操午仄化仇木毛儅匀化中五卅今中﹝
+ Window 21493,OK
+  Window_OK ItemSpace != 0
+   GiveItem 18931,1
+		LeaveGroup
+		playse 279,1,1
+		Warp 0,15596,22,9
+  Window_OK
+###﹛失奶泛丞域ベ﹛###
+   Endwindow 10000
+
+### 梓及诳2/2毛儅匀化中月 ###
+block Item 18931 != 0
+#\n\n﹛手丹台井日手日尹月坌及梓及诳反儅匀化中月方丹分卅﹝\n\n﹛酸ゴ卅互日仇仇反垫五鞅引曰分﹝互氏壬匀化打□伙卞凶升曰邋中化仁木﹝
+ Window 21494,OK
+  Window_OK
+		playse 279,1,1
+		Warp 0,15596,22,9
+  Window_OK

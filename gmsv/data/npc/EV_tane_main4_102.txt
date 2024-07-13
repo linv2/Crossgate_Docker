@@ -1,0 +1,75 @@
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+
+
+block GlobalTimerB >= 300
+
+	LocalCount0 = random 4,0
+
+			if LocalCount0 == 1
+
+				GAwindow 3202428,ok
+
+		#\n\n﹛仁匀仁匀匀仁匀匀仁\n﹛楝日﹜戏仃午仄戏仃月坁互\n﹛卅氏匹﹜仇氏卅质卞中月及井卅丑℅\n﹛仁匀仁匀匀仁匀仁匀匀匀仁﹝
+
+				window_ok
+
+				GlobalTimerB = 0
+
+				Encount 2|||0|||||0|305184|||||||||
+
+			else
+			
+				if LocalCount0 == 2
+			
+					GAwindow 3202429,ok
+
+		#\n\n﹛公匀井丑﹜\n﹛楝互公丹卅及井丑﹝\n﹛公曰扎﹜满质卞裟壬木月反内分﹝\n﹛仁匀仁匀匀仁匀仁匀匀匀仁﹝
+
+					window_ok
+
+					GlobalTimerB = 0
+
+					Encount 2|||0|||||0|305184|||||||||
+			
+			
+				else
+					if LocalCount0 == 3
+
+						GAwindow 3202430,ok
+
+		#\n\n﹛仁匀仁匀仁﹜\n﹛钟仄中云烟今氏分卅丑﹜\n﹛韶六月脱互潜卞\n﹛卅卞井豢迕卅及井卅丑〝
+
+						window_ok
+
+						GlobalTimerB = 0
+
+						Encount 2|||0|||||0|305184|||||||||
+
+
+					else
+
+						GAwindow 3202431,ok
+
+		#\n\n﹛孔氏孔氏孔氏﹜\n﹛恌中普元﹜恌中普元分丑℅\n﹛楝﹜允仍仁恌中普元分﹜\n﹛仁匀匀仁匀匀仁匀仁﹝
+
+						window_ok
+
+						GlobalTimerB = 0
+
+						Encount 2|||0|||||0|305184|||||||||
+
+					endif
+				endif
+			endif
+
+
+block
+						GAendwindow 3202432
+
+		#\n\n﹛丐丐丐丐丐丐﹜孔丑﹝\n﹛漆竣坌元扎友尹卅丑﹝\n﹛詨匹卅﹝
+
+

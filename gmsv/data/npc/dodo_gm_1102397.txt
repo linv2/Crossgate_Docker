@@ -1,0 +1,153 @@
+####dodo_gm_1102397.txt
+####0020枚金币兑换商
+block Item 40844 <= 19 
+	 ##1109722	\n\n\n\n\n@c你所拥有的水蓝鼠金币还未达兑换数量！	1
+	 EndWindow 1109722
+
+block Item 40844 >= 20
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109688	\n\n\n\n@c是否愿意花费二十枚金币兑换：\n@c曲刀？	1
+	 Window 1109688,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+	 	 	 EndWindow 1054495
+	 	 	 
+	 	 Window_YES Item 40844 >= 20 && ItemSpace >= 1
+	 	 	 ##取走水蓝鼠金币
+	 	 	 KillItem 40844,20
+	 	 	 ##给予曲刀
+	 	 	 GiveLeak1Item 97
+	 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+			 EndWindow 1109719
+			 
+		 Window_NO Item 40844 >= 20
+		 	 ##1109689	\n\n\n\n@c是否愿意花费二十枚金币兑换：\n@c处刑斧？	1
+			 Window 1109689,YES,NO 
+	 			 Window_YES ItemSpace == 0
+	 			 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+	 	 			 EndWindow 1054495
+	 	 	 
+	 			 Window_YES Item 40844 >= 20 && ItemSpace >= 1
+	 	 	 		 ##取走水蓝鼠金币
+	 	 			 KillItem 40844,20
+	 	 			 ##给予处刑斧
+	 	 			 GiveLeak1Item 895
+	 	 			 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+					 EndWindow 1109719
+					 
+				 Window_NO Item 40844 >= 20
+				 	 ##1109690	\n\n\n\n@c是否愿意花费二十枚金币兑换：\n@c异形枪？	1
+					 Window 1109690,YES,NO 
+					 	 Window_YES ItemSpace == 0
+	 			 			 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+	 	 					 EndWindow 1054495
+	 	 					 
+	 	 				 Window_YES Item 40844 >= 20 && ItemSpace >= 1
+	 	 				 	 ##取走水蓝鼠金币
+	 	 					 KillItem 40844,20
+	 	 					 ##给予异形枪
+	 	 					 GiveLeak1Item 1695
+	 	 					 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+							 EndWindow 1109719
+							 
+						 Window_NO Item 40844 >= 20
+						 	 ##1109691	\n\n\n\n@c是否愿意花费二十枚金币兑换：\n@c星屑短杖？	1
+							 Window 1109691,YES,NO 
+							 	 Window_YES ItemSpace == 0
+							 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+	 	 							 EndWindow 1054495
+	 	 					 
+	 	 						 Window_YES Item 40844 >= 20 && ItemSpace >= 1
+						 			 ##取走水蓝鼠金币
+	 	 							 KillItem 40844,20
+	 	 							 ##给予星屑短杖
+	 	 							 GiveLeak1Item 2497
+	 	 							 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 EndWindow 1109719
+	 	 							 
+	 	 						 Window_NO Item 40844 >= 20
+	 	 						 	 ##1109692	\n\n\n\n@c是否愿意花费二十枚金币兑换：\n@c天秤回力标？	1
+									 Window 1109692,YES,NO 
+									 	 Window_YES ItemSpace == 0
+									 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+	 	 									 EndWindow 1054495
+	 	 							 
+	 	 							 	 Window_YES Item 40844 >= 20 && ItemSpace >= 1
+	 	 							 	 	 ##取走水蓝鼠金币
+	 	 							 	 	 KillItem 40844,20
+	 	 							 	 	 ##给予天秤回力标
+	 	 							 	 	 GiveLeak1Item 2899
+	 	 							 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+											 EndWindow 1109719
+											 
+										 Window_NO Item 40844 >= 20
+										 	 ##1109693	\n\n\n\n@c是否愿意花费二十枚金币兑换：\n@c圣龙头盔？	1
+											 Window 1109693,YES,NO 
+											 	 Window_YES ItemSpace == 0
+									 	 			 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+	 	 											 EndWindow 1054495
+	 	 							 	
+	 	 							 			 Window_YES Item 40844 >= 20 && ItemSpace >= 1
+	 	 							 			 	 ##取走水蓝鼠金币
+	 	 							 			 	 KillItem 40844,20
+	 	 							 			 	 ##给予圣龙头盔
+	 	 							 			 	 GiveLeak1Item 3692
+	 	 							 	 			 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+													 EndWindow 1109719
+											 
+												 Window_NO Item 40844 >= 20
+											 		 ##1109694	\n\n\n\n@c是否愿意花费二十枚金币兑换：\n@c骑士铠甲？	1
+													 Window 1109694,YES,NO 
+													 	 Window_YES ItemSpace == 0
+									 	 					 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+	 	 													 EndWindow 1054495
+	 	 							 	
+	 	 							 					 Window_YES Item 40844 >= 20 && ItemSpace >= 1
+	 	 							 					 	 ##取走水蓝鼠金币
+	 	 							 					 	 KillItem 40844,20
+	 	 							 					 	 ##给予骑士铠甲
+	 	 							 					 	 GiveLeak1Item 4491
+	 	 							 	 					 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+															 EndWindow 1109719
+											 
+														 Window_NO Item 40844 >= 20
+														 	 ##1109695	\n\n\n\n@c是否愿意花费二十枚金币兑换：\n@c龙之靴？	1
+															 Window 1109695,YES,NO 
+															 	 Window_YES ItemSpace == 0
+									 	 							 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+	 	 															 EndWindow 1054495
+	 	 							 		
+	 	 							 							 Window_YES Item 40844 >= 20 && ItemSpace >= 1
+	 	 							 					 			 ##取走水蓝鼠金币
+	 	 							 					 			 KillItem 40844,20
+	 	 							 					 			 ##给予龙之靴
+	 	 							 					 			 GiveLeak1Item 5691
+	 	 							 	 							 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+																	 EndWindow 1109719
+											 
+																 Window_NO Item 40844 >= 20
+																 	 ##1109696	\n\n\n\n@c是否愿意花费二十枚金币兑换：\n@c魔族原石【可分割出20个魔族水晶】？	1
+																	 Window 1109696,YES,NO 
+																	 	 Window_YES ItemSpace == 0
+									 	 									 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+	 	 																	 EndWindow 1054495
+	 	 							 			
+	 	 							 									 Window_YES Item 40844 >= 20 && ItemSpace >= 1
+	 	 							 					 					 ##取走水蓝鼠金币
+	 	 							 					 					 KillItem 40844,20
+	 	 							 					 					 ##给予魔族原石
+	 	 							 					 					 GiveLeak1Item 40845
+	 	 							 	 									 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+																			 EndWindow 1109719
+											 		
+	 	 																 Window_NO 
+						 													 ##1109720	\n\n\n\n\n@c累积越多将可以兑换到更超值的礼物呦！	1
+	 	 																	 EndWindow 1109720
+	 	 	 				
+block 
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 EndWindow 1109723
+	 							 	 

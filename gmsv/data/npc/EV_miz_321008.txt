@@ -1,0 +1,33 @@
+#汕母件斥亦件“打仿件扔奶
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛伊矛伙19动票﹛汕?及谛﹛##############
+block trialflg == 4 && level <= 19
+	Window 219010,OK
+	Window_OK level <= 19 && trialflg == 4 && Itemspace >= 2
+	GiveItem 15613,3
+	GiveItem 15211,3
+	leavegroup
+	Encount 3|||0|||||0|955|||||||||
+	Window_OK level <= 19 && trialflg == 4 && Itemspeace <= 1
+	EndWindow 219006,OK
+
+###########﹛伊矛伙20动晓﹛汕?及谛﹛##############
+block level >= 20 && trialflg == 4 && Itemspace >= 2
+
+	Giveitem 15613,3
+	Giveitem 15211,3
+	Setaction 16
+	EndWindow 219011,OK
+
+block level >= 20 && trialflg == 4 && Itemspace <= 1
+
+	EndWindow 219006,OK
+
+###########﹛汕?元扎卅中谛﹛##############
+block trialflg != 4
+
+	Setaction 16
+	EndWindow 219015,OK
+

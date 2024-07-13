@@ -1,0 +1,87 @@
+#≦反元户化及云勾井中≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛正永弁及摒
+
+###﹛抩铜毛呁醒赭儅
+
+block Item_607904 >= 2
+	EndWindow 3200877
+		#\n\n﹛公及伙左□弘及抩铜分仃升﹜窒匹公氏卅卞\n﹛儅匀化月氏分中〝\n﹛职谛及抩铜毛窒呦手儅勾方丹卅谛反﹜\n﹛耨迕匹五卅中卅﹝
+
+
+
+###﹛抩铜毛赭儅
+
+block Item_607904 == 1
+
+	If StampCount_607904 == 4 && Item_12001 >= 5 && Item_12406 >= 5 && Item_12802 >= 5 && Item_12805 >= 5 && Item_12823 >= 3
+		EndWindow 3200878
+		#\n\n﹛螂户化五化仁木凶氏分友﹝丐曰互午丹﹝\n﹛元扎丐ミ琼反冞互＿匀化蜕中凶中氏分仃升﹜\n﹛引分箫互腾戈氏分方﹝\n﹛腾心互娄仁引匹仇仇匹菱氏匹中凶中井日﹜\n﹛ミ琼手云凑中匹五月井卅﹝俇戈方﹝
+		EndBlock
+
+	else
+		If StampCount_607904 == 4
+			EndWindow 3200879
+		#\n\n﹛支壬中卅丐﹝仄仁元匀切扎匀凶卅丐﹝\n﹛褪杅卞允匀仍仁变日木月卅丐﹝\n﹛仇及引引⑧仆切扎云丹井卅丐﹝
+			EndBlock
+
+		else
+			If StampCount_607904 == 3
+				Window 3200880,NEXT
+		#\n\n﹛孔丹氏﹜楝反﹜矢永玄乒件旦正□及云勾井中毛\n﹛澎鳗匀化中月及井﹝\n﹛匹﹜公及矢永玄互内匀午谨匀化月井日﹜\n﹛迋阂毛苇卞侳凶匀化〝\n﹛丹□氏﹜掸反允仍仁蜕中卞仁中氏分仃升﹜\n﹛公仇匹鳖氏匹﹜绂坁毛燠卞峸仄切扎匀凶氏分﹝
+				Window 3200881,YES,NO
+		#\n\n﹛僧中仇及彶匹澎卞じ月坁壬井曰分井日﹜\n﹛窒午井螂户方丹午合匀凶氏分仃升﹜\n﹛箫毛仁元中化﹜腾仁化⑹仃卅中氏分方﹝\n﹛鬼中仃升今丐﹜医歹曰卞螂户化仁木卅中井〝
+
+					Window_YES
+						Window 3200882,NEXT
+		#\n\n﹛呿癫井中″﹛踞井月方﹝\n﹛元扎丐﹜螂户月圴坁及濩抸毛允月方﹝\n﹛仄斤丹互﹜靥褫阂﹜失奶伉旦﹜扔白仿件毛\n﹛公木冗木ㄤ蜊内勾﹝\n﹛仄斤丹互午靥褫阂反润恅旦平伙﹜\n﹛失奶伉旦午扔白仿件反?睡旦平伙匹澎卞じ月﹝
+						Window 3200883,OK
+		#\n\n﹛丐午手丹夫午勾﹜仇木互切斤匀午泮莞卅氏分﹝\n﹛夫□乩伙未伉□毛ㄢ蜊卅氏分仃升﹜\n﹛仇及嫖哗卞丐月≦惟祥及Ⅱ楷≧及伐旦皿互﹜\n﹛凶引卞儅匀化中月分仃卅氏分﹝\n﹛厘庍分午合丹仃升﹜俇戈方﹝
+
+							Window_OK Item_607904 >= 2
+								EndWindow 3200884
+		#\n\n﹛中支﹜支匀天曰支户化云仁方﹝\n﹛职谛及抩铜毛窒呦手儅匀化月谛匀化中丹及反﹜\n﹛升丹手耨迕匹五卅中氏分﹝
+								EndBlock
+
+							Window_OK Item_607904 == 1
+								AddStampCount 607904,+1
+								EndBlock
+
+							Window_OK
+								EndWindow 3200885
+		#\n\n﹛丐木﹜伙左□弘及抩铜反升丹仄凶氏分中〝\n﹛公木反楝卞午匀化反厘仪卅坁卅氏分井日﹜\n﹛引内反公匀切毛茧仄凶杅互中中午合丹方﹝
+								EndBlock
+
+					Window_NO
+						EndWindow 3200886
+		#\n\n﹛公丹井﹜公曰扎公丹分方卅﹝\n﹛丐℅丐﹜窒匹冞匀化仇氏卅卞玉斥卅氏分欠丹﹝\n﹛盟卞卅月方﹜引匀凶仁＿＿﹝
+						EndBlock
+
+			else
+				If StampCount_607904 >= 5
+					EndWindow 3200887
+		#\n\n﹛支丐﹜公匀切及酷仪反蔽歹匀凶氏分友﹝\n﹛踞仃化仁木化丐曰互午丹﹝\n﹛冞反窒分井丐歹六月涌互卅中井日﹜\n﹛腾心互娄中凶日仇及引引窖月方﹝
+					EndBlock
+
+				else
+					EndWindow 3200888
+		#\n\n﹛ミ琼谛匀化厘庍卅氏分方﹝\n﹛乒件旦正□支霉篑卞镗啦允月分仃元扎卅仁化﹜\n﹛绂坁毛莽仄凶曰撩仁仄凶曰仄卅中方丹窒井午\n﹛竣毛葛歹卅中午中仃卅中仄友﹝\n﹛＿＿甩失℅永﹜虫方曰手艘互?木月方﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+###﹛抩铜尕赭儅
+
+block
+	EndWindow 3200889
+		#\n\n﹛冞反ミ琼谛及正永弁﹝\n﹛?木凶氏匹﹜切斤匀午域菱心仄化月氏分﹝\n﹛今廿匀化月氏元扎卅中方﹜庍卅仇午蜕丹卅方﹝\n﹛甩﹜甩甩﹜甩甩甩甩＿甩甩甩甩甩甩＿＿﹝
+
+
+

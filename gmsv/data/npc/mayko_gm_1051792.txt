@@ -1,0 +1,67 @@
+#娃娃组合贩卖员		1051792
+#
+#1055831	\n\n\n@c这里贩售女儿节娃娃组合。	1	
+#1055832	\n　　　　你要买原厂露比组吗？？\n　　　　一次１０００００Ｇ？	1	
+#1055833	\n　　　　你要买原厂鼠娃娃组吗？？\n　　　　一次７００００Ｇ？	1	
+#1055834	\n　　　　你要买露比组吗？？\n　　　　一次５００００Ｇ？	1	
+#1055835	\n　　　　你要买小兔耳人偶组吗？？\n　　　　一次３００００Ｇ？	1	
+#1055817	\n\n\n@c谢谢惠顾！！	1
+block 
+	 Window 1055831,NEXT
+	 Window 1055832,YES,NO
+	 Window_YES  ItemSpace < 1
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 EndWindow 1100001
+	 Window_YES Gold <100000
+	 #3	\n\n很抱歉，你的钱不够了。	12
+	 EndWindow 3
+	 Window_YES
+	 AddGold -100000
+	 GiveLeak1Item 47734,1
+	 EndWindow 1055817
+	 Window_NO
+	 	 Window 1055833,YES,NO
+	 	 Window_YES  ItemSpace < 1
+	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 	 EndWindow 1100001
+	 	 Window_YES Gold <70000
+	 	 #3	\n\n很抱歉，你的钱不够了。	12
+	 	 EndWindow 3
+	 	 Window_YES
+	 	 AddGold -70000
+	 	 GiveLeak1Item 47735,1
+	 	 EndWindow 1055817
+	 Window_NO
+	 	 Window 1055834,YES,NO
+	 	 Window_YES  ItemSpace < 1
+	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 	 EndWindow 1100001
+	 	 Window_YES Gold <50000
+	 	 #3	\n\n很抱歉，你的钱不够了。	12
+	 	 EndWindow 3
+	 	 Window_YES
+	 	 AddGold -50000
+	 	 GiveLeak1Item 47736,1
+	 	 EndWindow 1055817
+	 Window_NO
+	 	 Window 1055835,YES,NO
+	 	 Window_YES  ItemSpace < 1
+	 	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 	 EndWindow 1100001
+	 	 Window_YES Gold <30000
+	 	 #3	\n\n很抱歉，你的钱不够了。	12
+	 	 EndWindow 3
+	 	 Window_YES
+	 	 AddGold -30000
+	 	 GiveLeak1Item 47737,1
+	 	 EndWindow 1055817
+	 Window_NO
+#1055827	\n　　　　原厂露比组：\n　　　　露比洋娃娃、阿鲁巴斯洋娃娃、圣夜洋娃娃。	1	
+#1055828	\n\n\n@c露比组：\n　　　　熊哥娃娃(台制)、熊弟娃娃(台制)、\n　　　　露比娃娃(台制)、哥布林娃娃(台制)、\n　　　　红帽哥布林娃娃(台制)。	1	
+#1055829	\n\n\n@c原厂鼠娃娃组总共有六种鼠娃娃喔！！	1	
+#1055830	\n\n\n@c小兔耳人偶组有三种娃娃喔！！	1		 
+         Window 1055827,NEXT
+         Window 1055828,NEXT
+         Window 1055829,NEXT
+         EndWindow 1055830
+         

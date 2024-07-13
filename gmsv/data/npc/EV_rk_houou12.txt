@@ -1,0 +1,17 @@
+#£q
+
+block Item 16334 >= 1
+	EndWindow 22095,OK
+
+block Item 16333 >= 1
+	Window 22093,Yes,No
+		Window_NO
+		Window_Yes ItemSpace == 0
+			EndWindow 10000,OK
+		Window_Yes
+			Window 22094,OK
+			Window_OK
+			GiveItem 16334,1
+
+block
+	EndWindow 22095,OK

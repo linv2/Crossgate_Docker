@@ -1,0 +1,12 @@
+########油鸡淋鸭堡wiz_item_40335.txt
+
+####一般
+block
+	 Window 1102293,YES,NO
+	 ##1102293	\n\n\n  要吃下去吗？
+	 Window_YES Item 40335 >= 1
+	 	 KillItem 40335
+	 	 ##失去油鸡淋鸭堡
+	 	 GiveLeak1Item 40339
+	 	 ##得到清晨打扫要诀
+	 Window_NO

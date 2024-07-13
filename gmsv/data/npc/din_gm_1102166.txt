@@ -1,0 +1,7 @@
+###din_gm_1102166.txt
+###传送石								判断外挂用。
+
+###□一般
+block Xpos == 23 && Ypos == 3 
+	 Message 1053575
+	 ##EndWindow 1053575

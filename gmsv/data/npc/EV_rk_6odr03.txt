@@ -1,0 +1,29 @@
+#û¹þÏ?£•????
+
+#????úÇ??
+block EndEvent 128 == 1
+	EndWindow 22443,OK
+#????¥`???
+block NowEvent 128 == 1
+	EndWindow 22444,OK
+
+#????þ­??
+block NowEvent 113 == 1
+	EndWindow 22445,OK
+block NowEvent 114 == 1
+	EndWindow 22445,OK
+block NowEvent 129 == 1
+	EndWindow 22445,OK
+
+#?????????
+block EndEvent 51 == 1
+	Window 22446,Next
+	EndWindow 22447,OK
+
+#?????????
+block EndEvent 59 == 1
+	Window 22448,Next
+	EndWindow 22449,OK
+#
+block
+	EndWindow 22450,OK

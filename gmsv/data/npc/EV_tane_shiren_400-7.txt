@@ -1,0 +1,13 @@
+
+block Xpos == 239 && Ypos == 154
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5
+
+
+block Xpos == 240 && Ypos == 153
+
+	Play_SE 274,320,240
+	Message 3006709
+	SetLp -5

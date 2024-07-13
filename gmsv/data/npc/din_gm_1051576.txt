@@ -1,0 +1,16 @@
+##GM500M障碍赛	障碍赛出场教官	din_gm_1051576.txt	座标：32100(85,71)	离开赛场。
+
+block 
+	 ##1054369	\n\n  你确定要放弃挑战未知，回到法兰城吗？	1
+ 	 Window 1054369,YES,NO
+ 	 	 Window_NO
+
+ 	 	 Window_YES Group > 1
+	 	 	 ##1052890	\n\n  请一个一个来喔。	1
+	 	 	 EndWindow 1052890
+ 	 
+ 	 	 Window_YES 
+		 	 Warp 0,1500,41,79
+		 
+	 		 
+ 	 	 	 

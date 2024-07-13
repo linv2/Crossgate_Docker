@@ -1,0 +1,218 @@
+#茧樱弁巨旦玄“玉失
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛ENDFLG 68 on﹛##############
+block endevent68 == 1 && Item 18893 == 0 && Item 18895 == 0
+
+	EndWindow 206482,OK
+
+###########﹛ヶ饼及丢乒℅布永泛件及ざ筏﹋18893℅18898﹌﹛##############
+block Item 18893 >= 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block Item 18894 >= 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block Item 18895 >= 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block Item 18896 >= 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block Item 18897 >= 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block Item 18898 >= 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block nowevent69 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block endevent69 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block nowevent70 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block endevent70 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block nowevent71 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block endevent71 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block nowevent72 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block endevent72 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block nowevent73 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block endevent73 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block nowevent74 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block endevent74 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block nowevent75 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+block endevent75 == 1
+
+	Window 206490,YES,NO
+	Window_YES
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+	Window_NO
+
+###########﹛甩件弁井日及澎饼﹛﹋18892﹌丐曰﹛##############
+block Item 18892 >= 1
+
+	Window 206488,OK
+	Window_OK
+	leavegroup
+	playse 76,1,1
+	Warp 0,33270,11,14
+
+###########﹛＞凶凶仁＝﹛##############
+block strcmpchat == 206723
+	playse 216,1,1
+	EndWindow 206487,OK
+
+###########﹛＞心月＝﹛##############
+block strcmpchat == 206720
+
+	EndWindow 206485,OK
+
+###########﹛＞五仁＝﹛##############
+block strcmpchat == 206721
+
+	EndWindow 206479,OK
+
+###########﹛窒手卅仄﹛##############
+block 
+
+	EndWindow 206484,OK

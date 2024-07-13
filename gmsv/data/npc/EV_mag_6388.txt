@@ -1,0 +1,18 @@
+#立伉左泛奴旦
+
+############## 敛县酱1呿毛手匀化月 ##############
+block Item 18494 == 1
+#\n\n﹛が及恳聒毛拟中﹜旲仆方﹝
+	Window 14741,OK
+	Window_OK
+	KillItem 18494
+	GiveItem 18495
+	LeaveGroup
+	Warp 0,24002,26,76
+
+############## 公及职 ##############
+block
+#\n\n﹛＿＿＿
+	EndWindow 14739,OK
+
+

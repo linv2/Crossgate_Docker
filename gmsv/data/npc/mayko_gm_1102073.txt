@@ -1,0 +1,12 @@
+
+###ÕòÄ¹ÊÞ
+block Item 40711 >= 1 
+## killitem 40711,1
+	 Encount 2|0,32204,3,7||0|||||0|40158|||||||||	 
+	 Endblock
+block
+	 EndWindow 1102540
+
+	 
+	 		 	 
+		 	 

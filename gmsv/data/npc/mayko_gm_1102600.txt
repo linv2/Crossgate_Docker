@@ -1,0 +1,25 @@
+#士兵阿罗	33500	36	46	mayko_gm_1102600.txt
+#1110585	\n\n\n\n@c臭鱼味道不是这样啦～。
+#1110586	\n\n　　　是有人在密林中被谋杀吗？\n　　　不过最近没失踪人口。
+#1110587	\n\n\n　　　啊～\n　　　鲁德老头好几天没看到人了。
+#1110588	\n\n\n\n@c你要不要去问问他的助理芬芬。
+
+block Item 41073 >0
+	 EndWindow 11110587
+
+	
+block 
+	 Window 1110585,NEXT
+	 Window 1110586,NEXT
+	 
+	 Window 1110587,OK
+	 Window_OK ItemSpace < 1
+	 EndWindow 1110565
+	 Window_OK
+	 GiveLeak1Item 41073,1
+	 EndWindow 1110588
+	 
+	 
+	 
+
+

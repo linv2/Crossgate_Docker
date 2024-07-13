@@ -1,0 +1,28 @@
+####dodo_gm_1102384.txt
+####红利商场管理员
+block Item 40843 >= 1
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 Window 1109723,NEXT 
+	 ##1054755	\n\n\n\n\n@c想要立刻进去将兑换奖品吗？	1																																																																																																			
+	 Window 1054755,YES,NO
+	 	 Window_NO 
+	 	  
+	 	 Window_YES Item 40843 >= 1
+	 	 	 LeaveGroup 
+	 	 	 Warp 0,32296,44,59
+	 	 	 
+block Item 40844 >= 1
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 Window 1109723,NEXT 
+	 ##1054755	\n\n\n\n\n@c想要立刻进去将兑换奖品吗？	1																																																																																																			
+	 Window 1054755,YES,NO 
+	 	 Window_NO 
+	 	  
+	 	 Window_YES Item 40844 >= 1
+	 	 	 LeaveGroup
+	 	 	 Warp 0,32296,44,59
+	 	 	 
+block 
+	 ##1054756	\n\n\n\n\n@c你似乎不是我们的会员。	1																																																																																																			
+	 EndWindow 1054756
+	 

@@ -1,0 +1,118 @@
+####dodo_gm_1102394.txt
+####0450枚银币兑换商
+block Item 40843 <= 449
+	 ##1109721	\n\n\n\n\n@c你所拥有的火焰鼠银币还未达兑换数量！	1
+	 EndWindow 1109721
+
+block Item 40843 >= 450
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109674	\n\n\n\n@c是否愿意花费四百五十枚银币兑换：\n@c钢硬巨剑？	1
+	 Window 1109674,YES,NO 
+	 	 Window_YES ItemSpace == 0
+	 		 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+			 EndWindow 1054495
+	 	
+	 	 Window_YES Item 40843 >= 450 && ItemSpace >= 1
+	 	 	 KillItem 40843,450
+	 	 	 ##给予钢硬巨剑
+	 	 	 GiveLeak1Item 87
+	 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+			 EndWindow 1109719
+	 	 
+	 	 Window_NO Item 40843 >= 450
+	 	 	 ##1109675	\n\n\n\n@c是否愿意花费四百五十枚银币兑换：\n@c原始枪？	1
+			 Window 1109675,YES,NO 
+			 	 Window_YES ItemSpace == 0
+	 			 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+				 EndWindow 1054495
+	 	
+		 		 Window_YES Item 40843 >= 450 && ItemSpace >= 1
+	 			 	 KillItem 40843,450
+	 			 	 ##给予原始枪
+	 			 	 GiveLeak1Item 1686
+	 			 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+	 	 		 	 EndWindow 1109719
+	 	 	 	 
+	 	 		 Window_NO Item 40843 >= 450
+	 	 		 	 ##1109676	\n\n\n\n@c是否愿意花费四百五十枚银币兑换：\n@c天使之杖？	1
+					 Window 1109676,YES,NO 
+					 	 Window_YES ItemSpace == 0
+	 						 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+							 EndWindow 1054495
+						 
+						 Window_YES Item 40843 >= 450 && ItemSpace >= 1
+						 	 KillItem 40843,450
+						 	 ##给予天使之杖
+						 	 GiveLeak1Item 2495
+						 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+						 	 EndWindow 1109719
+						 	 
+						 Window_NO Item 40843 >= 450
+						 	 ##1109677	\n\n\n\n@c是否愿意花费四百五十枚银币兑换：\n@c手里剑？	1
+							 Window 1109677,YES,NO 
+							 	 Window_YES ItemSpace == 0
+							 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 EndWindow 1054495
+									 
+								 Window_YES Item 40843 >= 450 && ItemSpace >= 1
+								 	 KillItem 40843,450
+								 	 ##给予手里剑
+								 	 GiveLeak1Item 3281
+								 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+								 	 EndWindow 1109719
+								 	 
+								 Window_NO Item 40843 >= 450
+								 	 ##1109678	\n\n\n\n@c是否愿意花费四百五十枚银币兑换：\n@c龙盔？	1
+									 Window 1109678,YES,NO 
+									 	 Window_YES ItemSpace == 0
+									 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 	 EndWindow 1054495
+									 	 	 
+									 	 Window_YES Item 40843 >= 450 && ItemSpace >= 1
+									 	 	 KillItem 40843,450
+									 	 	 ##给予龙盔
+									 	 	 GiveLeak1Item 3682
+									 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 	 EndWindow 1109719
+									 	 	 
+									 	 Window_NO Item 40843 >= 450
+									 	 	 ##1109679	\n\n\n\n@c是否愿意花费四百五十枚银币兑换：\n@c亡灵铠甲？	1
+											 Window 1109679,YES,NO 
+											 	 Window_YES ItemSpace == 0
+											 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 	 			 EndWindow 1054495
+									 	 			 
+									 	 		 Window_YES Item 40843 >= 450 && ItemSpace >= 1
+									 	 		 	 KillItem 40843,450
+									 	 		 	 ##给予亡灵铠甲
+									 	 		 	 GiveLeak1Item 4481
+									 	 		 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 		 	 EndWindow 1109719
+									 	 		 	 
+									 	 		 Window_NO Item 40843 >= 450
+									 	 		 	 ##1109680	\n\n\n\n@c是否愿意花费四百五十枚银币兑换：\n@c钻石铠甲？	1
+									 	 		 	 ##1109680	\n\n\n\n@c是否愿意花费四百五十枚银币兑换：\n@c钻石长靴？	1     __20070226修正更新
+													 Window 1109680,YES,NO 
+													 	 Window_YES ItemSpace == 0
+									 					 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+									 					 	 EndWindow 1054495
+									 	 	 
+													 	 Window_YES Item 40843 >= 450 && ItemSpace >= 1
+													 	 	 KillItem 40843,450
+													 	 	 ##给予钻石铠甲
+													 	 	 ##20070213_修改_钻石长靴	
+													 	 	 GiveLeak1Item 5681
+													 	 	 ##1109719	\n\n\n\n\n@c谢谢光临！	1
+									 	 					 EndWindow 1109719
+									 	 		 	 
+														 Window_NO  	
+									 	 				 	 ##1109720	\n\n\n\n\n@c累积越多将可以兑换到更超值的礼物呦！	1
+															 EndWindow 1109720
+								
+block 
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 EndWindow 1109723
+	 							 	 

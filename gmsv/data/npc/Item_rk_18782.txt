@@ -1,0 +1,14 @@
+#
+#斨中及啦阀﹋野及楮﹌
+#
+
+##############  ##############
+block
+#\n\n\n\n@c﹛斨中及啦阀毛银中引允井〝
+	Window 21330,YES,NO
+	Window_YES
+	KillItem 18782,1,(21331)
+	LeaveGroup
+	Warp 0,15562,13,9
+	Window_NO
+

@@ -1,0 +1,23 @@
+###dodo_item_47454.txt
+#####星系移民赠品	心美变身卡产生器	
+###能力说明：双点后可取得八种露比变身卡各两张。
+##空间不足
+block Item 46404 >=1 && ItemSpace < 8
+	 ##1054711	\n\n\n\n@c物品栏至少要有八个空位。	1																																																																																																			
+	 EndWindow 1054711
+
+##GM专用
+block Item 46404 >=1 && ItemSpace >= 8
+	 GiveStackItem 47455,2
+	 GiveStackItem 47456,2
+	 GiveStackItem 47457,2
+	 GiveStackItem 47458,2
+	 GiveStackItem 47459,2
+	 GiveStackItem 47460,2
+	 GiveStackItem 47461,2
+	 GiveStackItem 47462,2
+	 
+##一般	 
+block 
+	 ##1746920	GM专用！违者斩立决！	12
+	 EndWindow 1746920

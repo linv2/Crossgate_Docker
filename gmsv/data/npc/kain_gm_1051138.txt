@@ -1,0 +1,31 @@
+## 不来的比特 32338 
+
+block Item 46019 >= 1 && ItemCreateTime 46019 < 1 && Gold >= 500
+	 ##1052217 嘿～想不想知道一些小技巧阿，看你一付老实样一定是新来的吧，算你便宜一点收你 500 块就好了。
+	 Window 1052217,YES,NO
+	 	 Window_NO
+	 	 Window_YES Gold >= 500
+	 	 ##1052218 听说在某个时段会开出比较多的彩球哦，这可是我多年来的经验，祝你好运了。
+	 	 AddGold -500
+	 	 Window 1052218,NEXT
+	 	 ##1052228 \n\n\n\n@c对了，传说中把计时器改造过后可以提高中奖率，想改造看看吗？失败的话可是会弄坏计时器的哦，不过要酌收一下材料费100元哦。
+	 	 Window 1052228,YES,NO
+	 	 	 Window_NO
+	 	 	 	 if nowtime == 3
+	 	 	 	 	 KillItem 46019,1
+	 	 	 	 	 GiveLeak1Item (46029%29$1,46028%1$1)
+	 	 	 	 endif
+	 	 	 Window_YES Gold >= 100
+	 	 	 	 if nowtime == 3 
+	 	 	 		 KillItem 46019,1
+	 	 	 		 AddGold -100
+	 	 	 		 GiveLeak1Item (46019%150$1,46029%149$1,46028%1$1)
+	 	 	 	 else
+	 	 	 		 KillItem 46019,1
+	 	 	 		 AddGold -100
+	 	 	 		 GiveLeak1Item (46019%49$1,46029%950$1,46028%1$1)	 	 
+	 	 	 	 endif
+
+block
+	 ##1052217 嘿～想不想知道一些小技巧阿，看你一付老实样一定是新来的吧，算你便宜一点收你 500 块就好了。
+	 EndWindow 1052217

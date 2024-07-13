@@ -1,0 +1,97 @@
+block
+	#2100001	\n\n　此洞是我开，此洞是我买。
+	Window 2100001,next
+#*pay*
+	#2100002	\n\n　如果要进洞，留下买路财。\n　每个人交个1000G来吧。\n　否则别想进去。
+	Window 2100002,yes,no
+		Window_yes Group == 1
+			#	2100008	\n\n　来，乖乖交出1000G吧！
+			Window 2100008,ok
+		Window_ok Group != 1
+			#	2100006	\n\n　人数算错了吗？
+			endWindow 2100006
+			#	Window 2100006,next
+			#	GoToB pay
+			window_ok Gold <= 999
+			#	2100007	\n\n　你的钱不够呀！
+			endWindow 2100007
+			window_ok
+			AddGold -1000
+			warp 0,59670,176,139
+
+
+		Window_yes Group == 2
+			#	2100009	\n\n　来，乖乖交出2000G吧！
+			Window 2100009,ok
+		Window_ok Group != 2
+			#	2100006	\n\n　人数算错了吗？
+			endWindow 2100006
+			#	Window 2100006,next
+			#	GoToB pay
+			window_ok Gold <= 1999
+			#	2100007	\n\n　你的钱不够呀！
+			endWindow 2100007
+			window_ok
+			AddGold -2000
+			warp 0,59670,176,139
+
+		Window_yes Group == 3
+			#	2100010	\n\n　来，乖乖交出3000G吧！
+			Window 2100010,ok
+		Window_ok Group != 3
+			#	2100006	\n\n　人数算错了吗？
+			endWindow 2100006
+			#       Window 2100006,next
+			#	 GoToB pay
+			window_ok Gold <= 2999
+			#	2100007	\n\n　你的钱不够呀！
+			endWindow 2100007
+			window_ok
+			AddGold -3000
+			warp 0,59670,176,139
+
+		Window_yes Group == 4
+			#	2100011	\n\n　来，乖乖交出4000G吧！
+			Window 2100011,ok
+		Window_ok Group != 4
+			#	2100006	\n\n　人数算错了吗？
+			endWindow 2100006
+			#	Window 2100006,next
+			#	GoToB pay
+			window_ok Gold <= 3999
+			#	2100007	\n\n　你的钱不够呀！
+			endWindow 2100007
+			window_ok
+			AddGold -4000
+			warp 0,59670,176,139
+
+		Window_yes Group == 5
+			#	2100012	\n\n　来，乖乖交出5000G吧！
+			Window 2100012,ok
+			Window_ok Group != 5
+			#	2100006	\n\n　人数算错了吗？
+			endWindow 2100006
+			#	Window 2100006,next
+			#	GoToB pay
+			window_ok Gold <= 4999
+			#	2100007	\n\n　你的钱不够呀！
+			endWindow 2100007
+			window_ok
+			AddGold -5000
+			warp 0,59670,176,139
+
+
+		Window_no
+		#2100003\n\n　那就赶快滚回去吧！
+		Window 2100003,yes,no
+
+		Window_yes
+		#	2100004	\n\n　算你识相。
+		EndWindow 2100004
+
+		Window_no
+			#	2100005	\n\n　你是打算要硬闯啰？
+			Window 2100005,ok
+		Window_ok
+
+		Encount 3|0,59670,176,139||0|||||0|305060|||||||||

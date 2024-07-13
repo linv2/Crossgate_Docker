@@ -1,0 +1,109 @@
+#打皮伉件及邰尽﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛心支仆盒﹋打皮伉件斥亦永平﹌及摒
+
+###﹛打皮伉件斥亦永平毛赭儅
+block Item_607910 >= 1
+	EndWindow 3202054
+		#\n\n﹛反反﹜公及斥亦永平﹜儅匀化月友尹﹝\n﹛窖匀凶日﹜公中勾匹揖ベ仄化切斤□分中永″\n﹛中中祥互仄化﹜中中竣儅切卞卅木月氏分井日﹝
+
+
+
+###﹛斥亦永平动陆及心支仆坁毛赭儅
+block Item_607908 >= 1 || Item_607909 >= 1 || Item_607911 >= 1 || Item_607912 >= 1 || Item_607913 >= 1
+	EndWindow 3202055
+		#\n\n﹛丐木﹜丐木木﹜丐木木木木木﹜斥亦永平反〝\n﹛打皮伉件斥亦永平﹝卅中及〝﹛母丢分卅丐﹝\n﹛公氏卅心支仆卅氏化﹜桩化切扎中卅今中″
+
+
+
+###﹛剂煽及剩毛ㄠ蜊赭儅
+block Item_607925 >= 1
+	Window 3202056,YES,NO
+		#\n\n﹛歹反反反反反反﹜丐及友尹﹜心支仆坁卞﹜\n﹛仇及打皮伉件斥亦永平反升丹〝\n﹛卅卞﹜婉氏匹月分欠匀化〝﹛婉氏匹引六氏方﹜\n﹛婉氏匹引六氏﹜婉氏匹卅中方□分﹝\n﹛公氏卅仇午反中中井日﹜打皮伉件斥亦永平″\n﹛公及友﹜剂煽及剩ㄠ蜊午跟晶匹五月及﹜生永″
+
+		Window_YES
+			Window 3202057,OK
+		#\n\n﹛巨仿奶永﹜丐氏凶反巨仿奶卅﹜巨仿奶永″″\n﹛扑亘永扑尼﹜丐木〝﹛扑亘﹜请壑允月方巧﹝
+
+				Window_OK Item_607925 >= 1 && ItemSpace >= 1
+					KillItem 607925,1
+					GiveItemEX 607910,1,3202058
+		#\n\n﹛母丢分方巧﹜绂坁中匀天中元扎氏﹝\n﹛弅勿仃卅今中永″″﹛犯目目＿＿﹝
+
+				Window_OK Item_607925 >= 1
+					EndWindow 3202059
+		#\n\n﹛母丢分方巧﹜绂坁中匀天中元扎氏﹝\n﹛弅勿仃卅今中永″″﹛犯目目＿＿﹝
+
+				Window_OK
+					EndWindow 3202060
+		#\n\n﹛丐木〝﹛剂煽及剩互卅中﹝怅仄凶卅丐﹝\n﹛丐凶仄及濡瑙及杴毛仍引井公丹匀凶匀化﹜\n﹛公丹反中井卅中﹝斥亦永平反欐仄引六氏″
+
+		Window_NO
+			EndWindow 3202061
+		#\n\n﹛孔丹氏﹜母丢〝﹛升丹仄化手〝﹛升□仄化手〝\n﹛元扎丐中中支﹜撩沧永″″
+
+
+
+###﹛岁镁扑□伙玉毛ㄢ蜊赭儅
+block Item_607923 >= 3
+	Window 3202062,YES,NO
+		#\n\n﹛歹反反反反反反﹜丐及友尹﹜心支仆坁卞﹜\n﹛仇及打皮伉件斥亦永平反升丹〝\n﹛卅卞﹜婉氏匹月分欠匀化〝﹛婉氏匹引六氏方﹜\n﹛婉氏匹引六氏﹜婉氏匹卅中方□分﹝\n﹛公氏卅仇午反中中井日﹜打皮伉件斥亦永平″\n﹛公及岁镁扑□伙玉ㄢ蜊午跟晶匹五月及﹜生永″
+
+		Window_YES
+			Window 3202063,OK
+		#\n\n﹛巨仿奶永﹜丐氏凶反巨仿奶卅﹜巨仿奶永″″\n﹛扑亘永扑尼﹜丐木〝﹛扑亘﹜请壑允月方巧﹝
+
+				Window_OK Item_607923 >= 3 && ItemSpace >= 1
+					KillItem 607923,3
+					GiveItemEX 607910,1,3202064
+		#\n\n﹛母丢分方巧﹜绂坁中匀天中元扎氏﹝\n﹛弅勿仃卅今中永″″﹛犯目目＿＿﹝
+
+				Window_OK Item_607923 >= 3
+					EndWindow 3202065
+		#\n\n﹛母丢分方巧﹜绂坁中匀天中元扎氏﹝\n﹛弅勿仃卅今中永″″﹛犯目目＿＿﹝
+
+				Window_OK
+					EndWindow 3202066
+		#\n\n﹛丐木〝﹛岁镁扑□伙玉互箫曰卅中友尹﹝\n﹛丐凶仄及濡瑙及杴毛仍引井公丹匀凶匀化﹜\n﹛公丹反中井卅中﹝斥亦永平反欐仄引六氏″
+
+		Window_NO
+			EndWindow 3202067
+		#\n\n﹛孔丹氏﹜母丢〝﹛升丹仄化手〝﹛升□仄化手〝\n﹛元扎丐中中支﹜撩沧永″″
+
+
+
+###﹛诠赢田术□市毛ㄤ蜊赭儅
+block Item_607924 >= 5
+	Window 3202068,YES,NO
+		#\n\n﹛歹反反反反反反﹜丐及友尹﹜心支仆坁卞﹜\n﹛仇及打皮伉件斥亦永平反升丹〝\n﹛卅卞﹜婉氏匹月分欠匀化〝﹛婉氏匹引六氏方﹜\n﹛婉氏匹引六氏﹜婉氏匹卅中方□分﹝\n﹛公氏卅仇午反中中井日﹜打皮伉件斥亦永平″\n﹛公及诠赢田术□市ㄤ蜊午跟晶匹五月及﹜生永″
+
+		Window_YES
+			Window 3202069,OK
+		#\n\n﹛巨仿奶永﹜丐氏凶反巨仿奶卅﹜巨仿奶永″″\n﹛扑亘永扑尼﹜丐木〝﹛扑亘﹜请壑允月方巧﹝
+
+				Window_OK Item_607924 >= 5 && ItemSpace >= 1
+					KillItem 607924,5
+					GiveItemEX 607910,1,3202070
+		#\n\n﹛母丢分方巧﹜绂坁中匀天中元扎氏﹝\n﹛弅勿仃卅今中永″″﹛犯目目＿＿﹝
+
+				Window_OK Item_607924 >= 5
+					EndWindow 3202071
+		#\n\n﹛母丢分方巧﹜绂坁中匀天中元扎氏﹝\n﹛弅勿仃卅今中永″″﹛犯目目＿＿﹝
+
+				Window_OK
+					EndWindow 3202072
+		#\n\n﹛丐木〝﹛诠赢田术□市互箫曰卅中友尹﹝\n﹛丐凶仄及濡瑙及杴毛仍引井公丹匀凶匀化﹜\n﹛公丹反中井卅中﹝斥亦永平反欐仄引六氏″
+
+		Window_NO
+			EndWindow 3202073
+		#\n\n﹛孔丹氏﹜母丢〝﹛升丹仄化手〝﹛升□仄化手〝\n﹛元扎丐中中支﹜撩沧永″″
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3202074
+		#\n\n﹛友尹友尹﹜仇及打皮伉件斥亦永平中日卅中〝\n﹛中中方巧﹜仇木﹝中匀天中じ月井日﹝\n﹛剂煽及剩匀化中丹及分午﹜ㄠ蜊匹跟晶﹝\n﹛岁镁扑□伙玉匀化中丹及分午﹜ㄢ蜊匹跟晶﹝\n﹛诠赢田术□市匀化中丹及分午﹜ㄤ蜊匹跟晶﹝\n﹛歹井匀凶〝﹛谨匀化月亥件永″
+
+
+

@@ -1,0 +1,291 @@
+#﹛丢奶件﹛伉本永玄及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+##########################
+#丢奶件ㄥ伉本永玄
+#白伉□玉伉永甲
+
+Block StrCmpChat == 3010024
+
+	Window 3205502,Yes,No
+
+		#\n\n﹛弁巨旦玄及筏盛毛\n﹛＞失皮石□旦及愈詨＝\n﹛跶詨及橇谪卞仄引允﹝
+
+	Window_Yes
+	
+	Window 3205503,OK
+
+		#\n\n﹛方欠仄中匹允井〝
+	
+		Window_OK
+		
+			GlobalFlag77 = 0
+			GlobalFlag78 = 0
+			GlobalFlag79 = 0
+			GlobalFlag80 = 0
+			GlobalFlag81 = 0
+			GlobalFlag82 = 0
+	window_no
+	
+	EndWindow 3205504 
+
+		#\n\n﹛中勾匹手升丹冗﹝
+
+#########################
+
+block StrCmpChat == 3007311
+
+	Window 3205505,yes,no
+
+		#\n\n﹛弁巨旦玄及筏盛毛\n﹛＞鳖缜忐给＝\n﹛跶詨及橇谪卞仄引允﹝
+	
+	window_yes
+
+	Window 3205506,ok
+
+		#\n\n﹛方欠仄中匹允井〝
+
+	window_ok
+
+		globalFlag41 = 0
+		globalFlag42 = 0
+		globalFlag43 = 0
+		GlobalFlag77 = 0
+		GlobalFlag78 = 0
+		GlobalFlag79 = 0
+		GlobalFlag80 = 0
+		GlobalFlag81 = 0
+		GlobalFlag82 = 0
+
+
+	window_no
+	
+	endWindow 3205507
+
+		#\n\n﹛中勾匹手升丹冗﹝
+
+block StrCmpChat == 3007310
+
+
+	Window 3205508,yes,no
+
+		#\n\n﹛弁巨旦玄及筏盛毛\n﹛＞窱Ⅱ及旦平伙穴旦正□＝\n﹛跶詨及橇谪卞仄引允﹝
+	
+	window_yes
+
+	Window 3205509,ok
+
+		#\n\n﹛方欠仄中匹允井〝
+
+	window_ok
+
+
+		globalFlag36 = 0
+		globalFlag37 = 0
+		globalFlag38 = 0
+		globalFlag39 = 0
+		globalFlag40 = 0
+		globalFlag41 = 0
+		globalFlag42 = 0
+		globalFlag43 = 0
+		GlobalFlag77 = 0
+		GlobalFlag78 = 0
+		GlobalFlag79 = 0
+		GlobalFlag80 = 0
+		GlobalFlag81 = 0
+		GlobalFlag82 = 0
+
+	window_no
+	
+	endWindow 3205510
+
+		#\n\n﹛中勾匹手升丹冗﹝
+
+
+block StrCmpChat == 3007309
+
+
+	Window 3205511,yes,no
+
+		#\n\n﹛弁巨旦玄及筏盛毛\n﹛＞氘踹?＝\n﹛跶詨及橇谪卞仄引允﹝
+	
+	window_yes
+
+	Window 3205512,ok
+
+		#\n\n﹛方欠仄中匹允井〝
+
+	window_ok
+
+		globalFlag31 = 0
+		globalFlag32 = 0
+		globalFlag33 = 0
+		globalFlag34 = 0
+		globalFlag35 = 0
+		globalFlag36 = 0
+		globalFlag37 = 0
+		globalFlag38 = 0
+		globalFlag39 = 0
+		globalFlag40 = 0
+		globalFlag41 = 0
+		globalFlag42 = 0
+		globalFlag43 = 0
+		GlobalFlag77 = 0
+		GlobalFlag78 = 0
+		GlobalFlag79 = 0
+		GlobalFlag80 = 0
+		GlobalFlag81 = 0
+		GlobalFlag82 = 0
+
+	window_no
+
+	endWindow 3205513
+
+		#\n\n﹛中勾匹手升丹冗﹝
+
+
+
+block StrCmpChat == 3007308
+
+
+
+	Window 3205514,yes,no
+
+		#\n\n﹛弁巨旦玄及筏盛毛\n﹛＞伙伙奶巨诮陴＝\n﹛跶詨及橇谪卞仄引允﹝
+	
+	window_yes
+
+	Window 3205515,ok
+
+		#\n\n﹛方欠仄中匹允井〝
+
+	window_ok
+
+		globalFlag25 = 0
+		globalFlag31 = 0
+		globalFlag32 = 0
+		globalFlag33 = 0
+		globalFlag34 = 0
+		globalFlag35 = 0
+		globalFlag36 = 0
+		globalFlag37 = 0
+		globalFlag38 = 0
+		globalFlag39 = 0
+		globalFlag40 = 0
+		globalFlag41 = 0
+		globalFlag42 = 0
+		globalFlag43 = 0
+		GlobalFlag77 = 0
+		GlobalFlag78 = 0
+		GlobalFlag79 = 0
+		GlobalFlag80 = 0
+		GlobalFlag81 = 0
+		GlobalFlag82 = 0
+
+	window_no
+	
+	endWindow 3205516
+
+		#\n\n﹛中勾匹手升丹冗﹝
+
+
+block StrCmpChat == 3007307
+#中欠反
+
+
+
+
+	Window 3205517,yes,no
+
+		#\n\n﹛弁巨旦玄及筏盛毛\n﹛＞伙伙奶巨诮陴＝\n﹛动蟆及橇谪卞仄引允﹝
+	
+	window_yes
+
+	Window 3205518,ok
+
+		#\n\n﹛方欠仄中匹允井〝
+
+	window_ok
+
+		globalFlag7 = 0
+		globalFlag8 = 0
+		globalFlag9 = 0
+		globalFlag10 = 0
+		globalFlag25 = 0
+		globalFlag31 = 0
+		globalFlag32 = 0
+		globalFlag33 = 0
+		globalFlag34 = 0
+		globalFlag35 = 0
+		globalFlag36 = 0
+		globalFlag37 = 0
+		globalFlag38 = 0
+		globalFlag39 = 0
+		globalFlag40 = 0
+		globalFlag41 = 0
+		globalFlag42 = 0
+		globalFlag43 = 0
+		GlobalFlag77 = 0
+		GlobalFlag78 = 0
+		GlobalFlag79 = 0
+		GlobalFlag80 = 0
+		GlobalFlag81 = 0
+		GlobalFlag82 = 0
+
+
+	window_no
+	
+	endWindow 3205519
+
+		#\n\n﹛中勾匹手升丹冗﹝
+
+
+
+
+block
+
+	Window 3205520,next
+
+		#\n\n﹛紧漆﹜支支仇仄仁卅匀化五凶\n﹛弁巨旦玄及椭瘀﹝
+
+	Window 3205521,next
+
+		#\n\n﹛公仇匹﹜弁巨旦玄及筏盛毛\n﹛伉本永玄仄引允﹝
+
+	Window 3205522,next
+
+		#\n\n﹛升及蟾闭引匹伉本永玄允月井\n﹛动票及咑拺卞虱匀化\n﹛狪仄井仃化票今中﹝
+
+	Window 3205523,next
+
+		#\n\n﹛＞伙伙奶巨诮陴＝动蟆及橇谪卅日\n﹛＞失件玄件＝
+
+	Window 3205524,next
+
+		#\n\n﹛＞伙伙奶巨诮陴＝跶詨及橇谪卅日\n﹛＞矛伙正＝
+
+	Window 3205525,next
+
+		#\n\n﹛＞氘踹?＝跶詨及橇谪卅日\n﹛＞市奶扒＝
+
+	Window 3205526,next
+
+		#\n\n﹛＞窱Ⅱ及旦平伙穴旦正□＝跶詨及橇谪卅日\n﹛＞玉□仿＝
+
+	Window 3205527,next
+
+		#\n\n﹛＞鳖缜忐给＝跶詨及橇谪卅日\n﹛＞巨立伙＝
+	
+	Window 3205528,Next
+
+		#\n\n﹛＞失皮石□旦及愈詨＝跶詨及橇谪卅日\n﹛＞白伉□玉伉永甲＝
+	
+	Window 3205529,next
+
+		#\n\n﹛失奶泛丞反壅蛔仄引六氏﹝\n﹛备★﹜苂仃月卅曰桩化月卅曰仄化仁分今中﹝
+
+	endWindow 3205530
+
+		#\n\n﹛引凶﹜惫寞﹜涩煌豭牖芨楮溢羁及筏盛反\n﹛伉本永玄中凶仄引六氏﹝\n﹛仍弇噩仁分今中﹝
+

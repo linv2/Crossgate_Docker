@@ -1,0 +1,814 @@
+######### 兑换券领奖处 ########
+
+
+##2007_EC_2月新春福袋_银票(兑20万)_更新日 20070205
+block Item 47562 >= 1
+	 ##1054776	\n\n\n  您好！您要使用“银票(兑20万)”兑换二十万金币吗  ？	1
+	 Window 1054776,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47562 >=1 && Gold > 800000
+			 ##1054777	\n\n\n  要使用“银票(兑20万)”的时候请把身上的钱包留下至少二十万的空间，以免发生领不到钱的情形。	1
+			 EndWindow 1054777
+			 
+	 	 Window_YES Item 47562 >=1 
+	 	 	 KillItem 47562,1
+	 	 	 AddGold 200000
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+	 	 	 EndWindow 1051523
+
+##2006八月展场包物品
+##机会骰子
+##数字六
+block Item 47361 >= 1 
+	 ##1054530	\n\n\n\n\n  @c你想用机会骰子兑换六瓶‘铁牛A活力饮料’吗？	1
+	 Window 1054530,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47361 >= 1 
+	 	 	 KillItem 47361
+	 	 	 GiveLeak1Item 46413,6
+	 	 	 
+##数字五
+block Item 47360 >= 1 
+	 ##1054531	\n\n\n\n\n  @c你想用机会骰子兑换五瓶‘铁牛A活力饮料’吗？	1
+	 Window 1054531,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47360 >= 1 
+	 	 	 KillItem 47360
+	 	 	 GiveLeak1Item 46413,5
+	 	 	 
+##数字四
+block Item 47359 >= 1 
+	 ##1054532	\n\n\n\n\n  @c你想用机会骰子兑换四瓶‘铁牛A活力饮料’吗？	1
+	 Window 1054532,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47359 >= 1 
+	 	 	 KillItem 47359
+	 	 	 GiveLeak1Item 46413,4
+
+##数字三
+block Item 47358 >= 1 
+	 ##1054533	\n\n\n\n\n  @c你想用机会骰子兑换三瓶‘铁牛A活力饮料’吗？	1
+	 Window 1054533,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47358 >= 1 
+	 	 	 KillItem 47358
+	 	 	 GiveLeak1Item 46413,3
+
+##数字二
+block Item 47357 >= 1 
+	 ##1054534	\n\n\n\n\n  @c你想用机会骰子兑换二瓶‘铁牛A活力饮料’吗？	1
+	 Window 1054534,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47357 >= 1 
+	 	 	 KillItem 47357
+	 	 	 GiveLeak1Item 46413,2
+
+##数字一
+block Item 47356 >= 1 
+	 ##1054535	\n\n\n\n\n  @c你想用机会骰子兑换一瓶‘铁牛A活力饮料’吗？	1
+	 Window 1054535,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47356 >= 1 
+	 	 	 KillItem 47356
+	 	 	 GiveLeak1Item 46413,1
+
+##命运骰子
+##数字六
+block Item 47379 >= 1 
+	 ##1054541	\n\n\n\n\n  @c你想用命运骰子兑换‘30万元魔币’吗？	1
+	 Window 1054541,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47379 >= 1 && Gold >= 700001
+	 		 ##1053762	\n\n你没有办法拿这么多钱了，\n每个人身上只能携带100万，\n所以麻烦先把身上的现金放到银行里。	1
+			 EndWindow 1053762 
+			 
+		 Window_YES Item 47379 >= 1 && Gold <= 700000
+		 	 KillItem 47379
+		 	 AddGold +300000
+		 	 
+##数字五
+block Item 47378 >= 1 
+	 ##1054540	\n\n\n\n\n  @c你想用命运骰子兑换‘25万元魔币’吗？	1
+	 Window 1054540,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47378 >= 1 && Gold >= 750001
+	 		 ##1053762	\n\n你没有办法拿这么多钱了，\n每个人身上只能携带100万，\n所以麻烦先把身上的现金放到银行里。	1
+			 EndWindow 1053762 
+			 
+		 Window_YES Item 47378 >= 1 && Gold <= 750000
+		 	 KillItem 47378
+		 	 AddGold +250000
+		 	 
+##数字四
+block Item 47377 >= 1 
+	 ##1054539	\n\n\n\n\n  @c你想用命运骰子兑换‘20万元魔币’吗？	1
+	 Window 1054539,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47377 >= 1 && Gold >= 800001
+	 		 ##1053762	\n\n你没有办法拿这么多钱了，\n每个人身上只能携带100万，\n所以麻烦先把身上的现金放到银行里。	1
+			 EndWindow 1053762 
+			 
+		 Window_YES Item 47377 >= 1 && Gold <= 800000
+		 	 KillItem 47377
+		 	 AddGold +200000
+		 	 
+##数字三
+block Item 47376 >= 1 
+	 ##1054538	\n\n\n\n\n  @c你想用命运骰子兑换‘15万元魔币’吗？	1
+	 Window 1054538,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47376 >= 1 && Gold >= 850001
+	 		 ##1053762	\n\n你没有办法拿这么多钱了，\n每个人身上只能携带100万，\n所以麻烦先把身上的现金放到银行里。	1
+			 EndWindow 1053762 
+			 
+		 Window_YES Item 47376 >= 1 && Gold <= 850000
+		 	 KillItem 47376
+		 	 AddGold +150000
+		 	 
+##数字二
+block Item 47375 >= 1 
+	 ##1054537	\n\n\n\n\n  @c你想用命运骰子兑换‘10万元魔币’吗？	1
+	 Window 1054537,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47375 >= 1 && Gold >= 900001
+	 		 ##1053762	\n\n你没有办法拿这么多钱了，\n每个人身上只能携带100万，\n所以麻烦先把身上的现金放到银行里。	1
+			 EndWindow 1053762 
+			 
+		 Window_YES Item 47375 >= 1 && Gold <= 900000
+		 	 KillItem 47375
+		 	 AddGold +100000
+		 	 
+##数字一
+block Item 47362 >= 1 
+	 ##1054536	\n\n\n\n\n  @c你想用命运骰子兑换‘05万元魔币’吗？	1
+	 Window 1054536,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47362 >= 1 && Gold >= 950001
+	 		 ##1053762	\n\n你没有办法拿这么多钱了，\n每个人身上只能携带100万，\n所以麻烦先把身上的现金放到银行里。	1
+			 EndWindow 1053762 
+			 
+		 Window_YES Item 47362 >= 1 && Gold <= 950000
+		 	 KillItem 47362
+		 	 AddGold +50000
+
+##PUK4 包装--前手卡
+##身上有4个幸福的骰子
+block Item 47353 >= 4 
+	 ##1054483	\n\n\n\n\n  @c你想用4个幸福骰子兑换‘仙人符咒兑换券’吗？	1
+	 Window 1054483,YES,NO 
+	 	 Window_YES Item 47353 >= 4
+	 	 	 GiveLeak1Item 45911
+	 	 	 KillItem 47353,4
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 
+	 	 Window_NO Item 47353 >=3 
+	 	 	 ##1054484	\n\n\n\n\n  @c你想用3个幸福骰子兑换‘钨钢宝石’吗？	1
+	 	 	 Window 1054484,YES,NO 
+	 	 	 	 Window_YES Item 47353 >= 3
+	 	 	 	 	 GiveLeak1Item 45557
+	 	 	 	 	 KillItem 47353,3
+	 	 	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+					 EndWindow 1051523
+				 
+				 Window_NO Item 47353 >= 2
+				 	 ##1054485	\n\n\n\n\n  @c你想用2个幸福骰子兑换‘吉祥钱袋’吗？	1
+				 	 Window 1054485,YES,NO 
+				 	 	 Window_YES Item 47353 >= 2
+				 	 	 	 GiveLeak1Item 45862
+				 	 	 	 KillItem 47353,2
+				 	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+				 	 	 	 EndWindow 1051523
+				 	 	 	 
+				 	 	 Window_NO Item 47353 >= 1
+				 	 	 	 ##1054486	\n\n\n\n\n  @c你想用1个幸福骰子兑换‘勇者礼仪准则’吗？	1
+				 	 	 	 Window 1054486,YES,NO 
+				 	 	 	 	 Window_YES Item 47353 >= 1
+				 	 	 	 	 	 GiveLeak1Item 31007
+				 	 	 	 	 	 KillItem 47353
+				 	 	 	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+				 	 	 	 	 	 EndWindow 1051523
+				 	 	 	 	 	 
+				 	 	 	 	 Window_NO 
+				 	 	 	 	 	 ##1054487	\n\n\n\n\n  那你到底想换什么？	1
+									 EndWindow 1054487
+									 
+##身上有3个幸福的骰子
+block Item 47353 == 3
+	 ##1054484	\n\n\n\n\n  @c你想用3个幸福骰子兑换‘钨钢宝石’吗？	1
+	 Window 1054484,YES,NO 
+	 	  Window_YES Item 47353 == 3
+	 	 	  GiveLeak1Item 45557
+	 	 	  KillItem 47353,3
+	 	 	  ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			  EndWindow 1051523
+				 
+		  Window_NO Item 47353 >= 2
+	 		  ##1054485	\n\n\n\n\n  @c你想用2个幸福骰子兑换‘吉祥钱袋’吗？	1
+			  Window 1054485,YES,NO 
+			 	 Window_YES Item 47353 >= 2
+				 	 GiveLeak1Item 45862
+				 	 KillItem 47353,2
+				 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+				 	 EndWindow 1051523
+				 	 	 	 
+				 Window_NO Item 47353 >= 1
+				 	 ##1054486	\n\n\n\n\n  @c你想用1个幸福骰子兑换‘勇者礼仪准则’吗？	1
+				 	 Window 1054486,YES,NO 
+						 Window_YES Item 47353 >= 1
+				 	 	 	 GiveLeak1Item 31007
+				 	 		 KillItem 47353
+				 	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+				 	 		 EndWindow 1051523
+				 	 	 	 	 	 
+				 	 	 Window_NO 
+				 	 	 	 ##1054487	\n\n\n\n\n  那你到底想换什么？	1
+							 EndWindow 1054487
+							
+##身上有2个幸福的骰子
+block Item 47353 == 2
+	 ##1054485	\n\n\n\n\n  @c你想用2个幸福骰子兑换‘吉祥钱袋’吗？	1
+	 Window 1054485,YES,NO 
+		 Window_YES Item 47353 == 2
+			 GiveLeak1Item 45862
+			 KillItem 47353,2
+			 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+				 	 	 	 
+		 Window_NO Item 47353 >= 1
+		 	 ##1054486	\n\n\n\n\n  @c你想用1个幸福骰子兑换‘勇者礼仪准则’吗？	1
+		 	 Window 1054486,YES,NO 
+				 Window_YES Item 47353 >= 1
+			 	 GiveLeak1Item 31007
+				 KillItem 47353
+				 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+				 EndWindow 1051523
+				 	 	 	 	 	 
+			 Window_NO 
+			 	 ##1054487	\n\n\n\n\n  那你到底想换什么？	1
+				 EndWindow 1054487
+
+##身上有1个幸福的骰子
+block Item 47353 == 1
+	 ##1054486	\n\n\n\n\n  @c你想用1个幸福骰子兑换‘勇者礼仪准则’吗？	1
+	 Window 1054486,YES,NO 
+		 Window_YES Item 47353 == 1
+		 GiveLeak1Item 31007
+		 KillItem 47353
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+				 	 	 	 	 	 
+	 Window_NO 
+	 	 ##1054487	\n\n\n\n\n  那你到底想换什么？	1
+		 EndWindow 1054487
+
+##PUK4 包装
+##拥有已合成的图
+ block Item 47347 >=1
+ 	 ##12271	\n\n这里只能一个人一个人单独进入。	0
+	 Window 12271,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES  Item 47347 >=1
+	 	 	 LeaveGroup
+	 	 	 Warp 0,32101,22,27
+	 
+##拥有五张海贼宝图要进入海贼迷宫开宝箱
+block Item 47342 >=1 && Item 47343 >=1 && Item 47344 >=1 && Item 47345 >=1 && Item 47346 >=1
+	 ##12271	\n\n这里只能一个人一个人单独进入。	0
+	 Window 12271,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES  Item 47342 >=1 && Item 47343 >=1 && Item 47344 >=1 && Item 47345 >=1 && Item 47346 >=1
+	 	 	 LeaveGroup
+	 	 	 Warp 0,32101,22,27
+	 	 	
+##使用铜钥匙
+block Item 47336 >= 1
+	 ##1054463	\n\n\n  您好！您要使用“海贼铜钥匙”，进入海贼洞窟吗  ？	1
+	 Window 1054463,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47336 >= 1
+			 LeaveGroup 
+	 	 	 Warp 0,32101,22,27
+##使用银钥匙			 
+block Item 47337 >= 1	 	 	
+	 ##1054464	\n\n\n  您好！您要使用“海贼银钥匙”，进入海贼洞窟吗  ？	1
+	 Window 1054464,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47337 >= 1
+			 LeaveGroup 
+			 Warp 0,32101,22,27
+
+##EC 06月份赠品
+block Item 47067 >= 3 
+	 ##1053783	\n\n\n  您好！您要使用“三个全抗护符”，随机兑换更棒  的奖品吗？	1
+	 Window 1053783,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 47067 >= 3 
+	 	 	 #//失去三个全抗护符
+	 	 	 KillItem 47067,3
+	 	 	 #//得到 1 咒术反抗护符 1 叛逆年代 1 绝不动摇 1 抵死不从 1 异常状态禁止 1 抗性支配者
+	 	 	 GiveLeak1Item (47068%100$1,47069%10$1,47070%4$1,47071%3$1,47072%2$1,47073%1$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##EC 05月份赠品
+block Item 47042 >= 3 
+	 ##1053782	\n\n\n  您好！您要使用“三个必杀提升护符”，随机兑换更棒  的奖品吗？	1
+	 Window 1053782,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 47042 >= 3 
+	 	 	 #//失去三个必杀提升护符
+	 	 	 KillItem 47042,3
+	 	 	 #//得到 1 防御无视护符 1 招招致命护符 1 痛彻心扉护符 1 一击“必杀”护符 1 把你打的转转转 1 旋转吧！恶人
+	 	 	 GiveLeak1Item (47043%100$1,47044%10$1,47045%4$1,47064%3$1,47065%2$1,47066%1$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##EC 04月份赠品
+block Item 47035 >= 3 
+	 ##11053781	\n\n\n  您好！您要使用“三个魔法防护护符”，随机兑换更棒  的奖品吗？	1
+	 Window 1053781,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 47035 >= 3 
+	 	 	 #//失去三个魔法防护护符
+	 	 	 KillItem 47035,3
+	 	 	 #//得到 1 魔法师之盾 1 术士披风 1 防魔法球 1 抗魔法典 1 精灵庇佑护符 1 宙斯之泪
+	 	 	 GiveLeak1Item (47036%100$1,47037%10$1,47038%4$1,47039%3$1,47040%2$1,47041%1$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##EC 03月份赠品
+block Item 47028 >= 3 
+	 ##1053780	\n\n\n  您好！您要使用“三个力量之剑护符”，随机兑换更棒  的奖品吗？	1
+	 Window 1053780,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 47028 >= 3 
+	 	 	 #//失去三个力量之剑护符
+	 	 	 KillItem 47028,3
+	 	 	 #//得到 1 切割小刀护符 1 暴力之锤护符 1 撕裂之轮护符 1 破坏之枪护符 1 凶残之斧护符 1 毁灭之球
+	 	 	 GiveLeak1Item (47029%100$1,47030%10$1,47031%4$1,47032%3$1,47033%2$1,47034%1$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##EC 02月份赠品
+block Item 47021 >= 3 
+	 ##1053779	\n\n\n  您好！您要使用“三个闪避护符”，随机兑换更棒  的奖品吗？	1
+	 Window 1053779,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 47021 >= 3 
+	 	 	 #//失去三个闪避护符
+	 	 	 KillItem 47021,3
+	 	 	 #//得到 1 阳炎之魂 1 看破勋章 1 闪闪动人护符 1 一闪一闪亮晶晶 1 躲猫猫之书 1 见切神眼
+	 	 	 GiveLeak1Item (47022%100$1,47023%10$1,47024%4$1,47025%3$1,47026%2$1,47027%1$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##EC 01月份赠品
+block Item 47014 >= 3 
+	 ##11053778	\n\n\n  您好！您要使用“三个命中光环”，随机兑换更棒  的奖品吗？	1
+	 Window 1053778,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 47014 >= 3 
+	 	 	 #//失去三个命中光环
+	 	 	 KillItem 47014,3
+	 	 	 #//得到 1 瞄准徽章 1 专注之心 1 聚焦之眼 1 狙击眼镜 1 导航护符 1 精准定位仪
+	 	 	 GiveLeak1Item (47015%100$1,47016%10$1,47017%4$1,47018%3$1,47019%2$1,47020%1$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##EC 12月份赠品
+block Item 47007 >= 3 
+	 ##1053777	\n\n\n  您好！您要使用“三个防御之戒”，随机兑换更棒  的奖品吗？	1
+	 Window 1053777,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 47007 >= 3 
+	 	 	 #//失去三个防御之戒
+	 	 	 KillItem 47007,3
+	 	 	 #//得到 1 硬梆梆之戒 1 硬是要得之戒 1 铁布金钟之戒 1 坚硬如刚之戒 1 铜墙铁壁之戒 1 金刚之戒 
+	 	 	 GiveLeak1Item (47008%100$1,47009%10$1,47010%4$1,47011%3$1,47012%2$1,47013%1$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##EC 11月份赠品
+block Item 47000 >= 3 
+	 ##1053776	\n\n\n  您好！您要使用“三个速度护符”，随机兑换更棒  的奖品吗？	1
+	 Window 1053776,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 47000 >= 3 
+	 	 	 #//失去三个速度护符
+	 	 	 KillItem 47000,3
+	 	 	 #//得到 1 敏捷护符 1 跳跃护符 1 狂奔护符 1 飙风护符 1 极速护符 1 陆行鸟护符 
+	 	 	 GiveLeak1Item (47001%100$1,47002%10$1,47003%4$1,47004%3$1,47005%2$1,47006%1$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+##EC 10月份赠品
+block Item 46990 >= 3 
+	 ##1053728	\n\n\n  您好！您要使用“三个情谊护符”，随机兑换更棒  的奖品吗？	1
+	 Window 1053728,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 46990 >= 3 
+	 	 	 #//失去三个情谊护符
+	 	 	 KillItem 46990,3
+	 	 	 #//得到 1 心仪徽章 1 真情胸章 1 续缘护符 1 法力勋章 1 巫师的祈祷 1 魔女的条件
+	 	 	 GiveLeak1Item (46991%100$1,46992%10$1,46993%4$1,46994%3$1,46995%2$1,46996%1$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+##魔力周年庆GM活动
+block Item 46924 >=1 && Item 46925 >=1 && Item 46926 >=1 && Item 46927 >=1
+	 ##1053573	\n\n\n  您好！您要使用四种“字珠”兑换星型头饰吗  ？	1
+	 Window 1053573,YES,NO 
+		 Window_NO 
+
+		 Window_YES Item 46924 >=1 && Item 46925 >=1 && Item 46926 >=1 && Item 46927 >=1
+		 KillItem 46924
+		 KillItem 46925
+		 KillItem 46926
+		 KillItem 46927
+		 GiveLeak1Item 607726
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+		 
+block Item 46924 >=1
+	 ##1053574	\n\n\n  您好！您要使用任一种“字珠”兑换彩券一张吗  ？	1
+	 Window 1053574,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46924 >=1	 
+		 KillItem 46924
+		 GiveLeak1Item (19574%1$1,19575%1$1,19576%1$1)
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+		 
+block Item 46925 >=1
+	 ##1053574	\n\n\n  您好！您要使用任一种“字珠”兑换彩券一张吗  ？	1
+	 Window 1053574,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46925 >=1	 
+		 KillItem 46925
+		 GiveLeak1Item (19574%1$1,19575%1$1,19576%1$1)
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+		 
+block Item 46926 >=1
+	 ##1053574	\n\n\n  您好！您要使用任一种“字珠”兑换彩券一张吗  ？	1
+	 Window 1053574,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46926 >=1	 
+		 KillItem 46926
+		 GiveLeak1Item (19574%1$1,19575%1$1,19576%1$1)
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+		 
+block Item 46927 >=1
+	 ##1053574	\n\n\n  您好！您要使用任一种“字珠”兑换彩券一张吗  ？	1
+	 Window 1053574,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46927 >=1	 
+		 KillItem 46927
+		 GiveLeak1Item (19574%1$1,19575%1$1,19576%1$1)
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523		 		 		 
+##烟火回收
+block Item 46313 >=1
+	 ##1053534	\n\n  您好！由于之前贩售的烟火之保存期限已至，为防止危险的发生以及环境维护的考量，所以特派专员前来回收。	1
+	 Window 1053534,NEXT 
+	 ##1053535	\n\n  您若家中或是银行内尚有烟火保存的话，请交给我带回去销毁！当然回收货品也是会给一些回馈，以表示我们的诚意。	1
+	 Window 1053535,NEXT 
+	 ##1053536	\n\n  现在是以一颗烟火一万元的代价来回收，您要使用“烟火”交换一万元奖金吗  ？	1
+	 Window 1053536,YES,NO 
+		 Window_NO 
+
+		 Window_YES Item 46313 >=1 && Gold > 990000
+		 ##80017	\n你的钱已经多的数不完了。\n因此无法交易。	8
+		 EndWindow 80017
+		 
+		 Window_YES Item 46313 >=1
+		 KillItem 46313
+		 AddGold 10000
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523
+		 
+block Item 46416 >=1
+	 ##1053534	\n\n  您好！由于之前贩售的烟火之保存期限已至，为防止危险的发生以及环境维护的考量，所以特派专员前来回收。	1
+	 Window 1053534,NEXT 
+	 ##1053535	\n\n  您若家中或是银行内尚有烟火保存的话，请交给我带回去销毁！当然回收货品也是会给一些回馈，以表示我们的诚意。	1
+	 Window 1053535,NEXT 
+	 ##1053536	\n\n  现在是以一颗烟火一万元的代价来回收，您要使用“烟火”交换一万元奖金吗  ？	1
+	 Window 1053536,YES,NO 
+		 Window_NO 
+
+		 Window_YES Item 46416 >=1 && Gold > 990000
+		 ##80017	\n你的钱已经多的数不完了。\n因此无法交易。	8
+		 EndWindow 80017
+		 
+		 Window_YES Item 46416 >=1
+		 KillItem 46416
+		 AddGold 10000
+		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+		 EndWindow 1051523		 
+		 
+
+##2005PK赛换奖金
+block Item 46861 >= 1
+	 ##1053413	\n\n\n  您好！您要使用“银票”兑换十万元奖金吗  ？	1
+	 Window 1053413,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46861 >=1 && Gold > 900000
+	 	 	 ##1053414	\n\n\n  要使用“银票”的时候请把身上的钱包留下至少十  万的空间，以免发生领不到钱的情形。	1	
+			 EndWindow 1053414
+			 
+	 	 Window_YES Item 46861 >=1 
+	 	 	 KillItem 46861,1
+	 	 	 AddGold 100000
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+	 	 	 EndWindow 1051523
+	 	 	 
+##小天使政见-新手推荐老手赠品
+block Item 46274 >= 3 
+	 ##1052352	\n\n\n  您好！您要使用“三个爱心护符”，随机兑换更棒  的奖品吗？	1
+	 Window 1052352,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 46274 >= 3 
+	 	 	 #//失去三个爱心护符
+	 	 	 KillItem 46274,3
+	 	 	 #//得到 1 结缘护符 1 友情胸章 1 爱心勋章 1 人气勋章 1 天使的祝福 1 生命之翼 
+	 	 	 GiveLeak1Item (46276%100$1,46277%10$1,46278%4$1,46279%3$1,46280%2$1,46281%1$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##2004年12月展场包装_安产手套兑换券
+block Item 46414 >=1
+	 ##1052583	\n\n\n  您好！您要使用“安产护身符兑换券”，兑换可挡30次工作伤害的护身符吗？	1
+	 Window 1052583,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 46414 >=1
+	 	 	 ##失去安产手套兑换券
+	 	 	 KillItem 46414
+	 	 	 ##得到安产手套
+	 	 	 GiveLeak1Item 46412,1
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 
+##宠物情人包-有爱斯波波变身卡
+block Item 46228 >= 1
+	 ##1052303	\n\n\n  您好！您要使用“爱斯波波变身卡”兑换一份神秘  小礼物吗？	1
+	 Window 1052303,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Item 46228 >= 1
+	 	 	 ##失去爱斯波波变身卡
+	 	 	 KillItem 46228
+	 	 	 ##得到爱斯波波护身符(头上装饰物)
+	 	 	 GiveLeak1Item 46230
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##康师傅红茶宝宝交换券
+block Item 46046 >= 1
+	 ##1052296	\n\n\n  您好！您要使用“红茶宝宝交换券”吗？	1
+	 Window 1052296,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46046 >= 1 && PetSpace == 0 
+		 	 ##### \n\n\n\n\n@c宠物栏已经满了。
+		 	 EndWindow 1100004
+		 
+		 Window_YES Item 46046 >= 1 && PetSpace >= 0
+		 	 ##失去红茶宝宝交换券
+		 	 KillItem 46046
+		 	 ##得到红茶宝宝
+		 	 GivePet 103100
+		 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+	 	 
+##康师傅绿茶宝宝交换券
+block Item 46047 >= 1
+	 ##1052297	\n\n\n  您好！您要使用“绿茶宝宝交换券”吗？	1
+	 Window 1052297,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46047 >= 1 && PetSpace == 0 
+		 	 ##### \n\n\n\n\n@c宠物栏已经满了。
+		 	 EndWindow 1100004
+		 
+		 Window_YES Item 46047 >= 1 && PetSpace >= 0
+		 	 ##失去红茶宝宝交换券
+		 	 KillItem 46047
+		 	 ##得到红茶宝宝
+		 	 GivePet 103099
+		 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+	 	 
+##有大地牛头怪兑换券
+block Item 46024 >= 1
+	 ##1052222	\n\n\n  您好！您要使用“大地牛头怪兑换券”，兑换牛头  怪一只吗？	1
+	 Window 1052222,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46024 >= 1 && PetSpace == 0 
+		 	 ##### \n\n\n\n\n@c宠物栏已经满了。
+		 	 EndWindow 1100004
+
+		 Window_YES Item 46024 >= 1 && PetSpace >= 1
+		 	 ##失去大地牛头怪兑换券
+		 	 KillItem 46024 
+		 	 ##得到大地牛头怪
+		 	 GivePet 103095
+		 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 
+##有火焰牛头怪兑换券			 
+block Item 46025 >= 1
+	 ##1052223	\n\n\n  您好！您要使用“火焰牛头怪兑换券”，兑换牛头  怪一只吗？	1
+	 Window 1052223,YES,NO 
+	 	 Window_NO 
+			 
+		 Window_YES Item 46025 >= 1 && PetSpace == 0 
+		 	 ##### \n\n\n\n\n@c宠物栏已经满了。
+		 	 EndWindow 1100004
+		 Window_YES Item 46025 >= 1 && PetSpace >= 1
+		 	 ##失去火焰牛头怪兑换券
+		 	 KillItem 46025
+		 	 ##得到火焰牛头怪
+		 	 GivePet 103096
+		 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 
+##有寒冰牛头怪兑换券			 
+block Item 46026 >= 1
+	 ##1052224	\n\n\n  您好！您要使用“寒冰牛头怪兑换券”，兑换牛头  怪一只吗？	1
+	 Window 1052224,YES,NO 
+	 	 Window_NO 
+			 
+		 Window_YES Item 46026 >= 1 && PetSpace == 0 
+		 	 ##### \n\n\n\n\n@c宠物栏已经满了。
+		 	 EndWindow 1100004
+		 Window_YES Item 46026 >= 1 && PetSpace >= 1
+		 	 ##失去火焰牛头怪兑换券
+		 	 KillItem 46026
+		 	 ##得到火焰牛头怪
+		 	 GivePet 103097
+		 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 
+##有火焰牛头怪兑换券			 
+block Item 46027 >= 1
+	 ##1052225	\n\n\n  您好！您要使用“烈风牛头怪兑换券”，兑换牛头  怪一只吗？	1
+	 Window 1052225,YES,NO 
+	 	 Window_NO 
+			 
+		 Window_YES Item 46027 >= 1 && PetSpace == 0 
+		 	 ##### \n\n\n\n\n@c宠物栏已经满了。
+		 	 EndWindow 1100004
+		 Window_YES Item 46027 >= 1 && PetSpace >= 1
+		 	 ##失去火焰牛头怪兑换券
+		 	 KillItem 46027
+		 	 ##得到火焰牛头怪
+		 	 GivePet 103098
+		 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 
+##有幸福满满福袋
+block Item 45920 >= 1
+	 ##1051996	\n\n\n  您好！您要使用“幸福满满福袋”，随机兑换福袋  奖品吗？	1
+	 Window 1051996,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 45920 >= 1 && ItemSpace < 1
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 Window_YES Item 45920 >= 1 && ItemSpace >= 1
+	 	 	 #//失去幸福满满福袋
+	 	 	 KillItem 45920
+	 	 	 #//得到 20 红药水 1 仙人符咒兑换券 2 露比变身卡 1 地元素石 1 水元素石 1 火元素石 1 风元素石 10 美味兑换券
+	 	 	 GiveLeak1Item (45310%20$10,45911%1$1,45859%2$1,45220%1$1,45221%1$1,45222%1$1,45223%1$1,45465%10$1)
+	 		 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 
+##有仙人符咒兑换券
+block Item 45911 >= 1
+	 ##1051995	\n\n\n  您好！您要使用“仙人符咒兑换卡”，随机兑换一张仙人符咒吗？	1
+	 Window 1051995,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 45911 >= 1 && ItemSpace < 1
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 Window_YES Item 45911 >= 1 && ItemSpace >= 1
+	 	 	 #//失去仙人符咒兑换券
+	 	 	 KillItem 45911
+	 	 	 #//得到仙人符咒
+	 	 	 GiveLeak1Item (45912%1$1,45913%1$1,45914%1$1,45915%1$1,45916%1$1,45917%1$1,45918%1$1,45919%1$1)
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+	 
+##有大地鼠彩券兑换卡
+block Item 45806 >= 1
+	 ##1051866	\n\n\n  您好！您要使用“大地鼠彩券兑换卡”，兑换十张彩券吗？	1
+	 Window 1051866,YES,NO
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 45806 >= 1 && ItemSpace < 9
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 Window_YES Item 45806 >= 1 && ItemSpace >= 9
+	 	 	 #//失去大地鼠彩券兑换卡45806
+	 	 	 KillItem 45806
+	 	 	 #//得到 大地鼠彩券 10张
+	 	 	 GiveLeak1Item (19574%1$10)
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 
+##有火焰鼠彩券兑换卡
+block Item 45807 >= 1
+	 ##1051867	\n\n\n  您好！您要使用“火焰鼠彩券兑换卡”，兑换十张彩券吗？	1
+	 Window 1051867,YES,NO
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 45807 >= 1 && ItemSpace < 9
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 Window_YES Item 45807 >= 1 && ItemSpace >= 9
+	 	 	 #//失去火焰鼠彩券兑换卡45806
+	 	 	 KillItem 45807
+	 	 	 #//得到 火焰鼠彩券 10张
+	 	 	 GiveLeak1Item (19575%1$10)
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##有圣诞礼物兑换券
+block Item 45566 >= 1
+	 ##1051547	\n\n\n  您好！您要使用圣诞礼物兑换券，兑换一只圣诞鼠  娃娃吗？	1
+	 Window 1051547,YES,NO 
+	 	 Window_NO
+	 	 
+	 	 Window_YES Item 45566 >= 1
+	 	 	 #//失去圣诞礼物兑换券
+	 	 	 KillItem 45566
+	 	 	 #//得到 圣诞水蓝鼠娃娃 圣诞火焰鼠娃娃 圣诞大地鼠娃娃 圣诞宝石鼠娃娃 圣诞鼠王娃娃
+	 	 	 #/	 45561		45562		45563		45564		45565
+	 	 	 GiveLeak1Item (45561%20$1,45562%20$1,45563%20$1,45564%20$1,45565%1$1)
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##有元素石兑换券_Hinet合作
+block Item 45554 >= 1
+	 ##1051521	\n\n\n  您好！您要将“元素石兑换券”交换三颗元素\n  石吗？	1
+	 Window 1051521,YES,NO
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 45554 >= 1 && ItemSpace < 2
+	 	 	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 	 	 EndWindow 1100002
+	 	 Window_YES Item 45554 >= 1 && ItemSpace >= 2
+	 	 	 KillItem 45554
+	 		 #//地元素石 水元素石 火元素石 风元素石
+	 		 #// 45220    45221     45222   45223  
+	 		 GiveLeak1Item (45220%2$1,45221%3$1,45222%5$1,45223%10$1)
+	 		 ##得到第二件礼物
+	 		 #//地元素石 水元素石 火元素石 风元素石
+	 		 #// 45220    45221     45222   45223  
+	 		 GiveLeak1Item (45220%2$1,45221%3$1,45222%5$1,45223%10$1)	 
+	 		 ##得到第三件礼物
+	 		 #//地元素石 水元素石 火元素石 风元素石
+	 		 #// 45220    45221     45222   45223  
+	 		 GiveLeak1Item (45220%2$1,45221%3$1,45222%5$1,45223%10$1)	          		  
+			 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+##一般
+block 	 	 
+	 ##1051522	\n\n\n\n@c你好！这里是兑换券领奖处。	1
+	 EndWindow 1051522
+	 

@@ -1,0 +1,28 @@
+#
+#ÈËÄ§²Ý
+#
+
+#######################################
+#…í?É¬ÀÃ#
+block Item 40707 >= 1 && itemcreatetime 40707 >= 4320 && petspace >= 1
+#block Item 40707 >= 1  && petspace >= 1
+	Window 1102678,OK
+	Window_OK
+
+	KillItem 40707,(206808)
+	givepet 414,(206803)
+#GivePet 103219,(206803)
+	 Endblock
+
+block Item 40707 >= 1 && itemcreatetime 40707 >= 4320 && petspace == 0
+
+	EndWindow 1102679,OK
+
+block Item 40707 >= 1 && itemcreatetime 40707 >= 4000
+
+	EndWindow 1102677
+
+block Item 40707 >= 1
+
+	EndWindow 1102676
+

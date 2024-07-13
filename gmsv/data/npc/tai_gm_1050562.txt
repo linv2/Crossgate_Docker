@@ -1,0 +1,46 @@
+################### 旅行商人史托克 1000(153,122)
+
+################### ■有48元小魔石
+block Item 18006>=1 || Item 18027>=1 || Item 18048>=1 || Item 18069>=1
+	 ##1050969	\n\n啊！你有小魔石呢！\n能否将它用72元卖给我呢？
+	 Window 1050969,YES,NO 
+	 	 Window_YES Item 18006>=1
+	 	 	 KillItem 18006
+	 	 	 AddGold 72
+	 	 Window_YES Item 18027>=1
+	 	 	 KillItem 18027
+	 	 	 AddGold 72	 	 
+	 	 Window_YES Item 18048>=1
+	 	 	 KillItem 18048
+	 	 	 AddGold 72	 	 
+	 	 Window_YES Item 18069>=1
+	 	 	 KillItem 18069
+	 	 	 AddGold 72	 	 
+	 	 Window_NO 
+			 ##1050970	\n\n不要吗？那真是太可惜啰！\n其它地方你可找不到这么好的价格哦！
+			 EndWindow 1050970
+			 
+################### ■有12元小魔石
+block Item 18005>=1 || Item 18026>=1 || Item 18047>=1 || Item 18068>=1
+	 ##1050971	\n\n啊！你有小魔石呢！\n能否将它用36元卖给我呢？
+	 Window 1050971,YES,NO 
+	 	 Window_YES Item 18005>=1
+	 	 	 KillItem 18005
+	 	 	 AddGold 36
+	 	 Window_YES Item 18026>=1
+	 	 	 KillItem 18026
+	 	 	 AddGold 36	 	 
+	 	 Window_YES Item 18047>=1
+	 	 	 KillItem 18047
+	 	 	 AddGold 36	 	 
+	 	 Window_YES Item 18068>=1
+	 	 	 KillItem 18068
+	 	 	 AddGold 36	 	 
+	 	 Window_NO 
+			 ##1050970	\n\n不要吗？那真是太可惜啰！\n其它地方你可找不到这么好的价格哦！
+			 EndWindow 1050970
+
+################### 一般
+block
+	 ##1050972	\n\n我是云游各处的旅行商人，\n现在正用高价在收购小魔石。\n\n我不确定自己会在这里待多久，\n如果你想赚大钱的话，\n可要好好把握这个机会哦！
+	 EndWindow 1050972

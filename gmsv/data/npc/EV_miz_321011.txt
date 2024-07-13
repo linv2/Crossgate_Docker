@@ -1,0 +1,17 @@
+#汕母件斥亦件“市奶瓜
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block 
+	Window 219007,YES,NO
+	Window_YES
+	Window 219008,OK
+	Window_OK
+	setaction 6
+	Window 219021,OK
+	Window_OK
+	Warp 0,33232,6,13
+	Window_NO
+	EndWindow 219009,OK
+

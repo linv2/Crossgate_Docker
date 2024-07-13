@@ -1,0 +1,12 @@
+###### 装满盐的箱子 ###### 可释放10组盐)
+
+##有 装满盐的箱子 物品栏不足10个
+block Item 45933 >= 1 && ItemSpace < 10
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+	 
+##有 装满盐的箱子 物品栏空位大于10	 
+block Item 45933 >= 1 && ItemSpace >= 10
+	 KillItem 45933,1
+	 GiveLeak1Item (12402%1$400)
+	

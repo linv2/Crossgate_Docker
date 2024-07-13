@@ -1,0 +1,3 @@
+##愚人节_提示牌
+block
+	endwindow 1020490,ok

@@ -1,0 +1,150 @@
+#旦正件皿失奶泛丞喂蛹NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛＞睡楚玄仿奶失旦夫件＝及摒
+
+###﹛巨件玄伉□据毛呁醒赭儅
+block Item_607905 >= 2
+	EndWindow 3200998
+		#\n\n﹛巨件玄伉□据互呁醒丐月午质咥匹五引六氏﹝
+
+
+
+###﹛巨件玄伉□据毛尕赭儅
+block Item_607905 <= 0
+	EndWindow 3200999
+		#\n\n﹛巨件玄伉□据互卅中及匹质咥匹五引六氏﹝
+
+
+
+###﹛惘弁伉永弁
+
+block StrCmpChat == R
+	EndWindow 3201000
+		#\n\n﹛旦正件皿醒及喂蛹毛仄引允﹝\n﹛旦正件皿醒毛中仁勾卞仄凶中及井﹜ㄟ井日ㄡ及\n﹛?剩醒侬匹民乓永玄じ恘仄化仁分今中﹝
+
+
+
+###﹛ㄟ毛じ恘
+
+block StrCmpChat == 3004930
+
+	If StampCount_607905 == 0
+		EndWindow 3201001
+		#\n\n﹛蜇箕及旦正件皿醒反ㄟ匹允﹝\n﹛庍凳及优邰反丐曰引六氏﹝
+		EndBlock
+
+	else
+		If StampCount_607905 == 1
+			Window 3201002,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄠ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄟ卞庍凳仄引允﹝
+				Window_OK
+					AddStampCount 607905,-1
+					EndBlock
+
+		else
+			If StampCount_607905 == 2
+				Window 3201003,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄡ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄟ卞庍凳仄引允﹝
+					Window_OK
+						AddStampCount 607905,-2
+						EndBlock
+
+			else
+				EndWindow 3201004
+		#\n\n﹛旦正件皿醒互ㄡ毛译尹化中引允﹝\n﹛ゴ及凶户﹜巨件玄伉□据毛ハ滋仄化仁分今中﹝
+				EndBlock
+
+			endif
+
+		endif
+
+	endif
+
+
+
+
+###﹛ㄠ毛じ恘
+
+block StrCmpChat == 3004921
+
+	If StampCount_607905 == 0
+		Window 3201005,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄟ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄠ卞庍凳仄引允﹝
+			Window_OK
+				AddStampCount 607905,+1
+				EndBlock
+
+	else
+		If StampCount_607905 == 1
+			EndWindow 3201006
+		#\n\n﹛蜇箕及旦正件皿醒反ㄠ匹允﹝\n﹛庍凳及优邰反丐曰引六氏﹝
+			EndBlock
+
+		else
+			If StampCount_607905 == 2
+				Window 3201007,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄡ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄠ卞庍凳仄引允﹝
+					Window_OK
+						AddStampCount 607905,-1
+						EndBlock
+
+			else
+				EndWindow 3201008
+		#\n\n﹛旦正件皿醒互ㄡ毛译尹化中引允﹝\n﹛ゴ及凶户﹜巨件玄伉□据毛ハ滋仄化仁分今中﹝
+				EndBlock
+
+			endif
+
+		endif
+
+	endif
+
+
+
+
+###﹛ㄡ毛じ恘
+
+block StrCmpChat == 3004922
+
+	If StampCount_607905 == 0
+		Window 3201009,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄟ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄡ卞庍凳仄引允﹝
+			Window_OK
+				AddStampCount 607905,+2
+				EndBlock
+
+	else
+		If StampCount_607905 == 1
+			Window 3201010,OK
+		#\n\n﹛蜇箕及旦正件皿醒反ㄠ匹允﹝\n﹛匹反﹜旦正件皿醒毛ㄡ卞庍凳仄引允﹝
+				Window_OK
+					AddStampCount 607905,+1
+					EndBlock
+
+		else
+			If StampCount_607905 == 2
+				EndWindow 3201011
+		#\n\n﹛蜇箕及旦正件皿醒反ㄡ匹允﹝\n﹛庍凳及优邰反丐曰引六氏﹝
+				EndBlock
+
+			else
+				EndWindow 3201012
+		#\n\n﹛旦正件皿醒互ㄡ毛译尹化中引允﹝\n﹛ゴ及凶户﹜巨件玄伉□据毛ハ滋仄化仁分今中﹝
+				EndBlock
+
+			endif
+
+		endif
+
+	endif
+
+
+
+
+###﹛公木动陆
+
+block
+	EndWindow 3201013
+		#\n\n﹛窒毛蜕匀化中月及井歹井曰引六氏﹝
+
+

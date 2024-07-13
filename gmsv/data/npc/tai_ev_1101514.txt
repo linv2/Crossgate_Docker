@@ -1,0 +1,18 @@
+###################勇者武斗场 传出勇者武斗场 1401    135     36
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 一般
+block 
+	 ##1201413	\n\n\n\n您确定要离开了吗？@c	1
+	 Window 1201413,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES Group ==1 
+	 	 	 Warp 0,1401,18,29
+	 	 

@@ -1,0 +1,75 @@
+
+
+block
+
+
+
+
+
+
+			if LocalCount20 == 5
+
+				LocalCount20 = random 1,0
+
+				if LocalCount20 == 1
+					LocalCount20 = 5
+
+
+#					Window "\n\n﹛仇仇及呺坁洘酦卞反\n﹛眸日互方仁蜕中妏井六化丐月仃升\n﹛泭蝇反嗟坁分﹝",next
+					Window 3006947,next
+
+
+#					EndWindow "\n\n﹛支勾日反丐仁引匹≦爵⑷迕≧分井日﹝\n﹛＿＿升木卅洘酦分方﹝"
+					EndWindow 3006948
+
+
+
+
+				else
+
+					LocalCount20 = 5
+
+#					Window "\n\n﹛螃反﹜呺坁支眸日毛\n﹛幻中幻中蹋曰请允仃升卅﹝",next
+					Window 3006949,next
+
+
+#					EndWindow "\n\n﹛蹋日木月杅反﹜蹋日木月杅匹\n﹛锳厌﹜褫中歹﹝"
+					EndWindow 3006950
+
+					LocalCount0 = 5
+
+
+				endif
+
+
+
+			else
+					LocalCount20 = 5
+
+#				Window "\n\n﹛仇及翘卞蛛月呺坁反﹜\n﹛异互日卅仁化恌中﹝",next
+				Window 3006951,next
+
+
+#				Window "\n\n﹛蛊日反﹜潜谛毛棉啜匀凶分仃分﹝",next
+				Window 3006953,next
+
+#				EndWindow "\n\n﹛仇仇匹﹜眸日卞齐歹木化月蛊日反井歹中中手氏今﹝"
+				EndWindow 3007003
+
+
+				LocalCount20 = 5
+
+
+			endif
+
+
+
+
+
+
+
+
+
+
+
+

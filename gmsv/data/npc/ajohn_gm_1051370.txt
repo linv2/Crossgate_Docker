@@ -1,0 +1,6 @@
+#############■海贼王-有动作
+block
+	 setaction 2
+	 Window 1052990,OK
+	 Window_OK
+	

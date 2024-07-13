@@ -1,0 +1,51 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛民奶及摒
+
+###﹛场缜谛匹综岳旦平伙伊矛伙互ㄤ动晓
+block JobAncestry == 270 && SkillLevel_207 >= 5
+	Window 3205238,OK
+
+		#\n\n﹛弃洬反月壬月﹜方仁侳凶及丹﹝\n﹛谨凶六化反萧仄沭卅中﹜今匀公仁蕙仄中场﹜\n﹛必左伙弘目伙丞及综曰杅毛鳗牖仄方丹﹝\n﹛愤坌匹蜕丹及手窒分互﹜豳徽日仄中场分冗﹝
+
+		Window_OK
+			GiveRecipe 444
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛场缜谛匹综岳旦平伙伊矛伙互ㄤ恍坢
+block JobAncestry == 270
+	Window 3205239,OK
+
+		#\n\n﹛六匀井仁仇仇引匹侳凶及卞萧仄沭卅中互﹜\n﹛云蟆今氏匹反伐扑及场毛综月仇午反匹五氏﹝\n﹛珃毛呫中化侳卅今木﹝
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59679,163,191
+
+
+
+###﹛场缜谛匹卅中
+block
+	Window 3205240,YES,NO
+
+		#\n\n﹛云支﹜云蟆今氏反场缜谛匹反卅中方丹分及﹝\n﹛窖曰凶中及井〝
+
+		Window_YES
+			Window 3205241,OK
+
+		#\n\n﹛匹反﹜港盒及请轼引匹霜欠丹﹝
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59679,163,191
+
+		Window_NO
+			EndWindow 3205242
+
+		#\n\n﹛匹反﹜斗匀仁曰仄化中五卅今木﹝\n﹛凶分仄﹜仇仇卞反伐扑日及职卞反﹜\n﹛窒手丐曰扎六氏互及﹝
+
+
+

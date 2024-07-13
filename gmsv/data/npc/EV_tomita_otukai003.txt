@@ -1,0 +1,46 @@
+#≦反元户化及云勾井中≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛白仿申左及摒
+
+###﹛抩铜毛呁醒赭儅
+
+block Item_607904 >= 2
+	EndWindow 3200799
+		#\n\n﹛窒匹伙左□弘及抩铜毛公氏卅卞儅匀化月氏分〝\n﹛⑺元抩铜毛窒呦手螂户月卅氏化﹜庄仄中蛊分﹝\n﹛窖匀化仁木″
+
+
+
+###﹛抩铜毛赭儅
+
+block Item_607904 == 1
+
+	If StampCount_607904 == 0
+		EndWindow 3200800
+		#\n\n﹛公及抩铜﹜伙左□弘及分卅﹝\n﹛幻丹﹜民平及云勾井中毛澎踞仃仄化云月及井﹝\n﹛公及民平卅氏分互﹜引分侳化中卅中氏分方﹝\n﹛Ⅶ卞斨匀化中卅仃木壬中中互＿﹝
+		EndBlock
+
+	else
+		If StampCount_607904 == 1
+			EndWindow 3200801
+		#\n\n﹛幻丹幻丹﹜民平反支反曰Ⅶ卞斨匀化中凶及井﹝\n﹛云蟆今氏互项尹凶及卅日﹜允什卞侳月分欠丹﹝\n﹛仇仇匹谨匀化中月午仄方丹﹝
+			EndBlock
+
+		else
+			EndWindow 3200802
+		#\n\n﹛今匀五反民平毛踞仃化仁木化﹜丐曰互午丹﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛抩铜毛尕赭儅
+
+block
+	EndWindow 3200803
+		#\n\n﹛辄圈切分井日箫廓卞反愤耨互丐匀凶氏分互﹜\n﹛愈嗤反今允互卞布正互侳凶方丹分﹝\n﹛丐切仇切腾仁化井卅歹氏﹝
+
+
+

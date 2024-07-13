@@ -1,0 +1,13 @@
+#’oó¡¼°Ø¦ÖÐ¼Á»Ô¡ýÌ¾»Ô±¾ÛÍ¶ªÐþ
+
+#
+block
+	Window 23098,Next
+	Window 23099,Next
+	Window 23100,Next
+	Window 23101,Next
+	Window 23102,Next
+	Window 23103,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,47032,22,32

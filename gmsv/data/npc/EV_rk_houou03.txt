@@ -1,0 +1,29 @@
+#????
+
+block Item 16333 >= 1
+	EndWindow 22109,OK
+
+block Item 16332 >= 1
+	EndWindow 22127,OK
+
+block Item 16331 >= 1
+	Window 22053,Next
+	Window 22054,Next
+	Window 22055,OK
+		Window_OK
+			KillItem 16331,1
+			GiveItem 16332,1
+
+block Item 16336 >= 1
+	EndWindow 22087,OK
+
+block
+	Window 22056,Yes,No
+		Window_NO
+			EndWindow 22057,OK
+		Window_Yes ItemSpace == 0
+			EndWindow 10000,OK
+		Window_Yes
+			Window 22058,OK
+			Window_OK
+			GiveItem 16336,1

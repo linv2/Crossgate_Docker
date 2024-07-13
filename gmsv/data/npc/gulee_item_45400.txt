@@ -1,0 +1,31 @@
+######■使用传呼机
+
+
+#■身上发黄的识别证 或 咬过的玉米 或 玉米 或 父亲房间的钥匙 或 安娜房间的钥匙 或 可疑的光碟 或 线民的邀请 或 线民的暗号
+block  Item 45408 > 0 || Item 45404 > 0 || Item 45405 > 0 || Item 45406 > 0 || Item 45407 > 0 || Item 45403 > 0 || Item 45402 > 0 || Item 45401 > 0
+     #1051203\n  传呼机上并未显示任何讯息。
+     Window  1051203, OK
+         Window_OK
+             CheckTitle
+
+
+
+##■八月八日后
+#block  
+#    #1051202\n  速回中情局！\n  调查的事有突破性的发展！
+#    Window  1051202, OK
+#         Window_OK
+#             CheckTitle
+
+
+block
+     #1051203\n  传呼机上并未显示任何讯息。
+     Window  1051203,ok
+         Window_OK
+             CheckTitle
+
+
+
+
+
+

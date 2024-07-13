@@ -1,0 +1,46 @@
+#¼ëÓ£&ÓªÚĞ·Â¼şÛÍÊ§ÓÀÃóÛÍ¾Şµ©Ğş¡°Ëü¡õÊõ
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+
+###########©x¼ëÓ£orÓªÚĞÆ¥·Â¼şÛÍ?©x##############
+block job >= 414 && job <= 419
+	EndWindow 20900,OK
+block job >= 424 && job <= 424
+	EndWindow 20900,OK
+
+###########©x¼ëÓ£orÓªÚĞÆ¥·Â¼şÛÍ?©x»ê¶­åÃ¶ªÆ¹12©xØ¤Ô»©x##############
+block job == 413 && Item 18821 >= 1
+	KillItem 18821
+	GiveItem 18818
+	Window 20938,OK
+	Window_OK
+	setaction 10
+
+block job == 423 && Item 18821 >= 1
+	KillItem 18821
+	GiveItem 18818
+	Window 20938,OK
+	Window_OK
+	setaction 10
+
+block job == 413 && Item 18818>= 1
+	Window 20938,OK
+	Window_OK
+	setaction 10
+
+block job == 423 && Item 18818 >= 1
+	Window 20938,OK
+	Window_OK
+	setaction 10
+
+###########©x¼ëÓ£orÓªÚĞÆ¥·Â¼şÛÍ?©x»ê¶­åÃ¶ªÆ¹12©xØ¦ØÆ©x##############
+block Item 18810 == 1 || Item 18811 == 1 || Item 18812 == 1 || Item 18813 == 1 || Item 18814 == 1 || Item 18815 == 1 || Item 18816 == 1 || Item 18817 == 1 || Item 18818 == 1 || Item 18819 == 1 || Item 18820 == 1 || Item 18821 == 1 || Item 18822 == 1 || Item 18823 == 1 || Item 18824 == 1 || Item 18825 == 1 || Item 18826 == 1 || Item 18827 == 1 || Item 18828 == 1 || Item 18829 == 1 || Item 18830 == 1 || Item 18831 == 1 || Item 18832 == 1 || Item 18833 == 1 || Item 18834 == 1 || Item 18835 == 1 || Item 18836 == 1 || Item 18837 == 1 || Item 18838 == 1 || Item 18839 == 1 || Item 18840 == 1 || Item 18841 == 1 || Item 18842 == 1
+
+	setaction 10
+	EndWindow 20937,OK
+
+###########©x¼ëÓ£orÓªÚĞ·Â¼şÛÍ?»ĞÜ·şœÄ¤û„ŠuÚêX³I#############
+block
+	setaction 10
+	EndWindow 20909,OK
+

@@ -1,0 +1,12 @@
+#
+#PUK3_Main1
+#
+#螃啖莘襟﹋失泛奴旦﹌
+
+
+Block
+
+	GAEndWindow 3207009
+
+		#\n\n﹛＿＿蛙五障ミ樊及质奥反杽锁匹允友﹝
+	

@@ -1,0 +1,14 @@
+#茧樱弁巨旦玄“白仿件弁伉件(2)
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block 
+	Window 206571,YES,NO
+	Window_YES
+	Window 206253,OK
+	Window_OK
+	leavegroup
+	Warp 0,33255,7,9
+	Window_NO
+	EndWindow 206572,OK

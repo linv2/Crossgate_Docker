@@ -1,0 +1,38 @@
+#
+#オ樊弁巨旦玄
+#丢汀弁﹋瞽蟆爵⑷詨﹌
+
+######### 斥件瓜 ########
+block NowEvent 15 == 1 && StrCmpChat == 15052
+#\n\n﹛15コ蟆及丐及ざ﹜台反竻凶月斥件瓜毛仇及澎卞井仃凶﹝公丹允木壬左伙立瓜互台及幻丹毛轾仁午合匀化中凶井日分﹝脱卅互日瑷反井分匀凶互卅＿＿
+	EndWindow 15109,OK
+
+######### 左伙立瓜 ########
+block NowEvent 15 == 1 && StrCmpChat == 15053
+#\n\n﹛台互馨中腴户凶六中匹左伙立瓜反斥件瓜及詨毛馨匀化仄引匀凶＿＿
+	EndWindow 15110,OK
+
+######### 市瓜奶 ########
+block NowEvent 15 == 1 && StrCmpChat == 14917
+#\n\n﹛秽阂屺屻毛撩匀凶市瓜奶反失术立毛洘木﹜仿件及?鳗踏毛儅匀化⑧仆凶﹝
+	Window 15111,NEXT
+#\n\n﹛公木井日15コ﹜方丹支仁台反市瓜奶及蛛赭毛勾五午户凶﹝侳コ反简赢跟医及丝互丐月﹝公丹允木壬?鳗踏互儅切请今木凶仇午毛怅仄化云仁仇午反匹五卅中﹝台反市瓜奶毛匚诮允月仇午卞瑁户凶及分＿＿
+	EndWindow 15112,OK
+
+#########  ########
+block NowEvent 15 == 1
+#\n\n﹛＿＿＿＿
+	EndWindow 15115,OK
+
+#########  ########
+block NowEvent 14 == 1 && ItemSpace == 0
+#\n\n\n\n﹛﹋◢﹌失奶泛丞毛欐公丹午仄化中引允﹝赭儅圴毛帮咥仄化仁分今中﹝
+	EndWindow 15113,OK
+
+#########  ########
+block NowEvent 14 == 1 && ItemSpace != 0
+	NowEvent 15 = 1
+	GiveItem 18554
+#\n\n﹛筑迋仍午五卞赞木毛午月午反＿＿
+	EndWindow 15114,OK
+

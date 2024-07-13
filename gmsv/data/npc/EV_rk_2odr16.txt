@@ -1,0 +1,54 @@
+#ï§Ú×
+
+#ï§Ú×ÎçÝ·ªIÔ‰
+block EndEvent 121 == 1 || EndEvent 122 == 1
+	EndWindow 23166,OK
+
+#¾Þ»ïÈÎÑëÍßÊ§Îì¡õµ©Æ¥çÖÎþ¼°¾ÝÃ«ƒ}ÔÈ»¯ÖÐÔÂ
+block Item 16437 >= 1 && NowEvent 121 == 1
+	Window 23167,Next
+	Window 23168,Next
+	Window 23169,Next
+	Window 23170,Next
+	Window 23171,Next
+	Window 23172,Next
+	Window 23173,OK
+		Window_OK Item 16437 >= 1
+			KillItemAll 16437
+			GiveItem 16435,1
+			EndEvent 121 = 1
+		Window_OK
+
+#·Â¼þ¼°Îì¡õµ©Æ¥çÖÎþ¼°¾ÝÃ«ƒ}ÔÈ»¯ÖÐÔÂ
+block Item 16437 >= 1 && NowEvent 122 == 1
+	Window 23167,Next
+	Window 23168,Next
+	Window 23169,Next
+	Window 23170,Next
+	Window 23171,Next
+	Window 23172,Next
+	Window 23173,OK
+		Window_OK Item 16437 >= 1
+			KillItemAll 16437
+			GiveItem 16435,1
+			EndEvent 122 = 1
+		Window_OK
+#
+block
+	Window 23165,OK
+		Window_OK Item 16434 >= 1
+			NowEvent 121 = 0
+			EndEvent 121 = 0
+			NowEvent 122 = 0
+			EndEvent 122 = 0
+			KillItemAll 16434
+			LeaveGroup
+			Warp 0,43500,117,103
+		Window_OK
+			NowEvent 121 = 0
+			EndEvent 121 = 0
+			NowEvent 122 = 0
+			EndEvent 122 = 0
+			LeaveGroup
+			Warp 0,43500,117,103
+

@@ -1,0 +1,39 @@
+
+
+block Xpos == 142 && Ypos == 113
+
+#if nowtime == 3
+
+if globalFlag0 == 1
+
+
+
+
+		LocalCount0 = random 2,0
+
+		if LocalCount0 == 1 && ItemSpace >= 1
+
+#			Message 3006712
+
+			Window 3200554,ok
+		#\n\n﹛摨昜卞粹中化中月洈阕毛域堪﹜\n﹛公匀午脏心潸匀凶﹝
+
+			Window_ok
+
+			GiveItem 607621,1
+
+			globalFlag0 = 0
+
+		else
+		
+			EndWindow 3200555,ok
+		#\n\n﹛洈阕反粹中化中卅井匀凶﹝
+
+		
+		endif
+
+
+#endif
+
+endif
+

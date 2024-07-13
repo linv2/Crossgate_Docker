@@ -1,0 +1,50 @@
+################### 抢头香 真的香炉
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 没有香
+block  Item 45227 == 0
+	 ##1050192	你手上并没有香啊！不过只要有虔诚的心，还是可以把心意传达给神明的。
+	 EndWindow 1050192
+	 Warp 0,30017,43,51
+	 
+################### 有一支香，时间超过
+block  Item 45227 == 1 && ItemCreateTime 45227 > 30
+	 ##1050193	人在拜，天在看。你在这里头混了多少时间啦？
+	 Window 1050193,NEXT
+	 KillItem 45227
+	 Warp 0,30017,43,51
+
+################### 有一支香，时间内，是第10个
+block  Item 45227 == 1 && ItemCreateTime 45227 <= 30 && Visitor == 10
+	 ##1050194	当当当！你是本香炉第10位纪念香客！
+	 Window 1050194,NEXT
+	 SetVisitor +1
+	 KillItem 45227
+	 Warp 0,30017,43,51
+
+
+################### 有一支香，时间内，不是第一个
+block  Item 45227 == 1 && ItemCreateTime 45227 <= 30 && Visitor >= 1
+	 ##1050195	God bless you！虽然你没有抢到头香…
+	 Window 1050195,NEXT
+	 SetVisitor +1
+	 KillItem 45227
+	 Warp 0,30017,43,51
+	 
+################### 有一支香，时间内，是第一个
+block  Item 45227 == 1 && ItemCreateTime 45227 <= 30 && Visitor == 0
+	 ##1050196	恭喜你顺利地抢到头香了！
+	 Window 1050196,NEXT
+	 SetVisitor +1
+	 KillItem 45227
+	 GiveLeak1Item 45228
+	 Warp 0,30017,43,51
+	 

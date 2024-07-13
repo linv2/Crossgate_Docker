@@ -1,0 +1,14 @@
+#?
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 惘弁伉永弁匹伐□皿允月 ##########
+block StrCmpChat == r
+	#\n\n﹛?毛钒仃化梂卞褡心引允井〝
+	Window 11683,YES,NO
+
+	Window_YES
+	Warp 0,15004,7,39
+
+	Window_NO

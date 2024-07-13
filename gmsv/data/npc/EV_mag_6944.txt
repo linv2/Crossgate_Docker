@@ -1,0 +1,114 @@
+#
+#市□田件弁伙仁元跟晶
+#
+
+############## ㄠ羁手匀化月 ##############
+block Item 19599 >= 1
+#\n\n﹛仍癫蓟云户匹午丹仍介中引允″滔圴反\n@c?由□汁\n﹛卞卅曰引允﹝跟晶仄引允井〝
+	Window 15460,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 15461,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 15462,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 15463,OK
+	Window_OK Item 19599 >= 1
+	KillItem 19599
+	GiveLeak1Item 18658,1
+
+############## ㄡ羁手匀化月 ##############
+block Item 19600 >= 1
+#\n\n﹛仍癫蓟云户匹午丹仍介中引允″滔圴反\n﹛笮欧迕腺厍踏\n﹛卞卅曰引允﹝跟晶仄引允井〝
+#\n\n﹛仍癫蓟云户匹午丹仍介中引允″滔圴反\n@c阂绝谛溥\n@c打皮伉布件谛溥\n﹛及内木井仿件母丞卞卅曰引允﹝跟晶仄引允井〝
+#	Window 15464,YES,NO
+	Window 15486,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 15461,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 15462,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 15463,OK
+	Window_OK Item 19600 >= 1
+	KillItem 19600
+#	GiveItem 19523,1
+	GiveLeak1Item (18690%1$1,18693%1$1)
+
+############## ㄢ羁手匀化月 ##############
+block Item 19601 >= 1
+#\n\n﹛仍癫蓟云户匹午丹仍介中引允″滔圴反\n@c正它件必□玄白伉□由旦\n@c仿疋永玉立立永弁涩煌豭跟晶痹\n@c?由□汁\n@c詨欠轾五卅痹\n﹛及中内木井仿件母丞卞卅曰引允﹝跟晶仄引允井〝
+	Window 15465,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 15461,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 15462,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 15463,OK
+	Window_OK Item 19601 >= 1
+	KillItem 19601
+	GiveLeak1Item (18698%1$1,18699%1$1,18660%1$1,18661%1$1)
+
+############## ㄣ羁手匀化月 ##############
+block Item 19602 >= 1
+#\n\n﹛仍癫蓟云户匹午丹仍介中引允″滔圴反\n@cゥ畸セ狱俜\n﹛卞卅曰引允﹝跟晶仄引允井〝
+	Window 15466,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 15461,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 15462,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 15463,OK
+	Window_OK Item 19602 >= 1
+	KillItem 19602
+	GiveLeak1Item 18662,1
+
+############## ㄤ羁手匀化月 ##############
+block Item 19603 >= 1
+#\n\n﹛仍癫蓟云户匹午丹仍介中引允″滔圴反\n@c伉□交件伉件弘﹋伊皿伉市﹌\n@c失扑乓白伉件弘﹋伊皿伉市﹌\n@c扔扒件市伉件弘﹋伊皿伉市﹌\n@c田伙弗旦及云潮曰﹋伊皿伉市﹌\n@c伊斥旦正件旦及据﹋1/144﹌\n﹛及中内木井仿件母丞卞卅曰引允﹝跟晶仄引允井〝
+	Window 15467,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 15461,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 15462,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 15463,OK
+	Window_OK Item 19603 >= 1
+	KillItem 19603
+	GiveLeak1Item (18665%1$1,18666%1$1,18667%1$1,18668%1$1,18669%1$1)
+
+############## ㄤ羁手匀化月 ##############
+block Item 19604 >= 1
+#\n\n﹛仍癫蓟云户匹午丹仍介中引允″滔圴反\n@c云怗褛蝌\n﹛卞卅曰引允﹝跟晶仄引允井〝
+	Window 15468,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 15461,OK
+	Window_YES ItemSpace == 0
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 15462,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 15463,OK
+	Window_OK Item 19604 >= 1
+	KillItem 19604
+	GiveLeak1Item 18670,1
+
+############## 升木手手匀化卅中 ##############
+block
+#\n\n﹛仇仇反市□田件弁伙仁元及跟晶赭匹允﹝
+	EndWindow 15469,OK
+

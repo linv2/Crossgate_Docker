@@ -1,0 +1,18 @@
+###### 接力赛-出口管制人员 #####
+##人数过多
+block Group > 4
+	 ####1050842	\n\n\n\n@c你们队伍是不是多一个人阿？这样不行喔！
+	 EndWindow 1050842
+##检查参赛证C && 过关证明 	 
+block Item 45353 == 1 && Item 45355 == 1 && Group <= 4	 
+	 ##1050856	这是最后的一段路了！祝你们成功！
+	 Window 1050856,OK
+	 	 Window_OK Item 45353 == 1 && Item 45355 == 1 && Group <= 4	 
+	 	 KillItem 45355
+	 	 GiveLeak1Item 45361
+	 	 Warp 0,30111,32,26
+	 	 
+##只有参赛证C
+block Item 45353 == 1
+	 ##1050857	\n\n\n\n等你拿到了过关证明我才能让你们通过！
+	 EndWindow 1050857

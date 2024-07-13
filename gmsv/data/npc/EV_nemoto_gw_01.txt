@@ -1,0 +1,256 @@
+#GW疵嗯Ⅱ楷
+#じ桦迕NPC＞熬尥横 左伉□＝
+
+### 弘伙□皿毛赚氏匹中月 ###
+block Group != 1
+	Endwindow 3205300
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+
+### 伊矛伙ㄨ动票 ###
+block level <=9
+	Window 3205301,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛午反中尹失瓜正﹜引分甲亥永戊友﹝\n﹛冂帎卞拑恔匹骚仄化丐仆月″\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205302,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205303
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Group
+			warp 0,59752,196,16
+	Window_NO
+Endblock
+
+### 伊矛伙19动票 ###
+block level <=19
+	Window 3205304,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛伊矛伙10动晓19动票及失瓜正卅日﹜\n﹛50?匀化午仇井卅﹝\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205305,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205306
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Gold < 50
+			EndWindow 3205307
+
+		#\n\n﹛丐匀木□﹜云嗯箫曰化卅中方〝
+		Window_OK Group == 1 && Gold >= 50
+			AddGold -50
+			warp 0,59752,196,16
+	Window_NO
+Endblock
+
+### 伊矛伙29动票 ###
+block level <=29
+	Window 3205308,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛伊矛伙20动晓﹜29动票及失瓜正卅日﹜\n﹛100?匀化午仇井卅﹝\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205309,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205310
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Gold < 100
+			EndWindow 3205311
+
+		#\n\n﹛丐匀木□﹜云嗯箫曰化卅中方〝
+		Window_OK Group == 1 && Gold >= 100
+			AddGold -100
+			warp 0,59752,196,16
+	Window_NO
+Endblock
+
+### 伊矛伙39动票 ###
+block level <=39
+	Window 3205312,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛伊矛伙30动晓﹜39动票及失瓜正卅日﹜\n﹛200?匀化午仇井卅﹝\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205313,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205314
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Gold < 200
+			EndWindow 3205315
+
+		#\n\n﹛丐匀木□﹜云嗯箫曰化卅中方〝
+		Window_OK Group == 1 && Gold >= 200
+			AddGold -200
+			warp 0,59752,196,16
+	Window_NO
+Endblock
+
+### 伊矛伙49动票 ###
+block level <=49
+	Window 3205316,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛伊矛伙40动晓﹜49动票及失瓜正卅日﹜\n﹛400?匀化午仇井卅﹝\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205317,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205318
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Gold < 400
+			EndWindow 3205319
+
+		#\n\n﹛丐匀木□﹜云嗯箫曰化卅中方〝
+		Window_OK Group == 1 && Gold >= 400
+			AddGold -400
+			warp 0,59752,196,16
+	Window_NO
+Endblock
+
+### 伊矛伙59动票 ###
+block level <=59
+	Window 3205320,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛伊矛伙50动晓﹜59动票及失瓜正卅日﹜\n﹛800?匀化午仇井卅﹝\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205321,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205322
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Gold < 800
+			EndWindow 3205323
+
+		#\n\n﹛丐匀木□﹜云嗯箫曰化卅中方〝
+		Window_OK Group == 1 && Gold >= 800
+			AddGold -800
+			warp 0,59752,196,16
+	Window_NO
+Endblock
+
+### 伊矛伙69动票 ###
+block level <=69
+	Window 3205324,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛伊矛伙60动晓﹜69动票及失瓜正卅日﹜\n﹛1600?匀化午仇井卅﹝\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205325,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205326
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Gold < 1600
+			EndWindow 3205327
+
+		#\n\n﹛丐匀木□﹜云嗯箫曰化卅中方〝
+		Window_OK Group == 1 && Gold >= 1600
+			AddGold -1600
+    		warp 0,59752,196,16
+	Window_NO
+Endblock
+
+### 伊矛伙79动票 ###
+block level <=79
+	Window 3205328,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛伊矛伙70动晓﹜79动票及失瓜正卅日﹜\n﹛3200?匀化午仇井卅﹝\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205329,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205330
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Gold < 3200
+			EndWindow 3205331
+
+		#\n\n﹛丐匀木□﹜云嗯箫曰化卅中方〝
+		Window_OK Group == 1 && Gold >= 3200
+			AddGold -3200
+			warp 0,59752,196,16
+	Window_NO
+Endblock
+
+### 伊矛伙89动晓 ###
+block level <=89
+	Window 3205332,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛伊矛伙80动晓﹜89动票及失瓜正卅日﹜\n﹛6400?匀化午仇井卅﹝\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205333,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205334
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Gold < 6400
+			EndWindow 3205335
+
+		#\n\n﹛丐匀木□﹜云嗯箫曰化卅中方〝
+		Window_OK Group == 1 && Gold >= 6400
+			AddGold -6400
+			warp 0,59752,196,16
+	Window_NO
+Endblock
+
+### 伊矛伙99动票 ###
+block level <=99
+	Window 3205336,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛伊矛伙90动晓﹜99动票及失瓜正卅日﹜\n﹛12800?匀化午仇井卅﹝\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205337,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205338
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Gold < 12800
+			EndWindow 3205339
+
+		#\n\n﹛丐匀木□﹜云嗯箫曰化卅中方〝
+		Window_OK Group == 1 && Gold >= 12800
+			AddGold -12800
+			warp 0,59752,196,16
+	Window_NO
+Endblock
+
+### 伊矛伙100动晓 ###
+block level >=100
+	Window 3205340,YES,NO
+
+		#\n\n﹛仇及梂卞じ曰凶中匀化〝\n﹛鬼中仃升仇匀切手齿ヨ分井日今﹜\n﹛失瓜正及掸恘锹杀及骚垫暧毛赡仁方﹝\n﹛云﹜伊矛伙100毛译尹化月氏分友﹝\n﹛嫖伊矛伙喃娄赝迕匹19200?分方﹝\n\n﹛升予〝中匀午仁〝
+	Window_YES
+		Window 3205341,OK
+
+		#\n\n﹛燮卞蜕匀午仁仃升﹜乒件旦正□及朼执支\n﹛烦董袄及潸丿反匹五卅中方﹝\n﹛旦平伙及柈莲支云扲茧仄毛坢脾仄化五化友″
+		Window_OK Group != 1
+			Endwindow 3205342
+
+		#\n\n﹛谨化谨化℅不″\n﹛じ月及反夫午曰内勾″\n﹛赐?潮日氏井中匀″
+		Window_OK Gold < 19200
+			EndWindow 3205343
+
+		#\n\n﹛丐匀木□﹜云嗯箫曰化卅中方〝
+		Window_OK Group == 1 && Gold >= 19200
+			AddGold -19200
+			warp 0,59752,196,16
+	Window_NO
+Endblock

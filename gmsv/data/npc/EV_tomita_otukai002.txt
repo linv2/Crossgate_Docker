@@ -1,0 +1,94 @@
+#≦反元户化及云勾井中≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛伙左□弘及摒
+
+###﹛伙左□弘及抩铜毛呁醒赭儅
+
+block Item_607904 >= 2
+	Window 3200785,OK
+		#\n\n﹛云支﹜欐仄凶抩铜反域呦及反内分互﹜\n﹛升丹仄化公氏卅卞儅匀化中月氏分中〝\n﹛升丹手楝反耨迕匹五公丹卞卅中卅﹝\n﹛抩铜反忒仄化手日丹方﹝
+
+		Window_OK Item_607904 >= 2
+			KillItemAll 607904
+
+		Window_OK
+
+
+
+###﹛伙左□弘及抩铜毛赭儅
+
+block Item_607904 == 1
+
+	If StampCount_607904 == 5
+		Window 3200786,OK
+		#\n\n﹛民平互拑仪卞窖匀化五凶方﹜丐曰互午丹﹝\n﹛民平卞手云斪毛蜕歹六月勾手曰分匀凶氏分互﹜\n﹛枑匀化侳月卅曰芛太卞垫匀化仄引匀化友﹜\n﹛揪忮仄化云仁木﹝\n﹛元扎丐﹜今今支井分仃升﹜云斪毛丐仆方丹﹝\n﹛丐丐公丹分﹜抩铜反忒仄化手日丹方﹝\n﹛呦醒互卅中氏匹友﹝匹反﹜呿癫卞丐曰互午丹﹝
+
+			Window_OK ItemSpace >= 1  && item 607904 >=1
+				KillItemAll 607904
+				GiveItem (13631%45,13632%30,13602%10,13642%10,18450%5)
+				EndBlock
+
+			Window_OK
+				EndWindow 3200787
+		#\n\n﹛云支﹜绂坁互中匀天中分﹝\n﹛帮咥仄化仁木卅中井友﹝
+				EndBlock
+
+	else
+		EndWindow 3200788
+		#\n\n﹛民平反引分﹜云勾井中井日窖匀化卅中方﹝\n﹛手仄井仄化﹜垫五燮毛侉木化仄引匀凶及井中〝\n﹛愈赓反白仿申左元中今氏﹜戚互失瓜矛仿﹜\n﹛愈詨卞炕情分方﹝
+		EndBlock
+
+	endif
+
+
+
+###﹛伙左□弘尺及澎饼毛赭儅
+
+block Item_607903 >= 1
+	Window 3200789,YES,NO
+		#\n\n﹛公木反﹜台偶化及澎饼分友﹝\n﹛歹介歹介?仃化仁木化升丹手丐曰互午丹﹝\n﹛＿＿尹□﹜公及＿楝及褪濠艘卞勾仃慇戈方丹匹\n﹛鬼中氏分互﹜台及俇心手妏中化仁木卅中井友〝
+
+		Window_YES
+			Window 3200790,NEXT
+		#\n\n﹛丐曰互午丹﹜呿癫卞踞井月方﹝\n﹛俇心仪午中丹及反﹜台及矢永玄乒件旦正□﹜\n﹛民平及仇午卅氏分﹝\n﹛掸反漆ざ﹜民平卞云勾井中毛俇氏分氏分互﹜\n﹛反元户化分井日支匀天曰艘ミ匹友﹝\n﹛手仄手民平互漱匀化中凶日﹜公匀午澎踞仃仄化\n﹛丐仆化俓仄中氏分﹝
+			Window 3200791,NEXT
+		#\n\n﹛垫仁蟆卞台及抩铜毛欐公丹﹝\n﹛公木毛苇六木壬﹜翘谛手隅恘仄化仁木月仄﹜\n﹛民平手煞荷毛荸仁分欠丹﹝\n﹛民平卞反﹜翘谛及白仿申左﹜公仄化失瓜矛仿卞\n﹛台及综匀凶泔毛?仃﹜愈詨卞炕情卞湮匀化﹜\n﹛台互俇氏匹云中凶泔及笺恔毛熬仃午匀化\n﹛窖匀化侳月方丹卞蜕匀化丐月﹝
+			Window 3200792,OK
+		#\n\n﹛云勾井中毛苇?仃凶日﹜枑匀化五化云仁木﹝\n﹛今今支井分仃升﹜云斪互仄凶中氏匹友﹝\n﹛匹反﹜方欠仄仁云凑中允月方﹝
+
+				Window_OK Item_607904 >= 1
+					EndWindow 3200793
+		#\n\n﹛窒分﹜手丹儅匀化月氏元扎卅中井﹝\n﹛萧仄沭卅中互﹜ㄡ呦手丐仆日木卅中氏分﹝\n﹛醒互卅中氏匹友﹝
+
+				Window_OK Item_607903 >= 1 && ItemSpace >= 1
+					KillItemAll 607903
+					GiveItemEX 607904,1,3200794
+		#\n\n﹛绂坁毛帮咥仄化仁木卅中井友﹝\n﹛抩铜互欐六卅中氏匹友﹝
+
+				Window_OK ItemSpace >= 1
+					EndWindow 3200795
+		#\n\n﹛云支﹜澎饼反升丹仄凶氏分中〝\n﹛引内反澎饼毛欐仄化仁木卅中午漱月方﹝
+
+				Window_OK
+					EndWindow 3200796
+		#\n\n﹛丐曰互午丹﹝匹手﹜漱匀凶卅﹝\n﹛绂坁互中匀天中匹﹜抩铜互欐六卅中氏分﹝\n﹛帮咥仄化仁木卅中井友﹝
+
+		Window_NO
+			Window 3200797,OK
+		#\n\n﹛公丹分卅﹝中仁日窒匹手豭★仄允亢凶卅﹝\n﹛丐丐﹜竣卞仄卅中匹仁木﹝\n﹛澎饼毛?仃化仁木凶午中丹分仃匹﹜\n﹛蜗坌普桨仄化中月方﹝
+
+				Window_OK Item_607903 >= 1
+					KillItemAll 607903
+
+				Window_OK
+
+
+
+###﹛澎饼手抩铜手尕赭儅
+
+block
+	EndWindow 3200798
+		#\n\n﹛平亘旦泛及翘尺方丹仇公﹝\n﹛仇仇反伓嫖互嫖中六中井﹜镞歾及朱蘸犒互\n﹛反仆仄中氏分﹝\n﹛虫譬卞反竣毛勾仃月氏分方﹝
+
+
+

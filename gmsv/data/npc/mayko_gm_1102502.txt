@@ -1,0 +1,31 @@
+#1102502 上锁的书  mayko_gm_1102502.txt
+#1110279	\n\n\n　　　有本书上锁了，\n　　　里面该不会有重要文献吧！
+#1110280	\n\n\n　　　有本上锁的书夹，\n　　　要打开来看吗？
+#1110281	\n\n\n　　　传说中的圣女之墓，\n　　　在哈那可半岛的忘忧谷，\n　　　红花开满山谷，才会出现。
+#1110282	\n\n\n　　　红花的种子，不能在那繁衍\n　　　，只有在丝米村附近才能发现。
+#1110283	\n\n\n\n\@c里面有张种子图，要画下样子吗？
+#1110284	\n\n\n\n\@c画下了种子样子。
+
+block Item 40977 >0
+ 
+	 Window 1110280,YES,NO
+	 Window_NO
+	 EndWindow 14505	 
+	 Window_YES Item 40977 >0
+	 	 KillItem 40977,1
+	 	 Window 1110281,NEXT
+	 	 Window 1110282,NEXT
+	 	 Window 1110283,YES,NO
+	 	 Window_NO
+	 	 EndWindow 14505
+	 	 Window_YES ItemSpace < 1 
+	 	 ##物品栏已满
+	 	 EndWindow 1100001
+	 	 Window_YES
+	 	 GiveLeak1Item 40978,1	 
+	 	 EndWindow 1110284
+	 Window_YES
+	 EndWindow 14505
+	 	 
+block 
+	 EndWindow 1110279	 

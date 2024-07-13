@@ -1,0 +1,65 @@
+#
+#蜈朹
+#
+
+
+
+block
+
+
+		Window 3201206,next
+		#\n\n﹛戈戈戈戈戈戈戈﹝\n﹛升仇井匹苇凶方丹卅\n﹛涌匹丐月互\n﹛仇及洬井日\n﹛台卞莘中卞侳月午反钟仄中﹝
+
+		Window 3201207,next
+		#\n\n﹛が反﹜\n﹛瓜永扔它及襞曰宁中井〝\n﹛孔戈﹜引午歹曰勾仁仇及け中﹝
+
+		Window 3201208,next
+		#\n\n﹛が反﹜衙中蛙中﹜\n﹛盟卅妐蜕毛\n﹛儅匀化云月卅﹝
+
+		Window 3201209,next
+		#\n\n﹛脱卞手公及妐蜕反厶户氏﹝\n﹛窒六﹜脱反公及妐蜕卞\n﹛踏井木化丐月仪及锳绊\n﹛戏心请今木凶撩ヘ综匹丐月井日卅﹝
+
+		Window 3201210,next
+		#\n\n﹛戈戈﹜公丹井﹝\n﹛が反交伙弘螃及\n﹛祯仃仄艘毛儅匀化云月井﹝\n﹛戈戈﹜公丹井﹜\n﹛が反公木毛谎歹木凶井﹝\n﹛骭颬及锉卞朼元日木仄艘毛﹝
+
+		Window 3201211,next
+		#\n\n﹛方中井﹜艘仄化妏仃﹝\n﹛窒裕﹜漆﹜螃鹧反\n﹛交伙弘螃及祯仃凶褥虫﹜\n﹛穑切交伙弘及奶戊件毛\n﹛厘恟卞螂户化中月及井〝
+
+		Window 3201212,next
+		#\n\n﹛窒裕﹜漆﹜\n﹛交伙弘螃及⑧木凶月艘﹜\n﹛穑切骭颬及锉毛谎丹マ互蛛月及井〝
+
+		Window 3201213,next
+		#\n\n﹛脱卞反厶户厄﹝\n﹛撩ヘ综匹丐月脱卞反\n﹛蛙中妐蜕反厶户厄﹝\n﹛分互﹜哔尹方﹜哔尹方﹝
+
+		Window 3201214,next
+		#\n\n﹛交伙弘螃及褥虫午艘毛\n﹛漆﹜俓允月樊互﹜\n﹛窒毛杴隙仄化云月井毛﹝\n﹛脱支脱及犗箪互\n﹛戋阕及棉匹\n﹛丐引凶圈引木化中月蜇掸毛﹝
+		
+		Window 3201215,next
+		#\n\n﹛五扎勾羁反\n﹛引凶﹜卅卞井\n﹛﹍蹋欠丹﹎午仄化中月及分﹝
+
+		Window 3201216,next
+		#\n\n﹛艘六方﹜が反愈镀\n﹛仇及扪抰卞\n﹛础橡毛块匀凶﹝\n﹛卅日壬﹜公木毛昙曰濠木月井﹜\n﹛脱互苇烂户化支欠丹﹝
+
+		Window 3201217,yes,no
+		#\n\n﹛升丹分〝\n﹛峏切轾井丹啦阀反丐月井〝
+
+
+		Window_yes
+
+			Window 3201218,ok
+		#\n\n﹛孔戈﹜卅日﹜辅日木方﹝
+
+			Window_ok
+
+				Encount 3|0,59716,230,75||0|||||0|305160|||||||||
+
+
+		Window_no
+
+			Window 3201219,ok
+		#\n\n﹛苇慇心啜中匹丐匀凶井﹝
+
+			Window_ok
+
+				Warp 0,59503,208,281
+

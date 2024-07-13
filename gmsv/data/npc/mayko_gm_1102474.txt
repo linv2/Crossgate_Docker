@@ -1,0 +1,11 @@
+#mayko_gm_1102472.txt
+#mayko_gm_1102473.txt
+#mayko_gm_1102474.txt
+#1110116	\n\n\n\n@c玫瑰花的味道好香～喵！
+#1110117	\n\n\n\n@c薰衣草的味道好香～喵！
+#1110118	\n\n\n\n@c茉莉花的味道好香～喵！
+#1110119	\n\n\n\n@c花茶真是好喝呀～喵～
+
+block
+	 Window 1110118,next
+	 EndWindow  1110119

@@ -1,0 +1,856 @@
+block Item 47443>1
+	 EndWindow 1054718
+######压力锅47443
+##有 压力锅 与鲑鱼 物品栏无空位
+block Item 47443 >= 1 && Item 11309 >0 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+##有 压力锅 与神圣米 物品栏无空位
+block Item 47443 >= 1 && Item 12102 >0 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002	 
+##有 压力锅 与白菜 物品栏无空位
+block Item 47443 >= 1 && Item 12101 >0 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002
+##有 压力锅 与牛奶 物品栏无空位
+block Item 47443 >= 1 && Item 12401 >0 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002	 
+##有 压力锅 与大豆 物品栏无空位
+block Item 47443 >= 1 && Item 12100 >0 && ItemSpace == 0
+	 ##1100002	\n\n\n\n\n@c物品栏空间不足。	
+	 EndWindow 1100002	 
+#=====================================================================================================	 
+#鲑鱼	11309	咸鱼干	607641	95%	神秘的料理	15312	5%			
+#神圣米	12102	腌鲭鱼寿司	607649	95%	神秘的料理	15312	5%			
+#白菜	12101	泡菜	15314	95%	神秘的料理	15312	5%			
+#牛奶	12401	优格	15315	49%	神圣起司	12501	49%	神秘的料理	15312	2%
+#大豆	12100	纳豆	15316	90%	神秘的料理	15312	5%	神圣油	12503	5%
+#=====================================================================================================
+#1054683	\n\n\n\n@c那就算了！	1
+#1054684	\n\n\n\n@c要把鲑鱼放到压力锅里吗？
+#1054685	\n\n\n\n@c要把神圣米放到压力锅里吗？
+#1054686	\n\n\n\n@c要把白菜放到压力锅里吗？
+#1054687	\n\n\n\n@c要把牛奶放到压力锅里吗？
+#1054688	\n\n\n\n@c要把大豆放到压力锅里吗？
+#1054689	\n\n\n\n@c把食材放进去锅里。
+#1054690	\n\n\n\n@c快速烹调中～～～
+#1054691	\n\n\n\n@c煮好啰！
+#1054692	\n\n\n\n@c你的食材好像不见了	 
+#=======================================================================================================
+##有 鲑鱼
+block Item 47443>=1 && Item 11309>0 
+	 Window 1054684,YES,NO
+	 Window_YES ItemSpace == 0
+	 EndWindow 1100002	 	 
+	 Window_YES Item 11309==0
+	 EndWindow 1054692
+	 
+	 Window_YES Item 47443>=1 && Item 11309>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+	 KillItem 11309,1
+	 SetDur 47443,-1
+	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #607649	95%	神秘的料理
+ 	 GiveLeak1Item (607641%95$1,15312%5$1)
+	
+	 Endblock 
+	 
+	 Window_YES Item 47443>0 && Item 11309>0 
+	 #&& ItemSpace >= 1 
+	 KillItem 11309,1
+	 KillItem 47443,1
+	 GiveLeak1Item (607641%95$1,15312%5$1)	
+	 Endblock
+##=====================	 
+	 
+	 	 	 
+  		 	 
+ ## 有神圣米				
+	Window_NO Item 47443>=1 && Item 12102>0 
+ 		 Window 1054685,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12102==0
+ 	 	 EndWindow 1054692
+ 	 	 Window_YES Item 47443>=1 && Item 12102>0 && ItemSpace >= 1 && ItemDur 47443 > 1			
+	 	 KillItem 12102,1
+ 	 	 SetDur 47443,-1
+ 	 	 Window 1054689,NEXT
+ 	 	 Window 1054690,NEXT
+ 	 	 Window 1054691,OK
+ 	 	 Window_OK
+ 	 	 #腌鲭鱼寿司	607649	95%	神秘的料理
+ 	 	 GiveLeak1Item (607649%95$1,15312%5$1)
+ 	  	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12102>0 && ItemSpace >= 1 
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12102,1
+ 	 
+ 	 	 GiveLeak1Item (607649%95$1,15312%5$1)
+ 	 	 Endblock
+ 	 	 ##有神圣米  有白菜
+	  	 Window_NO Item 47443>=1 && Item 12101>0
+	  	 Window 1054686,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12101==0
+ 	 	 EndWindow 1054692
+	  	 Window_YES Item 47443>=1 && Item 12101>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+	  	 KillItem 12101,1
+	   	 SetDur 47443,-1
+	  	 Window 1054689,NEXT
+	  	 Window 1054690,NEXT
+	  	 Window 1054691,OK
+	  	 Window_OK
+	  	 #泡菜	15314	95%
+	  	 GiveLeak1Item (15314%95$1,15312%5$1)
+ 	 	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12101>0 && ItemSpace >= 1
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12101,1
+ 	
+ 	 	 GiveLeak1Item (15314%95$1,15312%5$1)
+  	 	 Endblock
+	   	 #==有神圣米与与白菜不用,有牛奶
+	   	 Window_NO  Item 47443>=1 && Item 12401>0
+	  	 Window 1054687,YES,NO
+	  	 Window_YES ItemSpace == 0
+	  	 EndWindow 1100002
+	  	 Window_YES Item 12401==0
+	  	 EndWindow 1054692
+	  	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+	  	 KillItem 12401,1
+	  	 SetDur 47443,-1
+	  	 Window 1054689,NEXT
+	  	 Window 1054690,NEXT
+	  	 Window 1054691,OK
+	  	 Window_OK
+	  	 #优格	15315
+	  	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+	  	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12401,1
+ 	
+ 	 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+	 	 Endblock
+	 	 #有神圣米与与白菜 牛奶不用 有大豆	
+	 	 #大豆	12100
+	 	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 	 Window 1054688,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12100==0
+ 	 	 EndWindow 1054692
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 	 KillItem 12100,1
+ 	 	 SetDur 47443,-1
+ 	 	 Window 1054689,NEXT
+ 	 	 Window 1054690,NEXT
+ 	 	 Window 1054691,OK
+ 	 	 Window_OK
+ 	 	 #纳豆
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12100,1
+ 	 	 
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+	 	 Endblock
+	 	 Window_NO
+	 	 EndWindow 1054683
+		 ##有神圣米与与有白菜 没牛乃 有大豆	 
+	 	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 	 Window 1054688,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12100==0
+ 	 	 EndWindow 1054692
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 	 KillItem 12100,1
+ 	 	 SetDur 47443,-1
+ 	 	 Window 1054689,NEXT
+ 	 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #纳豆
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 KillItem 47443,1
+ 	 KillItem 12100,1
+ 	
+ 	
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_NO
+ 	 EndWindow 1054683
+         #####有神圣米与牛奶  没白菜
+         Window_NO Item 47443>=1 && Item 12401>0
+ 	 Window 1054687,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12401==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12401,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #优格	15315
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1
+ 	 KillItem 47443,1
+ 	 KillItem 12401,1
+ 	
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+	 Endblock
+	 #牛奶不用 有大豆	
+	 #大豆	12100
+	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 	 Window 1054688,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12100==0
+ 	 	 EndWindow 1054692
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 	 KillItem 12100,1
+ 	 	 SetDur 47443,-1
+ 	 	 Window 1054689,NEXT
+ 	 	 Window 1054690,NEXT
+ 	 	 Window 1054691,OK
+ 	 	 Window_OK
+ 	 	 #纳豆
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12100,1
+ 	 	 
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+	 	 Endblock
+	 	 Window_NO
+	 	 EndWindow 1054683
+        ##有神圣米与大豆 没白菜与牛奶
+         Window_NO Item 47443>=1 && Item 12100>0
+ 	 Window 1054688,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12100==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12100,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #纳豆
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 KillItem 47443,1
+ 	 KillItem 12100,1
+ 	
+ 	
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_NO
+ 	 EndWindow 1054683
+
+
+	 ##只有神圣米  其他都没有	 
+ 	 Window_NO
+ 	 EndWindow 1054683
+	 	 
+#========================================================================================================== 	  		 	 
+ 	  		 	 
+ ## 有白菜			
+ #白菜	12101	泡菜	15314
+ Window_NO Item 47443>=1 && Item 12101>0
+ 	 Window 1054686,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12101==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12101>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12101,1
+  	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #泡菜	15314	95%
+ 	 GiveLeak1Item (15314%95$1,15312%5$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12101>0 && ItemSpace >= 1
+ 	 KillItem 47443,1
+ 	 KillItem 12101,1
+ 	
+ 	 GiveLeak1Item (15314%95$1,15312%5$1)
+  	 Endblock
+  	 #==有白菜不用,有牛奶
+  	 Window_NO  Item 47443>=1 && Item 12401>0
+ 	 Window 1054687,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12401==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12401,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #优格	15315
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1
+ 	 KillItem 47443,1
+ 	 KillItem 12401,1
+ 	
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+	 Endblock
+	 #有白菜与牛奶不用 有大豆	
+	 #大豆	12100
+	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 	 Window 1054688,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12100==0
+ 	 	 EndWindow 1054692
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 	 KillItem 12100,1
+ 	 	 SetDur 47443,-1
+ 	 	 Window 1054689,NEXT
+ 	 	 Window 1054690,NEXT
+ 	 	 Window 1054691,OK
+ 	 	 Window_OK
+ 	 	 #纳豆
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12100,1
+ 	 	 
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+	 	 Endblock
+	 	 Window_NO
+	 	 EndWindow 1054683
+	 ##有白菜 没牛乃 有大豆	 
+	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 Window 1054688,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12100==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12100,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #纳豆
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 KillItem 47443,1
+ 	 KillItem 12100,1
+ 	
+ 	
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_NO
+ 	 EndWindow 1054683	   	   	 
+
+	 ##只有白菜  其他都没有	 
+ 	 Window_NO
+ 	 EndWindow 1054683	 	 	 
+#============================================================================================================  		 	 
+#有牛奶		
+ #牛奶	12401	优格
+Window_NO Item 47443>=1 && Item 12401>0
+ 	 Window 1054687,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12401==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12401,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #优格	15315
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1
+ 	 KillItem 47443,1
+ 	 KillItem 12401,1
+ 	
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+	 Endblock
+	 #牛奶不用 有大豆	
+	 #大豆	12100
+	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 	 Window 1054688,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12100==0
+ 	 	 EndWindow 1054692
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 	 KillItem 12100,1
+ 	 	 SetDur 47443,-1
+ 	 	 Window 1054689,NEXT
+ 	 	 Window 1054690,NEXT
+ 	 	 Window 1054691,OK
+ 	 	 Window_OK
+ 	 	 #纳豆
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12100,1
+ 	 	 
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+	 	 Endblock
+	 	 Window_NO
+	 	 EndWindow 1054683
+	 ##只有牛奶  其他都没有	 
+ 	 Window_NO
+ 	 EndWindow 1054683	 	 	 
+#============================================================================================================  		 	 
+ # 有大豆	
+ #大豆	12100
+Window_NO Item 47443>=1 && Item 12100>0
+ 	 Window 1054688,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12100==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12100,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #纳豆
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 KillItem 47443,1
+ 	 KillItem 12100,1
+ 	
+ 	
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_NO
+ 	 EndWindow 1054683
+##只有鲑鱼  其他都没有	 
+ 	 Window_NO
+ 	 EndWindow 1054683	 	 	 	 
+#================================================================================================  	
+#================================================================================================  		 	 
+  		 	 
+ ## 有神圣米				
+block Item 47443>=1 && Item 12102>0 
+ 	 Window 1054685,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12102==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12102>0 && ItemSpace >= 1 && ItemDur 47443 > 1			
+	 KillItem 12102,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #腌鲭鱼寿司	607649	95%	神秘的料理
+ 	 GiveLeak1Item (607649%95$1,15312%5$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12102>0 && ItemSpace >= 1 
+ 	 KillItem 47443,1
+ 	 KillItem 12102,1
+ 	 
+ 	 GiveLeak1Item (607649%95$1,15312%5$1)
+ 	 Endblock
+ 	 ##有神圣米  有白菜
+ 	 Window_NO Item 47443>=1 && Item 12101>0
+ 	 Window 1054686,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12101==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12101>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12101,1
+  	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #泡菜	15314	95%
+ 	 GiveLeak1Item (15314%95$1,15312%5$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12101>0 && ItemSpace >= 1
+ 	 KillItem 47443,1
+ 	 KillItem 12101,1
+ 	
+ 	 GiveLeak1Item (15314%95$1,15312%5$1)
+  	 Endblock
+  	 #==有神圣米与与白菜不用,有牛奶
+  	 Window_NO  Item 47443>=1 && Item 12401>0
+ 	 Window 1054687,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12401==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12401,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #优格	15315
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1
+ 	 KillItem 47443,1
+ 	 KillItem 12401,1
+ 	
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+	 Endblock
+	 #有神圣米与与白菜 牛奶不用 有大豆	
+	 #大豆	12100
+	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 	 Window 1054688,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12100==0
+ 	 	 EndWindow 1054692
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 	 KillItem 12100,1
+ 	 	 SetDur 47443,-1
+ 	 	 Window 1054689,NEXT
+ 	 	 Window 1054690,NEXT
+ 	 	 Window 1054691,OK
+ 	 	 Window_OK
+ 	 	 #纳豆
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12100,1
+ 	 	 
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+	 	 Endblock
+	 	 Window_NO
+	 	 EndWindow 1054683
+	 ##有神圣米与与有白菜 没牛乃 有大豆	 
+	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 Window 1054688,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12100==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12100,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #纳豆
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 KillItem 47443,1
+ 	 KillItem 12100,1
+ 	
+ 	
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_NO
+ 	 EndWindow 1054683
+         #####有神圣米与牛奶  没白菜
+         Window_NO Item 47443>=1 && Item 12401>0
+ 	 Window 1054687,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12401==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12401,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #优格	15315
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1
+ 	 KillItem 47443,1
+ 	 KillItem 12401,1
+ 	
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+	 Endblock
+	 #牛奶不用 有大豆	
+	 #大豆	12100
+	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 	 Window 1054688,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12100==0
+ 	 	 EndWindow 1054692
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 	 KillItem 12100,1
+ 	 	 SetDur 47443,-1
+ 	 	 Window 1054689,NEXT
+ 	 	 Window 1054690,NEXT
+ 	 	 Window 1054691,OK
+ 	 	 Window_OK
+ 	 	 #纳豆
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12100,1
+ 	 	 
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+	 	 Endblock
+	 	 Window_NO
+	 	 EndWindow 1054683
+        ##有神圣米与大豆 没白菜与牛奶
+         Window_NO Item 47443>=1 && Item 12100>0
+ 	 Window 1054688,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12100==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12100,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #纳豆
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 KillItem 47443,1
+ 	 KillItem 12100,1
+ 	
+ 	
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_NO
+ 	 EndWindow 1054683
+
+
+	 ##只有神圣米  其他都没有	 
+ 	 Window_NO
+ 	 EndWindow 1054683
+	 	 
+#========================================================================================================== 	  		 	 
+ 	  		 	 
+ ## 有白菜			
+ #白菜	12101	泡菜	15314
+ block Item 47443>=1 && Item 12101>0
+ 	 Window 1054686,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12101==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12101>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12101,1
+  	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #泡菜	15314	95%
+ 	 GiveLeak1Item (15314%95$1,15312%5$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12101>0 && ItemSpace >= 1
+ 	 KillItem 47443,1
+ 	 KillItem 12101,1
+ 	
+ 	 GiveLeak1Item (15314%95$1,15312%5$1)
+  	 Endblock
+  	 #==有白菜不用,有牛奶
+  	 Window_NO  Item 47443>=1 && Item 12401>0
+ 	 Window 1054687,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12401==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12401,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #优格	15315
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1
+ 	 KillItem 47443,1
+ 	 KillItem 12401,1
+ 	
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+	 Endblock
+	 #有白菜与牛奶不用 有大豆	
+	 #大豆	12100
+	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 	 Window 1054688,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12100==0
+ 	 	 EndWindow 1054692
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 	 KillItem 12100,1
+ 	 	 SetDur 47443,-1
+ 	 	 Window 1054689,NEXT
+ 	 	 Window 1054690,NEXT
+ 	 	 Window 1054691,OK
+ 	 	 Window_OK
+ 	 	 #纳豆
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12100,1
+ 	 	 
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+	 	 Endblock
+	 	 Window_NO
+	 	 EndWindow 1054683
+	 ##有白菜 没牛乃 有大豆	 
+	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 Window 1054688,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12100==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12100,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #纳豆
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 KillItem 47443,1
+ 	 KillItem 12100,1
+ 	
+ 	
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_NO
+ 	 EndWindow 1054683	   	   	 
+
+	 ##只有白菜  其他都没有	 
+ 	 Window_NO
+ 	 EndWindow 1054683	 	 	 
+#============================================================================================================  		 	 
+#有牛奶		
+ #牛奶	12401	优格
+block Item 47443>=1 && Item 12401>0
+ 	 Window 1054687,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12401==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12401,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #优格	15315
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12401>0 && ItemSpace >= 1
+ 	 KillItem 47443,1
+ 	 KillItem 12401,1
+ 	
+ 	 GiveLeak1Item (15315%49$1,12501%49$1,15312%2$1)
+	 Endblock
+	 #牛奶不用 有大豆	
+	 #大豆	12100
+	 Window_NO Item 47443>=1 && Item 12100>0
+ 	 	 Window 1054688,YES,NO
+ 	 	 Window_YES ItemSpace == 0
+ 	 	 EndWindow 1100002
+ 	 	 Window_YES Item 12100==0
+ 	 	 EndWindow 1054692
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 	 KillItem 12100,1
+ 	 	 SetDur 47443,-1
+ 	 	 Window 1054689,NEXT
+ 	 	 Window 1054690,NEXT
+ 	 	 Window 1054691,OK
+ 	 	 Window_OK
+ 	 	 #纳豆
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 	 Endblock
+ 	 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 	 KillItem 47443,1
+ 	 	 KillItem 12100,1
+ 	 	 
+ 	 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+	 	 Endblock
+	 	 Window_NO
+	 	 EndWindow 1054683
+	 ##只有牛奶  其他都没有	 
+ 	 Window_NO
+ 	 EndWindow 1054683	 	 	 
+#============================================================================================================  		 	 
+ # 有大豆	
+ #大豆	12100
+block Item 47443>=1 && Item 12100>0
+ 	 Window 1054688,YES,NO
+ 	 Window_YES ItemSpace == 0
+ 	 EndWindow 1100002
+ 	 Window_YES Item 12100==0
+ 	 EndWindow 1054692
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 && ItemDur 47443 > 1
+ 	 KillItem 12100,1
+ 	 SetDur 47443,-1
+ 	 Window 1054689,NEXT
+ 	 Window 1054690,NEXT
+ 	 Window 1054691,OK
+ 	 Window_OK
+ 	 #纳豆
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_YES Item 47443>=1 && Item 12100>0 && ItemSpace >= 1 
+ 	 KillItem 47443,1
+ 	 KillItem 12100,1
+ 	
+ 	
+ 	 GiveLeak1Item (15316%90$1,12503%5$1,15312%2$1)
+ 	 Endblock
+ 	 Window_NO
+ 	 EndWindow 1054683
+	 

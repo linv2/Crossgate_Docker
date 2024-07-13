@@ -1,0 +1,271 @@
+#
+#用永市□仁元跟晶
+#
+
+############## ㄠ羁手匀化月 ##############
+block Item 19577 >= 1
+#\n\n﹛ㄠ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 300,000 Gold匹允﹝晶嗯仄引允井〝
+	Window 14796,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 700001
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19577 >= 1
+	KillItem 19577
+	AddGold 300000
+
+############## ㄡ羁手匀化月 ##############
+block Item 19578 >= 1
+#\n\n﹛ㄡ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 50,000 Gold匹允﹝晶嗯仄引允井〝
+	Window 14800,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 950001
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19578 >= 1
+	KillItem 19578
+	AddGold 50000
+
+############## ㄢ羁手匀化月 ##############
+block Item 19579 >= 1
+#\n\n﹛ㄢ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 5,000 Gold匹允﹝晶嗯仄引允井〝
+	Window 14801,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 995001
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19579 >= 1
+	KillItem 19579
+	AddGold 5000
+
+############## ㄣ羁手匀化月 ##############
+block Item 19580 >= 1
+#\n\n﹛ㄣ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 2,500 Gold匹允﹝晶嗯仄引允井〝
+	Window 14802,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 997501
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19580 >= 1
+	KillItem 19580
+	AddGold 2500
+
+############## ㄤ羁手匀化月 ##############
+block Item 19581 >= 1
+#\n\n﹛ㄤ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 500 Gold匹允﹝晶嗯仄引允井〝
+	Window 14803,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 999501
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19581 >= 1
+	KillItem 19581
+	AddGold 500
+
+############## ㄥ羁手匀化月 ##############
+block Item 19582 >= 1
+#\n\n﹛ㄥ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 50 Gold匹允﹝晶嗯仄引允井〝
+	Window 14804,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 999951
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19582 >= 1
+	KillItem 19582
+	AddGold 50
+
+##########﹛条木凶用永市□仁元域羁毛儅匀化中月﹛##########
+block Item 18289 >= 1
+#\n\n﹛选坌午条木凶仁元匹允友﹝\n仇木匹反癫蓟仄化中月井升丹井歹井曰引六氏友﹝\n漆椎烂卞荚仄引允及匹剂★云谨切#票今中引六
+	Window 20646,OK
+
+	Window_OK Item 18289 >= 1
+	KillItem 18289
+#\n\n﹛＿＿＿＿＿\n\n﹛愈嗤升丹匹允〝＿＿\n\n﹛＿＿＿＿\n\n﹛尕滔竣匹允方友﹝\n\n﹛＿＿＿
+	Window 20647,NEXT
+
+#\n\n﹛允中引六氏云谨凶六仄引仄凶﹝\n﹛燮蠢及仁元及锳绊互歹井曰引仄凶﹝
+	Window 20648,NEXT
+
+#\n\n﹛云匀″云匀℅℅℅″″
+	Window 20649,OK
+	Window_OK
+	GiveItem 19577
+#\n\n﹛ㄠ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 300,000 Gold匹允﹝晶嗯仄引允井〝
+	Window 14796,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 700001
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19577 >= 1
+	KillItem 19577
+	AddGold 300000
+
+##########﹛条木凶用永市□仁元瓦羁毛儅匀化中月﹛##########
+block Item 18290 >= 1
+#\n\n﹛选坌午条木凶仁元匹允友﹝\n仇木匹反癫蓟仄化中月井升丹井歹井曰引六氏友﹝\n漆椎烂卞荚仄引允及匹剂★云谨切#票今中引六
+	Window 20646,OK
+
+	Window_OK Item 18290 >= 1
+	KillItem 18290
+#\n\n﹛＿＿＿＿＿\n\n﹛愈嗤升丹匹允〝＿＿\n\n﹛＿＿＿＿\n\n﹛尕滔竣匹允方友﹝\n\n﹛＿＿＿
+	Window 20647,NEXT
+
+#\n\n﹛允中引六氏云谨凶六仄引仄凶﹝\n﹛燮蠢及仁元及锳绊互歹井曰引仄凶﹝
+	Window 20648,NEXT
+
+#\n\n﹛云匀″云匀℅℅℅″″
+	Window 20649,OK
+	Window_OK
+	GiveItem 19578
+#\n\n﹛ㄡ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 50,000 Gold匹允﹝晶嗯仄引允井〝
+	Window 14800,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 950001
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19578 >= 1
+	KillItem 19578
+	AddGold 50000
+
+##########﹛条木凶用永市□仁元赶羁毛儅匀化中月﹛##########
+block Item 18291 >= 1
+#\n\n﹛选坌午条木凶仁元匹允友﹝\n仇木匹反癫蓟仄化中月井升丹井歹井曰引六氏友﹝\n漆椎烂卞荚仄引允及匹剂★云谨切#票今中引六
+	Window 20646,OK
+
+	Window_OK Item 18291 >= 1
+	KillItem 18291
+#\n\n﹛＿＿＿＿＿\n\n﹛愈嗤升丹匹允〝＿＿\n\n﹛＿＿＿＿\n\n﹛尕滔竣匹允方友﹝\n\n﹛＿＿＿
+	Window 20647,NEXT
+
+#\n\n﹛允中引六氏云谨凶六仄引仄凶﹝\n﹛燮蠢及仁元及锳绊互歹井曰引仄凶﹝
+	Window 20648,NEXT
+
+#\n\n﹛云匀″云匀℅℅℅″″
+	Window 20649,OK
+	Window_OK
+	GiveItem 19579
+#\n\n﹛ㄢ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 5,000 Gold匹允﹝晶嗯仄引允井〝
+	Window 14801,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 995001
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19579 >= 1
+	KillItem 19579
+	AddGold 5000
+
+##########﹛条木凶用永市□仁元铨羁毛儅匀化中月﹛##########
+block Item 18292 >= 1
+#\n\n﹛选坌午条木凶仁元匹允友﹝\n仇木匹反癫蓟仄化中月井升丹井歹井曰引六氏友﹝\n漆椎烂卞荚仄引允及匹剂★云谨切#票今中引六
+	Window 20646,OK
+
+	Window_OK Item 18292 >= 1
+	KillItem 18292
+#\n\n﹛＿＿＿＿＿\n\n﹛愈嗤升丹匹允〝＿＿\n\n﹛＿＿＿＿\n\n﹛尕滔竣匹允方友﹝\n\n﹛＿＿＿
+	Window 20647,NEXT
+
+#\n\n﹛允中引六氏云谨凶六仄引仄凶﹝\n﹛燮蠢及仁元及锳绊互歹井曰引仄凶﹝
+	Window 20648,NEXT
+
+#\n\n﹛云匀″云匀℅℅℅″″
+	Window 20649,OK
+	Window_OK
+	GiveItem 19580
+#\n\n﹛ㄣ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 2,500 Gold匹允﹝晶嗯仄引允井〝
+	Window 14802,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 997501
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19580 >= 1
+	KillItem 19580
+	AddGold 2500
+
+##########﹛条木凶用永市□仁元诡羁毛儅匀化中月﹛##########
+block Item 18293 >= 1
+#\n\n﹛选坌午条木凶仁元匹允友﹝\n仇木匹反癫蓟仄化中月井升丹井歹井曰引六氏友﹝\n漆椎烂卞荚仄引允及匹剂★云谨切#票今中引六
+	Window 20646,OK
+
+	Window_OK Item 18293 >= 1
+	KillItem 18293
+#\n\n﹛＿＿＿＿＿\n\n﹛愈嗤升丹匹允〝＿＿\n\n﹛＿＿＿＿\n\n﹛尕滔竣匹允方友﹝\n\n﹛＿＿＿
+	Window 20647,NEXT
+
+#\n\n﹛允中引六氏云谨凶六仄引仄凶﹝\n﹛燮蠢及仁元及锳绊互歹井曰引仄凶﹝
+	Window 20648,NEXT
+
+#\n\n﹛云匀″云匀℅℅℅″″
+	Window 20649,OK
+	Window_OK
+	GiveItem 19581
+#\n\n﹛ㄤ羁癫蓟云户匹午丹仍介中引允″\n﹛滔圴反 500 Gold匹允﹝晶嗯仄引允井〝
+	Window 14803,YES,NO
+	Window_NO
+#\n\n﹛引凶升丹冗﹝
+	EndWindow 14797,OK
+	Window_YES Gold >= 999501
+#\n\n﹛公木动晓手化引六氏方﹝
+	EndWindow 14798,OK
+	Window_YES
+#\n\n﹛丐曰互午丹仍介中引仄凶﹝
+	Window 14799,OK
+	Window_OK Item 19581 >= 1
+	KillItem 19581
+	AddGold 500
+
+############## 升木手手匀化卅中 ##############
+block
+#\n\n﹛仇仇反癫凶曰用永市□仁元及跟晶赭匹允﹝
+	EndWindow 14805,OK
+

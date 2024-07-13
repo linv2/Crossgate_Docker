@@ -1,0 +1,15 @@
+#勒衔樊呿朿迕??? 犯奴弘戚牬
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+####### 甩件弁〃失伙由生 ########
+block
+ window 21182,next
+ window 21183,next
+ window 21184,OK
+  window_OK ItemSpace != 0
+   giveitem 18640
+   warp 0,400,304,429
+  window_OK
+   Endwindow 21187

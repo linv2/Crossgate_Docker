@@ -1,0 +1,52 @@
+#?ÞÎ??
+
+#???????Øµ???Û¡??úù?ÖÃ???Ö±
+block EndEvent 112 == 1 && Item 16369 >= 1
+	Window 22281,Next
+	Window 22198,OK
+		Window_OK EndEvent 112 == 1 && Item 16369 >= 1
+			KillItemAll 16369
+			GiveItem 16362,1
+			EndEvent 112 = 0
+			LeaveGroup
+			Warp 0,33500,22,28
+
+#???????Øµ?
+block EndEvent 112 == 1
+	Window 22198,OK
+		Window_OK
+			EndEvent 112 = 0
+			LeaveGroup
+			Warp 0,33500,22,28
+
+#þ°???????????
+block Item 16364 >= 1
+	EndWindow 22265,OK
+
+#?¢O?ûªýß???
+block Item 16366 >= 1
+	EndWindow 22265,OK
+
+#?????þ­??
+block NowEvent 112 == 1
+	Window 22199,Next
+	Window 22200,Next
+	Window 22201,YES
+		Window_YES ItemSpace == 0
+			EndWindow 10000,OK
+		Window_YES
+			Window 22264,OK
+				Window_OK
+					GiveItem 16366,1
+
+
+#??????????
+block EndEvent 58 == 1
+	EndWindow 22202,OK
+
+#?????þ­??
+block NowEvent 111 == 1
+	EndWindow 22203,OK
+
+block
+	EndWindow 22204,OK

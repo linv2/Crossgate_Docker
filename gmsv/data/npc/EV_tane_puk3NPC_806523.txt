@@ -1,0 +1,31 @@
+#PUK3卞亢支井仄NPC﹛﹛??﹛凶友
+#
+#﹛﹛﹛尝珇栋咥敢A及摒
+
+###
+
+block Trialflg == 8
+	Window 3203265,NEXT
+
+		#\n\n﹛仇及燮反﹜甲件丢伙平件玄尺轾井丹蔷及远顺午\n﹛卅匀化云曰引允﹝\n﹛甲件丢伙平件玄尺及境垫凛棉反3坌﹜\n﹛蔷铙反500?匹允﹝
+	Window 3203266,YES,NO
+
+		#\n\n\n\n@c蔷铙毛障囮匀化﹜远顺尺じ曰引允井〝
+
+		Window_NO
+
+		Window_YES Gold < 500
+			EndWindow 3203267
+
+		#\n\n﹛酸ゴ匹允互﹜赭儅嗯互箫曰引六氏﹝
+
+		Window_YES
+			AddGold -500
+			LeaveGroup
+			Warp 0,59527,20,19
+
+
+
+block
+#\n\n﹛萧仄沭丐曰引六氏互﹜仇仇反蜇箕鼎仪酦匹允﹝渣莴匹允及匹丐引曰嗤勿井卅中匹仁分今中﹝
+	EndWindow 15528,OK

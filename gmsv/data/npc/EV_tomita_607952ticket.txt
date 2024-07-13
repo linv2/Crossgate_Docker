@@ -1,0 +1,20 @@
+#﹛螃鹧蟆垫五伐□皿痹﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛螃鹧蟆垫五伐□皿痹及摒
+
+block Trialflg >= 7
+	Window 4200014,YES,NO
+###	Window "\n\n﹛?杅及螃鹧卞扚井木月支〝",YES,NO
+
+		Window_YES
+			KillItem 607952,1,(3007204)
+			LeaveGroup
+			Warp 0,59520,174,63
+
+		Window_NO
+
+
+block
+###	EndWindow "\n\n﹛が﹜?及哗尺扚仁凤伞毛肣六内﹝"
+
+

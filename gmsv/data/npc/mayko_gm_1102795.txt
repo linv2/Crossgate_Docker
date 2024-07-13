@@ -1,0 +1,30 @@
+##mayko_gm_1102795.txt 王宫侍女小竹
+
+block endevent 169 == 1 
+#1111799	\n\n\n\n@c欢迎来到艾尔巴尼亚王国。	1
+	endwindow 1111799
+
+
+
+
+block item 41307 >0 || item 41306 >0 || item 41308 >0 || item 41309 >0 
+	endwindow 1111818
+
+ block endevent 167 == 1
+#1111814	\n\n\n\n@c有人说公主到流放之地去了。
+#1111815	\n\n\n\n@c这怎么可能，艾尔玛殿下可是一国的储君呀～～
+#1111816	\n\n\n\n@c不好意思得麻烦你。
+#1111817	\n\n\n　　　　是这样的，\n　　　　日前听说有人在锡德斐尼基看到艾尔玛殿下，\n　　　　可否麻烦你帮我确认。
+#block
+	Window 1111814,next
+	Window 1111815,next
+	Window 1111816,next
+	GiveLeak1Item  41307,1
+	endwindow 1111817
+	
+	
+	
+	
+##无春樱第五勋
+block 
+endwindow 1111825

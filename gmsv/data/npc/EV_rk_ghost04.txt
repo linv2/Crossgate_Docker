@@ -1,0 +1,17 @@
+#?üÓתצ????
+
+#
+block
+	Window 22352,Next
+	Window 22358,Next
+	Window 22359,YES,NO
+		Window_YES
+			Window 22360,OK
+				Window_OK
+				LeaveGroup
+				Warp 0,46012,12,12
+		Window_NO
+		Window 22361,OK
+				Window_OK
+				LeaveGroup
+				Warp 0,46012,12,12

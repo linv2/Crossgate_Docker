@@ -1,0 +1,106 @@
+#魔物制作师	0	1102525
+#32279	21	3
+#mayko_gm_1102525.txt
+
+	
+#1110332	\n\n\n　　我现在在试作金属狮子，\n　　你想要就帮我准备材料吧。	1
+#1110333	\n\n\n\n@c帮我准备一组金条跟一组白金条吧！！	1
+#1110334	\n\n\n　　　　材料好了！！\n　　　　请等一下！！	1
+#1110335	\n\n\n　　　　唉～～\n　　　　真的少狮子心就有差	1
+#1110336	\n\n\n　　　　如果你愿意！\n　　　　请帮我找狮子心的材料吧！！	1
+#1110337	\n\n\n\n@c请帮我找狮子心的材料吧！！	1
+#1110338	\n\n\n　　　　喔喔～～\n　　　　你找到材料了！！	1
+#1110339	\n\n　　你确定要用\n　　喜马拉斯矿条20＋七叶树20＋神眼＋芝麻娃娃\n　　这组材料吗？	1
+#1110340	\n\n　　　你确定要用\n　　　铝1+妖精锦囊+麻1\n　　　这组材料吗？	1
+#1110341	\n\n　　　你确定要用\n　　　陶土+鹿皮+茱萸木\n　　　这组材料吗？	1
+#1110342	\n\n\n　　　呼～～\n　　　终于成功了～～	1
+#1110343	\n\n\n　　　你只要吹奏这把风之琴，\n　　　就可以召唤出风兽了！	1
+#1053059	\n\n\n\n@c你的东西怎么少了！想丢地帮人作弊吗！	1
+#1109452	\n\n\n\n@c那就算了！	1
+
+block Item 47622>0
+	 EndWindow 1110343
+#木材？	茱萸木	10100
+#鹿皮？	鹿皮	18211
+#土？	陶土	47633
+block Item 41015>0 && Item 10100>0 && Item 18211>0 && Item 47633>0
+	 Window 1110338,NEXT
+	 Window 1110341,YES,NO
+	 Window_YES Item 41015>0 && Item 10100>0 && Item 18211>0 && Item 47633>0
+	 KillItem 10100,1
+	 KillItem 18211,1
+	 KillItem 47633,1
+	 ##取得物品
+	 KillItem 41015,1
+	 GiveLeak1Item 47622,1
+	 Window 1110342,NEXT
+	 EndWindow 1110343
+	 Window_YES 
+	 EndWindow 1053059	 
+	 Window_NO
+	 EndWindow 1109452	 
+
+#矿石？	铝	9708
+#妖精锦囊	47648
+#麻		40738
+block Item 41015>0 && Item 9708>0 && Item 47648>0 && Item 40738>0
+	 Window 1110338,NEXT
+	 Window 1110340,YES,NO
+	 Window_YES Item 41015>0 && Item 9708>0 && Item 47648>0 && Item 40738>0
+	 KillItem 9708,1
+	 KillItem 47648,1
+	 KillItem 40738,1
+	 ##取得物品
+	 KillItem 41015,1
+	 GiveLeak1Item 47622,1
+	 Window 1110342,NEXT
+	 EndWindow 1110343
+	 Window_YES 
+	 EndWindow 1053059	 
+	 Window_NO
+	 EndWindow 1109452	 
+
+#矿石？	喜马拉斯矿条		9642
+#香料？	七叶树			12809
+#肉？	芝麻娃娃		11311
+#眼？	神眼			18443
+
+block Item 41015>0 && Item 9642>19  && Item 12809>19 && Item 11311 > 0 && Item 18443>0     
+	 Window 1110338,NEXT
+	 Window 1110339,YES,NO
+	 Window_YES Item 41015>0 && Item 9642>19 && Item 12809>19 && Item 11311>0 && Item 18443>0    
+	 KillItem 18443,1
+	 KillItem 11311,1
+	 KillItem 12809,20
+	 KillItem 9642,20
+	 ##取得物品
+	 KillItem 41015,1
+	 GiveLeak1Item 47622,1
+	 Window 1110342,NEXT
+	 EndWindow 1110343
+	 Window_YES 
+	 EndWindow 1053059	 
+	 Window_NO
+	 EndWindow 1109452
+
+block Item 41015>0
+	 EndWindow 1110337
+block Item 41014>0 && Item 9615>19 && Item 9616 >19
+	 Window 1110334,OK
+	 Window_OK Item 41014>0 && Item 9615>19 && Item 9616 >19
+	 KillItem 41014,1
+	 KillItem 9615,20
+	 KillItem 9616,20
+	 GiveLeak1Item 41015,1
+	 Window 1110335,NEXT
+	 EndWindow 1110336
+	 Window_OK 
+	 EndWindow 1053059
+block Item 41014>0
+	 EndWindow 1110333
+block
+	 Window 1110332,NEXT
+	 GiveLeak1Item 41014,1
+	 EndWindow 1110333
+	 
+	 

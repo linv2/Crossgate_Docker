@@ -1,0 +1,20 @@
+#鼠王福袋	mayko_item_47740.txt
+#招财猫扑满一个，鼠王宝石的碎片LV2一个，替身娃娃B型一个，替身娃娃A型一个。
+
+
+
+block ItemSpace < 4
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	  EndWindow 1100001
+block 
+	  Window 1055851,YES,NO
+	 #1055851	\n\n\n\n@c你要打开福袋吗？	1
+	  Window_YES
+	  KillItem 47740,1
+	  GiveLeak1Item 47540,1
+	  GiveLeak1Item 40949,1
+	  GiveLeak1Item 47175,1
+	  GiveLeak1Item 40841,1
+	  Window_NO
+	  endblock
+	 

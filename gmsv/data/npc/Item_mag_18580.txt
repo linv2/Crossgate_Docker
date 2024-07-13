@@ -1,0 +1,14 @@
+#
+#伙申及沶窜﹋白伉失示夫旦﹌
+#
+
+##############  ##############
+block
+#\n\n\n\n@c﹛伄及沶窜毛银中引允井〝
+	Window 15368,YES,NO
+	Window_YES
+	KillItem 18580,1,(15252)
+	LeaveGroup
+	Warp 0,20508,45,47
+	Window_NO
+

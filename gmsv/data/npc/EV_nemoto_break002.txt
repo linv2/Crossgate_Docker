@@ -1,0 +1,45 @@
+###################################
+# 皮伊奶弁旦平伙弁巨      by 漪呿 #
+# ←伊瓦□←                      #
+###################################
+
+#### ≦敛中扲檗≧引凶反≦毡中扲檗≧毛赭儅
+block Item 622068 >= 1 || Item 622069 >= 1
+
+	GoToF case1
+Endblock
+
+
+#### ≦敛中扲檗≧引凶反≦毡中扲檗≧毛尕赭儅
+block
+	Window 3219644,OK
+
+		#\n\n﹛方仁侳凶生″\n﹛公木元扎穴术反\n﹛ㄠ蜊杴及扲檗毛丐仆月亥件″
+
+		Window_OK Itemspace == 0
+			EndWindow 3219645
+
+		#\n\n﹛氏〝\n﹛公木动晓儅化卅中心凶中分亥件﹝
+
+		Window_OK Item 622068 >= 1 || Item 622069 >= 1
+
+			GoToF case1
+			Endblock
+
+		Window_OK
+			GiveLeak1Item (622068%50$1,622069%50$1)
+			LeaveGroup
+			warp 0,59883,221,243
+Endblock
+
+
+
+
+*case1*
+
+	KillItemAll 622068
+	KillItemAll 622069
+	EndWindow 3219646
+
+		#\n\n﹛氏〝\n﹛瓜件犯手丹扲檗儅匀化月用件〝\n﹛术伙匀仇中戊玄仄切扎蛲杴分亥件﹝
+

@@ -1,0 +1,15 @@
+#####储藏室的门wiz_gm_1101844.txt
+
+#有储藏室的钥匙
+block Item 40281 >= 1
+	 Window 1101941,YES,NO
+	 ##1101941	\n\n  要用钥匙把门开起来，然后进去找找看吗？	1
+	 	 Window_NO
+	 	 Window_YES
+	 	 	 KillItem 40281
+	 	 	 Warp 0,32030,10,2
+
+#一般
+block
+	 EndWindow 1101942
+	 ##1101942	\n\n\n  这个门锁起来了。	1

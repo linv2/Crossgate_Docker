@@ -1,0 +1,12 @@
+##########德威特调奶茶wiz_item_40338.txt
+
+####一般
+block
+	 Window 1102293,YES,NO
+	 ##1102293	\n\n\n  要吃下去吗？
+	 Window_YES Item 40338 >= 1
+	 	 KillItem 40338
+	 	 ##失去德威特调奶茶
+	 	 GiveLeak1Item 40342
+	 	 ##得到晚上打扫要诀
+	 Window_NO

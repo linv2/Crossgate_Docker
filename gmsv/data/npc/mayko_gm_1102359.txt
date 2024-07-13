@@ -1,0 +1,11 @@
+#Event	轮回之间	0	1102359	mayko_gm_1102359.txt
+#Event	轮回之间	0	1102360	mayko_gm_1102359.txt
+																
+#1109563	\n\n\n@c轮回之间
+#1109564	\n\n\n　　　此室女帝，\n　　　均研究魔法装置终老。
+
+
+block
+	 Window 1109563,NEXT
+	 EndWindow 1109564
+	 

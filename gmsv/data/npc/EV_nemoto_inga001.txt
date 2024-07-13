@@ -1,0 +1,122 @@
+###############################
+# 绒衔用芡旦平伙弁巨  by 漪呿 #
+# ←瓜伉立﹋弁巨钒铵﹌←      #
+###############################
+
+#### ≦毡中夫它末弁≧﹜≦扲及豭≧毛徆杅赭儅
+block Item 622035 >= 1 && Item 622037 >= 1
+	Window 3207582,OK
+
+		#\n\n﹛儅匀化五化票今匀凶氏匹允友﹝\n﹛丐曰互午丹仍介中引允﹝\n﹛公木匹反﹜仇切日尺升丹冗﹝
+
+######## 晓筏失奶泛丞及升切日井互壅尹凶
+		Window_OK Item 622035 == 0 || Item 622037 == 0
+			EndWindow 3207583
+
+		#\n\n﹛引丑″术伙反中仃引六氏友﹝
+
+######## 晓筏失奶泛丞毛匋璋仄﹜旦平伙穴旦正□蟆尺
+		Window_OK
+			KillItemAll 622035
+			KillItemAll 622037
+			LeaveGroup
+			warp 0,59852,106,64
+
+Endblock
+
+#### ≦ヶ中夫它末弁≧﹜≦瑹及豭≧毛徆杅赭儅
+block Item 622036 >= 1 && Item 622038>= 1
+	Window 3207584,OK
+
+		#\n\n﹛儅匀化五化票今匀凶氏匹允友﹝\n﹛丐曰互午丹仍介中引允﹝\n﹛公木匹反﹜仇切日尺升丹冗﹝
+
+######## 晓筏失奶泛丞及升切日井互壅尹凶
+		Window_OK Item 622036 == 0 || Item 622038 == 0
+			EndWindow 3207585
+
+		#\n\n﹛引丑″术伙反中仃引六氏友﹝
+
+######## 晓筏失奶泛丞毛匋璋仄﹜旦平伙穴旦正□蟆尺
+		Window_OK
+			KillItemAll 622036
+			KillItemAll 622038
+			LeaveGroup
+			warp 0,59852,106,64
+
+Endblock
+
+
+
+
+#### ≦毡中夫它末弁≧及心赭儅
+block Item 622035 >= 1
+	EndWindow 3207586
+
+		#\n\n﹛公及夫它末弁反﹜\n﹛≦扲及豭≧互じ匀化中月扲?毛钒仃月凶户及\n﹛萼卞卅匀化中引允﹝\n﹛尹〝≦扲及豭≧互丐月桦赭匹允井〝\n﹛割井仇仇方曰晓及闭分匀凶午合中引允互＿＿﹝
+
+#### ≦ヶ中夫它末弁≧及心赭儅
+block Item 622036 >= 1
+	EndWindow 3207587
+
+		#\n\n﹛公及夫它末弁反﹜\n﹛≦瑹及豭≧互じ匀化中月扲?毛钒仃月凶户及\n﹛萼卞卅匀化中引允﹝\n﹛尹〝≦瑹及豭≧互丐月桦赭匹允井〝\n﹛割井仇仇方曰票及闭分匀凶午合中引允互＿＿﹝
+
+#### ≦扲及豭≧及心赭儅
+block Item 622037 >= 1
+	EndWindow 3207588
+
+		#\n\n﹛公木反﹜仇及显卞丐月扲及桦赭互\n﹛筏课今木化中月哗豭匹允友﹝\n﹛扲茧仄匹手卅今月云勾手曰匹允井〝\n﹛沓艘手锳厌匹允互﹜\n﹛褥及荚曰及迋阂毛\n﹛橘卞ト干仄化云仁仇午毛云薯户仄引允友﹝
+
+#### ≦瑹及豭≧及心赭儅
+block Item 622038 >= 1
+	EndWindow 3207589
+
+		#\n\n﹛公木反﹜仇及显卞丐月瑹及桦赭互\n﹛筏课今木化中月哗豭匹允友﹝\n﹛卅氏化迕艘蕉中杅卅氏匹仄斤丹﹝\n﹛匹允互﹜枌虫拑中匹允友﹝\n﹛公及镗啦恘毛﹜扲茧仄卞匹手轾仃木壬\n﹛域睄灿嗯反棉啜中卅中匹仄斤丹卞﹝
+
+
+
+
+#### 晓筏动陆
+block
+	Window 3207590,NEXT
+
+		#\n\n﹛仇及燮匹反﹜髑填驯五及筑杅卞分仃﹜\n﹛奶民左扑及绖毛鳗牖仄化中引允﹝\n﹛匹允互﹜壑及酦儅切勾儅凶木勾﹝\n﹛燮卞台及俇心毛妏中化赡五引允﹝\n﹛公丹匹允友﹜\n﹛引内反仇氏卅拺尹狪反中井互匹仄斤丹﹝
+
+	Window 3207591,NEXT
+
+		#\n\n﹛漆﹜筑杅及杴及蟆卞﹜\n﹛厘五卅扲?午凝今卅扲?互丐曰引允﹝\n﹛升切日井﹜弅杅仄井钒仃日木卅中午仄引仄斤丹﹝
+	Window 3207592,YES,NO
+
+		#\n\n﹛筑杅反﹜升仇井匹妏中凶樯狪及方丹卞﹜\n﹛厘五卅扲?卞反五匀午\n﹛窒井恌仁卅中坁互じ匀化中月﹜午﹜\n﹛公氏卅氘卞合匀化﹜\n﹛凝今卅扲?毛钒仃月及匹反卅中匹仄斤丹井〝
+
+
+######## YES蓟枪匹﹜≦毡中夫它末弁≧毛芨尹月
+		Window_YES Itemspace == 0
+			EndWindow 3207593
+
+		#\n\n﹛丐日﹜\n﹛云欐仄仄凶中坁互丐月及匹允互﹜\n﹛公木动晓反儅化卅中心凶中匹允友﹝
+
+
+		Window_YES
+			GiveLeak1Item 622035,1
+			EndWindow 3207594
+
+		#\n\n﹛叶抸匹丐月午蜕中凶中午仇欠匹允互﹜\n﹛丐卅凶卞反剂仄佹莴艘互箫曰卅中方丹匹允友﹝\n﹛公氏卅筑杅卞反﹜\n﹛≦扲及豭≧毛儅匀化五化赡五引仄斤丹﹝\n\n﹛今丑﹜仇及夫它末弁毛儅匀化\n﹛茧仄卞垫匀化五化仁分今中友﹝
+
+
+######## NO蓟枪匹﹜≦ヶ中夫它末弁≧毛芨尹月
+		Window_NO Itemspace == 0
+			EndWindow 3207595
+
+		#\n\n﹛丐日﹜\n﹛云欐仄仄凶中坁互丐月及匹允互﹜\n﹛公木动晓反儅化卅中心凶中匹允友﹝
+
+
+		Window_NO
+			GiveLeak1Item 622036,1
+			Endwindow 3207596
+
+		#\n\n﹛戏午韶午反刓峚域虫及手及﹝\n﹛筑杅反﹜手丹剂仄\n﹛愤坌及褥毛副元月屯五卅及匹反﹝\n﹛公氏卅筑杅卞反﹜\n﹛≦瑹及豭≧毛儅匀化五化赡五引仄斤丹﹝\n\n﹛今丑﹜仇及夫它末弁毛儅匀化\n﹛茧仄卞垫匀化五化仁分今中友﹝
+
+
+
+
+

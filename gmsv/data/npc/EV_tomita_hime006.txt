@@ -1,0 +1,49 @@
+#﹛戽木厄蕨及?辉﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛牁谛﹋巨件犯奴件弘﹌及摒
+
+###﹛由□泛奴毛赚氏匹中月
+
+block Group >= 2
+
+	EndWindow 3200496
+		#\n\n﹛歹仄反﹜夫午曰夫午曰卞云斪互蜕中凶中﹝\n﹛夫午曰内勾侳化云仁木﹝
+
+
+###﹛奶乩伉件弘毛儅匀化中月
+
+block Item_603000 >= 1
+	EndWindow 3200497
+		#\n\n﹛匹反﹜云斪毛＿云支﹜手丹欐仄化丐月卅﹝\n﹛升丹手愈嗤﹜坁侉木互反仆仄仁化中井氏﹝
+
+
+###﹛绂坁卞坞五互丐月
+
+block ItemSpace >= 1
+	Window 3200498,OK
+		#\n\n﹛方仁冗脱互伀毛踞仃化仁木凶﹝\n﹛勾引日厄坁分互﹜云斪毛丐仆方丹﹝\n﹛丐曰互午丹﹝公仄化今日壬元扎″
+
+		Window_OK Group < 2 && ItemSpace >= 1
+			GiveItemEX 603000,1,3200499
+		#\n\n﹛云支﹜绂坁互中匀天中匹反欐六氏冗﹝
+			Warp 0,59502,196,52
+
+		Window_OK ItemSpace >= 1
+			EndWindow 3200500
+		#\n\n﹛午﹜蜕中凶中午仇欠分互﹜夫午曰内勾元扎″\n﹛窒蘸手⑺元仇午毛蜕歹六氏匹仁木﹝
+
+		Window_OK
+			EndWindow 3200501
+		#\n\n﹛＿及勾手曰分匀凶互﹜云斪互欐六氏﹝\n﹛市永戊鬼仁化漱月匹反卅中井﹝
+
+
+###﹛绂坁互中匀天中
+
+block
+	EndWindow 3200502
+		#\n\n﹛方仁冗伀毛踞仃化仁木凶﹝\n﹛云斪毛欐仄凶中井日﹜绂坁毛帮咥仄化仁木氏井﹝
+
+
+EndBlock
+
+

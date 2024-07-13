@@ -1,0 +1,226 @@
+##食神料理大赛
+##铁人级考官
+##单独ㄧ人
+block Group > 1
+	 ##1052561	\n\n  为了公平起见请一个人参加。	1
+	 LeaveGroup
+	 
+##考题时间时间
+block ItemCreateTime 46382 >= 1 || ItemCreateTime 46383 >= 1 || ItemCreateTime 46384 >= 1 || ItemCreateTime 46385 >= 1 || ItemCreateTime 46387 >= 1 || ItemCreateTime 46388 >= 1
+	 ##1052578	\n\n\n\n@c很抱歉时间到！欢迎您下次再来挑战。	1
+	 Window 1052578,OK
+	 	 Window_OK
+	 	 ##清除材料、考题、传送出去
+	 	 KillItemall 46350
+		 KillItemall 46351
+	 	 KillItemall 46352
+	 	 KillItemall 46353
+		 KillItemall 46354
+		 KillItemall 46355
+		 KillItemall 46356
+		 KillItemall 46357
+		 KillItemall 46358
+		 KillItemall 46359
+		 KillItemall 46360
+		 KillItemall 46361
+		 KillItemall 46362
+		 KillItemall 46363
+		 KillItemall 46364
+		 KillItemall 46365
+		 KillItemall 46366
+		 KillItemall 46367
+		 KillItemall 46368
+		 KillItemall 46369
+		 KillItemall 46370
+		 KillItemall 46371
+		 KillItemall 46372
+		 KillItemall 46373
+		 KillItemall 46374
+		 KillItemall 46375
+		 KillItemall 46376
+		 KillItemall 46377
+		 KillItemall 46378
+		 KillItemall 46382
+		 KillItemall 46383
+		 KillItemall 46384
+		 KillItemall 46385
+		 KillItemall 46386
+		 KillItemall 46387
+		 KillItemall 46388
+		 KillItemall 46389
+		 KillItemall 46390
+		 KillItemall 46391
+		 KillItemall 46392
+		 KillItemall 46393
+		 Warp 0,30017,61,80
+
+##有面包考题(46382)、小麦粉(46350)X16、牛奶(46351)X10、盐(46352)X5
+block Item 46382 == 1 && Item 46350 == 16 && Item 46351 == 10 && Item 46352 == 5 && Item 46353 == 0 && Item 46354 == 0 && Item 46355 == 0 && Item 46356 == 0 && Item 46357 == 0 && Item 46358 == 0 && Item 46359 == 0 && Item 46360 == 0 && Item 46361 == 0 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 0 && Item 46365 == 0 && Item 46366 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46382
+	 	 KillItemall 46350
+	 	 KillItemall 46351
+	 	 KillItemall 46352
+	 	 	 GiveLeak1Item 15201,2
+	 	 	 Warp 0,30017,61,80
+	 	  
+##有蛋包饭考题(46383)、鸡蛋(46353)X10、牛奶(46351)X15、盐(46352)X5、芹菜(46355)X1、蕃茄酱(46354)X1
+block Item 46383 == 1 && Item 46350 == 0 && Item 46351 == 15 && Item 46352 == 5 && Item 46353 == 10 && Item 46354 == 1 && Item 46355 == 1 && Item 46356 == 0 && Item 46357 == 0 && Item 46358 == 0 && Item 46359 == 0 && Item 46360 == 0 && Item 46361 == 0 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 0 && Item 46365 == 0 && Item 46366 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46383
+	 	 KillItemall 46351
+	 	 KillItemall 46352
+	 	 KillItemall 46353
+	 	 KillItemall 46354
+	 	 KillItemall 46355
+	 	 	 GiveLeak1Item 15202,2
+	 	 	 Warp 0,30017,61,80
+  
+##有法国面包考题(46384)、小麦粉(46350)X20、牛奶(46351)X20、盐(46352)X20
+block Item 46384 >= 1 && Item 46350 == 20 && Item 46351 == 20 && Item 46352 == 20 && Item 46353 == 0 && Item 46354 == 0 && Item 46355 == 0 && Item 46356 == 0 && Item 46357 == 0 && Item 46358 == 0 && Item 46359 == 0 && Item 46360 == 0 && Item 46361 == 0 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 0 && Item 46365 == 0 && Item 46366 == 0 && Item 46367 == 0 && Item 46368 == 0 && Item 46369 == 0 && Item 46370 == 0 && Item 46371 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46384
+	 	 KillItemall 46350
+	 	 KillItemall 46351
+	 	 KillItemall 46352
+	 	 	 GiveLeak1Item 15203,2
+	 	 	 Warp 0,30017,61,80
+  
+##有炒面考题(46385)、小麦粉(46350)X20、盐(46352)X10、海苔(46357)X20、姜(46358)X12
+block Item 46385 == 1 && Item 46350 == 20 && Item 46351 == 0 && Item 46352 == 10 && Item 46353 == 0 && Item 46354 == 0 && Item 46355 == 0 && Item 46356 == 0 && Item 46357 == 20 && Item 46358 == 12 && Item 46359 == 0 && Item 46360 == 0 && Item 46361 == 0 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 0 && Item 46365 == 0 && Item 46366 == 0 && Item 46367 == 0 && Item 46368 == 0 && Item 46369 == 0 && Item 46370 == 0 && Item 46371 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46385
+	 	 KillItemall 46350
+	 	 KillItemall 46352
+	 	 KillItemall 46357
+	 	 KillItemall 46358
+	 	 	 GiveLeak1Item 15204,2
+	 	 	 Warp 0,30017,61,80
+ 
+##有青椒肉丝考题(46386)、青椒(46356)X20、盐(46352)X10、竹笋(46359)X20、牛肉(46360)X20
+block Item 46386 == 1 && Item 46350 == 0 && Item 46351 == 0 && Item 46352 == 10 && Item 46353 == 0 && Item 46354 == 0 && Item 46355 == 0 && Item 46356 == 20 && Item 46357 == 0 && Item 46358 == 0 && Item 46359 == 20 && Item 46360 == 20 && Item 46361 == 0 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 0 && Item 46365 == 0 && Item 46366 == 0 && Item 46367 == 0 && Item 46368 == 0 && Item 46369 == 0 && Item 46370 == 0 && Item 46371 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46386
+	 	 KillItemall 46352
+	 	 KillItemall 46356
+	 	 KillItemall 46359
+	 	 KillItemall 46360
+	 	 	 GiveLeak1Item 15206,2
+	 	 	 Warp 0,30017,61,80
+
+  
+##有烧鸡考题(46387)、盐(46352)X20、鸡肉(46361)X20、胡椒(46363)X20、柠檬草(46362)X20
+block Item 46387 == 1 && Item 46350 == 0 && Item 46351 == 0 && Item 46352 == 20 && Item 46353 == 0 && Item 46354 == 0 && Item 46355 == 0 && Item 46356 == 0 && Item 46357 == 0 && Item 46358 == 0 && Item 46359 == 0 && Item 46360 == 0 && Item 46361 == 20 && Item 46362 == 20 && Item 46363 == 20 && Item 46364 == 0 && Item 46365 == 0 && Item 46366 == 0 && Item 46367 == 0 && Item 46368 == 0 && Item 46369 == 0 && Item 46370 == 0 && Item 46371 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46387
+	 	 KillItemall 46352
+	 	 KillItemall 46361
+	 	 KillItemall 46362
+	 	 KillItemall 46363
+	 	 	 GiveLeak1Item 15207,2
+	 	 	 Warp 0,30017,61,80
+
+##有亲子井考题(46388)、鸡蛋(46353)X20、葱(46365)X20、酱油(46364)X20、鸡肉(46361)X20、米(46366)X20
+block Item 46388 == 1 && Item 46350 == 0 && Item 46351 == 0 && Item 46352 == 0 && Item 46353 == 20 && Item 46354 == 0 && Item 46355 == 0 && Item 46356 == 0 && Item 46357 == 0 && Item 46358 == 0 && Item 46359 == 0 && Item 46360 == 0 && Item 46361 == 20 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 20 && Item 46365 == 20 && Item 46366 == 20 && Item 46367 == 0 && Item 46368 == 0 && Item 46369 == 0 && Item 46370 == 0 && Item 46371 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46388
+	 	 KillItemall 46353
+	 	 KillItemall 46361
+	 	 KillItemall 46364
+	 	 KillItemall 46365
+	 	 KillItemall 46366
+	 	 	 GiveLeak1Item 15208,2
+	 	 	 Warp 0,30017,61,80
+	 	 	 
+##有汉堡考题(46389)、鸡蛋(46353)X20、葱(46365)X20、蕃茄酱(46354)X3、牛肉(46360)X20
+block Item 46389 == 1 && Item 46350 == 0 && Item 46351 == 0 && Item 46352 == 0 && Item 46353 == 20 && Item 46354 == 3 && Item 46355 == 0 && Item 46356 == 0 && Item 46357 == 0 && Item 46358 == 0 && Item 46359 == 0 && Item 46360 == 20 && Item 46361 == 0 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 0 && Item 46365 == 20 && Item 46366 == 0 && Item 46367 == 0 && Item 46368 == 0 && Item 46369 == 0 && Item 46370 == 0 && Item 46371 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46389
+	 	 KillItemall 46353
+	 	 KillItemall 46354
+	 	 KillItemall 46360
+	 	 KillItemall 46365
+	 	 	 GiveLeak1Item 15209,2
+	 	 	 Warp 0,30017,61,80
+  
+##有星鳗饭团考题(46390)、盐(46352)X20、酱油(46364)X20、海苔(46357)X20、星鳗(46367)X20、米(46366)X20
+block Item 46390 == 1 && Item 46350 == 0 && Item 46351 == 0 && Item 46352 == 20 && Item 46353 == 0 && Item 46354 == 0 && Item 46355 == 0 && Item 46356 == 0 && Item 46357 == 20 && Item 46358 == 0 && Item 46359 == 0 && Item 46360 == 0 && Item 46361 == 0 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 20 && Item 46365 == 0 && Item 46366 == 20 && Item 46367 == 20 && Item 46368 == 0 && Item 46369 == 0 && Item 46370 == 0 && Item 46371 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46390
+	 	 KillItemall 46352
+	 	 KillItemall 46357
+	 	 KillItemall 46364
+	 	 KillItemall 46366
+	 	 KillItemall 46367
+	 	 	 GiveLeak1Item 15210,2
+	 	 	 Warp 0,30017,61,80
+	 	    
+##有寿喜锅饭考题(46391)、葱(46365)X20、盐(46352)X20、酱油(46364)X20、牛肉(46360)X20、砂糖(46368)X20
+block Item 46391 == 1 && Item 46350 == 0 && Item 46351 == 0 && Item 46352 == 20 && Item 46353 == 0 && Item 46354 == 0 && Item 46355 == 0 && Item 46356 == 0 && Item 46357 == 0 && Item 46358 == 0 && Item 46359 == 0 && Item 46360 == 20 && Item 46361 == 0 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 20 && Item 46365 == 20 && Item 46366 == 0 && Item 46367 == 0 && Item 46368 == 20 && Item 46369 == 0 && Item 46370 == 0 && Item 46371 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46391
+	 	 KillItemall 46352
+	 	 KillItemall 46360
+	 	 KillItemall 46364
+	 	 KillItemall 46365
+	 	 KillItemall 46368
+	 	 	 GiveLeak1Item 15211,2
+	 	 	 Warp 0,30017,61,80
+  
+##有咖哩饭考题(46392)、葱(46365)X20、鸡肉(46361)X20、马铃薯(46370)X20、米(46366)X20、咖哩块(46369)X10
+block Item 46392 == 1 && Item 46350 == 0 && Item 46351 == 0 && Item 46352 == 0 && Item 46353 == 0 && Item 46354 == 0 && Item 46355 == 0 && Item 46356 == 0 && Item 46357 == 0 && Item 46358 == 0 && Item 46359 == 0 && Item 46360 == 0 && Item 46361 == 20 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 0 && Item 46365 == 20 && Item 46366 == 20 && Item 46367 == 0 && Item 46368 == 0 && Item 46369 == 10 && Item 46370 == 20 && Item 46371 == 0
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46392
+	 	 KillItemall 46361
+	 	 KillItemall 46365
+	 	 KillItemall 46366
+	 	 KillItemall 46369
+	 	 KillItemall 46370
+	 	 	 GiveLeak1Item 15212,2
+	 	 	 Warp 0,30017,61,80
+  
+##有韩式泡菜饭饭考题(46393)、鸡蛋(46353)X10、盐(46352)X20、牛肉(46360)X20、米(46366)X20、辣椒(46371)X20
+block Item 46393 == 1 && Item 46350 == 0 && Item 46351 == 0 && Item 46352 == 20 && Item 46353 == 10 && Item 46354 == 0 && Item 46355 == 0 && Item 46356 == 0 && Item 46357 == 0 && Item 46358 == 0 && Item 46359 == 0 && Item 46360 == 20 && Item 46361 == 0 && Item 46362 == 0 && Item 46363 == 0 && Item 46364 == 0 && Item 46365 == 0 && Item 46366 == 20 && Item 46367 == 0 && Item 46368 == 0 && Item 46369 == 0 && Item 46370 == 0 && Item 46371 == 20
+	 ##1052562	\n\n  恭喜你答对了！	1
+	 Window 1052562,OK
+	 	 Window_OK
+	 	 KillItemall 46393
+	 	 KillItemall 46352
+	 	 KillItemall 46353
+	 	 KillItemall 46360
+	 	 KillItemall 46366
+	 	 KillItemall 46371
+	 	 	 GiveLeak1Item 15213,2
+	 	 	 Warp 0,30017,61,80
+
+##有考题
+block Item 46382 == 1 || Item 46383 == 1 || Item 46384 == 1 || Item 46385 == 1  || Item 46386 == 1 || Item 46387 == 1 || Item 46388 == 1 || Item 46389 == 1 || Item 46390 == 1 || Item 46391 == 1 || Item 46392 == 1 || Item 46393 == 1
+	 ##1052564	\n\n  快去准备吧！时间有限。	1
+	 EndWindow 1052564
+
+##ㄧ般
+block
+	 ##1052563	\n\n  没考题是不能参加比赛喔！	1
+	 Window 1052563,OK

@@ -1,0 +1,7 @@
+##愚人节─迷宫二─传送石像
+block item 34552 >=1 && item 34553 >=1
+	window 1020492,yes,no
+		window_yes item 34552 >=1 && item 34553 >=1
+			LeaveGroup
+			warp 0,32724,60,44
+		window_no

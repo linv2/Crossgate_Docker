@@ -1,0 +1,20 @@
+########2005/2月展场包_黄金宝石鼠
+########1%机率为黄金宝石鼠
+
+block ItemSpace >=1
+	 ##1052867	\n\n@c摸摸黄金宝石鼠．．．会发生什么事呢？	1
+	 Window 1052867,OK
+	 	 Window_OK Item 46515 >=2
+			 ##1052871	\n\n\n黄金宝石鼠\n据说持有２只以上是无法下蛋的～	1
+			 EndWindow 1052871
+		 Window_OK Item 46515 ==1 && ItemDur 46515 ==1 
+			 ##1052869	黄金宝石鼠消失了。	1
+			 KillItem 46515,1,(1052869)
+  			 GiveLeak1Item 46517,1
+  		 Window_OK Item 46515 ==1 && ItemDur 46515 >1 &&  ItemSpace >=1
+  			 GiveLeak1Item 46517,1
+  			  SetDur 46515,-1
+	 
+block
+	 ##1100002	\n\n\n\n\n@c物品栏的空间不足。	1
+	 EndWindow 1100002

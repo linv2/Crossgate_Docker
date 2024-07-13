@@ -1,0 +1,477 @@
+Delegate.RegDelTalkEvent("ng_TalkEvent");
+local LabaGOLD = LabaGOLD or 1000			--小喇叭价格
+local LabaUseCD =LabaUseCD or 10			--小喇叭使用冷却时间
+local fameGold =fameGold or 100			--声望查询价格
+local GuanZhanPlayer = "";
+local JinKaID=888888 --金钥匙ID。领取寄售的
+local LQSJ = {};
+local YTSJ = 24 ;
+Players = Players or {}
+tab_laba = tab_laba or {}
+tab_siliao = tab_siliao or {}
+tab_return = tab_return or {}
+tab_labacd = tab_labacd or {}
+function ng_TalkEvent(player,msg,color,range,size,MapId1)
+--	if(msg == "/1")then
+--		local getXiangVar1 = Char.GetData(player,%对象_香步数%);
+--		local getXiangVar2 = Char.GetData(player,%对象_香上限%);
+--		if(getXiangVar1 > 0) and map ~= 56 then
+--			Char.SetData(player,%对象_香步数%,0);
+--			Char.SetData(player,%对象_香上限%,0);
+--			NLG.SystemMessage(player,"步步遇敌已经关闭！");
+--		else
+--			Char.SetData(player,%对象_香步数%,999);
+--			Char.SetData(player,%对象_香上限%,999);
+--			NLG.SystemMessage(player,"步步遇敌已经开启！");
+--		end
+--	end
+	
+--	if(msg == "/2")then
+--		local getXiangVar1 = Char.GetData(player,%对象_不遇敌开关%);
+--		if(getXiangVar1 == 1)then
+--			Char.SetData(player,%对象_不遇敌开关%,0);
+--			NLG.SystemMessage(player,"不遇敌已经关闭！");
+--		else
+--			Char.SetData(player,%对象_不遇敌开关%,1);
+--			NLG.SystemMessage(player,"不遇敌已经开启！");
+--		end
+--	end
+
+	--[[if(msg=="/sjdt") then
+		local MapId1 = math.abs(Char.GetData(player,%对象_地图%));
+		local mapx = math.abs(Obj.GetX(%对象_X%));
+		local mapy = math.abs(Obj.GetY(%对象_Y%));
+		local maptype = 1;
+		local _mapx, _mapy = Map.GetMapSize(maptype,MapId1);
+		local _objtbl={
+			i=0;
+			j=0;
+		}
+		local _key;
+		NLG.SystemMessage(player,"地图最大值".._mapx..",".._mapy);
+		if(_mapx == 0 or _mapy == 0) then
+			assert(false);
+		end
+		for i = 0, _mapx - 1 do
+			for j = 0, _mapy - 1 do
+			local _ , _objtbl = Obj.GetObject(maptype,MapId1, i, j);
+				for _key, _object in pairs(objtbl) do
+				if(Obj.GetType(12000) == 4) then
+				NLG.SystemMessage(player,"地图可用坐标"..i..","..j);
+				end
+			end
+		end
+
+
+			return;
+	end
+	end
+	--]]
+if msg == "[lxgj]" or msg == "/离线挂机" then   ---离线挂机
+--		local money = Char.GetData(player,%对象_金币%);
+--		local LV = Char.GetData(player,%对象_等级%);
+		local map = Char.GetData(player,%对象_地图%);
+		local Duration = 691200;
+--		if LV < 30 then
+--			NLG.SystemMessage(player,"[系统]您的等级未到30级,无法启动离线挂机.");	
+--			return ;
+--		end
+		if map <= 999 or map >= 1001 then
+			NLG.SystemMessage(player,"[系统]当前地图无法启动离线挂机.");
+			return ;
+		end
+
+--		if money >= 5000 and LV >= 15 and map == 1000 then
+--			Char.SetData(player,%对象_金币%,money-5000);
+			Char.FeverStop(player);
+			NLG.UpChar(player);
+			NLG.SetOfflinePlayer(player, Duration)
+--			return 1;
+--		else
+--			NLG.SystemMessage(player,"[系统]您的魔币不足5000,无法启动离线挂机.");	
+--			return ;
+		end
+
+	local jinbinum = tonumber(Char.ItemNum(player,JinKaID));
+	if msg=="[10]" then
+		local CdKey= Char.GetData(player, %对象_账号%)
+		local bankJK=GetSqlJK(CdKey)
+		local BankMb=GetSqlMB(CdKey)
+		if BankMb==0 and bankJK==0 then
+			NLG.SystemMessage(player,"[系统]你并没有可以领取的自售点。");
+			return 0
+		end
+		if bankJK > 0 then
+			if Char.ItemSlot(player) > 19 then
+				NLG.SystemMessage(player,"[系统]你的物品栏不足！至少留一个物品栏空位。");
+			else
+				if EasySqlJK(CdKey) ==0 then
+					Char.GiveItem(player, JinKaID, bankJK)
+					NLG.SystemMessage(player,"[系统]金钥匙领取成功"..bankJK);
+				end
+			end
+			
+		else
+			NLG.SystemMessage(player,"[系统]你并没有可以领取的金钥匙。");
+		end
+		if BankMb > 0 then
+			if EasySqlMB(CdKey) ==0 then
+				Char.PlusData(player,%对象_金币%,BankMb);
+				NLG.UpChar(player);
+				NLG.SystemMessage(player,"[系统]魔币领取成功"..BankMb);
+			end
+		else
+			NLG.SystemMessage(player,"[系统]你并没有可以领取的魔币。");
+		end
+		return 0
+	end	
+	
+	if(msg=="[3]" or msg=="/gz") then 
+		local money = Char.GetData(player,%对象_金币%);
+		if(money>=100)then
+			Char.SetData(player,%对象_金币%,money-100);
+			NLG.UpChar(player);
+
+			GuanZhanPlayer = player;
+			NLG.SystemMessage(-1,"「"..Char.GetData(player,%对象_名字%).."」开启远程观战模式了。可输入/gz "..GuanZhanPlayer.."观看战斗。");
+			NLG.SystemMessage(player,"扣除100魔币。");
+			return;	
+		else
+			NLG.SystemMessage(player,"对不起！您的魔币不足100！");	
+		end
+	end
+
+	if( check_msg(msg,"/gz ") ) then
+		GuanZhanPlayer = tonumber(string.sub(msg,5))
+		NLG.WatchBattle(player,GuanZhanPlayer);
+	end	
+	
+--	if(msg == "[2]")then
+	
+--				NLG.SystemMessage(player,"当前没有开放功能！");
+--	end
+
+if(msg=="/名字黑色") then
+		if(jinbinum<300)then
+			NLG.SystemMessage(player,"对不起,您的金钥匙不足300个！");	
+			return;
+		end
+	    Char.DelItem(player,888888,300);
+	Char.SetData(player,%对象_名色%,10);
+        NLG.UpChar(player) 
+        end
+if(msg=="/名字黄色") then
+		if(jinbinum<200)then
+			NLG.SystemMessage(player,"对不起,您的金钥匙不足200个！");	
+			return;
+		end
+	    Char.DelItem(player,888888,200);	Char.SetData(player,%对象_名色%,4);
+        NLG.UpChar(player) 
+
+        end
+
+
+if(msg=="/名字紫色") then
+		if(jinbinum<300)then
+			NLG.SystemMessage(player,"对不起,您的金钥匙不足300个！");	
+			return;
+		end
+	    Char.DelItem(player,888888,300);	Char.SetData(player,%对象_名色%,2);
+        NLG.UpChar(player) 
+
+        end
+
+if(msg=="/名字蓝色") then
+		if(jinbinum<200)then
+			NLG.SystemMessage(player,"对不起,您的金钥匙不足200个！");	
+			return;
+		end
+	    Char.DelItem(player,888888,200);	Char.SetData(player,%对象_名色%,3);
+        NLG.UpChar(player) 
+
+        end
+
+
+
+if(msg=="/名字灰色") then
+		if(jinbinum<300)then
+			NLG.SystemMessage(player,"对不起,您的金钥匙不足300个！");	
+			return;
+		end
+	    Char.DelItem(player,888888,300);	Char.SetData(player,%对象_名色%,7);
+        NLG.UpChar(player) 
+
+        end
+
+if(msg=="/名字红色") then
+		if(jinbinum<300)then
+			NLG.SystemMessage(player,"对不起,您的金钥匙不足300个！");	
+			return;
+		end
+	    Char.DelItem(player,888888,300);	Char.SetData(player,%对象_名色%,6);
+        NLG.UpChar(player) 
+
+        end
+
+if(msg=="/名字青色") then
+		if(jinbinum<200)then
+			NLG.SystemMessage(player,"对不起,您的金钥匙不足200个！");	
+			return;
+		end
+	    Char.DelItem(player,888888,200);	Char.SetData(player,%对象_名色%,1);
+        NLG.UpChar(player) 
+
+        end
+
+
+if(msg=="/名字绿色") then
+		if(jinbinum<200)then
+			NLG.SystemMessage(player,"对不起,您的金钥匙不足200个！");	
+			return;
+		end
+	    Char.DelItem(player,888888,200);	Char.SetData(player,%对象_名色%,5);
+        NLG.UpChar(player) 
+
+        end
+
+
+
+	
+	if msg == "/grxx" or msg == "[grxx]" then ---个人信息查看
+		local paris1 = Char.GetData(player, %对象_名字%);
+		local paris2 = Char.GetData(player, %对象_等级%);
+		local paris3 = Char.GetData(player, %对象_死亡数%);
+		local paris4 = Char.GetData(player, %对象_魅力%);
+		local paris6 = Char.GetData(player, %对象_运%);
+		local paris7 = Char.GetData(player, %对象_声望%);
+		local paris8 = Char.GetData(player, %对象_金币%);
+		local paris9 = Char.GetData(player, %对象_银行金币%);
+		local paris10 = Char.GetData(player, %对象_封印数%);
+		local paris11 = Char.GetData(player, %对象_房子ID%);
+		local paris12 = Char.GetData(player, %对象_杀宠数%);
+		local paris13 = Char.GetData(player, %对象_伤害数%);
+		NLG.SystemMessage(player, "您好【" ..paris1.. "】您的个人信息如下：");
+		NLG.SystemMessage(player, "等级：      【" ..paris2.. "】");
+		NLG.SystemMessage(player, "死亡数：    【" ..paris3.. "】");
+		NLG.SystemMessage(player, "魅力：      【" ..paris4.. "】");
+		NLG.SystemMessage(player, "运：        【" ..paris6.. "】");
+		NLG.SystemMessage(player, "声望：      【" ..paris7.. "】");
+		NLG.SystemMessage(player, "魔币：      【" ..paris8.. "】");	
+		NLG.SystemMessage(player, "银行存款：  【" ..paris9.. "】");	
+		NLG.SystemMessage(player, "封宠数：    【" ..paris10.. "】");	
+		NLG.SystemMessage(player, "房子ID：    【" ..paris11.. "】");	
+		NLG.SystemMessage(player, "杀敌数：    【" ..paris12.. "】");
+		NLG.SystemMessage(player, "被伤害次数：【" ..paris13.. "】");
+	return ;
+	end
+	if msg == "/dk" then   ---快捷 打卡
+		local daka = Char.GetData(player, %对象_打卡%);
+		local money = Char.GetData(player,%对象_金币%);
+		if daka == 0 and money >= 200 then
+			Char.SetData(player,%对象_金币%,money-200);
+			Char.FeverStart(player);
+			NLG.UpChar(player);
+			NLG.SystemMessage(player, "扣除魔币200G。");	
+			NLG.SystemMessage(player, "恭喜您打卡成功。");	
+			return ;
+		end
+		if daka == 1 and money >= 200 then
+			Char.SetData(player,%对象_金币%,money-200);
+			Char.FeverStop(player);
+			NLG.UpChar(player);
+			NLG.SystemMessage(player, "扣除魔币200G。");
+			NLG.SystemMessage(player, "恭喜您关闭打卡成功。");	
+			return ;
+		end
+		if money < 200 then
+			NLG.SystemMessage(player, "您的魔币不够，无法使用。");	
+			return ;
+		end
+	end
+	if msg == "[zxwj]" then   ---在线查看玩家
+		local zxwj = NLG.GetPlayerNum()
+		NLG.SystemMessage(player, "当前在线玩家【"..zxwj.."】人。");
+		return ;
+	end
+	if msg == "[czlq]" then   ---
+		NLG.SystemMessage(player, "充值领取请到法兰城梦想开始的地方（13,56），谢谢！ ");
+		return ;
+	end
+	if(msg=="/home") then 
+		local money = Char.GetData(player,%对象_金币%);
+	if Char.GetPartyMode(player)== 2then
+			NLG.SystemMessage(player,"不是队长无法使用此命令");	
+			return;
+			end
+		if(money>=500)then
+			Char.SetData(player,%对象_金币%,money-500);
+			NLG.UpChar(player);
+			Char.Warp(player,0,1000,239,84);
+			NLG.SystemMessage(player,"扣除500魔币。");
+			NLG.SystemMessage(player,"【系统】如已开启诱魔香，请自行关闭，否则将会扣除剩余步数！");
+			return;	
+		else
+			NLG.SystemMessage(player,"对不起！您的魔币不足500！");	
+		end
+	end
+	
+	
+if msg=="/声望" or msg=="/fame" then
+		if (Char.GetData(player,%对象_金币%)<fameGold) then
+			NLG.SystemMessage(player,"[系统] 你的魔币不够，无法使用此功能")
+			return ;
+		end
+		Char.AddGold(player,-100); 
+		local tFame = Char.GetData(player,%对象_声望%)
+		local tFameMax = Char.GetData(player,%对象_日声望上限%)
+		NLG.SystemMessage(player,"[系统] 你当前声望为[" .. tFame .. "]点，今日还可获取的声望[" .. tFameMax .. "]点。")
+		return ;
+	end
+	if msg=="/时间" or msg=="/time" then
+		NLG.SystemMessage(player,"[系统] 当前系统时间：" ..os.date("%Y年%m月%d日 %X"));	
+		NLG.GetGameTime();
+		local xtsj = math.abs(NLG.GetGameTime());
+		if xtsj == 0 then
+		NLG.SystemMessage(player,"[系统] 当前是白天");
+		elseif xtsj == 1 then
+		NLG.SystemMessage(player,"[系统] 当前是黄昏");
+		elseif xtsj == 2 then
+		NLG.SystemMessage(player,"[系统] 当前是夜晚");
+		else 
+		NLG.SystemMessage(player,"[系统] 当前是清晨");
+
+		return ;
+		end
+	return ;
+	end
+		if (msg == "/zl")then ---治疗受伤
+		local CdKey = Char.GetData(player,2002);
+		local shoushang = Char.GetData(player,%对象_受伤%);
+		local money = Char.GetData(player,%对象_金币%);
+		if(Char.GetData(player,%对象_受伤%)<1) then
+			NLG.SystemMessage(player,"您未受伤。");
+			return;
+		end
+		if(money>=200) and (Char.GetData(player,%对象_受伤%)>0 and Char.GetData(player,%对象_受伤%)<26) then
+			Char.SetData(player,%对象_受伤%,shoushang-shoushang);
+			Char.SetData(player,%对象_金币%,money-200);
+			NLG.UpdateParty(player);
+			NLG.UpChar(player);
+			NLG.SystemMessage(player,"恭喜你治疗完毕。");
+			NLG.SendGraphEvent(player, 45, 0);
+			NLG.SystemMessage(player,"扣除200魔币。");
+			return;	
+		end
+		if(money>=400) and (Char.GetData(player,%对象_受伤%)>24 and Char.GetData(player,%对象_受伤%)<51) then
+			Char.SetData(player,%对象_受伤%,shoushang-shoushang);
+			Char.SetData(player,%对象_金币%,money-400);
+			NLG.UpdateParty(player);
+			NLG.UpChar(player);
+			NLG.SystemMessage(player,"恭喜你治疗完毕。");
+			NLG.SendGraphEvent(player, 45, 0);
+			NLG.SystemMessage(player,"扣除400魔币。");
+			return;	
+		end
+		if(money>=800) and (Char.GetData(player,%对象_受伤%)>49 and Char.GetData(player,%对象_受伤%)<76) then
+			Char.SetData(player,%对象_受伤%,shoushang-shoushang);
+			Char.SetData(player,%对象_金币%,money-800);
+			NLG.UpdateParty(player);
+			NLG.UpChar(player);
+			NLG.SystemMessage(player,"恭喜你治疗完毕。");
+			NLG.SendGraphEvent(player, 45, 0);
+			NLG.SystemMessage(player,"扣除800魔币。");
+			return;	
+		end
+		if(money>=1000) and (Char.GetData(player,%对象_受伤%)>74 and Char.GetData(player,%对象_受伤%)<101) then
+			Char.SetData(player,%对象_受伤%,shoushang-shoushang);
+			Char.SetData(player,%对象_金币%,money-1000);
+			NLG.UpdateParty(player);
+			NLG.UpChar(player);
+			NLG.SystemMessage(player,"恭喜你治疗完毕。");
+			NLG.SendGraphEvent(player, 45, 0);
+			NLG.SystemMessage(player,"扣除1000魔币。");
+			return;	
+		else
+			NLG.SystemMessage(player,"对不起！您的魔币不足，治疗价格为【白伤200】【黄伤400】【紫伤800】【红伤1000】！");	
+			return;
+		end
+		return 0
+	end
+
+	if msg == "[jd]" then  ----鉴定
+		local Count = 0
+		for ItemSlot = 8,27 do
+			local ItemIndex = Char.GetItemIndex(player, ItemSlot)
+			local money = Char.GetData(player,%对象_金币%);
+			local djdj = Item.GetData(ItemIndex,%道具_等级%);
+			local suiji=NLG.Rand(11, 25)
+
+			local kcmb = djdj*suiji*10;
+			if Item.GetData(ItemIndex, %道具_已鉴定%)==0 and money >= (djdj*suiji*10) then
+				Count = Count + 1
+				Char.SetData(player,%对象_金币%,money-kcmb);
+				Item.SetData(ItemIndex, %道具_已鉴定%, 1)
+				NLG.SystemMessage(player,"[系统] 您的随机运气是【"..suiji.."】！（数字越小越好）");
+				NLG.SystemMessage(player,"[系统] 您鉴定的道具等级为"..djdj.."级。扣除魔币"..kcmb.."G");
+				NLG.SystemMessage(player,"[系统] 你身上的 " .. Item.GetData(ItemIndex, %道具_鉴前名%) .. "已鉴定为 " .. Item.GetData(ItemIndex, %道具_名字%))
+				Item.UpItem(player, ItemSlot);
+				NLG.UpChar(player);
+				return ;
+			end
+		end
+		if Count==0 then
+			NLG.SystemMessage(player,"[系统] 你身上没有需要鉴定的物品【或你的钱不足以鉴定此道具】");
+			return;
+		end
+		return 0
+	end
+
+	if msg =="/help" or msg=="[help]" then
+		NLG.SystemMessage(player,"/gz	发送观战代码");
+		NLG.SystemMessage(player,"/zl	快捷治疗");
+		NLG.SystemMessage(player,"/lq	领取宠物自售价钱");
+		NLG.SystemMessage(player,"[jd]	快捷鉴定");
+		NLG.SystemMessage(player,"/dk	快捷打卡");
+		NLG.SystemMessage(player,"/cszl	传送指令");
+		NLG.SystemMessage(player,"/r 整理背包");
+		NLG.SystemMessage(player,"/pet 0 全体算档");
+		NLG.SystemMessage(player,"/pet 1-5 单个算档");
+		NLG.SystemMessage(player,"/grxx 个人信息");	
+		NLG.SystemMessage(player,"/hc 快速回城");	
+		NLG.SystemMessage(player,"/time 系统时间");		
+		NLG.SystemMessage(player,"/fame 个人声望");
+		NLG.SystemMessage(player,"/cszl 传送指令");	
+		NLG.SystemMessage(player,">喊话内容 金钥匙喊话");
+		NLG.SystemMessage(player,"/开启(关闭)喇叭 开启(关闭)喇叭");	
+		--NLG.SystemMessage(player,"/关闭喇叭 关闭喇叭");	
+		NLG.SystemMessage(player,"/a 答案 世界抢答");	
+		NLG.SystemMessage(player,"/发红包 总金额mb 红包数量个 ,比如/发红包 1000mb 10个");	
+		NLG.SystemMessage(player,"/抢红包 红包代码    抢红包");			
+		return ;
+	end
+
+end
+function GetSqlJK(CdKey)
+	local 银行魔币 = SQL.Run("select `PetMoney`  from `tbl_user` WHERE `CdKey`='"..CdKey.."'") ["0_0"]
+	银行魔币 = tonumber(银行魔币 or 0)
+	return 银行魔币;
+end
+function EasySqlJK(CdKey)
+	if SQL.Run("UPDATE `tbl_user` SET `PetMoney`= 0 WHERE `CdKey`='"..CdKey.."'") ~=0 then
+		return -1;
+	end
+	return 0
+end
+
+function GetSqlMB(CdKey)
+	local 银行魔币 = SQL.Run("select `PetMB`  from `tbl_user` WHERE `CdKey`='"..CdKey.."'") ["0_0"]
+	银行魔币 = tonumber(银行魔币 or 0)
+	return 银行魔币;
+end
+function EasySqlMB(CdKey)
+	if SQL.Run("UPDATE `tbl_user` SET `PetMB`= 0 WHERE `CdKey`='"..CdKey.."'") ~=0 then
+		return -1;
+	end
+	return 0;
+end
+

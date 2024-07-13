@@ -1,0 +1,24 @@
+###puk4包装-虚拟物品	海贼宝图ＡＢＣＤＥ	din_item_47342.txt
+##能力说明：点两下。
+
+############## 使用一次耐久扣一 ##############
+block Item 47342>=1 && Item 47343 >=1 && Item 47344 >=1 && Item 47345 >=1 && Item 47346 >=1
+	 ##1054461	\n\n\n\n\n 你确定要把五张宝图拼凑起来吗？	1
+	 Window 1054461,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES 
+	 	 	 KillItem 47342,1
+	 	 	 KillItem 47343,1
+	 	 	 KillItem 47344,1
+	 	 	 KillItem 47345,1
+	 	 	 KillItem 47346,1
+	 	 	 GiveLeak1Item 47347
+	 	 	 ##1054462	\n\n\n\n\n 宝图已被完整的拼凑起来。	1
+			 EndWindow 1054462
+
+############## 只有一张宝图时时 ##############
+block Item 47342>=1 || Item 47343 >=1 || Item 47344 >=1 || Item 47345 >=1 || Item 47346 >=1
+	 ##1054460	\n\n\n\n\n  宝图似乎缺少了某些部分所以无粉拼凑起来。	1
+	 EndWindow 1054460
+	 

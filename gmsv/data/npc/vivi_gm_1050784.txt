@@ -1,0 +1,144 @@
+##### 想去哪就去哪-矿物 #####
+##■ 检查人数
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 Window_NO 
+	 	 	 	 
+##■ 有任意钥匙 && 字串比对 白金	 	 
+block Item 45513 >= 1 && StrCmpChat == 1051393
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送白金采集点
+	 	 	 Warp 0,11000,9,69
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送白金采集点
+	 	 	 Warp 0,11000,9,69
+	 	 	 
+##■ 有任意钥匙 && 字串比对 钢骑之矿
+block Item 45513 >= 1 && StrCmpChat == 1051394
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送钢骑之矿采集点
+	 	 	 Warp 0,15103,57,58
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送钢骑之矿采集点
+	 	 	 Warp 0,15103,57,58 	 	             
+
+##■ 有任意钥匙 && 字串比对 幻之钢
+block Item 45513 >= 1 && StrCmpChat == 1051395
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送幻之钢采集点
+	 	 	 Warp 0,15001,44,48
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送幻之钢采集点
+	 	 	 Warp 0,15001,44,48	 	 	 	             
+	 
+##■ 有任意钥匙 && 字串比对 幻之银
+block Item 45513 >= 1 && StrCmpChat == 1051396
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送幻之银采集点
+	 	 	 Warp 0,15001,19,8
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送幻之银采集点
+	 	 	 Warp 0,15001,19,8	 	 	 	             
+
+##■ 有任意钥匙 && 字串比对 永久冰石
+block Item 45513 >= 1 && StrCmpChat == 1051397
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送永久冰石采集点
+	 	 	 Warp 0,04405,22,24
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送永久冰石采集点
+	 	 	 Warp 0,04405,22,24	 	 	 	             
+	 	 	 
+##■ 有任意钥匙 && 字串比对 蓝龙之鳞
+#block Item 45513 >= 1 && StrCmpChat == 1051398 **原始错字
+block Item 45513 >= 1 && StrCmpChat == 1054543
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送蓝龙之麟采集点
+	 	 	 Warp 0,04409,63,36
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送蓝龙之麟采集点
+	 	 	 Warp 0,04409,63,36	 
+#------------mayko追加	 	 	 
+##■ 有任意钥匙 && 字串比对 达马斯矿
+block Item 45513 >= 1 && StrCmpChat == 1054546
+	 ##1051415	\n\n\n\n@c平行空间的门扉被打开了…	1
+	 Window 1051415,OK 
+	 	 Window_OK Group > 1
+			 ##1051416	\n\n\n\n@c只能一个人通过。	1
+			 EndWindow 1051416
+	 	 
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 > 1 && Group == 1
+	 	 	 ##任意钥匙耐久度-1
+	 	 	 SetDur 45513, -1 
+	 	 	 ##传送达马斯矿(伊利斯矿山)
+	 	 	 Warp 0,46014,40,120
+	 	 Window_OK Item 45513 >= 1 && ItemDur 45513 == 1 && Group == 1
+	 	 	 ##删除任意钥匙
+	 	 	 KillItem 45513
+	 	 	 ##传送达马斯矿(伊利斯矿山)
+	 	 	 Warp 0,46014,40,120 	 	 	 
+	 	 	 	 	 		 	 	 	 	 	 

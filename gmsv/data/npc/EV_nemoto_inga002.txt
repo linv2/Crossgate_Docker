@@ -1,0 +1,42 @@
+###############################
+# 绒衔用芡旦平伙弁巨  by 漪呿 #
+# ←扲?﹋扲﹌←              #
+###############################
+
+#### ≦扲及豭≧毛赭儅
+block Item 622037 >= 1
+	Endwindow 3207597
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛坞匀吊分﹝
+
+
+#### ≦毡中夫它末弁≧毛赭儅﹜≦扲及豭≧毛芨尹月
+block Item 622035 >= 1
+	Window 3207598,YES,NO
+
+		#\n\n﹛酦卞饼濠木互じ匀化中月﹝潸曰请仄引允井〝
+
+		Window_YES Itemspace == 0
+			EndWindow 3207599
+
+		#\n\n﹛公木动晓儅化卅中﹝
+
+		Window_YES
+			GiveLeak1Item 622037,1
+			EndWindow 3207600
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛≦扲及豭≧毛澎卞じ木凶﹝
+
+
+		Window_NO
+
+Endblock
+
+
+#### 晓筏动陆
+block
+	Endwindow 3207601
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛萼互井井匀化中化﹜钒井卅中﹝
+
+

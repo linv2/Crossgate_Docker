@@ -1,0 +1,96 @@
+#
+#
+#
+#
+#失件斥永弁＞仁午月□
+
+
+Block GlobalFlag81 == 1
+
+
+	Window 3205456,OK
+
+		#\n\n﹛湃卞﹜公仇卞反窒手卅中﹝
+	
+		Window_OK
+		
+		LeaveGroup
+			
+			warp 0,59530,135,96
+			
+	
+
+
+
+Block GlobalFlag79 == 1 && GlobalFlag80 == 1
+
+
+	GAWindow 3205457,Next
+
+		#\n\n﹛失件斥永弁\n﹛\n﹛＞引凶云蟆琼井＿＿\n﹛﹛窒分公及涌反〝\n﹛﹛台及窒毛襞匀化中月午中丹及分〝\n﹛﹛市仿永禾匹丐月台及窒互荸月〝
+	
+	GAWindow 3205458,Next
+
+		#\n\n﹛﹛骋鬼蝈化毛ボ扙歹今木﹜\n﹛﹛公木动陆及普树毛手化卅中﹝\n﹛﹛公氏卅台及窒毛＿＿＿＿
+	
+	GAWindow 3205459,Next
+
+		#\n\n﹛﹛＿＿＿＿＿＿＿＿\n﹛﹛＿＿＿＿＿＿\n﹛﹛＿＿＿＿\n﹛﹛＿＿
+	
+	GAWindow 3205460,Next
+
+		#\n\n﹛﹛＿＿＿＿＿＿\n﹛﹛＿＿＿＿＿＿匹手﹜手丹中中及﹜\n﹛﹛中中及方﹜中中及﹝\n﹛\n﹛﹛分匀化﹜蝈朿﹜蝈朿﹜蝈朿＿＿\n﹛﹛蔽歹匀化仄引尹壬恌中及分井日″
+	
+	GAWindow 3205461,Next
+
+		#\n\n﹛﹛丹孔孔孔孔\n﹛﹛丹孔孔孔孔孔孔孔孔\n﹛﹛丹孔孔孔孔孔孔孔孔孔孔孔\n﹛﹛鞅户月〝■■手丹﹜手丹赞中
+	
+	GAWindow 3205462,Next
+
+		#\n\n﹛﹛台及褥虫毛厊噙卞\n﹛﹛释构及壑钗伙伙奶巨井日\n﹛﹛元五卞＿＿元五卞＿＿
+	
+	GAWindow 3205463,Next
+
+		#\n\n﹛﹛公丹﹜五凶五凶五凶五凶\n﹛﹛＿＿丹孔﹜丹孔孔孔丹孔\n﹛﹛丹仃﹜丹仃仃仃仃仃仃仃仃仃仃仃仃\n﹛﹛仃仃仃仃仃仃仃仃仃仃仃之永＝
+	
+	GAWindow 3205464,Next
+
+		#\n\n﹛﹛＿＿＿＿＿＿＿＿＿＿＿＿\n﹛﹛＿＿＿＿＿＿＿＿＿\n﹛﹛＿＿＿＿＿＿＿＿\n﹛﹛＿＿＿＿＿＿＿
+	
+	GAWindow 3205465,Next
+
+		#\n\n﹛黎扬今木凶手及\n﹛\n﹛＞＿＿谛午反塌井﹜公仄化拑驮卅月手及﹝\n﹛﹛蹢フ仄化中卅互日\n﹛﹛橘卞拑罾匹丐月午耨元月﹝
+	
+	GAWindow 3205466,Next
+
+		#\n\n﹛﹛脱毛④午丹午中丹及手﹜\n﹛﹛引凶谛及啦卅及分欠丹＿＿﹝\n﹛﹛卅日壬﹜脱反脱及啦阀卞虱中﹜\n﹛﹛谛反谛及啦合卞虱丹分仃分﹝\n﹛﹛跟歹欠丹午反合歹厄﹝\n﹛﹛井勾化手公丹匹丐匀凶方丹卞＿＿
+	
+	GAWindow 3205467,OK
+
+		#\n\n﹛﹛脱毛裟少手及互﹜誊卞仄凶恘＿＿\n﹛﹛唱撙午反中尹＿＿蜗坌分＝
+	
+	
+		Window_OK
+		
+		
+		Encount 2|0,59752,266,208||0|||||0|306318|||||||||
+	
+
+
+Block 
+
+
+	Window 3205468,OK
+
+		#\n\n﹛渔＾及け中午午手卞﹜虫互旰莽仄化斗仁﹝
+	
+	Window_Ok
+	
+	LeaveGroup
+	
+	 warp 0,59530,135,96
+
+
+
+
+

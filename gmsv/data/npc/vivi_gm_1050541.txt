@@ -1,0 +1,7 @@
+########### 接力赛-竞技场传出 ###########
+block
+	 ##1050853	\n\n\n\n@c确定要出去吗？
+	 Window 1050853,YES,NO
+	 	 Window_YES
+	 	 Warp 0,01401,34,26
+	 	 Window_NO

@@ -1,0 +1,33 @@
+#泛旦玄奶矛件玄﹋平亘旦泛弝﹌﹛??巟鼹﹛凌001
+#
+#﹛﹛﹛布永玄及摒
+
+###﹛狪仄井仃日木凶午五
+
+block
+
+	LocalCount1 = Random 3,0
+
+	If LocalCount1 == 1
+		EndWindow 3200772
+		#\n\n﹛它它孕℅℅℅永″﹛＿＿＿＿＿
+		EndBlock
+
+	else
+		If LocalCount1 == 2
+			EndWindow 3200773
+		#\n\n﹛左穴巨＿＿平仿奶＿＿＿
+			EndBlock
+
+		else
+			Window 3200774,OK
+		#\n\n﹛甲玄＿甲玄＿＿＿平巨夫永″″
+				Window_OK
+					Encount 3|0,59524,100,134||0|||||0|305090|||||||||
+			EndBlock
+
+		endif
+
+	endif
+
+

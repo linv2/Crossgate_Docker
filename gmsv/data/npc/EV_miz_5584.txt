@@ -1,0 +1,17 @@
+#ÓªÚĞñîçÇÛÍ¾Şµ©Ğş¡°ËÒÕÁ»ÆÃ«äúÔÂèëô÷
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+
+###########©xÄ¸ÓÀÃñÒà¡õ±å¨QËÒÕÁ»Æ¨RÎçªIØÆ´­ØêĞ×©x##############
+block nowevent33 == 1
+
+	Window 20794,OK
+	Window_OK ItemSpace == 0
+	EndWindow 20795,OK
+	Window_OK
+	Window 20794,OK
+	Window_OK
+	leavegroup
+	nowevent33 = 0
+	GiveItem 18758
+

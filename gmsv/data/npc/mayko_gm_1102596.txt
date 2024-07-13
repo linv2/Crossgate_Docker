@@ -1,0 +1,19 @@
+#可可	33000	313	404	mayko_gm_1102596.txt
+#1110568	\n\n\n　　　穗花山奈呀～\n　　　那是跟百合花完全不一样的东西。	1
+#1110569	\n\n\n　　　那是长在清水边的的植物，\n　　　你去再生花园找雅涵问问。	1
+#1110570	\n\n\n　　　关于穗花山奈的情报，\n　　　是从雅涵那听来的。	1
+
+#可可的信41069
+#GiveLeak1Item 41068,1
+block Item 41069>0
+	 EndWindow 1110570
+block Item 41068>0
+	 KillItem 41068,1
+	 GiveLeak1Item 41069,1
+	 Window 1110568,NEXT
+	 EndWindow 1110569
+
+block 
+	 EndWindow 1110568
+
+

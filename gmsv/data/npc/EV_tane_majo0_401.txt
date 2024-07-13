@@ -1,0 +1,70 @@
+#©xÀÛ?©xØø±¾ÓÀÐþ¼°ÚÐ
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+
+
+block Item 15313 >= 1
+
+			Window 3200530,next
+		#\n\n©xÔÆ¡åÊÖ©yÊÖØÆ¾®ØÆ»¯©y\n©xé¬¼°ƒ}ÔÈ»¯ÖÐÔÂ¼°·´ï±ÈÔ?¾®ÖÐ¨”
+
+			Window 3200531,yes,no
+		#\n\n©xÖÐÖÐØ¦¨GÖÐÖÐØ¦¨G\n©x£ß£ßÒü¨”ÈÊÄ¾ÔÂ¼°¨”
+
+				window_yes
+					
+
+#					Window 3200532,ok
+		#\n\n©x¹íÖÐÓÑ©yÑñíúØÆÐ×ÐÄÐ×ÖÐÆ¥©z\n©x¹«µ¤·Ö¡åÔÆ”×±åƒß¼°¸…Çí±å°ÃÝ¸ØÆ·½µ¤¡å\n©x¼°ÊÏÌ«Ô»ØÆÐ×Ö§¹´Æ¥©y\n©xÀåÞÏ±å´ÉØÆ¾®Øê½ñÁùÔÂ¼°ÊÖØ¦ÊÏ·Ö¾®ÈÕ\n©xÓåÃÞò×ÀÃÆ¥ÓÑ¡å
+
+#					window_ok Item 15313 >= 1
+#						killItemall 15313
+#						leavegroup
+#						Warp 0,59524,102,87
+
+#					window_ok
+
+
+
+
+					Window 3200533,ok
+		#\n\n©x¹íÖÐÓÑ©yÑñíúØÆÐ×ÐÄÐ×ÖÐÆ¥©z\n©xØ¦±å¾®»¿”×Ã«ØÆÐ×ÖÐØêÉý£ß£ß\n©x¹«µ¤·Ö©yƒß¼°ÇÌ±å¶Ö½÷ØÆ·½µ¤¡å
+
+					window_ok Item 15313 >= 1
+						killItemall 15313
+						giveitem 607687,1
+
+					window_ok
+
+				window_no
+
+					EndWindow 3200534
+		#\n\n©x¹«µ¤¾®©yÈÊÄ¾Ø¦ÖÐ·½Ø¦©y\n©xƒß©y…ëˆ^·ÖØÆ©z
+
+
+block
+
+
+
+	Window 3007016,yes,no
+	
+	window_yes
+
+		globalFlag11 = 0
+		globalFlag12 = 0
+		globalFlag13 = 0
+		globalFlag14 = 0
+
+		KillItemall 14640
+		KillItemall 14641
+		KillItemall 14642
+		KillItemall 14643
+
+		KillItemall 14652
+		KillItemall 14650
+		KillItemall 14653
+		KillItemall 14651
+	window_no
+	
+	

@@ -1,0 +1,4 @@
+#mayko_item_41225.txt
+block 
+	window 1111747,next
+	endwindow 1111748

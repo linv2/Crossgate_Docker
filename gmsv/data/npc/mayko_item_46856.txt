@@ -1,0 +1,161 @@
+#
+#剑之魂	46856
+#
+############################
+block  job>203 && job<208 ## 御用~S3
+	##我是剑之魂！我将为你服务！(御用)
+	Window 1053325,OK
+ 		Window_OK item 46706>0 && item 46788 >0
+ 			##你现在有影秀与说明书，要组合成影秀吗？
+ 			Window 1053326,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46706<1 || item 46788 <1 || item 46856<1 
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46706,1	 	 	 
+	 	 	 	killitem 46788,1 
+	 	 	 	killitem 46856,1 
+	 	 	 	GiveLeak1Item 46828,1
+	 	 	 	##剑之魂、影秀积木与说明书消失了！出现了影秀。
+	 	 	 	EndWindow 1053327
+	 	 	 
+	 	 	 
+ 		Window_OK item 46707>0 && item 46789 >0
+
+ 		##你现在有葵纹剑与说明书，要组合成葵纹剑吗？
+ 			Window 1053328,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        		 			
+	 			Window_YES item 46707<1 || item 46789 <1 || item 46856<1 
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46707,1	 	 	 
+	 	 	 	killitem 46789,1 
+	 	 	 	killitem 46856,1 
+	 	 	 	GiveLeak1Item 46829,1	 	 
+	 	 	 	##
+	 	 	 	EndWindow 1053329
+	 	 	  		
+ 	
+ 		Window_OK item 46708>0 && item 46790 >0
+		####
+ 			Window 1053330,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        		 			
+	 			Window_YES item 46708<1 || item 46790 <1 || item 46856<1 
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46708,1	 	 	 
+	 	 	 	killitem 46790,1 
+	 	 	 	killitem 46856,1 	 	 	 
+	 	 	 	GiveLeak1Item 46830,1
+	 	 	 	##
+	 	 	 	EndWindow 1053331
+ 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290
+block  job==203
+	##我是剑之魂！我将为你服务！(资深段)
+	Window 1053325,OK
+ 		Window_OK item 46706>0 && item 46788 >0
+ 			##你现在有影秀与说明书，要组合成影秀吗？
+ 			Window 1053326,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46706<1 || item 46788 <1 || item 46856<1 
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46706,1	 	 	 
+	 	 	 	killitem 46788,1 
+	 	 	 	killitem 46856,1 
+	 	 	 	GiveLeak1Item 46828,1
+	 	 	 	##剑之魂、影秀积木与说明书消失了！出现了影秀。
+	 	 	 	EndWindow 1053327
+	 	 	 
+	 	 	 
+ 		Window_OK item 46707>0 && item 46789 >0
+
+ 		##你现在有葵纹剑与说明书，要组合成葵纹剑吗？
+ 			Window 1053328,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        		 			
+	 			Window_YES item 46707<1 || item 46789 <1 || item 46856<1 
+	 	 	 	##咦～你的物品突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 	 	killitem 46707,1	 	 	 
+	 	 	 	killitem 46789,1 
+	 	 	 	killitem 46856,1 
+	 	 	 	GiveLeak1Item 46829,1	 	 
+	 	 	 	##
+	 	 	 	EndWindow 1053329
+	 	 	  		
+ 	
+ 		Window_OK item 46708>0 && item 46790 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290		  
+block  job==202
+	##我是剑之魂！我将为你服务！(正值)
+	Window 1053325,OK
+ 		Window_OK item 46706>0 && item 46788 >0
+ 			##你现在有影秀与说明书，要组合成影秀吗？
+ 			Window 1053326,YES,NO
+ 	 			Window_NO 
+	 	        	##你真是傻，留着没用的东西作什么！
+	 	        	EndWindow 1053287
+	 	        	
+	 			Window_YES item 46706<1 || item 46788 <1 || item 46856<1 
+	 	 		##咦～你的东西突然不见，是不是掉了。
+	 	 	 	EndWindow 1053288
+	 	 	 	
+				Window_YES 
+	 	 		killitem 46706,1	 	 	 
+	 	 	 	killitem 46788,1 
+	 	 	 	killitem 46856,1 
+	 	 	 	GiveLeak1Item 46828,1
+	 	 	 	##剑之魂、影秀积木与说明书消失了！出现了影秀。
+	 	 	 	EndWindow 1053327
+	 	 	 
+	 	 	 
+ 		Window_OK item 46707>0 && item 46789 >0
+		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	
+
+ 	
+ 		Window_OK item 46708>0 && item 46790 >0
+ 		##可惜你的职业等级不够,我无法帮你契合
+ 		EndWindow 1053289 	 		
+ 		
+		Window_OK 
+		##可惜你没有可以契合的物品,我无法帮助你
+		EndWindow 1053290				 	      
+block  job==201
+	##你的能力并不能驾御我，请你多加努力！
+	EndWindow 1053291
+block  
+	##你并不是铸剑职人，我无法为你服务！
+	EndWindow 1053324

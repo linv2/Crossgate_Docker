@@ -1,0 +1,184 @@
+#伉伊□﹛甩伙穴﹛3及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+block Item 14630 >=1 && ItemCreateTime 14630 >= 31
+
+	Window 3201485,next
+		#\n\n﹛丐日﹜引丑\n﹛云累互迍仃化仄引中引仄凶友﹝
+
+	Window 3201486,ok
+		#\n\n﹛伄及云累反ㄢㄟ坌匹迍仃化仄引中引允井日﹝\n﹛籣酦匹﹜\n﹛歹凶仁仄心凶中卅田瓦□卞疯挕萃仄化枃尹壬\n﹛引凶ㄢㄟ坌反厘暹屺卞卅曰引允互﹝
+	
+	Window_ok
+
+		KillItemall 14630
+		KillItemall 14631
+		KillItemall 607693
+		KillItemall 607694
+		KillItemall 607695
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && Item 607693 >=1 && Item 607694 >=1 && Item 607695 >=1 && ItemCreateTime 14630 <= 30
+
+
+	Window 3201487,next
+		#\n\n﹛蝈化及瞿曰坁毛熬仃潸日木凶方丹匹允友〝\n﹛云?木迋匹仍介中引允﹝\n﹛詨反打□伙尺﹜\n﹛奶弗奶弗打□打□匹豢甄中引允友﹝
+
+	Window 3201488,yes,no
+		#\n\n﹛伄及累毛疯挕萃谯仄引允井〝
+
+	Window_yes Item 14630 == 0
+
+		EndWindow 3201489
+		#\n\n﹛云累反升丹今木引仄凶〝
+
+
+	Window_yes
+
+		KillItemall 14630
+		GiveItem 14630,1
+
+		EndWindow 3201490
+		#\n\n﹛优诮″母奶乩乒件玉母旦玄″\n﹛仇木匹﹜引凶\n﹛ㄢㄟ坌反迍仃反中凶仄引六氏﹝
+
+
+	Window_no
+
+
+		EndWindow 3201491
+		#\n\n﹛方欠仄中匹允井〝\n﹛云累互迍仃化仄引丹井手仄木引六氏方〝
+
+
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && Item 607693 >=1  && Item 607694 >=1 && ItemCreateTime 14630 <= 30
+
+	Window 3201492,next
+		#\n\n﹛云?木迋匹仍介中引允﹝\n﹛歹凶仁仄及苂井匀化中月坁反\n﹛手丹仍介中引六氏﹝
+
+	Window 3201493,yes,no
+		#\n\n﹛伄及累毛疯挕萃谯仄引允井〝
+
+	Window_yes Item 14630 == 0
+
+		EndWindow 3201494
+		#\n\n﹛云累反升丹今木引仄凶〝
+
+
+
+
+	Window_yes
+
+		KillItemall 14630
+		GiveItem 14630,1
+
+		EndWindow 3201495
+		#\n\n﹛优诮″母奶乩乒件玉母旦玄″\n﹛仇木匹﹜引凶\n﹛ㄢㄟ坌反迍仃反中凶仄引六氏﹝
+
+
+	Window_no
+
+
+		EndWindow 3201496
+		#\n\n﹛方欠仄中匹允井〝\n﹛云累互迍仃化仄引丹井手仄木引六氏方〝
+
+
+
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && Item 607693 >=1 && ItemCreateTime 14630 <= 30
+
+
+
+Window 3201497,next
+		#\n\n﹛仇木反仇木反﹜\n﹛左伉巨件泛□伉件弘辅笛﹜\n﹛丐曰互午丹仍介中引允﹝
+
+	Window 3201498,next
+		#\n\n﹛歹凶仁仄及苂井匀化中月瞿曰坁反\n﹛旦正□它伙白匹仍介中引允﹝\n﹛升丹冗云ダ户票今中引仄﹝\n﹛戚反?垫乒件旦正□互\n﹛支凶日午请月Ⅱ楷毛云邠友票今中引仄﹝
+
+
+	Window 3201499,ok
+		#\n\n﹛勾中匹卞伄及累毛疯挕萃谯仄引允﹝\n﹛方欠仄中匹允友〝
+
+	Window_ok Item 607694 >= 1
+
+		EndWindow 3201500
+		#\n\n﹛手丹云儅切匹仄凶井﹝
+
+	Window_ok ItemSpace < 1
+
+		endWindow 3201501
+		#\n\n﹛儅切坁互\n﹛中匀天中及方丹匹仍介中引允﹝
+
+
+	Window_ok Item 14630 == 0
+
+		EndWindow 3201502
+		#\n\n﹛云累反升丹今木引仄凶〝
+
+	Window_ok
+
+		KillItemall 14630
+		GiveItem 14630,1
+		GiveItem 607694,1
+
+
+
+block Item 14630 >=1 &&  Item 14631 >=1 && ItemCreateTime 14630 <= 30
+
+	
+
+
+
+
+	Window 3201503,next
+		#\n\n﹛云?木迋匹仍介中引允﹝\n﹛匹允互﹜歹凶仁仄及蟆卞﹜\n﹛引分湮月屯五质互豢甄中引允﹝\n﹛请跶仄票今中引仄﹝
+
+	Window 3201504,yes,no
+		#\n\n﹛伄及累毛疯挕萃谯仄引允井〝
+
+	Window_yes Item 14630 == 0
+
+		EndWindow 3201505
+		#\n\n﹛云累反升丹今木引仄凶〝
+
+
+	Window_yes
+
+		KillItemall 14630
+		GiveItem 14630,1
+
+		EndWindow 3201506
+		#\n\n﹛优诮″母奶乩乒件玉母旦玄″\n﹛仇木匹﹜引凶\n﹛ㄢㄟ坌反迍仃反中凶仄引六氏﹝
+
+
+	Window_no
+
+
+		EndWindow 3201507
+		#\n\n﹛方欠仄中匹允井〝\n﹛云累互迍仃化仄引丹井手仄木引六氏方〝
+
+
+block Item 14631 >= 1
+
+
+	endWindow 3201508
+		#\n\n﹛引内反伄及累毛﹜云熬仃潸曰仁分今中引仄﹝
+
+
+
+###########﹛辅笛据拑仄﹛##############
+
+
+block 
+
+
+
+	Window 3201509,next
+		#\n\n﹛＊及扔示泛件毛云譬屯及杅﹜\n﹛仍塑洢迋匹允﹝
+
+	endWindow 3201510
+		#\n\n﹛台反﹜骚曰允互曰匹仍介中引允﹝\n﹛公及引引﹜内内中午构诮仄化票今中引仄﹝

@@ -1,0 +1,24 @@
+#甩奶伊矛伙轾仃荼瞻豭﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛项柈敢﹋敛?﹌及摒
+
+###﹛敛及伤?妐踏毛赭儅
+block Item_631004 >= 1
+	GAWindow 3204552,OK
+
+		#\n\n﹛公及妐踏卞勾中化哔尹月优邰反卅中﹝\n﹛公木方曰手﹜蝈恘匹爵丹及分﹝\n﹛绖敢凶切及掸董互＿失永﹜仇木反侉木化仁木﹝
+
+		Window_OK
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	GAWindow 3204553,OK
+
+		#\n\n﹛蛙五障ミ樊〝﹛今丐﹜襞日氏卅﹝\n﹛公氏卅仇午反升丹匹手中中﹜\n﹛厘中卅月爵中卞鴃厍匹五木壬恌中及分″
+
+		Window_OK
+
+
+

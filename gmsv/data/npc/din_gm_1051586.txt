@@ -1,0 +1,28 @@
+##GM500M障碍赛	障碍赛(450m)	din_gm_1051586.txt	座标：32100(29,73)	突破 450 M。
+
+##突破450m
+block Xpos == 22 && Ypos == 74
+	 ##1054381	\n\n  450公尺突破！\n\n  最后五十公尺冲刺！！	1
+	 EndWindow 1054381
+	 
+block Xpos == 23 && Ypos == 74
+	 ##1054381	\n\n  450公尺突破！\n\n  最后五十公尺冲刺！！	1
+	 EndWindow 1054381
+	 
+block Xpos == 24 && Ypos == 74
+	 ##1054381	\n\n  450公尺突破！\n\n  最后五十公尺冲刺！！	1
+	 EndWindow 1054381
+	 
+block Xpos == 25 && Ypos == 74
+	 ##1054381	\n\n  450公尺突破！\n\n  最后五十公尺冲刺！！	1
+	 EndWindow 1054381
+	 
+block Xpos == 26 && Ypos == 74
+	 ##1054381	\n\n  450公尺突破！\n\n  最后五十公尺冲刺！！	1
+	 EndWindow 1054381
+	 
+block Xpos == 27 && Ypos == 74
+	 ##1054381	\n\n  450公尺突破！\n\n  最后五十公尺冲刺！！	1
+	 EndWindow 1054381
+	 
+	 	 			 

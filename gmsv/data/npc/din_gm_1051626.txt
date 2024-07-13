@@ -1,0 +1,46 @@
+##puk4包装-海贼头目 din_gm_1051626.txt
+##功能：将玩家传送至宝窟
+
+##身上有宝图并且装备海贼套装
+block Item 47347 >= 1 && PEquipItem 47348,0 >= 1 && PEquipItem 47349,0 >= 1 && PEquipItem 47350,0 >= 1 && PEquipItem 47351,0 >= 1 && PEquipItem 47352,0 >= 1 
+	 ##1054468	\n\n 身为我们的一份子。总该为组织尽点心力…	
+	 Window 1054468,NEXT 
+	 ##1054467	\n\n 想要进入未知的海贼宝窟一探究竟吗？	
+	 Window 1054467,YES,NO 
+
+		 Window_NO 
+		 
+		 Window_YES Group >= 2
+	 	 	 ##1051829	\n\n\n\n  这里的迷宫必须单独进入，请先解散队伍。	
+		 	 EndWindow 1051829
+
+		 Window_YES Item 47347 >= 1 && PEquipItem 47348,0 >= 1 && PEquipItem 47349,0 >= 1 && PEquipItem 47350,0 >= 1 && PEquipItem 47351,0 >= 1 && PEquipItem 47352,0 >= 1 
+			 KillItem 47347
+			 Warp 0,32103,22,27 
+
+		 Window_YES Item 47347 >= 1
+		 	 KillItem 47347
+		 	 Warp 0,32103,22,27
+		 
+
+##只有凑齐宝图
+block Item 47347 >= 1
+	 ##1054466	\n\n 太神奇了！没想到你竟然能将宝图拼凑起来！	
+	 Window 1054466,NEXT 
+	 ##1054467	\n\n 想要进入未知的海贼宝窟一探究竟吗？	
+	 Window 1054467,YES,NO 
+	 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Group >= 2
+	 	 	 ##1051829	\n\n\n\n  这里的迷宫必须单独进入，请先解散队伍。	
+		 	 EndWindow 1051829
+		 
+		 Window_YES Item 47347 >= 1
+			 KillItem 47347
+		 	 Warp 0,32102,22,27
+		 	 
+block 
+	 ##1054467	\n\n 想要进入未知的海贼宝窟一探究竟吗？	
+	 EndWindow 1054467
+		 	 

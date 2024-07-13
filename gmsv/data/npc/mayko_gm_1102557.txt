@@ -1,0 +1,89 @@
+
+### 入口
+##block Item 40709 >= 1 && Xpos == 69 && Ypos == 54 
+	 
+block Item 9302 >= 1 && Xpos >= 64 && Ypos >= 44
+	 Window 1110466,YES,NO
+	 #1110466	\n\n\n　　　身上的精灵之卵发出共鸣，\n　　　要进到井底吗？
+	 Window_NO
+	 Endblock
+	 Window_YES Group >1
+	 EndWindow  20611
+	 #20611	\n\n请解散队伍再来吧！	1	 
+	 Window_YES
+	 	 Window 1110467,YES,NO
+	 	 #1110467	\n\n\n　　　精灵之卵可能会破碎，\n　　　要进到井底吗？	1
+	 	 Window_NO
+	 	 endblock
+	 	 Window_YES Item 9302>0
+	 	 KillItem 9302,1
+	 	 LeaveGroup	 
+	 	 Warp 0,32121,12,10	 	 	 
+	 	 Endblock
+	 	 Window_YES
+		 endblock
+block Item 9312 >= 1 &&  Xpos >= 64 && Ypos >= 44
+	 Window 1110466,YES,NO
+	 #1110466	\n\n\n　　　身上的精灵之卵发出共鸣，\n　　　要进到井底吗？
+	 Window_NO
+	 Endblock
+	 Window_YES Group >1
+	 EndWindow  20611
+	 #20611	\n\n请解散队伍再来吧！	1	 
+	 Window_YES
+	 	 Window 1110467,YES,NO
+	 	 #1110467	\n\n\n　　　精灵之卵可能会破碎，\n　　　要进到井底吗？	1
+	 	 Window_NO
+	 	 endblock
+	 	 Window_YES Item 9312>0
+	 	 KillItem 9312,1
+	 	 LeaveGroup	 
+	 	 Warp 0,32121,12,10	 	 	 
+	 	 Endblock
+	 	 Window_YES
+		 endblock
+block Item 9322 >= 1 &&  Xpos >= 64 && Ypos >= 44
+	 Window 1110466,YES,NO
+	 #1110466	\n\n\n　　　身上的精灵之卵发出共鸣，\n　　　要进到井底吗？
+	 Window_NO
+	 Endblock
+	 Window_YES Group >1
+	 EndWindow  20611
+	 #20611	\n\n请解散队伍再来吧！	1	 
+	 Window_YES
+	 	 Window 1110467,YES,NO
+	 	 #1110467	\n\n\n　　　精灵之卵可能会破碎，\n　　　要进到井底吗？	1
+	 	 Window_NO
+	 	 endblock
+	 	 Window_YES Item 9322>0
+	 	 KillItem 9322,1
+	 	 LeaveGroup	 
+	 	 Warp 0,32121,12,10	 	 	 
+	 	 Endblock
+	 	 Window_YES
+		 endblock
+block Item 9332 >= 1 &&  Xpos >= 64 && Ypos >= 44
+	 Window 1110466,YES,NO
+	 #1110466	\n\n\n　　　身上的精灵之卵发出共鸣，\n　　　要进到井底吗？
+	 Window_NO
+	 Endblock
+	 Window_YES Group >1
+	 EndWindow  20611
+	 #20611	\n\n请解散队伍再来吧！	1	 
+	 Window_YES
+	 	 Window 1110467,YES,NO
+	 	 #1110467	\n\n\n　　　精灵之卵可能会破碎，\n　　　要进到井底吗？	1
+	 	 Window_NO
+	 	 endblock
+	 	 Window_YES Item 9332>0
+	 	 KillItem 9332,1
+	 	 LeaveGroup	 
+	 	 Warp 0,32121,12,10	 	 	 
+	 	 Endblock
+	 	 Window_YES
+		 endblock
+block  Xpos >= 64 && Ypos >= 44  
+	 EndWindow 1110465
+#1110465	\n\n\n　　　你身上没有三级的精灵之卵，\n　　　无法进到井底。	1
+	  	 
+		 	 

@@ -1,0 +1,203 @@
+########### 魔力大会考62 ###########
+######■主考官恩格
+##■检查队伍
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■检查物品栏
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	
+	 EndWindow 1100001
+##■有金色的徽章
+block Item 45336 == 1 
+    ##1050805	\n\n\n快去跟我的助手说话，假如等到蜡烛烧完了，有徽章也换不到奖品！
+    EndWindow 1050805
+##■有烛台(时间已过)
+block Item 45332 == 1 
+	 ##1050791	\n\n好不容易来到最后一关，蜡烛却熄了，你一定很懊悔吧？\n不过人生不如意事，十常八九，下次再来挑战吧！这是安慰奖，拿着吧！
+	 Window 1050791,OK 
+	 Window_OK Item 45332 == 1 
+	     KillItem 45332
+	     GiveLeak1Item 45334
+	     Warp 0,30110,15,30
+##■检查烛台时间1
+block Item 45331 == 1 && ItemCreateTime 45331 > 5
+  	 KillItem 45331
+  	 GiveLeak1Item 45332
+  	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间2
+block Item 45330 == 1 && ItemCreateTime 45330 > 10
+	 KillItem 45330
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间3
+block Item 45330 == 1 && ItemCreateTime 45330 > 5
+	 KillItem 45330
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间4
+block Item 45329 == 1 && ItemCreateTime 45329 > 15
+	 KillItem 45329
+	 GiveLeak1Item 45332
+	 ##1050677	\n\n\n\n@c比赛时间已到！
+	 EndWindow 1050677
+##■检查烛台时间5
+block Item 45329 == 1 && ItemCreateTime 45329 > 10
+	 KillItem 45329
+	 GiveLeak1Item 45331
+	 ##1050679	\n\n\n\n@c比赛将在5分钟以内结束！
+	 EndWindow 1050679
+##■检查烛台时间6
+block Item 45329 == 1 && ItemCreateTime 45329 > 5
+	 KillItem 45329
+	 GiveLeak1Item 45330
+	 ##1050678	\n\n\n\n@c比赛将在10分钟以内结束！
+         EndWindow 1050678
+##■有烛台(时间未过)
+block Item 45329 == 1 || Item 45330 == 1 || Item 45331 == 1
+    ##1050792	\n\n真是不敢相信！前面的考官都在做什么？\n竟然放你来打扰我！\n就让你知道我的厉害吧！
+    Window 1050792,OK
+        Window_OK Group == 1
+            ##1050810	出现在杰诺村瓦村的鸟人叫做幻歌妖？
+            Window 1050810,YES,NO
+                Window_NO Group == 1
+                    KillItem 45329
+	            KillItem 45330
+	            KillItem 45331
+	                ##1050803	\n\n\n\n答错了！小子！请你出去吧！别沮丧着脸，给你一个安慰奖好了！
+	                Window 1050803,OK
+	                         Window_OK
+	                             GiveLeak1Item 45334
+	  	        	     Warp 0,30110,15,30
+	    Window_YES Group == 1
+	        ##1050811	特利亚酒吧的女连络员透露出的暗号是“头目万岁”？
+	        Window 1050811,YES,NO
+	            Window_NO Group == 1
+                        KillItem 45329
+	                KillItem 45330
+	                KillItem 45331
+	                    ##1050803	\n\n\n\n答错了！小子！请你出去吧！别沮丧着脸，给你一个安慰奖好了！
+	                    Window 1050803,OK
+	                        Window_OK
+	                            GiveLeak1Item 45334
+	  	            	    Warp 0,30110,15,30
+	  	    Window_YES Group == 1
+	  	        ##1050812	在护士就职流程当中回答护士的问题里头，标准答案是荷洛？
+	  	        Window 1050812,YES,NO
+	  	            Window_NO Group == 1
+	  	                KillItem 45329
+	                        KillItem 45330
+	                        KillItem 45331
+	                            ##1050803	\n\n\n\n答错了！小子！请你出去吧！别沮丧着脸，给你一个安慰奖好了！
+	                            Window 1050803,OK
+	                                 Window_OK
+	                                     GiveLeak1Item 45334
+	  	            	             Warp 0,30110,15,30 
+	  	            Window_YES Group == 1
+	  	                ##1050813	艾猫的女孩莎佳琦说他要25级的战虎跟猫妖？
+	  	                Window 1050813,YES,NO
+	  	                    Window_YES Group == 1
+	  	                        KillItem 45329
+	                                KillItem 45330
+	                                KillItem 45331
+	                                    ##1050803	\n\n\n\n答错了！小子！请你出去吧！别沮丧着脸，给你一个安慰奖好了！
+	                                    Window 1050803,OK
+	                                        Window_OK
+	                                            GiveLeak1Item 45334
+	  	            	                    Warp 0,30110,15,30 	
+	  	            	    Window_NO Group == 1
+	  	            	        ##1050814	跟专管称号的NPC说话，如果身上及银行都没钱会得到“穷鬼”这个称号？
+	  	            	        Window 1050814,YES,NO
+	  	                            Window_NO Group == 1
+	  	                                KillItem 45329
+	                                        KillItem 45330
+	                                        KillItem 45331
+	                                            ##1050803	\n\n\n\n答错了！小子！请你出去吧！别沮丧着脸，给你一个安慰奖好了！
+	                                            Window 1050803,OK
+	                                                Window_OK
+	                                                    GiveLeak1Item 45334
+	  	            	                            Warp 0,30110,15,30 
+	  	            	            Window_YES Group == 1
+	  	            	                ##1050815	每个人最多会掉五个魂？
+	  	            	                Window 1050815,YES,NO
+	  	                                    Window_YES Group == 1
+	  	                                        KillItem 45329
+	                                                KillItem 45330
+	                                                KillItem 45331
+	                                                    ##1050803	\n\n\n\n答错了！小子！请你出去吧！别沮丧着脸，给你一个安慰奖好了！
+	                                                    Window 1050803,OK
+	                                                        Window_OK
+	                                                            GiveLeak1Item 45334
+	  	            	                                    Warp 0,30110,15,30 
+	  	            	                    Window_NO Group == 1
+	  	            	                        ##1050816	大地鼠彩卷第一奖奖品是100万魔币？
+	  	            	                        Window 1050816,YES,NO
+	  	                                            Window_YES Group == 1
+	  	                                                KillItem 45329
+	                                                        KillItem 45330
+	                                                        KillItem 45331
+	                                                            ##1050803	\n\n\n\n答错了！小子！请你出去吧！别沮丧着脸，给你一个安慰奖好了！
+	                                                            Window 1050803,OK
+	                                                                Window_OK
+	                                                                    GiveLeak1Item 45334
+	  	            	                                            Warp 0,30110,15,30 
+	  	            	                            Window_NO Group == 1 
+	  	            	                                ##1050817	大宇15周年庆所贩售的鼠王惊奇蛋原订价格是10000元？
+	  	            	                                Window 1050817,YES,NO
+	  	                                                    Window_YES Group == 1
+	  	                                                        KillItem 45329
+	                                                                KillItem 45330
+	                                                                KillItem 45331
+	                                                                    ##1050803	\n\n\n\n答错了！小子！请你出去吧！别沮丧着脸，给你一个安慰奖好了！
+	                                                                    Window 1050803,OK
+	                                                                        Window_OK
+	                                                                            GiveLeak1Item 45334
+	  	            	                                                    Warp 0,30110,15,30 
+	  	            	                                    Window_NO Group == 1 
+	  	            	                                        ##1050818	若要封印穴熊要用野兽系的封印卡片？
+	  	            	                                        Window 1050818,YES,NO
+	  	                                                            Window_NO Group == 1
+	  	                                                                KillItem 45329
+	                                                                        KillItem 45330
+	                                                                        KillItem 45331
+	                                                                            ##1050803	\n\n\n\n答错了！小子！请你出去吧！别沮丧着脸，给你一个安慰奖好了！
+	                                                                            Window 1050803,OK
+	                                                                                Window_OK
+	                                                                                    GiveLeak1Item 45334
+	  	            	                                                            Warp 0,30110,15,30 
+	  	            	                                            Window_YES Group == 1 
+	  	            	                                                ##1050819	地下竞技场中，一共有羽量级、轻量级、中量级以及重量级四个组别？
+	  	            	                                                Window 1050819,YES,NO
+	  	                                                                    Window_NO Group == 1
+	  	                                                                        KillItem 45329
+	                                                                                KillItem 45330
+	                                                                                KillItem 45331
+	                                                                                    ##1050803	\n\n\n\n答错了！小子！请你出去吧！别沮丧着脸，给你一个安慰奖好了！
+	                                                                                    Window 1050803,OK
+	                                                                                        Window_OK
+	                                                                                            GiveLeak1Item 45334
+	  	            	                                                                    Warp 0,30110,15,30 
+	  	            	                                                    Window_YES Group == 1
+	  	            	                                                        ##1050804	\n\n\n嗯~ 虽然不想承认，但是你的确通过了五关的考验，这证明你对这世界的一草一木十分了解。
+	  	            	                                                        Window 1050804,OK
+	  	            	                                                            Window_OK Item 45329 == 1 || Item 45330 == 1 || Item 45331 == 1
+	  	                                                                                 GiveLeak1Item 45336
+	  	                                                                                   ##1050806	\n\n这枚徽章代表你答对了所有的问题，拿着它去找我助手吧！\n他会先看看你蜡烛燃烧到怎样的程度，再决定给你怎样奖品，快去吧！
+	  	                                                                                   EndWindow 1050806
+	  	                                                                                 
+		 		  		 				  		 		 	 	 	 	 	 
+##■没有烛台
+block
+	 ##1050751	\n咦？你怎么进来的？\n我记得所有参赛的勇者都有拿到计时用的烛台呀！\n你的是烧完了还是怎样呀？\n不过没烛台就不能参加，所以只好请你出去啰！
+	 Window 1050751,OK
+	 	 Window_OK
+	 	 Warp 0,30110,15,30	  	                                      
+	  	                                                                                     
+  	

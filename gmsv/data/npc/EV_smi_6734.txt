@@ -1,0 +1,66 @@
+#奶矛件玄泛旦玄
+#愈赓卞椭瘀互域谯仄凶皮夫永弁毛质咥允月
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 嬲蟀?﹛##########
+block 
+	#
+	Window 13123,YES,NO
+
+	Window_NO
+
+	#5晚じ木化心引允井〝
+	Window_YES 
+	Window 13125,YES,NO
+#//////////////////////////////////////
+	Window_YES gold < 5
+	EndWindow 13134
+
+	Window_YES gold >= 5
+	addgold -5,(13131)
+	addluck -2,1
+	EndWindow 13124
+
+	#匹反50晚じ木化心引允井〝
+	Window_NO
+	Window 13126,YES,NO
+#//////////////////////////////////////
+	Window_YES gold < 50
+	EndWindow 13134
+
+	Window_YES gold >= 50
+	addgold -50,(13131)
+	addluck -1,1
+	EndWindow 13124
+
+	#匹反500晚じ木化心引允井〝
+	Window_NO
+	Window 13127,YES,NO
+#//////////////////////////////////////
+	Window_YES gold < 500
+	EndWindow 13134
+
+	Window_YES gold >= 500
+	addgold -500,(13131)
+	addluck 0,1
+	EndWindow 13124
+
+	#匹反5000晚じ木化心引允井〝
+	Window_NO
+	Window 13128,YES,NO
+#//////////////////////////////////////
+	Window_YES gold < 5000
+	EndWindow 13134
+
+	Window_YES gold >= 5000
+	addgold -5000,(13131)
+	addluck 1
+	EndWindow 13124
+
+	#匹反5000晚じ木化心引允井〝
+	Window_NO
+	#EndWindow 13132
+
+

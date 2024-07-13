@@ -1,0 +1,92 @@
+####dodo_item_47368.txt
+###6.豆荚			可点出3颗豆豆。
+####□身上有豆荚 > 1
+block Item 47368 > 1 
+	 ##1054518	\n\n\n\n\n@c想剥开豆荚吗?	1
+	 Window 1054518,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47368 > 1 
+	 	 	 ##1054519	\n\n\n  身上有两个以上的豆荚，不知道要剥哪一个？真令  人困扰。不如等身上只剩下一个豆荚时在剥吧！	1
+		 	 EndWindow 1054519
+		 	 
+####□身上有豆荚 == 1 && 豆荚_邮票 == 30 
+block Item 47368 == 1 && StampCount 47368 == 30 
+	 ##1054518	\n\n\n\n\n@c想剥开豆荚吗?	1
+	 Window 1054518,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47368 == 1 && StampCount 47368 == 30 && ItemSpace <= 2
+			 ##1054521	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的三格位置。	1
+			 EndWindow 1054521
+
+		 Window_YES Item 47368 == 1 && StampCount 47368 == 30 && ItemSpace >= 3	 
+			 ##(取走豆荚)
+			 KillItem 47368
+			 ##(给予3颗全体补9000的豆豆)
+			 GiveLeak1Item 47369,3
+
+####□身上有豆荚 == 1 && 豆荚_邮票 >= 25 && 豆荚_邮票 <= 29 
+block Item 47368 == 1 && StampCount 47368 >= 25 && StampCount 47368 <= 29
+	 ##1054518	\n\n\n\n\n@c想剥开豆荚吗?	1
+	 Window 1054518,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47368 == 1 && StampCount 47368 >= 25 && StampCount 47368 <= 29 && ItemSpace <= 2
+	 	 	 ##1054521	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的三格位置。	1
+			 EndWindow 1054521
+
+		 Window_YES Item 47368 == 1 && StampCount 47368 >= 25 && StampCount 47368 <= 29 && ItemSpace >= 3
+		 	 ##(取走豆荚)
+		 	 KillItem 47368
+		 	 ##(给予3颗全体补800的豆豆)
+		 	 GiveLeak1Item 47370,3
+		 	 
+####□身上有豆荚 == 1 && 豆荚_邮票 >= 20 && 豆荚_邮票 <= 24 
+block Item 47368 == 1 && StampCount 47368 >= 20 && StampCount 47368 <= 24
+	 ##1054518	\n\n\n\n\n@c想剥开豆荚吗?	1
+	 Window 1054518,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47368 == 1 && StampCount 47368 >= 20 && StampCount 47368 <= 24 && ItemSpace <= 2
+	 	 	 ##1054521	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的三格位置。	1
+			 EndWindow 1054521
+
+		 Window_YES Item 47368 == 1 && StampCount 47368 >= 20 && StampCount 47368 <= 24 && ItemSpace >= 3
+		 	 ##(取走豆荚)
+		 	 KillItem 47368
+		 	 ##(给予3颗全体补600的豆豆)
+		 	 GiveLeak1Item 47371,3
+		 	 
+####□身上有豆荚 == 1 && 豆荚_邮票 >= 10 && 豆荚_邮票 <= 19 
+block Item 47368 == 1 && StampCount 47368 >= 10 && StampCount 47368 <= 19
+	 ##1054518	\n\n\n\n\n@c想剥开豆荚吗?	1
+	 Window 1054518,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47368 == 1 && StampCount 47368 >= 10 && StampCount 47368 <= 19 && ItemSpace <= 2
+	 	 	 ##1054521	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的三格位置。	1
+			 EndWindow 1054521
+
+		 Window_YES Item 47368 == 1 && StampCount 47368 >= 10 && StampCount 47368 <= 19 && ItemSpace >= 3
+		 	 ##(取走豆荚)
+		 	 KillItem 47368
+		 	 ##(给予3颗全体补300的豆豆)
+		 	 GiveLeak1Item 47372,3
+		 	 
+####□身上有豆荚 == 1 && 豆荚_邮票 >= 3 && 豆荚_邮票 <= 9 
+block Item 47368 == 1 && StampCount 47368 >= 3 && StampCount 47368 <= 9
+	 ##1054518	\n\n\n\n\n@c想剥开豆荚吗?	1
+	 Window 1054518,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47368 == 1 && StampCount 47368 >= 3 && StampCount 47368 <= 9 && ItemSpace <= 2
+	 	 	 ##1054521	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的三格位置。	1
+			 EndWindow 1054521
+			 
+		 Window_YES Item 47368 == 1 && StampCount 47368 >= 3 && StampCount 47368 <= 9 && ItemSpace >= 3
+		 	 ##(取走豆荚)
+		 	 KillItem 47368
+		 	 ##(给予3颗全体补300的豆豆)
+		 	 GiveLeak1Item 47373,3
+		 	 

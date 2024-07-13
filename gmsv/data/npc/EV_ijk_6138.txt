@@ -1,0 +1,451 @@
+#斨洬伊□旦	斨洬旦正□玄溢	6138 1404 2 2
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+########## 伊矛伙互ㄤ恍坢及桦宁 ##########
+	block Level < 5
+	#\n\n﹛仇仇反伊矛伙ㄤ动晓卅中午厍迕匹五卅中雒涩卅及今﹝\n﹛伊矛伙互晓互匀凶日引凶侳化仁木方″
+	EndWindow 11815
+
+########## 肣躲卅骚垫袱第据毛儅匀化中月桦宁 ##########
+	block Item 18377 >= 1 && ItemCreateTime 18377 < 60 && Group == 1
+	EndEvent 46 = 0
+	EndEvent 47 = 0
+	#\n\n﹛骚垫袱第据毛儅匀化中月及井﹝\n﹛公木匹反仇仇毛骚匀化﹜蛤厘斨洬卞辅笛允月井〝
+	Window 11870,YES,NO
+
+	Window_YES
+	#\n\n﹛蜇箕赶勾及斨洬互厍迕第チ分冗﹝升木卞じ桦允月井卅〝域勾杴卞允月井中〝
+	Window 11872,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛匹反﹜き勾杴及斨洬卞じ桦允月﹜井卅〝
+	Window 11873,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1412,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛公木匹反﹜赶勾杴及斨洬卞じ桦允月﹜匹方欠仄中井卅〝
+	Window 11874,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛窒分﹜瑁引日卅中元扎卅中井″″酷杅卅中﹜公木元扎丐台卞斨洬及蓟枪毛引井六化心月井〝
+	Window 11875,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97,0,1412,97,97,0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛引凶侳化仁木﹝仇仇及熬尥反镞及心分方﹝
+	EndWindow 11769
+
+########## 拑躲卅骚垫袱第据毛儅匀化中月桦宁 ##########
+	block Item 18377 >= 1 && ItemCreateTime 18377 >= 60
+	EndEvent 46 = 0
+	EndEvent 47 = 0
+	#\n\n﹛袱第据及渝蜃互拑躲卞卅匀化中月卅﹝\n﹛公木反仇切日匹质坌仄化云仇丹井〝
+	Window 11871,YES,NO
+
+	Window_YES Item 18377 >= 1 && ItemCreateTime 18377 >= 60
+	KillItem 18377,1
+
+	Window_YES
+
+	Window_NO
+
+########## 绂坁卞坞五互卅中桦宁 ##########
+	block ItemSpace == 0
+	#\n\n﹛伊□旦卞辅笛允月井中〝\n﹛＿匀午午﹜绂坁卞坞五互卅中方丹分卅﹝公木元扎じ桦袱第据互欐六卅中卅丑﹝
+	EndWindow 11768
+
+########## 由□泛奴及桦宁 ##########
+	block Group >= 2
+	#\n\n﹛蛤厘斨洬及じ曰轼反﹜域谛勿勾骚匀化仁木﹝\n﹛由□泛奴毛荸辣允月井中〝
+	Window 11868,YES,NO
+
+	Window_YES Group >= 2
+	LeaveGroup
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛蛤厘斨洬及伊□旦卞辅笛允月卅日﹜域谛勿勾眸卞狪仄喘仃化仁木﹝
+	EndWindow 11869
+
+########## 域谛杴及桦宁 ##########
+	block Visitor == 0 && Group == 1
+	EndEvent 46 = 0
+	EndEvent 47 = 0
+	#\n\n﹛仇仇反﹜⑷绖桦〇雒涩﹜＞蛤厘斨洬＝分″域匏匹打□伙仄凶手及卞反﹜旦泛平卅操圴互芨尹日木月冗″\n﹛升丹分中〝伊□旦卞辅笛允月井中〝\n﹛蜇箕及辅笛樊反 ㄟ抩分﹝
+	Window 11770,YES,NO
+
+	Window_YES ItemSpace == 0 && Group == 1
+	#\n\n﹛伊□旦卞辅笛允月井中〝\n﹛＿匀午午﹜绂坁卞坞五互卅中方丹分卅﹝公木元扎じ桦袱第据互欐六卅中卅丑﹝
+	EndWindow 11768
+
+	Window_YES
+	#\n\n﹛蜇箕赶勾及斨洬互厍迕第チ分冗﹝升木卞じ桦允月井卅〝域勾杴卞允月井中〝
+	Window 11872,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛匹反﹜き勾杴及斨洬卞じ桦允月﹜井卅〝
+	Window 11873,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1412,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛公木匹反﹜赶勾杴及斨洬卞じ桦允月﹜匹方欠仄中井卅〝
+	Window 11874,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛窒分﹜瑁引日卅中元扎卅中井″″酷杅卅中﹜公木元扎丐台卞斨洬及蓟枪毛引井六化心月井〝
+	Window 11875,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97,0,1412,97,97,0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛引凶侳化仁木﹝仇仇及熬尥反镞及心分方﹝
+	EndWindow 11769
+
+########## き谛杴及桦宁 ##########
+	block Visitor == 1 && Group == 1
+	EndEvent 46 = 0
+	EndEvent 47 = 0
+	#\n\n﹛仇仇反﹜⑷绖桦〇雒涩﹜＞蛤厘斨洬＝分″域匏匹打□伙仄凶手及卞反﹜旦泛平卅操圴互芨尹日木月冗″\n﹛升丹分中〝伊□旦卞辅笛允月井中〝\n﹛蜇箕及辅笛樊反 ㄠ抩分﹝
+	Window 11771,YES,NO
+
+	Window_YES ItemSpace == 0 && Group == 1
+	#\n\n﹛伊□旦卞辅笛允月井中〝\n﹛＿匀午午﹜绂坁卞坞五互卅中方丹分卅﹝公木元扎じ桦袱第据互欐六卅中卅丑﹝
+	EndWindow 11768
+
+	Window_YES
+	#\n\n﹛蜇箕赶勾及斨洬互厍迕第チ分冗﹝升木卞じ桦允月井卅〝域勾杴卞允月井中〝
+	Window 11872,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛匹反﹜き勾杴及斨洬卞じ桦允月﹜井卅〝
+	Window 11873,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1412,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛公木匹反﹜赶勾杴及斨洬卞じ桦允月﹜匹方欠仄中井卅〝
+	Window 11874,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛窒分﹜瑁引日卅中元扎卅中井″″酷杅卅中﹜公木元扎丐台卞斨洬及蓟枪毛引井六化心月井〝
+	Window 11875,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97,0,1412,97,97,0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛引凶侳化仁木﹝仇仇及熬尥反镞及心分方﹝
+	EndWindow 11769
+
+########## 赶谛杴及桦宁 ##########
+	block Visitor == 2 && Group == 1
+	EndEvent 46 = 0
+	EndEvent 47 = 0
+	#\n\n﹛仇仇反﹜⑷绖桦〇雒涩﹜＞蛤厘斨洬＝分″域匏匹打□伙仄凶手及卞反﹜旦泛平卅操圴互芨尹日木月冗″\n﹛升丹分中〝伊□旦卞辅笛允月井中〝\n﹛蜇箕及辅笛樊反 ㄡ抩分﹝
+	Window 11772,YES,NO
+
+	Window_YES ItemSpace == 0 && Group == 1
+	#\n\n﹛伊□旦卞辅笛允月井中〝\n﹛＿匀午午﹜绂坁卞坞五互卅中方丹分卅﹝公木元扎じ桦袱第据互欐六卅中卅丑﹝
+	EndWindow 11768
+
+	Window_YES
+	#\n\n﹛蜇箕赶勾及斨洬互厍迕第チ分冗﹝升木卞じ桦允月井卅〝域勾杴卞允月井中〝
+	Window 11872,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛匹反﹜き勾杴及斨洬卞じ桦允月﹜井卅〝
+	Window 11873,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1412,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛公木匹反﹜赶勾杴及斨洬卞じ桦允月﹜匹方欠仄中井卅〝
+	Window 11874,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛窒分﹜瑁引日卅中元扎卅中井″″酷杅卅中﹜公木元扎丐台卞斨洬及蓟枪毛引井六化心月井〝
+	Window 11875,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97,0,1412,97,97,0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛引凶侳化仁木﹝仇仇及熬尥反镞及心分方﹝
+	EndWindow 11769
+
+########## 铨谛杴及桦宁 ##########
+	block Visitor == 3 && Group == 1
+	EndEvent 46 = 0
+	EndEvent 47 = 0
+	#\n\n﹛仇仇反﹜⑷绖桦〇雒涩﹜＞蛤厘斨洬＝分″域匏匹打□伙仄凶手及卞反﹜旦泛平卅操圴互芨尹日木月冗″\n﹛升丹分中〝伊□旦卞辅笛允月井中〝\n﹛蜇箕及辅笛樊反 3抩分﹝
+	Window 11773,YES,NO
+
+	Window_YES ItemSpace == 0 && Group == 1
+	#\n\n﹛伊□旦卞辅笛允月井中〝\n﹛＿匀午午﹜绂坁卞坞五互卅中方丹分卅﹝公木元扎じ桦袱第据互欐六卅中卅丑﹝
+	EndWindow 11768
+
+	Window_YES
+	#\n\n﹛蜇箕赶勾及斨洬互厍迕第チ分冗﹝升木卞じ桦允月井卅〝域勾杴卞允月井中〝
+	Window 11872,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛匹反﹜き勾杴及斨洬卞じ桦允月﹜井卅〝
+	Window 11873,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1412,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛公木匹反﹜赶勾杴及斨洬卞じ桦允月﹜匹方欠仄中井卅〝
+	Window 11874,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛窒分﹜瑁引日卅中元扎卅中井″″酷杅卅中﹜公木元扎丐台卞斨洬及蓟枪毛引井六化心月井〝
+	Window 11875,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97,0,1412,97,97,0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛引凶侳化仁木﹝仇仇及熬尥反镞及心分方﹝
+	EndWindow 11769
+
+########## 诡谛杴及桦宁 ##########
+	block Visitor == 4 && Group == 1
+	EndEvent 46 = 0
+	EndEvent 47 = 0
+	#\n\n﹛仇仇反﹜⑷绖桦〇雒涩﹜＞蛤厘斨洬＝分″域匏匹打□伙仄凶手及卞反﹜旦泛平卅操圴互芨尹日木月冗″\n﹛升丹分中〝伊□旦卞辅笛允月井中〝\n﹛蜇箕及辅笛樊反 ㄣ抩分﹝
+	Window 11774,YES,NO
+
+	Window_YES ItemSpace == 0 && Group == 1
+	#\n\n﹛伊□旦卞辅笛允月井中〝\n﹛＿匀午午﹜绂坁卞坞五互卅中方丹分卅﹝公木元扎じ桦袱第据互欐六卅中卅丑﹝
+	EndWindow 11768
+
+	Window_YES
+	#\n\n﹛蜇箕赶勾及斨洬互厍迕第チ分冗﹝升木卞じ桦允月井卅〝域勾杴卞允月井中〝
+	Window 11872,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛匹反﹜き勾杴及斨洬卞じ桦允月﹜井卅〝
+	Window 11873,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1412,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛公木匹反﹜赶勾杴及斨洬卞じ桦允月﹜匹方欠仄中井卅〝
+	Window 11874,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛窒分﹜瑁引日卅中元扎卅中井″″酷杅卅中﹜公木元扎丐台卞斨洬及蓟枪毛引井六化心月井〝
+	Window 11875,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97,0,1412,97,97,0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛引凶侳化仁木﹝仇仇及熬尥反镞及心分方﹝
+	EndWindow 11769
+
+########## 牰谛杴动嫦及桦宁 ##########
+	block Visitor >= 5 && Group == 1
+	EndEvent 46 = 0
+	EndEvent 47 = 0
+	#\n\n﹛仇仇反﹜⑷绖桦〇雒涩﹜＞蛤厘斨洬＝分″域匏匹打□伙仄凶手及卞反﹜旦泛平卅操圴互芨尹日木月冗″\n﹛升丹分中〝伊□旦卞辅笛允月井中〝\n﹛蜇箕辅笛樊反﹛ㄤ抩动晓分﹝
+	Window 11767,YES,NO
+
+	Window_YES ItemSpace == 0 && Group == 1
+	#\n\n﹛伊□旦卞辅笛允月井中〝\n﹛＿匀午午﹜绂坁卞坞五互卅中方丹分卅﹝公木元扎じ桦袱第据互欐六卅中卅丑﹝
+	EndWindow 11768
+
+	Window_YES
+	#\n\n﹛蜇箕赶勾及斨洬互厍迕第チ分冗﹝升木卞じ桦允月井卅〝域勾杴卞允月井中〝
+	Window 11872,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛匹反﹜き勾杴及斨洬卞じ桦允月﹜井卅〝
+	Window 11873,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1412,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛公木匹反﹜赶勾杴及斨洬卞じ桦允月﹜匹方欠仄中井卅〝
+	Window 11874,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛窒分﹜瑁引日卅中元扎卅中井″″酷杅卅中﹜公木元扎丐台卞斨洬及蓟枪毛引井六化心月井〝
+	Window 11875,YES,NO
+
+	Window_YES ItemSpace >= 1 && Group == 1
+	GiveLeak1Item 18377
+	SetVisitor +1
+	Warp 0,1405,97,97,0,1412,97,97,0,1413,97,97
+
+	Window_YES
+
+	Window_NO
+	#\n\n﹛引凶侳化仁木﹝仇仇及熬尥反镞及心分方﹝
+	EndWindow 11769

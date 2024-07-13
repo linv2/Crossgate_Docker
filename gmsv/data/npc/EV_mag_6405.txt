@@ -1,0 +1,17 @@
+#
+#失伙白央奶
+#
+
+############## 优谖旦平伙儅匀化中月 ##############
+############## 泲仄烟旦平伙R8 ##############
+block Skilllevel 61 >= 8 || Skilllevel 62 >= 8 || Skilllevel 63 >= 8 || Skilllevel 64 >= 8 || Skilllevel 65 >= 8 || Skilllevel 66 >= 8 || Skilllevel 67 >= 8 || Skilllevel 68 >= 8
+#\n\n﹛脱互⑺辿卞沧啦毛憎允手及欥
+	Window 14792,OK
+	Window_OK
+	Warp 0,24049,24,23
+
+############## 优谖旦平伙儅匀化中卅中 ##############
+block
+	encount 3|0,24072,16,18||0|||||0|12006|||||||||
+
+

@@ -1,0 +1,6 @@
+block Job >= 283 && Job <= 287
+	KillItem 18945,1,(15871)
+	GiveRecipe 502
+block
+#15872¡¯\n\n\n\n@c³ð¼°Ê§ÄÌ·ºØ©·´µ®–®Ù¦ºÒçÇÚÐ¶¯Ïþ¼°–f¼°ÐÄÒøÒüÒýÔÊ©z
+	EndWindow 15872,OK

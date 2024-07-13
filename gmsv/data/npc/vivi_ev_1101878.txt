@@ -1,0 +1,59 @@
+#####不可思议系列三：恶梦#####
+##酒窖2 裂缝
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■ 有装史莱姆的水桶
+block Item 40297 >= 1
+	 ##1102075	\n\n\n\n@c已经把史莱姆救上来了。	1
+	 EndWindow 1102075
+	 
+##■ 有绑着绳子的水桶
+block Item 40296 >= 1
+	 ##1102057	\n\n\n\n@c  把水桶垂下去吧！	1
+	 Window 1102057,OK
+	 	 Window_OK 
+	 	 ##1102058	\n\n\n  @n恩人！我爬进去了，可以拉上去啰！	1
+		 Window 1102058,YES,NO 
+		 	 Window_NO
+		 	 	 ##1102048	\n\n\n\n@c啪嚓！(这是形容软体动物掉落到地面上的声音)	1
+				 Window 1102048,NEXT 
+		 	 	 ##1102059	\n\n\n\n@c  唉唷喂！	1
+				 EndWindow 1102059
+			 Window_YES Item 40296 >= 1
+			 	 KillItemall 40296
+			 	 GiveLeak1Item (40297%1$1)
+			 	 ##1102060	\n@n：\n\n  小姆姆我救你上来，只是举手之劳而已，但是你造  成达米达村人许多的困扰，等等带你去见村长，至  少跟村长道个歉吧！	1
+				 Window 1102060,NEXT
+				 ##1102023	\n史莱姆：\n\n  对不起，小姆姆知道了，等等我会好好道歉的。	1
+				 EndWindow 1102023
+#■ 有水桶跟绳子
+block Item 40294 >= 1 && Item 40295 >= 1 
+	 ##1102061	\n\n\n\n@c把绳子绑在水桶上再垂下去吧！	1
+	 EndWindow 1102061
+
+#■ 有绳子
+block Item 40295 >= 1
+	 ##1102063	\n\n\n  只有绳子史莱姆还是爬不上来。	1
+	 EndWindow 1102063
+#■ 有水桶
+block Item 40294 >= 1
+	 ##1102062	\n\n\n  裂缝太深了，可能需要绑一条绳子才能垂下去。	1
+	 EndWindow 1102062
+	 
+#■ 有史莱姆造型娃娃
+block Item 40298 >= 1
+	 ##1102064	\n\n\n  @n恩人！\n  记得要救我出去喔！	1
+	 EndWindow 1102064
+	 
+#■ 一般	
+block 
+	 ##1102065	\n\n\n\n@c没补好的地板！	1
+	 EndWindow 1102065
+
+	 

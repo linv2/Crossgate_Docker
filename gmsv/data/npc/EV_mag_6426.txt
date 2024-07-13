@@ -1,0 +1,155 @@
+#
+#オ樊弁巨旦玄
+#恔咥谛失伙戊伙
+
+######### 蕞?谛巨件犯奴件弘 ########
+block NowEvent 16 == 1
+#\n\n﹛＿＿＿失术立切扎氏互＿＿丐氏凶﹜踞仃化仁木匀化蜕匀凶分欠丹″卅氏匹踞仃化丐仆卅井匀凶氏分″﹛民弁扑亦它″请化匀化仁木″″
+	EndWindow 14925,OK
+
+######### 丐内心?谛巨件犯奴件弘 ########
+block EndEvent 16 == 1
+#\n\n﹛＿＿＿请化匀化仁木﹝丐氏凶午狪允仇午反卅卞手卅中方﹝
+	EndWindow 14926,OK
+
+######### 升仁 ########
+block NowEvent 12 == 1 && StrCmpChat == 14912
+#\n\n﹛匚〝公丹中尹壬失术立切扎氏﹜仿件及匚互升丹午井匀化斗匀化凶卅丐﹝眸卞反卅氏及仇午分井今匀天曰歹井日卅中仃升﹝
+	EndWindow 14927,OK
+
+######### 失术立↓云羞阂卅仄 ########
+#block NowEvent 12 == 1 && Item 18550 == 0 && StrCmpChat == 14916
+#\n\n﹛失术立切扎氏及垫五燮及艘癫凶曰井＿＿丹□氏﹜酸ゴ分仃升歹井日卅中卅丐﹝
+#	Window 14928,NEXT
+#\n\n﹛丐﹜公丹分﹝仇中勾毛茧樱今氏卞仇木苂井匀化幻仄中氏分﹝
+#	Window 14929,OK
+#	Window_OK ItemSpace != 0 && Item 18550 == 0
+#	GiveItem 18550
+#\n\n﹛仇中勾反友﹜失术立切扎氏互丹切及饕匹澎鳗匀化仁木凶午五卞云斪午域踝卞丐仆化凶云羞阂卅氏分﹝手仄失术立切扎氏毛苇勾仃凶日﹜仇中勾毛欐仄化丐仆化云仁木方﹝五匀午﹜云卅井允井六化月反内分井日今＿
+#	EndWindow 14931,OK
+#	Window_OK
+#\n\n\n\n﹛﹋◢﹌邀荦卞优邰卅失奶泛丞毛欐公丹午仄化中引允﹝赭儅圴毛帮咥仄化仁分今中﹝
+#	EndWindow 14930,OK
+
+######### 失术立↓云羞阂丐曰 ########
+block NowEvent 12 == 1 && Item 18550 == 1 && StrCmpChat == 14916
+#\n\n﹛失术立切扎氏﹜升仇卞中月氏分欠丹卅丐﹝
+	EndWindow 14932,OK
+
+######### 失术立 ########
+block EndEvent 10 == 1 && Item 18551 == 1 && Item 18550 == 0
+#block EndEvent 11 == 1 && StrCmpChat == 14916
+#\n\n﹛云云﹜仍塑洢迋″″丐氏凶穸仄中卅丐﹝尹〝﹛丐氏凶茧樱甩件弁今氏及踞澎分匀凶及井中″〝﹛仇曰扎引中匀凶卅＿公丹午襞匀化凶日仇氏卅云凑中仄卅井匀凶氏分互＿＿
+	Window 14940,NEXT
+#\n\n﹛＿丐及仪瘀匹失术立切扎氏及仇午鬼仁蜕丹洘酦互聂仁化友﹜丐氏凶手公氏卅洘酦及域谛井午合匀凶氏分﹝宎衔药及洘酦匹允日丐及阂毛?谛健中仄支互月氏分兮﹝
+	Window 14933,NEXT
+#\n\n﹛方仄﹜中中分欠丹﹝失术立切扎氏及仇午项尹化支月方﹝分井日镀仁丐及阂毛苇勾仃请仄化﹜踞仃化云仁木方﹝
+	Window 14934,NEXT
+#\n\n﹛失术立切扎氏午市瓜奶元中今氏反?コ仁日中蟆井日正左罹恔圴饕及峊木匹抔日仄化凶氏分方﹝醮及中中き谛匹友尹﹜失术立切扎氏手午匀化手中中阂分匀凶方﹝正左今氏及饕午井﹜仇及饕匹方仁澎鳗中毛仄化仁木凶手氏分﹝
+	Window 14935,NEXT
+#\n\n﹛仪瘀及癫ざ﹜云木互酷仪及弅勿仃毛仄化凶日失术立切扎氏互支匀化五凶氏分﹝
+	Window 14936,NEXT
+#\n\n﹛失术立切扎氏反＞濮覆卞?谛毛苇勾仃月＝匀化﹜公曰扎丐尹日中溥锹分匀凶方﹝公木匹＿＿引丐﹜云木互切斤匀午杴毛峊仄凶允五卞譬咥迕及瓜奶白毛手匀化井木切扎匀化友＿
+	Window 14937,NEXT
+#\n\n﹛眸反丐及阂卞谛诮仄分仃反仄化手日中凶仁卅中氏分方﹝茧樱今氏﹜失术立切扎氏卞棉啜中互粟五卅中方丹卞﹜丐及阂毛茧仄请仄化仁木﹝凶及戈方﹝
+	Window 14938,NEXT
+#\n\n﹛丐﹜公丹分﹝仇中勾毛茧樱今氏卞仇木苂井匀化幻仄中氏分﹝
+	Window 14929,OK
+	Window_OK Item 18551 == 1 && Item 18550 == 0
+	KillItem 18551
+	GiveItem 18550
+	EndEvent 11 = 1
+	NowEvent 11 = 1
+	NowEvent 12 = 1
+#\n\n﹛仇中勾反友﹜失术立切扎氏互丹切及饕匹澎鳗匀化仁木凶午五卞云斪午域踝卞丐仆化凶云羞阂卅氏分﹝手仄失术立切扎氏毛苇勾仃凶日﹜仇中勾毛欐仄化丐仆化云仁木方﹝五匀午﹜云卅井允井六化月反内分井日今＿
+	EndWindow 14931,OK
+
+#########  ########
+block EndEvent 11 == 1
+#\n\n﹛丐氏凶互茧樱甩件弁今氏及踞澎分午反襞日卅井匀凶方﹝
+	EndWindow 14939,OK
+
+######### 由件丐月 ########
+#block EndEvent 10 == 1 && Item 18551 == 1
+#	KillItem 18551
+#	EndEvent 11 = 1
+#	NowEvent 11 = 1
+#\n\n﹛云云﹜仍塑洢迋″″丐氏凶穸仄中卅丐﹝尹〝﹛丐氏凶茧樱甩件弁今氏及踞澎分匀凶及井中″〝﹛仇曰扎引中匀凶卅＿公丹午襞匀化凶日仇氏卅云凑中仄卅井匀凶氏分互＿＿
+#	EndWindow 14940,OK
+
+#########  ########
+block NowEvent 10 == 1
+#\n\n﹛正左今氏互垫杅尕抸分匀化″〝卅氏化仇匀凶＿
+	EndWindow 14941,OK
+
+######### 户手丐曰 ########
+block EndEvent 9 == 1 && Item 18552 == 1
+#\n\n﹛正左罹恔圴饕分冗﹝镀仁仄化仁木方﹝
+	EndWindow 14942,OK
+
+######### 户手卅仄 ########
+block EndEvent 9 == 1 && Item 18552 == 0
+	NowEvent 7 = 0
+	EndEvent 7 = 0
+	NowEvent 8 = 0
+	EndEvent 8 = 0
+	NowEvent 9 = 0
+	EndEvent 9 = 0
+	NowEvent 10 = 0
+	EndEvent 10 = 0
+	NowEvent 11 = 0
+	EndEvent 11 = 0
+	NowEvent 12 = 0
+	EndEvent 12 = 0
+	NowEvent 13 = 0
+	EndEvent 13 = 0
+	NowEvent 14 = 0
+	EndEvent 14 = 0
+	NowEvent 15 = 0
+	EndEvent 15 = 0
+	NowEvent 16 = 0
+	EndEvent 16 = 0
+#\n\n﹛云中云中″云木及扔奶件及じ匀凶厘仪卅丢乒卅氏分冗″丐氏凶卞扎エ六日木友尹卅丐﹝
+	Window 14943,NEXT
+#\n\n﹛﹛﹋◢﹌邀荦卞褐厘卅整陴互?戏仄引仄凶﹝\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛邀荦撩ヘ匹允﹝\n\n﹛﹛﹛﹛愈赓井日邀荦仄卅云仄化仁分今中﹝
+	EndWindow 14944,OK
+
+######### 失术立 ########
+block EndEvent 7 == 1 && StrCmpChat == 14916
+#\n\n﹛失术立切扎氏〝＿＿＿失术立切扎氏及垫杅毛襞曰凶中氏分匀凶日跟晶椭瘀午中仇丹兮﹝掸反酷じ木及仅樊互罹由件毛儅匀化仁月芺烂卅氏分互﹜蝈螺五支仄友尹氏分﹝引匀凶仁卅卞支匀化氏分井﹝
+	Window 14945,NEXT
+#\n\n﹛公仇匹﹜丐氏凶公及仅樊及午仇欠引匹请轾中化中匀化﹜由件毛熬仃潸匀化五化手日尹友尹井〝公仄凶日失术立切扎氏及仇午项尹化支月方﹝
+	Window 14946,YES,NO
+	Window_NO
+#\n\n﹛切之﹜卅氏分方﹝
+	EndWindow 14947,OK
+	Window_YES ItemSpace == 0
+#\n\n\n\n﹛﹋◢﹌邀荦卞优邰卅失奶泛丞毛欐公丹午仄化中引允﹝赭儅圴毛帮咥仄化仁分今中﹝
+	EndWindow 14930,OK
+	Window_YES
+	GiveItem 18552
+	EndEvent 9 = 1
+#\n\n﹛公丹井中公丹井中″丐氏凶卅日公丹蜕丹午合匀凶兮﹝云木及扔奶件及じ匀凶丢乒欐允井日﹜仄匀井曰熬仃潸匀化五化仁木方﹝酷じ木仅樊及抩蟆反白央件皮伙弘及正左罹恔圴饕分﹝方欠仄仁凶及氏分方﹝
+	EndWindow 14948,OK
+
+######### 市瓜奶 ########
+block EndEvent 7 == 1 && StrCmpChat == 14917
+#\n\n﹛丐丐﹜市瓜奶及元中切扎氏反井歹中公丹分匀凶方卅﹝中匀凶中分木互丐氏卅仇午仄支互匀凶氏分﹝
+	EndWindow 14949,OK
+
+######### 立生扔市 ########
+block EndEvent 7 == 1 && StrCmpChat == 14950
+#\n\n﹛丐丐﹜婉心竻琼分仃升〝
+	EndWindow 14951,OK
+
+######### 失伙戊伙 ########
+block EndEvent 7 == 1 && StrCmpChat == 14905
+#\n\n﹛卅氏分方﹜眸卞窒井迕井方〝
+	EndWindow 14952,OK
+
+#########  ########
+block
+#\n\n﹛酷じ木及仅樊互侳月芺烂卅氏分互卅丐＿仇木互弅尥井卅中午婉心卞手垫仃友尹支﹝
+	EndWindow 14953,OK
+
+

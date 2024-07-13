@@ -1,0 +1,18 @@
+#巨左旦平失
+
+############## 敛县酱0呿毛手匀化月 ##############
+block Item 18492 == 1
+#\n\n﹛が及镝擦毛拟中﹜旲仆方﹝
+	Window 14738,OK
+	Window_OK
+	KillItem 18492
+	GiveItem 18493
+	LeaveGroup
+	Warp 0,24004,9,86
+
+############## 公及职 ##############
+block
+#\n\n﹛＿＿＿
+	EndWindow 14739,OK
+
+

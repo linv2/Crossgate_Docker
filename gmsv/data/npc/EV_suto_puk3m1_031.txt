@@ -1,0 +1,45 @@
+#
+#PUK3_Main1
+#
+#章谛﹋B﹌
+
+Block LocalFlag1 == 1 && LocalFlag3 == 1 && LocalFlag4 == 1
+
+	Window 3206935,Next
+
+		#\n\n﹛侳葱反统伀扑尼伊斥尼件今引及\n﹛统及疡仄互丐月氏分﹝\n﹛啼仄心分卅丐﹝\n﹛左奶仿﹜统伀迋及扔奶件毛手日丹氏分丑℅﹝
+	
+	Window 3206936,OK
+
+		#\n\n﹛氏午友﹜扑尼伊斥尼件今引反\n﹛午云℅匀化手﹜五木℅卅氏分方″
+	
+		Window_OK
+		
+				LeaveGroup
+			
+				warp 0,59513,116,69
+				
+Block LocalFlag2 == 1
+
+	EndWindow 3206937
+
+		#\n\n﹛啼仄心啼仄心℅﹝
+				
+				
+				
+				
+Block
+
+	Window 3206938,Next
+
+		#\n\n﹛侳葱反统伀扑尼伊斥尼件今引及\n﹛统及疡仄互丐月氏分﹝\n﹛啼仄心分卅丐﹝\n﹛左奶仿﹜统伀迋及扔奶件毛手日丹氏分丑℅﹝
+	
+	Window 3206939,OK
+
+		#\n\n﹛氏午友﹜扑尼伊斥尼件今引反\n﹛午云℅匀化手﹜五木℅卅氏分方″
+	
+		Window_OK
+		
+			Localflag2 = 1
+	
+		

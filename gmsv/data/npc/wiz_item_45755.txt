@@ -1,0 +1,60 @@
+####■包装纸粉红wiz_item_45755.txt
+
+##有义理巧克力，有包装纸粉红
+block  Item 45755 >= 1 && Item 45750 >= 1
+	 ##1051846	\n\n\n\n  要把义理巧克力包装起来吗？
+	 Window 1051846,YES,NO
+	 Window_NO
+	 Window_YES Item 45755 >= 1 && Item 45750 >= 1
+	 	 KillItem 45755
+	 	 KillItem 45750
+	 	 GiveLeak1Item 45760
+	 	 #失去情与义巧克力
+		 #失去包装纸粉红
+		 #得到包装巧克力1
+
+#有浓情巧克力，有包装纸粉红
+block Item 45755 >= 1 && Item 45751 >= 1
+	 ##1051847	\n\n\n\n  要把浓情巧克力包装起来吗？
+	 Window 1051847 ,YES,NO
+	 Window_NO
+	 Window_YES Item 45755 >= 1 && Item 45751 >= 1
+	 	 KillItem 45755
+	 	 KillItem 45751
+	 	 GiveLeak1Item 45761
+		 #失去浓情巧克力
+		 #失去包装纸粉红
+		 #得到包装巧克力2
+
+#有绝爱巧克力，有包装纸粉红
+block Item 45755 >= 1 && Item 45752 >= 1
+	 ##1051848	\n\n\n\n  要把绝爱巧克力包装起来吗？
+	 Window 1051848,YES,NO
+	 Window_NO
+	 Window_YES
+	 	 KillItem 45755
+	 	 KillItem 45752
+	 	 GiveLeak1Item 45762
+		 #得到包装巧克力3
+		 
+#有苦味巧克力，有包装纸粉红
+block Item 45755 >= 1 && Item 45753 >= 1
+	 ##1051849	\n\n\n\n  要把苦味巧克力包装起来吗？
+	 Window 1051849,YES,NO
+	 Window_NO
+	 Window_YES
+	 	 KillItem 45755
+	 	 KillItem 45753
+	 	 GiveLeak1Item 45763
+	 	 ##得到包装巧克力4
+
+#有甜在心巧克力，有包装纸粉红
+block Item 45755 >= 1 && Item 45754 >= 1
+	 ##1051850	\n\n\n\n  要把甜在心巧克力包装起来吗？
+	 Window 1051850,YES,NO
+	 Window_NO
+	 Window_YES
+	 	 KillItem 45755
+	 	 KillItem 45754
+	 	 GiveLeak1Item 45764
+		 #得到包装巧克力5

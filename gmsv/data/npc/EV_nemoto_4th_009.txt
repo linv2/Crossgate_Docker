@@ -1,0 +1,152 @@
+##ㄥ璃コ筏ゴ奶矛件玄﹛by漪呿
+## NPC“魂综滇蛭绝
+
+## 仍引正件﹋R5润恅匹じ澎匹五月手及﹌毛赭儅
+block Item  11311 >= 1
+	Window "\n\n﹛件件″〝\n﹛它穴公丹卅こ母卅″\n﹛末奶汁毛戊永民卞亥戊本″",OK
+		Window_OK
+			KillItemAll 11311
+
+
+## 仍引正件及ヱ挤毛赭儅
+block Item 607747 >= 1
+	EndWindow "\n\n﹛云中″\n﹛ヱ挤瓜件市罹尹瓜奶冗″"
+
+
+## OT辅笛据毛呁醒赭儅
+block Item 622010 > 1
+	Window "\n\n﹛公及饼濠木反卅氏分乒永〝\n﹛罹尹月及井〝\n﹛＿＿丞扑乓丞扑乓﹜矢永″\n﹛引内中乒永″″",OK
+		Window_OK
+			KillItemAll 622010
+
+
+## 基嬴镙’绝毛呁醒赭儅
+block Item 622018 > 1
+	Window "\n\n﹛件件″〝\n﹛末件瓜卞婉引本泛升丹允月汁乒伉分″〝\n﹛办匀囮匀正眸迋毛逦公丹匀凶匀化﹜\n﹛末它反今六瓜奶冗″",OK
+		Window_OK
+			KillItemAll 622018
+
+
+## 只迕及辞玾毛呁醒赭儅
+block Item 622019 > 1
+	Window "\n\n﹛件件″〝\n﹛眸迋及辞玾反﹜\n﹛戊用壑卞甲玄汁母弗分冗″\n﹛瓜件母公及﹜\n﹛请侳坛瓜奶用天切手氏甩″\n﹛莽扑泛支月″",OK
+		Window_OK
+			KillItemAll 622019
+
+
+## 黎螂挓橇毛呁醒赭儅
+block Item 622017 > 1
+	Window "\n\n﹛云中﹜云蟆﹜\n﹛奶扑弁穴毛窒谛裟件犯仁月汁乒伉分〝\n﹛ㄠ谛母弗匹中中札″",OK
+		Window_OK
+			KillItemAll 622017
+
+
+## OT辅笛据午只迕及辞玾毛赭儅
+block Item 622010 == 1 && Item 622019 == 1
+	EndWindow "\n\n﹛窒毛乒正乒正扑泛伙氏分″\n﹛汁穴立互卅五扎潠互旦旦穴瓜奶分欠丹″\n﹛ヶ弁泛孔歹孔歹扑正乩汁毛\n﹛儅匀化平乩布伊″"
+
+
+## OT辅笛据午黎螂挓橇毛赭儅
+block Item 622010 == 1 && Item 622017 == 1
+	EndWindow "\n\n﹛窒毛乒正乒正扑泛伙氏分″\n﹛扔永扔午奶扑弁穴毛茧扑瓦垫匀化戊奶″"
+
+
+## 旦正件皿＞＞ㄣ＝及OT辅笛据午基嬴镙’绝毛赭儅
+block Item 622010 == 1 && StampCount 622010 == 4 && Item 622018 == 1
+	Window "\n\n﹛云蟆﹜\n﹛它穴公丹卅潠儅匀化月卅″亥戊本″\n﹛＿＿氏什氏什﹜丹引中″\n﹛左奶﹜云蟆﹜眸迋反漆杬昝卞﹜\n﹛ヶ弁泛孔歹孔歹扑正汁穴立毛\n﹛罹屯凶仁瓜永正冗﹝\n﹛戊伊卞じ伊泛儅匀化戊奶″",YES,NO
+
+		Window_YES Item 622010 == 0
+			EndWindow "\n\n﹛＿＿支匀天曰﹜汁穴立反奶仿瓜奶兮﹝\n﹛竣儅切鬼仁瓜永泛五凶＿＿﹝"
+
+		Window_YES Item 622010 > 1
+			Window "\n\n﹛＿＿支匀天曰﹜汁穴立反奶仿瓜奶兮﹝\n﹛竣儅切鬼仁瓜永泛五凶＿＿﹝\n﹛它皿永＿＿切斤匀午﹜\n﹛末用饼濠木亥戊本永＿＿﹝",OK
+				Window_OK
+					KillItemAll 622010
+
+		Window_YES Item 622018 == 0
+			EndWindow "\n\n﹛件件″〝潠毛怅扑正卅″〝"
+
+		Window_YES Item 622018 > 1
+			Window "\n\n﹛件件″〝\n﹛公氏卅卞婉引本泛升丹旦伙汁乒伉分″〝\n﹛办匀囮匀凶眸迋毛逦末它匀凶匀化﹜\n﹛公丹反扔本瓜奶冗″",OK
+				Window_OK
+					KillItemAll 622018
+
+		Window_YES
+			KillItemAll 622018
+			GiveLeak1Item 622019,1
+			Endblock
+
+		Window_NO
+			EndWindow "\n\n﹛艘及饪奶蛊母卅″"
+
+
+## 旦正件皿＞＞ㄟ＝℅＞ㄢ＝及OT辅笛据午基嬴镙’绝毛赭儅
+block Item 622010 == 1 && Item 622018 == 1 && StampCount 622010 < 4
+		EndWindow "\n\n﹛云蟆及儅匀泛伙潠反﹜\n﹛穴母诞岳仄五木化瓜奶心凶中母卅﹝\n﹛手丹民亦永玄凛棉互烦匀化市仿婉氏母日﹜\n﹛平永玄丹引中分夫它卅﹝"
+
+## 旦正件皿＞＞ㄤ＝℅＞ㄥ＝及OT辅笛据午基嬴镙’绝毛赭儅
+block Item 622010 == 1 && Item 622018 == 1 && StampCount 622010 > 4
+			EndWindow "\n\n﹛卅氏母公用潠﹜甲玉弁蔬丹冗″\n﹛扤匀泛伙元扎瓜奶井″\n﹛公氏瓜手及毛﹜\n﹛眸迋用蟆卞儅匀化弁伙氏元扎瓜奶″"
+
+
+## 旦正件皿＞＞ㄡ＝及OT辅笛据毛赭儅﹜黎螂挓橇毛尕赭儅
+block Item 622010 == 1 && Item 622017 == 0
+	if StampCount 622010 == 2
+		Window "\n\n﹛切斤匀午杴毛峊扑正瑚卞﹜\n﹛奶扑弁穴互中卅仁瓜永正﹝\n﹛云蟆﹜仇木儅匀化奶扑弁穴毛茧扑泛仇中″",YES,NO
+
+			Window_YES Itemspace == 0
+				EndWindow "\n\n﹛儅化瓜奶元扎卅中市″\n﹛挕支井仄瓜仿云蝇曰母″"
+
+			Window_YES Item 622010 == 0
+				EndWindow "\n\n﹛件件＿＿〝\n﹛云蟆﹜亥弁苇月午﹜\n﹛切斤匀午谛锹互鬼中卅﹝\n﹛支匀由伉﹜\n﹛云蟆卞俇戈用甩支户月冗﹝"
+
+			Window_YES Item 622010 > 1
+				Window "\n\n﹛云蟆﹜\n﹛漆詨欠卞怅扑正饼反瓜件母〝\n﹛亥戊本永″",OK
+					Window_OK
+						KillItemAll 622010
+
+			Window_YES Item 622017 >= 1
+				EndWindow "\n\n﹛手丹欐扑泛中凶井﹝"
+
+			Window_YES
+				GiveLeak1Item 622017,1
+
+			Window_NO
+				EndWindow "\n\n﹛芴春用卅中蛊母″"
+
+	else
+		if
+			GoToF case1
+		endif
+	endif
+
+
+## 基嬴镙’绝及心ㄠ勾赭儅
+block Item 622018 == 1
+	EndWindow "\n\n﹛云蟆﹜它穴公丹卅潠儅匀泛伙卅﹝\n﹛匹乒﹜襞日瓜奶谛井仿\n﹛坁毛枃匀切扎奶弗瓜奶匀化项尹仿伊凶件分﹝\n﹛俇戈市仿﹜\n﹛公及潠反眸迋用蟆卞儅匀化戊瓜奶匹俓仄中﹝"
+
+
+## 只迕及辞玾及心ㄠ勾赭儅
+block Item 622019 == 1
+	Window "\n\n﹛末伊反﹜\n﹛眸迋互擎熔慇丢泛澎综曰扑正辞玾分﹝\n﹛卅件犯云蟆互末伊毛儅匀泛伙氏分″〝\n﹛忒六″",OK
+		Window_OK
+			KillItemAll 622019
+
+
+## 黎螂挓橇及心ㄠ勾赭儅
+block Item 622017 == 1
+	EndWindow "\n\n﹛件件〝\n﹛公及饼毛儅匀泛伙午中丹戊玄反﹜\n﹛云蟆﹜奶扑弁穴井〝\n﹛＿＿奶扑弁穴反手丹切斤匀午﹜\n﹛涌缙布鬼井匀凶亥它瓜竣互允月氏分布＿＿﹝"
+
+
+## OT辅笛据及心ㄠ勾赭儅
+block Item 622010 == 1
+
+	*case1*
+
+	EndWindow "\n\n﹛白央件皮伙弘反﹜玉永民分＿＿〝\n﹛奶扑弁穴午甩弘伊化扑穴匀凶＿＿﹝\n﹛奶扑弁穴互中正仿﹜\n﹛牒尹卞侳月亥它卞鳗尹泛俓仄中﹝"
+
+
+## 晓筏动陆
+block
+	EndWindow "\n\n﹛白央件皮伙弘反﹜玉永民分＿＿〝\n﹛奶扑弁穴互奶瓜奶午﹜Ⅶ互坌井日瓜奶＿＿﹝"
+

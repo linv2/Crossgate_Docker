@@ -1,0 +1,35 @@
+
+
+
+block Xpos == 96 && Ypos == 145
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+
+block Xpos == 99 && Ypos == 146
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+
+block Xpos == 98 && Ypos == 147
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+
+
+
+block Xpos == 98 && Ypos == 148
+
+	Play_SE 266,320,240
+	Message 3006710
+	SetLp -10
+
+

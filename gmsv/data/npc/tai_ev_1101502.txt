@@ -1,0 +1,167 @@
+################### 生产系称号 五级品特搜员
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+	 	 	 
+################### 未完成四级品搜集
+block Item 40083 == 0
+	 ##1101545	\n\n你必须先完成四级品搜集者的委托，\n才能接受这个挑战。	1
+	 EndWindow 1101545	 	 	 
+
+################### 需要 职业(生产系、采集系)、职阶正职、物品(药水)：
+block Leak1Item 40083>=1 && Job >200 && JobRank >=2 && Item 15610 >=1
+	 ##1101523	\n\n你确定要接受这个称号－－“技艺的奇才”，\n并将所有的五级物品交给我吗？
+	 Window 1101523,YES,NO 
+	 	 Window_YES Item 48==0 && Item 42 ==0
+	 	 	 ##1101524	\n\n你没有收集到长锷剑或是格斗剑哦！
+	 	 	 EndWindow 1101524
+		 Window_YES ItemDurPer 48 >51 || ItemDurPer 42 >51
+		 	 ##1101502	\n\n这个武器还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的武器给我。
+			 EndWindow 1101502
+	 	 Window_YES Item 842==0 && Item 841==0
+	 	 	 ##1101525	\n\n你没有收集到阔刃斧或是钩爪斧哦！
+	 	 	 EndWindow 1101525
+		 Window_YES ItemDurPer 842 >51 || ItemDurPer 841 >51
+		 	 ##1101502	\n\n这个武器还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的武器给我。
+			 EndWindow 1101502		 			 
+	 	 Window_YES Item 1649==0 && Item 1643==0
+	 	 	 ##1101526	\n\n你没有收集到骑士枪或是护卫枪哦！
+	 	 	 EndWindow 1101526
+		 Window_YES ItemDurPer 1649 >51 || ItemDurPer 1643 >51
+		 	 ##1101502	\n\n这个武器还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的武器给我。
+			 EndWindow 1101502			 	 
+	 	 Window_YES Item 2042==0 && Item 2049==0
+	 	 	 ##1101527	\n\n你没有收集到冲击弓或杀手长弓哦！
+	 	 	 EndWindow 1101527
+		 Window_YES ItemDurPer 2042 >51 || ItemDurPer 2049 >51
+		 	 ##1101502	\n\n这个武器还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的武器给我。
+			 EndWindow 1101502			 	 	 
+	 	 Window_YES Item 2843==0 && Item 2848==0
+	 	 	 ##1101528	\n\n你没有收集到阿修塔罗回力镖或翼鹿回力镖哦！
+	 	 	 EndWindow 1101528
+		 Window_YES ItemDurPer 2843 >51 || ItemDurPer 2848 >51
+		 	 ##1101502	\n\n这个武器还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的武器给我。
+			 EndWindow 1101502			 	 	 	 	 
+	 	 Window_YES Item 3241==0 && Item 3245==0
+	 	 	 ##1101529	\n\n你没有收集到双刃小刀或球锷小刀哦！
+	 	 	 EndWindow 1101529
+		 Window_YES ItemDurPer 3241 >51 || ItemDurPer 3245 >51
+		 	 ##1101502	\n\n这个武器还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的武器给我。
+			 EndWindow 1101502			 			 
+	 	 Window_YES Item 2450==0 && Item 2449==0
+	 	 	 ##1101530	\n\n你没有收集到琥珀权杖或琥珀杖哦！
+	 	 	 EndWindow 1101530
+		 Window_YES ItemDurPer 2450 >51 || ItemDurPer 2449 >51
+		 	 ##1101502	\n\n这个武器还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的武器给我。
+			 EndWindow 1101502			 			 
+	 	 Window_YES Item 3642==0 && Item 3640==0
+	 	 	 ##1101531	\n\n你没有收集到开放式头盔或葛理克头盔哦！
+	 	 	 EndWindow 1101531
+		 Window_YES ItemDurPer 3642 >51 || ItemDurPer 3640 >51
+		 	 ##1101503	\n\n这个防具还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的防具给我吧！
+			 EndWindow 1101503
+	 	 Window_YES Item 4040==0 && Item 4042==0
+	 	 	 ##1101532	\n\n你没有收集到蓝徽章之帽或高级帽子哦！
+	 	 	 EndWindow 1101532
+		 Window_YES ItemDurPer 4040 >51 || ItemDurPer 4042 >51
+		 	 ##1101503	\n\n这个防具还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的防具给我吧！
+			 EndWindow 1101503			 
+	 	 Window_YES Item 4442==0 && Item 4444==0
+	 	 	 ##1101533	\n\n你没有收集到长型金属铠甲或索状铠甲哦！
+	 	 	 EndWindow 1101533
+		 Window_YES ItemDurPer 4442 >51 || ItemDurPer 4444 >51
+		 	 ##1101503	\n\n这个防具还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的防具给我吧！
+			 EndWindow 1101503			 			 
+	 	 Window_YES Item 4845==0 && Item 4844==0
+	 	 	 ##1101534	\n\n你没有收集到环服或士兵护衣哦！
+	 	 	 EndWindow 1101534
+		 Window_YES ItemDurPer 4845 >51 || ItemDurPer 4844 >51
+		 	 ##1101503	\n\n这个防具还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的防具给我吧！
+			 EndWindow 1101503			 			 			 
+	 	 Window_YES Item 5242==0 && Item 5244==0
+	 	 	 ##1101535	\n\n你没有收集到东方法衣或圣堂之袍哦！
+	 	 	 EndWindow 1101535
+		 Window_YES ItemDurPer 5242 >51 || ItemDurPer 5244 >51
+		 	 ##1101503	\n\n这个防具还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的防具给我吧！
+			 EndWindow 1101503			 
+	 	 Window_YES Item 5640==0 && Item 5641==0
+	 	 	 ##1101536	\n\n你没有收集到蜥蜴靴或蜥蜴长靴哦！
+	 	 	 EndWindow 1101536
+		 Window_YES ItemDurPer 5640 >51 || ItemDurPer 5641 >51
+		 	 ##1101503	\n\n这个防具还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的防具给我吧！
+			 EndWindow 1101503			 			 
+	 	 Window_YES Item 6042==0 && Item 6040==0
+	 	 	 ##1101537	\n\n你没有收集到蜥蜴鞋或维京鞋哦！
+	 	 	 EndWindow 1101537
+		 Window_YES ItemDurPer 6042 >51 || ItemDurPer 6040 >51
+		 	 ##1101503	\n\n这个防具还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的防具给我吧！
+			 EndWindow 1101503			 			 			 
+	 	 Window_YES Item 6447==0 && Item 6449==0
+	 	 	 ##1101538	\n\n你没有收集到蜥蜴盾或反光之盾哦！
+	 	 	 EndWindow 1101538
+		 Window_YES ItemDurPer 6447 >51 || ItemDurPer 6449 >51
+		 	 ##1101503	\n\n这个防具还很新嘛！\n交给我太浪费哦！\n请你拿旧一点的防具给我吧！
+			 EndWindow 1101503			 	 	 
+	 	 Window_YES Item 15209==0 && Item 15210==0
+	 	 	 ##1101539	\n\n你没有收集到汉堡和星鳗饭团哦！
+	 	 	 EndWindow 1101519
+	 	 Window_YES Item 15610==0 
+	 	 	 ##1101540	\n\n你没有收集到五级加300的药水哦！
+	 	 	 EndWindow 1101540	 	 
+	 	 	 
+		 Window_YES Leak1Item 40083>=1 && Job >200 && JobRank >=2 && Item 15610 >=1 && Group==1
+		 	 ##删除所有四级物品
+		 	 KillItem 48
+		 	 KillItem 42
+		 	 KillItem 842
+		 	 KillItem 841
+		 	 KillItem 1649
+		 	 KillItem 1643
+		 	 KillItem 2042
+		 	 KillItem 2049
+		 	 KillItem 2843
+		 	 KillItem 2848
+		 	 KillItem 3241
+		 	 KillItem 3245
+		 	 KillItem 2450 
+		 	 KillItem 2449
+		 	 KillItem 3642
+		 	 KillItem 3640
+           		 KillItem 4040  
+           		 KillItem 4042
+          		 KillItem 4442 
+          		 KillItem 4444
+          		 KillItem 4845  
+          		 KillItem 4844
+          		 KillItem 5242  
+          		 KillItem 5244
+          	 	 KillItem 5640  
+          	 	 KillItem 5641
+          		 KillItem 6042  
+          		 KillItem 6040
+          		 KillItem 6447  
+          		 KillItem 6449
+          		 KillItem 15209  
+          		 KillItem 15210
+          		 KillItem 15610
+		 	 ##给传说	 	 	
+		 	 GiveLeak1Item 40084
+		 Window_NO 
+		 	 ##1101521	\n\n那就等你想要这个称号的时候再来找我吧！
+			 EndWindow 1101521
+
+################### 一般
+block 
+	 ##1101541	\n我现在正在收集所有的五级制品，\n不需要很好的物品，龟裂的就可以了。\n如果你能将物品收集齐全，完成这个挑战的话，\n我会给你新的生产系称号－－“技艺的奇才”。
+	 Window 1101541,NEXT 
+	 ##1101543	\n所谓的五级物品包含以下几种制品：\n五级加300的药水、汉堡或星鳗饭团、\n长锷剑或格斗剑、阔刃斧或钩爪斧、\n骑士枪或护卫枪、冲击弓或杀手长弓、\n阿修塔罗回力镖或翼鹿回力镖、\n双刃小刀或球锷小刀、琥珀权杖或琥珀杖、
+	 Window 1101543,NEXT
+	 ##1101544	\n开放式头盔或葛理克头盔、\n蓝徽章之帽或高级帽子、\n长型金属铠甲或索状铠甲、\n环服或士兵护衣、东方法衣或圣堂之袍、\n蜥蜴靴或蜥蜴长靴、蜥蜴鞋或维京鞋、\n蜥蜴盾或反光之盾。
+	 EndWindow 1101544
+	 ##收集过四级品，才能收集五级品。
+	 

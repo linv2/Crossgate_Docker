@@ -1,0 +1,84 @@
+#衙五凛医毛襞月手及
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+block globalFlag31 == 1
+
+			Window 3201609,next
+		#\n\n﹛卅氏井﹜云日\n﹛巨仿及詨互扒伐扒伐允月分方﹝
+			
+			EndWindow 3201610
+		#\n\n﹛卅卞井﹜云日琼及\n﹛仍⑺挀互⑹中化月分方﹝
+
+
+##
+
+block  Item 607684 >= 1 && Item 607681 >= 1
+
+		window 3201611,next
+		#\n\n﹛丹氏〝\n﹛云蟆今氏及儅匀化月﹜\n﹛ヶ仁化孔歹孔歹仄凶蛊及仁木凶澎饼毛\n﹛切斤匀午苇六月屯今〝
+
+		window 3201612,next
+		#\n\n﹛仍引≦五文匀五文五文﹜手五文℅≧
+
+		window 3201613,next
+		#\n\n﹛卅卞卅卞〝孔氏孔氏〝\n﹛孔戈＿＿\n﹛卅氏匹手﹜母打件及萼反﹜母打件迋互\n﹛云醮棉午跟歹仄凶沶窜及执日仄中屯﹝
+
+		window 3201614,next
+		#\n\n﹛仍引≦五文五文﹜手卞文手卞文五文匀″≧
+
+		window 3201615,next
+		#\n\n﹛窒匹手公及云醮棉反\n﹛庍虏愤箕及中凶内日樊匹\n﹛优邰卅凛卞反庍祭及诸及域朿毛\n﹛躯仄化仁木月匀化\n﹛公氏卅沶窜毛仄化凶日仄中屯今﹝
+
+		window 3201616,next
+		#\n\n﹛公中勾卞公及萼毛苇六凶日\n﹛沶窜毛绊凶仄化仁木月午合丹屯﹝\n﹛公丹分﹜眸日及醮棉及执毛欐公丹﹝\n﹛仇木毛苇六凶日﹜蜕丹仇午毛妏中化仁木月屯今﹝
+
+		window 3201617,ok
+		#\n\n﹛仍引≦手五文≧
+
+			window_ok ItemSpace == 0
+			
+				EndWindow 3201618
+		#\n\n﹛卅氏分﹜儅切坁互中匀天中分屯今﹝
+
+			window_ok Item 607682 >= 1
+
+				EndWindow 3201619
+		#\n\n﹛卅氏分﹜手丹﹜儅匀化月分井〝﹝
+			
+			window_ok
+			
+				killitem 607684,1
+				GiveItem 607682,1
+
+
+
+block  Item 607684 >= 1
+
+
+		Window 3201620,next
+		#\n\n﹛云云﹜卅勾井仄中屯﹝\n﹛云蟆今氏互儅匀化月﹜公及澎饼毛踏中凶\n﹛ヶ仁化孔歹孔歹仄凶蛊反\n﹛厘樯﹜母打件迋卞隋卞酷尹凶醮棉及坱羱分屯今﹝
+		
+		EndWindow 3201621
+		#\n\n﹛漆元扎﹜域蟀卞手卅日卅中狪分仃升卅﹝
+
+
+
+
+block  Item 607681 >= 1
+
+
+		EndWindow 3201622
+		#\n\n﹛仇﹜仇木反﹜母打件迋及＿＿\n﹛＿＿匹手﹜窒及啃及手及井\n﹛今匀天曰荸日友之屯今﹝\n﹛云中日反﹜手丹﹜\n﹛褥虫手庍歹匀切引匀凶仄卅丑﹝
+
+
+block
+
+
+
+		EndWindow 3201623
+		#\n\n﹛踹竣及卅中萝哗分屯﹝\n﹛抚竣午悻扇互箫曰卅中萝哗分屯﹝\n﹛＿＿母打件今引﹝
+
+
+

@@ -1,0 +1,29 @@
+###dm_47689.txt
+####
+block lp < 200 && Item 47689 >= 1
+	 ##1109600	\n\n\n\n\n@c你的生命值不足，无法召唤宠物！	1																						
+	 EndWindow 1109600
+	 
+block PetSpace == 0 
+	 ##1109601	\n\n\n\n\n@c你的宠物栏已满！	1																						
+	 EndWindow 1109601
+	 
+block lp >= 200 && Item 47689 >= 1
+	 ##1109602	\n\n\n\n\n@c你是否献上鲜血为祭，使用召唤书．．．	1																						
+	 Window 1109602,YES,NO
+	 	 Window_NO
+	 	 	 
+	 	 Window_YES  PetSpace == 0 
+	 	 	 ##1109601	\n\n\n\n\n@c你的宠物栏已满！	1																						
+	 		 EndWindow 1109601	 	
+	 		 
+	 	 Window_YES lp < 200
+	 		 ##1109600	\n\n\n\n\n@c你的生命值不足，无法召唤宠物！	1																						
+	 		 EndWindow 1109600
+	 		 
+	 	 Window_YES lp >= 200 && Item 47689 >= 1
+	 	 	 KillItem 47689,1
+	 	 	 setlp -200
+	 	 	 GivePet 103321
+	 	 																							
+			 EndWindow 1055045

@@ -1,0 +1,6 @@
+##¡ö¾ø°®ÇÉ¿ËÁ¦wiz_item_45752.txt
+
+block Item 45752 >= 1
+	 KillItem 45752
+	 setlp -100
+	 setfp +150

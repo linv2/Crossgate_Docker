@@ -1,0 +1,70 @@
+#PUK3_main2
+#
+#
+#扑正永由■
+
+
+Block
+	
+	GAWindow 3207756,Next
+
+		#\n\n﹛左它﹜支匀午侳凶匀允友″\n﹛仇仇反甩术伊匀允″
+	
+	GAWindow 3207757,Next
+
+		#\n\n﹛内□匀午﹜仇仇匹谨切汜六仄化凶匀允互﹜\n﹛簿手仇卅仁化洁仄井匀凶匀允﹝\n﹛手丹﹜眸壬匀井曰仇氏卅赭卞嘻中化仃廿曰﹝
+	
+	GAWindow 3207758,Next
+
+		#\n\n﹛公木手仇木手丐木手\n﹛兮氏少丐氏凶心凶中卅谛互鬼中匀允﹝
+	
+	GAWindow 3207759,Next
+
+		#\n\n﹛仇丹中丹?怍锳模氘嵘怂药虫及\n﹛坌昴剂醒ネ心凶中卅眸凶切卅氏井毛\n﹛厌云丹午允月井日﹜仇丹支匀化内匀午﹜\n﹛穴民皮本卅氏井\n﹛仄卅仁切扎中仃卅仁卅月匀允﹝
+	
+	GAWindow 3207760,Next
+
+		#\n\n﹛公仄化﹜公丹中丹穴民皮本毛允月\n﹛泙午中丹及反瑁引匀化眸心凶中卅扑正永由匹﹜\n﹛石件玄反爵中凶仁手卅中及卞﹜\n﹛＞引匀化中凶冗它甩甩甩＝\n﹛午井卅氏午井赝癫卅酱髦毛龚中化﹜\n﹛爵歹卅仁切扎中仃卅中匀允﹝
+
+	GAWindow 3207761,Yes,No
+
+		#\n\n﹛＿＿匹手酷杅卅中匀允﹝\n﹛午中丹歹仃匹﹜它甩甩＿＿甩央﹝\n﹛凶凶井丹匀允″ 
+	
+		
+		Window_Yes
+		
+		Encount 2|0,59505,352,217||0|||||0|308086|||||||||
+		
+		
+		
+		Window_No
+		
+		Window 3207762,Next
+
+		#\n\n﹛丐﹜＿＿尺﹜尪狟潜聒樊匀允友″\n﹛公丹中丹及厘曾牒匀允﹝
+		
+		Window 3207763,Next
+
+		#\n\n﹛中支丐﹜壑及酦﹜\n﹛桩化凶手氏元扎卅中匀允﹝
+		
+		Window 3207764,OK
+
+		#\n\n﹛仇木﹜银匀化仁分今中匀允﹝
+		
+				Window_OK ItemSpace == 0
+					
+					EndWindow 3207765
+
+		#\n\n﹛分户匀允﹝儅化卅中匀允友﹝
+					
+						
+		
+				Window_OK
+				
+					GiveItem 621019,1
+					LeaveGroup
+					Warp 0,59505,352,217
+			
+		
+		
+			

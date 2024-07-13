@@ -1,0 +1,62 @@
+#mayko_gm_1102782.txt 丝米神官
+
+block globalFlag 487 == 1 && item 12811 >19
+	Window 1111915,next
+	window 1111916,next
+	Window 1111911,yes,no
+	Window_yes item 12811 >19 && gold >=1000
+	addgold -1000
+	killitem 12811,20
+	leavegroup 
+	warp 0,31954,390,163
+	endblock
+	Window_yes
+	endblock 
+	Window_no 
+	window 1111917,yes,no
+		Window_yes  gold >=2000
+		addgold -2000
+		leavegroup 
+		warp 0,31997,41,22
+		endblock	
+		Window_yes
+		Window_no
+		endblock
+block globalFlag 487 == 1
+		Window 1111915,next		
+		window 1111917,yes,no
+		Window_yes  gold >=2000
+		addgold -2000
+		leavegroup 
+		warp 0,31997,41,22
+		endblock	
+		Window_yes
+		Window_no
+		endblock
+block item 12811 >19
+	Window 1111914,next
+	Window 1111915,next
+	window 1111916,next
+	Window 1111911,yes,no
+	Window_yes item 12811 >19 && gold >=1000
+	addgold -1000
+	killitem 12811,20
+	leavegroup 
+	warp 0,31954,390,163
+	endblock	
+	Window_yes
+	Window_no
+	endblock
+block
+	endwindow 1111915
+	
+#1111777	1111911	\n\n\n　　　　另外要到未知的地方，\n　　　传送费是１０００，\n　　　可以接受吗？
+#1111778	1111912	\n\n\n　　　　你要使用传送石吗？\n　　　传送费是２０００。
+#1111779	1111913	\n\n\n　　　　你要使用传送石吗？\n　　　传送费是４０００。
+#1111780	1111914	\n\n\n\n@c你没得到通往亚纪城的许可，无法使用传送石。
+#1111781	1111915	\n\n　　　　呵呵～我是这村子退休的传送石管理员，\n　　　　如果你想要到前索未知的地方，\n　　　　就送一束(20)个香草给我吧。
+#1111782	1111916	\n\n\n　　　　你现在身上有一束香草，\n\n\n\n　　　　想要到前索未知的地方吗？
+#1111783	1111917	\n\n\n　　　　你想去亚纪城吗，\n　　　传送费是２０００。
+#1111784	1111918	\n　　　　阿......这可怎么办呢....，\n　　　　公主为什么要找月心将军呢。
+
+

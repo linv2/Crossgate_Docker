@@ -1,0 +1,26 @@
+#
+#由仿打
+#
+
+###﹛﹛###
+
+#弗件及抩铜市它件玄互ㄢ动晓及桦宁
+block Item 16239 == 1 && StampCount 16239 >= 3
+	EndWindow 21844
+
+#由仿打及澎饼毛手匀化中月卅日
+block Item 18982 == 1
+	EndWindow 21854
+
+#锳涟矢件母件玄毛手匀化中月卅日
+block Item 18969  >= 1
+#﹋酦峎﹌升丹井仇及澎饼毛?卞?仃化票今中﹝
+	Window 21566,OK
+	Window_OK
+			killItem 18969,1
+			GiveItem 18982,1
+###﹛﹛###
+block
+#\n\n﹛台五勾中仇午蜕中允亢凶氏分﹝\n﹛丐及谛反升仇卞中匀化仄引匀凶及井仄日＿﹝
+	EndWindow 21565
+

@@ -1,0 +1,56 @@
+#ÕýÉúÑ¨Æ¹·Â¡õÛÍ¾Þµ©Ðþ¡°µÙ²Ë÷ë¤¸Ô»éø
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+###########©xäßÎ­¼°ÅËØ¤Ô»©x##############
+block Item 18794 >= 1
+
+	EndWindow 206102,OK
+
+###########©xendflg36©x##############
+block endevent36 == 1 && nowtime == 3
+	Window 206081,YES,NO
+	Window_YES
+	leavegroup
+	endevent36 = 0
+	Warp 0,33243,16,29
+	Window_NO
+
+
+###########©xendflg36©x##############
+block endevent36 == 1
+
+	EndWindow 206102,OK
+
+###########©xnowevent37©x##############
+block nowevent37 == 1 && nowtime == 3
+	WIndow 206075,OK
+	Window_OK
+	leavegroup
+	nowevent37 = 0
+	endevent37 = 1
+
+###########©xendevent37©x##############
+block endevent37 == 1 && nowtime == 3
+	EndWIndow 206103,OK
+
+###########©xÆËÆ½Á¢¼°³×‚UÌ¤ÃQÔ»©xšz©x##############
+block Item 18793 >= 1 && nowtime == 3
+	EndWindow 206102,OK
+
+###########©xšz©x##############
+block nowtime == 3
+	Window 206081,YES,NO
+	Window_YES
+	leavegroup
+	Warp 0,33242,16,29
+	Window_NO
+
+###########©xšz¶¯Â½©x##############
+block nowtime != 3
+	Window 206082,OK
+	Window_OK
+	leavegroup
+	Warp 0,33242,16,29
+
+

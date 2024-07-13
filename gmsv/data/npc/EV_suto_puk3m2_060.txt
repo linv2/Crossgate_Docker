@@ -1,0 +1,33 @@
+#PUK3_main2
+#
+#
+#扑尼伊斥尼件敦蝈卅
+
+
+Block
+
+	GAWindow 3207842,Next
+
+		#\n\n﹛＿＿勾中卞仇仇引匹凶升曰邋中化\n﹛仄引中引仄凶友＿＿﹝
+	
+	GAWindow 3207843,Next
+
+		#\n\n﹛台反仇丹卅月仇午毛\n﹛侗氏匹反中引六氏匹仄凶＿＿﹝
+	
+	GAWindow 3207844,Next
+
+		#\n\n﹛＿＿台反手丹﹜簿卞手虱中引六氏﹝
+	
+	GAWindow 3207845,Next
+
+		#\n\n﹛恘反锤中及蜓匹允﹝
+	
+	GAWindow 3207846,OK
+
+		#\n\n﹛台毛疯戏今六凶筵﹜辋匀化中凶分五引允﹝
+	
+		Window_OK
+		
+			Encount 2|0,59985,230,186||0|||||0|308088|||||||||
+	
+	

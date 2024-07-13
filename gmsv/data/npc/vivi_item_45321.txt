@@ -1,0 +1,14 @@
+######■使用钥匙1
+##■检查人数
+block Group > 1
+	 ##1050685	\n\n\n\n@钥匙只能一人使用！
+	 Window 1050685,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+##■传送	 	 	 
+block Group == 1
+	 KillItem 45321
+	 Warp 0,32682,0,8
+	 

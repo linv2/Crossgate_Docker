@@ -1,0 +1,53 @@
+#
+#立生布伙验旦孕崭失弗伙白央及朴卞中月
+#伙件母崭毕
+#
+
+################################################################################
+#
+################################################################################
+
+###﹛蹂薯橇毛手匀化中月桦宁﹛###
+block Item 16223 >= 1
+	Window 21661,next
+	Window 21662,next
+	Window 21663,OK
+		Window_OK Item 16223 >=1
+		KillItemall 16223
+		NowEvent 103 = 1
+endblock
+### 榆ㄤ羁弁巨旦玄迕质咥 ###
+
+#巨伙榆ㄤ羁弁巨旦玄弁伉失
+block EndEvent 115 == 1
+	Window 22598,next
+	Window 22599,OK
+		Window_OK EndEvent 115 == 1 && ItemSpace >=1
+			EndEvent 53 = 1
+			NowEvent 115 = 0
+			EndEvent 115 = 0
+			KillItemAll 16395
+			GiveItem 16402,1
+			CheckTitle
+endblock 			
+#沶窜及惟漪毛儅匀化中月卅日
+block Item 16396 >= 1
+	EndWindow 22600
+#毕简及执毛儅匀化中月卅日
+block Item 16395 >= 1
+	EndWindow 22601
+#巨伙匹榆ㄤ羁弁巨旦玄毛褡垫酦卅日
+block NowEvent 115 == 1
+	Window 22602,next
+	Window 22603,next
+	Window 22604,next
+	Window 22605,OK
+		Window_OK NowEvent 115 == 1 && ItemSpace == 0
+			EndWindow 10000
+		Window_OK NowEvent 115 == 1
+			GiveItem 16395,1
+endblock 
+###﹛###
+block
+#\n\n﹛云云﹜庣及云杅井﹝方仁冗辅日木凶﹝卅卞手卅中崭元扎互斗匀仁曰午仄化中仁互方中﹝
+	EndWindow 15493

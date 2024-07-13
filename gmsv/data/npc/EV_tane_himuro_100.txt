@@ -1,0 +1,199 @@
+# 7 "EV_tane_himuro_100.txt"
+# 1 "header/global0.h" 1
+# 8 "EV_tane_himuro_100.txt" 2
+
+block
+
+                        if Item 15315 + Item 12501 + Item 15316 + Item 15314 + Item 607641 + Item 607649 + Item 15312 >= 1
+
+                                if Item 15315 + Item 12501 + Item 15316 + Item 15314 + Item 607641 + Item 607649 + Item 15312 >= 2
+
+
+
+                                        Window 3006755,next
+
+
+
+                                        EndWindow 3006756
+
+
+
+                                else
+
+                                        if Item 15315 >= 1
+
+
+                                                Window 3006757,next
+
+
+
+                                                Window 3006758,ok
+
+
+                                                window_ok Item 15315 >= 1
+
+                                                killItemall 15315
+
+                                                GiveItem 18014,1
+
+												window_ok
+
+                                        else
+                                                if Item 12501 >= 1
+
+
+                                                        Window 3006759,next
+
+
+
+                                                        Window 3006760,ok
+
+
+                                                        window_ok Item 12501 >= 1
+
+
+                                                        killItemall 12501
+
+                                                        GiveItem 608200,1
+
+														window_ok
+
+                                                else
+                                                        if Item 15316 >= 1
+
+
+                                                                Window 3006761,next
+
+
+
+
+                                                                Window 3006762,ok
+
+
+                                                                window_ok Item 15316 >= 1
+
+                                                                killItemall 15316
+
+                                                                GiveItem 607612,1
+
+																window_ok
+
+                                                        else
+                                                                if Item 15314 >= 1
+
+
+                                                                        Window 3006763,next
+
+
+
+                                                                        Window 3006764,ok
+
+
+                                                                        window_ok Item 15314 >= 1
+
+
+                                                                        killItemall 15314
+
+                                                                        GiveItem 607631,1
+
+																		window_ok
+
+                                                                else
+                                                                        if Item 607641 >= 1
+
+
+
+                                                                                Window 3006765,next
+
+
+
+
+                                                                                Window 3006766,ok
+
+
+                                                                                window_ok Item 607641 >= 1
+
+
+                                                                                killItemall 607641
+
+                                                                                GiveItem 608305,1
+
+																				window_ok
+
+                                                                        else
+                                                                                if Item 607649 >= 1
+
+
+                                                                                        Window 3006767,next
+
+
+
+                                                                                        Window 3006768,ok
+
+
+                                                                                        window_ok Item 607649 >= 1
+
+                                                                                        killItemall 607649
+
+                                                                                        GiveItem 607643,1
+
+																						window_ok
+
+
+                                                                                else
+
+
+
+                                                                                        Window 3006769,next
+
+
+
+                                                                                        EndWindow 3006770
+
+
+
+                                                                                endif
+                                                                        endif
+                                                                endif
+                                                        endif
+                                                endif
+                                        endif
+                                endif
+                        else
+
+                                if LocalCount0 != 6
+
+                                                LocalCount0 = 6
+
+
+
+                                                Window 3006771,next
+
+
+                                                Window 3006772,next
+
+
+
+
+                                                Window 3006773,next
+
+
+
+
+                                                EndWindow 3006774
+
+
+                                else
+
+                                                Window 3006775,next
+
+
+
+                                                Window 3006776,next
+
+
+
+                                                EndWindow 3006777
+
+                                endif
+                        endif

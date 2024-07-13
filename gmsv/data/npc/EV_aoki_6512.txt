@@ -1,0 +1,256 @@
+#宎衔布扑乓申件	﹋999“移涩嘻﹌
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+#100	201	165
+#士兵卡夏平的检查关卡
+###################大于 25 级 通过 #######################
+block  Level >= 25 && Group == 1
+	 #\n\n嗯！像你这么强的人，应该是没问题的吧？那就过去吧！不过你还是小心一点的好。
+	 Window 14070,OK,CANCEL
+
+####只能给一个人通过
+	 Window_OK Group > 1	
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+	 Window_YES Group > 1
+	 LeaveGroup
+	 Window_YES
+	 Window_NO
+	
+####只有一个人时
+	 Window_OK Group == 1
+	 Warp 0,15000,22,33
+
+
+	
+################### 有真通行证 通过 ####################
+block Item 18383 >= 1 && Group == 1
+	 #\n\n这里是通往莎莲娜的海底洞穴入口。\n要进这里必须是等级够高的人或是有通行证才能过。
+	 Window 14054,OK,CANCEL
+
+	 Window_OK Group == 1
+	 #\n\n嗯！这的确是里谢里雅堡发行的通行证。好！过去吧！
+	 Window 14056,OK,CANCEL
+
+#按 OK 后有组队
+	 Window_OK Group > 1
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+	 Window_YES Group > 1
+	 LeaveGroup
+
+	 Window_NO
+
+#按 OK 后没组队
+	 Window_OK Group == 1
+	 Warp 0,15000,22,33
+
+
+############生产系拿假真通行证（鉴定后） 通过 #######################
+block Leak1Item 18382 >= 1 && Job >=200 && Job < 430 && Group == 1
+	 #\n\n这里是通往莎莲娜的海底洞穴入口。\n要进这里必须是等级够高的人或是有通行证才能过。
+	 #讯息未改
+	 Window 14054,OK,CANCEL
+
+	 Window_OK Group == 1
+	 #\n\n嗯！这的确是里谢里雅堡发行的通行证。好！过去吧！
+	 Window 14056,OK,CANCEL
+
+#按 OK 后有组队
+	 Window_OK Group > 1
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+	 Window_YES Group > 1
+	 LeaveGroup
+
+	 Window_NO
+
+#按 OK 后没组队
+	 Window_OK Group == 1
+	 Warp 0,15000,22,33
+	
+
+############采集系拿假真通行证（鉴定后） 通过 #######################
+block Leak1Item 18382 >= 1 && Job >=450 && Job < 480 && Group == 1
+	 #\n\n这里是通往莎莲娜的海底洞穴入口。\n要进这里必须是等级够高的人或是有通行证才能过。
+	 #讯息未改
+	 Window 14054,OK,CANCEL
+
+	 Window_OK Group == 1
+	 #\n\n嗯！这的确是里谢里雅堡发行的通行证。好！过去吧！
+	 Window 14056,OK,CANCEL
+
+#按 OK 后有组队
+	 Window_OK Group > 1
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+	 Window_YES Group > 1
+	 LeaveGroup
+
+	 Window_NO
+
+#按 OK 后没组队
+	 Window_OK Group == 1
+	 Warp 0,15000,22,33
+############纺织工拿假真通行证（鉴定后） 通过 #######################	 
+block Leak1Item 18382 >= 1 && Job >=1010 && Job < 1020 && Group == 1
+	 #\n\n这里是通往莎莲娜的海底洞穴入口。\n要进这里必须是等级够高的人或是有通行证才能过。
+	 #讯息未改
+	 Window 14054,OK,CANCEL
+
+	 Window_OK Group == 1
+	 #\n\n嗯！这的确是里谢里雅堡发行的通行证。好！过去吧！
+	 Window 14056,OK,CANCEL
+
+#按 OK 后有组队
+	 Window_OK Group > 1
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+	 Window_YES Group > 1
+	 LeaveGroup
+
+	 Window_NO
+
+#按 OK 后没组队
+	 Window_OK Group == 1
+	 Warp 0,15000,22,33
+
+############生产系拿假真通行证（未鉴定） 通过 #######################
+block Leak0Item 18382 >= 1 && Job >=200 && Job < 430 && Group == 1
+	 #\n\n这里是通往莎莲娜的海底洞穴入口。\n要进这里必须是等级够高的人或是有通行证才能过。
+	 #讯息未改                                                                            
+	 Window 14054,OK,CANCEL                                                               
+                                                                                             
+	 Window_OK Group == 1                                                                 
+	 #\n\n嗯！这的确是里谢里雅堡发行的通行证。好！过去吧！                                
+	 Window 14056,OK,CANCEL                                                               
+
+#按 OK 后有组队
+	 Window_OK Group > 1
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+	 Window_YES Group > 1
+	 LeaveGroup
+
+	 Window_NO
+
+#按 OK 后没组队
+	 Window_OK Group == 1
+	 KillLeak0Item 18382
+	 GiveLeak1Item 18382
+	 Warp 0,15000,22,33
+	
+############采集系拿假真通行证（未鉴定） 通过 #######################
+block Leak0Item 18382 >= 1 && Job >=450 && Job < 480 && Group == 1
+	 #\n\n这里是通往莎莲娜的海底洞穴入口。\n要进这里必须是等级够高的人或是有通行证才能过。
+	 #讯息未改
+	 Window 14054,OK,CANCEL
+
+	 Window_OK Group == 1
+	 #\n\n嗯！这的确是里谢里雅堡发行的通行证。好！过去吧！
+	 Window 14056,OK,CANCEL
+
+#按 OK 后有组队
+	 Window_OK Group > 1
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+	 Window_YES Group > 1
+	 LeaveGroup
+
+	 Window_NO
+
+#按 OK 后没组队
+	 Window_OK Group == 1
+	 KillLeak0Item 18382
+	 GiveLeak1Item 18382
+	 Warp 0,15000,22,33
+
+############纺织工拿假真通行证（未鉴定） 通过 #######################
+block Leak0Item 18382 >= 1 && Job >=1010 && Job < 1020 && Group == 1
+	 #\n\n这里是通往莎莲娜的海底洞穴入口。\n要进这里必须是等级够高的人或是有通行证才能过。
+	 #讯息未改
+	 Window 14054,OK,CANCEL
+
+	 Window_OK Group == 1
+	 #\n\n嗯！这的确是里谢里雅堡发行的通行证。好！过去吧！
+	 Window 14056,OK,CANCEL
+
+#按 OK 后有组队
+	 Window_OK Group > 1
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+	 Window_YES Group > 1
+	 LeaveGroup
+
+	 Window_NO
+
+#按 OK 后没组队
+	 Window_OK Group == 1
+	 KillLeak0Item 18382
+	 GiveLeak1Item 18382
+	 Warp 0,15000,22,33
+	 
+############拿假假通行证（未鉴定）的状况 不过 #######################
+block Leak0Item 18381 >= 1 && Group == 1
+	 #\n\n这里是通往莎莲娜的海底洞穴入口。\n要进这里必须是等级够高的人或是有通行证才能过。
+	 #讯息未改
+	 Window 14054,OK,CANCEL
+#按 OK 后有组队
+	 Window_OK Group > 1
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+	 Window_YES Group > 1
+	 LeaveGroup
+
+	 Window_YES
+	 Window_NO
+
+#按 OK 后没组队
+	 Window_OK Group == 1
+	 #\n\n嗯！？这是假通行证吧！哼！我不会上当的！想偷跑～门儿都没有！
+	 KillLeak0Item 18381
+	 GiveLeak1Item 18381
+	 EndWindow 14057
+
+############拿假假通行证（鉴定后）的状况 不过 #######################
+block Leak1Item 18381 >= 1 && Group == 1
+	 #\n\n这里是通往莎莲娜的海底洞穴入口。\n要进这里必须是等级够高的人或是有通行证才能过。
+	 #讯息未改
+	 Window 14054,OK,CANCEL
+#按 OK 后有组队
+	 Window_OK Group > 1
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+	 Window_YES Group > 1
+	 LeaveGroup
+
+	 Window_YES
+	 Window_NO
+
+#按 OK 后没组队
+	 Window_OK Group == 1
+	 #\n\n嗯！？这是假通行证吧！哼！我不会上当的！想偷跑～门儿都没有！
+	 EndWindow 14057	
+
+
+	
+########## 不能组队 #############
+block Group > 1
+	 #\n\n这里只能一个人一个人单独前进。\n要解散队伍吗？
+	 Window 14072,YES,NO
+
+	 Window_YES Group > 1
+	 LeaveGroup
+
+	 Window_YES
+	 Window_NO
+
+###########什么条件都没有的状况
+block
+	 #\n\n这里是通往莎莲娜的海底洞穴入口。\n要进这里必须是等级够高的人或是有通行证才能过。
+	 #讯息未改
+	 Window 14054,OK,CANCEL
+	 Window_OK
+	 #\n\n只要你不是见习士兵的话，应该就能在里谢里雅堡拿到通行证的。
+	 EndWindow 14055
+

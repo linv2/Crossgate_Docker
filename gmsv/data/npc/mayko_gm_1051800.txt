@@ -1,0 +1,65 @@
+#月饼师父	30112	8	6 mayko_gm_1051800.txt
+
+#1111370	\n\n\n　　　　今年不做月饼了，\n　　　　想改做蛋黄酥。
+#1111371	\n\n\n　　　　以前都没叫过材料，\n　　　　空有材料单没材料也没辄。
+#1111372	\n\n\n\n@c年轻人，你可以帮忙吗？
+#1111373	\n\n\n\n@c材料是咸蛋黄、神圣油、小麦粉、豆沙。
+#1111374	\n\n\n　　　　咸蛋黄你拿鸡蛋跟盐给我就行了，\n　　　　豆沙拿大豆跟糖给我。
+#1111375	\n\n\n　　　　你现在有鸡蛋跟盐，\n　　　　要做咸蛋黄吗？
+#1111376	\n\n\n　　　　你现在有大豆跟糖，\n　　　　要做豆沙吗？
+#1111377	\n\n\n　　　　你现在有咸蛋黄、神圣油、小麦粉、豆沙，\n　　　　要做蛋黄酥吗？
+#1111378	\n\n\n　　　　好了，这几个蛋黄酥请你吃。
+
+block item  12503 > 0 && item 12400 >0 && item 47769 >0 && item 47768 >0 
+	Window 1111377,yes,no
+	Window_no
+	endwindow 1109452	
+	Window_yes  item  12503 > 0 && item 12400 >0 && item 47769 >0 && item 47768 >0 
+	killitem 12503,1
+	killitem 12400,1
+	killitem 47769,1
+	killitem 47768,1	
+	GiveLeak1Item 47778,1
+	endwindow 1111378
+	Window_yes
+	endwindow 1109452	
+
+
+block item 12411 >0 && item 12100 > 0 
+	Window 1111376,yes,no
+	Window_no
+	endwindow 1109452	
+	Window_yes item 12411 <1 || item 12100 <1 
+	endwindow 1109452
+	Window_yes ItemSpace < 1
+	endwindow 13115
+	Window_yes
+	killitem 12411,1
+	killitem 12100,1
+	GiveLeak1Item 47769,1
+	endblock
+
+
+block item 12402 >0 && item 12404 >0 
+	Window 1111375,yes,no
+	Window_no
+	endwindow 1109452	
+	Window_yes item 12402 <1 || item 12404 <1 
+	endwindow 1109452
+	Window_yes ItemSpace < 1
+	endwindow 13115
+	Window_yes
+	killitem 12402,1
+	killitem 12404,1
+	GiveLeak1Item 47768,1
+	endblock
+block
+	Window 1111370,next
+	Window 1111371,next
+	Window 1111372,yes,no
+	Window_no
+	endwindow 1109452	
+	Window_yes 
+	Window 1111373,next
+	end Window 1111374
+	

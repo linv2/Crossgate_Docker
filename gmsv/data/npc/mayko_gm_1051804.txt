@@ -1,0 +1,21 @@
+#mayko_gm_1051804.txt	
+#1055929	\n\n\n\n@c是否愿意花费１枚金币兑换：\n@c１个大女神苹果？	1
+
+block Item 40844 >0
+	 Window 1055929,yes,no
+	 Window_no
+	 endwindow 1100716
+	 Window_yes itemspace == 0 
+	 endwindow 13115
+	 Window_yes Item 40844 >0 
+	 killitem 40844,1
+	 GiveLeak1Item 47777,1
+	 endwindow 1100716
+	 Window_yes
+	 Endwindow 1109722
+	  
+block
+	 Endwindow 1109722
+#109722	\n\n\n\n\n@c你所拥有的水蓝鼠金币还未达兑换数量！	1
+
+

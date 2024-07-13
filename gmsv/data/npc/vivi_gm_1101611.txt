@@ -1,0 +1,12 @@
+###### 新手任务-交易特训指导员 ######
+####■ 特训指导员
+block
+	 ##1101281	\n\n你都了解交易的方式了吗？
+	 Window 1101281,YES,NO
+	 	 Window_YES
+	 	 ##1101282	\n\n恭喜了！\n你已经完成所有特训了，让我送你到结业教室去吧！
+	 	 Window 1101282,OK
+	 	 	 Window_OK
+	 	 	 GiveLeak1Item 40123
+	 	 	 Warp 0,32013,24,14
+	 	 Window_NO

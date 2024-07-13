@@ -1,0 +1,20 @@
+#
+#爵衔田伙弗旦
+#
+
+############## 谏及瑞弅手匀化月 ##############
+block Item 18503 == 1
+#\n\n﹛拑仁允卅方﹝
+	EndWindow 14778,OK
+
+############## 谏及瑞弅手匀化卅中 ##############
+block
+#\n\n﹛仇中勾毛儅匀午仃方﹝伉□交件及仿弘瓜夫弁及谏今﹝引丐云潮曰医歹曰卞反卅月分欠丹﹝
+	Window 14779,OK
+	Window_OK ItemSpace == 0
+#\n\n﹛卅氏分﹜炕谛及仁六卞手及儅切允亢分冗﹝
+	EndWindow 14780,OK
+	Window_OK ItemSpace != 0
+	GiveItem 18503
+
+

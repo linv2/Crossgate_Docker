@@ -1,0 +1,20 @@
+#Ñ¨¡õÓñÓÀÛÍ
+
+#ÛÍ¾Şµ©ĞşÛÍØøÊ§
+block EndEvent 121 == 1 || EndEvent 122 == 1
+	EndWindow 23136,OK
+
+#ÛÍ¾Şµ©Ğşñ×µæáN
+block NowEvent 121 == 1 || NowEvent 122 == 1
+	Window 23132,Next
+	Window 23133,Yes,No
+		Window_No
+			EndWindow 23135,OK
+		Window_Yes
+			Window 23134,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,46051,23,26
+#
+block
+	EndWindow 23136,OK

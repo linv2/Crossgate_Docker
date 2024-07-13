@@ -1,0 +1,35 @@
+#PUK3卞亢支井仄NPC﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛垫齿谛及摒
+
+###
+
+block
+
+	LocalCount5 = Random 3,0
+
+	If LocalCount5 == 1
+		EndWindow 3204193
+
+		#\n\n﹛ョ中坁互仄凶中及井〝\n﹛鬼中互﹜唱钗谛午反齿ヨ仄卅中潜聒卅氏分﹝\n﹛公氏卅仇午仄卅仁化手﹜蜗坌绅仆月氏匹友﹝\n﹛丐壬方﹝
+		EndBlock
+
+	else
+		IF LocalCount5 == 2
+			EndWindow 3204194
+
+		#\n\n﹛允什公仇及称中闭蟾毛晓互匀化中仃壬﹜\n﹛章及陆卞请日木月兮﹝\n﹛陆卞反乒件旦正□互丹方丹方中月互友﹝\n﹛丐壬方﹝
+			EndBlock
+
+		else
+			EndWindow 3204195
+
+		#\n\n﹛升丹仄化手ヨ匀凶曰ョ匀凶曰仄凶仃曰扎﹜\n﹛卅氏匹手盒卞垫仁氏分卅﹝\n﹛公仇及洘酦卅日﹜锹澎井引歹内齿ヨ仄化月方﹝\n﹛丐壬方﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+

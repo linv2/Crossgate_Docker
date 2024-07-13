@@ -1,0 +1,88 @@
+#≦反元户化及云勾井中≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛疋亘件旦弗及摒
+
+###﹛抩铜毛呁醒赭儅
+
+block Item_607904 >= 2
+	EndWindow 3200837
+		#\n\n﹛丐匀﹜午手分切市□玉互中匀天中丐月﹝\n﹛中仃卅中氏分冗﹜夫午曰ㄠ引中内勾匀化﹜\n﹛伙左□弘今氏﹜中匀化月及卞﹝
+
+
+
+###﹛抩铜毛赭儅﹋旦正件皿ㄠ﹌
+
+block Item_607904 == 1 && StampCount_607904 == 1
+
+	If BBimage == 101022 && Item_18233 >= 1
+		EndWindow 3200838
+		#\n\n﹛民平﹜丐公氏匹卅中匹﹜反支仁午升仃欠方﹝
+		EndBlock
+
+	else
+		If BBimage == 101022
+			Window 3200839,OK
+		#\n\n﹛今匀五公仇匹﹜仁允曰夫欠匀凶氏分﹝\n﹛巨巨永﹜仇木﹜民平互云午仄凶仁允曰卅及〝\n﹛元扎丐﹜井尹允方﹝
+
+
+				Window_OK Item_607904 >= 2 || Item_607904 == 0
+					EndWindow 3200840
+		#\n\n﹛氏〝﹛云引尹﹜民平元扎卅中卅﹝\n﹛瓦本手及卞卅氏井﹜仁允曰反歹凶今卅中冗″
+					EndBlock
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 18233,1,3200841
+		#\n\n﹛卅氏分方﹜じ日卅中元扎卅中井﹝\n﹛卅氏井允化欠方﹝
+					EndBlock
+
+				Window_OK
+					EndWindow 3200842
+		#\n\n﹛卅氏分方﹜じ日卅中元扎卅中井﹝\n﹛卅氏井允化欠方﹝
+					EndBlock
+
+		else
+			EndWindow 3200843
+		#\n\n﹛夫欠匀凶﹜夫欠匀凶﹜仁允曰毛夫欠匀凶﹝\n﹛匹手﹜苇六卅中方﹝\n﹛民平卞卅氏及仁允曰井﹜五仁氏分井日﹝
+			EndBlock
+
+		endif
+
+	endif
+
+
+
+###﹛抩铜毛赭儅﹋旦正件皿ㄠ动陆﹌
+
+block Item_607904 == 1
+
+	If BBimage == 101022
+		EndWindow 3200844
+		#\n\n﹛云勾井中互云歹匀凶日﹜丐公廿丹兮″
+		EndBlock
+
+	else
+		EndWindow 3200845
+		#\n\n﹛仇氏卅午仇匹丐公氏匹卅中匹﹜\n﹛切扎氏午民平及化勾分中仄欠方″
+		EndBlock
+
+	endif
+
+
+
+###﹛抩铜毛尕赭儅
+
+block
+	If BBimage == 101022
+		EndWindow 3200846
+		#\n\n﹛卅丐民平﹜谛互中匀天中仁月方丹卞卅匀化﹜\n﹛伐弁伐弁仄卅中井〝﹛切斤匀午仇歹中仃升﹝
+		EndBlock
+
+	else
+		EndWindow 3200847
+		#\n\n﹛夫欠匀凶﹜夫欠匀凶﹜中中手及夫欠匀凶﹝\n﹛匹手﹜丐仆卅中方﹝示弁及分手氏″
+		EndBlock
+
+	endif
+
+
+

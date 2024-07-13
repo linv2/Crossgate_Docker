@@ -1,0 +1,46 @@
+##########　ＮＰＣ ：酒保  ID：1101900
+##########　ＭＡＰ：30113(10.5)
+##########　亚诺曼城酒吧里
+##########　作用：1.卖酒给玩家猜拳 ; 2.加减的回收魔币
+
+
+####■有艾斯潘之石
+
+block Item 40325 >= 1 
+	 ##1102141	\n\n客人运气真好！最近来了一批好酒．．．\n不过好酒要有好酒的价格，一瓶要１５００G！\n怎么样？想尝尝吗？
+	 Window 1102141,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES  Gold < 1500
+	 	 	 ##1102142	\n\n客人！喝酒要记得带钱啊！
+	 	 	 EndWindow 1102142
+	 	  
+	 	 Window_YES ItemSpace < 1
+	 	 	 ##1102143	\n\n你好像拿不下任何东西啦！
+	 	 	 EndWindow 1102143
+	 	 	  
+	 	  Window_YES ItemSpace >= 1
+	 	 	 ##1102144	\n\n喝过的都说赞啦！
+	 	 	 AddGold -1500
+	 	 	 GiveLeak1Item 40316,1
+
+####■一般
+block
+	 ##1102216	\n\n要来杯酒吗？一杯１００G喔！
+	 Window 1102216,YES,NO
+	 	 Window_NO 	 	  
+
+	       	 Window_YES   Gold < 100
+	 	 	 ##1102142	\n\n客人！喝酒要记得带钱啊！
+	 	 	 EndWindow 1102142
+		 Window_YES ItemSpace < 1
+	 	  	 ##1102143	\n\n你好像拿不下任何东西啦！
+	 	 	 EndWindow 1102143
+	 	 Window_YES ItemSpace >= 1
+	 	 	 ##1102144	\n\n喝过的都说赞啦！
+	 	 	 Window 1102144,OK
+	 	 	 	 Window_OK
+			 	 	 AddGold -100
+	 		 		 GiveLeak1Item 40315,1
+	 	
+

@@ -1,0 +1,101 @@
+###卡时兑换服务员###
+## 有六小时打卡加值券
+block Item 46056 >= 1
+	 ##1052250	\n\n\n您要使用“六小时打卡加值券”来加值打卡时数吗？使用后不管增加多少卡时，仍受限于上限六小时喔！	1
+	 Window 1052250,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46056 >= 1 && FeverSec >= 21599
+	 	 	 ##1052256	\n\n\n\n@c您的卡时已满！	1
+			 EndWindow 1052256
+	 	 
+	 	 Window_YES Item 46056 >= 1 && FeverSec < 21599
+	 	 	 KillItem 46056
+	 	 	 AddFeverSec +21600
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 
+## 有五小时打卡加值券
+block Item 46057 >= 1
+	 ##1052251	\n\n\n您要使用“五小时打卡加值券”来加值打卡时数吗？使用后不管增加多少卡时，仍受限于上限六小时喔！	1
+	 Window 1052251,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46057 >= 1 && FeverSec >= 21599
+	 	 	 ##1052256	\n\n\n\n@c您的卡时已满！	1
+			 EndWindow 1052256
+	 	 
+	 	 Window_YES Item 46057 >= 1 && FeverSec < 21599
+	 	 	 KillItem 46057
+	 	 	 AddFeverSec +18000
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 
+## 有四小时打卡加值券
+block Item 46058 >= 1
+	 ##1052252	\n\n\n您要使用“四小时打卡加值券”来加值打卡时数吗？使用后不管增加多少卡时，仍受限于上限六小时喔！	1
+	 Window 1052252,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46058 >= 1 && FeverSec >= 21599
+	 	 	 ##1052256	\n\n\n\n@c您的卡时已满！	1
+			 EndWindow 1052256
+	 	 
+	 	 Window_YES Item 46058 >= 1 && FeverSec < 21599
+	 	 	 KillItem 46058
+	 	 	 AddFeverSec +14400
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+## 有三小时打卡加值券
+block Item 46059 >= 1
+	 ##1052253	\n\n\n您要使用“三小时打卡加值券”来加值打卡时数吗？使用后不管增加多少卡时，仍受限于上限六小时喔！	1
+	 Window 1052253,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46059 >= 1 && FeverSec >= 21599
+	 	 	 ##1052256	\n\n\n\n@c您的卡时已满！	1
+			 EndWindow 1052256
+	 	 
+	 	 Window_YES Item 46059 >= 1 && FeverSec < 21599
+	 	 	 KillItem 46059
+	 	 	 AddFeverSec +10800
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+## 有二小时打卡加值券
+block Item 46060 >= 1
+	 ##1052254	\n\n\n您要使用“二小时打卡加值券”来加值打卡时数吗？使用后不管增加多少卡时，仍受限于上限六小时喔！	1
+	 Window 1052250,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46060 >= 1 && FeverSec >= 21599
+	 	 	 ##1052256	\n\n\n\n@c您的卡时已满！	1
+			 EndWindow 1052256
+	 	 
+	 	 Window_YES Item 46060 >= 1 && FeverSec < 21599
+	 	 	 KillItem 46060
+	 	 	 AddFeverSec +7200
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+
+## 有一小时打卡加值券
+block Item 46061 >= 1
+	 ##1052255	\n\n\n您要使用“一小时打卡加值券”来加值打卡时数吗？使用后不管增加多少卡时，仍受限于上限六小时喔！	1
+	 Window 1052255,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46061 >= 1 && FeverSec >= 21599
+	 	 	 ##1052256	\n\n\n\n@c您的卡时已满！	1
+			 EndWindow 1052256
+	 	 
+	 	 Window_YES Item 46061 >= 1 && FeverSec < 21599
+	 	 	 KillItem 46061
+	 	 	 AddFeverSec +3600
+	 	 	 ##1051523	\n\n\n\n@c谢谢惠顾！	1
+			 EndWindow 1051523
+			 			 
+## 一般
+block 
+	 ##1052249	\n\n\n\n@c您好！这里是打卡时间加值处。	1
+	 EndWindow 1052249

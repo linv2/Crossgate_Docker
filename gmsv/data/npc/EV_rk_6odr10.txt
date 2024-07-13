@@ -1,0 +1,9 @@
+#??ûÔ????
+
+#
+block
+	Window 22478,Next
+	Window 22479,Next
+	Window 22480,OK
+		Window_OK
+			Encount 2|0,35009,25,26||0|||||0|20028|||||||||

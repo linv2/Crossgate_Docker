@@ -1,0 +1,24 @@
+#
+#tsuga
+#
+
+
+block
+
+
+	Window "\n\n©x–aÔªÈÕÄ¾Ğ×µ©Ó×¨ã¨ß…íÃ«\n©xİ©îåØÆÒıÔÊ¾®¨”",yes,no
+
+
+
+	Window_yes ItemSpace < 1
+
+		endWindow "\n\n©xƒ}ÇĞˆ^»¥Óò¥ÙÆ¥İ©îåÆ¥ÎåØ¦ÖĞ©z"
+
+
+	Window_yes
+
+		killitem 620023,1,(3007172)
+		giveitem 10007,40
+
+	Window_no
+	

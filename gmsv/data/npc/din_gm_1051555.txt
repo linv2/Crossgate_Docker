@@ -1,0 +1,17 @@
+#■MachiQ异业结合活动
+#■角色名称：MachiQ特派员		din_gm_1051555.txt	战斗掉物品npc
+#■对话内容：
+
+#■一般
+block
+	 ##1053905	\n\n  唔？你是来挑战的吗？	1
+	 Window 1053905,YES,NO 
+	 	 Window_NO 
+	 	 	 ##1053906	\n\n  不是的话就别来打扰我看杂志呀。	1
+		 	 EndWindow 1053906
+		 	 
+		 Window_YES 
+		 	 ##1053907	\n\n  就让我来试试你有多少斤两吧！	1
+			 Window 1053907,OK 
+			 	 Window_OK 
+			 	 Encount 3|||0|||||0|103141|		 	 

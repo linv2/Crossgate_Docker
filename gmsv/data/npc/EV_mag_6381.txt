@@ -1,0 +1,27 @@
+#犯奴左丢失
+
+############## 手丹欐仄凶﹋域蘸丐仆凶日支曰跶今卅中午分户﹌ ##############
+block NowEvent 4 == 1
+#\n\n﹛今丐斗仃＿＿
+	EndWindow 14737,OK
+
+############## 引分欐仄化卅中↓坞五丐曰 ##############
+block ItemSpace >= 1 && NowEvent 4 == 0
+#\n\n﹛扪抰卞像丹樊方﹜仇及县酱卞裘互啦阀毛灞允互恌中﹝
+	Window 14736,OK
+	Window_OK ItemSpace >= 1 && NowEvent 4 == 0
+	NowEvent 4 = 1
+	GiveItem 18492
+	Window_OK
+
+############## 引分欐仄化卅中↓手切手及中匀天中 ##############
+block ItemSpace == 0 && NowEvent 4 == 0
+#\n\n﹛拟中及县酱毛儅化﹝
+	EndWindow 14760,OK
+
+############## 白仿弘峏匀化卅中 ##############
+#block NowEvent 4 == 0
+#\n\n﹛＿＿＿恳仄五县酱毛儅化﹝
+#	EndWindow 14761,OK
+
+

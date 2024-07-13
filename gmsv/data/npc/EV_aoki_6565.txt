@@ -1,0 +1,40 @@
+#伄及母件斥亦件击卅月绍
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+#block StrCmpChat == R
+
+
+#绍及鳔中凶凶中引勾毛儅匀化中月桦宁
+block StrCmpChat == R && Item 18574 ==1
+###########################################
+#伄及岕及酦卞尕合腔卅绍互斗日斗日午シ尹化中月﹝
+	Window 14162,NEXT
+#凶中引勾卞绍毛鳔仃引允井〝
+	Window 14163,YES,NO
+	Window_YES
+#允匹卞绍反鳔中化中月﹝
+	EndWindow 14165
+	Window_NO
+
+#凶中引勾毛儅匀化中月桦宁
+block StrCmpChat == R && Item 18573 == 1
+###########################################
+#\n\n妦五绍毛仄凶詨互丐月
+#伄及岕及酦卞尕合腔卅绍互斗日斗日午シ尹化中月﹝
+	Window 14162,NEXT
+#凶中引勾卞绍毛鳔仃引允井〝
+	Window 14163,YES,NO
+	Window_YES
+#凶中引勾卞绍毛鳔仃凶﹝敛ヶ中梓互シ尹化中月﹝﹝
+	Window 14164,OK
+	Window_OK Item 18573 == 1
+	Killitem 18573,1,(14173)
+	Giveitem 18574,1,(14174)
+	Window_NO
+
+#骚橘
+block StrCmpChat == R
+############################################
+#\n\n伄及岕及酦卞尕合腔卅绍互斗日斗日午シ尹化中月﹝
+
+	EndWindow 14162

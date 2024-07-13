@@ -1,0 +1,117 @@
+####dodo_item_47363.txt
+###1.豆籽包			47363		双点可以产生1颗豆籽、1个营养注射器、耐久-1，共可点3次。
+####□身上有豆籽包 > 1 
+block Item 47363 > 1 
+	 ##1054520	\n\n\n  当身上有2包以上的豆籽包时，请只留一包在身上  ，其余可先收藏于银行中。	1
+	 EndWindow 1054520
+
+####□身上有豆荚 >= 1 && 豆籽包 == 1
+block Item 47368 >= 1 && Item 47363 == 1
+	 ##1054488	\n\n\n\n\n@c身上还有未剥开的豆荚。	1
+	 EndWindow 1054488
+	 
+####□身上有豆苗 && 营养注射器 && 豆籽包 == 1
+block Item 47367 >= 1 && Item 47364 >= 1 && Item 47363 == 1
+	 ##1054491	\n\n\n\n\n@c身上还有未栽培完成的豆苗！	1
+	 EndWindow 1054491
+	 
+####□身上有豆芽 && 营养注射器 && 豆籽包 == 1
+block Item 47366 >= 1 && Item 47364 >= 1 && Item 47363 == 1
+	 ##1054490	\n\n\n\n\n@c身上还有未栽培完成的豆芽！	1
+	 EndWindow 1054490
+
+####□身上有豆籽 && 营养注射器 && 豆籽包 == 1
+block Item 47365 >= 1 && Item 47364 >= 1  && Item 47363 == 1
+	 ##1054489	\n\n\n\n\n@c身上还有未栽培完成的豆籽！	1
+	 EndWindow 1054489
+	 
+####□身上有豆苗 && 豆籽包 == 1
+block Item 47367 >= 1 && Item 47363 == 1
+	 ##1054492	\n\n\n\n\n@c想要从豆籽包中拿出‘营养注射器’吗?	1
+	 Window 1054492,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47367 >= 1 && Item 47363 == 1 && ItemSpace == 0 
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1
+			 EndWindow 1054495
+		 
+		 Window_YES Item 47367 >= 1 && Item 47363 == 1 && ItemSpace >= 1
+		 	 ##(给予营养注射器。)
+		 	 GiveLeak1Item 47364
+		 	 
+####□身上有豆芽 && 豆籽包 == 1
+block Item 47366 >= 1 && Item 47363 == 1
+	 ##1054492	\n\n\n\n\n@c想要从豆籽包中拿出‘营养注射器’吗?	1
+	 Window 1054492,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47366 >= 1 && Item 47363 == 1 && ItemSpace == 0 
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1
+			 EndWindow 1054495
+		 
+		 Window_YES Item 47366 >= 1 && Item 47363 == 1 && ItemSpace >= 1
+		 	 ##(给予营养注射器。)
+		 	 GiveLeak1Item 47364
+		 
+####□身上有豆籽 && 豆籽包 == 1
+block Item 47365 >= 1 && Item 47363 == 1
+	 ##1054492	\n\n\n\n\n@c想要从豆籽包中拿出‘营养注射器’吗?	1
+	 Window 1054492,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47365 >= 1 && Item 47363 == 1 && ItemSpace == 0 
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1
+			 EndWindow 1054495
+		 
+		 Window_YES Item 47365 >= 1 && Item 47363 == 1 && ItemSpace >= 1
+		 	 ##(给予营养注射器。)
+		 	 GiveLeak1Item 47364
+
+#####□身上有营养注射器 && 豆籽包 == 1
+#block Item 47364 >= 1 && Item 47363 == 1
+#	 ##1054493	\n\n\n\n\n@c想要从豆籽包中拿出‘豆籽’吗?	1
+#	 Window 1054493,YES,NO 
+#	 	 Window_NO 
+#	 	 
+#	 	 Window_YES Item 47364 >= 1 && Item 47363 == 1 && ItemSpace == 0 
+#	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1
+#			 EndWindow 1054495
+#		 
+#		 Window_YES Item 47364 >= 1 && Item 47363 == 1 && ItemSpace >= 1 && ItemDur 47363 == 1
+#		 	 ##(给予一个豆籽)
+#		 	 GiveLeak1Item 47365,1
+#		 	 ##(取走豆籽包。)
+#		 	 KillItem 47363,1
+#		 	 
+#		 Window_YES Item 47364 >= 1 && Item 47363 == 1 && ItemSpace >= 1 && ItemDur 47363 > 1 && ItemDur 47363 <= 3
+#		 	 ##(给予一个豆籽)
+#		 	 GiveLeak1Item 47365,1
+#		 	 ##(豆籽包耐久-1。)
+#		 	 SetDur 47363,-1
+#		 	 
+####□一般
+block Item 47363 == 1
+	 ##1054494	\n\n\n\n\n@c想要取出‘豆籽’以及‘营养注射器’吗?	1
+	 Window 1054494,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 47363 == 1 && ItemSpace <= 1 
+	 	 	 ##1054496	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的二格位置。	1
+			 EndWindow 1054496
+			 
+		 Window_YES Item 47363 == 1 && ItemSpace >= 2 && ItemDur 47363 == 1 
+		 	 ##(给予一个豆籽)
+			 GiveLeak1Item 47365,1
+			 ##(给予一个营养注射器)
+			 GiveLeak1Item 47364,1
+			 ##(取走豆籽包。)
+		 	 KillItem 47363,1
+		 
+		 Window_YES Item 47363 == 1 && ItemSpace >= 2 && ItemDur 47363 >= 2 && ItemDur 47363 <= 3
+		 	 ##(给予一个豆籽)
+			 GiveLeak1Item 47365,1
+			 ##(给予一个营养注射器)
+			 GiveLeak1Item 47364,1
+			 ##(豆籽包耐久-1。)
+			 SetDur 47363,-1
+			 

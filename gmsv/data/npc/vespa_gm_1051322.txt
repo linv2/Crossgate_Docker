@@ -1,0 +1,55 @@
+##########　ＮＰＣ ：欢乐转蛋机1051322
+##########　ＭＡＰ：30110	10	15
+##########　亚诺曼城旅馆
+##########　作用：提供转蛋
+
+##■金币
+block Item 46417 >=1
+	 ##1052602	\n\n是否投入金币？
+	 Window 1052602,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES ItemSpace <1
+	 	 	 ##1052603	\n\n不知为何．．．无法转动转蛋机的开关？！
+			 EndWindow 1052603
+			 
+		 Window_YES ItemSpace >=1 && Item 46417 >=1
+		 	 ##1052604	\n\n叩！！
+			 Window 1052604,NEXT
+			 ##1052605	\n\n叩！　叩！
+			 Window 1052605,OK 
+			 	 Window_OK  ItemSpace >=1 && Item 46417 >=1
+			 		 ##删掉１枚金币
+			 		 KillItem 46417,1
+			 		 ##得到１个转蛋(5%、25%、70%)
+			 		 GiveLeak1Item(46419%5$1,46420%25$1,46421%70$1)
+			 		 ##1052606	\n\n叩～～～～～～　转蛋掉了下来！
+			 		 EndWindow 1052606
+
+##■铜币
+block Item 46418 >=1
+	 ##1052607	\n\n是否投入铜币？
+	 Window 1052607,YES,NO
+	 	 Window_NO
+	 	 
+	 	 Window_YES  ItemSpace <1
+	 	 	 ##1052603	\n\n不知为何．．．无法转动转蛋机的开关？！
+			 EndWindow 1052603
+		 Window_YES ItemSpace >=1 && Item 46418 >=1
+		 	 ##1052604	\n\n叩！！
+			 Window 1052604,NEXT
+			 ##1052605	\n\n叩！　叩！
+			 Window 1052605,OK
+			 	 Window_OK ItemSpace >=1 && Item 46418 >=1
+		 	 		 ##删除１枚铜币
+		 	 		 KillItem 46418,1
+		 	 		 ##得到１个转蛋(10%、90%)
+		 	 		 GiveLeak1Item(46420%10$1,46422%90$1)
+			 		 ##1052606	\n\n叩～～～～～～　转蛋掉了下来！
+			 		 EndWindow 1052606
+	 	  
+##一般
+block
+	 ##1052660	\n\n欢．迎．光．临－－－请投入代币．．．．
+	 EndWindow 1052660
+	 

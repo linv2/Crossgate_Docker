@@ -1,0 +1,22 @@
+##ÓÞÈË½Ú_Àï°º
+block item 34553 >=1
+	endwindow 1020481,ok
+
+block item 34552 >=1 && item 18454 >=1 && item 18443 >=1 && item 18211 >=10
+	window 1020482,yes,no
+		window_yes
+			window 1020483,ok
+			window_ok item 34552 >=1 && item 18454 >=1 && item 18443 >=1 && item 18211 >=10
+			killitem 18454,1
+			killitem 18443,1
+			killitem 18211,10
+			giveleak1item 34553,1
+		window_no
+			endwindow 1020484,ok
+
+block item 34552 >=1
+	window 1020485,next
+	window 1020486,ok
+
+block
+	endwindow 1020487,ok

@@ -1,0 +1,31 @@
+###dodo_item_40845.txt
+####○魔族原石		使用后可得到5个魔族水晶，共可使用4次。
+block Item 40845 >= 1 && ItemDur 40845 == 1
+	 ##1109598	\n\n\n  ‘魔族原石’是庞大魔族力量的聚集体，将其分解  可以得到共5颗魔族水晶，一共可分解四次；  想要现在分解出5颗魔族水晶吗？	1																						
+	 Window 1109598,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1																																																																																																			
+			 EndWindow 1054495
+	 	 
+	 	 Window_YES Item 40845 >= 1 && ItemDur 40845 == 1 && ItemSpace >= 1
+	 	 	 ##给予5颗魔族水晶
+	 	 	 GiveStackItem 18450,5
+	 	 	 ##1109599	魔族原石因魔力使用殆尽而崩毁了！	1																						
+	 	 	 KillItem 40845,(1109599)
+	 	 	 
+block Item 40845 >= 1 && ItemDur 40845 > 1
+	 ##1109598	\n\n\n  ‘魔族原石’是庞大魔族力量的聚集体，将其分解  可以得到共5颗魔族水晶，一共可分解四次；  想要现在分解出5颗魔族水晶吗？	1																						
+	 Window 1109598,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。	1																																																																																																			
+			 EndWindow 1054495
+	 	 
+	 	 Window_YES Item 40845 >= 1 && ItemDur 40845 > 1 && ItemSpace >= 1
+	 	 	 ##给予5颗魔族水晶
+	 	 	 GiveStackItem 18450,5
+	 	 	 SetDur 40845,-1
+	 	 	 

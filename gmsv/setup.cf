@@ -1,0 +1,332 @@
+############################# Server ID  线路IP
+servernumber=1
+############################# server name  线路名
+gameservname=cgmsv
+port=9030
+
+############################# DB server IP or domain name  数据库IP
+dbservname=127.0.0.1
+############################# DB username  数据库账号
+dbusername=root
+############################# DB password  数据库密码
+dbpassword=root
+############################# DB database name  数据库库名
+dbdatabasename=cgmsv
+############################# DB charset  数据库字符集
+dbcharset=gbk
+
+############################# mail server IP or domain name  邮件服务器ip
+mlserv=127.0.0.1
+############################# mail server port  邮件服务器端口
+mlservport=8005
+
+###############################没有特殊情况，以下无需修改##########################
+
+############################# Login Server IP 
+acserv=127.0.0.1
+############################# Login Server Port 
+acservport=7878
+############################# Version file
+version_conf=version.conf
+
+################################ Socket TCP_NODELAY mode
+nodelay=0
+################################ CharSave interval
+CharSaveinterval=3600 
+################################ Max fd num
+fdnum=800
+################################ pet num, = fdnum * (5+10+1)*2)
+petnum=12000
+################################ other char num 
+othercharnum=20000
+################################ object num
+objnum=55000
+################################ item num
+itemnum=170000
+################################ NPC create num
+npccreatenum=28000
+################################ dungeon num
+autodungeonnum=3000
+################################ encount memory num
+encountmemorynum=5000
+################################ house num
+housenum=3400
+################################ map obj num
+mapjobnum=2000
+################################ bolta max list num
+boltaclistnum=1000
+################################ bolta shop num
+boltacnum=10
+################################ 
+itemboxentrynum=10000
+###################### do not change
+dbquenum=2500
+###################### do not change
+authquenum=2000
+###################### memory usage
+usememoryunit=64
+usememoryunitnum=320000
+################################ 
+debuglevel=0
+socketreuse=OFF
+reuseaddr=1
+################################################# 
+topdir=.
+################################ 
+mapdir=data/map/
+################################
+materialmapdir=data/material_map/
+################################
+autodungeonmapdir=store/dungeon/
+################################
+housemapdir=store/house/
+################################
+badmsgtxtfile=data/badmsg.txt
+################################
+maptilefile=data/map/mapset.txt
+################################
+battlemapfile=data/map/battlemap.txt
+################################
+itemfile=data/itemset.txt
+################################
+itemrecipefile=data/itemrecipe.txt
+################################
+itemmaterialfile=data/itemmaterial.txt
+################################
+titlenamefile=data/titlename.txt
+################################
+titleconfigfile=data/titleconfig.txt
+################################
+encountfile=data/encount.txt
+################################
+enemybasefile=data/enemybase.txt
+################################
+enemyfile=data/enemy.txt
+################################
+groupfile=data/group.txt
+###############################
+enemyaifile=data/enemyai.txt
+###############################
+enemymsgfile=data/enemytalk.txt
+################################
+magicfile=data/magic.txt
+################################
+petskillfile=data/petskill.txt
+################################ 
+itematomfile=data/itematom.txt
+################################
+itemingredientfile=data/itemingredient.txt
+################################ 
+
+effectfile=data/effect.txt
+################################
+quizfile=data/question.txt
+################################
+jobsfile=data/jobs.txt
+################################
+jobs_ancestryfile=data/jobsancestry.txt
+################################
+skillfile=data/skill.txt
+################################
+skillexpfile=data/skillexp.txt
+################################
+skilllvfile=data/skilllv.txt
+################################
+techfile=data/tech.txt
+################################
+techareafile=data/techarea.txt
+################################
+tobossnpcfile=data/tobossnpc.txt
+################################
+petmailimpossiblefile=data/petmailimpossible.txt
+################################
+petmailmistakefile=data/petmailmistake.txt
+################################
+borderfile=data/border.txt
+################################
+debuggerfile=data/debugger.txt
+################################
+maketimefile=data/maketime.txt
+################################
+lsgenlogfilename=
+################################
+storedir=./store
+################################
+npcfile=data/npc.txt
+################################
+warpfile=data/warp.txt
+################################
+dungeonconffile=data/dungeonconf.txt
+################################
+dungeonnpcfile=store/dungeonnpc.txt
+################################
+dungeonencountfile=store/dungeonencount.txt
+################################
+tech_areafile=store/dungeontech_area.txt
+################################
+techareamemorynum=1024
+################################
+activedungeonfile=store/activedungeon.txt
+################################
+makeseqfile=store/makeseq.txt
+################################
+mapjobfile=store/mapjob.txt
+################################
+itemboxfile=store/itembox.txt
+################################
+msgtxtfile=data/msg.txt
+################################
+itemautofile=data/itemauto.txt
+###############################
+injuryfile=data/injury.txt
+################################
+################################
+logdir=./log
+logconfname=log.cf
+################################
+endofgmsvfile=gmsv.end
+################################
+checksyslogfile=syscheck.log
+################################GM密码
+chatmagicpasswd=nr
+################################
+################################使用命令前检查gm使用权限
+chatmagiccdkeycheck=0
+################################
+filesearchnum=8000
+################################
+################################
+netiointerval=200
+################################
+walkinterval=250
+################################
+CAinterval=250
+################################
+CDinterval=250
+################################
+Onelooptime=100
+################################
+Petdeletetime=172800
+################################
+Itemdeletetime=600
+################################ 
+golddeletetime=600
+################################
+getSkillPopulationtime=9
+################################
+addressbookoffmesgnum=10000
+################################
+################################
+protocolreadfrequency=1000
+################################
+################################
+allowerrornum=10000
+################################
+loghour=0
+################################
+battlenum=1000
+################################
+battledebugmsg=0
+################################
+#3600*24*3 
+nologinrankdown=259200
+################################
+albumversion=1
+isaocheck=0
+################################
+fctime=60
+################################
+fccount=5
+################################
+fcwait=300
+################################
+unfairuserdown=1
+# nouse now 
+saacwritenum=10000
+saacreadnum=10000
+acpasswd=aho.java
+################################
+houseroomfile=data/houseroom.txt
+################################
+extraipaddress=cgmsv.com
+################################
+timeoutsafetime=600
+################################
+housecontractserver=1
+################################
+macrouserdown=1
+################################
+mouselist=60
+################################
+mousecount=50
+################################
+housetime=120
+########## CG2 ##########
+############################### 船
+shipfile=data/ship.txt
+harborfile=data/harbor.txt
+############################### 
+morphfile=data/morph.txt
+############################### 
+guisefile=data/guise.txt
+############################### 
+rssfile=data/rss.txt
+###############################
+#kiribanfile=data/kiriban.txt
+################################
+nocompress=0
+################################
+#maptilefile=data/map/mapset.txt
+maptilefile=data/map/newmapset.txt
+################################
+geneboxratefile=data/geneboxrate.txt
+################################
+fishfile=data/fish.txt
+##### PUK2 ####
+adjusttime=0
+shipadjust=0
+################################ MAP ID LOG FILE NAME
+maplogfile=log/mapid.log
+################################ 
+rebirthfile=data/rebirth.txt
+################################
+battlerebirthfile=data/battlerebirth.txt
+################################ guild num
+guildnum=100
+################################ guild Data save interval
+guildSaveInterval=60
+breedingRoomSaveInterval=60
+#guildlogfile=log/guild.log
+guildmonsterfile=data/guildmonster.txt
+guildmonsterrankfile=data/guildmonsterrank.txt
+guildmonsteritemfile=data/guildmonsteritem.txt
+guildmonsterfavoritefile=data/guildmonsterfavor.txt
+guildmonstertextfile=data/guildmonstertext.txt
+#guildmonsterlogfile=log/guildmonster.log
+morphpuk2file=data/morphpuk2.txt
+#######################GUILD ROOM########################
+#DAY COST
+daychargetouse=10
+#ONCE PAY
+paymoneytoonce=100
+#BASIC PAY
+beforemoney=300
+################################
+beforehandgivemoney=1000000
+################################
+guildItemBoxSaveInterval=60
+################################
+timeoutchecktime=600
+#################### PUK3 ########################
+##################################### profilelist name
+profilelist=data/profile.txt
+##################################### profileversion
+profileversion=3
+##################################### aboutlist file name
+aboutlist=data/aboutfile.txt
+##################################### aboutlist file version
+aboutversion=5
+##################################### mail charge
+mailcharge=100
+################################ pet ride
+ridepetfile=data/ridepet.txt

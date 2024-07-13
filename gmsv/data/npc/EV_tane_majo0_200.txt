@@ -1,0 +1,264 @@
+#累?﹛交伉市及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+
+
+block Item 607621 >= 1
+
+		Window 3200518,next
+		#\n\n﹛歹丑﹜\n﹛莠井仄中匹允丰﹝\n﹛阁麸及丿坁及云累匹允丰﹝
+
+		Window 3200519,yes,no
+		#\n\n﹛丹日支引仄不匹允丰﹝\n﹛公木﹜仁分今中匹允丰﹝
+
+
+			Window_yes
+
+
+				Window 3200520,ok
+		#\n\n﹛丐曰互午匹允″\n﹛仇木﹜云斪分匀凶曰仄引允丰﹝
+
+				Window_ok
+
+								KillItemall 607621
+								GiveItem 607687,1
+								
+
+			Window_yes Item 607621 == 0
+
+				gotoF case1
+
+			Window_no
+*case1*
+
+				EndWindow 3200521
+		#\n\n﹛丐℅氏﹜仃切氏廿扔件匹允丰﹝
+
+			
+			
+###########﹛蝈够﹛##############
+block Item 14642 >= 1 && Item 14651 >= 1  && globalFlag11 == 1 && globalFlag12 == 1 && globalFlag13 == 1 && globalFlag14 == 1 && StrCmpChat == R
+
+#\n\n﹛丐日丐日﹜\n﹛仇及市件示弁及累窜毛丐凶仄卞〝\n﹛引丑﹜左穴本今氏友之﹝\n﹛匹﹜宁中蜕邯反〝
+
+	EndWindow 3006432
+
+###########﹛蝈够﹛##############
+block Item 14642 >= 1 && Item 14651 >= 1  && globalFlag11 == 1 && globalFlag12 == 1  && globalFlag13 == 1 && globalFlag14 == 1 && StrCmpChat == 3006480
+
+
+
+#\n\n﹛反中﹜恳荸﹝\n﹛元扎﹜弃庛卅仁熬仃午匀午仁歹友﹝
+
+	Window 3006433,NEXT
+
+
+
+#\n\n﹛丐日丐日﹜仍仁欠丹今引\n﹛鉼呬蝈够卞累窜毛欐仄化五凶心凶中友之﹝\n﹛丹℅氏﹜仍仁欠℅今引丑﹝\n﹛反中﹜仇木﹜仍’幻’丹’太﹝
+
+	Window 3006437,NEXT
+
+	Window 3006438,ok
+	
+	window_ok Item 14642 >= 1 && Item 14651 >= 1 && globalFlag11 == 1 && globalFlag12 == 1 && globalFlag13 == 1 && globalFlag14 == 1
+
+		globalFlag11 = 0
+		globalFlag12 = 0
+		globalFlag13 = 0
+		globalFlag14 = 0
+
+	KillItemall 14642
+
+		KillItemall 14652
+		KillItemall 14650
+		KillItemall 14653
+		KillItemall 14651
+
+		GiveItem (14644%5,14645%10,14646%20,14647%40,14648%50)
+
+
+###########﹛蝈够﹛##############
+block Item 14642 >= 1 && Item 14651 >= 1  && globalFlag11 == 1 && globalFlag12 == 1  && globalFlag13 == 1 && globalFlag14 == 1 && StrCmpChat != 3006480
+
+#\n\n﹛丐℅日﹜介℅氏友氏﹝\n﹛宁中蜕邯互啜丹歹友尹﹝\n﹛公木元扎﹜熬仃潸木卅中歹﹝
+
+
+	endWindow 3006434,ok
+
+
+
+
+
+###########﹛ミ琼酦﹛癫﹛##############
+block Item 14642 >= 1 && StrCmpChat == R
+
+#\n\n﹛丐日丐日﹜\n﹛仇及市件示弁及累窜毛丐凶仄卞〝\n﹛引丑﹜左穴本今氏友之﹝\n﹛匹﹜宁中蜕邯反〝
+
+	EndWindow 3006432
+
+
+
+
+
+###########﹛ミ琼酦﹛癫﹛##############
+block Item 14642 >= 1 && StrCmpChat == 3006480
+
+
+
+#\n\n﹛反中﹜恳荸﹝\n﹛元扎﹜弃庛卅仁熬仃午匀午仁歹友﹝
+
+	Window 3006433,NEXT
+
+
+
+
+#\n\n﹛元扎﹜漆蘸反丐凶仄卞俇引木化〝\n﹛引内﹜仇及ミ琼市□玉﹜儅匀化﹝\n﹛仇及它扑用扑正弁扔及累窜毛\n﹛鉼及本伉市卞欐仄化仁木卅中〝
+
+	Window 3006435,NEXT
+
+	window 3006429,ok
+
+#	window_ok Itemspace < 1
+
+#		endwindow 3006439
+
+	window_ok
+
+		globalFlag11 = 1
+
+	KillItemall 14651
+	KillItemall 14642
+
+		GiveItem 14650,1
+		GiveItem 14643,1
+
+#\n\n﹛欐允午五及宁中蜕邯反﹜\n﹛打示它及累蜕邯方﹝\n﹛切卅心卞市件示弁及累蜕邯反\n﹛≦コ昦毛普元月≧卅及﹝
+
+
+
+
+
+###########﹛ミ琼酦﹛陆﹛##############
+block Item 14642 >= 1 && StrCmpChat != 3006480
+
+
+#\n\n﹛丐℅日﹜介℅氏友氏﹝\n﹛宁中蜕邯互啜丹歹友尹﹝\n﹛公木元扎﹜熬仃潸木卅中歹﹝
+
+
+	endWindow 3006434,ok
+
+
+###########﹛ミ琼酦﹛帎﹛##############
+block Item 14650 >= 1
+
+
+#\n\n﹛反尺〝\n﹛斨阂今氏卞卅匀凶匹允井丑〝
+
+
+		Endwindow 3006486
+
+
+###########﹛ミ琼酦﹛帎﹛##############
+block Item 14652 >= 1 || Item 14653 >= 1
+
+
+#\n\n﹛丐日〝\n﹛钟仄中歹友〝仇氏卅午仇欠卞谛互侳月匀化﹝
+
+	Window 3006423,NEXT
+
+#\n\n﹛友之﹜五心〝\n﹛云友之今氏午﹜允仇℅仄﹜芛壬卅中〝
+
+	Window 3006424,NEXT
+
+
+#\n\n﹛丐凶仄〝\n﹛丐凶仄及抩反呺芊辉及穴伉市﹝\n﹛呺芊剂辉元扎卅中歹方﹝呺芊辉方﹝
+
+
+	Window 3006430,NEXT
+
+
+
+#\n\n﹛丐日〝丐日丐日〝\n﹛楝匀化﹜手丹﹜\n﹛幻井及抯午芛氏元扎匀化月及〝
+
+	Window 3006427,NEXT
+
+
+#\n\n﹛友之﹜楝﹜\n﹛中℅仇午﹜项尹化丐’仆’月﹝\n﹛市件示弁及累蜕邯反\n﹛≦コ昦毛普元月≧卅及方﹝
+
+
+		Endwindow 3006431
+
+
+
+
+###########﹛窒手卅仄﹛##############
+block 
+#
+#\n\n﹛丐日〝\n﹛钟仄中歹友〝仇氏卅午仇欠卞谛互侳月匀化﹝
+
+	Window 3006423,NEXT
+
+#\n\n﹛友之﹜五心〝\n﹛云友之今氏午﹜允仇℅仄﹜芛壬卅中〝
+
+	Window 3006424,NEXT
+
+
+#\n\n﹛丐凶仄〝\n﹛丐凶仄及抩反呺芊辉及穴伉市﹝\n﹛呺芊剂辉元扎卅中歹方﹝呺芊辉方﹝
+
+
+	Window 3006430,NEXT
+
+#\n\n﹛友之﹜\n﹛芛壬卅中〝
+
+	Window 3006476,yes,no
+	
+	window_yes Itemspace >= 2
+
+#\n\n﹛丐日℅氏﹜勾五丐匀化仁木月及℅\n﹛丹木仄中歹℅
+
+		globalFlag11 = 0
+		globalFlag12 = 0
+		globalFlag13 = 0
+		globalFlag14 = 0
+
+		Window 3006426,NEXT
+
+#\n\n﹛元扎﹜友\n﹛引内﹜仇及ミ琼市□玉﹜儅匀化﹝\n﹛仇及它扑用扑正弁扔及累窜毛\n﹛鉼及本伉市卞欐仄化仁木卅中〝
+
+		Window 3006428,NEXT
+		Window 3006429,ok
+
+		window_ok
+
+		globalFlag11 = 1
+
+
+		GiveItem 14650,1
+		GiveItem 14643,1
+
+
+
+#\n\n﹛欐允午五及宁中蜕邯反﹜\n﹛打示它及累蜕邯方﹝\n﹛切卅心卞市件示弁及累蜕邯反\n﹛≦コ昦毛普元月≧卅及﹝
+
+
+
+	window_yes Itemspace < 2
+
+#\n\n﹛丐日﹜\n﹛儅切手及互中匀天中及方丹友﹝\n﹛介℅氏友氏﹝
+
+
+		Endwindow 3006439
+
+
+	window_no
+
+#\n\n﹛丐日﹜介氏友℅氏﹝\n﹛仃﹜中仁元及友℅蛊分兮﹝
+
+		Endwindow 3006425
+
+
+
+
+
+

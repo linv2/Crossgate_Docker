@@ -1,0 +1,71 @@
+####300金币VIP	mayko_gm_1051758.txt
+
+####0300枚金币兑换商　　40844
+
+
+block Item 40844 >= 1200
+	 #Window 1055930,yes,no ##死神召唤书  xx
+	 Window 1055930,YES,NO
+	 Window_YES Item 40844>=1200
+	 KillItem 40844,1200
+	 GiveLeak1Item 47780,1
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 
+	 ##
+	 Window_NO
+	 Window 1055033,YES,NO  ##无头骑士召唤书	mayko_item_47684.txt
+	 Window_YES Item 40844>=1200
+	 KillItem 40844,1200
+	 GiveLeak1Item 47684,1
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 
+	 ##
+	 Window_NO
+	 Window 1055034,YES,NO  ##狂战将军召唤书	mayko_item_47685.txt
+	 Window_YES Item 40844>=1200
+	 KillItem 40844,1200
+	 GiveLeak1Item 47685,1
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 	 
+	 ##
+	 Window_NO
+	 Window 1055035,YES,NO  ##血腥骑士召唤书	mayko_item_47686.txt
+	 Window_YES Item 40844>=1200
+	 KillItem 40844,1200
+	 GiveLeak1Item 47686,1
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 	 
+	 Window_NO
+	 Window 1055036,YES,NO  ##地狱骑士召唤书	mayko_item_47687.txt
+
+	 Window_YES Item 40844>=1200
+	 KillItem 40844,1200
+	 GiveLeak1Item 47687,1
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 
+	 ##
+	 Window_NO
+	 Window 1055037,YES,NO  ##地狱将军召唤书	mayko_item_47688.txt
+	 Window_YES Item 40844>=1200
+	 KillItem 40844,1200
+	 GiveLeak1Item 47688,1
+	 endblock
+	 Window_YES
+	 EndWindow 11055026 	
+	 Window_NO
+	 EndWindow 1109723 
+block Item 40844 > 0 
+	 EndWindow 1055068	 
+		 
+				
+block 
+	 ##1109724	\n\n\n\n\n@c欢迎光临！！！	1
+	 Window 1109724,NEXT
+	 ##1109723	\n\n  欢迎光临！为了回馈各位勇者们长期以来对亚诺曼  城的贡献，因此现在只要有足够的银币或是金币就  可以找不同的服务人员兑换奖品喔！	1
+	 EndWindow 1109723
+	 							 	 

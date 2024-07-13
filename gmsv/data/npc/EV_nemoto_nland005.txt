@@ -1,0 +1,138 @@
+##########################
+# 用永市□仿件玉 by 漪呿 #
+# ←用永市□(弁巨旦玄)← #
+##########################
+
+### ≦丢泛左皮仿奶玄≧毛赭儅
+block Item 622022 >= 1
+	EndWindow 3206855
+
+		#\n\n﹛平伊奶卅潟澡曰分友″\n﹛匹手卅氏分井﹜公木毛苇化中月午﹜\n﹛濠卅中竣儅切卞卅月方＿＿﹝\n﹛升丹仄化分欠丹〝
+
+
+### ≦祯仃凶扲檗≧毛赭儅
+block Item 622021 >= 1
+
+	GAWindow 3206856,NEXT
+
+		#\n\n﹛丐丑＿＿﹝\n﹛示弁反﹜允屯化毛﹜\n﹛合中请仄凶方＿＿﹝
+
+	GAWindow 3206857,OK
+
+		#\n\n\n\n﹛芋芋 用永市□及擘互﹜⑵卞跶涛黍中化仁月﹝\n﹛﹛﹛祯仃凶扲檗互﹜庄仄中跪毛旵匀凶﹝\n﹛﹛﹛杴及蟆及滔缙互狦戈＿＿﹝
+
+		Window_OK Item 622021 == 0
+			GAEndWindow 3206858,OK
+
+		#\n\n﹛啦摹互?太井仃凶互﹜\n﹛允什卞恳竣毛潸曰枑仄凶﹝
+
+		Window_OK
+			KillItemAll 622021
+			warp 0,59752,57,163
+
+
+
+### 银中呺缜﹋譬项’皮伉□母□’朼执﹌匹反卅中
+block Job < 90 || Job >= 120
+	Endwindow 3206859
+
+		#\n\n﹛平亘永＿＿﹝
+
+
+### 动票允屯化﹜缜仅互银中呺缜
+
+
+### ≦藂檗及瑞弅≧毛呁醒赭儅
+block Item 622020 > 1
+	GAEndWindow 3206860
+
+		#\n\n﹛丐﹜丐木〝\n﹛示弁互欐仄凶藂檗及井仃日反升木＿＿〝
+
+
+### ≦藂檗及瑞弅≧ㄠ蜊午≦峸木月弥≧毛ㄠ蜊动晓赭儅
+block Item 622020 == 1 && Item 18375 >= 1
+	GAWindow 3206861,NEXT
+
+		#\n\n﹛歹丑﹜儅匀化五化仁木凶氏分友″\n﹛升丹手丐曰互午丹″允仍仁平伊奶分友″
+
+	GAWindow 3206862,NEXT
+
+		#\n\n﹛＿＿丐﹜丐木＿＿﹝\n﹛卅氏分欠丹﹜仇及普元＿＿﹝\n﹛丐﹜ゲ中＿＿永″〝
+
+	GAWindow 3206863,OK
+
+		#\n\n﹛芋芋 用永市□互澎卞仄凶籣羹卞﹜\n﹛﹛﹛峸木月弥互毡仁跪曰分仄凶″\n﹛﹛﹛用永市□及刓树互﹜域谁﹜\n﹛﹛﹛塑仄中方丹卞手﹜\n﹛﹛﹛?仄中方丹卞手苇尹凶互﹜\n﹛﹛﹛Ⅲ毛跪日六﹜蒋中喘井匀化五凶″
+
+		Window_OK Item 622020 != 1
+			EndWindow 3206864
+
+		#\n\n﹛＿＿丐木〝\n﹛示弁互欐仄凶藂檗及井仃日﹜升仇〝
+
+		Window_OK Item 18375 < 1
+			EndWindow 3206865
+
+		#\n\n﹛＿＿丐木〝\n﹛峸木月弥互卅中方〝
+
+		Window_OK
+			KillItemAll 622020
+			KillItem 18375,1
+			Encount 2|||0|||||0|306330|||||||||
+
+
+### ≦藂檗及瑞弅≧午≦藂檗≧毛赭儅
+block Item 622020 == 1 && Item 18373 >= 1
+	GAEndWindow 3206866
+
+		#\n\n﹛歹丑﹜儅匀化五化仁木凶氏分友″\n﹛升丹手丐曰互午丹″\n\n﹛＿＿丐木﹜仇木反﹜鳗濩及藂檗元扎卅仁化﹜\n﹛忔骚及藂檗心凶中分﹝\n﹛六匀井仁儅匀化五化仁木凶及卞﹜\n﹛示弁互俓仄中及午反啜丹方﹝仍户氏友﹝
+
+
+### ≦藂檗及瑞弅≧毛ㄠ蜊赭儅
+block Item 622020 == 1
+	GAEndwindow 3206867
+
+		#\n\n﹛仇木午⑺元藂檗毛﹜\n﹛敦蝈卅溥及﹜\n﹛鳗濩及藂檗毛儅匀化五化″
+
+
+### ≦峸木月弥≧毛赭儅
+block Item 18375 >= 1
+	GAEndWindow 3206868
+
+		#\n\n﹛公木反＿＿丐及萋及﹜鳗濩及藂檗〝\n﹛雄中呺恘毛普元月＿＿﹝\n﹛公及藂檗互丐木壬﹜\n﹛示弁手心氏卅及方丹卞﹜\n﹛呺芊互银尹月方丹卞卅月及井卅丑﹝
+
+
+### 晓筏动陆
+block
+	GAWindow 3206869,NEXT
+
+		#\n\n﹛丐丑＿＿丐及﹜\n﹛鳗濩及﹜弥嫦月萋及藂檗今尹丐木壬﹜\n﹛示弁手心氏卅及方丹卞＿＿﹝
+
+	GAWindow 3206870,NEXT
+
+		#\n\n﹛＿＿永″〝示弁及蜕邯互坌井月及″〝\n﹛丐丑﹜仇氏卅仇午俇戈及反\n﹛豭★仄中仇午卅及井手仄木卅中仃木升＿＿﹝\n﹛示弁﹜弥嫦月萋及﹜鳗濩及藂檗互俓仄中氏分﹝\n﹛域゜卞凶匀凶夫午勾分仃嫦月午中丹﹜\n﹛丐及萋及藂檗互丐木壬﹜五匀午﹜\n﹛示弁手心氏卅及方丹卞\n﹛呺芊互银尹月方丹卞卅月反内分井日″
+
+	GAWindow 3206871,YES,NO
+
+		#\n\n﹛友之﹜云凑中″\n﹛弥嫦月萋及鳗濩及藂檗毛﹜\n﹛潸匀化五化仁木卅中井卅〝
+
+		Window_YES Itemspace == 0
+			GAEndwindow 3206872
+
+		#\n\n﹛公木动晓儅化卅中心凶中分友﹝
+
+		Window_YES Item 622020 >= 1
+			GAEndwindow 3206873
+
+		#\n\n﹛丐﹜丐木〝手丹欐仄化凶〝
+
+		Window_YES
+			GiveLeak1Item 622020,1
+			GAEndWindow 3206874
+
+		#\n\n﹛歹丑﹜丐曰互午丹″\n﹛尹匀午﹜仇木＿＿仇木﹜\n﹛示弁互樯胶匀凶﹜\n﹛藂檗及井仃日卅氏分﹝\n﹛仇木午⑺元藂檗毛﹜\n﹛敦蝈卅溥及鳗濩及藂檗毛儅匀化五化″
+
+		Window_NO
+			GAEndwindow 3206875
+
+		#\n\n﹛公匀井＿＿﹝\n﹛支匀天曰﹜豭★仄中方友﹝\n﹛仍户氏友﹜漆及狪反侉木化友﹝
+
+

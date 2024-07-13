@@ -1,0 +1,9 @@
+block item 41323 >0 && item 41324 >0 && item 41325 >0 && itemspece >0
+	killitem 41323,1
+	killitem 41324,1
+	killitem 41325,1
+	GivePet 41757
+	endblock
+block item 41323 >0 && item 41324 >0 && item 41325 >0	
+	 EndWindow 1102679
+

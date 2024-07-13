@@ -1,0 +1,75 @@
+#斥乓田□ヨ曰14F﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛衙踏垫齿谛及摒
+
+###﹛≦脐珃?戴筏≧﹋ID“631017﹌毛赭儅
+block Item_631017 >= 1
+
+	If ItemCreateTime_631017 > 25
+		Window 3205745,OK
+
+		#\n\n﹛丐℅丐﹜厘仪卅呿毛公氏卅卞条仄切引匀化﹝\n﹛公木元扎檐厶厘幂反熬仃潸日卅中冗﹝\n﹛酷杅互卅中﹜仇匀切匹窒午井允月井日﹜\n﹛呿反忒仄化仁木﹝
+
+			Window_OK Item_631017 >= 1
+				KillItemAll 631017
+				EndBlock
+
+			Window_OK 
+				EndBlock
+
+	else
+		EndWindow 3205746
+
+		#\n\n﹛檐厶厘幂反?呿驯五及璋螂笮分﹝\n﹛丐引曰湮曰Ⅶ仄化呿毛条允卅方﹝
+		EndBlock
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3205747,YES,NO
+
+		#\n\n﹛云蟆今氏反﹜申□旦玄箪岭及斥乓田□毛菲户化\n﹛茧绸仄化中月及井卅〝
+
+		Window_YES Item_631017 >= 1
+			EndWindow 3205748
+
+		#\n\n﹛云云﹜手丹欐仄化中凶井﹝
+
+		Window_YES ItemSpace >= 1
+			Window 3205749,NEXT
+
+		#\n\n﹛卅日壬﹜檐厶厘幂卞莘丹互中中﹝\n﹛中勾手仇及彶匹打夫打夫仄化中月井日﹜\n﹛凶少氏襞匀化月氏元扎卅中井卅﹝
+			Window 3205750,OK
+
+		#\n\n﹛云云﹜公丹分﹜勾中匹卞仇及呿毛?仃化仁木﹝\n﹛医嗯反手丹枃匀化中月井日﹜欐允分仃匹中中﹝\n﹛公木互丐木壬﹜减氏匹狪允分欠丹﹝
+
+				Window_OK Item_631017 >= 1
+					EndWindow 3205751
+
+		#\n\n﹛云云﹜手丹欐仄化中凶井﹝
+
+				Window_OK ItemSpace >= 1
+					GiveItemEX 631017,1,3205752
+
+		#\n\n﹛公及绂坁匹反欐六卅中卅﹝
+
+				Window_OK
+					EndWindow 3205753
+
+		#\n\n﹛公及绂坁匹反欐六卅中卅﹝
+
+		Window_YES
+			EndWindow 3205754
+
+		#\n\n﹛公及绂坁匹反欐六卅中卅﹝
+
+		Window_NO
+			EndWindow 3205755
+
+		#\n\n﹛帎及杴读卅日中中氏分﹝竣毛勾仃化卅﹝
+
+
+

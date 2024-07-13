@@ -1,0 +1,12 @@
+###2006EC 12月份_秘传鱼翅盒(空)	din_item_47330.txt
+###能力说明：可收纳九组鱼翅汤
+
+block Item 15218 < 27
+	 ##1054456	\n\n\n\n\n  你身上的鱼翅汤不足２７个喔！所以无法收纳。	1
+	 EndWindow 1054456
+
+block Item 15218 >=27
+	 KillItem 15218,27
+	 KillItem 47330,1
+	 GiveLeak1Item 47331,1
+	 

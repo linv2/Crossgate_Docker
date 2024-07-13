@@ -1,0 +1,77 @@
+#mayko_gm_1102632.txt
+#小护士雨乔#1102632 #30105	15	18
+
+#1110700	天气冷了！！病人也多了～好累喔！！	1
+#1110701	我们几个姊妹商量好，要煮火锅吃	1
+#1110702	可以麻烦你帮我们买食材吗	1
+#1110703	麻烦你了	
+
+
+#1110706	食材你买好啦~~谢谢你呦	1
+#1110707	不过刚刚我们凹医生，他要帮我们加码耶～～	1
+#1110708	这就再麻烦你啰	1
+#1110709	东西还不齐喔	1
+#1110710	你真的弄到手啦～～谢谢你喔！！	1
+#1110711	一点小意思～	1
+#1110712	你可以再帮我们准备佐料吗？？	1
+#1110713	再麻烦你啰！！	1
+#1110714	你真是好心耶～～	1
+#1110715	这是单人份小火锅～送你一份～～	1
+#1110716	真是谢谢你！	1
+ #Window_yes itemspace>0
+
+block  item 41134>0 && item 12409 >0 && item 12406 >0 && item 12004 >0  
+	 killitem 41134,1
+	 killitem 12409,1
+	 killitem 12406,1
+	 killitem 12004,1
+	 GiveLeak1Item 41131,1
+	 Window 1110714,next
+	 Window 1110715,next
+	 Endwindow 1110716
+block item 41134>0
+	 endwindow 1110709 
+ 
+block item 41133>0 && item 11203 >0 && item 11600 >0 && item 11601 >0  
+	 killitem 41133,1
+	 killitem 11203,1
+	 killitem 11600,1
+	 killitem 11601,1
+	 Window 1110710,next
+	 Window 1110711,next
+	 AddGold 500
+	 Window 1110712,yes,no
+	 Window_yes 
+	 GiveLeak1Item 41134,1
+	 Endwindow 1110713
+	 Window_no
+	 endwindow 11379
+ 
+block item 41133>0
+	 endwindow 1110709 
+ 
+block item 41132>0 && item 11209 >0 && item 11210 >0 && item 11211 >0  && item 11213 >0
+	 killitem 41132,1
+	 killitem 11210,1
+	 killitem 11211,1
+	 killitem 11213,1
+	 killitem 11209,1
+	 GiveLeak1Item 41133,1
+	 Window 1110706,next
+	 Window 1110707,next
+	 Endwindow 1110708
+
+	 
+ 
+block item 41132>0
+	 endwindow 1110709
+block 
+	 window 1110700,next
+	 Window 1110701,next
+	 Window 1110702,yes,no
+	 Window_yes itemspace>0
+	 GiveLeak1Item 41132,1
+	 endwindow 1110703
+	 Window_no
+	 endwindow 11379
+	 	 

@@ -1,0 +1,41 @@
+
+
+block
+
+
+
+
+
+
+				LocalCount10 = random 2,0
+
+				if LocalCount10 == 1
+
+
+
+#					endWindow "\n\n﹛什止什止什止〝\n﹛卞文"
+					endWindow 3006968
+
+
+
+				else
+
+
+
+#					endWindow "\n\n﹛五斤五斤五斤\n﹛五斤氏"
+					endWindow 3006969
+
+
+
+				endif
+
+
+
+
+
+
+
+
+
+
+

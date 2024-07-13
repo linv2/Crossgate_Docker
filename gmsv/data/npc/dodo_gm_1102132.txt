@@ -1,0 +1,44 @@
+###dodo_gm_1102132.txt
+###传送石（代替装备店传送至海村的WARP点，需控制2点）							传送玩家到不同的地图。
+###□身上有莉塔的发饰 && EndEvent 157 == 1
+block EndEvent 157 == 1 && Item 40731 >= 1 && Xpos == 6 && Ypos == 18
+	 LeaveGroup
+	 Warp 0,32241,44,50
+
+block EndEvent 157 == 1 && Item 40731 >= 1 && Xpos == 19 && Ypos == 18
+	 LeaveGroup
+	 Warp 0,32241,50,50
+
+###□身上有交换日记 && 魔族的火把
+block Item 40733 >= 1 && Item 40734 >= 1 && Xpos == 6 && Ypos == 18
+	 LeaveGroup
+	 Warp 0,32242,44,50
+
+block Item 40733 >= 1 && Item 40734 >= 1 && Xpos == 19 && Ypos == 18
+	 LeaveGroup
+	 Warp 0,32242,50,50
+
+###□身上有莉塔的发饰 && EndEvent 156 == 1 
+block EndEvent 156 == 1 && Item 40731 >= 1 && Xpos == 6 && Ypos == 18
+	 LeaveGroup
+	 Warp 0,32240,44,50
+
+block EndEvent 156 == 1 && Item 40731 >= 1 && Xpos == 19 && Ypos == 18
+	 LeaveGroup
+	 Warp 0,32240,50,50
+
+###□身上有交换日记 && 旗标1 == 1 
+block EndEvent 156 == 1 && Item 40733 >= 1 && Xpos == 6 && Ypos == 18
+	 LeaveGroup
+	 Warp 0,32240,44,50
+
+block EndEvent 156 == 1 && Item 40733 >= 1 && Xpos == 19 && Ypos == 18
+	 LeaveGroup
+	 Warp 0,32240,50,50
+	 
+###□一般
+block Xpos == 6 && Ypos == 18
+	 Warp 0,30011,44,50
+	 
+block Xpos == 19 && Ypos == 18
+	 Warp 0,30011,50,50

@@ -1,0 +1,65 @@
+##########　ＮＰＣ ：柱子1  ＩＤ：1101979_４公斤
+##########　ＭＡＰ：
+##########　小机关
+##########　作用：增加任务乐趣用
+
+##■错误的沙
+block Item 40363 >=1 || Item 40364 >=1 || Item 40365 >=1 || Item 40367 >=1 || Item 40368 >=1 || Item 40369 >=1 || Item 40370 >=1|| Item 40371 >=1
+ 	 ##1102315	\n\n “是否把沙袋放置上去？”
+	 Window 1102315,YES,NO
+	 	 Window_NO 
+	 	 Window_YES
+	 	 	  if Item 40363>=1
+	 	 	  	 KillItem 40363,1
+	 	 	   endif 
+	 	 	  if Item 40364>=1
+	 	 	  	 KillItem 40364,1
+	 	 	   endif 
+	 	 	  if Item 40365>=1
+	 	 	  	 KillItem 40365,1
+	 	 	   endif 
+	 	 	  if Item 40367>=1
+	 	 	  	 KillItem 40367,1
+	 	 	   endif 
+	 	 	  if Item 40368>=1
+	 	 	  	 KillItem 40368,1
+	 	 	   endif 
+	 	 	  if Item 40369>=1
+	 	 	  	 KillItem 40369,1
+	 	 	   endif 
+	 	 	  if Item 40370>=1
+	 	 	  	 KillItem 40370,1
+	 	 	   endif 
+	 	 	  if Item 40371>=1
+	 	 	  	 KillItem 40371,1
+	 	 	   endif 
+
+		
+##■正确的沙
+block Item 40366 >=1
+	 ##1102315	\n\n “是否把沙袋放置上去？”
+	 Window 1102315,YES,NO
+	 	 Window_NO
+	 	 Window_YES Item 40366 >=1
+	 	 	 KillItem 40366,1
+	 	 	 shapenext  260604
+	 	 	 SetObject 0,32067,53,18,0   ##参考　SetObject 0,34014,44,43,0
+	 	 	 SetObject 0,32067,53,19,0
+	 	 	 SetObject 0,32067,53,20,0
+	 	 	 SetObject 0,32067,53,21,0
+	 	 	 SetObject 0,32067,53,22,0
+	 	 	 SetObject 0,32067,53,23,0
+	 	 	 SetObject 0,32067,53,24,0
+	 	 	 SetObject 0,32067,53,25,0
+	 	 	 SetObject 0,32067,53,26,0
+	 	 	 SetObject 0,32067,53,27,0
+	 	 	 SetObject 0,32067,53,28,0
+	 	 	 SetObject 0,32067,53,29,0
+	 	 	 SetObject 0,32067,53,30,0
+
+			 
+##■一般
+block
+	 ##1102316	\n\n‘是不是可以放什么东西上去呢？’ 
+	 EndWindow 1102316
+	  	 

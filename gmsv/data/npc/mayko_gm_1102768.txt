@@ -1,0 +1,42 @@
+#mayko_gm_1102768.txt 木榙
+#1111731	您来自哥拉尔城吧，不知您是否要回王城，我这有封密信，麻烦您帮我送给王宫的侍女小希。	1
+#1111739	这．．．我明白了。	1
+#1111740	这有张地图，事主说有埋一个盒子，挖到后麻烦再拿给小希吧。	1
+#1111744	唉～～我怎么这么心软，这可是流放之罪呢～～	1
+
+#木塔的信	1641227	小希的委托1	1641228	小希的委托2	1641229
+#小希的委托3	1641230 地图	1641231 神秘的盒子	1641232 奇特的宝珠	1641233 铲子	1641234
+#1111738	麻烦您了。
+block item 412333 >0
+	endwindow 1111738
+block item 412332 >0
+	endwindow 1111740
+block item 412321 >0 && item 41234 >0	
+	endwindow 1111740
+block item 412321 >0
+	GiveLeak1Item 41234,1
+	endwindow 1111740
+block item 412324 >0
+	GiveLeak1Item 41231,1
+	endwindow 1111740		
+block item 41230 >0 && item 16379> 5 && item 12811 >19 # 蓝凤凰的羽毛	16379 香草	12811
+	killitem 41230,1
+	killitem 12811,20
+	killitem 16379,6
+	GiveLeak1Item 41231,1
+	GiveLeak1Item 41234,1
+	endwindow 1111740
+block item 41230 >0 
+	endwindow 1111738	
+block item 41229 >0
+	endwindow 1111744
+block item 41228 >0
+	endwindow 1111744
+block item 41227 >0
+	endwindow 1111744
+block itemspace >0
+	GiveLeak1Item 41227,1
+	endwindow 1111731
+block 
+	window 1111731,next
+	endwindow 1051520	

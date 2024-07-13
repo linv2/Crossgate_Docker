@@ -1,0 +1,9312 @@
+#???“场驯五及矢乒件
+#桦赭“伉□扑乓显
+#
+#
+#
+#
+#
+
+######﹛隶嘻赓渝祭﹛######
+block GlobalTimerA > 28800 && Visitor >= 30
+	SetVisitor0
+	EndWindow 3208531
+
+		#\n\n﹛仍户氏友\n﹛隶嘻互莽木切扎匀凶心凶中分方
+
+
+########﹛旦正□矛伉伙及瑞弅﹛########
+block HaveLeak1item == 13600 && Visitor >= 1000 && Visitor < 2000
+	Window 3208532,yes,no
+
+		#\n\n﹛旦正□矛伉伙及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+
+	Window_yes gold < 100
+		EndWindow 3208533
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13600 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13600
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (13601%60,13600%35,13604%5)
+		EndWindow 3208534
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else	
+		if LocalCount1 == 2
+			GiveLeak1Item (13601%30,13600%20,13640%10,13641%10,606200%10,606201%10,13644%5,606204%5)
+			EndWindow 3208535
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208536
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+		endif
+	endif
+	Window_yes 
+		EndWindow 3208537
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208538
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########﹛失弁失穴伉件及瑞弅﹛########
+block HaveLeak1item == 13640 && Visitor >= 1000 && Visitor < 2000
+	Window 3208539,yes,no
+
+		#\n\n﹛失弁失穴伉件及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3208540
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13640 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13640
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (13641%60,13640%35,13644%5)
+		EndWindow 3208541
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13641%30,13640%20,13600%10,13601%10,606200%10,606201%10,13604%5,606204%5)
+			EndWindow 3208542
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208543
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208544
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208545
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########﹛扔白央奶失及瑞弅﹛########
+block HaveLeak1item == 606200 && Visitor >= 1000 && Visitor < 2000
+	Window 3208546,yes,no
+
+		#\n\n﹛扔白央奶失及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3208547
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606200 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606200
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606201%60,606200%35,606204%5)
+		EndWindow 3208548
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606201%30,606200%20,13640%10,13600%10,13641%10,13601%10,13604%5,13644%5)
+			EndWindow 3208549
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208550
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208551
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208552
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########井卅曰瑞仃凶旦正□矛伉伙########
+block HaveLeak1item == 13601 && Visitor >= 1000 && Visitor < 2000
+	Window 3208553,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶旦正□矛伉伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3208554
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13601 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13601
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (13602%45,13601%25,13600%20,13604%5)
+		EndWindow 3208555
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13602%30,13600%20,13641%10,13642%10,606201%10,606202%10,13644%5,606204%5)
+			EndWindow 3208556
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208557
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208558
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208559
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶失弁失穴伉件########
+block HaveLeak1item == 13641 && Visitor >= 1000 && Visitor < 2000
+	Window 3208560,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶失弁失穴伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3208561
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13641 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13641
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (13642%45,13641%25,13640%20,13644%5)
+		EndWindow 3208562
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13642%30,13640%20,13601%10,13602%10,606201%10,606202%10,13604%5,606204%5)
+			EndWindow 3208563
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208564
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208565
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208566
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶扔白央奶失########
+block HaveLeak1item == 606201 && Visitor >= 1000 && Visitor < 2000
+	Window 3208567,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶扔白央奶失匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3208568
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606201 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606201
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606202%45,606201%25,606200%20,606204%5)
+		EndWindow 3208569
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606202%30,606200%20,13601%10,13641%10,13602%10,13642%10,13604%5,13644%5)
+			EndWindow 3208570
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208571
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208572
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208573
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶旦正□矛伉伙########
+block HaveLeak1item == 13602 && Visitor >= 1000 && Visitor < 2000
+	Window 3208574,yes,no
+
+		#\n\n﹛瑞仃凶旦正□矛伉伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3208575
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+	Window_yes Item 13602 >= 1
+
+	LocalCount1 = Random 3,0
+	killitem 13602
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (13603%45,13602%25,13601%20,13604%5)
+		EndWindow 3208576
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13603%30,13601%20,13642%10,13643%10,606202%10,606203%10,13644%5,606204%5)
+			EndWindow 3208577
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208578
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208579
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208580
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶失弁失穴伉件########
+block HaveLeak1item == 13642 && Visitor >= 1000 && Visitor < 2000
+	Window 3208581,yes,no
+
+		#\n\n﹛瑞仃凶失弁失穴伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3208582
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13642 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13642
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (13643%45,13642%25,13641%20,13644%5)
+		EndWindow 3208583
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13643%30,13641%20,13602%10,13603%10,606202%10,606203%10,13604%5,606204%5)
+			EndWindow 3208584
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208585
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208586
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208587
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶扔白央奶失########
+block HaveLeak1item == 606202 && Visitor >= 1000 && Visitor < 2000
+	Window 3208588,yes,no
+
+		#\n\n﹛瑞仃凶扔白央奶失匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3208589
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606202 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606202
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606203%45,606202%25,606201%20,606204%5)
+		EndWindow 3208590
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606203%30,606201%20,13602%10,13642%10,13603%10,13643%10,13604%5,13644%5)
+			EndWindow 3208591
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208592
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208593
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208594
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶旦正□矛伉伙########
+block HaveLeak1item == 13603 && Visitor >= 1000 && Visitor < 2000
+	Window 3208595,yes,no
+
+		#\n\n﹛支支瑞仃凶旦正□矛伉伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3208596
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13603 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13603
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (13604%50,13603%25,13602%20,13604%5)
+		EndWindow 3208597
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13604%30,13602%20,13643%10,13644%10,606203%10,606204%10,13644%5,606204%5)
+			EndWindow 3208598
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208599
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208600
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208601
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶失弁失穴伉件########
+block HaveLeak1item == 13643 && Visitor >= 1000 && Visitor < 2000
+	Window 3208602,yes,no
+
+		#\n\n﹛支支瑞仃凶失弁失穴伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3208603
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13643 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13643
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (13644%50,13643%25,13642%20,13644%5)
+		EndWindow 3208604
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13644%30,13642%20,13603%10,13604%10,606203%10,606204%10,13604%5,606204%5)
+			EndWindow 3208605
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208606
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208607
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208608
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支瑞仃凶扔白央奶失########
+block HaveLeak1item == 606203 && Visitor >= 1000 && Visitor < 2000
+	Window 3208609,yes,no
+
+		#\n\n﹛支支瑞仃凶扔白央奶失匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3208610
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606203 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606203
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606204%50,606203%25,606202%20,606204%5)
+		EndWindow 3208611
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606204%30,606202%20,13603%10,13604%10,13643%10,13644%10,13604%5,13644%5)
+			EndWindow 3208612
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208613
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208614
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208615
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########旦正□矛伉伙########
+block HaveLeak1item == 13604 && Visitor >= 1000 && Visitor < 2000
+	Window 3208616,yes,no
+
+		#\n\n﹛旦正□矛伉伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3208617
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13604 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13604
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (13605%50,13604%29,13603%20,13609%1)
+		EndWindow 3208618
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13605%34,13603%24,13644%10,13645%10,606204%10,606205%10,13649%1,606209%1)
+			EndWindow 3208619
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208620
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208621
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208622
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########失弁失穴伉件########
+block HaveLeak1item == 13644 && Visitor >= 1000 && Visitor < 2000
+	Window 3208623,yes,no
+
+		#\n\n﹛失弁失穴伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3208624
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13644 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13644
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (13645%50,13644%29,13643%20,13649%1)
+		EndWindow 3208625
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13645%34,13643%24,13604%10,13605%10,606204%10,606205%10,13609%1,606209%1)
+			EndWindow 3208626
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208627
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208628
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208629
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########扔白央奶失########
+block HaveLeak1item == 606204 && Visitor >= 1000 && Visitor < 2000
+	Window 3208630,yes,no
+
+		#\n\n﹛扔白央奶失匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3208631
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606204 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606204
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606205%50,606204%29,606203%20,606209%1)
+		EndWindow 3208632
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606205%34,606203%24,13604%10,13605%10,13644%10,13645%10,13609%1,13649%1)
+			EndWindow 3208633
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208634
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208635
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208636
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅旦正□矛伉伙########
+block HaveLeak1item == 13605 && Visitor >= 1000 && Visitor < 2000
+	Window 3208637,yes,no
+
+		#\n\n﹛支支恌撙卅旦正□矛伉伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3208638
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13605 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13605
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (13606%50,13605%29,13604%20,13609%1)
+		EndWindow 3208639
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13606%34,13604%24,13645%10,13646%10,606205%10,606206%10,13649%1,606209%1)
+			EndWindow 3208640
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208641
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208642
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208643
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅失弁失穴伉件########
+block HaveLeak1item == 13645 && Visitor >= 1000 && Visitor < 2000
+	Window 3208644,yes,no
+
+		#\n\n﹛支支恌撙卅失弁失穴伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3208645
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13645 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13645
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (13646%50,13645%29,13644%20,13649%1)
+		EndWindow 3208646
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13646%34,13644%24,13605%10,13606%10,606205%10,606206%10,13609%1,606209%1)
+			EndWindow 3208647
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208648
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208649
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208650
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅扔白央奶失########
+block HaveLeak1item == 606205 && Visitor >= 1000 && Visitor < 2000
+	Window 3208651,yes,no
+
+		#\n\n﹛支支恌撙卅扔白央奶失匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3208652
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606205 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606205
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606206%50,606205%29,606204%20,606209%1)
+		EndWindow 3208653
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606206%34,606204%24,13605%10,13606%10,13645%10,13646%10,13609%1,13649%1)
+			EndWindow 3208654
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208655
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208656
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208657
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅旦正□矛伉伙########
+block HaveLeak1item == 13606 && Visitor >= 1000 && Visitor < 2000
+	Window 3208658,yes,no
+
+		#\n\n﹛恌撙卅旦正□矛伉伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3208659
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13606 >=1
+	LocalCount1 = Random 3,0
+	killitem 13606
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (13607%50,13606%29,13605%20,13609%1)
+		EndWindow 3208660
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13607%34,13605%24,13647%10,13646%10,606207%10,606206%10,13649%1,606209%1)
+			EndWindow 3208661
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208662
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208663
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208664
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########恌撙卅失弁失穴伉件########
+block HaveLeak1item == 13646 && Visitor >= 1000 && Visitor < 2000
+	Window 3208665,yes,no
+
+		#\n\n﹛恌撙卅失弁失穴伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+
+	Window_yes gold < 700
+		EndWindow 3208666
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13646 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13646
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (13647%50,13646%29,13645%20,13649%1)
+		EndWindow 3208667
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13647%34,13645%24,13607%10,13606%10,606207%10,606206%10,13609%1,606209%1)
+			EndWindow 3208668
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208669
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208670
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208671
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅扔白央奶失########
+block HaveLeak1item == 606206 && Visitor >= 1000 && Visitor < 2000
+	Window 3208672,yes,no
+
+		#\n\n﹛恌撙卅扔白央奶失匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3208673
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606206 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606206
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606207%50,606206%29,606205%20,606209%1)
+		EndWindow 3208674
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606207%34,606205%24,13607%10,13606%10,13647%10,13646%10,13609%1,13649%1)
+			EndWindow 3208675
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208676
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208677
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208678
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅旦正□矛伉伙########
+block HaveLeak1item == 13607 && Visitor >= 1000 && Visitor < 2000
+	Window 3208679,yes,no
+
+		#\n\n﹛井卅曰恌撙卅旦正□屯伉伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3208680
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13607 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13607
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (13608%50,13607%29,13606%20,13609%1)
+		EndWindow 3208681
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13608%34,13606%24,13648%10,13647%10,606208%10,606207%10,13649%1,606209%1)
+			EndWindow 3208682
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208683
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208684
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208685
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅失弁失穴伉件########
+block HaveLeak1item == 13647 && Visitor >= 1000 && Visitor < 2000
+	Window 3208686,yes,no
+
+		#\n\n﹛井卅曰恌撙卅失弁失穴伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3208687
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13647 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13647
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (13648%50,13647%29,13646%20,13649%1)
+		EndWindow 3208688
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13648%34,13646%24,13608%10,13607%10,606208%10,606207%10,13609%1,606209%1)
+			EndWindow 3208689
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208690
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208691
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208692
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅扔白央奶失########
+block HaveLeak1item == 606207 && Visitor >= 1000 && Visitor < 2000
+	Window 3208693,yes,no
+
+		#\n\n﹛井卅曰恌撙卅扔白央奶失匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3208694
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606207 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606207
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606208%50,606207%29,606206%20,606209%1)
+		EndWindow 3208695
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606208%34,606206%24,13648%10,13647%10,13608%10,13607%10,13649%1,13609%1)
+			EndWindow 3208696
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208697
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208698
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208699
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########敦蝈卞嗤中旦正□矛伉伙########
+block HaveLeak1item == 13608 && Visitor >= 1000 && Visitor < 2000
+	Window 3208700,yes,no
+
+		#\n\n﹛敦蝈卞嗤中旦正□矛伉伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3208701
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13608 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13608
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (13609%50,13608%29,13607%20,13609%1)
+		EndWindow 3208702
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13609%34,13607%24,13649%10,13648%10,606209%11,606208%11)
+			EndWindow 3208703
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208704
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208705
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208706
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中失弁失穴伉件########
+block HaveLeak1item == 13648 && Visitor >= 1000 && Visitor < 2000
+	Window 3208707,yes,no
+
+		#\n\n﹛敦蝈卞嗤中失弁失穴伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3208708
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13648 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13648
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (13649%50,13648%29,13647%20,13649%1)
+		EndWindow 3208709
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13649%35,13647%25,13609%10,13608%10,606209%10,606208%10)
+			EndWindow 3208710
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208711
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208712
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208713
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中扔白央奶失########
+block HaveLeak1item == 606208 && Visitor >= 1000 && Visitor < 2000 
+	Window 3208714,yes,no
+
+		#\n\n﹛敦蝈卞嗤中扔白央奶失匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3208715
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606208 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606208
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606209%50,606208%29,606207%20,606209%1)
+		EndWindow 3208716
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606209%35,606207%25,13609%10,13608%10,13649%10,13648%10)
+			EndWindow 3208717
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208718
+
+		#\n\n﹛示白件″″\n﹛仍户氏﹜撩ヘ仄化卅仁卅匀切扎匀凶﹝
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3208719
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208720
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########﹛敦蝈锳噬虫及旦正□矛伉伙########
+block HaveLeak1item == 13609 && Visitor >= 1000 && Visitor < 2000
+	EndWindow 3208721
+
+		#\n\n﹛敦蝈锳噬虫及旦正□矛伉伙元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及失弁失穴伉件########
+block HaveLeak1item == 13649 && Visitor >= 1000 && Visitor < 2000
+	EndWindow 3208722
+
+		#\n\n﹛敦蝈锳噬虫及失弁失穴伉件元扎﹜\n﹛掸董匹五卅中方﹝
+
+
+########﹛敦蝈锳噬虫及扔白央奶失########
+block HaveLeak1item == 606209 && Visitor >= 1000 && Visitor < 2000 
+	EndWindow 3208723
+
+		#\n\n﹛敦蝈锳噬虫及扔白央奶失元扎﹜\n﹛掸董匹五卅中方﹝
+
+########玄由□术及瑞弅########
+block HaveLeak1item == 13630 && Visitor >= 2000 && Visitor < 3000
+	Window 3208724,yes,no
+
+		#\n\n﹛玄由□术及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3208725
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item_13630 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13630
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (13631%60,13630%35,13634%5)
+		EndWindow 3208726
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13631%30,13630%20,606210%10,606211%10,606220%10,606221%10,606214%5,606224%5)
+			EndWindow 3208727
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208728
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+		endif
+	endif
+	Window_yes
+		EndWindow 3208729
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208730
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########扑玄伉件及瑞弅########
+block HaveLeak1item == 606210 && Visitor >= 2000 && Visitor < 3000
+	Window 3208731,yes,no
+
+		#\n\n﹛扑玄伉件及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3208732
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606210 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606210
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606211%60,606210%35,606214%5)
+		EndWindow 3208733
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606211%30,606210%20,13630%10,13631%10,606220%10,606221%10,13634%5,606224%5)
+			EndWindow 3208734
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208735
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208736
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208737
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########母件皮仿奶玄及瑞弅########
+block HaveLeak1item == 606220 && Visitor >= 2000 && Visitor < 3000
+	Window 3208738,yes,no
+
+		#\n\n﹛母件皮仿奶玄及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3208739
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606220 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606220
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606221%60,606220%35,606224%5)
+		EndWindow 3208740
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606221%30,606220%20,606210%10,13630%10,606211%10,13631%10,13634%5,606214%5)
+			EndWindow 3208741
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208742
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208743
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208744
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########井卅曰瑞仃凶玄由□术########
+block HaveLeak1item == 13631 && Visitor >= 2000 && Visitor < 3000
+	Window 3208745,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶玄由□术匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3208746
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13631 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13631
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (13632%45,13631%25,13630%20,13634%5)
+		EndWindow 3208747
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13632%30,13630%20,606211%10,606212%10,606221%10,606222%10,606214%5,606224%5)
+			EndWindow 3208748
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208749
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208750
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208751
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶扑玄伉件########
+block HaveLeak1item == 606211 && Visitor >= 2000 && Visitor < 3000
+	Window 3208752,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶扑玄伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3208753
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606211 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606211
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606212%45,606211%25,606210%20,606214%5)
+		EndWindow 3208754
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606212%30,606210%20,13631%10,13632%10,606221%10,606222%10,13634%5,606224%5)
+			EndWindow 3208755
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208756
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208757
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208758
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶母件皮仿奶玄########
+block HaveLeak1item == 606221 && Visitor >= 2000 && Visitor < 3000
+	Window 3208759,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶母件皮仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3208760
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606221 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606221
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606222%45,606221%25,606220%20,606224%5)
+		EndWindow 3208761
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606222%30,606220%20,13631%10,606211%10,13632%10,606212%10,13634%5,606214%5)
+			EndWindow 3208762
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208763
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208764
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208765
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶玄由□术########
+block HaveLeak1item == 13632 && Visitor >= 2000 && Visitor < 3000
+	Window 3208766,yes,no
+
+		#\n\n﹛瑞仃凶玄由□术匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3208767
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13632 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13632
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (13633%45,13632%25,13631%20,13634%5)
+		EndWindow 3208768
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13633%30,13631%20,606212%10,606213%10,606222%10,606223%10,606214%5,606224%5)
+			EndWindow 3208769
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208770
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208771
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208772
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶扑玄伉件########
+block HaveLeak1item == 606212 && Visitor >= 2000 && Visitor < 3000
+	Window 3208773,yes,no
+
+		#\n\n﹛瑞仃凶扑玄伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3208774
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606212 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606212
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606213%45,606212%25,606211%20,606214%5)
+		EndWindow 3208775
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606213%30,606211%20,13632%10,13633%10,606222%10,606223%10,13634%5,606224%5)
+			EndWindow 3208776
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208777
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208778
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208779
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶母件皮仿奶玄########
+block HaveLeak1item == 606222 && Visitor >= 2000 && Visitor < 3000
+	Window 3208780,yes,no
+
+		#\n\n﹛瑞仃凶母件皮仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3208781
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606222 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606222
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606223%45,606222%25,606221%20,606224%5)
+		EndWindow 3208782
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606223%30,606221%20,13632%10,606212%10,13633%10,606213%10,13634%5,606214%5)
+			EndWindow 3208783
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208784
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208785
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208786
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶玄由□术########
+block HaveLeak1item == 13633 && Visitor >= 2000 && Visitor < 3000
+	Window 3208787,yes,no
+
+		#\n\n﹛支支瑞仃凶玄由□术匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3208788
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13633 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13633
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (13634%50,13633%25,13632%20,13634%5)
+		EndWindow 3208789
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13634%30,13632%20,606213%10,606214%10,606223%10,606224%10,606214%5,606224%5)
+			EndWindow 3208790
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208791
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208792
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208793
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶扑玄伉件########
+block HaveLeak1item == 606213 && Visitor >= 2000 && Visitor < 3000
+	Window 3208794,yes,no
+
+		#\n\n﹛支支瑞仃凶扑玄伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3208795
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606213 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606213
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606214%50,606213%25,606212%20,606214%5)
+		EndWindow 3208796
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606214%30,606212%20,13633%10,13634%10,606223%10,606224%10,13634%5,606224%5)
+			EndWindow 3208797
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208798
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208799
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208800
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支瑞仃凶母件皮仿奶玄########
+block HaveLeak1item == 606223 && Visitor >= 2000 && Visitor < 3000
+	Window 3208801,yes,no
+
+		#\n\n﹛支支瑞仃凶母件皮仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3208802
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606223 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606223
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606224%50,606223%25,606222%20,606224%5)
+		EndWindow 3208803
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606224%30,606222%20,13633%10,13634%10,606213%10,606214%10,13634%5,606214%5)
+			EndWindow 3208804
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208805
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208806
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208807
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########玄由□术########
+block HaveLeak1item == 13634 && Visitor >= 2000 && Visitor < 3000
+	Window 3208808,yes,no
+
+		#\n\n﹛玄由□术匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3208809
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13634 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13634
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (13635%50,13634%29,13633%20,13639%1)
+		EndWindow 3208810
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13635%34,13633%24,606214%10,606215%10,606224%10,606225%10,606219%1,606229%1)
+			EndWindow 3208811
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208812
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208813
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208814
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########扑玄伉件########
+block HaveLeak1item == 606214 && Visitor >= 2000 && Visitor < 3000
+	Window 3208815,yes,no
+
+		#\n\n﹛扑玄伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3208816
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606214 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606214
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606215%50,606214%29,606213%20,606219%1)
+		EndWindow 3208817
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606215%34,606213%24,13634%10,13635%10,606224%10,606225%10,13639%1,606229%1)
+			EndWindow 3208818
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208819
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208820
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208821
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########母件皮仿奶玄########
+block HaveLeak1item == 606224 && Visitor >= 2000 && Visitor < 3000
+	Window 3208822,yes,no
+
+		#\n\n﹛母件皮仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3208823
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606224 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606224
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606225%50,606224%29,606223%20,606229%1)
+		EndWindow 3208824
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606225%34,606223%24,13634%10,13635%10,606214%10,606215%10,13639%1,606219%1)
+			EndWindow 3208825
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208826
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208827
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208828
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅玄由□术########
+block HaveLeak1item == 13635 && Visitor >= 2000 && Visitor < 3000
+	Window 3208829,yes,no
+
+		#\n\n﹛支支恌撙卅玄由□术匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3208830
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13635 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13635
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (13636%50,13635%29,13634%20,13639%1)
+		EndWindow 3208831
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13636%34,13634%24,606215%10,606216%10,606225%10,606226%10,606219%1,606229%1)
+			EndWindow 3208832
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208833
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208834
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208835
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅扑玄伉件########
+block HaveLeak1item == 606215 && Visitor >= 2000 && Visitor < 3000
+	Window 3208836,yes,no
+
+		#\n\n﹛支支恌撙卅扑玄伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3208837
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606215 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606215
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606216%50,606215%29,606214%20,606219%1)
+		EndWindow 3208838
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606216%34,606214%24,13635%10,13636%10,606225%10,606226%10,13639%1,606229%1)
+			EndWindow 3208839
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208840
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208841
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208842
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅母件皮仿奶玄########
+block HaveLeak1item == 606225 && Visitor >= 2000 && Visitor < 3000
+	Window 3208843,yes,no
+
+		#\n\n﹛支支恌撙卅母件皮仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3208844
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606225 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606225
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606226%50,606225%29,606224%20,606229%1)
+		EndWindow 3208845
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606226%34,606224%24,13635%10,13636%10,606215%10,606216%10,13639%1,606219%1)
+			EndWindow 3208846
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208847
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208848
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208849
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅玄由□术########
+block HaveLeak1item == 13636 && Visitor >= 2000 && Visitor < 3000
+	Window 3208850,yes,no
+
+		#\n\n﹛恌撙卅玄由□术匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3208851
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13636 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13636
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (13637%50,13636%29,13635%20,13639%1)
+		EndWindow 3208852
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13637%34,13635%24,606217%10,606216%10,606227%10,606226%10,606219%1,606229%1)
+			EndWindow 3208853
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208854
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208855
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208856
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########恌撙卅扑玄伉件########
+block HaveLeak1item == 606216 && Visitor >= 2000 && Visitor < 3000
+	Window 3208857,yes,no
+
+		#\n\n﹛恌撙卅扑玄伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+
+	Window_yes gold < 700
+		EndWindow 3208858
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606216 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606216
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606217%50,606216%29,606215%20,606219%1)
+		EndWindow 3208859
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606217%34,606215%24,13637%10,13636%10,606227%10,606226%10,13639%1,606229%1)
+			EndWindow 3208860
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208861
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208862
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208863
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅母件皮仿奶玄########
+block HaveLeak1item == 606226 && Visitor >= 2000 && Visitor < 3000
+	Window 3208864,yes,no
+
+		#\n\n﹛恌撙卅母件皮仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3208865
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606226 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606226
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606227%50,606226%29,606225%20,606229%1)
+		EndWindow 3208866
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606227%34,606225%24,13637%10,13636%10,606217%10,606216%10,13639%1,606219%1)
+			EndWindow 3208867
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208868
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208869
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208870
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅玄由□术########
+block HaveLeak1item == 13637 && Visitor >= 2000 && Visitor < 3000
+	Window 3208871,yes,no
+
+		#\n\n﹛井卅曰恌撙卅玄由□术匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3208872
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13637 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13637
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (13638%50,13637%29,13636%20,13639%1)
+		EndWindow 3208873
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13638%34,13636%24,606218%10,606217%10,606228%10,606227%10,606219%1,606229%1)
+			EndWindow 3208874
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208875
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208876
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208877
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅扑玄伉件########
+block HaveLeak1item == 606217 && Visitor >= 2000 && Visitor < 3000
+	Window 3208878,yes,no
+
+		#\n\n﹛井卅曰恌撙卅扑玄伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3208879
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606217 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606217
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606218%50,606217%29,606216%20,606219%1)
+		EndWindow 3208880
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606218%34,606216%24,13638%10,13637%10,606228%10,606227%10,13639%1,606229%1)
+			EndWindow 3208881
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208882
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208883
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208884
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅母件皮仿奶玄########
+block HaveLeak1item == 606227 && Visitor >= 2000 && Visitor < 3000
+	Window 3208885,yes,no
+
+		#\n\n﹛井卅曰恌撙卅母件皮仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3208886
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606227 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606227
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606228%50,606227%29,606226%20,606229%1)
+		EndWindow 3208887
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606228%34,606226%24,606218%10,606217%10,13638%10,13637%10,606219%1,13639%1)
+			EndWindow 3208888
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208889
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208890
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208891
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########敦蝈卞嗤中玄由□术########
+block HaveLeak1item == 13638 && Visitor >= 2000 && Visitor < 3000
+	Window 3208892,yes,no
+
+		#\n\n﹛敦蝈卞嗤中玄由□术匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3208893
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13638 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13638
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (13639%50,13638%29,13637%20,13639%1)
+		EndWindow 3208894
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13639%34,13637%24,606219%10,606218%10,606229%11,606228%11)
+			EndWindow 3208895
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208896
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208897
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208898
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中扑玄伉件########
+block HaveLeak1item == 606218 && Visitor >= 2000 && Visitor < 3000
+	Window 3208899,yes,no
+
+		#\n\n﹛敦蝈卞嗤中扑玄伉件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3208900
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606218 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606218
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606219%50,606218%29,606217%20,606219%1)
+		EndWindow 3208901
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606219%35,606217%25,13639%10,13638%10,606229%10,606228%10)
+			EndWindow 3208902
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208903
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3208904
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208905
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中母件皮仿奶玄########
+block HaveLeak1item == 606228 && Visitor >= 2000 && Visitor < 3000 
+	Window 3208906,yes,no
+
+		#\n\n﹛敦蝈卞嗤中母件皮仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3208907
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606228 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606228
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606229%50,606228%29,606227%20,606229%1)
+		EndWindow 3208908
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606229%35,606227%25,13639%10,13638%10,606219%10,606218%10)
+			EndWindow 3208909
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208910
+
+		#\n\n﹛示白件″″\n﹛丐曰扎引﹜卅仁卅匀切扎匀凶﹝
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3208911
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208912
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########﹛敦蝈锳噬虫及玄由□术########
+block HaveLeak1item == 13639 && Visitor >= 2000 && Visitor < 3000
+	EndWindow 3208913
+
+		#\n\n﹛敦蝈锳噬虫及玄由□术元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及扑玄伉件########
+block HaveLeak1item == 606219 && Visitor >= 2000 && Visitor < 3000
+	EndWindow 3208914
+
+		#\n\n﹛敦蝈锳噬虫及扑玄伉件元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及母件皮仿奶玄########
+block HaveLeak1item == 606229 && Visitor >= 2000 && Visitor < 3000 
+	EndWindow 3208915
+
+		#\n\n﹛敦蝈锳噬虫及母件皮仿奶玄元扎﹜\n﹛掸董匹五卅中方﹝
+
+
+#########巨丢仿伙玉及瑞弅########
+block HaveLeak1item == 13650 && Visitor >= 3000 && Visitor < 4000
+	Window 3208916,yes,no
+
+		#\n\n﹛巨丢仿伙玉及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+
+	Window_yes gold < 100
+		EndWindow 3208917
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13650 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13650
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (13651%60,13650%35,13654%5)
+		EndWindow 3208918
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13651%30,13650%20,606230%10,606231%10,606240%10,606241%10,606234%5,606244%5)
+			EndWindow 3208919
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208920
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3208921
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208922
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########申伉犯奴件及瑞弅########
+block HaveLeak1item == 606230 && Visitor >= 3000 && Visitor < 4000
+	Window 3208923,yes,no
+
+		#\n\n﹛申伉犯奴件及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3208924
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606230 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606230
+
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606231%60,606230%35,606234%5)
+		EndWindow 3208925
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606231%30,606230%20,13650%10,13651%10,606240%10,606241%10,13654%5,606244%5)
+			EndWindow 3208926
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208927
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208928
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208929
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########巴伉玉永玄及瑞弅########
+block HaveLeak1item == 606240 && Visitor >= 3000 && Visitor < 4000
+	Window 3208930,yes,no
+
+		#\n\n﹛巴伉玉永玄及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3208931
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606240 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606240
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606241%60,606240%35,606244%5)
+		EndWindow 3208932
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606241%30,606240%20,606230%10,13650%10,606231%10,13651%10,13654%5,606234%5)
+			EndWindow 3208933
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208934
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208935
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208936
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########井卅曰瑞仃凶巨丢仿伙玉########
+block HaveLeak1item == 13651 && Visitor >= 3000 && Visitor < 4000
+	Window 3208937,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶巨丢仿伙玉匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3208938
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13651 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13651
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (13652%45,13651%25,13650%20,13654%5)
+		EndWindow 3208939
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13652%30,13650%20,606231%10,606232%10,606241%10,606242%10,606234%5,606244%5)
+			EndWindow 3208940
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208941
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208942
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208943
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶申伉犯奴件########
+block HaveLeak1item == 606231 && Visitor >= 3000 && Visitor < 4000
+	Window 3208944,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶申伉犯奴件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3208945
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606231 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606231
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606232%45,606231%25,606230%20,606234%5)
+		EndWindow 3208946
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606232%30,606230%20,13651%10,13652%10,606241%10,606242%10,13654%5,606244%5)
+			EndWindow 3208947
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208948
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208949
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208950
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶巴伉玉永玄########
+block HaveLeak1item == 606241 && Visitor >= 3000 && Visitor < 4000
+	Window 3208951,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶巴伉玉永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3208952
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606241 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606241
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606242%45,606241%25,606240%20,606244%5)
+		EndWindow 3208953
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606242%30,606240%20,13651%10,606231%10,13652%10,606232%10,13654%5,606234%5)
+			EndWindow 3208954
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208955
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208956
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208957
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶巨丢仿伙玉########
+block HaveLeak1item == 13652 && Visitor >= 3000 && Visitor < 4000
+	Window 3208958,yes,no
+
+		#\n\n﹛瑞仃凶巨丢仿伙玉匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3208959
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13652 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13652
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (13653%45,13652%25,13651%20,13654%5)
+		EndWindow 3208960
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13653%30,13651%20,606232%10,606233%10,606242%10,606243%10,606234%5,606244%5)
+			EndWindow 3208961
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208962
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208963
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208964
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶申伉犯奴件########
+block HaveLeak1item == 606232 && Visitor >= 3000 && Visitor < 4000
+	Window 3208965,yes,no
+
+		#\n\n﹛瑞仃凶申伉犯奴件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3208966
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606232 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606232
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606233%45,606232%25,606231%20,606234%5)
+		EndWindow 3208967
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606233%30,606231%20,13652%10,13653%10,606242%10,606243%10,13654%5,606244%5)
+			EndWindow 3208968
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208969
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208970
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208971
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶巴伉玉永玄########
+block HaveLeak1item == 606242 && Visitor >= 3000 && Visitor < 4000
+	Window 3208972,yes,no
+
+		#\n\n﹛瑞仃凶巴伉玉永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3208973
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606242 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606242
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606243%45,606242%25,606241%20,606244%5)
+		EndWindow 3208974
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606243%30,606241%20,13652%10,606232%10,13653%10,606233%10,13654%5,606234%5)
+			EndWindow 3208975
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208976
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208977
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208978
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶巨丢仿伙玉########
+block HaveLeak1item == 13653 && Visitor >= 3000 && Visitor < 4000
+	Window 3208979,yes,no
+
+		#\n\n﹛支支瑞仃凶巨丢仿伙玉匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3208980
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13653 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13653
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (13654%50,13653%25,13652%20,13654%5)
+		EndWindow 3208981
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13654%30,13652%20,606233%10,606234%10,606243%10,606244%10,606234%5,606244%5)
+			EndWindow 3208982
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208983
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208984
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208985
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶申伉犯奴件########
+block HaveLeak1item == 606233 && Visitor >= 3000 && Visitor < 4000
+	Window 3208986,yes,no
+
+		#\n\n﹛支支瑞仃凶申伉犯奴件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3208987
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606233 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606233
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606234%50,606233%25,606232%20,606234%5)
+		EndWindow 3208988
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606234%30,606232%20,13653%10,13654%10,606243%10,606244%10,13654%5,606244%5)
+			EndWindow 3208989
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208990
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208991
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208992
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支瑞仃凶巴伉玉永玄########
+block HaveLeak1item == 606243 && Visitor >= 3000 && Visitor < 4000
+	Window 3208993,yes,no
+
+		#\n\n﹛支支瑞仃凶巴伉玉永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3208994
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606243 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606243
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606244%50,606243%25,606242%20,606244%5)
+		EndWindow 3208995
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606244%30,606242%20,13653%10,13654%10,606233%10,606234%10,13654%5,606234%5)
+			EndWindow 3208996
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3208997
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3208998
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3208999
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########巨丢仿伙玉########
+block HaveLeak1item == 13654 && Visitor >= 3000 && Visitor < 4000
+	Window 3209000,yes,no
+
+		#\n\n﹛巨丢仿伙玉匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209001
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13654 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13654
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (13655%50,13654%29,13653%20,13659%1)
+		EndWindow 3209002
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13655%34,13653%24,606234%10,606235%10,606244%10,606245%10,606239%1,606249%1)
+			EndWindow 3209003
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209004
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209005
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209006
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########申伉犯奴件########
+block HaveLeak1item == 606234 && Visitor >= 3000 && Visitor < 4000
+	Window 3209007,yes,no
+
+		#\n\n﹛申伉犯奴件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209008
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606234 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606234
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606235%50,606234%29,606233%20,606239%1)
+		EndWindow 3209009
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606235%34,606233%24,13654%10,13655%10,606244%10,606245%10,13659%1,606249%1)
+			EndWindow 3209010
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209011
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209012
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209013
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########巴伉玉永玄########
+block HaveLeak1item == 606244 && Visitor >= 3000 && Visitor < 4000
+	Window 3209014,yes,no
+
+		#\n\n﹛巴伉玉永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209015
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606244 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606244
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606245%50,606244%29,606243%20,606249%1)
+		EndWindow 3209016
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606245%34,606243%24,13654%10,13655%10,606234%10,606235%10,13659%1,606239%1)
+			EndWindow 3209017
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209018
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209019
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209020
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅巨丢仿伙玉########
+block HaveLeak1item == 13655 && Visitor >= 3000 && Visitor < 4000
+	Window 3209021,yes,no
+
+		#\n\n﹛支支恌撙卅巨丢仿伙玉匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209022
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13655 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13655
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (13656%50,13655%29,13654%20,13659%1)
+		EndWindow 3209023
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13656%34,13654%24,606235%10,606236%10,606245%10,606246%10,606239%1,606249%1)
+			EndWindow 3209024
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209025
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209026
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209027
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅申伉犯奴件########
+block HaveLeak1item == 606235 && Visitor >= 3000 && Visitor < 4000
+	Window 3209028,yes,no
+
+		#\n\n﹛支支恌撙卅申伉犯奴件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209029
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606235 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606235
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606236%50,606235%29,606234%20,606239%1)
+		EndWindow 3209030
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606236%34,606234%24,13655%10,13656%10,606245%10,606246%10,13659%1,606249%1)
+			EndWindow 3209031
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209032
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209033
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209034
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅巴伉玉永玄########
+block HaveLeak1item == 606245 && Visitor >= 3000 && Visitor < 4000
+	Window 3209035,yes,no
+
+		#\n\n﹛支支恌撙卅巴伉玉永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209036
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606245 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606245
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606246%50,606245%29,606244%20,606249%1)
+		EndWindow 3209037
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606246%34,606244%24,13655%10,13656%10,606235%10,606236%10,13659%1,606239%1)
+			EndWindow 3209038
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209039
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209040
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209041
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅巨丢仿伙玉########
+block HaveLeak1item == 13656 && Visitor >= 3000 && Visitor < 4000
+	Window 3209042,yes,no
+
+		#\n\n﹛恌撙卅巨丢仿伙玉匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3209043
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13656 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13656
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (13657%50,13656%29,13655%20,13659%1)
+		EndWindow 3209044
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13657%34,13655%24,606237%10,606236%10,606247%10,606246%10,606239%1,606249%1)
+			EndWindow 3209045
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209046
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209047
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209048
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########恌撙卅申伉犯奴件########
+block HaveLeak1item == 606236 && Visitor >= 3000 && Visitor < 4000
+	Window 3209049,yes,no
+
+		#\n\n﹛恌撙卅申伉犯奴件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+
+	Window_yes gold < 700
+		EndWindow 3209050
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606236 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606236
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606237%50,606236%29,606235%20,606239%1)
+		EndWindow 3209051
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606237%34,606235%24,13657%10,13656%10,606247%10,606246%10,13659%1,606249%1)
+			EndWindow 3209052
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209053
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209054
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209055
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅巴伉玉永玄########
+block HaveLeak1item == 606246 && Visitor >= 3000 && Visitor < 4000
+	Window 3209056,yes,no
+
+		#\n\n﹛恌撙卅巴伉玉永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3209057
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606246 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606246
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606247%50,606246%29,606245%20,606249%1)
+		EndWindow 3209058
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606247%34,606245%24,13657%10,13656%10,606237%10,606236%10,13659%1,606239%1)
+			EndWindow 3209059
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209060
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209061
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209062
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅巨丢仿伙玉########
+block HaveLeak1item == 13657 && Visitor >= 3000 && Visitor < 4000
+	Window 3209063,yes,no
+
+		#\n\n﹛井卅曰恌撙卅巨丢仿伙玉匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209064
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13657 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13657
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (13658%50,13657%29,13656%20,13659%1)
+		EndWindow 3209065
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13658%34,13656%24,606238%10,606237%10,606248%10,606247%10,606239%1,606249%1)
+			EndWindow 3209066
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209067
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209068
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209069
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅申伉犯奴件########
+block HaveLeak1item == 606237 && Visitor >= 3000 && Visitor < 4000
+	Window 3209070,yes,no
+
+		#\n\n﹛井卅曰恌撙卅申伉犯奴件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209071
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606237 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606237
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606238%50,606237%29,606236%20,606239%1)
+		EndWindow 3209072
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606238%34,606236%24,13658%10,13657%10,606248%10,606247%10,13659%1,606249%1)
+			EndWindow 3209073
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209074
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209075
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209076
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅巴伉玉永玄########
+block HaveLeak1item == 606247 && Visitor >= 3000 && Visitor < 4000
+	Window 3209077,yes,no
+
+		#\n\n﹛井卅曰恌撙卅巴伉玉永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209078
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606247 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606247
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606248%50,606247%29,606246%20,606249%1)
+		EndWindow 3209079
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606248%34,606246%24,606238%10,606237%10,13658%10,13657%10,606239%1,13659%1)
+			EndWindow 3209080
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209081
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209082
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209083
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########敦蝈卞嗤中巨丢仿伙玉########
+block HaveLeak1item == 13658 && Visitor >= 3000 && Visitor < 4000
+	Window 3209084,yes,no
+
+		#\n\n﹛敦蝈卞嗤中巨丢仿伙玉匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209085
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13658 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13658
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (13659%50,13658%29,13657%20,13659%1)
+		EndWindow 3209086
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13658%34,13657%24,606239%10,606238%10,606249%11,606248%11)
+			EndWindow 3209087
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209088
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209089
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209090
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中申伉犯奴件########
+block HaveLeak1item == 606238 && Visitor >= 3000 && Visitor < 4000
+	Window 3209091,yes,no
+
+		#\n\n﹛敦蝈卞嗤中申伉犯奴件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209092
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606238 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606238
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606239%50,606238%29,606237%20,606239%1)
+		EndWindow 3209093
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606238%35,606237%25,13659%10,13658%10,606249%10,606248%10)
+			EndWindow 3209094
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209095
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+	endif
+
+	Window_yes 
+		EndWindow 3209096
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209097
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中巴伉玉永玄########
+block HaveLeak1item == 606248 && Visitor >= 3000 && Visitor < 4000 
+	Window 3209098,yes,no
+
+		#\n\n﹛敦蝈卞嗤中巴伉玉永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209099
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606248 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606248
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606249%50,606248%29,606247%20,606249%1)
+		EndWindow 3209100
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606249%35,606247%25,13659%10,13658%10,606239%10,606238%10)
+			EndWindow 3209101
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209102
+
+		#\n\n﹛示白件″″\n﹛弗石弗石﹝今化﹜戚及扲檗赡丰ｎ
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3209103
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209104
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+########﹛敦蝈锳噬虫及巨丢仿伙玉########
+block HaveLeak1item == 13659 && Visitor >= 3000 && Visitor < 4000
+	EndWindow 3209105
+
+		#\n\n﹛敦蝈锳噬虫及巨丢仿伙玉元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及申伉犯奴件########
+block HaveLeak1item == 606239 && Visitor >= 3000 && Visitor < 4000
+	EndWindow 3209106
+
+		#\n\n﹛敦蝈锳噬虫及申伉犯奴件元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及巴伉玉永玄########
+block HaveLeak1item == 606249 && Visitor >= 3000 && Visitor < 4000 
+	EndWindow 3209107
+
+		#\n\n﹛敦蝈锳噬虫及巴伉玉永玄元扎﹜\n﹛掸董匹五卅中方﹝
+
+
+#########布□生永玄及瑞弅########
+block HaveLeak1item == 13610 && Visitor >= 4000 && Visitor < 5000
+	Window 3209108,yes,no
+
+		#\n\n﹛布□生永玄及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209109
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13610 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13610
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (13611%60,13610%35,13614%5)
+		EndWindow 3209110
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13611%30,13610%20,13670%10,13671%10,606250%10,606251%10,13674%5,606254%5)
+			EndWindow 3209111
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209112
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3209113
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209114
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########伙申□及瑞弅########
+block HaveLeak1item == 13670 && Visitor >= 4000 && Visitor < 5000
+	Window 3209115,yes,no
+
+		#\n\n﹛伙申□及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209116
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13670 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13670
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (13671%60,13670%35,13674%5)
+		EndWindow 3209117
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13671%30,13670%20,13610%10,13611%10,606250%10,606251%10,13614%5,606254%5)
+			EndWindow 3209118
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209119
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209120
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209121
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########扔件旦玄□件及瑞弅########
+block HaveLeak1item == 606250 && Visitor >= 4000 && Visitor < 5000
+	Window 3209122,yes,no
+
+		#\n\n﹛扔件旦玄□件及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209123
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606250 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606250
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606251%60,606250%35,606254%5)
+		EndWindow 3209124
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606251%30,606250%20,13670%10,13610%10,13671%10,13611%10,13614%5,13674%5)
+			EndWindow 3209125
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209126
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209127
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209128
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########井卅曰瑞仃凶布□生永玄########
+block HaveLeak1item == 13611 && Visitor >= 4000 && Visitor < 5000
+	Window 3209129,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶布□生永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209130
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13611 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13611
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (13612%45,13611%25,13610%20,13614%5)
+		EndWindow 3209131
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13612%30,13610%20,13671%10,13672%10,606251%10,606252%10,13674%5,606254%5)
+			EndWindow 3209132
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209133
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209134
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209135
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶伙申□########
+block HaveLeak1item == 13671 && Visitor >= 4000 && Visitor < 5000
+	Window 3209136,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶伙申□匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209137
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13671 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13671
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (13672%45,13671%25,13670%20,13674%5)
+		EndWindow 3209138
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13672%30,13670%20,13611%10,13612%10,606251%10,606252%10,13614%5,606254%5)
+			EndWindow 3209139
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209140
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209141
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209142
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶扔件旦玄□件########
+block HaveLeak1item == 606251 && Visitor >= 4000 && Visitor < 5000
+	Window 3209143,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶扔件旦玄□件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209144
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606251 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606251
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606252%45,606251%25,606250%20,606254%5)
+		EndWindow 3209145
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606252%30,606250%20,13611%10,13671%10,13612%10,13672%10,13614%5,13674%5)
+			EndWindow 3209146
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209147
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209148
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209149
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶布□生永玄########
+block HaveLeak1item == 13612 && Visitor >= 4000 && Visitor < 5000
+	Window 3209150,yes,no
+
+		#\n\n﹛瑞仃凶布□生永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209151
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13612 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13612
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (13613%45,13612%25,13611%20,13614%5)
+		EndWindow 3209152
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13613%30,13611%20,13672%10,13673%10,606252%10,606253%10,13674%5,606254%5)
+			EndWindow 3209153
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209154
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209155
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209156
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶伙申□########
+block HaveLeak1item == 13672 && Visitor >= 4000 && Visitor < 5000
+	Window 3209157,yes,no
+
+		#\n\n﹛瑞仃凶伙申□匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209158
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13672 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13672
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (13673%45,13672%25,13671%20,13674%5)
+		EndWindow 3209159
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13673%30,13671%20,13612%10,13613%10,606252%10,606253%10,13614%5,606254%5)
+			EndWindow 3209160
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209161
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209162
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209163
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶扔件旦玄□件########
+block HaveLeak1item == 606252 && Visitor >= 4000 && Visitor < 5000
+	Window 3209164,yes,no
+
+		#\n\n﹛瑞仃凶扔件旦玄□件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209165
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606252 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606252
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606253%45,606252%25,606251%20,606254%5)
+		EndWindow 3209166
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606253%30,606251%20,13612%10,13672%10,13613%10,13673%10,13614%5,13674%5)
+			EndWindow 3209167
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209168
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209169
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209170
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶布□生永玄########
+block HaveLeak1item == 13613 && Visitor >= 4000 && Visitor < 5000
+	Window 3209171,yes,no
+
+		#\n\n﹛支支瑞仃凶布□生永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209172
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13613 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13613
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (13614%50,13613%25,13612%20,13614%5)
+		EndWindow 3209173
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13614%30,13612%20,13673%10,13674%10,606253%10,606254%10,13674%5,606254%5)
+			EndWindow 3209174
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209175
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209176
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209177
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶伙申□########
+block HaveLeak1item == 13673 && Visitor >= 4000 && Visitor < 5000
+	Window 3209178,yes,no
+
+		#\n\n﹛支支瑞仃凶伙申□匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209179
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13673 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13673
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (13674%50,13673%25,13672%20,13674%5)
+		EndWindow 3209180
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13674%30,13672%20,13613%10,13614%10,606253%10,606254%10,13614%5,606254%5)
+			EndWindow 3209181
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209182
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209183
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209184
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支瑞仃凶扔件旦玄□件########
+block HaveLeak1item == 606253 && Visitor >= 4000 && Visitor < 5000
+	Window 3209185,yes,no
+
+		#\n\n﹛支支瑞仃凶扔件旦玄□件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209186
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606253 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606253
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606254%50,606253%25,606252%20,606254%5)
+		EndWindow 3209187
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606254%30,606252%20,13613%10,13614%10,13673%10,13674%10,13614%5,13674%5)
+			EndWindow 3209188
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209189
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209190
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209191
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########布□生永玄########
+block HaveLeak1item == 13614 && Visitor >= 4000 && Visitor < 5000
+	Window 3209192,yes,no
+
+		#\n\n﹛布□生永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209193
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13614 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13614
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (13615%50,13614%29,13613%20,13619%1)
+		EndWindow 3209194
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13615%34,13613%24,13674%10,13675%10,606254%10,606255%10,13679%1,606259%1)
+			EndWindow 3209195
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209196
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209197
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209198
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########伙申□########
+block HaveLeak1item == 13674 && Visitor >= 4000 && Visitor < 5000
+	Window 3209199,yes,no
+
+		#\n\n﹛伙申□匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209200
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13674 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13674
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (13675%50,13674%29,13673%20,13679%1)
+		EndWindow 3209201
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13675%34,13673%24,13614%10,13615%10,606254%10,606255%10,13619%1,606259%1)
+			EndWindow 3209202
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209203
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209204
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209205
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########扔件旦玄□件########
+block HaveLeak1item == 606254 && Visitor >= 4000 && Visitor < 5000
+	Window 3209206,yes,no
+
+		#\n\n﹛扔件旦玄□件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209207
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606254 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606254
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606255%50,606254%29,606253%20,606259%1)
+		EndWindow 3209208
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606255%34,606253%24,13614%10,13615%10,13674%10,13675%10,13619%1,13679%1)
+			EndWindow 3209209
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209210
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209211
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209212
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅布□生永玄########
+block HaveLeak1item == 13615 && Visitor >= 4000 && Visitor < 5000
+	Window 3209213,yes,no
+
+		#\n\n﹛支支恌撙卅布□生永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209214
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13615 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13615
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (13616%50,13615%29,13614%20,13619%1)
+		EndWindow 3209215
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13616%34,13614%24,13675%10,13676%10,606255%10,606256%10,13679%1,606259%1)
+			EndWindow 3209216
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209217
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209218
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209219
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅伙申□########
+block HaveLeak1item == 13675 && Visitor >= 4000 && Visitor < 5000
+	Window 3209220,yes,no
+
+		#\n\n﹛支支恌撙卅伙申□匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209221
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13675 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13675
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (13676%50,13675%29,13674%20,13679%1)
+		EndWindow 3209222
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13676%34,13674%24,13615%10,13616%10,606255%10,606256%10,13619%1,606259%1)
+			EndWindow 3209223
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209224
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209225
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209226
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅扔件旦玄□件########
+block HaveLeak1item == 606255 && Visitor >= 4000 && Visitor < 5000
+	Window 3209227,yes,no
+
+		#\n\n﹛支支恌撙卅扔件旦玄□件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209228
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606255 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606255
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606256%50,606255%29,606254%20,606259%1)
+		EndWindow 3209229
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606256%34,606254%24,13615%10,13616%10,13675%10,13676%10,13619%1,13679%1)
+			EndWindow 3209230
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209231
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209232
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209233
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅布□生永玄########
+block HaveLeak1item == 13616 && Visitor >= 4000 && Visitor < 5000
+	Window 3209234,yes,no
+
+		#\n\n﹛恌撙卅布□生永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3209235
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13616 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13616
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (13617%50,13616%29,13615%20,13619%1)
+		EndWindow 3209236
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13617%34,13615%24,13677%10,13676%10,606257%10,606256%10,13679%1,606259%1)
+			EndWindow 3209237
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209238
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209239
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209240
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########恌撙卅伙申□########
+block HaveLeak1item == 13676 && Visitor >= 4000 && Visitor < 5000
+	Window 3209241,yes,no
+
+		#\n\n﹛恌撙卅伙申□匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+
+	Window_yes gold < 700
+		EndWindow 3209242
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13676 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13676
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (13677%50,13676%29,13675%20,13679%1)
+		EndWindow 3209243
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13677%34,13675%24,13617%10,13616%10,606257%10,606256%10,13619%1,606259%1)
+			EndWindow 3209244
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209245
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209246
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209247
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅扔件旦玄□件########
+block HaveLeak1item == 606256 && Visitor >= 4000 && Visitor < 5000
+	Window 3209248,yes,no
+
+		#\n\n﹛恌撙卅扔件旦玄□件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3209249
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606256 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606256
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606257%50,606256%29,606255%20,606259%1)
+		EndWindow 3209250
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606257%34,606255%24,13617%10,13616%10,13677%10,13676%10,13619%1,13679%1)
+			EndWindow 3209251
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209252
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209253
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209254
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅布□生永玄########
+block HaveLeak1item == 13617 && Visitor >= 4000 && Visitor < 5000
+	Window 3209255,yes,no
+
+		#\n\n﹛井卅曰恌撙卅布□生永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209256
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13617 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13617
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (13618%50,13617%29,13616%20,13619%1)
+		EndWindow 3209257
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13618%34,13616%24,13678%10,13677%10,606258%10,606257%10,13679%1,606259%1)
+			EndWindow 3209258
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209259
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209260
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209261
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅伙申□########
+block HaveLeak1item == 13677 && Visitor >= 4000 && Visitor < 5000
+	Window 3209262,yes,no
+
+		#\n\n﹛井卅曰恌撙卅伙申□匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209263
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13677 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13677
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (13678%50,13677%29,13676%20,13679%1)
+		EndWindow 3209264
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13678%34,13676%24,13618%10,13617%10,606258%10,606257%10,13619%1,606259%1)
+			EndWindow 3209265
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209266
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209267
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209268
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅扔件旦玄□件########
+block HaveLeak1item == 606257 && Visitor >= 4000 && Visitor < 5000
+	Window 3209269,yes,no
+
+		#\n\n﹛井卅曰恌撙卅扔件旦玄□件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209270
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606257 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606257
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606258%50,606257%29,606256%20,606259%1)
+		EndWindow 3209271
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606258%34,606256%24,13678%10,13677%10,13618%10,13617%10,13679%1,13619%1)
+			EndWindow 3209272
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209273
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209274
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209275
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########敦蝈卞嗤中布□生永玄########
+block HaveLeak1item == 13618 && Visitor >= 4000 && Visitor < 5000
+	Window 3209276,yes,no
+
+		#\n\n﹛敦蝈卞嗤中布□生永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209277
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13618 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13618
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (13619%50,13618%29,13617%20,13619%1)
+		EndWindow 3209278
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13619%34,13617%24,13679%10,13678%10,606259%11,606258%11)
+			EndWindow 3209279
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209280
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209281
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209282
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中伙申□########
+block HaveLeak1item == 13678 && Visitor >= 4000 && Visitor < 5000
+	Window 3209283,yes,no
+
+		#\n\n﹛敦蝈卞嗤中伙申□匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209284
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13678 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13678
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (13679%50,13678%29,13677%20,13679%1)
+		EndWindow 3209285
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13679%35,13677%25,13619%10,13618%10,606259%10,606258%10)
+			EndWindow 3209286
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209287
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209288
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209289
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中扔件旦玄□件########
+block HaveLeak1item == 606258 && Visitor >= 4000 && Visitor < 5000 
+	Window 3209290,yes,no
+
+		#\n\n﹛敦蝈卞嗤中扔件旦玄□件匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209291
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606258 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606258
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606259%50,606258%29,606257%20,606259%1)
+		EndWindow 3209292
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606259%35,606257%25,13619%10,13618%10,13679%10,13678%10)
+			EndWindow 3209293
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209294
+
+		#\n\n﹛示白件″″\n﹛丐℅℅﹜シ尹谘五切扎匀凶﹝
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3209295
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209296
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞锳噬虫布□生永玄########
+block HaveLeak1item == 13619 && Visitor >= 4000 && Visitor < 5000
+	EndWindow 3209297
+
+		#\n\n﹛敦蝈锳噬虫及布□生永玄元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及伙申□########
+block HaveLeak1item == 13679 && Visitor >= 4000 && Visitor < 5000
+	EndWindow 3209298
+
+		#\n\n﹛敦蝈锳噬虫及伙申□元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及扔件旦玄□件########
+block HaveLeak1item == 606259 && Visitor >= 4000 && Visitor < 5000 
+	EndWindow 3209299
+
+		#\n\n﹛敦蝈锳噬虫及扔件旦玄□件元扎﹜\n﹛掸董匹五卅中方﹝
+
+
+#########末弘犯奴失瓜奶玄及瑞弅########
+block HaveLeak1item == 13620 && Visitor >= 5000 && Visitor < 6000
+	Window 3209300,yes,no
+
+		#\n\n﹛末弘犯奴失瓜奶玄及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+
+	Window_yes gold < 100
+		EndWindow 3209301
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13620 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13620
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (13621%60,13620%35,13624%5)
+		EndWindow 3209302
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13621%30,13620%20,13660%10,13661%10,606260%10,606261%10,13664%5,606264%5)
+			EndWindow 3209303
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209304
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3209305
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209306
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########失丢斥旦玄及瑞弅########
+block HaveLeak1item == 13660 && Visitor >= 5000 && Visitor < 6000
+	Window 3209307,yes,no
+
+		#\n\n﹛失丢斥旦玄及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209308
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13660 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13660
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (13661%60,13660%35,13664%5)
+		EndWindow 3209309
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13661%30,13660%20,13620%10,13621%10,606260%10,606261%10,13624%5,606264%5)
+			EndWindow 3209310
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209311
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209312
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209313
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########失奶左仿奶玄及瑞弅########
+block HaveLeak1item == 606260 && Visitor >= 5000 && Visitor < 6000
+	Window 3209314,yes,no
+
+		#\n\n﹛失奶左仿奶玄及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209315
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606260 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606260
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606261%60,606260%35,606264%5)
+		EndWindow 3209316
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606261%30,606260%20,13660%10,13620%10,13661%10,13621%10,13624%5,13664%5)
+			EndWindow 3209317
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209318
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209319
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209320
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########井卅曰瑞仃凶末弘犯奴失瓜奶玄########
+block HaveLeak1item == 13621 && Visitor >= 5000 && Visitor < 6000
+	Window 3209321,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶末弘犯奴失瓜奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209322
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13621 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13621
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (13622%45,13621%25,13620%20,13624%5)
+		EndWindow 3209323
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13622%30,13620%20,13661%10,13662%10,606261%10,606262%10,13664%5,606264%5)
+			EndWindow 3209324
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209325
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209326
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209327
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶失丢斥旦玄########
+block HaveLeak1item == 13661 && Visitor >= 5000 && Visitor < 6000
+	Window 3209328,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶失丢斥旦玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209329
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13661 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13661
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (13662%45,13661%25,13660%20,13664%5)
+		EndWindow 3209330
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13662%30,13660%20,13621%10,13622%10,606261%10,606262%10,13624%5,606264%5)
+			EndWindow 3209331
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209332
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209333
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209334
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶失奶左仿奶玄########
+block HaveLeak1item == 606261 && Visitor >= 5000 && Visitor < 6000
+	Window 3209335,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶失奶左仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209336
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606261 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606261
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606262%45,606261%25,606260%20,606264%5)
+		EndWindow 3209337
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606262%30,606260%20,13621%10,13661%10,13622%10,13662%10,13624%5,13664%5)
+			EndWindow 3209338
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209339
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209340
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209341
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶末弘犯奴失瓜奶玄########
+block HaveLeak1item == 13622 && Visitor >= 5000 && Visitor < 6000
+	Window 3209342,yes,no
+
+		#\n\n﹛瑞仃凶末弘犯奴失瓜奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209343
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13622 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13622
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (13623%45,13622%25,13621%20,13624%5)
+		EndWindow 3209344
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13623%30,13621%20,13662%10,13663%10,606262%10,606263%10,13664%5,606264%5)
+			EndWindow 3209345
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209346
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209347
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209348
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶失丢斥旦玄########
+block HaveLeak1item == 13662 && Visitor >= 5000 && Visitor < 6000
+	Window 3209349,yes,no
+
+		#\n\n﹛瑞仃凶失丢斥旦玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209350
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13662 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13662
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (13663%45,13662%25,13661%20,13664%5)
+		EndWindow 3209351
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13663%30,13661%20,13622%10,13623%10,606262%10,606263%10,13624%5,606264%5)
+			EndWindow 3209352
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209353
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209354
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209355
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶失奶左仿奶玄########
+block HaveLeak1item == 606262 && Visitor >= 5000 && Visitor < 6000
+	Window 3209356,yes,no
+
+		#\n\n﹛瑞仃凶失奶左仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209357
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606262 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606262
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606263%45,606262%25,606261%20,606264%5)
+		EndWindow 3209358
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606263%30,606261%20,13622%10,13662%10,13623%10,13663%10,13624%5,13664%5)
+			EndWindow 3209359
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209360
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209361
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209362
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶末弘犯奴失瓜奶玄########
+block HaveLeak1item == 13623 && Visitor >= 5000 && Visitor < 6000
+	Window 3209363,yes,no
+
+		#\n\n﹛支支瑞仃凶末弘犯奴失瓜奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209364
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13623 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13623
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (13624%50,13623%25,13622%20,13624%5)
+		EndWindow 3209365
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13624%30,13622%20,13663%10,13664%10,606263%10,606264%10,13664%5,606264%5)
+			EndWindow 3209366
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209367
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209368
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209369
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶失丢斥旦玄########
+block HaveLeak1item == 13663 && Visitor >= 5000 && Visitor < 6000
+	Window 3209370,yes,no
+
+		#\n\n﹛支支瑞仃凶失丢斥旦玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209371
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13663 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13663
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (13664%50,13663%25,13662%20,13664%5)
+		EndWindow 3209372
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13664%30,13662%20,13623%10,13624%10,606263%10,606264%10,13624%5,606264%5)
+			EndWindow 3209373
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209374
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209375
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209376
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支瑞仃凶失奶左仿奶玄########
+block HaveLeak1item == 606263 && Visitor >= 5000 && Visitor < 6000
+	Window 3209377,yes,no
+
+		#\n\n﹛支支瑞仃凶失奶左仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209378
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606263 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606263
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606264%50,606263%25,606262%20,606264%5)
+		EndWindow 3209379
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606264%30,606262%20,13623%10,13624%10,13663%10,13664%10,13624%5,13664%5)
+			EndWindow 3209380
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209381
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209382
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209383
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########末弘犯奴失瓜奶玄########
+block HaveLeak1item == 13624 && Visitor >= 5000 && Visitor < 6000
+	Window 3209384,yes,no
+
+		#\n\n﹛末弘犯奴失瓜奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209385
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13624 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13624
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (13625%50,13624%29,13623%20,13629%1)
+		EndWindow 3209386
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13625%34,13623%24,13664%10,13665%10,606264%10,606265%10,13669%1,606269%1)
+			EndWindow 3209387
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209388
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209389
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209390
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########失丢斥旦玄########
+block HaveLeak1item == 13664 && Visitor >= 5000 && Visitor < 6000
+	Window 3209391,yes,no
+
+		#\n\n﹛失丢斥旦玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209392
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13664 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13664
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (13665%50,13664%29,13663%20,13669%1)
+		EndWindow 3209393
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13665%34,13663%24,13624%10,13625%10,606264%10,606265%10,13629%1,606269%1)
+			EndWindow 3209394
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209395
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209396
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209397
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########失奶左仿奶玄########
+block HaveLeak1item == 606264 && Visitor >= 5000 && Visitor < 6000
+	Window 3209398,yes,no
+
+		#\n\n﹛失奶左仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209399
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606264 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606264
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606265%50,606264%29,606263%20,606269%1)
+		EndWindow 3209400
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606265%34,606263%24,13624%10,13625%10,13664%10,13665%10,13629%1,13669%1)
+			EndWindow 3209401
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209402
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209403
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209404
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅末弘犯奴失瓜奶玄########
+block HaveLeak1item == 13625 && Visitor >= 5000 && Visitor < 6000
+	Window 3209405,yes,no
+
+		#\n\n﹛支支恌撙卅末弘犯奴失瓜奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209406
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13625 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13625
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (13626%50,13625%29,13624%20,13629%1)
+		EndWindow 3209407
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13626%34,13624%24,13665%10,13666%10,606265%10,606266%10,13669%1,606269%1)
+			EndWindow 3209408
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209409
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209410
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209411
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅失丢斥旦玄########
+block HaveLeak1item == 13665 && Visitor >= 5000 && Visitor < 6000
+	Window 3209412,yes,no
+
+		#\n\n﹛支支恌撙卅失丢斥旦玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209413
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13665 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13665
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (13666%50,13665%29,13664%20,13669%1)
+		EndWindow 3209414
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13666%34,13664%24,13625%10,13626%10,606265%10,606266%10,13629%1,606269%1)
+			EndWindow 3209415
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209416
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209417
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209418
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅失奶左仿奶玄########
+block HaveLeak1item == 606265 && Visitor >= 5000 && Visitor < 6000
+	Window 3209419,yes,no
+
+		#\n\n﹛支支恌撙卅失奶左仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209420
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606265 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606265
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606266%50,606265%29,606264%20,606269%1)
+		EndWindow 3209421
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606266%34,606264%24,13625%10,13626%10,13665%10,13666%10,13629%1,13669%1)
+			EndWindow 3209422
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209423
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209424
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209425
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅末弘犯奴失瓜奶玄########
+block HaveLeak1item == 13626 && Visitor >= 5000 && Visitor < 6000
+	Window 3209426,yes,no
+
+		#\n\n﹛恌撙卅末弘犯奴失瓜奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3209427
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13626 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13626
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (13627%50,13626%29,13625%20,13629%1)
+		EndWindow 3209428
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13627%34,13625%24,13667%10,13666%10,606267%10,606266%10,13669%1,606269%1)
+			EndWindow 3209429
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209430
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209431
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209432
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########恌撙卅失丢斥旦玄########
+block HaveLeak1item == 13666 && Visitor >= 5000 && Visitor < 6000
+	Window 3209433,yes,no
+
+		#\n\n﹛恌撙卅失丢斥旦玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+
+	Window_yes gold < 700
+		EndWindow 3209434
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13666 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13666
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (13667%50,13666%29,13665%20,13669%1)
+		EndWindow 3209435
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13667%34,13665%24,13627%10,13626%10,606267%10,606266%10,13629%1,606269%1)
+			EndWindow 3209436
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209437
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209438
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209439
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅失奶左仿奶玄########
+block HaveLeak1item == 606266 && Visitor >= 5000 && Visitor < 6000
+	Window 3209440,yes,no
+
+		#\n\n﹛恌撙卅失奶左仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3209441
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606266 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606266
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606267%50,606266%29,606265%20,606269%1)
+		EndWindow 3209442
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606267%34,606265%24,13627%10,13626%10,13667%10,13666%10,13629%1,13669%1)
+			EndWindow 3209443
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209444
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209445
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209446
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅末弘犯奴失瓜奶玄########
+block HaveLeak1item == 13627 && Visitor >= 5000 && Visitor < 6000
+	Window 3209447,yes,no
+
+		#\n\n﹛井卅曰恌撙卅末弘犯奴失瓜奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209448
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13627 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13627
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (13628%50,13627%29,13626%20,13629%1)
+		EndWindow 3209449
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13628%34,13626%24,13668%10,13667%10,606268%10,606267%10,13669%1,606269%1)
+			EndWindow 3209450
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209451
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209452
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209453
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅失丢斥旦玄########
+block HaveLeak1item == 13667 && Visitor >= 5000 && Visitor < 6000
+	Window 3209454,yes,no
+
+		#\n\n﹛井卅曰恌撙卅失丢斥旦玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209455
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13667 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13667
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (13668%50,13667%29,13666%20,13669%1)
+		EndWindow 3209456
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13668%34,13666%24,13628%10,13627%10,606268%10,606267%10,13629%1,606269%1)
+			EndWindow 3209457
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209458
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209459
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209460
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅失奶左仿奶玄########
+block HaveLeak1item == 606267 && Visitor >= 5000 && Visitor < 6000
+	Window 3209461,yes,no
+
+		#\n\n﹛井卅曰恌撙卅失奶左仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209462
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606267 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606267
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606268%50,606267%29,606266%20,606269%1)
+		EndWindow 3209463
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606268%34,606266%24,13668%10,13667%10,13628%10,13627%10,13669%1,13629%1)
+			EndWindow 3209464
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209465
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209466
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209467
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########敦蝈卞嗤中末弘犯奴失瓜奶玄########
+block HaveLeak1item == 13628 && Visitor >= 5000 && Visitor < 6000
+	Window 3209468,yes,no
+
+		#\n\n﹛敦蝈卞嗤中末弘犯奴失瓜奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209469
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13628 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13628
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (13629%50,13628%29,13627%20,13629%1)
+		EndWindow 3209470
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13629%34,13627%24,13669%10,13668%10,606269%11,606268%11)
+			EndWindow 3209471
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209472
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209473
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209474
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中失丢斥旦玄########
+block HaveLeak1item == 13668 && Visitor >= 5000 && Visitor < 6000
+	Window 3209475,yes,no
+
+		#\n\n﹛敦蝈卞嗤中失丢斥旦玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209476
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13668 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13668
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (13669%50,13668%29,13667%20,13669%1)
+		EndWindow 3209477
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (13669%35,13667%25,13629%10,13628%10,606269%10,606268%10)
+			EndWindow 3209478
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209479
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209480
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209481
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中失奶左仿奶玄########
+block HaveLeak1item == 606268 && Visitor >= 5000 && Visitor < 6000 
+	Window 3209482,yes,no
+
+		#\n\n﹛敦蝈卞嗤中失奶左仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209483
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606268 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606268
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606269%50,606268%29,606267%20,606269%1)
+		EndWindow 3209484
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606269%35,606267%25,13629%10,13628%10,13669%10,13668%10)
+			EndWindow 3209485
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209486
+
+		#\n\n﹛示白件″″\n﹛丐﹜仍膝辎今引匹允﹝扲檗反庣峏切引仄凶﹝
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3209487
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209488
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+########﹛敦蝈锳噬虫及末弘犯奴失瓜奶玄########
+block HaveLeak1item == 13629 && Visitor >= 5000 && Visitor < 6000
+	EndWindow 3209489
+
+		#\n\n﹛敦蝈锳噬虫及末弘犯奴失瓜奶玄元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及失丢斥旦玄########
+block HaveLeak1item == 13669 && Visitor >= 5000 && Visitor < 6000
+	EndWindow 3209490
+
+		#\n\n﹛敦蝈锳噬虫及失丢斥旦玄元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及失奶左仿奶玄########
+block HaveLeak1item == 606269 && Visitor >= 5000 && Visitor < 6000 
+	EndWindow 3209491
+
+		#\n\n﹛敦蝈锳噬虫及失奶左仿奶玄元扎﹜\n﹛掸董匹五卅中方﹝
+
+
+
+#########左由□伙及瑞弅########
+block HaveLeak1item == 13700 && Visitor >= 6000 && Visitor < 7000
+	Window 3209492,yes,no
+
+		#\n\n﹛左由□伙及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209493
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 13700 >= 1
+	LocalCount1 = Random 3,0
+	killitem 13700
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606320%60,13700%35,606323%5)
+		EndWindow 3209494
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606320%30,13700%20,606270%10,606271%10,606280%10,606281%10,606274%5,606284%5)
+			EndWindow 3209495
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209496
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3209497
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209498
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########由□伙及瑞弅########
+block HaveLeak1item == 606270 && Visitor >= 6000 && Visitor < 7000
+	Window 3209499,yes,no
+
+		#\n\n﹛由□伙及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209500
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606270 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606270
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606271%60,606270%35,606274%5)
+		EndWindow 3209501
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606271%30,606270%20,13700%10,606320%10,606280%10,606281%10,606323%5,606284%5)
+			EndWindow 3209502
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209503
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209504
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209505
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########弁巧□汁及瑞弅########
+block HaveLeak1item == 606280 && Visitor >= 6000 && Visitor < 7000
+	Window 3209506,yes,no
+
+		#\n\n﹛弁巧□汁及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209507
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606280 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606280
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606281%60,606280%35,606284%5)
+		EndWindow 3209508
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606281%30,606280%20,606270%10,13700%10,606271%10,606320%10,606323%5,606274%5)
+			EndWindow 3209509
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209510
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209511
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209512
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶左由□伙########
+block HaveLeak1item == 606320 && Visitor >= 6000 && Visitor < 7000
+	Window 3209513,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶左由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209514
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606320 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606320
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606321%45,606320%25,13700%20,606323%5)
+		EndWindow 3209515
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606321%30,13700%20,606271%10,606272%10,606281%10,606282%10,606274%5,606284%5)
+			EndWindow 3209516
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209517
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209518
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209519
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶由□伙########
+block HaveLeak1item == 606271 && Visitor >= 6000 && Visitor < 7000
+	Window 3209520,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209521
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606271 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606271
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606272%45,606271%25,606270%20,606274%5)
+		EndWindow 3209522
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606272%30,606270%20,606320%10,606321%10,606281%10,606282%10,606323%5,606284%5)
+			EndWindow 3209523
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209524
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209525
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209526
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶弁巧□汁########
+block HaveLeak1item == 606281 && Visitor >= 6000 && Visitor < 7000
+	Window 3209527,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶弁巧□汁匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209528
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606281 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606281
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606282%45,606281%25,606280%20,606284%5)
+		EndWindow 3209529
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606282%30,606280%20,606320%10,606271%10,606321%10,606272%10,606323%5,606274%5)
+			EndWindow 3209530
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209531
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209532
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209533
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶左由□伙########
+block HaveLeak1item == 606321 && Visitor >= 6000 && Visitor < 7000
+	Window 3209534,yes,no
+
+		#\n\n﹛瑞仃凶左由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209535
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606321 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606321
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606322%45,606321%25,606320%20,606323%5)
+		EndWindow 3209536
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606322%30,606320%20,606272%10,606273%10,606282%10,606283%10,606274%5,606284%5)
+			EndWindow 3209537
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209538
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209539
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209540
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶由□伙########
+block HaveLeak1item == 606272 && Visitor >= 6000 && Visitor < 7000
+	Window 3209541,yes,no
+
+		#\n\n﹛瑞仃凶由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209542
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606272 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606272
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606273%45,606272%25,606271%20,606274%5)
+		EndWindow 3209543
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606273%30,606271%20,606321%10,606322%10,606282%10,606283%10,606323%5,606284%5)
+			EndWindow 3209544
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209545
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209546
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209547
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶弁巧□汁########
+block HaveLeak1item == 606282 && Visitor >= 6000 && Visitor < 7000
+	Window 3209548,yes,no
+
+		#\n\n﹛瑞仃凶弁巧□汁匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209549
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606282 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606282
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606283%45,606282%25,606281%20,606284%5)
+		EndWindow 3209550
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606283%30,606281%20,606321%10,606272%10,606322%10,606273%10,606323%5,606274%5)
+			EndWindow 3209551
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209552
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209553
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209554
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶左由□伙########
+block HaveLeak1item == 606322 && Visitor >= 6000 && Visitor < 7000
+	Window 3209555,yes,no
+
+		#\n\n﹛支支瑞仃凶左由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209556
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606322 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606322
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606323%50,606322%25,606321%20,606323%5)
+		EndWindow 3209557
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606323%30,606321%20,606273%10,606274%10,606283%10,606284%10,606274%5,606284%5)
+			EndWindow 3209558
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209559
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209560
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209561
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶由□伙########
+block HaveLeak1item == 606273 && Visitor >= 6000 && Visitor < 7000
+	Window 3209562,yes,no
+
+		#\n\n﹛支支瑞仃凶由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209563
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606273 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606273
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606274%50,606273%25,606272%20,606274%5)
+		EndWindow 3209564
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606274%30,606272%20,606322%10,606323%10,606283%10,606284%10,606323%5,606284%5)
+			EndWindow 3209565
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209566
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209567
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209568
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支瑞仃凶弁巧□汁########
+block HaveLeak1item == 606283 && Visitor >= 6000 && Visitor < 7000
+	Window 3209569,yes,no
+
+		#\n\n﹛支支瑞仃凶弁巧□汁匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209570
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606283 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606283
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606284%50,606283%25,606282%20,606284%5)
+		EndWindow 3209571
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606284%30,606282%20,606322%10,606323%10,606273%10,606274%10,606323%5,606274%5)
+			EndWindow 3209572
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209573
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209574
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209575
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########左由□伙########
+block HaveLeak1item == 606323 && Visitor >= 6000 && Visitor < 7000
+	Window 3209576,yes,no
+
+		#\n\n﹛左由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209577
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606323 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606323
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606324%50,606323%29,606322%20,606328%1)
+		EndWindow 3209578
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606324%34,606322%24,606274%10,606275%10,606284%10,606285%10,606279%1,606289%1)
+			EndWindow 3209579
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209580
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209581
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209582
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########由□伙########
+block HaveLeak1item == 606274 && Visitor >= 6000 && Visitor < 7000
+	Window 3209583,yes,no
+
+		#\n\n﹛由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+
+
+	Window_yes gold < 500
+		EndWindow 3209584
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606274 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606274
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606275%50,606274%29,606273%20,606279%1)
+		EndWindow 3209585
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606275%34,606273%24,606323%10,606324%10,606284%10,606285%10,606328%1,606289%1)
+			EndWindow 3209586
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209587
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209588
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209589
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########弁巧□汁########
+block HaveLeak1item == 606284 && Visitor >= 6000 && Visitor < 7000
+	Window 3209590,yes,no
+
+		#\n\n﹛弁巧□汁匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209591
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606284 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606284
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606285%50,606284%29,606283%20,606289%1)
+		EndWindow 3209592
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606285%34,606283%24,606323%10,606324%10,606274%10,606275%10,606328%1,606279%1)
+			EndWindow 3209593
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209594
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209595
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209596
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅左由□伙########
+block HaveLeak1item == 606324 && Visitor >= 6000 && Visitor < 7000
+	Window 3209597,yes,no
+
+		#\n\n﹛支支恌撙卅左由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209598
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606324 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606324
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606325%50,606324%29,606323%20,606328%1)
+		EndWindow 3209599
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606325%34,606323%24,606275%10,606276%10,606285%10,606286%10,606279%1,606289%1)
+			EndWindow 3209600
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209601
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209602
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209603
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅由□伙########
+block HaveLeak1item == 606275 && Visitor >= 6000 && Visitor < 7000
+	Window 3209604,yes,no
+
+		#\n\n﹛支支恌撙卅由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209605
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606275 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606275
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606276%50,606275%29,606274%20,606279%1)
+		EndWindow 3209606
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606276%34,606274%24,606324%10,606325%10,606285%10,606286%10,606328%1,606289%1)
+			EndWindow 3209607
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209608
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209609
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209610
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅弁巧□汁########
+block HaveLeak1item == 606285 && Visitor >= 6000 && Visitor < 7000
+	Window 3209611,yes,no
+
+		#\n\n﹛支支恌撙卅弁巧□汁匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209612
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606285 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606285
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606286%50,606285%29,606284%20,606289%1)
+		EndWindow 3209613
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606286%34,606284%24,606324%10,606325%10,606275%10,606276%10,606328%1,606279%1)
+			EndWindow 3209614
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209615
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209616
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209617
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅左由□伙########
+block HaveLeak1item == 606325 && Visitor >= 6000 && Visitor < 7000
+	Window 3209618,yes,no
+
+		#\n\n﹛恌撙卅左由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3209619
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606325 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606325
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606326%50,606325%29,606324%20,606328%1)
+		EndWindow 3209620
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606326%34,606324%24,606277%10,606276%10,606287%10,606286%10,606279%1,606289%1)
+			EndWindow 3209621
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209622
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209623
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209624
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########恌撙卅由□伙########
+block HaveLeak1item == 606276 && Visitor >= 6000 && Visitor < 7000
+	Window 3209625,yes,no
+
+		#\n\n﹛恌撙卅由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+
+	Window_yes gold < 700
+		EndWindow 3209626
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606276 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606276
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606277%50,606276%29,606275%20,606279%1)
+		EndWindow 3209627
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606277%34,606275%24,606326%10,606325%10,606287%10,606286%10,606328%1,606289%1)
+			EndWindow 3209628
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209629
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209630
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209631
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅弁巧□汁########
+block HaveLeak1item == 606286 && Visitor >= 6000 && Visitor < 7000
+	Window 3209632,yes,no
+
+		#\n\n﹛恌撙卅弁巧□汁匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3209633
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606286 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606286
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606287%50,606286%29,606285%20,606289%1)
+		EndWindow 3209634
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606287%34,606285%24,606326%10,606325%10,606277%10,606276%10,606328%1,606279%1)
+			EndWindow 3209635
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209636
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209637
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209638
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅左由□伙########
+block HaveLeak1item == 606326 && Visitor >= 6000 && Visitor < 7000
+	Window 3209639,yes,no
+
+		#\n\n﹛井卅曰恌撙卅左由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209640
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606326 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606326
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606327%50,606326%29,606325%20,606328%1)
+		EndWindow 3209641
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606327%34,606325%24,606278%10,606277%10,606288%10,606287%10,606279%1,606289%1)
+			EndWindow 3209642
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209643
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209644
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209645
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅由□伙########
+block HaveLeak1item == 606277 && Visitor >= 6000 && Visitor < 7000
+	Window 3209646,yes,no
+
+		#\n\n﹛井卅曰恌撙卅由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209647
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606277 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606277
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606278%50,606277%29,606276%20,606279%1)
+		EndWindow 3209648
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606278%34,606276%24,606327%10,606326%10,606288%10,606287%10,606328%1,606289%1)
+			EndWindow 3209649
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209650
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209651
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209652
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅弁巧□汁########
+block HaveLeak1item == 606287 && Visitor >= 6000 && Visitor < 7000
+	Window 3209653,yes,no
+
+		#\n\n﹛井卅曰恌撙卅弁巧□汁匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209654
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606287 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606287
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606288%50,606287%29,606286%20,606289%1)
+		EndWindow 3209655
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606288%34,606286%24,606278%10,606277%10,606327%10,606326%10,606279%1,606328%1)
+			EndWindow 3209656
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209657
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209658
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209659
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########敦蝈卞嗤中左由□伙########
+block HaveLeak1item == 606327 && Visitor >= 6000 && Visitor < 7000
+	Window 3209660,yes,no
+
+		#\n\n﹛敦蝈卞嗤中左由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209661
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606327 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606327
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606328%50,606327%29,606326%20,606328%1)
+		EndWindow 3209662
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606328%34,606326%24,606279%10,606278%10,606289%11,606288%11)
+			EndWindow 3209663
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209664
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209665
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209666
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中由□伙########
+block HaveLeak1item == 606278 && Visitor >= 6000 && Visitor < 7000
+	Window 3209667,yes,no
+
+		#\n\n﹛敦蝈卞嗤中由□伙匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209668
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606278 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606278
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606279%50,606278%29,606277%20,606279%1)
+		EndWindow 3209669
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606278%35,606277%25,606328%10,606327%10,606289%10,606288%10)
+			EndWindow 3209670
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209671
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209672
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209673
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中弁巧□汁########
+block HaveLeak1item == 606288 && Visitor >= 6000 && Visitor < 7000 
+	Window 3209674,yes,no
+
+		#\n\n﹛敦蝈卞嗤中弁巧□汁匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209675
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606288 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606288
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606289%50,606288%29,606287%20,606289%1)
+		EndWindow 3209676
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606289%35,606287%25,606328%10,606327%10,606279%10,606278%10)
+			EndWindow 3209677
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209678
+
+		#\n\n﹛示白件″″\n﹛壅昒允月仇午手引凶扪抰分方﹝
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3209679
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209680
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########﹛敦蝈锳噬虫及左由□伙########
+block HaveLeak1item == 606328 && Visitor >= 6000 && Visitor < 7000
+	EndWindow 3209681
+
+		#\n\n﹛敦蝈锳噬虫及左由□伙元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及由□伙########
+block HaveLeak1item == 606279 && Visitor >= 6000 && Visitor < 7000
+	EndWindow 3209682
+
+		#\n\n﹛敦蝈锳噬虫及由□伙元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及弁巧□汁########
+block HaveLeak1item == 606289 && Visitor >= 6000 && Visitor < 7000 
+	EndWindow 3209683o
+
+		#\n\n﹛敦蝈锳噬虫及弁巧□汁元扎﹜\n﹛掸董匹五卅中方﹝
+
+
+########泛弁正奶玄及瑞弅########
+block HaveLeak1item == 606290 && Visitor >= 7000
+	Window 3209684,yes,no
+
+		#\n\n﹛泛弁正奶玄及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209685
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606290 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606290
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606291%60,606290%35,606294%5)
+		EndWindow 3209686
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606291%30,606290%20,606300%10,606301%10,606310%10,606311%10,606304%5,606314%5)
+			EndWindow 3209687
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209688
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3209689
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209690
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########斥尼永玄及瑞弅########
+block HaveLeak1item == 606300 && Visitor >= 7000
+	Window 3209691,yes,no
+
+		#\n\n﹛斥尼永玄及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209692
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606300 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606300
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606301%60,606300%35,606304%5)
+		EndWindow 3209693
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606301%30,606300%20,606290%10,606291%10,606310%10,606311%10,606294%5,606314%5)
+			EndWindow 3209694
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209695
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209696
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209697
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########平乓扑泛仿奶玄及瑞弅########
+block HaveLeak1item == 606310 && Visitor >= 7000
+	Window 3209698,yes,no
+
+		#\n\n﹛平乓扑泛仿奶玄及瑞弅匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜100?手日丹仃升中中〝
+
+	Window_yes gold < 100
+		EndWindow 3209699
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606310 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606310
+	AddGold -100
+	if LocalCount1 == 1
+		GiveLeak1Item (606311%60,606310%35,606314%5)
+		EndWindow 3209700
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606311%30,606310%20,606300%10,606290%10,606301%10,606291%10,606294%5,606304%5)
+			EndWindow 3209701
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209702
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209703
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209704
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########井卅曰瑞仃凶泛弁正奶玄########
+block HaveLeak1item == 606291 && Visitor >= 7000
+	Window 3209705,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶泛弁正奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209706
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606291 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606291
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606292%45,606291%25,606290%20,606294%5)
+		EndWindow 3209707
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606292%30,606290%20,606301%10,606302%10,606311%10,606312%10,606304%5,606314%5)
+			EndWindow 3209708
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209709
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209710
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209711
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶斥尼永玄########
+block HaveLeak1item == 606301 && Visitor >= 7000
+	Window 3209712,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶斥尼永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209713
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606301 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606301
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606302%45,606301%25,606300%20,606304%5)
+		EndWindow 3209714
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606302%30,606300%20,606291%10,606292%10,606311%10,606312%10,606294%5,606314%5)
+			EndWindow 3209715
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209716
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209717
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209718
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰瑞仃凶平乓扑泛仿奶玄########
+block HaveLeak1item == 606311 && Visitor >= 7000
+	Window 3209719,yes,no
+
+		#\n\n﹛井卅曰瑞仃凶平乓扑泛仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜200?手日丹仃升中中〝
+
+	Window_yes gold < 200
+		EndWindow 3209720
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606311 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606311
+	AddGold -200
+	if LocalCount1 == 1
+		GiveLeak1Item (606312%45,606311%25,606310%20,606314%5)
+		EndWindow 3209721
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606312%30,606310%20,606291%10,606301%10,606292%10,606302%10,606294%5,606304%5)
+			EndWindow 3209722
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209723
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209724
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209725
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶泛弁正奶玄########
+block HaveLeak1item == 606292 && Visitor >= 7000
+	Window 3209726,yes,no
+
+		#\n\n﹛瑞仃凶泛弁正奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209727
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606292 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606292
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606293%45,606292%25,606291%20,606294%5)
+		EndWindow 3209728
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606293%30,606291%20,606302%10,606303%10,606312%10,606313%10,606304%5,606314%5)
+			EndWindow 3209729
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209730
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209731
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209732
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶斥尼永玄########
+block HaveLeak1item == 606302 && Visitor >= 7000
+	Window 3209733,yes,no
+
+		#\n\n﹛瑞仃凶斥尼永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209734
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606302 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606302
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606303%45,606302%25,606301%20,606304%5)
+		EndWindow 3209735
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606303%30,606301%20,606292%10,606293%10,606312%10,606313%10,606294%5,606314%5)
+			EndWindow 3209736
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209737
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209738
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209739
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########瑞仃凶平乓扑泛仿奶玄########
+block HaveLeak1item == 606312 && Visitor >= 7000
+	Window 3209740,yes,no
+
+		#\n\n﹛瑞仃凶平乓扑泛仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜300?手日丹仃升中中〝
+
+	Window_yes gold < 300
+		EndWindow 3209741
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606312 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606312
+	AddGold -300
+	if LocalCount1 == 1
+		GiveLeak1Item (606313%45,606312%25,606311%20,606314%5)
+		EndWindow 3209742
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606313%30,606311%20,606292%10,606302%10,606293%10,606303%10,606294%5,606304%5)
+			EndWindow 3209743
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209744
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209745
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209746
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶泛弁正奶玄########
+block HaveLeak1item == 606293 && Visitor >= 7000
+	Window 3209747,yes,no
+
+		#\n\n﹛支支瑞仃凶泛弁正奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209748
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606293 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606293
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606294%50,606293%25,606292%20,606294%5)
+		EndWindow 3209749
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606294%30,606292%20,606303%10,606304%10,606313%10,606314%10,606304%5,606314%5)
+			EndWindow 3209750
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209751
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209752
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209753
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########支支瑞仃凶斥尼永玄########
+block HaveLeak1item == 606303 && Visitor >= 7000
+	Window 3209754,yes,no
+
+		#\n\n﹛支支瑞仃凶斥尼永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209755
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606303 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606303
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606304%50,606303%25,606302%20,606304%5)
+		EndWindow 3209756
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606304%30,606302%20,606293%10,606294%10,606313%10,606314%10,606294%5,606314%5)
+			EndWindow 3209757
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209758
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209759
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209760
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支瑞仃凶平乓扑泛仿奶玄########
+block HaveLeak1item == 606313 && Visitor >= 7000
+	Window 3209761,yes,no
+
+		#\n\n﹛支支瑞仃凶平乓扑泛仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜400?手日丹仃升中中〝
+
+	Window_yes gold < 400
+		EndWindow 3209762
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606313 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606313
+	AddGold -400
+	if LocalCount1 == 1
+		GiveLeak1Item (606314%50,606313%25,606312%20,606314%5)
+		EndWindow 3209763
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606314%30,606312%20,606293%10,606294%10,606303%10,606304%10,606294%5,606304%5)
+			EndWindow 3209764
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209765
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209766
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209767
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########泛弁正奶玄########
+block HaveLeak1item == 606294 && Visitor >= 7000
+	Window 3209768,yes,no
+
+		#\n\n﹛泛弁正奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209769
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606294 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606294
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606295%50,606294%29,606293%20,606299%1)
+		EndWindow 3209770
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606295%34,606293%24,606304%10,606305%10,606314%10,606315%10,606309%1,606319%1)
+			EndWindow 3209771
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209772
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209773
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209774
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########斥尼永玄########
+block HaveLeak1item == 606304 && Visitor >= 7000
+	Window 3209775,yes,no
+
+		#\n\n﹛斥尼永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209776
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606304 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606304
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606305%50,606304%29,606303%20,606309%1)
+		EndWindow 3209777
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606305%34,606303%24,606294%10,606295%10,606314%10,606315%10,606299%1,606319%1)
+			EndWindow 3209778
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209779
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209780
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209781
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########平乓扑泛仿奶玄########
+block HaveLeak1item == 606314 && Visitor >= 7000
+	Window 3209782,yes,no
+
+		#\n\n﹛平乓扑泛仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜500?手日丹仃升中中〝
+
+	Window_yes gold < 500
+		EndWindow 3209783
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606314 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606314
+	AddGold -500
+	if LocalCount1 == 1
+		GiveLeak1Item (606315%50,606314%29,606313%20,606319%1)
+		EndWindow 3209784
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606315%34,606313%24,606294%10,606295%10,606304%10,606305%10,606299%1,606309%1)
+			EndWindow 3209785
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209786
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209787
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209788
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅泛弁正奶玄########
+block HaveLeak1item == 606295 && Visitor >= 7000
+	Window 3209789,yes,no
+
+		#\n\n﹛支支恌撙卅泛弁正奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209790
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606295 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606295
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606296%50,606295%29,606294%20,606299%1)
+		EndWindow 3209791
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606296%34,606294%24,606305%10,606306%10,606315%10,606316%10,606309%1,606319%1)
+			EndWindow 3209792
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209793
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209794
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209795
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅斥尼永玄########
+block HaveLeak1item == 606305 && Visitor >= 7000
+	Window 3209796,yes,no
+
+		#\n\n﹛支支恌撙卅斥尼永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209797
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606305 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606305
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606306%50,606305%29,606304%20,606309%1)
+		EndWindow 3209798
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606306%34,606304%24,606295%10,606296%10,606315%10,606316%10,606299%1,606319%1)
+			EndWindow 3209799
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209800
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209801
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209802
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########支支恌撙卅平乓扑泛仿奶玄########
+block HaveLeak1item == 606315 && Visitor >= 7000
+	Window 3209803,yes,no
+
+		#\n\n﹛支支恌撙卅平乓扑泛仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜600?手日丹仃升中中〝
+
+	Window_yes gold < 600
+		EndWindow 3209804
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606315 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606315
+	AddGold -600
+	if LocalCount1 == 1
+		GiveLeak1Item (606316%50,606315%29,606314%20,606319%1)
+		EndWindow 3209805
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606315%34,606314%24,606295%10,606296%10,606305%10,606306%10,606299%1,606309%1)
+			EndWindow 3209806
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209807
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209808
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209809
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅泛弁正奶玄########
+block HaveLeak1item == 606296 && Visitor >= 7000
+	Window 3209810,yes,no
+
+		#\n\n﹛恌撙卅泛弁正奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3209811
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606296 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606296
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606297%50,606296%29,606295%20,606299%1)
+		EndWindow 3209812
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606297%34,606295%24,606307%10,606306%10,606317%10,606316%10,606309%1,606319%1)
+			EndWindow 3209813
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209814
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209815
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209816
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########恌撙卅斥尼永玄########
+block HaveLeak1item == 606306 && Visitor >= 7000
+	Window 3209817,yes,no
+
+		#\n\n﹛恌撙卅斥尼永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+
+	Window_yes gold < 700
+		EndWindow 3209818
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606306 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606306
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606307%50,606306%29,606305%20,606309%1)
+		EndWindow 3209819
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606307%34,606305%24,606297%10,606296%10,606317%10,606316%10,606299%1,606319%1)
+			EndWindow 3209820
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209821
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209822
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209823
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########恌撙卅平乓扑泛仿奶玄########
+block HaveLeak1item == 606316 && Visitor >= 7000
+	Window 3209824,yes,no
+
+		#\n\n﹛恌撙卅平乓扑泛仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜700?手日丹仃升中中〝
+
+	Window_yes gold < 700
+		EndWindow 3209825
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606316 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606316
+	AddGold -700
+	if LocalCount1 == 1
+		GiveLeak1Item (606317%50,606316%29,606315%20,606319%1)
+		EndWindow 3209826
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606316%34,606315%24,606297%10,606296%10,606307%10,606306%10,606299%1,606309%1)
+			EndWindow 3209827
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209828
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209829
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209830
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅泛弁正奶玄########
+block HaveLeak1item == 606297 && Visitor >= 7000
+	Window 3209831,yes,no
+
+		#\n\n﹛井卅曰恌撙卅泛弁正奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209832
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606297 >=1
+	LocalCount1 = Random 3,0
+	killitem 606297
+	AddGold -800
+	if LocalCount1 == 1
+
+		GiveLeak1Item (606298%50,606297%29,606296%20,606299%1)
+		EndWindow 3209833
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606298%34,606296%24,606308%10,606307%10,606318%10,606317%10,606309%1,606319%1)
+			EndWindow 3209834
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209835
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209836
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209837
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅斥尼永玄########
+block HaveLeak1item == 606307 && Visitor >= 7000
+	Window 3209838,yes,no
+
+		#\n\n﹛井卅曰恌撙卅斥尼永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209839
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606307 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606307
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606308%50,606307%29,606306%20,606309%1)
+		EndWindow 3209840
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606308%34,606306%24,606298%10,606297%10,606318%10,606317%10,606299%1,606319%1)
+			EndWindow 3209841
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209842
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209843
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209844
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########井卅曰恌撙卅平乓扑泛仿奶玄########
+block HaveLeak1item == 606317 && Visitor >= 7000
+	Window 3209845,yes,no
+
+		#\n\n﹛井卅曰恌撙卅平乓扑泛仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜800?手日丹仃升中中〝
+
+	Window_yes gold < 800
+		EndWindow 3209846
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606317 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606317
+	AddGold -800
+	if LocalCount1 == 1
+		GiveLeak1Item (606318%50,606317%29,606316%20,606319%1)
+		EndWindow 3209847
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606317%34,606316%24,606308%10,606307%10,606298%10,606297%10,606309%1,606299%1)
+			EndWindow 3209848
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209849
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209850
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209851
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+
+########敦蝈卞嗤中泛弁正奶玄########
+block HaveLeak1item == 606298 && Visitor >= 7000
+	Window 3209852,yes,no
+
+		#\n\n﹛敦蝈卞嗤中泛弁正奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209853
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606298 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606298
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606299%50,606298%29,606297%20,606299%1)
+		EndWindow 3209854
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606299%34,606297%24,606309%10,606308%10,606319%11,606318%11)
+			EndWindow 3209855
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209856
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209857
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209858
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中斥尼永玄########
+block HaveLeak1item == 606308 && Visitor >= 7000
+	Window 3209859,yes,no
+
+		#\n\n﹛敦蝈卞嗤中斥尼永玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209860
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606308 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606308
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606309%50,606308%29,606307%20,606309%1)
+		EndWindow 3209861
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606309%35,606307%25,606299%10,606298%10,606319%10,606318%10)
+			EndWindow 3209862
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209863
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+	endif
+
+	Window_yes 
+		EndWindow 3209864
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209865
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########敦蝈卞嗤中平乓扑泛仿奶玄########
+block HaveLeak1item == 606318 && Visitor >= 7000
+	Window 3209866,yes,no
+
+		#\n\n﹛敦蝈卞嗤中平乓扑泛仿奶玄匹掸董允月方﹝\n﹛巨生伙幼□医匹﹜900?手日丹仃升中中〝
+
+	Window_yes gold < 900
+		EndWindow 3209867
+
+		#\n\n﹛云嗯互卅五扎﹜掸董匹五卅中方
+
+	Window_yes Item 606318 >= 1
+	LocalCount1 = Random 3,0
+	killitem 606318
+	AddGold -900
+	if LocalCount1 == 1
+		GiveLeak1Item (606319%50,606318%29,606317%20,606319%1)
+		EndWindow 3209868
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+	else
+		if LocalCount1 == 2
+			GiveLeak1Item (606318%35,606317%25,606299%10,606298%10,606309%10,606308%10)
+			EndWindow 3209869
+
+		#\n\n﹛引凶﹜侳化仁木方卅﹝
+		else
+			EndWindow 3209870
+
+		#\n\n﹛示白件″″\n﹛中引及扲檗﹜左奶仿及分匀凶日扑亦永弁分方﹝
+		endif
+	endif
+
+	Window_yes 
+		EndWindow 3209871
+
+		#\n\n﹛丐木木〝﹛扲檗互卅中方﹝
+
+	Window_no
+		EndWindow 3209872
+
+		#\n\n﹛竣互轾中凶日侳化仁木方卅
+
+########﹛敦蝈锳噬虫及泛弁正奶玄########
+block HaveLeak1item == 606299 && Visitor >= 7000
+	EndWindow 3209873
+
+		#\n\n﹛敦蝈锳噬虫及泛弁正奶玄元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及斥尼永玄########
+block HaveLeak1item == 606309 && Visitor >= 7000
+	EndWindow 3209874
+
+		#\n\n﹛敦蝈锳噬虫及斥尼永玄元扎﹜\n﹛掸董匹五卅中方﹝
+
+########﹛敦蝈锳噬虫及平乓扑泛仿奶玄########
+block HaveLeak1item == 606319 && Visitor >= 7000
+	EndWindow 3209875
+
+		#\n\n﹛敦蝈锳噬虫及平乓扑泛仿奶玄元扎﹜\n﹛掸董匹五卅中方﹝
+
+
+######﹛云引仃皿伊未件玄﹛######
+block stampcount 623500 >= 50 || stampcount 623501 >= 50 || stampcount 623502 >= 50 || stampcount 623503 >= 50 || stampcount 623504 >= 50 || stampcount 623505 >= 50
+	Window3209876,yes,no
+
+		#\n\n﹛中匀天中澎鳗匀化仁木凶氏分友﹝\n﹛云斪卞仇木毛丐仆月方
+
+	Window_yes itemSpace < 1
+		EndWindow3209877
+
+		#\n\n﹛升丹支日儅化卅中心凶中分友﹝\n﹛绂坁毛帮咥仄化云中匹方﹝
+
+	Window_yes ItemSpace >= 1
+	if HaveItem == 623500
+		addStampCount 623500,-50
+	else
+	if HaveItem == 623501
+		addStampCount 623501,-50
+	else
+	if HaveItem == 623502
+		addStampCount 623502,-50
+	else
+	if HaveItem == 623503
+		addStampCount 623503,-50
+	else
+	if HaveItem == 623504
+		addStampCount 623504,-50
+	else
+	if HaveItem == 623505
+		addStampCount 623505,-50
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+		GiveLeak0Item(606294%30,606304%30,606314%30,606297%4,606307%3,606317%3)
+		EndWindow3209878
+
+		#\n\n﹛引凶﹜中匀天中儅匀化五化仁木方﹝
+
+	Window_no
+		EndWindow3209879
+
+		#\n\n﹛云斪互幻仄仁卅匀凶日中匀化友
+
+block stampcount 623500 >= 40 || stampcount 623501 >= 40 || stampcount 623502 >= 40 || stampcount 623503 >= 40 || stampcount 623504 >= 40 || stampcount 623505 >= 40
+	Window3209880,yes,no
+
+		#\n\n﹛中匀天中澎鳗匀化仁木凶氏分友﹝\n﹛云斪卞仇木毛丐仆月方
+
+	Window_yes itemSpace < 1
+		EndWindow3209881
+
+		#\n\n﹛升丹支日儅化卅中心凶中分友﹝\n﹛绂坁毛帮咥仄化云中匹方﹝
+
+	Window_yes ItemSpace >= 1
+	if HaveItem == 623500
+		addStampCount 623500,-40
+	else
+	if HaveItem == 623501
+		addStampCount 623501,-40
+	else
+	if HaveItem == 623502
+		addStampCount 623502,-40
+	else
+	if HaveItem == 623503
+		addStampCount 623503,-40
+	else
+	if HaveItem == 623504
+		addStampCount 623504,-40
+	else
+	if HaveItem == 623505
+		addStampCount 623505,-40
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+		GiveLeak0Item(606293%30,606303%30,606313%30,606294%4,606304%3,606314%3)
+		EndWindow3209882
+
+		#\n\n﹛引凶﹜中匀天中儅匀化五化仁木方﹝
+
+	Window_no
+		EndWindow3209883
+
+		#\n\n﹛云斪互幻仄仁卅匀凶日中匀化友
+
+block stampcount 623500 >= 30 || stampcount 623501 >= 30 || stampcount 623502 >= 30 || stampcount 623503 >= 30 || stampcount 623504 >= 30 || stampcount 623505 >= 30
+	Window3209884,yes,no
+
+		#\n\n﹛中匀天中澎鳗匀化仁木凶氏分友﹝\n﹛云斪卞仇木毛丐仆月方
+
+	Window_yes itemSpace < 1
+		EndWindow3209885
+
+		#\n\n﹛升丹支日儅化卅中心凶中分友﹝\n﹛绂坁毛帮咥仄化云中匹方﹝
+
+	Window_yes ItemSpace >= 1
+	if HaveItem == 623500
+		addStampCount 623500,-30
+	else
+	if HaveItem == 623501
+		addStampCount 623501,-30
+	else
+	if HaveItem == 623502
+		addStampCount 623502,-30
+	else
+	if HaveItem == 623503
+		addStampCount 623503,-30
+	else
+	if HaveItem == 623504
+		addStampCount 623504,-30
+	else
+	if HaveItem == 623505
+		addStampCount 623505,-30
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+		GiveLeak0Item(606292%30,606302%30,606312%30,606294%4,606304%3,606314%3)
+		EndWindow3209886
+
+		#\n\n﹛引凶﹜中匀天中儅匀化五化仁木方﹝
+
+	Window_no
+		EndWindow3209887
+
+		#\n\n﹛云斪互幻仄仁卅匀凶日中匀化友
+
+block stampcount 623500 >= 20 || stampcount 623501 >= 20 || stampcount 623502 >= 20 || stampcount 623503 >= 20 || stampcount 623504 >= 20 || stampcount 623505 >= 20
+	Window3209888,yes,no
+
+		#\n\n﹛中匀天中澎鳗匀化仁木凶氏分友﹝\n﹛云斪卞仇木毛丐仆月方
+
+	Window_yes itemSpace < 1
+		EndWindow3209889
+
+		#\n\n﹛升丹支日儅化卅中心凶中分友﹝\n﹛绂坁毛帮咥仄化云中匹方﹝
+
+	Window_yes ItemSpace >= 1
+	if HaveItem == 623500
+		addStampCount 623500,-20
+	else
+	if HaveItem == 623501
+		addStampCount 623501,-20
+	else
+	if HaveItem == 623502
+		addStampCount 623502,-20
+	else
+	if HaveItem == 623503
+		addStampCount 623503,-20
+	else
+	if HaveItem == 623504
+		addStampCount 623504,-20
+	else
+	if HaveItem == 623505
+		addStampCount 623505,-20
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+		GiveLeak0Item(606291%30,606301%30,606311%30,606294%4,606304%3,606314%3)
+		EndWindow3209890
+
+		#\n\n﹛引凶﹜中匀天中儅匀化五化仁木方﹝
+
+	Window_no
+		EndWindow3209891
+
+		#\n\n﹛云斪互幻仄仁卅匀凶日中匀化友
+
+block stampcount 623500 >= 10 || stampcount 623501 >= 10 || stampcount 623502 >= 10 || stampcount 623503 >= 10 || stampcount 623504 >= 10 || stampcount 623505 >= 10
+	Window3209892,yes,no
+
+		#\n\n﹛中匀天中澎鳗匀化仁木凶氏分友﹝\n﹛云斪卞仇木毛丐仆月方
+
+	Window_yes itemSpace < 1
+		EndWindow3209893
+
+		#\n\n﹛升丹支日儅化卅中心凶中分友﹝\n﹛绂坁毛帮咥仄化云中匹方﹝
+
+	Window_yes ItemSpace >= 1
+	if HaveItem == 623500
+		addStampCount 623500,-10
+	else
+	if HaveItem == 623501
+		addStampCount 623501,-10
+	else
+	if HaveItem == 623502
+		addStampCount 623502,-10
+	else
+	if HaveItem == 623503
+		addStampCount 623503,-10
+	else
+	if HaveItem == 623504
+		addStampCount 623504,-10
+	else
+	if HaveItem == 623505
+		addStampCount 623505,-10
+	endif
+	endif
+	endif
+	endif
+	endif
+	endif
+		GiveLeak0Item(606290%30,606300%30,606310%30,606294%4,606304%3,606314%3)
+		EndWindow3209894
+
+		#\n\n﹛引凶﹜中匀天中儅匀化五化仁木方﹝
+
+	Window_no
+		EndWindow3209895
+
+		#\n\n﹛云斪互幻仄仁卅匀凶日中匀化友
+
+
+#######﹛隶嘻敦岳橇须﹛######
+block visitor >= 1000 && Visitor < 2000
+		EndWindow 3209896
+
+		#\n\n﹛敛缙及扲檗毛儅匀化五化仁木凶日掸董允月方﹝\n﹛忡据反仄卅中仃升友﹝
+
+block visitor >= 2000 && Visitor < 3000
+		EndWindow 3209897
+
+		#\n\n﹛疵缙及扲檗井丑’’﹛\n﹛左奶仿丐引曰驯五元扎卅中井日撩ヘ仄化手\n﹛卅氏午手合歹卅中支﹛匹尺ｎ
+
+block visitor >= 3000 && Visitor < 4000
+		EndWindow 3209898
+
+		#\n\n﹛恦缙及扲檗匹掸董允月仃升﹜左奶仿\n﹛仇及缙毛苇月午午化手濠卅仁卅匀化仁月方﹝\n﹛窒匹井反〇踝ｎ﹛撩ヘ仄化手〇踝ｎ
+
+block visitor >= 4000 && Visitor < 5000
+		EndWindow 3209899
+
+		#\n\n﹛毡缙及扲檗″″﹛シ尹月友之″″\n﹛シ尹谘五公丹分方″″\n﹛撩ヘ仄凶日竣宁互箫曰卅井匀凶午合匀化仁木″″
+
+block visitor >= 5000 && Visitor < 6000
+		EndWindow 3209900
+
+		#\n\n﹛升夫扎丑″″\n﹛饵缙及扲檗匹掸董匹五月仃升\n﹛撩ヘ仄化手漕引卅中匹友﹝﹛匹尺ｎ
+
+block visitor >= 6000 && Visitor < 7000
+		EndWindow 3209901
+
+		#\n\n﹛ヶ缙及扲檗毛银匀化掸董允月仃升﹜\n﹛窒手井手莽仄凶仁卅匀化五凶方﹝\n﹛愈赓井日综曰跶公丹井卅丑’’’\n﹛户氏升仁今中氏分仃升友﹝﹛匹尺ｎ
+
+block visitor >= 7000
+		EndWindow 3209902
+
+		#\n\n﹛幕缙及扲檗匹掸董允月仃升﹜\n﹛左奶仿互晓仆凶支勾反中木化幻仄仁卅中卅丑﹝\n﹛卅氏井濠卅仁卅匀切扎丹元扎氏
+
+
+########﹛笺恔及匙俇﹛########
+block HItem 623500 == 0 && Item 623501 == 0 && Item 623502 == 0 && Item 623503 ==0 && Item 623504 == 0 && Item 623505 == 0
+
+	Window3209903,yes,no
+
+		#\n\n﹛反丑﹜隶嘻及涩煌互蔽歹匀凶及卞笺恔互卅中支﹝\n﹛丐氏凶﹜域踝卞笺恔茧仄化仁木卅中〝
+
+	Window_yes ItemSpace == 0
+		EndWindow3209904
+
+		#\n\n﹛丐木木〝﹛丢乒互欐六卅中方〝\n﹛儅切坁中匀天中卅氏元扎卅中〝
+
+	Window_yes
+
+	LocalCount1 = Random 6,0
+	if LocalCount1 == 1
+		GiveItem 623500,1
+		endWindow3209905
+
+		#\n\n﹛仇及丢乒卞踏中化丐月笺恔毛儅匀化五化仁木方﹝
+	else
+	if LocalCount1 == 2
+		GiveItem 623501,1
+		endWindow3209906
+
+		#\n\n﹛仇及丢乒卞踏中化丐月笺恔毛儅匀化五化仁木方﹝
+	else
+	if LocalCount1 == 3
+		GiveItem 623502,1
+		endWindow3209907
+
+		#\n\n﹛仇及丢乒卞踏中化丐月笺恔毛儅匀化五化仁木方﹝
+	else
+	if LocalCount1 == 4
+		GiveItem 623503,1
+		endWindow3209908
+
+		#\n\n﹛仇及丢乒卞踏中化丐月笺恔毛儅匀化五化仁木方﹝
+	else
+	if LocalCount1 == 5
+		GiveItem 623504,1
+		endWindow3209909
+
+		#\n\n﹛仇及丢乒卞踏中化丐月笺恔毛儅匀化五化仁木方﹝
+	else
+	if LocalCount1 == 6
+		GiveItem 623505,1
+		endWindow3209910
+
+		#\n\n﹛仇及丢乒卞踏中化丐月笺恔毛儅匀化五化仁木方﹝
+	endif ## LocalCount=6
+	endif ## LocalCount=5
+	endif ## LocalCount=4
+	endif ## LocalCount=3
+	endif ## LocalCount=2
+	endif ## LocalCount=1
+	
+	Window_No
+		EndWindow3209911
+
+		#\n\n﹛挕凶中支勾分卅丑
+
+endblock
+
+
+
+########## 笺恔荚璋 ##########
+block Visitor < 30
+if HaveItem == 623500 || HaveItem == 623501 || HaveItem == 623502 || HaveItem == 623503 || HaveItem == 623504 || HaveItem == 623505
+
+########## 恦目伙丢永玄 ##########
+Window 3209912,yes,no
+
+		#\n\n﹛云″〝﹛笺恔儅匀化五化仁木凶及井中〝\n﹛蝈朿手日匀切扎丹仃升﹜中中及井中〝
+
+Window_YES 
+if HaveItem == 623500 && HaveItem == 18195
+	if Item 18195 == 1
+		KillItem 18195,1
+		SetVisitor +1
+		AddStampCount 623500,+1
+		
+	else
+		if Item 18195 == 2
+			KillItem 18195,2
+			SetVisitor +2
+			AddStampCount 623500,+2
+		else
+			if Item 18195 == 3
+				KillItem 18195,3
+				SetVisitor +3
+				AddStampCount 623500,+3
+			else
+
+				if Item 18195 == 4
+					KillItem 18195,4
+					SetVisitor +4
+					AddStampCount 623500,+4
+				else
+					if Item 18195 == 5
+						KillItem 18195,5
+						SetVisitor +5
+						AddStampCount 623500,+5
+					else
+						if Item 18195 == 6
+							KillItem 18195,6
+							SetVisitor +6
+							AddStampCount 623500,+6
+						else
+							if Item 18195 == 7
+								KillItem 18195,7
+								SetVisitor +7
+								AddStampCount 623500,+7
+							else 
+								if Item 18195 == 8
+									KillItem 18195,8
+									SetVisitor +8
+									AddStampCount 623500,+8
+								else
+									if Item 18195 == 9
+										KillItem 18195,9
+										SetVisitor +9
+										AddStampCount 623500,+9
+									else
+										if Item 18195 == 10
+											KillItem 18195,10
+											SetVisitor +10
+											AddStampCount 623500,+10
+										else
+	if Item 18195 == 11
+		KillItem 18195,11
+		SetVisitor +11
+		AddStampCount 623500,+11
+	else
+		if Item 18195 == 12
+			KillItem 18195,12
+			SetVisitor +12
+			AddStampCount 623500,+12
+		else
+			if Item 18195 == 13
+				KillItem 18195,13
+				SetVisitor +13
+				AddStampCount 623500,+13
+			else
+				if Item 18195 == 14
+					KillItem 18195,14
+					SetVisitor +14
+					AddStampCount 623500,+14
+				else
+					if Item 18195 == 15
+						KillItem 18195,15
+						SetVisitor +15
+						AddStampCount 623500,+15
+					else
+						if Item 18195 == 16
+							KillItem 18195,16
+							SetVisitor +16
+							AddStampCount 623500,+16
+						else
+							if Item 18195 == 17
+								KillItem 18195,17
+								SetVisitor +17
+								AddStampCount 623500,+17
+							else
+								if Item 18195 == 18
+									KillItem 18195,18
+									SetVisitor +18
+									AddStampCount 623500,+18
+								else
+									if Item 18195 == 19
+										KillItem 18195,19
+										SetVisitor +19
+										AddStampCount 623500,+19
+									else
+										if Item 18195 == 20
+											KillItem 18195,20
+											SetVisitor +20
+											AddStampCount 623500,+20
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+else
+########## 毡目伙丢永玄 ##########
+if HaveItem == 623501 && HaveItem == 18194
+	if Item 18194 == 1
+		KillItem 18194,1
+		SetVisitor +1
+		AddStampCount 623501,+10
+		
+	else
+		if Item 18194 == 2
+			KillItem 18194,2
+			SetVisitor +2
+			AddStampCount 623501,+20
+		else
+			if Item 18194 == 3
+				KillItem 18194,3
+				SetVisitor +3
+				AddStampCount 623501,+30
+			else
+
+				if Item 18194 == 4
+					KillItem 18194,4
+					SetVisitor +4
+					AddStampCount 623501,+40
+				else
+					if Item 18194 == 5
+						KillItem 18194,5
+						SetVisitor +5
+						AddStampCount 623501,+50
+					else
+						if Item 18194 == 6
+							KillItem 18194,6
+							SetVisitor +6
+							AddStampCount 623501,+60
+						else
+							if Item 18194 == 7
+								KillItem 18194,7
+								SetVisitor +7
+								AddStampCount 623501,+70
+							else 
+								if Item 18194 == 8
+									KillItem 18194,8
+									SetVisitor +8
+									AddStampCount 623501,+80
+								else
+									if Item 18194 == 9
+										KillItem 18194,9
+										SetVisitor +9
+										AddStampCount 623501,+90
+									else
+										if Item 18194 == 10
+											KillItem 18194,10
+											SetVisitor +10
+											AddStampCount 623501,+100
+										else
+	if Item 18194 == 11
+		KillItem 18194,11
+		SetVisitor +11
+		AddStampCount 623501,+110
+	else
+		if Item 18194 == 12
+			KillItem 18194,12
+			SetVisitor +12
+			AddStampCount 623501,+120
+		else
+			if Item 18194 == 13
+				KillItem 18194,13
+				SetVisitor +13
+				AddStampCount 623501,+130
+			else
+				if Item 18194 == 14
+					KillItem 18194,14
+					SetVisitor +14
+					AddStampCount 623501,+140
+				else
+					if Item 18194 == 15
+						KillItem 18194,15
+						SetVisitor +15
+						AddStampCount 623501,+150
+					else
+						if Item 18194 == 16
+							KillItem 18194,16
+							SetVisitor +16
+							AddStampCount 623501,+160
+						else
+							if Item 18194 == 17
+								KillItem 18194,17
+								SetVisitor +17
+								AddStampCount 623501,+170
+							else
+								if Item 18194 == 18
+									KillItem 18194,18
+									SetVisitor +18
+									AddStampCount 623501,+180
+								else
+									if Item 18194 == 19
+										KillItem 18194,19
+										SetVisitor +19
+										AddStampCount 623501,+190
+									else
+										if Item 18194 == 20
+											KillItem 18194,20
+											SetVisitor +20
+											AddStampCount 623501,+200
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+
+	endif
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+
+else
+##########﹛本伊□生鸡﹛##########
+if HaveItem == 623502 && HaveItem == 18568
+	if Item 18568 == 1
+		KillItem 18568,1
+		SetVisitor +1
+		AddStampCount 623502,+3
+	else
+		if Item 18568 == 2
+			KillItem 18568,2
+			SetVisitor +2
+			AddStampCount 623502,+6
+		else
+			if Item 18568 == 3
+				KillItem 18568,3
+				SetVisitor +3
+				AddStampCount 623502,+9
+			else
+
+				if Item 18568 == 4
+					KillItem 18568,4
+					SetVisitor +4
+					AddStampCount 623502,+12
+				else
+					if Item 18568 == 5
+						KillItem 18568,5
+						SetVisitor +5
+						AddStampCount 623502,+15
+					else
+						if Item 18568 == 6
+							KillItem 18568,6
+							SetVisitor +6
+							AddStampCount 623502,+18
+						else
+							if Item 18568 == 7
+								KillItem 18568,7
+								SetVisitor +7
+								AddStampCount 623502,+21
+							else 
+								if Item 18568 == 8
+									KillItem 18568,8
+									SetVisitor +8
+									AddStampCount 623502,+24
+								else
+									if Item 18568 == 9
+										KillItem 18568,9
+										SetVisitor +9
+										AddStampCount 623502,+27
+									else
+										if Item 18568 == 10
+											KillItem 18568,10
+											SetVisitor +10
+											AddStampCount 623502,+30
+										else
+	if Item 18568 == 11
+		KillItem 18568,11
+		SetVisitor +11
+		AddStampCount 623502,+33
+	else
+		if Item 18568 == 12
+			KillItem 18568,12
+			SetVisitor +12
+		AddStampCount 623502,+36
+		else
+			if Item 18568 == 13
+				KillItem 18568,13
+				SetVisitor +13
+				AddStampCount 623502,+39
+			else
+				if Item 18568 == 14
+					KillItem 18568,14
+					SetVisitor +14
+					AddStampCount 623502,+42
+				else
+					if Item 18568 == 15
+						KillItem 18568,15
+						SetVisitor +15
+						AddStampCount 623502,+45
+					else
+						if Item 18568 == 16
+							KillItem 18568,16
+							SetVisitor +16
+							AddStampCount 623502,+48
+						else
+							if Item 18568 == 17
+								KillItem 18568,17
+								SetVisitor +17
+								AddStampCount 623502,+51
+							else
+								if Item 18568 == 18
+									KillItem 18568,18
+									SetVisitor +18
+									AddStampCount 623502,+54
+								else
+									if Item 18568 == 19
+										KillItem 18568,19
+										SetVisitor +19
+										AddStampCount 623502,+57
+									else
+										if Item 18568 == 20
+											KillItem 18568,20
+											SetVisitor +20
+											AddStampCount 623502,+60
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+else
+##########﹛＊及?﹛##########
+if HaveItem == 623503 && HaveItem == 18253
+	if Item 18253 == 1
+		KillItem 18253,1
+		SetVisitor +1
+		AddStampCount 623503,+2
+	else
+		if Item 18253 == 2
+			KillItem 18253,2
+			SetVisitor +2
+			AddStampCount 623503,+4
+		else
+			if Item 18253 == 3
+				KillItem 18253,3
+				SetVisitor +3
+				AddStampCount 623503,+6
+			else
+
+				if Item 18253 == 4
+					KillItem 18253,4
+					SetVisitor +4
+					AddStampCount 623503,+8
+				else
+					if Item 18253 == 5
+						KillItem 18253,5
+						SetVisitor +5
+						AddStampCount 623503,+10
+					else
+						if Item 18253 == 6
+							KillItem 18253,6
+							SetVisitor +6
+							AddStampCount 623503,+12
+						else
+							if Item 18253 == 7
+								KillItem 18253,7
+								SetVisitor +7
+								AddStampCount 623503,+14
+							else 
+								if Item 18253 == 8
+									KillItem 18253,8
+									SetVisitor +8
+									AddStampCount 623503,+16
+								else
+									if Item 18253 == 9
+										KillItem 18253,9
+										SetVisitor +9
+										AddStampCount 623503,+18
+									else
+										if Item 18253 == 10
+											KillItem 18253,10
+											SetVisitor +10
+											AddStampCount 623503,+20
+										else
+	if Item 18253 == 11
+		KillItem 18253,11
+		SetVisitor +11
+		AddStampCount 623503,+22
+	else
+		if Item 18253 == 12
+			KillItem 18253,12
+			SetVisitor +12
+		AddStampCount 623503,+24
+		else
+			if Item 18253 == 13
+				KillItem 18253,13
+				SetVisitor +13
+				AddStampCount 623503,+26
+			else
+				if Item 18253 == 14
+					KillItem 18253,14
+					SetVisitor +14
+					AddStampCount 623503,+28
+				else
+					if Item 18253 == 15
+						KillItem 18253,15
+						SetVisitor +15
+						AddStampCount 623503,+30
+					else
+						if Item 18253 == 16
+							KillItem 18253,16
+							SetVisitor +16
+							AddStampCount 623503,+32
+						else
+							if Item 18253 == 17
+								KillItem 18253,17
+								SetVisitor +17
+								AddStampCount 623503,+34
+							else
+								if Item 18253 == 18
+									KillItem 18253,18
+									SetVisitor +18
+									AddStampCount 623503,+36
+								else
+									if Item 18253 == 19
+										KillItem 18253,19
+										SetVisitor +19
+										AddStampCount 623503,+38
+									else
+										if Item 18253 == 20
+											KillItem 18253,20
+											SetVisitor +20
+											AddStampCount 623503,+40
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+else
+
+##########﹛脐衙及Ⅶ填﹛##########
+if HaveItem == 623504 && HaveItem == 18254
+	if Item 18254 == 1
+		KillItem 18254,1
+		SetVisitor +1
+		AddStampCount 623504,+2
+	else
+		if Item 18254 == 2
+			KillItem 18254,2
+			SetVisitor +2
+			AddStampCount 623504,+4
+		else
+			if Item 18254 == 3
+				KillItem 18254,3
+				SetVisitor +3
+				AddStampCount 623504,+6
+			else
+				if Item 18254 == 4
+					KillItem 18254,4
+					SetVisitor +4
+					AddStampCount 623504,+8
+				else
+					if Item 18254 == 5
+						KillItem 18254,5
+						SetVisitor +5
+						AddStampCount 623504,+10
+					else
+						if Item 18254 == 6
+							KillItem 18254,6
+							SetVisitor +6
+							AddStampCount 623504,+12
+						else
+							if Item 18254 == 7
+								KillItem 18254,7
+								SetVisitor +7
+								AddStampCount 623504,+14
+							else 
+								if Item 18254 == 8
+									KillItem 18254,8
+									SetVisitor +8
+									AddStampCount 623504,+16
+								else
+									if Item 18254 == 9
+										KillItem 18254,9
+										SetVisitor +9
+										AddStampCount 623504,+18
+									else
+										if Item 18254 == 10
+											KillItem 18254,10
+											SetVisitor +10
+											AddStampCount 623504,+20
+										else
+	if Item 18254 == 11
+		KillItem 18254,11
+		SetVisitor +11
+		AddStampCount 623504,+22
+	else
+		if Item 18254 == 12
+			KillItem 18254,12
+			SetVisitor +12
+			AddStampCount 623504,+24
+		else
+			if Item 18254 == 13
+				KillItem 18254,13
+				SetVisitor +13
+				AddStampCount 623504,+26
+			else
+				if Item 18254 == 14
+					KillItem 18254,14
+					SetVisitor +14
+					AddStampCount 623504,+28
+				else
+					if Item 18254 == 15
+						KillItem 18254,15
+						SetVisitor +15
+						AddStampCount 623504,+30
+					else
+						if Item 18254 == 16
+							KillItem 18254,16
+							SetVisitor +16
+							AddStampCount 623504,+32
+						else
+							if Item 18254 == 17
+								KillItem 18254,17
+								SetVisitor +17
+								AddStampCount 623504,+34
+							else
+								if Item 18254 == 18
+									KillItem 18254,18
+									SetVisitor +18
+									AddStampCount 623504,+36
+								else
+									if Item 18254 == 19
+										KillItem 18254,19
+										SetVisitor +19
+										AddStampCount 623504,+38
+									else
+										if Item 18254 == 20
+											KillItem 18254,20
+											SetVisitor +20
+											AddStampCount 623504,+40
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+else
+##########﹛汁民用戊﹛##########
+if HaveItem == 623505 && HaveItem == 18255
+	if Item 18255 == 1
+		KillItem 18255,1
+		SetVisitor +1
+		AddStampCount 623505,+2
+		
+	else
+		if Item 18255 == 2
+			KillItem 18255,2
+			SetVisitor +2
+			AddStampCount 623505,+4
+		else
+			if Item 18255 == 3
+				KillItem 18255,3
+				SetVisitor +3
+				AddStampCount 623505,+6
+			else
+
+				if Item 18255 == 4
+					KillItem 18255,4
+					SetVisitor +4
+					AddStampCount 623505,+8
+				else
+					if Item 18255 == 5
+						KillItem 18255,5
+						SetVisitor +5
+						AddStampCount 623505,+10
+					else
+						if Item 18255 == 6
+							KillItem 18255,6
+							SetVisitor +6
+							AddStampCount 623505,+12
+						else
+							if Item 18255 == 7
+								KillItem 18255,7
+								SetVisitor +7
+								AddStampCount 623505,+14
+							else 
+								if Item 18255 == 8
+									KillItem 18255,8
+									SetVisitor +8
+									AddStampCount 623505,+16
+								else
+									if Item 18255 == 9
+										KillItem 18255,9
+										SetVisitor +9
+										AddStampCount 623505,+18
+									else
+										if Item 18255 == 10
+											KillItem 18255,10
+											SetVisitor +10
+											AddStampCount 623505,+20
+										else
+	if Item 18255 == 11
+		KillItem 18255,11
+		SetVisitor +11
+		AddStampCount 623505,+22
+	else
+		if Item 18255 == 12
+			KillItem 18255,12
+			SetVisitor +12
+			AddStampCount 623505,+24
+		else
+			if Item 18255 == 13
+				KillItem 18255,13
+				SetVisitor +13
+				AddStampCount 623505,+26
+			else
+				if Item 18255 == 14
+					KillItem 18255,14
+					SetVisitor +14
+					AddStampCount 623505,+28
+				else
+					if Item 18255 == 15
+						KillItem 18255,15
+						SetVisitor +15
+						AddStampCount 623505,+30
+					else
+						if Item 18255 == 16
+							KillItem 18255,16
+							SetVisitor +16
+							AddStampCount 623505,+32
+						else
+							if Item 18255 == 17
+								KillItem 18255,17
+								SetVisitor +17
+								AddStampCount 623505,+34
+							else
+								if Item 18255 == 18
+									KillItem 18255,18
+									SetVisitor +18
+									AddStampCount 623505,+36
+								else
+									if Item 18255 == 19
+										KillItem 18255,19
+										SetVisitor +19
+										AddStampCount 623505,+38
+									else
+										if Item 18255 == 20
+											KillItem 18255,20
+											SetVisitor +20
+											AddStampCount 623505,+40
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+else
+	EndWindow 3209913
+
+		#\n\n﹛丢乒卞踏中化丐月笺恔互卅中元扎氏﹝\n﹛暸襟反支户化仁木方
+					endif	##汁民用戊
+				endif	##脐衙及Ⅶ填
+			endif	##＊及?
+		endif	##本伊□生鸡
+	endif	##毡目伙丢永玄
+endif	##恦目伙丢永玄
+	if Visitor >= 30 && Visitor <=49
+	LocalCount1 = Random 7,0
+		if LocalCount1 == 1
+			SetVisitor1000	##敛粟⑹
+			GlobalTimerA = 0
+			EndWindow 3209914
+
+		#\n\n﹛隶嘻互敦岳″″\n﹛敛扲檗毛儅匀化仁木壬中勾匹手掸董允月方﹝
+		else
+		if LocalCount1 == 2
+			SetVisitor2000	##疵粟⑹
+			GlobalTimerA = 0
+			EndWindow 3209915
+
+		#\n\n﹛隶嘻互敦岳″″\n﹛疵扲檗毛儅匀化仁木壬中勾匹手掸董允月方﹝
+		else
+		if LocalCount1 == 3
+			SetVisitor3000	##恦粟⑹
+			GlobalTimerA = 0
+			EndWindow 3209916
+
+		#\n\n﹛隶嘻互敦岳″″\n﹛恦扲檗毛儅匀化仁木壬中勾匹手掸董允月方﹝
+		else
+		if LocalCount1 == 4
+			SetVisitor4000	##毡粟⑹
+			GlobalTimerA = 0
+			EndWindow 3209917
+
+		#\n\n﹛隶嘻互敦岳″″\n﹛毡扲檗毛儅匀化仁木壬中勾匹手掸董允月方﹝
+		else
+		if LocalCount1 == 5
+			SetVisitor5000	##饵粟⑹
+			GlobalTimerA = 0
+			EndWindow 3209918
+
+		#\n\n﹛隶嘻互敦岳″″\n﹛饵扲檗毛儅匀化仁木壬中勾匹手掸董允月方﹝
+		else
+		if LocalCount1 == 6
+			SetVisitor6000	##ヶ粟⑹
+			GlobalTimerA = 0
+			EndWindow 3209919
+
+		#\n\n﹛隶嘻互敦岳″″\n﹛ヶ扲檗毛儅匀化仁木壬中勾匹手掸董允月方﹝
+		else
+		if LocalCount1 == 7
+			SetVisitor7000	##幕粟⑹
+			GlobalTimerA = 0
+			EndWindow 3209920
+
+		#\n\n﹛隶嘻互敦岳″″\n﹛幕扲檗毛儅匀化仁木壬中勾匹手掸董允月方﹝
+
+		endif #LocalCount =7
+		endif #LocalCount =6
+		endif #LocalCount =5
+		endif #LocalCount =4
+		endif #LocalCount =3
+		endif #LocalCount =2
+		endif #LocalCount =1
+		GlobalTimerA = 0
+	endif
+
+	EndWindow 3209921
+
+		#\n\n﹛丐曰互午丹\n﹛今匀公仁银歹六化手日丹方﹝
+		
+Window_no
+	EndWindow 3209922
+
+		#\n\n﹛弗民分卅丑
+endif
+endblock
+
+
+block 
+	SetVisitor0
+	GlobalTimerA = 0
+	EndWindow 3209923
+
+		#\n\n﹛弗民分卅丑

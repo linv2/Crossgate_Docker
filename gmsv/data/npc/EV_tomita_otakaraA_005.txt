@@ -1,0 +1,46 @@
+#扑尼仿它巨永末及显﹋21℅40﹌﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛它奴件玉﹋凝朿盒﹌及摒
+
+###﹛厘霉及褴裤湛﹋631019﹌毛赭儅
+block Item_631019 >= 1
+	Window 3206294,OK
+
+		#\n\n﹛怉卅坁毛儅匀化中月卅﹜云蟆手⑺仅井〝\n﹛升丹支匀化蚝亢勾仃凶及井反襞日氏互﹜\n﹛云蟆卅氏井卞白巧弘及算扲毛欐六月井″\n﹛壅尹丹六欠永″
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59823,80,50
+
+
+
+###﹛旦用□由它件玉﹋631018﹌毛赭儅
+block Item_631018 >= 1
+	Window 3206295,OK
+
+		#\n\n﹛丹歹丐﹜丐曰互午丹﹝立旦玄手厘减太分方﹝\n﹛元扎丐﹜蝈朿手日丹友﹝巨永﹜云斪〝\n﹛丐曰互午丹匀化蜕匀凶元扎卅中井﹝\n﹛阂间卞坁毛友分月卅氏化﹜心匀午手卅中方﹝\n﹛元扎丐友″
+
+		Window_OK Item_631018 >= 1
+			KillItemAll 631018
+			LeaveGroup
+			Warp 0,59823,80,50
+
+		Window_OK
+			EndWindow 3206296
+
+		#\n\n﹛丐木﹜旦用□由它件玉互壅尹凶方﹝\n﹛＿云中﹜井日井匀化氏及井〝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3206297,OK
+
+		#\n\n﹛云中云中﹜鴃澎卞じ匀化仁月卅方﹝\n﹛阂间卞苇尹月井日匀化﹜卅户月氏元扎友尹″\n﹛今匀今午请化仃方永″
+
+		Window_OK
+			LeaveGroup
+			Warp 0,59823,80,50
+
+
+

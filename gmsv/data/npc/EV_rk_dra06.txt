@@ -1,0 +1,19 @@
+#ヶ庤及银中(15540)
+#
+
+
+block Item 18768 != 0
+#\n\n\n\n@c﹛优邰卅日仇及祸藷及筏盛毛芨尹引仄斤丹﹝
+ Window 21279,yes,no
+  Window_yes ItemSpace != 0
+  giveitem 18766,1
+  LeaveGroup
+   Warp 0,1530,15,6
+############# 失奶泛丞域ベ ##############
+  Window_yes
+         Endwindow 10000
+  Window_no
+
+block
+Window 21309,next
+ Endwindow 21235

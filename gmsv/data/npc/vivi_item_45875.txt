@@ -1,0 +1,5 @@
+#####3.0包装赠送品 乐园之卵####
+block Item 45875 >= 1
+	 KillItem 45875
+	 GiveLeak1Item (45874%1$1)
+	 CheckTitle 

@@ -1,0 +1,29 @@
+#????????
+
+block Item 16417 >= 1 || Item 16416 >= 1
+	EndWindow 22894,OK
+
+block Item 16415 >= 1
+	EndWindow 22851,OK
+
+block
+	Window 22847,Yes,No
+		Window_No
+			EndWindow 22848,OK
+		Window_Yes
+			Window 22849,Yes,No
+				Window_No
+					EndWindow 22850,OK
+				Window_Yes Gold < 100
+					EndWindow 10005,OK
+				Window_Yes ItemSpace == 0
+					EndWindow 10000,OK
+				Window_Yes
+					Window 22851,OK
+						Window_OK Gold < 100
+							EndWindow 10005,OK
+						Window_OK ItemSpace == 0
+							EndWindow 10000,OK
+						Window_OK
+							AddGold -100
+							GiveItem 16415,1

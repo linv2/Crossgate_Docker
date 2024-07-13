@@ -1,0 +1,111 @@
+#唬泞﹛斥亦扑亘及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+
+block globalFlag36 == 1 && globalFlag10 == 1
+
+
+
+			window 3202522,next
+
+		#\n\n﹛丐丐﹜升丹手﹝\n﹛云夫今仄少曰匹允﹝\n﹛锹庍歹日内℅\n﹛白奴□伙玉伐□弁酦匹允方﹝
+
+			window 3202523,next
+
+		#\n\n﹛尹〝卅氏匹允井\n﹛月月中尹〝今氏〝\n﹛今丑﹜妏中凶仪拑中匹允仃升＿＿
+
+			endwindow 3202524
+
+		#\n\n﹛汁央□伙ヲ衔及云襞曰宁中〝卅氏匹允井〝\n﹛允心引六氏﹜台反昍摹丐曰引六氏友之﹝
+
+block globalFlag10 == 1
+
+#\n\n﹛＿＿’’丰角竣鞲\n﹛侅仁卅匀凶日仄中午妏五引仄凶﹝\n﹛云竣及匚匹З谻卞反中尹引六氏＿＿
+
+
+	EndWindow 3006586,OK
+
+block Item 14664 >= 1 && Item 14665 >= 1
+
+#\n\n﹛’’丰些峞９咫胪咫磥牏楔缣\n﹛允中引六氏﹜廿仁反中匀勾手\n﹛它民及З谻及云手曰匹侄仄仁化
+
+	window 3006590,next
+
+	EndWindow 3006592,OK
+
+
+
+block Item 14664 >= 1
+
+#\n\n﹛尹〝骭颬及裔引曰〝\n﹛引丑﹜骭颬手祭檗及’’エ驮咫憿纂
+
+
+
+
+
+	window 3006512,next
+
+
+#\n\n﹛＿＿丹℅氏﹜仇’狤秅弮磥甚瓣④中牏驮矷\n﹛卅氏匹仄斤丹〝冞卞反切斤匀午＿＿\n﹛汁央□’峇吨斢礞’鞲舅膉吨中エ楔蝷忖哄
+
+
+	window 3006513,next
+
+
+
+
+	EndWindow 3006514,OK
+
+
+
+
+
+
+block 
+
+#\n\n﹛升丹手﹜\n﹛汁央□’峇彖齞磥峊艇蟡极憟═エ饱\n﹛＿＿公及引氏引及抩蟆分﹜卅氏化\n﹛合匀化卅中匹允方友〝
+
+
+
+
+
+
+
+	window 3002028,next
+
+
+#\n\n﹛仇及唬泞及章愤虫反﹜衙医﹜\n﹛恳割卞反白央□皮’砟\n﹛裟壬’④中县銴忖エ驮矷
+
+
+
+
+
+	window 3002029,next
+
+#\n\n﹛白央□’鬎’韪弮鬌啎?楔\n﹛迋★卅崭及谛互邠’’n﹛卅井卅井崭端缙阰井卅章分匀凶日仄中及匹允﹝
+
+
+	window 3002030,next
+
+#\n\n﹛＿＿公及酦卞反﹜唱崭升仇牙暧反卅仁﹜\n﹛蝈仁及唱壑钗井日及烟谛手﹜厘尴中凶午井＿＿
+
+
+
+
+	window 3002031,next
+
+
+#\n\n﹛反反反﹜仇仇反峸檗卞詨匹尥仃箫今’\n﹛云午亢狪及朿坌匹仄斤丹友﹝\n﹛螃午裟壬’’蛹艉活═酗怹仇忖佫汹’缣\n﹛公及彶曰及鳗噩互庍祭仄凶手及午合’’牏饱
+
+
+
+
+
+
+	EndWindow 3002032,OK
+
+
+
+

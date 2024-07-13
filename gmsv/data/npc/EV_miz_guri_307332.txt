@@ -1,0 +1,102 @@
+#◊Øıª∫Îÿ¯∞◊«…º˛èÙø≠€Õæﬁµ©–˛°∞ùñ¡±«∑
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©x¨üø·¥≠ÿÍ±Ã–ƒ©x##############
+block Item 18954 >= 1 && Itemcreatetime 18954 >= 120
+
+	Window 206904,OK
+	Window_OK Itemspace >= 1
+	endevent83 = 0
+	nowevent84 = 0
+	endevent84 = 0
+	GiveItem 18955
+	KillItem 18954,1,(206956)
+	playse 8,200,0
+	Warp 0,46005,137,151
+	Window_OK Itemspace == 0
+	EndWindow 206905,OK
+
+###########©x¨üø·¥≠ÿÍ±Ã–ƒ©x##############
+block Item 18954 >= 1 && Itemcreatetime 18954 <= 119
+
+	EndWindow 206902,OK
+
+###########©x¨üø·¥≠ÿÍ±Ã–ƒ©x##############
+block nowevent84 == 1
+
+	EndWindow 206901,OK
+
+###########©xñzŒ¿Â√¨ü√Q‘ª©x##############
+block Item 18953 >= 1
+
+	Window 206897,YES,NO
+	Window_YES endevent83 == 1 && endevent84 == 1 && Itemspace == 0
+	EndWindow 206900,OK
+	Window_YES endevent83 == 1 && endevent84 == 1
+	playse 168,1,1
+	Window 206899,OK
+	Window_OK Itemspace >= 1
+	nowevent84 = 1
+	nowevent83 = 0
+	Killitem 18953,1,(206954)
+	GiveItem 18954
+	Window_OK Itemspace == 0
+	EndWindow 206900,OK
+	Window_YES
+	playse 168,1,1
+	Window 206898,OK
+	Window_OK
+	nowevent84 = 1
+	Killitem 18953,1,(206954)
+	Window_NO
+
+###########©x¨üø·¥≠ÿÍ±Ã–ƒ©x##############
+block Item 18952 >= 1 && Itemcreatetime 18952 >= 120
+
+	EndWindow 206896,OK
+
+###########©x¨üø·¥≠ÿÍ±Ã–ƒ©x##############
+block Item 18952 >= 1 && Itemcreatetime 18952 >= 119
+
+	EndWindow 206895,OK
+
+###########©x¨üø·¥≠ÿÍ±Ã–ƒ©x##############
+block endevent81 == 1
+
+	EndWindow 206894,OK
+
+###########©xñzŒ¿Â√¨ü√Q‘ª©x##############
+block Item 18951 >= 1 && endevent80 == 1
+
+	Window 206889,NEXT
+	Window 206890,YES,NO
+	Window_YES nowevent81 == 1 && nowevent82 == 1 && Itemspace == 0
+	EndWindow 206893,OK
+	Window_YES nowevent81 == 1 && nowevent82 == 1
+	playse 273,1,1
+	Window 206892,OK
+	Window_OK Itemspace >= 1
+	endevent81 = 1
+	endevent80 = 0
+	Killitem 18951,1,(206953)
+	GiveItem 18952
+	Window_OK Itemspace == 0
+	EndWindow 206893
+	Window_YES
+	playse 273,1,1
+	Window 206891,OK
+	Window_OK
+	endevent81 = 1
+	Killitem 18951,1,(206953)
+	Window_NO
+
+###########©xñzŒ¿Â√¨ü√Q‘ª©x##############
+block Item 18951 >= 1 && endevent80 == 0
+
+	EndWindow 206888,OK
+
+###########©x÷œ ÷ÿ¶ÿ∆©x##############
+block 
+
+	EndWindow 206887,OK

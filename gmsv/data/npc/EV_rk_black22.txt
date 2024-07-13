@@ -1,0 +1,21 @@
+#ØøÈÎÄáØøËüµ©
+
+block
+	ChangePal 2,600
+	Window 22949,Next
+	Window 22950,Next
+	Window 22951,Next
+	Window 22952,Next
+	Window 22953,Next
+	Window 15323,Next
+	Window 15324,Next
+	Window 22980,Next
+	Window 22981,Next
+	Window 22982,Next
+	Window 22983,OK
+		Window_OK
+			Play_SE 291,320,240
+			SystemMessage 4418
+			SystemMessage 4419
+			LeaveGroup
+			Warp 0,58001,37,38

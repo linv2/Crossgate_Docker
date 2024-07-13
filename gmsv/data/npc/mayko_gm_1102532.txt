@@ -1,0 +1,32 @@
+#面包师	1102532	
+#30110	55	32	
+#mayko_gm_1102532.txt
+
+#1110367	\n\n\n　　　　面包蓝坏光了！\n　　　　可否麻烦你到食品店帮我跟琦琦定货。	1
+#1110368	\n\n\n\n@c麻烦你了～	1
+#1110369	\n\n\n\n@c那就算了～	1
+#1110370	\n\n\n\n@c原来找藤篮师做也可以呀！	1
+#1110371	\n\n\n\n@c不过我没空找篮子材料，还是跟琦琦订好了。	1
+
+#琦琦的信	41019
+#给琦琦的信	41027
+
+block EndEvent 163 == 1	 
+	 Window 1110370,NEXT
+	 EndWindow 1110371
+block Item 41019>0
+	 Window 1110370,NEXT
+	 EndWindow 1110371
+block Item 41027>0
+	 EndWindow 1110368
+block
+	 Window 1110367,YES,NO
+	 
+	 Window_YES ItemSpace == 0
+	 EndWindow 1110369
+	 Window_YES 
+	 GiveLeak1Item 41027,1
+	 EndWindow 1110368
+	 Window_NO
+	 EndWindow 1110369
+	 

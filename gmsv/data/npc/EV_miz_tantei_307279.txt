@@ -1,0 +1,33 @@
+#ºÎ”£€Õæﬁµ©–˛°∞∞≠
+#¿ÂäqŸØ©yƒ˝äqŸØº∞‡ºéê∑¥ÿ¶÷–
+#'_'∑¥€Ã–ƒ?»…ÿ∆
+
+###########©x£æ–ƒ‘¬£Ω©x##############
+block strcmpchat == 206720
+
+	EndWindow 206607,OK
+
+###########©x£æ–◊–◊» £Ω©x##############
+block strcmpchat == 206723
+	playse 143,1,1
+	EndWindow 206608,OK
+
+###########©x£æªØ±ÂŒÁ‘¬£Ω©x##############
+block Item 18894 != 0 && block strcmpchat == 206724
+
+	EndWindow 206606,OK
+
+block Item 18894 == 0 && strcmpchat == 206724
+
+	Window 206609,OK
+	Window_OK Itemspace >= 1
+	leavegroup
+	GiveItem 18894
+	Window_OK Itemspace == 0
+	EndWindow 206431,OK
+
+###########©x÷œ ÷ÿ¶ÿ∆©x##############
+block 
+
+	EndWindow 206606,OK
+

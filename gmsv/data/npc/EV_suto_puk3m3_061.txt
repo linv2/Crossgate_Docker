@@ -1,0 +1,135 @@
+#PUK3_main3
+#
+#
+#交伙弘
+
+
+
+Block LocalFlag1 == 1 && item_621015 >= 1
+
+		Window 3219888,Next
+
+		#\n\n﹛中欠中欠斨珌毛井仃凶方丹分﹝
+		
+		Window 3219889,Next
+
+		#\n\n﹛凛及锉互鞅引曰﹜\n﹛台凶切及熔手钒旵今木月﹝
+		
+		Window 3219890,Next
+
+		#\n\n﹛＿＿楝卞鳗尹凶中仇午互丐月﹝
+		
+		Window 3219891,Next
+
+		#\n\n﹛石泛永皿反韶卅卅中﹝\n﹛丐木反抰匹反卅中﹝\n﹛中支﹜石泛永皿分仃匹反卅中﹝\n﹛仇及壑钗反橘卞谎歹木化中月﹝
+		
+		Window 3219892,Next
+
+		#\n\n﹛楝卞壑钗毛赁匀化手日中凶中﹝\n﹛拑咥卅凑中分午蜕丹及反噩襞仄化中月﹝
+		
+		Window 3219893,Next
+
+		#\n\n﹛扪抰毛濠曰钒中凶燮﹜\n﹛楝反窒毛苇勾仃月及分欠丹井＿＿﹝\n﹛楝卞反恍侳互丐月﹝\n﹛公仇匹反赁日友壬卅日厄手及互\n﹛凶仁今氏丐月﹝
+		
+		Window 3219894,Next
+
+		#\n\n﹛呿癫及雄今﹜恘反﹜\n﹛凶分濠曰钒仁分仃匹反卅中﹝\n﹛觐尹オ氏匹﹜\n﹛赁月手及卞仇公呿癫及雄今互丐月氏分﹝
+		
+		Window 3219895,Next
+
+		#\n\n﹛楝卞反公及恘互丐月﹝\n﹛凶及氏分冗﹝
+		
+		Window 3219896,Next
+
+		#\n\n﹛丹戈〝\n﹛玄伙泛亘及筏盛井＿＿﹝\n﹛公木反﹜＞台凶切＝及愈詨及瑞弅＿＿﹝\n﹛仇仇引匹儅匀化五化仁木凶及井﹝
+		
+		Window 3219897,Next
+
+		#\n\n﹛丐曰互午丹＿＿﹝\n﹛熬仃潸日六化手日丹方﹝
+		
+		window 3219898,Next
+
+		#\n\n﹛楝卞仇木毛欐公丹﹝\n﹛六户化手及辋中午﹜普桨及竣儅切分＿＿﹝
+		
+		Window 3219899,OK
+
+		#\n\n﹛引凶升仇井匹莘云丹＿＿﹝
+
+
+			Window_OK item_621015 == 0
+			
+						EndWindow 3219900
+
+		#\n\n﹛丹戈〝筏盛互拑中方丹分卅﹝
+		
+		
+			Window_OK itemSpace >= 1
+			
+						
+						killitem 621015,1
+						giveitem 621029,1
+						endevent208 = 1
+						checktitle
+						
+						Leavegroup
+						
+						warp 0,59536,41,28
+						
+			Window_OK
+			
+				EndWindow 3219901
+
+		#\n\n﹛丹戈〝儅化卅中方丹分卅﹝
+			
+
+Block LocalFlag1 == 1
+
+		Window 3219902,Next
+
+		#\n\n﹛中欠中欠斨珌毛井仃凶方丹分﹝
+		
+		Window 3219903,Next
+
+		#\n\n﹛凛及锉互鞅引曰﹜\n﹛台凶切及熔手钒旵今木月﹝
+		
+		Window 3219904,Next
+
+		#\n\n﹛＿＿楝卞鳗尹凶中仇午互丐月﹝
+		
+		Window 3219905,Next
+
+		#\n\n﹛石泛永皿反韶卅卅中﹝\n﹛丐木反抰匹反卅中﹝\n﹛中支﹜石泛永皿分仃匹反卅中﹝\n﹛仇及壑钗反橘卞谎歹木化中月﹝
+		
+		Window 3219906,Next
+
+		#\n\n﹛楝卞壑钗毛赁匀化手日中凶中﹝\n﹛拑咥卅凑中分午蜕丹及反噩襞仄化中月﹝
+		
+		Window 3219907,Next
+
+		#\n\n﹛扪抰毛濠曰钒中凶燮﹜\n﹛楝反窒毛苇勾仃月及分欠丹井＿＿﹝\n﹛楝卞反恍侳互丐月﹝\n﹛公仇匹反赁日友壬卅日厄手及互\n﹛凶仁今氏丐月﹝
+		
+		Window 3219908,Next
+
+		#\n\n﹛呿癫及雄今﹜恘反﹜\n﹛凶分濠曰钒仁分仃匹反卅中﹝\n﹛觐尹オ氏匹﹜\n﹛赁月手及卞仇公呿癫及雄今互丐月氏分﹝
+		
+		Window 3219909,OK
+
+		#\n\n﹛楝卞反公及恘互丐月﹝\n﹛凶及氏分冗﹝
+		
+			Window_OK
+				
+						endevent208 = 1
+						checktitle
+						
+						Leavegroup
+						
+						warp 0,59536,41,28
+						
+
+Block
+
+	EndWindow 3219910
+
+		#\n\n﹛＿＿允引卅中卅＿＿﹝
+			
+

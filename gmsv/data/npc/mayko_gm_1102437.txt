@@ -1,0 +1,20 @@
+#明菜	0	1102437
+#32284	12	11
+
+#1109794	\n\n\n　　　本酒吧供应红酒与啤酒，\n　　　我负责供应红酒，一杯100G，\n　　　您想点红酒吗？？	1	
+#1109795	\n\n\n\n@c你的钱不够！	1	
+#1109796	\n\n\n\n@c请慢慢品尝！	1	
+#1054683	\n\n\n\n@c那就算了！	1
+block 
+	 Window 1109794,YES,NO
+	 Window_YES Gold <100
+	 EndWindow 1109795
+	 Window_YES ItemSpace < 1 
+		##物品栏已满
+      	 EndWindow 1100001	 
+      	 Window_YES
+      	 AddGold -100
+      	 GiveLeak1Item 40316,1	
+      	 EndWindow 1109796	 
+      	 Window_NO
+      	 EndWindow 1054683

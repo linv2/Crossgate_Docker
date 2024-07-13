@@ -1,0 +1,17 @@
+#渔家女知音	0	1102633	0	1	1	0	30011	57	56
+
+#mayko_gm_1102633.txt
+#10168	\n谢谢惠顾，欢迎下次再来。	8
+block 	
+	Window 1110705,yes,no #	1110705	你要买尼维尔海村的海鲜吗？海带%卷贝一份500G
+	Window_yes  gold >499 && itemspace>2 
+	GiveLeak1Item 11211
+	GiveLeak1Item 11213,1
+	AddGold -500
+	endblock
+	Window_yes gold<500
+	endwindow 15672
+	Window_yes
+	endwindow 11502
+	Window_no
+	endwindow 10168

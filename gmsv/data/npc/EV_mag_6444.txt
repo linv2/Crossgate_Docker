@@ -1,0 +1,132 @@
+#穴件扑亦件﹋凝﹌
+########## 灭沶椭瘀毛坢凶仄化中卅中桦宁 ##########
+block JobRank == 0
+	#\n\n﹛酸ゴ卅互日褥葭及仄匀井曰仄凶杅卞仄井云躯仄仄化云曰引六氏﹝手丹剂仄耨迕及嘻仃月缜仅仿件弁卞卅曰引仄凶日云中匹仁分今中﹝
+	EndWindow 14842,OK
+
+########## 穴件扑亦件恍灭沶及桦宁﹋蕙筋灭沶﹌ ##########
+block HouseId == 0
+	#\n\n﹛仇仇匹反＞皿民本扔立＝及铙躯灭沶毛熬仃尥仃化中引允﹝铙躯恔反14ざ棉匹500G及蟆囮中午卅匀化云曰引允﹝云欧曰卞卅日木引允井〝
+	Window 14843,YES,NO
+
+	#----- 赭儅嗯互箫曰卅中桦宁 -----
+	Window_YES Gold < 500
+		#\n\n﹛酸ゴ卅互日赭儅嗯互箫曰引六氏﹝
+		EndWindow 14844,OK
+
+	#----- 灭沶允月桦宁 -----#
+	Window_YES
+		#ㄤㄟㄟ晚蛹日允
+		AddGold -500
+		#穴件扑亦件﹋凝﹌ㄠㄣざ坌必永玄
+		SetHouse 1,14
+		#\n\n﹛灭沶岳峏仄引仄凶﹝
+		EndWindow 14845,OK
+
+	#----- 灭沶仄卅中桦宁 -----#
+	Window_NO
+		#\n\n﹛引凶及云旋仄毛云谨切仄化云曰引允﹝
+		EndWindow 14846,OK
+
+########## 灭沶濠木匹⑺元穴件扑亦件及桦宁﹋灭沶凳蕙﹌ ##########
+block HouseId == 1 && HouseLimit <= 0
+	#\n\n﹛仇仇匹反＞皿民本扔立＝及铙躯灭沶毛熬仃尥仃化中引允﹝铙躯恔反14ざ棉匹500G及蟆囮中午卅匀化云曰引允﹝云欧曰卞卅日木引允井〝
+	Window 14847,YES,NO
+
+	#----- 赭儅嗯互箫曰卅中桦宁 -----
+	Window_YES Gold < 500
+		#\n\n﹛酸ゴ卅互日赭儅嗯互箫曰引六氏﹝
+		EndWindow 14844,OK
+
+	#----- 灭沶凳蕙允月桦宁 -----#
+	Window_YES
+		#ㄤㄟㄟ晚蛹日允
+		AddGold -500
+		#14ざ本永玄
+		SetHouseLimit 14
+		#\n\n﹛灭沶岳峏仄引仄凶﹝
+		EndWindow 14848,OK
+
+	#----- 灭沶凳蕙仄卅中桦宁 -----#
+	Window_NO
+		#\n\n﹛引凶及云旋仄毛云谨切仄化云曰引允﹝
+		EndWindow 14846,OK
+
+########## 灭沶濠木匹帎及穴件扑亦件及桦宁﹋蕙筋灭沶﹌ ##########
+block HouseId != 1 && HouseLimit <= 0
+	#\n\n﹛仇仇匹反＞皿民本扔立＝及铙躯灭沶毛熬仃尥仃化中引允﹝铙躯恔反14ざ棉匹500G及蟆囮中午卅匀化云曰引允﹝云欧曰卞卅日木引允井〝
+	Window 14849,YES,NO
+
+	#----- 云嗯互箫曰卅中桦宁 -----#
+	Window_YES Gold < 500
+		#\n\n﹛酸ゴ卅互日赭儅嗯互箫曰引六氏﹝
+		EndWindow 14844,OK
+
+	#----- 灭沶允月桦宁 -----#
+	Window_YES
+		#ㄤㄟㄟ晚蛹日允
+		AddGold -500
+		#穴件扑亦件﹋凝﹌ㄠㄣざ坌必永玄
+		SetHouse 1,14
+		#\n\n﹛灭沶岳峏仄引仄凶﹝
+		EndWindow 14848,OK
+
+	#----- 灭沶仄卅中桦宁 -----#
+	Window_NO
+		#\n\n﹛引凶及云旋仄毛云谨切仄化云曰引允﹝
+		EndWindow 14846,OK
+
+########## 灭沶酦匹⑺元穴件扑亦件及桦宁﹋灭沶凳蕙﹌ ##########
+block HouseId == 1 && HouseLimit > 0 && HouseLimit <= 6048000
+	#\n\n﹛蜇箕欧曰化中月＞皿民本扔立＝及酸曰灭沶渝棉反@h匹允﹝500G匹14ざ棉灭沶渝棉毛曹赢匹五引允﹝曹赢卅今中引允井〝
+	Window 14850,YES,NO
+
+	#----- 云嗯互箫曰卅中桦宁 -----#
+	Window_YES Gold < 500
+		#\n\n﹛酸ゴ卅互日赭儅嗯互箫曰引六氏﹝
+		EndWindow 14844,OK
+
+	#----- 灭沶凳蕙允月桦宁 -----#
+	Window_YES
+		#ㄤㄟㄟ晚蛹日允
+		AddGold -500
+		#14ざ馨笛
+		SetHouseLimit +14
+		#\n\n﹛灭沶岳峏仄引仄凶﹝
+		EndWindow 14851,OK
+
+	#----- 灭沶凳蕙仄卅中桦宁 -----#
+	Window_NO
+		#\n\n﹛引凶及云旋仄毛云谨切仄化云曰引允﹝
+		EndWindow 14852,OK
+
+########## 灭沶酦匹⑺元穴件扑亦件匹灭沶渝蜃中匀天中及桦宁 ##########
+block HouseId == 1 && HouseLimit > 6048000
+	#\n\n﹛蜇箕欧曰化中月＞皿民本扔立＝及灭沶渝棉反@h匹允﹝仇木反白央□伊件毕崭芊挓匹カ第今木化中月愈厘渝棉卞琼仄化中引允﹝渝棉曹赢灭沶反灭沶渝棉互70ざ恍坢卞卅匀化井日云旋仄仁分今中﹝
+	EndWindow 14853,OK
+
+########## 灭沶酦匹帎及穴件扑亦件及桦宁﹋娄旋仄﹌ ##########
+block HouseId != 1 && HouseLimit > 0
+	#\n﹛蜇箕丐卅凶反帎及睛坁匹铙躯灭沶毛今木化云曰﹜公切日及酸曰灭沶渝棉互@h午卅匀化云曰引允﹝仇仇匹反﹜蜇箕及灭沶毛荸沶仄﹜蕙凶卞＞皿民本扔立＝及蕙筋灭沶毛锳少仇午互匹五引允﹝铙躯恔反14ざ棉匹500G及蟆囮中午卅匀化云曰引允﹝仇仇匹＞皿民本扔立＝午及蕙筋灭沶毛卅今中引允午﹜漆云欧曰卞卅匀化中月帎及蝠蛛及灭沶反愤⑹读卞荸沶今木化仄引中引允﹝云欧曰卞卅日木引允井〝
+	Window 14854,YES,NO
+
+	#----- 云嗯互箫曰卅中桦宁 -----#
+	Window_YES Gold < 500
+		#\n\n﹛酸ゴ卅互日赭儅嗯互箫曰引六氏﹝
+		EndWindow 14844,OK
+
+	#----- 灭沶凳蕙允月桦宁 -----#
+	Window_YES
+		#ㄤㄟㄟ晚蛹日允
+		AddGold -500
+		#穴件扑亦件﹋凝﹌ㄠㄣざ坌必永玄
+		SetHouse 1,14
+		#\n\n﹛灭沶岳峏仄引仄凶﹝
+		EndWindow 14855,OK
+
+	#----- 灭沶凳蕙仄卅中桦宁 -----#
+	Window_NO
+		#\n\n﹛引凶及云旋仄毛云谨切仄化云曰引允﹝
+		EndWindow 14856,OK
+
+

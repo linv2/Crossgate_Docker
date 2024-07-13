@@ -1,0 +1,29 @@
+#¼ëÓ£ÛÍ¾Þµ©Ðþ¡°°×·Â¼þÛÍØø¼þ(1)
+#ÀåŠqÙ¯©yÄýŠqÙ¯¼°à¼Ž·´Ø¦ÖÐ
+#'_'·´ÛÌÐÄ?ÈÉØÆ
+
+###########©xÆZ–f©x¶Ö½÷ÇÁØ¤Ô»©x£¾ÛÍ»ï¡õÊõ...£½©x##############
+block nowtime == 2 && Item 18891 >= 1 && strcmpchat == 206739
+
+	Window 206252,OK
+	Window_OK group == 1
+	KillItem 18891
+	Warp 0,33254,10,5
+	Window_OK group >= 2
+	EndWindow 206613,OK
+
+
+###########©xÆZ–f©x¶Ö½÷ÇÁØ¤Ô»©x##############
+block nowtime == 2 && Item 18891 >= 1
+
+	EndWindow 206251,OK
+
+###########©xÆZ–f¶¯Â½©x¶Ö½÷ÇÁØ¤Ô»©x##############
+block nowtime != 2 && Item 18891 >= 1
+
+	EndWindow 206250,OK
+
+###########©x©x##############
+block 
+
+	EndWindow 206249,OK

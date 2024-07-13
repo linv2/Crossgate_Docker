@@ -1,0 +1,22 @@
+#mayko_gm_1102779.txt 朝日往亚纪
+
+block globalFlag 490 == 1
+#1111783	\n\n\n　　　　你想去亚纪城吗，\n　　　传送费是２０００。	1
+
+	Window 1111912,yes,no
+	Window_yes gold <2000
+	#3	\n\n很抱歉，你的钱不够了。	12
+	endwindow 3
+	Window_yes
+	addgold -2000
+	leavegroup 
+	warp 0,31997,11,8
+	endblock
+	Window_no
+	endblock
+
+block  
+	globalFlag 490 = 1
+	#1111775	\n\n\n　　　　欢迎来到朝日村，\n　　　　现在您可以使用通往亚纪城的传送石了。	1
+	endwindow 1111909
+

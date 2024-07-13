@@ -1,0 +1,20 @@
+#	mayko_gm_1102684.txt	菟丝(打斗后)
+block itemspace >1	 
+
+ 
+#1111430	\n\n\n　　　　为什么～\n　　　　我不甘心～\n　　　　我不甘心那～～～～
+	 Window 1111430,ok
+	 Window_ok
+	 LeaveGroup
+	 #此区为奖品
+	 GiveLeak0Item (47713%300$1,47761%200$1,47761%48$5,211%1$1,41162%1$1)
+	 warp 0,32181,96,104
+	 endblock
+block
+	 endwindow 13115
+	 
+
+#圣杯之枪	212
+#那须与一	41162
+#女神苹果47761
+#宝石袋47713

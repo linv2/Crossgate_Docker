@@ -1,0 +1,101 @@
+#
+#霁诘
+#
+
+#雇撮吨谨痹毛儅匀化中月卅日
+block Item 16272 >= 1 || Item 16273 >= 1
+	Endwindow 21876
+
+#苹卅日
+block nowtime == 0
+			Endwindow 21818
+
+#域ざ烦聊仄化中卅中卅日
+block Item 16242 == 1 && ItemCreateTime 16242 <= 1439
+			Endwindow 21851
+
+#霁诘及抩铜市它件玄互100动晓卅日卅日
+block Item 16242 == 1 && StampCount 16242 >= 100
+	Endwindow 21876
+
+#霁诘及抩铜市它件玄互99卅日
+block Item 16242 == 1 && StampCount 16242 == 99
+			AddStampCount 16242
+			Endwindow 22290
+
+##﹛霁诘及抩铜市它件玄互29卅日
+block Item 16242 == 1 && StampCount 16242 == 29
+			AddStampCount 16242
+			Endwindow 21865
+
+##﹛霁诘及抩铜市它件玄互16卅日
+block Item 16242 == 1 && StampCount 16242 == 16
+			AddStampCount 16242
+			Endwindow 21963
+
+##﹛霁诘及抩铜市它件玄互6卅日
+block Item 16242 == 1 && StampCount 16242 == 6
+			AddStampCount 16242
+			Endwindow 21864
+
+##﹛霁诘及抩铜市它件玄互ㄣ动晓卅日
+block Item 16242 == 1 && StampCount 16242 >= 4
+			AddStampCount 16242
+			Endwindow 21853
+##﹛霁诘及抩铜市它件玄互ㄢ卅日
+block Item 16242 == 1 && StampCount 16242 == 3
+			Endwindow 21852
+
+#弁奶□件皮伊旦互丐匀化Item 16242 == 1 && StampCount 16242 == 2
+block Item 18970 >= 1 && Item 16242 == 1 && StampCount 16242 == 2
+	Window 21772,Yes
+		Window_Yes
+			Window 21773,OK
+
+				Window_OK
+					KillItem 18970
+					AddStampCount 16242
+					LeaveGroup
+					Warp 0,1165,19,38
+
+##﹛Item 16242 == 1 && StampCount 16242 == 2
+block Item 16242 == 1 && StampCount 16242 == 2
+	Window 21770,Next
+	EndWindow 21771
+
+#Item 16242 == 1 && StampCount 16242 == 1
+block Item 16242 == 1 && StampCount 16242 == 1
+	Window 21764,Next
+	Window 21765,Next
+	Window 21766,Next
+	Window 21767,Next
+	Play_SE 75,320,240
+	Window 21768,Next
+	Window 21769,OK
+		Window_OK
+			AddStampCount 16242
+			LeaveGroup
+			Warp 0,2431,5,28
+
+
+##﹛霁诘及抩铜毛儅匀化中卅中卅日
+block
+	Window 21758,Next
+	Window 21759,Yes,No
+		Window_No
+			Window 21760,Next
+			Endwindow 21761
+		Window_Yes Gold <= 40
+			Endwindow 10005
+		Window_Yes
+			AddGold -40
+			Window 21761,Next
+			Window 21762,Next
+			Window 21763,OK
+				Window_OK ItemSpace == 0
+					Endwindow 10000
+				Window_OK
+					GiveItem 16242
+					AddStampCount 16242
+					LeaveGroup
+					Warp 0,1165,19,38

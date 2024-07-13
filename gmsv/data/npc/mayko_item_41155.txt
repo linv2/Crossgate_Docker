@@ -1,0 +1,4183 @@
+block Item  41155 >0 && Item 600016 >0  ##  刚毅  
+	 Window 1110776,YES,NO
+	 Window_YES Item 41155 >= 1 && Item 600016 >= 2
+	 EndWindow   1055116
+	 Window_YES Item 41155 >= 1 && Item 600016 ==1
+	 SetDur  600016, +1
+	 KillItem  41155,1
+	 EndWindow 1054281
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理刚毅吗？    
+block Item  41155 >0 && Item 600015 >0  ##  弯勾剑  
+	 Window 1110777,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item 600015 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600015 == 1
+	 SetDur  600015, +1  
+	 KillItem  41155,1 
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理弯勾剑吗？    
+block Item  41155 >0 && Item 600002 >0  ##  黑作太刀  
+	 Window 1110778,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600002 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600002 == 1
+	 SetDur  600002, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理黑作太刀吗？    
+block Item  41155 >0 && Item 202 >0  ##  草薙剑  
+	 Window 1110779,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 202 >= 2
+	 EndWindow   1055116 
+	 Window_YES Item 41155 >= 1 && Item 202 == 1
+	 SetDur  202, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理草薙剑吗？    
+block Item  41155 >0 && Item 200 >0  ##  水龙之剑  
+	 Window 1110780,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 200 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 200 == 1
+	 SetDur  200, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之剑吗？    
+block Item  41155 >0 && Item 97 >0  ##  曲刀  
+	 Window 1110781,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 97 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 97 == 1
+	 SetDur  97, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理曲刀吗？    
+block Item  41155 >0 && Item 94 >0  ##  青龙刀  
+	 Window 1110782,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 94 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 94 == 1
+	 SetDur  94, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理青龙刀吗？    
+block Item  41155 >0 && Item 88 >0  ##  细刃重剑  
+	 Window 1110783,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 88 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 88 == 1
+	 SetDur  88, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理细刃重剑吗？    
+block Item  41155 >0 && Item 87 >0  ##  钢硬巨剑  
+	 Window 1110784,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 87 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 87 == 1
+	 SetDur  87, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钢硬巨剑吗？    
+block Item  41155 >0 && Item 77 >0  ##  细柄短剑  
+	 Window 1110785,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 77 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 77 == 1
+	 SetDur  77, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理细柄短剑吗？    
+block Item  41155 >0 && Item 73 >0  ##  长军刀+  
+	 Window 1110786,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 73 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 73 == 1
+	 SetDur  73, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长军刀+吗？    
+block Item  41155 >0 && Item 70 >0  ##  护身短剑  
+	 Window 1110787,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 70 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 70 == 1
+	 SetDur  70, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理护身短剑吗？    
+block Item  41155 >0 && Item 67 >0  ##  巨剑  
+	 Window 1110788,YES,NO
+	 Window_YES Item 41155 >= 1 && Item 67 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 67 == 1
+	 SetDur  67, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理巨剑吗？    
+block Item  41155 >0 && Item 63 >0  ##  长军刀  
+	 Window 1110789,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 63 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 63 == 1
+	 SetDur  63, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长军刀吗？    
+block Item  41155 >0 && Item 57 >0  ##  双刃阔剑  
+	 Window 1110790,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 57 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 57 == 1
+	 SetDur  57, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理双刃阔剑吗？    
+block Item  41155 >0 && Item 56 >0  ##  猪牙剑  
+	 Window 1110791,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 56 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 56 == 1
+	 SetDur  56, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理猪牙剑吗？    
+block Item  41155 >0 && Item 48 >0  ##  长锷剑  
+	 Window 1110792,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 48 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 48 == 1
+	 SetDur  48, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长锷剑吗？    
+block Item  41155 >0 && Item 42 >0  ##  格斗剑  
+	 Window 1110793,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 42 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 42 == 1
+	 SetDur  42, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理格斗剑吗？    
+block Item  41155 >0 && Item 39 >0  ##  锁刃剑  
+	 Window 1110794,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 39 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 39 == 1
+	 SetDur  39, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理锁刃剑吗？    
+block Item  41155 >0 && Item 37 >0  ##  双刃长剑  
+	 Window 1110795,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 37 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 37 == 1
+	 SetDur  37, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理双刃长剑吗？    
+block Item  41155 >0 && Item 28 >0  ##  双手剑  
+	 Window 1110796,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 28 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 28 == 1
+	 SetDur  28, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理双手剑吗？    
+block Item  41155 >0 && Item 22 >0  ##  面包剑  
+	 Window 1110797,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 22 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 22 == 1
+	 SetDur  22, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理面包剑吗？    
+block Item  41155 >0 && Item 18 >0  ##  火舌剑  
+	 Window 1110798,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 18 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 18 == 1
+	 SetDur  18, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理火舌剑吗？    
+block Item  41155 >0 && Item 16 >0  ##  突刺剑  
+	 Window 1110799,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 16 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 16 == 1
+	 SetDur  16, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理突刺剑吗？    
+block Item  41155 >0 && Item 8 >0  ##  长剑  
+	 Window 1110800,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 8 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 8 == 1
+	 SetDur  8, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长剑吗？    
+#================	 
+block Item  41155 >0 && Item 3 >0  ##  阔剑  
+	 Window 1110801,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3 == 1
+	 SetDur  3, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理阔剑吗？    
+block Item  41155 >0 && Item 600216 >0  ##  重击斧  
+	 Window 1110802,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600216 >= 2
+	 EndWindow   1110116  
+	 Window_YES Item 41155 >= 1 && Item 600216 == 1
+	 SetDur  600216, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理重击斧吗？    
+block Item  41155 >0 && Item 600215 >0  ##  高速斧  
+	 Window 1110803,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600215 >= 2
+	 EndWindow   1110116  
+	 Window_YES Item 41155 >= 1 && Item 600215 == 1
+	 SetDur  600215, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理高速斧吗？    
+block Item  41155 >0 && Item 600202 >0  ##  钻宝雷格之斧  
+	 Window 1110804,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600202 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600202 == 1
+	 SetDur  600202, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钻宝雷格之斧吗？    
+block Item  41155 >0 && Item 895 >0  ##  处刑斧  
+	 Window 1110805,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 895 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 895 == 1
+	 SetDur  895, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理处刑斧吗？    
+block Item  41155 >0 && Item 890 >0  ##  金属重斧  
+	 Window 1110806,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 890 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 890 == 1
+	 SetDur  890, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理金属重斧吗？    
+block Item  41155 >0 && Item 885 >0  ##  弯月长柄斧  
+	 Window 1110807,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 885 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 885 == 1
+	 SetDur  885, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理弯月长柄斧吗？    
+block Item  41155 >0 && Item 883 >0  ##  薄刃钩爪斧  
+	 Window 1110808,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 883 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 883 == 1
+	 SetDur  883, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理薄刃钩爪斧吗？    
+block Item  41155 >0 && Item 878 >0  ##  新月斧  
+	 Window 1110809,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 878 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 878 == 1
+	 SetDur  878, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理新月斧吗？    
+block Item  41155 >0 && Item 875 >0  ##  大型双刃斧+  
+	 Window 1110810,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 875 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 875 == 1
+	 SetDur  875, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理大型双刃斧+吗？    
+block Item  41155 >0 && Item 872 >0  ##  米诺陶斯战斧  
+	 Window 1110811,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item 872 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 872 == 1
+	 SetDur  872, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理米诺陶斯战斧吗？    
+block Item  41155 >0 && Item 867 >0  ##  超大皇帝斧  
+	 Window 1110812,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 867 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 867 == 1
+	 SetDur  867, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理超大皇帝斧吗？    
+block Item  41155 >0 && Item 863 >0  ##  大型双刃斧  
+	 Window 1110813,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 863 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 863 == 1
+	 SetDur  863, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理大型双刃斧吗？    
+block Item  41155 >0 && Item 854 >0  ##  弯月大战斧  
+	 Window 1110814,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 854 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 854 == 1
+	 SetDur  854, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理弯月大战斧吗？    
+block Item  41155 >0 && Item 852 >0  ##  大型阔刃斧  
+	 Window 1110815,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 852 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 852 == 1
+	 SetDur  852, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理大型阔刃斧吗？    
+block Item  41155 >0 && Item 842 >0  ##  阔刃斧  
+	 Window 1110816,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 842 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 842 == 1
+	 SetDur  842, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理阔刃斧吗？    
+block Item  41155 >0 && Item 841 >0  ##  钩爪斧  
+	 Window 1110817,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 841 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 841 == 1
+	 SetDur  841, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钩爪斧吗？    
+block Item  41155 >0 && Item 838 >0  ##  双刃斧  
+	 Window 1110818,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 838 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 838 == 1
+	 SetDur  838, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理双刃斧吗？    
+block Item  41155 >0 && Item 830 >0  ##  长战斧  
+	 Window 1110819,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 830 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 830 == 1
+	 SetDur  830, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长战斧吗？    
+block Item  41155 >0 && Item 826 >0  ##  钢斧  
+	 Window 1110820,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 826 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 826 == 1
+	 SetDur  826, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钢斧吗？    
+#============	 
+block Item  41155 >0 && Item 820 >0  ##  格斗手斧  
+	 Window 1110821,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 820 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 820 == 1
+	 SetDur  820, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理格斗手斧吗？    
+block Item  41155 >0 && Item 812 >0  ##  宽手斧  
+	 Window 1110822,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 812 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 812 == 1
+	 SetDur  812, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理宽手斧吗？    
+block Item  41155 >0 && Item 811 >0  ##  战斗手斧  
+	 Window 1110823,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 811 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 811 == 1
+	 SetDur  811, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理战斗手斧吗？    
+block Item  41155 >0 && Item 809 >0  ##  勇气之斧  
+	 Window 1110824,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 809 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 809 == 1
+	 SetDur  809, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理勇气之斧吗？    
+block Item  41155 >0 && Item 805 >0  ##  手斧  
+	 Window 1110825,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 805 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 805 == 1
+	 SetDur  805, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理手斧吗？    
+block Item  41155 >0 && Item 207 >0  ##  暗黑之斧  
+	 Window 1110826,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 207 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 207 == 1
+	 SetDur  207, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理暗黑之斧吗？    
+block Item  41155 >0 && Item 205 >0  ##  水龙之斧  
+	 Window 1110827,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 205 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 205 == 1
+	 SetDur  205, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之斧吗？    
+block Item  41155 >0 && Item 600416 >0  ##  穿刺枪  
+	 Window 1110828,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600416 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600416 == 1
+	 SetDur  600416, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理穿刺枪吗？    
+block Item  41155 >0 && Item 600415 >0  ##  痛击枪  
+	 Window 1110829,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600415 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600415 == 1
+	 SetDur  600415, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理痛击枪吗？    
+block Item  41155 >0 && Item 600402 >0  ##  偃月刀  
+	 Window 1110830,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600402 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600402 == 1
+	 SetDur  600402, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理偃月刀吗？    
+block Item  41155 >0 && Item 1698 >0  ##  三叉战戟  
+	 Window 1110831,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1698 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1698 == 1
+	 SetDur  1698, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理三叉战戟吗？    
+block Item  41155 >0 && Item 1695 >0  ##  异型枪  
+	 Window 1110832,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1695 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1695 == 1
+	 SetDur  1695, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理异型枪吗？    
+block Item  41155 >0 && Item 1686 >0  ##  原始枪  
+	 Window 1110833,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1686 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1686 == 1
+	 SetDur  1686, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理原始枪吗？    
+block Item  41155 >0 && Item 1684 >0  ##  钩爪枪  
+	 Window 1110834,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1684 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1684 == 1
+	 SetDur  1684, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钩爪枪吗？    
+block Item  41155 >0 && Item 1678 >0  ##  阔刃枪  
+	 Window 1110835,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1678 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1678 == 1
+	 SetDur  1678, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理阔刃枪吗？    
+block Item  41155 >0 && Item 1673 >0  ##  东方长刺枪  
+	 Window 1110836,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1673 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1673 == 1
+	 SetDur  1673, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理东方长刺枪吗？    
+block Item  41155 >0 && Item 1672 >0  ##  蝎枪+  
+	 Window 1110837,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1672 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1672 == 1
+	 SetDur  1672, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理蝎枪+吗？    
+#============	 
+block Item  41155 >0 && Item 1669 >0  ##  双刃枪  
+	 Window 1110838,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1669 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1669 == 1
+	 SetDur  1669, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理双刃枪吗？    
+block Item  41155 >0 && Item 1663 >0  ##  蝎枪  
+	 Window 1110839,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1663 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1663 == 1
+	 SetDur  1663, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理蝎枪吗？    
+block Item  41155 >0 && Item 1658 >0  ##  长尖枪  
+	 Window 1110840,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1658 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1658 == 1
+	 SetDur  1658, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长尖枪吗？    
+block Item  41155 >0 && Item 1657 >0  ##  大砍枪  
+	 Window 1110841,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1657 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1657 == 1
+	 SetDur  1657, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理大砍枪吗？    
+block Item  41155 >0 && Item 1649 >0  ##  骑士枪  
+	 Window 1110842,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1649 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1649 == 1
+	 SetDur  1649, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理骑士枪吗？    
+block Item  41155 >0 && Item 1643 >0  ##  护卫枪  
+	 Window 1110843,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1643 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1643 == 1
+	 SetDur  1643, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理护卫枪吗？    
+block Item  41155 >0 && Item 1635 >0  ##  穗枪  
+	 Window 1110844,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1635 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1635 == 1
+	 SetDur  1635, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理穗枪吗？    
+block Item  41155 >0 && Item 1634 >0  ##  双叉戟  
+	 Window 1110845,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1634 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1634 == 1
+	 SetDur  1634, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理双叉戟吗？    
+block Item  41155 >0 && Item 1629 >0  ##  长柄弯枪  
+	 Window 1110846,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1629 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1629 == 1
+	 SetDur  1629, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长柄弯枪吗？    
+block Item  41155 >0 && Item 1625 >0  ##  长柄尖枪  
+	 Window 1110847,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1625 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1625 == 1
+	 SetDur  1625, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长柄尖枪吗？    
+block Item  41155 >0 && Item 1619 >0  ##  刺枪  
+	 Window 1110848,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1619 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1619 == 1
+	 SetDur  1619, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理刺枪吗？    
+block Item  41155 >0 && Item 1613 >0  ##  金属枪  
+	 Window 1110849,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1613 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1613 == 1
+	 SetDur  1613, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理金属枪吗？    
+block Item  41155 >0 && Item 1608 >0  ##  短矛  
+	 Window 1110850,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1608 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1608 == 1
+	 SetDur  1608, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理短矛吗？    
+block Item  41155 >0 && Item 1606 >0  ##  攻城枪  
+	 Window 1110851,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 1606 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 1606 == 1
+	 SetDur  1606, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理攻城枪吗？    
+block Item  41155 >0 && Item 212 >0  ##  圣杯之枪  
+	 Window 1110852,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 212 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 212 == 1
+	 SetDur  212, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理圣杯之枪吗？    
+block Item  41155 >0 && Item 210 >0  ##  水龙之枪  
+	 Window 1110853,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 210 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 210 == 1
+	 SetDur  210, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之枪吗？    
+block Item  41155 >0 && Item 600616 >0  ##  月之弓  
+	 Window 1110854,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600616 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600616 == 1
+	 SetDur  600616, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理月之弓吗？    
+block Item  41155 >0 && Item 600615 >0  ##  调和之弓  
+	 Window 1110855,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600615 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600615 == 1
+	 SetDur  600615, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理调和之弓吗？    
+#====================	 
+block Item  41155 >0 && Item 600602 >0  ##  米斯特汀之弓  
+	 Window 1110856,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600602 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600602 == 1
+	 SetDur  600602, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理米斯特汀之弓吗？    
+block Item  41155 >0 && Item 2098 >0  ##  魔弹  
+	 Window 1110857,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2098 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2098 == 1
+	 SetDur  2098, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理魔弹吗？    
+block Item  41155 >0 && Item 2095 >0  ##  摘星之弓  
+	 Window 1110858,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2095 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2095 == 1
+	 SetDur  2095, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理摘星之弓吗？    
+block Item  41155 >0 && Item 2083 >0  ##  灵魂之弓  
+	 Window 1110859,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2083 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2083 == 1
+	 SetDur  2083, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理灵魂之弓吗？    
+block Item  41155 >0 && Item 2082 >0  ##  平行弓  
+	 Window 1110860,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2082 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2082 == 1
+	 SetDur  2082, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理平行弓吗？    
+block Item  41155 >0 && Item 2078 >0  ##  重弦弓  
+	 Window 1110861,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2078 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2078 == 1
+	 SetDur  2078, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理重弦弓吗？    
+block Item  41155 >0 && Item 2071 >0  ##  原始石弓  
+	 Window 1110862,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2071 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2071 == 1
+	 SetDur  2071, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理原始石弓吗？    
+block Item  41155 >0 && Item 2070 >0  ##  月光之弓+  
+	 Window 1110863,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2070 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2070 == 1
+	 SetDur  2070, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理月光之弓+吗？    
+block Item  41155 >0 && Item 2063 >0  ##  破邪长弓  
+	 Window 1110864,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2063 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2063 == 1
+	 SetDur  2063, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理破邪长弓吗？    
+block Item  41155 >0 && Item 2062 >0  ##  月光之弓  
+	 Window 1110865,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2062 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2062 == 1
+	 SetDur  2062, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理月光之弓吗？    
+block Item  41155 >0 && Item 2055 >0  ##  巨弓  
+	 Window 1110866,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2055 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2055 == 1
+	 SetDur  2055, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理巨弓吗？    
+block Item  41155 >0 && Item 2052 >0  ##  长格斗弓  
+	 Window 1110867,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2052 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2052 == 1
+	 SetDur  2052, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长格斗弓吗？    
+block Item  41155 >0 && Item 2049 >0  ##  杀手长弓  
+	 Window 1110868,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2049 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2049 == 1
+	 SetDur  2049, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理杀手长弓吗？    
+block Item  41155 >0 && Item 2042 >0  ##  冲击弓  
+	 Window 1110869,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2042 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2042 == 1
+	 SetDur  2042, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理冲击弓吗？    
+block Item  41155 >0 && Item 2038 >0  ##  超强狙击弓  
+	 Window 1110870,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2038 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2038 == 1
+	 SetDur  2038, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理超强狙击弓吗？    
+#================	 
+block Item  41155 >0 && Item 2035 >0  ##  狙击之弓  
+	 Window 1110871,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2035 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2035 == 1
+	 SetDur  2035, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理狙击之弓吗？    
+block Item  41155 >0 && Item 2023 >0  ##  格斗弓  
+	 Window 1110872,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2023 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2023 == 1
+	 SetDur  2023, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理格斗弓吗？    
+block Item  41155 >0 && Item 2022 >0  ##  强弓  
+	 Window 1110873,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2022 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2022 == 1
+	 SetDur  2022, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理强弓吗？    
+block Item  41155 >0 && Item 2017 >0  ##  猎弓  
+	 Window 1110874,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2017 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2017 == 1
+	 SetDur  2017, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理猎弓吗？    
+block Item  41155 >0 && Item 2010 >0  ##  短战弓  
+	 Window 1110875,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2010 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2010 == 1
+	 SetDur  2010, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理短战弓吗？    
+block Item  41155 >0 && Item 2002 >0  ##  威力短弓  
+	 Window 1110876,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2002 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2002 == 1
+	 SetDur  2002, +1  
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理威力短弓吗？    
+block Item  41155 >0 && Item 2000 >0  ##轻型弓	 
+	 Window 1110877,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2000 >= 2
+	 EndWindow   1110816
+	 Window_YES Item 41155 >= 1 && Item 2000 == 1
+	 SetDur  2000, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理轻型弓吗？    
+block Item  41155 >0 && Item 217 >0  ##天狼星
+	 Window 1110878,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 217 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 217 == 1
+	 SetDur  217, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理天狼星吗？    
+block Item  41155 >0 && Item 215 >0  ##水龙之弓	 
+	 Window 1110879	,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 215 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 215 == 1
+	 SetDur  215, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之弓吗？    
+block Item  41155 >0 && Item 600816 >0  ##星锤杖
+	 Window 1110880,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600816 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600816 == 1
+	 SetDur  600816, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理星锤杖吗？    
+#===============	 
+block Item  41155 >0 && Item 600815 >0  ##王者之手
+	 Window 1110881,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600815 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600815 == 1
+	 SetDur  600815, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理王者之手吗？    
+block Item  41155 >0 && Item 600802 >0  ##魔晶之杖
+	 Window 1110882,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 600802 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 600802 == 1
+	 SetDur  600802, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理魔晶之杖吗？    
+#===================	 
+block Item  41155 >0 && Item 2497 >0  ##星屑短杖
+	 Window 1110883,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2497 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2497 == 1
+	 SetDur  2497, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理星屑短杖吗？    
+block Item  41155 >0 && Item 2495 >0  ##天使之杖
+	 Window 1110884,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2495 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2495 == 1
+	 SetDur  2495, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理天使之杖吗？    
+block Item  41155 >0 && Item 2493 >0  ##圣者之杖
+	 Window 1110885,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2493 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2493 == 1
+	 SetDur  2493, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理圣者之杖吗？    
+block Item  41155 >0 && Item 2492 >0  ##太阳短杖
+	 Window 1110886,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2492 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2492 == 1
+	 SetDur  2492, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理太阳短杖吗？    
+block Item  41155 >0 && Item 2488 >0  ##光明短杖
+	 Window 1110887,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2488 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2488 == 1
+	 SetDur  2488, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理光明短杖吗？    
+block Item  41155 >0 && Item 2486 >0  ##恶魔之杖	 
+	 Window 1110888,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2486 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2486 == 1
+	 SetDur  2486, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理恶魔之杖吗？    
+block Item  41155 >0 && Item 2484 >0  ##落雷权杖+	 
+	 Window 1110889,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2484 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2484 == 1
+	 SetDur  2484, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理落雷权杖+吗？    
+block Item  41155 >0 && Item 2478 >0  ##隐者之杖
+	 Window 1110890,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2478 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2478 == 1
+	 SetDur  2478, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理隐者之杖吗？    
+block Item  41155 >0 && Item 2473 >0  ##怒音之杖
+	 Window 1110891,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2473 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2473 == 1
+	 SetDur  2473, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理怒音之杖吗？    
+block Item  41155 >0 && Item 2462 >0  ##神圣之杖
+	 Window 1110892,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2462 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2462 == 1
+	 SetDur  2462, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理神圣之杖吗？    
+block Item  41155 >0 && Item 2461 >0  ##元素之杖
+	 Window 1110893,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2461 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2461 == 1
+	 SetDur  2461, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理元素之杖吗？    
+block Item  41155 >0 && Item 2450 >0  ##琥珀权杖
+	 Window 1110894,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2450 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2450 == 1
+	 SetDur  2450, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理琥珀权杖吗？    
+block Item  41155 >0 && Item 2449 >0  ##琥珀杖
+	 Window 1110895,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2449 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2449 == 1
+	 SetDur  2449, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理琥珀杖吗？    
+block Item  41155 >0 && Item 2447 >0  ##贤者手杖
+	 Window 1110896,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2447 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2447 == 1
+	 SetDur  2447, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理贤者手杖吗？    
+block Item  41155 >0 && Item 2446 >0  ##贤者权杖
+	 Window 1110897,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2446 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2446 == 1
+	 SetDur  2446, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理贤者权杖吗？    
+block Item  41155 >0 && Item 2435 >0  ##魔之手杖
+	 Window 1110898,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2435 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2435 == 1
+	 SetDur  2435, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理魔之手杖吗？    
+block Item  41155 >0 && Item 2434 >0  ##魔之权杖
+	 Window 1110899,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2434 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2434 == 1
+	 SetDur  2434, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理魔之权杖吗？    
+block Item  41155 >0 && Item 2418 >0  ##激流权杖
+	 Window 1110900,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2418 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2418 == 1
+	 SetDur  2418, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理激流权杖吗？    
+ 
+block Item  41155 >0 && Item 2413 >0  ##大地之杖
+	 Window 1110901,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2413 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2413 == 1
+	 SetDur  2413, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理大地之杖吗？    
+block Item  41155 >0 && Item 2404 >0  ##短杖
+	 Window 1110902,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2404 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2404 == 1
+	 SetDur  2404, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理短杖吗？    
+block Item  41155 >0 && Item 2402 >0  ##权杖
+	 Window 1110903,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2402 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2402 == 1
+	 SetDur  2402, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理权杖吗？    
+block Item  41155 >0 && Item 222 >0  ##CEN-1088Prototype
+	 Window 1110904,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 222 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 222 == 1
+	 SetDur  222, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理CEN-1088Prototype吗？    
+block Item  41155 >0 && Item 220 >0  ##水龙之杖
+	 Window 1110905,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 220 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 220 == 1
+	 SetDur  220, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之杖吗？    
+block Item  41155 >0 && Item 601016 >0  ##节制飞镖
+	 Window 1110906,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 601016 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 601016 == 1
+	 SetDur  601016, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理节制飞镖吗？    
+block Item  41155 >0 && Item 601015 >0  ##基盘飞镖
+	 Window 1110907,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 601015 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 601015 == 1
+	 SetDur  601015, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理基盘飞镖吗？    
+block Item  41155 >0 && Item 601002 >0  ##北斗之鎌刀
+	 Window 1110908,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 601002 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 601002 == 1
+	 SetDur  601002, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理北斗之鎌刀吗？    
+block Item  41155 >0 && Item 2899 >0  ##天秤回力镖
+	 Window 1110909,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2899 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2899 == 1
+	 SetDur  2899, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理天秤回力镖吗？    
+block Item  41155 >0 && Item 2898 >0  ##治愈回力镖
+	 Window 1110910,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2898 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2898 == 1
+	 SetDur  2898, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理治愈回力镖吗？    
+block Item  41155 >0 && Item 2889 >0  ##普利辛回力镖
+	 Window 1110911,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2889 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2889 == 1
+	 SetDur  2889, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理普利辛回力镖吗？    
+block Item  41155 >0 && Item 2887 >0  ##天使之翼
+	 Window 1110912,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2887 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2887 == 1
+	 SetDur  2887, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理天使之翼吗？    
+block Item  41155 >0 && Item 2874 >0  ##赤狮回力镳
+	 Window 1110913,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2874 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2874 == 1
+	 SetDur  2874, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理赤狮回力镳吗？    
+block Item  41155 >0 && Item 2871 >0  ##凶豹回力镳
+	 Window 1110914,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2871 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2871 == 1
+	 SetDur  2871, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理凶豹回力镳吗？    
+block Item  41155 >0 && Item 2870 >0  ##熊翼回力镖+
+	 Window 1110915,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2870 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2870 == 1
+	 SetDur  2870, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理熊翼回力镖+吗？    
+block Item  41155 >0 && Item 2863 >0  ##闪光回力镖
+	 Window 1110916,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2863 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2863 == 1
+	 SetDur  2863, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理闪光回力镖吗？    
+block Item  41155 >0 && Item 2862 >0  ##熊翼回力镖
+	 Window 1110917,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2862 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2862 == 1
+	 SetDur  2862, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理熊翼回力镖吗？    
+block Item  41155 >0 && Item 2859 >0  ##蛇狮回力镖
+	 Window 1110918,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2859 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2859 == 1
+	 SetDur  2859, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理蛇狮回力镖吗？    
+block Item  41155 >0 && Item 2850 >0  ##鸫回力镖
+	 Window 1110919,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2850 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2850 == 1
+	 SetDur  2850, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理鸫回力镖吗？    
+block Item  41155 >0 && Item 2848 >0  ##翼鹿回力镖
+	 Window 1110920,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2848 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2848 == 1
+	 SetDur  2848, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理翼鹿回力镖吗？    
+block Item  41155 >0 && Item 2843 >0  ##回力镖
+	 Window 1110921,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2843 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2843 == 1
+	 SetDur  2843, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理回力镖吗？    
+block Item  41155 >0 && Item 2834 >0  ##狮子回力镖
+	 Window 1110922,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2834 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2834 == 1
+	 SetDur  2834, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理狮子回力镖吗？    
+block Item  41155 >0 && Item 2832 >0  ##锐角回力镖
+	 Window 1110923,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2832 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2832 == 1
+	 SetDur  2832, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理锐角回力镖吗？    
+block Item  41155 >0 && Item 2823 >0  ##杀敌回力镖
+	 Window 1110924,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2823 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2823 == 1
+	 SetDur  2823, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理杀敌回力镖吗？    
+block Item  41155 >0 && Item 2820 >0  ##暗杀回力镖
+	 Window 1110925,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2820 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2820 == 1
+	 SetDur  2820, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理暗杀回力镖吗？    
+block Item  41155 >0 && Item 2815 >0  ##彩光回力镖
+	 Window 1110926,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2815 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2815 == 1
+	 SetDur  2815, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理彩光回力镖吗？    
+block Item  41155 >0 && Item 2812 >0  ##追迹者
+	 Window 1110927,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2812 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2812 == 1
+	 SetDur  2812, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理追迹者吗？    
+block Item  41155 >0 && Item 2806 >0  ##木制大型回力镖
+	 Window 1110928,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2806 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2806 == 1
+	 SetDur  2806, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理木制大型回力镖吗？    
+block Item  41155 >0 && Item 2801 >0  ##青铜回力镖
+	 Window 1110929,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 2801 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 2801 == 1
+	 SetDur  2801, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理青铜回力镖吗？    
+block Item  41155 >0 && Item 227 >0  ##佛利波罗
+	 Window 1110930,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 227 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 227 == 1
+	 SetDur  227, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理佛利波罗吗？    
+block Item  41155 >0 && Item 225 >0  ##水龙回力镖
+	 Window 1110931,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 225 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 225 == 1
+	 SetDur  225, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙回力镖吗？    
+block Item  41155 >0 && Item 601216 >0  ##凶残刀
+	 Window 1110932,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 601216 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 601216 == 1
+	 SetDur  601216, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理凶残刀吗？    
+block Item  41155 >0 && Item 601215 >0  ##破灭刀
+	 Window 1110933,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 601215 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 601215 == 1
+	 SetDur  601215, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理破灭刀吗？    
+block Item  41155 >0 && Item 601202 >0  ##忍者飞镖
+	 Window 1110934,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 601202 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 601202 == 1
+	 SetDur  601202, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理忍者飞镖吗？    
+block Item  41155 >0 && Item 3299 >0  ##幻之匕首
+	 Window 1110935,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3299 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3299 == 1
+	 SetDur  3299, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理幻之匕首吗？    
+block Item  41155 >0 && Item 3294 >0  ##勾爪掷刀
+	 Window 1110936,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3294 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3294 == 1
+	 SetDur  3294, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理勾爪掷刀吗？    
+block Item  41155 >0 && Item 3288 >0  ##华丽小刀
+	 Window 1110937,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3288 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3288 == 1
+	 SetDur  3288, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理华丽小刀吗？    
+block Item  41155 >0 && Item 3281 >0  ##手里剑
+	 Window 1110938,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3281 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3281 == 1
+	 SetDur  3281, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理手里剑吗？    
+block Item  41155 >0 && Item 3279 >0  ##古传小刀
+	 Window 1110939,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3279 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3279 == 1
+	 SetDur  3279, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理古传小刀吗？    
+block Item  41155 >0 && Item 3276 >0  ##切肉小刀
+	 Window 1110940,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3276 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3276 == 1
+	 SetDur  3276, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理切肉小刀吗？    
+block Item  41155 >0 && Item 3270 >0  ##疾速短刀+
+	 Window 1110941,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3270 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3270 == 1
+	 SetDur  3270, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理疾速短刀+吗？    
+block Item  41155 >0 && Item 3269 >0  ##凶杀刀
+	 Window 1110942,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3269 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3269 == 1
+	 SetDur  3269, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理凶杀刀吗？    
+block Item  41155 >0 && Item 3260 >0  ##汉拉堤小刀
+	 Window 1110943,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3260 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3260 == 1
+	 SetDur  3260, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理汉拉堤小刀吗？    
+block Item  41155 >0 && Item 3253 >0  ##触角小刀
+	 Window 1110944,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3253 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3253 == 1
+	 SetDur  3253, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理触角小刀吗？    
+block Item  41155 >0 && Item 3251 >0  ##阔刃小刀
+	 Window 1110945,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3251 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3251 == 1
+	 SetDur  3251, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理阔刃小刀吗？    
+block Item  41155 >0 && Item 3245 >0  ##球锷小刀
+	 Window 1110946,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3245 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3245 == 1
+	 SetDur  3245, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理球锷小刀吗？    
+block Item  41155 >0 && Item 3241 >0  ##双刃小刀
+	 Window 1110947,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3241 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3241 == 1
+	 SetDur  3241, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理双刃小刀吗？    
+block Item  41155 >0 && Item 3235 >0  ##骑士小刀
+	 Window 1110948,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3235 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3235 == 1
+	 SetDur  3235, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理骑士小刀吗？    
+block Item  41155 >0 && Item 3230 >0  ##耳柄小刀
+	 Window 1110949,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3230 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3230 == 1
+	 SetDur  3230, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理耳柄小刀吗？    
+block Item  41155 >0 && Item 3229 >0  ##细直刃小刀
+	 Window 1110950,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3229 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3229 == 1
+	 SetDur  3229, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理细直刃小刀吗？    
+block Item  41155 >0 && Item 3222 >0  ##滑翔小刀
+	 Window 1110951,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3222 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3222 == 1
+	 SetDur  3222, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理滑翔小刀吗？    
+block Item  41155 >0 && Item 3213 >0  ##细刃掷刀
+	 Window 1110952,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3213 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3213 == 1
+	 SetDur  3213, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理细刃掷刀吗？    
+block Item  41155 >0 && Item 3212 >0  ##圆盘小刀
+	 Window 1110953,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3212 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3212 == 1
+	 SetDur  3212, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理圆盘小刀吗？    
+block Item  41155 >0 && Item 3204 >0  ##锐刃小刀
+	 Window 1110954,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3204 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3204 == 1
+	 SetDur  3204, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理锐刃小刀吗？    
+block Item  41155 >0 && Item 3201 >0  ##小刀
+	 Window 1110955,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 3201 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 3201 == 1
+	 SetDur  3201, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理小刀吗？    
+block Item  41155 >0 && Item 232 >0  ##亚尔提小刀
+	 Window 1110956,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 232 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 232 == 1
+	 SetDur  232, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理亚尔提小刀吗？    
+block Item  41155 >0 && Item 230 >0  ##水龙小刀
+	 Window 1110957,YES,NO 
+	 Window_YES Item 41155 >= 1 && Item 230 >= 2
+	 EndWindow   1055116  
+	 Window_YES Item 41155 >= 1 && Item 230 == 1
+	 SetDur  230, +1
+	 KillItem  41155,1  
+	 EndWindow 1054281  
+	 Window_NO
+	 ##\n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙小刀吗？    
+block Item  41155 >0 && Item 601416 >0 ## 灵力头盔
+	 Window 1110958,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  601416 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  601416 ==1
+	 SetDur 601416,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理灵力头盔吗？
+block Item 41155 >0 && Item 601415 >0 ## 正义头盔
+	 Window 1110959,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  601415 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  601415 ==1
+	 SetDur 601415,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理正义头盔吗？
+block Item 41155 >0 && Item 601400 >0 ## 圣骑士之盔
+	 Window 1110960,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  601400 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  601400 ==1
+	 SetDur 601400,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理圣骑士之盔吗？
+block Item 41155 >0 && Item 18970 >0 ## 皇后手镯
+	 Window 1110961,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  18970 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  18970 ==1
+	 SetDur 18970,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理皇后手镯吗？
+block Item 41155 >0 && Item 3693 >0 ## 白金头盔
+	 Window 1110962,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3693 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3693 ==1
+	 SetDur 3693,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理白金头盔吗？
+block Item 41155 >0 && Item 3692 >0 ## 圣龙头盔
+	 Window 1110963,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3692 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3692 ==1
+	 SetDur 3692,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理圣龙头盔吗？
+block Item 41155 >0 && Item 3683 >0 ## 羽毛头盔
+	 Window 1110964,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3683 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3683 ==1
+	 SetDur 3683,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理羽毛头盔吗？
+block Item 41155 >0 && Item 3682 >0 ## 龙盔
+	 Window 1110965,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3682 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3682 ==1
+	 SetDur 3682,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理龙盔吗？
+block Item 41155 >0 && Item 3675 >0 ## 钢制头盔+
+	 Window 1110966,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3675 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3675 ==1
+	 SetDur 3675,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钢制头盔+吗？
+block Item 41155 >0 && Item 3671 >0 ## 铆钉头盔
+	 Window 1110967,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3671 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3671 ==1
+	 SetDur 3671,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理铆钉头盔吗？
+block Item 41155 >0 && Item 3670 >0 ## 博流盖尔头盔
+	 Window 1110968,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3670 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3670 ==1
+	 SetDur 3670,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理博流盖尔头盔吗？
+block Item 41155 >0 && Item 3664 >0 ## 钢制头盔
+	 Window 1110969,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3664 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3664 ==1
+	 SetDur 3664,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钢制头盔吗？
+block Item 41155 >0 && Item 3662 >0 ## 骑士头盔
+	 Window 1110970,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3662 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3662 ==1
+	 SetDur 3662,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理骑士头盔吗？
+block Item 41155 >0 && Item 3654 >0 ## 巴比克头盔
+	 Window 1110971,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3654 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3654 ==1
+	 SetDur 3654,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理巴比克头盔吗？
+block Item 41155 >0 && Item 3651 >0 ## 利刃头盔
+	 Window 1110972,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3651 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3651 ==1
+	 SetDur 3651,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理利刃头盔吗？
+block Item 41155 >0 && Item 3642 >0 ## 开放式头盔
+	 Window 1110973,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3642 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3642 ==1
+	 SetDur 3642,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理开放式头盔吗？
+block Item 41155 >0 && Item 3640 >0 ## 葛理克头盔
+	 Window 1110974,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3640 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3640 ==1
+	 SetDur 3640,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理葛理克头盔吗？
+block Item 41155 >0 && Item 3635 >0 ## 角饰头盔
+	 Window 1110975,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3635 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3635 ==1
+	 SetDur 3635,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理角饰头盔吗？
+block Item 41155 >0 && Item 3632 >0 ## 霸葛头盔
+	 Window 1110976,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3632 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3632 ==1
+	 SetDur 3632,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理霸葛头盔吗？
+block Item 41155 >0 && Item 3622 >0 ## 金属护额
+	 Window 1110977,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3622 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3622 ==1
+	 SetDur 3622,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理金属护额吗？
+block Item 41155 >0 && Item 3620 >0 ## 铁制头盔
+	 Window 1110978,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3620 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3620 ==1
+	 SetDur 3620,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理铁制头盔吗？
+block Item 41155 >0 && Item 3612 >0 ## 铜铁皮盔
+	 Window 1110979,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3612 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3612 ==1
+	 SetDur 3612,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理铜铁皮盔吗？
+block Item 41155 >0 && Item 3611 >0 ## 铁板布盔
+	 Window 1110980,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3611 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3611 ==1
+	 SetDur 3611,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理铁板布盔吗？
+block Item 41155 >0 && Item 3602 >0 ## 铜制头盔
+	 Window 1110981,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3602 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3602 ==1
+	 SetDur 3602,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理铜制头盔吗？
+block Item 41155 >0 && Item 3601 >0 ## 硬皮头盔
+	 Window 1110982,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  3601 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  3601 ==1
+	 SetDur 3601,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理硬皮头盔吗？
+block Item 41155 >0 && Item 237 >0 ## 依古诺头盔
+	 Window 1110983,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  237 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  237 ==1
+	 SetDur 237,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理依古诺头盔吗？
+block Item 41155 >0 && Item 235 >0 ## 水龙头盔
+	 Window 1110984,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  235 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  235 ==1
+	 SetDur 235,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙头盔吗？
+block Item 41155 >0 && Item 601616 >0 ## 神官帽
+	 Window 1110985,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  601616 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  601616 ==1
+	 SetDur 601616,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理神官帽吗？
+block Item 41155 >0 && Item 601615 >0 ## 贝斯神帽
+	 Window 1110986,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  601615 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  601615 ==1
+	 SetDur 601615,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理贝斯神帽吗？
+block Item 41155 >0 && Item 601600 >0 ## 剑客帽
+	 Window 1110987,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  601600 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  601600 ==1
+	 SetDur 601600,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理剑客帽吗？
+block Item 41155 >0 && Item 4092 >0 ## 妖精之帽
+	 Window 1110988,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4092 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4092 ==1
+	 SetDur 4092,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理妖精之帽吗？
+block Item 41155 >0 && Item 4091 >0 ## 黄昏之帽
+	 Window 1110989,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4091 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4091 ==1
+	 SetDur 4091,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理黄昏之帽吗？
+block Item 41155 >0 && Item 4084 >0 ## 魔术师之帽
+	 Window 1110990,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4084 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4084 ==1
+	 SetDur 4084,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理魔术师之帽吗？
+block Item 41155 >0 && Item 4082 >0 ## 羽毛帽
+	 Window 1110991,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4082 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4082 ==1
+	 SetDur 4082,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理羽毛帽吗？
+block Item 41155 >0 && Item 4075 >0 ## 可爱的扁帽子+
+	 Window 1110992,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4075 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4075 ==1
+	 SetDur 4075,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理可爱的扁帽子+吗？
+block Item 41155 >0 && Item 4074 >0 ## 时髦避暑帽子
+	 Window 1110993,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4074 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4074 ==1
+	 SetDur 4074,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理时髦避暑帽子吗？
+block Item 41155 >0 && Item 4070 >0 ## 军帽
+	 Window 1110994,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4070 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4070 ==1
+	 SetDur 4070,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理军帽吗？
+block Item 41155 >0 && Item 4064 >0 ## 淑女帽
+	 Window 1110995,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4064 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4064 ==1
+	 SetDur 4064,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理淑女帽吗？
+block Item 41155 >0 && Item 4062 >0 ## 可爱的扁帽子
+	 Window 1110996,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4062 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4062 ==1
+	 SetDur 4062,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理可爱的扁帽子吗？
+block Item 41155 >0 && Item 4054 >0 ## 装饰着花的帽子
+	 Window 1110997,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4054 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4054 ==1
+	 SetDur 4054,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理装饰着花的帽子吗？
+block Item 41155 >0 && Item 4051 >0 ## 青铜帽子
+	 Window 1110998,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4051 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4051 ==1
+	 SetDur 4051,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理青铜帽子吗？
+#=============	 	 
+block Item 41155 >0 && Item 4042 >0 ## 高级帽子
+	 Window 1110999,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4042 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4042 ==1
+	 SetDur 4042,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理高级帽子吗？
+
+block Item 41155 >0 && Item 4040 >0 ## 蓝徽章之帽
+	 Window 1111000,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4040 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4040 ==1
+	 SetDur 4040,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理蓝徽章之帽吗？
+block Item 41155 >0 && Item 4032 >0 ## 时髦帽子
+	 Window 1111001,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4032 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4032 ==1
+	 SetDur 4032,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理时髦帽子吗？
+block Item 41155 >0 && Item 4031 >0 ## 鸭舌帽
+	 Window 1111002,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4031 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4031 ==1
+	 SetDur 4031,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理鸭舌帽吗？
+block Item 41155 >0 && Item 4022 >0 ## 硬皮帽
+	 Window 1111003,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4022 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4022 ==1
+	 SetDur 4022,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理硬皮帽吗？
+block Item 41155 >0 && Item 4020 >0 ## 可爱的帽子
+	 Window 1111004,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4020 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4020 ==1
+	 SetDur 4020,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理可爱的帽子吗？
+block Item 41155 >0 && Item 4013 >0 ## 皮帽
+	 Window 1111005,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4013 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4013 ==1
+	 SetDur 4013,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理皮帽吗？
+block Item 41155 >0 && Item 4011 >0 ## 轻帽
+	 Window 1111006,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4011 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4011 ==1
+	 SetDur 4011,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理轻帽吗？
+block Item 41155 >0 && Item 4004 >0 ## 麻布帽
+	 Window 1111007,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4004 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4004 ==1
+	 SetDur 4004,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理麻布帽吗？
+block Item 41155 >0 && Item 4001 >0 ## 硬帽
+	 Window 1111008,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4001 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4001 ==1
+	 SetDur 4001,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理硬帽吗？
+block Item 41155 >0 && Item 242 >0 ## 荷莱松之帽
+	 Window 1111009,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  242 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  242 ==1
+	 SetDur 242,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理荷莱松之帽吗？
+block Item 41155 >0 && Item 241 >0 ## 头目之帽
+	 Window 1111010,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  241 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  241 ==1
+	 SetDur 241,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理头目之帽吗？
+block Item 41155 >0 && Item 240 >0 ## 水龙之帽
+	 Window 1111011,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  240 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  240 ==1
+	 SetDur 240,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之帽吗？
+block Item 41155 >0 && Item 601816 >0 ## 守护铠甲
+	 Window 1111012,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  601816 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  601816 ==1
+	 SetDur 601816,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理守护铠甲吗？
+block Item 41155 >0 && Item 601815 >0 ## 红绳威铠
+	 Window 1111013,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  601815 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  601815 ==1
+	 SetDur 601815,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理红绳威铠吗？
+block Item 41155 >0 && Item 601800 >0 ## 剑齿铠甲
+	 Window 1111014,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  601800 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  601800 ==1
+	 SetDur 601800,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理剑齿铠甲吗？
+block Item 41155 >0 && Item 4491 >0 ## 骑士铠甲
+	 Window 1111015,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4491 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4491 ==1
+	 SetDur 4491,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理骑士铠甲吗？
+block Item 41155 >0 && Item 4490 >0 ## 漆黑之铠
+	 Window 1111016,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4490 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4490 ==1
+	 SetDur 4490,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理漆黑之铠吗？
+block Item 41155 >0 && Item 4484 >0 ## 帝王之铠
+	 Window 1111017,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4484 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4484 ==1
+	 SetDur 4484,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理帝王之铠吗？
+block Item 41155 >0 && Item 4481 >0 ## 亡灵铠甲
+	 Window 1111018,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4481 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4481 ==1
+	 SetDur 4481,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理亡灵铠甲吗？
+block Item 41155 >0 && Item 4475 >0 ## 实战铠甲+
+	 Window 1111019,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4475 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4475 ==1
+	 SetDur 4475,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理轻短铠甲+吗？
+block Item 41155 >0 && Item 4471 >0 ## 野兽铠甲
+	 Window 1111020,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4471 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4471 ==1
+	 SetDur 4471,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理野兽铠甲吗？
+block Item 41155 >0 && Item 4470 >0 ## 重金属铠甲
+	 Window 1111021,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4470 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4470 ==1
+	 SetDur 4470,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理重金属铠甲吗？
+block Item 41155 >0 && Item 4464 >0 ## 实战铠甲
+	 Window 1111022,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4464 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4464 ==1
+	 SetDur 4464,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理实战铠甲吗？
+block Item 41155 >0 && Item 4461 >0 ## 黄金铠甲
+	 Window 1111023,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4461 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4461 ==1
+	 SetDur 4461,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理黄金铠甲吗？
+block Item 41155 >0 && Item 4459 >0 ## 重铁板甲
+	 Window 1111024,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4459 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4459 ==1
+	 SetDur 4459,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理重铁板甲吗？
+block Item 41155 >0 && Item 4458 >0 ## 铁板半身甲
+	 Window 1111025,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4458 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4458 ==1
+	 SetDur 4458,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理铁板半身甲吗？
+block Item 41155 >0 && Item 4444 >0 ## 索状铠甲
+	 Window 1111026,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4444 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4444 ==1
+	 SetDur 4444,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理索状铠甲吗？
+block Item 41155 >0 && Item 4442 >0 ## 长型金属铠甲
+	 Window 1111027,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4442 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4442 ==1
+	 SetDur 4442,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长型金属铠甲吗？
+block Item 41155 >0 && Item 4434 >0 ## 金属皮甲
+	 Window 1111028,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4434 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4434 ==1
+	 SetDur 4434,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理金属皮甲吗？
+block Item 41155 >0 && Item 4430 >0 ## 钢铁铠甲
+	 Window 1111029,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4430 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4430 ==1
+	 SetDur 4430,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钢铁铠甲吗？
+block Item 41155 >0 && Item 4421 >0 ## 环甲
+	 Window 1111030,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4421 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4421 ==1
+	 SetDur 4421,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理环甲吗？
+block Item 41155 >0 && Item 4420 >0 ## 轻型锁炼甲
+	 Window 1111031,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4420 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4420 ==1
+	 SetDur 4420,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理轻型锁炼甲吗？
+block Item 41155 >0 && Item 4411 >0 ## 轻型铠甲
+	 Window 1111032,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4411 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4411 ==1
+	 SetDur 4411,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理轻型铠甲吗？
+block Item 41155 >0 && Item 4410 >0 ## 青铜铠甲
+	 Window 1111033,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4410 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4410 ==1
+	 SetDur 4410,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理青铜铠甲吗？
+block Item 41155 >0 && Item 4405 >0 ## 护心甲
+	 Window 1111034,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4405 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4405 ==1
+	 SetDur 4405,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理护心甲吗？
+block Item 41155 >0 && Item 4400 >0 ## 软皮甲
+	 Window 1111035,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4400 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4400 ==1
+	 SetDur 4400,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理软皮甲吗？
+block Item 41155 >0 && Item 247 >0 ## PRAHS-08ZM
+	 Window 1111036,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  247 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  247 ==1
+	 SetDur 247,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理PRAHS-08ZM吗？
+block Item 41155 >0 && Item 245 >0 ## 水龙之铠
+	 Window 1111037,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  245 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  245 ==1
+	 SetDur 245,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之铠吗？
+block Item 41155 >0 && Item 602016 >0 ## 幻想之服
+	 Window 1111038,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602016 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602016 ==1
+	 SetDur 602016,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理幻想之服吗？
+block Item 41155 >0 && Item 602015 >0 ## 海洋之服
+	 Window 1111039,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602015 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602015 ==1
+	 SetDur 602015,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理海洋之服吗？
+block Item 41155 >0 && Item 602001 >0 ## 功夫装
+	 Window 1111040,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602001 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602001 ==1
+	 SetDur 602001,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理功夫装吗？
+block Item 41155 >0 && Item 4893 >0 ## 灵魂之服
+	 Window 1111041,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4893 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4893 ==1
+	 SetDur 4893,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理灵魂之服吗？
+block Item 41155 >0 && Item 4892 >0 ## 不死鸟之服
+	 Window 1111042,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4892 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4892 ==1
+	 SetDur 4892,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理不死鸟之服吗？
+block Item 41155 >0 && Item 4883 >0 ## 女神之衣
+	 Window 1111043,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4883 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4883 ==1
+	 SetDur 4883,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理女神之衣吗？
+block Item 41155 >0 && Item 4882 >0 ## 勇者之衣
+	 Window 1111044,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4882 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4882 ==1
+	 SetDur 4882,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理勇者之衣吗？
+block Item 41155 >0 && Item 4877 >0 ## 兽骨之衣+
+	 Window 1111045,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4877 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4877 ==1
+	 SetDur 4877,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理兽骨之衣+吗？
+block Item 41155 >0 && Item 4873 >0 ## 步兵战衣
+	 Window 1111046,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4873 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4873 ==1
+	 SetDur 4873,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理步兵战衣吗？
+block Item 41155 >0 && Item 4871 >0 ## 疾风之衣
+	 Window 1111047,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4871 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4871 ==1
+	 SetDur 4871,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理疾风之衣吗？
+block Item 41155 >0 && Item 4867 >0 ## 骨衣
+	 Window 1111048,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4867 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4867 ==1
+	 SetDur 4867,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理骨衣吗？
+block Item 41155 >0 && Item 4860 >0 ## 超级衣服
+	 Window 1111049,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4860 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4860 ==1
+	 SetDur 4860,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理超级衣服吗？
+block Item 41155 >0 && Item 4855 >0 ## 长索锥衣
+	 Window 1111050,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4855 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4855 ==1
+	 SetDur 4855,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长索锥衣吗？
+block Item 41155 >0 && Item 4853 >0 ## 索锥上衣
+	 Window 1111051,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4853 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4853 ==1
+	 SetDur 4853,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理索锥上衣吗？
+block Item 41155 >0 && Item 4845 >0 ## 环服
+	 Window 1111052,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4845 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4845 ==1
+	 SetDur 4845,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理环服吗？
+block Item 41155 >0 && Item 4844 >0 ## 士兵护衣
+	 Window 1111053,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4844 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4844 ==1
+	 SetDur 4844,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理士兵护衣吗？
+block Item 41155 >0 && Item 4834 >0 ## 布甲
+	 Window 1111054,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4834 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4834 ==1
+	 SetDur 4834,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理布甲吗？
+block Item 41155 >0 && Item 4833 >0 ## 榇甲
+	 Window 1111055,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4833 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4833 ==1
+	 SetDur 4833,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理榇甲吗？
+block Item 41155 >0 && Item 4823 >0 ## 硬皮服
+	 Window 1111056,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4823 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4823 ==1
+	 SetDur 4823,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理硬皮服吗？
+block Item 41155 >0 && Item 4821 >0 ## 锁炼装
+	 Window 1111057,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4821 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4821 ==1
+	 SetDur 4821,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理锁炼装吗？
+block Item 41155 >0 && Item 4813 >0 ## 皮装
+	 Window 1111058,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4813 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4813 ==1
+	 SetDur 4813,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理皮装吗？
+block Item 41155 >0 && Item 4812 >0 ## 羽毛装
+	 Window 1111059,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4812 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4812 ==1
+	 SetDur 4812,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理羽毛装吗？
+block Item 41155 >0 && Item 4806 >0 ## 保护衣
+	 Window 1111060,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4806 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4806 ==1
+	 SetDur 4806,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理保护衣吗？
+block Item 41155 >0 && Item 4803 >0 ## 旅人之服
+	 Window 1111061,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  4803 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  4803 ==1
+	 SetDur 4803,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理旅人之服吗？
+block Item 41155 >0 && Item 252 >0 ## ミネルバのパンツ
+	 Window 1110062,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  252 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  252 ==1
+	 SetDur 252,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理ミネルバのパンツ吗？
+block Item 41155 >0 && Item 250 >0 ## 水龙之服
+	 Window 1111063,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  250 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  250 ==1
+	 SetDur 250,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之服吗？
+block Item 41155 >0 && Item 602216 >0 ## 和平之袍
+	 Window 1111064,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602216 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602216 ==1
+	 SetDur 602216,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理和平之袍吗？
+block Item 41155 >0 && Item 602215 >0 ## 共鸣之袍
+	 Window 1111065,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602215 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602215 ==1
+	 SetDur 602215,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理共鸣之袍吗？
+block Item 41155 >0 && Item 602200 >0 ## 治愈之袍
+	 Window 1111066,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602200 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602200 ==1
+	 SetDur 602200,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理治愈之袍吗？
+block Item 41155 >0 && Item 18803 >0 ## 狐皮披风
+	 Window 1111067,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  18803 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  18803 ==1
+	 SetDur 18803,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理狐皮披风吗？
+block Item 41155 >0 && Item 5291 >0 ## 奇迹之袍
+	 Window 1111068,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5291 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5291 ==1
+	 SetDur 5291,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理奇迹之袍吗？
+block Item 41155 >0 && Item 5290 >0 ## 灵魂之袍
+	 Window 1111069,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5290 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5290 ==1
+	 SetDur 5290,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理灵魂之袍吗？
+block Item 41155 >0 && Item 5282 >0 ## 圣袍
+	 Window 1111070,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5282 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5282 ==1
+	 SetDur 5282,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理圣袍吗？
+block Item 41155 >0 && Item 5281 >0 ## 黑暗之袍
+	 Window 1111071,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5281 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5281 ==1
+	 SetDur 5281,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理黑暗之袍吗？
+block Item 41155 >0 && Item 5275 >0 ## 洁净之袍+
+	 Window 1111072,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5275 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5275 ==1
+	 SetDur 5275,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理洁净之袍+吗？
+block Item 41155 >0 && Item 5274 >0 ## 勇者之袍
+	 Window 1111073,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5274 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5274 ==1
+	 SetDur 5274,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理勇者之袍吗？
+block Item 41155 >0 && Item 5272 >0 ## 死神之袍
+	 Window 1111074,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5272 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5272 ==1
+	 SetDur 5272,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理死神之袍吗？
+block Item 41155 >0 && Item 5262 >0 ## 时之袍
+	 Window 1111075,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5262 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5262 ==1
+	 SetDur 5262,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理时之袍吗？
+block Item 41155 >0 && Item 5261 >0 ## 冠军之袍
+	 Window 1111076,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5261 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5261 ==1
+	 SetDur 5261,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理冠军之袍吗？
+block Item 41155 >0 && Item 5253 >0 ## 战斗长袍
+	 Window 1111077,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5253 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5253 ==1
+	 SetDur 5253,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理战斗长袍吗？
+block Item 41155 >0 && Item 5250 >0 ## 圣者之袍
+	 Window 1111078,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5250 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5250 ==1
+	 SetDur 5250,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理圣者之袍吗？
+block Item 41155 >0 && Item 5244 >0 ## 圣堂之袍
+	 Window 1111079,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5244 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5244 ==1
+	 SetDur 5244,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理圣堂之袍吗？
+block Item 41155 >0 && Item 5242 >0 ## 东方法衣
+	 Window 1111080,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5242 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5242 ==1
+	 SetDur 5242,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理东方法衣吗？
+block Item 41155 >0 && Item 5233 >0 ## 乌鸦之袍
+	 Window 1111081,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5233 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5233 ==1
+	 SetDur 5233,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理乌鸦之袍吗？
+block Item 41155 >0 && Item 5231 >0 ## 月亮之袍
+	 Window 1111082,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5231 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5231 ==1
+	 SetDur 5231,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理月亮之袍吗？
+block Item 41155 >0 && Item 5224 >0 ## 硬皮袍
+	 Window 1111083,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5224 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5224 ==1
+	 SetDur 5224,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理硬皮袍吗？
+block Item 41155 >0 && Item 5223 >0 ## 环袍
+	 Window 1111084,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5223 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5223 ==1
+	 SetDur 5223,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理环袍吗？
+block Item 41155 >0 && Item 5212 >0 ## 网袍
+	 Window 1111085,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5212 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5212 ==1
+	 SetDur 5212,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理网袍吗？
+block Item 41155 >0 && Item 5211 >0 ## 风袍
+	 Window 1111086,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5211 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5211 ==1
+	 SetDur 5211,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理风袍吗？
+block Item 41155 >0 && Item 5206 >0 ## 羽毛袍
+	 Window 1111087,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5206 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5206 ==1
+	 SetDur 5206,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理羽毛袍吗？
+block Item 41155 >0 && Item 5205 >0 ## 轻皮袍
+	 Window 1111088,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5205 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5205 ==1
+	 SetDur 5205,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理轻皮袍吗？
+block Item 41155 >0 && Item 257 >0 ## 能源之袍
+	 Window 1111089,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  257 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  257 ==1
+	 SetDur 257,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理能源之袍吗？
+block Item 41155 >0 && Item 255 >0 ## 水龙之御衣
+	 Window 1111090,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  255 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  255 ==1
+	 SetDur 255,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之御衣吗？
+block Item 41155 >0 && Item 602416 >0 ## 试力鞋
+	 Window 1111091,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602416 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602416 ==1
+	 SetDur 602416,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理试力鞋吗？
+block Item 41155 >0 && Item 602415 >0 ## 幸运靴
+	 Window 1111092,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602415 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602415 ==1
+	 SetDur 602415,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理幸运靴吗？
+block Item 41155 >0 && Item 602400 >0 ## 防护靴
+	 Window 1111093,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602400 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602400 ==1
+	 SetDur 602400,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理防护靴吗？
+block Item 41155 >0 && Item 5691 >0 ## 龙之靴
+	 Window 1111094,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5691 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5691 ==1
+	 SetDur 5691,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理龙之靴吗？
+block Item 41155 >0 && Item 5690 >0 ## 秘密之靴
+	 Window 1111095,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5690 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5690 ==1
+	 SetDur 5690,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理秘密之靴吗？
+block Item 41155 >0 && Item 5681 >0 ## 钻石长靴
+	 Window 1111096,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5681 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5681 ==1
+	 SetDur 5681,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钻石长靴吗？
+block Item 41155 >0 && Item 5680 >0 ## 钻石靴
+	 Window 1111097,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5680 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5680 ==1
+	 SetDur 5680,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钻石靴吗？
+block Item 41155 >0 && Item 5675 >0 ## 标准长靴+
+	 Window 1111098,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5675 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5675 ==1
+	 SetDur 5675,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理标准长靴+吗？
+block Item 41155 >0 && Item 5673 >0 ## 芙蕾雅之靴
+	 Window 1111099,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5673 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5673 ==1
+	 SetDur 5673,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理芙蕾雅之靴吗？
+block Item 41155 >0 && Item 5671 >0 ## 流水之靴
+	 Window 1111100,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5671 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5671 ==1
+	 SetDur 5671,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理流水之靴吗？
+block Item 41155 >0 && Item 5664 >0 ## 水晶靴
+	 Window 1111101,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5664 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5664 ==1
+	 SetDur 5664,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水晶靴吗？
+block Item 41155 >0 && Item 5660 >0 ## 银靴
+	 Window 1111102,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5660 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5660 ==1
+	 SetDur 5660,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理银靴吗？
+block Item 41155 >0 && Item 5654 >0 ## 钢制长靴
+	 Window 1111103,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5654 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5654 ==1
+	 SetDur 5654,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钢制长靴吗？
+block Item 41155 >0 && Item 5653 >0 ## 钢靴
+	 Window 1111104,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5653 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5653 ==1
+	 SetDur 5653,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理钢靴吗？
+block Item 41155 >0 && Item 5641 >0 ## 蜥蜴长靴
+	 Window 1111105,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5641 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5641 ==1
+	 SetDur 5641,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理蜥蜴长靴吗？
+block Item 41155 >0 && Item 5640 >0 ## 蜥蜴靴
+	 Window 1111106,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5640 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5640 ==1
+	 SetDur 5640,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理蜥蜴靴吗？
+block Item 41155 >0 && Item 5631 >0 ## 锁炼靴
+	 Window 1111107,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5631 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5631 ==1
+	 SetDur 5631,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理锁炼靴吗？
+block Item 41155 >0 && Item 5630 >0 ## 锁炼长靴
+	 Window 1111108,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5630 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5630 ==1
+	 SetDur 5630,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理锁炼长靴吗？
+block Item 41155 >0 && Item 5621 >0 ## 编织的靴子
+	 Window 1111109,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5621 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5621 ==1
+	 SetDur 5621,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理编织的靴子吗？
+block Item 41155 >0 && Item 5620 >0 ## 厚底靴
+	 Window 1111110,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5620 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5620 ==1
+	 SetDur 5620,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理厚底靴吗？
+block Item 41155 >0 && Item 5614 >0 ## 硬皮靴
+	 Window 1111111,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5614 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5614 ==1
+	 SetDur 5614,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理硬皮靴吗？
+block Item 41155 >0 && Item 5612 >0 ## 长靴
+	 Window 1111112,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5612 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5612 ==1
+	 SetDur 5612,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理长靴吗？
+block Item 41155 >0 && Item 5601 >0 ## 皮靴
+	 Window 1111113,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5601 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5601 ==1
+	 SetDur 5601,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理皮靴吗？
+block Item 41155 >0 && Item 5600 >0 ## 软皮靴
+	 Window 1111114,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  5600 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  5600 ==1
+	 SetDur 5600,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理软皮靴吗？
+block Item 41155 >0 && Item 262 >0 ## 稀有长靴9
+	 Window 1111115,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  262 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  262 ==1
+	 SetDur 262,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理稀有长靴9吗？
+block Item 41155 >0 && Item 260 >0 ## 水龙巨靴
+	 Window 1111116,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  260 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  260 ==1
+	 SetDur 260,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙巨靴吗？
+block Item 41155 >0 && Item 602616 >0 ## 大木屐
+	 Window 1111117,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602616 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602616 ==1
+	 SetDur 602616,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理大木屐吗？
+block Item 41155 >0 && Item 602615 >0 ## 守护之鞋
+	 Window 1111118,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602615 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602615 ==1
+	 SetDur 602615,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理守护之鞋吗？
+block Item 41155 >0 && Item 602601 >0 ## 特制舞鞋
+	 Window 1111119,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  602601 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  602601 ==1
+	 SetDur 602601,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理特制舞鞋吗？
+block Item 41155 >0 && Item 6091 >0 ## 龙之鞋
+	 Window 1111120,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6091 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6091 ==1
+	 SetDur 6091,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理龙之鞋吗？
+block Item 41155 >0 && Item 6090 >0 ## 黄金鞋
+	 Window 1111121,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6090 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6090 ==1
+	 SetDur 6090,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理黄金鞋吗？
+block Item 41155 >0 && Item 6081 >0 ## 力量之鞋
+	 Window 1111122,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6081 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6081 ==1
+	 SetDur 6081,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理力量之鞋吗？
+block Item 41155 >0 && Item 6080 >0 ## 神秘之鞋
+	 Window 1111123,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6080 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6080 ==1
+	 SetDur 6080,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理神秘之鞋吗？
+block Item 41155 >0 && Item 6075 >0 ## 妖精鞋+
+	 Window 1111124,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6075 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6075 ==1
+	 SetDur 6075,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理妖精鞋+吗？
+block Item 41155 >0 && Item 6074 >0 ## 精致高级鞋
+	 Window 1111125,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6074 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6074 ==1
+	 SetDur 6074,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理精致高级鞋吗？
+block Item 41155 >0 && Item 6072 >0 ## 白金鞋
+	 Window 1111126,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6072 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6072 ==1
+	 SetDur 6072,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理白金鞋吗？
+block Item 41155 >0 && Item 6064 >0 ## 妖精鞋
+	 Window 1111127,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6064 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6064 ==1
+	 SetDur 6064,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理妖精鞋吗？
+block Item 41155 >0 && Item 6063 >0 ## 紫水晶鞋
+	 Window 1111128,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6063 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6063 ==1
+	 SetDur 6063,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理紫水晶鞋吗？
+block Item 41155 >0 && Item 6054 >0 ## 战斗鞋
+	 Window 1111129,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6054 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6054 ==1
+	 SetDur 6054,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理战斗鞋吗？
+block Item 41155 >0 && Item 6052 >0 ## 骑士鞋
+	 Window 1111130,YES,NO  
+	 Window_YES Item 41155 >= 1 && Item  6052 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6052 ==1
+	 SetDur 6052,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理骑士鞋吗？
+block Item 41155 >0 && Item 6042 >0 ## 蜥蜴鞋
+	 Window 1111131,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item  6042 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item  6042 ==1
+	 SetDur 6042,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理蜥蜴鞋吗？
+block Item 41155 >0 && Item 6040 >0 ## 维京鞋
+	 Window 1111132,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6040 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6040 ==1
+	 SetDur 6040,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理维京鞋吗？
+block Item 41155 >0 && Item 6033 >0 ## 薄板鞋
+	 Window 1111133,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6033 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6033 ==1
+	 SetDur 6033,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理薄板鞋吗？
+block Item 41155 >0 && Item 6031 >0 ## 锁炼鞋
+	 Window 1111134,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6031 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6031 ==1
+	 SetDur 6031,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理锁炼鞋吗？
+block Item 41155 >0 && Item 6025 >0 ## 战鞋
+	 Window 1111135,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6025 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6025 ==1
+	 SetDur 6025,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理战鞋吗？
+block Item 41155 >0 && Item 6022 >0 ## 光之鞋
+	 Window 1111136,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6022 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6022 ==1
+	 SetDur 6022,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理光之鞋吗？
+block Item 41155 >0 && Item 6011 >0 ## 安全鞋
+	 Window 1111137,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6011 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6011 ==1
+	 SetDur 6011,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理安全鞋吗？
+block Item 41155 >0 && Item 6010 >0 ## 皮鞋
+	 Window 1111138,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6010 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6010 ==1
+	 SetDur 6010,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理皮鞋吗？
+block Item 41155 >0 && Item 6002 >0 ## 马车鞋
+	 Window 1111139,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6002 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6002 ==1
+	 SetDur 6002,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理马车鞋吗？
+block Item 41155 >0 && Item 6001 >0 ## 运动鞋
+	 Window 1111140,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6001 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6001 ==1
+	 SetDur 6001,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理运动鞋吗？
+block Item 41155 >0 && Item 267 >0 ## 稀有鞋9
+	 Window 1111141,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 267 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 267 ==1
+	 SetDur 267,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理稀有鞋9吗？
+block Item 41155 >0 && Item 265 >0 ## 水龙之鞋
+	 Window 1111142,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 265 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 265 ==1
+	 SetDur 265,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之鞋吗？
+block Item 41155 >0 && Item 602816 >0 ## 重型防御盾
+	 Window 1111143,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 602816 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 602816 ==1
+	 SetDur 602816,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理重型防御盾吗？
+block Item 41155 >0 && Item 602815 >0 ## 突猛盾
+	 Window 1111144,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 602815 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 602815 ==1
+	 SetDur 602815,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理突猛盾吗？
+block Item 41155 >0 && Item 602800 >0 ## 圣者之盾
+	 Window 1111145,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 602800 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 602800 ==1
+	 SetDur 602800,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理圣者之盾吗？
+block Item 41155 >0 && Item 6491 >0 ## 勇者之盾
+	 Window 1111146,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6491 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6491 ==1
+	 SetDur 6491,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理勇者之盾吗？
+block Item 41155 >0 && Item 6490 >0 ## 黑暗之盾
+	 Window 1111147,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6490 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6490 ==1
+	 SetDur 6490,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理黑暗之盾吗？
+block Item 41155 >0 && Item 6481 >0 ## 火龙之盾
+	 Window 1111148,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6481 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6481 ==1
+	 SetDur 6481,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理火龙之盾吗？
+block Item 41155 >0 && Item 6480 >0 ## 漆黑之盾
+	 Window 1111149,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6480 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6480 ==1
+	 SetDur 6480,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理漆黑之盾吗？
+block Item 41155 >0 && Item 6477 >0 ## 力量之盾
+	 Window 1111150,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6477 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6477 ==1
+	 SetDur 6477,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理力量之盾吗？
+block Item 41155 >0 && Item 6473 >0 ## 防御之盾+
+	 Window 1111151,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6473 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6473 ==1
+	 SetDur 6473,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理防御之盾+吗？
+block Item 41155 >0 && Item 6470 >0 ## 镜之盾
+	 Window 1111152,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6470 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6470 ==1
+	 SetDur 6470,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理镜之盾吗？
+block Item 41155 >0 && Item 6463 >0 ## 黄金之盾
+	 Window 1111153,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6463 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6463 ==1
+	 SetDur 6463,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理黄金之盾吗？
+block Item 41155 >0 && Item 6461 >0 ## 防守之盾
+	 Window 1111154,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6461 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6461 ==1
+	 SetDur 6461,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理防守之盾吗？
+block Item 41155 >0 && Item 6458 >0 ## 风之盾
+	 Window 1111155,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6458 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6458 ==1
+	 SetDur 6458,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理风之盾吗？
+block Item 41155 >0 && Item 6457 >0 ## 狮子盾
+	 Window 1111156,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6457 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6457 ==1
+	 SetDur 6457,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理狮子盾吗？
+block Item 41155 >0 && Item 6449 >0 ## 反光之盾
+	 Window 1111157,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6449 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6449 ==1
+	 SetDur 6449,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理反光之盾吗？
+block Item 41155 >0 && Item 6447 >0 ## 蜥蜴盾
+	 Window 1111158,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6447 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6447 ==1
+	 SetDur 6447,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理蜥蜴盾吗？
+block Item 41155 >0 && Item 6437 >0 ## 士兵盾
+	 Window 1111159,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6437 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6437 ==1
+	 SetDur 6437,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理士兵盾吗？
+block Item 41155 >0 && Item 6434 >0 ## 重盾
+	 Window 1111160,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6434 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6434 ==1
+	 SetDur 6434,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理重盾吗？
+block Item 41155 >0 && Item 6427 >0 ## 漩涡重盾
+	 Window 1111161,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6427 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6427 ==1
+	 SetDur 6427,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理漩涡重盾吗？
+block Item 41155 >0 && Item 6425 >0 ## 哥特盾
+	 Window 1111162,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6425 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6425 ==1
+	 SetDur 6425,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理哥特盾吗？
+block Item 41155 >0 && Item 6412 >0 ## 鸢盾
+	 Window 1111163,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6412 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6412 ==1
+	 SetDur 6412,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理鸢盾吗？
+block Item 41155 >0 && Item 6410 >0 ## 板盾
+	 Window 1111164,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6410 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6410 ==1
+	 SetDur 6410,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理板盾吗？
+block Item 41155 >0 && Item 6402 >0 ## 小型盾
+	 Window 1111165,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6402 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6402 ==1
+	 SetDur 6402,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理小型盾吗？
+block Item 41155 >0 && Item 6401 >0 ## 小圆盾
+	 Window 1111166,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 6401 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 6401 ==1
+	 SetDur 6401,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理小圆盾吗？
+block Item 41155 >0 && Item 272 >0 ## 血腥王之盾
+	 Window 1111167,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 272 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 272 ==1
+	 SetDur 272,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理血腥王之盾吗？
+block Item 41155 >0 && Item 270 >0 ## 水龙之盾
+	 Window 1111168,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 270 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 270 ==1
+	 SetDur 270,+1
+	 KillItem  41155,1
+	 EndWindow 1054282
+	 Window_NO
+	 ##  \n\n　　　　记忆之晶能将武防具耐久恢复１点，，　　　　你确定要修理水龙之盾吗？
+block Item 41155 >0 && Item 40854 >0 ## 鹿皮手套
+	 Window 1111179,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40854 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40854 ==1
+	 SetDur 40854,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO
+
+
+block Item 41155 >0 && Item 40855 >0 ##皮制铃鼓
+	 Window 1111180,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40855 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40855 ==1
+	 SetDur 40855,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO
+	 
+block Item 41155 >0 && Item 40856 >0 ##陨石之鼓
+
+	 Window 1111181,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40856 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40856 ==1
+	 SetDur 40856,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO
+	 
+block Item 41155 >0 && Item 40857 >0 ##薰香包
+
+	 Window 1111182,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40857 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40857 ==1
+	 SetDur 40857,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO
+	 
+block Item 41155 >0 && Item 40858 >0 ##雪之结晶
+
+	 Window 1111183,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40858 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40858 ==1
+	 SetDur 40858,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	 
+block Item 41155 >0 && Item 40859 >0 ##银折扇
+
+	 Window 1111184,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40859 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40859 ==1
+	 SetDur 40859,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO
+	 
+block Item 41155 >0 && Item 40860 >0 ##恶魔风笛
+	 Window 1111185,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40860 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40860 ==1
+	 SetDur 40860,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO
+	 
+#====	 
+block Item 41155 >0 && Item 40861 >0 ##恋爱耳环
+
+	 Window 1111186,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40861 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40861 ==1
+	 SetDur 40861,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40862 >0 ##猫眼耳环
+
+	 Window 1111187,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40862 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40862 ==1
+	 SetDur 40862,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40863 >0 ##泪石之戒
+
+	 Window 1111188,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40863 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40863 ==1
+	 SetDur 40863,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40864 >0 ##龙之环
+
+	 Window 1111189,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40864 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40864==1
+	 SetDur 40864,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40865 >0 ##钛金耳饰
+
+	 Window 1111190,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40865 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40865 ==1
+	 SetDur 40865,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO		 	 	 	 	 
+#======================================
+block Item 41155 >0 && Item 40866 >0 ##蓝羽发簪
+
+
+	 Window 1111191,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40866 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40866 ==1
+	 SetDur 40866,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40867 >0 ##黑魔法之戒
+
+	 Window 1111192,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40867 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40867 ==1
+	 SetDur 40867,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40868 >0 ##祈愿之符
+
+
+	 Window 1111193,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40868 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40868 ==1
+	 SetDur 40868,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40869 >0 ##镜戒
+
+
+	 Window 1111194,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40869 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40869 ==1
+	 SetDur 40869,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40870 >0 ##红羽发簪
+
+	 Window 1111195,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40870 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40870 ==1
+	 SetDur 40870,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO		 	 	 	 	 
+	 
+#=========================================================	 
+block Item 41155 >0 && Item 40871 >0 ##香草锦囊
+
+
+	 Window 1111196,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40871 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40871 ==1
+	 SetDur 40871,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40872 >0 ##丰年之穗
+
+
+	 Window 1111197,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40872 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40872 ==1
+	 SetDur 40872,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40873 >0 ##茴香环
+
+
+	 Window 1111198,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40873 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40873 ==1
+	 SetDur 40873,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO	
+block Item 41155 >0 && Item 40874 >0 ##奇石步摇
+
+
+	 Window 1111199,YES,NO   
+	 Window_YES Item 41155 >= 1 && Item 40874 >=2
+	 EndWindow   1055117  
+	 Window_YES Item 41155 >= 1 && Item 40874 ==1
+	 SetDur 40874,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO
+block Item 41155 >0 && Item 40875 >0 ##香柏环
+
+
+	 Window 1111200,YES,NO
+	 Window_YES Item 41155 >= 1 && Item 40875 >=2
+	 EndWindow   1055117
+	 Window_YES Item 41155 >= 1 && Item 40875 ==1
+	 SetDur 40875,+1
+	 KillItem  41155,1
+	 EndWindow 1111201
+	 Window_NO
+
+block
+EndWindow 1111169
+
+##\n\n\n@c你没有任何武器防具需要回复耐久喔！！
+
+

@@ -1,0 +1,23 @@
+#泛旦玄﹛由伊民尼件﹛旦奶永民及谛
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛窒手卅仄﹛##############
+block
+
+
+#	Window 3002100,next
+
+#	Window 3002101,next
+
+
+	Window 3002127,yes,no
+
+	window_yes
+	
+
+		Warp 0,1500,27,82
+
+	window_no
+	
+

@@ -1,0 +1,41 @@
+#
+#豢螃潠
+#
+
+
+
+block CheckRealTime 2004/1/1,00:00:00 == 1
+#block CheckRealTime 2003/12/24,18:00:00 == 1
+
+
+	Window "\n\n﹛云户匹午丹仍介中引℅允﹝\n﹛云挛赛﹜中井互匹允井〝\n﹛夫午勾﹜100?匹允﹝",yes,no
+
+		Window_yes Gold <= 99
+
+		EndWindow "\n\n﹛蕙コ镀★﹜嗯瑞匹允井＿＿仄仁仄仁﹝"
+
+		Window_yes Itemspace <= 0
+
+		EndWindow "\n\n﹛云澎及丹切互中匀天中匹\n﹛欐六卅中匹允友℅"
+
+		Window_yes
+		
+		Window "\n\n﹛反中﹜升丹冗﹝\n﹛漆コ手痲支井匹丐曰引允方丹卞″",ok
+
+			Window_ok
+			addgold -100
+			GiveItem (18228%5,18232%10,607653%5)
+
+		Window_no
+
+		EndWindow "\n\n﹛丐木℅﹜\n﹛梧粟坁卅及卞℅"
+
+
+block CheckRealTime 2003/12/26,00:00:00 == 1
+#block CheckRealTime 2003/12/24,00:00:00 == 1
+
+
+	Window "\n\n﹛云恳畸匀化﹜\n﹛卅氏分井丹五丹五仄切扎丹歹友﹝",next
+
+	EndWindow "\n\n﹛手丹﹜云コ傻手日尹月コ匹手卅中及卞友℅\n﹛镀仁侳卅中井卅丑﹝"
+

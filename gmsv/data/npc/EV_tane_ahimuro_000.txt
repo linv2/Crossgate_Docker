@@ -1,0 +1,9 @@
+block
+
+if Xpos == 521 && Ypos == 309 &&  Trialflg >= 7
+
+			LeaveGroup
+			warp 0,59702,172,104
+
+endif
+

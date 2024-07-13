@@ -1,0 +1,19 @@
+###dodo_item_46877.txt
+###物品收集单		点2下可以得知第二次集会要给联络人的贡品。
+###第二次的物品收集单
+block Item 46877 >= 1 
+	 ##1053498	\n\n此张纸条具有自动保密的机能效果，\n阅读之后将会自动销毁，\n你是否要现在阅读此纸条？	1
+	 Window 1053498,YES,NO 
+	 	 Window_NO 
+	 	 Window_YES 
+	 	 	 ##1053500	\n\n你所需要收集的物品是：\n树精卡片3张。\n本纸条将会在5秒后自动销毁！	1
+			 Window 1053500,NEXT 
+			 Window 1051295,NEXT ##5
+			 Window 1051296,NEXT ##4
+			 Window 1051297,NEXT ##3
+			 Window 1051298,NEXT ##2
+			 Window 1051299,NEXT ##1
+			 Window 1051300,OK   ##～噗啾～
+			 	 Window_OK Item 46877 >= 1 
+			 	 	 KillItem 46877,(1053506) 
+			 	 	 

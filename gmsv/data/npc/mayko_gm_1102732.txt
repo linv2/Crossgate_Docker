@@ -1,0 +1,40 @@
+#mayko_gm_1102695.txt
+
+#1111461	谢谢你！	1
+#1111462	\n　　　妹妹在蒂纳村呀～～\n　　　那太好了～～	1
+#1111463	\n　　　我们的村子，\n　　　过去十几年，\n　　　因为发现水晶而开始富有。	1
+#1111464	\n　　　但是从那时起，\n　　　就陆续发生一些奇怪的现象。	1
+#1111465	\n　　　这次灭村前，\n　　　刚好有矿物商人来村子讨论。	1
+#1111466	\n　　　要大规模开采水晶，\n　　　才开采三天就．．．．	1
+#1111467	山崩灭村．．．．	1
+#1111468	我想留这里，看看能不能找到灭村的资料。	1
+#1111469	您是否方便帮我到村子的矿坑看看吗？	1
+#1111478	\n　　　这文字，\n　　　曾在村子的古文书见过，\n　　　我会好好了解它。	1
+#1111479	\n　　　对了，\n　　　这是给我妹妹的书信与生活费，\n　　　请您拿给他吧！	1
+
+block item 41175 >0
+	killitem 41175,1
+	GiveLeak1Item 41174,1
+	Window 1111478,next
+	endwindow 1111479
+
+block item 41178 >0
+	endwindow 1111468
+block item 41176 >0
+	window 1111462,next
+	Window 1111463,next
+	Window 1111464,next
+	window 1111465,next
+	window 1111466,next
+	window 1111467,next
+	window 1111468,next
+	window 1111469,yes,no
+	Window_yes item 41176 >0
+	killitem 41176,1
+	GiveLeak1Item 41177,1
+	endwindow 1111461
+	window_yes
+	Window_no
+	endblock
+block 
+	endwindow 1111468

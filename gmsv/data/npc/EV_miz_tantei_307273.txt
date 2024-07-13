@@ -1,0 +1,186 @@
+#¼ëÓ£ÛÍ¾Şµ©Ğş¡°
+#ÀåŠqÙ¯©yÄıŠqÙ¯¼°à¼·´Ø¦ÖĞ
+#'_'·´ÛÌĞÄ?ÈÉØÆ
+###########©xENDFLG 68 ¶¯Ïş¼°°×·Âºë»¥ON©x£¾Ë¦¼şÛÍ£½©x##############
+block strcmpchat == 206726 && nowevent68 == 1 
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && endevent68 == 1
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && nowevent69 == 1 
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && endevent69 == 1
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && nowevent70 == 1 
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && endevent70 == 1
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && nowevent71 == 1 
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && endevent71 == 1
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && nowevent72 == 1 
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && endevent72 == 1
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && nowevent73 == 1 
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && endevent73 == 1
+
+	EndWindow 206592,OK
+block strcmpchat == 206726 && nowevent74 == 1 
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && endevent74 == 1
+
+	EndWindow 206592,OK
+block strcmpchat == 206726 && nowevent75 == 1 
+
+	EndWindow 206592,OK
+
+block strcmpchat == 206726 && endevent75 == 1
+
+	EndWindow 206592,OK
+
+###########©xENDFLG 68 ¶¯Ïş¼°°×·Âºë»¥ON £¾²¼ÓÀ·º¼ş£½©x##############
+block strcmpchat == 206735 && nowevent68 == 1 
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && endevent68 == 1
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && nowevent69 == 1 
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && endevent69 == 1
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && nowevent70 == 1 
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && endevent70 == 1
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && nowevent71 == 1 
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && endevent71 == 1
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && nowevent72 == 1 
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && endevent72 == 1
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && nowevent73 == 1 
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && endevent73 == 1
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && nowevent74 == 1 
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && endevent74 == 1
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && nowevent75 == 1 
+
+	EndWindow 206593,OK
+
+block strcmpchat == 206735 && endevent75 == 1
+
+	EndWindow 206593,OK
+
+###########©xNOWFLG 69 on©x £¾Ê§ØøÌïÄÌ...£½©x##############
+block nowevent69 == 1 && strcmpchat == 206740
+
+	EndWindow 206583,OK
+
+###########©x£¾ÆËµ©Õı¡õ¸¥ÄÌ£½©x##############
+block strcmpchat == 206733
+
+	EndWindow 206595,OK
+
+###########©x£¾ÓÃ¹ÏÓÃ¹Ï£½©x##############
+block strcmpchat == 206734
+
+	EndWindow 206584,OK
+
+###########©x£¾Õı¼şºë·ÂØ©£½©x##############
+block strcmpchat == 206729
+
+	EndWindow 206585,OK
+
+###########©x£¾ÓñÛÍÕı¡õ°×Å«µ©£½©x##############
+block strcmpchat == 206731
+
+	EndWindow 206586,OK
+
+###########©x£¾¾ŞÄÌÁ¢Øø¡õ£½©x##############
+block strcmpchat == 206732
+
+	EndWindow 206587,OK
+
+###########©x£¾ËüÅ«¼şÓ×µ©£½©x##############
+block strcmpchat == 206727
+
+	EndWindow 206588,OK
+
+###########©x£¾·ÂÓÀÆ½¡õÛÍ·ÂËü¼ş£½©x##############
+block strcmpchat == 206730
+
+	EndWindow 206589,OK
+
+###########©x£¾°×·Â¼şÛÍØø¼ş£½©x##############
+block strcmpchat == 206736
+
+	EndWindow 206590,OK
+
+###########©x£¾Ë¦¼şÛÍ£½©x##############
+block strcmpchat == 206726
+
+	EndWindow 206591,OK
+
+###########©xÖÏÊÖ’ƒØÆ©x##############
+block
+	EndWindow 206582,OK
+
+

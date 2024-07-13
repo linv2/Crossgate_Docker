@@ -1,0 +1,28 @@
+#
+#愈梂及?﹋伄湿及炴朴/螃魟BOSS爵詨 ﹌
+#
+
+##############  ##############
+block 
+#\n\n﹛﹋裆及擘﹌\n\n﹛孔反反反″勾中卞仇及ざ毛牒尹凶冗″辉螃白奴瓦失方﹜酸ゴ卅互日筑迋及朼执泙手漆ざ引匹分﹝
+	Window 15228,NEXT
+#\n\n﹛﹋辉及擘﹌\n\n﹛谛及褥匹丐曰卅互日仇仇引匹支匀化仁月午反赀遥匹仄凶＿＿匹手﹜仇及必□玄毛钒仁反唱壑钗及樊及恘互优邰匹允﹝丐卅凶卞反钒仁仇午反匹五引六氏方﹝
+	Window 15229,NEXT
+#\n\n﹛﹋裆及擘﹌\n\n﹛白件﹜割井卞卅＿引匀凶仁凝叶仄中称鼎毛仄化仁木凶手及分﹝仄井仄﹜公及＞钒仁手及＝互仇仇卞中月午仄凶日升丹分〝
+	Window 15230,NEXT
+#\n\n﹛﹋辉及擘﹌\n\n﹛＿＿引今井＿＿
+	Window 15231,NEXT
+#\n\n﹛﹋裆及擘﹌\n\n﹛仇及ざ及凶户﹜脱日互窒伝コ毛井仃化五凶午合丹井〝″
+	Window 15232,NEXT
+#\n\n﹛﹋辉及擘﹌\n\n﹛中仃卅中″仇仇毛钒中化反″
+	Window 15233,NEXT
+#\n\n﹛﹋裆及擘﹌\n\n﹛昒六方﹝
+	Window 15234,NEXT
+#\n\n﹛﹋辉及擘﹌\n\n﹛凶午尹仇及褥互昒太化手﹜仇及杹分仃反＿＿
+	Window 15235,NEXT
+#\n\n﹛﹋裆及擘﹌\n\n﹛″″″″″
+	Window 15236,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,20001,26,32
+

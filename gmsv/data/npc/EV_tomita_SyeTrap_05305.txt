@@ -1,0 +1,13 @@
+#Ä¸¼þ³âÒà¼þÐþ·ÂÓÀÃó©x©x??©xŽx÷ú
+#
+#©x©x©xÆËÄá·ÂËü¾ÞÓÀÄ©¼°ÏÔ53±Õ©j·¥¡õÃóÐþ·ÂÓÀÃó©k
+
+###©x3004859£¾æØÜìØ¦âãÆYÆÕ¡å©x·¥¡õÃóÐþ·ÂÓÀÃó·Ö¡å£½
+
+block Xpos == 101 && Ypos == 45
+
+	Message 3004859
+	Warp 0,59854,101,45
+
+
+

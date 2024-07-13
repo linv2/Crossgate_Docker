@@ -1,0 +1,7 @@
+########### 接力赛-旅馆传出 ###########
+block
+	 ##1050853	\n\n\n\n@c确定要出去吗？
+	 Window 1050853,YES,NO
+	 	 Window_YES
+	 	 Warp 0,30111,33,26
+	 	 Window_NO

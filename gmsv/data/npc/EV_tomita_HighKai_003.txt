@@ -1,0 +1,50 @@
+#甩奶伊矛伙轾仃荼瞻豭﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛项柈赢及摒
+
+###﹛平乓用件豸毛赭儅
+block Item_607724 >= 1
+	GAWindow 3204542,YES,NO
+
+		#\n\n﹛筑跤卞反﹜仇仇匹及楛柈反手丹优邰卅中卅﹝\n﹛娄五虬仆凶日升丹分〝
+
+		Window_YES
+			GAWindow 3204543,OK
+
+		#\n\n﹛丹戈﹜蕙宎织仅匹丐月卅﹝\n﹛掸爵匹及唾泧﹜厘中卞渝谨仄化中月冗﹝
+
+				Window_OK
+					Warp 0,59505,228,157
+
+		Window_NO
+			GAWindow 3204544,OK
+
+		#\n\n﹛公丹井﹝拑咥卞娄五帢户反仄卅中﹝\n﹛ダ丿允月引匹楛柈毛粮仃月互方中﹝
+
+				Window_OK
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	GAWindow 3204545,YES,NO
+
+		#\n\n﹛楛柈毛酦鞅仄化仇仇井日请凶中及井〝
+
+		Window_YES
+			GAWindow 3204546,OK
+
+		#\n\n﹛异元竣勿中凶井﹝卅日壬蛔木″
+
+				Window_OK
+					Warp 0,59505,228,157
+
+		Window_NO
+			GAWindow 3204547,OK
+
+		#\n\n﹛卅日壬梂尺褡戈互方中﹝\n﹛掸恘毛勾仃月及卞嗤Ⅶ反卅中﹝\n﹛夫凶允日爵匀化爵匀化爵中粮仃月及分″
+
+				Window_OK
+
+
+

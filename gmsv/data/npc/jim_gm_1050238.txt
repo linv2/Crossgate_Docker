@@ -1,0 +1,38 @@
+################### 抢头香 给香的人30017 42 49
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+
+################### 物品栏已满
+block ItemSpace == 0
+	 ##1100001	\n\n\n\n\n@c物品栏已经满了。	1
+	 EndWindow 1100001
+
+###################有香了，超过时间
+block  Item 45227 >= 1 && ItemCreateTime 45227 > 30
+	 ##1050189	你的香已经烧完了，给你新的香
+	 Window 1050189,NEXT
+	 KillItem 45227
+	 GiveLeak1Item 45227
+	 Warp 0,32641,25,75
+
+###################有香了，没有超过时间 
+block  Item 45227 >= 1 && ItemCreateTime 45227 < 30
+	 ##1050190	给你香
+	 Window 1050190,OK
+	 	 Window_OK Item 45227 >= 1 && ItemCreateTime 45227 < 30
+	 		 Warp 0,32641,25,75
+
+###################没有香  
+block  Item 45227 == 0
+	 ##1050190	给你香
+	 Window 1050190,NEXT
+	 GiveLeak1Item 45227
+	 Warp 0,32641,25,75
+

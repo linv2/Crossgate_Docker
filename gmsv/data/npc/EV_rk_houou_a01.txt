@@ -1,0 +1,12 @@
+#?¦Þ???
+
+block
+	Window 22307,YES,NO
+		Window_YES
+		Window_NO Level <= 69
+			EndWindow 22308
+		Window_NO Level >= 70
+			Window 22309,OK
+				Window_OK
+					LeaveGroup
+					Warp 0,36003,10,2

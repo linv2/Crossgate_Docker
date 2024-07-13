@@ -1,0 +1,25 @@
+#??
+
+#???§Ä?þ­????
+block EndEvent 53 == 1
+		Window 22660,OK
+			Window_OK
+				EndEvent 136 = 1
+				LeaveGroup
+				Warp 0,34018,21,8
+
+#
+block EndEvent 61 == 1
+	Window 22654,Yes,No
+		Window_Yes
+			Window 22655,OK
+				Window_OK
+					EndEvent 136 = 1
+					LeaveGroup
+					Warp 0,33000,406,146
+		Window_No
+			Window 22656,OK
+				Window_OK
+					EndEvent 136 = 1
+					LeaveGroup
+					Warp 0,33000,406,146

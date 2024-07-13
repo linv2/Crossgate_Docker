@@ -1,0 +1,8 @@
+block item 41309 >0
+	killitem 41309,1
+	GiveLeak1Item  41306, 1   
+	leavegroup 
+ 	warp 0,43000,537,383
+ 	endblock
+
+

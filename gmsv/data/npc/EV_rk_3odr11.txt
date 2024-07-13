@@ -1,0 +1,77 @@
+#±ØÓÀÆË¼þ
+
+#¾Þ»ïÆ¥çÖÎþ¼°¾ÝÃ«ƒ}ÔÈ»¯ÖÐÔÂ
+block EndEvent 119 == 1 && Item 16428 >= 1
+	Window 23045,Next
+	Window 23046,Next
+	Window 23047,Next
+	Window 23048,Next
+	Window 23049,Next
+	Window 23050,Next
+	EndWindow 23051,OK
+#·Â¼þÆ¥çÖÎþ¼°¾ÝÃ«ƒ}ÔÈ»¯ÖÐÔÂ
+block EndEvent 120 == 1 && Item 16428 >= 1
+	Window 23052,Next
+	Window 23053,Next
+	EndWindow 23054,OK
+
+#±ØÓÀÆË¼þ±åãïÃ«ÍñÒýÁùÐ×Ô‰
+block EndEvent 119 == 1 || EndEvent 120 == 1
+	EndWindow 23055
+
+#¾Þ»ïÆ¥Øç¶ããï2Ã«ƒ}ÔÈ»¯ÖÐÔÂ
+block NowEvent 119 == 1 && Item 16439 >= 1
+	Window 23056,Next
+	Window 23057,Next
+	Window 23058,Next
+	Window 23059,Next
+	Window 23060,Next
+	Window 23061,Next
+	Window 23062,OK
+		Window_OK Item 16439 >= 1
+			KillItemAll 16439
+			EndEvent 119 = 1
+#·Â¼þÆ¥Øç¶ããï2Ã«ƒ}ÔÈ»¯ÖÐÔÂ
+block NowEvent 120 == 1 && Item 16439 >= 1
+	Window 23056,Next
+	Window 23063,Next
+	Window 23064,Next
+	Window 23059,Next
+	Window 23060,Next
+	Window 23061,Next
+	Window 23065,OK
+		Window_OK Item 16439 >= 1
+			KillItemAll 16439
+			EndEvent 120 = 1
+#ÆËØø¡õ¼þ±åãïÃ«ÍñÒýÁùÐ×Ô‰©jØç¶ããï·´ƒ}ÔÈ»¯ÖÐØ¦ÖÐ©k
+block EndEvent 145 == 1
+	EndWindow 23066,OK
+#±ØÓÀÆË¼þ¼°³×‚UÃ«°¾ØêÐ×Ô‰
+block NowEvent 145 == 1
+	EndWindow 23067,OK
+
+#¾Þ»ïÆ¥ÛÍ¾Þµ©Ðþñ×µæáNÆ¥Ñ¨ÄÌÑ¨ÄÌã×Ã«ƒ}ÔÈ»¯ÖÐÔÂ
+block NowEvent 119 == 1 && Item 16430 >= 1
+	Window 23068,Next
+	Window 23069,Next
+	Window 23070,OK
+		Window_OK
+			NowEvent 145 = 1 && Item 16430 >= 1
+#·Â¼þÆ¥ÛÍ¾Þµ©Ðþñ×µæáNÆ¥Ñ¨ÄÌÑ¨ÄÌã×Ã«ƒ}ÔÈ»¯ÖÐÔÂ
+block NowEvent 120 == 1 && Item 16430 >= 1
+	Window 23068,Next
+	Window 23071,Yes,No
+		Window_No
+			EndWindow 23078,OK
+		Window_Yes
+			Window 23072,Next
+			Window 23073,Next
+			Window 23074,Next
+			Window 23075,Next
+			Window 23076,Next
+			Window 23077,OK
+				Window_OK
+					NowEvent 145 = 1
+block
+	EndWindow 23066,OK
+

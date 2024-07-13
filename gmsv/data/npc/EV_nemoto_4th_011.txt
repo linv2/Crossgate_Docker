@@ -1,0 +1,26 @@
+##ㄥ璃コ筏ゴ奶矛件玄﹛by漪呿
+## NPC“左术瓜弘
+
+
+### 失奶泛丞民尼永弁
+block Item 622011 >= 1 && Item 622012 >= 1 && Item 622013 >= 1 && Item 622014 >= 1 && Item 622015 >= 1 && Item 622016 >= 1
+
+	Window"\n\n﹛切斤﹜切斤匀午引化﹝\n﹛升仇匹澎卞じ木凶氏分﹜公及谛溥″\n﹛呬卞丐仆月谛溥互剂卅仁化漱匀化凶氏分﹝\n﹛眸互儅匀化月谛溥午公木蝈朿匹跟晶仄卅中井〝",yes,no
+	Window_yes Item 622011 >= 1 && Item 622012 >= 1 && Item 622013 >= 1 && Item 622014 >= 1 && Item 622015 >= 1 && Item 622016 >= 1
+	KillItem 622011,1
+	KillItem 622012,1
+	KillItem 622013,1
+	KillItem 622014,1
+	KillItem 622015,1
+	KillItem 622016,1
+	GiveLeak1Item 623583,1	
+	EndWindow "\n\n﹛丐曰互午方﹝\n﹛仇木匹﹜呬手减少分欠﹝\n﹛公木卞仄化手﹜溶筑反窒毛支匀化氏分方″″"
+
+	Window_yes
+	EndWindow"\n\n﹛丐﹜鬼中﹝\n﹛仇及谛溥反筑褐匀吊中井日﹜\n﹛支匀天曰跟晶反卅仄卅﹝"
+
+	Window_no
+	EndWindow"\n\n﹛幻氏午卞尕泃莒卅ざ分方″\n﹛手丹溶筑卞签仃月仄井卅中卅″"
+
+block
+	EndWindow "\n\n﹛引匀凶仁溶筑反升仇引匹垫匀化月氏分﹝\n﹛眸壬匀井曰卞仇氏卅谛溥儅凶六支互匀化\n﹛窒璃コ分互襞日卅中互﹜卅氏化尕泃莒卅ざ卅氏分"

@@ -1,0 +1,16 @@
+#乐师宝箱	mayko_item_47644.txt	
+#金属管	47630
+#风之羽	47631
+
+
+#1054940	\n\n\n\n\n@c打开宝箱。	1
+
+
+block
+
+	 Window 1054940,OK
+	 
+	 Window_OK
+	 KillItem 47644,1 
+	 GiveLeak1Item (47630%10$1,47631%5$1)
+	 endblock

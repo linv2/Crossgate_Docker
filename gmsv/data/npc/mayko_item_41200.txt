@@ -1,0 +1,239 @@
+#1111576	到法兰城职业介绍所(195,50)找募集樵夫的阿空学习伐木体验，接着到法兰城外去砍20个孟宗竹                                         
+#1111577	到圣拉鲁卡村(135,219)的酒吧(39,70)找募集矿工的洛伊学习挖掘体验接着到城西国营24坑道(351,145)挖掘20个铜矿                      
+#1111578	到伊尔村(682,343)找猎人亚烈格尔(48,77)学习狩猎体验，接着到(647,266)附近打20张鹿皮                                        
+#1111579	回到法兰城职业介   绍所(195,50)找募集打铁工的阿黑学习锻造体验，技能空间不够的话可以把其他体验技能消掉
+#1111580	想当武器工请用用锻造体验制造出一把试炼剑，若是防具工请做一件试练衣
+#1111581	拿到冒险者旅馆(238,64)给好眼力的霍伊看，即可拿到武器工推荐信或防具工推荐信
+#1111582	拿着推荐函到圣拉鲁卡村的装备店(32,70)地下工房找相对应的装备师父就职
+#1111583	你的鹿皮还不够喔，得用狩猎采集，或请其他有狩猎技能的人帮忙打满20个鹿皮喔～
+#1111584	你的铜还不够喔，得用挖掘体验采集，或请其他有挖掘技能的人帮忙采满20个铜喔～
+#1111585	你的孟宗竹还不够，得用伐木体验采集喔～
+#1111586	你需要到鹿皮的采集点吗～
+
+
+#武器18144/防具18145　推荐信
+#试炼剑18200，若是防具工请做一件试练衣18201
+
+
+
+block item 18144 >0 || item 18145 >0
+	window 1111582,next
+	window 1111688,yes,no
+	window_yes
+	 leavegroup 
+	 warp 0,2303,22,17
+	 window_no
+	 endblock
+block item 18200 >0 || item 18201 >0
+	window 1111581,next
+	window 1111688,yes,no
+	window_yes
+	 leavegroup 
+	 warp 0,1154,14,7
+	 window_no
+	 endblock
+	
+block skilllevel 252 >0
+	endwindow 1111580
+	
+block item 18206 >=20 && item 9600 >=20 && item 18211 >=20
+	window 1111579,next
+	window 1111688,yes,no
+	window_yes
+	 leavegroup 
+	 warp 0,1091,9,6
+	 window_no
+	 endblock	
+
+
+
+
+block  item 18211 >= 20 && item 9600>=20 && item 18206 >= 20
+	window 1111576,next
+	Window 1111577,next
+	window 1111578,next
+	window 1111579,next
+	#1111694	想直接拿试炼剑／衣的合成材料吗？	1
+	Window 1111694,yes,no
+	Window_yes 
+	GiveLeak1Item 18211,20
+	GiveLeak1Item 9600,20
+	GiveLeak1Item 18206,20
+	Window_no
+	Endblock
+	
+	
+block  item 18211 < 20 && item 9600<20 && item 18206 < 20
+	window 1111576,next
+	Window 1111577,next
+	window 1111578,next
+	window 1111579,next
+	Window 1111694,yes,no
+	Window_yes 
+	GiveLeak1Item 18211,20
+	GiveLeak1Item 9600,20
+	GiveLeak1Item 18206,20
+	Window_no
+	   block item 18211 <20 && skill 226 >0
+	window 1111583,next
+	window 1111688,yes,no
+	window_yes
+	 leavegroup 
+	 warp 0,100,647,266
+	 window_no
+	 endblock
+	Window_no item 18211 <20 && skill 253 >0
+	window 1111583,next
+	window 1111688,yes,no
+	window_yes
+	 leavegroup 
+	 warp 0,100,647,266
+	 window_no
+	 endblock
+	Window_no item 18211 <20
+	window 1111583,next
+	Window 1111688,yes,no
+	 Window_yes
+	 leavegroup 
+	 warp 0,200,48,77
+	 Window_no
+	 endblock
+	
+	Window_no item 9600<20  && skill 250 >0
+	window 1111584,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,11013,12,32
+	 leavegroup 
+	 Window_no
+	 endblock
+	 
+	Window_no item 9600<20  && skill 227 >0
+	window 1111584,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,11013,12,32
+	 leavegroup 
+	 Window_no
+	 endblock
+	 
+	Window_no item 9600<20   
+	window 1111584,next	 
+	Window 1111688,yes,no
+	 Window_yes
+	 leavegroup 
+	 #warp 0,2308,16,10
+	 warp 0,11013,12,32
+	 Window_no
+	 endblock
+	
+	Window_no item 18206 <20 && skill 251 >0
+	window 1111585,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,1000,490,196
+	 leavegroup 
+	 Window_no
+	 endblock
+	Window_no item 18206 <20 
+	window 1111585,next
+	#1111538	先到法兰城职业介绍所(194,50)向募集樵夫的阿空学习“伐木体验”技能。
+	
+	Window 1111688,yes,no
+	 Window_yes
+	 leavegroup 
+	 warp 0,1091,8,10
+	 Window_no
+	 endblock
+	 
+	Window_no 	 
+	Endblock	
+
+block item 18211 <20 && skill 226 >0
+	window 1111583,next
+	window 1111688,yes,no
+	window_yes
+	 leavegroup 
+	 warp 0,100,647,266
+	 window_no
+	 endblock
+block item 18211 <20 && skill 253 >0
+	window 1111583,next
+	window 1111688,yes,no
+	window_yes
+	 leavegroup 
+	 warp 0,100,647,266
+	 window_no
+	 endblock
+block item 18211 <20
+	window 1111583,next
+	Window 1111688,yes,no
+	 Window_yes
+	 leavegroup 
+	 warp 0,200,48,77
+	 Window_no
+	 endblock
+	
+block item 9600<20  && skill 250 >0
+	window 1111584,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,11013,12,32
+	 leavegroup 
+	 Window_no
+	 endblock
+	 
+block item 9600<20  && skill 227 >0
+	window 1111584,next
+	window 1111688,yes,no
+	 window_yes 
+	 warp 0,11013,12,32
+	 leavegroup 
+	 Window_no
+	 endblock
+	 
+block item 9600<20   
+	window 1111584,next	 
+	Window 1111688,yes,no
+	 Window_yes
+	 leavegroup 
+	 warp 0,2308,16,10
+	 Window_no
+	 endblock
+	
+block item 18206 <20 && skill 251 >0
+	window 1111585,next
+	window 1111688,yes,no
+	window_yes 
+	warp 0,100,490,196
+	leavegroup 
+	Window_no
+	endblock
+block item 18206 <20 
+	window 1111585,next
+	#1111538	先到法兰城职业介绍所(194,50)向募集樵夫的阿空学习“伐木体验”技能。
+	
+	Window 1111688,yes,no
+	 Window_yes
+	 leavegroup 
+	 warp 0,1091,8,10
+	 Window_no
+	 endblock
+	 
+	 	 
+
+
+
+block 
+	window 1111576,next
+	Window 1111577,next
+	window 1111578,next
+	window 1111579,next
+	Window 1111694,yes,no
+	Window_yes 
+	GiveLeak1Item 18211,20
+	GiveLeak1Item 9600,20
+	GiveLeak1Item 18206,20
+	Window_no
+	Endblock
+

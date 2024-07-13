@@ -1,0 +1,16 @@
+#╘xЁБерлО║У╔Хт╩╘x??╘x▌xВЗ
+#
+#╘x╘x╘x╣╘длсюцЯ╪╟чП
+
+###╘x╣╘длсюцЯON
+block Xpos == 224 && Ypos == 331
+
+	If LocalFlag0 == 0
+
+		Message 3004894
+		LocalFlag0 = 1
+
+	endif
+
+
+

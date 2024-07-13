@@ -1,0 +1,62 @@
+#≦反元户化及云勾井中≧﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛失瓜矛仿及摒
+
+###﹛抩铜毛呁醒赭儅
+
+block Item_607904 >= 2
+	EndWindow 3200819
+		#\n\n﹛伙左□弘及抩铜毛螂户凶曰卅氏井仄化﹜\n﹛中匀凶中窒及勾手曰分中〝\n﹛伙左□弘及抩蟆毛银匀化﹜簿井毛分引允勾手曰\n﹛元扎卅中分欠丹友﹝\n﹛云勾井中及澎鳗中〝﹛耨迕匹五卅中友﹝
+
+
+
+###﹛抩铜毛赭儅
+
+block Item_607904 == 1
+
+	If StampCount_607904 == 1 && BBimage == 101022
+		EndWindow 3200820
+		#\n\n﹛丐氏凶﹜民平元扎卅中友﹝\n﹛丐凶仄反丐及阂及岳赢毛内匀午苇化五凶氏分﹜\n﹛允什卞歹井月方﹝公丹中丹术伙反中仃卅中方﹝
+		EndBlock
+
+	else
+		If StampCount_607904 == 1 && Item_18233 >= 1
+			EndWindow 3200821
+		#\n\n﹛云支引丐﹜泔毛?仃化仁木凶及井中﹝\n﹛匹手友尹﹜仇木反民平及云勾井中卅氏分井日﹜\n﹛丐及阂卞欐仄化﹜儅匀化仇今六卅五扎﹝
+			EndBlock
+
+		else
+			If StampCount_607904 == 1
+			EndWindow 3200822
+		#\n\n﹛公木反伙左□弘及抩铜分友﹝\n﹛尺尹﹜云勾井中及澎踞仃毛仄化月及井中〝\n﹛窒仄化氏分欠﹜民平反引分侳化中卅中方﹝\n﹛丐及腾心鞅户互卅中午﹜漱月氏分仃升友尹﹝\n﹛丐凶仄反廓互腾仁化忷五荚木卅中井日﹜\n﹛医歹曰卞苇化五化方﹝
+			EndBlock
+
+			else
+				If StampCount_607904 == 2
+					EndWindow 3200823
+		#\n\n﹛公丹井中﹜民平反仇匀切卞轾井匀化月氏分友﹝\n﹛元扎丐﹜丐及阂及驯五卅云羞阂匹手迕啦仄化﹜\n﹛谨匀化方丹井友尹﹝
+					EndBlock
+
+				else
+					EndWindow 3200824
+		#\n\n﹛云勾井中及澎踞仃﹜仍塑洢今氏分友尹﹝\n﹛民平反芛太凶中戴曰分井日﹜厘庍分欠﹝
+					EndBlock
+
+				endif
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛抩铜毛尕赭儅
+
+block
+	EndWindow 3200825
+		#\n\n﹛仇仇手内中少氏午卞亢支井卞卅匀凶井日﹜\n﹛窒井齿ヨ匹手铵户方丹井友﹝
+
+
+

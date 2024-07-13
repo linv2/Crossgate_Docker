@@ -1,0 +1,30 @@
+#
+#Î­Á«?Æ\¸ó½»¹Ï
+#
+
+#³âÅÒ¼þ¸Ê¼°Ñ¨ÍßØ¨Ê§»ïÒô¨G·ÉÎç½»¹Ï©jÒøÖÐ…ë©kÃ«ƒ}ÔÈ»¯ÖÐÔÂØ¦ÈÕ
+block Item 16371 >= 1 && Item 16372 >= 1 && Item 16373 >= 1 && Item 16374 >= 1 && PetLevel_2076 >= 1
+	Window 22299,Yes,No
+		Window_No
+			EndWindow 22300,OK
+		Window_Yes Item 16371 >= 1 && Item 16372 >= 1 && Item 16373 >= 1 && Item 16374 >= 1 && PetLevel_2076 >= 1
+			Window 22301,Next
+			Window 22302,OK
+				Window_OK Item 16371 >= 1 && Item 16372 >= 1 && Item 16373 >= 1 && Item 16374 >= 1 && PetLevel_2076 >= 1
+					KillItem 16371
+					KillItem 16372
+					KillItem 16373
+					KillItem 16374
+					KillPetL 2076
+					GivePet 2044
+		Window_Yes
+
+#³âÅÒ¼þ¸Ê¼°Ñ¨ÍßØ¨Ê§»ïÒô¨G·É¼°ÉýÄ¾¾®Ã«ÊÖÔÈ»¯ÖÐÔÂØ¦ÈÕ
+block Item 16371 >= 1 || Item 16372 >= 1 || Item 16373 >= 1 || Item 16374 >= 1
+	EndWindow 22303,OK
+#½»¹Ï©jÒøÖÐ…ë©kÃ«ƒ}ÔÈ»¯ÖÐÔÂØ¦ÈÕ
+block PetLevel_2076 >= 1
+	EndWindow 22304,OK
+#
+block
+	EndWindow 22305,OK

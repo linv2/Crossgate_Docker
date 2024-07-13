@@ -1,0 +1,13 @@
+#Žð¼°ÑþÁÝ»Í©jÕ±©k
+
+block
+	Window 22969,Yes,No
+		Window_No
+		Window_Yes
+			Play_Se 214,320,240
+			SystemMessage 4412
+			EndEvent 141 = 1
+			LeaveGroup
+			Warp 0,51004,22,23
+block
+	EndWindow 22970,OK

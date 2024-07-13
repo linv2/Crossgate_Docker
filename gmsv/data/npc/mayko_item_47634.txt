@@ -1,0 +1,13 @@
+#礼物袋	mayko_item_47634.txt	
+#特制圣诞袜	mayko_item_47625.txt
+#装礼物的圣诞袜	mayko_item_46932.txt
+#装礼物的圣诞袜	mayko_item_46933.txt
+#圣诞平安铃47302
+block
+
+	 Window 1054933,OK
+	 
+	 Window_OK
+	 KillItem 47634,1 
+	 GiveLeak1Item (47625%2$1,46932%6$1,46933%6$1,47302%6$1)
+	 endblock

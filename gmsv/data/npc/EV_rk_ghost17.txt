@@ -1,0 +1,5 @@
+#?ву????
+
+block
+	Window 22394,Next
+	EndWindow 22395,OK

@@ -1,0 +1,23 @@
+#þö?
+
+block Item 16330 >= 1
+	Window 22068,Next
+	Window 22069,Next
+	Window 22070,OK
+		Window_OK
+			KillItem 16330,1
+			GiveItem 16337,3
+
+#block Item 16335 >= 1
+#	EndWindow 22044,OK
+
+block
+	Window 22071,Next
+	Window 22072,Next
+	Window 22073,Yes,No
+		Window_NO
+			EndWindow 22074,OK
+#		Window_Yes ItemSpace == 0
+#			EndWindow 10000,OK
+		Window_Yes
+			EndWindow 22075,OK

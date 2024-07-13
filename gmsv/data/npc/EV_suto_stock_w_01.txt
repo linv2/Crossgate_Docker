@@ -1,0 +1,20 @@
+#Óò¼ò¼ëØÆ»¯òåÕ¸µæÆ¼
+#·¥¡õÃó¨à
+
+
+Block Xpos == 13 && Ypos == 8
+
+	if Item_621017 == 1 && StampCount_621017 >= 5
+
+	LeaveGroup
+	
+	warp 0,59752,100,112
+	
+    else
+
+
+	EndWindow 3220405
+
+		#\n\n©x£ß£ß
+	
+	endif

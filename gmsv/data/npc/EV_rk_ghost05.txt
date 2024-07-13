@@ -1,0 +1,39 @@
+#?????
+
+#????????????????????
+##女性角色
+block BBImage >= 100275 && BBImage <= 100423
+	Window 22362,Next
+	Window 22363,Next
+	Window 22364,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46010,130,105
+block BBImage >= 105275 && BBImage <= 105423
+	Window 22362,Next
+	Window 22363,Next
+	Window 22364,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46010,130,105
+block BBImage >= 106250 && BBImage <= 106423
+	Window 22362,Next
+	Window 22363,Next
+	Window 22364,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46010,130,105
+block BBImage >= 105525 && BBImage <= 105548  ##纺织女			
+	Window 22362,Next
+	Window 22363,Next
+	Window 22364,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46010,130,105
+
+#男性角色
+block
+	Window 22365,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46010,130,105

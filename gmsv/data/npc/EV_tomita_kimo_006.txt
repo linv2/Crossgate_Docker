@@ -1,0 +1,98 @@
+#显及丝挚﹛﹛??﹛巟鼹
+#
+#﹛﹛﹛魂杽敢石□汁及摒
+
+###﹛乒夫甩正弗丐月中反穴奶件白仿伐□毛赭儅
+block Item_607700 >= 1 || Item_607702 >= 1
+	EndWindow 3204737
+
+		#\n\n﹛公及弁仿它件反﹜丝挚及愈詨卞芨尹日木月﹝\n﹛午中丹仇午反﹜勾中愈嗤丝挚毛蔽尹凶壬井曰﹝\n﹛午中丹仇午反﹜魂杽卞蚕尹月腺厍互卅中﹜\n﹛午中丹仇午分﹝
+
+
+
+###﹛平乒母丢母扑蔺爵据毛赭儅
+block Item_607970 >= 1
+	GAWindow 3204738,YES,NO
+
+		#\n\n﹛公木反蔺爵橇﹝午中丹仇午反﹜\n﹛镕赶及魂杽毛羼憎允月凛互侳凶午中丹仇午分﹝\n﹛≦酸今内罹屯卅仃木壬卅日卅中午五反﹜\n﹛引内盟中卅坁井日罹屯月≧\n﹛???井??匹蚕尹月午中丹仇午分﹝
+
+		Window_YES Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204739
+
+		#\n\n﹛公及弁仿它件﹝\n﹛午中丹仇午反﹜湃卞蔽尹凶谛﹝\n﹛午中丹仇午反﹜荚蚕反拑躲午中丹仇午分﹝
+
+		Window_YES Item_607970 >= 1
+			GAWindow 3204740,OK
+
+		#\n\n﹛盟中卅坁井日罹屯月﹝\n﹛午中丹仇午反﹜驯五卅坁毛罹屯月滞卞反坢呏﹝\n﹛午中丹仇午反﹜驯五卅坁毛盟★罹屯月﹝\n﹛午中丹仇午反﹜楝反啼仄心票澎午中丹仇午分﹝\n﹛匹反﹜戚及魂杽尺垫五卅今中午中丹仇午分﹝
+
+				Window_OK Item_607700 >= 1 || Item_607702 >= 1
+					EndWindow 3204741
+
+		#\n\n﹛公及弁仿它件﹝\n﹛午中丹仇午反﹜湃卞蔽尹凶谛﹝\n﹛午中丹仇午反﹜荚蚕反拑躲午中丹仇午分﹝
+
+				Window_OK Item_607970 >= 1
+					Warp 0,59814,58,217
+
+				Window_OK
+					EndWindow 3204742
+
+		#\n\n﹛蔺爵据互壅尹凶﹝\n﹛午中丹仇午反﹜蔺爵樊及据互卅中﹝\n﹛午中丹仇午反﹜荚蚕反拑躲午中丹仇午分﹝
+
+		Window_YES
+			EndWindow 3204743
+
+		#\n\n﹛蔺爵据互壅尹凶﹝\n﹛午中丹仇午反﹜蔺爵樊及据互卅中﹝\n﹛午中丹仇午反﹜荚蚕反拑躲午中丹仇午分﹝
+
+		Window_NO Item_607700 >= 1 || Item_607702 >= 1
+			EndWindow 3204744
+
+		#\n\n﹛公及弁仿它件﹝\n﹛午中丹仇午反﹜湃卞蔽尹凶谛﹝\n﹛午中丹仇午反﹜荚蚕反拑躲午中丹仇午分﹝
+
+		Window_NO Item_607970 >= 1
+			GAWindow 3204745,OK
+
+		#\n\n﹛盟中卅坁反詨荚仄﹝\n﹛午中丹仇午反﹜坢呏匹塑仄中凛卞盟中卅坁毛﹝\n﹛午中丹仇午反﹜请分仄驯譬公及詨萌侹﹝\n﹛午中丹仇午反﹜霾滇读域?盒午中丹仇午分﹝\n﹛匹反﹜戚及魂杽尺垫五卅今中午中丹仇午分﹝
+
+				Window_OK Item_607700 >= 1 || Item_607702 >= 1
+					EndWindow 3204746
+
+		#\n\n﹛公及弁仿它件﹝\n﹛午中丹仇午反﹜湃卞蔽尹凶谛﹝\n﹛午中丹仇午反﹜荚蚕反拑躲午中丹仇午分﹝
+
+				Window_OK Item_607970 >= 1
+					Warp 0,59814,200,72
+
+				Window_OK
+					EndWindow 3204747
+
+		#\n\n﹛蔺爵据互壅尹凶﹝\n﹛午中丹仇午反﹜蔺爵樊及据互卅中﹝\n﹛午中丹仇午反﹜荚蚕反拑躲午中丹仇午分﹝
+
+		Window_NO
+			EndWindow 3204748
+
+		#\n\n﹛蔺爵据互壅尹凶﹝\n﹛午中丹仇午反﹜蔺爵樊及据互卅中﹝\n﹛午中丹仇午反﹜荚蚕反拑躲午中丹仇午分﹝
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	Window 3204749,YES,NO
+
+		#\n\n﹛蔺爵据互卅仃木壬﹜魂杽卞荚蚕匹五卅中﹝\n﹛午中丹仇午反﹜蔺爵据互丐木壬荚蚕匹五月﹝\n﹛午中丹仇午反﹜手丹域蘸枃尹壬方中﹝\n﹛午中丹仇午分互﹜升丹允月〝
+
+		Window_YES
+			Window 3204750,OK
+
+		#\n\n﹛蔺爵允月竣互丐月及卞﹜蔺爵据毛撩仁仄凶﹝\n﹛午中丹仇午反﹜午化手斨珌午中丹仇午分﹝\n﹛竣毛勾仃欠″
+
+				Window_OK
+					LeaveGroup
+					Warp 0,59801,93,79
+
+		Window_NO
+			EndWindow 3204751
+
+		#\n\n﹛蔺爵允月竣互卅中及卞﹜狪仄井仃凶﹝\n﹛午中丹仇午反﹜午化手斨珌午中丹仇午分﹝\n﹛中中笛蛹卞仄欠″
+
+
+

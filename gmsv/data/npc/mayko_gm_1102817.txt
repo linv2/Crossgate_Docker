@@ -1,0 +1,8 @@
+##¬Ã≤›“© –Ò»’∂•
+#mayko_gm_1102817.txt
+block
+	killitem 41317,1
+	GiveLeak1Item  41318,1
+	leavegroup 
+	warp 0,31954,658,347
+	endblock

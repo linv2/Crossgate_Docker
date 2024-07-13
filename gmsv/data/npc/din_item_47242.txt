@@ -1,0 +1,21 @@
+#####海盗召唤书	din_item_47242.txt
+###双点得到海盗一只
+ 
+block PetSpace == 0 
+	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+	 EndWindow 1100004
+	 
+block Item 47242 >= 1
+	 ##1054319	\n\n@c你是否要使用召唤书．．．召唤海盗出来？	1
+	 Window 1054319,YES,NO
+	 	 Window_NO
+	 	 	 
+	 	 Window_YES  PetSpace == 0 
+	 	 	 ##1100004	\n\n\n\n\n@c宠物栏已经满了。	1
+	 		 EndWindow 1100004	 	
+	 
+	 	 Window_YES Item 47242 >= 1
+	 	 	 KillItem 47242,1
+	 	 	 GivePet 823
+	 	 	 ##1054320	\n\n\n\n@c海盗已成功召唤！	1
+			 EndWindow 1054320

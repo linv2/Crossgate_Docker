@@ -1,0 +1,15 @@
+#
+#??úù?
+#
+
+block EndEvent 104 == 1
+	EndWindow 21880,OK
+
+#?¦T©òý°?ûø?????????Now104?ON?
+block NowEvent 104 == 1
+	EndEvent 104 = 1
+	CheckTitle
+	KillItem 18967,1,(21879)
+
+block
+	EndWindow 21880,OK

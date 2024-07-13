@@ -1,0 +1,19 @@
+###dodo_gm_1051680.txt
+##餐饮侍者	32298(32,18)		提供西瓜汁。
+block 
+	 ##1054721	\n\n\n\n\n@c你好！请问要来一杯西瓜汁吗？	1																																																																																																			
+	 Window 1054721,YES,NO 
+	 	 
+	 	 Window_NO 
+	 	 	 ##1054722	\n\n\n\n\n@c祝你愉快！	1																																																																																																			
+			 EndWindow 1054722
+	 	 
+	 	 Window_YES ItemSpace == 0
+	 	 	 ##1054495	\n\n\n\n\n@c物品栏位置不足，请空出物品栏的一格位置。
+			 EndWindow 1054495
+			 
+		 Window_YES ItemSpace >= 1 
+		 	 GiveLeak1Item 45447
+		 	 ##1054723	\n\n\n\n\n@我们的餐饮是无限量供应！	1																																																																																																			
+			 EndWindow 1054723
+			 

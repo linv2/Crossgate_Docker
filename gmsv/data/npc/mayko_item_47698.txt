@@ -1,0 +1,15 @@
+block 
+
+	 Window 1055516,YES,NO
+	 	 Window_YES ItemSpace <4
+	 	 EndWindow 1055517
+	 	 Window_YES
+	 	 GiveStackItem 46906,1
+		 GiveStackItem 46907,1
+	 	 GiveStackItem 46908,1
+		 GiveStackItem 46909,1		 
+		 KillItem 47698,1
+		 Endblock
+	 
+		 Window_NO
+	 	 endblock	 

@@ -1,0 +1,111 @@
+#考古学家	1102228
+#1102787	听说诺斯菲拉特的瘴气减弱了，女王殿下允许我们这些学者，到那边作研究了。
+#1102788	如果你想到那边去，得拿出些引起注意的东西喔！！
+#1102789	啊～你那个小镜子借我看一下。
+#1102790	这错不了，这是托尔法吉亚皇宫的物品，不过看起来不是皇族使用的....
+#1102791	你想要去诺斯菲拉特呀～只有这个镜子是不够的。
+#1102792	我这有张考古地图，请你去把这样东西找出来。
+#1102793	\n\n\n@c我这有张考古地图，请你去把这样东西找出来。	1
+#1102794	\n\n　没想到这东西你能找到，不过这不是托尔法吉亚皇室用品，\n　只是有钱人家的陪葬品。	1
+#1102795	\n\n　没想到这东西你能找到，啊～这是托尔法吉亚皇室用品，\n　我相信你一定能把诺斯菲拉特的秘密发掘出来。	1
+#1102796	@c这有封信，你交给米诺基亚的奥克里公爵，他会给你通行证	1
+#1102798	你把信交给米诺基亚的奥克里公爵，他会给你通行证
+#1102799	请你把这张考古地图的东西找出来吧。
+#1102811	看起来像是发掘出来的古物，我可以看看吗？	1
+#1102812	这是发掘出来的古物呀，我可以看看吗？	1
+#1102813	疑？？你是打那知到这跟托尔法吉亚皇室有关系。	1
+
+##  已有书信
+
+block Item 40758 >0
+	 EndWindow 1102799
+	
+
+##########  持未鉴定古物(真)  真物与地图收走
+block Leak0Item 40757 >= 1
+	 Window 1102811,YES,NO
+         Window_YES Leak0item 40757 >= 1 && Item 40755> 0
+         KillItem 40757,1
+ 	 KillItem 40755,1	
+ 	 GiveLeak1Item 40758,1
+	 Window 1102795,NEXT
+	 EndWindow 1102796,OK
+???	 Endblock
+        #???????
+         Window_YES Leak0item 40757 >= 1 
+         KillLeak0Item 40757,1
+	 GiveLeak1item 40757,1
+       	 Window 1102795,NEXT
+???	 EndWindow 1102813
+         Window_YES
+	 Window_NO
+	 Endblock 
+
+##########  持鉴定古物(真)
+block Item 40757 >= 1
+	 Window 1102812,YES,NO
+         Window_YES Item 40757 >= 1 && Item 40755> 0
+         KillItem 40757,1
+	 KillItem 40755,1	
+	 GiveLeak1Item 40758,1
+	 Window 1102795,NEXT
+	 EndWindow 1102796
+       	 Endblock 
+        #???????
+         Window_YES Item 40757 >= 1       
+       	 Window 1102795,NEXT
+???	 EndWindow 1102813
+         Window_YES
+	 Window_NO
+	 Endblock 
+##########  持未鉴定古物(伪)
+block Leak0Item 40756 >= 1
+
+	 Window 1102811,YES,NO
+	 
+	 Window_YES Leak0Item 40756 >= 1
+         KillLeak0item 40756,1
+	 GiveLeak1item 40756,1
+       	
+	 EndWindow 1102794
+	?????????????????	 
+	 Window_YES 
+	
+	 
+	 Window_NO
+	
+	 Endblock 
+##########  持鉴定古物(伪)	
+block Item 40756 >= 1
+	 Window 1102812,YES,NO       ?????????????????????????	 
+         Window_YES Item 40756 >= 1  
+	 	 EndWindow 1102794
+	 Window_YES 		 
+	 Window_NO
+	
+	 Endblock 	 	 	 
+## 已有考古地图
+block Item 40755 >= 1
+	 EndWindow 1102800
+## 持小镜
+
+block Item 40754 >0
+	 
+	 Window 1102788,NEXT
+	 Window 1102789,YES,NO
+	 Window_YES Item 40754>0 
+	 
+	 Window 1102790,NEXT
+	 Window 1102791,NEXT
+	 Window 1102792,NEXT
+	 Window 1102793,OK
+	 Window_OK Item 40754>0
+	 KillItem 40754,1
+	 GiveItem 40755,1
+	 Window_OK
+         Window_YES
+	 Window_NO
+	 Endblock 
+## 未持任何东西
+block 
+	 EndWindow 1102788

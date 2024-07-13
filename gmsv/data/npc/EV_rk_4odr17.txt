@@ -1,0 +1,9 @@
+#???????
+
+block EquipItem == 16415
+	Window 22852,OK
+		Window_OK
+			LeaveGroup
+			Warp 0,46039,10,39
+block
+	EndWindow 22853,OK

@@ -1,0 +1,86 @@
+#﹛R5侂填伊扑疋ミ幵弁巨旦玄﹛??﹛巟鼹
+#
+#﹛﹛﹛乩□扑亘及摒
+
+###﹛甩伉□穴奶仿皮毛赭儅
+block Item_607996 >= 1
+	EndWindow 3204971
+
+		#\n\n﹛异中方丹﹜丐匀切垫匀化仁木方丹﹝
+
+
+
+###﹛甩伉乩穴执及亲毛赭儅
+block Item_607995 >= 1
+
+	If Item_607995 >= 2
+		EndWindow 3204972
+
+		#\n\n﹛公氏卅卞亲毛儅匀化﹜扔示泛件卞匹手\n﹛卅月勾手曰卅及井〝
+		EndBlock
+
+	else
+		If StampCount_607995 < 2
+			EndWindow 3204973
+
+		#\n\n﹛乒件旦正□午爵丹及匀化﹜雯仁卅中〝\n﹛云木手雄仁卅曰凶中卅丐﹝
+			EndBlock
+
+		else
+			If StampCount_607995 == 2
+				Window 3204974,OK
+
+		#\n\n﹛仇仇匹扔示泛件及祭仃坁午爵匀凶匀化〝\n﹛穴斥卅及﹜公及狪﹝\n﹛公木匀化手仄井仄化﹜仇氏卅蛊分匀凶〝
+
+					Window_OK Item_607995 >= 2
+						EndWindow 3204975
+
+		#\n\n﹛匀化﹜掖卞瑁引匀化月分欠﹝\n﹛阂间卞分引今木月卅方卅﹝
+						EndBlock
+
+					Window_OK Item_607995 == 1 && StampCount_607995 == 2
+						LeaveGroup
+						AddStampCount 607995,+1
+						Encount 3|0,59684,129,157||0|||||0|306040|||||||||
+						EndBlock
+
+					Window_OK Item_607995 == 1 && StampCount_607995 < 2
+						EndWindow 3204976
+
+		#\n\n﹛匀化﹜掖卞瑁引匀化月分欠﹝\n﹛阂间卞分引今木月卅方卅﹝
+						EndBlock
+
+					Window_OK Item_607995 == 1 && StampCount_607995 > 2
+						EndWindow 3204977
+
+		#\n\n﹛匀化﹜掖卞瑁引匀化月分欠﹝\n﹛阂间卞分引今木月卅方卅﹝
+						EndBlock
+
+					Window_OK
+						EndWindow 3204978
+
+		#\n\n﹛匀化﹜掖卞瑁引匀化月分欠﹝\n﹛阂间卞分引今木月卅方卅﹝
+						EndBlock
+
+			else
+				EndWindow 3204979
+
+		#\n\n﹛异中方丹﹜丐匀切垫匀化仁木方丹﹝
+				EndBlock
+
+			endif
+
+		endif
+
+	endif
+
+
+
+###﹛晓筏失奶泛丞毛尕赭儅
+block
+	EndWindow 3204980
+
+		#\n\n﹛丐及今﹜ㄢ遽卞斥尼弗伙﹜ㄤ遽卞甩奶犯伙匀化\n﹛银中呺互中月氏分方﹝\n﹛分仃升﹜裆匀吊仁卅匀凶曰辉匀吊仁卅匀凶曰﹜\n﹛丐中勾日窒井庍卅氏分﹝
+
+
+

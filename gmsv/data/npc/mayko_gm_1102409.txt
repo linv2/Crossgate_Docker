@@ -1,0 +1,13 @@
+block 	
+ 	Window 1109731,YES,NO 	
+		Window_NO
+ 		EndWindow 1109733
+ 		
+ 		Window_YES Gold >= 1000
+ 		AddGold -1000
+ 		LeaveGroup
+		Warp 0,59000,83,56
+		Endblock
+
+ 		Window_YES
+ 		EndWindow 3 	

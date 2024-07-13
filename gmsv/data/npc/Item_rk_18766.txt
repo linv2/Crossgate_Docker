@@ -1,0 +1,14 @@
+#
+#ヶ及筏盛﹋ヶ及祸藷﹌
+#
+
+##############  ##############
+block
+#\n\n\n\n@c﹛ヶ及筏盛毛银中引允井〝
+	Window 21241,YES,NO
+	Window_YES
+	KillItem 18766,1,(21246)
+	LeaveGroup
+	Warp 0,15540,24,24
+	Window_NO
+

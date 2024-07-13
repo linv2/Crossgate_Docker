@@ -1,0 +1,177 @@
+##########################
+# 晓菟缜         by 漪呿 #
+# ←疵执用く←           #
+##########################
+
+
+#### A弘伙□皿
+
+## 痿诸阁?动晓
+block Job >= 14 && Job <= 19
+
+	GoToF case1
+
+## 爵忕诸阁?动晓
+block Job >= 24 && Job <= 29
+
+	GoToF case1
+
+## 嗤启绒衔动晓
+block Job >= 34 && Job <= 39
+
+	GoToF case1
+
+## 菰诸阁?动晓
+block Job >= 44 && Job <= 49
+
+	GoToF case1
+
+## 申扑亦永皿动晓﹋弁伊伉永弁﹌
+block Job >= 64 && Job <= 69
+
+	GoToF case1
+
+## 它奴扒□玉动晓﹋呺诸阁﹌
+block Job >= 74 && Job <= 79
+
+	GoToF case1
+
+## 它巧□夫永弁﹋热诸阁﹌
+block Job >= 84 && Job <= 89
+
+	GoToF case1
+
+##扑乓□穴件动晓﹋粖诸阁﹌
+block Job >= 134 && Job <= 139
+
+	GoToF case1
+
+## 伞⑷诸阁?动晓
+block Job >= 144 && Job <= 149
+
+	GoToF case1
+
+
+
+
+*case1*
+
+######## A弘伙□皿匹≦拟中及累﹋毡/く﹌﹋疵/く﹌≧动陆毛赭儅
+	if Item 622043 >= 1 || Item 622044 >= 1 || Item 622045 >= 1 || Item 622046 >= 1 || Item 622053 >= 1 || Item 622054 >= 1 || Item 622055 >= 1 || Item 622056 >= 1 || Item 622057 >= 1 || Item 622058 >= 1 || Item 622059 >= 1 || Item 622060 >= 1 || Item 622061 >= 1 || Item 622062 >= 1
+		Window 3208008,OK
+
+		#\n\n\n\n\n﹛﹛﹛拟中毛ハ月樊﹜累反辣曰﹜祯仃化壅尹月
+			Window_OK
+				KillItemAll 622043,(3012097)
+				KillItemAll 622044,(3012097)
+				KillItemAll 622045,(3012097)
+				KillItemAll 622046,(3012097)
+				KillItemAll 622053,(3012097)
+				KillItemAll 622054,(3012097)
+				KillItemAll 622055,(3012097)
+				KillItemAll 622056,(3012097)
+				KillItemAll 622057,(3012097)
+				KillItemAll 622058,(3012097)
+				KillItemAll 622059,(3012097)
+				KillItemAll 622060,(3012097)
+				KillItemAll 622061,(3012097)
+				KillItemAll 622062,(3012097)
+				Endblock
+
+	else
+
+######## A弘伙□皿匹≦拟中及累﹋疵/く﹌≧毛呁醒赭儅
+		if Item 622052 > 1
+			Window 3208009,OK
+
+		#\n\n\n\n\n﹛﹛﹛拟中毛ハ月樊﹜累反辣曰﹜祯仃化壅尹月
+
+				Window_OK
+					KillItemAll 622052,(3012097)
+					LeaveGroup
+					warp 0,59930,16,99
+					Endblock
+
+	else
+
+######## A弘伙□皿匹≦拟中及累﹋疵/く﹌≧毛赭儅
+			if Item 622052 == 1
+				Window 3208010,OK
+
+		#\n\n\n\n\n﹛﹛﹛拟中毛潮月樊﹜凳卅月魂柈尺午⑼井氏
+
+					Window_OK Item 622052 == 0
+						EndWindow 3208011
+
+		#\n\n\n\n\n﹛﹛﹛拟中毛潮日厄樊﹜洬反岉介今木凶引引卞
+
+					Window_OK Item 622043 >= 1 || Item 622044 >= 1 || Item 622045 >= 1 || Item 622046 >= 1 || Item 622051 >= 1 || Item 622053 >= 1 || Item 622054 >= 1 || Item 622055 >= 1 || Item 622056 >= 1 || Item 622057 >= 1 || Item 622058 >= 1 || Item 622059 >= 1 || Item 622060 >= 1 || Item 622061 >= 1 || Item 622062 >= 1
+						KillItemAll 622043,(3012097)
+						KillItemAll 622044,(3012097)
+						KillItemAll 622045,(3012097)
+						KillItemAll 622046,(3012097)
+						KillItemAll 622051,(3012097)
+						KillItemAll 622053,(3012097)
+						KillItemAll 622054,(3012097)
+						KillItemAll 622055,(3012097)
+						KillItemAll 622056,(3012097)
+						KillItemAll 622057,(3012097)
+						KillItemAll 622058,(3012097)
+						KillItemAll 622059,(3012097)
+						KillItemAll 622060,(3012097)
+						KillItemAll 622061,(3012097)
+						KillItemAll 622062,(3012097)
+						EndWindow 3208012
+
+		#\n\n\n\n\n﹛﹛﹛拟中毛ハ月樊﹜累反辣曰﹜祯仃化壅尹月
+
+					Window_OK Item 622052 > 1
+
+						GoToF case1
+						Endblock
+
+					Window_OK
+						KillItemAll 622052,(3012400)
+						GiveLeak1Item 622056,1,(3012401)
+						LeaveGroup
+						warp 0,59931,109,64
+
+	else
+
+######## A弘伙□皿匹≦拟中及累﹋疵/く﹌≧毛尕赭儅
+				if Item 622052 == 0
+					EndWindow 3208013
+
+		#\n\n\n\n\n﹛﹛﹛拟中毛潮日厄樊﹜洬反岉介今木凶引引卞
+
+
+				endif
+			endif
+		endif
+	endif
+Endblock
+
+
+#### 晓筏动陆
+block
+	Window 3208014,OK
+
+		#\n\n\n\n\n﹛﹛﹛﹛﹛﹛凤伞拑五樊﹜褡じ毛嗟内月
+
+		Window_OK
+			LeaveGroup
+			warp 0,59505,166,87
+
+
+	*case1*
+
+	Window 3208015,OK
+
+		#\n\n\n\n\n﹛﹛﹛拟中毛ハ月樊﹜累反辣曰﹜祯仃化壅尹月
+		Window_OK
+			KillItemAll 622052,(3012097)
+			LeaveGroup
+			warp 0,59930,16,99
+			Endblock
+
+

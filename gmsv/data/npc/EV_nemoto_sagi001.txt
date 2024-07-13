@@ -1,0 +1,138 @@
+###############################
+# 绒衔用芡旦平伙弁巨  by 漪呿 #
+# ←由伉末件﹋弁巨钒铵﹌←    #
+###############################
+
+#### 覆擂及缜仅匹丐月﹝//////热诸阁﹜粖诸阁﹜オ樊﹜阽曰阂﹜茧樱﹜营谛﹜枣赁屻﹜衔阁﹜五仇曰﹜润谛﹜驰屺﹋苇莲动晓﹌
+block JobAncestry == 80
+	GoToF case1
+	Endblock
+
+block JobAncestry == 130
+	GoToF case1
+	Endblock
+
+block JobAncestry == 150
+	GoToF case1
+	Endblock
+
+block JobAncestry == 160
+	GoToF case1
+	Endblock
+
+block JobAncestry == 410
+	GoToF case1
+	Endblock
+
+block JobAncestry == 420
+	GoToF case1
+	Endblock
+
+block JobAncestry == 430
+	GoToF case1
+	Endblock
+
+block JobAncestry == 440
+	GoToF case1
+	Endblock
+
+block JobAncestry == 450
+	GoToF case1
+	Endblock
+
+block JobAncestry == 460
+	GoToF case1
+	Endblock
+
+block JobAncestry == 470
+	GoToF case1
+	Endblock
+
+block JobAncestry == 480
+	GoToF case1
+	Endblock
+
+block JobAncestry == 1010
+	GoToF case1
+	Endblock	
+
+
+
+#### ≦蕞?谛飓及丢乒≧毛赭儅
+*case1*
+	if Item 622034 >= 1
+		EndWindow 3207607
+
+		#\n\n﹛卅﹜窒毛蜕丹井″\n﹛公中勾仇公互蕞?谛分″
+
+
+		else
+
+#### ≦?谛飓及丢乒≧毛赭儅
+	if Item 622033 >= 1
+		EndWindow 3207608
+
+		#\n\n﹛罹屯蔽歹匀凶日允什卞眸手詨毛馨丹﹝\n﹛燮卞垫匀化化仁木﹝
+
+
+		else
+
+#### ≦夫□旦玄民平件≧毛赭儅
+	if Item 15207 >= 1
+		Window 3207609,YES,NO
+
+		#\n\n﹛云﹜丹引公丹卅夫□旦玄民平件分卅﹝\n﹛公木毛眸卞手坌仃化仁木卅中井〝\n﹛坞呏匹⑹仃卅中氏分﹝\n﹛丐午剂仄匹﹜≦穴生穴生琐善≧及?谛毛\n﹛忯引尹日木公丹卅氏分互友﹝
+
+			Window_NO
+				Endwindow 3207610
+
+		#\n\n﹛壑棉及氘反挕凶中兮＿＿﹝
+
+######## YES蓟枪匹﹜≦?谛飓及丢乒≧毛芨尹月
+			Window_YES Itemspace == 0
+				Endwindow 3207611
+
+		#\n\n﹛氏﹜失件正﹜\n﹛澎绂坁及帮咥仁日中切扎氏午仄化云仃方﹝
+
+			Window_YES Item 15207 == 0
+				EndWindow 3207612
+
+		#\n\n﹛云中云中﹜\n﹛渝谨今六午中化公曰扎卅中兮﹝
+
+			Window_YES
+				KillItem 15207,1
+				GiveLeak1Item 622033,1
+				EndWindow 3207613
+
+		#\n\n﹛丐曰互凶中﹝弃庛卅仁赡仁方﹝\n﹛午仇欠匹失件正﹜\n﹛苇凶午仇欠佹莴樊及方丹分卅﹝\n﹛升丹分中﹜眸卞隅恘仄化\n﹛?谛毛忯引尹化仁木卅中井〝\n﹛扷菱反蚁戈兮﹝\n﹛仇木互?谛飓及丢乒分﹝
+
+
+		else
+
+#### 晓筏动陆
+	if
+		Window 3207614,NEXT
+
+		#\n\n﹛愈嗤﹜扒件弁玄甩伙穴璃彶匹\n﹛≦穴生穴生琐善≧匀化及互峸垫匀化中月氏分﹝\n﹛眸反公及仪瘀毛馨匀化中月氏分互﹜\n﹛勾中卞?谛毛馨中腴户月仇午互匹五凶﹝
+
+		EndWindow 3207615
+
+		#\n\n﹛仄井仄﹜仇仇卞侳化仇及骚曰﹜\n﹛坞呏匹逦木切引匀化友﹝\n﹛失件正﹜窒井罹中坁儅匀化卅中井卅〝\n﹛匹五木壬妪壬仄中暖こ卅氏井互中中氏分互友﹝
+
+endif
+endif
+endif
+endif
+Endblock
+
+#### ?覆擂缜仅
+block
+	Window 3207616,NEXT
+
+		#\n\n﹛愈嗤﹜扒件弁玄甩伙穴璃彶匹\n﹛≦穴生穴生琐善≧匀化及互峸垫匀化中月氏分﹝\n﹛眸反公及仪瘀毛馨匀化中月氏分互﹜\n﹛勾中卞?谛毛馨中腴户月仇午互匹五凶﹝
+
+	EndWindow 3207617
+
+		#\n\n﹛仄井仄﹜谛澎互箫曰卅仁化﹜\n﹛丐午域忷及午仇欠匹\n﹛忯引尹月仇午互匹五卅中氏分﹝\n﹛簿井肣チ卅蛊互中凶日﹜\n﹛嫔?澎鳗匀化手日中凶中氏分互友﹝
+
+

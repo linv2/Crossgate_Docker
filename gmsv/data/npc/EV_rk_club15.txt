@@ -1,0 +1,249 @@
+#
+#斥乓件甘
+#
+
+#镞卅日﹛
+block nowtime == 1
+	Endwindow 21815
+
+
+###﹛布□生永玄毛手匀化中月卅日﹛###
+block Item 13611 >= 1 || Item 13612 >= 1 || Item 13613 >= 1 || Item 13614 >= 1 || Item 13615 >= 1 || Item 13616 >= 1 || Item 13617 >= 1 || Item 13618 >= 1 || Item 13619 >= 1 || Item 13610 >= 1
+#
+	Window 21781,Next
+	Window 21782,Next
+	Window 21783,OK
+		Window_OK ItemSpace == 0
+			Endwindow 10000
+		Window_OK Item 13619 >= 1
+			KillItem 13619,1
+			GiveItem 13679,1
+			LeaveGroup
+			Warp 0,1165,19,38
+		Window_OK Item 13618 >= 1
+			KillItem 13618,1
+			GiveItem 13678,1
+			LeaveGroup
+			Warp 0,1165,19,38
+		Window_OK Item 13617 >= 1
+			KillItem 13617,1
+			GiveItem 13677,1
+			LeaveGroup
+			Warp 0,1165,19,38
+		Window_OK Item 13616 >= 1
+			KillItem 13616,1
+			GiveItem 13676,1
+			LeaveGroup
+			Warp 0,1165,19,38
+		Window_OK Item 13615 >= 1
+			KillItem 13615,1
+			GiveItem 13675,1
+			LeaveGroup
+			Warp 0,1165,19,38
+		Window_OK Item 13614 >= 1
+			KillItem 13614,1
+			GiveItem 13674,1
+			LeaveGroup
+			Warp 0,1165,19,38
+		Window_OK Item 13613 >= 1
+			KillItem 13613,1
+			GiveItem 13673,1
+			LeaveGroup
+			Warp 0,1165,19,38
+		Window_OK Item 13612 >= 1
+			KillItem 13612,1
+			GiveItem 13672,1
+			LeaveGroup
+			Warp 0,1165,19,38
+		Window_OK Item 13611 >= 1
+			KillItem 13611,1
+			GiveItem 13671,1
+			LeaveGroup
+			Warp 0,1165,19,38
+		Window_OK Item 13610 >= 1
+			KillItem 13610,1
+			GiveItem 13670,1
+			LeaveGroup
+			Warp 0,1165,19,38
+		Window_OK
+
+###﹛市它件玄100及抩铜毛手匀化中月卅日
+block Item 16239 == 1 && StampCount 16239 == 100
+	Window 22286,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16239 == 1 && StampCount 16239 == 100
+			EndEvent 125 = 1
+			CheckTitle
+			KillItem 16239
+			GiveItem 16370
+			Warp 0,2433,7,6
+block Item 16240 == 1 && StampCount 16240 == 100
+	Window 22286,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16240 == 1 && StampCount 16240 == 100
+			EndEvent 125 = 1
+			CheckTitle
+			KillItem 16240
+			GiveItem 16375
+			Warp 0,2433,7,6
+block Item 16241 == 1 && StampCount 16241 == 100
+	Window 22286,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16241 == 1 && StampCount 16241 == 100
+			EndEvent 125 = 1
+			CheckTitle
+			KillItem 16241
+			GiveItem 16376
+			Warp 0,2433,7,6
+block Item 16242 == 1 && StampCount 16242 == 100
+	Window 22286,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16242 == 1 && StampCount 16242 == 100
+			EndEvent 125 = 1
+			CheckTitle
+			KillItem 16242
+			GiveItem 16377
+			Warp 0,2433,7,6
+
+###﹛市它件玄30及抩铜毛手匀化中月卅日
+block Item 16239 == 1 && StampCount 16239 == 30
+	Window 21856,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16239 == 1 && StampCount 16239 == 30
+			AddStampCount 16239
+			GiveItem 16272
+			Warp 0,2433,7,6
+block Item 16240 == 1 && StampCount 16240 == 30
+	Window 21856,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16240 == 1 && StampCount 16240 == 30
+			AddStampCount 16240
+			GiveItem 16272
+			Warp 0,2433,7,6
+block Item 16241 == 1 && StampCount 16241 == 30
+	Window 21856,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16241 == 1 && StampCount 16241 == 30
+			AddStampCount 16241
+			GiveItem 16272
+			Warp 0,2433,7,6
+block Item 16242 == 1 && StampCount 16242 == 30
+	Window 21856,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16242 == 1 && StampCount 16242 == 30
+			AddStampCount 16242
+			GiveItem 16272
+			Warp 0,2433,7,6
+
+###﹛市它件玄17及抩铜毛手匀化中月卅日
+block Item 16239 == 1 && StampCount 16239 == 17
+	Window 21964,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16239 == 1 && StampCount 16239 == 17
+			AddStampCount 16239
+			GiveItem 16292
+			Warp 0,2433,7,6
+block Item 16240 == 1 && StampCount 16240 == 17
+	Window 21964,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16240 == 1 && StampCount 16240 == 17
+			AddStampCount 16240
+			GiveItem 16292
+			Warp 0,2433,7,6
+block Item 16241 == 1 && StampCount 16241 == 17
+	Window 21964,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16241 == 1 && StampCount 16241 == 17
+			AddStampCount 16241
+			GiveItem 16292
+			Warp 0,2433,7,6
+block Item 16242 == 1 && StampCount 16242 == 17
+	Window 21964,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16242 == 1 && StampCount 16242 == 17
+			AddStampCount 16242
+			GiveItem 16292
+			Warp 0,2433,7,6
+
+
+###﹛市它件玄ㄦ及抩铜毛手匀化中月卅日
+block Item 16239 == 1 && StampCount 16239 == 7
+	Window 21855,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16239 == 1 && StampCount 16239 == 7
+			AddStampCount 16239
+			GiveItem 16273
+			Warp 0,2433,7,6
+block Item 16240 == 1 && StampCount 16240 == 7
+	Window 21855,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16240 == 1 && StampCount 16240 == 7
+			AddStampCount 16240
+			GiveItem 16273
+			Warp 0,2433,7,6
+block Item 16241 == 1 && StampCount 16241 == 7
+	Window 21855,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16241 == 1 && StampCount 16241 == 7
+			AddStampCount 16241
+			GiveItem 16273
+			Warp 0,2433,7,6
+block Item 16242 == 1 && StampCount 16242 == 7
+	Window 21855,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK Item 16242 == 1 && StampCount 16242 == 7
+			AddStampCount 16242
+			GiveItem 16273
+			Warp 0,2433,7,6
+
+###﹛市它件玄ㄢ及抩铜毛手匀化中月卅日
+block Item 16239 == 1 && StampCount 16239 == 3
+	Window 21778,Next
+	Window 21779,Next
+		AddStampCount 16239
+		Endwindow 21780
+block Item 16240 == 1 && StampCount 16240 == 3
+	Window 21778,Next
+	Window 21779,Next
+		AddStampCount 16240
+		Endwindow 21780
+block Item 16241 == 1 && StampCount 16241 == 3
+	Window 21778,Next
+	Window 21779,Next
+		AddStampCount 16241
+		Endwindow 21780
+block Item 16242 == 1 && StampCount 16242 == 3
+	Window 21778,Next
+	Window 21779,Next
+		AddStampCount 16242
+		Endwindow 21780
+
+###﹛市它件玄ㄣ动晓及抩铜毛手匀化中月卅日
+block Item 16239 == 1 && StampCount 16239 >= 4
+	EndWindow 21857
+block Item 16240 == 1 && StampCount 16240 >= 4
+	EndWindow 21857
+block Item 16241 == 1 && StampCount 16241 >= 4
+	EndWindow 21857
+block Item 16242 == 1 && StampCount 16242 >= 4
+	EndWindow 21857
+
+###﹛升木卞手丐化反引日卅中桦宁
+block
+	Endwindow 21784

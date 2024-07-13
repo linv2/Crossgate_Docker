@@ -1,0 +1,25 @@
+#
+#甩□矛伙及必□玄
+#
+
+##############  ##############
+block
+#block EndEvent 17 == 0
+#\n\n﹛唱阨谛反镀★卞峏切蛔月互恌中﹝
+	Window 14891,YES,NO
+	Window_YES
+#	EndEvent 17 = 1
+#	CheckTitle
+	LeaveGroup
+	Warp 0,300,523,333
+	Window_NO
+
+##############  ##############
+#block EndEvent 17 == 1
+#\n\n﹛唱阨谛反镀★卞峏切蛔月互恌中﹝
+#	Window 14891,YES,NO
+#	Window_YES
+#	LeaveGroup
+#	Warp 0,300,523,333
+#	Window_NO
+

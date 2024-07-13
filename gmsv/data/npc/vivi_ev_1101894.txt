@@ -1,0 +1,13 @@
+##酒吧房间内
+#画
+################### 队伍大于1人
+block Group > 1
+	 ##1100000 \n请解散队伍。 
+	 Window 1100000,YES,NO 
+	 	 Window_YES Group > 1
+	 	 LeaveGroup
+	 	 	 Window_YES
+	 	 	 Window_NO 
+block
+	 ##1102222	\n\n  和房间完全不搭的古典画，一看就知道出自贵族名家之手。画中的湖与灿烂的星辰，到底代表什么？	1
+	 EndWindow 1102222

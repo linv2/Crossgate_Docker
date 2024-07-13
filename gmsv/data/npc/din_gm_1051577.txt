@@ -1,0 +1,22 @@
+##GM500M障碍赛	障碍赛裁判助理	din_gm_1051577.txt	座标：32100(91,71)	竞赛开门用。
+
+##判断GM徽章辨别身份
+block Item 46404 >=1
+	 ##1054370	\n\n  确定要让比赛开始了吗？\n  选“是”之后门就会打开了喔？	1
+	 Window 1054370,YES,NO 
+	 	 Window_NO 
+	 	 
+	 	 Window_YES Item 46404 >=1
+	 	 	 SetObject 0,32100,92,73,0
+	 	 	 SetObject 0,32100,92,74,0
+	 	 	 SetObject 0,32100,92,76,0
+	 	 	 SetObject 0,32100,92,77,0
+	 	 	 SetObject 0,32100,92,79,0
+	 	 	 SetObject 0,32100,92,80,0
+	 	 	 ##1054371	\n\n  比赛开始！	1
+			 EndWindow 1054371
+			 
+##一般
+block 
+	 ##1054372	\n\n  比赛的开始需要请GM主持，请耐心等候。	1
+	 EndWindow 1054372			 

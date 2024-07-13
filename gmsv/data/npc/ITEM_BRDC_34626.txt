@@ -1,0 +1,9 @@
+##道场记忆1
+block
+	 ##1020718	\n\n要使用道场记忆吗？
+	Window 1020718,YES,NO
+		 Window_YES Item 34626 >= 1
+			 KillItem 34626,1
+			 LeaveGroup
+			 Warp 0,9011,5,10
+	Window_NO

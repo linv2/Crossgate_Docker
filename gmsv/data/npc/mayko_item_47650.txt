@@ -1,0 +1,31 @@
+
+
+#1054974	\n\n\n\n@c同时有两个米力娃娃是无法使用的。	1
+#米力娃娃(伪)	mayko_item_47650.txt
+#蛋饭15313
+block Item 47650 >= 2
+	 EndWindow 1054974
+
+
+
+############## 谛溥及酸曰DUR互1 ##############
+block Gold >59
+	 Window 1054967,YES,NO
+	 Window_YES ItemSpace == 0
+ 	 EndWindow 1054970	
+ 	 Window_YES Gold >59 && ItemDur 47650 == 1
+	 AddGold -60
+	 KillItem 47650,1
+	 GiveLeak1Item 15313
+	 endblock
+############## 谛溥及酸曰DUR互2动晓 ##############
+	 Window_YES Gold >59 
+	 AddGold -60
+	 SetDur 47650,-1
+
+	  GiveLeak1Item 15313
+	 endblock
+	 Window_YES
+	 EndWindow 3
+
+
