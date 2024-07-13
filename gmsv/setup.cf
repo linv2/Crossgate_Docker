@@ -7,11 +7,11 @@ port=9030
 ############################# DB server IP or domain name  数据库IP
 dbservname=127.0.0.1
 ############################# DB username  数据库账号
-dbusername=root
+dbusername=crossgate
 ############################# DB password  数据库密码
-dbpassword=root
+dbpassword=123456
 ############################# DB database name  数据库库名
-dbdatabasename=cgmsv
+dbdatabasename=crossgate
 ############################# DB charset  数据库字符集
 dbcharset=gbk
 

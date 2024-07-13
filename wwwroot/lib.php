@@ -2,8 +2,8 @@
 error_reporting(0);
 header("Content-type: text/html; charset=GBK");
 ini_set('date.timezone','Asia/Shanghai');
-$connect=mysql_connect("127.0.0.1","root","root") or die();
-mysql_select_db("rogue");
+$connect=mysql_connect("127.0.0.1","crossgate","123456") or die();
+mysql_select_db("crossgate");
 function URL_Refresh($url) {
 print "<html><head><META HTTP-EQUIV=Refresh CONTENT=\"0;url='$url'\"></head></html>";
 }
