@@ -56,9 +56,9 @@ sudo sed -i '5s/.*/$connect=mysql_connect("'$db_host'","'$db_user'","'$db_passwo
 sudo sed -i '6s/.*/mysql_select_db("'$db_name'");/' wwwroot/lib.php
 
 echo "开始启动CrossGate服务"
-sudo sudo docker run -d --name $CONTAINER_NAME --workdir /gmsv -p 9030:9030 -v "$SCRIPT_DIR/gmsv/:/gmsv/" mtapiio/wine8 wine "cgmsv.exe" 
+sudo sudo docker run -d --name crossgate --workdir /gmsv -p 9030:9030 -v "$SCRIPT_DIR/gmsv/:/gmsv/" mtapiio/wine8 wine "cgmsv.exe" 
 
-CONTAINER_STATUS=$(sudo docker ps -a --filter "name=$CONTAINER_NAME" --format "{{.Status}}")  
+CONTAINER_STATUS=$(sudo docker ps -a --filter "name=crossgate" --format "{{.Status}}")  
   
 if [ -z "$CONTAINER_STATUS" ]; then  
     echo "CrossGate服务未运行"
