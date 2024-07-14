@@ -3,8 +3,7 @@
 -- 服务器版本:                        5.5.36-MariaDB-log - mariadb.org binary distribution
 -- 服务器操作系统:                      Win32
 -- --------------------------------------------------------
-
-
+create database crossgate CHARACTER SET gbk 
 -- 导出  表 cgmsv.hook_charaext 结构
 DROP TABLE IF EXISTS `hook_charaext`;
 CREATE TABLE IF NOT EXISTS `hook_charaext` (
