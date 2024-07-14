@@ -63,14 +63,4 @@ sudo sed -i '6s/.*/mysql_select_db("'$db_name'");/' wwwroot/lib.php
 echo "开始启动CrossGate服务"
 sudo sudo docker run -d --name crossgate --workdir /gmsv -p 9030:9030 -v "$SCRIPT_DIR/gmsv/:/gmsv/" scottyhardy/docker-wine:stable-9.0 wine "cgmsv.exe" 
 
-CONTAINER_STATUS=$(sudo docker ps -a --filter "name=crossgate" --format "{{.Status}}")  
-  
-if [ -z "$CONTAINER_STATUS" ]; 
-then  
-    echo "CrossGate服务未运行"
-elif [ "$CONTAINER_STATUS" == *"Up"* ];
-then  
-    echo "CrossGate正在运行"  
-else  
-    echo "CrossGate已停止"
-fi
+echo "命令已全部执行完成，请检查Docker容器运行状态"
