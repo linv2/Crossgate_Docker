@@ -1,7 +1,9 @@
 #!/bin/bash  
 db_user="root"
 db_host="127.0.0.1"
-db_name="crossgate"
+db_name="crossgate"    
+
+chmod -R 777 gmsv/*
 echo "请输入你要设置的数据库密码"
 read db_password;
 
@@ -22,7 +24,7 @@ else
     echo "docker命令未找到，正在尝试安装..."  
     sudo apt-get update  # 更新包列表  
     sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common  # 安装依赖包  
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -  # 添加Docker官方GPG密钥  
+    sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -  # 添加Docker官方GPG密钥  
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"  # 添加Docker官方源  
     sudo apt-get update  # 再次更新包列表以确保Docker源生效  
     sudo apt-get install -y docker-ce docker-ce-cli containerd.io  # 安装Docker CE  
@@ -49,9 +51,9 @@ sudo docker run -d --name crossgate_web -p 80:80 -v "$SCRIPT_DIR/wwwroot/:/var/w
 
 
 echo "开始保存数据库配置信息"
-sed -i '12s/.*/dbpassword='$db_password'/' gmsv/setup.cf
-sed -i '5s/.*/$connect=mysql_connect("'$db_host'","'$db_user'","'$db_password'") or die();/' wwwroot/lib.php
-sed -i '6s/.*/mysql_select_db("'$db_name'");/' wwwroot/lib.php
+sudo sed -i '12s/.*/dbpassword='$db_password'/' gmsv/setup.cf
+sudo sed -i '5s/.*/$connect=mysql_connect("'$db_host'","'$db_user'","'$db_password'") or die();/' wwwroot/lib.php
+sudo sed -i '6s/.*/mysql_select_db("'$db_name'");/' wwwroot/lib.php
 
 echo "开始启动CrossGate服务"
 sudo sudo docker run -d --name $CONTAINER_NAME --workdir /gmsv -p 9030:9030 -v "$SCRIPT_DIR/gmsv/:/gmsv/" mtapiio/wine8 wine "cgmsv.exe" 
