@@ -1,5 +1,8 @@
 # Crossgate_Docker
 魔力宝贝服务端Docker镜像/容器
+> github地址 [https://github.com/linv2/Crossgate_Docker](https://github.com/linv2/Crossgate_Docker)
+> 
+> gitee地址 [https://gitee.com/linv2/Crossgate_Docker](https://gitee.com/linv2/Crossgate_Docker)
 
 # 写在前边的话
 魔力多年老玩家，最近在网上找到很多，没有找到合适的Linux服务端。大部分都是Windows的两键端，但是做为服务器的话，Windows占用的资源太高了，配置高的机器又太贵了，所以一直想要用Linux的服务端，可是找了很久都无果。
@@ -15,7 +18,10 @@ mysql版本采用5.7,mysql 9.0版本服务端程序无法连接，其他版本�
 - 准备服务器，示例中使用Ubuntu 22.04
 - 服务端开启22,80,9030端口
 - 检查是否安装git客户端，未安装的话 `sudo apt install -y git` 进行安装
-- 找到一个自己喜欢的目录下载代码`git clone https://github.com/linv2/Crossgate_Docker.git`
+- 选择一个合适的仓库地址，找到一个自己喜欢的目录下载代码，
+  > `git clone https://github.com/linv2/Crossgate_Docker.git`
+
+  > `git clone https://github.com/linv2/Crossgate_Docker.git`
 - 进入项目文件夹`cd Crossgate_Docker`
 - 安装全部依赖项`sh Install.sh`
 - 等待安装完成
@@ -27,7 +33,8 @@ mysql版本采用5.7,mysql 9.0版本服务端程序无法连接，其他版本�
 - 下载登录器   
 - 解压登录器至客户端目录               
 - 修改登录器配置文件`cgmsv.ini`         
-第4行 `ServerList=IP:0:127.0.0.1:9030`
-把127.0.0.1 修改为自己的服务器IP
-- 浏览器打开`http://服务 器IP`注册账号
+    > 第4行 `ServerList=IP:0:127.0.0.1:9030`
+
+    > 把127.0.0.1 修改为自己的服务器IP
+- 浏览器打开`http://服务器IP`注册账号
 - 打开`登陆器.exe`进行游戏

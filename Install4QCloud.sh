@@ -25,7 +25,7 @@ else
     echo "docker命令未找到，正在尝试安装..."  
     sudo apt-get update  # 更新包列表  
     sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common  # 安装依赖包  
-    sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -y -  # 添加Docker官方GPG密钥  
+    sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -  # 添加Docker官方GPG密钥  
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"  # 添加Docker官方源  
     sudo apt-get update  # 再次更新包列表以确保Docker源生效  
     sudo apt-get install -y docker-ce docker-ce-cli containerd.io  # 安装Docker CE  
