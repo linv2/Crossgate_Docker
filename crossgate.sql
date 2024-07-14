@@ -1,9 +1,6 @@
--- --------------------------------------------------------
--- 主机:                           127.0.0.1
--- 服务器版本:                        5.5.36-MariaDB-log - mariadb.org binary distribution
--- 服务器操作系统:                      Win32
--- --------------------------------------------------------
-create database crossgate CHARACTER SET gbk 
+
+create database crossgate CHARACTER SET gbk;
+use crossgate; 
 -- 导出  表 cgmsv.hook_charaext 结构
 DROP TABLE IF EXISTS `hook_charaext`;
 CREATE TABLE IF NOT EXISTS `hook_charaext` (
@@ -3296,10 +3293,5 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
 
 -- 正在导出表  cgmsv.tbl_user 的数据：~1 rows (大约)
 INSERT IGNORE INTO `tbl_user` (`CdKey`, `SequenceNumber`, `AccountID`, `AccountPassWord`, `EnableFlg`, `UseFlg`, `BadMsg`, `TrialFlg`, `DownFlg`, `ExpFlg`) VALUES
-	('linv2', 14, 'linv2', 'linv2', 1, 1, 0, 8, 0, 0);
+	('linv2', 14, 'linv2', '123456', 1, 1, 0, 8, 0, 0);
 
-/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
