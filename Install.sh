@@ -44,7 +44,9 @@ mysql --defaults-file=./mysql.ini<crossgate.sql
 
 
 echo "开始安装Web镜像"
-sudo docker run -d -p 80:80 -v "$SCRIPT_DIR/wwwroot/:/var/www/html" richarvey/nginx-php-fpm
+sudo docker run -d --name crossgate_web -p 80:80 -v "$SCRIPT_DIR/wwwroot/:/var/www/html" richarvey/nginx-php-fpm
+
+
 
 echo "开始保存数据库配置信息"
 sed -i '12s/.*/dbpassword='$db_password'/' gmsv/setup.cf
@@ -53,6 +55,7 @@ sed -i '6s/.*/mysql_select_db("'$db_name'");/' wwwroot/lib.php
 
 echo "开始启动CrossGate服务"
 sudo sudo docker run -d --name $CONTAINER_NAME --workdir /gmsv -p 9030:9030 -v "$SCRIPT_DIR/gmsv/:/gmsv/" mtapiio/wine8 wine "cgmsv.exe" 
+
 CONTAINER_STATUS=$(sudo docker ps -a --filter "name=$CONTAINER_NAME" --format "{{.Status}}")  
   
 if [ -z "$CONTAINER_STATUS" ]; then  
