@@ -7,6 +7,7 @@ chmod -R 777 gmsv/*
 echo "请输入你要设置的数据库密码"
 read db_password;
 
+echo "">mysql.ini
 sed -i '1s/.*/[client]/' mysql.ini
 sed -i '2s/.*/host='$db_password'/' mysql.ini
 sed -i '3s/.*/user='$db_user'/' mysql.ini
@@ -60,9 +61,11 @@ sudo sudo docker run -d --name crossgate --workdir /gmsv -p 9030:9030 -v "$SCRIP
 
 CONTAINER_STATUS=$(sudo docker ps -a --filter "name=crossgate" --format "{{.Status}}")  
   
-if [ -z "$CONTAINER_STATUS" ]; then  
+if [ -z "$CONTAINER_STATUS" ]; 
+then  
     echo "CrossGate服务未运行"
-elif [[ "$CONTAINER_STATUS" == *"Up"* ]]; then  
+elif [ "$CONTAINER_STATUS" == *"Up"* ];
+then  
     echo "CrossGate正在运行"  
 else  
     echo "CrossGate已停止"
