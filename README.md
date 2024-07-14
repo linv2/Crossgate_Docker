@@ -6,12 +6,12 @@
 偶然间想到以前用Windows做主机，用Centos虚拟机做服务器，反过来是否可行，正好想到Linux端有Wine，所以就尝试了下，发现可行，就分享出来，以前没用过Shell脚本,在文心一言的帮助下完成，可能有BUG。作为程序员，把原始的私服服务端和互联网技术结合了，也算个小创新了。
 理论上支持x86架构的NAS
 
-采用cgmsv官方服务端和data，包含mysql,php,wine容器。
-启动后内存占用2G左右，如果自己有其他的服务器可以不安装mysql和web镜像，降低内存占用。mysql版本采用5.7,mysql 9.0版本服务端程序无法连接，其他版本未测试。
+采用cgmsv官方服务端和data，包含mysql,php,wine容器。启动后内存占用2G左右，如果自己有其他的服务器可以不安装mysql和web镜像，降低内存占用。
+mysql版本采用5.7,mysql 9.0版本服务端程序无法连接，其他版本未测试。
 另外data数据也影响内存的占用
 
 # 服务端
-** [服务端来自cgmsv官网](https://www.cgmsv.com/)
+[服务端来自cgmsv官网](https://www.cgmsv.com/)
 - 准备服务器，示例中使用Ubuntu 22.04
 - 检查是否安装git客户端，未安装的话 `sudo apt install -y git` 进行安装
 - 找到一个自己喜欢的目录下载代码`git clone https://github.com/linv2/Crossgate_Docker.git`
@@ -20,7 +20,7 @@
 - 等待安装完成
 
 # 客户端
-**[客户端来自cgmsv论坛](https://down.cgmsv.com/cgtw_7.1_20220101.7z)
+[客户端来自cgmsv论坛](https://down.cgmsv.com/cgtw_7.1_20220101.7z)
 - 下载客户端  
 - 解压客户端  
 - 下载登录器   
