@@ -21,7 +21,7 @@ mysql版本采用5.7,mysql 9.0版本服务端程序无法连接，其他版本�
 - 选择一个合适的仓库地址，找到一个自己喜欢的目录下载代码，
   > `git clone https://github.com/linv2/Crossgate_Docker.git`
 
-  > `git clone https://github.com/linv2/Crossgate_Docker.git`
+  > `git clone https://gitee.com/linv2/Crossgate_Docker.git`
 - 进入项目文件夹`cd Crossgate_Docker`
 - 安装全部依赖项`sh Install.sh`
 - 等待安装完成
