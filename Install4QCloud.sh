@@ -23,16 +23,18 @@ if command -v docker > /dev/null; then
     echo "docker已安装"
 else
     sudo apt-get update
-    sudo apt-get install ca-certificates curl
+    sudo apt-get install -y ca-certificates curl
     sudo install -m 0755 -d /etc/apt/keyrings
     sudo curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
     sudo chmod a+r /etc/apt/keyrings/docker.asc
     echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://mirrors.cloud.tencent.com/docker-ce/linux/ubuntu/ \
     $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     sudo apt-get update
-    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
     systemctl status docker
 fi
+sudo echo "{ "registry-mirrors": [ ""https://mirror.ccs.tencentyun.com"" ] }">> /etc/docker/daemon.json
+sudo systemctl restart docker
 
 # 检查docker命令是否存在，如果不存在则安装Docker 
 if command -v mysql > /dev/null; then
@@ -65,4 +67,5 @@ sudo sed -i '6s/.*/mysql_select_db("'$db_name'");/' wwwroot/lib.php
 echo "开始启动CrossGate服务"
 sudo sudo docker run -d --name crossgate --workdir /gmsv -p 9030:9030 -v "$SCRIPT_DIR/gmsv/:/gmsv/" scottyhardy/docker-wine:stable-9.0 wine "cgmsv.exe" 
 
+sleep 10s
 echo "命令已全部执行完成，请检查Docker容器运行状态"
